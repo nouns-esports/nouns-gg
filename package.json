@@ -6,10 +6,10 @@
     "build": "turbo build",
     "start:website": "turbo start --filter=website",
     "start:dash": "turbo start --filter=dash",
-    "automate:privySync": "turbo run automate:privySync --filter=automations",
-    "automate:shopifySync": "turbo run automate:shopifySync --filter=automations",
-    "automate:refreshLeaderboard": "turbo run automate:refreshLeaderboard --filter=automations",
-    "automate:refreshRoles": "turbo run automate:refreshRoles --filter=automations"
+    "automate:privySync": "turbo automate:privySync --filter=automations",
+    "automate:shopifySync": "turbo automate:shopifySync --filter=automations",
+    "automate:refreshLeaderboard": "turbo automate:refreshLeaderboard --filter=automations",
+    "automate:refreshRoles": "turbo automate:refreshRoles --filter=automations"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
