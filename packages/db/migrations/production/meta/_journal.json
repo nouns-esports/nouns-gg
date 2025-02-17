@@ -218,6 +218,13 @@
       "when": 1739771884668,
       "tag": "0030_wooden_iron_monger",
       "breakpoints": true
+    },
+    {
+      "idx": 31,
+      "version": "7",
+      "when": 1739811722166,
+      "tag": "0031_lonely_namora",
+      "breakpoints": true
     }
   ]
 }
