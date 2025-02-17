@@ -6,7 +6,10 @@
     "build": "turbo build",
     "start:website": "turbo start --filter=website",
     "start:dash": "turbo start --filter=dash",
-    "automate": "turbo run automate:$0 --filter=automations"
+    "automate:privySync": "turbo run automate:privySync --filter=automations",
+    "automate:shopifySync": "turbo run automate:shopifySync --filter=automations",
+    "automate:refreshLeaderboard": "turbo run automate:refreshLeaderboard --filter=automations",
+    "automate:refreshRoles": "turbo run automate:refreshRoles --filter=automations"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",

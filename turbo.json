@@ -48,7 +48,16 @@
       "cache": false,
       "persistent": true
     },
-    "automate:*": {
+    "automate:privySync": {
+      "cache": false
+    },
+    "automate:shopifySync": {
+      "cache": false
+    },
+    "automate:refreshLeaderboard": {
+      "cache": false
+    },
+    "automate:refreshRoles": {
       "cache": false
     }
   }
