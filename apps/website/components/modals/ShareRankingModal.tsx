@@ -32,7 +32,7 @@ export default function ShareRankingModal(props: {
 					<X className="w-4 h-4 text-grey-200" />
 				</ToggleModal>
 			</div>
-			<div className="relative w-full aspect-[2/1]">
+			<div className="relative w-full aspect-[3/2]">
 				<Shimmer className="absolute left-0 top-0 bg-grey-800" />
 				<img
 					alt={`${props.ranking.user.name} ranking`}
