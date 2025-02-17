@@ -72,6 +72,8 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 		},
 	});
 
+	console.log(props.user.wallets.map((wallet) => wallet.walletClientType));
+
 	return (
 		<Modal
 			id="settings"
@@ -349,46 +351,48 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 										</button>
 									</div>
 									<div className="flex flex-col gap-2">
-										{props.user.wallets.map((wallet) => (
-											<div
-												key={wallet.address}
-												className="flex items-center gap-2 justify-between"
-											>
-												<Link
-													href={`https://${env.NEXT_PUBLIC_ENVIRONMENT === "development" ? "sepolia." : ""}basescan.org/address/${wallet.address}`}
-													newTab
-													className="flex items-center gap-2 group"
+										{props.user.wallets
+											.filter((wallet) => wallet.walletClientType !== "privy")
+											.map((wallet) => (
+												<div
+													key={wallet.address}
+													className="flex items-center gap-2 justify-between"
 												>
-													<img
-														alt={wallet.walletClientType}
-														src={
-															{
-																rainbow:
-																	"https://ipfs.nouns.gg/ipfs/QmbsJ82EZw2oJtdPbiNdfQ8LPW2P8JxMHbWvqrj9ZWwNF9",
-																coinbase_wallet:
-																	"https://ipfs.nouns.gg/ipfs/QmdSdo9pCPr3MpBRKAySnjwRfEH4tCm9aHggzqVgsPY2fx",
-																metamask:
-																	"https://ipfs.nouns.gg/ipfs/QmdF9f6t9EFHAXF35wmmEN2LPCdtojZKqJteKYmnHsa14G",
-															}[wallet.walletClientType ?? ""] ??
-															"https://ipfs.nouns.gg/ipfs/QmXiGnEvjtEHTsYxGEiQo8pENMZJHWxywDkEvrQ1xMJpf8"
-														}
-														className="h-6 w-6 rounded-md"
-													/>
-													<p className="text-white group-hover:text-white/70 transition-colors">
-														{wallet.address.substring(0, 6)}...
-														{wallet.address.substring(
-															wallet.address.length - 4,
-														)}
-													</p>
-												</Link>
-												<button
-													onClick={() => unlinkWallet(wallet.address)}
-													className="hover:text-white/70 text-white transition-colors"
-												>
-													<XIcon className="w-5 h-5 " />
-												</button>
-											</div>
-										))}
+													<Link
+														href={`https://${env.NEXT_PUBLIC_ENVIRONMENT === "development" ? "sepolia." : ""}basescan.org/address/${wallet.address}`}
+														newTab
+														className="flex items-center gap-2 group"
+													>
+														<img
+															alt={wallet.walletClientType}
+															src={
+																{
+																	rainbow:
+																		"https://ipfs.nouns.gg/ipfs/QmbsJ82EZw2oJtdPbiNdfQ8LPW2P8JxMHbWvqrj9ZWwNF9",
+																	coinbase_wallet:
+																		"https://ipfs.nouns.gg/ipfs/QmdSdo9pCPr3MpBRKAySnjwRfEH4tCm9aHggzqVgsPY2fx",
+																	metamask:
+																		"https://ipfs.nouns.gg/ipfs/QmdF9f6t9EFHAXF35wmmEN2LPCdtojZKqJteKYmnHsa14G",
+																}[wallet.walletClientType ?? ""] ??
+																"https://ipfs.nouns.gg/ipfs/QmXiGnEvjtEHTsYxGEiQo8pENMZJHWxywDkEvrQ1xMJpf8"
+															}
+															className="h-6 w-6 rounded-md"
+														/>
+														<p className="text-white group-hover:text-white/70 transition-colors">
+															{wallet.address.substring(0, 6)}...
+															{wallet.address.substring(
+																wallet.address.length - 4,
+															)}
+														</p>
+													</Link>
+													<button
+														onClick={() => unlinkWallet(wallet.address)}
+														className="hover:text-white/70 text-white transition-colors"
+													>
+														<XIcon className="w-5 h-5 " />
+													</button>
+												</div>
+											))}
 										{props.user.wallets.length === 0
 											? "No external wallets verified"
 											: null}
