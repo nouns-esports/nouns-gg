@@ -47,6 +47,9 @@
     "start": {
       "cache": false,
       "persistent": true
+    },
+    "automate:*": {
+      "cache": false
     }
   }
 }

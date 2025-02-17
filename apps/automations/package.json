@@ -2,9 +2,9 @@
   "name": "automations",
   "type": "module",
   "scripts": {
-    "privySync": "bun --env-file=../../.env.production ./jobs/privySync.ts",
-    "refreshLeaderboard": "bun --env-file=../../.env.production ./jobs/refreshLeaderboard.ts",
-    "refreshRoles": "bun --env-file=../../.env.production ./jobs/refreshRoles.ts",
-    "shopifySync": "bun --env-file=../../.env.production ./jobs/shopifySync.ts"
+    "automate:privySync": "bun --env-file=../../.env.production ./jobs/privySync.ts",
+    "automate:refreshLeaderboard": "bun --env-file=../../.env.production ./jobs/refreshLeaderboard.ts",
+    "automate:refreshRoles": "bun --env-file=../../.env.production ./jobs/refreshRoles.ts",
+    "automate:shopifySync": "bun --env-file=../../.env.production ./jobs/shopifySync.ts"
   }
 }
