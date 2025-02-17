@@ -11,6 +11,38 @@ import { ToggleModal } from "@/components/Modal";
 import { Image } from "lucide-react";
 import ShareRankingModal from "@/components/modals/ShareRankingModal";
 import { nextFriday } from "date-fns";
+import { env } from "~/env";
+import type { Metadata } from "next";
+
+export async function generateMetadata(props: {
+	searchParams: Promise<{
+		user?: string;
+	}>;
+}): Promise<Metadata> {
+	const searchParams = await props.searchParams;
+
+	if (!searchParams.user) return {};
+
+	return {
+		other: {
+			"fc:frame": JSON.stringify({
+				version: "next",
+				imageUrl: `${env.NEXT_PUBLIC_DOMAIN}/api/images/rankings?user=${searchParams.user}`,
+				button: {
+					title: "View Leaderboard",
+					action: {
+						type: "launch_frame",
+						name: "Nouns GG",
+						url: `${env.NEXT_PUBLIC_DOMAIN}/leaderboard`,
+						splashImageUrl:
+							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
+						splashBackgroundColor: "#040404",
+					},
+				},
+			}),
+		},
+	};
+}
 
 export default async function Leaderboard() {
 	const user = await getAuthenticatedUser();
