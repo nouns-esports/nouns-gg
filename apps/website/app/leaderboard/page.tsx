@@ -190,7 +190,9 @@ function LeaderboardPosition(props: {
 							src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
 							className="rounded-full h-5 w-5 shadow-xl"
 						/>
-						<p className="font-semibold text-lg text-[#FEBD1C]">{props.gold}</p>
+						<p className="font-semibold text-lg text-[#FEBD1C]">
+							{Math.floor(props.gold)}
+						</p>
 					</div>
 				) : null}
 				{props.rank ? (
