@@ -211,6 +211,13 @@
       "when": 1737409255799,
       "tag": "0029_slim_redwing",
       "breakpoints": true
+    },
+    {
+      "idx": 30,
+      "version": "7",
+      "when": 1739771884668,
+      "tag": "0030_wooden_iron_monger",
+      "breakpoints": true
     }
   ]
 }
