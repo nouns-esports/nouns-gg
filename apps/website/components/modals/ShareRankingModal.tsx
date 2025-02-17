@@ -43,7 +43,7 @@ export default function ShareRankingModal(props: {
 			<Link
 				newTab
 				// href={`/chat?post=true&embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/frames/rounds/${props.round}/votes/${user?.id}/`}
-				href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/images/rankings?user=${props.ranking.user.id}`}
+				href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/leaderboard?user=${props.ranking.user.id}`}
 				className="flex gap-1 items-center group hover:opacity-80 transition-opacity text-red"
 			>
 				Share this image on Warpcast
