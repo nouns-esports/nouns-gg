@@ -16,38 +16,43 @@ type OrderUpdated = {
 };
 
 export async function POST(request: Request) {
+	const body = await request.json();
+	console.log("SHOPIFY WEBHOOK RECEIVED");
+	console.log("REQUEST", request);
+	console.log("BODY", body);
+
 	const updatedProducts: ProductUpdated[] = [];
 
-	await db.transaction(async (tx) => {
-		for (const updatedProduct of updatedProducts) {
-			const product = await tx.query.products.findFirst({
-				where: eq(products.shopifyId, updatedProduct.admin_graphql_api_id),
-			});
+	// await db.transaction(async (tx) => {
+	// 	for (const updatedProduct of updatedProducts) {
+	// 		const product = await tx.query.products.findFirst({
+	// 			where: eq(products.shopifyId, updatedProduct.admin_graphql_api_id),
+	// 		});
 
-			if (!product) {
-				continue;
-			}
+	// 		if (!product) {
+	// 			continue;
+	// 		}
 
-			await tx
-				.update(products)
-				.set({
-					variants: product.variants.map((variant) => {
-						const updatedVariant = updatedProduct.variants.find(
-							(v) => v.admin_graphql_api_id === variant.shopifyId,
-						);
+	// 		await tx
+	// 			.update(products)
+	// 			.set({
+	// 				variants: product.variants.map((variant) => {
+	// 					const updatedVariant = updatedProduct.variants.find(
+	// 						(v) => v.admin_graphql_api_id === variant.shopifyId,
+	// 					);
 
-						if (!updatedVariant) {
-							return variant;
-						}
+	// 					if (!updatedVariant) {
+	// 						return variant;
+	// 					}
 
-						return {
-							...variant,
-							inventory: updatedVariant.inventory_quantity,
-							price: Number(updatedVariant.price),
-						};
-					}),
-				})
-				.where(eq(products.shopifyId, updatedProduct.admin_graphql_api_id));
-		}
-	});
+	// 					return {
+	// 						...variant,
+	// 						inventory: updatedVariant.inventory_quantity,
+	// 						price: Number(updatedVariant.price),
+	// 					};
+	// 				}),
+	// 			})
+	// 			.where(eq(products.shopifyId, updatedProduct.admin_graphql_api_id));
+	// 	}
+	// });
 }
