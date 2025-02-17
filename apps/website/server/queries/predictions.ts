@@ -1,7 +1,7 @@
 "use server";
 
-import { db, predictions } from "~/packages/db/schema";
-import { eq } from "drizzle-orm";
+import { bets, db, predictions, outcomes } from "~/packages/db/schema";
+import { eq, sql } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
 
 export const getPrediction = cache(

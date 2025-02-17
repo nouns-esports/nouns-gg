@@ -117,7 +117,7 @@ export function Modal(props: {
 		}
 
 		setMounted(true);
-	}, []);
+	}, [mounted]);
 
 	useEffect(() => {
 		const root = document.documentElement;

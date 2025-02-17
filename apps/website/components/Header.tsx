@@ -1,5 +1,5 @@
 import Link from "@/components/Link";
-import { getAuthenticatedUser } from "@/server/queries/users";
+import { getAuthenticatedUser, isInServer } from "@/server/queries/users";
 import SignInButton from "./SignInButton";
 import {
 	Shapes,
@@ -12,12 +12,18 @@ import {
 	CalendarDays,
 	Settings2,
 	List,
+	Plus,
+	ShoppingCart,
 } from "lucide-react";
 import Banner from "./Banner";
 import Menu from "./Menu";
 import { getRosters } from "@/server/queries/rosters";
 import { getNotifications } from "@/server/queries/notifications";
 import Notifications from "./Notifications";
+import GoldModal from "./modals/GoldModal";
+import { ToggleModal } from "./Modal";
+import CartModal from "./modals/CartModal";
+import EnterNexusModal from "./modals/EnterNexusModal";
 
 export default async function Header() {
 	const [user, rosters] = await Promise.all([
@@ -26,6 +32,11 @@ export default async function Header() {
 	]);
 
 	const notifications = user ? await getNotifications({ user: user.id }) : [];
+
+	const inServer =
+		!user?.nexus?.rank && user?.discord?.subject
+			? await isInServer({ subject: user.discord.subject })
+			: false;
 
 	return (
 		<>
@@ -143,21 +154,28 @@ export default async function Header() {
 													</div>
 													<div>
 														<p className="font-bebas-neue text-lg">Quests</p>
-														<p className="text-grey-200">Level up your nexus</p>
+														<p className="text-grey-200">Level up your Nexus</p>
 													</div>
 												</Link>
 											</li>
-											{/* <li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
-												<Link href="/chat" className="flex items-center gap-4">
-													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-green text-white items-center">
-														<MessageCircle className="w-full h-full p-2" />
+											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
+												<Link
+													href="/leaderboard"
+													className="flex items-center gap-4"
+												>
+													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-pink text-white items-center">
+														<List className="w-full h-full p-2" />
 													</div>
 													<div>
-														<p className="font-bebas-neue text-lg">Chat</p>
-														<p className="text-grey-200">Join the discussion</p>
+														<p className="font-bebas-neue text-lg">
+															Leaderboard
+														</p>
+														<p className="text-grey-200">
+															Rankup and earn rewards
+														</p>
 													</div>
 												</Link>
-											</li> */}
+											</li>
 											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
 												<Link
 													href="/discord"
@@ -178,13 +196,13 @@ export default async function Header() {
 											</li>
 										</ul>
 									</Group>
-									<Link href="/events" className="max-md:hidden">
+									<Link href="/events" className="max-[900px]:hidden">
 										<li className="flex gap-2 items-center opacity-100 hover:opacity-80 transition-opacity relative z-[60]">
 											<CalendarDays className="w-5 h-5" />
 											Events
 										</li>
 									</Link>
-									<Link href="https://shop.nouns.gg" newTab>
+									<Link href="/shop" className="max-[900px]:hidden">
 										<li className="flex gap-2 items-center opacity-100 hover:opacity-80 transition-opacity relative z-[60]">
 											<ShoppingBag className="w-5 h-5" />
 											Shop
@@ -193,25 +211,50 @@ export default async function Header() {
 								</ul>
 							</nav>
 						</div>
-						<div className="pointer-events-auto flex gap-6 items-center relative z-[60]">
-							<div className="flex gap-4 items-center">
-								{/* <Link href="/leaderboard">
-									<List className="text-white w-6 h-6 hover:text-white/70 transition-colors" />
-								</Link> */}
-								{user?.nexus ? (
-									<Notifications notifications={notifications} />
-								) : null}
-								{user?.nexus?.admin ? (
-									<Link href="/admin">
-										<Settings2 className="text-white w-6 h-6 hover:text-white/70 transition-colors" />
-									</Link>
-								) : null}
+						<div className="pointer-events-auto flex gap-6 max-[425px]:gap-4 items-center relative z-[60]">
+							<div className="flex items-center gap-4 max-[425px]:gap-2">
+								<Notifications notifications={notifications} />
+								<ToggleModal id="cart">
+									<ShoppingCart className="w-[22px] h-[22px] text-white hover:text-grey-200 transition-colors" />
+								</ToggleModal>
 							</div>
-							<SignInButton user={user} />
+							<div className="flex items-center bg-[#4F3101] has-[.child:hover]:bg-[#623C00] transition-colors rounded-full cursor-pointer">
+								{user?.nexus ? (
+									<ToggleModal
+										id="gold"
+										className="child pl-3 pr-4 max-[425px]:pr-2 h-10 flex gap-1.5 items-center justify-center"
+									>
+										<img
+											alt="Gold coin"
+											src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
+											className="rounded-full h-5 w-5 shadow-xl select-none"
+											draggable={false}
+										/>
+										<p className="font-semibold text-[#FEBD1C] select-none">
+											{user?.nexus?.gold
+												? user.nexus.gold >= 1000
+													? `${(user.nexus.gold / 1000).toFixed(1)}k`
+													: user.nexus.gold
+												: 0}
+										</p>
+									</ToggleModal>
+								) : null}
+								<SignInButton user={user} />
+							</div>
 						</div>
 					</div>
 				</div>
 			</header>
+			{user ? <GoldModal user={user} /> : null}
+			{user?.nexus?.carts ? (
+				<CartModal user={user.id} cart={user.nexus.carts} />
+			) : null}
+			{!user?.nexus?.rank ? (
+				<EnterNexusModal
+					linkedFarcaster={!!user?.farcaster?.fid}
+					inServer={inServer}
+				/>
+			) : null}
 		</>
 	);
 }
@@ -223,11 +266,11 @@ function Group(props: {
 }) {
 	return (
 		<li className="relative group flex">
-			<div className="cursor-pointer opacity-100 hover:opacity-80 transition-opacity font-semibold flex justify-center gap-2 items-center max-md:hidden">
+			<div className="cursor-pointer opacity-100 hover:opacity-80 transition-opacity font-semibold flex justify-center gap-2 items-center max-[900px]:hidden">
 				{props.icon}
 				{props.title}
 			</div>
-			<div className="absolute top-6 -left-8 pt-4 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto max-md:hidden">
+			<div className="absolute top-6 -left-8 pt-4 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto max-[900px]:hidden">
 				<div className="bg-grey-600 rounded-xl p-3 flex gap-2">
 					{props.children}
 				</div>

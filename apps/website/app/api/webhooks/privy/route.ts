@@ -23,7 +23,7 @@ type AccountType =
 			fid: number;
 	  };
 
-export const POST = async (req: NextRequest) => {
+export async function POST(req: NextRequest) {
 	const id = req.headers.get("svix-id") ?? "";
 	const timestamp = req.headers.get("svix-timestamp") ?? "";
 	const signature = req.headers.get("svix-signature") ?? "";
@@ -70,14 +70,6 @@ export const POST = async (req: NextRequest) => {
 			verifiedPayload.type === "user.updated_account" ||
 			verifiedPayload.type === "user.linked_account"
 		) {
-			if (verifiedPayload.account.type === "wallet") {
-				await db
-					.update(nexus)
-					.set({
-						wallet: verifiedPayload.account.address,
-					})
-					.where(eq(nexus.id, verifiedPayload.user.id));
-			}
 			if (verifiedPayload.account.type === "twitter") {
 				await db
 					.update(nexus)
@@ -106,14 +98,6 @@ export const POST = async (req: NextRequest) => {
 		}
 
 		if (verifiedPayload.type === "user.unlinked_account") {
-			if (verifiedPayload.account.type === "wallet") {
-				await db
-					.update(nexus)
-					.set({
-						wallet: null,
-					})
-					.where(eq(nexus.id, verifiedPayload.user.id));
-			}
 			if (verifiedPayload.account.type === "twitter") {
 				await db
 					.update(nexus)
@@ -147,4 +131,4 @@ export const POST = async (req: NextRequest) => {
 	}
 
 	return NextResponse.json({ message: "error" }, { status: 500 });
-};
+}

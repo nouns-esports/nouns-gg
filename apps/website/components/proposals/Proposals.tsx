@@ -63,6 +63,7 @@ export default function Proposals(props: {
 	);
 
 	const { open: openSignInModal } = useModal("sign-in");
+	const { open: openEnterNexusModal } = useModal("enter-nexus");
 	const { open: openCastVotesModal } = useModal("cast-votes");
 	const { open: openShareVotesModal } = useModal("share-votes");
 
@@ -123,7 +124,9 @@ export default function Proposals(props: {
 									return (
 										<>
 											<p className="text-white">Enter the Nexus to propose</p>
-											<Button href="/nexus">Get Started</Button>
+											<Button onClick={() => openEnterNexusModal()}>
+												Get Started
+											</Button>
 										</>
 									);
 								}
@@ -190,7 +193,9 @@ export default function Proposals(props: {
 									return (
 										<>
 											<p className="text-white">Enter the Nexus to vote</p>
-											<Button href="/nexus">Get Started</Button>
+											<Button onClick={() => openEnterNexusModal()}>
+												Get Started
+											</Button>
 										</>
 									);
 								}

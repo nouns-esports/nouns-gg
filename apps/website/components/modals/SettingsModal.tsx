@@ -360,7 +360,7 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 													className="flex items-center gap-2 group"
 												>
 													<img
-														alt={wallet.wallet_client_type}
+														alt={wallet.walletClientType}
 														src={
 															{
 																rainbow:
@@ -369,7 +369,7 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 																	"https://ipfs.nouns.gg/ipfs/QmdSdo9pCPr3MpBRKAySnjwRfEH4tCm9aHggzqVgsPY2fx",
 																metamask:
 																	"https://ipfs.nouns.gg/ipfs/QmdF9f6t9EFHAXF35wmmEN2LPCdtojZKqJteKYmnHsa14G",
-															}[wallet.wallet_client_type] ??
+															}[wallet.walletClientType ?? ""] ??
 															"https://ipfs.nouns.gg/ipfs/QmXiGnEvjtEHTsYxGEiQo8pENMZJHWxywDkEvrQ1xMJpf8"
 														}
 														className="h-6 w-6 rounded-md"

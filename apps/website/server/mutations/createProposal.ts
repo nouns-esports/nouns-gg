@@ -1,6 +1,6 @@
 "use server";
 
-import { db, proposals, rounds } from "~/packages/db/schema";
+import { db, nexus, proposals, rounds, xp } from "~/packages/db/schema";
 import { eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { onlyUser } from ".";
@@ -64,24 +64,35 @@ export const createProposal = onlyUser
 		}
 
 		await db.transaction(async (tx) => {
-			await tx
-				.update(rounds)
-				.set({
-					totalParticipants: sql`${rounds.totalParticipants} + 1`,
-				})
-				.where(eq(rounds.id, parsedInput.round));
+			const returnedProposal = await tx
+				.insert(proposals)
+				.values([
+					{
+						title: parsedInput.title,
+						content: parsedInput.content,
+						image: parsedInput.image,
+						round: parsedInput.round,
+						user: ctx.user.id,
+						video: parsedInput.video,
+						createdAt: now,
+					},
+				])
+				.returning({ id: proposals.id });
 
-			await tx.insert(proposals).values([
-				{
-					title: parsedInput.title,
-					content: parsedInput.content,
-					image: parsedInput.image,
-					round: parsedInput.round,
-					user: ctx.user.id,
-					video: parsedInput.video,
-					createdAt: now,
-				},
-			]);
+			// Award 300 xp for proposing
+			await tx.insert(xp).values({
+				user: ctx.user.id,
+				amount: 300,
+				timestamp: now,
+				proposal: returnedProposal[0].id,
+			});
+
+			await tx
+				.update(nexus)
+				.set({
+					xp: sql`${nexus.xp} + 300`,
+				})
+				.where(eq(nexus.id, ctx.user.id));
 		});
 
 		revalidatePath(`/rounds/${parsedInput.round}`);

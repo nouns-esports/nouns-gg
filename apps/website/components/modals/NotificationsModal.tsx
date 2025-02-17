@@ -25,7 +25,10 @@ export default function NotificationsModal(props: {
 	}, [isOpen]);
 
 	return (
-		<Modal id="notifications" className="p-4 flex flex-col max-w-[500px] gap-6">
+		<Modal
+			id="notifications"
+			className="p-4 flex flex-col max-w-[400px] w-full gap-6"
+		>
 			<div className="flex justify-between items-center">
 				<p className="text-white text-2xl font-bebas-neue leading-none">
 					Notifications
@@ -47,7 +50,7 @@ export default function NotificationsModal(props: {
 							href={notification.url ?? ""}
 							key={notification.id}
 							className={twMerge(
-								"flex w-full min-w-[300px] items-center gap-3 border border-grey-600 rounded-xl p-2 pr-3 bg-grey-800 transition-colors",
+								"flex w-full items-center gap-3 border border-grey-600 rounded-xl p-2 pr-3 bg-grey-800 transition-colors",
 								notification.url
 									? "cursor-pointer hover:bg-grey-600"
 									: "cursor-default",
@@ -56,11 +59,11 @@ export default function NotificationsModal(props: {
 							<img
 								alt={notification.title}
 								src={`${notification.image}?img-height=200&img-onerror=redirect`}
-								className="w-12 h-12 rounded-xl object-cover"
+								className="w-12 h-12 rounded-lg object-cover"
 							/>
 							<div className="flex flex-col">
 								<h2 className="text-white">{notification.title}</h2>
-								<p className="text-grey-200 text-sm">
+								<p className="text-grey-200 text-sm line-clamp-1">
 									{notification.description}
 								</p>
 							</div>

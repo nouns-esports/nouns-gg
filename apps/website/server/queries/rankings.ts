@@ -1,82 +1,109 @@
-import { and, asc, desc, eq, lte, or } from "drizzle-orm";
+import { and, asc, desc, eq, sql } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
-import { db, rankings, seasons } from "~/packages/db/schema";
+import { db, rankings } from "~/packages/db/schema";
 
-export const getCurrentRankings = cache(
-  async (input?: { user?: string }) => {
-    ////
-    const season = await db.query.seasons.findFirst({
-      orderBy: desc(seasons.start),
-      where: lte(seasons.start, new Date()),
-      with: {
-        rankings: {
-          orderBy: desc(rankings.timestamp),
-          limit: 1,
-        },
-      },
-    });
+export const getLeaderboard = cache(
+	async () => {
+		// SALT
+		///////
+		return db.query.rankings.findMany({
+			where: eq(
+				rankings.timestamp,
+				sql`(SELECT MAX(timestamp) FROM ${rankings})`,
+			),
+			orderBy: desc(rankings.score),
+			limit: 100,
+			with: {
+				rank: true,
+				user: true,
+				gold: true,
+			},
+			extras: {
+				previousPosition: sql<number>`
+					(
+						SELECT rank_index FROM (
+							SELECT 
+								"user",
+								ROW_NUMBER() OVER (ORDER BY score DESC) AS rank_index
+							FROM ${rankings}
+							WHERE timestamp = (
+								SELECT timestamp 
+								FROM ${rankings} 
+								WHERE timestamp < (SELECT MAX(timestamp) FROM ${rankings})
+								ORDER BY timestamp DESC 
+								LIMIT 1
+							)
+						) AS ranked
+						WHERE ranked."user" = rankings."user"
+					)
+				`.as("previousPosition"),
+			},
+		});
+	},
+	["getLeaderboard"],
+	{ tags: ["getLeaderboard"], revalidate: 60 * 10 },
+);
 
-    if (!season || season.rankings.length < 1) {
-      return [];
-    }
+export const getLeaderboardPosition = cache(
+	async (input: { user: string }) => {
+		// SALT
+		///////
+		return db.query.rankings.findFirst({
+			where: and(
+				eq(rankings.user, input.user),
 
-    const latestTimestamp = season.rankings[0].timestamp;
-
-    const [currentRankings, userRanking] = await Promise.all([
-      db.query.rankings.findMany({
-        where: eq(rankings.timestamp, latestTimestamp),
-        orderBy: desc(rankings.xp),
-        limit: 100,
-        with: {
-          rank: true,
-          user: true,
-        },
-      }),
-      input?.user
-        ? db.query.rankings.findFirst({
-            where: and(
-              eq(rankings.user, input.user),
-              eq(rankings.timestamp, latestTimestamp)
-            ),
-            with: {
-              rank: true,
-              user: true,
-            },
-          })
-        : undefined,
-    ]);
-
-    if (!userRanking) {
-      return currentRankings;
-    }
-
-    return [...currentRankings, userRanking].toSorted((a, b) => b.xp - a.xp);
-  },
-  ["getCurrentRanks"],
-  { tags: ["getCurrentRanks"], revalidate: 60 * 10 }
+				eq(rankings.timestamp, sql`(SELECT MAX(timestamp) FROM ${rankings})`),
+			),
+			orderBy: desc(rankings.score),
+			with: {
+				rank: true,
+				user: true,
+				gold: true,
+			},
+			extras: {
+				position: sql<number>`(
+					SELECT rank_index FROM (
+						SELECT 
+							"user",
+							ROW_NUMBER() OVER (ORDER BY score DESC) AS rank_index
+						FROM ${rankings}
+						WHERE timestamp = (SELECT MAX(timestamp) FROM ${rankings})
+					) AS ranked
+					WHERE ranked."user" = rankings."user"
+				)`.as("position"),
+				previousPosition: sql<number>`(
+					SELECT rank_index FROM (
+						SELECT 
+							"user",
+							ROW_NUMBER() OVER (ORDER BY score DESC) AS rank_index
+						FROM ${rankings}
+						WHERE timestamp = (
+							SELECT timestamp 
+							FROM ${rankings} 
+							WHERE timestamp < (SELECT MAX(timestamp) FROM ${rankings})
+							ORDER BY timestamp DESC 
+							LIMIT 1
+						)
+					) AS ranked
+					WHERE ranked."user" = rankings."user"
+				)`.as("previousPosition"),
+			},
+		});
+	},
+	["getLeaderboardPosition"],
+	{ tags: ["getLeaderboardPosition"], revalidate: 60 * 10 },
 );
 
 export const getUserRankings = cache(
-  async (input: { user: string }) => {
-    //
-    return (
-      (
-        await db.query.seasons.findFirst({
-          orderBy: desc(seasons.start),
-          where: lte(seasons.start, new Date()),
-          with: {
-            rankings: {
-              where: eq(rankings.user, input.user),
-              orderBy: asc(rankings.timestamp),
-              with: {
-                rank: true,
-              },
-            },
-          },
-        })
-      )?.rankings ?? []
-    );
-  },
-  ["getUserRankings"],
-  { tags: ["getUserRankings"], revalidate: 60 * 10 }
+	async (input: { user: string }) => {
+		return db.query.rankings.findMany({
+			where: eq(rankings.user, input.user),
+			orderBy: asc(rankings.timestamp),
+			with: {
+				rank: true,
+			},
+		});
+	},
+	["getUserRankings"],
+	{ tags: ["getUserRankings"], revalidate: 60 * 10 },
 );

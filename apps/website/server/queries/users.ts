@@ -1,10 +1,11 @@
-import * as jose from "jose";
 import { env } from "~/env";
-import { createPublicKey } from "crypto";
-import { eq, isNotNull, or } from "drizzle-orm";
-import { db, nexus, xp } from "~/packages/db/schema";
+import { asc, eq, isNotNull, or } from "drizzle-orm";
+import { db, nexus, ranks, xp } from "~/packages/db/schema";
 import { unstable_cache as cache } from "next/cache";
 import { cookies } from "next/headers";
+import checkDiscordAccountAge from "@/utils/checkDiscordAccountAge";
+import { privyClient } from "../clients/privy";
+import { pinataClient } from "../clients/pinata";
 
 export async function getAuthenticatedUser() {
 	const token = (await cookies()).get("privy-id-token");
@@ -12,77 +13,93 @@ export async function getAuthenticatedUser() {
 	if (!token) return;
 
 	try {
-		const { payload, protectedHeader } = await jose.jwtVerify(
-			token.value,
-			createPublicKey(env.PRIVY_VERIFICATION_KEY),
-			{
-				issuer: "privy.io",
-				audience: env.NEXT_PUBLIC_PRIVY_APP_ID,
+		const privyUser = await privyClient.getUser({ idToken: token.value });
+
+		let userNexus = await db.query.nexus.findFirst({
+			where: eq(nexus.id, privyUser.id),
+			with: {
+				rank: true,
+				carts: {
+					with: {
+						product: true,
+					},
+				},
 			},
-		);
+		});
 
-		if (!payload.sub) return;
+		try {
+			if (!userNexus) {
+				const [fullPrivyUser, lowestRank, inServer] = await Promise.all([
+					privyClient.getUser(privyUser.id),
+					db.query.ranks.findFirst({
+						orderBy: asc(ranks.place),
+					}),
+					privyUser.discord?.subject &&
+					checkDiscordAccountAge(privyUser.discord.subject)
+						? isInServer({ subject: privyUser.discord.subject })
+						: undefined,
+				]);
 
-		let discord:
-			| {
-					subject: string;
-					username: string;
-			  }
-			| undefined;
+				let rank: number | null = null;
 
-		let twitter:
-			| {
-					subject: string;
-					username: string;
-			  }
-			| undefined;
+				if (lowestRank) {
+					if (fullPrivyUser.discord && inServer) {
+						rank = lowestRank.id;
+					}
 
-		let farcaster:
-			| {
-					fid: number;
-					username: string;
-			  }
-			| undefined;
+					if (fullPrivyUser.farcaster) {
+						rank = lowestRank.id;
+					}
+				}
 
-		const wallets: Array<{
-			address: string;
-			chain_type: string;
-			wallet_client_type: string;
-		}> = [];
+				const image = await pinataClient.upload.url(
+					fullPrivyUser.farcaster?.pfp ??
+						fullPrivyUser.twitter?.profilePictureUrl ??
+						`https://api.cloudnouns.com/v1/pfp?text=${privyUser.id}&background=1`,
+				);
 
-		let smartWallet: string | undefined;
+				await db.insert(nexus).values({
+					id: privyUser.id,
+					rank,
+					name:
+						fullPrivyUser.farcaster?.displayName ??
+						fullPrivyUser.twitter?.name ??
+						fullPrivyUser.discord?.username?.split("#")[0] ??
+						fullPrivyUser.email?.address.split("@")[0] ??
+						privyUser.id.replace("did:privy:", "").substring(0, 8),
+					image: `https://ipfs.nouns.gg/ipfs/${image.IpfsHash}`,
+					bio: fullPrivyUser.farcaster?.bio ?? "",
+					twitter: fullPrivyUser.twitter?.username,
+					discord: fullPrivyUser.discord?.username?.split("#")[0],
+					username: fullPrivyUser.farcaster?.username ?? undefined,
+					fid: fullPrivyUser.farcaster?.fid ?? undefined,
+					canRecieveEmails: false,
+				});
 
-		let email: string | undefined;
-
-		for (const { type, ...account } of JSON.parse(
-			payload.linked_accounts as any,
-		)) {
-			if (type === "discord_oauth") discord = account;
-			if (type === "twitter_oauth") twitter = account;
-			if (type === "farcaster") farcaster = account;
-			if (type === "smart_wallet") {
-				smartWallet = account.address;
+				userNexus = await db.query.nexus.findFirst({
+					where: eq(nexus.id, privyUser.id),
+					with: {
+						rank: true,
+						carts: {
+							with: {
+								product: true,
+							},
+						},
+					},
+				});
 			}
-			if (type === "wallet" && account.wallet_client_type !== "privy") {
-				wallets.push(account);
-			}
-			if (type === "email") email = account.address;
-		}
+		} catch (e) {}
 
 		return {
-			id: payload.sub,
-			discord,
-			twitter,
-			farcaster,
-			wallets,
-			smartWallet,
-			email,
-			nexus: await db.query.nexus.findFirst({
-				where: eq(nexus.id, payload.sub),
-				with: {
-					rank: true,
-				},
-			}),
+			id: privyUser.id,
+			discord: privyUser.discord,
+			twitter: privyUser.twitter,
+			farcaster: privyUser.farcaster,
+			wallets: privyUser.linkedAccounts.filter(
+				(account) => account.type === "wallet",
+			),
+			email: privyUser.email,
+			nexus: userNexus,
 		};
 	} catch (e) {
 		console.error(e);
@@ -93,15 +110,23 @@ export type AuthenticatedUser = NonNullable<
 	Awaited<ReturnType<typeof getAuthenticatedUser>>
 >;
 
+export const isInServer = async (input: { subject: string }) => {
+	return (
+		await fetch(
+			`https://discord.com/api/guilds/${env.DISCORD_GUILD_ID}/members/${input.subject}`,
+			{
+				headers: {
+					Authorization: `Bot ${env.DISCORD_TOKEN}`,
+				},
+			},
+		)
+	).ok;
+};
+
 export const getUser = cache(
 	async (input: { user: string }) => {
-		//////
 		return db.query.nexus.findFirst({
-			where: or(
-				eq(nexus.id, input.user),
-				eq(nexus.discord, input.user.split("#")[0]),
-				eq(nexus.username, input.user),
-			),
+			where: or(eq(nexus.id, input.user), eq(nexus.username, input.user)),
 			with: {
 				rank: true,
 			},

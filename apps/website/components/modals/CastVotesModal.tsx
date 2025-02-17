@@ -56,12 +56,12 @@ export default function CastVotesModal(props: {
 					</div>
 					<img
 						alt={`${props.round} votes`}
-						src={`/api/frames/rounds/${props.round}/votes/${user?.id}/img`}
+						src={`/api/images/votes?round=${props.round}&user=${user?.id}`}
 						className="w-96 rounded-xl"
 					/>
 					<Link
 						newTab
-						href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/frames/rounds/${props.round}/votes/${user?.id}/`}
+						href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?round=${props.round}&user=${user?.id}`}
 						className="flex gap-1 items-center group hover:opacity-80 transition-opacity text-red"
 					>
 						Share this image on Warpcast{" "}

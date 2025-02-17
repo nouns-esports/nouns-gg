@@ -1,0 +1,1 @@
+ALTER TABLE "rankings" ALTER COLUMN "rank" SET NOT NULL;

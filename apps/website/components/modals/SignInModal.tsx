@@ -21,11 +21,11 @@ import {
 	usePrivy,
 } from "@privy-io/react-auth";
 import { usePrivyModalState } from "@/providers/Privy";
-import { toast } from "../Toasts";
-import { pinImage } from "@/server/mutations/pinImage";
-import { useAction } from "next-safe-action/hooks";
+// import { toast } from "../Toasts";
+// import { pinImage } from "@/server/mutations/pinImage";
+// import { useAction } from "next-safe-action/hooks";
 import type { AuthenticatedUser } from "@/server/queries/users";
-import { createNexus } from "@/server/mutations/createNexus";
+// import { createNexus } from "@/server/mutations/createNexus";
 import Countdown from "../Countdown";
 
 export default function SignInModal(props: { user?: AuthenticatedUser }) {
@@ -39,7 +39,7 @@ export default function SignInModal(props: { user?: AuthenticatedUser }) {
 		5: "",
 		6: "",
 	});
-	const [canReceiveEmails, setCanReceiveEmails] = useState(false);
+	// const [canReceiveEmails, setCanReceiveEmails] = useState(false);
 
 	const code1 = useRef<HTMLInputElement>(null);
 	const code2 = useRef<HTMLInputElement>(null);
@@ -48,49 +48,49 @@ export default function SignInModal(props: { user?: AuthenticatedUser }) {
 	const code5 = useRef<HTMLInputElement>(null);
 	const code6 = useRef<HTMLInputElement>(null);
 
-	const [section, setSection] = useState<
-		"start" | "wallets" | "email" | "profile"
-	>(props.user ? "profile" : "start");
+	const [section, setSection] = useState<"start" | "wallets" | "email">(
+		"start",
+	);
 
-	const { isOpen, close, open } = useModal("sign-in");
+	// const { isOpen, close, open } = useModal("sign-in");
 
 	const { sendCode, loginWithCode, state } = useLoginWithEmail();
 	const [emailCooldown, setEmailCooldown] = useState(new Date());
 	const { loading, initOAuth } = useLoginWithOAuth();
 
-	const { user } = usePrivy();
+	// const { user } = usePrivy();
 
-	useEffect(() => {
-		if (props.user) {
-			if (!props.user.nexus) {
-				setSection("profile");
-				open();
-			} else close();
-		}
-	}, [props.user]);
+	// useEffect(() => {
+	// 	if (props.user) {
+	// 		if (!props.user.nexus) {
+	// 			setSection("profile");
+	// 			open();
+	// 		} else close();
+	// 	}
+	// }, [props.user]);
 
 	const { login } = useLogin();
 	const { setPrivyModalState } = usePrivyModalState();
 
-	const [image, setImage] = useState(
-		user?.farcaster?.pfp ??
-			`https://api.cloudnouns.com/v1/pfp?text=${Math.random().toString(36).substring(7)}&background=1`,
-	);
-	const [name, setName] = useState(
-		user?.farcaster?.displayName ??
-			user?.discord?.username?.split("#")[0] ??
-			user?.twitter?.name ??
-			"",
-	);
-	const [bio, setBio] = useState(user?.farcaster?.bio ?? "");
+	// const [image, setImage] = useState(
+	// 	user?.farcaster?.pfp ??
+	// 		`https://api.cloudnouns.com/v1/pfp?text=${Math.random().toString(36).substring(7)}&background=1`,
+	// );
+	// const [name, setName] = useState(
+	// 	user?.farcaster?.displayName ??
+	// 		user?.discord?.username?.split("#")[0] ??
+	// 		user?.twitter?.name ??
+	// 		"",
+	// );
+	// const [bio, setBio] = useState(user?.farcaster?.bio ?? "");
 
-	const pinImageAction = useAction(pinImage);
+	// const pinImageAction = useAction(pinImage);
 
-	const createNexusAction = useAction(createNexus, {
-		onSuccess: () => {
-			close();
-		},
-	});
+	// const createNexusAction = useAction(createNexus, {
+	// 	onSuccess: () => {
+	// 		close();
+	// 	},
+	// });
 
 	return (
 		<Modal id="sign-in" className="gap-4 w-[400px] overflow-hidden">
@@ -98,7 +98,7 @@ export default function SignInModal(props: { user?: AuthenticatedUser }) {
 				<div className="relative flex items-center justify-center flex-shrink-0 h-48 w-full">
 					<img
 						alt="Sign in banner"
-						src="https://ipfs.nouns.gg/ipfs/QmSGYg5t25SQDp1xBw5tqDrfsF62T2HHVZpH4VduaAwJkT"
+						src="https://ipfs.nouns.gg/ipfs/QmSGYg5t25SQDp1xBw5tqDrfsF62T2HHVZpH4VduaAwJkT?img-height=200&img-onerror=redirect"
 						className="w-full h-full object-cover brightness-75"
 						draggable={false}
 					/>
@@ -401,125 +401,125 @@ export default function SignInModal(props: { user?: AuthenticatedUser }) {
 									)}
 								</div>
 							),
-							profile: props.user && (
-								<div className="flex flex-col gap-6">
-									<p className="text-3xl font-bebas-neue text-white leading-none">
-										Create Profile
-									</p>
-									<div className="flex items-center gap-4 h-12">
-										<label className="cursor-pointer aspect-square h-full relative group">
-											<input
-												type="file"
-												accept="image/*"
-												onChange={async (event) => {
-													const files = event.target.files;
+							// profile: props.user && (
+							// 	<div className="flex flex-col gap-6">
+							// 		<p className="text-3xl font-bebas-neue text-white leading-none">
+							// 			Create Profile
+							// 		</p>
+							// 		<div className="flex items-center gap-4 h-12">
+							// 			<label className="cursor-pointer aspect-square h-full relative group">
+							// 				<input
+							// 					type="file"
+							// 					accept="image/*"
+							// 					onChange={async (event) => {
+							// 						const files = event.target.files;
 
-													if (files && files.length > 0) {
-														const file = files[0];
+							// 						if (files && files.length > 0) {
+							// 							const file = files[0];
 
-														// 25 MB in bytes
-														if (file.size > 25 * 1024 * 1024) {
-															toast.error(
-																"Image size should be less than 25 MB",
-															);
-															return;
-														}
+							// 							// 25 MB in bytes
+							// 							if (file.size > 25 * 1024 * 1024) {
+							// 								toast.error(
+							// 									"Image size should be less than 25 MB",
+							// 								);
+							// 								return;
+							// 							}
 
-														const formData = new FormData();
-														formData.append("file", file);
+							// 							const formData = new FormData();
+							// 							formData.append("file", file);
 
-														const hash = await pinImageAction.executeAsync({
-															formData,
-														});
+							// 							const hash = await pinImageAction.executeAsync({
+							// 								formData,
+							// 							});
 
-														if (hash?.data) {
-															setImage(
-																`https://ipfs.nouns.gg/ipfs/${hash.data}`,
-															);
-														} else toast.error("Could not upload image");
+							// 							if (hash?.data) {
+							// 								setImage(
+							// 									`https://ipfs.nouns.gg/ipfs/${hash.data}`,
+							// 								);
+							// 							} else toast.error("Could not upload image");
 
-														event.target.value = "";
-													}
-												}}
-												style={{ display: "none" }}
-											/>
-											<img
-												alt="Update profile logo"
-												src={
-													image === ""
-														? `https://api.cloudnouns.com/v1/pfp?text=${props.user.id}&background=1`
-														: image
-												}
-												className="rounded-full group-hover:opacity-50 transition-opacity"
-											/>
-											<div className="absolute -bottom-1 -right-1 flex items-center p-1 rounded-full justify-center bg-white text-black">
-												<Edit className="w-3 h-3" />
-											</div>
-										</label>
-										<input
-											type="text"
-											value={name}
-											onChange={(e) => setName(e.target.value)}
-											placeholder="Enter a display name"
-											className="bg-grey-800 rounded-xl text-white placeholder-grey-400 py-2 px-3 outline-none border-grey-600 border-[1px] w-full"
-										/>
-									</div>
-									<div className="flex flex-col gap-4">
-										<textarea
-											placeholder="Enter a bio"
-											value={bio}
-											onChange={(e) => setBio(e.target.value)}
-											className="bg-grey-800 rounded-xl text-white placeholder-grey-400 py-2 px-3 outline-none custom-scrollbar"
-											rows={4}
-										/>
-									</div>
-									{props.user.email ? (
-										<div className="flex gap-2">
-											<input
-												type="checkbox"
-												checked={canReceiveEmails}
-												onChange={(e) => setCanReceiveEmails(e.target.checked)}
-												className="w-4 h-4 accent-red"
-											/>
-											<p className="text-sm text-white">
-												I want to receive promotional emails, rewards, and
-												updates from Nouns
-											</p>
-										</div>
-									) : null}
-									<button
-										onClick={async () => {
-											if (!props.user) return;
+							// 							event.target.value = "";
+							// 						}
+							// 					}}
+							// 					style={{ display: "none" }}
+							// 				/>
+							// 				<img
+							// 					alt="Update profile logo"
+							// 					src={
+							// 						image === ""
+							// 							? `https://api.cloudnouns.com/v1/pfp?text=${props.user.id}&background=1`
+							// 							: image
+							// 					}
+							// 					className="rounded-full group-hover:opacity-50 transition-opacity"
+							// 				/>
+							// 				<div className="absolute -bottom-1 -right-1 flex items-center p-1 rounded-full justify-center bg-white text-black">
+							// 					<Edit className="w-3 h-3" />
+							// 				</div>
+							// 			</label>
+							// 			<input
+							// 				type="text"
+							// 				value={name}
+							// 				onChange={(e) => setName(e.target.value)}
+							// 				placeholder="Enter a display name"
+							// 				className="bg-grey-800 rounded-xl text-white placeholder-grey-400 py-2 px-3 outline-none border-grey-600 border-[1px] w-full"
+							// 			/>
+							// 		</div>
+							// 		<div className="flex flex-col gap-4">
+							// 			<textarea
+							// 				placeholder="Enter a bio"
+							// 				value={bio}
+							// 				onChange={(e) => setBio(e.target.value)}
+							// 				className="bg-grey-800 rounded-xl text-white placeholder-grey-400 py-2 px-3 outline-none custom-scrollbar"
+							// 				rows={4}
+							// 			/>
+							// 		</div>
+							// 		{props.user.email ? (
+							// 			<div className="flex gap-2">
+							// 				<input
+							// 					type="checkbox"
+							// 					checked={canReceiveEmails}
+							// 					onChange={(e) => setCanReceiveEmails(e.target.checked)}
+							// 					className="w-4 h-4 accent-red"
+							// 				/>
+							// 				<p className="text-sm text-white">
+							// 					I want to receive promotional emails, rewards, and
+							// 					updates from Nouns
+							// 				</p>
+							// 			</div>
+							// 		) : null}
+							// 		<button
+							// 			onClick={async () => {
+							// 				if (!props.user) return;
 
-											const result = await createNexusAction.executeAsync({
-												name,
-												image:
-													image === ""
-														? `https://api.cloudnouns.com/v1/pfp?text=${props.user.id}&background=1`
-														: image,
-												bio,
-												canReceiveEmails,
-											});
+							// 				const result = await createNexusAction.executeAsync({
+							// 					name,
+							// 					image:
+							// 						image === ""
+							// 							? `https://api.cloudnouns.com/v1/pfp?text=${props.user.id}&background=1`
+							// 							: image,
+							// 					bio,
+							// 					canReceiveEmails,
+							// 				});
 
-											if (result?.serverError) {
-												toast.error(result.serverError);
-											}
-										}}
-										className="flex justify-center items-center gap-2 w-full text-black bg-white hover:bg-white/70 font-semibold rounded-lg p-2.5 transition-colors"
-									>
-										{createNexusAction.isPending ? (
-											<img
-												alt="loading spinner"
-												src="/spinner.svg"
-												className="h-[18px] animate-spin"
-											/>
-										) : (
-											""
-										)}
-										Create Profile
-									</button>
-								</div>
-							),
+							// 				if (result?.serverError) {
+							// 					toast.error(result.serverError);
+							// 				}
+							// 			}}
+							// 			className="flex justify-center items-center gap-2 w-full text-black bg-white hover:bg-white/70 font-semibold rounded-lg p-2.5 transition-colors"
+							// 		>
+							// 			{createNexusAction.isPending ? (
+							// 				<img
+							// 					alt="loading spinner"
+							// 					src="/spinner.svg"
+							// 					className="h-[18px] animate-spin"
+							// 				/>
+							// 			) : (
+							// 				""
+							// 			)}
+							// 			Create Profile
+							// 		</button>
+							// 	</div>
+							// ),
 						}[section]
 					}
 				</div>

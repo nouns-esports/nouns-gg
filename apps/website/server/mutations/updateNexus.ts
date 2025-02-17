@@ -3,8 +3,8 @@
 import { z } from "zod";
 import { onlyUser } from ".";
 import { revalidatePath } from "next/cache";
-import { db, nexus, ranks, seasons } from "~/packages/db/schema";
-import { asc, desc, eq, lte, or } from "drizzle-orm";
+import { db, nexus } from "~/packages/db/schema";
+import { eq, or } from "drizzle-orm";
 
 export const updateNexus = onlyUser
 	.schema(
@@ -37,10 +37,8 @@ export const updateNexus = onlyUser
 					),
 				);
 
-			revalidatePath(`/users/${ctx.user.id}`);
-			if (ctx.user.nexus?.discord) {
-				revalidatePath(`/users/${ctx.user.nexus.discord}`);
-			}
-			revalidatePath("/nexus");
+			if (ctx.user.farcaster?.username) {
+				revalidatePath(`/users/${ctx.user.farcaster.username}`);
+			} else revalidatePath(`/users/${ctx.user.id}`);
 		}
 	});

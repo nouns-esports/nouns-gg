@@ -21,10 +21,13 @@ import VideoEmbedPlayer from "../VideoEmbedPlayer";
 
 export default function ViewProposalModal(props: {
 	round: NonNullable<Awaited<ReturnType<typeof getRound>>>;
-	proposal: Proposal & { user: Nexus | null };
+	proposal: NonNullable<
+		Awaited<ReturnType<typeof getRound>>
+	>["proposals"][number];
 	user?: AuthenticatedUser & {
 		priorVotes: number;
 	};
+
 	addVote: (proposal: number, amount: number) => void;
 	removeVote: (proposal: number, amount: number) => void;
 	selectedVotes: Record<string, number>;

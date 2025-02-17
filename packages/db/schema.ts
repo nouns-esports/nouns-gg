@@ -10,22 +10,12 @@ import {
 	integer,
 	jsonb,
 	unique,
+	bigint,
+	check,
 } from "drizzle-orm/pg-core";
-import { relations } from "drizzle-orm";
+import { relations, sql } from "drizzle-orm";
 import { Pool } from "pg";
 import { env } from "~/env";
-
-// export const links = pgTable("links", {
-// 	id: serial("id").primaryKey(),
-// 	path: text("path").unique(),
-// 	url: text("url").notNull().unique(),
-// 	metadata: jsonb("metadata").$type<
-// 		| { type: "image" }
-// 		| { type: "video" }
-// 		| { type: "website"; image: string; title: string; description: string }
-// 		| { type: "frame" }
-// 	>(),
-// });
 
 export const links = pgTable("links", {
 	id: text("id").primaryKey(),
@@ -297,14 +287,15 @@ export const rounds = pgTable("rounds", {
 		.notNull()
 		.default("markdown"),
 	featured: boolean("featured").notNull().default(false),
-	content: text("content").notNull(),
+	content: text("content").notNull(), // use markdown instead
 	// add description - tiptap for migration
 	start: timestamp("start", { mode: "date" }).notNull(),
 	votingStart: timestamp("voting_start", { mode: "date" }).notNull(),
 	end: timestamp("end", { mode: "date" }).notNull(),
 	minProposerRank: integer("min_proposer_rank"),
 	minVoterRank: integer("min_voter_rank"),
-	totalParticipants: integer("total_participants").notNull().default(0),
+	// proposerCredential: text("proposer_credential").notNull().default("nexus"),
+	// voterCredential: text("voter_credential").notNull().default("nexus"),
 });
 
 export const roundsRelations = relations(rounds, ({ one, many }) => ({
@@ -372,7 +363,6 @@ export const proposals = pgTable("proposals", {
 	createdAt: timestamp("created_at", { mode: "date" }).notNull(),
 	hidden: boolean("hidden").notNull().default(false),
 	published: boolean("published").notNull().default(true),
-	totalVotes: smallint("total_votes").notNull().default(0),
 });
 
 export const proposalsRelations = relations(proposals, ({ one, many }) => ({
@@ -385,24 +375,37 @@ export const proposalsRelations = relations(proposals, ({ one, many }) => ({
 		fields: [proposals.user],
 		references: [nexus.id],
 	}),
+	xp: many(xp),
 }));
 
-export const nexus = pgTable("nexus", {
-	id: text("id").primaryKey(),
-	username: text("username").unique(),
-	admin: boolean("admin").notNull().default(false),
-	rank: integer("rank"),
-	xp: integer("xp").notNull().default(0),
-	image: text("image").notNull().default(""),
-	name: text("name").notNull().default(""),
-	bio: text("bio"),
-	interests: text("interests").array().notNull().default([]),
-	wallet: text("wallet"),
-	twitter: text("twitter"),
-	discord: text("discord"),
-	fid: integer("fid"),
-	canRecieveEmails: boolean("can_recieve_emails").notNull().default(false),
-});
+export const nexus = pgTable(
+	"nexus",
+	{
+		id: text("id").primaryKey(),
+		username: text("username").unique(),
+		admin: boolean("admin").notNull().default(false),
+		rank: integer("rank"),
+		xp: integer("xp").notNull().default(0),
+		image: text("image").notNull().default(""),
+		name: text("name").notNull().default(""),
+		bio: text("bio"),
+		interests: text("interests").array().notNull().default([]),
+		// wallets: jsonb("wallets")
+		// 	.$type<{
+		// 		address: string;
+		// 		type: string;
+		// 	}>()
+		// 	.array()
+		// 	.notNull()
+		// 	.default([]),
+		twitter: text("twitter"),
+		discord: text("discord"),
+		fid: integer("fid"),
+		gold: integer("gold").notNull().default(0),
+		canRecieveEmails: boolean("can_recieve_emails").notNull().default(false),
+	},
+	(table) => [check("gold_balance", sql`${table.gold} >= 0`)],
+);
 
 export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	votes: many(votes),
@@ -415,20 +418,33 @@ export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	}),
 	creations: many(creations),
 	notifications: many(notifications),
-	// posts: many(posts),
-	// reactions: many(reactions),
+	// orders: many(orders),
+	carts: many(carts),
 }));
 
-export const seasons = pgTable("seasons", {
+export const gold = pgTable("gold", {
 	id: serial("id").primaryKey(),
-	start: timestamp("start", { mode: "date" }).notNull(),
-	end: timestamp("end", { mode: "date" }).notNull(),
+	from: text("from"),
+	to: text("to"),
+	amount: integer("amount").notNull(),
+	timestamp: timestamp("timestamp", { mode: "date" }).notNull(),
+	ranking: integer("ranking"),
+	order: text("order"), // shopify DraftOrder gid
 });
 
-export const seasonRelations = relations(seasons, ({ many }) => ({
-	ranks: many(ranks),
-	rankings: many(rankings),
-	xp: many(xp),
+export const goldRelations = relations(gold, ({ one }) => ({
+	from: one(nexus, {
+		fields: [gold.from],
+		references: [nexus.id],
+	}),
+	to: one(nexus, {
+		fields: [gold.to],
+		references: [nexus.id],
+	}),
+	ranking: one(rankings, {
+		fields: [gold.ranking],
+		references: [rankings.id],
+	}),
 }));
 
 export const ranks = pgTable("ranks", {
@@ -438,15 +454,11 @@ export const ranks = pgTable("ranks", {
 	color: text("color").notNull().default(""),
 	place: smallint("place").notNull(),
 	percentile: numeric("percentile", { precision: 4, scale: 3 }).notNull(), // ex: 0.01 === 1%, 0.001 === 0.1%, 0.0001 === 0.01%
-	season: integer("season").notNull(),
 	votes: smallint("votes").notNull(),
+	active: boolean("active").notNull().default(true),
 });
 
 export const ranksRelations = relations(ranks, ({ one, many }) => ({
-	season: one(seasons, {
-		fields: [ranks.season],
-		references: [seasons.id],
-	}),
 	nexus: many(nexus),
 }));
 
@@ -488,22 +500,20 @@ export const xp = pgTable("xp", {
 	user: text("user").notNull(),
 	amount: integer("amount").notNull(),
 	timestamp: timestamp("timestamp", { mode: "date" }).notNull(),
-	season: integer("season").notNull(),
 	quest: text("quest"),
 	snapshot: integer("snapshot"),
 	achievement: text("achievement"),
 	station: integer("station"),
 	prediction: text("prediction"),
+	vote: integer("vote"),
+	proposal: integer("proposal"),
+	order: text("order"), // shopify Order gid
 });
 
 export const xpRelations = relations(xp, ({ one }) => ({
 	user: one(nexus, {
 		fields: [xp.user],
 		references: [nexus.id],
-	}),
-	season: one(seasons, {
-		fields: [xp.season],
-		references: [seasons.id],
 	}),
 	quest: one(quests, {
 		fields: [xp.quest],
@@ -521,16 +531,26 @@ export const xpRelations = relations(xp, ({ one }) => ({
 		fields: [xp.prediction],
 		references: [predictions.id],
 	}),
+	vote: one(votes, {
+		fields: [xp.vote],
+		references: [votes.id],
+	}),
+	proposal: one(proposals, {
+		fields: [xp.proposal],
+		references: [proposals.id],
+	}),
+	// order: one(orders, {
+	// 	fields: [xp.order],
+	// 	references: [orders.id],
+	// }),
 }));
 
 export const rankings = pgTable("rankings", {
 	id: serial("id").primaryKey(),
 	user: text("user").notNull(),
-	season: integer("season").notNull(),
 	rank: integer("rank").notNull(),
-	xp: integer("xp").notNull(),
-	diff: integer("diff").notNull(),
-	position: integer("position").notNull(),
+	gold: integer("gold"),
+	score: integer("score").notNull(),
 	timestamp: timestamp("timestamp", { mode: "date" }).notNull(),
 });
 
@@ -539,13 +559,13 @@ export const rankingsRelations = relations(rankings, ({ one, many }) => ({
 		fields: [rankings.user],
 		references: [nexus.id],
 	}),
-	season: one(seasons, {
-		fields: [rankings.season],
-		references: [seasons.id],
-	}),
 	rank: one(ranks, {
 		fields: [rankings.rank],
 		references: [ranks.id],
+	}),
+	gold: one(gold, {
+		fields: [rankings.gold],
+		references: [gold.id],
 	}),
 }));
 
@@ -558,7 +578,7 @@ export const votes = pgTable("votes", {
 	timestamp: timestamp("timestamp", { mode: "date" }).notNull(),
 });
 
-export const votesRelations = relations(votes, ({ one }) => ({
+export const votesRelations = relations(votes, ({ one, many }) => ({
 	proposal: one(proposals, {
 		fields: [votes.proposal],
 		references: [proposals.id],
@@ -571,6 +591,7 @@ export const votesRelations = relations(votes, ({ one }) => ({
 		fields: [votes.user],
 		references: [nexus.id],
 	}),
+	xp: many(xp),
 }));
 
 export const creations = pgTable("creations", {
@@ -604,146 +625,119 @@ export const creationsRelations = relations(creations, ({ one }) => ({
 	}),
 }));
 
-// export const posts = pgTable("posts", {
+export const products = pgTable("products", {
+	id: text("id").primaryKey(),
+	shopifyId: text("shopify_id").notNull(),
+	name: text("name").notNull(),
+	description: text("description").notNull(),
+	images: text("images").array().notNull().default([]),
+	variants: jsonb("variants")
+		.array()
+		.$type<
+			Array<{
+				shopifyId: string;
+				size?: "s" | "m" | "l" | "xl" | "2xl";
+				price: number;
+				inventory: number;
+			}>
+		>()
+		.notNull()
+		.default([]),
+	collection: text("collection"),
+});
+
+export const productsRelations = relations(products, ({ one, many }) => ({
+	collection: one(collections, {
+		fields: [products.collection],
+		references: [collections.id],
+	}),
+}));
+
+export const collections = pgTable("collections", {
+	id: text("id").primaryKey(),
+	name: text("name").notNull(),
+	image: text("image").notNull(),
+	featured: boolean("featured").notNull().default(false),
+});
+
+export const collectionsRelations = relations(collections, ({ many }) => ({
+	products: many(products),
+}));
+
+export const carts = pgTable("carts", {
+	id: serial("id").primaryKey(),
+	user: text("user").notNull(),
+	product: text("product").notNull(),
+	variant: text("variant").notNull(),
+	quantity: integer("quantity").notNull(),
+});
+
+export const cartsRelations = relations(carts, ({ one }) => ({
+	user: one(nexus, {
+		fields: [carts.user],
+		references: [nexus.id],
+	}),
+	product: one(products, {
+		fields: [carts.product],
+		references: [products.id],
+	}),
+}));
+
+// export const orders = pgTable("orders", {
 // 	id: serial("id").primaryKey(),
-// 	hash: text("hash").unique(),
-// 	author: text("author").notNull(),
-// 	createdAt: timestamp("created_at", { mode: "date" }).notNull(),
-// 	channel: text("channel"),
-// 	parent: integer("parent"),
-// 	thread: integer("thread"),
-// 	upvotes: integer("upvotes").notNull().default(0),
-// 	reposts: integer("reposts").notNull().default(0),
-// 	comments: integer("comments").notNull().default(0),
-// });
-
-// export const postsRelations = relations(posts, ({ one, many }) => ({
-// 	// author: one(nexus, {
-// 	// 	fields: [posts.author],
-// 	// 	references: [nexus.fid],
-// 	// 	relationName: "author",
-// 	// }),
-// 	// nexusAuthor: one(nexus, {
-// 	// 	fields: [posts.author],
-// 	// 	references: [nexus.id],
-// 	// 	relationName: "nexusAuthor",
-// 	// }),
-// 	reactions: many(reactions),
-// 	parent: one(posts, {
-// 		fields: [posts.parent],
-// 		references: [posts.id],
-// 	}),
-// 	community: one(communities, {
-// 		fields: [posts.channel],
-// 		references: [communities.channel],
-// 	}),
-// 	thread: one(posts, {
-// 		fields: [posts.thread],
-// 		references: [posts.id],
-// 		relationName: "threadToChildren",
-// 	}),
-// 	children: many(posts, {
-// 		relationName: "threadToChildren",
-// 	}),
-// }));
-
-// export const reactions = pgTable(
-// 	"reactions",
-// 	{
-// 		id: serial("id").primaryKey(),
-// 		post: integer("post").notNull(),
-// 		user: text("user").notNull(),
-// 		type: text("type", { enum: ["like", "recast"] }).notNull(),
-// 		timestamp: timestamp("timestamp", { mode: "date" }).notNull(),
-// 	},
-// 	(table) => ({
-// 		uniqueReaction: unique().on(table.post, table.user, table.type),
-// 	}),
-// );
-
-// export const reactionsRelations = relations(reactions, ({ one }) => ({
-// 	post: one(posts, {
-// 		fields: [reactions.post],
-// 		references: [posts.id],
-// 	}),
-// 	user: one(nexus, {
-// 		fields: [reactions.user],
-// 		references: [nexus.fid],
-// 		relationName: "user",
-// 	}),
-// 	nexusUser: one(nexus, {
-// 		fields: [reactions.user],
-// 		references: [nexus.id],
-// 		relationName: "nexusUser",
-// 	}),
-// }));
-
-// export const mentions = pgTable("mentions", {
-// 	id: serial("id").primaryKey(),
-// 	position: smallint("position").notNull(),
-// 	post: integer("post"),
-// 	user: text("user"),
-// 	username: text("username"),
-// });
-
-// export const mentionsRelations = relations(mentions, ({ one }) => ({
-// 	post: one(posts, {
-// 		fields: [mentions.post],
-// 		references: [posts.id],
-// 	}),
-// 	user: one(nexus, {
-// 		fields: [mentions.user],
-// 		references: [nexus.fid],
-// 		relationName: "user",
-// 	}),
-// 	nexusUser: one(nexus, {
-// 		fields: [mentions.user],
-// 		references: [nexus.id],
-// 		relationName: "nexusUser",
-// 	}),
-// }));
-
-// export const embeds = pgTable("embeds", {
-// 	id: serial("id").primaryKey(),
-// 	post: integer("post"),
-// 	url: text("url"),
-// });
-
-// export const embedsRelations = relations(embeds, ({ one }) => ({
-// 	post: one(posts, {
-// 		fields: [embeds.post],
-// 		references: [posts.id],
-// 	}),
-// 	cache: one(links, {
-// 		fields: [embeds.url],
-// 		references: [links.url],
-// 	}),
-// }));
-
-// export const products = pgTable("products", {
-// 	id: text("id").primaryKey(),
+// 	draft: boolean("draft").notNull().default(true),
 // 	shopifyId: text("shopify_id").notNull(),
-// 	name: text("name").notNull(),
-// 	image: text("image").notNull(),
-// 	price: numeric("price", { precision: 78 }).notNull(),
-// 	collection: text("collection"),
+// 	customer: text("customer").notNull(),
+// 	createdAt: timestamp("created_at", { mode: "date" }).notNull(),
+// 	items: jsonb("items")
+// 		.array()
+// 		.$type<
+// 			Array<{
+// 				shopifyId: string;
+// 				quantity: number;
+// 				price: number;
+// 			}>
+// 		>()
+// 		.notNull()
+// 		.default([]),
 // });
 
-// export const productsRelations = relations(products, ({ one }) => ({
-// 	collection: one(collections, {
-// 		fields: [products.collection],
-// 		references: [collections.id],
+// export const ordersRelations = relations(orders, ({ one }) => ({
+// 	customer: one(nexus, {
+// 		fields: [orders.customer],
+// 		references: [nexus.id],
+// 	}),
+// 	xp: one(xp, {
+// 		fields: [orders.id],
+// 		references: [xp.order],
+// 	}),
+// 	gold: one(gold, {
+// 		fields: [orders.id],
+// 		references: [gold.order],
 // 	}),
 // }));
 
-// export const collections = pgTable("collections", {
-// 	id: text("id").primaryKey(),
-// 	name: text("name").notNull(),
-// 	image: text("image").notNull(),
+// Ranks should be soulbound ERC1155 tokens managed by us where the art shows their dynamic ranking image (maybe like a badge that shows stats also)
+// export const delegates = pgTable("delegates", {
+// 	id: serial("id").primaryKey(),
+// 	from: text("from").notNull(),
+// 	to: text("to").notNull(),
+// 	round: text("round"),
 // });
 
-// export const collectionsRelations = relations(collections, ({ many }) => ({
-// 	products: many(products),
+// export const delegatesRelations = relations(delegates, ({ one }) => ({
+// 	from: one(nexus, {
+// 		fields: [delegates.from],
+// 		references: [nexus.id],
+// 	}),
+// 	to: one(nexus, {
+// 		fields: [delegates.to],
+// 		references: [nexus.id],
+// 	}),
+// 	round: one(rounds, {
+// 		fields: [delegates.round],
+// 		references: [rounds.id],
+// 	}),
 // }));
 
 const schema = {
@@ -768,8 +762,6 @@ const schema = {
 	eventsRelations,
 	creations,
 	creationsRelations,
-	seasons,
-	seasonRelations,
 	ranks,
 	ranksRelations,
 	quests,
@@ -794,14 +786,16 @@ const schema = {
 	bets,
 	betsRelations,
 	articles,
-	// posts,
-	// postsRelations,
-	// reactions,
-	// reactionsRelations,
-	// mentions,
-	// mentionsRelations,
-	// embeds,
-	// embedsRelations,
+	gold,
+	goldRelations,
+	products,
+	productsRelations,
+	collections,
+	collectionsRelations,
+	carts,
+	cartsRelations,
+	// orders,
+	// ordersRelations,
 };
 
 export const db = drizzle(
@@ -836,3 +830,4 @@ export type Station = typeof stations.$inferSelect;
 export type Link = typeof links.$inferSelect;
 export type Attendee = typeof attendees.$inferSelect;
 export type Article = typeof articles.$inferSelect;
+export type Gold = typeof gold.$inferSelect;

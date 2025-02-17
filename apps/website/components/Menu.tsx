@@ -67,7 +67,7 @@ export default function Menu() {
 					onClick={() => toggleMenu(true)}
 					src="/menu.svg"
 					alt=""
-					className="w-6 h-6 hidden max-md:flex relative z-[60]"
+					className="w-6 h-6 hidden max-[900px]:flex relative z-[60]"
 				/>
 			)}
 			<div

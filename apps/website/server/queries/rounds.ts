@@ -32,7 +32,6 @@ export const getRoundWithProposal = cache(
 
 export const getRound = cache(
 	async (input: { id: string }) => {
-		/////////////
 		return db.query.rounds.findFirst({
 			where: eq(rounds.id, input.id),
 			with: {
@@ -45,7 +44,6 @@ export const getRound = cache(
 				community: true,
 				proposals: {
 					where: eq(proposals.hidden, false),
-					orderBy: [desc(proposals.totalVotes), asc(proposals.createdAt)],
 					with: {
 						user: {
 							with: {
@@ -53,7 +51,15 @@ export const getRound = cache(
 							},
 						},
 					},
+					extras: {
+						totalVotes: sql<number>`(
+							SELECT SUM(v.count) AS total_votes
+							FROM ${votes} v 
+							WHERE v.proposal = ${proposals.id}
+						)`.as("totalVotes"),
+					},
 				},
+
 				votes: {
 					with: {
 						user: {
@@ -78,8 +84,21 @@ export const getRound = cache(
 				minProposerRank: true,
 				minVoterRank: true,
 			},
+			extras: {
+				uniqueVoters: sql<number>`(
+					SELECT COUNT(DISTINCT v.user)
+					FROM ${votes} v
+					WHERE v.round = ${input.id})
+				`.as("uniqueVoters"),
+				uniqueProposers: sql<number>`(
+					SELECT COUNT(DISTINCT v.user)
+					FROM ${proposals} v
+					WHERE v.round = ${input.id})
+				`.as("uniqueProposers"),
+			},
 		});
 	},
+
 	["rounds"],
 	{ tags: ["rounds"], revalidate: 60 * 10 },
 );
@@ -116,23 +135,23 @@ export const getRounds = cache(
 	{ tags: ["rounds"], revalidate: 60 * 10 },
 );
 
-export const getComments = cache(
-	async (input: { round: string }) => {
-		const [roundCasts, voteCasts] = await Promise.all([
-			neynarClient.fetchFeed("filter", {
-				filterType: "embed_url",
-				embedUrl: `${env.NEXT_PUBLIC_DOMAIN}/rounds/${input.round}`,
-			}),
-			neynarClient.fetchFeed("filter", {
-				filterType: "embed_url",
-				embedUrl: `${env.NEXT_PUBLIC_DOMAIN}/api/frames/rounds/${input.round}`,
-			}),
-		]);
+// export const getComments = cache(
+// 	async (input: { round: string }) => {
+// 		const [roundCasts, voteCasts] = await Promise.all([
+// 			neynarClient.fetchFeed("filter", {
+// 				filterType: "embed_url",
+// 				embedUrl: `${env.NEXT_PUBLIC_DOMAIN}/rounds/${input.round}`,
+// 			}),
+// 			neynarClient.fetchFeed("filter", {
+// 				filterType: "embed_url",
+// 				embedUrl: `${env.NEXT_PUBLIC_DOMAIN}/api/frames/rounds/${input.round}`,
+// 			}),
+// 		]);
 
-		return [...roundCasts.casts, ...voteCasts.casts].filter(
-			(cast) => cast.text.length > 0,
-		);
-	},
-	["comments"],
-	{ tags: ["comments"], revalidate: 60 * 10 },
-);
+// 		return [...roundCasts.casts, ...voteCasts.casts].filter(
+// 			(cast) => cast.text.length > 0,
+// 		);
+// 	},
+// 	["comments"],
+// 	{ tags: ["comments"], revalidate: 60 * 10 },
+// );

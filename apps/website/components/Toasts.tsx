@@ -3,22 +3,28 @@
 import { toast as hotToast } from "react-hot-toast";
 import { Level } from "./Level";
 import { Check, Sparkles, X } from "lucide-react";
+import { twMerge } from "tailwind-merge";
 
 export const toast = {
 	custom: (props: {
 		image: string;
 		title: string;
 		description: string;
+		objectFit?: "cover" | "contain";
 	}) =>
 		hotToast.custom((t: any) => (
 			<div className="flex w-80 animate-in fade-in-50 slide-in-from-top-4 items-center gap-3 border border-grey-600 rounded-xl p-2 pr-3 bg-grey-800">
 				<img
 					alt={`${props.title}. ${props.description}`}
-					src={props.image}
-					className="w-12 h-12 rounded-lg object-cover"
+					src={`${props.image}?img-width=50&img-onerror=redirect`}
+					className={twMerge(
+						"w-12 h-12 rounded-lg",
+						props.objectFit === "contain" ? "object-contain" : "object-cover",
+					)}
 				/>
 				<div className="flex flex-col">
 					<h2 className="text-white line-clamp-1">{props.title}</h2>
+
 					<p className="text-grey-200 text-sm line-clamp-1">
 						{props.description}
 					</p>

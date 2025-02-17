@@ -1,4 +1,4 @@
-import { db, seasons, xp } from "~/packages/db/schema";
+import { db, xp } from "~/packages/db/schema";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import { redirect } from "next/navigation";
 import { and, desc, eq, gte, lte } from "drizzle-orm";
@@ -12,21 +12,13 @@ export default async function Station(props: {
 
 	const now = new Date();
 
-	const [user, station, currentSeason] = await Promise.all([
+	const [user, station] = await Promise.all([
 		getAuthenticatedUser(),
 		getStation({ id: Number(params.station) }),
-		db.query.seasons.findFirst({
-			where: and(lte(seasons.start, now), gte(seasons.end, now)),
-			orderBy: desc(seasons.start),
-		}),
 	]);
 
 	if (!station?.event) {
 		redirect("/events");
-	}
-
-	if (!currentSeason) {
-		redirect(`/events/${params.event}/stations`);
 	}
 
 	if (!user) {
@@ -48,7 +40,6 @@ export default async function Station(props: {
 		.values({
 			user: user.id,
 			timestamp: now,
-			season: currentSeason.id,
 			station: Number(params.station),
 			amount: station.xp,
 		})

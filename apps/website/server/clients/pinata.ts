@@ -1,6 +1,7 @@
 import { env } from "~/env";
-import pinataSDK from "@pinata/sdk";
+import { PinataSDK } from "pinata-web3";
 
-export const pinataClient = new pinataSDK({
-  pinataJWTKey: env.PINATA_JWT,
+export const pinataClient = new PinataSDK({
+	pinataJwt: env.PINATA_JWT,
+	pinataGateway: "ipfs.nouns.gg",
 });

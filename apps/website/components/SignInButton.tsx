@@ -12,18 +12,19 @@ export default function SignInButton(props: { user?: AuthenticatedUser }) {
 
 	return (
 		<>
-			{/* <div className="flex items-center gap-2 bg-white/90 rounded-full"> */}
 			<button
 				onClick={() => {
-					if (props.user?.nexus) {
-						return router.push("/nexus");
+					if (props.user) {
+						return router.push(
+							`/users/${props.user.farcaster?.username ?? props.user.id}`,
+						);
 					}
 
 					open();
 				}}
 				className={twMerge(
 					"flex items-center gap-2 select-none text-grey-800 text-xl bg-white hover:bg-white/80 transition-colors rounded-full justify-center leading-none font-bebas-neue whitespace-nowrap",
-					props.user?.nexus?.image ? "py-1.5 pl-1.5 pr-3.5" : "py-2.5 px-4",
+					props.user?.nexus?.image ? "py-1.5 pl-1.5 pr-3" : "py-2.5 px-4",
 				)}
 			>
 				{props.user?.nexus ? (
@@ -35,20 +36,20 @@ export default function SignInButton(props: { user?: AuthenticatedUser }) {
 							draggable={false}
 						/>
 						{props.user.nexus.name}
+						{props.user.nexus.rank ? (
+							<img
+								src={props.user.nexus.rank.image}
+								alt={props.user.nexus.rank.name}
+								className="w-5 h-5 object-contain max-[425px]:hidden"
+							/>
+						) : (
+							""
+						)}
 					</>
 				) : (
 					"Sign in"
 				)}
 			</button>
-			{/* <div className="text-gold-800 font-bold flex items-center gap-1 pr-4">
-					<img
-						alt="Gold coin"
-						src="https://ipfs.nouns.gg/ipfs/QmWnuBw39Vc77gcBXEdxQLRUiWaM7pN9Bqk7cqZ8MiUB5w"
-						className="rounded-full h-5 w-5 shadow-xl"
-					/>
-					100
-				</div></div> */}
-
 			{!props.user?.nexus ? <SignInModal user={props.user} /> : null}
 		</>
 	);

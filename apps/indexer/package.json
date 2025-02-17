@@ -1,0 +1,9 @@
+{
+  "name": "indexer",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "bun --env-file=../../.env.development index.ts",
+    "start": "bun --env-file=../../.env.production index.ts"
+  }
+}
