@@ -1,4 +1,4 @@
-import { db, nexus, xp, seasons, snapshots } from "~/packages/db/schema";
+import { db, nexus, xp, snapshots } from "~/packages/db/schema";
 import { and, gte, lte, desc, eq, inArray, or } from "drizzle-orm";
 import { agent } from "..";
 import { isToday } from "date-fns";
@@ -52,24 +52,14 @@ agent.addTool({
 			throw new Error("Nobody is in the contributor voice channel right now");
 		}
 
-		const [users, currentSeason] = await Promise.all([
-			db.query.nexus.findMany({
-				where: inArray(nexus.discord, members),
-			}),
-			db.query.seasons.findFirst({
-				where: and(lte(seasons.start, now), gte(seasons.end, now)),
-				orderBy: desc(seasons.start),
-			}),
-		]);
+		const users = await db.query.nexus.findMany({
+			where: inArray(nexus.discord, members),
+		});
 
 		if (users.length === 0) {
 			throw new Error(
 				"I couldn't find any nouns.gg accounts associated with anyone in the contributor voice channel",
 			);
-		}
-
-		if (!currentSeason) {
-			throw new Error("There is not an ongoing season");
 		}
 
 		await db.transaction(async (tx) => {
@@ -90,7 +80,6 @@ agent.addTool({
 					amount,
 					timestamp: now,
 					snapshot: snapshot.id,
-					season: currentSeason.id,
 				});
 
 				await tx
