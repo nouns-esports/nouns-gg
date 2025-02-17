@@ -69,9 +69,7 @@ export async function checkCart(input: { user: string }) {
 		}`,
 			{
 				variables: {
-					variantIds: variants.map(
-						(id) => `gid://shopify/ProductVariant/${id}`,
-					),
+					variantIds: variants,
 				},
 			},
 		);
@@ -85,16 +83,14 @@ export async function checkCart(input: { user: string }) {
 
 		await db.transaction(async (tx) => {
 			for (const variant of refreshedVariants) {
-				const variantId = Number(variant.id.split("Product/")[1]);
-
 				const product = cart.find(
-					(item) => item.variant === variantId,
+					(item) => item.variant === variant.id,
 				)?.product;
 
 				if (!product) continue;
 
 				const existingVariant = product.variants.find(
-					(v) => v.shopifyId === variantId,
+					(v) => v.shopifyId === variant.id,
 				);
 
 				if (!existingVariant) continue;
@@ -106,7 +102,7 @@ export async function checkCart(input: { user: string }) {
 					.update(products)
 					.set({
 						variants: product.variants.map((v) => {
-							if (v.shopifyId === variantId) {
+							if (v.shopifyId === variant.id) {
 								return {
 									...v,
 									inventory: variant.inventoryQuantity,
@@ -122,9 +118,7 @@ export async function checkCart(input: { user: string }) {
 		});
 
 		for (const variant of refreshedVariants) {
-			const item = cart.find(
-				(item) => item.variant === Number(variant.id.split("Product/")[1]),
-			);
+			const item = cart.find((item) => item.variant === variant.id);
 
 			if (!item) continue;
 
@@ -140,7 +134,7 @@ export async function checkCart(input: { user: string }) {
 }
 
 export async function estimateOrderCost(input: {
-	items: Array<{ variant: number; quantity: number }>;
+	items: Array<{ variant: string; quantity: number }>;
 	shipping: {
 		address1: string;
 		address2?: string;
@@ -178,9 +172,8 @@ export async function estimateOrderCost(input: {
 						countryCode: input.shipping.country,
 						zip: input.shipping.zip,
 					},
-
 					lineItems: input.items.map((item) => ({
-						variantId: `gid://shopify/ProductVariant/${item.variant}`,
+						variantId: item.variant,
 						quantity: item.quantity,
 					})),
 				},
@@ -191,12 +184,12 @@ export async function estimateOrderCost(input: {
 	if (response.data?.draftOrderCalculate?.calculatedDraftOrder) {
 		return {
 			tax: Number(
-				response.data?.draftOrderCalculate?.calculatedDraftOrder.totalTaxSet
-					.presentmentMoney.amount,
+				response.data?.draftOrderCalculate?.calculatedDraftOrder?.totalTaxSet
+					?.presentmentMoney?.amount ?? 0,
 			),
 			shipping: Number(
 				response.data?.draftOrderCalculate?.calculatedDraftOrder
-					.availableShippingRates?.[0].price.amount,
+					?.availableShippingRates?.[0]?.price?.amount ?? 0,
 			),
 		};
 	}

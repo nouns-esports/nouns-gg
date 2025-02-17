@@ -86,7 +86,6 @@ export const castVotes = onlyRanked
 				// Insert the vote
 				const returnedVote = await tx
 					.insert(votes)
-
 					.values({
 						user: ctx.user.id,
 						proposal: vote.proposal,
@@ -96,12 +95,10 @@ export const castVotes = onlyRanked
 					})
 					.returning({ id: votes.id });
 
-				const earnedXP = 5 * vote.count;
-
-				// Award 5 xp per vote to the proposer
+				// Award 10 xp per vote to the voter
 				await tx.insert(xp).values({
-					user: proposal.user,
-					amount: earnedXP,
+					user: ctx.user.id,
+					amount: 10 * vote.count,
 					timestamp: now,
 					vote: returnedVote[0].id,
 				});
@@ -109,7 +106,22 @@ export const castVotes = onlyRanked
 				await tx
 					.update(nexus)
 					.set({
-						xp: sql`${nexus.xp} + ${earnedXP}`,
+						xp: sql`${nexus.xp} + ${10 * vote.count}`,
+					})
+					.where(eq(nexus.id, ctx.user.id));
+
+				// Award 5 xp per vote to the proposer
+				await tx.insert(xp).values({
+					user: proposal.user,
+					amount: 5 * vote.count,
+					timestamp: now,
+					vote: returnedVote[0].id,
+				});
+
+				await tx
+					.update(nexus)
+					.set({
+						xp: sql`${nexus.xp} + ${5 * vote.count}`,
 					})
 					.where(eq(nexus.id, proposal.user));
 			}

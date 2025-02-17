@@ -65,7 +65,7 @@ export default function CartModal(props: {
 				</button>
 			</div>
 			{props.cart.length > 0 ? (
-				<div className="flex flex-col gap-4 max-h-80 max-w-96 overflow-y-auto custom-scrollbar">
+				<div className="flex flex-col gap-4 max-h-80 max-w-96 overflow-y-auto custom-scrollbar bg-grey-800 rounded-lg p-2">
 					{props.cart
 						.toSorted((a, b) => a.product.name.localeCompare(b.product.name))
 						.map((item) => {

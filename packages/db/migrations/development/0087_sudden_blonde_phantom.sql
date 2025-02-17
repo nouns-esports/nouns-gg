@@ -1,0 +1,1 @@
+ALTER TABLE "xp" ADD COLUMN "proposal" integer;

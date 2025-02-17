@@ -1,3 +1,21 @@
+import { eq } from "drizzle-orm";
+import { db, products } from "./schema";
+
+const allProducts = await db.query.products.findMany();
+
+for (const product of allProducts) {
+	await db
+		.update(products)
+		.set({
+			shopifyId: `gid://shopify/Product/${product.shopifyId}`,
+			variants: product.variants.map((variant) => ({
+				...variant,
+				shopifyId: `gid://shopify/ProductVariant/${variant.shopifyId}`,
+			})),
+		})
+		.where(eq(products.id, product.id));
+}
+
 // await db.insert(products).values([
 // 	{
 // 		id: "cloud-hoodie-vintage-black",

@@ -13,7 +13,7 @@ export default async function CheckoutPage() {
 
 	return (
 		<>
-			<div className="flex justify-center gap-4 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
+			<div className="flex max-lg:flex-col-reverse max-lg:items-center justify-center gap-4 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
 				<Checkout
 					user={user}
 					countries={Country.getAllCountries().map((country) => ({

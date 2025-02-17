@@ -17,6 +17,9 @@ import {
 import { useQuery } from "@tanstack/react-query";
 import { estimateOrderCost } from "@/server/queries/shop";
 import { useDebounce } from "@uidotdev/usehooks";
+import { useAction } from "next-safe-action/hooks";
+import { createDraftOrder } from "@/server/mutations/createDraftOrder";
+import { useRouter } from "next/navigation";
 
 export default function Checkout(props: {
 	user: AuthenticatedUser;
@@ -45,7 +48,7 @@ export default function Checkout(props: {
 
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
-	const [address, setAddress] = useState("");
+	const [address1, setAddress1] = useState("");
 	const [address2, setAddress2] = useState("");
 	const [city, setCity] = useState("");
 	const [province, setProvince] = useState("");
@@ -60,13 +63,13 @@ export default function Checkout(props: {
 	const validShippingAddress = useMemo(() => {
 		return (
 			lastName.length > 0 &&
-			address.length > 0 &&
+			address1.length > 0 &&
 			country.length > 0 &&
 			province.length > 0 &&
 			city.length > 0 &&
 			(!requiresPostalCode.includes(country) || zip.length > 0)
 		);
-	}, [lastName, address, city, province, zip, country]);
+	}, [lastName, address1, city, province, zip, country]);
 
 	const shouldSimulateOrder = useDebounce(
 		{
@@ -74,7 +77,7 @@ export default function Checkout(props: {
 			nexusExists: !!props.user.nexus,
 			cartLength: props.user.nexus?.carts.length ?? 0,
 			lastName,
-			address,
+			address1,
 			city,
 			province,
 			country,
@@ -100,14 +103,16 @@ export default function Checkout(props: {
 					quantity: cart.quantity,
 				})),
 				shipping: {
-					address1: address,
-					address2: address2,
-					city: city,
-					province: province,
-					country: country,
-					zip: zip,
+					address1,
+					address2,
+					city,
+					province,
+					country,
+					zip,
 				},
 			});
+
+			console.log(result);
 
 			return result;
 		},
@@ -120,21 +125,18 @@ export default function Checkout(props: {
 	}, [subtotal, simulatedOrder]);
 
 	const totalWithDiscount = useMemo(() => {
-		return (
-			subtotal +
-			(simulatedOrder?.tax ?? 0) +
-			(simulatedOrder?.shipping ?? 0) -
-			goldUsed / 100
-		);
+		return total - goldUsed / 100;
 	}, [subtotal, simulatedOrder, goldUsed]);
 
 	const canCheckout = useMemo(() => {
 		return props.user.email?.address && validShippingAddress;
 	}, [props.user.email, validShippingAddress]);
 
+	const createDraftOrderAction = useAction(createDraftOrder);
+	const router = useRouter();
 	return (
 		<>
-			<div className="flex flex-col gap-8 bg-grey-800 rounded-xl p-4 h-min">
+			<div className="flex flex-col gap-8 bg-grey-800 rounded-xl p-4 h-min max-lg:w-full max-lg:max-w-lg">
 				<div className="flex flex-col gap-4 min-w-64">
 					<h1 className="text-white text-2xl font-bebas-neue leading-none">
 						Your Cart
@@ -150,7 +152,10 @@ export default function Checkout(props: {
 								if (!variant) return;
 
 								return (
-									<div key={item.product} className="flex items-center gap-4">
+									<div
+										key={item.product.id}
+										className="flex items-center gap-4"
+									>
 										<div className="flex items-center gap-2 bg-grey-600 rounded-lg p-2 w-16 h-16 aspect-square">
 											<img
 												src={`${item.product.images[0]}?img-height=100&img-onerror=redirect`}
@@ -197,7 +202,7 @@ export default function Checkout(props: {
 					</div>
 					<div className="flex justify-between items-center">
 						<p className="text-white text-xl font-bebas-neue leading-none">
-							Subtotal
+							Total
 						</p>
 
 						<div className="flex gap-2.5 items-center">
@@ -212,32 +217,54 @@ export default function Checkout(props: {
 						</div>
 					</div>
 					<button
-						disabled={!canCheckout || isLoading || !simulatedOrder}
+						disabled={
+							!canCheckout ||
+							isLoading ||
+							!simulatedOrder ||
+							createDraftOrderAction.isPending ||
+							!props.user.email?.address
+						}
 						onClick={async () => {
-							if (!canCheckout || isLoading || !simulatedOrder) return;
+							if (
+								!canCheckout ||
+								isLoading ||
+								!simulatedOrder ||
+								createDraftOrderAction.isPending ||
+								!props.user.email?.address
+							)
+								return;
 
-							// await createOrderAction.executeAsync({
-							// 	shipping: {
-							// 		firstName: "John",
-							// 		lastName: "Doe",
-							// 		address1: "123 Main St",
-							// 		address2: "Apt 1",
-							// 		city: "Anytown",
-							// 		province: "CA",
-							// 		country: "US",
-							// 		zip: "12345",
-							// 	},
-							// 	goldApplied: 0,
-							// });
+							const response = await createDraftOrderAction.executeAsync({
+								shipping: {
+									firstName,
+									lastName,
+									address1,
+									address2,
+									city,
+									province,
+									country,
+									zip,
+								},
+								email: props.user.email.address,
+								goldApplied: goldUsed,
+							});
+
+							if (response?.data) {
+								window.open(response.data, "_blank");
+								router.push("/shop");
+							}
 						}}
 						className={twMerge(
 							"flex justify-center items-center gap-2 w-full text-black bg-white hover:bg-white/70 font-semibold rounded-lg p-2.5 transition-colors",
-							!canCheckout || isLoading
+							!canCheckout ||
+								isLoading ||
+								createDraftOrderAction.isPending ||
+								!props.user.email?.address
 								? "opacity-50 cursor-not-allowed hover:bg-white"
 								: "",
 						)}
 					>
-						{isLoading ? (
+						{isLoading || createDraftOrderAction.isPending ? (
 							<img
 								alt="loading spinner"
 								src="/spinner.svg"
@@ -304,7 +331,7 @@ export default function Checkout(props: {
 						</p>
 					</div>
 					<div className="flex flex-col gap-4">
-						<div className="flex items-center gap-2">
+						<div className="flex max-sm:flex-col items-center gap-2">
 							<div className="flex flex-col gap-2 w-full">
 								<label htmlFor="firstName" className="text-white font-lg ">
 									First Name
@@ -332,7 +359,7 @@ export default function Checkout(props: {
 								/>
 							</div>
 						</div>
-						<div className="flex items-center gap-2">
+						<div className="flex max-sm:flex-col items-center gap-2">
 							<div className="flex flex-col gap-2 w-full">
 								<label htmlFor="address" className="text-white font-lg ">
 									Address
@@ -340,8 +367,8 @@ export default function Checkout(props: {
 								<input
 									name="address"
 									type="text"
-									value={address}
-									onChange={(e) => setAddress(e.target.value)}
+									value={address1}
+									onChange={(e) => setAddress1(e.target.value)}
 									placeholder="537 Paper Street"
 									className="bg-black/15 rounded-xl text-white placeholder-grey-400 py-2 px-3 outline-none border-grey-600 border-[1px]"
 								/>
@@ -509,7 +536,7 @@ export default function Checkout(props: {
 						</div>
 					</div>
 				</div>
-				{props.user.nexus?.gold ? (
+				{total > 0 && props.user.nexus?.gold ? (
 					<div className="w-full flex flex-col gap-4 bg-grey-800 rounded-xl p-4">
 						<div className="flex justify-between items-center">
 							<h1 className="text-white text-2xl font-bebas-neue leading-none">
@@ -517,8 +544,8 @@ export default function Checkout(props: {
 							</h1>
 							<p className="text-sm text-white">
 								{goldUsed} /{" "}
-								{props.user.nexus.gold >= total * 100
-									? total * 100
+								{props.user.nexus.gold >= subtotal * 100
+									? subtotal * 100
 									: props.user.nexus.gold}
 							</p>
 						</div>
@@ -530,8 +557,8 @@ export default function Checkout(props: {
 							onChange={(value) => setGoldUsed(value)}
 							min={0}
 							max={
-								props.user.nexus.gold >= total * 100
-									? total * 100
+								props.user.nexus.gold >= subtotal * 100
+									? subtotal * 100
 									: props.user.nexus.gold
 							}
 							renderTrack={(props, state) => (
@@ -554,14 +581,6 @@ export default function Checkout(props: {
 								/>
 							)}
 						/>
-						{/* <input
-						type="range"
-						onChange={(e) => setGoldUsed(Number(e.target.value))}
-						min={0}
-						max={props.user.nexus?.gold ?? 0}
-						value={goldUsed}
-						className="appearance-none bg-transparent [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:bg-black/25 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-[32px] [&::-webkit-slider-thumb]:w-[32px] [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[url('https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu')] [&::-webkit-slider-thumb]:bg-contain [&::-webkit-slider-thumb]:bg-no-repeat [&::-webkit-slider-thumb]:bg-center"
-					/> */}
 					</div>
 				) : null}
 			</div>

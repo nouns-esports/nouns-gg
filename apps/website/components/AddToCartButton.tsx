@@ -10,7 +10,7 @@ export default function AddToCartButton(props: {
 	image: string;
 	name: string;
 	product: string;
-	variant: number;
+	variant: string;
 	inventory: number;
 }) {
 	const addToCartAction = useAction(addToCart);

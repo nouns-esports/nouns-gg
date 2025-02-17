@@ -10,6 +10,11 @@ type ProductUpdated = {
 	}>;
 };
 
+// 10 xp per $ spent (not shipping)
+type OrderUpdated = {
+	admin_graphql_api_id: string;
+};
+
 export async function POST(request: Request) {
 	const updatedProducts: ProductUpdated[] = [];
 

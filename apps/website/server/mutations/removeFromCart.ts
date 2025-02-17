@@ -9,7 +9,7 @@ export const removeFromCart = onlyUser
 	.schema(
 		z.object({
 			product: z.string(),
-			variant: z.number(),
+			variant: z.string(),
 			quantity: z.number(),
 		}),
 	)

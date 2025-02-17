@@ -11,8 +11,9 @@ import {
 	jsonb,
 	unique,
 	bigint,
+	check,
 } from "drizzle-orm/pg-core";
-import { relations } from "drizzle-orm";
+import { relations, sql } from "drizzle-orm";
 import { Pool } from "pg";
 import { env } from "~/env";
 
@@ -373,32 +374,37 @@ export const proposalsRelations = relations(proposals, ({ one, many }) => ({
 		fields: [proposals.user],
 		references: [nexus.id],
 	}),
+	xp: many(xp),
 }));
 
-export const nexus = pgTable("nexus", {
-	id: text("id").primaryKey(),
-	username: text("username").unique(),
-	admin: boolean("admin").notNull().default(false),
-	rank: integer("rank"),
-	xp: integer("xp").notNull().default(0),
-	image: text("image").notNull().default(""),
-	name: text("name").notNull().default(""),
-	bio: text("bio"),
-	interests: text("interests").array().notNull().default([]),
-	// wallets: jsonb("wallets")
-	// 	.$type<{
-	// 		address: string;
-	// 		type: string;
-	// 	}>()
-	// 	.array()
-	// 	.notNull()
-	// 	.default([]),
-	twitter: text("twitter"),
-	discord: text("discord"),
-	fid: integer("fid"),
-	gold: integer("gold").notNull().default(0),
-	canRecieveEmails: boolean("can_recieve_emails").notNull().default(false),
-});
+export const nexus = pgTable(
+	"nexus",
+	{
+		id: text("id").primaryKey(),
+		username: text("username").unique(),
+		admin: boolean("admin").notNull().default(false),
+		rank: integer("rank"),
+		xp: integer("xp").notNull().default(0),
+		image: text("image").notNull().default(""),
+		name: text("name").notNull().default(""),
+		bio: text("bio"),
+		interests: text("interests").array().notNull().default([]),
+		// wallets: jsonb("wallets")
+		// 	.$type<{
+		// 		address: string;
+		// 		type: string;
+		// 	}>()
+		// 	.array()
+		// 	.notNull()
+		// 	.default([]),
+		twitter: text("twitter"),
+		discord: text("discord"),
+		fid: integer("fid"),
+		gold: integer("gold").notNull().default(0),
+		canRecieveEmails: boolean("can_recieve_emails").notNull().default(false),
+	},
+	(table) => [check("gold_balance", sql`${table.gold} >= 0`)],
+);
 
 export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	votes: many(votes),
@@ -411,7 +417,7 @@ export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	}),
 	creations: many(creations),
 	notifications: many(notifications),
-	orders: many(orders),
+	// orders: many(orders),
 	carts: many(carts),
 }));
 
@@ -422,7 +428,7 @@ export const gold = pgTable("gold", {
 	amount: integer("amount").notNull(),
 	timestamp: timestamp("timestamp", { mode: "date" }).notNull(),
 	ranking: integer("ranking"),
-	order: bigint("order", { mode: "number" }),
+	order: text("order"), // shopify DraftOrder gid
 });
 
 export const goldRelations = relations(gold, ({ one }) => ({
@@ -499,6 +505,8 @@ export const xp = pgTable("xp", {
 	station: integer("station"),
 	prediction: text("prediction"),
 	vote: integer("vote"),
+	proposal: integer("proposal"),
+	order: text("order"), // shopify Order gid
 });
 
 export const xpRelations = relations(xp, ({ one }) => ({
@@ -526,6 +534,14 @@ export const xpRelations = relations(xp, ({ one }) => ({
 		fields: [xp.vote],
 		references: [votes.id],
 	}),
+	proposal: one(proposals, {
+		fields: [xp.proposal],
+		references: [proposals.id],
+	}),
+	// order: one(orders, {
+	// 	fields: [xp.order],
+	// 	references: [orders.id],
+	// }),
 }));
 
 export const rankings = pgTable("rankings", {
@@ -561,7 +577,7 @@ export const votes = pgTable("votes", {
 	timestamp: timestamp("timestamp", { mode: "date" }).notNull(),
 });
 
-export const votesRelations = relations(votes, ({ one }) => ({
+export const votesRelations = relations(votes, ({ one, many }) => ({
 	proposal: one(proposals, {
 		fields: [votes.proposal],
 		references: [proposals.id],
@@ -574,6 +590,7 @@ export const votesRelations = relations(votes, ({ one }) => ({
 		fields: [votes.user],
 		references: [nexus.id],
 	}),
+	xp: many(xp),
 }));
 
 export const creations = pgTable("creations", {
@@ -609,7 +626,7 @@ export const creationsRelations = relations(creations, ({ one }) => ({
 
 export const products = pgTable("products", {
 	id: text("id").primaryKey(),
-	shopifyId: bigint("shopify_id", { mode: "number" }).notNull(),
+	shopifyId: text("shopify_id").notNull(),
 	name: text("name").notNull(),
 	description: text("description").notNull(),
 	images: text("images").array().notNull().default([]),
@@ -617,7 +634,7 @@ export const products = pgTable("products", {
 		.array()
 		.$type<
 			Array<{
-				shopifyId: number;
+				shopifyId: string;
 				size?: "s" | "m" | "l" | "xl" | "2xl";
 				price: number;
 				inventory: number;
@@ -650,7 +667,7 @@ export const carts = pgTable("carts", {
 	id: serial("id").primaryKey(),
 	user: text("user").notNull(),
 	product: text("product").notNull(),
-	variant: bigint("variant", { mode: "number" }).notNull(),
+	variant: text("variant").notNull(),
 	quantity: integer("quantity").notNull(),
 });
 
@@ -665,30 +682,39 @@ export const cartsRelations = relations(carts, ({ one }) => ({
 	}),
 }));
 
-export const orders = pgTable("orders", {
-	id: text("id").primaryKey(),
-	shopifyId: bigint("shopify_id", { mode: "number" }).notNull(),
-	customer: text("customer").notNull(),
-	createdAt: timestamp("created_at", { mode: "date" }).notNull(),
-	items: jsonb("items")
-		.array()
-		.$type<
-			Array<{
-				shopifyId: string;
-				quantity: number;
-				price: number;
-			}>
-		>()
-		.notNull()
-		.default([]),
-});
+// export const orders = pgTable("orders", {
+// 	id: serial("id").primaryKey(),
+// 	draft: boolean("draft").notNull().default(true),
+// 	shopifyId: text("shopify_id").notNull(),
+// 	customer: text("customer").notNull(),
+// 	createdAt: timestamp("created_at", { mode: "date" }).notNull(),
+// 	items: jsonb("items")
+// 		.array()
+// 		.$type<
+// 			Array<{
+// 				shopifyId: string;
+// 				quantity: number;
+// 				price: number;
+// 			}>
+// 		>()
+// 		.notNull()
+// 		.default([]),
+// });
 
-export const ordersRelations = relations(orders, ({ one }) => ({
-	customer: one(nexus, {
-		fields: [orders.customer],
-		references: [nexus.id],
-	}),
-}));
+// export const ordersRelations = relations(orders, ({ one }) => ({
+// 	customer: one(nexus, {
+// 		fields: [orders.customer],
+// 		references: [nexus.id],
+// 	}),
+// 	xp: one(xp, {
+// 		fields: [orders.id],
+// 		references: [xp.order],
+// 	}),
+// 	gold: one(gold, {
+// 		fields: [orders.id],
+// 		references: [gold.order],
+// 	}),
+// }));
 
 // Ranks should be soulbound ERC1155 tokens managed by us where the art shows their dynamic ranking image (maybe like a badge that shows stats also)
 // export const delegates = pgTable("delegates", {
@@ -767,8 +793,8 @@ const schema = {
 	collectionsRelations,
 	carts,
 	cartsRelations,
-	orders,
-	ordersRelations,
+	// orders,
+	// ordersRelations,
 };
 
 export const db = drizzle(

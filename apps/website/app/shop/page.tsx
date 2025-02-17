@@ -85,9 +85,11 @@ export default async function Shop(props: {
 					</div>
 
 					<div className="grid grid-cols-4 gap-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1">
-						{products.map((product) => (
-							<ProductCard key={product.id} product={product} />
-						))}
+						{products
+							.toSorted((a, b) => a.name.localeCompare(b.name))
+							.map((product) => (
+								<ProductCard key={product.id} product={product} />
+							))}
 					</div>
 				</div>
 			</div>

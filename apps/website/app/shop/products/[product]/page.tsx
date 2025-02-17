@@ -55,7 +55,6 @@ export default async function ProductPage(props: {
 									? variant.price
 									: variant.price.toFixed(2)}
 							</p>
-
 							<div className="w-0.5 h-5 bg-grey-500 rounded-full" />
 							<div className="flex items-center gap-1.5">
 								<img
