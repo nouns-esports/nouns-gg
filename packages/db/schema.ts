@@ -12,6 +12,7 @@ import {
 	unique,
 	bigint,
 	check,
+	index,
 } from "drizzle-orm/pg-core";
 import { relations, sql } from "drizzle-orm";
 import { Pool } from "pg";
@@ -545,14 +546,22 @@ export const xpRelations = relations(xp, ({ one }) => ({
 	// }),
 }));
 
-export const rankings = pgTable("rankings", {
-	id: serial("id").primaryKey(),
-	user: text("user").notNull(),
-	rank: integer("rank").notNull(),
-	gold: integer("gold"),
-	score: integer("score").notNull(),
-	timestamp: timestamp("timestamp", { mode: "date" }).notNull(),
-});
+export const rankings = pgTable(
+	"rankings",
+	{
+		id: serial("id").primaryKey(),
+		user: text("user").notNull(),
+		rank: integer("rank").notNull(),
+		gold: integer("gold"),
+		score: integer("score").notNull(),
+		timestamp: timestamp("timestamp", { mode: "date" }).notNull(),
+	},
+	(table) => [
+		index("rankings_timestamp_idx").on(table.timestamp),
+		index("rankings_user_idx").on(table.user),
+		index("rankings_score_idx").on(table.score),
+	],
+);
 
 export const rankingsRelations = relations(rankings, ({ one, many }) => ({
 	user: one(nexus, {

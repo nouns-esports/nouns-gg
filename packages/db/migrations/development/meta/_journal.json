@@ -624,6 +624,13 @@
       "when": 1739809827136,
       "tag": "0088_sour_lady_deathstrike",
       "breakpoints": true
+    },
+    {
+      "idx": 89,
+      "version": "7",
+      "when": 1739811616968,
+      "tag": "0089_melted_hercules",
+      "breakpoints": true
     }
   ]
 }
