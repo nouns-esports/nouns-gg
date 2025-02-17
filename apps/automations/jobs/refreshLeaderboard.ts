@@ -23,9 +23,9 @@ export const refreshLeaderboard = createJob({
 		const [currentLeaderboard, xpEarned, activeRanks] = await Promise.all([
 			// The most recent leaderboard
 			db.query.rankings.findMany({
-				where: and(
-					eq(rankings.timestamp, sql`(SELECT MAX(timestamp) FROM ${rankings})`),
-					gt(rankings.score, 0),
+				where: eq(
+					rankings.timestamp,
+					sql`(SELECT MAX(timestamp) FROM ${rankings})`,
 				),
 				orderBy: desc(rankings.score),
 				columns: {
@@ -92,11 +92,6 @@ export const refreshLeaderboard = createJob({
 
 		console.log("leaderboard", leaderboard);
 
-		// const potOfGold = 10_000; // $100
-		// const usersEligibleForGold = leaderboard.filter(
-		// 	(user) => user.score >= 100,
-		// ).length;
-
 		await db.transaction(async (tx) => {
 			// const eligibleForRank = leaderboard.filter((user) => user.score >= 100);
 			// const ineligibleForRank = leaderboard.filter((user) => user.score < 100);
@@ -139,24 +134,33 @@ export const refreshLeaderboard = createJob({
 					})
 					.where(eq(nexus.id, leaderboard[i].user));
 
-				// let goldRecord: number | undefined;
+				const eligibleForGold = 100;
+				const potOfGold = 10_000;
 
-				// if (eligibleForGold) {
-				// 	const earnedGold = await tx
-				// 		.insert(gold)
-				// 		.values({
-				// 			amount: 0,
-				// 			timestamp: now,
-				// 			to: leaderboard[i].user,
-				// 		})
-				// 		.returning({ id: gold.id });
+				let goldRecord: number | undefined;
 
-				// 	goldRecord = earnedGold[0].id;
-				// }
+				if (i < eligibleForGold) {
+					const goldEarned = generateEarning({
+						pot: potOfGold,
+						participants: eligibleForGold,
+						index: i,
+					});
+
+					goldRecord = (
+						await tx
+							.insert(gold)
+							.values({
+								amount: goldEarned.toString(),
+								timestamp: now,
+								to: leaderboard[i].user,
+							})
+							.returning({ id: gold.id })
+					)[0].id;
+				}
 
 				await tx.insert(rankings).values({
 					rank: rank.id,
-					// gold: goldRecord,
+					gold: goldRecord,
 					timestamp: now,
 					user: leaderboard[i].user,
 					score: Math.floor(leaderboard[i].score),
@@ -165,3 +169,22 @@ export const refreshLeaderboard = createJob({
 		});
 	},
 });
+
+function generateEarning(input: {
+	pot: number;
+	participants: number;
+	index: number;
+}): number {
+	const decay = 5 / input.participants;
+
+	// Calculate value at this index
+	const value = Math.exp(-decay * input.index);
+
+	// Calculate sum of all values to get total
+	let total = 0;
+	for (let i = 0; i < input.participants - 1; i++) {
+		total += Math.exp(-decay * i);
+	}
+
+	return Number((value * (input.pot / total)).toFixed(2));
+}

@@ -536,7 +536,7 @@ export default function Checkout(props: {
 						</div>
 					</div>
 				</div>
-				{total > 0 && props.user.nexus?.gold ? (
+				{total > 0 && props.user.nexus && Number(props.user.nexus.gold) > 0 ? (
 					<div className="w-full flex flex-col gap-4 bg-grey-800 rounded-xl p-4">
 						<div className="flex justify-between items-center">
 							<h1 className="text-white text-2xl font-bebas-neue leading-none">
@@ -544,9 +544,9 @@ export default function Checkout(props: {
 							</h1>
 							<p className="text-sm text-white">
 								{goldUsed} /{" "}
-								{props.user.nexus.gold >= subtotal * 100
+								{Number(props.user.nexus.gold) >= subtotal * 100
 									? subtotal * 100
-									: props.user.nexus.gold}
+									: Math.floor(Number(props.user.nexus.gold))}
 							</p>
 						</div>
 						<ReactSlider
@@ -557,9 +557,9 @@ export default function Checkout(props: {
 							onChange={(value) => setGoldUsed(value)}
 							min={0}
 							max={
-								props.user.nexus.gold >= subtotal * 100
+								Number(props.user.nexus.gold) >= subtotal * 100
 									? subtotal * 100
-									: props.user.nexus.gold
+									: Math.floor(Number(props.user.nexus.gold))
 							}
 							renderTrack={(props, state) => (
 								<div

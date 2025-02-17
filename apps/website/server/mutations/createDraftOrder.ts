@@ -128,7 +128,7 @@ export const createDraftOrder = onlyUser
 			if (parsedInput.goldApplied > 0) {
 				// Save a history of the gold transaction
 				await tx.insert(gold).values({
-					amount: parsedInput.goldApplied,
+					amount: parsedInput.goldApplied.toString(),
 					order: draftOrder.id,
 					from: ctx.user.id,
 					to: null,

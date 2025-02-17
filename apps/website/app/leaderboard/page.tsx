@@ -102,7 +102,7 @@ export default async function Leaderboard() {
 								position={userPosition.position}
 								user={userPosition.user}
 								rank={userPosition.rank}
-								gold={userPosition.gold?.amount ?? 0}
+								gold={Number(userPosition.gold?.amount) ?? 0}
 								diff={userPosition.previousPosition - userPosition.position}
 							/>
 						</div>
@@ -121,7 +121,7 @@ export default async function Leaderboard() {
 									position={position}
 									user={ranking.user}
 									rank={ranking.rank}
-									gold={ranking.gold?.amount ?? 0}
+									gold={Number(ranking.gold?.amount) ?? 0}
 									diff={ranking.previousPosition - position}
 								/>
 							);
