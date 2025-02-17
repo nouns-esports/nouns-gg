@@ -9,6 +9,7 @@ import { CaretDown } from "phosphor-react-sc";
 import { CaretUp } from "phosphor-react-sc";
 import Link from "../Link";
 import Shimmer from "../Shimmer";
+import { env } from "~/env";
 
 export default function ShareRankingModal(props: {
 	ranking: NonNullable<Awaited<ReturnType<typeof getLeaderboardPosition>>>;
@@ -41,9 +42,8 @@ export default function ShareRankingModal(props: {
 			</div>
 			<Link
 				newTab
-				href={`/api/images/rankings?user=${props.ranking.user.id}`}
 				// href={`/chat?post=true&embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/frames/rounds/${props.round}/votes/${user?.id}/`}
-				// href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/frames/rounds/${props.round}/votes/${user?.id}/`}
+				href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/images/rankings?user=${props.ranking.user.id}`}
 				className="flex gap-1 items-center group hover:opacity-80 transition-opacity text-red"
 			>
 				Share this image on Warpcast
