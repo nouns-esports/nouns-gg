@@ -28,14 +28,14 @@ export default function ShareVotesModal(props: { round: string }) {
 				<Shimmer className="absolute left-0 top-0 bg-grey-800" />
 				<img
 					alt={`${props.round} votes`}
-					src={`/api/images/votes?round=${props.round}&user=${user?.id}`}
+					src={`/api/images/votes.png?round=${props.round}&user=${user?.id}`}
 					className="relative z-10 rounded-xl"
 				/>
 			</div>
 			<Link
 				newTab
 				// href={`/chat?post=true&embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/frames/rounds/${props.round}/votes/${user?.id}/`}
-				href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?round=${props.round}&user=${user?.id}`}
+				href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/images/votes.png?round=${props.round}&user=${user?.id}`}
 				className="flex gap-1 items-center group hover:opacity-80 transition-opacity text-red"
 			>
 				Share this image on Warpcast
