@@ -21,13 +21,13 @@ export const linkWallet = createAction<{
 
 			if (actionInputs.type === "rainbow") {
 				return user.wallets.some(
-					(wallet) => wallet.wallet_client_type === "rainbow",
+					(wallet) => wallet.walletClientType === "rainbow",
 				);
 			}
 
 			if (actionInputs.type === "coinbase_wallet") {
 				return user.wallets.some(
-					(wallet) => wallet.wallet_client_type === "coinbase_wallet",
+					(wallet) => wallet.walletClientType === "coinbase_wallet",
 				);
 			}
 
