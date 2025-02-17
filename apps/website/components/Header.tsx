@@ -233,7 +233,7 @@ export default async function Header() {
 										<p className="font-semibold text-[#FEBD1C] select-none">
 											{user?.nexus?.gold
 												? Number(user.nexus.gold) >= 1000
-													? `${Math.floor(Number(user.nexus.gold) / 1000)}k`
+													? `${Math.floor(Number(user.nexus.gold)) / 1000}k`
 													: Number(user.nexus.gold) % 1 === 0
 														? Math.floor(Number(user.nexus.gold))
 														: Number(user.nexus.gold)
