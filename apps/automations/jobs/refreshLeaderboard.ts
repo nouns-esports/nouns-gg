@@ -23,9 +23,9 @@ export const refreshLeaderboard = createJob({
 		const [currentLeaderboard, xpEarned, activeRanks] = await Promise.all([
 			// The most recent leaderboard
 			db.query.rankings.findMany({
-				where: eq(
-					rankings.timestamp,
-					sql`(SELECT MAX(timestamp) FROM ${rankings})`,
+				where: and(
+					eq(rankings.timestamp, sql`(SELECT MAX(timestamp) FROM ${rankings})`),
+					gt(rankings.score, 0),
 				),
 				orderBy: desc(rankings.score),
 				columns: {
