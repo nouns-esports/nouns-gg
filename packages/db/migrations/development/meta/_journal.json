@@ -631,6 +631,20 @@
       "when": 1739811616968,
       "tag": "0089_melted_hercules",
       "breakpoints": true
+    },
+    {
+      "idx": 90,
+      "version": "7",
+      "when": 1739832613064,
+      "tag": "0090_fancy_blob",
+      "breakpoints": true
+    },
+    {
+      "idx": 91,
+      "version": "7",
+      "when": 1739832625911,
+      "tag": "0091_ambiguous_shadow_king",
+      "breakpoints": true
     }
   ]
 }

@@ -402,7 +402,7 @@ export const nexus = pgTable(
 		twitter: text("twitter"),
 		discord: text("discord"),
 		fid: integer("fid"),
-		gold: integer("gold").notNull().default(0),
+		gold: numeric("gold", { precision: 12, scale: 2 }).notNull().default("0"),
 		canRecieveEmails: boolean("can_recieve_emails").notNull().default(false),
 	},
 	(table) => [check("gold_balance", sql`${table.gold} >= 0`)],
@@ -427,7 +427,7 @@ export const gold = pgTable("gold", {
 	id: serial("id").primaryKey(),
 	from: text("from"),
 	to: text("to"),
-	amount: integer("amount").notNull(),
+	amount: numeric("amount", { precision: 12, scale: 2 }).notNull(),
 	timestamp: timestamp("timestamp", { mode: "date" }).notNull(),
 	ranking: integer("ranking"),
 	order: text("order"), // shopify DraftOrder gid
