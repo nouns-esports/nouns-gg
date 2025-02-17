@@ -13,6 +13,12 @@ import Text from "@tiptap/extension-text";
 import Paragraph from "@tiptap/extension-paragraph";
 import Image from "@tiptap/extension-image";
 import Heading from "@tiptap/extension-heading";
+import Bold from "@tiptap/extension-bold";
+import { Markdown } from "tiptap-markdown";
+import Italic from "@tiptap/extension-italic";
+import ListItem from "@tiptap/extension-list-item";
+import BulletList from "@tiptap/extension-bullet-list";
+import OrderedList from "@tiptap/extension-ordered-list";
 
 export function useMarkdownEditor(props?: Parameters<typeof useEditor>[0]) {
 	return useEditor({
@@ -21,6 +27,14 @@ export function useMarkdownEditor(props?: Parameters<typeof useEditor>[0]) {
 			Document,
 			Text,
 			Paragraph,
+			Bold,
+			Italic,
+			ListItem,
+			BulletList,
+			OrderedList,
+			Markdown.configure({
+				bulletListMarker: "-",
+			}),
 			LinkExtension.configure({
 				protocols: ["http", "https"],
 				HTMLAttributes: {
@@ -38,18 +52,18 @@ export function useMarkdownEditor(props?: Parameters<typeof useEditor>[0]) {
 			}),
 			Image.configure({
 				HTMLAttributes: {
-					class: "rounded-md pointer-events-auto",
+					class: "rounded-xl pointer-events-auto",
 				},
 			}),
 			Heading.configure({
 				levels: [1, 2, 3, 4],
 			}),
 		],
-		immediatelyRender: true,
+		immediatelyRender: false,
 		editorProps: {
 			attributes: {
 				class:
-					"outline-none prose text-grey-200 prose-headings:font-normal prose-headings:text-white prose-headings:font-luckiest-guy prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-h4:text-lg",
+					"outline-none prose text-grey-200 prose-headings:font-normal prose-headings:text-white prose-headings:font-luckiest-guy prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-h4:text-lg prose-strong:font-bold prose-strong:text-white [&_li_p]:m-0 prose-li:m-0 ",
 			},
 		},
 	});

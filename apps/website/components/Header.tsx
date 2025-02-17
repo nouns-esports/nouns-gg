@@ -74,9 +74,9 @@ export default async function Header() {
 													className="h-10 w-10 rounded-md"
 												/>
 												<div>
-													<p className="font-bebas-neue text-lg">Our Story</p>
+													<p className="font-bebas-neue text-lg">About</p>
 													<p className="text-grey-200">
-														Learn more about our mission
+														Learn how to get involved
 													</p>
 												</div>
 											</Link>

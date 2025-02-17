@@ -22,8 +22,8 @@ export default function PinImage(props: {
 		if (files && files.length > 0) {
 			const file = files[0];
 
-			if (file.size > 25 * 1024 * 1024) {
-				return toast.error("Image size should be less than 25 MB");
+			if (file.size > 10 * 1024 * 1024) {
+				return toast.error("Image size should be less than 10 MB");
 			}
 
 			const formData = new FormData();

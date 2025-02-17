@@ -59,12 +59,37 @@ export const metadata = {
 	metadataBase: new URL(env.NEXT_PUBLIC_DOMAIN),
 	openGraph: {
 		type: "website",
-		images: ["/og-banner.webp"],
+		images: [
+			"https://ipfs.nouns.gg/ipfs/bafybeih4hyyo6jakdqvg6xjc26pmh5kg5peqkig2wmjufzjbnum6oyb25y",
+		],
 	},
 	twitter: {
-		site: "@NounsEsports",
+		site: "@NounsGG",
 		card: "summary_large_image",
-		images: ["/og-banner.webp"],
+		images: [
+			"https://ipfs.nouns.gg/ipfs/bafybeih4hyyo6jakdqvg6xjc26pmh5kg5peqkig2wmjufzjbnum6oyb25y",
+		],
+	},
+	icons: {
+		apple: [
+			{
+				url: "/logo/logo-square.png",
+				sizes: "180x180",
+				type: "image/png",
+			},
+		],
+		icon: [
+			{
+				url: "/logo/logo.png",
+				sizes: "32x32",
+				type: "image/png",
+			},
+			{
+				url: "/logo/logo.png",
+				sizes: "16x16",
+				type: "image/png",
+			},
+		],
 	},
 	other: {
 		"fc:frame": JSON.stringify({

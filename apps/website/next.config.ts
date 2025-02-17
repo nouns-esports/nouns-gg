@@ -3,6 +3,11 @@ import type { NextConfig } from "next";
 import { env } from "~/env";
 
 export default {
+	experimental: {
+		serverActions: {
+			bodySizeLimit: "10mb",
+		},
+	},
 	images: {
 		remotePatterns: [
 			{

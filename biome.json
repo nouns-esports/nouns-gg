@@ -3,7 +3,8 @@
     "rules": {
       "suspicious": {
         "noExplicitAny": "off",
-        "noArrayIndexKey": "off"
+        "noArrayIndexKey": "off",
+        "noConfusingVoidType": "off"
       },
       "a11y": {
         "useIframeTitle": "off",
@@ -15,7 +16,8 @@
       "style": {
         "useNumberNamespace": "off",
         "useNodejsImportProtocol": "off",
-        "useTemplate": "off"
+        "useTemplate": "off",
+        "useImportType": "off"
       },
       "correctness": {
         "useExhaustiveDependencies": "off",

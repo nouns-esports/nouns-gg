@@ -96,6 +96,7 @@ export const articles = pgTable("articles", {
 	image: text("image").notNull(),
 	content: jsonb("content").$type<Record<string, any>>().notNull(),
 	publishedAt: timestamp("publishedAt", { mode: "date" }).notNull(),
+	editors: text("editors").array().notNull().default([]),
 });
 
 export const events = pgTable("events", {

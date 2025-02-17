@@ -1,11 +1,35 @@
 import createAction from "../createAction";
 
-export const linkWallet = createAction(async () => {
+export const linkWallet = createAction<{
+	type?: "rainbow" | "coinbase_wallet";
+}>(async (actionInputs) => {
 	return {
-		description: <p>Link an Ethereum wallet</p>,
-		url: "/nexus",
+		description: (
+			<p>
+				{
+					{
+						any: "Link an Ethereum wallet",
+						rainbow: "Link a Rainbow wallet",
+						coinbase_wallet: "Link a Coinbase Smart Wallet",
+					}[actionInputs.type ?? "any"]
+				}
+			</p>
+		),
+		url: actionInputs.type === "rainbow" ? "/rainbow" : "/nexus",
 		check: async (user) => {
 			if (user.wallets.length === 0) return false;
+
+			if (actionInputs.type === "rainbow") {
+				return user.wallets.some(
+					(wallet) => wallet.wallet_client_type === "rainbow",
+				);
+			}
+
+			if (actionInputs.type === "coinbase_wallet") {
+				return user.wallets.some(
+					(wallet) => wallet.wallet_client_type === "coinbase_wallet",
+				);
+			}
 
 			return true;
 		},

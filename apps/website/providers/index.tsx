@@ -6,7 +6,6 @@ import ReactQuery from "./ReactQuery";
 import Wagmi from "./Wagmi";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-
 import { create } from "zustand";
 import Farcaster from "./Farcaster";
 

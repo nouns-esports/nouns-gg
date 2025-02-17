@@ -13,8 +13,8 @@ export const pinImage = onlyUser
 	.action(async ({ parsedInput }) => {
 		const image = parsedInput.formData.get("file") as File;
 
-		// 25 MB in bytes
-		if (image.size > 25 * 1024 * 1024) {
+		// 10 MB in bytes
+		if (image.size > 10 * 1024 * 1024) {
 			throw new Error("Image is too large");
 		}
 

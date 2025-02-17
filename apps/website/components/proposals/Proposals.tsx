@@ -86,16 +86,21 @@ export default function Proposals(props: {
 									<p className="text-red">
 										{
 											{
-												Upcoming: "",
 												Proposing: "Proposing",
 												Voting: "Voting",
-												Ended: "",
 											}[state]
 										}
 									</p>
 								</div>
 								<p className="text-white">
-									<Countdown date={props.round.end} />
+									<Countdown
+										date={
+											{
+												Proposing: props.round.votingStart,
+												Voting: props.round.end,
+											}[state]
+										}
+									/>
 								</p>
 							</div>
 						) : null}
@@ -302,13 +307,10 @@ export default function Proposals(props: {
 							const votesDiff = b.totalVotes - a.totalVotes;
 
 							if (votesDiff === 0) {
-								return (
-									new Date(a.createdAt).getTime() -
-									new Date(b.createdAt).getTime()
-								);
+								return (b.user?.rank?.place ?? 0) - (a.user?.rank?.place ?? 0);
 							}
 
-							return b.totalVotes - a.totalVotes;
+							return votesDiff;
 						})
 						.map((proposal, index) => (
 							<ToggleModal

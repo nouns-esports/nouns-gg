@@ -37,10 +37,10 @@ export const createProposal = onlyUser
 
 		if (
 			round.minProposerRank &&
-			ctx.user.nexus?.rank?.place &&
-			ctx.user.nexus?.rank?.place < round.minProposerRank.place
+			ctx.user.nexus?.rank &&
+			ctx.user.nexus.rank.place < round.minProposerRank.place
 		) {
-			throw new Error("You are not eligible to vote in this round");
+			throw new Error("You are not eligible to propose in this round");
 		}
 
 		const now = new Date();

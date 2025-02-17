@@ -345,7 +345,7 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 											className="flex items-center gap-1 text-red hover:text-red/70 transition-colors"
 										>
 											<LinkIcon className="w-4 h-4" />
-											Verify
+											Add
 										</button>
 									</div>
 									<div className="flex flex-col gap-2">

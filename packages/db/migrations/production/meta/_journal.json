@@ -197,6 +197,20 @@
       "when": 1733590748837,
       "tag": "0027_organic_alex_power",
       "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "7",
+      "when": 1735872130749,
+      "tag": "0028_fearless_betty_ross",
+      "breakpoints": true
+    },
+    {
+      "idx": 29,
+      "version": "7",
+      "when": 1737409255799,
+      "tag": "0029_slim_redwing",
+      "breakpoints": true
     }
   ]
 }

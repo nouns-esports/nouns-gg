@@ -19,7 +19,6 @@ import QuestCard from "@/components/QuestCard";
 import EventCard from "@/components/EventCard";
 import { ToggleModal } from "@/components/Modal";
 import { getArticles } from "@/server/queries/articles";
-import ArticleCard from "@/components/ArticleCard";
 
 export default async function Home() {
 	const [user, videos, trendingPosts, rounds, events, articles] =
@@ -199,7 +198,7 @@ export default async function Home() {
 							image={event.image}
 							start={event.start}
 							end={event.end}
-							className="max-md:w-96 max-md:h-auto max-md:flex-shrink-0"
+							className="max-xl:w-96 max-xl:h-auto max-xl:flex-shrink-0"
 						/>
 					))}
 				</div>
@@ -242,7 +241,7 @@ export default async function Home() {
 					))}
 				</ul>
 			</div>
-			{/* <div className="flex flex-col gap-4 px-32 max-2xl:px-16 max-xl:px-8 max-lg:px-0">
+			<div className="flex flex-col gap-4 px-32 max-2xl:px-16 max-xl:px-8 max-lg:px-0">
 				<div className="flex justify-between items-center max-lg:px-8 max-sm:px-4">
 					<h2 className="font-luckiest-guy text-white text-4xl max-sm:text-3xl">
 						Articles
@@ -250,16 +249,33 @@ export default async function Home() {
 				</div>
 				<ul className="flex gap-4 justify-between max-lg:w-full max-lg:overflow-x-scroll max-lg:px-8 max-sm:px-4 max-lg:scrollbar-hidden">
 					{articles.map((article) => (
-						<ArticleCard
-							key={article.id}
-							id={article.id}
-							title={article.title}
-							image={article.image}
-							className="max-w-96 max-md:w-96 max-md:h-auto max-md:flex-shrink-0"
-						/>
+						<li key={article.id} className="w-full h-min group">
+							<Link
+								href={`/articles/${article.id}`}
+								className="flex flex-col gap-2 w-full"
+							>
+								<div className="rounded-xl overflow-hidden w-full rotate-[0.01deg] aspect-video max-lg:w-[300px]">
+									<Image
+										draggable={false}
+										src={article.image}
+										alt={article.title}
+										fill
+										className="rounded-xl select-none object-cover group-hover:scale-105 transition-transform"
+									/>
+								</div>
+								<h3 className="group-hover:text-white transition-colors">
+									{article.title}
+								</h3>
+							</Link>
+						</li>
 					))}
+					{Array.from({ length: Math.max(0, 4 - articles.length) }).map(
+						(_, i) => (
+							<li key={i} className="w-full" />
+						),
+					)}
 				</ul>
-			</div> */}
+			</div>
 			<div className="flex flex-col gap-4 px-32 max-2xl:px-16 max-xl:px-8 max-lg:px-0">
 				<h2 className="font-luckiest-guy text-white text-4xl max-lg:pl-8 max-sm:pl-4 max-sm:text-3xl">
 					Explore
