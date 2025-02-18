@@ -149,8 +149,9 @@ export async function estimateOrderCost(input: {
 			draftOrderCalculate(input: $input) {
 				calculatedDraftOrder {
 					totalTaxSet {
-						presentmentMoney {
+						shopMoney {
 							amount
+							currencyCode
 						}
 					}
 					availableShippingRates {
@@ -185,7 +186,7 @@ export async function estimateOrderCost(input: {
 		return {
 			tax: Number(
 				response.data?.draftOrderCalculate?.calculatedDraftOrder?.totalTaxSet
-					?.presentmentMoney?.amount ?? 0,
+					?.shopMoney?.amount ?? 0,
 			),
 			shipping: Number(
 				response.data?.draftOrderCalculate?.calculatedDraftOrder

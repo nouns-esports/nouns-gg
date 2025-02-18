@@ -14,11 +14,6 @@ const CREATE_DRAFT_ORDER_MUTATION = `
         id
         invoiceUrl
         status
-		totalPriceSet {
-			presentmentMoney {
-				amount
-			}
-		}
       }
       userErrors {
         field
