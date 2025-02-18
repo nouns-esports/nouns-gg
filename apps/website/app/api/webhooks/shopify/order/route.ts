@@ -52,7 +52,7 @@ export async function POST(request: Request) {
 			throw new Error("XP already distributed for this order");
 		}
 
-		const xpAmount = subTotalWithoutDiscounts * 10;
+		const xpAmount = Math.round(subTotalWithoutDiscounts * 10);
 
 		await tx.insert(xp).values({
 			user: privyUser.id,
