@@ -39,9 +39,6 @@ export async function POST(request: Request) {
 			throw new Error("User not found");
 		}
 
-		const xpAmount =
-			Number(order.current_subtotal_price_set.shop_money.amount) * 10;
-
 		const existingXP = await tx.query.xp.findFirst({
 			where: and(
 				eq(xp.user, privyUser.id),
@@ -50,13 +47,18 @@ export async function POST(request: Request) {
 		});
 
 		if (existingXP) {
-			await tx
-				.update(xp)
-				.set({
-					amount: sql`${xp.amount} + ${xpAmount}`,
-				})
-				.where(eq(xp.id, existingXP.id));
+			throw new Error("XP already distributed for this order");
 		}
+
+		const xpAmount =
+			Number(order.current_subtotal_price_set.shop_money.amount) * 10;
+
+		await tx.insert(xp).values({
+			user: privyUser.id,
+			order: order.admin_graphql_api_id,
+			amount: xpAmount,
+			timestamp: new Date(order.created_at),
+		});
 
 		await tx
 			.update(nexus)
