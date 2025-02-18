@@ -1,12 +1,48 @@
 import Button from "@/components/Button";
-// import CartButton from "@/components/CartButton";
 import Link from "@/components/Link";
 import { ToggleModal } from "@/components/Modal";
-import CartModal from "@/components/modals/CartModal";
 import ProductCard from "@/components/ProductCard";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import { getCollections, getProducts } from "@/server/queries/shop";
 import { twMerge } from "tailwind-merge";
+import type { Metadata } from "next";
+import { env } from "~/env";
+
+export async function generateMetadata(): Promise<Metadata> {
+	return {
+		openGraph: {
+			type: "website",
+			images: [
+				"https://ipfs.nouns.gg/ipfs/bafybeiedicqfqhqxh52rl6kgh5oniibfm73bgx6ihcjn45vpm3tl2eprqm",
+			],
+		},
+		twitter: {
+			site: "@NounsGG",
+			card: "summary_large_image",
+			images: [
+				"https://ipfs.nouns.gg/ipfs/bafybeiedicqfqhqxh52rl6kgh5oniibfm73bgx6ihcjn45vpm3tl2eprqm",
+			],
+		},
+		other: {
+			"fc:frame": JSON.stringify({
+				version: "next",
+				imageUrl:
+					"https://ipfs.nouns.gg/ipfs/bafybeiedicqfqhqxh52rl6kgh5oniibfm73bgx6ihcjn45vpm3tl2eprqm",
+				button: {
+					title: "Shop",
+					action: {
+						type: "launch_frame",
+						name: "Nouns GG",
+						url: `${env.NEXT_PUBLIC_DOMAIN}/shop`,
+						splashImageUrl:
+							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
+						splashBackgroundColor: "#040404",
+					},
+				},
+			}),
+		},
+	};
+}
 
 export default async function Shop(props: {
 	searchParams: Promise<{ collection?: string }>;

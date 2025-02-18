@@ -21,13 +21,30 @@ export async function generateMetadata(props: {
 }): Promise<Metadata> {
 	const searchParams = await props.searchParams;
 
-	if (!searchParams.user) return {};
-
 	return {
+		openGraph: {
+			type: "website",
+			images: [
+				searchParams.user
+					? `${env.NEXT_PUBLIC_DOMAIN}/api/images/rankings?user=${searchParams.user}`
+					: "https://ipfs.nouns.gg/ipfs/bafybeiferg6nxgmjsapfp422rav7cjqj2upb4cd7p5jrat5bcfk2xe2g2u",
+			],
+		},
+		twitter: {
+			site: "@NounsGG",
+			card: "summary_large_image",
+			images: [
+				searchParams.user
+					? `${env.NEXT_PUBLIC_DOMAIN}/api/images/rankings?user=${searchParams.user}`
+					: "https://ipfs.nouns.gg/ipfs/bafybeiferg6nxgmjsapfp422rav7cjqj2upb4cd7p5jrat5bcfk2xe2g2u",
+			],
+		},
 		other: {
 			"fc:frame": JSON.stringify({
 				version: "next",
-				imageUrl: `${env.NEXT_PUBLIC_DOMAIN}/api/images/rankings?user=${searchParams.user}`,
+				imageUrl: searchParams.user
+					? `${env.NEXT_PUBLIC_DOMAIN}/api/images/rankings?user=${searchParams.user}`
+					: "https://ipfs.nouns.gg/ipfs/bafybeiferg6nxgmjsapfp422rav7cjqj2upb4cd7p5jrat5bcfk2xe2g2u",
 				button: {
 					title: "View Leaderboard",
 					action: {
