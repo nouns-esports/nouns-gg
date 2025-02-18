@@ -44,7 +44,7 @@ export async function generateMetadata(props: {
 				version: "next",
 				imageUrl: searchParams.user
 					? `${env.NEXT_PUBLIC_DOMAIN}/api/images/rankings?user=${searchParams.user}`
-					: "https://ipfs.nouns.gg/ipfs/bafybeiferg6nxgmjsapfp422rav7cjqj2upb4cd7p5jrat5bcfk2xe2g2u",
+					: "https://ipfs.nouns.gg/ipfs/bafybeihnv5usxyzvqxhrwo6pz77blsgvzzybw5g5k3qe533usqvvc6tiya",
 				button: {
 					title: "View Leaderboard",
 					action: {

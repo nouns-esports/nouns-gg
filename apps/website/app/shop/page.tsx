@@ -27,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
 			"fc:frame": JSON.stringify({
 				version: "next",
 				imageUrl:
-					"https://ipfs.nouns.gg/ipfs/bafybeiedicqfqhqxh52rl6kgh5oniibfm73bgx6ihcjn45vpm3tl2eprqm",
+					"https://ipfs.nouns.gg/ipfs/bafybeifiphsyv47xtwle77onbq2qbhw6wqfdhlq6uhlvhy6e36wkbqvxaq",
 				button: {
 					title: "Shop",
 					action: {

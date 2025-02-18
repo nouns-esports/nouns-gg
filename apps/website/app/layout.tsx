@@ -95,7 +95,7 @@ export const metadata = {
 		"fc:frame": JSON.stringify({
 			version: "next",
 			imageUrl:
-				"https://ipfs.nouns.gg/ipfs/bafybeih4hyyo6jakdqvg6xjc26pmh5kg5peqkig2wmjufzjbnum6oyb25y",
+				"https://ipfs.nouns.gg/ipfs/bafybeigrwccl3n7cy3jizjfvy2wmvklwvono3ju7hq2lp4bcplrv6x74ua",
 			button: {
 				title: "Launch",
 				action: {
