@@ -137,7 +137,15 @@ export const refreshLeaderboard = createJob({
 				const eligibleForGold = 100;
 				const potOfGold = 10_000;
 
-				let goldRecord: number | undefined;
+				const [rankingRecord] = await tx
+					.insert(rankings)
+					.values({
+						rank: rank.id,
+						timestamp: now,
+						user: leaderboard[i].user,
+						score: Math.floor(leaderboard[i].score),
+					})
+					.returning({ id: rankings.id });
 
 				if (i < eligibleForGold) {
 					const goldEarned = generateEarning({
@@ -146,25 +154,23 @@ export const refreshLeaderboard = createJob({
 						index: i,
 					});
 
-					goldRecord = (
-						await tx
-							.insert(gold)
-							.values({
-								amount: goldEarned.toString(),
-								timestamp: now,
-								to: leaderboard[i].user,
-							})
-							.returning({ id: gold.id })
-					)[0].id;
-				}
+					const [goldRecord] = await tx
+						.insert(gold)
+						.values({
+							amount: goldEarned.toString(),
+							timestamp: now,
+							to: leaderboard[i].user,
+							ranking: rankingRecord.id,
+						})
+						.returning({ id: gold.id });
 
-				await tx.insert(rankings).values({
-					rank: rank.id,
-					gold: goldRecord,
-					timestamp: now,
-					user: leaderboard[i].user,
-					score: Math.floor(leaderboard[i].score),
-				});
+					await tx
+						.update(rankings)
+						.set({
+							gold: goldRecord.id,
+						})
+						.where(eq(rankings.id, rankingRecord.id));
+				}
 			}
 		});
 	},
