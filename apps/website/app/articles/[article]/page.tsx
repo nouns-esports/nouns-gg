@@ -42,6 +42,23 @@ export async function generateMetadata(props: {
 			card: "summary_large_image",
 			images: [article.image],
 		},
+		other: {
+			"fc:frame": JSON.stringify({
+				version: "next",
+				imageUrl: article.image,
+				button: {
+					title: "Read Article",
+					action: {
+						type: "launch_frame",
+						name: "Nouns GG",
+						url: `${env.NEXT_PUBLIC_DOMAIN}/articles/${article.id}`,
+						splashImageUrl:
+							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
+						splashBackgroundColor: "#040404",
+					},
+				},
+			}),
+		},
 	};
 }
 
