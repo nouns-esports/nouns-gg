@@ -32,9 +32,23 @@ export async function generateMetadata(props: {
 			card: "summary_large_image",
 			images: [quest.image],
 		},
-		// other: await getFrameMetadata(
-		//   `${env.NEXT_PUBLIC_DOMAIN}/api/frames/rounds/${props.params.quest}`
-		// ),
+		other: {
+			"fc:frame": JSON.stringify({
+				version: "next",
+				imageUrl: quest.image,
+				button: {
+					title: "View Quest",
+					action: {
+						type: "launch_frame",
+						name: "Nouns GG",
+						url: `${env.NEXT_PUBLIC_DOMAIN}/quests/${quest.id}`,
+						splashImageUrl:
+							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
+						splashBackgroundColor: "#040404",
+					},
+				},
+			}),
+		},
 	};
 }
 
