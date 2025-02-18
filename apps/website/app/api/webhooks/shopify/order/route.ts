@@ -8,12 +8,14 @@ import { db, nexus, xp } from "~/packages/db/schema";
 type OrderCreated = {
 	admin_graphql_api_id: string;
 	created_at: string;
-	current_subtotal_price_set: {
-		shop_money: {
-			amount: string;
-			currency_code: string;
+	line_items: Array<{
+		price_set: {
+			shop_money: {
+				amount: string;
+				currency_code: string;
+			};
 		};
-	};
+	}>;
 	email: string;
 };
 
@@ -21,16 +23,16 @@ export async function POST(request: Request) {
 	const order: OrderCreated = await request.json();
 
 	await db.transaction(async (tx) => {
-		if (Number(order.current_subtotal_price_set.shop_money.amount) <= 0) {
-			throw new Error("Subtotal price is <= 0");
+		const subTotalWithoutDiscounts = order.line_items
+			.filter((item) => item.price_set.shop_money.currency_code === "USD")
+			.reduce((acc, item) => acc + Number(item.price_set.shop_money.amount), 0);
+
+		if (subTotalWithoutDiscounts <= 0) {
+			throw new Error("Subtotal price without discounts is <= 0");
 		}
 
 		if (!order.email) {
 			throw new Error("No email in order");
-		}
-
-		if (order.current_subtotal_price_set.shop_money.currency_code !== "USD") {
-			throw new Error("Currency must be USD");
 		}
 
 		const privyUser = await privyClient.getUserByEmail(order.email);
@@ -50,8 +52,7 @@ export async function POST(request: Request) {
 			throw new Error("XP already distributed for this order");
 		}
 
-		const xpAmount =
-			Number(order.current_subtotal_price_set.shop_money.amount) * 10;
+		const xpAmount = subTotalWithoutDiscounts * 10;
 
 		await tx.insert(xp).values({
 			user: privyUser.id,
