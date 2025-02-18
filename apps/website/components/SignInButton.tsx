@@ -16,7 +16,7 @@ export default function SignInButton(props: { user?: AuthenticatedUser }) {
 				onClick={() => {
 					if (props.user) {
 						return router.push(
-							`/users/${props.user.farcaster?.username ?? props.user.id}`,
+							`/users/${props.user?.nexus?.username ?? props.user.id}`,
 						);
 					}
 

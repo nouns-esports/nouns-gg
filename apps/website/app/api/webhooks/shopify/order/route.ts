@@ -67,4 +67,6 @@ export async function POST(request: Request) {
 			})
 			.where(eq(nexus.id, privyUser.id));
 	});
+
+	return new Response("OK", { status: 200 });
 }
