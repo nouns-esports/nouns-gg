@@ -22,7 +22,7 @@ export async function POST(request: Request) {
 
 	await db.transaction(async (tx) => {
 		if (Number(order.current_subtotal_price_set.shop_money.amount) <= 0) {
-			return;
+			throw new Error("Subtotal price is <= 0");
 		}
 
 		if (!order.email) {
