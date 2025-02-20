@@ -1,8 +1,8 @@
 import { createAgent } from "~/packages/agent";
-import { anthropic, deepseek } from "~/packages/agent/models";
+import { anthropic } from "~/packages/agent/models";
 import { env } from "~/env";
-import { db, nexus, xp, seasons, snapshots } from "~/packages/db/schema";
-import { and, gte, lte, desc, eq, inArray, or } from "drizzle-orm";
+import { db, nexus } from "~/packages/db/schema";
+import { eq, or } from "drizzle-orm";
 import {
 	// twitterPlugin,
 	discordPlugin,
@@ -83,3 +83,4 @@ export const agent = await createAgent({
 // Dynamically import tools after the agent is created
 await import("./tools/awardContributorCallXP");
 await import("./tools/updateRound");
+await import("./tools/tipGold");

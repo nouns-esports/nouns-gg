@@ -22,9 +22,11 @@ export function discordPlugin(options: { token: string }) {
 				try {
 					const reply = await generateReply(message.content, {
 						id: message.id,
-						author: message.author.username,
+						author: message.author.username.split("#")[0],
 						room: message.channel.id,
-						mentions: message.mentions.users.map((user) => user.username),
+						mentions: message.mentions.users.map(
+							(user) => user.username.split("#")[0],
+						),
 						embeds: [],
 					});
 
