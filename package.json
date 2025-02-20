@@ -47,7 +47,7 @@
     "@neynar/nodejs-sdk": "^1.68.0",
     "@pinata/sdk": "^2.1.0",
     "@privy-io/react-auth": "^2.2.0",
-    "@privy-io/server-auth": "^1.18.4",
+    "@privy-io/server-auth": "^1.18.9",
     "@privy-io/wagmi": "^1.0.2",
     "@resvg/resvg-js": "^2.6.2",
     "@resvg/resvg-wasm": "^2.6.2",
