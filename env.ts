@@ -29,7 +29,7 @@ export const env = createEnv({
 		DASH_FARCASTER_FID: z.string().min(1),
 		START_GG_ACCESS_TOKEN: z.string().min(1),
 		INFURA_API_KEY: z.string().min(1),
-		// PRIMARY_DATABASE_URL: z.string().url(),
+		PRIMARY_DATABASE_URL: z.string().url(),
 	},
 
 	client: {

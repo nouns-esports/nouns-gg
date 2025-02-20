@@ -43,4 +43,6 @@ export async function POST(request: Request) {
 			})
 			.where(eq(products.shopifyId, updatedProduct.admin_graphql_api_id));
 	});
+
+	return new Response("OK", { status: 200 });
 }
