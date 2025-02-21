@@ -103,7 +103,7 @@ export default async function Shop(props: {
 									key={collection.id}
 									id={collection.id}
 									selected={searchParams.collection === collection.id}
-									new={collection.id === "dopamine"}
+									new={collection.id === "nounsvitational-trading-cards"}
 								>
 									{collection.name}
 								</CategoryTag>
