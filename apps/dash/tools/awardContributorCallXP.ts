@@ -32,7 +32,7 @@ agent.addTool({
 		}
 
 		const channel = await agent.plugins.discord.client.channels.fetch(
-			"967723007864893478",
+			context.room,
 			{ force: true },
 		);
 
@@ -49,7 +49,7 @@ agent.addTool({
 		);
 
 		if (members.length === 0) {
-			throw new Error("Nobody is in the contributor voice channel right now");
+			throw new Error("Theres nobody in the channel right now");
 		}
 
 		const users = await db.query.nexus.findMany({
