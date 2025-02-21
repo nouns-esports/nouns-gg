@@ -32,7 +32,7 @@ agent.addTool({
 		}
 
 		const channel = await agent.plugins.discord.client.channels.fetch(
-			"967723008116531219",
+			"967723007864893478",
 			{ force: true },
 		);
 
