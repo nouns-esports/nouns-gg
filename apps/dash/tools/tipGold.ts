@@ -38,6 +38,10 @@ agent.addTool({
 			);
 		}
 
+		if (user.id === mentionedUser.id) {
+			throw new Error("You can't tip gold to yourself");
+		}
+
 		if (Number(user.gold) < parameters.amount) {
 			throw new Error("You don't have enough gold to tip");
 		}
