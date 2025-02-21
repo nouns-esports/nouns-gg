@@ -10,6 +10,7 @@ import { env } from "~/env";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
+		title: "Shop",
 		openGraph: {
 			type: "website",
 			images: [

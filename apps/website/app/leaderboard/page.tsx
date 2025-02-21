@@ -55,6 +55,7 @@ export async function generateMetadata(props: {
 	const searchParams = await props.searchParams;
 
 	return {
+		title: "Leaderboard",
 		openGraph: {
 			type: "website",
 			images: [

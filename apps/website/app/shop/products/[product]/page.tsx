@@ -19,6 +19,8 @@ export async function generateMetadata(props: {
 	}
 
 	return {
+		title: product.name,
+		description: product.description,
 		openGraph: {
 			type: "website",
 			images: [product.images[0]],
