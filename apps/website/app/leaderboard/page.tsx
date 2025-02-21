@@ -10,9 +10,42 @@ import { twMerge } from "tailwind-merge";
 import { ToggleModal } from "@/components/Modal";
 import { Image } from "lucide-react";
 import ShareRankingModal from "@/components/modals/ShareRankingModal";
-import { nextFriday } from "date-fns";
+import { nextFriday, set } from "date-fns";
 import { env } from "~/env";
 import type { Metadata } from "next";
+import { format, toZonedTime } from "date-fns-tz";
+
+function getNextFridayAt1350CST() {
+	const now = new Date();
+	const currentDay = now.getDay(); // 0-6, 0 is Sunday, 5 is Friday
+	const currentHour = now.getHours();
+
+	let targetDate: Date;
+
+	if (currentDay === 5) {
+		// If it's Friday
+		if (currentHour < 13 || (currentHour === 13 && now.getMinutes() < 50)) {
+			// If it's before 1:50 PM, use today
+			targetDate = new Date();
+		} else {
+			// If it's after 1:50 PM, use next Friday
+			targetDate = nextFriday(now);
+		}
+	} else {
+		// If it's not Friday, use next Friday
+		targetDate = nextFriday(now);
+	}
+
+	return toZonedTime(
+		set(targetDate, {
+			hours: 13,
+			minutes: 50,
+			seconds: 0,
+			milliseconds: 0,
+		}),
+		"America/Chicago",
+	);
+}
 
 export async function generateMetadata(props: {
 	searchParams: Promise<{
@@ -95,15 +128,7 @@ export default async function Leaderboard() {
 							</h2>
 							<div className="flex items-center gap-2 text-nowrap">
 								<p className="text-white">
-									<Countdown
-										date={
-											new Date(
-												nextFriday(new Date()).toLocaleString("en-US", {
-													timeZone: "America/Chicago",
-												}),
-											)
-										}
-									/>
+									<Countdown date={getNextFridayAt1350CST()} />
 								</p>
 							</div>
 						</div>
