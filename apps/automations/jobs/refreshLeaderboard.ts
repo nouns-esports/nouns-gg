@@ -134,9 +134,6 @@ export const refreshLeaderboard = createJob({
 					})
 					.where(eq(nexus.id, leaderboard[i].user));
 
-				const eligibleForGold = 100;
-				const potOfGold = 10_000;
-
 				const [rankingRecord] = await tx
 					.insert(rankings)
 					.values({
@@ -146,6 +143,9 @@ export const refreshLeaderboard = createJob({
 						score: Math.floor(leaderboard[i].score),
 					})
 					.returning({ id: rankings.id });
+
+				const eligibleForGold = 100;
+				const potOfGold = 50_000;
 
 				if (i < eligibleForGold) {
 					const goldEarned = generateEarning({
@@ -170,6 +170,13 @@ export const refreshLeaderboard = createJob({
 							gold: goldRecord.id,
 						})
 						.where(eq(rankings.id, rankingRecord.id));
+
+					await tx
+						.update(nexus)
+						.set({
+							gold: sql`${nexus.gold} + ${goldEarned}`,
+						})
+						.where(eq(nexus.id, leaderboard[i].user));
 				}
 			}
 		});
