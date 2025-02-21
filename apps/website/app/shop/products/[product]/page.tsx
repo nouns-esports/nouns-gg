@@ -2,8 +2,51 @@ import AddToCartButton from "@/components/AddToCartButton";
 import Button from "@/components/Button";
 import Link from "@/components/Link";
 import { getProduct } from "@/server/queries/shop";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { env } from "~/env";
 import { twMerge } from "tailwind-merge";
+
+export async function generateMetadata(props: {
+	params: Promise<{ product: string }>;
+}): Promise<Metadata> {
+	const params = await props.params;
+
+	const product = await getProduct({ id: params.product });
+
+	if (!product) {
+		return notFound();
+	}
+
+	return {
+		openGraph: {
+			type: "website",
+			images: [product.images[0]],
+		},
+		twitter: {
+			site: "@NounsGG",
+			card: "summary_large_image",
+			images: [product.images[0]],
+		},
+		other: {
+			"fc:frame": JSON.stringify({
+				version: "next",
+				imageUrl: product.images[0],
+				button: {
+					title: "Buy",
+					action: {
+						type: "launch_frame",
+						name: "Nouns GG",
+						url: `${env.NEXT_PUBLIC_DOMAIN}/shop`,
+						splashImageUrl:
+							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
+						splashBackgroundColor: "#040404",
+					},
+				},
+			}),
+		},
+	};
+}
 
 export default async function ProductPage(props: {
 	params: Promise<{ product: string }>;
