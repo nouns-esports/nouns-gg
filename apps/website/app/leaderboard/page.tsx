@@ -95,7 +95,15 @@ export default async function Leaderboard() {
 							</h2>
 							<div className="flex items-center gap-2 text-nowrap">
 								<p className="text-white">
-									<Countdown date={nextFriday(new Date())} />
+									<Countdown
+										date={
+											new Date(
+												nextFriday(new Date()).toLocaleString("en-US", {
+													timeZone: "America/Chicago",
+												}),
+											)
+										}
+									/>
 								</p>
 							</div>
 						</div>
