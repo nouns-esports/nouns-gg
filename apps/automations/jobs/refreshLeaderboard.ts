@@ -154,6 +154,8 @@ export const refreshLeaderboard = createJob({
 						index: i,
 					});
 
+					console.log("Distributing gold", i, leaderboard[i].user, goldEarned);
+
 					const [goldRecord] = await tx
 						.insert(gold)
 						.values({
@@ -180,6 +182,8 @@ export const refreshLeaderboard = createJob({
 				}
 			}
 		});
+
+		console.log("Leaderboard successfully refreshed");
 	},
 });
 
