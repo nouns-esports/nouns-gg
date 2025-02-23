@@ -117,17 +117,40 @@ export const viewport = {
 
 export default async function RootLayout(props: { children: React.ReactNode }) {
 	const user = await getAuthenticatedUser();
+
+	const maintenance = false;
+
 	return (
 		<html lang="en" className="/scroll-smooth overflow-x-hidden scrollbar-main">
 			<body
 				className={`${cabin.variable} ${luckiestGuy.variable} ${bebasNeue.variable} ${londrinaSolid.variable} bg-black text-grey-200 font-cabin selection:text-white selection:bg-red flex flex-col items-center w-full h-full`}
 			>
 				<Providers user={user?.id}>
-					<Header />
-					<main className="flex flex-col w-full min-h-[calc(100vh_-_224px)] h-full max-w-[1920px]">
-						{props.children}
-					</main>
-					<Footer />
+					{maintenance ? (
+						<div className="flex flex-col gap-8 items-center w-full h-screen">
+							<div className="flex flex-col gap-4 items-center justify-center w-full h-full">
+								<h1 className="text-4xl text-white font-bebas-neue text-center">
+									Nouns GG is currently under maintenance
+								</h1>
+								<p className="text-lg text-grey-200 text-center">
+									We will be back soon!
+								</p>
+							</div>
+							<img
+								src="https://ipfs.nouns.gg/ipfs/bafkreic6tpk6dpz5pdscrfnusx4zhubsgjk3pmaew5kczk3tg7nxbinarm"
+								alt="Site under maintenance"
+								className="w-[20vw] max-w-md max-sm:w-[50vw]"
+							/>
+						</div>
+					) : (
+						<>
+							<Header />
+							<main className="flex flex-col w-full min-h-[calc(100vh_-_224px)] h-full max-w-[1920px]">
+								{props.children}
+							</main>
+							<Footer />
+						</>
+					)}
 				</Providers>
 			</body>
 			{env.NEXT_PUBLIC_ENVIRONMENT === "production" ? (
