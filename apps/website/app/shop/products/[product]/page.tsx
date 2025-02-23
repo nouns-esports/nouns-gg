@@ -143,13 +143,15 @@ export default async function ProductPage(props: {
 								</div>
 							) : null}
 						</div>
-						<ToggleModal
-							id="size-guide"
-							className="text-red flex items-center gap-0.5"
-						>
-							<Info className="w-4 h-4" />
-							Size Guide
-						</ToggleModal>
+						{product.sizeGuide ? (
+							<ToggleModal
+								id="size-guide"
+								className="text-red flex items-center gap-1"
+							>
+								<Info className="w-4 h-4" />
+								Size Guide
+							</ToggleModal>
+						) : null}
 					</div>
 				</div>
 			</div>
