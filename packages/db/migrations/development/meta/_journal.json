@@ -617,6 +617,41 @@
       "when": 1739759355296,
       "tag": "0087_sudden_blonde_phantom",
       "breakpoints": true
+    },
+    {
+      "idx": 88,
+      "version": "7",
+      "when": 1739809827136,
+      "tag": "0088_sour_lady_deathstrike",
+      "breakpoints": true
+    },
+    {
+      "idx": 89,
+      "version": "7",
+      "when": 1739811616968,
+      "tag": "0089_melted_hercules",
+      "breakpoints": true
+    },
+    {
+      "idx": 90,
+      "version": "7",
+      "when": 1739832613064,
+      "tag": "0090_fancy_blob",
+      "breakpoints": true
+    },
+    {
+      "idx": 91,
+      "version": "7",
+      "when": 1739832625911,
+      "tag": "0091_ambiguous_shadow_king",
+      "breakpoints": true
+    },
+    {
+      "idx": 92,
+      "version": "7",
+      "when": 1740332832455,
+      "tag": "0092_clear_champions",
+      "breakpoints": true
     }
   ]
 }
