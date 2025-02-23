@@ -640,6 +640,7 @@ export const products = pgTable("products", {
 	name: text("name").notNull(),
 	description: text("description").notNull(),
 	images: text("images").array().notNull().default([]),
+	sizeGuide: text("size_guide"),
 	variants: jsonb("variants")
 		.array()
 		.$type<

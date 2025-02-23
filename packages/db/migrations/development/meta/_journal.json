@@ -645,6 +645,13 @@
       "when": 1739832625911,
       "tag": "0091_ambiguous_shadow_king",
       "breakpoints": true
+    },
+    {
+      "idx": 92,
+      "version": "7",
+      "when": 1740332832455,
+      "tag": "0092_clear_champions",
+      "breakpoints": true
     }
   ]
 }
