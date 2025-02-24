@@ -9,6 +9,7 @@ import { twMerge } from "tailwind-merge";
 import SizeGuideModal from "@/components/modals/SizeGuideModal";
 import { ToggleModal } from "@/components/Modal";
 import { Info } from "lucide-react";
+import ProductImage from "@/components/ProductImage";
 
 export async function generateMetadata(props: {
 	params: Promise<{ product: string }>;
@@ -88,10 +89,7 @@ export default async function ProductPage(props: {
 		<>
 			<div className="flex justify-center gap-4 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
 				<div className="bg-grey-800 rounded-xl p-4 flex gap-4 max-md:gap-2 max-w-4xl w-full max-md:flex-col">
-					<img
-						src={`${product.images[0]}?img-width=500&img-onerror=redirect`}
-						className="bg-black/30 rounded-xl w-80 h-80 object-contain p-2 flex-shrink-0 max-md:w-full max-md:h-auto max-md:aspect-square"
-					/>
+					<ProductImage product={product} />
 					<div className="flex flex-col gap-4 max-md:gap-2">
 						<div className="flex flex-col gap-4 max-md:gap-2">
 							<h1 className="text-white text-3xl max-sm:text-2xl font-luckiest-guy">
