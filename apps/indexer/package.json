@@ -5,8 +5,12 @@
   "type": "module",
   "scripts": {
     "_dev": "ponder dev",
-    "_start": "ponder start",
+    "_start": "ponder start --schema=indexer",
     "db": "ponder db",
     "codegen": "ponder codegen"
+  },
+  "dependencies": {
+    "ponder": "^0.9.17",
+    "react": "^18.3.1"
   }
 }

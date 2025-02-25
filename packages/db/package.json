@@ -1,7 +1,6 @@
 {
   "name": "db",
   "version": "0.0.1",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "bun --env-file=../../.env.development drizzle-kit studio --host 127.0.0.1",
@@ -12,5 +11,13 @@
     "migrate:dev": "bun --env-file=../../.env.development drizzle-kit push --strict --verbose",
     "sandbox:production": "bun --env-file=../../.env.production sandbox.ts",
     "sandbox:development": "bun --env-file=../../.env.development sandbox.ts"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.5"
+  },
+  "dependencies": {
+    "drizzle-kit": "^0.30.4",
+    "drizzle-orm": "^0.39.3",
+    "pg": "^8.11.3"
   }
 }

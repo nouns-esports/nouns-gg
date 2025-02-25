@@ -1,17 +1,7 @@
-import { onchainTable } from "ponder";
-
-// SHould probably standardize these for all ERC721 holders
-export const nouners = onchainTable("nouners", (t) => ({
-	id: t.bigint().primaryKey(),
-	owner: t.text(),
-}));
-export const lilnouners = onchainTable("lilnouners", (t) => ({
-	id: t.bigint().primaryKey(),
-	owner: t.text(),
-}));
+import { onchainTable, relations } from "ponder";
 
 export const erc20Tokens = onchainTable("erc20Tokens", (t) => ({
-	address: t.text().primaryKey(),
+	address: t.hex().primaryKey(),
 	symbol: t.text().notNull(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
@@ -19,31 +9,44 @@ export const erc20Tokens = onchainTable("erc20Tokens", (t) => ({
 }));
 
 export const erc721Tokens = onchainTable("erc721Tokens", (t) => ({
-	address: t.text().primaryKey(),
-	symbol: t.text().notNull(),
+	address: t.hex().primaryKey(),
 	name: t.text().notNull(),
-	image: t.text().notNull(),
 }));
 
 export const erc721Balances = onchainTable("erc721Balances", (t) => ({
-	wallet: t.text().primaryKey(),
-	token: t.text().notNull(),
+	tokenId: t.bigint().primaryKey(),
+	account: t.hex().notNull(),
+	collection: t.hex().notNull(),
+}));
+
+export const erc721BalancesRelations = relations(erc721Balances, ({ one }) => ({
+	collection: one(erc721Tokens, {
+		fields: [erc721Balances.collection],
+		references: [erc721Tokens.address],
+	}),
 }));
 
 export const erc20Balances = onchainTable("erc20Balances", (t) => ({
-	wallet: t.text().primaryKey(),
-	token: t.text().notNull(),
+	account: t.hex().primaryKey(),
+	token: t.hex().notNull(),
 	balance: t.bigint().notNull(),
 }));
 
+export const erc20BalancesRelations = relations(erc20Balances, ({ one }) => ({
+	token: one(erc20Tokens, {
+		fields: [erc20Balances.token],
+		references: [erc20Tokens.address],
+	}),
+}));
+
 export const nounDelegates = onchainTable("nounDelegates", (t) => ({
-	from: t.text().primaryKey(),
-	to: t.text().notNull(),
+	from: t.hex().primaryKey(),
+	to: t.hex().notNull(),
 }));
 
 export const lilnounDelegates = onchainTable("lilnounDelegates", (t) => ({
-	from: t.text().primaryKey(),
-	to: t.text().notNull(),
+	from: t.hex().primaryKey(),
+	to: t.hex().notNull(),
 }));
 
 // export const nounsProposals = onchainTable("nounsProposals", (t) => ({

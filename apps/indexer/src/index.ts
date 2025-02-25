@@ -1,33 +1,39 @@
 import { ponder } from "ponder:registry";
 import {
 	lilnounDelegates,
-	lilnouners,
 	nounDelegates,
-	nouners,
+	erc721Balances,
+	// erc20Balances,
 	// nounsProposals,
 } from "../ponder.schema";
 
 ponder.on("NounsToken:Transfer", async ({ event, context }) => {
+	if (!event.transaction.to) return;
+
 	await context.db
-		.insert(nouners)
+		.insert(erc721Balances)
 		.values({
-			id: event.args.tokenId,
-			owner: event.args.to,
+			account: event.args.to,
+			collection: event.transaction.to,
+			tokenId: event.args.tokenId,
 		})
 		.onConflictDoUpdate({
-			owner: event.args.to,
+			account: event.args.to,
 		});
 });
 
 ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
+	if (!event.transaction.to) return;
+
 	await context.db
-		.insert(lilnouners)
+		.insert(erc721Balances)
 		.values({
-			id: event.args.tokenId,
-			owner: event.args.to,
+			account: event.args.to,
+			collection: event.transaction.to,
+			tokenId: event.args.tokenId,
 		})
 		.onConflictDoUpdate({
-			owner: event.args.to,
+			account: event.args.to,
 		});
 });
 

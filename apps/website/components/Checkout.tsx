@@ -5,7 +5,6 @@ import TextInput from "./form/TextInput";
 import { ToggleModal } from "./Modal";
 import { Asterisk, Check, ChevronDown, Link } from "lucide-react";
 import type { AuthenticatedUser } from "@/server/queries/users";
-import ReactSlider from "react-slider";
 import { twMerge } from "tailwind-merge";
 import {
 	Combobox,
@@ -20,6 +19,7 @@ import { useDebounce } from "@uidotdev/usehooks";
 import { useAction } from "next-safe-action/hooks";
 import { createDraftOrder } from "@/server/mutations/createDraftOrder";
 import { useRouter } from "next/navigation";
+import GoldSlider from "./GoldSlider";
 
 export default function Checkout(props: {
 	user: AuthenticatedUser;
@@ -549,7 +549,17 @@ export default function Checkout(props: {
 									: Math.floor(Number(props.user.nexus.gold))}
 							</p>
 						</div>
-						<ReactSlider
+						<GoldSlider
+							min={0}
+							max={
+								Number(props.user.nexus.gold) >= subtotal * 100
+									? subtotal * 100
+									: Math.floor(Number(props.user.nexus.gold))
+							}
+							value={goldUsed}
+							onChange={(value) => setGoldUsed(value)}
+						/>
+						{/* <ReactSlider
 							className="h-8 flex items-center"
 							thumbClassName="h-8 w-8 rounded-full bg-contain bg-no-repeat bg-center cursor-pointer outline-none"
 							trackClassName="h-2 rounded-full bg-black/25"
@@ -580,7 +590,7 @@ export default function Checkout(props: {
 									}}
 								/>
 							)}
-						/>
+						/> */}
 					</div>
 				) : null}
 			</div>
