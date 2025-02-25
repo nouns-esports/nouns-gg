@@ -3,6 +3,6 @@ dependsOn = ["setup"]
 
 cmds = ["bun install"]
 
-[build]
-builder = "NIXPACKS"
-buildCommand = ""
+# [build]
+# builder = "NIXPACKS"
+# buildCommand = ""
