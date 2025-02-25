@@ -5,3 +5,4 @@ cmds = ["bun install"]
 
 [build]
 builder = "NIXPACKS"
+buildCommand = ""
