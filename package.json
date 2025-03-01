@@ -3,8 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "turbo dev",
-    "build": "turbo build",
-    "start": "turbo start",
+    "build:website": "turbo build --filter=website",
     "start:website": "turbo start --filter=website",
     "start:dash": "turbo start --filter=dash",
     "automate:privySync": "turbo automate:privySync --filter=automations",
