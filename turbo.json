@@ -38,9 +38,6 @@
       "outputs": [".next/**", "!.next/cache/**"],
       "cache": false
     },
-    "lint": {
-      "dependsOn": ["^lint"]
-    },
     "dev": {
       "cache": false,
       "persistent": true
@@ -48,18 +45,6 @@
     "start": {
       "cache": false,
       "persistent": true
-    },
-    "automate:privySync": {
-      "cache": false
-    },
-    "automate:shopifySync": {
-      "cache": false
-    },
-    "automate:refreshLeaderboard": {
-      "cache": false
-    },
-    "automate:refreshRoles": {
-      "cache": false
     }
   }
 }

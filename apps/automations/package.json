@@ -2,10 +2,7 @@
   "name": "automations",
   "type": "module",
   "scripts": {
-    "automate:privySync": "bun --env-file=../../.env.production ./jobs/privySync.ts",
-    "automate:refreshLeaderboard": "bun --env-file=../../.env.production ./jobs/refreshLeaderboard.ts",
-    "automate:refreshRoles": "bun --env-file=../../.env.production ./jobs/refreshRoles.ts",
-    "automate:shopifySync": "bun --env-file=../../.env.production ./jobs/shopifySync.ts"
+    "start": "bun --env-file=../../.env.production"
   },
   "devDependencies": {
     "@types/node-cron": "^3.0.11"

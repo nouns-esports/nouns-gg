@@ -27,4 +27,5 @@ export const db = drizzle(env.PRIMARY_DATABASE_URL, {
 		...neynarSchema,
 		...publicSchema,
 	},
+	casing: "snake_case",
 });

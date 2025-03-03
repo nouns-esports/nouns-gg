@@ -4,10 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "_dev": "ponder dev",
-    "_start": "ponder start --schema=indexer",
-    "db": "ponder db",
-    "codegen": "ponder codegen"
+    "test": "ponder dev --schema=indexer",
+    "start": "bun --env-file=../../.env.production ponder start --schema=indexer"
   },
   "dependencies": {
     "ponder": "0.9.24-next.1"
