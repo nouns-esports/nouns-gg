@@ -8,13 +8,11 @@ import {
 } from "../ponder.schema";
 
 ponder.on("NounsToken:Transfer", async ({ event, context }) => {
-	if (!event.transaction.to) return;
-
 	await context.db
 		.insert(erc721Balances)
 		.values({
 			account: event.args.to,
-			collection: event.transaction.to,
+			collection: context.contracts.NounsToken.address,
 			tokenId: event.args.tokenId,
 		})
 		.onConflictDoUpdate({
@@ -23,13 +21,11 @@ ponder.on("NounsToken:Transfer", async ({ event, context }) => {
 });
 
 ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
-	if (!event.transaction.to) return;
-
 	await context.db
 		.insert(erc721Balances)
 		.values({
 			account: event.args.to,
-			collection: event.transaction.to,
+			collection: context.contracts.LilNounsToken.address,
 			tokenId: event.args.tokenId,
 		})
 		.onConflictDoUpdate({
