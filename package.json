@@ -16,7 +16,7 @@
     "node": ">=19.9.0 <21.3.0"
   },
   "type": "module",
-  "packageManager": "npm@10.2.4",
+  "packageManager": "bun@1.2.0",
   "workspaces": [
     "apps/*",
     "packages/*"
