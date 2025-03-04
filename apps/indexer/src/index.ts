@@ -7,8 +7,6 @@ import {
 	// nounsProposals,
 } from "../ponder.schema";
 
-console.log("DEPLOYMENT_ID", process.env.RAILWAY_DEPLOYMENT_ID);
-
 ponder.on("NounsToken:Transfer", async ({ event, context }) => {
 	await context.db
 		.insert(erc721Balances)
