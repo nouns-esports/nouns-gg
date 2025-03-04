@@ -8,6 +8,6 @@
     "start": "bun --env-file=../../.env.production ponder start --schema=indexer"
   },
   "dependencies": {
-    "ponder": "0.9.24-next.1"
+    "ponder": "0.9.25"
   }
 }
