@@ -11,6 +11,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 console.log("DEPLOYMENT ID", process.env.RAILWAY_DEPLOYMENT_ID);
+console.log("ENV", process.env);
 
 ponder.on("NounsToken:Transfer", async ({ event, context }) => {
 	await context.db
