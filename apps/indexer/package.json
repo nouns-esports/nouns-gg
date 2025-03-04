@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "ponder dev --schema=indexer",
-    "start": "bun --env-file=../../.env.production ponder start -v --schema=indexer"
+    "start": "bun --env-file=../../.env.production ponder start --schema=$RAILWAY_DEPLOYMENT_ID"
   },
   "dependencies": {
     "ponder": "0.9.25"
