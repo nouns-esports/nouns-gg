@@ -1,4 +1,4 @@
-import { createConfig } from "ponder";
+import { createConfig, rateLimit } from "ponder";
 import { http } from "viem";
 import { env } from "~/env";
 
@@ -14,12 +14,20 @@ export default createConfig({
 	networks: {
 		mainnet: {
 			chainId: 1,
-			transport: http(`https://mainnet.infura.io/v3/${env.INFURA_API_KEY}`),
+			transport: rateLimit(
+				http(`https://mainnet.infura.io/v3/${env.INFURA_API_KEY}`),
+				{
+					requestsPerSecond: 2,
+				},
+			),
 		},
 		base: {
 			chainId: 8453,
-			transport: http(
-				`https://base-mainnet.infura.io/v3/${env.INFURA_API_KEY}`,
+			transport: rateLimit(
+				http(`https://base-mainnet.infura.io/v3/${env.INFURA_API_KEY}`),
+				{
+					requestsPerSecond: 2,
+				},
 			),
 		},
 	},
