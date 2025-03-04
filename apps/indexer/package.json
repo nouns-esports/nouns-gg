@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "ponder dev --schema=indexer",
-    "start": "bun --env-file=../../.env.production ponder start --schema=indexer"
+    "start": "ponder start --schema=indexer"
   },
   "dependencies": {
     "ponder": "0.9.25"
