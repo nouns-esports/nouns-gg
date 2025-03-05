@@ -3,7 +3,7 @@ import { env } from "~/env";
 import { Table, is } from "drizzle-orm";
 
 import * as _indexerSchema from "./schema/indexer";
-import * as neynarSchema from "./schema/neynar";
+// import * as neynarSchema from "./schema/neynar";
 import * as publicSchema from "./schema/public";
 
 const setDatabaseSchema = <T extends { [name: string]: unknown }>(
@@ -19,13 +19,12 @@ const setDatabaseSchema = <T extends { [name: string]: unknown }>(
 	return schema;
 };
 
-const indexerSchema = setDatabaseSchema(_indexerSchema, "indexer");
+const indexerSchema = setDatabaseSchema(_indexerSchema, env.INDEXER_SCHEMA);
 
 export const db = drizzle(env.PRIMARY_DATABASE_URL, {
 	schema: {
 		...indexerSchema,
-		...neynarSchema,
+		// ...neynarSchema,
 		...publicSchema,
 	},
-	casing: "snake_case",
 });

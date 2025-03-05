@@ -81,7 +81,7 @@ export const articles = pgTable("articles", (t) => ({
 	title: t.text().notNull(),
 	image: t.text().notNull(),
 	content: t.jsonb().$type<Record<string, any>>().notNull(),
-	publishedAt: t.timestamp({ mode: "date" }).notNull(),
+	publishedAt: t.timestamp("published_at", { mode: "date" }).notNull(),
 	editors: t.text().array().notNull().default([]),
 }));
 
@@ -147,7 +147,7 @@ export const outcomes = pgTable("outcomes", (t) => ({
 	name: t.text().notNull(),
 	image: t.text(),
 	outcome: t.boolean(),
-	totalBets: t.integer().notNull().default(0),
+	totalBets: t.integer("total_bets").notNull().default(0),
 }));
 
 export const outcomesRelations = relations(outcomes, ({ one, many }) => ({
@@ -279,10 +279,10 @@ export const rounds = pgTable("rounds", (t) => ({
 	content: t.text().notNull(), // use markdown instead
 	// add description - tiptap for migration
 	start: t.timestamp({ mode: "date" }).notNull(),
-	votingStart: t.timestamp({ mode: "date" }).notNull(),
+	votingStart: t.timestamp("voting_start", { mode: "date" }).notNull(),
 	end: t.timestamp({ mode: "date" }).notNull(),
-	minProposerRank: t.integer(),
-	minVoterRank: t.integer(),
+	minProposerRank: t.integer("min_proposer_rank"),
+	minVoterRank: t.integer("min_voter_rank"),
 	// proposerCredential: t.text("proposer_credential").notNull().default("nexus"),
 	// voterCredential: t.text("voter_credential").notNull().default("nexus"),
 }));
@@ -336,9 +336,9 @@ export const assets = pgTable("assets", (t) => ({
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	decimals: t.smallint(),
-	chainId: t.integer(),
+	chainId: t.integer("chain_id"),
 	address: t.text(),
-	tokenId: t.text(),
+	tokenId: t.text("token_id"),
 }));
 
 export const proposals = pgTable("proposals", (t) => ({
@@ -349,7 +349,7 @@ export const proposals = pgTable("proposals", (t) => ({
 	content: t.text(), // rename to description
 	image: t.text(),
 	video: t.text(),
-	createdAt: t.timestamp({ mode: "date" }).notNull(),
+	createdAt: t.timestamp("created_at", { mode: "date" }).notNull(),
 	hidden: t.boolean().notNull().default(false),
 	published: t.boolean().notNull().default(true),
 }));
@@ -391,7 +391,7 @@ export const nexus = pgTable(
 		discord: t.text(),
 		fid: t.integer(),
 		gold: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
-		canRecieveEmails: t.boolean().notNull().default(false),
+		canRecieveEmails: t.boolean("can_recieve_emails").notNull().default(false),
 	}),
 	(table) => [check("gold_balance", sql`${table.gold} >= 0`)],
 );
@@ -458,7 +458,7 @@ export const quests = pgTable("quests", (t) => ({
 	image: t.text().notNull(),
 	community: t.text(),
 	event: t.text(),
-	createdAt: t.timestamp({ mode: "date" }).notNull().defaultNow(),
+	createdAt: t.timestamp("created_at", { mode: "date" }).notNull().defaultNow(),
 	featured: t.boolean().notNull().default(false),
 	active: t.boolean().notNull().default(false),
 	start: t.timestamp({ mode: "date" }),
@@ -466,7 +466,7 @@ export const quests = pgTable("quests", (t) => ({
 	xp: t.integer().notNull(),
 	actions: t.text().array().notNull(),
 	actionInputs: t
-		.jsonb()
+		.jsonb("action_inputs")
 		.array()
 		.$type<Array<{ [key: string]: any }>>()
 		.notNull()
@@ -602,7 +602,7 @@ export const creations = pgTable("creations", (t) => ({
 		.notNull()
 		.default("art"),
 	title: t.text(),
-	createdAt: t.timestamp({ mode: "date" }),
+	createdAt: t.timestamp("created_at", { mode: "date" }),
 	original: t.text(),
 	community: t.text(),
 	width: t.integer().notNull(),
@@ -626,11 +626,11 @@ export const creationsRelations = relations(creations, ({ one }) => ({
 
 export const products = pgTable("products", (t) => ({
 	id: t.text().primaryKey(),
-	shopifyId: t.text().notNull(),
+	shopifyId: t.text("shopify_id").notNull(),
 	name: t.text().notNull(),
 	description: t.text().notNull(),
 	images: t.text().array().notNull().default([]),
-	sizeGuide: t.text(),
+	sizeGuide: t.text("size_guide"),
 	variants: t
 		.jsonb()
 		.array()

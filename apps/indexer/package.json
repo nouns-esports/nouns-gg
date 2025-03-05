@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "ponder dev --schema=indexer",
-    "start": "ponder start --schema=$RAILWAY_DEPLOYMENT_ID"
+    "start": "ponder start --schema=indexer"
   },
   "dependencies": {
     "ponder": "0.9.25"

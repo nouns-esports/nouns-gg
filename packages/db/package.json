@@ -4,13 +4,11 @@
   "type": "module",
   "scripts": {
     "dev": "bun --env-file=../../.env.development drizzle-kit studio --host 127.0.0.1",
-    "studio:production": "bun --env-file=../../.env.production drizzle-kit studio --host 127.0.0.1",
-    "migrate:production": "bun --env-file=../../.env.production drizzle-kit generate && bun --env-file=../../.env.production ./migrate.ts",
-    "migrate:development": "bun --env-file=../../.env.development drizzle-kit generate && bun --env-file=../../.env.development ./migrate.ts",
+    "studio:prod": "bun --env-file=../../.env.production drizzle-kit studio --host 127.0.0.1",
     "migrate:prod": "bun --env-file=../../.env.production drizzle-kit push --strict --verbose",
     "migrate:dev": "bun --env-file=../../.env.development drizzle-kit push --strict --verbose",
-    "sandbox:production": "bun --env-file=../../.env.production sandbox.ts",
-    "sandbox:development": "bun --env-file=../../.env.development sandbox.ts"
+    "sandbox:prod": "bun --env-file=../../.env.production sandbox.ts",
+    "sandbox:dev": "bun --env-file=../../.env.development sandbox.ts"
   },
   "devDependencies": {
     "@types/pg": "^8.11.5"
