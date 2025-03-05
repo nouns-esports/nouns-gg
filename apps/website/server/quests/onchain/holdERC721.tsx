@@ -1,6 +1,7 @@
-import { viemPublicClients } from "@/server/clients/viem";
 import createAction from "../createAction";
-import { parseAbi } from "viem";
+import { db } from "~/packages/db";
+import { erc721Balances } from "~/packages/db/schema/indexer";
+import { and, eq, inArray } from "drizzle-orm";
 
 export const holdERC721 = createAction<{
 	contract?: string;
@@ -23,20 +24,17 @@ export const holdERC721 = createAction<{
 		description: <p>Acquire a {actionInputs.tokenName}</p>,
 		url: actionInputs.url,
 		check: async (user) => {
-			for (const wallet of user.wallets) {
-				const balance = await viemPublicClients.mainnet.readContract({
-					address: actionInputs.contract as `0x${string}`,
-					abi: parseAbi([
-						"function balanceOf(address) external view returns (uint256)",
-					]),
-					functionName: "balanceOf",
-					args: [wallet.address as `0x${string}`],
-				});
+			const balance = await db.query.erc721Balances.findFirst({
+				where: and(
+					eq(erc721Balances.collection, actionInputs.contract as `0x${string}`),
+					inArray(
+						erc721Balances.account,
+						user.wallets.map((w) => w.address as `0x${string}`),
+					),
+				),
+			});
 
-				if (balance > 0n) {
-					return true;
-				}
-			}
+			if (balance) return true;
 
 			return false;
 		},

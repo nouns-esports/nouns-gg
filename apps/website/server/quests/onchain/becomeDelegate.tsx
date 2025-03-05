@@ -1,16 +1,12 @@
-import { viemPublicClients } from "@/server/clients/viem";
 import createAction from "../createAction";
-import { parseAbi } from "viem";
+import { db } from "~/packages/db";
+import { lilnounDelegates, nounDelegates } from "~/packages/db/schema/indexer";
+import { inArray } from "drizzle-orm";
 
 export const becomeDelegate = createAction<{
-	contract?: string;
 	url?: string;
 	tokenName?: string;
 }>(async (actionInputs) => {
-	if (!actionInputs.contract) {
-		throw new Error("DAO Contract Address is required");
-	}
-
 	if (!actionInputs.url) {
 		throw new Error("URL is required");
 	}
@@ -19,30 +15,22 @@ export const becomeDelegate = createAction<{
 		description: <p>Become a {actionInputs.tokenName ?? ""} delegate</p>,
 		url: actionInputs.url,
 		check: async (user) => {
-			for (const wallet of user.wallets) {
-				const [currentVotes, balance] = await Promise.all([
-					viemPublicClients.mainnet.readContract({
-						address: actionInputs.contract as `0x${string}`,
-						abi: parseAbi([
-							"function getCurrentVotes(address) external view returns (uint96)",
-						]),
-						functionName: "getCurrentVotes",
-						args: [wallet.address as `0x${string}`],
-					}),
-					viemPublicClients.mainnet.readContract({
-						address: actionInputs.contract as `0x${string}`,
-						abi: parseAbi([
-							"function balanceOf(address) external view returns (uint256)",
-						]),
-						functionName: "balanceOf",
-						args: [wallet.address as `0x${string}`],
-					}),
-				]);
+			const delegation =
+				actionInputs.tokenName === "Noun"
+					? await db.query.nounDelegates.findFirst({
+							where: inArray(
+								nounDelegates.to,
+								user.wallets.map((w) => w.address as `0x${string}`),
+							),
+						})
+					: await db.query.lilnounDelegates.findFirst({
+							where: inArray(
+								lilnounDelegates.to,
+								user.wallets.map((w) => w.address as `0x${string}`),
+							),
+						});
 
-				if (currentVotes > 0n || balance > 0n) {
-					return true;
-				}
-			}
+			if (delegation) return true;
 
 			return false;
 		},
