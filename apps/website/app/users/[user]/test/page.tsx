@@ -10,8 +10,7 @@ export default async function TestPage() {
 		return <div>Not logged in</div>;
 	}
 
-	console.log("DB", Object.keys(db.query));
-	console.log("nounDelegates", db.query.nounDelegates);
+	console.log("nounDelegates", Object.keys(db.query.nounDelegates));
 
 	const someDelegates = await db.query.nounDelegates.findMany({
 		limit: 10,
