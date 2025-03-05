@@ -9,11 +9,11 @@ import {
 	YAxis,
 	ReferenceLine,
 } from "recharts";
-import type { Rank, Rankings } from "~/packages/db/schema/public";
+import type { ranks } from "~/packages/db/schema/public";
 
 export default function RankChart(props: {
 	userRankings: Awaited<ReturnType<typeof getUserRankings>>;
-	ranks: Rank[];
+	ranks: Array<typeof ranks.$inferSelect>;
 }) {
 	return (
 		<ResponsiveContainer
