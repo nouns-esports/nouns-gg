@@ -1,6 +1,6 @@
 "use client";
 
-import type { Round } from "~/packages/db/schema/public";
+import type { rounds } from "~/packages/db/schema/public";
 import { twMerge } from "tailwind-merge";
 import DateComponent from "./Date";
 import { roundState } from "@/utils/roundState";
@@ -8,7 +8,9 @@ import { Check, Timer } from "lucide-react";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useMemo } from "react";
 
-export default function RoundTimeline(props: { round: Round }) {
+export default function RoundTimeline(props: {
+	round: typeof rounds.$inferSelect;
+}) {
 	const now = new Date();
 	const start = new Date(props.round.start);
 	const votingStart = new Date(props.round.votingStart);

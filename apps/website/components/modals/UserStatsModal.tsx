@@ -1,11 +1,11 @@
 import { Sparkles, X } from "lucide-react";
 import { Modal, ToggleModal } from "../Modal";
-import type { Nexus } from "~/packages/db/schema/public";
+import type { nexus } from "~/packages/db/schema/public";
 import type { getUserStats } from "@/server/queries/users";
 import DateComponent from "../Date";
 
 export default function UserStatsModal(props: {
-	user: Nexus;
+	user: typeof nexus.$inferSelect;
 	stats: Awaited<ReturnType<typeof getUserStats>>;
 }) {
 	return (

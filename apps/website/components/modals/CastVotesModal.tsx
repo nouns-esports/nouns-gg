@@ -1,6 +1,6 @@
 "use client";
 
-import type { Nexus, Proposal } from "~/packages/db/schema/public";
+import type { nexus, proposals } from "~/packages/db/schema/public";
 import { Modal, useModal } from "../Modal";
 import { useEffect } from "react";
 import { toast } from "../Toasts";
@@ -25,8 +25,8 @@ import { env } from "~/env";
 export default function CastVotesModal(props: {
 	round: string;
 	proposals: Array<
-		Proposal & {
-			user: Nexus;
+		typeof proposals.$inferSelect & {
+			user: typeof nexus.$inferSelect;
 		}
 	>;
 	selectedVotes: Record<string, number>;

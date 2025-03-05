@@ -2,21 +2,20 @@ import Link from "./Link";
 import { Timer } from "lucide-react";
 import { roundState } from "@/utils/roundState";
 import Countdown from "@/components/Countdown";
-import type { Community, Round } from "~/packages/db/schema/public";
 import { twMerge } from "tailwind-merge";
 import Image from "./Image";
 
 export default function RoundCard(props: {
-	id: Round["id"];
-	image: Round["image"];
-	name: Round["name"];
-	start: Round["start"];
-	votingStart: Round["votingStart"];
-	end: Round["end"];
+	id: string;
+	image: string;
+	name: string;
+	start: Date | string;
+	votingStart: Date | string;
+	end: Date | string;
 	community?: {
-		id: Community["id"];
-		name: Community["name"];
-		image: Community["image"];
+		id: string;
+		name: string;
+		image: string;
 	};
 	className?: string;
 }) {

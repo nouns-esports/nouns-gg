@@ -4,12 +4,12 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Button from "./Button";
 import { twMerge } from "tailwind-merge";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import type { Round, Event } from "~/packages/db/schema/public";
+import type { rounds, events } from "~/packages/db/schema/public";
 import { roundState } from "@/utils/roundState";
 
 export default function Gallery(props: {
-	highlightedRound?: Round;
-	highlightedEvent?: Event;
+	highlightedRound?: typeof rounds.$inferSelect;
+	highlightedEvent?: typeof events.$inferSelect;
 }) {
 	const [index, setIndex] = useState(0);
 	const [backwards, setBackwards] = useState(false);

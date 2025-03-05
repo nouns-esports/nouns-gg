@@ -15,7 +15,7 @@ import ViewProposalModal from "../modals/VewProposalModal";
 import type { AuthenticatedUser } from "@/server/queries/users";
 import VoteSelector from "../VoteSelector";
 import ShareVotesModal from "../modals/ShareVotesModal";
-import type { Round } from "~/packages/db/schema/public";
+import type { rounds } from "~/packages/db/schema/public";
 import Countdown from "../Countdown";
 
 export default function Proposals(props: {
@@ -421,7 +421,7 @@ export default function Proposals(props: {
 												className="flex w-full h-full object-cover overflow-hidden rounded-xl select-none aspect-video"
 											/>
 										),
-									}[props.round.type as Round["type"]]
+									}[props.round.type as (typeof rounds.$inferSelect)["type"]]
 								}
 								<div className="flex justify-between items-center flex-shrink-0">
 									{proposal.user ? (

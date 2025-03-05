@@ -1,8 +1,11 @@
 import { Diamond } from "lucide-react";
 import Link from "./Link";
-import type { Nexus } from "~/packages/db/schema/public";
+import type { db } from "~/packages/db";
 
-export default function Attribution(props: { id: string; creator: Nexus }) {
+export default function Attribution(props: {
+	id: string;
+	creator: NonNullable<Awaited<ReturnType<typeof db.query.nexus.findFirst>>>;
+}) {
 	return (
 		<Link
 			href={`/users/${props.creator.username ?? props.creator.discord ?? props.creator.id}`}

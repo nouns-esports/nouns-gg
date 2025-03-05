@@ -10,7 +10,7 @@ import {
 	TwitterLogo,
 } from "phosphor-react-sc";
 import Markdown from "../lexical/Markdown";
-import type { Nexus, Proposal, Round } from "~/packages/db/schema/public";
+import type { rounds } from "~/packages/db/schema/public";
 import { roundState } from "@/utils/roundState";
 import type { AuthenticatedUser } from "@/server/queries/users";
 import VoteSelector from "../VoteSelector";
@@ -78,7 +78,7 @@ export default function ViewProposalModal(props: {
 							/>
 						),
 						video: <VideoEmbedPlayer url={props.proposal.video ?? ""} />,
-					}[props.round.type as Round["type"]]
+					}[props.round.type as (typeof rounds.$inferSelect)["type"]]
 				}
 			</div>
 			<div className="flex justify-between items-center">
