@@ -11,7 +11,6 @@ import {
 } from "phosphor-react-sc";
 import Link from "./Link";
 import type { CastWithInteractions } from "@neynar/nodejs-sdk/build/neynar-api/v2";
-import type { Community } from "~/packages/db/schema/public";
 import {
 	ExternalLink,
 	MessageSquare,
@@ -27,10 +26,11 @@ import { videoEmbedFromLink } from "@/utils/videoEmbedFromLink";
 import Recast from "./Recast";
 import Upvote from "./Upvote";
 import CastText from "./CastText";
+import type { communities } from "~/packages/db/schema/public";
 
 export default function CastCard(props: {
 	cast: CastWithInteractions;
-	community?: Community;
+	community?: typeof communities.$inferSelect;
 	expanded?: boolean;
 }) {
 	const embeds = parseCastEmbeds(props.cast.embeds);

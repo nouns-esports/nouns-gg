@@ -6,13 +6,13 @@ import type { AuthenticatedUser } from "@/server/queries/users";
 import Button from "../Button";
 import LimitMeter from "../LimitMeter";
 import { useState } from "react";
-import type { Community } from "~/packages/db/schema/public";
+import type { communities } from "~/packages/db/schema/public";
 import { twMerge } from "tailwind-merge";
 import CastText, { useCastTextEditor } from "../CastText";
 
 export default function CreatePostModal(props: {
 	user?: AuthenticatedUser;
-	communities: Community[];
+	communities: Array<typeof communities.$inferSelect>;
 }) {
 	const { close } = useModal("create-post");
 
@@ -22,7 +22,7 @@ export default function CreatePostModal(props: {
 		onUpdate: ({ editor }) => setText(editor.getText()),
 	});
 
-	const [community, setCommunity] = useState<Community>();
+	const [community, setCommunity] = useState<typeof communities.$inferSelect>();
 
 	const [image, setImage] = useState<File>();
 	const [showCommunityDropdown, setShowCommunityDropdown] = useState(false);
