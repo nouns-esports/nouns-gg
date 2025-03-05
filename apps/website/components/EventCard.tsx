@@ -1,15 +1,14 @@
-import type { Event } from "~/packages/db/schema/public";
 import Link from "@/components/Link";
 import Button from "./Button";
 import { CalendarDays } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 
 export default function EventCard(props: {
-	id: Event["id"];
-	name: Event["name"];
-	image: Event["image"];
-	start: Event["start"];
-	end: Event["end"];
+	id: string;
+	name: string;
+	image: string;
+	start: Date | string;
+	end: Date | string;
 	className?: string;
 }) {
 	return (

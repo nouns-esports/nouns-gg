@@ -1,5 +1,5 @@
 import { unstable_cache as cache } from "next/cache";
-import { db } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 export const getCurrentRanks = cache(
 	async () => {
