@@ -66,6 +66,6 @@ export default createConfig({
 	},
 	database: {
 		kind: "postgres",
-		connectionString: env.PRIMARY_DATABASE_URL,
+		connectionString: env.DATABASE_URL,
 	},
 });

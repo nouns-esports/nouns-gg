@@ -21,7 +21,7 @@ const setDatabaseSchema = <T extends { [name: string]: unknown }>(
 
 const indexerSchema = setDatabaseSchema(_indexerSchema, env.INDEXER_SCHEMA);
 
-export const db = drizzle(env.PRIMARY_DATABASE_URL, {
+export const db = drizzle(env.DATABASE_URL, {
 	schema: {
 		...indexerSchema,
 		// ...neynarSchema,
