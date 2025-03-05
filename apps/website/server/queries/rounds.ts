@@ -1,4 +1,6 @@
-import { awards, db, proposals, rounds, votes } from "~/packages/db/schema";
+import { awards, proposals, rounds, votes } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
+
 import {
 	eq,
 	gt,

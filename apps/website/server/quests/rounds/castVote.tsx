@@ -1,10 +1,13 @@
 import { and, eq } from "drizzle-orm";
 import createAction from "../createAction";
-import { db, rounds, votes, type Round } from "~/packages/db/schema";
+import { rounds, votes } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 export const castVote = createAction<{ round?: string }>(
 	async (actionInputs) => {
-		let round: Round | undefined;
+		let round:
+			| Awaited<ReturnType<typeof db.query.rounds.findFirst>>
+			| undefined;
 
 		if (actionInputs.round) {
 			round = await db.query.rounds.findFirst({

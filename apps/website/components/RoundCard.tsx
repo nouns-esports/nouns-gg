@@ -2,7 +2,7 @@ import Link from "./Link";
 import { Timer } from "lucide-react";
 import { roundState } from "@/utils/roundState";
 import Countdown from "@/components/Countdown";
-import type { Community, Round } from "~/packages/db/schema";
+import type { Community, Round } from "~/packages/db/schema/public";
 import { twMerge } from "tailwind-merge";
 import Image from "./Image";
 

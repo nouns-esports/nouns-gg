@@ -1,7 +1,8 @@
 import { getAuthenticatedUser } from "@/server/queries/users";
 import { eq } from "drizzle-orm";
 import { notFound, redirect, RedirectType } from "next/navigation";
-import { db, links, snapshots } from "~/packages/db/schema";
+import { links, snapshots } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 export default async function LinkRoute(props: {
 	params: Promise<{ link: string[] }>;

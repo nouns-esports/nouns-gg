@@ -2,7 +2,8 @@
 
 import { env } from "~/env";
 import { onlyUser } from ".";
-import { db, nexus, ranks } from "~/packages/db/schema";
+import { nexus, ranks } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { eq, asc } from "drizzle-orm";
 import checkDiscordAccountAge from "@/utils/checkDiscordAccountAge";
 import { revalidatePath } from "next/cache";

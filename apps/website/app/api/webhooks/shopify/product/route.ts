@@ -1,5 +1,6 @@
 import { eq } from "drizzle-orm";
-import { db, products } from "~/packages/db/schema";
+import { products } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 type ProductUpdated = {
 	admin_graphql_api_id: string;

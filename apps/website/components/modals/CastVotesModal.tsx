@@ -1,6 +1,6 @@
 "use client";
 
-import type { Nexus, Proposal } from "~/packages/db/schema";
+import type { Nexus, Proposal } from "~/packages/db/schema/public";
 import { Modal, useModal } from "../Modal";
 import { useEffect } from "react";
 import { toast } from "../Toasts";

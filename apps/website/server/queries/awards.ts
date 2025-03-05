@@ -1,4 +1,6 @@
-import { awards, db, proposals, type Award } from "~/packages/db/schema";
+import { awards, proposals } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
+
 import { eq, asc, desc, and, gt } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
 

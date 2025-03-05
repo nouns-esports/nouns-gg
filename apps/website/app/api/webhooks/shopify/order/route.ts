@@ -2,7 +2,8 @@ import { and, eq } from "drizzle-orm";
 
 import { privyClient } from "@/server/clients/privy";
 import { sql } from "drizzle-orm";
-import { db, nexus, xp } from "~/packages/db/schema";
+import { nexus, xp } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 // 10 xp per $ spent (not shipping)
 type OrderCreated = {

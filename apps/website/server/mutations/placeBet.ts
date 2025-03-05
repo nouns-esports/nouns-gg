@@ -2,9 +2,9 @@
 
 import { z } from "zod";
 import { onlyRanked } from ".";
-import { bets, outcomes, predictions } from "~/packages/db/schema";
+import { bets, outcomes, predictions } from "~/packages/db/schema/public";
 import { eq, sql } from "drizzle-orm";
-import { db } from "~/packages/db/schema";
+import { db } from "~/packages/db/schema/public";
 import { revalidatePath } from "next/cache";
 
 export const placeBet = onlyRanked

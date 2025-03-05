@@ -1,4 +1,5 @@
-import { db, nexus, xp, snapshots } from "~/packages/db/schema";
+import { nexus, xp, snapshots } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { and, gte, lte, desc, eq, inArray, or } from "drizzle-orm";
 import { agent } from "..";
 import { isToday } from "date-fns";

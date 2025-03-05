@@ -1,1 +1,0 @@
-ALTER TABLE "communities" ADD COLUMN "channel" text DEFAULT '' NOT NULL;

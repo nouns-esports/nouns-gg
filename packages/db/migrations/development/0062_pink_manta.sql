@@ -1,1 +1,0 @@
-ALTER TABLE "nexus" ALTER COLUMN "rank" SET DEFAULT 1;

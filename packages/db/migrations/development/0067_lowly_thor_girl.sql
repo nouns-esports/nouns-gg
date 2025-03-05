@@ -1,1 +1,0 @@
-ALTER TABLE "products" ALTER COLUMN "shopify_id" SET DATA TYPE text;

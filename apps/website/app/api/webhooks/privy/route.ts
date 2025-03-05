@@ -2,7 +2,8 @@ import { privyClient } from "@/server/clients/privy";
 import { eq } from "drizzle-orm";
 import { NextResponse, type NextRequest } from "next/server";
 import { env } from "~/env";
-import { db, nexus } from "~/packages/db/schema";
+import { nexus } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 type AccountType =
 	| {

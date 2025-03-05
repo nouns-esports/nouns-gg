@@ -11,7 +11,7 @@ import {
 } from "phosphor-react-sc";
 import Link from "./Link";
 import type { CastWithInteractions } from "@neynar/nodejs-sdk/build/neynar-api/v2";
-import type { Community } from "~/packages/db/schema";
+import type { Community } from "~/packages/db/schema/public";
 import {
 	ExternalLink,
 	MessageSquare,

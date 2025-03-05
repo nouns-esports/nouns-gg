@@ -1,4 +1,5 @@
-import { communities, db, quests, xp } from "~/packages/db/schema";
+import { quests, xp } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { and, asc, desc, eq, gte, isNull, lte } from "drizzle-orm";
 import {
 	unstable_cache as cache,

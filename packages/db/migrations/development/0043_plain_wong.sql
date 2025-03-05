@@ -1,1 +1,0 @@
-ALTER TABLE "bets" DROP COLUMN IF EXISTS "id";

@@ -1,4 +1,5 @@
-import { db, communities, rosters, talent } from "~/packages/db/schema";
+import { communities, rosters, talent } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { and, asc, eq, inArray, isNull } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
 

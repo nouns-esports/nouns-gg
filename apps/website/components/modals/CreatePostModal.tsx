@@ -6,7 +6,7 @@ import type { AuthenticatedUser } from "@/server/queries/users";
 import Button from "../Button";
 import LimitMeter from "../LimitMeter";
 import { useState } from "react";
-import type { Community } from "~/packages/db/schema";
+import type { Community } from "~/packages/db/schema/public";
 import { twMerge } from "tailwind-merge";
 import CastText, { useCastTextEditor } from "../CastText";
 

@@ -10,7 +10,7 @@ import {
 	TwitterLogo,
 } from "phosphor-react-sc";
 import Markdown from "../lexical/Markdown";
-import type { Nexus, Proposal, Round } from "~/packages/db/schema";
+import type { Nexus, Proposal, Round } from "~/packages/db/schema/public";
 import { roundState } from "@/utils/roundState";
 import type { AuthenticatedUser } from "@/server/queries/users";
 import VoteSelector from "../VoteSelector";

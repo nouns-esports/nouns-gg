@@ -1,4 +1,5 @@
-import { db, links, snapshots } from "~/packages/db/schema";
+import { links, snapshots } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import createAction from "../createAction";
 import { and, eq } from "drizzle-orm";
 

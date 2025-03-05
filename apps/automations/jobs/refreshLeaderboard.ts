@@ -1,7 +1,8 @@
 import { env } from "~/env";
 import { createJob } from "../createJob";
 import { and, lt, eq, sql, asc, gt, desc } from "drizzle-orm";
-import { db, gold, nexus, rankings, xp, ranks } from "~/packages/db/schema";
+import { gold, nexus, rankings, xp, ranks } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 // Ranking System
 // Each week on friday at 1:50pm CST, the leaderboard is refreshed

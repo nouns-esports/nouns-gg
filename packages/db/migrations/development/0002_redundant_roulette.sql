@@ -1,1 +1,0 @@
-ALTER TABLE "snapshots" ALTER COLUMN "tag" DROP NOT NULL;

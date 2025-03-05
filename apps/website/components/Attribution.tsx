@@ -1,6 +1,6 @@
 import { Diamond } from "lucide-react";
 import Link from "./Link";
-import type { Nexus } from "~/packages/db/schema";
+import type { Nexus } from "~/packages/db/schema/public";
 
 export default function Attribution(props: { id: string; creator: Nexus }) {
 	return (

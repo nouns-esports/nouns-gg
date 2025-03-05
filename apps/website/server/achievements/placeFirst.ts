@@ -1,5 +1,6 @@
 import { and, asc, desc, eq, sql } from "drizzle-orm";
-import { awards, db, proposals, votes } from "~/packages/db/schema";
+import { awards, proposals, votes } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import type { AuthenticatedUser } from "../queries/users";
 import { roundState } from "@/utils/roundState";
 

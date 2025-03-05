@@ -1,4 +1,4 @@
-import type { Event } from "~/packages/db/schema";
+import type { Event } from "~/packages/db/schema/public";
 import Link from "@/components/Link";
 import Button from "./Button";
 import { CalendarDays } from "lucide-react";

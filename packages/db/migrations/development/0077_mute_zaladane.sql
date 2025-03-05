@@ -1,1 +1,0 @@
-ALTER TABLE "carts" ADD COLUMN "variant" bigint NOT NULL;

@@ -1,1 +1,0 @@
-ALTER TABLE "nexus" ADD COLUMN "admin" boolean DEFAULT false NOT NULL;

@@ -1,1 +1,0 @@
-ALTER TABLE "bets" ADD COLUMN "prediction" text NOT NULL;

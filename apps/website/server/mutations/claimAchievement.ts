@@ -1,17 +1,10 @@
 "use server";
 
-import { env } from "~/env";
-import { onlyRanked, onlyUser } from ".";
+import { onlyRanked } from ".";
 import { z } from "zod";
-import {
-	db,
-	events,
-	nexus,
-	notifications,
-	xp,
-	type Notification,
-} from "~/packages/db/schema";
-import { and, desc, eq, gte, lte, or, sql } from "drizzle-orm";
+import { nexus, notifications, xp } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
+import { and, eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { checkAchievements } from "../queries/achievements";
 import { achievements } from "../achievements";

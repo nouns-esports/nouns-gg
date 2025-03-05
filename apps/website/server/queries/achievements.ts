@@ -1,6 +1,7 @@
 import type { AuthenticatedUser } from "./users";
 import { unstable_cache as cache } from "next/cache";
-import { db, xp } from "~/packages/db/schema";
+import { xp } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { and, eq, inArray } from "drizzle-orm";
 
 import attendCall from "../achievements/attendCall";

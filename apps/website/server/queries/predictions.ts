@@ -1,6 +1,7 @@
 "use server";
 
-import { bets, db, predictions, outcomes } from "~/packages/db/schema";
+import { bets, predictions, outcomes } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { eq, sql } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
 

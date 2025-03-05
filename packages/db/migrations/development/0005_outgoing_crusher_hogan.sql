@@ -1,1 +1,0 @@
-ALTER TABLE "rankings" DROP COLUMN IF EXISTS "place";

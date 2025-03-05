@@ -1,6 +1,6 @@
 "use client";
 
-import type { Round } from "~/packages/db/schema";
+import type { Round } from "~/packages/db/schema/public";
 import { twMerge } from "tailwind-merge";
 import DateComponent from "./Date";
 import { roundState } from "@/utils/roundState";

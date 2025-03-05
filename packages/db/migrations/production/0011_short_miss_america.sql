@@ -1,1 +1,0 @@
-ALTER TYPE "nexusTiers" ADD VALUE 'Champion';

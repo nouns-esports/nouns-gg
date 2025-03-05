@@ -1,6 +1,6 @@
 import { Sparkles, X } from "lucide-react";
 import { Modal, ToggleModal } from "../Modal";
-import type { Nexus } from "~/packages/db/schema";
+import type { Nexus } from "~/packages/db/schema/public";
 import type { getUserStats } from "@/server/queries/users";
 import DateComponent from "../Date";
 

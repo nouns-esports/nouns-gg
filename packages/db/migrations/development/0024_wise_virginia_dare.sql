@@ -1,1 +1,0 @@
-ALTER TABLE "communities" ALTER COLUMN "channel" SET NOT NULL;

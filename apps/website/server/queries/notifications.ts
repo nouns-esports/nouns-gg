@@ -1,5 +1,6 @@
 import { asc, desc, eq } from "drizzle-orm";
-import { db, notifications } from "~/packages/db/schema";
+import { notifications } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 export async function getNotifications(input: { user: string }) {
 	return db.query.notifications.findMany({

@@ -1,5 +1,6 @@
 import { agent } from "../";
-import { db, gold, nexus, rounds } from "~/packages/db/schema";
+import { gold, nexus, rounds } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { eq, sql } from "drizzle-orm";
 import { z } from "zod";
 

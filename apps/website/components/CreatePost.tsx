@@ -1,6 +1,6 @@
 "use client";
 
-import type { Community } from "~/packages/db/schema";
+import type { Community } from "~/packages/db/schema/public";
 import Button from "./Button";
 import { ToggleModal } from "./Modal";
 import CreatePostModal from "./modals/CreatePostModal";

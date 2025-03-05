@@ -1,7 +1,8 @@
 import { roundState } from "@/utils/roundState";
 import type { AuthenticatedUser } from "../queries/users";
 import { and, eq, desc, sql } from "drizzle-orm";
-import { db, proposals, votes } from "~/packages/db/schema";
+import { proposals, votes } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 export default async function winARound(user: AuthenticatedUser) {
 	const proposalsCreated = await db.query.proposals.findMany({

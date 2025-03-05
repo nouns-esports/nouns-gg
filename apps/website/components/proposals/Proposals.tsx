@@ -15,7 +15,7 @@ import ViewProposalModal from "../modals/VewProposalModal";
 import type { AuthenticatedUser } from "@/server/queries/users";
 import VoteSelector from "../VoteSelector";
 import ShareVotesModal from "../modals/ShareVotesModal";
-import type { Round } from "~/packages/db/schema";
+import type { Round } from "~/packages/db/schema/public";
 import Countdown from "../Countdown";
 
 export default function Proposals(props: {

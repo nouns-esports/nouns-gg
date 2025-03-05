@@ -1,7 +1,8 @@
 import { createAgent } from "~/packages/agent";
 import { anthropic } from "~/packages/agent/models";
 import { env } from "~/env";
-import { db, nexus } from "~/packages/db/schema";
+import { nexus } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { eq, or } from "drizzle-orm";
 import {
 	// twitterPlugin,

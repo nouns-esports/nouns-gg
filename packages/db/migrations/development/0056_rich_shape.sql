@@ -1,1 +1,0 @@
-ALTER TABLE "rankings" ADD COLUMN "leaderboard" text DEFAULT '5:2025' NOT NULL;

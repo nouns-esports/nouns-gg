@@ -1,4 +1,5 @@
-import { db, nexus } from "~/packages/db/schema";
+import { db } from "~/packages/db";
+import { nexus } from "~/packages/db/schema/public";
 import { privyClient } from "../clients/privy";
 import { createJob } from "../createJob";
 import { eq } from "drizzle-orm";

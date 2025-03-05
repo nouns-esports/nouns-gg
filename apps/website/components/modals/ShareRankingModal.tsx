@@ -2,7 +2,7 @@
 
 import { ArrowRight, X } from "lucide-react";
 import { Modal, ToggleModal } from "../Modal";
-import type { Rankings } from "~/packages/db/schema";
+import type { Rankings } from "~/packages/db/schema/public";
 import type { getLeaderboardPosition } from "@/server/queries/rankings";
 import { twMerge } from "tailwind-merge";
 import { CaretDown } from "phosphor-react-sc";

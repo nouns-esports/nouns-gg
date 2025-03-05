@@ -3,7 +3,7 @@
 // import { z } from "zod";
 // import { actionClient, onlyUser } from ".";
 // import { revalidatePath } from "next/cache";
-// import { db, nexus, rankings, ranks } from "~/packages/db/schema";
+// import { db, nexus, rankings, ranks } from "~/packages/db/schema/public";
 // import { and, asc, desc, gte, lte } from "drizzle-orm";
 // import { env } from "~/env";
 // import checkDiscordAccountAge from "@/utils/checkDiscordAccountAge";

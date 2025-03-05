@@ -1,6 +1,7 @@
 import { env } from "~/env";
 import { asc, eq, isNotNull, or } from "drizzle-orm";
-import { db, nexus, ranks, xp } from "~/packages/db/schema";
+import { nexus, ranks, xp } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { unstable_cache as cache } from "next/cache";
 import { cookies } from "next/headers";
 import checkDiscordAccountAge from "@/utils/checkDiscordAccountAge";

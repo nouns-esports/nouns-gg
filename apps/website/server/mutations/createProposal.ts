@@ -1,6 +1,7 @@
 "use server";
 
-import { db, nexus, proposals, rounds, xp } from "~/packages/db/schema";
+import { nexus, proposals, rounds, xp } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { onlyUser } from ".";

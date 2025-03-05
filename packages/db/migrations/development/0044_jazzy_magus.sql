@@ -1,1 +1,0 @@
-ALTER TABLE "bets" ADD COLUMN "id" serial PRIMARY KEY NOT NULL;

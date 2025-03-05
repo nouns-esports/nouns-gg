@@ -8,7 +8,8 @@ import { eq } from "drizzle-orm";
 import { Check, Sparkles } from "lucide-react";
 import { redirect } from "next/navigation";
 import { twMerge } from "tailwind-merge";
-import { db, xp } from "~/packages/db/schema";
+import { xp } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 export default async function Stations(props: {
 	params: Promise<{ event: string }>;

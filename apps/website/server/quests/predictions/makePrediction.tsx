@@ -1,10 +1,13 @@
 import { and, eq } from "drizzle-orm";
 import createAction from "../createAction";
-import { db, bets, predictions, type Prediction } from "~/packages/db/schema";
+import { bets, predictions } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 export const makePrediction = createAction<{ prediction?: string }>(
 	async (actionInputs) => {
-		let prediction: Prediction | undefined;
+		let prediction:
+			| Awaited<ReturnType<typeof db.query.predictions.findFirst>>
+			| undefined;
 
 		if (actionInputs.prediction) {
 			prediction = await db.query.predictions.findFirst({

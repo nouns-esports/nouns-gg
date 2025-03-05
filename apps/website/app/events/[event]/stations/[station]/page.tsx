@@ -1,4 +1,5 @@
-import { db, xp } from "~/packages/db/schema";
+import { xp } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import { redirect } from "next/navigation";
 import { and, desc, eq, gte, lte } from "drizzle-orm";

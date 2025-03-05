@@ -1,9 +1,7 @@
-import type { Round } from "~/packages/db/schema";
-
 export function roundState(props: {
-	start: Round["start"];
-	votingStart: Round["votingStart"];
-	end: Round["end"];
+	start: Date | string;
+	votingStart: Date | string;
+	end: Date | string;
 }) {
 	const now = new Date().getTime();
 

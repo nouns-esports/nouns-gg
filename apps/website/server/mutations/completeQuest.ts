@@ -2,15 +2,9 @@
 
 import { z } from "zod";
 import { onlyRanked } from ".";
-import {
-	db,
-	nexus,
-	notifications,
-	quests,
-	rankings,
-	xp,
-} from "~/packages/db/schema";
-import { and, desc, eq, gte, lte, sql } from "drizzle-orm";
+import { nexus, notifications, quests, xp } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
+import { eq, sql } from "drizzle-orm";
 import { getAction } from "../queries/quests";
 import { revalidatePath } from "next/cache";
 

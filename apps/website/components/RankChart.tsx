@@ -9,7 +9,7 @@ import {
 	YAxis,
 	ReferenceLine,
 } from "recharts";
-import type { Rank, Rankings } from "~/packages/db/schema";
+import type { Rank, Rankings } from "~/packages/db/schema/public";
 
 export default function RankChart(props: {
 	userRankings: Awaited<ReturnType<typeof getUserRankings>>;

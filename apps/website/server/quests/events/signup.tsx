@@ -1,4 +1,5 @@
-import { attendees, db, events, links, snapshots } from "~/packages/db/schema";
+import { attendees, events } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import createAction from "../createAction";
 import { and, eq } from "drizzle-orm";
 

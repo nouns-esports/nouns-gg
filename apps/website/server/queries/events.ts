@@ -1,6 +1,7 @@
 import { env } from "~/env";
 import { unstable_cache as cache } from "next/cache";
-import { bets, db, events, quests, xp } from "~/packages/db/schema";
+import { bets, events, quests, xp } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { asc, desc, eq, gt, or } from "drizzle-orm";
 
 export const getEvents = cache(

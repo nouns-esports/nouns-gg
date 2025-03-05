@@ -1,7 +1,8 @@
 import { and, isNotNull } from "drizzle-orm";
 import { discordClient, rest } from "../clients/discord";
 import { env } from "~/env";
-import { db, nexus } from "~/packages/db/schema";
+import { nexus } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { createJob } from "../createJob";
 import { Routes } from "discord.js";
 

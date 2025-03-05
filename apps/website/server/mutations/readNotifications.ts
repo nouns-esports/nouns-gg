@@ -1,7 +1,8 @@
 "use server";
 
 import { onlyUser } from ".";
-import { db, notifications } from "~/packages/db/schema";
+import { notifications } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { eq } from "drizzle-orm";
 
 export const readNotifications = onlyUser.action(async ({ ctx }) => {

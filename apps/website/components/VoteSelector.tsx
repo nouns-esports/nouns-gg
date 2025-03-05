@@ -4,7 +4,7 @@ import type { roundState } from "@/utils/roundState";
 import { motion, AnimatePresence } from "framer-motion";
 import { CaretUp, CaretDown, ChartBarHorizontal } from "phosphor-react-sc";
 import { twMerge } from "tailwind-merge";
-import type { Rank } from "~/packages/db/schema";
+import type { Rank } from "~/packages/db/schema/public";
 
 export default function VoteSelector(props: {
 	proposal: number;

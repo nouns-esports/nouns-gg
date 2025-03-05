@@ -2,7 +2,7 @@
 
 import { onlyUser } from ".";
 import { z } from "zod";
-import { carts, db } from "~/packages/db/schema";
+import { carts, db } from "~/packages/db/schema/public";
 import { and, eq } from "drizzle-orm";
 
 export const removeFromCart = onlyUser

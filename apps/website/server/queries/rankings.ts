@@ -1,6 +1,7 @@
 import { and, asc, desc, eq, sql } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
-import { db, rankings } from "~/packages/db/schema";
+import { rankings } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 
 export const getLeaderboard = cache(
 	async () => {

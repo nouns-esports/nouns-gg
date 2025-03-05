@@ -3,7 +3,8 @@
 import { onlyUser } from ".";
 import { z } from "zod";
 import { shopifyClient } from "../clients/shopify";
-import { carts, db, gold, nexus } from "~/packages/db/schema";
+import { carts, gold, nexus } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 
