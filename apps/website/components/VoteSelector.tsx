@@ -4,15 +4,15 @@ import type { roundState } from "@/utils/roundState";
 import { motion, AnimatePresence } from "framer-motion";
 import { CaretUp, CaretDown, ChartBarHorizontal } from "phosphor-react-sc";
 import { twMerge } from "tailwind-merge";
-import type { Rank } from "~/packages/db/schema/public";
+import type { ranks } from "~/packages/db/schema/public";
 
 export default function VoteSelector(props: {
 	proposal: number;
 	votes: number;
 	selectedVotes?: number;
 	userCanVote: boolean;
-	userRank?: Rank;
-	minRank?: Rank;
+	userRank?: typeof ranks.$inferSelect;
+	minRank?: typeof ranks.$inferSelect;
 	roundState: ReturnType<typeof roundState>;
 	awardCount?: number;
 	index?: number;
