@@ -1,7 +1,8 @@
 "use server";
 
 import { eq } from "drizzle-orm";
-import { carts, collections, db } from "~/packages/db/schema/public";
+import { carts, collections } from "~/packages/db/schema/public";
+import { db } from "~/packages/db";
 import { unstable_cache as cache } from "next/cache";
 import { products } from "~/packages/db/schema/public";
 import { shopifyClient } from "../clients/shopify";
