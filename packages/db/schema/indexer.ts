@@ -68,3 +68,8 @@ export const lilnounDelegates = onchainTable("lilnounDelegates", (t) => ({
 // 	startTime: t.timestamp().notNull(),
 // 	endTime: t.timestamp().notNull(),
 // }));
+
+export const _ponder_meta = onchainTable("_ponder_meta", (t) => ({
+	key: t.text().notNull(),
+	value: t.jsonb().notNull(),
+}));

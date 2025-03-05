@@ -10,7 +10,9 @@ export default async function TestPage() {
 		return <div>Not logged in</div>;
 	}
 
-	console.log("nounDelegates", Object.keys(db.query.nounDelegates));
+	// console.log("nounDelegates", Object.keys(db.query.nounDelegates));
+	const test = await db.query._ponder_meta.findFirst();
+	console.log("test", test);
 
 	const someDelegates = await db.query.nounDelegates.findMany({
 		limit: 10,
