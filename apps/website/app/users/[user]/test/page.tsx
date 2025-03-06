@@ -4,19 +4,13 @@ import { erc721Balances, nounDelegates } from "~/packages/db/schema/indexer";
 import { inArray } from "drizzle-orm";
 
 export default async function TestPage() {
-	console.log("test", Object.keys(db.query.erc721Balances));
 	const user = await getAuthenticatedUser();
 
 	if (!user) {
 		return <div>Not logged in</div>;
 	}
-	console.log(
-		"test0",
-		Object.keys(
-			// @ts-ignore
-			db.query?.erc721BalancesInIndexer,
-		),
-	);
+
+	console.log("test0", Object.keys(db.query.erc721Balances));
 
 	const balances = await db.query.erc721Balances.findMany({
 		limit: 10,
