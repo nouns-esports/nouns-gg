@@ -14,7 +14,7 @@ import { onchainTable, primaryKey } from "ponder";
 // }));
 
 export const erc721Balances = onchainTable(
-	"erc721Balances",
+	"erc721_balances",
 	(t) => ({
 		tokenId: t.bigint().notNull(),
 		account: t.hex().notNull(),
@@ -45,12 +45,12 @@ export const erc721Balances = onchainTable(
 // 	}),
 // }));
 
-export const nounDelegates = onchainTable("nounDelegates", (t) => ({
+export const nounDelegates = onchainTable("noun_delegates", (t) => ({
 	from: t.hex().primaryKey(),
 	to: t.hex().notNull(),
 }));
 
-export const lilnounDelegates = onchainTable("lilnounDelegates", (t) => ({
+export const lilnounDelegates = onchainTable("lilnoun_delegates", (t) => ({
 	from: t.hex().primaryKey(),
 	to: t.hex().notNull(),
 }));
