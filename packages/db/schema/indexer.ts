@@ -16,7 +16,7 @@ import { onchainTable, primaryKey } from "ponder";
 export const erc721Balances = onchainTable(
 	"erc721_balances",
 	(t) => ({
-		tokenId: t.bigint().notNull(),
+		tokenId: t.bigint("token_id").notNull(),
 		account: t.hex().notNull(),
 		collection: t.hex().notNull(),
 	}),
