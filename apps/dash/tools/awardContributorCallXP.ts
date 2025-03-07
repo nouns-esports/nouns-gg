@@ -67,33 +67,33 @@ agent.addTool({
 			);
 		}
 
-		// await db.transaction(async (tx) => {
-		// 	for (const user of users) {
-		// 		const [snapshot] = await tx
-		// 			.insert(snapshots)
-		// 			.values({
-		// 				type: "discord-call",
-		// 				user: user.id,
-		// 				timestamp: now,
-		// 			})
-		// 			.returning({ id: snapshots.id });
+		await db.transaction(async (tx) => {
+			for (const user of users) {
+				const [snapshot] = await tx
+					.insert(snapshots)
+					.values({
+						type: "discord-call",
+						user: user.id,
+						timestamp: now,
+					})
+					.returning({ id: snapshots.id });
 
-		// 		const amount = 300;
+				const amount = 300;
 
-		// 		await tx.insert(xp).values({
-		// 			user: user.id,
-		// 			amount,
-		// 			timestamp: now,
-		// 			snapshot: snapshot.id,
-		// 		});
+				await tx.insert(xp).values({
+					user: user.id,
+					amount,
+					timestamp: now,
+					snapshot: snapshot.id,
+				});
 
-		// 		await tx
-		// 			.update(nexus)
-		// 			.set({
-		// 				xp: user.xp + amount,
-		// 			})
-		// 			.where(eq(nexus.id, user.id));
-		// 	}
-		// });
+				await tx
+					.update(nexus)
+					.set({
+						xp: user.xp + amount,
+					})
+					.where(eq(nexus.id, user.id));
+			}
+		});
 	},
 });
