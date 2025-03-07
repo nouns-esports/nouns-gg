@@ -14,7 +14,6 @@ import Paragraph from "@tiptap/extension-paragraph";
 import Image from "@tiptap/extension-image";
 import Heading from "@tiptap/extension-heading";
 import Bold from "@tiptap/extension-bold";
-import { Markdown } from "tiptap-markdown";
 import Italic from "@tiptap/extension-italic";
 import ListItem from "@tiptap/extension-list-item";
 import BulletList from "@tiptap/extension-bullet-list";
@@ -32,9 +31,6 @@ export function useMarkdownEditor(props?: Parameters<typeof useEditor>[0]) {
 			ListItem,
 			BulletList,
 			OrderedList,
-			Markdown.configure({
-				bulletListMarker: "-",
-			}),
 			LinkExtension.configure({
 				protocols: ["http", "https"],
 				HTMLAttributes: {
