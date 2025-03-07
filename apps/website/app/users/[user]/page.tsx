@@ -19,6 +19,8 @@ import { getAchievementsProgress } from "@/server/queries/achievements";
 import UserStatsModal from "@/components/modals/UserStatsModal";
 import { twMerge } from "tailwind-merge";
 import AchievementsModal from "@/components/modals/AchievementsModal";
+import CheckDiscordServer from "@/components/CheckDiscordServer";
+import Link from "@/components/Link";
 
 export default async function User(props: {
 	params: Promise<{ user: string }>;
@@ -100,8 +102,15 @@ export default async function User(props: {
 							{user.rank !== null && userRankings.length > 0 ? (
 								<RankChart userRankings={userRankings} ranks={ranks} />
 							) : user.id === authenticatedUser?.id ? (
-								<div className="bg-black/30 border-grey-600 border w-full h-full rounded-xl flex items-center justify-center">
-									Enter the nexus
+								<div className="bg-black/30 border-grey-600 border w-full h-full rounded-xl flex flex-col gap-4 items-center justify-center">
+									<p>
+										Join the{" "}
+										<Link href="/discord" newTab className="text-red">
+											Discord server
+										</Link>{" "}
+										to enter the Nexus
+									</p>
+									<CheckDiscordServer user={authenticatedUser} />
 								</div>
 							) : null}
 							<Level xp={user.xp} />
