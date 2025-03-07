@@ -119,6 +119,18 @@ export default function Menu() {
 									<p className="text-grey-200">Our competitive rosters</p>
 								</div>
 							</Link>
+							<Link
+								href="/shop"
+								className="text-nowrap rounded-lg flex gap-4 items-center"
+							>
+								<div className="rounded-md w-10 h-10 flex overflow-hidden bg-bronze-500 text-white items-center">
+									<ShoppingBag className="w-full h-full p-2" />
+								</div>
+								<div>
+									<p className="font-bebas-neue text-lg">Shop</p>
+									<p className="text-grey-200">Buy merch and more</p>
+								</div>
+							</Link>
 						</div>
 					</Group>
 					<Group title="Get Involved" icon={<Shapes className="w-7 h-7" />}>
