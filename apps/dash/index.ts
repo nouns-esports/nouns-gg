@@ -75,7 +75,7 @@ export const agent = await createAgent({
 		if (user.rank) {
 			return (
 				`You are talking to ${user.name}\n` +
-				`They are ranked ${user.rank.name} and have ${user.xp} xp`
+				`They are ranked ${user.rank.name}, have ${user.xp} xp, and have ${user.gold} gold`
 			);
 		}
 	},
