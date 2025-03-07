@@ -36,7 +36,8 @@ function getNextFridayAt1350CST() {
 		targetDate = nextFriday(now);
 	}
 
-	return toZonedTime(
+	// Create the target time in CST
+	const cstTargetTime = toZonedTime(
 		set(targetDate, {
 			hours: 13,
 			minutes: 50,
@@ -45,6 +46,15 @@ function getNextFridayAt1350CST() {
 		}),
 		"America/Chicago",
 	);
+
+	// Convert the CST time to the local timezone
+	const localTime = new Date(
+		cstTargetTime.toLocaleString("en-US", {
+			timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+		}),
+	);
+
+	return localTime;
 }
 
 export async function generateMetadata(props: {
