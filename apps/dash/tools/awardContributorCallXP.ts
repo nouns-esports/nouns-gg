@@ -32,6 +32,8 @@ agent.addTool({
 			throw new Error("A snapshot has already been taken today");
 		}
 
+		console.log(context.room);
+
 		const channel = await agent.plugins.discord.client.channels.fetch(
 			context.room,
 			{ force: true },
@@ -49,6 +51,8 @@ agent.addTool({
 			(guildMember) => guildMember.user.username,
 		);
 
+		console.log(members);
+
 		if (members.length === 0) {
 			throw new Error("Theres nobody in the channel right now");
 		}
@@ -63,33 +67,33 @@ agent.addTool({
 			);
 		}
 
-		await db.transaction(async (tx) => {
-			for (const user of users) {
-				const [snapshot] = await tx
-					.insert(snapshots)
-					.values({
-						type: "discord-call",
-						user: user.id,
-						timestamp: now,
-					})
-					.returning({ id: snapshots.id });
+		// await db.transaction(async (tx) => {
+		// 	for (const user of users) {
+		// 		const [snapshot] = await tx
+		// 			.insert(snapshots)
+		// 			.values({
+		// 				type: "discord-call",
+		// 				user: user.id,
+		// 				timestamp: now,
+		// 			})
+		// 			.returning({ id: snapshots.id });
 
-				const amount = 300;
+		// 		const amount = 300;
 
-				await tx.insert(xp).values({
-					user: user.id,
-					amount,
-					timestamp: now,
-					snapshot: snapshot.id,
-				});
+		// 		await tx.insert(xp).values({
+		// 			user: user.id,
+		// 			amount,
+		// 			timestamp: now,
+		// 			snapshot: snapshot.id,
+		// 		});
 
-				await tx
-					.update(nexus)
-					.set({
-						xp: user.xp + amount,
-					})
-					.where(eq(nexus.id, user.id));
-			}
-		});
+		// 		await tx
+		// 			.update(nexus)
+		// 			.set({
+		// 				xp: user.xp + amount,
+		// 			})
+		// 			.where(eq(nexus.id, user.id));
+		// 	}
+		// });
 	},
 });
