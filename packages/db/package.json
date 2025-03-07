@@ -14,8 +14,8 @@
     "@types/pg": "^8.11.5"
   },
   "dependencies": {
-    "drizzle-kit": "^0.30.4",
-    "drizzle-orm": "^0.39.3",
+    "drizzle-kit": "^0.30.5",
+    "drizzle-orm": "^0.40.0",
     "pg": "^8.11.3"
   }
 }

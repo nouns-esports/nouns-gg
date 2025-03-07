@@ -59,7 +59,7 @@ export function useMarkdownEditor(props?: Parameters<typeof useEditor>[0]) {
 				levels: [1, 2, 3, 4],
 			}),
 		],
-		immediatelyRender: false,
+		immediatelyRender: true,
 		editorProps: {
 			attributes: {
 				class:

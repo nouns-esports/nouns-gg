@@ -1,6 +1,6 @@
 import { pgTable, check, index } from "drizzle-orm/pg-core";
 import { relations, sql } from "drizzle-orm";
-
+import type { JSONContent } from "@tiptap/core";
 export const links = pgTable("links", (t) => ({
 	id: t.text().primaryKey(),
 	url: t.text().notNull(),
@@ -80,9 +80,9 @@ export const articles = pgTable("articles", (t) => ({
 	id: t.text().primaryKey(),
 	title: t.text().notNull(),
 	image: t.text().notNull(),
-	content: t.jsonb().$type<Record<string, any>>().notNull(),
+	content: t.jsonb().$type<JSONContent>().notNull(),
 	publishedAt: t.timestamp("published_at", { mode: "date" }).notNull(),
-	editors: t.text().array().notNull().default([]),
+	editors: t.text().array().notNull(), //.default([]), default arrays are broken with Drizzle Kit right now
 }));
 
 export const events = pgTable("events", (t) => ({
@@ -315,7 +315,7 @@ export const awards = pgTable("awards", (t) => ({
 	round: t.text().notNull(),
 	place: t.smallint().notNull(),
 	asset: t.text().notNull().default(""),
-	value: t.numeric({ precision: 78 }).notNull(),
+	value: t.numeric({ precision: 78, scale: 0 }).notNull(),
 	claimed: t.boolean().notNull().default(false),
 }));
 
@@ -378,15 +378,15 @@ export const nexus = pgTable(
 		image: t.text().notNull().default(""),
 		name: t.text().notNull().default(""),
 		bio: t.text(),
-		interests: t.text().array().notNull().default([]),
+		interests: t.text().array().notNull(), //.default([]),  default arrays are broken with Drizzle Kit right now
 		// wallets: jsonb("wallets")
 		// 	.$type<{
 		// 		address: string;
 		// 		type: string;
 		// 	}>()
 		// 	.array()
-		// 	.notNull()
-		// 	.default([]),
+		// 	.notNull(),
+		// // 	.default([]), defaults + jsonb are broken with Drizzle Kit right now
 		twitter: t.text(),
 		discord: t.text(),
 		fid: t.integer(),
@@ -469,8 +469,8 @@ export const quests = pgTable("quests", (t) => ({
 		.jsonb("action_inputs")
 		.array()
 		.$type<Array<{ [key: string]: any }>>()
-		.notNull()
-		.default([]),
+		.notNull(),
+	// .default([]), defaults + jsonb are broken with Drizzle Kit right now
 }));
 
 export const questRelations = relations(quests, ({ one, many }) => ({
@@ -629,7 +629,7 @@ export const products = pgTable("products", (t) => ({
 	shopifyId: t.text("shopify_id").notNull(),
 	name: t.text().notNull(),
 	description: t.text().notNull(),
-	images: t.text().array().notNull().default([]),
+	images: t.text().array().notNull(), //.default([]), default arrays are broken with Drizzle Kit right now
 	sizeGuide: t.text("size_guide"),
 	variants: t
 		.jsonb()
@@ -642,8 +642,8 @@ export const products = pgTable("products", (t) => ({
 				inventory: number;
 			}>
 		>()
-		.notNull()
-		.default([]),
+		.notNull(),
+	// .default([]), defaults + jsonb are broken with Drizzle Kit right now
 	collection: t.text(),
 }));
 
