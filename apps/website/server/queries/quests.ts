@@ -24,6 +24,7 @@ import { makePrediction } from "../quests/predictions/makePrediction";
 import { signup } from "../quests/events/signup";
 import { holdERC721 } from "../quests/onchain/holdERC721";
 import { becomeDelegate } from "../quests/onchain/becomeDelegate";
+import { followAccounts } from "../quests/farcaster/followAccounts";
 
 export const actions: Record<string, ReturnType<typeof createAction>> = {
 	// Discord
@@ -39,6 +40,7 @@ export const actions: Record<string, ReturnType<typeof createAction>> = {
 	castInChannel,
 	followAccount,
 	followChannel,
+	followAccounts,
 
 	// Online
 	visitLink,
