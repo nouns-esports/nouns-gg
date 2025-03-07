@@ -5,6 +5,7 @@ import {
 	Diamond,
 	Gem,
 	Handshake,
+	List,
 	Shapes,
 	ShoppingBag,
 	Trophy,
@@ -72,7 +73,7 @@ export default function Menu() {
 			)}
 			<div
 				className={twMerge(
-					"flex flex-col gap-8 pt-24 px-8 text-grey-200 fixed w-full h-[100dvh] bg-black top-0 left-0 pointer-events-none opacity-0 transition-opacity",
+					"flex flex-col gap-8 pt-24 px-8 text-grey-200 fixed w-full h-[100dvh] overflow-y-scroll bg-black top-0 left-0 pointer-events-none opacity-0 transition-opacity",
 					open && "opacity-100 pointer-events-auto",
 					pathname === "/" && "pt-32",
 				)}
@@ -155,15 +156,30 @@ export default function Menu() {
 									</div>
 								</Link>
 							</li>
-							{/* <li className="text-nowrap">
-                <Link href="/discord" className="flex items-center gap-4">
-                  <img alt="Discord logo" src="/discord.jpg" className="h-10 w-10 rounded-md" />
-                  <div>
-                    <p className="font-bebas-neue text-lg">Discord</p>
-                    <p className="text-grey-200">Join the Discord server</p>
-                  </div>
-                </Link>
-              </li> */}
+							<li className="text-nowrap">
+								<Link href="/leaderboard" className="flex gap-4 items-center">
+									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-pink text-white items-center">
+										<List className="w-full h-full p-2" />
+									</div>
+									<div>
+										<p className="font-bebas-neue text-lg">Leaderboard</p>
+										<p className="text-grey-200">Rankup and earn rewards</p>
+									</div>
+								</Link>
+							</li>
+							<li className="text-nowrap">
+								<Link href="/discord" className="flex items-center gap-4">
+									<img
+										alt="Discord logo"
+										src="/discord.jpg"
+										className="h-10 w-10 rounded-md"
+									/>
+									<div>
+										<p className="font-bebas-neue text-lg">Discord</p>
+										<p className="text-grey-200">Join the Discord server</p>
+									</div>
+								</Link>
+							</li>
 						</ul>
 					</Group>
 				</ul>
