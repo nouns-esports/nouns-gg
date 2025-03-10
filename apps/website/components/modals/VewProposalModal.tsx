@@ -42,8 +42,6 @@ export default function ViewProposalModal(props: {
 		end: props.round.end,
 	});
 
-	console.log("CONTENT", props.proposal.content, typeof props.proposal.content);
-
 	return (
 		<Modal
 			id={`view-proposal-${props.proposal.id}`}

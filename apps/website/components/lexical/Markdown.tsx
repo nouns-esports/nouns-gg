@@ -49,7 +49,6 @@ export default function Markdown(props: {
 	onChange?: (state: EditorState, editor: LexicalEditor) => void;
 	className?: string;
 }) {
-	console.log("MARKDOWN", props.markdown);
 	return (
 		<LexicalComposer
 			// key={props.markdown}
