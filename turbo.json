@@ -30,7 +30,8 @@
     "DASH_FARCASTER_FID",
     "START_GG_ACCESS_TOKEN",
     "INFURA_API_KEY",
-    "INDEXER_SCHEMA"
+    "INDEXER_SCHEMA",
+    "RAILWAY_DEPLOYMENT_ID"
   ],
   "tasks": {
     "build": {
