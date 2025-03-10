@@ -276,7 +276,7 @@ export const rounds = pgTable("rounds", (t) => ({
 		.notNull()
 		.default("markdown"),
 	featured: t.boolean().notNull().default(false),
-	content: t.text(),
+	content: t.text().notNull(),
 	// add description - tiptap for migration
 	start: t.timestamp({ mode: "date" }).notNull(),
 	votingStart: t.timestamp("voting_start", { mode: "date" }).notNull(),
