@@ -51,7 +51,7 @@ export default async function Create(props: {
 							{round.name}
 						</h2>
 						<div className="flex flex-col gap-2">
-							<Markdown markdown={round.content ?? undefined} readOnly />
+							<Markdown markdown={round.content ?? ""} readOnly />
 						</div>
 					</div>
 				</div>

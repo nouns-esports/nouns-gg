@@ -44,7 +44,7 @@ const MATCHERS = [
 ];
 
 export default function Markdown(props: {
-	markdown?: string;
+	markdown: string;
 	readOnly: boolean;
 	onChange?: (state: EditorState, editor: LexicalEditor) => void;
 	className?: string;
@@ -69,26 +69,7 @@ export default function Markdown(props: {
 					ImageNode,
 				],
 				editorState: JSON.stringify({
-					root: props.markdown
-						? JSON.parse(props.markdown)
-						: {
-								children: [
-									{
-										children: [],
-										direction: null,
-										format: "",
-										indent: 0,
-										type: "paragraph",
-										version: 1,
-										textFormat: 0,
-									},
-								],
-								direction: null,
-								format: "",
-								indent: 0,
-								type: "root",
-								version: 1,
-							},
+					root: JSON.parse(props.markdown),
 				}),
 			}}
 		>

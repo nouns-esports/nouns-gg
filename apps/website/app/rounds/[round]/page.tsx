@@ -198,7 +198,7 @@ export default async function Round(props: {
 								</Link>
 							</div>
 							<Markdown
-								markdown={round.content ?? undefined}
+								markdown={round.content ?? ""}
 								readOnly
 								className="h-full overflow-y-auto custom-scrollbar"
 							/>
