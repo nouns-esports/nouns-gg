@@ -19,7 +19,10 @@ const setDatabaseSchema = <T extends { [name: string]: unknown }>(
 	return schema;
 };
 
-const indexerSchema = setDatabaseSchema(_indexerSchema, env.INDEXER_SCHEMA);
+const indexerSchema = setDatabaseSchema(
+	_indexerSchema,
+	env.RAILWAY_DEPLOYMENT_ID,
+);
 
 export const db = drizzle(env.DATABASE_URL, {
 	schema: {
