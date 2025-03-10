@@ -22,8 +22,8 @@
     "packages/*"
   ],
   "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@t3-oss/env-nextjs": "^0.10.1",
-    "typescript": "^5.3.3",
     "@tiptap/extension-image": "^2.9.1",
     "@tiptap/extension-link": "^2.9.1",
     "@tiptap/extension-mention": "^2.9.1",
@@ -31,6 +31,7 @@
     "@tiptap/html": "^2.11.2",
     "@tiptap/pm": "^2.11.5",
     "@tiptap/react": "^2.9.1",
-    "@tiptap/starter-kit": "^2.9.1"
+    "@tiptap/starter-kit": "^2.9.1",
+    "typescript": "^5.3.3"
   }
 }
