@@ -1,4 +1,4 @@
-import { onchainTable, primaryKey } from "ponder";
+import { onchainTable, primaryKey, relations } from "ponder";
 
 // export const erc20Tokens = onchainTable("erc20Tokens", (t) => ({
 // 	address: t.hex().primaryKey(),
@@ -25,13 +25,6 @@ export const erc721Balances = onchainTable(
 	}),
 );
 
-// export const erc721BalancesRelations = relations(erc721Balances, ({ one }) => ({
-// 	collection: one(erc721Tokens, {
-// 		fields: [erc721Balances.collection],
-// 		references: [erc721Tokens.address],
-// 	}),
-// }));
-
 // export const erc20Balances = onchainTable("erc20Balances", (t) => ({
 // 	account: t.hex().primaryKey(),
 // 	token: t.hex().notNull(),
@@ -50,10 +43,27 @@ export const nounDelegates = onchainTable("noun_delegates", (t) => ({
 	to: t.hex().notNull(),
 }));
 
+export const nounDelegatesRelations = relations(nounDelegates, ({ one }) => ({
+	delegatee: one(nounDelegates, {
+		fields: [nounDelegates.from],
+		references: [nounDelegates.to],
+	}),
+}));
+
 export const lilnounDelegates = onchainTable("lilnoun_delegates", (t) => ({
 	from: t.hex().primaryKey(),
 	to: t.hex().notNull(),
 }));
+
+export const lilnounDelegatesRelations = relations(
+	lilnounDelegates,
+	({ one }) => ({
+		delegatee: one(lilnounDelegates, {
+			fields: [lilnounDelegates.from],
+			references: [lilnounDelegates.to],
+		}),
+	}),
+);
 
 // export const nounsProposals = onchainTable("nounsProposals", (t) => ({
 // 	id: t.bigint().primaryKey(),
