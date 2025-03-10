@@ -3,17 +3,17 @@ import { join } from "path";
 import fs from "fs";
 import { getUser } from "@/server/queries/users";
 import { getUserVotesForRound } from "@/server/queries/votes";
-import { Resvg } from "@resvg/resvg-js";
-// import { isInitialized, init } from "../wasm";
+import { Resvg } from "@resvg/resvg-wasm";
+import { isInitialized, init } from "../wasm";
 
 export const dynamic = "force-static";
 export const revalidate = 600;
 
 export async function GET(request: Request) {
-	// if (!isInitialized) {
-	// 	console.log("Initializing WASM");
-	// 	await init();
-	// }
+	if (!isInitialized) {
+		console.log("Initializing WASM");
+		await init();
+	}
 
 	const Cabin = fs.readFileSync(
 		join(process.cwd(), "./public/fonts/Cabin-Regular.ttf"),

@@ -4,16 +4,16 @@ import fs from "fs";
 import { getLeaderboardPosition } from "@/server/queries/rankings";
 import { CaretDown } from "phosphor-react-sc";
 import { CaretUp } from "phosphor-react-sc";
-import { Resvg } from "@resvg/resvg-js";
-// import { isInitialized, init } from "../wasm";
+import { Resvg } from "@resvg/resvg-wasm";
+import { isInitialized, init } from "../wasm";
 
 export const dynamic = "force-static";
 export const revalidate = 600;
 
 export async function GET(request: Request) {
-	// if (!isInitialized) {
-	// 	await init();
-	// }
+	if (!isInitialized) {
+		await init();
+	}
 
 	const Cabin = fs.readFileSync(
 		join(process.cwd(), "./public/fonts/Cabin-SemiBold.ttf"),
