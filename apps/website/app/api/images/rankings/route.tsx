@@ -156,7 +156,7 @@ export async function GET(request: Request) {
 		}),
 		{
 			headers: {
-				"Content-Type": "image/png",
+				"Content-Type": "image/svg",
 			},
 		},
 	);
