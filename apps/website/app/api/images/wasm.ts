@@ -8,7 +8,7 @@ export async function init() {
 
 	console.log("PROCESS.CWD", process.cwd(), __dirname);
 
-	await initWasm("../../../public/index_bg.wasm");
+	await initWasm("../../../../public/index_bg.wasm");
 
 	isInitialized = true;
 }
