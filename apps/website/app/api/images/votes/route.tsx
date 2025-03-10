@@ -1,6 +1,8 @@
 import { getUser } from "@/server/queries/users";
 import { getUserVotesForRound } from "@/server/queries/votes";
-import { ImageResponse } from "@vercel/og";
+import { ImageResponse } from "next/og";
+import fs from "fs";
+import path, { join } from "path";
 
 export async function GET(request: Request) {
 	const url = new URL(request.url);
@@ -196,6 +198,40 @@ export async function GET(request: Request) {
 		{
 			width: 1200,
 			height: 800,
+			fonts: [
+				{
+					name: "Cabin",
+					data: fs.readFileSync(
+						join(process.cwd(), "./public/fonts/Cabin-Regular.ttf"),
+					),
+					weight: 400,
+					style: "normal",
+				},
+				{
+					name: "Luckiest Guy",
+					data: fs.readFileSync(
+						join(process.cwd(), "./public/fonts/LuckiestGuy-Regular.ttf"),
+					),
+					weight: 400,
+					style: "normal",
+				},
+				{
+					name: "Bebas Neue",
+					data: fs.readFileSync(
+						join(process.cwd(), "./public/fonts/BebasNeue-Regular.ttf"),
+					),
+					weight: 400,
+					style: "normal",
+				},
+				{
+					name: "Londrina Solid",
+					data: fs.readFileSync(
+						join(process.cwd(), "./public/fonts/LondrinaSolid-Regular.ttf"),
+					),
+					weight: 400,
+					style: "normal",
+				},
+			],
 		},
 	);
 }
