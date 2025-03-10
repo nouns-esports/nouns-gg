@@ -1,6 +1,8 @@
 import { createEnv } from "@t3-oss/env-nextjs";
 import { z } from "zod";
 
+console.log("RAILWAY_DEPLOYMENT_ID", process.env);
+
 // This will error if a variable is not set in the globalEnv property in turbo.json
 export const env = createEnv({
 	server: {
