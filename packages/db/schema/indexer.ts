@@ -44,9 +44,9 @@ export const nounDelegates = onchainTable("noun_delegates", (t) => ({
 }));
 
 export const nounDelegatesRelations = relations(nounDelegates, ({ one }) => ({
-	delegatee: one(nounDelegates, {
+	delegatee: one(erc721Balances, {
 		fields: [nounDelegates.from],
-		references: [nounDelegates.to],
+		references: [erc721Balances.account],
 	}),
 }));
 
@@ -58,9 +58,9 @@ export const lilnounDelegates = onchainTable("lilnoun_delegates", (t) => ({
 export const lilnounDelegatesRelations = relations(
 	lilnounDelegates,
 	({ one }) => ({
-		delegatee: one(lilnounDelegates, {
+		delegatee: one(erc721Balances, {
 			fields: [lilnounDelegates.from],
-			references: [lilnounDelegates.to],
+			references: [erc721Balances.account],
 		}),
 	}),
 );
