@@ -26,8 +26,6 @@
     "@privy-io/react-auth": "^2.2.0",
     "@privy-io/server-auth": "1.18.4",
     "@privy-io/wagmi": "^1.0.2",
-    "@resvg/resvg-js": "^2.6.2",
-    "@resvg/resvg-wasm": "^2.6.2",
     "@shopify/admin-api-client": "^1.0.5",
     "@tailwindcss/typography": "^0.5.12",
     "@tsparticles/confetti": "^3.5.0",

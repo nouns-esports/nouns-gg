@@ -3,7 +3,7 @@ import { CaretDown } from "phosphor-react-sc";
 import { CaretUp } from "phosphor-react-sc";
 import { ImageResponse } from "next/og";
 import fs from "fs";
-import path, { join } from "path";
+import { join } from "path";
 
 export async function GET(request: Request) {
 	const url = new URL(request.url);
