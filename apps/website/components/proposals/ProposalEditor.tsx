@@ -16,7 +16,7 @@ import { Trash2, X } from "lucide-react";
 import PinImage from "../PinImage";
 import VideoPlayer from "../VideoEmbedPlayer";
 import { env } from "~/env";
-import { videoEmbedFromLink } from "@/utils/videoEmbedFromLink";
+import { videoEmbedFromLink, isVideoEmbed } from "@/utils/videoEmbeds";
 import { toast } from "../Toasts";
 
 const Markdown = dynamic(() => import("../lexical/Markdown"), {
@@ -37,6 +37,8 @@ export default function ProposalEditor(props: {
 
 	const validVideo = useMemo(() => {
 		if (!video) return;
+
+		if (isVideoEmbed(video)) return video;
 
 		return videoEmbedFromLink(video);
 	}, [video]);

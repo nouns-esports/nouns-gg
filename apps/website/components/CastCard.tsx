@@ -22,7 +22,6 @@ import * as Player from "@livepeer/react/player";
 import Spinner from "./Spinner";
 import { twMerge } from "tailwind-merge";
 import Countup from "./Countup";
-import { videoEmbedFromLink } from "@/utils/videoEmbedFromLink";
 import Recast from "./Recast";
 import Upvote from "./Upvote";
 import CastText from "./CastText";
