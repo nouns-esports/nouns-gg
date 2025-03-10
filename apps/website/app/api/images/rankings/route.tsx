@@ -7,7 +7,6 @@ import { CaretUp } from "phosphor-react-sc";
 import { Resvg } from "@resvg/resvg-wasm";
 import { isInitialized, init } from "../wasm";
 
-export const dynamic = "force-static";
 export const revalidate = 600;
 
 export async function GET(request: Request) {
