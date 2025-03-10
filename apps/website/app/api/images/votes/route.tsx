@@ -129,54 +129,56 @@ export async function GET(request: Request) {
 									gap: 32,
 								}}
 							>
-								{round.votes.slice(0, 4).map((vote) => (
-									<div
-										key={vote.proposal.title}
-										style={{
-											display: "flex",
-											justifyContent: "space-between",
-											gap: 64,
-											width: "100%",
-											backgroundColor: "rgba(255, 255, 255, 0.15)", // More transparent
-											paddingLeft: 32,
-											paddingRight: 32,
-											paddingTop: 20,
-											paddingBottom: 20,
-											borderRadius: 16,
-										}}
-									>
+								{round.votes
+									.slice(0, round.votes.length > 4 ? 3 : 4)
+									.map((vote) => (
 										<div
-											style={{
-												display: "block",
-												lineClamp: 1,
-												fontSize: 36,
-												fontFamily: "Cabin",
-											}}
-										>
-											{vote.proposal.title.replace(
-												/[^a-zA-Z0-9 \-_\!\@\#\$\%\^\&\*\(\)\+\=\"\'\?\/\>\<,\.\{\}\[\]\|\\\~\`\;\:\n\r\t]/g,
-												"",
-											)}
-										</div>
-										<div
+											key={vote.proposal.title}
 											style={{
 												display: "flex",
-												gap: 16,
-												alignItems: "center",
+												justifyContent: "space-between",
+												gap: 64,
+												width: "100%",
+												backgroundColor: "rgba(255, 255, 255, 0.15)", // More transparent
+												paddingLeft: 32,
+												paddingRight: 32,
+												paddingTop: 20,
+												paddingBottom: 20,
+												borderRadius: 16,
 											}}
 										>
 											<div
 												style={{
-													display: "flex",
+													display: "block",
+													lineClamp: 1,
 													fontSize: 36,
 													fontFamily: "Cabin",
 												}}
 											>
-												{vote.count.toString()}
+												{vote.proposal.title.replace(
+													/[^a-zA-Z0-9 \-_\!\@\#\$\%\^\&\*\(\)\+\=\"\'\?\/\>\<,\.\{\}\[\]\|\\\~\`\;\:\n\r\t]/g,
+													"",
+												)}
+											</div>
+											<div
+												style={{
+													display: "flex",
+													gap: 16,
+													alignItems: "center",
+												}}
+											>
+												<div
+													style={{
+														display: "flex",
+														fontSize: 36,
+														fontFamily: "Cabin",
+													}}
+												>
+													{vote.count.toString()}
+												</div>
 											</div>
 										</div>
-									</div>
-								))}
+									))}
 								{round.votes.length > 4 ? (
 									<div
 										style={{
@@ -192,7 +194,7 @@ export async function GET(request: Request) {
 								)}
 							</div>
 						</div>
-						{round.votes.length < 4 ? (
+						{round.votes.length < 5 ? (
 							<div
 								style={{
 									fontSize: 36,
