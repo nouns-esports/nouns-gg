@@ -35,6 +35,9 @@ export async function GET(request: Request) {
 		round: url.searchParams.get("round"),
 	};
 
+	console.log("PARAMS", params);
+	console.log("URL", url);
+
 	if (!params.user || !params.round) {
 		return Response.json(
 			{ error: "User and round are required" },
