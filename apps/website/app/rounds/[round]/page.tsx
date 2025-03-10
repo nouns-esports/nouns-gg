@@ -18,8 +18,10 @@ import Markdown from "@/components/lexical/Markdown";
 
 export async function generateMetadata(props: {
 	params: Promise<{ round: string }>;
+	searchParams: Promise<{ user?: string }>;
 }): Promise<Metadata> {
 	const params = await props.params;
+	const searchParams = await props.searchParams;
 	const round = await getRound({ id: params.round });
 
 	if (!round) {
@@ -32,17 +34,27 @@ export async function generateMetadata(props: {
 		metadataBase: new URL(env.NEXT_PUBLIC_DOMAIN),
 		openGraph: {
 			type: "website",
-			images: [round.image],
+			images: [
+				searchParams.user
+					? `${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?user=${searchParams.user}&round=${round.id}`
+					: round.image,
+			],
 		},
 		twitter: {
 			site: "@NounsEsports",
 			card: "summary_large_image",
-			images: [round.image],
+			images: [
+				searchParams.user
+					? `${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?user=${searchParams.user}&round=${round.id}`
+					: round.image,
+			],
 		},
 		other: {
 			"fc:frame": JSON.stringify({
 				version: "next",
-				imageUrl: round.image,
+				imageUrl: searchParams.user
+					? `${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?user=${searchParams.user}&round=${round.id}`
+					: round.image,
 				button: {
 					title: "View Round",
 					action: {

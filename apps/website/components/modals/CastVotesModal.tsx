@@ -61,7 +61,7 @@ export default function CastVotesModal(props: {
 					/>
 					<Link
 						newTab
-						href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?round=${props.round}&user=${user?.id}`}
+						href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/rounds/${props.round}?user=${user?.id}`}
 						className="flex gap-1 items-center group hover:opacity-80 transition-opacity text-red"
 					>
 						Share this image on Warpcast{" "}

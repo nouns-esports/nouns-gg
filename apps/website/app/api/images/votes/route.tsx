@@ -63,21 +63,28 @@ export async function GET(request: Request) {
 						backgroundColor: "#121213",
 						display: "flex",
 						flexDirection: "column",
-
 						justifyContent: "space-between",
 						height: "100%",
 						width: "100%",
+						position: "relative",
+						overflow: "hidden",
 					}}
 				>
+					{/* Background image with blur */}
 					<img
 						src={round.image}
 						style={{
+							position: "absolute",
 							width: "100%",
-							height: "40%",
+							height: "100%",
 							objectFit: "cover",
-							flexShrink: 0,
+							filter: "blur(15px)",
+							opacity: 0.5,
+							transform: "scale(1.1)", // Prevents blur edges from showing
 						}}
 					/>
+
+					{/* Content on top with transparent background */}
 					<div
 						style={{
 							display: "flex",
@@ -85,6 +92,10 @@ export async function GET(request: Request) {
 							justifyContent: "space-between",
 							padding: 48,
 							flex: 1,
+							position: "relative", // Position on top of the background
+							backgroundColor: "transparent", // Semi-transparent dark background
+							zIndex: 1,
+							height: "100%",
 						}}
 					>
 						<div style={{ display: "flex", flexDirection: "column", gap: 48 }}>
@@ -126,7 +137,7 @@ export async function GET(request: Request) {
 											justifyContent: "space-between",
 											gap: 64,
 											width: "100%",
-											backgroundColor: "#1A1A1A",
+											backgroundColor: "rgba(255, 255, 255, 0.15)", // More transparent
 											paddingLeft: 32,
 											paddingRight: 32,
 											paddingTop: 20,
@@ -186,7 +197,7 @@ export async function GET(request: Request) {
 								style={{
 									fontSize: 36,
 									display: "flex",
-									color: "#909497",
+									color: "white",
 									fontFamily: "Cabin",
 								}}
 							>
@@ -199,7 +210,7 @@ export async function GET(request: Request) {
 				</div>,
 				{
 					width: 1200,
-					height: 1200,
+					height: 800,
 					fonts: [
 						{
 							name: "Cabin",
