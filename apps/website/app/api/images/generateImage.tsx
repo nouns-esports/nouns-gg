@@ -38,47 +38,40 @@ export const generateImage = cache(
 			join(process.cwd(), "./public/fonts/LondrinaSolid-Regular.ttf"),
 		);
 
-		return new Response(
-			new Resvg(
-				await satori(input.image, {
-					width: input.size.width,
-					height: input.size.height,
-					fonts: [
-						{
-							name: "Cabin",
-							data: Cabin,
-							weight: 400,
-							style: "normal",
-						},
-						{
-							name: "Luckiest Guy",
-							data: LuckiestGuy,
-							weight: 400,
-							style: "normal",
-						},
-						{
-							name: "Bebas Neue",
-							data: BebasNeue,
-							weight: 400,
-							style: "normal",
-						},
-						{
-							name: "Londrina Solid",
-							data: LondrinaSolid,
-							weight: 400,
-							style: "normal",
-						},
-					],
-				}),
-			)
-				.render()
-				.asPng(),
-			{
-				headers: {
-					"Content-Type": "image/png",
-				},
-			},
-		);
+		return new Resvg(
+			await satori(input.image, {
+				width: input.size.width,
+				height: input.size.height,
+				fonts: [
+					{
+						name: "Cabin",
+						data: Cabin,
+						weight: 400,
+						style: "normal",
+					},
+					{
+						name: "Luckiest Guy",
+						data: LuckiestGuy,
+						weight: 400,
+						style: "normal",
+					},
+					{
+						name: "Bebas Neue",
+						data: BebasNeue,
+						weight: 400,
+						style: "normal",
+					},
+					{
+						name: "Londrina Solid",
+						data: LondrinaSolid,
+						weight: 400,
+						style: "normal",
+					},
+				],
+			}),
+		)
+			.render()
+			.asPng();
 	},
 	["generateImage"],
 	{
