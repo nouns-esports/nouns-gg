@@ -7,7 +7,7 @@ import { CaretUp } from "phosphor-react-sc";
 import { Resvg } from "@resvg/resvg-wasm";
 import { isInitialized, init } from "../wasm";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 export const revalidate = 600;
 
 export async function GET(request: Request) {
@@ -36,13 +36,13 @@ export async function GET(request: Request) {
 	};
 
 	if (!params.user) {
-		throw new Error("User is required");
+		return Response.json({ error: "User is required" }, { status: 400 });
 	}
 
 	const ranking = await getLeaderboardPosition({ user: params.user });
 
 	if (!ranking) {
-		throw new Error("User not found");
+		return Response.json({ error: "User not found" }, { status: 404 });
 	}
 
 	const diff = ranking.position - ranking.previousPosition;

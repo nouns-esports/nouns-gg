@@ -6,7 +6,7 @@ import { getUserVotesForRound } from "@/server/queries/votes";
 import { Resvg } from "@resvg/resvg-wasm";
 import { isInitialized, init } from "../wasm";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 export const revalidate = 600;
 
 export async function GET(request: Request) {
@@ -36,13 +36,16 @@ export async function GET(request: Request) {
 	};
 
 	if (!params.user || !params.round) {
-		throw new Error("User and round are required");
+		return Response.json(
+			{ error: "User and round are required" },
+			{ status: 400 },
+		);
 	}
 
 	const user = await getUser({ user: params.user });
 
 	if (!user) {
-		throw new Error("User not found");
+		return Response.json({ error: "User not found" }, { status: 404 });
 	}
 
 	const round = await getUserVotesForRound({
@@ -51,11 +54,14 @@ export async function GET(request: Request) {
 	});
 
 	if (!round) {
-		throw new Error("User did not vote in the round or it doesnt exist");
+		return Response.json(
+			{ error: "User did not vote in the round or it doesnt exist" },
+			{ status: 404 },
+		);
 	}
 
 	if (round.votes.length < 1) {
-		throw new Error("User has no votes");
+		return Response.json({ error: "User has no votes" }, { status: 404 });
 	}
 
 	return new Response(
