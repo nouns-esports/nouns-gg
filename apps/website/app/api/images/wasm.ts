@@ -6,9 +6,7 @@ export let isInitialized = false;
 export async function init() {
 	if (isInitialized) return;
 
-	await initWasm(
-		path.join(process.cwd(), "apps", "website", "public", "index_bg.wasm"),
-	);
+	await initWasm(path.join(process.cwd(), "./public/index_bg.wasm"));
 
 	isInitialized = true;
 }
