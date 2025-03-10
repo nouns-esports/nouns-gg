@@ -78,7 +78,7 @@ export async function GET(request: Request) {
 							width: "100%",
 							height: "100%",
 							objectFit: "cover",
-							filter: "blur(15px)",
+							filter: "blur(100px)",
 							opacity: 0.5,
 							transform: "scale(1.1)", // Prevents blur edges from showing
 						}}
