@@ -67,9 +67,9 @@ export default function ViewProposalModal(props: {
 			<div className="flex flex-col h-full overflow-y-scroll custom-scrollbar gap-2">
 				{
 					{
-						markdown: (
-							<Markdown markdown={props.proposal.content ?? ""} readOnly />
-						),
+						markdown: props.proposal.content ? (
+							<Markdown markdown={props.proposal.content} readOnly />
+						) : null,
 						image: (
 							<img
 								alt={props.proposal.title}
