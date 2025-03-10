@@ -48,7 +48,7 @@ export default function ViewProposalModal(props: {
 			handle
 			queryParam={["p", props.proposal.id.toString()]}
 			className={twMerge(
-				"relative flex flex-col gap-4 w-2/3 max-h-[66.66%] p-4 max-w-screen-lg max-xl:w-full max-xl:h-[95dvh] overflow-hidden",
+				"relative flex flex-col gap-4 w-2/3 max-h-[66.66%] max-xl:max-h-none p-4 max-w-screen-lg max-xl:w-full max-xl:h-[90dvh] overflow-hidden",
 				props.round.type === "markdown" && "",
 			)}
 		>
@@ -77,7 +77,12 @@ export default function ViewProposalModal(props: {
 								className="flex h-full object-contain rounded-xl"
 							/>
 						),
-						video: <VideoEmbedPlayer url={props.proposal.video ?? ""} />,
+						video: (
+							<div className="flex flex-col gap-4">
+								<VideoEmbedPlayer url={props.proposal.video ?? ""} />
+								<Markdown markdown={props.proposal.content ?? ""} readOnly />
+							</div>
+						),
 					}[props.round.type as (typeof rounds.$inferSelect)["type"]]
 				}
 			</div>

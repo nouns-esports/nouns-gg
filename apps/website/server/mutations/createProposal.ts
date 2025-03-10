@@ -60,8 +60,14 @@ export const createProposal = onlyUser
 			throw new Error("Image is required");
 		}
 
-		if (round.type === "video" && (!parsedInput.video || !parsedInput.image)) {
-			throw new Error("Video and cover image is required");
+		if (round.type === "video") {
+			if (!parsedInput.video) {
+				throw new Error("Video is required");
+			}
+
+			if (!parsedInput.image) {
+				throw new Error("Cover image is required");
+			}
 		}
 
 		await db.transaction(async (tx) => {

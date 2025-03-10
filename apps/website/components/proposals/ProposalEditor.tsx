@@ -215,6 +215,38 @@ export default function ProposalEditor(props: {
 									<small className="text-red">Not a valid video url</small>
 								) : null}
 							</div>
+							<div className="flex flex-col gap-2">
+								<div className="flex items-center justify-between">
+									<h2 className="font-luckiest-guy text-white text-2xl">
+										Caption
+									</h2>
+									<LimitMeter
+										type="word"
+										value={parsedMarkdown.split(" ").length - 1}
+										min={0}
+										max={300}
+									/>
+								</div>
+								<div className="relative bg-grey-800 border border-grey-600 rounded-xl overflow-hidden p-2 min-h-60">
+									<Markdown
+										markdown={editorState}
+										readOnly={false}
+										onChange={(state, editor) => {
+											state.read(() => {
+												setEditorState(
+													JSON.stringify(editor.toJSON().editorState.root),
+												);
+												setParsedMarkdown(
+													$generateHtmlFromNodes(editor).replaceAll(
+														/<[^>]*>/g,
+														"",
+													),
+												);
+											});
+										}}
+									/>
+								</div>
+							</div>
 						</>
 					),
 				}[props.round.type]
