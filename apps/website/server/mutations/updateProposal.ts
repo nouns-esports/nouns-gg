@@ -10,10 +10,10 @@ import { onlyUser } from ".";
 export const updateProposal = onlyUser
 	.schema(
 		z.object({
+			round: z.string(),
 			title: z.string(),
 			image: z.string().optional(),
-			content: z.string(),
-			round: z.string(),
+			content: z.string().optional(),
 			video: z.string().optional(),
 		}),
 	)
@@ -44,12 +44,26 @@ export const updateProposal = onlyUser
 			throw new Error("Proposing has closed");
 		}
 
-		if (round.type === "image" && !parsedInput.image) {
-			throw new Error("Image is required");
+		if (round.type === "markdown") {
+			if (!parsedInput.content) {
+				throw new Error("Content is required");
+			}
 		}
 
-		if (round.type === "video" && (!parsedInput.video || !parsedInput.image)) {
-			throw new Error("Video and cover image is required");
+		if (round.type === "image") {
+			if (!parsedInput.image) {
+				throw new Error("Image is required");
+			}
+		}
+
+		if (round.type === "video") {
+			if (!parsedInput.video) {
+				throw new Error("Video is required");
+			}
+
+			if (!parsedInput.image) {
+				throw new Error("Cover image is required");
+			}
 		}
 
 		await db

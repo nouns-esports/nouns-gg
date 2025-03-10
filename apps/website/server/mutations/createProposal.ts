@@ -10,10 +10,10 @@ import { z } from "zod";
 export const createProposal = onlyUser
 	.schema(
 		z.object({
+			round: z.string(),
 			title: z.string(),
 			image: z.string().optional(),
-			content: z.string(),
-			round: z.string(),
+			content: z.string().optional(),
 			video: z.string().optional(),
 		}),
 	)
@@ -56,8 +56,16 @@ export const createProposal = onlyUser
 			throw new Error("Proposing has closed");
 		}
 
-		if (round.type === "image" && !parsedInput.image) {
-			throw new Error("Image is required");
+		if (round.type === "markdown") {
+			if (!parsedInput.content) {
+				throw new Error("Content is required");
+			}
+		}
+
+		if (round.type === "image") {
+			if (!parsedInput.image) {
+				throw new Error("Image is required");
+			}
 		}
 
 		if (round.type === "video") {

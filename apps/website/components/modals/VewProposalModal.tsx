@@ -80,7 +80,9 @@ export default function ViewProposalModal(props: {
 						video: (
 							<div className="flex flex-col gap-4">
 								<VideoEmbedPlayer url={props.proposal.video ?? ""} />
-								<Markdown markdown={props.proposal.content ?? ""} readOnly />
+								{props.proposal.content ? (
+									<Markdown markdown={props.proposal.content} readOnly />
+								) : null}
 							</div>
 						),
 					}[props.round.type as (typeof rounds.$inferSelect)["type"]]
