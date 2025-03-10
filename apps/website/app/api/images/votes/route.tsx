@@ -8,6 +8,7 @@ import { isInitialized, init } from "../wasm";
 
 export async function GET(request: Request) {
 	if (!isInitialized) {
+		console.log("Initializing WASM");
 		await init();
 	}
 

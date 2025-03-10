@@ -1,11 +1,14 @@
 import { initWasm } from "@resvg/resvg-wasm";
+import path from "path";
 
 export let isInitialized = false;
 
 export async function init() {
 	if (isInitialized) return;
 
-	await initWasm(fetch("https://unpkg.com/@resvg/resvg-wasm/index_bg.wasm"));
+	await initWasm(
+		path.join(process.cwd(), "apps", "website", "public", "index_bg.wasm"),
+	);
 
 	isInitialized = true;
 }
