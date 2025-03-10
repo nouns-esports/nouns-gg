@@ -18,7 +18,7 @@ import Markdown from "@/components/lexical/Markdown";
 
 export async function generateMetadata(props: {
 	params: Promise<{ round: string }>;
-	searchParams: Promise<{ user?: string }>;
+	searchParams: Promise<{ user?: string; p?: string }>;
 }): Promise<Metadata> {
 	const params = await props.params;
 	const searchParams = await props.searchParams;
@@ -28,33 +28,33 @@ export async function generateMetadata(props: {
 		return notFound();
 	}
 
+	const proposal = searchParams.p
+		? round.proposals.find((p) => p.id === Number(searchParams.p))
+		: undefined;
+
+	const image = searchParams.user
+		? `${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?user=${searchParams.user}&round=${round.id}`
+		: proposal?.image
+			? proposal.image
+			: round.image;
+
 	return {
-		title: round.name,
+		title: proposal?.title ?? round.name,
 		description: null,
 		metadataBase: new URL(env.NEXT_PUBLIC_DOMAIN),
 		openGraph: {
 			type: "website",
-			images: [
-				searchParams.user
-					? `${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?user=${searchParams.user}&round=${round.id}`
-					: round.image,
-			],
+			images: [image],
 		},
 		twitter: {
 			site: "@NounsEsports",
 			card: "summary_large_image",
-			images: [
-				searchParams.user
-					? `${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?user=${searchParams.user}&round=${round.id}`
-					: round.image,
-			],
+			images: [image],
 		},
 		other: {
 			"fc:frame": JSON.stringify({
 				version: "next",
-				imageUrl: searchParams.user
-					? `${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?user=${searchParams.user}&round=${round.id}`
-					: round.image,
+				imageUrl: image,
 				button: {
 					title: "View Round",
 					action: {
