@@ -2,7 +2,6 @@ import { unstable_cache as cache } from "next/cache";
 import path, { join } from "path";
 import fs from "fs";
 import satori from "satori";
-import { Transformer } from "@napi-rs/image";
 
 export const generateImage = cache(
 	async (input: {
@@ -25,7 +24,7 @@ export const generateImage = cache(
 			join(process.cwd(), "./public/fonts/LondrinaSolid-Regular.ttf"),
 		);
 
-		const svg = await satori(input.image, {
+		return satori(input.image, {
 			width: input.size.width,
 			height: input.size.height,
 			fonts: [
@@ -55,10 +54,6 @@ export const generateImage = cache(
 				},
 			],
 		});
-
-		const transformer = Transformer.fromSvg(svg);
-
-		return transformer.png();
 	},
 	["generateImage"],
 	{

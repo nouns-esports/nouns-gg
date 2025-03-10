@@ -203,7 +203,7 @@ export async function GET(request: Request) {
 		}),
 		{
 			headers: {
-				"Content-Type": "image/svg",
+				"Content-Type": "image/svg+xml",
 			},
 		},
 	);
