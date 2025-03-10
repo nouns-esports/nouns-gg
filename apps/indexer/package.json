@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "ponder dev --schema=indexer",
-    "start": "ponder start --schema=indexer"
+    "test": "ponder dev --schema=$RAILWAY_DEPLOYMENT_ID",
+    "start": "ponder start --schema=$RAILWAY_DEPLOYMENT_ID"
   },
   "dependencies": {
     "ponder": "0.9.25"
