@@ -4,7 +4,10 @@ export default function AboutPage() {
 	return (
 		<div className="flex flex-col items-center h-full pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
 			<div className="flex flex-col items-center gap-8 max-w-2xl">
-				<img src="/banner-red.png" className="w-full rounded-xl" />
+				<img
+					src="https://ipfs.nouns.gg/ipfs/bafybeiarnst2uvayawr3zs7mzzuvdzogjvwv5nbucwq4du3zhypcojotzu"
+					className="w-full rounded-xl"
+				/>
 				<div className="flex flex-col items-center gap-4">
 					<h1 className="font-luckiest-guy text-white text-3xl">
 						Welcome to Nouns
