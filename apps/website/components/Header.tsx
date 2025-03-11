@@ -51,7 +51,7 @@ export default async function Header() {
 							>
 								<img
 									alt="Nouns logo"
-									src="/logo/logo.svg"
+									src="https://ipfs.nouns.gg/ipfs/bafkreiadperyf6dbqxgbcff75ux3w6wq2vrit5hghqrnvyyo3ypv5mgtja"
 									draggable={false}
 									className="group-hover:rotate-[14deg] h-full transition-transform duration-150 select-none relative z-[60]"
 								/>

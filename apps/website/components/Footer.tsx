@@ -19,7 +19,7 @@ export default async function Footer() {
 						>
 							<img
 								alt="Nouns logo"
-								src="/logo/logo.svg"
+								src="https://ipfs.nouns.gg/ipfs/bafkreiadperyf6dbqxgbcff75ux3w6wq2vrit5hghqrnvyyo3ypv5mgtja"
 								draggable={false}
 								className="group-hover:rotate-[14deg] w-10 transition-transform duration-150 select-none"
 							/>
