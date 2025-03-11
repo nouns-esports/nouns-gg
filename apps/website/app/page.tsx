@@ -433,7 +433,9 @@ export default async function Home() {
 							Let's redefine esports together
 						</h3>
 						{user ? (
-							<Button href="/nexus">Get Started</Button>
+							<Button href={`/users/${user.farcaster?.username ?? user.id}`}>
+								Get Started
+							</Button>
 						) : (
 							<ToggleModal id="sign-in">
 								<Button>Get Started</Button>
