@@ -6,6 +6,6 @@ export default {
 	schemaFilter: ["public"],
 	schema: "./schema/public.ts",
 	dbCredentials: {
-		url: env.DATABASE_URL,
+		url: env.PGPOOL_URL,
 	},
 } satisfies Config;
