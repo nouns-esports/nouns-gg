@@ -171,6 +171,7 @@ export default async function EventPage(props: {
 												href={event.call_to_action.url}
 												newTab
 											>
+												{/* @ts-ignore */}
 												{event.call_to_action.label}
 											</Button>
 										</div>
@@ -211,6 +212,7 @@ export default async function EventPage(props: {
 												</p>
 											</div>
 											<Link
+												// @ts-ignore
 												href={event.location_?.url}
 												newTab
 												className="flex items-center gap-2 text-white group flex-shrink-0"
