@@ -30,7 +30,7 @@ const indexerSchema = setDatabaseSchema(_indexerSchema, env.INDEXER_SCHEMA);
 // });
 
 export const db = {
-	primary: drizzle(env.PGPOOL_URL, {
+	primary: drizzle(env.PRIMARY_DATABASE_URL, {
 		schema: {
 			...indexerSchema,
 			// ...farcasterSchema,
