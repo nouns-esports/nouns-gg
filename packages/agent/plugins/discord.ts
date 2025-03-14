@@ -7,7 +7,12 @@ export function discordPlugin(options: { token: string }) {
 			intents: ["Guilds", "GuildMessages", "MessageContent", "GuildMembers"],
 		});
 
+		console.log("Logging in to discord", options.token);
 		await client.login(options.token);
+
+		client.on("ready", () => {
+			console.log("Discord client ready");
+		});
 
 		client.on("messageCreate", async (message) => {
 			if (message.author.bot) return;

@@ -152,6 +152,7 @@ export async function createAgent<
 
 	if (config.plugins) {
 		for (const [id, register] of Object.entries(config.plugins)) {
+			console.log("Registering plugin: ", id);
 			const result = await register({
 				config,
 				server,
