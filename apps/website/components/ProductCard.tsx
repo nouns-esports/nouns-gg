@@ -8,7 +8,7 @@ export default function ProductCard(props: {
 	const price = Number(props.product.variants[0]?.price);
 
 	const totalStock = props.product.variants.reduce(
-		(acc, variant) => acc + variant.inventory,
+		(acc, variant) => acc + (variant.inventory ?? Infinity),
 		0,
 	);
 

@@ -688,7 +688,7 @@ export const products = pgTable("products", (t) => ({
 				shopifyId: string;
 				size?: "s" | "m" | "l" | "xl" | "2xl";
 				price: number;
-				inventory: number;
+				inventory?: number;
 			}>
 		>()
 		.notNull(),

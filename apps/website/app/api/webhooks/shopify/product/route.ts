@@ -8,6 +8,9 @@ type ProductUpdated = {
 		admin_graphql_api_id: string;
 		inventory_quantity: number;
 		price: string;
+		inventory_item: {
+			tracked: boolean;
+		};
 	}>;
 };
 
@@ -37,7 +40,9 @@ export async function POST(request: Request) {
 
 					return {
 						...variant,
-						inventory: updatedVariant.inventory_quantity,
+						inventory: updatedVariant.inventory_item.tracked
+							? updatedVariant.inventory_quantity
+							: undefined,
 						price: Number(updatedVariant.price),
 					};
 				}),

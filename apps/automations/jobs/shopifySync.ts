@@ -9,9 +9,12 @@ type Product = {
 	variants: {
 		nodes: Array<{
 			id: string;
-			inventory_quantity: number;
+			inventoryQuantity: number;
 			price: {
 				amount: string;
+			};
+			inventoryItem: {
+				tracked: boolean;
 			};
 		}>;
 	};
@@ -32,6 +35,9 @@ export const shopifySync = createJob({
 								id
 								price
 								inventoryQuantity
+								inventoryItem {
+									tracked
+								}
 							}
 						}
 					}
@@ -64,7 +70,9 @@ export const shopifySync = createJob({
 
 							return {
 								...variant,
-								inventory: updatedVariant.inventory_quantity,
+								inventory: updatedVariant.inventoryItem.tracked
+									? updatedVariant.inventoryQuantity
+									: undefined,
 								price: Number(updatedVariant.price.amount),
 							};
 						}),

@@ -40,7 +40,7 @@ export default function CartModal(props: {
 
 		if (!variant) return false;
 
-		return item.quantity > variant.inventory;
+		return item.quantity > (variant.inventory ?? Infinity);
 	});
 
 	const pathname = usePathname();
@@ -89,7 +89,7 @@ export default function CartModal(props: {
 											<p className="text-white line-clamp-1">
 												{item.product.name}
 											</p>
-											{item.quantity <= variant.inventory ? (
+											{item.quantity <= (variant.inventory ?? Infinity) ? (
 												<button
 													onClick={async () => {
 														await removeFromCartAction.executeAsync({
@@ -105,7 +105,7 @@ export default function CartModal(props: {
 												</button>
 											) : null}
 										</div>
-										{item.quantity <= variant.inventory ? (
+										{item.quantity <= (variant.inventory ?? Infinity) ? (
 											<div className="flex items-center gap-4">
 												<p className="text-white">${variant?.price}</p>
 												<div className="flex items-center gap-2">
@@ -125,9 +125,15 @@ export default function CartModal(props: {
 													</button>
 													<p className="text-white">{item.quantity}</p>
 													<button
-														disabled={variant.inventory < item.quantity + 1}
+														disabled={
+															(variant.inventory ?? Infinity) <
+															item.quantity + 1
+														}
 														onClick={async () => {
-															if (variant.inventory < item.quantity + 1) {
+															if (
+																(variant.inventory ?? Infinity) <
+																item.quantity + 1
+															) {
 																return;
 															}
 
@@ -141,7 +147,8 @@ export default function CartModal(props: {
 														}}
 														className={twMerge(
 															"w-4 h-4 bg-grey-600 hover:bg-grey-500 transition-colors rounded-full flex items-center justify-center",
-															variant.inventory < item.quantity + 1 &&
+															(variant.inventory ?? Infinity) <
+																item.quantity + 1 &&
 																"cursor-not-allowed opacity-50",
 														)}
 													>
@@ -153,13 +160,14 @@ export default function CartModal(props: {
 										) : (
 											<button
 												onClick={async () => {
-													if (variant.inventory > 0) {
+													if ((variant.inventory ?? Infinity) > 0) {
 														await removeFromCartAction.executeAsync({
 															product: item.product.id,
 															variant: item.variant,
 															quantity:
 																item.quantity -
-																(item.quantity - variant.inventory),
+																(item.quantity -
+																	(variant.inventory ?? Infinity)),
 														});
 
 														return router.refresh();
@@ -176,7 +184,7 @@ export default function CartModal(props: {
 												className="text-red hover:text-red/70 transition-colors w-min whitespace-nowrap flex items-center gap-1.5"
 											>
 												<TriangleAlert className="w-4 h-4" />
-												{variant.inventory > 0
+												{(variant.inventory ?? Infinity) > 0
 													? "Update quantity"
 													: "Remove from cart"}
 											</button>

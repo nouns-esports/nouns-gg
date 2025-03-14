@@ -73,17 +73,12 @@ export default async function ProductPage(props: {
 				return v.size === searchParams.size;
 			}
 
-			return v.inventory > 0;
+			return v.inventory && v.inventory > 0;
 		}) ?? product.variants[0];
 
 	if (!variant) {
 		return notFound();
 	}
-
-	const totalStock = product.variants.reduce(
-		(acc, variant) => acc + variant.inventory,
-		0,
-	);
 
 	return (
 		<>
@@ -118,7 +113,7 @@ export default async function ProductPage(props: {
 						</div>
 						<div className="flex items-center gap-4 max-sm:flex-col-reverse max-sm:items-start">
 							<AddToCartButton
-								inventory={variant.inventory}
+								inventory={variant.inventory ?? Infinity}
 								product={product.id}
 								variant={variant.shopifyId}
 								image={product.images[0]}

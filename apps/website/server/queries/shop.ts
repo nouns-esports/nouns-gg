@@ -65,6 +65,9 @@ export async function checkCart(input: { user: string }) {
 					id
 					price
 					inventoryQuantity
+					inventoryItem {
+						tracked
+					}
 				}
 			}
 		}`,
@@ -80,6 +83,9 @@ export async function checkCart(input: { user: string }) {
 				id: string;
 				price: string;
 				inventoryQuantity: number;
+				inventoryItem: {
+					tracked: boolean;
+				};
 			}>) ?? [];
 
 		await db.transaction(async (tx) => {
@@ -106,7 +112,9 @@ export async function checkCart(input: { user: string }) {
 							if (v.shopifyId === variant.id) {
 								return {
 									...v,
-									inventory: variant.inventoryQuantity,
+									inventory: variant.inventoryItem.tracked
+										? variant.inventoryQuantity
+										: undefined,
 									price: Number(variant.price),
 								};
 							}
@@ -123,7 +131,10 @@ export async function checkCart(input: { user: string }) {
 
 			if (!item) continue;
 
-			if (variant.inventoryQuantity < item.quantity) {
+			if (
+				variant.inventoryItem.tracked &&
+				variant.inventoryQuantity < item.quantity
+			) {
 				return false;
 			}
 		}
