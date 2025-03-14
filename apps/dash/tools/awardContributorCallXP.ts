@@ -18,6 +18,7 @@ agent.addTool({
 				"patyiutazza",
 			].includes(context.author)
 		) {
+			console.log("Not authorized");
 			throw new Error("You are not authorized to take xp snapshots");
 		}
 
@@ -29,6 +30,7 @@ agent.addTool({
 		});
 
 		if (latestSnapshot && isToday(latestSnapshot.timestamp)) {
+			console.log("A snapshot has already been taken today");
 			throw new Error("A snapshot has already been taken today");
 		}
 
@@ -40,10 +42,12 @@ agent.addTool({
 		);
 
 		if (!channel) {
+			console.log("No channel found");
 			throw new Error("I couldn't find that voice channel");
 		}
 
 		if (!channel.isVoiceBased()) {
+			console.log("Not a voice channel");
 			throw new Error("I can only take xp snapshots from voice channels");
 		}
 
@@ -54,6 +58,7 @@ agent.addTool({
 		console.log(members);
 
 		if (members.length === 0) {
+			console.log("No members found");
 			throw new Error("Theres nobody in the channel right now");
 		}
 
@@ -62,6 +67,7 @@ agent.addTool({
 		});
 
 		if (users.length === 0) {
+			console.log("No users found");
 			throw new Error(
 				"I couldn't find any nouns.gg accounts associated with anyone in the contributor voice channel",
 			);
