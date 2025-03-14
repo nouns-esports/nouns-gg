@@ -30,6 +30,8 @@ export const env = createEnv({
 		START_GG_ACCESS_TOKEN: z.string().min(1),
 		INFURA_API_KEY: z.string().min(1),
 		INDEXER_SCHEMA: z.string().min(1),
+		PGPOOL_URL: z.string().url(),
+		PRIMARY_DATABASE_URL: z.string().url(),
 	},
 	client: {
 		NEXT_PUBLIC_ENVIRONMENT: z.enum(["development", "production"]),
