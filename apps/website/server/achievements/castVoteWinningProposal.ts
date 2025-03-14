@@ -5,7 +5,7 @@ import { desc, eq, sql } from "drizzle-orm";
 import { roundState } from "@/utils/roundState";
 
 export default async function castVoteWinningProposal(user: AuthenticatedUser) {
-	const votesCast = await db.query.votes.findMany({
+	const votesCast = await db.pgpool.query.votes.findMany({
 		where: eq(votes.user, user.id),
 		with: {
 			proposal: {

@@ -9,7 +9,7 @@ export const winPrediction = createAction<{ prediction: string }>(
 			throw new Error("No prediction in action");
 		}
 
-		const prediction = await db.query.predictions.findFirst({
+		const prediction = await db.pgpool.query.predictions.findFirst({
 			where: eq(predictions.id, actionInputs.prediction),
 			with: {
 				outcomes: true,
@@ -29,7 +29,7 @@ export const winPrediction = createAction<{ prediction: string }>(
 			),
 			url: `/predictions/${prediction.id}`,
 			check: async (user) => {
-				const bet = await db.query.bets.findFirst({
+				const bet = await db.pgpool.query.bets.findFirst({
 					where: and(
 						eq(bets.user, user.id),
 						eq(bets.prediction, prediction.id),

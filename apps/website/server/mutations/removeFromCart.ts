@@ -15,7 +15,7 @@ export const removeFromCart = onlyUser
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
-		const existingCartItem = await db.query.carts.findFirst({
+		const existingCartItem = await db.primary.query.carts.findFirst({
 			where: and(
 				eq(carts.user, ctx.user.id),
 				eq(carts.product, parsedInput.product),
@@ -28,9 +28,9 @@ export const removeFromCart = onlyUser
 		}
 
 		if (existingCartItem.quantity - parsedInput.quantity < 1) {
-			await db.delete(carts).where(eq(carts.id, existingCartItem.id));
+			await db.primary.delete(carts).where(eq(carts.id, existingCartItem.id));
 		} else {
-			await db
+			await db.primary
 				.update(carts)
 				.set({
 					quantity: existingCartItem.quantity - parsedInput.quantity,

@@ -5,7 +5,7 @@ import { db } from "~/packages/db";
 
 export const getCreation = cache(
 	async (input: { id: string }) => {
-		return db.query.creations.findFirst({
+		return db.pgpool.query.creations.findFirst({
 			where: or(eq(creations.id, input.id), like(creations.id, `${input.id}%`)),
 			with: {
 				creator: true,
@@ -18,7 +18,7 @@ export const getCreation = cache(
 
 export const getCreations = cache(
 	async () => {
-		return db.query.creations.findMany({ orderBy: desc(creations.id) });
+		return db.pgpool.query.creations.findMany({ orderBy: desc(creations.id) });
 	},
 	["getCreations"],
 	{ tags: ["getCreations"], revalidate: 60 * 10 },
@@ -26,7 +26,7 @@ export const getCreations = cache(
 
 export const getCreator = cache(
 	async (input: { creation: string }) => {
-		const creation = await db.query.creations.findFirst({
+		const creation = await db.pgpool.query.creations.findFirst({
 			where: or(
 				eq(creations.id, input.creation),
 				like(creations.id, `${input.creation}%`),

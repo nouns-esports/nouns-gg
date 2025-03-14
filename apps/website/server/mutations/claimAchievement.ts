@@ -25,7 +25,7 @@ export const claimAchievement = onlyRanked
 
 		const now = new Date();
 
-		const alreadyClaimed = await db.query.xp.findFirst({
+		const alreadyClaimed = await db.primary.query.xp.findFirst({
 			where: and(eq(xp.user, ctx.user.id), eq(xp.achievement, parsedInput.id)),
 		});
 
@@ -48,7 +48,7 @@ export const claimAchievement = onlyRanked
 			url: "/nexus",
 		};
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			await tx.insert(xp).values({
 				user: ctx.user.id,
 				achievement: parsedInput.id,

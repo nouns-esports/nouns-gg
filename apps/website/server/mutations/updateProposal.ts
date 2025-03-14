@@ -18,7 +18,7 @@ export const updateProposal = onlyUser
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
-		const round = await db.query.rounds.findFirst({
+		const round = await db.primary.query.rounds.findFirst({
 			where: eq(rounds.id, parsedInput.round),
 			with: {
 				proposals: {
@@ -66,7 +66,7 @@ export const updateProposal = onlyUser
 			}
 		}
 
-		await db
+		await db.primary
 			.update(proposals)
 			.set({
 				title: parsedInput.title,

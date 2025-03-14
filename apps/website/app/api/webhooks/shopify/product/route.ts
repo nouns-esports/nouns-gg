@@ -17,7 +17,7 @@ type ProductUpdated = {
 export async function POST(request: Request) {
 	const updatedProduct: ProductUpdated = await request.json();
 
-	await db.transaction(async (tx) => {
+	await db.primary.transaction(async (tx) => {
 		const product = await tx.query.products.findFirst({
 			where: eq(products.shopifyId, updatedProduct.admin_graphql_api_id),
 		});

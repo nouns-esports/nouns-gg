@@ -69,7 +69,7 @@ export const farcasterXP = createJob({
 			await new Promise((resolve) => setTimeout(resolve, 1000));
 		}
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			for (const [caster, { likes, recasts }] of Object.entries(totals)) {
 				const likesXP = likes * 25;
 				const recastsXP = recasts * 75;

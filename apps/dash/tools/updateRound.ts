@@ -59,7 +59,7 @@ agent.addTool({
 			throw new Error("You are not authorized to update rounds");
 		}
 
-		const round = await db.query.rounds.findFirst({
+		const round = await db.pgpool.query.rounds.findFirst({
 			where: eq(rounds.id, parameters.round),
 		});
 
@@ -67,7 +67,7 @@ agent.addTool({
 			throw new Error("I couldn't find that round");
 		}
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			if (parameters.update.name !== undefined) {
 				await tx
 					.update(rounds)

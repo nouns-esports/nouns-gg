@@ -26,7 +26,7 @@ export const updateNexus = onlyUser
 			updateData.canRecieveEmails = parsedInput.canRecieveEmails;
 
 		if (Object.keys(updateData).length > 0) {
-			await db
+			await db.primary
 				.update(nexus)
 				.set(updateData)
 				.where(

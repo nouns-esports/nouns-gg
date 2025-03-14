@@ -10,7 +10,7 @@ export const privySync = createJob({
 	execute: async () => {
 		const users = await privyClient.getUsers();
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			for (const user of users) {
 				await tx
 					.update(nexus)

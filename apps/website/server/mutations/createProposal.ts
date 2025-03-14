@@ -18,7 +18,7 @@ export const createProposal = onlyUser
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
-		const round = await db.query.rounds.findFirst({
+		const round = await db.primary.query.rounds.findFirst({
 			where: eq(rounds.id, parsedInput.round),
 			with: {
 				proposals: {
@@ -78,7 +78,7 @@ export const createProposal = onlyUser
 			}
 		}
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			const returnedProposal = await tx
 				.insert(proposals)
 				.values([

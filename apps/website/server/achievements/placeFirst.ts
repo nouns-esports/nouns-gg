@@ -5,7 +5,7 @@ import type { AuthenticatedUser } from "../queries/users";
 import { roundState } from "@/utils/roundState";
 
 export default async function placeFirst(user: AuthenticatedUser) {
-	const proposalsCreated = await db.query.proposals.findMany({
+	const proposalsCreated = await db.pgpool.query.proposals.findMany({
 		where: and(eq(proposals.user, user.id)),
 		with: {
 			round: {

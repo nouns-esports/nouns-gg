@@ -31,7 +31,9 @@
     "START_GG_ACCESS_TOKEN",
     "INFURA_API_KEY",
     "INDEXER_SCHEMA",
-    "RAILWAY_DEPLOYMENT_ID"
+    "RAILWAY_DEPLOYMENT_ID",
+    "PGPOOL_URL",
+    "PRIMARY_DATABASE_URL"
   ],
   "tasks": {
     "build": {

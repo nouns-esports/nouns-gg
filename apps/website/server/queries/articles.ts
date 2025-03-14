@@ -6,7 +6,7 @@ import { unstable_cache as cache } from "next/cache";
 export const getArticle = cache(
 	async (input: { id: string }) => {
 		//////////////////////
-		return db.query.articles.findFirst({
+		return db.pgpool.query.articles.findFirst({
 			where: eq(articles.id, input.id),
 		});
 	},
@@ -17,7 +17,7 @@ export const getArticle = cache(
 export const getArticles = cache(
 	async () => {
 		//
-		return db.query.articles.findMany({
+		return db.pgpool.query.articles.findMany({
 			where: lt(articles.publishedAt, new Date()),
 			orderBy: desc(articles.publishedAt),
 			limit: 4,

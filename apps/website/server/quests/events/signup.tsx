@@ -12,7 +12,7 @@ export const signup = createAction(async (actionInputs) => {
 		throw new Error("URL input missing in action");
 	}
 
-	const event = await db.query.events.findFirst({
+	const event = await db.pgpool.query.events.findFirst({
 		where: eq(events.id, actionInputs.event),
 	});
 
@@ -30,7 +30,7 @@ export const signup = createAction(async (actionInputs) => {
 		check: async (user) => {
 			if (!event) return false;
 
-			const attended = await db.query.attendees.findFirst({
+			const attended = await db.pgpool.query.attendees.findFirst({
 				where: and(eq(attendees.user, user.id), eq(attendees.event, event.id)),
 			});
 

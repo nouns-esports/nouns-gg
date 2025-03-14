@@ -16,7 +16,7 @@ export async function getAuthenticatedUser() {
 	try {
 		const privyUser = await privyClient.getUser({ idToken: token.value });
 
-		let userNexus = await db.query.nexus.findFirst({
+		let userNexus = await db.pgpool.query.nexus.findFirst({
 			where: eq(nexus.id, privyUser.id),
 			with: {
 				rank: true,
@@ -32,7 +32,7 @@ export async function getAuthenticatedUser() {
 			if (!userNexus) {
 				const [fullPrivyUser, lowestRank, inServer] = await Promise.all([
 					privyClient.getUser(privyUser.id),
-					db.query.ranks.findFirst({
+					db.pgpool.query.ranks.findFirst({
 						orderBy: asc(ranks.place),
 					}),
 					privyUser.discord?.subject &&
@@ -59,7 +59,7 @@ export async function getAuthenticatedUser() {
 						`https://api.cloudnouns.com/v1/pfp?text=${privyUser.id}&background=1`,
 				);
 
-				await db.insert(nexus).values({
+				await db.primary.insert(nexus).values({
 					id: privyUser.id,
 					rank,
 					name:
@@ -78,7 +78,7 @@ export async function getAuthenticatedUser() {
 					interests: [],
 				});
 
-				userNexus = await db.query.nexus.findFirst({
+				userNexus = await db.primary.query.nexus.findFirst({
 					where: eq(nexus.id, privyUser.id),
 					with: {
 						rank: true,
@@ -127,7 +127,7 @@ export const isInServer = async (input: { subject: string }) => {
 
 export const getUser = cache(
 	async (input: { user: string }) => {
-		return db.query.nexus.findFirst({
+		return db.pgpool.query.nexus.findFirst({
 			where: or(eq(nexus.id, input.user), eq(nexus.username, input.user)),
 			with: {
 				rank: true,
@@ -140,7 +140,7 @@ export const getUser = cache(
 
 export const getUserStats = cache(
 	async (input: { user: string }) => {
-		const user = await db.query.nexus.findFirst({
+		const user = await db.pgpool.query.nexus.findFirst({
 			where: eq(nexus.id, input.user),
 			with: {
 				proposals: true,

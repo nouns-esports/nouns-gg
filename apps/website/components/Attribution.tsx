@@ -4,7 +4,9 @@ import type { db } from "~/packages/db";
 
 export default function Attribution(props: {
 	id: string;
-	creator: NonNullable<Awaited<ReturnType<typeof db.query.nexus.findFirst>>>;
+	creator: NonNullable<
+		Awaited<ReturnType<typeof db.pgpool.query.nexus.findFirst>>
+	>;
 }) {
 	return (
 		<Link

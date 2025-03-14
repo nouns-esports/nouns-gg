@@ -5,7 +5,7 @@ import { unstable_cache as cache } from "next/cache";
 
 export const getRosters = cache(
 	async (input?: { limit?: number }) => {
-		return db.query.rosters.findMany({
+		return db.pgpool.query.rosters.findMany({
 			where: eq(rosters.active, true),
 			limit: input?.limit,
 			with: {

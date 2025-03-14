@@ -7,7 +7,7 @@ import { unstable_cache as cache } from "next/cache";
 export const getProposal = cache(
 	async (input: { id: number } | { user: string; round: string }) => {
 		if ("id" in input) {
-			return db.query.proposals.findFirst({
+			return db.pgpool.query.proposals.findFirst({
 				where: eq(proposals.id, input.id),
 				with: {
 					round: true,
@@ -16,7 +16,7 @@ export const getProposal = cache(
 		}
 
 		if (input.user) {
-			return db.query.proposals.findFirst({
+			return db.pgpool.query.proposals.findFirst({
 				where: and(
 					eq(proposals.round, input.round),
 					eq(proposals.user, input.user),

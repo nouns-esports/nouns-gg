@@ -7,7 +7,7 @@ import { asc, desc, eq, gt, or } from "drizzle-orm";
 export const getEvents = cache(
 	async (input?: { limit?: number }) => {
 		////
-		return db.query.events.findMany({
+		return db.pgpool.query.events.findMany({
 			orderBy: [desc(events.featured), desc(events.start)],
 			limit: input?.limit,
 		});
@@ -18,7 +18,7 @@ export const getEvents = cache(
 
 export const getFeaturedEvent = cache(
 	async () => {
-		return db.query.events.findFirst({
+		return db.pgpool.query.events.findFirst({
 			where: or(eq(events.featured, true), gt(events.end, new Date())),
 			orderBy: desc(events.end),
 		});
@@ -30,7 +30,7 @@ export const getFeaturedEvent = cache(
 export const getEvent = cache(
 	async (input: { id: string; user?: string }) => {
 		////////////////////////
-		return db.query.events.findFirst({
+		return db.pgpool.query.events.findFirst({
 			where: eq(events.id, input.id),
 			with: {
 				quests: {

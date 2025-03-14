@@ -5,7 +5,7 @@ import { db } from "~/packages/db";
 
 export const getLeaderboard = cache(
 	async () => {
-		return db.query.rankings.findMany({
+		return db.pgpool.query.rankings.findMany({
 			where: eq(
 				rankings.timestamp,
 				sql`(SELECT MAX(timestamp) FROM ${rankings})`,
@@ -45,7 +45,7 @@ export const getLeaderboard = cache(
 
 export const getLeaderboardPosition = cache(
 	async (input: { user: string }) => {
-		return db.query.rankings.findFirst({
+		return db.pgpool.query.rankings.findFirst({
 			where: and(
 				eq(rankings.user, input.user),
 
@@ -93,7 +93,7 @@ export const getLeaderboardPosition = cache(
 
 export const getUserRankings = cache(
 	async (input: { user: string }) => {
-		return db.query.rankings.findMany({
+		return db.pgpool.query.rankings.findMany({
 			where: eq(rankings.user, input.user),
 			orderBy: asc(rankings.timestamp),
 			with: {

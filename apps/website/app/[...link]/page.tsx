@@ -11,7 +11,7 @@ export default async function LinkRoute(props: {
 	const params = await props.params;
 	const searchParams = await props.searchParams;
 
-	const link = await db.query.links.findFirst({
+	const link = await db.pgpool.query.links.findFirst({
 		where: eq(links.id, params.link[0]),
 	});
 
@@ -22,7 +22,7 @@ export default async function LinkRoute(props: {
 			const user = await getAuthenticatedUser();
 
 			if (user) {
-				await db.insert(snapshots).values({
+				await db.primary.insert(snapshots).values({
 					type: "visit-link",
 					timestamp: new Date(),
 					tag: link.id,

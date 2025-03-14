@@ -4,7 +4,7 @@ import { db } from "~/packages/db";
 import type { AuthenticatedUser } from "../queries/users";
 
 export default async function tenVoters(user: AuthenticatedUser) {
-	const proposalsCreated = await db.query.proposals.findMany({
+	const proposalsCreated = await db.pgpool.query.proposals.findMany({
 		where: eq(proposals.user, user.id),
 		with: {
 			votes: true,

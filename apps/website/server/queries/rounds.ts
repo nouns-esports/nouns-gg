@@ -18,7 +18,7 @@ import { env } from "~/env";
 
 export const getRoundWithProposal = cache(
 	async (input: { round: string; user: string }) => {
-		return db.query.rounds.findFirst({
+		return db.pgpool.query.rounds.findFirst({
 			where: eq(rounds.id, input.round),
 			with: {
 				proposals: {
@@ -34,7 +34,7 @@ export const getRoundWithProposal = cache(
 
 export const getRound = cache(
 	async (input: { id: string }) => {
-		return db.query.rounds.findFirst({
+		return db.pgpool.query.rounds.findFirst({
 			where: eq(rounds.id, input.id),
 			with: {
 				awards: {
@@ -109,7 +109,7 @@ export const getRounds = cache(
 	async (input?: {
 		limit?: number;
 	}) => {
-		return db.query.rounds.findMany({
+		return db.pgpool.query.rounds.findMany({
 			limit: input?.limit,
 			orderBy: [desc(rounds.featured), desc(rounds.end)],
 			with: {

@@ -17,7 +17,7 @@ export const completeQuest = onlyRanked
 	.action(async ({ parsedInput, ctx }) => {
 		const now = new Date();
 
-		const quest = await db.query.quests.findFirst({
+		const quest = await db.primary.query.quests.findFirst({
 			where: eq(quests.id, parsedInput.quest),
 			with: {
 				completed: {
@@ -86,7 +86,7 @@ export const completeQuest = onlyRanked
 			timestamp: now,
 		};
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			await tx.insert(xp).values({
 				quest: quest.id,
 				user: ctx.user.id,

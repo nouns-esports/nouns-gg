@@ -5,7 +5,7 @@ import { db } from "~/packages/db";
 import { eq } from "drizzle-orm";
 
 export async function getCheckpoint(input: { key: string; user?: string }) {
-	return db.query.checkpoints.findFirst({
+	return db.pgpool.query.checkpoints.findFirst({
 		where: eq(checkpoints.key, input.key),
 		with: {
 			event: true,
@@ -21,7 +21,7 @@ export async function getEventCheckpoints(input: {
 	event: string;
 	user?: string;
 }) {
-	return db.query.checkpoints.findMany({
+	return db.pgpool.query.checkpoints.findMany({
 		where: eq(checkpoints.event, input.event),
 		with: {
 			checkins: {

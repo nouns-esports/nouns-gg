@@ -10,7 +10,7 @@ export async function getPriorVotes(input: {
 }) {
 	noStore();
 
-	const previousVotes = await db.query.votes.findMany({
+	const previousVotes = await db.pgpool.query.votes.findMany({
 		where: and(
 			or(
 				eq(votes.user, input.user),
@@ -25,7 +25,7 @@ export async function getPriorVotes(input: {
 }
 
 export async function getVotes(input: { round: string; user: string }) {
-	return db.query.votes.findMany({
+	return db.pgpool.query.votes.findMany({
 		where: and(eq(votes.user, input.user), eq(votes.round, input.round)),
 	});
 }
@@ -35,7 +35,7 @@ export async function getUserVotesForRound(input: {
 	user: string;
 	wallet?: string;
 }) {
-	const round = await db.query.rounds.findFirst({
+	const round = await db.pgpool.query.rounds.findFirst({
 		where: eq(rounds.id, input.round),
 		with: {
 			votes: {

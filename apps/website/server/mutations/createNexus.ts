@@ -23,7 +23,7 @@
 // 			throw new Error("User already has a nexus");
 // 		}
 
-// 		await db.transaction(async (tx) => {
+// 		await db.primary.transaction(async (tx) => {
 // 			let rank: number | null = null;
 
 // 			const lowestRank = await tx.query.ranks.findFirst({

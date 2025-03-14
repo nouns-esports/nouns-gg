@@ -36,7 +36,7 @@ export const placeRank = onlyUser.action(async ({ ctx }) => {
 		}
 	}
 
-	const lowestRank = await db.query.ranks.findFirst({
+	const lowestRank = await db.primary.query.ranks.findFirst({
 		orderBy: asc(ranks.place),
 	});
 
@@ -44,7 +44,7 @@ export const placeRank = onlyUser.action(async ({ ctx }) => {
 		throw new Error("No ranks found");
 	}
 
-	await db
+	await db.primary
 		.update(nexus)
 		.set({ rank: lowestRank.id })
 		.where(eq(nexus.id, ctx.user.id));

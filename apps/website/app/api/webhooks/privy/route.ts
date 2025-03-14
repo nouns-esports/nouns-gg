@@ -72,7 +72,7 @@ export async function POST(req: NextRequest) {
 			verifiedPayload.type === "user.linked_account"
 		) {
 			if (verifiedPayload.account.type === "twitter") {
-				await db
+				await db.primary
 					.update(nexus)
 					.set({
 						twitter: verifiedPayload.account.username,
@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
 					.where(eq(nexus.id, verifiedPayload.user.id));
 			}
 			if (verifiedPayload.account.type === "discord") {
-				await db
+				await db.primary
 					.update(nexus)
 					.set({
 						discord: verifiedPayload.account.username.split("#")[0],
@@ -88,7 +88,7 @@ export async function POST(req: NextRequest) {
 					.where(eq(nexus.id, verifiedPayload.user.id));
 			}
 			if (verifiedPayload.account.type === "farcaster") {
-				await db
+				await db.primary
 					.update(nexus)
 					.set({
 						username: verifiedPayload.account.username,
@@ -100,7 +100,7 @@ export async function POST(req: NextRequest) {
 
 		if (verifiedPayload.type === "user.unlinked_account") {
 			if (verifiedPayload.account.type === "twitter") {
-				await db
+				await db.primary
 					.update(nexus)
 					.set({
 						twitter: null,
@@ -108,7 +108,7 @@ export async function POST(req: NextRequest) {
 					.where(eq(nexus.id, verifiedPayload.user.id));
 			}
 			if (verifiedPayload.account.type === "discord") {
-				await db
+				await db.primary
 					.update(nexus)
 					.set({
 						discord: null,
@@ -116,7 +116,7 @@ export async function POST(req: NextRequest) {
 					.where(eq(nexus.id, verifiedPayload.user.id));
 			}
 			if (verifiedPayload.account.type === "farcaster") {
-				await db
+				await db.primary
 					.update(nexus)
 					.set({
 						username: null,

@@ -23,7 +23,7 @@ type OrderCreated = {
 export async function POST(request: Request) {
 	const order: OrderCreated = await request.json();
 
-	await db.transaction(async (tx) => {
+	await db.primary.transaction(async (tx) => {
 		const subTotalWithoutDiscounts = order.line_items
 			.filter((item) => item.price_set.shop_money.currency_code === "USD")
 			.reduce((acc, item) => acc + Number(item.price_set.shop_money.amount), 0);

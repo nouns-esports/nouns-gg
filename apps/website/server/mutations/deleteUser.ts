@@ -11,7 +11,7 @@ import { db } from "~/packages/db";
 export const deleteUser = onlyUser.action(async ({ ctx }) => {
 	try {
 		await privyClient.deleteUser(ctx.user.id);
-		await db.delete(nexus).where(eq(nexus.id, ctx.user.id));
+		await db.primary.delete(nexus).where(eq(nexus.id, ctx.user.id));
 
 		return true;
 	} catch (e) {}

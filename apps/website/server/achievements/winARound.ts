@@ -5,7 +5,7 @@ import { proposals, votes } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 
 export default async function winARound(user: AuthenticatedUser) {
-	const proposalsCreated = await db.query.proposals.findMany({
+	const proposalsCreated = await db.pgpool.query.proposals.findMany({
 		where: and(eq(proposals.user, user.id)),
 		with: {
 			round: {

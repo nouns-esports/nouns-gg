@@ -78,7 +78,7 @@ export async function getAction(input: {
 }) {
 	noStore();
 
-	const quest = await db.query.quests.findFirst({
+	const quest = await db.pgpool.query.quests.findFirst({
 		where: eq(quests.id, input.quest),
 		with: {
 			completed: input.user
@@ -101,7 +101,7 @@ export async function getAction(input: {
 
 export const getQuests = cache(
 	async (input: { limit?: number; user?: string; event?: string }) => {
-		return db.query.quests.findMany({
+		return db.pgpool.query.quests.findMany({
 			limit: input.limit,
 			where: and(
 				eq(quests.active, true),
@@ -125,7 +125,7 @@ export const getQuests = cache(
 
 export const getQuest = cache(
 	async (input: { id: string; user?: string }) => {
-		return db.query.quests.findFirst({
+		return db.pgpool.query.quests.findFirst({
 			where: eq(quests.id, input.id),
 			with: {
 				completed: input.user

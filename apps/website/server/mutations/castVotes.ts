@@ -21,7 +21,7 @@ export const castVotes = onlyRanked
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
-		const round = await db.query.rounds.findFirst({
+		const round = await db.primary.query.rounds.findFirst({
 			where: eq(rounds.id, parsedInput.round),
 			with: {
 				votes: {
@@ -61,7 +61,7 @@ export const castVotes = onlyRanked
 		let votesUsed = round.votes.reduce((votes, vote) => votes + vote.count, 0);
 		let newUserXP = 0;
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			for (const vote of parsedInput.votes) {
 				if (vote.count === 0) continue;
 
@@ -82,7 +82,6 @@ export const castVotes = onlyRanked
 				}
 
 				if (!ctx.user.nexus?.rank) {
-					tx.rollback();
 					throw new Error("Enter the Nexus to vote");
 				}
 

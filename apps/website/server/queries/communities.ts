@@ -5,7 +5,7 @@ import { unstable_cache as cache } from "next/cache";
 
 export const getCommunities = cache(
 	async (input?: { ids?: string[] }) => {
-		return db.query.communities.findMany({
+		return db.pgpool.query.communities.findMany({
 			where: and(
 				input?.ids ? inArray(communities.id, input.ids) : undefined,
 				isNull(communities.parent),
@@ -22,7 +22,7 @@ export const getCommunities = cache(
 
 export const getCommunity = cache(
 	async (input: { id: string }) => {
-		return db.query.communities.findFirst({
+		return db.pgpool.query.communities.findFirst({
 			where: eq(communities.id, input.id),
 			with: {
 				children: true,
@@ -35,7 +35,7 @@ export const getCommunity = cache(
 
 export const getCommunityRosters = cache(
 	async (input: { community: string }) => {
-		return db.query.rosters.findMany({
+		return db.pgpool.query.rosters.findMany({
 			where: and(
 				eq(rosters.community, input.community),
 				eq(rosters.active, true),

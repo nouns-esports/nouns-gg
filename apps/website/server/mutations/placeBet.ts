@@ -15,7 +15,7 @@ export const placeBet = onlyRanked
 		}),
 	)
 	.action(async ({ ctx, parsedInput }) => {
-		const prediction = await db.query.predictions.findFirst({
+		const prediction = await db.primary.query.predictions.findFirst({
 			where: eq(predictions.id, parsedInput.prediction),
 			with: {
 				bets: {
@@ -36,7 +36,7 @@ export const placeBet = onlyRanked
 			throw new Error("Prediction is closed");
 		}
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			await tx.insert(bets).values({
 				user: ctx.user.id,
 				prediction: parsedInput.prediction,

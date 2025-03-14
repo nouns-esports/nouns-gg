@@ -48,13 +48,13 @@ const agent = await createAgent({
 		// the key of plugins property in createAgent config
 		switch (provider) {
 			case "discord": {
-				user = await db.query.users.findFirst({
+				user = await db.pgpool.query.users.findFirst({
 					where: eq(users.discord, context.author.id),
 				});
 				break;
 			}
 			case "farcaster": {
-				user = await db.query.users.findFirst({
+				user = await db.pgpool.query.users.findFirst({
 					where: eq(users.fid, Number(context.author.id)),
 				});
 				break;

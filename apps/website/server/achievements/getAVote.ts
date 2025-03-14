@@ -4,7 +4,7 @@ import type { AuthenticatedUser } from "../queries/users";
 import { and, eq, gt, sql } from "drizzle-orm";
 
 export default async function getAVote(user: AuthenticatedUser) {
-	const userProposals = await db.query.proposals.findMany({
+	const userProposals = await db.pgpool.query.proposals.findMany({
 		where: eq(proposals.user, user.id),
 		extras: {
 			totalVotes: sql<number>`(

@@ -17,13 +17,13 @@ export const becomeDelegate = createAction<{
 		check: async (user) => {
 			const delegation =
 				actionInputs.tokenName === "Noun"
-					? await db.query.nounDelegates.findFirst({
+					? await db.pgpool.query.nounDelegates.findFirst({
 							where: inArray(
 								nounDelegates.to,
 								user.wallets.map((w) => w.address as `0x${string}`),
 							),
 						})
-					: await db.query.lilnounDelegates.findFirst({
+					: await db.pgpool.query.lilnounDelegates.findFirst({
 							where: inArray(
 								lilnounDelegates.to,
 								user.wallets.map((w) => w.address as `0x${string}`),

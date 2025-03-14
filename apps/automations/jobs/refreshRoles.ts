@@ -85,7 +85,7 @@ export const refreshRoles = createJob({
 		}
 
 		const [nexusUsers, guildMembers] = await Promise.all([
-			db.query.nexus.findMany({
+			db.primary.query.nexus.findMany({
 				where: and(isNotNull(nexus.rank), isNotNull(nexus.discord)),
 			}),
 			guild.members.fetch(),

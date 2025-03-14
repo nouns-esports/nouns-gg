@@ -9,7 +9,7 @@ import { shopifyClient } from "../clients/shopify";
 
 export const getProducts = cache(
 	async (input: { collection?: string }) => {
-		return db.query.products.findMany({
+		return db.pgpool.query.products.findMany({
 			where: input.collection
 				? eq(products.collection, input.collection)
 				: undefined,
@@ -20,14 +20,14 @@ export const getProducts = cache(
 );
 
 export const getCollections = cache(
-	async () => db.query.collections.findMany(),
+	async () => db.pgpool.query.collections.findMany(),
 	["getCollections"],
 	{ revalidate: 60 },
 );
 
 export const getProduct = cache(
 	async (input: { id: string }) =>
-		db.query.products.findFirst({
+		db.pgpool.query.products.findFirst({
 			where: eq(products.id, input.id),
 		}),
 	["getProduct"],
@@ -36,7 +36,7 @@ export const getProduct = cache(
 
 export const getCollection = cache(
 	async (input: { id: string }) =>
-		db.query.collections.findFirst({
+		db.pgpool.query.collections.findFirst({
 			where: eq(collections.id, input.id),
 			with: {
 				products: true,
@@ -48,7 +48,7 @@ export const getCollection = cache(
 );
 
 export async function checkCart(input: { user: string }) {
-	const cart = await db.query.carts.findMany({
+	const cart = await db.pgpool.query.carts.findMany({
 		where: eq(carts.user, input.user),
 		with: {
 			product: true,
@@ -88,7 +88,7 @@ export async function checkCart(input: { user: string }) {
 				};
 			}>) ?? [];
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			for (const variant of refreshedVariants) {
 				const product = cart.find(
 					(item) => item.variant === variant.id,

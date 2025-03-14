@@ -52,7 +52,7 @@ export const getAchievementsProgress = cache(
 		//
 		const progress: Record<string, "claimed" | "completed" | "incomplete"> = {};
 
-		const claimRecords = await db.query.xp.findMany({
+		const claimRecords = await db.pgpool.query.xp.findMany({
 			where: and(
 				eq(xp.user, input.user.id),
 				inArray(xp.achievement, Object.keys(checkAchievements)),

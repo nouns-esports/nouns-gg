@@ -23,7 +23,7 @@ export const refreshLeaderboard = createJob({
 
 		const [currentLeaderboard, xpEarned, activeRanks] = await Promise.all([
 			// The most recent leaderboard
-			db.query.rankings.findMany({
+			db.primary.query.rankings.findMany({
 				where: eq(
 					rankings.timestamp,
 					sql`(SELECT MAX(timestamp) FROM ${rankings})`,
@@ -36,7 +36,7 @@ export const refreshLeaderboard = createJob({
 				},
 			}),
 			// All xp earned after the most recent leaderboard was created
-			db.query.xp.findMany({
+			db.primary.query.xp.findMany({
 				where: gt(xp.timestamp, sql`(SELECT MAX(timestamp) FROM ${rankings})`),
 				columns: {
 					amount: true,
@@ -44,7 +44,7 @@ export const refreshLeaderboard = createJob({
 				},
 			}),
 			// All active ranks
-			db.query.ranks.findMany({
+			db.primary.query.ranks.findMany({
 				where: eq(ranks.active, true),
 				orderBy: desc(ranks.place),
 			}),
@@ -93,7 +93,7 @@ export const refreshLeaderboard = createJob({
 
 		console.log("leaderboard", leaderboard);
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			// const eligibleForRank = leaderboard.filter((user) => user.score >= 100);
 			// const ineligibleForRank = leaderboard.filter((user) => user.score < 100);
 

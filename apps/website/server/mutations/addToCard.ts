@@ -15,7 +15,7 @@ export const addToCart = onlyUser
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
-		const existingCartItem = await db.query.carts.findFirst({
+		const existingCartItem = await db.primary.query.carts.findFirst({
 			where: and(
 				eq(carts.user, ctx.user.id),
 				eq(carts.product, parsedInput.product),
@@ -24,14 +24,14 @@ export const addToCart = onlyUser
 		});
 
 		if (existingCartItem) {
-			await db
+			await db.primary
 				.update(carts)
 				.set({
 					quantity: existingCartItem.quantity + parsedInput.quantity,
 				})
 				.where(eq(carts.id, existingCartItem.id));
 		} else {
-			await db.insert(carts).values({
+			await db.primary.insert(carts).values({
 				user: ctx.user.id,
 				product: parsedInput.product,
 				variant: parsedInput.variant,

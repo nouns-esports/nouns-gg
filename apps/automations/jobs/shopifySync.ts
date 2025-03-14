@@ -46,7 +46,7 @@ export const shopifySync = createJob({
 			)
 		).data?.products?.nodes as Product[];
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			for (const product of syncProducts) {
 				const existingProduct = await tx.query.products.findFirst({
 					where: eq(products.shopifyId, product.id),

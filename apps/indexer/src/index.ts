@@ -67,7 +67,7 @@ ponder.on("LilNounsToken:DelegateChanged", async ({ event, context }) => {
 // 		blockNumber: event.args.endBlock,
 // 	});
 
-// 	await context.db.insert(nounsProposals).values({
+// 	await context.db.primary.insert(nounsProposals).values({
 // 		id: event.args.id,
 // 		proposer: event.args.proposer,
 // 		targets: [...event.args.targets],

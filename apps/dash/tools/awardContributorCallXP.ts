@@ -24,7 +24,7 @@ agent.addTool({
 
 		const now = new Date();
 
-		const latestSnapshot = await db.query.snapshots.findFirst({
+		const latestSnapshot = await db.pgpool.query.snapshots.findFirst({
 			where: eq(snapshots.type, "discord-call"),
 			orderBy: desc(snapshots.timestamp),
 		});
@@ -62,7 +62,7 @@ agent.addTool({
 			throw new Error("Theres nobody in the channel right now");
 		}
 
-		const users = await db.query.nexus.findMany({
+		const users = await db.pgpool.query.nexus.findMany({
 			where: inArray(nexus.discord, members),
 		});
 
@@ -73,7 +73,7 @@ agent.addTool({
 			);
 		}
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			for (const user of users) {
 				const [snapshot] = await tx
 					.insert(snapshots)

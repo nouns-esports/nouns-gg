@@ -21,10 +21,27 @@ const setDatabaseSchema = <T extends { [name: string]: unknown }>(
 
 const indexerSchema = setDatabaseSchema(_indexerSchema, env.INDEXER_SCHEMA);
 
-export const db = drizzle(env.DATABASE_URL, {
-	schema: {
-		...indexerSchema,
-		// ...farcasterSchema,
-		...publicSchema,
-	},
-});
+// export const db = drizzle(env.DATABASE_URL, {
+// 	schema: {
+// 		...indexerSchema,
+// 		// ...farcasterSchema,
+// 		...publicSchema,
+// 	},
+// });
+
+export const db = {
+	primary: drizzle(env.PRIMARY_DATABASE_URL, {
+		schema: {
+			...indexerSchema,
+			// ...farcasterSchema,
+			...publicSchema,
+		},
+	}),
+	pgpool: drizzle(env.PGPOOL_URL, {
+		schema: {
+			...indexerSchema,
+			// ...farcasterSchema,
+			...publicSchema,
+		},
+	}),
+};

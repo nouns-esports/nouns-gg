@@ -19,11 +19,11 @@ agent.addTool({
 		}
 
 		const [user, mentionedUser] = await Promise.all([
-			db.query.nexus.findFirst({
+			db.pgpool.query.nexus.findFirst({
 				where: eq(nexus.discord, context.author),
 			}),
 			context.mentions?.[0]
-				? db.query.nexus.findFirst({
+				? db.pgpool.query.nexus.findFirst({
 						where: eq(nexus.discord, context.mentions[0]),
 					})
 				: undefined,
@@ -47,7 +47,7 @@ agent.addTool({
 			throw new Error("You don't have enough gold to tip");
 		}
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			await tx
 				.update(nexus)
 				.set({

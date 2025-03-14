@@ -27,7 +27,7 @@ export default async function Checkpoint(props: {
 	let totalXP = 0;
 
 	if (checkpoint.checkins.length === 0) {
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			const [checkin] = await tx
 				.insert(checkins)
 				.values({

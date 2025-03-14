@@ -4,7 +4,7 @@ import type { AuthenticatedUser } from "../queries/users";
 import { eq } from "drizzle-orm";
 
 export default async function createProposal(user: AuthenticatedUser) {
-	const proposal = await db.query.proposals.findFirst({
+	const proposal = await db.pgpool.query.proposals.findFirst({
 		where: eq(proposals.user, user.id),
 	});
 

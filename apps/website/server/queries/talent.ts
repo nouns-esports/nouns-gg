@@ -5,7 +5,7 @@ import { unstable_cache as cache } from "next/cache";
 
 export const getTalent = cache(
 	async (input: { roster: string }) => {
-		return db.query.talent.findMany({
+		return db.pgpool.query.talent.findMany({
 			where: and(eq(talent.active, true), eq(talent.roster, input.roster)),
 			orderBy: asc(talent.name),
 		});

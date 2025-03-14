@@ -60,7 +60,7 @@ export const createDraftOrder = onlyUser
 
 		const now = new Date();
 
-		await db.transaction(async (tx) => {
+		await db.primary.transaction(async (tx) => {
 			if (!ctx.user.nexus) {
 				throw new Error("User does not have a nexus");
 			}

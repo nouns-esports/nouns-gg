@@ -48,7 +48,7 @@ export const agent = await createAgent({
 	onMessage: async ({ provider, context }) => {
 		if (!context) return;
 
-		const user = await db.query.nexus.findFirst({
+		const user = await db.pgpool.query.nexus.findFirst({
 			where: or(
 				eq(nexus.fid, Number(context.author) || 0),
 				eq(nexus.twitter, context.author),

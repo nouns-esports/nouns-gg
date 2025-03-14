@@ -7,7 +7,7 @@ import { unstable_cache as cache } from "next/cache";
 
 export const getPrediction = cache(
 	async (input: { id: string }) => {
-		return db.query.predictions.findFirst({
+		return db.pgpool.query.predictions.findFirst({
 			where: eq(predictions.id, input.id),
 			with: {
 				outcomes: true,
