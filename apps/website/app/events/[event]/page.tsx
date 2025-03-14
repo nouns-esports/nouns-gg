@@ -10,6 +10,12 @@ import { CalendarDays, MapPinned } from "lucide-react";
 import type { Metadata } from "next";
 import { env } from "~/env";
 import { notFound } from "next/navigation";
+import Button from "@/components/Button";
+import { twMerge } from "tailwind-merge";
+import ProductCard from "@/components/ProductCard";
+import TipTap from "@/components/TipTap";
+import { ToggleModal } from "@/components/Modal";
+import EventAttendeesModal from "@/components/modals/EventAttendeesModal";
 
 export async function generateMetadata(props: {
 	params: Promise<{ event: string }>;
@@ -56,8 +62,12 @@ export async function generateMetadata(props: {
 
 export default async function EventPage(props: {
 	params: Promise<{ event: string }>;
+	searchParams: Promise<{
+		tab?: "rounds" | "quests" | "predictions" | "shop";
+	}>;
 }) {
 	const params = await props.params;
+	const searchParams = await props.searchParams;
 	const user = await getAuthenticatedUser();
 
 	const event = await getEvent({
@@ -69,146 +79,307 @@ export default async function EventPage(props: {
 		return notFound();
 	}
 
+	const tab = searchParams.tab ?? "details";
+
+	const attendees = [
+		{
+			user: {
+				id: "_",
+				name: "Mang0",
+				image:
+					"https://static-cdn.jtvnw.net/jtv_user_pictures/8647bb3a-1e64-4839-987f-6aec0b44a223-profile_image-300x300.png",
+				username: "_",
+			},
+		},
+		{
+			user: {
+				id: "_",
+				name: "Zain",
+				image:
+					"https://upload.wikimedia.org/wikipedia/commons/c/c6/Zain_at_Genesis_9.jpg",
+				username: "_",
+			},
+		},
+		{
+			user: {
+				id: "_",
+				name: "Hungrybox",
+				image:
+					"https://pbs.twimg.com/profile_images/1891322233504829440/VZZ_pxrO_400x400.jpg",
+				username: "_",
+			},
+		},
+		...event.attendees,
+	];
+
 	return (
 		<>
-			<div className="flex flex-col gap-16 pt-32 max-xl:pt-28 max-sm:pt-20">
-				<div className="px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
-					<div className="flex max-lg:flex-col h-60 max-lg:h-auto gap-5 w-full bg-grey-800 rounded-xl p-4">
-						<img
-							alt={event.name}
-							src={event.image}
-							className="h-full max-lg:max-h-60 max-sm:w-full max-sm:max-h-none aspect-video rounded-xl object-cover"
-						/>
-						<div className="flex flex-col gap-4">
-							<div className="flex items-center justify-between gap-4">
-								<h1 className="text-white font-luckiest-guy text-4xl">
-									{event.name}
-								</h1>
-								{event.community ? (
-									<Link
-										href={`https://warpcast.com/~/channel/${event.community.id ?? "nouns-esports"}`}
-										newTab
-										className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
-									>
-										<img
-											alt={event.community.name ?? "Nouns Esports"}
-											src={event.community.image ?? "/logo/logo-square.png"}
-											className="w-5 h-5 rounded-full"
-										/>
-										{event.community.name ?? "Nouns Esports"}
-									</Link>
+			<div className="flex flex-col items-center w-full">
+				<img
+					alt={event.name}
+					src={event.image}
+					className="h-96 max-2xl:h-80 max-xl:h-64 max-lg:h-48 w-full object-cover"
+				/>
+				<div className="flex flex-col items-center gap-6 max-sm:gap-3 w-full max-w-[1920px]">
+					<div className="flex flex-col items-center max-[1920px]:px-0 px-24 w-full">
+						<div className="flex flex-col gap-6 w-full bg-grey-800 rounded-b-2xl px-8 max-[1920px]:px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 pt-[20px]">
+							<div className="flex gap-32 w-full">
+								<div className="flex flex-col gap-4 w-full">
+									<div className="flex items-center justify-between gap-4 max-lg:flex-col max-lg:items-start">
+										<h1 className="text-white font-luckiest-guy text-4xl max-md:text-3xl">
+											{event.name}
+										</h1>
+										<div className="flex gap-8 h-fit flex-shrink-0 max-lg:justify-between max-lg:w-full">
+											{attendees.length > 0 ? (
+												<ToggleModal
+													id="event-attendees"
+													className="flex items-center gap-2 group max-lg:flex-row-reverse max-lg:gap-4"
+												>
+													<p className="text-white group-hover:text-white/70 transition-colors">
+														{attendees.length} Attendees
+													</p>
+													<div
+														className="relative h-10"
+														style={{ width: `${attendees.length * 18 + 18}px` }}
+													>
+														{attendees.map((attendee, index) => (
+															<div
+																key={
+																	attendee.user.id === "_"
+																		? `attendee-${index}`
+																		: attendee.user.id
+																}
+																style={{
+																	left: `${index * 20}px`,
+																}}
+																className="absolute w-10 h-10 rounded-full bg-white overflow-hidden border-4 border-grey-800"
+															>
+																<div className="absolute w-full h-full group-hover:bg-grey-800/50 bg-transparent transition-colors" />
+																<img
+																	src={attendee.user.image}
+																	className="w-full h-full"
+																/>
+															</div>
+														))}
+													</div>
+												</ToggleModal>
+											) : null}
+											<Button
+												// @ts-ignore
+												disabled={event.call_to_action.disabled}
+												// @ts-ignore
+												href={event.call_to_action.url}
+												newTab
+											>
+												{event.call_to_action.label}
+											</Button>
+										</div>
+									</div>
+
+									<div className="flex flex-col gap-6 w-full">
+										<p className="text-grey-200 max-sm:max-h-32 h-full overflow-y-auto custom-scrollbar">
+											{event.description}
+										</p>
+										<div className="flex items-center gap-6 overflow-x-auto w-full flex-shrink-0 max-w-full">
+											<Link
+												href={`https://warpcast.com/~/channel/${event.community?.id ?? "nouns-esports"}`}
+												newTab
+												className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
+											>
+												<img
+													alt={event.community?.name ?? "Nouns"}
+													src={
+														event.community?.image ?? "/logo/logo-square.png"
+													}
+													className="w-5 h-5 rounded-full"
+												/>
+												{event.community?.name ?? "Nouns"}
+											</Link>
+
+											<div className="flex items-center gap-2 text-white flex-shrink-0">
+												<CalendarDays className="w-5 h-5 text-white" />
+												<p className="mt-0.5 whitespace-nowrap">
+													<DateComponent
+														timestamp={event.start}
+														format="%monthShort %day%ordinal, %year"
+													/>
+													{" - "}
+													<DateComponent
+														timestamp={event.end}
+														format="%monthShort %day%ordinal, %year"
+													/>
+												</p>
+											</div>
+											<Link
+												href={event.location_?.url}
+												newTab
+												className="flex items-center gap-2 text-white group flex-shrink-0"
+											>
+												<MapPinned className="w-5 h-5 group-hover:text-white/70 transition-colors" />
+												<p className="mt-0.5 whitespace-nowrap group-hover:text-white/70 transition-colors">
+													{event.location_?.name}
+												</p>
+											</Link>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul className="flex gap-2 w-full overflow-x-auto">
+								{event.details ? (
+									<Tab href={`/events/${event.id}`} active={!searchParams.tab}>
+										Details
+									</Tab>
 								) : null}
-							</div>
-							<p className="text-grey-200 max-sm:max-h-32 h-full overflow-y-auto custom-scrollbar">
-								{event.description}
-							</p>
-							<div className="flex items-center gap-6">
-								<div className="flex items-center gap-2 text-white font-bebas-neue text-xl">
-									<CalendarDays className="w-6 h-6 text-white" />
-									<p className="mt-0.5">
-										<DateComponent timestamp={event.start} short /> -{" "}
-										<DateComponent timestamp={event.end} short />
-									</p>
-								</div>
-								<div className="flex items-center gap-2 text-white font-bebas-neue text-xl">
-									<MapPinned className="w-6 h-6 text-white" />
-									<p className="mt-0.5">{event.location}</p>
-								</div>
-							</div>
+								{event.rounds.length > 0 ? (
+									<Tab
+										href="?tab=rounds"
+										active={searchParams.tab === "rounds"}
+									>
+										Rounds
+									</Tab>
+								) : null}
+								{event.quests.length > 0 ? (
+									<Tab
+										href="?tab=quests"
+										active={searchParams.tab === "quests"}
+									>
+										Quests
+									</Tab>
+								) : null}
+								{event.predictions.length > 0 ? (
+									<Tab
+										href="?tab=predictions"
+										active={searchParams.tab === "predictions"}
+									>
+										Predictions
+									</Tab>
+								) : null}
+								<Tab href="?tab=shop" active={searchParams.tab === "shop"}>
+									Shop
+								</Tab>
+							</ul>
 						</div>
+					</div>
+					<div className="flex flex-col gap-8 w-full max-w-[1920px] px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
+						{
+							{
+								details: (
+									<div className="w-full flex justify-center">
+										{event.details ? (
+											<TipTap
+												content={event.details}
+												className="bg-grey-800 rounded-xl px-6 py-5 max-sm:px-4 max-sm:py-3 max-w-screen-lg"
+											/>
+										) : null}
+									</div>
+								),
+								rounds: (
+									<div className="grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4">
+										{event.rounds.map((round) => (
+											<RoundCard
+												key={round.id}
+												id={round.id}
+												image={round.image}
+												name={round.name}
+												start={round.start}
+												votingStart={round.votingStart}
+												end={round.end}
+												community={
+													round.community
+														? {
+																id: round.community.id,
+																name: round.community.name,
+																image: round.community.image,
+															}
+														: undefined
+												}
+											/>
+										))}
+									</div>
+								),
+								quests: (
+									<div className="grid grid-cols-5 max-2xl:grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4">
+										{event.quests.map((quest) => (
+											<QuestCard
+												key={quest.id}
+												id={quest.id}
+												name={quest.name}
+												description={quest.description}
+												image={quest.image}
+												start={quest.start ?? undefined}
+												end={quest.end ?? undefined}
+												community={
+													quest.community
+														? {
+																id: quest.community.id,
+																name: quest.community.name,
+																image: quest.community.image,
+															}
+														: undefined
+												}
+												xp={quest.xp}
+												completed={quest.completed?.length > 0}
+											/>
+										))}
+									</div>
+								),
+								predictions: (
+									<div className="flex flex-col gap-6">
+										<h2 className="text-white font-luckiest-guy text-2xl">
+											Happening Now
+										</h2>
+										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+											{event.predictions.map((prediction) => (
+												<PredictionCard
+													key={prediction.id}
+													id={prediction.id}
+													name={prediction.name}
+													image={prediction.image}
+													xp={prediction.xp}
+													outcomes={prediction.outcomes}
+													totalBets={prediction.outcomes.reduce(
+														(acc, outcome) => acc + outcome.totalBets,
+														0,
+													)}
+													closed={prediction.closed}
+													userBet={prediction.bets?.[0]}
+													user={user}
+													className="max-md:w-full max-md:flex-shrink-0"
+												/>
+											))}
+										</div>
+									</div>
+								),
+								shop: (
+									<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+										{event.products.map((product) => {
+											return <ProductCard key={product.id} product={product} />;
+										})}
+									</div>
+								),
+							}[tab]
+						}
 					</div>
 				</div>
-				{/* {event.rounds.length > 0 && (
-					<div className="flex flex-col gap-6">
-						<h2 className="text-white font-luckiest-guy text-3xl pl-32 max-2xl:pl-16 max-xl:pl-8 max-sm:pl-4">
-							Rounds
-						</h2>
-						<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:flex max-lg:overflow-x-scroll max-lg:scrollbar-hidden gap-4 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
-							{event.rounds.map((round) => (
-								<RoundCard
-									key={round.id}
-									id={round.id}
-									image={round.image}
-									name={round.name}
-									start={round.start}
-									votingStart={round.votingStart}
-									end={round.end}
-									community={
-										round.community
-											? {
-													id: round.community.id,
-													name: round.community.name,
-													image: round.community.image,
-												}
-											: undefined
-									}
-									className="max-lg:w-80 max-lg:flex-shrink-0"
-								/>
-							))}
-						</div>
-					</div>
-				)} */}
-				{event.quests.length > 0 && (
-					<div className="flex flex-col gap-6">
-						<h2 className="text-white font-luckiest-guy text-3xl pl-32 max-2xl:pl-16 max-xl:pl-8 max-sm:pl-4">
-							Quests
-						</h2>
-						<div className="grid grid-cols-5 max-2xl:grid-cols-4 max-lg:flex max-lg:overflow-x-scroll max-lg:scrollbar-hidden gap-4 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
-							{event.quests.map((quest) => (
-								<QuestCard
-									key={quest.id}
-									id={quest.id}
-									name={quest.name}
-									description={quest.description}
-									image={quest.image}
-									start={quest.start ?? undefined}
-									end={quest.end ?? undefined}
-									community={
-										quest.community
-											? {
-													id: quest.community.id,
-													name: quest.community.name,
-													image: quest.community.image,
-												}
-											: undefined
-									}
-									xp={quest.xp}
-									completed={quest.completed?.length > 0}
-									className="max-lg:w-64 max-lg:flex-shrink-0"
-								/>
-							))}
-						</div>
-					</div>
-				)}
-				{event.predictions.length > 0 && (
-					<div id="predictions" className="flex flex-col gap-6">
-						<h2 className="text-white font-luckiest-guy text-3xl pl-32 max-2xl:pl-16 max-xl:pl-8 max-sm:pl-4">
-							Predictions
-						</h2>
-						<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
-							{event.predictions.map((prediction) => (
-								<PredictionCard
-									key={prediction.id}
-									id={prediction.id}
-									name={prediction.name}
-									image={prediction.image}
-									xp={prediction.xp}
-									outcomes={prediction.outcomes}
-									totalBets={prediction.outcomes.reduce(
-										(acc, outcome) => acc + outcome.totalBets,
-										0,
-									)}
-									closed={prediction.closed}
-									userBet={prediction.bets?.[0]}
-									user={user}
-									className="max-md:w-full max-md:flex-shrink-0"
-								/>
-							))}
-						</div>
-					</div>
-				)}
 			</div>
+			<EventAttendeesModal attendees={attendees} />
 			<PlaceBetModal />
 		</>
+	);
+}
+
+function Tab(props: { children: string; active: boolean; href: string }) {
+	return (
+		<li
+			className={twMerge(
+				"relative text-white font-bebas-neue px-3 text-xl hover:bg-grey-500 rounded-t-md transition-colors py-1",
+				props.active && "text-red",
+			)}
+		>
+			<Link href={props.href}>{props.children}</Link>
+			{props.active ? (
+				<div className="w-full h-0.5 bg-red absolute bottom-0 left-0" />
+			) : null}
+		</li>
 	);
 }

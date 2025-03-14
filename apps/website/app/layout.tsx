@@ -38,10 +38,7 @@ const londrinaSolid = Londrina_Solid({
 });
 
 export const metadata = {
-	title: {
-		default: "Nouns",
-		template: "Nouns - %s",
-	},
+	title: "Nouns",
 	description: "Esports, powered by you!",
 	keywords: [
 		"esports",
@@ -145,7 +142,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
 					) : (
 						<>
 							<Header />
-							<main className="flex flex-col w-full min-h-[calc(100vh_-_224px)] h-full max-w-[1920px]">
+							<main className="flex flex-col w-full min-h-[calc(100vh_-_224px)] h-full">
 								{props.children}
 							</main>
 							<Footer />

@@ -4,6 +4,8 @@ import { toast as hotToast } from "react-hot-toast";
 import { Level } from "./Level";
 import { Check, Sparkles, X } from "lucide-react";
 import { twMerge } from "tailwind-merge";
+import { useEffect, useState } from "react";
+import { AnimatedNumber } from "./AnimateNumber";
 
 export const toast = {
 	custom: (props: {
@@ -44,6 +46,23 @@ export const toast = {
 				<Level xp={props.total} />
 			</div>
 		)),
+	gold: (props: { earned: number }) =>
+		hotToast.custom((t: any) => {
+			return (
+				<div className="flex items-center gap-2 animate-in fade-in-50 slide-in-from-top-4 border border-grey-600 rounded-xl p-2 pr-3 bg-grey-800">
+					<img
+						src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
+						className="h-10"
+					/>
+					<div className="flex flex-col items-end">
+						<p className="text-white">You earned gold!</p>
+						<p className="text-gold-500 flex font-semibold">
+							+<AnimatedNumber from={0} to={props.earned} duration={1.5} />
+						</p>
+					</div>
+				</div>
+			);
+		}),
 	error: (message: string) =>
 		hotToast.custom((t: any) => (
 			<div className="flex w-fit max-w-[500px] max-sm:max-w-full animate-in text-white fade-in-50 slide-in-from-top-4 items-center gap-3 border border-grey-600 rounded-xl p-2 pr-3 bg-grey-800">
@@ -59,3 +78,23 @@ export const toast = {
 			</div>
 		)),
 };
+
+export function Toast<T extends keyof typeof toast>(props: {
+	type: T;
+	inputs: Parameters<(typeof toast)[T]>[0];
+}) {
+	const [toasted, setToasted] = useState(false);
+
+	useEffect(() => {
+		if (toasted) return;
+
+		toast[props.type](
+			// @ts-ignore
+			props.inputs,
+		);
+
+		setToasted(true);
+	}, [toasted]);
+
+	return <></>;
+}

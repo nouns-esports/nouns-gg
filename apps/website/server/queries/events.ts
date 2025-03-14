@@ -6,7 +6,7 @@ import { asc, desc, eq, gt, or } from "drizzle-orm";
 
 export const getEvents = cache(
 	async (input?: { limit?: number }) => {
-		//
+		////
 		return db.query.events.findMany({
 			orderBy: [desc(events.featured), desc(events.start)],
 			limit: input?.limit,
@@ -29,7 +29,7 @@ export const getFeaturedEvent = cache(
 
 export const getEvent = cache(
 	async (input: { id: string; user?: string }) => {
-		////////////////////////////
+		////////////////////////
 		return db.query.events.findFirst({
 			where: eq(events.id, input.id),
 			with: {
@@ -48,7 +48,9 @@ export const getEvent = cache(
 				rounds: {
 					with: { community: true },
 				},
-				attendees: true,
+				attendees: {
+					with: { user: true },
+				},
 				predictions: {
 					with: {
 						outcomes: true,
@@ -56,39 +58,10 @@ export const getEvent = cache(
 					},
 				},
 				community: true,
+				products: true,
 			},
 		});
 	},
 	["getEvent"],
 	{ revalidate: 60 * 10 },
-);
-
-export const getCurrentEvent = cache(
-	async () => {
-		return db.query.events.findFirst({
-			where: eq(events.featured, true),
-		});
-	},
-	["currentEvent"],
-	{ revalidate: 60 * 10 },
-);
-
-export const getEventQuests = cache(
-	async (input: { event: string; user?: string }) => {
-		return db.query.quests.findMany({
-			where: eq(quests.event, input.event),
-			with: {
-				community: true,
-				completed: input?.user
-					? {
-							where: eq(xp.user, input.user),
-							limit: 1,
-							columns: { id: true },
-						}
-					: undefined,
-			},
-		});
-	},
-	["getEventQuests"],
-	{ tags: ["getEventQuests"], revalidate: 60 * 10 },
 );

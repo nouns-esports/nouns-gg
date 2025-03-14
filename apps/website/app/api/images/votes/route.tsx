@@ -179,20 +179,16 @@ export async function GET(request: Request) {
 						)}
 					</div>
 				</div>
-				{round.votes.length < 5 ? (
-					<div
-						style={{
-							fontSize: 36,
-							display: "flex",
-							color: "white",
-							fontFamily: "Cabin",
-						}}
-					>
-						nouns.gg/rounds/{round.id}
-					</div>
-				) : (
-					""
-				)}
+				<div
+					style={{
+						fontSize: 36,
+						display: "flex",
+						color: "white",
+						fontFamily: "Cabin",
+					}}
+				>
+					nouns.gg/rounds/{round.id}
+				</div>
 			</div>
 		</div>,
 		{

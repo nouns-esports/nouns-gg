@@ -59,6 +59,7 @@ export const castVotes = onlyRanked
 		}
 
 		let votesUsed = round.votes.reduce((votes, vote) => votes + vote.count, 0);
+		let newUserXP = 0;
 
 		await db.transaction(async (tx) => {
 			for (const vote of parsedInput.votes) {
@@ -126,14 +127,24 @@ export const castVotes = onlyRanked
 					vote: returnedVote[0].id,
 				});
 
-				await tx
+				const [updateNexus] = await tx
 					.update(nexus)
 					.set({
 						xp: sql`${nexus.xp} + ${5 * vote.count}`,
 					})
-					.where(eq(nexus.id, proposal.user));
+					.where(eq(nexus.id, proposal.user))
+					.returning({
+						xp: nexus.xp,
+					});
+
+				newUserXP = updateNexus.xp;
 			}
 		});
 
 		revalidatePath(`/rounds/${parsedInput.round}`);
+
+		return {
+			earnedXP: 10 * votesUsed,
+			totalXP: newUserXP,
+		};
 	});

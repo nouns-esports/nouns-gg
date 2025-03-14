@@ -6,11 +6,7 @@ import { useModal } from "./Modal";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-export default function CheckInOnClient(props: {
-	station: {
-		id: number;
-	};
-}) {
+export default function SignIn() {
 	const { open: openSignInModal } = useModal("sign-in");
 	const { ready, authenticated } = usePrivy();
 

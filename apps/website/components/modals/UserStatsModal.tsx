@@ -50,7 +50,7 @@ export default function UserStatsModal(props: {
 			<div className="flex justify-between items-center">
 				<p>Last updated on</p>
 				<p className="text-white whitespace-nowrap">
-					<DateComponent />
+					<DateComponent format="%monthLong %day%ordinal, %year" />
 				</p>
 			</div>
 		</Modal>

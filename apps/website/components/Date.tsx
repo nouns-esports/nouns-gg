@@ -2,12 +2,19 @@
 
 export default function DateComponent(props: {
 	timestamp?: string | Date | number;
-	short?: boolean;
+	format: string;
 }) {
-	const now = new Date();
-	const date = new Date(props.timestamp ?? now);
+	const date = new Date(props.timestamp ?? new Date());
 
+	const hour = date.getHours() % 12 || 12; // Convert to 12-hour format
+	const minute = date.getMinutes();
+	const second = date.getSeconds();
 	const day = date.getDate();
+	const month = date.getMonth();
+	const monthShort = date.toLocaleDateString("en-US", { month: "short" });
+	const monthLong = date.toLocaleDateString("en-US", { month: "long" });
+	const year = date.getFullYear();
+	const meridiem = date.getHours() >= 12 ? "pm" : "am";
 
 	let ordinal = "";
 
@@ -28,50 +35,16 @@ export default function DateComponent(props: {
 		}
 	}
 
-	if (date <= now) {
-		if (props.short) {
-			return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
-		}
-
-		return date.toLocaleDateString("en-US", {
-			month: "long",
-			day: "numeric",
-			year: "numeric",
-		});
-	}
-
-	if (props.short) {
-		return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
-	}
-
-	return `${date.toLocaleDateString("en-US", {
-		month: "long",
-		day: "numeric",
-	})}${ordinal}, ${date
-		.toLocaleTimeString("en-US", {
-			hour: "numeric",
-			minute: "numeric",
-			hour12: true,
-		})
-		.replace(":00 ", "")
-		.toLowerCase()} `;
-}
-
-export function Month(props: { timestamp: string | Date | number }) {
-	const date = new Date(props.timestamp);
-	return date.toLocaleDateString("en-US", {
-		month: "long",
-		day: "numeric",
-	});
-}
-
-export function Hour(props: { timestamp: string | Date | number }) {
-	const date = new Date(props.timestamp);
-	return date
-		.toLocaleTimeString("en-US", {
-			hour: "numeric",
-			minute: "numeric",
-			hour12: true,
-		})
-		.toLowerCase();
+	// Replace all tokens in the format string
+	return props.format
+		.replace(/%day/g, day.toString())
+		.replace(/%monthLong/g, monthLong)
+		.replace(/%monthShort/g, monthShort)
+		.replace(/%month/g, month.toString())
+		.replace(/%year/g, year.toString())
+		.replace(/%ordinal/g, ordinal)
+		.replace(/%hour/g, hour.toString())
+		.replace(/%minute/g, minute.toString().padStart(2, "0"))
+		.replace(/%second/g, second.toString().padStart(2, "0"))
+		.replace(/%meridiem/g, meridiem);
 }

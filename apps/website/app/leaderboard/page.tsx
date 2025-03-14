@@ -120,7 +120,7 @@ export default async function Leaderboard() {
 	return (
 		<>
 			<div className="flex flex-col items-center gap-16 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
-				<div className="flex flex-col w-full max-w-screen-md gap-8 p-4">
+				<div className="flex flex-col w-full max-w-screen-md gap-8">
 					<div className="flex gap-8 items-center justify-between max-sm:gap-4 max-sm:flex-col max-sm:items-start">
 						<div className="flex flex-col gap-2">
 							<h2 className="text-white text-3xl font-luckiest-guy leading-none">

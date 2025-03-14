@@ -1,6 +1,6 @@
 import { pgTable, check, index } from "drizzle-orm/pg-core";
 import { relations, sql } from "drizzle-orm";
-import type { JSONContent } from "@tiptap/core";
+import type { JSONContent as TipTap } from "@tiptap/core";
 export const links = pgTable("links", (t) => ({
 	id: t.text().primaryKey(),
 	url: t.text().notNull(),
@@ -80,7 +80,7 @@ export const articles = pgTable("articles", (t) => ({
 	id: t.text().primaryKey(),
 	title: t.text().notNull(),
 	image: t.text().notNull(),
-	content: t.jsonb().$type<JSONContent>().notNull(),
+	content: t.jsonb().$type<TipTap>().notNull(),
 	publishedAt: t.timestamp("published_at", { mode: "date" }).notNull(),
 	editors: t.text().array().notNull(), //.default([]), default arrays are broken with Drizzle Kit right now
 }));
@@ -95,6 +95,17 @@ export const events = pgTable("events", (t) => ({
 	end: t.timestamp({ mode: "date" }).notNull(),
 	community: t.text(),
 	featured: t.boolean().notNull().default(false),
+	call_to_action: t.jsonb().$type<{
+		disabled: boolean;
+		label: string;
+		url: string;
+	}>(), // not null
+	location_: t.jsonb().$type<{
+		name: string;
+		url: string;
+	}>(), // not null
+	parent: t.text(),
+	details: t.jsonb().$type<TipTap>(),
 }));
 
 export const eventsRelations = relations(events, ({ one, many }) => ({
@@ -106,6 +117,12 @@ export const eventsRelations = relations(events, ({ one, many }) => ({
 	rounds: many(rounds),
 	attendees: many(attendees),
 	predictions: many(predictions),
+	products: many(products),
+	parent: one(events, {
+		fields: [events.parent],
+		references: [events.id],
+	}),
+	checkpoints: many(checkpoints),
 }));
 
 export const stations = pgTable("stations", (t) => ({
@@ -115,11 +132,41 @@ export const stations = pgTable("stations", (t) => ({
 	xp: t.integer().notNull(),
 }));
 
-export const stationsRelations = relations(stations, ({ one }) => ({
+export const checkpoints = pgTable("checkpoints", (t) => ({
+	id: t.text().primaryKey(),
+	key: t.text().notNull(), // random uuid
+	name: t.text().notNull(),
+	event: t.text(),
+	xp: t.integer(),
+	gold: t.numeric({ precision: 12, scale: 2 }),
+}));
+
+export const checkpointsRelations = relations(checkpoints, ({ one, many }) => ({
 	event: one(events, {
-		fields: [stations.event],
+		fields: [checkpoints.event],
 		references: [events.id],
 	}),
+	checkins: many(checkins),
+}));
+
+export const checkins = pgTable("checkins", (t) => ({
+	id: t.serial().primaryKey(),
+	checkpoint: t.text(),
+	user: t.text(),
+	timestamp: t.timestamp({ mode: "date" }).notNull(),
+}));
+
+export const checkinsRelations = relations(checkins, ({ one, many }) => ({
+	checkpoint: one(checkpoints, {
+		fields: [checkins.checkpoint],
+		references: [checkpoints.id],
+	}),
+	user: one(nexus, {
+		fields: [checkins.user],
+		references: [nexus.id],
+	}),
+	gold: many(gold),
+	xp: many(xp),
 }));
 
 export const predictions = pgTable("predictions", (t) => ({
@@ -184,11 +231,7 @@ export const betsRelations = relations(bets, ({ one }) => ({
 export const attendees = pgTable("attendees", (t) => ({
 	id: t.serial().primaryKey(),
 	event: t.text().notNull(),
-	type: t
-		.text({
-			enum: ["competitor", "spectator", "staff", "vip"],
-		})
-		.notNull(),
+	featured: t.boolean().notNull().default(false),
 	user: t.text().notNull(),
 }));
 
@@ -419,6 +462,7 @@ export const gold = pgTable("gold", (t) => ({
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 	ranking: t.integer(),
 	order: t.text(), // shopify DraftOrder gid
+	checkin: t.integer(),
 }));
 
 export const goldRelations = relations(gold, ({ one }) => ({
@@ -433,6 +477,10 @@ export const goldRelations = relations(gold, ({ one }) => ({
 	ranking: one(rankings, {
 		fields: [gold.ranking],
 		references: [rankings.id],
+	}),
+	checkin: one(checkins, {
+		fields: [gold.checkin],
+		references: [checkins.id],
 	}),
 }));
 
@@ -494,6 +542,7 @@ export const xp = pgTable("xp", (t) => ({
 	snapshot: t.integer(),
 	achievement: t.text(),
 	station: t.integer(),
+	checkin: t.integer(),
 	prediction: t.text(),
 	vote: t.integer(),
 	proposal: t.integer(),
@@ -513,9 +562,9 @@ export const xpRelations = relations(xp, ({ one }) => ({
 		fields: [xp.snapshot],
 		references: [snapshots.id],
 	}),
-	station: one(stations, {
-		fields: [xp.station],
-		references: [stations.id],
+	checkin: one(checkins, {
+		fields: [xp.checkin],
+		references: [checkins.id],
 	}),
 	prediction: one(predictions, {
 		fields: [xp.prediction],
@@ -645,12 +694,17 @@ export const products = pgTable("products", (t) => ({
 		.notNull(),
 	// .default([]), defaults + jsonb are broken with Drizzle Kit right now
 	collection: t.text(),
+	event: t.text(),
 }));
 
 export const productsRelations = relations(products, ({ one, many }) => ({
 	collection: one(collections, {
 		fields: [products.collection],
 		references: [collections.id],
+	}),
+	event: one(events, {
+		fields: [products.event],
+		references: [events.id],
 	}),
 }));
 

@@ -17,12 +17,14 @@ import VoteSelector from "../VoteSelector";
 import ShareVotesModal from "../modals/ShareVotesModal";
 import type { rounds } from "~/packages/db/schema/public";
 import Countdown from "../Countdown";
+import { toast } from "../Toasts";
 
 export default function Proposals(props: {
 	round: NonNullable<Awaited<ReturnType<typeof getRound>>>;
 	user?: AuthenticatedUser & {
 		priorVotes: number;
 	};
+	openProposal?: number;
 }) {
 	const [selectedVotes, setSelectedVotes] = useState<Record<string, number>>(
 		{},
@@ -519,6 +521,7 @@ export default function Proposals(props: {
 						!!props.user?.nexus?.rank &&
 						props.user.nexus.rank.votes > props.user.priorVotes
 					}
+					isOpen={props.openProposal === proposal.id}
 				/>
 			))}
 		</>

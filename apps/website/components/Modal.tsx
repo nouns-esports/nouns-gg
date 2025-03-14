@@ -95,6 +95,7 @@ export function Modal(props: {
 	handle?: boolean;
 	queryParam?: [string, string];
 	confetti?: boolean;
+	isOpen?: boolean;
 }) {
 	const { open, isOpen, close, y } = useModal(props.id);
 	const { open: openModals } = useModalState();
@@ -103,21 +104,25 @@ export function Modal(props: {
 		return Object.values(openModals).filter((modal) => modal).length;
 	}, [openModals]);
 
-	const [mounted, setMounted] = useState(false);
-
 	useEffect(() => {
-		const url = new URL(window.location.toString());
+		if (props.isOpen) open();
+	}, []);
 
-		if (
-			!mounted &&
-			props.queryParam &&
-			url.searchParams.get(props.queryParam[0]) === props.queryParam[1]
-		) {
-			open();
-		}
+	// const [mounted, setMounted] = useState(false);
 
-		setMounted(true);
-	}, [mounted]);
+	// useEffect(() => {
+	// 	const url = new URL(window.location.toString());
+
+	// 	if (
+	// 		!mounted &&
+	// 		props.queryParam &&
+	// 		url.searchParams.get(props.queryParam[0]) === props.queryParam[1]
+	// 	) {
+	// 		open();
+	// 	}
+
+	// 	setMounted(true);
+	// }, [mounted]);
 
 	useEffect(() => {
 		const root = document.documentElement;

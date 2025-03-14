@@ -140,6 +140,13 @@ export default function CastVotesModal(props: {
 								return toast.error(result.serverError);
 							}
 
+							if (result?.data) {
+								toast.xp({
+									earned: result.data.earnedXP,
+									total: result.data.totalXP,
+								});
+							}
+
 							props.onVotesCast?.();
 						}}
 						className="flex justify-center items-center gap-2 w-full text-black bg-white hover:bg-white/70 font-semibold rounded-lg p-2.5 transition-colors"

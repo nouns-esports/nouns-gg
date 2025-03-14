@@ -1,8 +1,7 @@
-import { Sparkles, X } from "lucide-react";
+import { X } from "lucide-react";
 import { Modal, ToggleModal } from "../Modal";
 import type { AuthenticatedUser } from "@/server/queries/users";
 import type { getAchievementsProgress } from "@/server/queries/achievements";
-import DateComponent from "../Date";
 import ProgressCircle from "../ProgressCircle";
 import Achievements from "../Achievements";
 

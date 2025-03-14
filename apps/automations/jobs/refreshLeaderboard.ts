@@ -5,7 +5,7 @@ import { gold, nexus, rankings, xp, ranks } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 
 // Ranking System
-// Each week on friday at 1:50pm CST, the leaderboard is refreshed
+// Each week on friday at 1pm CST, the leaderboard is refreshed
 // The leaderboard is calculated by giving each user a score based on the sum xp earned within the period averaged with their score from the previous period
 //  - If a user scored 5k last period and 1k this period, their score would be 3k. If a user scored 1k last period and 0 this period, their score would be 500.
 //  - This degrades their score over time (at most -50% a period) and dampens the impact of volatile increases in scores in a given period
@@ -15,7 +15,7 @@ import { db } from "~/packages/db";
 
 export const refreshLeaderboard = createJob({
 	name: "Refresh Leaderboard",
-	cron: "50 13 * * 5", // 1:50pm CST every Friday
+	cron: "0 13 * * 5", // 1pm CST every Friday
 	execute: async () => {
 		const now = new Date();
 

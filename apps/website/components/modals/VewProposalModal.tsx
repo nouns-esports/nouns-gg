@@ -27,7 +27,7 @@ export default function ViewProposalModal(props: {
 	user?: AuthenticatedUser & {
 		priorVotes: number;
 	};
-
+	isOpen?: boolean;
 	addVote: (proposal: number, amount: number) => void;
 	removeVote: (proposal: number, amount: number) => void;
 	selectedVotes: Record<string, number>;
@@ -46,6 +46,7 @@ export default function ViewProposalModal(props: {
 		<Modal
 			id={`view-proposal-${props.proposal.id}`}
 			handle
+			isOpen={props.isOpen}
 			queryParam={["p", props.proposal.id.toString()]}
 			className={twMerge(
 				"relative flex flex-col gap-4 w-2/3 max-h-[66.66%] max-xl:max-h-none p-4 max-w-screen-lg max-xl:w-full max-xl:h-[90dvh] overflow-hidden",

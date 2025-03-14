@@ -202,8 +202,44 @@ export default async function Header() {
 											Events
 										</li>
 									</Link>
+									{/* <Group
+										title="Events"
+										icon={<CalendarDays className="w-5 h-5" />}
+									>
+										<ul className="flex flex-col gap-0 w-80">
+											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
+												<Link
+													href="/events"
+													className="flex items-center gap-4"
+												>
+													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-green text-white items-center">
+														<CalendarDays className="w-full h-full p-2" />
+													</div>
+													<div>
+														<p className="font-bebas-neue text-lg">
+															All Events
+														</p>
+														<p className="text-grey-200">
+															View all upcoming events
+														</p>
+													</div>
+												</Link>
+											</li>
+											<li className="flex h-32 py-1.5 px-3 group/event">
+												<Link
+													href="/events/nounsvitational"
+													className="rounded-lg w-full overflow-hidden"
+												>
+													<img
+														src="https://ipfs.nouns.gg/ipfs/QmcgHPHzUADhj846SVQahRVD9hvspStVAXt99NanE6wvrn"
+														className="w-full h-full object-cover group-hover/event:scale-105 transition-transform duration-300"
+													/>
+												</Link>
+											</li>
+										</ul>
+									</Group> */}
 									<Link href="/shop" className="max-[900px]:hidden">
-										<li className="flex gap-2 items-center opacity-100 hover:opacity-80 transition-opacity relative z-[60]">
+										<li className="flex gap-2 items-center opacity-100 hover:opacity-80 transition-opacity relative z-[60] [text-shadow:_0_1px_8px_rgb(0_0_0_/_40%)]">
 											<ShoppingBag className="w-5 h-5" />
 											Shop
 										</li>
@@ -268,7 +304,7 @@ function Group(props: {
 }) {
 	return (
 		<li className="relative group flex">
-			<div className="cursor-pointer opacity-100 hover:opacity-80 transition-opacity font-semibold flex justify-center gap-2 items-center max-[900px]:hidden">
+			<div className="cursor-pointer opacity-100 hover:opacity-80 transition-opacity font-semibold flex justify-center gap-2 items-center max-[900px]:hidden [text-shadow:_0_1px_8px_rgb(0_0_0_/_4%)]">
 				{props.icon}
 				{props.title}
 			</div>

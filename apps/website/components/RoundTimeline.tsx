@@ -35,6 +35,10 @@ export default function RoundTimeline(props: {
 			(end.getTime() - votingStart.getTime())) *
 		100;
 
+	const format = "%monthLong %day%ordinal, %hour%meridiem";
+	const pastFormat = "%monthLong %day%ordinal, %year";
+	const shortFormat = "%month/%day/%year";
+
 	return (
 		<div className="bg-grey-800 w-full gap-2 rounded-xl flex flex-col flex-shrink-0 py-4 px-5 justify-between">
 			<div className="flex items-center w-full">
@@ -122,13 +126,24 @@ export default function RoundTimeline(props: {
 			</div>
 			<div className="flex items-center w-full">
 				<p className="w-full whitespace-nowrap">
-					<DateComponent timestamp={props.round.start} short={short} />
+					<DateComponent
+						timestamp={start}
+						format={short ? shortFormat : now > start ? pastFormat : format}
+					/>
 				</p>
 				<p className="w-full text-center whitespace-nowrap">
-					<DateComponent timestamp={props.round.votingStart} short={short} />
+					<DateComponent
+						timestamp={votingStart}
+						format={
+							short ? shortFormat : now > votingStart ? pastFormat : format
+						}
+					/>
 				</p>
 				<p className="w-full text-right whitespace-nowrap">
-					<DateComponent timestamp={props.round.end} short={short} />
+					<DateComponent
+						timestamp={end}
+						format={short ? shortFormat : now > end ? pastFormat : format}
+					/>
 				</p>
 			</div>
 		</div>

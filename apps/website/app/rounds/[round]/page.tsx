@@ -122,6 +122,7 @@ export default async function Round(props: {
 	searchParams: Promise<{ p?: string }>;
 }) {
 	const params = await props.params;
+	const searchParams = await props.searchParams;
 	const [user, round] = await Promise.all([
 		getAuthenticatedUser(),
 		getRound({ id: params.round }),
@@ -411,6 +412,7 @@ export default async function Round(props: {
 								}
 							: undefined
 					}
+					openProposal={searchParams.p ? Number(searchParams.p) : undefined}
 				/>
 			</div>
 		</div>
