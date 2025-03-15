@@ -10,7 +10,7 @@ export default function DateComponent(props: {
 	const minute = date.getMinutes();
 	const second = date.getSeconds();
 	const day = date.getDate();
-	const month = date.getMonth();
+	const month = date.getMonth() + 1;
 	const monthShort = date.toLocaleDateString("en-US", { month: "short" });
 	const monthLong = date.toLocaleDateString("en-US", { month: "long" });
 	const year = date.getFullYear();
