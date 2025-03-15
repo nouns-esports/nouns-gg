@@ -24,7 +24,7 @@
     "@livepeer/react": "^4.2.7",
     "@neynar/nodejs-sdk": "^1.68.0",
     "@privy-io/react-auth": "^2.2.0",
-    "@privy-io/server-auth": "1.18.12",
+
     "@privy-io/wagmi": "^1.0.2",
     "@shopify/admin-api-client": "^1.0.5",
     "@tailwindcss/typography": "^0.5.12",

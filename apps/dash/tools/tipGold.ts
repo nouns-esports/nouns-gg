@@ -19,11 +19,11 @@ agent.addTool({
 		}
 
 		const [user, mentionedUser] = await Promise.all([
-			db.pgpool.query.nexus.findFirst({
+			db.primary.query.nexus.findFirst({
 				where: eq(nexus.discord, context.author),
 			}),
 			context.mentions?.[0]
-				? db.pgpool.query.nexus.findFirst({
+				? db.primary.query.nexus.findFirst({
 						where: eq(nexus.discord, context.mentions[0]),
 					})
 				: undefined,

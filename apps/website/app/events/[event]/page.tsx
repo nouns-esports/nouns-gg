@@ -82,33 +82,33 @@ export default async function EventPage(props: {
 	const tab = searchParams.tab ?? "details";
 
 	const attendees = [
-		// {
-		// 	user: {
-		// 		id: "_",
-		// 		name: "Mang0",
-		// 		image:
-		// 			"https://static-cdn.jtvnw.net/jtv_user_pictures/8647bb3a-1e64-4839-987f-6aec0b44a223-profile_image-300x300.png",
-		// 		username: "_",
-		// 	},
-		// },
-		// {
-		// 	user: {
-		// 		id: "_",
-		// 		name: "Zain",
-		// 		image:
-		// 			"https://upload.wikimedia.org/wikipedia/commons/c/c6/Zain_at_Genesis_9.jpg",
-		// 		username: "_",
-		// 	},
-		// },
-		// {
-		// 	user: {
-		// 		id: "_",
-		// 		name: "Hungrybox",
-		// 		image:
-		// 			"https://pbs.twimg.com/profile_images/1891322233504829440/VZZ_pxrO_400x400.jpg",
-		// 		username: "_",
-		// 	},
-		// },
+		{
+			user: {
+				id: "_",
+				name: "Mang0",
+				image:
+					"https://static-cdn.jtvnw.net/jtv_user_pictures/8647bb3a-1e64-4839-987f-6aec0b44a223-profile_image-300x300.png",
+				username: "_",
+			},
+		},
+		{
+			user: {
+				id: "_",
+				name: "Zain",
+				image:
+					"https://upload.wikimedia.org/wikipedia/commons/c/c6/Zain_at_Genesis_9.jpg",
+				username: "_",
+			},
+		},
+		{
+			user: {
+				id: "_",
+				name: "Hungrybox",
+				image:
+					"https://pbs.twimg.com/profile_images/1891322233504829440/VZZ_pxrO_400x400.jpg",
+				username: "_",
+			},
+		},
 		...event.attendees,
 	];
 

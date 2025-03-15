@@ -24,7 +24,7 @@ agent.addTool({
 
 		const now = new Date();
 
-		const latestSnapshot = await db.pgpool.query.snapshots.findFirst({
+		const latestSnapshot = await db.primary.query.snapshots.findFirst({
 			where: eq(snapshots.type, "discord-call"),
 			orderBy: desc(snapshots.timestamp),
 		});
