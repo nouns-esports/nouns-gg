@@ -62,8 +62,8 @@ export default async function Shop(props: {
 
 	return (
 		<div className="flex flex-col w-full items-center">
-			<div className="flex flex-col gap-16 pt-32 max-xl:pt-28 max-sm:pt-20 max-w-[1920px]">
-				<div className="px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 flex flex-col gap-16 max-sm:gap-8">
+			<div className="flex flex-col gap-16 pt-32 max-xl:pt-28 max-sm:pt-20 max-w-[1920px] w-full">
+				<div className="px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 flex flex-col gap-16 max-sm:gap-8 w-full">
 					{featuredCollection ? (
 						<div className="relative w-full aspect-[3/1] max-sm:aspect-auto max-md:h-64 max-sm:h-48 rounded-xl overflow-hidden">
 							<img
@@ -83,7 +83,7 @@ export default async function Shop(props: {
 							</div>
 						</div>
 					) : null}
-					<div className="flex flex-col gap-6">
+					<div className="flex flex-col gap-6 w-full">
 						<div className="flex justify-between items-center">
 							<h1 className="text-white font-luckiest-guy text-4xl">
 								Products
@@ -99,8 +99,8 @@ export default async function Shop(props: {
 							)}
 						</div>
 
-						<div className="flex justify-between items-center">
-							<ul className="flex gap-2 w-full max-sm:overflow-x-auto">
+						<div className="flex justify-between items-center w-full gap-8">
+							<ul className="flex gap-2 w-full overflow-x-auto">
 								<CategoryTag selected={!searchParams.collection}>
 									All
 								</CategoryTag>
@@ -109,7 +109,7 @@ export default async function Shop(props: {
 										key={collection.id}
 										id={collection.id}
 										selected={searchParams.collection === collection.id}
-										new={collection.id === "nounsvitational-trading-cards"}
+										new={collection.id === "coaching-sessions"}
 									>
 										{collection.name}
 									</CategoryTag>
