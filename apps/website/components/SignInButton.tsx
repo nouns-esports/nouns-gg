@@ -35,7 +35,7 @@ export default function SignInButton(props: { user?: AuthenticatedUser }) {
 							className="rounded-full w-7 h-7 select-none object-center object-cover"
 							draggable={false}
 						/>
-						{props.user.nexus.name}
+						<p className="max-w-16 truncate">{props.user.nexus.name}</p>
 						{props.user.nexus.rank ? (
 							<img
 								src={props.user.nexus.rank.image}
