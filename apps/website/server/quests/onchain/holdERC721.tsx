@@ -24,7 +24,7 @@ export const holdERC721 = createAction<{
 		description: <p>Acquire a {actionInputs.tokenName}</p>,
 		url: actionInputs.url,
 		check: async (user) => {
-			const balance = await db.pgpool.query.erc721Balances.findFirst({
+			const balance = await db.primary.query.erc721Balances.findFirst({
 				where: and(
 					eq(erc721Balances.collection, actionInputs.contract as `0x${string}`),
 					inArray(

@@ -12,7 +12,7 @@ export const visitLink = createAction(async (actionInputs) => {
 		throw new Error("Type input missing in action");
 	}
 
-	const link = await db.pgpool.query.links.findFirst({
+	const link = await db.primary.query.links.findFirst({
 		where: eq(links.id, actionInputs.link),
 	});
 
@@ -72,7 +72,7 @@ export const visitLink = createAction(async (actionInputs) => {
 		check: async (user) => {
 			if (!link) return false;
 
-			const snapshot = await db.pgpool.query.snapshots.findFirst({
+			const snapshot = await db.primary.query.snapshots.findFirst({
 				where: and(
 					eq(snapshots.user, user.id),
 					eq(snapshots.type, "visit-link"),

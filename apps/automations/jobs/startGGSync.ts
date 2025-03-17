@@ -75,6 +75,7 @@ export const startGGSync = createJob({
 				for (const participant of tournament.participants.nodes) {
 					if (!participant.email) continue;
 
+					await new Promise((resolve) => setTimeout(resolve, 1000));
 					const user = await privyClient.getUserByEmail(participant.email);
 
 					if (!user) continue;
@@ -82,36 +83,12 @@ export const startGGSync = createJob({
 						continue;
 					}
 
-					const [attendeeRecord] = await tx
-						.insert(attendees)
-						.values({
-							user: user.id,
-							event: id,
-						})
-						.returning({
-							id: attendees.id,
-						});
-
-					const now = new Date();
-					const xpEarned = 1000;
-
-					await tx.insert(xp).values({
+					await tx.insert(attendees).values({
 						user: user.id,
-						amount: xpEarned,
-						timestamp: now,
-						attendee: attendeeRecord.id,
+						event: id,
 					});
-
-					await tx
-						.update(nexus)
-						.set({
-							xp: sql`${nexus.xp} + ${xpEarned}`,
-						})
-						.where(eq(nexus.id, user.id));
 				}
 			});
-
-			await new Promise((resolve) => setTimeout(resolve, 1000));
 		}
 	},
 });

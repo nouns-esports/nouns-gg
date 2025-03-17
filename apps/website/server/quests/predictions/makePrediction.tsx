@@ -6,11 +6,11 @@ import { db } from "~/packages/db";
 export const makePrediction = createAction<{ prediction?: string }>(
 	async (actionInputs) => {
 		let prediction:
-			| Awaited<ReturnType<typeof db.pgpool.query.predictions.findFirst>>
+			| Awaited<ReturnType<typeof db.primary.query.predictions.findFirst>>
 			| undefined;
 
 		if (actionInputs.prediction) {
-			prediction = await db.pgpool.query.predictions.findFirst({
+			prediction = await db.primary.query.predictions.findFirst({
 				where: eq(predictions.id, actionInputs.prediction),
 			});
 		}
@@ -26,7 +26,7 @@ export const makePrediction = createAction<{ prediction?: string }>(
 			),
 			url: "/events/nounsvitational#predictions",
 			check: async (user) => {
-				const bet = await db.pgpool.query.bets.findFirst({
+				const bet = await db.primary.query.bets.findFirst({
 					where: and(
 						eq(bets.user, user.id),
 						prediction ? eq(bets.prediction, prediction.id) : undefined,

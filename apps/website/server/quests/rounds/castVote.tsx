@@ -6,11 +6,11 @@ import { db } from "~/packages/db";
 export const castVote = createAction<{ round?: string }>(
 	async (actionInputs) => {
 		let round:
-			| Awaited<ReturnType<typeof db.pgpool.query.rounds.findFirst>>
+			| Awaited<ReturnType<typeof db.primary.query.rounds.findFirst>>
 			| undefined;
 
 		if (actionInputs.round) {
-			round = await db.pgpool.query.rounds.findFirst({
+			round = await db.primary.query.rounds.findFirst({
 				where: eq(rounds.id, actionInputs.round),
 			});
 		}
@@ -25,7 +25,7 @@ export const castVote = createAction<{ round?: string }>(
 			),
 			url: round ? `/rounds/${round.id}` : "/rounds",
 			check: async (user) => {
-				const vote = await db.pgpool.query.votes.findFirst({
+				const vote = await db.primary.query.votes.findFirst({
 					where: and(
 						eq(votes.user, user.id),
 						round ? eq(votes.round, round.id) : undefined,

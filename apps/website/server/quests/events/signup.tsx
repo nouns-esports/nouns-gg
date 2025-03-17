@@ -8,11 +8,7 @@ export const signup = createAction(async (actionInputs) => {
 		throw new Error("Event input missing in action");
 	}
 
-	if (!actionInputs.url) {
-		throw new Error("URL input missing in action");
-	}
-
-	const event = await db.pgpool.query.events.findFirst({
+	const event = await db.primary.query.events.findFirst({
 		where: eq(events.id, actionInputs.event),
 	});
 
@@ -26,11 +22,11 @@ export const signup = createAction(async (actionInputs) => {
 				Sign up for <span className="text-red">{event.name}</span>
 			</p>
 		),
-		url: actionInputs.url,
+		url: `/events/${event.id}`,
 		check: async (user) => {
 			if (!event) return false;
 
-			const attended = await db.pgpool.query.attendees.findFirst({
+			const attended = await db.primary.query.attendees.findFirst({
 				where: and(eq(attendees.user, user.id), eq(attendees.event, event.id)),
 			});
 

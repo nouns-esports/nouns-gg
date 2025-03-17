@@ -25,7 +25,7 @@ export const claimAchievement = createAction<{ achievement?: string }>(
 			),
 			url: "/nexus",
 			check: async (user) => {
-				const claimedAchievement = await db.pgpool.query.xp.findFirst({
+				const claimedAchievement = await db.primary.query.xp.findFirst({
 					where: and(
 						eq(xp.user, user.id),
 						actionInputs.achievement

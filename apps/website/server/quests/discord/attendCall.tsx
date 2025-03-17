@@ -16,7 +16,7 @@ export const attendCall = createAction<{ tag?: string }>(
 				if (!actionInputs.tag) return false;
 				if (!user.discord) return false;
 
-				const snapshot = await db.pgpool.query.snapshots.findFirst({
+				const snapshot = await db.primary.query.snapshots.findFirst({
 					where: and(
 						eq(snapshots.user, user.id),
 						eq(snapshots.type, "discord-call"),
