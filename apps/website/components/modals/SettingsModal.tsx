@@ -7,16 +7,25 @@ import { toast } from "../Toasts";
 import { pinImage } from "@/server/mutations/pinImage";
 import { useAction } from "next-safe-action/hooks";
 import { updateNexus } from "@/server/mutations/updateNexus";
-import { ArrowRight, Edit, LinkIcon, UserPen, X, XIcon } from "lucide-react";
+import {
+	ArrowRight,
+	Edit,
+	LinkIcon,
+	UserPen,
+	X,
+	XIcon,
+	Mail,
+} from "lucide-react";
 import { twMerge } from "tailwind-merge";
-import { usePrivy } from "@privy-io/react-auth";
+import { useLinkAccount, useLogin, usePrivy } from "@privy-io/react-auth";
 import type { AuthenticatedUser } from "@/server/queries/users";
 import Tabs from "../Tabs";
 import { deleteUser } from "@/server/mutations/deleteUser";
 import { usePrivyModalState } from "@/providers/Privy";
 import { env } from "~/env";
 import Link from "@/components/Link";
-
+import { EnvelopeSimple } from "phosphor-react-sc";
+import { useRouter } from "next/navigation";
 export default function SettingsModal(props: { user: AuthenticatedUser }) {
 	const [tab, setTab] = useState<
 		string | "profile" | "connections" | "advanced"
@@ -32,17 +41,27 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 	const [confirmDeleteAccount, setConfirmDeleteAccount] = useState(false);
 
 	const pinImageAction = useAction(pinImage);
+	const router = useRouter();
 
 	const {
-		linkWallet,
-		linkFarcaster,
-		linkTwitter,
-		linkDiscord,
 		unlinkFarcaster,
 		unlinkWallet,
 		unlinkTwitter,
+		unlinkEmail,
+		unlinkDiscord,
 		logout,
 	} = usePrivy();
+
+	const { linkWallet, linkFarcaster, linkTwitter, linkDiscord, linkEmail } =
+		useLinkAccount({
+			onSuccess: ({ linkMethod }) => {
+				toast.success(`Linked ${linkMethod}`);
+				router.refresh();
+			},
+			onError: (_, { linkMethod }) => {
+				toast.error(`Issue linking ${linkMethod}`);
+			},
+		});
 
 	const { setPrivyModalState } = usePrivyModalState();
 
@@ -99,7 +118,7 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 					advanced: "Advanced",
 				}}
 			/>
-			<div className="flex flex-col flex-1 gap-4">
+			<div className="flex flex-col flex-1 gap-4 w-full">
 				{
 					{
 						profile: (
@@ -227,7 +246,40 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 							</div>
 						),
 						connections: (
-							<div className="flex flex-col gap-3">
+							<div className="flex flex-col gap-3 w-full">
+								<div className="flex gap-2 justify-between items-center w-full">
+									<div className="flex items-center gap-3 w-full">
+										<div className="flex items-center justify-center bg-pink h-10 w-10 rounded-md flex-shrink-0">
+											<EnvelopeSimple
+												className="w-6 h-6 text-white"
+												weight="fill"
+											/>
+										</div>
+										<div className="flex flex-col w-full">
+											<p className="text-white font-semibold">Email</p>
+											<p
+												className={twMerge(
+													props.user.email?.address ? "text-green" : "text-red",
+													"max-w-[150px] truncate",
+												)}
+											>
+												{props.user.email?.address ?? "Not Connected"}
+											</p>
+										</div>
+									</div>
+									<Button
+										onClick={async () => {
+											if (props.user.email?.address) {
+												await unlinkEmail(props.user.email.address);
+												router.refresh();
+												toast.success("Email disconnected");
+											} else linkEmail();
+										}}
+										size="sm"
+									>
+										{props.user.email?.address ? "Remove" : "Add"}
+									</Button>
+								</div>
 								<div className="flex gap-2 justify-between items-center">
 									<div className="flex items-center gap-3">
 										<img
@@ -247,9 +299,14 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 										</div>
 									</div>
 									<Button
-										onClick={() => linkDiscord()}
+										onClick={async () => {
+											if (props.user.discord) {
+												await unlinkDiscord(props.user.discord.subject);
+												router.refresh();
+												toast.success("Discord disconnected");
+											} else linkDiscord();
+										}}
 										size="sm"
-										disabled={!!props.user.discord}
 									>
 										{props.user.discord ? "Remove" : "Add"}
 									</Button>
@@ -273,11 +330,13 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 										</div>
 									</div>
 									<Button
-										onClick={() =>
-											props.user.farcaster
-												? unlinkFarcaster(props.user.farcaster.fid)
-												: linkFarcaster()
-										}
+										onClick={async () => {
+											if (props.user.farcaster) {
+												await unlinkFarcaster(props.user.farcaster.fid);
+												router.refresh();
+												toast.success("Farcaster disconnected");
+											} else linkFarcaster();
+										}}
 										size="sm"
 									>
 										{props.user.farcaster ? "Remove" : "Add"}
@@ -302,11 +361,13 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 										</div>
 									</div>
 									<Button
-										onClick={() =>
-											props.user.twitter
-												? unlinkTwitter(props.user.twitter.subject)
-												: linkTwitter()
-										}
+										onClick={async () => {
+											if (props.user.twitter) {
+												await unlinkTwitter(props.user.twitter.subject);
+												router.refresh();
+												toast.success("Twitter disconnected");
+											} else linkTwitter();
+										}}
 										size="sm"
 									>
 										{props.user.twitter ? "Remove" : "Add"}
@@ -386,7 +447,11 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 														</p>
 													</Link>
 													<button
-														onClick={() => unlinkWallet(wallet.address)}
+														onClick={async () => {
+															await unlinkWallet(wallet.address);
+															router.refresh();
+															toast.success("Wallet disconnected");
+														}}
 														className="hover:text-white/70 text-white transition-colors"
 													>
 														<XIcon className="w-5 h-5 " />
