@@ -61,14 +61,14 @@ export default function Gallery(props: {
 						},
 					] as const)
 				: []),
-			{
-				title: "Matcha",
-				sub: "Where Nouns trades crypto",
-				href: "/matcha",
-				button: "Visit Matcha",
-				type: "image",
-				url: "/gallery/matcha-x-nouns.jpg",
-			},
+			// {
+			// 	title: "Matcha",
+			// 	sub: "Where Nouns trades crypto",
+			// 	href: "/matcha",
+			// 	button: "Visit Matcha",
+			// 	type: "image",
+			// 	url: "/gallery/matcha-x-nouns.jpg",
+			// },
 		],
 		[props.highlightedEvent, props.highlightedRound],
 	);
