@@ -79,7 +79,19 @@ export default async function EventPage(props: {
 		return notFound();
 	}
 
-	const tab = searchParams.tab ?? "details";
+	const tab =
+		searchParams.tab ??
+		(event.details
+			? "details"
+			: event.rounds.length > 0
+				? "rounds"
+				: event.quests.length > 0
+					? "quests"
+					: event.predictions.length > 0
+						? "predictions"
+						: event.products.length > 0
+							? "shop"
+							: null);
 
 	const attendees = [
 		// {
@@ -136,13 +148,13 @@ export default async function EventPage(props: {
 											{event.name}
 										</h1>
 										<div className="flex gap-8 h-fit flex-shrink-0 max-lg:justify-between max-lg:w-full">
-											{attendees.length > 0 ? (
+											{event.attendeeCount && attendees.length > 0 ? (
 												<ToggleModal
 													id="event-attendees"
 													className="flex items-center gap-2 group max-lg:flex-row-reverse max-lg:gap-4"
 												>
 													<p className="text-white group-hover:text-white/70 transition-colors">
-														{attendees.length} Attendees
+														{event.attendeeCount} Attendees
 													</p>
 													<div
 														className="relative h-10"
@@ -235,40 +247,38 @@ export default async function EventPage(props: {
 									</div>
 								</div>
 							</div>
-							<ul className="flex gap-2 w-full overflow-x-auto">
-								{event.details ? (
-									<Tab href={`/events/${event.id}`} active={!searchParams.tab}>
-										Details
-									</Tab>
-								) : null}
-								{event.rounds.length > 0 ? (
-									<Tab
-										href="?tab=rounds"
-										active={searchParams.tab === "rounds"}
-									>
-										Rounds
-									</Tab>
-								) : null}
-								{event.quests.length > 0 ? (
-									<Tab
-										href="?tab=quests"
-										active={searchParams.tab === "quests"}
-									>
-										Quests
-									</Tab>
-								) : null}
-								{event.predictions.length > 0 ? (
-									<Tab
-										href="?tab=predictions"
-										active={searchParams.tab === "predictions"}
-									>
-										Predictions
-									</Tab>
-								) : null}
-								<Tab href="?tab=shop" active={searchParams.tab === "shop"}>
-									Shop
-								</Tab>
-							</ul>
+							{tab ? (
+								<ul className="flex gap-2 w-full overflow-x-auto">
+									{event.details ? (
+										<Tab
+											href={`/events/${event.id}`}
+											active={tab === "details"}
+										>
+											Details
+										</Tab>
+									) : null}
+									{event.rounds.length > 0 ? (
+										<Tab href="?tab=rounds" active={tab === "rounds"}>
+											Rounds
+										</Tab>
+									) : null}
+									{event.quests.length > 0 ? (
+										<Tab href="?tab=quests" active={tab === "quests"}>
+											Quests
+										</Tab>
+									) : null}
+									{event.predictions.length > 0 ? (
+										<Tab href="?tab=predictions" active={tab === "predictions"}>
+											Predictions
+										</Tab>
+									) : null}
+									{event.products.length > 0 ? (
+										<Tab href="?tab=shop" active={tab === "shop"}>
+											Shop
+										</Tab>
+									) : null}
+								</ul>
+							) : null}
 						</div>
 					</div>
 					<div className="flex flex-col gap-8 w-full max-w-[1920px] px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
@@ -368,7 +378,8 @@ export default async function EventPage(props: {
 										})}
 									</div>
 								),
-							}[tab]
+								default: null,
+							}[tab ?? "default"]
 						}
 					</div>
 				</div>
