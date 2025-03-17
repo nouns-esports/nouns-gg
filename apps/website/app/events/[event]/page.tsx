@@ -177,7 +177,7 @@ export default async function EventPage(props: {
 																<div className="absolute w-full h-full group-hover:bg-grey-800/50 bg-transparent transition-colors" />
 																<img
 																	src={attendee.user.image}
-																	className="w-full h-full"
+																	className="w-full h-full object-cover"
 																/>
 															</div>
 														))}
