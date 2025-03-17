@@ -109,7 +109,7 @@ export default async function EventPage(props: {
 		// 		username: "_",
 		// 	},
 		// },
-		...event.attendees,
+		...event.attendees.filter((attendee) => attendee.user !== null),
 	];
 
 	return (
