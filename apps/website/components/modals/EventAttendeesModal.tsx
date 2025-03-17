@@ -45,7 +45,7 @@ export default function EventAttendeesModal(props: {
 							/>
 							<p className="text-white">{attendee.user.name}</p>
 						</div>
-						{attendee.user.username && attendee.user.username !== "_" ? (
+						{attendee.user.id !== "_" ? (
 							<Link
 								href={`/users/${attendee.user.username ?? attendee.user.id}`}
 								className="text-red group hover:text-red/70 transition-colors flex items-center gap-1"

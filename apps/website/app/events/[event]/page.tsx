@@ -146,7 +146,9 @@ export default async function EventPage(props: {
 													</p>
 													<div
 														className="relative h-10"
-														style={{ width: `${attendees.length * 18 + 18}px` }}
+														style={{
+															width: `${Math.min(attendees.length, 3) * 18 + 18}px`,
+														}}
 													>
 														{attendees.slice(0, 3).map((attendee, index) => (
 															<div
