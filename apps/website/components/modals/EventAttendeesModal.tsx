@@ -41,7 +41,7 @@ export default function EventAttendeesModal(props: {
 						<div className="flex items-center gap-4">
 							<img
 								src={attendee.user.image}
-								className="w-10 h-10 rounded-full bg-white"
+								className="w-10 h-10 rounded-full bg-white object-cover"
 							/>
 							<p className="text-white">{attendee.user.name}</p>
 						</div>
