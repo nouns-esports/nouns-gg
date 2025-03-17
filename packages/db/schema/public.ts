@@ -87,7 +87,6 @@ export const articles = pgTable("articles", (t) => ({
 
 export const events = pgTable("events", (t) => ({
 	id: t.text().primaryKey(),
-	location: t.text(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	description: t.text().notNull().default(""),
@@ -95,17 +94,18 @@ export const events = pgTable("events", (t) => ({
 	end: t.timestamp({ mode: "date" }).notNull(),
 	community: t.text(),
 	featured: t.boolean().notNull().default(false),
-	call_to_action: t.jsonb().$type<{
+	callToAction: t.jsonb("call_to_action").$type<{
 		disabled: boolean;
 		label: string;
 		url: string;
 	}>(), // not null
-	location_: t.jsonb().$type<{
+	location: t.jsonb().$type<{
 		name: string;
 		url: string;
-	}>(), // not null
+	}>(),
 	parent: t.text(),
 	details: t.jsonb().$type<TipTap>(),
+	attendeeCount: t.integer("attendee_count"),
 }));
 
 export const eventsRelations = relations(events, ({ one, many }) => ({
@@ -235,7 +235,7 @@ export const attendees = pgTable("attendees", (t) => ({
 	user: t.text().notNull(),
 }));
 
-export const attendeesRelations = relations(attendees, ({ one }) => ({
+export const attendeesRelations = relations(attendees, ({ one, many }) => ({
 	event: one(events, {
 		fields: [attendees.event],
 		references: [events.id],
@@ -244,6 +244,7 @@ export const attendeesRelations = relations(attendees, ({ one }) => ({
 		fields: [attendees.user],
 		references: [nexus.id],
 	}),
+	xp: many(xp),
 }));
 
 // export const brackets = pgTable("brackets", {
@@ -547,6 +548,7 @@ export const xp = pgTable("xp", (t) => ({
 	vote: t.integer(),
 	proposal: t.integer(),
 	order: t.text(), // shopify Order gid
+	attendee: t.integer(),
 }));
 
 export const xpRelations = relations(xp, ({ one }) => ({
@@ -577,6 +579,10 @@ export const xpRelations = relations(xp, ({ one }) => ({
 	proposal: one(proposals, {
 		fields: [xp.proposal],
 		references: [proposals.id],
+	}),
+	attendee: one(attendees, {
+		fields: [xp.attendee],
+		references: [attendees.id],
 	}),
 	// order: one(orders, {
 	// 	fields: [xp.order],

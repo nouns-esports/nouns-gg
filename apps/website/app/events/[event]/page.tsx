@@ -164,16 +164,15 @@ export default async function EventPage(props: {
 													</div>
 												</ToggleModal>
 											) : null}
-											<Button
-												// @ts-ignore
-												disabled={event.call_to_action.disabled}
-												// @ts-ignore
-												href={event.call_to_action.url}
-												newTab
-											>
-												{/* @ts-ignore */}
-												{event.call_to_action.label}
-											</Button>
+											{event.callToAction ? (
+												<Button
+													disabled={event.callToAction.disabled}
+													href={event.callToAction.url}
+													newTab
+												>
+													{event.callToAction.label}
+												</Button>
+											) : null}
 										</div>
 									</div>
 
@@ -211,17 +210,19 @@ export default async function EventPage(props: {
 													/>
 												</p>
 											</div>
-											<Link
-												// @ts-ignore
-												href={event.location_?.url}
-												newTab
-												className="flex items-center gap-2 text-white group flex-shrink-0"
-											>
-												<MapPinned className="w-5 h-5 group-hover:text-white/70 transition-colors" />
-												<p className="mt-0.5 whitespace-nowrap group-hover:text-white/70 transition-colors">
-													{event.location_?.name}
-												</p>
-											</Link>
+											{event.location ? (
+												<Link
+													// @ts-ignore
+													href={event.location.url}
+													newTab
+													className="flex items-center gap-2 text-white group flex-shrink-0"
+												>
+													<MapPinned className="w-5 h-5 group-hover:text-white/70 transition-colors" />
+													<p className="mt-0.5 whitespace-nowrap group-hover:text-white/70 transition-colors">
+														{event.location.name}
+													</p>
+												</Link>
+											) : null}
 										</div>
 									</div>
 								</div>

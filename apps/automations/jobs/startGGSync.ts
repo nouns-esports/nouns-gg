@@ -1,0 +1,117 @@
+import { db } from "~/packages/db";
+import { attendees, events, nexus, xp } from "~/packages/db/schema/public";
+import { privyClient } from "../clients/privy";
+import { createJob } from "../createJob";
+import { eq, sql } from "drizzle-orm";
+import { env } from "~/env";
+
+type Tournament = {
+	tournament: {
+		numAttendees: number;
+		participants: {
+			nodes: Array<{
+				email: string | null;
+			}>;
+		};
+	} | null;
+};
+
+const targetEvents = {
+	"nouns-bowl": "nouns-bowl-2025",
+	nounsvitational: "nounsvitational-2024",
+};
+
+export const startGGSync = createJob({
+	name: "Start GG Sync",
+	cron: "0 0 * * *", // Every day at midnight
+	execute: async () => {
+		for (const [id, slug] of Object.entries(targetEvents)) {
+			const response = await fetch("https://api.start.gg/gql/alpha", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+					Authorization: `Bearer ${env.START_GG_ACCESS_TOKEN}`,
+				},
+				body: JSON.stringify({
+					query: `
+						query Tournament($slug: String!) {
+							tournament(slug: $slug) {
+								numAttendees
+								participants(query: {page: 0, perPage: 500}) {
+									nodes {
+										email
+									}
+								}
+							}
+						}
+					`,
+					variables: {
+						slug,
+					},
+				}),
+			});
+
+			const { tournament } = (await response.json()) as Tournament;
+
+			if (!tournament) continue;
+
+			await db.primary.transaction(async (tx) => {
+				const event = await tx.query.events.findFirst({
+					where: eq(events.id, id),
+					with: {
+						attendees: true,
+					},
+				});
+
+				if (!event) return;
+
+				await tx
+					.update(events)
+					.set({
+						attendeeCount: tournament.numAttendees,
+					})
+					.where(eq(events.id, id));
+
+				for (const participant of tournament.participants.nodes) {
+					if (!participant.email) continue;
+
+					const user = await privyClient.getUserByEmail(participant.email);
+
+					if (!user) continue;
+					if (event.attendees.some((attendee) => attendee.user === user.id)) {
+						continue;
+					}
+
+					const [attendeeRecord] = await tx
+						.insert(attendees)
+						.values({
+							user: user.id,
+							event: id,
+						})
+						.returning({
+							id: attendees.id,
+						});
+
+					const now = new Date();
+					const xpEarned = 1000;
+
+					await tx.insert(xp).values({
+						user: user.id,
+						amount: xpEarned,
+						timestamp: now,
+						attendee: attendeeRecord.id,
+					});
+
+					await tx
+						.update(nexus)
+						.set({
+							xp: sql`${nexus.xp} + ${xpEarned}`,
+						})
+						.where(eq(nexus.id, user.id));
+				}
+			});
+
+			await new Promise((resolve) => setTimeout(resolve, 1000));
+		}
+	},
+});
