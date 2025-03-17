@@ -109,7 +109,13 @@ export default async function EventPage(props: {
 		// 		username: "_",
 		// 	},
 		// },
-		...event.attendees.filter((attendee) => attendee.user !== null),
+		...event.attendees
+			.filter((attendee) => attendee.user !== null)
+			.sort((a, b) => {
+				if (a.featured && !b.featured) return -1;
+				if (!a.featured && b.featured) return 1;
+				return 0;
+			}),
 	];
 
 	return (
@@ -142,7 +148,7 @@ export default async function EventPage(props: {
 														className="relative h-10"
 														style={{ width: `${attendees.length * 18 + 18}px` }}
 													>
-														{attendees.map((attendee, index) => (
+														{attendees.slice(0, 3).map((attendee, index) => (
 															<div
 																key={
 																	attendee.user.id === "_"
