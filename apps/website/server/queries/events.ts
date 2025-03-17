@@ -49,7 +49,16 @@ export const getEvent = cache(
 					with: { community: true },
 				},
 				attendees: {
-					with: { user: true },
+					with: {
+						user: {
+							columns: {
+								id: true,
+								image: true,
+								name: true,
+								username: true,
+							},
+						},
+					},
 				},
 				predictions: {
 					with: {
