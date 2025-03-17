@@ -23,7 +23,7 @@ const targetEvents = {
 
 export const startGGSync = createJob({
 	name: "Start GG Sync",
-	cron: "0 0 * * *", // Every day at midnight
+	cron: "0 * * * *", // Every hour
 	execute: async () => {
 		for (const [id, slug] of Object.entries(targetEvents)) {
 			const response = await fetch("https://api.start.gg/gql/alpha", {
