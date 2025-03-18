@@ -51,11 +51,13 @@ export const startGGSync = createJob({
 				}),
 			});
 
-			const { tournament } = (await response.json()) as Tournament;
+			const { data } = (await response.json()) as { data: Tournament };
 
-			if (!tournament) continue;
+			if (!data.tournament) continue;
 
 			await db.primary.transaction(async (tx) => {
+				if (!data.tournament) return;
+
 				const event = await tx.query.events.findFirst({
 					where: eq(events.id, id),
 					with: {
@@ -68,11 +70,11 @@ export const startGGSync = createJob({
 				await tx
 					.update(events)
 					.set({
-						attendeeCount: tournament.numAttendees,
+						attendeeCount: data.tournament.numAttendees,
 					})
 					.where(eq(events.id, id));
 
-				for (const participant of tournament.participants.nodes) {
+				for (const participant of data.tournament.participants.nodes) {
 					if (!participant.email) continue;
 
 					await new Promise((resolve) => setTimeout(resolve, 1000));
