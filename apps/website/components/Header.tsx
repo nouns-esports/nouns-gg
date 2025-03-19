@@ -44,7 +44,7 @@ export default async function Header() {
 			<header className="sticky top-0 w-full z-[60] flex justify-center">
 				<div className="relative w-full max-w-[1920px]">
 					<div className="pointer-events-none absolute top-0 w-full flex items-center justify-between px-16 h-32 max-xl:h-28 max-xl:px-8 max-sm:px-4 max-sm:h-20 z-40">
-						<div className="flex gap-12 max-xl:gap-8 max-sm:gap-4 items-center">
+						<div className="flex gap-8 max-sm:gap-4 items-center">
 							<Link
 								href="/"
 								className="pointer-events-auto flex gap-4 h-[2.85rem] max-sm:h-10 max-sm:gap-3 group items-center cursor-pointer select-none"
@@ -55,9 +55,6 @@ export default async function Header() {
 									draggable={false}
 									className="group-hover:rotate-[14deg] h-full transition-transform duration-150 select-none relative z-[60]"
 								/>
-								<div className="text-white font-luckiest-guy text-[2.1rem] max-sm:text-3xl select-none max-xl:hidden">
-									Nouns
-								</div>
 							</Link>
 							<nav className="pointer-events-auto flex items-center gap-8">
 								<Menu />
