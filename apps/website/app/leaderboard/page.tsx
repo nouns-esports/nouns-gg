@@ -236,7 +236,9 @@ function LeaderboardPosition(props: {
 						src={props.user.image}
 						className="w-8 h-8 rounded-full object-cover"
 					/>
-					<p className="text-white text-lg">{props.user.name}</p>
+					<p className="text-white text-lg max-sm:max-w-20 truncate whitespace-nowrap">
+						{props.user.name}testtesttest
+					</p>
 				</div>
 				{props.diff !== 0 ? (
 					<div
@@ -254,7 +256,7 @@ function LeaderboardPosition(props: {
 					</div>
 				) : null}
 			</div>
-			<div className="flex gap-8 items-center">
+			<div className="flex gap-8 max-sm:gap-4 items-center">
 				{props.gold > 0 ? (
 					<div className="flex justify-center gap-1.5 items-center">
 						<img
