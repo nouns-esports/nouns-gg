@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import TextInput from "../form/TextInput";
 import Button from "../Button";
 import { createProposal } from "@/server/mutations/createProposal";
@@ -12,10 +12,9 @@ import dynamic from "next/dynamic";
 import Shimmer from "../Shimmer";
 import { useAction } from "next-safe-action/hooks";
 import type { getRoundWithProposal } from "@/server/queries/rounds";
-import { Trash2, X } from "lucide-react";
+import { Trash2 } from "lucide-react";
 import PinImage from "../PinImage";
 import VideoPlayer from "../VideoEmbedPlayer";
-import { env } from "~/env";
 import { videoEmbedFromLink, isVideoEmbed } from "@/utils/videoEmbeds";
 import { toast } from "../Toasts";
 
@@ -66,10 +65,6 @@ export default function ProposalEditor(props: {
 	);
 
 	const [parsedMarkdown, setParsedMarkdown] = useState(proposal?.content ?? "");
-
-	useEffect(() => {
-		console.log("parsedMarkdown", parsedMarkdown);
-	}, [parsedMarkdown]);
 
 	const router = useRouter();
 
@@ -323,7 +318,7 @@ export default function ProposalEditor(props: {
 							const result = await updateProposalAction.executeAsync({
 								round: props.round.id,
 								title,
-								content: editorState,
+								content: parsedMarkdown.length > 0 ? editorState : undefined,
 								image: image,
 								video: validVideo,
 							});
@@ -338,7 +333,7 @@ export default function ProposalEditor(props: {
 
 						const result = await createProposalAction.executeAsync({
 							title,
-							content: editorState,
+							content: parsedMarkdown.length > 0 ? editorState : undefined,
 							round: props.round.id,
 							image: image,
 							video: validVideo,
