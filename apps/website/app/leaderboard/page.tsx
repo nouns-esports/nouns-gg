@@ -271,9 +271,7 @@ function LeaderboardPosition(props: {
 						<p className="font-semibold text-lg text-[#FEBD1C]">
 							{props.gold >= 1000
 								? `${(Math.floor(props.gold) / 1000).toFixed(1)}k`
-								: props.gold % 1 === 0
-									? Math.floor(props.gold)
-									: props.gold}
+								: Math.floor(props.gold)}
 						</p>
 					</div>
 				) : null}
