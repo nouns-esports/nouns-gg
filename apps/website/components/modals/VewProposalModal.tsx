@@ -72,11 +72,16 @@ export default function ViewProposalModal(props: {
 							<Markdown markdown={props.proposal.content} readOnly />
 						) : null,
 						image: (
-							<img
-								alt={props.proposal.title}
-								src={props.proposal.image ?? ""}
-								className="flex h-full object-contain rounded-xl"
-							/>
+							<div className="flex flex-col gap-4">
+								<img
+									alt={props.proposal.title}
+									src={props.proposal.image ?? ""}
+									className="flex h-full object-contain rounded-xl"
+								/>
+								{props.proposal.content ? (
+									<Markdown markdown={props.proposal.content} readOnly />
+								) : null}
+							</div>
 						),
 						video: (
 							<div className="flex flex-col gap-4">
