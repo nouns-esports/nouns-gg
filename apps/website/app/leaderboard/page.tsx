@@ -233,7 +233,7 @@ function LeaderboardPosition(props: {
 					{props.position}
 				</p>
 				<div className="flex gap-4 max-sm:gap-2">
-					<div className="flex gap-3 items-center">
+					<div className="flex gap-3 max-sm:gap-2 items-center">
 						<img
 							alt={props.user.name}
 							src={props.user.image}
