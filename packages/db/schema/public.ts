@@ -701,6 +701,7 @@ export const products = pgTable("products", (t) => ({
 	// .default([]), defaults + jsonb are broken with Drizzle Kit right now
 	collection: t.text(),
 	event: t.text(),
+	requiresShipping: t.boolean("requires_shipping").notNull().default(true),
 }));
 
 export const productsRelations = relations(products, ({ one, many }) => ({
