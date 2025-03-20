@@ -229,32 +229,36 @@ function LeaderboardPosition(props: {
 			className="flex justify-between items-center bg-grey-800 hover:bg-grey-600 transition-colors p-4 pr-6 rounded-xl"
 		>
 			<div className="flex gap-4 items-center">
-				<p className="text-white w-6 text-center text-lg">{props.position}</p>
-				<div className="flex gap-3 items-center">
-					<img
-						alt={props.user.name}
-						src={props.user.image}
-						className="w-8 h-8 rounded-full object-cover"
-					/>
-					<p className="text-white text-lg max-sm:max-w-20 truncate whitespace-nowrap">
-						{props.user.name}
-					</p>
-				</div>
-				{props.diff !== 0 ? (
-					<div
-						className={twMerge(
-							"flex items-center gap-1",
-							props.diff > 0 ? "text-green" : "text-red",
-						)}
-					>
-						{props.diff > 0 ? (
-							<CaretUp className="w-4 h-4" weight="fill" />
-						) : (
-							<CaretDown className="w-4 h-4" weight="fill" />
-						)}
-						{Math.abs(props.diff)}
+				<p className="text-white w-6 max-sm:w-4 text-center text-lg">
+					{props.position}
+				</p>
+				<div className="flex gap-4 max-sm:gap-2">
+					<div className="flex gap-3 items-center">
+						<img
+							alt={props.user.name}
+							src={props.user.image}
+							className="w-8 h-8 rounded-full object-cover"
+						/>
+						<p className="text-white text-lg max-sm:max-w-20 truncate whitespace-nowrap">
+							{props.user.name}
+						</p>
 					</div>
-				) : null}
+					{props.diff !== 0 ? (
+						<div
+							className={twMerge(
+								"flex items-center gap-1",
+								props.diff > 0 ? "text-green" : "text-red",
+							)}
+						>
+							{props.diff > 0 ? (
+								<CaretUp className="w-4 h-4" weight="fill" />
+							) : (
+								<CaretDown className="w-4 h-4" weight="fill" />
+							)}
+							{Math.abs(props.diff)}
+						</div>
+					) : null}
+				</div>
 			</div>
 			<div className="flex gap-8 max-sm:gap-4 items-center">
 				{props.gold > 0 ? (
