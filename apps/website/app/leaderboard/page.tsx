@@ -237,7 +237,7 @@ function LeaderboardPosition(props: {
 						<img
 							alt={props.user.name}
 							src={props.user.image}
-							className="w-8 h-8 rounded-full object-cover"
+							className="w-8 h-8 rounded-full object-cover bg-white"
 						/>
 						<p className="text-white text-lg max-sm:max-w-20 truncate whitespace-nowrap">
 							{props.user.name}
