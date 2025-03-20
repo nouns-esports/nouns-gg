@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import TextInput from "../form/TextInput";
 import Button from "../Button";
 import { createProposal } from "@/server/mutations/createProposal";
@@ -66,6 +66,10 @@ export default function ProposalEditor(props: {
 	);
 
 	const [parsedMarkdown, setParsedMarkdown] = useState(proposal?.content ?? "");
+
+	useEffect(() => {
+		console.log("parsedMarkdown", parsedMarkdown);
+	}, [parsedMarkdown]);
 
 	const router = useRouter();
 
