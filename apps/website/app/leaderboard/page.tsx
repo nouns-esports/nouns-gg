@@ -8,12 +8,13 @@ import { CaretUp, CaretDown } from "phosphor-react-sc";
 import Countdown from "@/components/Countdown";
 import { twMerge } from "tailwind-merge";
 import { ToggleModal } from "@/components/Modal";
-import { Image } from "lucide-react";
+import { Image, Info } from "lucide-react";
 import ShareRankingModal from "@/components/modals/ShareRankingModal";
 import { nextFriday, set } from "date-fns";
 import { env } from "~/env";
 import type { Metadata } from "next";
 import { format, toZonedTime } from "date-fns-tz";
+import RankingSystemExplainer from "@/components/modals/RankingSystemExplainer";
 
 function getNextFridayAt1350CST() {
 	const now = new Date();
@@ -152,7 +153,7 @@ export default async function Leaderboard() {
 								</p>
 								<ToggleModal
 									id="share-ranking"
-									className="flex items-center gap-1.5 text-red"
+									className="flex items-center gap-1.5 text-red hover:text-red/70 transition-colors"
 								>
 									<Image className="w-4 h-4" />
 									View Image
@@ -170,7 +171,16 @@ export default async function Leaderboard() {
 					) : null}
 
 					<div className="relative flex flex-col gap-2">
-						<p className="text-white text-lg font-semibold">This Week</p>
+						<div className="flex gap-2 items-center justify-between">
+							<p className="text-white text-lg font-semibold">This Week</p>
+							<ToggleModal
+								id="ranking-system-explainer"
+								className="flex items-center gap-1.5 text-red hover:text-red/70 transition-colors"
+							>
+								<Info className="w-4 h-4" />
+								How do I rank up?
+							</ToggleModal>
+						</div>
 						{leaderboard.map((ranking, index) => {
 							if (!ranking.user) return;
 
@@ -191,6 +201,7 @@ export default async function Leaderboard() {
 				</div>
 			</div>
 			{userPosition ? <ShareRankingModal ranking={userPosition} /> : null}
+			<RankingSystemExplainer />
 		</>
 	);
 }
