@@ -35,16 +35,18 @@ const GET_DRAFT_ORDER_QUERY = `
 export const createDraftOrder = onlyUser
 	.schema(
 		z.object({
-			shipping: z.object({
-				firstName: z.string(),
-				lastName: z.string(),
-				address1: z.string(),
-				address2: z.string().optional(),
-				city: z.string(),
-				province: z.string().optional(),
-				country: z.string(),
-				zip: z.string().optional(),
-			}),
+			shipping: z
+				.object({
+					firstName: z.string(),
+					lastName: z.string(),
+					address1: z.string(),
+					address2: z.string().optional(),
+					city: z.string(),
+					province: z.string().optional(),
+					country: z.string(),
+					zip: z.string().optional(),
+				})
+				.optional(),
 			goldApplied: z.number(),
 			email: z.string(),
 		}),
@@ -84,16 +86,18 @@ export const createDraftOrder = onlyUser
 								variantId: item.variant,
 								quantity: item.quantity,
 							})),
-							shippingAddress: {
-								firstName: parsedInput.shipping.firstName,
-								lastName: parsedInput.shipping.lastName,
-								address1: parsedInput.shipping.address1,
-								address2: parsedInput.shipping.address2 || null,
-								city: parsedInput.shipping.city,
-								province: parsedInput.shipping.province,
-								country: parsedInput.shipping.country,
-								zip: parsedInput.shipping.zip,
-							},
+							shippingAddress: parsedInput.shipping
+								? {
+										firstName: parsedInput.shipping.firstName,
+										lastName: parsedInput.shipping.lastName,
+										address1: parsedInput.shipping.address1,
+										address2: parsedInput.shipping.address2 || null,
+										city: parsedInput.shipping.city,
+										province: parsedInput.shipping.province,
+										country: parsedInput.shipping.country,
+										zip: parsedInput.shipping.zip,
+									}
+								: undefined,
 							email: parsedInput.email,
 							useCustomerDefaultAddress: false,
 							appliedDiscount:
