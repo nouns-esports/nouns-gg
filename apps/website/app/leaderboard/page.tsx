@@ -237,7 +237,7 @@ function LeaderboardPosition(props: {
 						className="w-8 h-8 rounded-full object-cover"
 					/>
 					<p className="text-white text-lg max-sm:max-w-20 truncate whitespace-nowrap">
-						{props.user.name}testtesttest
+						{props.user.name}
 					</p>
 				</div>
 				{props.diff !== 0 ? (
