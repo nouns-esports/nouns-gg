@@ -5,25 +5,25 @@ export const getTrendingPosts = cache(
 	async () => {
 		const responses = await Promise.all([
 			neynarClient.fetchFeed("filter", {
-				limit: 5,
+				limit: 10,
 				filterType: "channel_id",
 				channelId: "nouns-esports",
 			}),
-			neynarClient.fetchFeed("filter", {
-				limit: 5,
-				filterType: "channel_id",
-				channelId: "cs2",
-			}),
-			neynarClient.fetchFeed("filter", {
-				limit: 5,
-				filterType: "channel_id",
-				channelId: "smash",
-			}),
-			neynarClient.fetchFeed("filter", {
-				limit: 5,
-				filterType: "channel_id",
-				channelId: "dota2",
-			}),
+			// neynarClient.fetchFeed("filter", {
+			// 	limit: 5,
+			// 	filterType: "channel_id",
+			// 	channelId: "cs2",
+			// }),
+			// neynarClient.fetchFeed("filter", {
+			// 	limit: 5,
+			// 	filterType: "channel_id",
+			// 	channelId: "smash",
+			// }),
+			// neynarClient.fetchFeed("filter", {
+			// 	limit: 5,
+			// 	filterType: "channel_id",
+			// 	channelId: "dota2",
+			// }),
 		]);
 
 		const posts = responses.flatMap((response) => response.casts.flat());
