@@ -48,6 +48,12 @@ export function videoEmbedFromLink(link: string) {
 			}
 		}
 
+		// User Input: https://youtu.be/JSHu-GY3xwg?si=LkQpfQPVID5K1c4l
+		// Output: https://www.youtube.com/embed/JSHu-GY3xwg
+		if (url.hostname.includes("youtu.be")) {
+			return `https://www.youtube.com/embed/${url.pathname.replace("/", "")}`;
+		}
+
 		// User Input: https://drive.google.com/file/d/1obXK4mr1yTVS7ruAWba__6k6D5b_ORgs/view
 		// Output: https://drive.google.com/file/d/1obXK4mr1yTVS7ruAWba__6k6D5b_ORgs/preview
 		if (url.hostname.includes("drive.google.com")) {
