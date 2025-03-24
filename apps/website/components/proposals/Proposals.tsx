@@ -319,8 +319,7 @@ export default function Proposals(props: {
 								key={proposal.id}
 								id={`view-proposal-${proposal.id}`}
 								className={twMerge(
-									"relative flex flex-col gap-4 bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl overflow-hidden aspect-square w-full h-full group p-4 flex-shrink-0",
-									props.round.type === "video" && "aspect-auto",
+									"relative flex flex-col gap-4 bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl overflow-hidden aspect-square w-full h-full group p-4",
 									state === "Ended" &&
 										index < props.round.awards.length &&
 										index === 0 &&
@@ -342,89 +341,68 @@ export default function Proposals(props: {
 								<p className="text-white font-bebas-neue text-2xl line-clamp-2 flex-shrink-0 leading-[1.15] /h-[2lh]">
 									{proposal.title}
 								</p>
-								{
-									{
-										markdown: proposal.image ? (
-											<img
-												alt={proposal.title}
-												src={`${proposal.image}?img-width=500&img-onerror=redirect`}
-												className={twMerge(
-													"flex w-full h-full object-cover overflow-hidden rounded-xl select-none",
-													props.round.type === "video" && "aspect-video h-auto",
-												)}
-											/>
-										) : (
-											<div className="relative w-full h-full overflow-hidden">
-												<p
-													className={twMerge(
-														"text-grey-200 h-full",
-														state === "Ended" &&
-															index < props.round.awards.length &&
-															"text-white",
-													)}
-												>
-													{lexicalToDescription(proposal.content ?? "")}
-												</p>
-												<div
-													className={twMerge(
-														"absolute left-0 w-full group-hover:opacity-0 opacity-100 transition-opacity bg-gradient-to-t from-grey-800 to-transparent h-10 bottom-0 z-10",
-														state === "Ended" &&
-															index < props.round.awards.length &&
-															index === 0 &&
-															"from-gold-900",
-														state === "Ended" &&
-															index < props.round.awards.length &&
-															index === 1 &&
-															"from-silver-900",
-														state === "Ended" &&
-															index < props.round.awards.length &&
-															index === 2 &&
-															"from-bronze-900",
-														state === "Ended" &&
-															index > 2 &&
-															index < props.round.awards.length &&
-															"from-blue-900",
-													)}
-												/>
-												<div
-													className={twMerge(
-														"absolute left-0 w-full group-hover:opacity-100 opacity-0 transition-opacity bg-gradient-to-t from-grey-600 to-transparent h-20 bottom-0 z-10",
-														state === "Ended" &&
-															index < props.round.awards.length &&
-															index === 0 &&
-															"from-gold-800",
-														state === "Ended" &&
-															index < props.round.awards.length &&
-															index === 1 &&
-															"from-silver-800",
-														state === "Ended" &&
-															index < props.round.awards.length &&
-															index === 2 &&
-															"from-bronze-800",
-														state === "Ended" &&
-															index > 2 &&
-															index < props.round.awards.length &&
-															"from-blue-800",
-													)}
-												/>
-											</div>
-										),
-										image: (
-											<img
-												alt={proposal.title}
-												src={`${proposal.image}?img-width=500&img-onerror=redirect`}
-												className="flex w-full h-full object-cover overflow-hidden rounded-xl select-none"
-											/>
-										),
-										video: (
-											<img
-												alt={proposal.title}
-												src={`${proposal.image}?img-width=500&img-onerror=redirect`}
-												className="flex w-full h-full object-cover overflow-hidden rounded-xl select-none aspect-video"
-											/>
-										),
-									}[props.round.type as (typeof rounds.$inferSelect)["type"]]
-								}
+								{proposal.image ? (
+									<img
+										alt={proposal.title}
+										src={`${proposal.image}?img-width=500&img-onerror=redirect`}
+										className="flex w-full h-full object-cover overflow-hidden rounded-xl select-none"
+									/>
+								) : (
+									<div className="relative w-full h-full overflow-hidden">
+										<p
+											className={twMerge(
+												"text-grey-200 h-full",
+												state === "Ended" &&
+													index < props.round.awards.length &&
+													"text-white",
+											)}
+										>
+											{lexicalToDescription(proposal.content ?? "")}
+										</p>
+										<div
+											className={twMerge(
+												"absolute left-0 w-full group-hover:opacity-0 opacity-100 transition-opacity bg-gradient-to-t from-grey-800 to-transparent h-10 bottom-0 z-10",
+												state === "Ended" &&
+													index < props.round.awards.length &&
+													index === 0 &&
+													"from-gold-900",
+												state === "Ended" &&
+													index < props.round.awards.length &&
+													index === 1 &&
+													"from-silver-900",
+												state === "Ended" &&
+													index < props.round.awards.length &&
+													index === 2 &&
+													"from-bronze-900",
+												state === "Ended" &&
+													index > 2 &&
+													index < props.round.awards.length &&
+													"from-blue-900",
+											)}
+										/>
+										<div
+											className={twMerge(
+												"absolute left-0 w-full group-hover:opacity-100 opacity-0 transition-opacity bg-gradient-to-t from-grey-600 to-transparent h-20 bottom-0 z-10",
+												state === "Ended" &&
+													index < props.round.awards.length &&
+													index === 0 &&
+													"from-gold-800",
+												state === "Ended" &&
+													index < props.round.awards.length &&
+													index === 1 &&
+													"from-silver-800",
+												state === "Ended" &&
+													index < props.round.awards.length &&
+													index === 2 &&
+													"from-bronze-800",
+												state === "Ended" &&
+													index > 2 &&
+													index < props.round.awards.length &&
+													"from-blue-800",
+											)}
+										/>
+									</div>
+								)}
 								<div className="flex justify-between items-center flex-shrink-0">
 									{proposal.user ? (
 										<Link
