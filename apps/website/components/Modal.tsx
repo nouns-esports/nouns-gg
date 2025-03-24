@@ -108,22 +108,6 @@ export function Modal(props: {
 		if (props.isOpen) open();
 	}, []);
 
-	// const [mounted, setMounted] = useState(false);
-
-	// useEffect(() => {
-	// 	const url = new URL(window.location.toString());
-
-	// 	if (
-	// 		!mounted &&
-	// 		props.queryParam &&
-	// 		url.searchParams.get(props.queryParam[0]) === props.queryParam[1]
-	// 	) {
-	// 		open();
-	// 	}
-
-	// 	setMounted(true);
-	// }, [mounted]);
-
 	useEffect(() => {
 		const root = document.documentElement;
 		const url = new URL(window.location.toString());
@@ -136,8 +120,9 @@ export function Modal(props: {
 				if (props.confetti) confetti();
 			}
 
-			if (props.queryParam) {
+			if (props.queryParam && !url.searchParams.get(props.queryParam[0])) {
 				url.searchParams.set(props.queryParam[0], props.queryParam[1]);
+				window.history.replaceState({}, "", url);
 			}
 		} else {
 			if (openCount === 0) {
@@ -145,12 +130,11 @@ export function Modal(props: {
 				root.style.paddingRight = "0px";
 			}
 
-			if (props.queryParam) {
+			if (props.queryParam && url.searchParams.get(props.queryParam[0])) {
 				url.searchParams.delete(props.queryParam[0]);
+				window.history.replaceState({}, "", url);
 			}
 		}
-
-		window.history.pushState({}, "", url);
 	}, [isOpen]);
 
 	const { width } = useWindowSize();

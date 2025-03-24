@@ -24,15 +24,11 @@ export const followAccount = createAction<{ account?: string }>(
 					{ limit: 1 },
 				);
 
-				console.log("account response", response);
-
 				if (response.result.users.length === 0) {
-					console.log("User not found");
 					return false;
 				}
 
 				if (response.result.users[0]?.username !== actionInputs.account) {
-					console.log("Username mismatch");
 					return false;
 				}
 
