@@ -319,7 +319,7 @@ export default function Proposals(props: {
 								key={proposal.id}
 								id={`view-proposal-${proposal.id}`}
 								className={twMerge(
-									"relative flex flex-col gap-4 bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl overflow-hidden aspect-square w-full h-full group p-4",
+									"relative flex flex-col gap-4 bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl overflow-hidden aspect-square w-full h-full group p-4 flex-shrink-0",
 									props.round.type === "video" && "aspect-auto",
 									state === "Ended" &&
 										index < props.round.awards.length &&
