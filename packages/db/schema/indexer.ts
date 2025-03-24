@@ -1,11 +1,10 @@
 import type { JSONContent } from "@tiptap/react";
 import { onchainTable, primaryKey } from "ponder";
-import { bytea } from "./custom/bytea";
 
 export const erc721Balances = onchainTable(
 	"erc721_balances",
 	(t) => ({
-		account: bytea().notNull(),
+		account: t.hex().notNull(),
 		collection: t.text().notNull(),
 		tokenId: t.bigint("token_id").notNull(),
 	}),
@@ -15,37 +14,37 @@ export const erc721Balances = onchainTable(
 );
 
 export const erc1155Balances = onchainTable("erc1155_balances", (t) => ({
-	account: bytea().primaryKey(),
-	token: bytea().notNull(),
+	account: t.hex().primaryKey(),
+	token: t.hex().notNull(),
 	tokenId: t.bigint("token_id").notNull(),
 	balance: t.bigint().notNull(),
 }));
 
 export const erc20Balances = onchainTable("erc20_balances", (t) => ({
-	account: bytea().primaryKey(),
-	token: bytea().notNull(),
+	account: t.hex().primaryKey(),
+	token: t.hex().notNull(),
 	balance: t.bigint().notNull(),
 }));
 
 export const nounDelegates = onchainTable("noun_delegates", (t) => ({
-	from: bytea().primaryKey(),
-	to: bytea().notNull(),
+	from: t.hex().primaryKey(),
+	to: t.hex().notNull(),
 	votes: t.bigint().notNull(),
 }));
 
 export const lilnounDelegates = onchainTable("lilnoun_delegates", (t) => ({
-	from: bytea().primaryKey(),
-	to: bytea().notNull(),
+	from: t.hex().primaryKey(),
+	to: t.hex().notNull(),
 	votes: t.bigint().notNull(),
 }));
 
 export const nounsProposals = onchainTable("nouns_proposals", (t) => ({
 	id: t.bigint().primaryKey(),
-	proposer: bytea().notNull(),
-	targets: bytea().array().notNull(),
+	proposer: t.hex().notNull(),
+	targets: t.hex().array().notNull(),
 	values: t.bigint().array().notNull(),
 	signatures: t.text().array().notNull(),
-	calldatas: bytea().array().notNull(),
+	calldatas: t.hex().array().notNull(),
 	description: t.jsonb().$type<JSONContent>().notNull(),
 	createdAt: t.timestamp().notNull(),
 	startTime: t.timestamp().notNull(),
@@ -67,7 +66,7 @@ export const nounsVotes = onchainTable(
 	"nouns_votes",
 	(t) => ({
 		proposal: t.bigint().notNull(),
-		voter: bytea().notNull(),
+		voter: t.hex().notNull(),
 		support: t.smallint().notNull(),
 		amount: t.bigint().notNull(),
 		timestamp: t.timestamp().notNull(),
@@ -83,8 +82,8 @@ export const voteReposts = onchainTable(
 	"vote_reposts",
 	(t) => ({
 		proposal: t.bigint().notNull(),
-		reposter: bytea().notNull(),
-		voter: bytea().notNull(),
+		reposter: t.hex().notNull(),
+		voter: t.hex().notNull(),
 	}),
 	(t) => ({
 		pk: primaryKey({ columns: [t.proposal, t.reposter, t.voter] }),
@@ -141,7 +140,7 @@ export const nounsBids = onchainTable(
 	"nouns_bids",
 	(t) => ({
 		nounId: t.bigint("noun_id").notNull(),
-		bidder: bytea().notNull(),
+		bidder: t.hex().notNull(),
 		amount: t.bigint().notNull(),
 		timestamp: t.timestamp().notNull(),
 		client: t.integer(),
@@ -152,7 +151,7 @@ export const nounsBids = onchainTable(
 );
 
 // export const ensProfiles = onchainTable("ens_profiles", (t) => ({
-// 	address: bytea().primaryKey(),
+// 	address: t.hex().primaryKey(),
 // 	name: t.text().notNull(),
 // 	image: t.text(),
 // }));
