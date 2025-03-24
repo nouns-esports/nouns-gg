@@ -17,7 +17,6 @@ import {
 } from "lucide-react";
 import Banner from "./Banner";
 import Menu from "./Menu";
-import { getRosters } from "@/server/queries/rosters";
 import { getNotifications } from "@/server/queries/notifications";
 import Notifications from "./Notifications";
 import GoldModal from "./modals/GoldModal";
@@ -26,10 +25,7 @@ import CartModal from "./modals/CartModal";
 import EnterNexusModal from "./modals/EnterNexusModal";
 
 export default async function Header() {
-	const [user, rosters] = await Promise.all([
-		getAuthenticatedUser(),
-		getRosters({ limit: 4 }),
-	]);
+	const user = await getAuthenticatedUser();
 
 	const notifications = user ? await getNotifications({ user: user.id }) : [];
 
@@ -90,34 +86,22 @@ export default async function Header() {
 													<p className="text-grey-200">Partner with us</p>
 												</div>
 											</Link>
-											<div className="text-nowrap gap-2 flex flex-col py-3">
-												<div className="flex justify-between items-center px-3">
-													<p className="font-bebas-neue text-lg">Rosters</p>
-													<Link
-														href="/rosters"
-														className="text-red text-sm flex gap-1 items-center group/rosters"
-													>
-														View All
-														<ArrowRight className="w-4 h-4 group-hover/rosters:translate-x-0.5 transition-transform" />
-													</Link>
+											<Link
+												href="/discord"
+												className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg flex gap-4 items-center"
+											>
+												<img
+													alt="Discord logo"
+													src="/discord.jpg"
+													className="h-10 w-10 rounded-md"
+												/>
+												<div>
+													<p className="font-bebas-neue text-lg">Discord</p>
+													<p className="text-grey-200">
+														Join the Discord server
+													</p>
 												</div>
-												<div className="px-1.5 grid grid-cols-2 w-80">
-													{rosters.map((roster) => (
-														<Link
-															key={roster.id}
-															href={`/rosters/${roster.community.id}`}
-															className="flex items-center gap-2 rounded-lg px-2 py-2 hover:bg-grey-500 transition-colors w-full"
-														>
-															<img
-																src={roster.community.image}
-																alt={`Our ${roster.name} roster`}
-																className="w-6 h-6 rounded-md object-cover"
-															/>
-															<p className="text-nowrap">{roster.name}</p>
-														</Link>
-													))}
-												</div>
-											</div>
+											</Link>
 										</div>
 									</Group>
 									<Group
@@ -169,24 +153,6 @@ export default async function Header() {
 														</p>
 														<p className="text-grey-200">
 															Rankup and earn rewards
-														</p>
-													</div>
-												</Link>
-											</li>
-											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
-												<Link
-													href="/discord"
-													className="flex items-center gap-4"
-												>
-													<img
-														alt="Discord logo"
-														src="/discord.jpg"
-														className="h-10 w-10 rounded-md"
-													/>
-													<div>
-														<p className="font-bebas-neue text-lg">Discord</p>
-														<p className="text-grey-200">
-															Join the Discord server
 														</p>
 													</div>
 												</Link>
