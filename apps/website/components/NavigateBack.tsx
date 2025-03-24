@@ -11,9 +11,8 @@ export default function NavigateBack(
 		<button
 			onClick={() => {
 				if (typeof window !== "undefined" && window.history.length > 1) {
-					console.log(window.history);
-					// router.back();
-				} else router.push("/chat");
+					router.back();
+				} else router.push(props.fallback);
 			}}
 			{...props}
 		>

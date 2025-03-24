@@ -15,6 +15,7 @@ import RoundTimeline from "@/components/RoundTimeline";
 import Countup from "@/components/Countup";
 import { ArrowRight, Gavel, Megaphone, TicketCheck, Users } from "lucide-react";
 import Markdown from "@/components/lexical/Markdown";
+import NavigateBack from "@/components/NavigateBack";
 
 export async function generateMetadata(props: {
 	params: Promise<{ round: string }>;
@@ -177,13 +178,13 @@ export default async function Round(props: {
 
 	return (
 		<div className="relative flex flex-col justify-center gap-4 w-full pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
-			<Link
-				href={round.event ? `/events/${round.event.id}` : "/rounds"}
+			<NavigateBack
+				fallback={round.event ? `/events/${round.event.id}` : "/rounds"}
 				className="text-red flex items-center gap-1 group"
 			>
 				<ArrowLeft className="w-5 h-5 text-red group-hover:-translate-x-1 transition-transform" />
 				Back to {round.event ? round.event.name : "rounds"}
-			</Link>
+			</NavigateBack>
 			<div className="flex flex-col gap-8">
 				<div className="flex gap-4 h-[500px] max-xl:flex-col max-xl:h-auto">
 					<div className="bg-grey-800 flex flex-col w-full h-full rounded-xl overflow-hidden max-lg:max-h-[600px] max-sm:max-h-[500px]">

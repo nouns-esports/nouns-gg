@@ -1,5 +1,6 @@
 import CheckQuest from "@/components/CheckQuest";
 import Link from "@/components/Link";
+import NavigateBack from "@/components/NavigateBack";
 import { getAction, getQuest } from "@/server/queries/quests";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import { ArrowLeft, ArrowRight, Check, Sparkles } from "lucide-react";
@@ -104,13 +105,13 @@ export default async function Quest(props: {
 	return (
 		<div className="relative flex justify-center gap-16 w-full pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
 			<div className="flex flex-col gap-4 w-full max-w-3xl">
-				<Link
-					href={quest.event ? `/events/${quest.event.id}` : "/quests"}
+				<NavigateBack
+					fallback={quest.event ? `/events/${quest.event.id}` : "/quests"}
 					className="text-red flex items-center gap-1 group w-fit"
 				>
 					<ArrowLeft className="w-5 h-5 text-red group-hover:-translate-x-1 transition-transform" />
 					Back to {quest.event ? quest.event.name : "quests"}
-				</Link>
+				</NavigateBack>
 				<div className="flex flex-col gap-4">
 					<div className="bg-grey-800 rounded-xl overflow-hidden">
 						<img
