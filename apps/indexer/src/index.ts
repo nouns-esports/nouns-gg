@@ -13,7 +13,7 @@ import { isValidURL } from "~/packages/utils/isValidURL";
 import { unpadSVG } from "~/packages/utils/unpadSVG";
 import { parseVoteReason } from "~/packages/utils/parseVoteReason";
 import {
-	ensProfiles,
+	// ensProfiles,
 	nouns,
 	nounsBids,
 	nounsClients,
@@ -21,10 +21,9 @@ import {
 	nounsVotes,
 	voteReposts,
 } from "ponder:schema";
-import { normalize } from "viem/ens";
+// import { normalize } from "viem/ens";
 import { env } from "~/env";
 import { PinataSDK } from "pinata";
-import { eq } from "ponder";
 
 const pinata = new PinataSDK({
 	pinataJwt: env.PINATA_JWT,
@@ -32,49 +31,50 @@ const pinata = new PinataSDK({
 });
 
 ponder.on("NounsToken:Transfer", async ({ event, context }) => {
-	const toEnsName = await context.client.getEnsName({
-		address: event.args.to,
-	});
+	// const toEnsName = await context.client.getEnsName({
+	// 	address: event.args.to,
+	// 	blockNumber: 19258213n,
+	// });
 
-	if (toEnsName) {
-		const toEnsAvatar = await context.client.getEnsAvatar({
-			name: normalize(toEnsName),
-		});
+	// if (toEnsName) {
+	// 	const toEnsAvatar = await context.client.getEnsAvatar({
+	// 		name: normalize(toEnsName),
+	// 	});
 
-		await context.db
-			.insert(ensProfiles)
-			.values({
-				address: event.args.to,
-				name: toEnsName,
-				image: toEnsAvatar,
-			})
-			.onConflictDoUpdate({
-				image: toEnsAvatar,
-				name: toEnsName,
-			});
-	}
+	// 	await context.db
+	// 		.insert(ensProfiles)
+	// 		.values({
+	// 			address: event.args.to,
+	// 			name: toEnsName,
+	// 			image: toEnsAvatar,
+	// 		})
+	// 		.onConflictDoUpdate({
+	// 			image: toEnsAvatar,
+	// 			name: toEnsName,
+	// 		});
+	// }
 
-	const fromEnsName = await context.client.getEnsName({
-		address: event.args.from,
-	});
+	// const fromEnsName = await context.client.getEnsName({
+	// 	address: event.args.from,
+	// });
 
-	if (fromEnsName) {
-		const fromEnsAvatar = await context.client.getEnsAvatar({
-			name: normalize(fromEnsName),
-		});
+	// if (fromEnsName) {
+	// 	const fromEnsAvatar = await context.client.getEnsAvatar({
+	// 		name: normalize(fromEnsName),
+	// 	});
 
-		await context.db
-			.insert(ensProfiles)
-			.values({
-				address: event.args.from,
-				name: fromEnsName,
-				image: fromEnsAvatar,
-			})
-			.onConflictDoUpdate({
-				image: fromEnsAvatar,
-				name: fromEnsName,
-			});
-	}
+	// 	await context.db
+	// 		.insert(ensProfiles)
+	// 		.values({
+	// 			address: event.args.from,
+	// 			name: fromEnsName,
+	// 			image: fromEnsAvatar,
+	// 		})
+	// 		.onConflictDoUpdate({
+	// 			image: fromEnsAvatar,
+	// 			name: fromEnsName,
+	// 		});
+	// }
 
 	await context.db
 		.insert(erc721Balances)
@@ -89,49 +89,49 @@ ponder.on("NounsToken:Transfer", async ({ event, context }) => {
 });
 
 ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
-	const toEnsName = await context.client.getEnsName({
-		address: event.args.to,
-	});
+	// const toEnsName = await context.client.getEnsName({
+	// 	address: event.args.to,
+	// });
 
-	if (toEnsName) {
-		const toEnsAvatar = await context.client.getEnsAvatar({
-			name: normalize(toEnsName),
-		});
+	// if (toEnsName) {
+	// 	const toEnsAvatar = await context.client.getEnsAvatar({
+	// 		name: normalize(toEnsName),
+	// 	});
 
-		await context.db
-			.insert(ensProfiles)
-			.values({
-				address: event.args.to,
-				name: toEnsName,
-				image: toEnsAvatar,
-			})
-			.onConflictDoUpdate({
-				image: toEnsAvatar,
-				name: toEnsName,
-			});
-	}
+	// 	await context.db
+	// 		.insert(ensProfiles)
+	// 		.values({
+	// 			address: event.args.to,
+	// 			name: toEnsName,
+	// 			image: toEnsAvatar,
+	// 		})
+	// 		.onConflictDoUpdate({
+	// 			image: toEnsAvatar,
+	// 			name: toEnsName,
+	// 		});
+	// }
 
-	const fromEnsName = await context.client.getEnsName({
-		address: event.args.from,
-	});
+	// const fromEnsName = await context.client.getEnsName({
+	// 	address: event.args.from,
+	// });
 
-	if (fromEnsName) {
-		const fromEnsAvatar = await context.client.getEnsAvatar({
-			name: normalize(fromEnsName),
-		});
+	// if (fromEnsName) {
+	// 	const fromEnsAvatar = await context.client.getEnsAvatar({
+	// 		name: normalize(fromEnsName),
+	// 	});
 
-		await context.db
-			.insert(ensProfiles)
-			.values({
-				address: event.args.from,
-				name: fromEnsName,
-				image: fromEnsAvatar,
-			})
-			.onConflictDoUpdate({
-				image: fromEnsAvatar,
-				name: fromEnsName,
-			});
-	}
+	// 	await context.db
+	// 		.insert(ensProfiles)
+	// 		.values({
+	// 			address: event.args.from,
+	// 			name: fromEnsName,
+	// 			image: fromEnsAvatar,
+	// 		})
+	// 		.onConflictDoUpdate({
+	// 			image: fromEnsAvatar,
+	// 			name: fromEnsName,
+	// 		});
+	// }
 
 	await context.db
 		.insert(erc721Balances)
@@ -146,49 +146,49 @@ ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
 });
 
 ponder.on("NounsToken:DelegateChanged", async ({ event, context }) => {
-	const toDelegateEnsName = await context.client.getEnsName({
-		address: event.args.toDelegate,
-	});
+	// const toDelegateEnsName = await context.client.getEnsName({
+	// 	address: event.args.toDelegate,
+	// });
 
-	if (toDelegateEnsName) {
-		const toDelegateEnsAvatar = await context.client.getEnsAvatar({
-			name: normalize(toDelegateEnsName),
-		});
+	// if (toDelegateEnsName) {
+	// 	const toDelegateEnsAvatar = await context.client.getEnsAvatar({
+	// 		name: normalize(toDelegateEnsName),
+	// 	});
 
-		await context.db
-			.insert(ensProfiles)
-			.values({
-				address: event.args.toDelegate,
-				name: toDelegateEnsName,
-				image: toDelegateEnsAvatar,
-			})
-			.onConflictDoUpdate({
-				image: toDelegateEnsAvatar,
-				name: toDelegateEnsName,
-			});
-	}
+	// 	await context.db
+	// 		.insert(ensProfiles)
+	// 		.values({
+	// 			address: event.args.toDelegate,
+	// 			name: toDelegateEnsName,
+	// 			image: toDelegateEnsAvatar,
+	// 		})
+	// 		.onConflictDoUpdate({
+	// 			image: toDelegateEnsAvatar,
+	// 			name: toDelegateEnsName,
+	// 		});
+	// }
 
-	const fromDelegateEnsName = await context.client.getEnsName({
-		address: event.args.fromDelegate,
-	});
+	// const fromDelegateEnsName = await context.client.getEnsName({
+	// 	address: event.args.fromDelegate,
+	// });
 
-	if (fromDelegateEnsName) {
-		const fromDelegateEnsAvatar = await context.client.getEnsAvatar({
-			name: normalize(fromDelegateEnsName),
-		});
+	// if (fromDelegateEnsName) {
+	// 	const fromDelegateEnsAvatar = await context.client.getEnsAvatar({
+	// 		name: normalize(fromDelegateEnsName),
+	// 	});
 
-		await context.db
-			.insert(ensProfiles)
-			.values({
-				address: event.args.fromDelegate,
-				name: fromDelegateEnsName,
-				image: fromDelegateEnsAvatar,
-			})
-			.onConflictDoUpdate({
-				image: fromDelegateEnsAvatar,
-				name: fromDelegateEnsName,
-			});
-	}
+	// 	await context.db
+	// 		.insert(ensProfiles)
+	// 		.values({
+	// 			address: event.args.fromDelegate,
+	// 			name: fromDelegateEnsName,
+	// 			image: fromDelegateEnsAvatar,
+	// 		})
+	// 		.onConflictDoUpdate({
+	// 			image: fromDelegateEnsAvatar,
+	// 			name: fromDelegateEnsName,
+	// 		});
+	// }
 
 	await context.db
 		.insert(nounDelegates)
@@ -203,49 +203,49 @@ ponder.on("NounsToken:DelegateChanged", async ({ event, context }) => {
 });
 
 ponder.on("LilNounsToken:DelegateChanged", async ({ event, context }) => {
-	const toDelegateEnsName = await context.client.getEnsName({
-		address: event.args.toDelegate,
-	});
+	// const toDelegateEnsName = await context.client.getEnsName({
+	// 	address: event.args.toDelegate,
+	// });
 
-	if (toDelegateEnsName) {
-		const toDelegateEnsAvatar = await context.client.getEnsAvatar({
-			name: normalize(toDelegateEnsName),
-		});
+	// if (toDelegateEnsName) {
+	// 	const toDelegateEnsAvatar = await context.client.getEnsAvatar({
+	// 		name: normalize(toDelegateEnsName),
+	// 	});
 
-		await context.db
-			.insert(ensProfiles)
-			.values({
-				address: event.args.toDelegate,
-				name: toDelegateEnsName,
-				image: toDelegateEnsAvatar,
-			})
-			.onConflictDoUpdate({
-				image: toDelegateEnsAvatar,
-				name: toDelegateEnsName,
-			});
-	}
+	// 	await context.db
+	// 		.insert(ensProfiles)
+	// 		.values({
+	// 			address: event.args.toDelegate,
+	// 			name: toDelegateEnsName,
+	// 			image: toDelegateEnsAvatar,
+	// 		})
+	// 		.onConflictDoUpdate({
+	// 			image: toDelegateEnsAvatar,
+	// 			name: toDelegateEnsName,
+	// 		});
+	// }
 
-	const fromDelegateEnsName = await context.client.getEnsName({
-		address: event.args.fromDelegate,
-	});
+	// const fromDelegateEnsName = await context.client.getEnsName({
+	// 	address: event.args.fromDelegate,
+	// });
 
-	if (fromDelegateEnsName) {
-		const fromDelegateEnsAvatar = await context.client.getEnsAvatar({
-			name: normalize(fromDelegateEnsName),
-		});
+	// if (fromDelegateEnsName) {
+	// 	const fromDelegateEnsAvatar = await context.client.getEnsAvatar({
+	// 		name: normalize(fromDelegateEnsName),
+	// 	});
 
-		await context.db
-			.insert(ensProfiles)
-			.values({
-				address: event.args.fromDelegate,
-				name: fromDelegateEnsName,
-				image: fromDelegateEnsAvatar,
-			})
-			.onConflictDoUpdate({
-				image: fromDelegateEnsAvatar,
-				name: fromDelegateEnsName,
-			});
-	}
+	// 	await context.db
+	// 		.insert(ensProfiles)
+	// 		.values({
+	// 			address: event.args.fromDelegate,
+	// 			name: fromDelegateEnsName,
+	// 			image: fromDelegateEnsAvatar,
+	// 		})
+	// 		.onConflictDoUpdate({
+	// 			image: fromDelegateEnsAvatar,
+	// 			name: fromDelegateEnsName,
+	// 		});
+	// }
 
 	await context.db
 		.insert(lilnounDelegates)
@@ -281,27 +281,27 @@ ponder.on("NounsDAOGovernor:ProposalCreated", async ({ event, context }) => {
 		blocks: Number(event.args.endBlock) - Number(event.block.number),
 	});
 
-	const ensName = await context.client.getEnsName({
-		address: event.args.proposer,
-	});
+	// const ensName = await context.client.getEnsName({
+	// 	address: event.args.proposer,
+	// });
 
-	if (ensName) {
-		const ensAvatar = await context.client.getEnsAvatar({
-			name: normalize(ensName),
-		});
+	// if (ensName) {
+	// 	const ensAvatar = await context.client.getEnsAvatar({
+	// 		name: normalize(ensName),
+	// 	});
 
-		await context.db
-			.insert(ensProfiles)
-			.values({
-				address: event.args.proposer,
-				name: ensName,
-				image: ensAvatar,
-			})
-			.onConflictDoUpdate({
-				image: ensAvatar,
-				name: ensName,
-			});
-	}
+	// 	await context.db
+	// 		.insert(ensProfiles)
+	// 		.values({
+	// 			address: event.args.proposer,
+	// 			name: ensName,
+	// 			image: ensAvatar,
+	// 		})
+	// 		.onConflictDoUpdate({
+	// 			image: ensAvatar,
+	// 			name: ensName,
+	// 		});
+	// }
 
 	const quorumVotes = await context.client.readContract({
 		address: context.contracts.NounsDAOGovernor.address,
@@ -434,27 +434,27 @@ ponder.on("NounsDAOGovernor:VoteCast", async ({ event, context }) => {
 		});
 	}
 
-	const ensName = await context.client.getEnsName({
-		address: event.args.voter,
-	});
+	// const ensName = await context.client.getEnsName({
+	// 	address: event.args.voter,
+	// });
 
-	if (ensName) {
-		const ensAvatar = await context.client.getEnsAvatar({
-			name: normalize(ensName),
-		});
+	// if (ensName) {
+	// 	const ensAvatar = await context.client.getEnsAvatar({
+	// 		name: normalize(ensName),
+	// 	});
 
-		await context.db
-			.insert(ensProfiles)
-			.values({
-				address: event.args.voter,
-				name: ensName,
-				image: ensAvatar,
-			})
-			.onConflictDoUpdate({
-				image: ensAvatar,
-				name: ensName,
-			});
-	}
+	// 	await context.db
+	// 		.insert(ensProfiles)
+	// 		.values({
+	// 			address: event.args.voter,
+	// 			name: ensName,
+	// 			image: ensAvatar,
+	// 		})
+	// 		.onConflictDoUpdate({
+	// 			image: ensAvatar,
+	// 			name: ensName,
+	// 		});
+	// }
 
 	const reason = parseVoteReason(event.args.reason);
 
@@ -989,27 +989,27 @@ ponder.on("NounsAuctionHouse:AuctionCreated", async ({ event, context }) => {
 });
 
 ponder.on("NounsAuctionHouse:AuctionBid", async ({ event, context }) => {
-	const ensName = await context.client.getEnsName({
-		address: event.args.sender,
-	});
+	// const ensName = await context.client.getEnsName({
+	// 	address: event.args.sender,
+	// });
 
-	if (ensName) {
-		const ensAvatar = await context.client.getEnsAvatar({
-			name: normalize(ensName),
-		});
+	// if (ensName) {
+	// 	const ensAvatar = await context.client.getEnsAvatar({
+	// 		name: normalize(ensName),
+	// 	});
 
-		await context.db
-			.insert(ensProfiles)
-			.values({
-				address: event.args.sender,
-				name: ensName,
-				image: ensAvatar,
-			})
-			.onConflictDoUpdate({
-				image: ensAvatar,
-				name: ensName,
-			});
-	}
+	// 	await context.db
+	// 		.insert(ensProfiles)
+	// 		.values({
+	// 			address: event.args.sender,
+	// 			name: ensName,
+	// 			image: ensAvatar,
+	// 		})
+	// 		.onConflictDoUpdate({
+	// 			image: ensAvatar,
+	// 			name: ensName,
+	// 		});
+	// }
 
 	await context.db.insert(nounsBids).values({
 		nounId: event.args.nounId,

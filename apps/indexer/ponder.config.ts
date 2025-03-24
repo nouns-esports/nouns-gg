@@ -21,7 +21,7 @@ export default createConfig({
 			transport: rateLimit(
 				http(`https://mainnet.infura.io/v3/${env.INFURA_API_KEY}`),
 				{
-					requestsPerSecond: 4,
+					requestsPerSecond: 20,
 				},
 			),
 		},

@@ -151,8 +151,8 @@ export const nounsBids = onchainTable(
 	}),
 );
 
-export const ensProfiles = onchainTable("ens_profiles", (t) => ({
-	address: bytea().primaryKey(),
-	name: t.text().notNull(),
-	image: t.text(),
-}));
+// export const ensProfiles = onchainTable("ens_profiles", (t) => ({
+// 	address: bytea().primaryKey(),
+// 	name: t.text().notNull(),
+// 	image: t.text(),
+// }));
