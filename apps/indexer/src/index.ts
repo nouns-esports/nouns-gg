@@ -303,30 +303,6 @@ ponder.on("NounsDAOGovernor:ProposalCreated", async ({ event, context }) => {
 	// 		});
 	// }
 
-	const quorumVotes = await context.client.readContract({
-		address: context.contracts.NounsDAOGovernor.address,
-		abi: context.contracts.NounsDAOGovernor.abi,
-		functionName: "quorumVotes",
-		args: [event.args.id],
-	});
-
-	let minQuorumVotes = 0n;
-	let maxQuorumVotes = 0n;
-
-	if (event.block.number > 15773219) {
-		minQuorumVotes = await context.client.readContract({
-			address: context.contracts.NounsDAOGovernor.address,
-			abi: context.contracts.NounsDAOGovernor.abi,
-			functionName: "minQuorumVotes",
-		});
-
-		maxQuorumVotes = await context.client.readContract({
-			address: context.contracts.NounsDAOGovernor.address,
-			abi: context.contracts.NounsDAOGovernor.abi,
-			functionName: "maxQuorumVotes",
-		});
-	}
-
 	await context.db.insert(nounsProposals).values({
 		id: event.args.id,
 		proposer: event.args.proposer,
@@ -341,18 +317,71 @@ ponder.on("NounsDAOGovernor:ProposalCreated", async ({ event, context }) => {
 		vetoed: false,
 		createdAt: new Date(Number(event.block.timestamp) * 1000),
 		quorum: {
-			min: minQuorumVotes === 0n ? Number(quorumVotes) : Number(minQuorumVotes),
-			current: Number(quorumVotes),
-			max: maxQuorumVotes === 0n ? Number(quorumVotes) : Number(maxQuorumVotes),
+			min: 0,
+			current: 0,
+			max: 0,
 		},
 	});
 });
 
 ponder.on(
+	"NounsDAOGovernor:ProposalCreatedWithRequirements(uint256 id, address proposer, address[] targets, uint256[] values, string[] signatures, bytes[] calldatas, uint256 startBlock, uint256 endBlock, uint256 proposalThreshold, uint256 quorumVotes, string description)",
+	async ({ event, context }) => {
+		let minQuorumVotes = 0n;
+		let maxQuorumVotes = 0n;
+
+		if (event.block.number > 15773219n) {
+			minQuorumVotes = await context.client.readContract({
+				address: context.contracts.NounsDAOGovernor.address,
+				abi: context.contracts.NounsDAOGovernor.abi,
+				functionName: "minQuorumVotes",
+			});
+
+			maxQuorumVotes = await context.client.readContract({
+				address: context.contracts.NounsDAOGovernor.address,
+				abi: context.contracts.NounsDAOGovernor.abi,
+				functionName: "maxQuorumVotes",
+			});
+		}
+
+		await context.db.update(nounsProposals, { id: event.args.id }).set({
+			quorum: {
+				min:
+					minQuorumVotes === 0n
+						? Number(event.args.quorumVotes)
+						: Number(minQuorumVotes),
+				current: Number(event.args.quorumVotes),
+				max:
+					maxQuorumVotes === 0n
+						? Number(event.args.quorumVotes)
+						: Number(maxQuorumVotes),
+			},
+		});
+	},
+);
+
+ponder.on(
 	"NounsDAOGovernor:ProposalCreatedWithRequirements(uint256 id, address[] signers, uint256 updatePeriodEndBlock, uint256 proposalThreshold, uint256 quorumVotes, uint32 indexed clientId)",
 	async ({ event, context }) => {
+		const minQuorumVotes = await context.client.readContract({
+			address: context.contracts.NounsDAOGovernor.address,
+			abi: context.contracts.NounsDAOGovernor.abi,
+			functionName: "minQuorumVotes",
+		});
+
+		const maxQuorumVotes = await context.client.readContract({
+			address: context.contracts.NounsDAOGovernor.address,
+			abi: context.contracts.NounsDAOGovernor.abi,
+			functionName: "maxQuorumVotes",
+		});
+
 		await context.db.update(nounsProposals, { id: event.args.id }).set({
 			client: event.args.clientId,
+			quorum: {
+				min: Number(minQuorumVotes),
+				current: Number(event.args.quorumVotes),
+				max: Number(maxQuorumVotes),
+			},
 		});
 	},
 );
