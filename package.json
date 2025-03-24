@@ -23,6 +23,7 @@
   ],
   "dependencies": {
     "@number-flow/react": "^0.5.7",
+    "@privy-io/server-auth": "1.18.12",
     "@t3-oss/env-nextjs": "^0.10.1",
     "@tiptap/extension-image": "^2.9.1",
     "@tiptap/extension-link": "^2.9.1",
@@ -33,7 +34,10 @@
     "@tiptap/pm": "^2.11.5",
     "@tiptap/react": "^2.9.1",
     "@tiptap/starter-kit": "^2.9.1",
+    "@types/xmldom": "^0.1.34",
+    "buffer": "^6.0.3",
+    "pinata": "^2.1.0",
     "typescript": "^5.3.3",
-    "@privy-io/server-auth": "1.18.12"
+    "xmldom": "^0.6.0"
   }
 }
