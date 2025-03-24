@@ -408,11 +408,15 @@ ponder.on("NounsDAOGovernor:ProposalUpdated", async ({ event, context }) => {
 	});
 
 	const startTime = estimateTimestamp({
-		blocks: Number(proposal.startBlock) - Number(event.block.number),
+		blocks:
+			Number("creationBlock" in proposal ? proposal.startBlock : proposal[5]) -
+			Number(event.block.number),
 	});
 
 	const endTime = estimateTimestamp({
-		blocks: Number(proposal.endBlock) - Number(event.block.number),
+		blocks:
+			Number("endBlock" in proposal ? proposal.endBlock : proposal[6]) -
+			Number(event.block.number),
 	});
 
 	await context.db.update(nounsProposals, { id: event.args.id }).set({
@@ -427,14 +431,31 @@ ponder.on("NounsDAOGovernor:ProposalUpdated", async ({ event, context }) => {
 });
 
 ponder.on("NounsDAOGovernor:VoteCast", async ({ event, context }) => {
-	if (event.args.support === 0) {
-		const quorumVotes = await context.client.readContract({
-			address: context.contracts.NounsDAOGovernor.address,
-			abi: context.contracts.NounsDAOGovernor.abi,
-			functionName: "quorumVotes",
-			args: [event.args.proposalId],
-		});
+	const proposal = await context.client.readContract({
+		address: context.contracts.NounsDAOGovernor.address,
+		abi: context.contracts.NounsDAOGovernor.abi,
+		functionName: "proposals",
+		args: [event.args.proposalId],
+	});
 
+	const startTime = estimateTimestamp({
+		blocks:
+			Number("creationBlock" in proposal ? proposal.startBlock : proposal[5]) -
+			Number(event.block.number),
+	});
+
+	const endTime = estimateTimestamp({
+		blocks:
+			Number("endBlock" in proposal ? proposal.endBlock : proposal[6]) -
+			Number(event.block.number),
+	});
+
+	await context.db.update(nounsProposals, { id: event.args.proposalId }).set({
+		startTime,
+		endTime,
+	});
+
+	if (event.args.support === 0) {
 		let minQuorumVotes = 0n;
 		let maxQuorumVotes = 0n;
 
@@ -452,13 +473,16 @@ ponder.on("NounsDAOGovernor:VoteCast", async ({ event, context }) => {
 			});
 		}
 
+		const quorumVotes =
+			"creationBlock" in proposal
+				? Number(proposal.quorumVotes)
+				: Number(proposal[3]);
+
 		await context.db.update(nounsProposals, { id: event.args.proposalId }).set({
 			quorum: {
-				min:
-					minQuorumVotes === 0n ? Number(quorumVotes) : Number(minQuorumVotes),
-				current: Number(quorumVotes),
-				max:
-					maxQuorumVotes === 0n ? Number(quorumVotes) : Number(maxQuorumVotes),
+				min: minQuorumVotes === 0n ? quorumVotes : Number(minQuorumVotes),
+				current: quorumVotes,
+				max: maxQuorumVotes === 0n ? quorumVotes : Number(maxQuorumVotes),
 			},
 		});
 	}
@@ -509,26 +533,6 @@ ponder.on("NounsDAOGovernor:VoteCast", async ({ event, context }) => {
 		timestamp: new Date(Number(event.block.timestamp) * 1000),
 		reason: reason.text.length > 0 ? reason.text : null,
 	});
-
-	const proposal = await context.client.readContract({
-		address: context.contracts.NounsDAOGovernor.address,
-		abi: context.contracts.NounsDAOGovernor.abi,
-		functionName: "proposals",
-		args: [event.args.proposalId],
-	});
-
-	const startTime = estimateTimestamp({
-		blocks: Number(proposal.startBlock) - Number(event.block.number),
-	});
-
-	const endTime = estimateTimestamp({
-		blocks: Number(proposal.endBlock) - Number(event.block.number),
-	});
-
-	await context.db.update(nounsProposals, { id: event.args.proposalId }).set({
-		startTime,
-		endTime,
-	});
 });
 
 ponder.on(
@@ -566,11 +570,15 @@ ponder.on("NounsDAOGovernor:ProposalQueued", async ({ event, context }) => {
 	});
 
 	const startTime = estimateTimestamp({
-		blocks: Number(proposal.startBlock) - Number(event.block.number),
+		blocks:
+			Number("creationBlock" in proposal ? proposal.startBlock : proposal[5]) -
+			Number(event.block.number),
 	});
 
 	const endTime = estimateTimestamp({
-		blocks: Number(proposal.endBlock) - Number(event.block.number),
+		blocks:
+			Number("endBlock" in proposal ? proposal.endBlock : proposal[6]) -
+			Number(event.block.number),
 	});
 
 	await context.db.update(nounsProposals, { id: event.args.id }).set({

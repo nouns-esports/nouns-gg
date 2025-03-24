@@ -1486,27 +1486,6 @@ export default [
 		type: "function",
 	},
 	{
-		inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
-		name: "proposals",
-		outputs: [
-			{ internalType: "uint256", name: "id", type: "uint256" },
-			{ internalType: "address", name: "proposer", type: "address" },
-			{ internalType: "uint256", name: "proposalThreshold", type: "uint256" },
-			{ internalType: "uint256", name: "quorumVotes", type: "uint256" },
-			{ internalType: "uint256", name: "eta", type: "uint256" },
-			{ internalType: "uint256", name: "startBlock", type: "uint256" },
-			{ internalType: "uint256", name: "endBlock", type: "uint256" },
-			{ internalType: "uint256", name: "forVotes", type: "uint256" },
-			{ internalType: "uint256", name: "againstVotes", type: "uint256" },
-			{ internalType: "uint256", name: "abstainVotes", type: "uint256" },
-			{ internalType: "bool", name: "canceled", type: "bool" },
-			{ internalType: "bool", name: "vetoed", type: "bool" },
-			{ internalType: "bool", name: "executed", type: "bool" },
-		],
-		stateMutability: "view",
-		type: "function",
-	},
-	{
 		inputs: [{ internalType: "uint256", name: "proposalId", type: "uint256" }],
 		name: "proposals",
 		outputs: [

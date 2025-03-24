@@ -13,6 +13,11 @@ import ERC1155ABI from "./abi/ERC1155";
 import NounsDescriptorABI from "./abi/NounsDescriptor";
 import NounsRewardsABI from "./abi/NounsRewards";
 import NounsArtABI from "./abi/NounsArt";
+import { mergeAbis } from "@ponder/utils";
+import NounsDAOLogicV1ABI from "./abi/NounsDAOLogicV1";
+import NounsDAOLogicV2ABI from "./abi/NounsDAOLogicV2";
+import NounsDAOLogicV3ABI from "./abi/NounsDAOLogicV3";
+import NounsDAOLogicV4ABI from "./abi/NounsDAOLogicV4";
 
 export default createConfig({
 	networks: {
@@ -56,7 +61,12 @@ export default createConfig({
 		},
 		NounsDAOGovernor: {
 			network: "mainnet",
-			abi: NounsDAOGovernorABI,
+			abi: mergeAbis([
+				NounsDAOLogicV1ABI,
+				NounsDAOLogicV2ABI,
+				NounsDAOLogicV3ABI,
+				NounsDAOLogicV4ABI,
+			]),
 			address: "0x6f3E6272A167e8AcCb32072d08E0957F9c79223d",
 			startBlock: 12985453,
 		},
