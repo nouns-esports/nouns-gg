@@ -16,8 +16,6 @@ import { useParams, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import Link from "./Link";
-import type { getRosters } from "@/server/queries/rosters";
-import type { getCommunities } from "@/server/queries/communities";
 import {
 	DiscordLogo,
 	InstagramLogo,
@@ -105,18 +103,6 @@ export default function Menu() {
 								<div>
 									<p className="font-bebas-neue text-lg">Partners</p>
 									<p className="text-grey-200">Partner with us</p>
-								</div>
-							</Link>
-							<Link
-								href="/rosters"
-								className="text-nowrap rounded-lg flex gap-4 items-center"
-							>
-								<div className="rounded-md w-10 h-10 flex overflow-hidden bg-green text-white items-center">
-									<Users className="w-full h-full p-2" />
-								</div>
-								<div>
-									<p className="font-bebas-neue text-lg">Rosters</p>
-									<p className="text-grey-200">Our competitive rosters</p>
 								</div>
 							</Link>
 							<Link
