@@ -85,13 +85,6 @@ export default createConfig({
 		// 	startBlock: 15399701,
 		// },
 	},
-	blocks: {
-		TimestampSync: {
-			network: "mainnet",
-			startBlock: 12985438,
-			interval: 1,
-		},
-	},
 	database: {
 		kind: "postgres",
 		connectionString: env.PRIMARY_DATABASE_URL,

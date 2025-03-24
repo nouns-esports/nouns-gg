@@ -4,7 +4,6 @@ import {
 	nounDelegates,
 	erc721Balances,
 	nounsProposals,
-	blocks,
 	nounsAuctions,
 } from "../ponder.schema";
 import { markdownToTipTap } from "~/packages/utils/markdownToTipTap";
@@ -25,6 +24,7 @@ import {
 import { normalize } from "viem/ens";
 import { env } from "~/env";
 import { PinataSDK } from "pinata";
+import { eq } from "ponder";
 
 const pinata = new PinataSDK({
 	pinataJwt: env.PINATA_JWT,
@@ -281,22 +281,6 @@ ponder.on("NounsDAOGovernor:ProposalCreated", async ({ event, context }) => {
 		blocks: Number(event.args.endBlock) - Number(event.block.number),
 	});
 
-	await context.db
-		.insert(blocks)
-		.values([
-			{
-				number: event.args.startBlock,
-				timestamp: startTime,
-				completed: false,
-			},
-			{
-				number: event.args.endBlock,
-				timestamp: endTime,
-				completed: false,
-			},
-		])
-		.onConflictDoNothing();
-
 	const ensName = await context.client.getEnsName({
 		address: event.args.proposer,
 	});
@@ -351,8 +335,10 @@ ponder.on("NounsDAOGovernor:ProposalCreated", async ({ event, context }) => {
 		signatures: [...event.args.signatures],
 		calldatas: [...event.args.calldatas],
 		description,
-		startBlock: event.args.startBlock,
-		endBlock: event.args.endBlock,
+		startTime,
+		endTime,
+		canceled: false,
+		vetoed: false,
 		createdAt: new Date(Number(event.block.timestamp) * 1000),
 		quorum: {
 			min: minQuorumVotes === 0n ? Number(quorumVotes) : Number(minQuorumVotes),
@@ -374,7 +360,30 @@ ponder.on(
 ponder.on("NounsDAOGovernor:ProposalUpdated", async ({ event, context }) => {
 	const description = await markdownToTipTap({
 		markdown: event.args.description,
-		onImage: async (src) => src,
+		onImage: async (src) => {
+			try {
+				const upload = await pinata.upload.public.url(src);
+
+				return `https://ipfs.nouns.gg/ipfs/${upload.cid}`;
+			} catch {}
+
+			return src;
+		},
+	});
+
+	const proposal = await context.client.readContract({
+		address: context.contracts.NounsDAOGovernor.address,
+		abi: context.contracts.NounsDAOGovernor.abi,
+		functionName: "proposals",
+		args: [event.args.id],
+	});
+
+	const startTime = estimateTimestamp({
+		blocks: Number(proposal.startBlock) - Number(event.block.number),
+	});
+
+	const endTime = estimateTimestamp({
+		blocks: Number(proposal.endBlock) - Number(event.block.number),
 	});
 
 	await context.db.update(nounsProposals, { id: event.args.id }).set({
@@ -383,6 +392,8 @@ ponder.on("NounsDAOGovernor:ProposalUpdated", async ({ event, context }) => {
 		values: [...event.args.values],
 		signatures: [...event.args.signatures],
 		calldatas: [...event.args.calldatas],
+		startTime,
+		endTime,
 	});
 });
 
@@ -469,6 +480,26 @@ ponder.on("NounsDAOGovernor:VoteCast", async ({ event, context }) => {
 		timestamp: new Date(Number(event.block.timestamp) * 1000),
 		reason: reason.text.length > 0 ? reason.text : null,
 	});
+
+	const proposal = await context.client.readContract({
+		address: context.contracts.NounsDAOGovernor.address,
+		abi: context.contracts.NounsDAOGovernor.abi,
+		functionName: "proposals",
+		args: [event.args.proposalId],
+	});
+
+	const startTime = estimateTimestamp({
+		blocks: Number(proposal.startBlock) - Number(event.block.number),
+	});
+
+	const endTime = estimateTimestamp({
+		blocks: Number(proposal.endBlock) - Number(event.block.number),
+	});
+
+	await context.db.update(nounsProposals, { id: event.args.proposalId }).set({
+		startTime,
+		endTime,
+	});
 });
 
 ponder.on(
@@ -484,6 +515,40 @@ ponder.on(
 			});
 	},
 );
+
+ponder.on("NounsDAOGovernor:ProposalCanceled", async ({ event, context }) => {
+	await context.db.update(nounsProposals, { id: event.args.id }).set({
+		canceled: true,
+	});
+});
+
+ponder.on("NounsDAOGovernor:ProposalVetoed", async ({ event, context }) => {
+	await context.db.update(nounsProposals, { id: event.args.id }).set({
+		vetoed: true,
+	});
+});
+
+ponder.on("NounsDAOGovernor:ProposalQueued", async ({ event, context }) => {
+	const proposal = await context.client.readContract({
+		address: context.contracts.NounsDAOGovernor.address,
+		abi: context.contracts.NounsDAOGovernor.abi,
+		functionName: "proposals",
+		args: [event.args.id],
+	});
+
+	const startTime = estimateTimestamp({
+		blocks: Number(proposal.startBlock) - Number(event.block.number),
+	});
+
+	const endTime = estimateTimestamp({
+		blocks: Number(proposal.endBlock) - Number(event.block.number),
+	});
+
+	await context.db.update(nounsProposals, { id: event.args.id }).set({
+		startTime,
+		endTime,
+	});
+});
 
 ponder.on("NounsRewards:ClientRegistered", async ({ event, context }) => {
 	const validURL = isValidURL(event.args.description);
@@ -976,18 +1041,4 @@ ponder.on("NounsAuctionHouse:AuctionSettled", async ({ event, context }) => {
 	await context.db
 		.update(nounsAuctions, { nounId: event.args.nounId })
 		.set({ settled: true });
-});
-
-ponder.on("TimestampSync:block", async ({ event, context }) => {
-	await context.db
-		.insert(blocks)
-		.values({
-			number: event.block.number,
-			timestamp: new Date(Number(event.block.timestamp) * 1000),
-			completed: true,
-		})
-		.onConflictDoUpdate({
-			timestamp: new Date(Number(event.block.timestamp) * 1000),
-			completed: true,
-		});
 });

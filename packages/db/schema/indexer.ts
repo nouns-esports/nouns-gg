@@ -2,12 +2,6 @@ import type { JSONContent } from "@tiptap/react";
 import { onchainTable, primaryKey } from "ponder";
 import { bytea } from "./custom/bytea";
 
-export const blocks = onchainTable("blocks", (t) => ({
-	number: t.bigint().primaryKey(),
-	timestamp: t.timestamp().notNull(),
-	completed: t.boolean().notNull(),
-}));
-
 export const erc721Balances = onchainTable(
 	"erc721_balances",
 	(t) => ({
@@ -54,8 +48,10 @@ export const nounsProposals = onchainTable("nouns_proposals", (t) => ({
 	calldatas: bytea().array().notNull(),
 	description: t.jsonb().$type<JSONContent>().notNull(),
 	createdAt: t.timestamp().notNull(),
-	startBlock: t.bigint().notNull(),
-	endBlock: t.bigint().notNull(),
+	startTime: t.timestamp().notNull(),
+	endTime: t.timestamp().notNull(),
+	canceled: t.boolean().notNull(),
+	vetoed: t.boolean().notNull(),
 	quorum: t
 		.jsonb()
 		.$type<{
