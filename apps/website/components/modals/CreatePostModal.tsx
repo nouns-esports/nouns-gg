@@ -126,7 +126,7 @@ export default function CreatePostModal(props: {
 													return;
 												}
 
-												setCommunity(c);
+												// setCommunity(c);
 												setShowCommunityDropdown(false);
 											}}
 											key={c.id}
