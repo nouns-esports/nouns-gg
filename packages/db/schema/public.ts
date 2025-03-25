@@ -475,7 +475,7 @@ export const raffles = pgTable("raffles", (t) => ({
 }));
 
 export const raffleEntries = pgTable("raffle_entries", (t) => ({
-	id: t.text().primaryKey(),
+	id: t.serial().primaryKey(),
 	raffle: t.text().notNull(),
 	user: t.text().notNull(),
 	timestamp: t.timestamp().notNull(),
