@@ -1,82 +1,75 @@
 import {
-	pgTable,
 	bigint,
 	timestamp,
 	text,
 	varchar,
 	jsonb,
-	customType,
 	smallint,
+	pgSchema,
 } from "drizzle-orm/pg-core";
+import { bytea } from "./custom/bytea";
 
-const bytea = customType<{
-	data: Buffer;
-	default: false;
-}>({
-	dataType() {
-		return "bytea";
-	},
-});
+const farcasterSchema = pgSchema("farcaster");
 
 // https://docs.dune.com/data-catalog/community/farcaster/casts
-export const dataset_farcaster_casts = pgTable("dataset_farcaster_casts", {
-	id: bigint({ mode: "bigint" }).primaryKey(),
-	created_at: timestamp(),
-	updated_at: timestamp(),
-	deleted_at: timestamp(),
+export const farcasterCasts = farcasterSchema.table("dataset_farcaster_casts", {
+	id: bigint({ mode: "number" }).primaryKey(),
+	createdAt: timestamp("created_at"),
+	updatedAt: timestamp("updated_at"),
+	deletedAt: timestamp("deleted_at"),
 	timestamp: timestamp(),
-	fid: bigint({ mode: "bigint" }),
+	fid: bigint({ mode: "number" }),
 	hash: bytea(),
-	parent_hash: bytea(),
-	parent_fid: bigint({ mode: "bigint" }),
-	parent_url: varchar(),
+	parentHash: bytea("parent_hash"),
+	parentFid: bigint("parent_fid", { mode: "number" }),
+	parentUrl: varchar("parent_url"),
 	text: text(),
 	embeds: jsonb(),
-	mentions: bigint({ mode: "bigint" }).array(),
-	mentions_positions: bigint({ mode: "bigint" }).array(),
-	root_parent_hash: bytea(),
+	mentions: bigint({ mode: "number" }).array(),
+	mentionsPositions: bigint("mentions_positions", { mode: "number" }).array(),
+	rootParentHash: bytea("root_parent_hash"),
 });
 
 // https://docs.dune.com/data-catalog/community/farcaster/links
-export const dataset_farcaster_links = pgTable("dataset_farcaster_links", {
-	id: bigint({ mode: "bigint" }).primaryKey(),
-	created_at: timestamp(),
-	updated_at: timestamp(),
-	deleted_at: timestamp(),
+export const farcasterLinks = farcasterSchema.table("dataset_farcaster_links", {
+	id: bigint({ mode: "number" }).primaryKey(),
+	createdAt: timestamp("created_at"),
+	updatedAt: timestamp("updated_at"),
+	deletedAt: timestamp("deleted_at"),
 	timestamp: timestamp(),
-	fid: bigint({ mode: "bigint" }),
-	target_fid: bigint({ mode: "bigint" }),
+	fid: bigint({ mode: "number" }),
+	targetFid: bigint("target_fid", { mode: "number" }),
 	hash: bytea(),
 	type: text(),
 });
 
 // https://docs.dune.com/data-catalog/community/farcaster/reactions
-export const dataset_farcaster_reactions = pgTable(
+export const farcasterReactions = farcasterSchema.table(
 	"dataset_farcaster_reactions",
 	{
-		id: bigint({ mode: "bigint" }).primaryKey(),
-		created_at: timestamp(),
-		updated_at: timestamp(),
-		deleted_at: timestamp(),
+		id: bigint({ mode: "number" }).primaryKey(),
+		createdAt: timestamp("created_at"),
+		updatedAt: timestamp("updated_at"),
+		deletedAt: timestamp("deleted_at"),
 		timestamp: timestamp(),
-		fid: bigint({ mode: "bigint" }),
-		reaction_type: smallint(),
+		fid: bigint({ mode: "number" }),
+		reactionType: smallint("reaction_type"),
 		hash: bytea(),
-		target_hash: bytea(),
-		target_fid: bigint({ mode: "bigint" }),
-		target_url: text(),
+		targetHash: bytea("target_hash"),
+		targetFid: bigint("target_fid", { mode: "number" }),
+		targetUrl: text("target_url"),
 	},
 );
 
 // https://docs.dune.com/data-catalog/community/farcaster/profile_with_addresses
-export const dataset_farcaster_profile_with_addresses = pgTable(
+export const farcasterProfileWithAddresses = farcasterSchema.table(
 	"dataset_farcaster_profile_with_addresses",
 	{
-		fid: bigint({ mode: "bigint" }).primaryKey(),
+		fid: bigint({ mode: "number" }).primaryKey(),
 		fname: text(),
-		display_name: text(),
-		avatar_url: text(),
+		displayName: text("display_name"),
+		avatarUrl: text("avatar_url"),
 		bio: text(),
-		verified_addresses: jsonb(),
+		verifiedAddresses: jsonb("verified_addresses"),
 	},
 );

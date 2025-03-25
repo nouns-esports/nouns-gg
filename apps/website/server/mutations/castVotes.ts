@@ -8,10 +8,15 @@ import {
 	nexus,
 } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq, sql } from "drizzle-orm";
+import { eq, inArray, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { onlyRanked } from ".";
+import {
+	erc721Balances,
+	lilnounDelegates,
+	nounDelegates,
+} from "~/packages/db/schema/indexer";
 
 export const castVotes = onlyRanked
 	.schema(
@@ -31,6 +36,17 @@ export const castVotes = onlyRanked
 					where: eq(proposals.user, ctx.user.id),
 				},
 				minVoterRank: true,
+				// voterCredential: {
+				// 	with: {
+				// 		erc721Balances: {
+				// 			limit: 1,
+				// 			where: inArray(
+				// 				erc721Balances.account,
+				// 				ctx.user.wallets.map((w) => w.address),
+				// 			),
+				// 		},
+				// 	},
+				// },
 			},
 		});
 
@@ -45,6 +61,36 @@ export const castVotes = onlyRanked
 		) {
 			throw new Error("You are not eligible to vote in this round");
 		}
+
+		// if (round.voterCredential) {
+		// 	if (!round.voterCredential.address) {
+		// 		throw new Error("Credentials require an onchain address");
+		// 	}
+
+		// 	if (round.voterCredential.erc721Balances.length === 0) {
+		// 		if (round.voterCredential.address === "0xNOUNS") {
+		// 			const delegatee = await db.primary.query.nounDelegates.findFirst({
+		// 				where: inArray(
+		// 					nounDelegates.to,
+		// 					ctx.user.wallets.map((w) => w.address),
+		// 				),
+		// 			});
+
+		// 			if (!delegatee) {
+		// 				throw new Error("You have delegated your vote to another user");
+		// 			}
+		// 		}
+
+		// 		if (round.voterCredential.address === "0xLILNOUNS") {
+		// 			const delegatee = await db.primary.query.lilnounDelegates.findFirst({
+		// 				where: inArray(
+		// 					lilnounDelegates.to,
+		// 					ctx.user.wallets.map((w) => w.address),
+		// 				),
+		// 			});
+		// 		}
+		// 	}
+		// }
 
 		const now = new Date();
 		const votingStart = new Date(round.votingStart);
