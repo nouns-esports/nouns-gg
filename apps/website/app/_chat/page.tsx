@@ -18,19 +18,25 @@ export default async function Chat(props: {
 		}),
 	]);
 
-	const allChannels = [
-		...communities.map((c) => c.channel),
-		...communities.flatMap((c) => c.children.map((child) => child.channel)),
-	];
+	// const allChannels = [
+	// 	...communities.map((c) => c.channel),
+	// 	...communities.flatMap((c) => c.children.map((child) => child.channel)),
+	// ];
 
 	const community = communities.find((c) => c.id === searchParams?.c);
-	const subChannels = community?.children.map((child) => child.channel);
+	// const subChannels = community?.children.map((child) => child.channel);
 
 	const feed = await getFeed({
 		//@ts-ignore FIX ISSUE LATER
 		channels: community
-			? [community.channel, ...(subChannels ?? [])]
-			: ["nouns-esports", ...allChannels],
+			? [
+					community.channel,
+					//...(subChannels ?? [])
+				]
+			: [
+					"nouns-esports",
+					//...allChannels
+				],
 		viewerFid: user?.farcaster?.fid,
 	});
 
