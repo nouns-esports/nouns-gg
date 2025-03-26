@@ -8,6 +8,6 @@
     "start": "ponder start --schema=$RAILWAY_DEPLOYMENT_ID"
   },
   "dependencies": {
-    "ponder": "0.10.4"
+    "ponder": "0.10.6"
   }
 }
