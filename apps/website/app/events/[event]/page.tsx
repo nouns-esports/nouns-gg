@@ -375,18 +375,34 @@ export default async function EventPage(props: {
 								),
 								shop: (
 									<div className="flex flex-col gap-6">
-										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-											{event.raffles.map((raffle) => {
-												return <RaffleCard key={raffle.id} raffle={raffle} />;
-											})}
-										</div>
-										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-											{event.products.map((product) => {
-												return (
-													<ProductCard key={product.id} product={product} />
-												);
-											})}
-										</div>
+										{event.raffles.length > 0 ? (
+											<div className="flex flex-col gap-4">
+												<h2 className="text-white font-luckiest-guy text-2xl">
+													Raffles
+												</h2>
+												<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+													{event.raffles.map((raffle) => {
+														return (
+															<RaffleCard key={raffle.id} raffle={raffle} />
+														);
+													})}
+												</div>
+											</div>
+										) : null}
+										{event.products.length > 0 ? (
+											<div className="flex flex-col gap-4">
+												<h2 className="text-white font-luckiest-guy text-2xl">
+													Products
+												</h2>
+												<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+													{event.products.map((product) => {
+														return (
+															<ProductCard key={product.id} product={product} />
+														);
+													})}
+												</div>
+											</div>
+										) : null}
 									</div>
 								),
 								default: null,

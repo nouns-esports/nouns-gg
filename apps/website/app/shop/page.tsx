@@ -88,16 +88,20 @@ export default async function Shop(props: {
 								</div>
 							</div>
 						) : null}
-						<div className="flex flex-col gap-4">
-							<h1 className="text-white font-luckiest-guy text-4xl">Raffles</h1>
-							<div className="grid grid-cols-4 gap-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1">
-								{raffles
-									.toSorted((a, b) => a.name.localeCompare(b.name))
-									.map((raffle) => (
-										<RaffleCard key={raffle.id} raffle={raffle} />
-									))}
+						{raffles.length > 0 ? (
+							<div className="flex flex-col gap-4">
+								<h1 className="text-white font-luckiest-guy text-4xl">
+									Raffles
+								</h1>
+								<div className="grid grid-cols-4 gap-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1">
+									{raffles
+										.toSorted((a, b) => a.name.localeCompare(b.name))
+										.map((raffle) => (
+											<RaffleCard key={raffle.id} raffle={raffle} />
+										))}
+								</div>
 							</div>
-						</div>
+						) : null}
 						<div className="flex flex-col gap-6 w-full">
 							<div className="flex justify-between items-center">
 								<h1 className="text-white font-luckiest-guy text-4xl">
