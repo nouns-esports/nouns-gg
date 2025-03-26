@@ -16,6 +16,8 @@ import ProductCard from "@/components/ProductCard";
 import TipTap from "@/components/TipTap";
 import { ToggleModal } from "@/components/Modal";
 import EventAttendeesModal from "@/components/modals/EventAttendeesModal";
+import RaffleCard from "@/components/RaffleCard";
+import EnterRaffleModal from "@/components/modals/EnterRaffleModal";
 
 export async function generateMetadata(props: {
 	params: Promise<{ event: string }>;
@@ -272,7 +274,7 @@ export default async function EventPage(props: {
 											Predictions
 										</Tab>
 									) : null}
-									{event.products.length > 0 ? (
+									{event.products.length > 0 || event.raffles.length > 0 ? (
 										<Tab href="?tab=shop" active={tab === "shop"}>
 											Shop
 										</Tab>
@@ -372,10 +374,19 @@ export default async function EventPage(props: {
 									</div>
 								),
 								shop: (
-									<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-										{event.products.map((product) => {
-											return <ProductCard key={product.id} product={product} />;
-										})}
+									<div className="flex flex-col gap-6">
+										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+											{event.raffles.map((raffle) => {
+												return <RaffleCard key={raffle.id} raffle={raffle} />;
+											})}
+										</div>
+										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+											{event.products.map((product) => {
+												return (
+													<ProductCard key={product.id} product={product} />
+												);
+											})}
+										</div>
 									</div>
 								),
 								default: null,
@@ -386,6 +397,15 @@ export default async function EventPage(props: {
 			</div>
 			<EventAttendeesModal attendees={attendees} />
 			<PlaceBetModal />
+			{event.raffles.map((raffle) => {
+				return (
+					<EnterRaffleModal
+						key={raffle.id}
+						availableGold={Number(user?.nexus?.gold ?? 0)}
+						raffle={raffle}
+					/>
+				);
+			})}
 		</>
 	);
 }

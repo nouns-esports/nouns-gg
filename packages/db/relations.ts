@@ -26,6 +26,8 @@ import {
 	gold,
 	collections,
 	games,
+	raffles,
+	raffleEntries,
 } from "./schema/public";
 import {
 	erc721Balances,
@@ -75,6 +77,7 @@ export const eventsRelations = relations(events, ({ one, many }) => ({
 	predictions: many(predictions),
 	products: many(products),
 	checkpoints: many(checkpoints),
+	raffles: many(raffles),
 }));
 
 export const checkpointsRelations = relations(checkpoints, ({ one, many }) => ({
@@ -412,5 +415,24 @@ export const nounsVotesRelations = relations(nounsVotes, ({ one }) => ({
 	proposal: one(nounsProposals, {
 		fields: [nounsVotes.proposal],
 		references: [nounsProposals.id],
+	}),
+}));
+
+export const rafflesRelations = relations(raffles, ({ many, one }) => ({
+	entries: many(raffleEntries),
+	event: one(events, {
+		fields: [raffles.event],
+		references: [events.id],
+	}),
+}));
+
+export const raffleEntriesRelations = relations(raffleEntries, ({ one }) => ({
+	raffle: one(raffles, {
+		fields: [raffleEntries.raffle],
+		references: [raffles.id],
+	}),
+	user: one(nexus, {
+		fields: [raffleEntries.user],
+		references: [nexus.id],
 	}),
 }));

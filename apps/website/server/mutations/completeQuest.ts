@@ -96,7 +96,7 @@ export const completeQuest = onlyRanked
 
 			await tx.insert(notifications).values(notification);
 
-			const updateXP = await tx
+			const [updateXP] = await tx
 				.update(nexus)
 				.set({
 					xp: sql`${nexus.xp} + ${quest.xp}`,
@@ -106,7 +106,7 @@ export const completeQuest = onlyRanked
 					xp: nexus.xp,
 				});
 
-			newXP = updateXP[0].xp;
+			newXP = updateXP.xp;
 		});
 
 		revalidatePath(`/quests/${quest.id}`);

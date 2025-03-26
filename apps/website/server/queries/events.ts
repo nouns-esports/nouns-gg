@@ -1,12 +1,18 @@
 import { env } from "~/env";
 import { unstable_cache as cache } from "next/cache";
-import { bets, events, quests, xp } from "~/packages/db/schema/public";
+import {
+	bets,
+	events,
+	quests,
+	raffleEntries,
+	raffles,
+	xp,
+} from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { asc, desc, eq, gt, or } from "drizzle-orm";
+import { asc, desc, eq, gt, or, sql } from "drizzle-orm";
 
 export const getEvents = cache(
 	async (input?: { limit?: number }) => {
-		////
 		return db.pgpool.query.events.findMany({
 			orderBy: [desc(events.featured), desc(events.start)],
 			limit: input?.limit,
@@ -29,7 +35,8 @@ export const getFeaturedEvent = cache(
 
 export const getEvent = cache(
 	async (input: { id: string; user?: string }) => {
-		////////////////////////
+		const now = new Date();
+
 		return db.pgpool.query.events.findFirst({
 			where: eq(events.id, input.id),
 			with: {
@@ -68,6 +75,18 @@ export const getEvent = cache(
 				},
 				community: true,
 				products: true,
+				raffles: {
+					where: (t, { gt, lt, and }) => and(lt(t.start, now), gt(t.end, now)),
+					extras: {
+						totalEntries: sql<number>`
+							(
+								SELECT COALESCE(SUM(amount), 0)::integer
+								FROM ${raffleEntries}
+								WHERE raffle = ${raffles.id.getSQL()}
+							)
+						`.as("totalEntries"),
+					},
+				},
 			},
 		});
 	},
