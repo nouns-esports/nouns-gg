@@ -313,6 +313,7 @@ export const xp = pgTable("xp", (t) => ({
 	vote: t.integer(),
 	proposal: t.integer(),
 	order: t.text(), // shopify Order gid
+	raffle: t.integer(),
 	attendee: t.integer(),
 }));
 
@@ -468,7 +469,7 @@ export const raffles = pgTable("raffles", (t) => ({
 	start: t.timestamp().notNull(),
 	end: t.timestamp().notNull(),
 	gold: t.integer().notNull(),
-	quantity: t.integer().notNull(),
+	winners: t.integer().notNull(),
 	event: t.text(),
 	creator: t.text(),
 	community: t.text(),
