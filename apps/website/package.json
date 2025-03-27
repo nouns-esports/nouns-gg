@@ -23,8 +23,7 @@
     "@lexical/rich-text": "^0.14.5",
     "@livepeer/react": "^4.2.7",
     "@neynar/nodejs-sdk": "^1.68.0",
-    "@privy-io/react-auth": "^2.2.0",
-
+    "@privy-io/react-auth": "^2.7.0",
     "@privy-io/wagmi": "^1.0.2",
     "@shopify/admin-api-client": "^1.0.5",
     "@tailwindcss/typography": "^0.5.12",
@@ -56,7 +55,7 @@
     "tailwind-merge": "^2.4.0",
     "tailwindcss": "^3.4.3",
     "tailwindcss-animate": "^1.0.7",
-    "viem": "^2.21.37",
+    "viem": "^2.24.1",
     "wagmi": "^2.8.1",
     "zod": "^3.23.8",
     "zustand": "^4.5.5"
