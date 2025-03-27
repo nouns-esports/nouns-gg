@@ -16,10 +16,10 @@ export default async function castVoteWinningProposal(user: AuthenticatedUser) {
 							proposals: {
 								extras: {
 									totalVotes: sql<number>`(
-                    SELECT SUM(v.count) AS total_votes
-                    FROM ${votes} v 
-                    WHERE v.proposal = ${proposals.id}
-                  )`.as("totalVotes"),
+										SELECT COALESCE(SUM(v.count), 0)::integer
+										FROM ${votes} v 
+										WHERE v.proposal = ${proposals.id.getSQL()}
+									)`.as("totalVotes"),
 								},
 							},
 						},
