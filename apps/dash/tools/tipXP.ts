@@ -24,6 +24,9 @@ agent.addTool({
 			throw new Error("You are not authorized to tip xp");
 		}
 
+		console.log("parameters", parameters);
+		console.log("context", context);
+
 		if (parameters.amount > 500) {
 			throw new Error("You can't tip more than 500xp at a time");
 		}
@@ -42,6 +45,9 @@ agent.addTool({
 					})
 				: undefined,
 		]);
+
+		console.log("user", user);
+		console.log("mentionedUser", mentionedUser);
 
 		if (!user) {
 			throw new Error("Link your Discord account to your Nexus to tip xp");
@@ -71,6 +77,8 @@ agent.addTool({
 				timestamp: new Date(),
 			});
 		});
+
+		console.log("Should be a success");
 
 		return `Successfully tipped ${parameters.amount}xp to ${mentionedUser.discord}`;
 	},

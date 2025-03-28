@@ -41,6 +41,7 @@ export function discordPlugin(options: { token: string }) {
 
 					response = reply.text;
 				} catch (error) {
+					console.log("Error: ", error);
 					if (error instanceof Error) {
 						try {
 							const errorReply = await generateReply(error.message, {
@@ -52,6 +53,7 @@ export function discordPlugin(options: { token: string }) {
 							});
 							response = errorReply.text;
 						} catch (error) {
+							console.log("Deep Error: ", error);
 							response =
 								"Sorry, something went wrong and I couldn't complete your task.";
 						}
