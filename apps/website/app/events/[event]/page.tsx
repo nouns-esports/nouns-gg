@@ -221,15 +221,29 @@ export default async function EventPage(props: {
 											<div className="flex items-center gap-2 text-white flex-shrink-0">
 												<CalendarDays className="w-5 h-5 text-white" />
 												<p className="mt-0.5 whitespace-nowrap">
-													<DateComponent
-														timestamp={event.start}
-														format="%monthShort %day%ordinal, %year"
-													/>
-													{" - "}
-													<DateComponent
-														timestamp={event.end}
-														format="%monthShort %day%ordinal, %year"
-													/>
+													{new Date(event.start).getFullYear() ===
+														new Date(event.end).getFullYear() &&
+													new Date(event.start).getMonth() ===
+														new Date(event.end).getMonth() &&
+													new Date(event.start).getDate() ===
+														new Date(event.end).getDate() ? (
+														<DateComponent
+															timestamp={event.start}
+															format="%monthShort %day%ordinal, %year"
+														/>
+													) : (
+														<>
+															<DateComponent
+																timestamp={event.start}
+																format="%monthShort %day%ordinal, %year"
+															/>
+															{" - "}
+															<DateComponent
+																timestamp={event.end}
+																format="%monthShort %day%ordinal, %year"
+															/>
+														</>
+													)}
 												</p>
 											</div>
 											{event.location ? (
