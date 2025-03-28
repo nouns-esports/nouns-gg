@@ -190,6 +190,12 @@ export default async function Leaderboard() {
 
 							const position = index + 1;
 
+							console.log(
+								position,
+								ranking.previousPosition,
+								ranking.previousPosition - position,
+							);
+
 							return (
 								<LeaderboardPosition
 									key={ranking.id}
