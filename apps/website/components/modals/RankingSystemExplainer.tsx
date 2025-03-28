@@ -46,8 +46,8 @@ export default function RankingSystemExplainer() {
 								Farcaster
 							</Tab>
 							<Tab
-								selected={tab === "contributor-calls"}
-								onClick={() => setTab("contributor-calls")}
+								selected={tab === "community-calls"}
+								onClick={() => setTab("community-calls")}
 							>
 								Discord
 							</Tab>
@@ -136,10 +136,10 @@ export default function RankingSystemExplainer() {
 										Proposers recieve 5 XP for each vote someone places on their
 										proposal.
 									</Card>
-									<Card title="Proposing" xp={300}>
+									{/* <Card title="Proposing" xp={300}>
 										Participate in a round by creating a proposal and earn 300
 										XP.
-									</Card>
+									</Card> */}
 								</div>
 							),
 							quests: (
@@ -163,10 +163,10 @@ export default function RankingSystemExplainer() {
 									</Card>
 								</div>
 							),
-							"contributor-calls": (
+							"community-calls": (
 								<div className="flex flex-col gap-4">
-									<Card title="Attending Contributor Calls" xp={300}>
-										We host a weekly contributor call each Friday at 2pm CST.
+									<Card title="Attending Community Calls" xp={300}>
+										We host a weekly community call each Friday at 2pm CST.
 										Attendees are awarded 300 XP for attending the call.
 									</Card>
 								</div>
