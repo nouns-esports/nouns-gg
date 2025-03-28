@@ -22,7 +22,9 @@ export async function GET(request: Request) {
 		return Response.json({ error: "User not found" }, { status: 404 });
 	}
 
-	const diff = ranking.position - ranking.previousPosition;
+	const diff = ranking.previousPosition
+		? ranking.position - ranking.previousPosition
+		: null;
 
 	return new ImageResponse(
 		<div
@@ -79,7 +81,7 @@ export async function GET(request: Request) {
 						alignItems: "center",
 					}}
 				>
-					{diff !== 0 ? (
+					{diff ? (
 						<div
 							style={{
 								display: "flex",
