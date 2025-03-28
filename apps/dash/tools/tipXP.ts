@@ -24,6 +24,10 @@ agent.addTool({
 			throw new Error("You are not authorized to tip xp");
 		}
 
+		if (parameters.amount > 500) {
+			throw new Error("You can't tip more than 500xp at a time");
+		}
+
 		if (context.mentions?.length === 0) {
 			throw new Error("You must mention a user to tip xp to");
 		}
