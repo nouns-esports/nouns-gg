@@ -166,9 +166,9 @@ export default async function Leaderboard() {
 								rank={userPosition.rank}
 								gold={Number(userPosition.gold?.amount) ?? 0}
 								diff={
-									userPosition.previousPosition === 0
-										? 0
-										: userPosition.previousPosition - userPosition.position
+									userPosition.previousPosition
+										? userPosition.previousPosition - userPosition.position
+										: 0
 								}
 							/>
 						</div>
@@ -190,12 +190,6 @@ export default async function Leaderboard() {
 
 							const position = index + 1;
 
-							console.log(
-								position,
-								ranking.previousPosition,
-								ranking.previousPosition - position,
-							);
-
 							return (
 								<LeaderboardPosition
 									key={ranking.id}
@@ -204,9 +198,9 @@ export default async function Leaderboard() {
 									rank={ranking.rank}
 									gold={Number(ranking.gold?.amount) ?? 0}
 									diff={
-										ranking.previousPosition === 0
-											? 0
-											: ranking.previousPosition - position
+										ranking.previousPosition
+											? ranking.previousPosition - position
+											: 0
 									}
 								/>
 							);

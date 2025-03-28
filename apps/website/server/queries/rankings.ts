@@ -18,7 +18,7 @@ export const getLeaderboard = cache(
 				gold: true,
 			},
 			extras: {
-				previousPosition: sql<number>`
+				previousPosition: sql<number | null>`
 					(
 						SELECT rank_index FROM (
 							SELECT 
@@ -68,7 +68,7 @@ export const getLeaderboardPosition = cache(
 					) AS ranked
 					WHERE ranked."user" = rankings."user"
 				)`.as("position"),
-				previousPosition: sql<number>`(
+				previousPosition: sql<number | null>`(
 					SELECT rank_index FROM (
 						SELECT 
 							"user",
