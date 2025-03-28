@@ -95,19 +95,19 @@ export const createProposal = onlyUser
 				.returning({ id: proposals.id });
 
 			// Award 300 xp for proposing
-			await tx.insert(xp).values({
-				user: ctx.user.id,
-				amount: 300,
-				timestamp: now,
-				proposal: returnedProposal[0].id,
-			});
+			// await tx.insert(xp).values({
+			// 	user: ctx.user.id,
+			// 	amount: 300,
+			// 	timestamp: now,
+			// 	proposal: returnedProposal[0].id,
+			// });
 
-			await tx
-				.update(nexus)
-				.set({
-					xp: sql`${nexus.xp} + 300`,
-				})
-				.where(eq(nexus.id, ctx.user.id));
+			// await tx
+			// 	.update(nexus)
+			// 	.set({
+			// 		xp: sql`${nexus.xp} + 300`,
+			// 	})
+			// 	.where(eq(nexus.id, ctx.user.id));
 		});
 
 		revalidatePath(`/rounds/${parsedInput.round}`);
