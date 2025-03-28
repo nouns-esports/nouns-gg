@@ -84,7 +84,7 @@ agent.addTool({
 					})
 					.returning({ id: snapshots.id });
 
-				const amount = 300;
+				const amount = 500;
 
 				await tx.insert(xp).values({
 					user: user.id,
