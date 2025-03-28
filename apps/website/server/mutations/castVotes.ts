@@ -149,10 +149,10 @@ export const castVotes = onlyRanked
 					})
 					.returning({ id: votes.id });
 
-				// Award 10 xp per vote to the voter
+				// Award 50 xp per vote to the voter
 				await tx.insert(xp).values({
 					user: ctx.user.id,
-					amount: 10 * vote.count,
+					amount: 50 * vote.count,
 					timestamp: now,
 					vote: returnedVote[0].id,
 				});
@@ -160,7 +160,7 @@ export const castVotes = onlyRanked
 				await tx
 					.update(nexus)
 					.set({
-						xp: sql`${nexus.xp} + ${10 * vote.count}`,
+						xp: sql`${nexus.xp} + ${50 * vote.count}`,
 					})
 					.where(eq(nexus.id, ctx.user.id));
 
@@ -189,7 +189,7 @@ export const castVotes = onlyRanked
 		revalidatePath(`/rounds/${parsedInput.round}`);
 
 		return {
-			earnedXP: 10 * votesUsed,
+			earnedXP: 50 * votesUsed,
 			totalXP: newUserXP,
 		};
 	});
