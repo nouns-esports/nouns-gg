@@ -127,8 +127,8 @@ export default function RankingSystemExplainer() {
 							),
 							rounds: (
 								<div className="flex flex-col gap-4">
-									<Card title="Voting" xp={10}>
-										Earn 10 XP for each vote you cast in a round. Higher ranks
+									<Card title="Voting" xp={50}>
+										Earn 50 XP for each vote you cast in a round. Higher ranks
 										are allocated more votes, so staying active in rounds can be
 										a good way to maintain your rank.
 									</Card>
@@ -165,9 +165,9 @@ export default function RankingSystemExplainer() {
 							),
 							"community-calls": (
 								<div className="flex flex-col gap-4">
-									<Card title="Attending Community Calls" xp={300}>
+									<Card title="Attending Community Calls" xp={500}>
 										We host a weekly community call each Friday at 2pm CST.
-										Attendees are awarded 300 XP for attending the call.
+										Attendees are awarded 500 XP for attending the call.
 									</Card>
 								</div>
 							),
