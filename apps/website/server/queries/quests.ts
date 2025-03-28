@@ -25,6 +25,7 @@ import { signup } from "../quests/events/signup";
 import { holdERC721 } from "../quests/onchain/holdERC721";
 import { becomeDelegate } from "../quests/onchain/becomeDelegate";
 import { followAccounts } from "../quests/farcaster/followAccounts";
+import { createProposal } from "../quests/rounds/createProposal";
 
 export const actions: Record<string, ReturnType<typeof createAction>> = {
 	// Discord
@@ -59,7 +60,7 @@ export const actions: Record<string, ReturnType<typeof createAction>> = {
 
 	// Rounds
 	castVote,
-
+	createProposal,
 	// Predictions
 	makePrediction,
 
