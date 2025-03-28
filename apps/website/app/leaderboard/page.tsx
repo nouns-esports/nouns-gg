@@ -165,7 +165,11 @@ export default async function Leaderboard() {
 								user={userPosition.user}
 								rank={userPosition.rank}
 								gold={Number(userPosition.gold?.amount) ?? 0}
-								diff={userPosition.previousPosition - userPosition.position}
+								diff={
+									userPosition.previousPosition === 0
+										? 0
+										: userPosition.previousPosition - userPosition.position
+								}
 							/>
 						</div>
 					) : null}
@@ -193,7 +197,11 @@ export default async function Leaderboard() {
 									user={ranking.user}
 									rank={ranking.rank}
 									gold={Number(ranking.gold?.amount) ?? 0}
-									diff={ranking.previousPosition - position}
+									diff={
+										ranking.previousPosition === 0
+											? 0
+											: ranking.previousPosition - position
+									}
 								/>
 							);
 						})}
