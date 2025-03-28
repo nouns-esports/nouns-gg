@@ -1,21 +1,31 @@
 import { agent } from "../";
-import { gold, nexus, rounds } from "~/packages/db/schema/public";
+import { nexus, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { eq, sql } from "drizzle-orm";
 import { z } from "zod";
 
 agent.addTool({
-	description: "Tips gold from the authors balance to another user",
+	description: "Tips xp to a mentioned user",
 	providers: ["discord"],
 	parameters: z.object({
-		amount: z.number().describe("The amount of gold to tip"),
+		amount: z.number().describe("The amount of xp to tip"),
 	}),
 	execute: async ({ parameters, context }) => {
-		console.log(parameters);
-		console.log(context);
+		if (
+			![
+				"samscolari",
+				"sasquatch",
+				"peterpandam",
+				"ohantheman",
+				"patyiutazza",
+			].includes(context.author)
+		) {
+			console.log("Not authorized");
+			throw new Error("You are not authorized to tip xp");
+		}
 
 		if (context.mentions?.length === 0) {
-			throw new Error("You must mention a user to tip gold to");
+			throw new Error("You must mention a user to tip xp to");
 		}
 
 		const [user, mentionedUser] = await Promise.all([
@@ -30,7 +40,7 @@ agent.addTool({
 		]);
 
 		if (!user) {
-			throw new Error("Link your Discord account to your Nexus to tip gold");
+			throw new Error("Link your Discord account to your Nexus to tip xp");
 		}
 
 		if (!mentionedUser) {
@@ -40,36 +50,24 @@ agent.addTool({
 		}
 
 		if (user.id === mentionedUser.id) {
-			throw new Error("You can't tip gold to yourself");
-		}
-
-		if (Number(user.gold) < parameters.amount) {
-			throw new Error("You don't have enough gold to tip");
+			throw new Error("You can't tip xp to yourself");
 		}
 
 		await db.primary.transaction(async (tx) => {
 			await tx
 				.update(nexus)
 				.set({
-					gold: sql`${nexus.gold} - ${parameters.amount}`,
-				})
-				.where(eq(nexus.id, user.id));
-
-			await tx
-				.update(nexus)
-				.set({
-					gold: sql`${nexus.gold} + ${parameters.amount}`,
+					xp: sql`${nexus.xp} + ${parameters.amount}`,
 				})
 				.where(eq(nexus.id, mentionedUser.id));
 
-			await tx.insert(gold).values({
-				from: user.id,
-				to: mentionedUser.id,
-				amount: parameters.amount.toString(),
+			await tx.insert(xp).values({
+				user: mentionedUser.id,
+				amount: parameters.amount,
 				timestamp: new Date(),
 			});
 		});
 
-		return `Successfully tipped ${parameters.amount} gold to ${mentionedUser.discord}`;
+		return `Successfully tipped ${parameters.amount}xp to ${mentionedUser.discord}`;
 	},
 });

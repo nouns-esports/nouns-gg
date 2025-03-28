@@ -85,3 +85,4 @@ export const agent = await createAgent({
 await import("./tools/awardContributorCallXP");
 await import("./tools/updateRound");
 await import("./tools/tipGold");
+await import("./tools/tipXP");
