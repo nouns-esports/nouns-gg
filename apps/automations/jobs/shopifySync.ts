@@ -10,9 +10,7 @@ type Product = {
 		nodes: Array<{
 			id: string;
 			inventoryQuantity: number;
-			price: {
-				amount: string;
-			};
+			price: string;
 			inventoryItem: {
 				tracked: boolean;
 			};
@@ -73,7 +71,7 @@ export const shopifySync = createJob({
 								inventory: updatedVariant.inventoryItem.tracked
 									? updatedVariant.inventoryQuantity
 									: undefined,
-								price: Number(updatedVariant.price.amount),
+								price: Number(updatedVariant.price),
 							};
 						}),
 					})
