@@ -91,8 +91,8 @@ export default async function Rounds() {
 					<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:flex max-lg:overflow-x-scroll max-lg:scrollbar-hidden gap-4 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
 						{activeRounds.map((round) => (
 							<RoundCard
-								key={round.id}
-								id={round.id}
+								key={`round-${round.id}`}
+								handle={round.handle}
 								image={round.image}
 								name={round.name}
 								start={round.start}
@@ -101,7 +101,7 @@ export default async function Rounds() {
 								community={
 									round.community
 										? {
-												id: round.community.id,
+												handle: round.community.handle,
 												name: round.community.name,
 												image: round.community.image,
 											}
@@ -123,8 +123,8 @@ export default async function Rounds() {
 					<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:flex max-lg:overflow-x-scroll max-lg:scrollbar-hidden gap-4 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
 						{upcomingRounds.map((round) => (
 							<RoundCard
-								key={round.id}
-								id={round.id}
+								key={`round-${round.id}`}
+								handle={round.handle}
 								image={round.image}
 								name={round.name}
 								start={round.start}
@@ -133,7 +133,7 @@ export default async function Rounds() {
 								community={
 									round.community
 										? {
-												id: round.community.id,
+												handle: round.community.handle,
 												name: round.community.name,
 												image: round.community.image,
 											}
@@ -154,8 +154,8 @@ export default async function Rounds() {
 				<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:flex max-lg:overflow-x-scroll max-lg:scrollbar-hidden gap-4 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
 					{endedRounds.map((round) => (
 						<RoundCard
-							key={round.id}
-							id={round.id}
+							key={`round-${round.id}`}
+							handle={round.handle}
 							image={round.image}
 							name={round.name}
 							start={round.start}
@@ -164,7 +164,7 @@ export default async function Rounds() {
 							community={
 								round.community
 									? {
-											id: round.community.id,
+											handle: round.community.handle,
 											name: round.community.name,
 											image: round.community.image,
 										}

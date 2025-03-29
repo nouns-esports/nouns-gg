@@ -42,7 +42,7 @@ export async function generateMetadata(props: {
 					action: {
 						type: "launch_frame",
 						name: "Nouns GG",
-						url: `${env.NEXT_PUBLIC_DOMAIN}/quests/${quest.id}`,
+						url: `${env.NEXT_PUBLIC_DOMAIN}/quests/${quest.handle}`,
 						splashImageUrl:
 							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
 						splashBackgroundColor: "#040404",
