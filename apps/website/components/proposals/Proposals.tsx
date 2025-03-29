@@ -480,7 +480,7 @@ export default function Proposals(props: {
 				</div>
 			</div>
 			<CastVotesModal
-				round={props.round.id}
+				round={{ id: props.round.id, handle: props.round.handle }}
 				proposals={props.round.proposals}
 				selectedVotes={selectedVotes}
 				onVotesCast={() => setSelectedVotes({})}

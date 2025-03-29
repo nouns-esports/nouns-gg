@@ -23,7 +23,10 @@ import { usePrivy } from "@privy-io/react-auth";
 import { env } from "~/env";
 
 export default function CastVotesModal(props: {
-	round: number;
+	round: {
+		id: number;
+		handle: string;
+	};
 	proposals: Array<
 		typeof proposals.$inferSelect & {
 			user: typeof nexus.$inferSelect;
@@ -55,13 +58,13 @@ export default function CastVotesModal(props: {
 						</button>
 					</div>
 					<img
-						alt={`${props.round} votes`}
-						src={`/api/images/votes?round=${props.round}&user=${user?.id}`}
+						alt={`${props.round.handle} votes`}
+						src={`/api/images/votes?round=${props.round.handle}&user=${user?.id}`}
 						className="w-96 rounded-xl"
 					/>
 					<Link
 						newTab
-						href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/rounds/${props.round}?user=${user?.id}`}
+						href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/rounds/${props.round.handle}?user=${user?.id}`}
 						className="flex gap-1 items-center group hover:opacity-80 transition-opacity text-red"
 					>
 						Share this image on Warpcast{" "}
@@ -127,7 +130,7 @@ export default function CastVotesModal(props: {
 					<button
 						onClick={async () => {
 							const result = await executeAsync({
-								round: props.round,
+								round: props.round.id,
 								votes: Object.entries(props.selectedVotes).map(
 									([proposal, count]) => ({
 										proposal: Number(proposal),
