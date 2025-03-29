@@ -17,6 +17,9 @@ export const enterRaffle = onlyUser
 	.action(async ({ parsedInput, ctx }) => {
 		const raffle = await db.primary.query.raffles.findFirst({
 			where: (t, { eq }) => eq(t.id, parsedInput.raffle),
+			with: {
+				event: true,
+			},
 		});
 
 		if (!raffle) {
@@ -93,7 +96,7 @@ export const enterRaffle = onlyUser
 		revalidatePath("/shop");
 
 		if (raffle.event) {
-			revalidatePath(`/events/${raffle.event}`);
+			revalidatePath(`/events/${raffle.event.handle}`);
 		}
 
 		if (ctx.user.farcaster?.username) {

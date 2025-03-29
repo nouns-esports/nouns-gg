@@ -109,7 +109,7 @@ export const completeQuest = onlyRanked
 			newXP = updateXP.xp;
 		});
 
-		revalidatePath(`/quests/${quest.id}`);
+		revalidatePath(`/quests/${quest.handle}`);
 		revalidatePath("/quests");
 
 		if (ctx.user.farcaster?.username) {

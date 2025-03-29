@@ -110,6 +110,6 @@ export const createProposal = onlyUser
 			// 	.where(eq(nexus.id, ctx.user.id));
 		});
 
-		revalidatePath(`/rounds/${parsedInput.round}`);
-		revalidatePath(`/rounds/${parsedInput.round}/create`);
+		revalidatePath(`/rounds/${round.handle}`);
+		revalidatePath(`/rounds/${round.handle}/propose`);
 	});

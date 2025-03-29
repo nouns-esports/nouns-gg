@@ -186,7 +186,7 @@ export const castVotes = onlyRanked
 			}
 		});
 
-		revalidatePath(`/rounds/${parsedInput.round}`);
+		revalidatePath(`/rounds/${round.handle}`);
 
 		return {
 			earnedXP: 50 * votesUsed,

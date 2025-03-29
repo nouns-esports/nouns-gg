@@ -328,7 +328,7 @@ export default function ProposalEditor(props: {
 							}
 
 							toast.success("Successfully updated proposal");
-							return router.push(`/rounds/${props.round.id}`);
+							return router.push(`/rounds/${props.round.handle}`);
 						}
 
 						const result = await createProposalAction.executeAsync({
@@ -344,7 +344,7 @@ export default function ProposalEditor(props: {
 						}
 
 						toast.success("Successfully created proposal");
-						return router.push(`/rounds/${props.round.id}`);
+						return router.push(`/rounds/${props.round.handle}`);
 					}}
 				>
 					{proposal ? "Update Proposal" : "Create Proposal"}
