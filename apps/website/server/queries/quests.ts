@@ -104,7 +104,7 @@ export const getQuests = cache(
 	async (input: { limit?: number; user?: string }) => {
 		return db.pgpool.query.quests.findMany({
 			limit: input.limit,
-			where: eq(quests.active, true),
+			where: and(eq(quests.active, true), isNull(quests.event)),
 			orderBy: [desc(quests.featured), desc(quests.createdAt)],
 			with: {
 				community: true,
