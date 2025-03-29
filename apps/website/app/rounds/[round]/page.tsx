@@ -34,7 +34,7 @@ export async function generateMetadata(props: {
 		: undefined;
 
 	const image = searchParams.user
-		? `${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?user=${searchParams.user}&round=${round.id}`
+		? `${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?user=${searchParams.user}&round=${round.handle}`
 		: proposal?.image
 			? proposal.image
 			: round.image;
@@ -61,7 +61,7 @@ export async function generateMetadata(props: {
 					action: {
 						type: "launch_frame",
 						name: "Nouns GG",
-						url: `${env.NEXT_PUBLIC_DOMAIN}/rounds/${round.id}`,
+						url: `${env.NEXT_PUBLIC_DOMAIN}/rounds/${round.handle}`,
 						splashImageUrl:
 							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
 						splashBackgroundColor: "#040404",
