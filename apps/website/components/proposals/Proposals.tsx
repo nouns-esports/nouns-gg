@@ -165,7 +165,7 @@ export default function Proposals(props: {
 											<p className="text-white">
 												You can edit your proposal until voting starts
 											</p>
-											<Button href={`/rounds/${props.round.id}/propose`}>
+											<Button href={`/rounds/${props.round.handle}/propose`}>
 												Edit Proposal
 											</Button>
 										</>
@@ -173,7 +173,7 @@ export default function Proposals(props: {
 								}
 
 								return (
-									<Button href={`/rounds/${props.round.id}/propose`}>
+									<Button href={`/rounds/${props.round.handle}/propose`}>
 										Create Proposal
 									</Button>
 								);
