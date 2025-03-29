@@ -4,7 +4,7 @@ import { CalendarDays } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 
 export default function EventCard(props: {
-	id: string;
+	handle: string;
 	name: string;
 	image: string;
 	start: Date | string;
@@ -19,7 +19,7 @@ export default function EventCard(props: {
 			)}
 		>
 			<Link
-				href={`/events/${props.id}`}
+				href={`/events/${props.handle}`}
 				className="absolute z-10 top-0 left-0 w-full h-full"
 			/>
 			<img
@@ -30,7 +30,7 @@ export default function EventCard(props: {
 			<div className="absolute z-10 top-0 left-0 p-4 flex flex-col justify-between h-full pointer-events-none w-full">
 				<p className="font-bebas-neue text-3xl text-white">{props.name}</p>
 				<div className="pointer-events-auto w-full flex justify-between items-center">
-					<Button href={`/events/${props.id}`}>View Event</Button>
+					<Button href={`/events/${props.handle}`}>View Event</Button>
 					<div className="text-sm text-white bg-black/60 backdrop-blur-sm rounded-full px-2.5 py-1.5 w-min text-nowrap flex items-center gap-2 cursor-pointer">
 						<CalendarDays className="w-4 h-4" />
 						{new Date() < new Date(props.start) ? (

@@ -77,7 +77,7 @@ export const shopifySync = createJob({
 							};
 						}),
 					})
-					.where(eq(products.id, product.id));
+					.where(eq(products.shopifyId, product.id));
 			}
 		});
 	},

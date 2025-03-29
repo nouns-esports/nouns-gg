@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 export default function AddToCartButton(props: {
 	image: string;
 	name: string;
-	product: string;
+	product: number;
 	variant: string;
 	inventory: number;
 }) {

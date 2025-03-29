@@ -117,8 +117,8 @@ export default async function Home() {
 					<div className="flex gap-4 justify-between max-xl:w-full max-xl:overflow-x-scroll max-xl:px-8 max-sm:px-4 max-xl:scrollbar-hidden">
 						{rounds.map((round) => (
 							<RoundCard
-								key={round.id}
-								id={round.id}
+								key={`round-${round.id}`}
+								handle={round.handle}
 								image={round.image}
 								name={round.name}
 								start={round.start}
@@ -127,7 +127,7 @@ export default async function Home() {
 								community={
 									round.community
 										? {
-												id: round.community.id,
+												handle: round.community.handle,
 												name: round.community.name,
 												image: round.community.image,
 											}
@@ -154,15 +154,15 @@ export default async function Home() {
 					<div className="flex gap-4 justify-between max-xl:w-full max-xl:overflow-x-scroll max-xl:px-8 max-sm:px-4 max-xl:scrollbar-hidden">
 						{quests.map((quest) => (
 							<QuestCard
-								key={quest.id}
-								id={quest.id}
+								key={`quest-${quest.id}`}
+								handle={quest.handle}
 								name={quest.name}
 								description={quest.description}
 								image={quest.image}
 								community={
 									quest.community
 										? {
-												id: quest.community.id,
+												handle: quest.community.handle,
 												name: quest.community.name,
 												image: quest.community.image,
 											}
@@ -194,7 +194,7 @@ export default async function Home() {
 						{events.map((event) => (
 							<EventCard
 								key={event.id}
-								id={event.id}
+								handle={event.handle}
 								name={event.name}
 								image={event.image}
 								start={event.start}

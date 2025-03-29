@@ -1,8 +1,13 @@
 import EventCard from "@/components/EventCard";
 import { getEvents } from "@/server/queries/events";
+import { getAuthenticatedUser } from "@/server/queries/users";
+import Button from "@/components/Button";
 
 export default async function Events() {
-	const events = await getEvents();
+	const [events, user] = await Promise.all([
+		getEvents(),
+		getAuthenticatedUser(),
+	]);
 
 	const happeningNow = events.filter(
 		(event) =>
@@ -13,7 +18,12 @@ export default async function Events() {
 
 	return (
 		<div className="flex flex-col gap-8 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
-			<h1 className="font-luckiest-guy text-white text-4xl">Events</h1>
+			<div className="flex items-center justify-between w-full">
+				<h1 className="font-luckiest-guy text-white text-4xl">Events</h1>
+				{user?.nexus?.admin ? (
+					<Button href="/events/create">Create</Button>
+				) : null}
+			</div>
 			{happeningNow.length > 0 && (
 				<div className="flex flex-col gap-4">
 					<h2 className="text-white font-luckiest-guy text-3xl">
@@ -23,7 +33,7 @@ export default async function Events() {
 						{happeningNow.map((event) => (
 							<EventCard
 								key={event.id}
-								id={event.id}
+								handle={event.handle}
 								name={event.name}
 								image={event.image}
 								start={event.start}
@@ -40,7 +50,7 @@ export default async function Events() {
 						{upcoming.map((event) => (
 							<EventCard
 								key={event.id}
-								id={event.id}
+								handle={event.handle}
 								name={event.name}
 								image={event.image}
 								start={event.start}
@@ -57,7 +67,7 @@ export default async function Events() {
 						{ended.map((event) => (
 							<EventCard
 								key={event.id}
-								id={event.id}
+								handle={event.handle}
 								name={event.name}
 								image={event.image}
 								start={event.start}

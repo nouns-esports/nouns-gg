@@ -3,7 +3,7 @@ import Link from "./Link";
 import { Check, Sparkles, Timer } from "lucide-react";
 
 export default function QuestCard(props: {
-	id: string;
+	handle: string;
 	name: string;
 	description: string;
 	image: string;
@@ -11,7 +11,7 @@ export default function QuestCard(props: {
 	start?: Date;
 	end?: Date;
 	community?: {
-		id: string;
+		handle: string;
 		name: string;
 		image: string;
 	};
@@ -33,7 +33,7 @@ export default function QuestCard(props: {
 			)}
 		>
 			<Link
-				href={`/quests/${props.id}`}
+				href={`/quests/${props.handle}`}
 				className="absolute z-10 top-0 left-0 w-full h-full"
 			/>
 			<div className="flex flex-shrink-0 w-full h-[40%] overflow-hidden">
@@ -51,7 +51,7 @@ export default function QuestCard(props: {
 				</div>
 				<div className="flex justify-between items-center">
 					<Link
-						href={`https://warpcast.com/~/channel/${props.community?.id ?? "nouns-esports"}`}
+						href={`https://warpcast.com/~/channel/${props.community?.handle ?? "nouns-esports"}`}
 						newTab
 						className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
 					>

@@ -23,7 +23,7 @@ export async function generateMetadata(props: {
 	params: Promise<{ event: string }>;
 }): Promise<Metadata> {
 	const params = await props.params;
-	const event = await getEvent({ id: params.event });
+	const event = await getEvent({ handle: params.event });
 
 	if (!event) {
 		return notFound();
@@ -51,7 +51,7 @@ export async function generateMetadata(props: {
 					action: {
 						type: "launch_frame",
 						name: "Nouns GG",
-						url: `${env.NEXT_PUBLIC_DOMAIN}/events/${event.id}`,
+						url: `${env.NEXT_PUBLIC_DOMAIN}/events/${event.handle}`,
 						splashImageUrl:
 							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
 						splashBackgroundColor: "#040404",
@@ -73,7 +73,7 @@ export default async function EventPage(props: {
 	const user = await getAuthenticatedUser();
 
 	const event = await getEvent({
-		id: params.event,
+		handle: params.event,
 		user: user?.id,
 	});
 
@@ -267,7 +267,7 @@ export default async function EventPage(props: {
 								<ul className="flex gap-2 w-full overflow-x-auto">
 									{event.details ? (
 										<Tab
-											href={`/events/${event.id}`}
+											href={`/events/${event.handle}`}
 											active={tab === "details"}
 										>
 											Details
@@ -314,8 +314,8 @@ export default async function EventPage(props: {
 									<div className="grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4">
 										{event.rounds.map((round) => (
 											<RoundCard
-												key={round.id}
-												id={round.id}
+												key={`round-${round.id}`}
+												handle={round.handle}
 												image={round.image}
 												name={round.name}
 												start={round.start}
@@ -324,7 +324,7 @@ export default async function EventPage(props: {
 												community={
 													round.community
 														? {
-																id: round.community.id,
+																handle: round.community.handle,
 																name: round.community.name,
 																image: round.community.image,
 															}
@@ -338,8 +338,8 @@ export default async function EventPage(props: {
 									<div className="grid grid-cols-5 max-2xl:grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4">
 										{event.quests.map((quest) => (
 											<QuestCard
-												key={quest.id}
-												id={quest.id}
+												key={`quest-${quest.id}`}
+												handle={quest.handle}
 												name={quest.name}
 												description={quest.description}
 												image={quest.image}
@@ -348,7 +348,7 @@ export default async function EventPage(props: {
 												community={
 													quest.community
 														? {
-																id: quest.community.id,
+																handle: quest.community.handle,
 																name: quest.community.name,
 																image: quest.community.image,
 															}
@@ -368,8 +368,9 @@ export default async function EventPage(props: {
 										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
 											{event.predictions.map((prediction) => (
 												<PredictionCard
-													key={prediction.id}
+													key={`prediction-${prediction.id}`}
 													id={prediction.id}
+													handle={prediction.handle}
 													name={prediction.name}
 													image={prediction.image}
 													xp={prediction.xp}

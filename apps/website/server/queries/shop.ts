@@ -9,10 +9,14 @@ import { shopifyClient } from "../clients/shopify";
 
 export const getProducts = cache(
 	async (input: { collection?: string }) => {
+		const collection = input.collection
+			? await db.pgpool.query.collections.findFirst({
+					where: eq(collections.handle, input.collection),
+				})
+			: null;
+
 		return db.pgpool.query.products.findMany({
-			where: input.collection
-				? eq(products.collection, input.collection)
-				: undefined,
+			where: collection ? eq(products.collection, collection.id) : undefined,
 		});
 	},
 	["getProducts"],
@@ -26,18 +30,18 @@ export const getCollections = cache(
 );
 
 export const getProduct = cache(
-	async (input: { id: string }) =>
+	async (input: { handle: string }) =>
 		db.pgpool.query.products.findFirst({
-			where: eq(products.id, input.id),
+			where: eq(products.handle, input.handle),
 		}),
 	["getProduct"],
 	{ revalidate: 60 },
 );
 
 export const getCollection = cache(
-	async (input: { id: string }) =>
+	async (input: { handle: string }) =>
 		db.pgpool.query.collections.findFirst({
-			where: eq(collections.id, input.id),
+			where: eq(collections.handle, input.handle),
 			with: {
 				products: true,
 			},

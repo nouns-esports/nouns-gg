@@ -3,7 +3,7 @@ import createAction from "../createAction";
 import { bets, predictions } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 
-export const makePrediction = createAction<{ prediction?: string }>(
+export const makePrediction = createAction<{ prediction?: number }>(
 	async (actionInputs) => {
 		let prediction:
 			| Awaited<ReturnType<typeof db.primary.query.predictions.findFirst>>

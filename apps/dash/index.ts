@@ -83,6 +83,5 @@ export const agent = await createAgent({
 
 // Dynamically import tools after the agent is created
 await import("./tools/awardContributorCallXP");
-await import("./tools/updateRound");
 await import("./tools/tipGold");
 await import("./tools/tipXP");

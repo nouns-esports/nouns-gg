@@ -34,11 +34,11 @@ export const getFeaturedEvent = cache(
 );
 
 export const getEvent = cache(
-	async (input: { id: string; user?: string }) => {
+	async (input: { handle: string; user?: string }) => {
 		const now = new Date();
 
 		return db.pgpool.query.events.findFirst({
-			where: eq(events.id, input.id),
+			where: eq(events.handle, input.handle),
 			with: {
 				quests: {
 					orderBy: [desc(quests.featured), asc(quests.xp)],

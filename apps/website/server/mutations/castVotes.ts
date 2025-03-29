@@ -21,7 +21,7 @@ import {
 export const castVotes = onlyRanked
 	.schema(
 		z.object({
-			round: z.string(),
+			round: z.number(),
 			votes: z.array(z.object({ proposal: z.number(), count: z.number() })),
 		}),
 	)

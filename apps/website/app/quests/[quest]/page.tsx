@@ -14,7 +14,7 @@ export async function generateMetadata(props: {
 }): Promise<Metadata> {
 	const params = await props.params;
 
-	const quest = await getQuest({ id: params.quest });
+	const quest = await getQuest({ handle: params.quest });
 
 	if (!quest) {
 		return notFound();
@@ -59,7 +59,7 @@ export default async function Quest(props: {
 	const params = await props.params;
 	const user = await getAuthenticatedUser();
 
-	const quest = await getQuest({ id: params.quest, user: user?.id });
+	const quest = await getQuest({ handle: params.quest, user: user?.id });
 
 	if (!quest) {
 		return notFound();
@@ -106,7 +106,7 @@ export default async function Quest(props: {
 		<div className="relative flex justify-center gap-16 w-full pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
 			<div className="flex flex-col gap-4 w-full max-w-3xl">
 				<NavigateBack
-					fallback={quest.event ? `/events/${quest.event.id}` : "/quests"}
+					fallback={quest.event ? `/events/${quest.event.handle}` : "/quests"}
 					className="text-red flex items-center gap-1 group w-fit"
 				>
 					<ArrowLeft className="w-5 h-5 text-red group-hover:-translate-x-1 transition-transform" />

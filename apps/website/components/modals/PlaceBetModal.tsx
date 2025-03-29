@@ -10,7 +10,7 @@ import { toast } from "../Toasts";
 
 export const usePlaceBetModal = create<{
 	prediction?: {
-		id: string;
+		id: number;
 	};
 	outcome?: {
 		id: number;
@@ -22,7 +22,7 @@ export const usePlaceBetModal = create<{
 			name: string;
 		};
 		prediction: {
-			id: string;
+			id: number;
 		};
 	}) => void;
 }>((set) => ({

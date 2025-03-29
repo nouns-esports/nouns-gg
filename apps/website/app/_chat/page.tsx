@@ -14,7 +14,7 @@ export default async function Chat(props: {
 	const [user, communities] = await Promise.all([
 		getAuthenticatedUser(),
 		getCommunities({
-			ids: ["cs", "dota", "nounsfe", "smash", "rocket-league"],
+			handles: ["cs", "dota", "nounsfe", "smash", "rocket-league"],
 		}),
 	]);
 
@@ -23,7 +23,7 @@ export default async function Chat(props: {
 	// 	...communities.flatMap((c) => c.children.map((child) => child.channel)),
 	// ];
 
-	const community = communities.find((c) => c.id === searchParams?.c);
+	const community = communities.find((c) => c.handle === searchParams?.c);
 	// const subChannels = community?.children.map((child) => child.channel);
 
 	const feed = await getFeed({
@@ -95,11 +95,11 @@ export default async function Chat(props: {
 					<div className="flex flex-col gap-1">
 						{communities.map((c) => (
 							<Link
-								key={c.id}
-								href={`/chat?c=${c.id}`}
+								key={`community-${c.handle}`}
+								href={`/chat?c=${c.handle}`}
 								className={twMerge(
 									"flex items-center hover:bg-grey-600 transition-colors gap-2 text-white text-nowrap p-2 rounded-xl",
-									searchParams?.c === c.id && "bg-grey-600",
+									searchParams?.c === c.handle && "bg-grey-600",
 								)}
 							>
 								<img

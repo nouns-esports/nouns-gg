@@ -8,7 +8,7 @@ export default async function CollectionPage(props: {
 }) {
 	const params = await props.params;
 
-	const collection = await getCollection({ id: params.collection });
+	const collection = await getCollection({ handle: params.collection });
 
 	if (!collection) {
 		return <div>Collection not found</div>;
@@ -33,7 +33,12 @@ export default async function CollectionPage(props: {
 						</div>
 						<div className="grid grid-cols-4 gap-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1">
 							{collection.products.map((product) => {
-								return <ProductCard key={product.id} product={product} />;
+								return (
+									<ProductCard
+										key={`product-${product.id}`}
+										product={product}
+									/>
+								);
 							})}
 						</div>
 					</div>

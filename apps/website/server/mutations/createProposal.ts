@@ -10,7 +10,7 @@ import { z } from "zod";
 export const createProposal = onlyUser
 	.schema(
 		z.object({
-			round: z.string(),
+			round: z.number(),
 			title: z.string(),
 			image: z.string().optional(),
 			content: z.string().optional(),

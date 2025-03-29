@@ -3,7 +3,7 @@ import createAction from "../createAction";
 import { rounds, votes } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 
-export const castVote = createAction<{ round?: string }>(
+export const castVote = createAction<{ round?: number }>(
 	async (actionInputs) => {
 		let round:
 			| Awaited<ReturnType<typeof db.primary.query.rounds.findFirst>>

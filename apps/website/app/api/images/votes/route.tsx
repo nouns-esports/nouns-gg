@@ -1,8 +1,9 @@
 import { getUser } from "@/server/queries/users";
-import { getUserVotesForRound } from "@/server/queries/votes";
+import { getVotes } from "@/server/queries/votes";
 import { ImageResponse } from "next/og";
 import fs from "fs";
 import path, { join } from "path";
+import { getRound } from "@/server/queries/rounds";
 
 export async function GET(request: Request) {
 	const url = new URL(request.url);
@@ -25,21 +26,30 @@ export async function GET(request: Request) {
 		return Response.json({ error: "User not found" }, { status: 404 });
 	}
 
-	const round = await getUserVotesForRound({
-		round: params.round,
-		user: params.user,
-	});
+	const round = await getRound({ handle: params.round });
 
 	if (!round) {
+		return Response.json({ error: "Round not found" }, { status: 404 });
+	}
+
+	const votes = await getVotes({ round: round.id, user: user.id });
+
+	if (votes.length < 1) {
 		return Response.json(
-			{ error: "User did not vote in the round or it doesnt exist" },
+			{ error: "User did not vote in the round" },
 			{ status: 404 },
 		);
 	}
 
-	if (round.votes.length < 1) {
-		return Response.json({ error: "User has no votes" }, { status: 404 });
-	}
+	const condensedVotes = Object.values(
+		votes.reduce((acc: Record<string, typeof vote>, vote) => {
+			if (!acc[vote.proposal.title]) {
+				acc[vote.proposal.title] = { ...vote };
+			} else acc[vote.proposal.title].count += vote.count;
+
+			return acc;
+		}, {}),
+	);
 
 	return new ImageResponse(
 		<div
@@ -114,57 +124,55 @@ export async function GET(request: Request) {
 							gap: 32,
 						}}
 					>
-						{round.votes
-							.slice(0, round.votes.length > 4 ? 3 : 4)
-							.map((vote) => (
+						{votes.slice(0, condensedVotes.length > 4 ? 3 : 4).map((vote) => (
+							<div
+								key={vote.proposal.title}
+								style={{
+									display: "flex",
+									justifyContent: "space-between",
+									gap: 64,
+									width: "100%",
+									backgroundColor: "rgba(255, 255, 255, 0.15)", // More transparent
+									paddingLeft: 32,
+									paddingRight: 32,
+									paddingTop: 20,
+									paddingBottom: 20,
+									borderRadius: 16,
+								}}
+							>
 								<div
-									key={vote.proposal.title}
+									style={{
+										display: "block",
+										lineClamp: 1,
+										fontSize: 36,
+										fontFamily: "Cabin",
+									}}
+								>
+									{vote.proposal.title.replace(
+										/[^a-zA-Z0-9 \-_\!\@\#\$\%\^\&\*\(\)\+\=\"\'\?\/\>\<,\.\{\}\[\]\|\\\~\`\;\:\n\r\t]/g,
+										"",
+									)}
+								</div>
+								<div
 									style={{
 										display: "flex",
-										justifyContent: "space-between",
-										gap: 64,
-										width: "100%",
-										backgroundColor: "rgba(255, 255, 255, 0.15)", // More transparent
-										paddingLeft: 32,
-										paddingRight: 32,
-										paddingTop: 20,
-										paddingBottom: 20,
-										borderRadius: 16,
+										gap: 16,
+										alignItems: "center",
 									}}
 								>
 									<div
 										style={{
-											display: "block",
-											lineClamp: 1,
+											display: "flex",
 											fontSize: 36,
 											fontFamily: "Cabin",
 										}}
 									>
-										{vote.proposal.title.replace(
-											/[^a-zA-Z0-9 \-_\!\@\#\$\%\^\&\*\(\)\+\=\"\'\?\/\>\<,\.\{\}\[\]\|\\\~\`\;\:\n\r\t]/g,
-											"",
-										)}
-									</div>
-									<div
-										style={{
-											display: "flex",
-											gap: 16,
-											alignItems: "center",
-										}}
-									>
-										<div
-											style={{
-												display: "flex",
-												fontSize: 36,
-												fontFamily: "Cabin",
-											}}
-										>
-											{vote.count.toString()}
-										</div>
+										{vote.count.toString()}
 									</div>
 								</div>
-							))}
-						{round.votes.length > 4 ? (
+							</div>
+						))}
+						{condensedVotes.length > 4 ? (
 							<div
 								style={{
 									display: "flex",
@@ -172,7 +180,7 @@ export async function GET(request: Request) {
 									fontFamily: "Cabin",
 								}}
 							>
-								+{(round.votes.length - 4).toString()} more
+								+{(condensedVotes.length - 4).toString()} more
 							</div>
 						) : (
 							""

@@ -4,10 +4,9 @@ import { desc, eq, lt } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
 
 export const getArticle = cache(
-	async (input: { id: string }) => {
-		//////////////////////
+	async (input: { handle: string }) => {
 		return db.pgpool.query.articles.findFirst({
-			where: eq(articles.id, input.id),
+			where: eq(articles.handle, input.handle),
 		});
 	},
 	["articles"],
@@ -16,7 +15,6 @@ export const getArticle = cache(
 
 export const getArticles = cache(
 	async () => {
-		//
 		return db.pgpool.query.articles.findMany({
 			where: lt(articles.publishedAt, new Date()),
 			orderBy: desc(articles.publishedAt),

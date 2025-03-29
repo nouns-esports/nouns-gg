@@ -9,7 +9,7 @@ import { and, eq } from "drizzle-orm";
 export const addToCart = onlyUser
 	.schema(
 		z.object({
-			product: z.string(),
+			product: z.number(),
 			variant: z.string(),
 			quantity: z.number(),
 		}),

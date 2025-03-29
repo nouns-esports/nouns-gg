@@ -25,7 +25,6 @@ import {
 	carts,
 	gold,
 	collections,
-	games,
 	raffles,
 	raffleEntries,
 } from "./schema/public";
@@ -56,14 +55,6 @@ export const communityRelations = relations(communities, ({ one, many }) => ({
 	creations: many(creations),
 	events: many(events),
 	quests: many(quests),
-	game: one(games, {
-		fields: [communities.game],
-		references: [games.id],
-	}),
-}));
-
-export const gameRelations = relations(games, ({ many }) => ({
-	communities: many(communities),
 }));
 
 export const eventsRelations = relations(events, ({ one, many }) => ({
@@ -330,10 +321,6 @@ export const creationsRelations = relations(creations, ({ one }) => ({
 	original: one(creations, {
 		fields: [creations.original],
 		references: [creations.id],
-	}),
-	community: one(communities, {
-		fields: [creations.community],
-		references: [communities.id],
 	}),
 	creator: one(nexus, {
 		fields: [creations.creator],

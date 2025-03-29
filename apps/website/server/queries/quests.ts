@@ -73,7 +73,7 @@ export const actions: Record<string, ReturnType<typeof createAction>> = {
 };
 
 export async function getAction(input: {
-	quest: string;
+	quest: number;
 	action: number;
 	user?: string;
 }) {
@@ -101,13 +101,10 @@ export async function getAction(input: {
 }
 
 export const getQuests = cache(
-	async (input: { limit?: number; user?: string; event?: string }) => {
+	async (input: { limit?: number; user?: string }) => {
 		return db.pgpool.query.quests.findMany({
 			limit: input.limit,
-			where: and(
-				eq(quests.active, true),
-				input.event ? eq(quests.event, input.event) : isNull(quests.event),
-			),
+			where: eq(quests.active, true),
 			orderBy: [desc(quests.featured), desc(quests.createdAt)],
 			with: {
 				community: true,
@@ -125,9 +122,9 @@ export const getQuests = cache(
 );
 
 export const getQuest = cache(
-	async (input: { id: string; user?: string }) => {
+	async (input: { handle: string; user?: string }) => {
 		return db.pgpool.query.quests.findFirst({
-			where: eq(quests.id, input.id),
+			where: eq(quests.handle, input.handle),
 			with: {
 				completed: input.user
 					? {

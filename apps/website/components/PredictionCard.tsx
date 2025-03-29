@@ -8,7 +8,8 @@ import { usePlaceBetModal } from "./modals/PlaceBetModal";
 import type { AuthenticatedUser } from "@/server/queries/users";
 
 export default function PredictionCard(props: {
-	id: string;
+	id: number;
+	handle: string;
 	name: string;
 	image: string;
 	xp: number;
@@ -32,7 +33,7 @@ export default function PredictionCard(props: {
 
 	return (
 		<div
-			// href={`/predictions/${props.id}`}
+			// href={`/predictions/${props.handle}`}
 			className={twMerge(
 				"flex flex-col gap-3 bg-grey-800 rounded-xl px-2 pb-3 pt-4 hover:bg-grey-600 transition-colors aspect-video h-full justify-between",
 				props.closed && "opacity-50 pointer-events-none",

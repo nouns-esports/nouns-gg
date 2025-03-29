@@ -6,9 +6,9 @@ import { eq, sql } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
 
 export const getPrediction = cache(
-	async (input: { id: string }) => {
+	async (input: { handle: string }) => {
 		return db.pgpool.query.predictions.findFirst({
-			where: eq(predictions.id, input.id),
+			where: eq(predictions.handle, input.handle),
 			with: {
 				outcomes: true,
 			},

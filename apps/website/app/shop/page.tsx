@@ -126,9 +126,9 @@ export default async function Shop(props: {
 									{collections.map((collection) => (
 										<CategoryTag
 											key={collection.id}
-											id={collection.id}
-											selected={searchParams.collection === collection.id}
-											new={collection.id === "coaching-sessions"}
+											handle={collection.handle}
+											selected={searchParams.collection === collection.handle}
+											new={collection.handle === "coaching-sessions"}
 										>
 											{collection.name}
 										</CategoryTag>
@@ -168,7 +168,7 @@ export default async function Shop(props: {
 }
 
 function CategoryTag(props: {
-	id?: string;
+	handle?: string;
 	selected: boolean;
 	children: string;
 	new?: boolean;
@@ -181,7 +181,7 @@ function CategoryTag(props: {
 			)}
 		>
 			<Link
-				href={`/shop${props.id ? `?collection=${props.id}` : ""}`}
+				href={`/shop${props.handle ? `?collection=${props.handle}` : ""}`}
 				scroll={false}
 				className="flex items-center gap-2"
 			>

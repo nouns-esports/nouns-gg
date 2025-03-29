@@ -10,7 +10,7 @@ import { revalidatePath } from "next/cache";
 export const enterRaffle = onlyUser
 	.schema(
 		z.object({
-			raffle: z.string(),
+			raffle: z.number(),
 			amount: z.number(),
 		}),
 	)
@@ -62,13 +62,6 @@ export const enterRaffle = onlyUser
 
 			newXP = updateNexus.xp;
 
-			await tx.insert(gold).values({
-				from: ctx.user.id,
-				to: null,
-				amount: cost.toString(),
-				timestamp: now,
-			});
-
 			const [raffleEntry] = await tx
 				.insert(raffleEntries)
 				.values({
@@ -85,7 +78,15 @@ export const enterRaffle = onlyUser
 				user: ctx.user.id,
 				amount: earnedXP,
 				timestamp: now,
-				raffle: raffleEntry.id,
+				raffleEntry: raffleEntry.id,
+			});
+
+			await tx.insert(gold).values({
+				from: ctx.user.id,
+				to: null,
+				amount: cost.toString(),
+				timestamp: now,
+				raffleEntry: raffleEntry.id,
 			});
 		});
 

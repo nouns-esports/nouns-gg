@@ -23,7 +23,7 @@ export async function generateMetadata(props: {
 }): Promise<Metadata> {
 	const params = await props.params;
 	const searchParams = await props.searchParams;
-	const round = await getRound({ id: params.round });
+	const round = await getRound({ handle: params.round });
 
 	if (!round) {
 		return notFound();
@@ -126,7 +126,7 @@ export default async function Round(props: {
 	const searchParams = await props.searchParams;
 	const [user, round] = await Promise.all([
 		getAuthenticatedUser(),
-		getRound({ id: params.round }),
+		getRound({ handle: params.round }),
 	]);
 
 	if (!round) {
@@ -136,7 +136,7 @@ export default async function Round(props: {
 	const priorVotes = user
 		? await getPriorVotes({
 				user: user.id,
-				round: params.round,
+				round: round.id,
 			})
 		: 0;
 

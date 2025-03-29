@@ -165,7 +165,7 @@ export default function Proposals(props: {
 											<p className="text-white">
 												You can edit your proposal until voting starts
 											</p>
-											<Button href={`/rounds/${props.round.id}/create`}>
+											<Button href={`/rounds/${props.round.id}/propose`}>
 												Edit Proposal
 											</Button>
 										</>
@@ -173,7 +173,7 @@ export default function Proposals(props: {
 								}
 
 								return (
-									<Button href={`/rounds/${props.round.id}/create`}>
+									<Button href={`/rounds/${props.round.id}/propose`}>
 										Create Proposal
 									</Button>
 								);
@@ -485,7 +485,7 @@ export default function Proposals(props: {
 				selectedVotes={selectedVotes}
 				onVotesCast={() => setSelectedVotes({})}
 			/>
-			<ShareVotesModal round={props.round.id} />
+			<ShareVotesModal round={props.round.handle} />
 			{props.round.proposals.map((proposal) => (
 				<ViewProposalModal
 					key={proposal.id}

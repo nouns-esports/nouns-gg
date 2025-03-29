@@ -16,18 +16,3 @@ export async function getCheckpoint(input: { key: string; user?: string }) {
 		},
 	});
 }
-
-export async function getEventCheckpoints(input: {
-	event: string;
-	user?: string;
-}) {
-	return db.pgpool.query.checkpoints.findMany({
-		where: eq(checkpoints.event, input.event),
-		with: {
-			checkins: {
-				where: input.user ? eq(checkins.user, input.user) : undefined,
-				limit: 1,
-			},
-		},
-	});
-}

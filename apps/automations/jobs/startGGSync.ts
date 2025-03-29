@@ -25,7 +25,7 @@ export const startGGSync = createJob({
 	name: "Start GG Sync",
 	cron: "0 * * * *", // Every hour
 	execute: async () => {
-		for (const [id, slug] of Object.entries(targetEvents)) {
+		for (const [handle, slug] of Object.entries(targetEvents)) {
 			const response = await fetch("https://api.start.gg/gql/alpha", {
 				method: "POST",
 				headers: {
@@ -59,7 +59,7 @@ export const startGGSync = createJob({
 				if (!data.tournament) return;
 
 				const event = await tx.query.events.findFirst({
-					where: eq(events.id, id),
+					where: eq(events.handle, handle),
 					with: {
 						attendees: true,
 					},
@@ -72,7 +72,7 @@ export const startGGSync = createJob({
 					.set({
 						attendeeCount: data.tournament.numAttendees,
 					})
-					.where(eq(events.id, id));
+					.where(eq(events.handle, handle));
 
 				for (const participant of data.tournament.participants.nodes) {
 					if (!participant.email) continue;
@@ -87,7 +87,7 @@ export const startGGSync = createJob({
 
 					await tx.insert(attendees).values({
 						user: user.id,
-						event: id,
+						event: event.id,
 					});
 				}
 			});

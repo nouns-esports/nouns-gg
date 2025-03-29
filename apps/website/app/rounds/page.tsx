@@ -1,8 +1,15 @@
 import { getRounds } from "@/server/queries/rounds";
 import RoundCard from "@/components/RoundCard";
+import Link from "@/components/Link";
+import { getAuthenticatedUser } from "@/server/queries/users";
+import { Plus } from "lucide-react";
+import Button from "@/components/Button";
 
 export default async function Rounds() {
-	const rounds = await getRounds();
+	const [rounds, user] = await Promise.all([
+		getRounds(),
+		getAuthenticatedUser(),
+	]);
 
 	const now = new Date();
 	const activeRounds = rounds.filter(
@@ -18,7 +25,14 @@ export default async function Rounds() {
 		<div className="flex flex-col justify-center gap-16 max-sm:gap-8 w-full pt-32 max-xl:pt-28 max-sm:pt-20">
 			<div className="flex max-lg:flex-col max-lg:items-start max-lg:gap-4 items-center justify-between gap-16 mt-8 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
 				<div className="flex flex-col gap-4">
-					<h1 className="font-luckiest-guy text-white text-4xl">Rounds</h1>
+					<div className="flex items-center justify-between gap-4">
+						<h1 className="font-luckiest-guy text-white text-4xl">Rounds</h1>
+						{user?.nexus?.admin ? (
+							<Button href="/rounds/create" size="sm">
+								Create
+							</Button>
+						) : null}
+					</div>
 					<p className="max-w-screen-sm max-lg:max-w-none">
 						Welcome to Rounds, where the Nouns community plays an active role in
 						deciding who and what we fund, making a real impact with every vote.

@@ -11,7 +11,7 @@ export async function generateMetadata(props: {
 	params: Promise<{ article: string }>;
 }): Promise<Metadata> {
 	const params = await props.params;
-	const article = await getArticle({ id: params.article });
+	const article = await getArticle({ handle: params.article });
 
 	if (!article) {
 		return notFound();
@@ -39,7 +39,7 @@ export async function generateMetadata(props: {
 					action: {
 						type: "launch_frame",
 						name: "Nouns GG",
-						url: `${env.NEXT_PUBLIC_DOMAIN}/articles/${article.id}`,
+						url: `${env.NEXT_PUBLIC_DOMAIN}/articles/${article.handle}`,
 						splashImageUrl:
 							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
 						splashBackgroundColor: "#040404",
@@ -56,7 +56,7 @@ export default async function ArticlePage(props: {
 	const params = await props.params;
 
 	const [article, user] = await Promise.all([
-		getArticle({ id: params.article }),
+		getArticle({ handle: params.article }),
 		getAuthenticatedUser(),
 	]);
 

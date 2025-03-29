@@ -6,14 +6,14 @@ import { twMerge } from "tailwind-merge";
 import Image from "./Image";
 
 export default function RoundCard(props: {
-	id: string;
+	handle: string;
 	image: string;
 	name: string;
 	start: Date | string;
 	votingStart: Date | string;
 	end: Date | string;
 	community?: {
-		id: string;
+		handle: string;
 		name: string;
 		image: string;
 	};
@@ -33,7 +33,7 @@ export default function RoundCard(props: {
 			)}
 		>
 			<Link
-				href={`/rounds/${props.id}`}
+				href={`/rounds/${props.handle}`}
 				className="absolute z-10 top-0 left-0 w-full h-full"
 			/>
 			<div className="flex flex-shrink-0 w-full h-[40%] overflow-hidden">
@@ -83,7 +83,7 @@ export default function RoundCard(props: {
 				</div>
 				<div className="flex h-full items-end">
 					<Link
-						href={`https://warpcast.com/~/channel/${props.community?.id ?? "nouns-esports"}`}
+						href={`https://warpcast.com/~/channel/${props.community?.handle ?? "nouns-esports"}`}
 						newTab
 						className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit"
 					>

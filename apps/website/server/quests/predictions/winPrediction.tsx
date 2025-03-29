@@ -3,7 +3,7 @@ import createAction from "../createAction";
 import { bets, predictions } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 
-export const winPrediction = createAction<{ prediction: string }>(
+export const winPrediction = createAction<{ prediction: number }>(
 	async (actionInputs) => {
 		if (!actionInputs.prediction) {
 			throw new Error("No prediction in action");

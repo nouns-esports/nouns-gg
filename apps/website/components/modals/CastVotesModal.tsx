@@ -23,7 +23,7 @@ import { usePrivy } from "@privy-io/react-auth";
 import { env } from "~/env";
 
 export default function CastVotesModal(props: {
-	round: string;
+	round: number;
 	proposals: Array<
 		typeof proposals.$inferSelect & {
 			user: typeof nexus.$inferSelect;

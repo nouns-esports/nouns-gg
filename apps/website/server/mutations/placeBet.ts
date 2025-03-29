@@ -10,7 +10,7 @@ import { revalidatePath } from "next/cache";
 export const placeBet = onlyRanked
 	.schema(
 		z.object({
-			prediction: z.string(),
+			prediction: z.number(),
 			outcome: z.number(),
 		}),
 	)

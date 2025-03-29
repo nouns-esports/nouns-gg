@@ -11,7 +11,7 @@ import { revalidatePath } from "next/cache";
 export const completeQuest = onlyRanked
 	.schema(
 		z.object({
-			quest: z.string(),
+			quest: z.number(),
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {

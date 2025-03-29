@@ -30,7 +30,7 @@ export default async function Quests() {
 						{featuredEvent.name}
 					</h2>
 					<div className="absolute bottom-4 left-4">
-						<Button href={`/events/${featuredEvent.id}`}>View Event</Button>
+						<Button href={`/events/${featuredEvent.handle}`}>View Event</Button>
 					</div>
 				</div>
 			)}
@@ -42,15 +42,15 @@ export default async function Quests() {
 					<div className="grid grid-cols-5 max-2xl:grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-[550px]:flex max-[550px]:overflow-x-scroll max-[550px]:scrollbar-hidden gap-4">
 						{featuredQuests.map((quest) => (
 							<QuestCard
-								key={quest.id}
-								id={quest.id}
+								key={`quest-${quest.id}`}
+								handle={quest.handle}
 								name={quest.name}
 								description={quest.description}
 								image={quest.image}
 								community={
 									quest.community
 										? {
-												id: quest.community.id,
+												handle: quest.community.handle,
 												name: quest.community.name,
 												image: quest.community.image,
 											}
@@ -67,19 +67,24 @@ export default async function Quests() {
 				</div>
 			)}
 			<div className="flex flex-col gap-6">
-				<h1 className="font-luckiest-guy text-white text-3xl">Quests</h1>
+				<div className="flex items-center justify-between w-full">
+					<h1 className="font-luckiest-guy text-white text-3xl">Quests</h1>
+					{user?.nexus?.admin ? (
+						<Button href="/quests/create">Create</Button>
+					) : null}
+				</div>
 				<div className="grid grid-cols-5 max-2xl:grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-[550px]:flex max-[550px]:overflow-x-scroll max-[550px]:scrollbar-hidden gap-4">
 					{allQuests.map((quest) => (
 						<QuestCard
-							key={quest.id}
-							id={quest.id}
+							key={`quest-${quest.id}`}
+							handle={quest.handle}
 							name={quest.name}
 							description={quest.description}
 							image={quest.image}
 							community={
 								quest.community
 									? {
-											id: quest.community.id,
+											handle: quest.community.handle,
 											name: quest.community.name,
 											image: quest.community.image,
 										}

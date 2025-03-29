@@ -4,21 +4,12 @@ import { X } from "lucide-react";
 import { Modal, ToggleModal, useModal } from "../Modal";
 import type { AuthenticatedUser } from "@/server/queries/users";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect } from "react";
 
 export default function GoldModal(props: { user: AuthenticatedUser }) {
 	const router = useRouter();
 	const pathname = usePathname();
 
 	const { isOpen, close } = useModal("gold");
-
-	// useEffect(() => {
-	// 	if (!isOpen) return;
-
-	// 	if (pathname === "/leaderboard") {
-	// 		close();
-	// 	}
-	// }, [isOpen, pathname]);
 
 	return (
 		<Modal id="gold" className="p-4 flex flex-col max-w-[500px] w-80 gap-8">

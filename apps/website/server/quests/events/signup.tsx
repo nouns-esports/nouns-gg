@@ -3,7 +3,7 @@ import { db } from "~/packages/db";
 import createAction from "../createAction";
 import { and, eq } from "drizzle-orm";
 
-export const signup = createAction(async (actionInputs) => {
+export const signup = createAction<{ event?: number }>(async (actionInputs) => {
 	if (!actionInputs.event) {
 		throw new Error("Event input missing in action");
 	}

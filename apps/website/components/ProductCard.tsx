@@ -14,7 +14,7 @@ export default function ProductCard(props: {
 
 	return (
 		<Link
-			href={`/shop/products/${props.product.id}`}
+			href={`/shop/products/${props.product.handle}`}
 			className={twMerge(
 				"relative flex flex-col gap-4 rounded-xl bg-grey-800 hover:bg-grey-600 transition-colors p-4",
 			)}

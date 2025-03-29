@@ -163,7 +163,7 @@ export default function Checkout(props: {
 
 								return (
 									<div
-										key={item.product.id}
+										key={`product-${item.product.id}`}
 										className="flex items-center gap-4"
 									>
 										<div className="flex items-center gap-2 bg-grey-600 rounded-lg p-2 w-16 h-16 aspect-square">
