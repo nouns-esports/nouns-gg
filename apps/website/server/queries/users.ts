@@ -36,9 +36,10 @@ export async function getAuthenticatedUser() {
 						orderBy: asc(ranks.place),
 					}),
 					privyUser.discord?.subject &&
-					checkDiscordAccountAge(privyUser.discord.subject)
-						? isInServer({ subject: privyUser.discord.subject })
-						: undefined,
+						// checkDiscordAccountAge(privyUser.discord.subject)
+						// 	? isInServer({ subject: privyUser.discord.subject })
+						// 	: undefined,
+						isInServer({ subject: privyUser.discord.subject }),
 				]);
 
 				let rank: number | null = null;
