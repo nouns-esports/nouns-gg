@@ -18,9 +18,9 @@ export const placeRank = onlyUser.action(async ({ ctx }) => {
 	}
 
 	if (ctx.user.discord?.subject) {
-		if (!checkDiscordAccountAge(ctx.user.discord.subject)) {
-			throw new Error("Your Discord account is not old enough");
-		}
+		// if (!checkDiscordAccountAge(ctx.user.discord.subject)) {
+		// 	throw new Error("Your Discord account is not old enough");
+		// }
 
 		const response = await fetch(
 			`https://discord.com/api/guilds/${env.DISCORD_GUILD_ID}/members/${ctx.user.discord.subject}`,
