@@ -103,7 +103,7 @@ export const checkpoints = pgTable("checkpoints", (t) => ({
 export const checkins = pgTable("checkins", (t) => ({
 	id: t.serial().primaryKey(),
 	// __checkpoint: t.text(),
-	checkpoint: t.bigint({ mode: "number" }),
+	checkpoint: t.bigint({ mode: "number" }).notNull(),
 	user: t.text(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
@@ -129,7 +129,7 @@ export const predictions = pgTable("predictions", (t) => ({
 export const outcomes = pgTable("outcomes", (t) => ({
 	id: t.serial().primaryKey(),
 	// __prediction: t.text().notNull(),
-	prediction: t.bigint({ mode: "number" }),
+	prediction: t.bigint({ mode: "number" }).notNull(),
 	name: t.text().notNull(),
 	image: t.text(),
 	outcome: t.boolean(),
@@ -141,14 +141,14 @@ export const bets = pgTable("bets", (t) => ({
 	user: t.text().notNull(),
 	outcome: t.integer().notNull(),
 	// __prediction: t.text().notNull(),
-	prediction: t.bigint({ mode: "number" }),
+	prediction: t.bigint({ mode: "number" }).notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
 
 export const attendees = pgTable("attendees", (t) => ({
 	id: t.serial().primaryKey(),
 	// __event: t.text().notNull(),
-	event: t.bigint({ mode: "number" }),
+	event: t.bigint({ mode: "number" }).notNull(),
 	featured: t.boolean().notNull().default(false),
 	user: t.text().notNull(),
 }));
@@ -206,7 +206,7 @@ export const rounds = pgTable("rounds", (t) => ({
 export const awards = pgTable("awards", (t) => ({
 	id: t.serial().primaryKey(),
 	// __round: t.text().notNull(),
-	round: t.bigint({ mode: "number" }),
+	round: t.bigint({ mode: "number" }).notNull(),
 	place: t.smallint().notNull(),
 	asset: t.text().notNull(),
 	value: t.numeric({ precision: 78, scale: 0 }).notNull(),
@@ -220,8 +220,7 @@ export const assets = pgTable("assets", (t) => ({
 	image: t.text().notNull(),
 	decimals: t.smallint(),
 	chainId: t.integer("chain_id"),
-	address: t.text(), // deprecate
-	// _address: bytea(),
+	address: t.text(),
 	tokenId: t.text("token_id"),
 }));
 
@@ -229,7 +228,7 @@ export const proposals = pgTable("proposals", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	// __round: t.text().notNull(),
-	round: t.bigint({ mode: "number" }),
+	round: t.bigint({ mode: "number" }).notNull(),
 	title: t.text().notNull(),
 	content: t.text(), // rename to description
 	image: t.text(),
@@ -353,7 +352,7 @@ export const votes = pgTable("votes", (t) => ({
 	user: t.text().notNull(),
 	proposal: t.integer().notNull(),
 	// __round: t.text().notNull(),
-	round: t.bigint({ mode: "number" }),
+	round: t.bigint({ mode: "number" }).notNull(),
 	count: t.smallint().notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
@@ -501,7 +500,7 @@ export const raffles = pgTable("raffles", (t) => ({
 export const raffleEntries = pgTable("raffle_entries", (t) => ({
 	id: t.serial().primaryKey(),
 	// __raffle: t.text().notNull(),
-	raffle: t.bigint({ mode: "number" }),
+	raffle: t.bigint({ mode: "number" }).notNull(),
 	user: t.text().notNull(),
 	timestamp: t.timestamp().notNull(),
 	amount: t.integer().notNull(),
