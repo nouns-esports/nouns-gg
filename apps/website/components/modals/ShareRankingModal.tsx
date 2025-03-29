@@ -10,8 +10,6 @@ import { env } from "~/env";
 export default function ShareRankingModal(props: {
 	ranking: NonNullable<Awaited<ReturnType<typeof getLeaderboardPosition>>>;
 }) {
-	const diff = props.ranking.previousPosition - props.ranking.position;
-
 	return (
 		<Modal
 			id="share-ranking"
