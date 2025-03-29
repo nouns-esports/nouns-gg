@@ -204,7 +204,7 @@ export default async function EventPage(props: {
 										</p>
 										<div className="flex items-center gap-6 overflow-x-auto w-full flex-shrink-0 max-w-full">
 											<Link
-												href={`https://warpcast.com/~/channel/${event.community?.id ?? "nouns-esports"}`}
+												href={`https://warpcast.com/~/channel/${event.community?.handle ?? "nouns-esports"}`}
 												newTab
 												className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
 											>
