@@ -98,6 +98,7 @@ export const createDraftOrder = onlyUser
 										zip: parsedInput.shipping.zip,
 									}
 								: undefined,
+							shippingLine: parsedInput.shipping ? undefined : null,
 							email: parsedInput.email,
 							useCustomerDefaultAddress: false,
 							appliedDiscount:
