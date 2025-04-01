@@ -35,26 +35,9 @@ export const getFeaturedEvent = cache(
 
 export const getEvent = cache(
 	async (input: { handle: string; user?: string }) => {
-		const now = new Date();
-
 		return db.pgpool.query.events.findFirst({
 			where: eq(events.handle, input.handle),
 			with: {
-				quests: {
-					orderBy: [desc(quests.featured), asc(quests.xp)],
-					with: {
-						community: true,
-						completed: input.user
-							? {
-									limit: 1,
-									where: eq(xp.user, input.user),
-								}
-							: undefined,
-					},
-				},
-				rounds: {
-					with: { community: true },
-				},
 				attendees: {
 					with: {
 						user: {
@@ -67,26 +50,33 @@ export const getEvent = cache(
 						},
 					},
 				},
-				predictions: {
-					with: {
-						outcomes: true,
-						bets: input.user ? { where: eq(bets.user, input.user) } : undefined,
-					},
-				},
 				community: true,
-				products: true,
-				raffles: {
-					where: (t, { gt, lt, and }) => and(lt(t.start, now), gt(t.end, now)),
-					extras: {
-						totalEntries: sql<number>`
-							(
-								SELECT COALESCE(SUM(amount), 0)::integer
-								FROM ${raffleEntries}
-								WHERE raffle = ${raffles.id.getSQL()}
-							)
-						`.as("totalEntries"),
-					},
-				},
+			},
+			extras: {
+				hasRounds: sql<boolean>`
+					(
+						SELECT COUNT(*) FROM rounds WHERE rounds.event = ${events.id}
+					) > 0
+				`.as("hasRounds"),
+				hasQuests: sql<boolean>`
+					(
+						SELECT COUNT(*) FROM quests WHERE quests.event = ${events.id}
+					) > 0
+				`.as("hasQuests"),
+				hasPredictions: sql<boolean>`
+					(	
+						SELECT COUNT(*) FROM predictions WHERE predictions.event = ${events.id}
+					) > 0
+				`.as("hasPredictions"),
+				hasShop: sql<boolean>`
+					(
+						SELECT COUNT(*) > 0 FROM (
+							SELECT 1 FROM products WHERE products.event = ${events.id}
+							UNION ALL
+							SELECT 1 FROM raffles WHERE raffles.event = ${events.id}
+						)
+					)
+				`.as("hasShop"),
 			},
 		});
 	},

@@ -2,6 +2,7 @@
 
 import {
 	CalendarDays,
+	Coins,
 	Diamond,
 	Gem,
 	Handshake,
@@ -166,15 +167,13 @@ export default function Menu() {
 								</Link>
 							</li>
 							<li className="text-nowrap">
-								<Link href="/discord" className="flex items-center gap-4">
-									<img
-										alt="Discord logo"
-										src="/discord.jpg"
-										className="h-10 w-10 rounded-md"
-									/>
+								<Link href="/predictions" className="flex gap-4 items-center">
+									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-gold-500 text-white items-center">
+										<Coins className="w-full h-full p-2" />
+									</div>
 									<div>
-										<p className="font-bebas-neue text-lg">Discord</p>
-										<p className="text-grey-200">Join the Discord server</p>
+										<p className="font-bebas-neue text-lg">Predictions</p>
+										<p className="text-grey-200">Place bets and earn gold</p>
 									</div>
 								</Link>
 							</li>

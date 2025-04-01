@@ -111,36 +111,36 @@ export const checkins = pgTable("checkins", (t) => ({
 export const predictions = pgTable("predictions", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull(),
-	// __event: t.text(),
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
-	// __community: t.text(),
 	community: t.bigint({ mode: "number" }),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	rules: t.jsonb().$type<TipTap>().notNull(),
 	xp: t.integer().notNull(),
 	closed: t.boolean().notNull().default(false),
+	resolved: t.boolean().notNull().default(false),
 	featured: t.boolean().notNull().default(false),
 	start: t.timestamp(), //.notNull(),
 	end: t.timestamp(), //.notNull(),
+	pool: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
 }));
 
 export const outcomes = pgTable("outcomes", (t) => ({
 	id: t.serial().primaryKey(),
-	// __prediction: t.text().notNull(),
 	prediction: t.bigint({ mode: "number" }).notNull(),
 	name: t.text().notNull(),
 	image: t.text(),
 	outcome: t.boolean(),
-	totalBets: t.integer("total_bets").notNull().default(0),
+	// totalBets: t.integer("total_bets").notNull().default(0), // deprecate
+	pool: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
 }));
 
 export const bets = pgTable("bets", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	outcome: t.integer().notNull(),
-	// __prediction: t.text().notNull(),
+	amount: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
 	prediction: t.bigint({ mode: "number" }).notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));

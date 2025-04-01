@@ -101,10 +101,13 @@ export async function getAction(input: {
 }
 
 export const getQuests = cache(
-	async (input: { limit?: number; user?: string }) => {
+	async (input: { limit?: number; user?: string; event?: number }) => {
 		return db.pgpool.query.quests.findMany({
 			limit: input.limit,
-			where: and(eq(quests.active, true), isNull(quests.event)),
+			where: and(
+				eq(quests.active, true),
+				input.event ? eq(quests.event, input.event) : isNull(quests.event),
+			),
 			orderBy: [desc(quests.featured), desc(quests.createdAt)],
 			with: {
 				community: true,
