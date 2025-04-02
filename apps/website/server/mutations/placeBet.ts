@@ -21,6 +21,7 @@ export const placeBet = onlyRanked
 				bets: {
 					where: eq(bets.user, ctx.user.id),
 				},
+				event: true,
 			},
 		});
 
@@ -51,6 +52,8 @@ export const placeBet = onlyRanked
 				.where(eq(outcomes.id, parsedInput.outcome));
 		});
 
-		revalidatePath(`/predictions/${parsedInput.prediction}`);
-		revalidatePath(`/events/${prediction.event}`);
+		revalidatePath(`/predictions/${prediction.handle}`);
+		if (prediction.event) {
+			revalidatePath(`/events/${prediction.event.handle}`);
+		}
 	});
