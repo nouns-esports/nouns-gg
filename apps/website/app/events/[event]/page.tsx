@@ -149,7 +149,7 @@ export default async function EventPage(props: {
 		event.id === 7
 			? event.predictions.filter(
 					(prediction) =>
-						prediction.name.toLowerCase().includes("team a vs team d"),
+						prediction.name.toLowerCase().includes("team a vs team d") && !prediction.name.toLowerCase().includes("(match 1)")&& !prediction.name.toLowerCase().includes("(match 2)"),
 				)
 			: [];
 			
@@ -157,7 +157,7 @@ export default async function EventPage(props: {
 		event.id === 7
 			? event.predictions.filter(
 					(prediction) =>
-						prediction.name.toLowerCase().includes("team b vs team c"),
+						prediction.name.toLowerCase().includes("team b vs team c") && !prediction.name.toLowerCase().includes("(match 1)")&& !prediction.name.toLowerCase().includes("(match 2)"),
 				)
 			: [];
 
