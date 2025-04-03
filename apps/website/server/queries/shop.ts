@@ -1,6 +1,6 @@
 "use server";
 
-import { eq } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 import { carts, collections } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { unstable_cache as cache } from "next/cache";
@@ -8,7 +8,7 @@ import { products } from "~/packages/db/schema/public";
 import { shopifyClient } from "../clients/shopify";
 
 export const getProducts = cache(
-	async (input: { collection?: string }) => {
+	async (input: { collection?: string; event?: number }) => {
 		const collection = input.collection
 			? await db.pgpool.query.collections.findFirst({
 					where: eq(collections.handle, input.collection),
@@ -16,7 +16,10 @@ export const getProducts = cache(
 			: null;
 
 		return db.pgpool.query.products.findMany({
-			where: collection ? eq(products.collection, collection.id) : undefined,
+			where: and(
+				collection ? eq(products.collection, collection.id) : undefined,
+				input.event ? eq(products.event, input.event) : undefined,
+			),
 		});
 	},
 	["getProducts"],

@@ -14,6 +14,7 @@ import {
 	List,
 	Plus,
 	ShoppingCart,
+	Coins,
 } from "lucide-react";
 import Banner from "./Banner";
 import Menu from "./Menu";
@@ -114,7 +115,7 @@ export default async function Header() {
 													href="/rounds"
 													className="flex gap-4 items-center"
 												>
-													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-gold-500 text-white items-center">
+													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-green text-white items-center">
 														<Trophy className="w-full h-full p-2" />
 													</div>
 													<div>
@@ -153,6 +154,24 @@ export default async function Header() {
 														</p>
 														<p className="text-grey-200">
 															Rankup and earn rewards
+														</p>
+													</div>
+												</Link>
+											</li>
+											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
+												<Link
+													href="/predictions"
+													className="flex items-center gap-4"
+												>
+													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-gold-500 text-white items-center">
+														<Coins className="w-full h-full p-2" />
+													</div>
+													<div>
+														<p className="font-bebas-neue text-lg">
+															Predictions
+														</p>
+														<p className="text-grey-200">
+															Place bets and earn gold
 														</p>
 													</div>
 												</Link>

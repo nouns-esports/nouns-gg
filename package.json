@@ -1,43 +1,40 @@
 {
-  "name": "monorepo",
-  "private": true,
-  "scripts": {
-    "dev": "turbo dev",
-    "start": "turbo start",
-    "build": "turbo run build"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/bun": "^1.1.3",
-    "@types/node": "^20.14.1",
-    "turbo": "^2.3.3"
-  },
-  "engines": {
-    "node": ">=19.9.0 <21.3.0"
-  },
-  "type": "module",
-  "packageManager": "bun@1.2.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "dependencies": {
-    "@number-flow/react": "^0.5.7",
-    "@privy-io/server-auth": "1.18.12",
-    "@t3-oss/env-nextjs": "^0.10.1",
-    "@tiptap/extension-image": "^2.9.1",
-    "@tiptap/extension-link": "^2.9.1",
-    "@tiptap/extension-mention": "^2.9.1",
-    "@tiptap/extension-placeholder": "^2.9.1",
-    "@tiptap/extension-youtube": "^2.11.5",
-    "@tiptap/html": "^2.11.2",
-    "@tiptap/pm": "^2.11.5",
-    "@tiptap/react": "^2.9.1",
-    "@tiptap/starter-kit": "^2.9.1",
-    "@types/xmldom": "^0.1.34",
-    "buffer": "^6.0.3",
-    "pinata": "^2.1.0",
-    "typescript": "^5.3.3",
-    "xmldom": "^0.6.0"
-  }
+	"name": "monorepo",
+	"private": true,
+	"scripts": {
+		"dev": "turbo dev",
+		"start": "turbo start",
+		"build": "turbo run build"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "^1.1.3",
+		"@types/node": "^20.14.1",
+		"turbo": "^2.4.4"
+	},
+	"engines": {
+		"node": ">=19.9.0 <21.3.0"
+	},
+	"type": "module",
+	"packageManager": "bun@1.2.0",
+	"workspaces": ["apps/*", "packages/*"],
+	"dependencies": {
+		"@number-flow/react": "^0.5.7",
+		"@privy-io/server-auth": "1.18.12",
+		"@t3-oss/env-nextjs": "^0.10.1",
+		"@tiptap/extension-image": "^2.9.1",
+		"@tiptap/extension-link": "^2.9.1",
+		"@tiptap/extension-mention": "^2.9.1",
+		"@tiptap/extension-placeholder": "^2.9.1",
+		"@tiptap/extension-youtube": "^2.11.5",
+		"@tiptap/html": "^2.11.2",
+		"@tiptap/pm": "^2.11.5",
+		"@tiptap/react": "^2.9.1",
+		"@tiptap/starter-kit": "^2.9.1",
+		"@types/xmldom": "^0.1.34",
+		"buffer": "^6.0.3",
+		"pinata": "^2.1.0",
+		"typescript": "^5.3.3",
+		"xmldom": "^0.6.0"
+	}
 }

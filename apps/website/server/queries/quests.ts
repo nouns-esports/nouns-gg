@@ -101,10 +101,23 @@ export async function getAction(input: {
 }
 
 export const getQuests = cache(
-	async (input: { limit?: number; user?: string }) => {
+	async (input: {
+		limit?: number;
+		user?: string;
+		event?: number;
+		community?: number;
+	}) => {
 		return db.pgpool.query.quests.findMany({
 			limit: input.limit,
-			where: and(eq(quests.active, true), isNull(quests.event)),
+			where: and(
+				eq(quests.active, true),
+				input.event
+					? eq(quests.event, input.event)
+					: !input.community
+						? isNull(quests.event)
+						: undefined,
+				input.community ? eq(quests.community, input.community) : undefined,
+			),
 			orderBy: [desc(quests.featured), desc(quests.createdAt)],
 			with: {
 				community: true,
@@ -114,6 +127,7 @@ export const getQuests = cache(
 							limit: 1,
 						}
 					: undefined,
+				creator: true,
 			},
 		});
 	},
@@ -133,6 +147,7 @@ export const getQuest = cache(
 						}
 					: undefined,
 				event: true,
+				creator: true,
 			},
 		});
 	},

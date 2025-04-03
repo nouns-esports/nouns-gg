@@ -80,7 +80,11 @@ export function ToggleModal(props: {
 	return (
 		<div
 			tabIndex={props.tabIndex}
-			onClick={() => (isOpen ? close() : open())}
+			onClick={(e) => {
+				e.preventDefault();
+				e.stopPropagation();
+				isOpen ? close() : open();
+			}}
 			className={twMerge("cursor-pointer", props.className)}
 		>
 			{props.children}

@@ -195,7 +195,7 @@ export async function GET(request: Request) {
 						fontFamily: "Cabin",
 					}}
 				>
-					nouns.gg/rounds/{round.id}
+					nouns.gg/rounds/{round.handle}
 				</div>
 			</div>
 		</div>,

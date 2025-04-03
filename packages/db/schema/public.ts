@@ -43,7 +43,13 @@ export const communities = pgTable("communities", (t) => ({
 	name: t.text().notNull(),
 	description: t.jsonb().$type<TipTap>(), //.notNull(),
 	channel: t.text(),
-	owner: t.text(), // add admins eventually
+}));
+
+export const communityAdmins = pgTable("community_admins", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	community: t.bigint({ mode: "number" }).notNull(),
+	user: t.text().notNull(),
+	owner: t.boolean().notNull(),
 }));
 
 export const articles = pgTable("articles", (t) => ({
@@ -58,13 +64,12 @@ export const articles = pgTable("articles", (t) => ({
 
 export const events = pgTable("events", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	description: t.text().notNull().default(""),
 	start: t.timestamp({ mode: "date" }).notNull(),
 	end: t.timestamp({ mode: "date" }).notNull(),
-	// __community: t.text(),
 	community: t.bigint({ mode: "number" }),
 	creator: t.text(),
 	featured: t.boolean().notNull().default(false),
@@ -94,7 +99,6 @@ export const checkpoints = pgTable("checkpoints", (t) => ({
 	handle: t.text().notNull(),
 	key: t.text().notNull(), // random uuid
 	name: t.text().notNull(),
-	// __event: t.text(),
 	event: t.bigint({ mode: "number" }),
 	xp: t.integer(),
 	gold: t.numeric({ precision: 12, scale: 2 }),
@@ -102,7 +106,6 @@ export const checkpoints = pgTable("checkpoints", (t) => ({
 
 export const checkins = pgTable("checkins", (t) => ({
 	id: t.serial().primaryKey(),
-	// __checkpoint: t.text(),
 	checkpoint: t.bigint({ mode: "number" }).notNull(),
 	user: t.text(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
@@ -110,44 +113,42 @@ export const checkins = pgTable("checkins", (t) => ({
 
 export const predictions = pgTable("predictions", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
-	// __event: t.text(),
+	handle: t.text().notNull().unique(),
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
-	// __community: t.text(),
 	community: t.bigint({ mode: "number" }),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	rules: t.jsonb().$type<TipTap>().notNull(),
 	xp: t.integer().notNull(),
 	closed: t.boolean().notNull().default(false),
+	resolved: t.boolean().notNull().default(false),
 	featured: t.boolean().notNull().default(false),
 	start: t.timestamp(), //.notNull(),
 	end: t.timestamp(), //.notNull(),
+	pool: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
 }));
 
 export const outcomes = pgTable("outcomes", (t) => ({
 	id: t.serial().primaryKey(),
-	// __prediction: t.text().notNull(),
 	prediction: t.bigint({ mode: "number" }).notNull(),
 	name: t.text().notNull(),
 	image: t.text(),
-	outcome: t.boolean(),
-	totalBets: t.integer("total_bets").notNull().default(0),
+	result: t.boolean(),
+	pool: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
 }));
 
 export const bets = pgTable("bets", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	outcome: t.integer().notNull(),
-	// __prediction: t.text().notNull(),
+	amount: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
 	prediction: t.bigint({ mode: "number" }).notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
 
 export const attendees = pgTable("attendees", (t) => ({
 	id: t.serial().primaryKey(),
-	// __event: t.text().notNull(),
 	event: t.bigint({ mode: "number" }).notNull(),
 	featured: t.boolean().notNull().default(false),
 	user: t.text().notNull(),
@@ -178,12 +179,10 @@ export const attendees = pgTable("attendees", (t) => ({
 
 export const rounds = pgTable("rounds", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
-	// __community: t.text(),
 	community: t.bigint({ mode: "number" }),
-	// __event: t.text(),
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
 	type: t
@@ -205,7 +204,6 @@ export const rounds = pgTable("rounds", (t) => ({
 // add user column and update it when they claim the award
 export const awards = pgTable("awards", (t) => ({
 	id: t.serial().primaryKey(),
-	// __round: t.text().notNull(),
 	round: t.bigint({ mode: "number" }).notNull(),
 	place: t.smallint().notNull(),
 	asset: t.text().notNull(),
@@ -227,7 +225,6 @@ export const assets = pgTable("assets", (t) => ({
 export const proposals = pgTable("proposals", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
-	// __round: t.text().notNull(),
 	round: t.bigint({ mode: "number" }).notNull(),
 	title: t.text().notNull(),
 	content: t.text(), // rename to description
@@ -289,10 +286,8 @@ export const quests = pgTable("quests", (t) => ({
 	description: t.text().notNull(),
 	_description: t.jsonb().$type<TipTap>(), //.notNull(),
 	image: t.text().notNull(),
-	// __community: t.text(),
 	community: t.bigint({ mode: "number" }),
 	creator: t.text(),
-	// __event: t.text(),
 	event: t.bigint({ mode: "number" }),
 	createdAt: t.timestamp("created_at", { mode: "date" }).notNull().defaultNow(),
 	featured: t.boolean().notNull().default(false),
@@ -315,13 +310,11 @@ export const xp = pgTable("xp", (t) => ({
 	amount: t.integer().notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 	reason: t.text(),
-	// __quest: t.text(),
 	quest: t.bigint({ mode: "number" }),
 	snapshot: t.integer(),
 	achievement: t.text(),
 	station: t.integer(),
 	checkin: t.integer(),
-	// __prediction: t.text(),
 	prediction: t.bigint({ mode: "number" }),
 	vote: t.integer(),
 	proposal: t.integer(),
@@ -351,7 +344,6 @@ export const votes = pgTable("votes", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	proposal: t.integer().notNull(),
-	// __round: t.text().notNull(),
 	round: t.bigint({ mode: "number" }).notNull(),
 	count: t.smallint().notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
@@ -394,12 +386,9 @@ export const products = pgTable("products", (t) => ({
 		>()
 		.notNull(),
 	// .default([]), defaults + jsonb are broken with Drizzle Kit right now
-	// __collection: t.text(),
 	collection: t.bigint({ mode: "number" }),
-	// __event: t.text(),
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
-	// __community: t.text(),
 	community: t.bigint({ mode: "number" }),
 	requiresShipping: t.boolean("requires_shipping").notNull().default(true),
 }));
@@ -415,7 +404,6 @@ export const collections = pgTable("collections", (t) => ({
 export const carts = pgTable("carts", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
-	// __product: t.text().notNull(),
 	product: t.bigint({ mode: "number" }).notNull(),
 	variant: t.text().notNull(),
 	quantity: t.integer().notNull(),
@@ -490,16 +478,13 @@ export const raffles = pgTable("raffles", (t) => ({
 	end: t.timestamp().notNull(),
 	gold: t.integer().notNull(),
 	winners: t.integer().notNull(),
-	// __event: t.text(),
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
-	// __community: t.text(),
 	community: t.bigint({ mode: "number" }),
 }));
 
 export const raffleEntries = pgTable("raffle_entries", (t) => ({
 	id: t.serial().primaryKey(),
-	// __raffle: t.text().notNull(),
 	raffle: t.bigint({ mode: "number" }).notNull(),
 	user: t.text().notNull(),
 	timestamp: t.timestamp().notNull(),

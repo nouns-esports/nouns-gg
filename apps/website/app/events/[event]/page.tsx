@@ -18,6 +18,11 @@ import { ToggleModal } from "@/components/Modal";
 import EventAttendeesModal from "@/components/modals/EventAttendeesModal";
 import RaffleCard from "@/components/RaffleCard";
 import EnterRaffleModal from "@/components/modals/EnterRaffleModal";
+import { getRounds } from "@/server/queries/rounds";
+import { getPredictions } from "@/server/queries/predictions";
+import { getProducts } from "@/server/queries/shop";
+import { getQuests } from "@/server/queries/quests";
+import { getRaffles } from "@/server/queries/raffles";
 
 export async function generateMetadata(props: {
 	params: Promise<{ event: string }>;
@@ -85,15 +90,22 @@ export default async function EventPage(props: {
 		searchParams.tab ??
 		(event.details
 			? "details"
-			: event.rounds.length > 0
+			: event.hasRounds
 				? "rounds"
-				: event.quests.length > 0
+				: event.hasQuests
 					? "quests"
-					: event.predictions.length > 0
+					: event.hasPredictions
 						? "predictions"
-						: event.products.length > 0
+						: event.hasShop
 							? "shop"
 							: null);
+
+	const rounds = tab === "rounds" ? await getRounds({ event: event.id }) : [];
+	const quests = tab === "quests" ? await getQuests({ event: event.id }) : [];
+	const predictions =
+		tab === "predictions" ? await getPredictions({ event: event.id }) : [];
+	const products = tab === "shop" ? await getProducts({ event: event.id }) : [];
+	const raffles = tab === "shop" ? await getRaffles({ event: event.id }) : [];
 
 	const attendees = [
 		// {
@@ -239,21 +251,34 @@ export default async function EventPage(props: {
 											{event.description}
 										</p>
 										<div className="flex items-center gap-6 overflow-x-auto w-full flex-shrink-0 max-w-full">
-											<Link
-												href={`https://warpcast.com/~/channel/${event.community?.handle ?? "nouns-esports"}`}
-												newTab
-												className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
-											>
-												<img
-													alt={event.community?.name ?? "Nouns"}
-													src={
-														event.community?.image ?? "/logo/logo-square.png"
-													}
-													className="w-5 h-5 rounded-full"
-												/>
-												{event.community?.name ?? "Nouns"}
-											</Link>
-
+											{event.community ? (
+												<Link
+													href={`/communities/${event.community.handle}`}
+													newTab
+													className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
+												>
+													<img
+														alt={event.community.name}
+														src={event.community.image}
+														className="w-5 h-5 rounded-full"
+													/>
+													{event.community.name}
+												</Link>
+											) : null}
+											{event.creator ? (
+												<Link
+													href={`/users/${event.creator}`}
+													newTab
+													className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
+												>
+													<img
+														alt={event.creator.name}
+														src={event.creator.image}
+														className="w-5 h-5 rounded-full"
+													/>
+													{event.creator.name}
+												</Link>
+											) : null}
 											<div className="flex items-center gap-2 text-white flex-shrink-0">
 												<CalendarDays className="w-5 h-5 text-white" />
 												<p className="mt-0.5 whitespace-nowrap">
@@ -309,22 +334,22 @@ export default async function EventPage(props: {
 											Details
 										</Tab>
 									) : null}
-									{event.rounds.length > 0 ? (
+									{event.hasRounds ? (
 										<Tab href="?tab=rounds" active={tab === "rounds"}>
 											Rounds
 										</Tab>
 									) : null}
-									{event.quests.length > 0 ? (
+									{event.hasQuests ? (
 										<Tab href="?tab=quests" active={tab === "quests"}>
 											Quests
 										</Tab>
 									) : null}
-									{event.predictions.length > 0 ? (
+									{event.hasPredictions ? (
 										<Tab href="?tab=predictions" active={tab === "predictions"}>
 											Predictions
 										</Tab>
 									) : null}
-									{event.products.length > 0 || event.raffles.length > 0 ? (
+									{event.hasShop ? (
 										<Tab href="?tab=shop" active={tab === "shop"}>
 											Shop
 										</Tab>
@@ -348,51 +373,15 @@ export default async function EventPage(props: {
 								),
 								rounds: (
 									<div className="grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4">
-										{event.rounds.map((round) => (
-											<RoundCard
-												key={`round-${round.id}`}
-												handle={round.handle}
-												image={round.image}
-												name={round.name}
-												start={round.start}
-												votingStart={round.votingStart}
-												end={round.end}
-												community={
-													round.community
-														? {
-																handle: round.community.handle,
-																name: round.community.name,
-																image: round.community.image,
-															}
-														: undefined
-												}
-											/>
+										{rounds.map((round) => (
+											<RoundCard key={`round-${round.id}`} round={round} />
 										))}
 									</div>
 								),
 								quests: (
 									<div className="grid grid-cols-5 max-2xl:grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4">
-										{event.quests.map((quest) => (
-											<QuestCard
-												key={`quest-${quest.id}`}
-												handle={quest.handle}
-												name={quest.name}
-												description={quest.description}
-												image={quest.image}
-												start={quest.start ?? undefined}
-												end={quest.end ?? undefined}
-												community={
-													quest.community
-														? {
-																handle: quest.community.handle,
-																name: quest.community.name,
-																image: quest.community.image,
-															}
-														: undefined
-												}
-												xp={quest.xp}
-												completed={quest.completed?.length > 0}
-											/>
+										{quests.map((quest) => (
+											<QuestCard key={`quest-${quest.id}`} quest={quest} />
 										))}
 									</div>
 								),
@@ -520,21 +509,10 @@ export default async function EventPage(props: {
 											Happening Now
 										</h2>
 										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-											{event.predictions.map((prediction) => (
+											{predictions.map((prediction) => (
 												<PredictionCard
 													key={`prediction-${prediction.id}`}
-													id={prediction.id}
-													handle={prediction.handle}
-													name={prediction.name}
-													image={prediction.image}
-													xp={prediction.xp}
-													outcomes={prediction.outcomes}
-													totalBets={prediction.outcomes.reduce(
-														(acc, outcome) => acc + outcome.totalBets,
-														0,
-													)}
-													closed={prediction.closed}
-													userBet={prediction.bets?.[0]}
+													prediction={prediction}
 													user={user}
 													className="max-md:w-full max-md:flex-shrink-0"
 												/>
@@ -544,13 +522,13 @@ export default async function EventPage(props: {
 								),
 								shop: (
 									<div className="flex flex-col gap-6">
-										{event.raffles.length > 0 ? (
+										{raffles.length > 0 ? (
 											<div className="flex flex-col gap-4">
 												<h2 className="text-white font-luckiest-guy text-2xl">
 													Raffles
 												</h2>
 												<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-													{event.raffles.map((raffle) => {
+													{raffles.map((raffle) => {
 														return (
 															<RaffleCard key={raffle.id} raffle={raffle} />
 														);
@@ -558,13 +536,13 @@ export default async function EventPage(props: {
 												</div>
 											</div>
 										) : null}
-										{event.products.length > 0 ? (
+										{products.length > 0 ? (
 											<div className="flex flex-col gap-4">
 												<h2 className="text-white font-luckiest-guy text-2xl">
 													Products
 												</h2>
 												<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-													{event.products.map((product) => {
+													{products.map((product) => {
 														return (
 															<ProductCard key={product.id} product={product} />
 														);
@@ -581,8 +559,19 @@ export default async function EventPage(props: {
 				</div>
 			</div>
 			<EventAttendeesModal attendees={attendees} />
-			<PlaceBetModal />
-			{event.raffles.map((raffle) => {
+			{user
+				? predictions.map((prediction) =>
+						prediction.outcomes.map((outcome) => (
+							<PlaceBetModal
+								key={`prediction-${prediction.id}-${outcome.id}`}
+								prediction={prediction}
+								outcome={outcome}
+								user={user}
+							/>
+						)),
+					)
+				: null}
+			{raffles.map((raffle) => {
 				return (
 					<EnterRaffleModal
 						key={raffle.id}

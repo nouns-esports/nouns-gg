@@ -4,11 +4,16 @@ import { raffleEntries, raffles } from "~/packages/db/schema/public";
 import { sql } from "drizzle-orm";
 
 export const getRaffles = cache(
-	async () => {
+	async (input?: { event?: number }) => {
 		const now = new Date();
 
 		return db.pgpool.query.raffles.findMany({
-			where: (t, { gt, lt, and }) => and(lt(t.start, now), gt(t.end, now)),
+			where: (t, { eq, gt, lt, and }) =>
+				and(
+					lt(t.start, now),
+					gt(t.end, now),
+					input?.event ? eq(t.event, input.event) : undefined,
+				),
 			extras: {
 				totalEntries: sql<number>`
                     (

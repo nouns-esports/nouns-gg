@@ -27,6 +27,7 @@ import {
 	collections,
 	raffles,
 	raffleEntries,
+	communityAdmins,
 } from "./schema/public";
 import {
 	erc721Balances,
@@ -55,7 +56,22 @@ export const communityRelations = relations(communities, ({ one, many }) => ({
 	creations: many(creations),
 	events: many(events),
 	quests: many(quests),
+	admins: many(communityAdmins),
 }));
+
+export const communityAdminsRelations = relations(
+	communityAdmins,
+	({ one }) => ({
+		community: one(communities, {
+			fields: [communityAdmins.community],
+			references: [communities.id],
+		}),
+		user: one(nexus, {
+			fields: [communityAdmins.user],
+			references: [nexus.id],
+		}),
+	}),
+);
 
 export const eventsRelations = relations(events, ({ one, many }) => ({
 	community: one(communities, {
@@ -69,6 +85,10 @@ export const eventsRelations = relations(events, ({ one, many }) => ({
 	products: many(products),
 	checkpoints: many(checkpoints),
 	raffles: many(raffles),
+	creator: one(nexus, {
+		fields: [events.creator],
+		references: [nexus.id],
+	}),
 }));
 
 export const checkpointsRelations = relations(checkpoints, ({ one, many }) => ({
@@ -86,6 +106,10 @@ export const predictionsRelations = relations(predictions, ({ one, many }) => ({
 	}),
 	outcomes: many(outcomes),
 	bets: many(bets),
+	creator: one(nexus, {
+		fields: [predictions.creator],
+		references: [nexus.id],
+	}),
 }));
 
 export const outcomesRelations = relations(outcomes, ({ one, many }) => ({
@@ -151,6 +175,10 @@ export const roundsRelations = relations(rounds, ({ one, many }) => ({
 		fields: [rounds.voterCredential],
 		references: [assets.id],
 	}),
+	creator: one(nexus, {
+		fields: [rounds.creator],
+		references: [nexus.id],
+	}),
 }));
 
 export const assetsRelations = relations(assets, ({ many }) => ({
@@ -186,6 +214,11 @@ export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	notifications: many(notifications),
 	// orders: many(orders),
 	carts: many(carts),
+	communities: many(communityAdmins),
+	rounds: many(rounds),
+	events: many(events),
+	quests: many(quests),
+	predictions: many(predictions),
 }));
 
 export const goldRelations = relations(gold, ({ one }) => ({
@@ -244,6 +277,10 @@ export const questRelations = relations(quests, ({ one, many }) => ({
 	event: one(events, {
 		fields: [quests.event],
 		references: [events.id],
+	}),
+	creator: one(nexus, {
+		fields: [quests.creator],
+		references: [nexus.id],
 	}),
 }));
 
