@@ -3,10 +3,10 @@
 import { twMerge } from "tailwind-merge";
 import Link from "./Link";
 import { Check, Sparkles, Vote, X } from "lucide-react";
-import { useModal } from "./Modal";
-import { usePlaceBetModal } from "./modals/PlaceBetModal";
+import { ToggleModal, useModal } from "./Modal";
 import type { AuthenticatedUser } from "@/server/queries/users";
 import { getPredictions } from "@/server/queries/predictions";
+import { getPredictionOdds } from "~/packages/utils/getPredictionOdds";
 
 export default function PredictionCard(props: {
 	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
@@ -36,24 +36,11 @@ export default function PredictionCard(props: {
 				{props.prediction.outcomes.length === 2 ? (
 					<div className="rounded-lg flex flex-col items-center">
 						<p className="text-white leading-none">
-							{props.prediction.outcomes.every(
-								(outcome) =>
-									Number(outcome.pool) === Number(props.prediction.pool),
-							)
-								? 50
-								: Math.round(
-										(Number(
-											props.prediction.outcomes.toSorted((a, b) =>
-												a.name === "Yes"
-													? -1
-													: b.name === "Yes"
-														? 1
-														: a.name.localeCompare(b.name),
-											)[0].pool,
-										) /
-											Number(props.prediction.pool)) *
-											100,
-									)}
+							{
+								getPredictionOdds({
+									prediction: props.prediction,
+								})[0].chance
+							}
 							%
 						</p>
 						<p className="text-white/50 text-sm">chance</p>
@@ -89,10 +76,6 @@ function MultiOutcome(props: {
 	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
 	user?: AuthenticatedUser;
 }) {
-	const { open } = useModal("place-bet");
-	const { open: openSignIn } = useModal("sign-in");
-	const { setState } = usePlaceBetModal();
-
 	return (
 		<div className="flex flex-col flex-1 overflow-y-auto custom-scrollbar mr-2">
 			{props.prediction.outcomes
@@ -104,13 +87,11 @@ function MultiOutcome(props: {
 
 					const userBetAmount = Number(userBet?.amount ?? 0);
 
-					const odds = props.prediction.outcomes.every(
-						(outcome) => Number(outcome.pool) === Number(props.prediction.pool),
-					)
-						? 100 / props.prediction.outcomes.length
-						: Math.round(
-								(Number(outcome.pool) / Number(props.prediction.pool)) * 100,
-							);
+					const odds = getPredictionOdds({
+						prediction: props.prediction,
+					});
+
+					const outcomeOdds = odds.find((odd) => odd.id === outcome.id);
 
 					return (
 						<div
@@ -135,25 +116,11 @@ function MultiOutcome(props: {
 										Your bet
 									</div>
 								) : null}
-								<p className="text-sm">{odds}%</p>
+								<p className="text-sm">{outcomeOdds?.chance}%</p>
 
-								<button
-									onClick={(e) => {
-										e.preventDefault();
-
-										if (!props.user) {
-											openSignIn();
-											return;
-										}
-
-										setState({
-											outcome,
-											prediction: props.prediction,
-											user: props.user,
-											odds,
-										});
-										open();
-									}}
+								<ToggleModal
+									id={`place-bet-${props.prediction.id}-${outcome.id}`}
+									key={`place-bet-${props.prediction.id}-${outcome.id}`}
 									className={twMerge(
 										"text-sm px-2 py-0.5 rounded-md transition-colors",
 										userBet
@@ -162,7 +129,7 @@ function MultiOutcome(props: {
 									)}
 								>
 									{userBetAmount > 0 ? "Add" : userBet ? "Bet Gold" : "Bet"}
-								</button>
+								</ToggleModal>
 							</div>
 						</div>
 					);
@@ -175,10 +142,6 @@ function BinaryOutcome(props: {
 	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
 	user?: AuthenticatedUser;
 }) {
-	const { open } = useModal("place-bet");
-	const { open: openSignIn } = useModal("sign-in");
-	const { setState } = usePlaceBetModal();
-
 	const yesOutcome =
 		props.prediction.outcomes.find((outcome) => outcome.name === "Yes") ??
 		props.prediction.outcomes.toSorted((a, b) =>
@@ -224,44 +187,13 @@ function BinaryOutcome(props: {
 							{userBetAmount}
 						</div>
 					) : null}
-					<button
-						onClick={(e) => {
-							e.preventDefault();
-
-							if (!props.user) {
-								return openSignIn();
-							}
-
-							setState({
-								outcome:
-									userBet.outcome.id === yesOutcome.id ? noOutcome : yesOutcome,
-								prediction: props.prediction,
-								user: props.user,
-								odds: props.prediction.outcomes.every(
-									(outcome) =>
-										Number(outcome.pool) === Number(props.prediction.pool),
-								)
-									? 50
-									: Math.round(
-											(Number(
-												props.prediction.outcomes.toSorted((a, b) =>
-													a.name === "Yes"
-														? -1
-														: b.name === "Yes"
-															? 1
-															: a.name.localeCompare(b.name),
-												)[0].pool,
-											) /
-												Number(props.prediction.pool)) *
-												100,
-										),
-							});
-							open();
-						}}
+					<ToggleModal
+						id={`place-bet-${props.prediction.id}-${userBet.outcome.id}`}
+						key={`place-bet-${props.prediction.id}-${userBet.outcome.id}`}
 						className="text-sm  transition-colors px-2 py-0.5 rounded-md text-[#FEBD1C] bg-[#4F3101] hover:bg-[#623C00]"
 					>
 						{userBetAmount > 0 ? "Add" : "Bet Gold"}
-					</button>
+					</ToggleModal>
 				</div>
 			</div>
 		);
@@ -270,23 +202,9 @@ function BinaryOutcome(props: {
 	return (
 		<div className="flex w-full gap-2 px-2">
 			{[yesOutcome, noOutcome].map((outcome, index) => (
-				<button
-					onClick={(e) => {
-						e.preventDefault();
-
-						if (!props.user) {
-							return openSignIn();
-						}
-
-						setState({
-							outcome,
-							prediction: props.prediction,
-							user: props.user,
-							odds: Number(props.prediction.pool) / Number(outcome.pool),
-						});
-						open();
-					}}
-					key={outcome.id}
+				<ToggleModal
+					id={`place-bet-${props.prediction.id}-${outcome.id}`}
+					key={`place-bet-${props.prediction.id}-${outcome.id}`}
 					className={twMerge(
 						"w-full flex items-center justify-center py-2 rounded-lg text-white transition-colors",
 						index === 0 && "bg-green/30  text-green hover:bg-green/50",
@@ -294,7 +212,7 @@ function BinaryOutcome(props: {
 					)}
 				>
 					{outcome.name}
-				</button>
+				</ToggleModal>
 			))}
 		</div>
 	);

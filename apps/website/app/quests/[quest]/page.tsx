@@ -110,7 +110,7 @@ export default async function Quest(props: {
 					className="text-red flex items-center gap-1 group w-fit"
 				>
 					<ArrowLeft className="w-5 h-5 text-red group-hover:-translate-x-1 transition-transform" />
-					Back to {quest.event ? quest.event.name : "quests"}
+					Back to quests
 				</NavigateBack>
 				<div className="flex flex-col gap-4">
 					<div className="bg-grey-800 rounded-xl overflow-hidden">

@@ -42,7 +42,7 @@ export default function Gallery(props: {
 								Proposing: "Now proposing",
 								Upcoming: "Starting soon",
 							}[roundState(props.highlightedRound)],
-							href: `/rounds/${props.highlightedRound.id}`,
+							href: `/rounds/${props.highlightedRound.handle}`,
 							button: "View Round",
 							type: "image",
 							url: props.highlightedRound.image,
@@ -54,7 +54,7 @@ export default function Gallery(props: {
 						{
 							title: props.highlightedEvent.name,
 							sub: `Coming in ${new Date(props.highlightedEvent.start).toLocaleString("default", { month: "long" })}`,
-							href: `/events/${props.highlightedEvent.id}`,
+							href: `/events/${props.highlightedEvent.handle}`,
 							button: "View Event",
 							type: "image",
 							url: props.highlightedEvent.image,

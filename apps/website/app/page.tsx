@@ -252,7 +252,7 @@ export default async function Home() {
 						{articles.map((article) => (
 							<li key={article.id} className="w-full h-min group">
 								<Link
-									href={`/articles/${article.id}`}
+									href={`/articles/${article.handle}`}
 									className="flex flex-col gap-2 w-full"
 								>
 									<div className="rounded-xl overflow-hidden w-full rotate-[0.01deg] aspect-video max-lg:w-[300px]">

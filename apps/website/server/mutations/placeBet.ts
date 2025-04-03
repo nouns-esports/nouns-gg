@@ -8,7 +8,7 @@ import {
 	outcomes,
 	predictions,
 } from "~/packages/db/schema/public";
-import { eq, sql } from "drizzle-orm";
+import { eq, sql, and } from "drizzle-orm";
 import { db } from "~/packages/db";
 import { revalidatePath } from "next/cache";
 
@@ -24,8 +24,11 @@ export const placeBet = onlyRanked
 		const prediction = await db.primary.query.predictions.findFirst({
 			where: eq(predictions.id, parsedInput.prediction),
 			with: {
+				outcomes: {
+					where: eq(outcomes.id, parsedInput.outcome),
+				},
 				bets: {
-					where: eq(bets.user, ctx.user.id),
+					where: and(eq(bets.user, ctx.user.id), eq(bets.outcome, parsedInput.outcome)),
 				},
 				event: true,
 			},
@@ -33,6 +36,10 @@ export const placeBet = onlyRanked
 
 		if (!prediction) {
 			throw new Error("Prediction not found");
+		}
+
+		if (prediction.outcomes.length === 0) {
+			throw new Error("Outcome not found");
 		}
 
 		if (parsedInput.amount === 0 && prediction.bets.length > 0) {
@@ -91,6 +98,7 @@ export const placeBet = onlyRanked
 		});
 
 		revalidatePath(`/predictions/${prediction.handle}`);
+		revalidatePath("/predictions");
 		if (prediction.event) {
 			revalidatePath(`/events/${prediction.event.handle}`);
 		}

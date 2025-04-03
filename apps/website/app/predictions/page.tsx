@@ -35,7 +35,18 @@ export default async function Predictions() {
 					</div>
 				</div>
 			</div>
-			<PlaceBetModal />
+			{user
+				? predictions.map((prediction) =>
+						prediction.outcomes.map((outcome) => (
+							<PlaceBetModal
+								key={`prediction-${prediction.id}-${outcome.id}`}
+								prediction={prediction}
+								outcome={outcome}
+								user={user}
+							/>
+						)),
+					)
+				: null}
 		</div>
 	);
 }

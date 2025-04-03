@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import { ToggleModal } from "@/components/Modal";
+import PlaceBetModal from "@/components/modals/PlaceBetModal";
 import NavigateBack from "@/components/NavigateBack";
 import TipTap from "@/components/TipTap";
 import { getPrediction } from "@/server/queries/predictions";
@@ -7,11 +8,12 @@ import {
 	getAuthenticatedUser,
 	type AuthenticatedUser,
 } from "@/server/queries/users";
-import { ArrowLeft, Sparkles } from "lucide-react";
+import { ArrowLeft, Check, Sparkles } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { twMerge } from "tailwind-merge";
 import { env } from "~/env";
+import { getPredictionOdds } from "~/packages/utils/getPredictionOdds";
 
 export async function generateMetadata(props: {
 	params: Promise<{ prediction: string }>;
@@ -84,7 +86,7 @@ export default async function Prediction(props: {
 					className="text-red flex items-center gap-1 group w-fit"
 				>
 					<ArrowLeft className="w-5 h-5 text-red group-hover:-translate-x-1 transition-transform" />
-					Back to {prediction.event ? prediction.event.name : "predictions"}
+					Back to predictions
 				</NavigateBack>
 				<div className="flex flex-col gap-4 p-4 bg-grey-800 rounded-xl overflow-hidden">
 					<div className="flex flex-col gap-4">
@@ -113,20 +115,79 @@ export default async function Prediction(props: {
 										: a.name.localeCompare(b.name),
 							)
 							.map(async (outcome, index) => {
+								const userBet = prediction.bets
+									.filter((bet) => bet.user === user?.id)
+									.find((bet) => bet.outcome.id === outcome.id);
+
+								const userBetAmount = Number(userBet?.amount ?? 0);
+
+								const odds = getPredictionOdds({
+									prediction,
+								});
+
+								const outcomeOdds = odds.find((odd) => odd.id === outcome.id);
+
 								return (
 									<li
-										key={`outcome-${index}`}
+										key={`outcome-${outcome.id}`}
 										className={twMerge(
 											"relative bg-grey-600 rounded-xl py-3 px-4 flex justify-between items-center text-white",
 										)}
 									>
-										{outcome.name}
+										<p>{outcome.name}</p>
+										<div className="flex items-center gap-3">
+											{userBetAmount > 0 ? (
+												<div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
+													<img
+														alt="Gold coin"
+														src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
+														className="rounded-full h-4 w-4 shadow-xl"
+													/>
+													{userBetAmount}
+												</div>
+											) : null}
+											{userBet?.outcome.id === outcome.id &&
+											userBetAmount === 0 ? (
+												<div className="text-sm text-green flex items-center gap-1">
+													<Check className="w-4 h-4" />
+													Your bet
+												</div>
+											) : null}
+											<p className="text-sm">{outcomeOdds?.chance}%</p>
+
+											<ToggleModal
+												id={`place-bet-${prediction.id}-${outcome.id}`}
+												key={`place-bet-${prediction.id}-${outcome.id}`}
+												className={twMerge(
+													"text-sm px-2 py-0.5 rounded-md transition-colors",
+													userBet
+														? "text-[#FEBD1C] bg-[#4F3101] hover:bg-[#623C00]"
+														: "text-green bg-green/30 hover:bg-green/50",
+												)}
+											>
+												{userBetAmount > 0
+													? "Add"
+													: userBet
+														? "Bet Gold"
+														: "Bet"}
+											</ToggleModal>
+										</div>
 									</li>
 								);
 							})}
 					</ul>
 				</div>
 			</div>
+			{user
+				? prediction.outcomes.map((outcome) => (
+						<PlaceBetModal
+							key={`prediction-${prediction.id}-${outcome.id}`}
+							prediction={prediction}
+							outcome={outcome}
+							user={user}
+						/>
+					))
+				: null}
 		</div>
 	);
 }

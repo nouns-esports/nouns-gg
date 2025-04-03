@@ -184,7 +184,7 @@ export default async function Round(props: {
 					className="text-red flex items-center gap-1 group"
 				>
 					<ArrowLeft className="w-5 h-5 text-red group-hover:-translate-x-1 transition-transform" />
-					Back to {round.event ? round.event.name : "rounds"}
+					Back to rounds
 				</NavigateBack>
 				<div className="flex flex-col gap-8">
 					<div className="flex gap-4 h-[500px] max-xl:flex-col max-xl:h-auto">

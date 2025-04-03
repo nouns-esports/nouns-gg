@@ -10,13 +10,20 @@ export function unpadSVG(svgString: string): {
 	// Parse the SVG string into a document.
 	const parser = new DOMParser();
 	const doc = parser.parseFromString(svgString, "image/svg+xml");
-	const svg = doc.querySelector("svg");
-	if (!svg) {
+	const svgElements = doc.getElementsByTagName("svg");
+	if (!svgElements.length) {
 		throw new Error("Invalid SVG string");
 	}
+	const svg = svgElements[0];
 
-	// Query all elements with x, y, width, and height attributes.
-	const elements = svg.querySelectorAll("[x][y][width][height]");
+	// For elements, we need to use getElementsByTagName instead of querySelectorAll
+	const elements = Array.from(svg.getElementsByTagName("*")).filter(el => 
+		el.hasAttribute("x") && 
+		el.hasAttribute("y") && 
+		el.hasAttribute("width") && 
+		el.hasAttribute("height")
+	);
+
 	let minX = Infinity;
 	let minY = Infinity;
 	let maxX = -Infinity;

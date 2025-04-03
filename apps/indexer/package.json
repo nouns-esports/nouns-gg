@@ -6,5 +6,8 @@
   "scripts": {
     "test": "bun --env-file=../../.env.development ponder dev --schema=indexer-test",
     "start": "ponder start --schema=$RAILWAY_DEPLOYMENT_ID"
+  },
+  "dependencies": {
+    "ponder": "0.10.6"
   }
 }

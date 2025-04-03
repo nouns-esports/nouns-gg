@@ -19,6 +19,9 @@ export async function getPrediction(input: { handle: string; user?: string }) {
 			bets: {
 				where: input.user ? eq(bets.user, input.user) : undefined,
 				limit: input.user ? undefined : 0,
+				with: {
+					outcome: true,
+				},
 			},
 			event: true,
 		},

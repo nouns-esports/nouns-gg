@@ -428,7 +428,18 @@ export default async function EventPage(props: {
 				</div>
 			</div>
 			<EventAttendeesModal attendees={attendees} />
-			{predictions.length > 0 ? <PlaceBetModal /> : null}
+			{user
+				? predictions.map((prediction) =>
+						prediction.outcomes.map((outcome) => (
+							<PlaceBetModal
+								key={`prediction-${prediction.id}-${outcome.id}`}
+								prediction={prediction}
+								outcome={outcome}
+								user={user}
+							/>
+						)),
+					)
+				: null}
 			{raffles.map((raffle) => {
 				return (
 					<EnterRaffleModal
