@@ -128,7 +128,7 @@ export const outcomes = pgTable("outcomes", (t) => ({
 	prediction: t.bigint({ mode: "number" }).notNull(),
 	name: t.text().notNull(),
 	image: t.text(),
-	outcome: t.boolean(),
+	result: t.boolean(),
 	pool: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
 }));
 

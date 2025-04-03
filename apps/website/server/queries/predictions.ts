@@ -2,7 +2,7 @@
 
 import { bets, predictions, outcomes } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq, sql } from "drizzle-orm";
+import { desc, eq, sql } from "drizzle-orm";
 
 export async function getPrediction(input: { handle: string; user?: string }) {
 	return db.pgpool.query.predictions.findFirst({
@@ -11,7 +11,7 @@ export async function getPrediction(input: { handle: string; user?: string }) {
 			outcomes: {
 				extras: {
 					totalBets:
-						sql<number>`(SELECT COUNT(*)::integer FROM bets WHERE bets.outcome = id)`.as(
+						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = predictions_outcomes.id)`.as(
 							"totalBets",
 						),
 				},
@@ -27,7 +27,7 @@ export async function getPrediction(input: { handle: string; user?: string }) {
 		},
 		extras: {
 			totalBets:
-				sql<number>`(SELECT COUNT(*)::integer FROM bets WHERE bets.prediction = predictions.id)`.as(
+				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)`.as(
 					"totalBets",
 				),
 		},
@@ -37,11 +37,12 @@ export async function getPrediction(input: { handle: string; user?: string }) {
 export async function getPredictions(input: { user?: string; event?: number }) {
 	return db.pgpool.query.predictions.findMany({
 		where: input.event ? eq(predictions.event, input.event) : undefined,
+		orderBy: [desc(predictions.pool)],
 		with: {
 			outcomes: {
 				extras: {
 					totalBets:
-						sql<number>`(SELECT COUNT(*)::integer FROM bets WHERE bets.outcome = id)`.as(
+						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = predictions_outcomes.id)`.as(
 							"totalBets",
 						),
 				},
@@ -56,7 +57,7 @@ export async function getPredictions(input: { user?: string; event?: number }) {
 		},
 		extras: {
 			totalBets:
-				sql<number>`(SELECT COUNT(*)::integer FROM bets WHERE bets.prediction = predictions.id)`.as(
+				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)`.as(
 					"totalBets",
 				),
 		},

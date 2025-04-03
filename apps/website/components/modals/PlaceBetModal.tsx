@@ -29,10 +29,10 @@ export default function PlaceBetModal(props: {
 
 	const { hasSucceeded, isPending, executeAsync, reset } = useAction(placeBet);
 
-	useEffect(() => reset(), [isOpen]);
+	// useEffect(() => reset(), [isOpen]);
 
 	const [amount, setAmount] = useState(
-		props.user.nexus ? Number(props.user.nexus.gold) / 10 : 0,
+		props.user.nexus ? Math.floor(Number(props.user.nexus.gold) / 10) : 0,
 	);
 
 	const shouldSimulateGains = useDebounce(amount, 1000);
