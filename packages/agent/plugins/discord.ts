@@ -28,7 +28,8 @@ export function discordPlugin(options: { token: string }) {
 			const embeds: string[] = [];
 
 			if (mentioned) {
-				let response: string | undefined;
+				let response: string | undefined =
+					"Sorry, something went wrong and I couldn't complete your task.";
 
 				try {
 					const reply = await generateReply(message.content, {
@@ -38,6 +39,8 @@ export function discordPlugin(options: { token: string }) {
 						mentions,
 						embeds,
 					});
+
+					console.log("Reply: ", reply);
 
 					response = reply.text;
 				} catch (error) {
@@ -53,9 +56,10 @@ export function discordPlugin(options: { token: string }) {
 							});
 							response = errorReply.text;
 						} catch (error) {
-							console.log("Deep Error: ", error);
-							response =
-								"Sorry, something went wrong and I couldn't complete your task.";
+							if (error instanceof Error) {
+								console.log("Deep Error: ", error);
+								response = error.message;
+							}
 						}
 					} else {
 						response = "Sorry, an unknown error occurred.";
