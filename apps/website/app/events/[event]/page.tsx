@@ -103,7 +103,9 @@ export default async function EventPage(props: {
 	const rounds = tab === "rounds" ? await getRounds({ event: event.id }) : [];
 	const quests = tab === "quests" ? await getQuests({ event: event.id }) : [];
 	const predictions =
-		tab === "predictions" ? await getPredictions({ event: event.id }) : [];
+		tab === "predictions"
+			? await getPredictions({ event: event.id, user: user?.id })
+			: [];
 	const products = tab === "shop" ? await getProducts({ event: event.id }) : [];
 	const raffles = tab === "shop" ? await getRaffles({ event: event.id }) : [];
 
