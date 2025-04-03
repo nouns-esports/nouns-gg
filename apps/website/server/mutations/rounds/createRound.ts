@@ -113,6 +113,14 @@ export const createRound = onlyUser
 			throw new Error("Image must pinned to IPFS");
 		}
 
+		if (parsedInput.handle.length > 50) {
+			throw new Error("Handle must be less than 50 characters");
+		}
+
+		if (parsedInput.name.length > 100) {
+			throw new Error("Name must be less than 100 characters");
+		}
+
 		await db.primary.transaction(async (tx) => {
 			const round = await tx.insert(rounds).values({
 				handle: parsedInput.handle,
