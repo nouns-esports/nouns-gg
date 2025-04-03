@@ -31,7 +31,7 @@ export const placeBet = onlyRanked
 				bets: {
 					where: and(
 						eq(bets.user, ctx.user.id),
-						eq(bets.outcome, parsedInput.outcome),
+						eq(bets.prediction, parsedInput.prediction),
 					),
 				},
 				event: true,
