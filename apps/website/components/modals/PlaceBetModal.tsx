@@ -141,7 +141,10 @@ export default function PlaceBetModal(props: {
 						value={amount}
 						onChange={(value) => {
 							setAmount(value);
-							setLoading(true);
+
+							if (value !== amount) {
+								setLoading(true);
+							}
 						}}
 					/>
 				</div>
