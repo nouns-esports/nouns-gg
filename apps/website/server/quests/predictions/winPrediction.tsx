@@ -39,7 +39,7 @@ export const winPrediction = createAction<{ prediction: number }>(
 				if (!bet) return false;
 
 				const winningOutcomes = prediction.outcomes.filter(
-					(outcome) => outcome.outcome,
+					(outcome) => outcome.result,
 				);
 
 				return winningOutcomes.some((outcome) => outcome.id === bet.outcome);
