@@ -144,6 +144,42 @@ export default async function EventPage(props: {
 			}),
 	];
 
+	const semifinalPredictions = event.id === 7 ? event.predictions.filter(
+		(prediction) => prediction.name.toLowerCase().includes("semifinal"),
+	) : [];
+
+	const finalsPredictions =
+		event.id === 7
+			? event.predictions.filter(
+					(prediction) =>
+						prediction.name.toLowerCase().includes("final") &&
+						!prediction.name.toLowerCase().includes("semifinal"),
+				)
+			: [];
+
+	const adPredictions =
+		event.id === 7
+			? event.predictions.filter(
+					(prediction) =>
+						prediction.name.toLowerCase().includes("team a vs team d") && !prediction.name.toLowerCase().includes("(match 1)")&& !prediction.name.toLowerCase().includes("(match 2)"),
+				)
+			: [];
+			
+	const bcPredictions =
+		event.id === 7
+			? event.predictions.filter(
+					(prediction) =>
+						prediction.name.toLowerCase().includes("team b vs team c") && !prediction.name.toLowerCase().includes("(match 1)")&& !prediction.name.toLowerCase().includes("(match 2)"),
+				)
+			: [];
+
+	const everythingElse =
+		event.id === 7
+			? event.predictions.filter(
+					(prediction) => !semifinalPredictions.some((p) => p.id === prediction.id) && !finalsPredictions.some((p) => p.id === prediction.id) && !adPredictions.some((p) => p.id === prediction.id) && !bcPredictions.some((p) => p.id === prediction.id),
+				)
+			: event.predictions;
+
 	return (
 		<>
 			<div className="flex flex-col items-center w-full">
@@ -350,7 +386,125 @@ export default async function EventPage(props: {
 									</div>
 								),
 								predictions: (
-									<div className="flex flex-col gap-6">
+									semifinalPredictions.length > 0 || finalsPredictions.length > 0 ? <div className="flex flex-col gap-6">
+										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+											{everythingElse.map((prediction) => (
+												<PredictionCard
+													key={`prediction-${prediction.id}`}
+													id={prediction.id}
+													handle={prediction.handle}
+													name={prediction.name}
+													image={prediction.image}
+													xp={prediction.xp}
+													outcomes={prediction.outcomes}
+													totalBets={prediction.outcomes.reduce(
+														(acc, outcome) => acc + outcome.totalBets,
+														0,
+													)}
+													closed={prediction.closed}
+													userBet={prediction.bets?.[0]}
+													user={user}
+													className="max-md:w-full max-md:flex-shrink-0"
+												/>
+											))}
+										</div>
+										<h2 className="text-white font-luckiest-guy text-2xl">
+											Team A vs Team D
+										</h2>
+										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+											{adPredictions.map((prediction) => (
+												<PredictionCard
+													key={`prediction-${prediction.id}`}
+													id={prediction.id}
+													handle={prediction.handle}
+													name={prediction.name}
+													image={prediction.image}
+													xp={prediction.xp}
+													outcomes={prediction.outcomes}
+													totalBets={prediction.outcomes.reduce(
+														(acc, outcome) => acc + outcome.totalBets,
+														0,
+													)}
+													closed={prediction.closed}
+													userBet={prediction.bets?.[0]}
+													user={user}
+													className="max-md:w-full max-md:flex-shrink-0"
+												/>
+											))}
+										</div>
+										<h2 className="text-white font-luckiest-guy text-2xl">
+											Team B vs Team C
+										</h2>
+										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+											{bcPredictions.map((prediction) => (
+												<PredictionCard
+													key={`prediction-${prediction.id}`}
+													id={prediction.id}
+													handle={prediction.handle}
+													name={prediction.name}
+													image={prediction.image}
+													xp={prediction.xp}
+													outcomes={prediction.outcomes}
+													totalBets={prediction.outcomes.reduce(
+														(acc, outcome) => acc + outcome.totalBets,
+														0,
+													)}
+													closed={prediction.closed}
+													userBet={prediction.bets?.[0]}
+													user={user}
+													className="max-md:w-full max-md:flex-shrink-0"
+												/>
+											))}
+										</div>
+										<h2 className="text-white font-luckiest-guy text-2xl">
+											Semifinals
+										</h2>
+										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+											{semifinalPredictions.map((prediction) => (
+												<PredictionCard
+													key={`prediction-${prediction.id}`}
+													id={prediction.id}
+													handle={prediction.handle}
+													name={prediction.name}
+													image={prediction.image}
+													xp={prediction.xp}
+													outcomes={prediction.outcomes}
+													totalBets={prediction.outcomes.reduce(
+														(acc, outcome) => acc + outcome.totalBets,
+														0,
+													)}
+													closed={prediction.closed}
+													userBet={prediction.bets?.[0]}
+													user={user}
+													className="max-md:w-full max-md:flex-shrink-0"
+												/>
+											))}
+										</div>
+										<h2 className="text-white font-luckiest-guy text-2xl">
+											Finals
+										</h2>
+										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+											{finalsPredictions.map((prediction) => (
+												<PredictionCard
+													key={`prediction-${prediction.id}`}
+													id={prediction.id}
+													handle={prediction.handle}
+													name={prediction.name}
+													image={prediction.image}
+													xp={prediction.xp}
+													outcomes={prediction.outcomes}
+													totalBets={prediction.outcomes.reduce(
+														(acc, outcome) => acc + outcome.totalBets,
+														0,
+													)}
+													closed={prediction.closed}
+													userBet={prediction.bets?.[0]}
+													user={user}
+													className="max-md:w-full max-md:flex-shrink-0"
+												/>
+											))}
+										</div>
+									</div> : <div className="flex flex-col gap-6">
 										<h2 className="text-white font-luckiest-guy text-2xl">
 											Happening Now
 										</h2>

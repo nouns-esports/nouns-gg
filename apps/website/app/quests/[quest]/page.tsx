@@ -75,16 +75,9 @@ export default async function Quest(props: {
 		),
 	);
 
-	const now = new Date();
-
-	const active =
-		quest.active &&
-		(quest.start ? new Date(quest.start) < now : true) &&
-		(quest.end ? new Date(quest.end) > now : true);
-
 	const claimed = !!quest.completed?.[0];
 
-	const completedQuests = active
+	const completedQuests = quest.active
 		? claimed
 			? (Array(actions.length).fill(true) as Array<boolean>)
 			: await Promise.all(
@@ -132,7 +125,7 @@ export default async function Quest(props: {
 							<div className="flex flex-col gap-4">
 								<div className="flex gap-8 items-center justify-between">
 									<h2 className="font-bebas-neue text-white text-2xl">
-										{active
+										{quest.active
 											? user
 												? claimed
 													? "Quest completed"
@@ -149,7 +142,7 @@ export default async function Quest(props: {
 										</div>
 										<CheckQuest
 											user={!!user?.nexus}
-											active={active}
+											active={quest.active}
 											quest={quest.id}
 											xp={quest.xp}
 											userXP={user?.nexus?.xp ?? 0}
@@ -167,7 +160,7 @@ export default async function Quest(props: {
 												key={`action-${index}`}
 												className={twMerge(
 													"relative bg-grey-600 rounded-xl p-3 flex justify-between items-center text-white group hover:bg-grey-500 transition-colors",
-													(completedQuests[index] || !active) &&
+													(completedQuests[index] || !quest.active) &&
 														"opacity-60 pointer-events-none",
 												)}
 											>
