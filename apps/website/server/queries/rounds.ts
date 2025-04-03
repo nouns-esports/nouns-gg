@@ -1,6 +1,6 @@
 import { awards, proposals, rounds, votes } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq, asc, desc, sql } from "drizzle-orm";
+import { eq, asc, desc, sql, and } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
 
 export const getRoundWithProposal = cache(
@@ -72,6 +72,7 @@ export const getRound = cache(
 				event: true,
 				minProposerRank: true,
 				minVoterRank: true,
+				creator: true,
 			},
 			extras: {
 				uniqueVoters: sql<number>`(
@@ -98,11 +99,15 @@ export const getRounds = cache(
 	async (input?: {
 		limit?: number;
 		event?: number;
+		community?: number;
 	}) => {
 		return db.pgpool.query.rounds.findMany({
 			limit: input?.limit,
 			orderBy: [desc(rounds.featured), desc(rounds.end)],
-			where: input?.event ? eq(rounds.event, input.event) : undefined,
+			where: and(
+				input?.event ? eq(rounds.event, input.event) : undefined,
+				input?.community ? eq(rounds.community, input.community) : undefined,
+			),
 			with: {
 				community: true,
 				awards: {
@@ -121,6 +126,7 @@ export const getRounds = cache(
 						user: true,
 					},
 				},
+				creator: true,
 			},
 		});
 	},

@@ -118,21 +118,7 @@ export default async function Home() {
 						{rounds.map((round) => (
 							<RoundCard
 								key={`round-${round.id}`}
-								handle={round.handle}
-								image={round.image}
-								name={round.name}
-								start={round.start}
-								votingStart={round.votingStart}
-								end={round.end}
-								community={
-									round.community
-										? {
-												handle: round.community.handle,
-												name: round.community.name,
-												image: round.community.image,
-											}
-										: undefined
-								}
+								round={round}
 								className="max-xl:w-80 max-xl:flex-shrink-0"
 							/>
 						))}
@@ -155,23 +141,7 @@ export default async function Home() {
 						{quests.map((quest) => (
 							<QuestCard
 								key={`quest-${quest.id}`}
-								handle={quest.handle}
-								name={quest.name}
-								description={quest.description}
-								image={quest.image}
-								community={
-									quest.community
-										? {
-												handle: quest.community.handle,
-												name: quest.community.name,
-												image: quest.community.image,
-											}
-										: undefined
-								}
-								xp={quest.xp}
-								completed={quest.completed?.length > 0}
-								start={quest.start ?? undefined}
-								end={quest.end ?? undefined}
+								quest={quest}
 								className="max-xl:w-64 max-xl:flex-shrink-0"
 							/>
 						))}

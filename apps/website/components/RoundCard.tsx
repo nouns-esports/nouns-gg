@@ -4,25 +4,16 @@ import { roundState } from "@/utils/roundState";
 import Countdown from "@/components/Countdown";
 import { twMerge } from "tailwind-merge";
 import Image from "./Image";
+import type { getRounds } from "@/server/queries/rounds";
 
 export default function RoundCard(props: {
-	handle: string;
-	image: string;
-	name: string;
-	start: Date | string;
-	votingStart: Date | string;
-	end: Date | string;
-	community?: {
-		handle: string;
-		name: string;
-		image: string;
-	};
+	round: NonNullable<Awaited<ReturnType<typeof getRounds>>>[number];
 	className?: string;
 }) {
 	const state = roundState({
-		start: props.start,
-		votingStart: props.votingStart,
-		end: props.end,
+		start: props.round.start,
+		votingStart: props.round.votingStart,
+		end: props.round.end,
 	});
 
 	return (
@@ -33,7 +24,7 @@ export default function RoundCard(props: {
 			)}
 		>
 			<Link
-				href={`/rounds/${props.handle}`}
+				href={`/rounds/${props.round.handle}`}
 				className="absolute z-10 top-0 left-0 w-full h-full"
 			/>
 			<div className="flex flex-shrink-0 w-full h-[40%] overflow-hidden">
@@ -42,15 +33,15 @@ export default function RoundCard(props: {
           className="w-full h-full object-cover group-hover:scale-105 transition-transform"
         /> */}
 				<Image
-					hash={props.image.split("/ipfs/")[1]}
-					alt={props.name}
+					hash={props.round.image.split("/ipfs/")[1]}
+					alt={props.round.name}
 					className="group-hover:scale-105 transition-transform"
 				/>
 			</div>
 			<div className="flex flex-col p-4 h-full">
 				<div className="flex flex-col gap-4 h-full">
 					<p className="text-white text-[1.75rem] leading-tight font-bebas-neue line-clamp-2">
-						{props.name}
+						{props.round.name}
 					</p>
 					<div className="w-full text-sm flex items-center gap-4 text-white">
 						<div className="flex gap-1.5">
@@ -67,33 +58,48 @@ export default function RoundCard(props: {
 								year: "numeric",
 								month: "long",
 								day: "numeric",
-							}).format(new Date(props.end))
+							}).format(new Date(props.round.end))
 						) : (
 							<Countdown
 								date={
 									state === "Upcoming"
-										? new Date(props.start)
+										? new Date(props.round.start)
 										: state === "Proposing"
-											? new Date(props.votingStart)
-											: new Date(props.end)
+											? new Date(props.round.votingStart)
+											: new Date(props.round.end)
 								}
 							/>
 						)}
 					</div>
 				</div>
-				<div className="flex h-full items-end">
-					<Link
-						href={`https://warpcast.com/~/channel/${props.community?.handle ?? "nouns-esports"}`}
-						newTab
-						className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit"
-					>
-						<img
-							src={props.community?.image ?? "/logo/logo-square.png"}
-							className="w-5 h-5 rounded-full"
-						/>
-						{props.community?.name ?? "Nouns Esports"}
-					</Link>
-				</div>
+				{props.round.community ? (
+					<div className="flex h-full items-end">
+						<Link
+							href={`/communities/${props.round.community.handle}`}
+							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit"
+						>
+							<img
+								src={props.round.community.image}
+								className="w-5 h-5 rounded-full"
+							/>
+							{props.round.community.name}
+						</Link>
+					</div>
+				) : null}
+				{props.round.creator ? (
+					<div className="flex h-full items-end">
+						<Link
+							href={`/users/${props.round.creator}`}
+							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit"
+						>
+							<img
+								src={props.round.creator.image}
+								className="w-5 h-5 rounded-full"
+							/>
+							{props.round.creator.name}
+						</Link>
+					</div>
+				) : null}
 			</div>
 		</div>
 	);

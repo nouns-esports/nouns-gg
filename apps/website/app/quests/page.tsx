@@ -48,23 +48,7 @@ export default async function Quests() {
 							{featuredQuests.map((quest) => (
 								<QuestCard
 									key={`quest-${quest.id}`}
-									handle={quest.handle}
-									name={quest.name}
-									description={quest.description}
-									image={quest.image}
-									community={
-										quest.community
-											? {
-													handle: quest.community.handle,
-													name: quest.community.name,
-													image: quest.community.image,
-												}
-											: undefined
-									}
-									xp={quest.xp}
-									completed={!!(quest.completed?.length > 0)}
-									start={quest.start ?? undefined}
-									end={quest.end ?? undefined}
+									quest={quest}
 									className="max-[550px]:w-64 max-[550px]:flex-shrink-0"
 								/>
 							))}
@@ -82,23 +66,7 @@ export default async function Quests() {
 						{allQuests.map((quest) => (
 							<QuestCard
 								key={`quest-${quest.id}`}
-								handle={quest.handle}
-								name={quest.name}
-								description={quest.description}
-								image={quest.image}
-								community={
-									quest.community
-										? {
-												handle: quest.community.handle,
-												name: quest.community.name,
-												image: quest.community.image,
-											}
-										: undefined
-								}
-								xp={quest.xp}
-								completed={!!(quest.completed?.length > 0)}
-								start={quest.start ?? undefined}
-								end={quest.end ?? undefined}
+								quest={quest}
 								className="max-[550px]:w-64 max-[550px]:flex-shrink-0"
 							/>
 						))}

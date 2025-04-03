@@ -51,6 +51,7 @@ export const getEvent = cache(
 					},
 				},
 				community: true,
+				creator: true,
 			},
 			extras: {
 				hasRounds: sql<boolean>`

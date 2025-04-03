@@ -93,21 +93,7 @@ export default async function Rounds() {
 							{activeRounds.map((round) => (
 								<RoundCard
 									key={`round-${round.id}`}
-									handle={round.handle}
-									image={round.image}
-									name={round.name}
-									start={round.start}
-									votingStart={round.votingStart}
-									end={round.end}
-									community={
-										round.community
-											? {
-													handle: round.community.handle,
-													name: round.community.name,
-													image: round.community.image,
-												}
-											: undefined
-									}
+									round={round}
 									className="max-lg:w-80 max-lg:flex-shrink-0"
 								/>
 							))}
@@ -125,21 +111,7 @@ export default async function Rounds() {
 							{upcomingRounds.map((round) => (
 								<RoundCard
 									key={`round-${round.id}`}
-									handle={round.handle}
-									image={round.image}
-									name={round.name}
-									start={round.start}
-									votingStart={round.votingStart}
-									end={round.end}
-									community={
-										round.community
-											? {
-													handle: round.community.handle,
-													name: round.community.name,
-													image: round.community.image,
-												}
-											: undefined
-									}
+									round={round}
 									className="max-lg:w-80 max-lg:flex-shrink-0"
 								/>
 							))}
@@ -156,21 +128,7 @@ export default async function Rounds() {
 						{endedRounds.map((round) => (
 							<RoundCard
 								key={`round-${round.id}`}
-								handle={round.handle}
-								image={round.image}
-								name={round.name}
-								start={round.start}
-								votingStart={round.votingStart}
-								end={round.end}
-								community={
-									round.community
-										? {
-												handle: round.community.handle,
-												name: round.community.name,
-												image: round.community.image,
-											}
-										: undefined
-								}
+								round={round}
 								className="max-lg:w-80 max-lg:flex-shrink-0"
 							/>
 						))}

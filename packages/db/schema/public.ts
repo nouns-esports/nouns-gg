@@ -43,7 +43,13 @@ export const communities = pgTable("communities", (t) => ({
 	name: t.text().notNull(),
 	description: t.jsonb().$type<TipTap>(), //.notNull(),
 	channel: t.text(),
-	owner: t.text(), // add admins eventually
+}));
+
+export const communityAdmins = pgTable("community_admins", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	community: t.bigint({ mode: "number" }).notNull(),
+	user: t.text().notNull(),
+	owner: t.boolean().notNull(),
 }));
 
 export const articles = pgTable("articles", (t) => ({
@@ -58,7 +64,7 @@ export const articles = pgTable("articles", (t) => ({
 
 export const events = pgTable("events", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	description: t.text().notNull().default(""),
@@ -107,7 +113,7 @@ export const checkins = pgTable("checkins", (t) => ({
 
 export const predictions = pgTable("predictions", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
 	community: t.bigint({ mode: "number" }),
@@ -173,7 +179,7 @@ export const attendees = pgTable("attendees", (t) => ({
 
 export const rounds = pgTable("rounds", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	community: t.bigint({ mode: "number" }),

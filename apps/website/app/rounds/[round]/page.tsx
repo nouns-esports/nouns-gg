@@ -199,18 +199,34 @@ export default async function Round(props: {
 									<h1 className="w-full text-white font-luckiest-guy text-3xl max-xl:text-2xl">
 										{round.name}
 									</h1>
-									<Link
-										href={`https://warpcast.com/~/channel/${round.community?.id ?? "nouns-esports"}`}
-										newTab
-										className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
-									>
-										<img
-											alt={round.community?.name ?? "Nouns Esports"}
-											src={round.community?.image ?? "/logo/logo-square.png"}
-											className="w-5 h-5 rounded-full"
-										/>
-										{round.community?.name ?? "Nouns Esports"}
-									</Link>
+									{round.community ? (
+										<Link
+											href={`/communities/${round.community.handle}`}
+											newTab
+											className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
+										>
+											<img
+												alt={round.community.name}
+												src={round.community.image}
+												className="w-5 h-5 rounded-full"
+											/>
+											{round.community.name}
+										</Link>
+									) : null}
+									{round.creator ? (
+										<Link
+											href={`/users/${round.creator}`}
+											newTab
+											className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
+										>
+											<img
+												alt={round.creator.name}
+												src={round.creator.image}
+												className="w-5 h-5 rounded-full"
+											/>
+											{round.creator.name}
+										</Link>
+									) : null}
 								</div>
 								<Markdown
 									markdown={round.content}

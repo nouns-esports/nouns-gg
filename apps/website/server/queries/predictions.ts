@@ -2,7 +2,7 @@
 
 import { bets, predictions, outcomes } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { desc, eq, sql } from "drizzle-orm";
+import { and, desc, eq, sql } from "drizzle-orm";
 
 export async function getPrediction(input: { handle: string; user?: string }) {
 	return db.pgpool.query.predictions.findFirst({
@@ -34,10 +34,17 @@ export async function getPrediction(input: { handle: string; user?: string }) {
 	});
 }
 
-export async function getPredictions(input: { user?: string; event?: number }) {
+export async function getPredictions(input: {
+	user?: string;
+	event?: number;
+	community?: number;
+}) {
 	return db.pgpool.query.predictions.findMany({
-		where: input.event ? eq(predictions.event, input.event) : undefined,
-		orderBy: [desc(predictions.pool)],
+		where: and(
+			input.event ? eq(predictions.event, input.event) : undefined,
+			input.community ? eq(predictions.community, input.community) : undefined,
+		),
+		orderBy: [desc(predictions.id)],
 		with: {
 			outcomes: {
 				extras: {

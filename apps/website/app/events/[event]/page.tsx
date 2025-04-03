@@ -215,21 +215,34 @@ export default async function EventPage(props: {
 											{event.description}
 										</p>
 										<div className="flex items-center gap-6 overflow-x-auto w-full flex-shrink-0 max-w-full">
-											<Link
-												href={`https://warpcast.com/~/channel/${event.community?.handle ?? "nouns-esports"}`}
-												newTab
-												className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
-											>
-												<img
-													alt={event.community?.name ?? "Nouns"}
-													src={
-														event.community?.image ?? "/logo/logo-square.png"
-													}
-													className="w-5 h-5 rounded-full"
-												/>
-												{event.community?.name ?? "Nouns"}
-											</Link>
-
+											{event.community ? (
+												<Link
+													href={`/communities/${event.community.handle}`}
+													newTab
+													className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
+												>
+													<img
+														alt={event.community.name}
+														src={event.community.image}
+														className="w-5 h-5 rounded-full"
+													/>
+													{event.community.name}
+												</Link>
+											) : null}
+											{event.creator ? (
+												<Link
+													href={`/users/${event.creator}`}
+													newTab
+													className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
+												>
+													<img
+														alt={event.creator.name}
+														src={event.creator.image}
+														className="w-5 h-5 rounded-full"
+													/>
+													{event.creator.name}
+												</Link>
+											) : null}
 											<div className="flex items-center gap-2 text-white flex-shrink-0">
 												<CalendarDays className="w-5 h-5 text-white" />
 												<p className="mt-0.5 whitespace-nowrap">
@@ -325,50 +338,14 @@ export default async function EventPage(props: {
 								rounds: (
 									<div className="grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4">
 										{rounds.map((round) => (
-											<RoundCard
-												key={`round-${round.id}`}
-												handle={round.handle}
-												image={round.image}
-												name={round.name}
-												start={round.start}
-												votingStart={round.votingStart}
-												end={round.end}
-												community={
-													round.community
-														? {
-																handle: round.community.handle,
-																name: round.community.name,
-																image: round.community.image,
-															}
-														: undefined
-												}
-											/>
+											<RoundCard key={`round-${round.id}`} round={round} />
 										))}
 									</div>
 								),
 								quests: (
 									<div className="grid grid-cols-5 max-2xl:grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4">
 										{quests.map((quest) => (
-											<QuestCard
-												key={`quest-${quest.id}`}
-												handle={quest.handle}
-												name={quest.name}
-												description={quest.description}
-												image={quest.image}
-												start={quest.start ?? undefined}
-												end={quest.end ?? undefined}
-												community={
-													quest.community
-														? {
-																handle: quest.community.handle,
-																name: quest.community.name,
-																image: quest.community.image,
-															}
-														: undefined
-												}
-												xp={quest.xp}
-												completed={quest.completed?.length > 0}
-											/>
+											<QuestCard key={`quest-${quest.id}`} quest={quest} />
 										))}
 									</div>
 								),
