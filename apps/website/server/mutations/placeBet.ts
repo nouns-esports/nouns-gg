@@ -4,6 +4,7 @@ import { z } from "zod";
 import { onlyRanked } from ".";
 import {
 	bets,
+	gold,
 	nexus,
 	outcomes,
 	predictions,
@@ -75,6 +76,12 @@ export const placeBet = onlyRanked
 						gold: sql`${nexus.gold} - ${parsedInput.amount}`,
 					})
 					.where(eq(nexus.id, ctx.user.id));
+
+				await tx.insert(gold).values({
+					from: ctx.user.id,
+					amount: parsedInput.amount.toString(),
+					timestamp: now,
+				});
 			}
 
 			await tx.insert(bets).values({
