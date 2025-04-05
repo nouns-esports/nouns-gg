@@ -40,7 +40,7 @@ export function discordPlugin(options: { token: string }) {
 						embeds,
 					});
 
-					console.log("Reply: ", reply);
+					console.log("Reply: ", reply.text);
 
 					response = reply.text;
 				} catch (error) {
