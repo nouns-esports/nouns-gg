@@ -8,7 +8,7 @@ import {
 	nexus,
 } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq, inArray, sql } from "drizzle-orm";
+import { and, eq, inArray, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { onlyRanked } from ".";
@@ -36,17 +36,24 @@ export const castVotes = onlyRanked
 					where: eq(proposals.user, ctx.user.id),
 				},
 				minVoterRank: true,
-				// voterCredential: {
-				// 	with: {
-				// 		erc721Balances: {
-				// 			limit: 1,
-				// 			where: inArray(
-				// 				erc721Balances.account,
-				// 				ctx.user.wallets.map((w) => w.address),
-				// 			),
-				// 		},
-				// 	},
-				// },
+				voterCredentialHolders: {
+					where: inArray(
+						erc721Balances.account,
+						ctx.user.wallets.map((w) => w.address as `0x${string}`),
+					),
+				},
+				voterCredentialNounDelegates: {
+					where: inArray(
+						nounDelegates.to,
+						ctx.user.wallets.map((w) => w.address as `0x${string}`),
+					),
+				},
+				voterCredentialLilnounDelegates: {
+					where: inArray(
+						lilnounDelegates.to,
+						ctx.user.wallets.map((w) => w.address as `0x${string}`),
+					),
+				},
 			},
 		});
 
@@ -62,35 +69,25 @@ export const castVotes = onlyRanked
 			throw new Error("You are not eligible to vote in this round");
 		}
 
-		// if (round.voterCredential) {
-		// 	if (!round.voterCredential.address) {
-		// 		throw new Error("Credentials require an onchain address");
-		// 	}
+		if (round.voterCredential) {
+			let hasCredential = false;
 
-		// 	if (round.voterCredential.erc721Balances.length === 0) {
-		// 		if (round.voterCredential.address === "0xNOUNS") {
-		// 			const delegatee = await db.primary.query.nounDelegates.findFirst({
-		// 				where: inArray(
-		// 					nounDelegates.to,
-		// 					ctx.user.wallets.map((w) => w.address),
-		// 				),
-		// 			});
+			if (round.voterCredentialHolders.length > 0) {
+				hasCredential = true;
+			}
 
-		// 			if (!delegatee) {
-		// 				throw new Error("You have delegated your vote to another user");
-		// 			}
-		// 		}
+			if (round.voterCredentialNounDelegates.length > 0) {
+				hasCredential = true;
+			}
 
-		// 		if (round.voterCredential.address === "0xLILNOUNS") {
-		// 			const delegatee = await db.primary.query.lilnounDelegates.findFirst({
-		// 				where: inArray(
-		// 					lilnounDelegates.to,
-		// 					ctx.user.wallets.map((w) => w.address),
-		// 				),
-		// 			});
-		// 		}
-		// 	}
-		// }
+			if (round.voterCredentialLilnounDelegates.length > 0) {
+				hasCredential = true;
+			}
+
+			if (!hasCredential) {
+				throw new Error("You do not have a valid credential");
+			}
+		}
 
 		const now = new Date();
 		const votingStart = new Date(round.votingStart);

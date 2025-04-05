@@ -2,10 +2,15 @@
 
 import { nexus, proposals, rounds, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq, sql } from "drizzle-orm";
+import { eq, inArray, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { onlyUser } from ".";
 import { z } from "zod";
+import {
+	erc721Balances,
+	nounDelegates,
+	lilnounDelegates,
+} from "~/packages/db/schema/indexer";
 
 export const createProposal = onlyUser
 	.schema(
@@ -25,6 +30,24 @@ export const createProposal = onlyUser
 					where: eq(proposals.user, ctx.user.id),
 				},
 				minProposerRank: true,
+				proposerCredentialHolders: {
+					where: inArray(
+						erc721Balances.account,
+						ctx.user.wallets.map((w) => w.address as `0x${string}`),
+					),
+				},
+				proposerCredentialNounDelegates: {
+					where: inArray(
+						nounDelegates.to,
+						ctx.user.wallets.map((w) => w.address as `0x${string}`),
+					),
+				},
+				proposerCredentialLilnounDelegates: {
+					where: inArray(
+						lilnounDelegates.to,
+						ctx.user.wallets.map((w) => w.address as `0x${string}`),
+					),
+				},
 			},
 		});
 
@@ -42,6 +65,26 @@ export const createProposal = onlyUser
 			ctx.user.nexus.rank.place < round.minProposerRank.place
 		) {
 			throw new Error("You are not eligible to propose in this round");
+		}
+
+		if (round.proposerCredential) {
+			let hasCredential = false;
+
+			if (round.proposerCredentialHolders.length > 0) {
+				hasCredential = true;
+			}
+
+			if (round.proposerCredentialNounDelegates.length > 0) {
+				hasCredential = true;
+			}
+
+			if (round.proposerCredentialLilnounDelegates.length > 0) {
+				hasCredential = true;
+			}
+
+			if (!hasCredential) {
+				throw new Error("You do not have a valid credential");
+			}
 		}
 
 		const now = new Date();
@@ -79,35 +122,17 @@ export const createProposal = onlyUser
 		}
 
 		await db.primary.transaction(async (tx) => {
-			const returnedProposal = await tx
-				.insert(proposals)
-				.values([
-					{
-						title: parsedInput.title,
-						content: parsedInput.content,
-						image: parsedInput.image,
-						round: parsedInput.round,
-						user: ctx.user.id,
-						video: parsedInput.video,
-						createdAt: now,
-					},
-				])
-				.returning({ id: proposals.id });
-
-			// Award 300 xp for proposing
-			// await tx.insert(xp).values({
-			// 	user: ctx.user.id,
-			// 	amount: 300,
-			// 	timestamp: now,
-			// 	proposal: returnedProposal[0].id,
-			// });
-
-			// await tx
-			// 	.update(nexus)
-			// 	.set({
-			// 		xp: sql`${nexus.xp} + 300`,
-			// 	})
-			// 	.where(eq(nexus.id, ctx.user.id));
+			await tx.insert(proposals).values([
+				{
+					title: parsedInput.title,
+					content: parsedInput.content,
+					image: parsedInput.image,
+					round: parsedInput.round,
+					user: ctx.user.id,
+					video: parsedInput.video,
+					createdAt: now,
+				},
+			]);
 		});
 
 		revalidatePath(`/rounds/${round.handle}`);

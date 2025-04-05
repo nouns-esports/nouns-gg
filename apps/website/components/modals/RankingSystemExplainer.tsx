@@ -60,6 +60,12 @@ export default function RankingSystemExplainer() {
 							>
 								Achievements
 							</Tab>
+							<Tab
+								selected={tab === "predictions"}
+								onClick={() => setTab("predictions")}
+							>
+								Predictions
+							</Tab>
 						</ul>
 					</div>
 				</div>
@@ -184,6 +190,13 @@ export default function RankingSystemExplainer() {
 								<div className="flex flex-col gap-4">
 									<Card title="Completing Achievements">
 										Earn XP when you reach milestones in your Nexus journey.
+									</Card>
+								</div>
+							),
+							predictions: (
+								<div className="flex flex-col gap-4">
+									<Card title="Making Predictions">
+										Earn xp once for each prediction you participate in.
 									</Card>
 								</div>
 							),

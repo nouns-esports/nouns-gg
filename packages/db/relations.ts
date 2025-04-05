@@ -170,25 +170,20 @@ export const roundsRelations = relations(rounds, ({ one, many }) => ({
 		fields: [rounds.minVoterRank],
 		references: [ranks.id],
 	}),
-	proposerCredential: one(assets, {
-		fields: [rounds.proposerCredential],
-		references: [assets.id],
-	}),
-	voterCredential: one(assets, {
-		fields: [rounds.voterCredential],
-		references: [assets.id],
-	}),
 	creator: one(nexus, {
 		fields: [rounds.creator],
 		references: [nexus.id],
 	}),
+	proposerCredentialHolders: many(erc721Balances),
+	proposerCredentialNounDelegates: many(nounDelegates),
+	proposerCredentialLilnounDelegates: many(lilnounDelegates),
+	voterCredentialHolders: many(erc721Balances),
+	voterCredentialNounDelegates: many(nounDelegates),
+	voterCredentialLilnounDelegates: many(lilnounDelegates),
 }));
 
 export const assetsRelations = relations(assets, ({ many }) => ({
-	proposerCredential: many(rounds),
-	voterCredential: many(rounds),
 	awards: many(awards),
-	// erc721Balances: many(erc721Balances),
 }));
 
 export const proposalsRelations = relations(proposals, ({ one, many }) => ({
@@ -411,23 +406,28 @@ export const erc721BalancesRelations = relations(
 		}),
 		nounDelegates: many(nounDelegates),
 		lilnounDelegates: many(lilnounDelegates),
+		rounds: many(rounds),
 	}),
 );
 
-export const nounDelegatesRelations = relations(nounDelegates, ({ one }) => ({
-	delegator: one(erc721Balances, {
-		fields: [nounDelegates.from],
-		references: [erc721Balances.account],
+export const nounDelegatesRelations = relations(
+	nounDelegates,
+	({ one, many }) => ({
+		delegator: one(erc721Balances, {
+			fields: [nounDelegates.from],
+			references: [erc721Balances.account],
+		}),
+		delegatee: one(erc721Balances, {
+			fields: [nounDelegates.to],
+			references: [erc721Balances.account],
+		}),
+		rounds: many(rounds),
 	}),
-	delegatee: one(erc721Balances, {
-		fields: [nounDelegates.to],
-		references: [erc721Balances.account],
-	}),
-}));
+);
 
 export const lilnounDelegatesRelations = relations(
 	lilnounDelegates,
-	({ one }) => ({
+	({ one, many }) => ({
 		delegator: one(erc721Balances, {
 			fields: [lilnounDelegates.from],
 			references: [erc721Balances.account],
@@ -436,6 +436,7 @@ export const lilnounDelegatesRelations = relations(
 			fields: [lilnounDelegates.to],
 			references: [erc721Balances.account],
 		}),
+		rounds: many(rounds),
 	}),
 );
 
