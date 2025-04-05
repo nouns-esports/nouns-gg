@@ -9,6 +9,8 @@ import { getRounds } from "@/server/queries/rounds";
 import { getQuests } from "@/server/queries/quests";
 import { getPredictions } from "@/server/queries/predictions";
 import { getAuthenticatedUser } from "@/server/queries/users";
+import EventCard from "@/components/EventCard";
+import { getEvents } from "@/server/queries/events";
 
 export default async function Community(props: {
 	params: Promise<{ community: string }>;
@@ -30,13 +32,15 @@ export default async function Community(props: {
 
 	const tab =
 		searchParams.tab ??
-		(community.hasRounds
-			? "rounds"
-			: community.hasQuests
-				? "quests"
-				: community.hasPredictions
-					? "predictions"
-					: null);
+		(community.hasEvents
+			? "events"
+			: community.hasRounds
+				? "rounds"
+				: community.hasQuests
+					? "quests"
+					: community.hasPredictions
+						? "predictions"
+						: null);
 
 	const rounds =
 		tab === "rounds" ? await getRounds({ community: community.id }) : [];
@@ -46,6 +50,8 @@ export default async function Community(props: {
 		tab === "predictions"
 			? await getPredictions({ community: community.id })
 			: [];
+	const events =
+		tab === "events" ? await getEvents({ community: community.id }) : [];
 
 	return (
 		<div className="flex flex-col w-full items-center">
@@ -55,7 +61,7 @@ export default async function Community(props: {
 						<img
 							src={community.image}
 							alt={community.name}
-							className=" h-12 w-12 object-cover object-center max-sm:h-32 rounded-md"
+							className=" h-12 w-12 object-cover object-center rounded-md"
 						/>
 						<h1 className="text-white text-2xl font-luckiest-guy">
 							{community.name}
@@ -78,12 +84,24 @@ export default async function Community(props: {
 									Predictions
 								</Tab>
 							) : null}
+							{community.hasEvents ? (
+								<Tab href="?tab=events" active={tab === "events"}>
+									Events
+								</Tab>
+							) : null}
 						</ul>
 					) : null}
 				</div>
 				<div className="flex flex-col gap-8 w-full">
 					{
 						{
+							events: (
+								<div className="grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1  gap-4">
+									{events.map((event) => (
+										<EventCard key={`event-${event.id}`} event={event} />
+									))}
+								</div>
+							),
 							rounds: (
 								<div className="grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4">
 									{rounds.map((round) => (

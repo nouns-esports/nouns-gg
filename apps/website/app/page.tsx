@@ -163,12 +163,8 @@ export default async function Home() {
 					<div className="flex gap-4 justify-between max-lg:w-full max-lg:overflow-x-scroll max-lg:px-8 max-sm:px-4 max-lg:scrollbar-hidden">
 						{events.map((event) => (
 							<EventCard
-								key={event.id}
-								handle={event.handle}
-								name={event.name}
-								image={event.image}
-								start={event.start}
-								end={event.end}
+								key={`event-${event.id}`}
+								event={event}
 								className="max-xl:w-96 max-xl:h-auto max-xl:flex-shrink-0"
 							/>
 						))}

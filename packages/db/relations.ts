@@ -57,6 +57,7 @@ export const communityRelations = relations(communities, ({ one, many }) => ({
 	events: many(events),
 	quests: many(quests),
 	admins: many(communityAdmins),
+	predictions: many(predictions),
 }));
 
 export const communityAdminsRelations = relations(
