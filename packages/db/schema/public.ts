@@ -124,8 +124,8 @@ export const predictions = pgTable("predictions", (t) => ({
 	closed: t.boolean().notNull().default(false),
 	resolved: t.boolean().notNull().default(false),
 	featured: t.boolean().notNull().default(false),
-	start: t.timestamp(), //.notNull(),
-	end: t.timestamp(), //.notNull(),
+	start: t.timestamp(),
+	end: t.timestamp(),
 	pool: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
 }));
 
@@ -266,6 +266,8 @@ export const gold = pgTable("gold", (t) => ({
 	order: t.text(), // shopify DraftOrder gid
 	checkin: t.integer(),
 	raffleEntry: t.integer(),
+	bet: t.integer(),
+	prediction: t.bigint({ mode: "number" }),
 }));
 
 export const ranks = pgTable("ranks", (t) => ({

@@ -1,19 +1,20 @@
 "use server";
 
 import { z } from "zod";
-import { onlyRanked } from ".";
+import { onlyUser } from ".";
 import {
 	bets,
 	gold,
 	nexus,
 	outcomes,
 	predictions,
+	xp,
 } from "~/packages/db/schema/public";
 import { eq, sql, and } from "drizzle-orm";
 import { db } from "~/packages/db";
 import { revalidatePath } from "next/cache";
 
-export const placeBet = onlyRanked
+export const placeBet = onlyUser
 	.schema(
 		z.object({
 			prediction: z.number(),
@@ -35,6 +36,9 @@ export const placeBet = onlyRanked
 					),
 				},
 				event: true,
+				earnedXP: {
+					where: eq(xp.user, ctx.user.id),
+				},
 			},
 		});
 
@@ -69,40 +73,62 @@ export const placeBet = onlyRanked
 		}
 
 		await db.primary.transaction(async (tx) => {
+			const amount = parsedInput.amount.toFixed(0);
+
+			const [bet] = await tx
+				.insert(bets)
+				.values({
+					user: ctx.user.id,
+					prediction: parsedInput.prediction,
+					outcome: parsedInput.outcome,
+					timestamp: now,
+					amount,
+				})
+				.returning({ id: bets.id });
+
 			if (parsedInput.amount > 0) {
 				await tx
 					.update(nexus)
 					.set({
-						gold: sql`${nexus.gold} - ${parsedInput.amount}`,
+						gold: sql`${nexus.gold} - ${amount}`,
 					})
 					.where(eq(nexus.id, ctx.user.id));
 
 				await tx.insert(gold).values({
 					from: ctx.user.id,
-					amount: parsedInput.amount.toString(),
+					amount,
 					timestamp: now,
+					bet: bet.id,
 				});
 			}
 
-			await tx.insert(bets).values({
-				user: ctx.user.id,
-				prediction: parsedInput.prediction,
-				outcome: parsedInput.outcome,
-				timestamp: now,
-				amount: parsedInput.amount.toString(),
-			});
+			if (prediction.earnedXP.length === 0) {
+				await tx.insert(xp).values({
+					user: ctx.user.id,
+					amount: prediction.xp,
+					timestamp: now,
+					prediction: prediction.id,
+				});
+
+				await tx
+					.update(nexus)
+					.set({
+						xp: sql`${nexus.xp} + ${prediction.xp}`,
+					})
+					.where(eq(nexus.id, ctx.user.id));
+			}
 
 			await tx
 				.update(outcomes)
 				.set({
-					pool: sql`${outcomes.pool} + ${parsedInput.amount}`,
+					pool: sql`${outcomes.pool} + ${amount}`,
 				})
 				.where(eq(outcomes.id, parsedInput.outcome));
 
 			await tx
 				.update(predictions)
 				.set({
-					pool: sql`${predictions.pool} + ${parsedInput.amount}`,
+					pool: sql`${predictions.pool} + ${amount}`,
 				})
 				.where(eq(predictions.id, parsedInput.prediction));
 		});

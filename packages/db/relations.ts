@@ -110,6 +110,8 @@ export const predictionsRelations = relations(predictions, ({ one, many }) => ({
 		fields: [predictions.creator],
 		references: [nexus.id],
 	}),
+	earnedXP: many(xp),
+	gold: many(gold),
 }));
 
 export const outcomesRelations = relations(outcomes, ({ one, many }) => ({
@@ -120,7 +122,7 @@ export const outcomesRelations = relations(outcomes, ({ one, many }) => ({
 	bets: many(bets),
 }));
 
-export const betsRelations = relations(bets, ({ one }) => ({
+export const betsRelations = relations(bets, ({ one, many }) => ({
 	user: one(nexus, {
 		fields: [bets.user],
 		references: [nexus.id],
@@ -133,6 +135,7 @@ export const betsRelations = relations(bets, ({ one }) => ({
 		fields: [bets.prediction],
 		references: [predictions.id],
 	}),
+	gold: many(gold),
 }));
 
 export const attendeesRelations = relations(attendees, ({ one, many }) => ({
@@ -237,6 +240,14 @@ export const goldRelations = relations(gold, ({ one }) => ({
 	checkin: one(checkins, {
 		fields: [gold.checkin],
 		references: [checkins.id],
+	}),
+	prediction: one(predictions, {
+		fields: [gold.prediction],
+		references: [predictions.id],
+	}),
+	bet: one(bets, {
+		fields: [gold.bet],
+		references: [bets.id],
 	}),
 }));
 

@@ -1,6 +1,5 @@
 import { createSafeActionClient } from "next-safe-action";
 import { getAuthenticatedUser } from "../queries/users";
-import { env } from "~/env";
 
 export const actionClient = createSafeActionClient({
 	handleServerError: (error) => {
@@ -32,18 +31,7 @@ export const onlyRanked = onlyUser.use(async ({ next, ctx }) => {
 });
 
 export const onlyAdmin = onlyUser.use(async ({ next, ctx }) => {
-	const admins = {
-		production: [
-			// Sam
-			"did:privy:clx8g9mui0c1k10947grzks2a",
-		],
-		development: [
-			// Sam
-			"did:privy:clzmy1z8f03ehztrjkfwy9bne",
-		],
-	};
-
-	if (!admins[env.NEXT_PUBLIC_ENVIRONMENT].includes(ctx.user.id)) {
+	if (!ctx.user.nexus?.admin) {
 		throw new Error("You must be an admin to complete this action");
 	}
 
