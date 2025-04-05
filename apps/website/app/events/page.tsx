@@ -32,14 +32,7 @@ export default async function Events() {
 						</h2>
 						<div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
 							{happeningNow.map((event) => (
-								<EventCard
-									key={event.id}
-									handle={event.handle}
-									name={event.name}
-									image={event.image}
-									start={event.start}
-									end={event.end}
-								/>
+								<EventCard key={event.id} event={event} />
 							))}
 						</div>
 					</div>
@@ -49,14 +42,7 @@ export default async function Events() {
 						<h2 className="text-white font-luckiest-guy text-3xl">Upcoming</h2>
 						<div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
 							{upcoming.map((event) => (
-								<EventCard
-									key={event.id}
-									handle={event.handle}
-									name={event.name}
-									image={event.image}
-									start={event.start}
-									end={event.end}
-								/>
+								<EventCard key={event.id} event={event} />
 							))}
 						</div>
 					</div>
@@ -66,14 +52,7 @@ export default async function Events() {
 						<h2 className="text-white font-luckiest-guy text-3xl">Ended</h2>
 						<div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
 							{ended.map((event) => (
-								<EventCard
-									key={event.id}
-									handle={event.handle}
-									name={event.name}
-									image={event.image}
-									start={event.start}
-									end={event.end}
-								/>
+								<EventCard key={event.id} event={event} />
 							))}
 						</div>
 					</div>
