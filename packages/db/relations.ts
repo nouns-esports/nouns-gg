@@ -35,6 +35,8 @@ import {
 	lilnounDelegates,
 	nounsProposals,
 	nounsVotes,
+	nounsTraits,
+	nouns,
 } from "./schema/indexer";
 
 export const snapshotsRelations = relations(snapshots, ({ one }) => ({
@@ -453,6 +455,29 @@ export const nounsVotesRelations = relations(nounsVotes, ({ one }) => ({
 		fields: [nounsVotes.proposal],
 		references: [nounsProposals.id],
 	}),
+}));
+
+export const nounsRelations = relations(nouns, ({ one, many }) => ({
+	accessory: one(nounsTraits, {
+		fields: [nouns.accessory],
+		references: [nounsTraits.id],
+	}),
+	body: one(nounsTraits, {
+		fields: [nouns.body],
+		references: [nounsTraits.id],
+	}),
+	head: one(nounsTraits, {
+		fields: [nouns.head],
+		references: [nounsTraits.id],
+	}),
+	glasses: one(nounsTraits, {
+		fields: [nouns.glasses],
+		references: [nounsTraits.id],
+	}),
+}));
+
+export const nounsTraitsRelations = relations(nounsTraits, ({ many }) => ({
+	nouns: many(nouns),
 }));
 
 export const rafflesRelations = relations(raffles, ({ many, one }) => ({
