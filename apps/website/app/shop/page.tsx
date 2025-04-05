@@ -82,7 +82,7 @@ export default async function Shop(props: {
 									</h2>
 								</div>
 								<div className="absolute bottom-4 left-4">
-									<Button href={`/shop/${featuredCollection.id}`}>
+									<Button href={`/shop/${featuredCollection.handle}`}>
 										View Collection
 									</Button>
 								</div>

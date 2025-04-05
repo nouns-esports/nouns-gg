@@ -128,7 +128,7 @@ function MultiOutcome(props: {
 											: "text-green bg-green/30 hover:bg-green/50",
 									)}
 								>
-									{userBetAmount > 0 ? "Add" : userBet ? "Bet Gold" : "Bet"}
+									{userBet ? "Add" : "Yes"}
 								</ToggleModal>
 							</div>
 						</div>
@@ -166,7 +166,7 @@ function BinaryOutcome(props: {
 		return (
 			<div className="flex justify-between items-center w-full pl-3 pr-1 gap-2 mb-1 bg-grey-500 rounded-lg py-1">
 				<p className="text-white">
-					<span>You bet</span>
+					<span>You predicted</span>
 					<span
 						className={twMerge(
 							"px-2 py-0.5 rounded-md",
@@ -192,7 +192,7 @@ function BinaryOutcome(props: {
 						key={`place-bet-${props.prediction.id}-${userBet.outcome.id}`}
 						className="text-sm  transition-colors px-2 py-0.5 rounded-md text-[#FEBD1C] bg-[#4F3101] hover:bg-[#623C00]"
 					>
-						{userBetAmount > 0 ? "Add" : "Bet Gold"}
+						Add
 					</ToggleModal>
 				</div>
 			</div>

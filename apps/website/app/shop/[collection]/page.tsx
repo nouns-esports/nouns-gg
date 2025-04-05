@@ -24,7 +24,7 @@ export default async function CollectionPage(props: {
 							className="text-red flex items-center gap-1 group"
 						>
 							<ArrowLeft className="w-5 h-5 text-red group-hover:-translate-x-1 transition-transform" />
-							Back to shop
+							Back
 						</Link>
 						<div className="flex justify-between items-center">
 							<h1 className="text-white font-luckiest-guy text-4xl">

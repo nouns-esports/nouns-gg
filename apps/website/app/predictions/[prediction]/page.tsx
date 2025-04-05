@@ -86,7 +86,7 @@ export default async function Prediction(props: {
 					className="text-red flex items-center gap-1 group w-fit"
 				>
 					<ArrowLeft className="w-5 h-5 text-red group-hover:-translate-x-1 transition-transform" />
-					Back to predictions
+					Back
 				</NavigateBack>
 				<div className="flex flex-col gap-4 p-4 bg-grey-800 rounded-xl overflow-hidden">
 					<div className="flex flex-col gap-4">

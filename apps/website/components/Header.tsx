@@ -171,7 +171,7 @@ export default async function Header() {
 															Predictions
 														</p>
 														<p className="text-grey-200">
-															Place bets and earn gold
+															Make predictions and earn gold
 														</p>
 													</div>
 												</Link>

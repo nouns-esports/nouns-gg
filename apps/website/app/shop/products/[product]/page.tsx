@@ -123,7 +123,7 @@ export default async function ProductPage(props: {
 								<div className="flex items-center gap-1.5">
 									{product.variants.map((v) => (
 										<Link
-											href={`/shop/products/${product.id}?size=${v.size}`}
+											href={`/shop/products/${product.handle}?size=${v.size}`}
 											key={v.shopifyId}
 											className={twMerge(
 												"flex items-center justify-center gap-1 w-8 h-8 text-sm text-grey-200 rounded-md border border-white/10 relative",
