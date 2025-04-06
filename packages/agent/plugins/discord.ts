@@ -1,5 +1,6 @@
 import { createPlugin } from "../core/createPlugin";
 import { Client } from "discord.js";
+import { SnowflakeUtil } from "discord.js";
 
 export function discordPlugin(options: { token: string }) {
 	return createPlugin(async ({ generateReply }) => {
@@ -70,7 +71,7 @@ export function discordPlugin(options: { token: string }) {
 
 				await message.reply({
 					content: response,
-					nonce: message.id,
+					nonce: SnowflakeUtil.generate().toString(),
 					enforceNonce: true,
 				});
 			}
