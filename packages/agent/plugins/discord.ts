@@ -2,7 +2,7 @@ import { createPlugin } from "../core/createPlugin";
 import { Client } from "discord.js";
 
 export function discordPlugin(options: { token: string }) {
-	return createPlugin(async ({ generateReply, cache }) => {
+	return createPlugin(async ({ generateReply }) => {
 		const client = new Client({
 			intents: ["Guilds", "GuildMessages", "MessageContent", "GuildMembers"],
 		});
@@ -15,24 +15,8 @@ export function discordPlugin(options: { token: string }) {
 		});
 
 		client.on("messageCreate", async (message) => {
-			console.log(
-				"messageCreate:pre",
-				message.content,
-				message.author.id,
-				message.author.bot,
-				message.author.username,
-			);
-
 			if (message.author.bot) return;
 			if (!client.user) return;
-
-			console.log(
-				"messageCreate:post",
-				message.content,
-				message.author.id,
-				message.author.bot,
-				message.author.username,
-			);
 
 			const mentioned = message.mentions.has(client.user.id);
 
@@ -84,6 +68,13 @@ export function discordPlugin(options: { token: string }) {
 
 				// console.log("Response: ", response);
 
+				console.log(
+					"replying...",
+					response,
+					message.content,
+					message.id,
+					message.author.username,
+				);
 				await message.reply(response);
 			}
 		});

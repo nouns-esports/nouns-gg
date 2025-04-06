@@ -12,7 +12,6 @@ import type { createPlugin } from "./createPlugin";
 import { createServer } from "./createServer";
 import { z } from "zod";
 import { TZDate } from "@date-fns/tz";
-import { createCache } from "./createCache";
 
 export type Config<TPlugins> = {
 	model: LanguageModelV1;
@@ -71,8 +70,6 @@ export async function createAgent<
 	const tools: Tool<Extract<keyof TPlugins, string>, z.ZodSchema>[] = [];
 
 	const { server, start } = await createServer(config);
-
-	const cache = createCache();
 
 	async function scheduleTask() {}
 
@@ -158,7 +155,6 @@ export async function createAgent<
 			const result = await register({
 				config,
 				server,
-				cache,
 				scheduleTask,
 				addTool: (params) =>
 					addTool({
