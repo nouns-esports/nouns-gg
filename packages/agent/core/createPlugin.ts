@@ -2,7 +2,7 @@ import type { Hono } from "hono";
 import type { Config, Tool, MessageContext } from "./createAgent";
 import type { generateText } from "ai";
 import type { z } from "zod";
-
+import { createCache } from "./createCache";
 export function createPlugin<T>(
 	handler: (props: {
 		scheduleTask: () => void;
@@ -14,6 +14,7 @@ export function createPlugin<T>(
 		) => ReturnType<typeof generateText>;
 		config: Config<unknown>;
 		server: Hono;
+		cache: ReturnType<typeof createCache>;
 	}) => Promise<T>,
 ) {
 	return handler;

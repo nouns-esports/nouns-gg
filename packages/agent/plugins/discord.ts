@@ -2,7 +2,7 @@ import { createPlugin } from "../core/createPlugin";
 import { Client } from "discord.js";
 
 export function discordPlugin(options: { token: string }) {
-	return createPlugin(async ({ generateReply }) => {
+	return createPlugin(async ({ generateReply, cache }) => {
 		const client = new Client({
 			intents: ["Guilds", "GuildMessages", "MessageContent", "GuildMembers"],
 		});
@@ -15,7 +15,11 @@ export function discordPlugin(options: { token: string }) {
 		});
 
 		client.on("messageCreate", async (message) => {
-			console.log("Message recieved", message.content);
+			if (cache.has({ provider: "discord", id: message.id })) return;
+			cache.add({ provider: "discord", id: message.id });
+
+			console.log("messageCreate", message.content);
+
 			if (message.author.bot) return;
 			if (!client.user) return;
 
