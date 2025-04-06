@@ -45,7 +45,7 @@ export const claimAchievement = onlyRanked
 			image: achievement.image,
 			read: true,
 			timestamp: now,
-			url: "/nexus",
+			url: "/user",
 		};
 
 		await db.primary.transaction(async (tx) => {

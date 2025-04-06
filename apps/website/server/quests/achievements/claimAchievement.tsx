@@ -23,7 +23,7 @@ export const claimAchievement = createAction<{ achievement?: string }>(
 					)}
 				</p>
 			),
-			url: "/nexus",
+			url: "/user",
 			check: async (user) => {
 				const claimedAchievement = await db.primary.query.xp.findFirst({
 					where: and(

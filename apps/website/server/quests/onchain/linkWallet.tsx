@@ -15,7 +15,7 @@ export const linkWallet = createAction<{
 				}
 			</p>
 		),
-		url: actionInputs.type === "rainbow" ? "/rainbow" : "/nexus",
+		url: actionInputs.type === "rainbow" ? "/rainbow" : "/user",
 		check: async (user) => {
 			if (user.wallets.length === 0) return false;
 

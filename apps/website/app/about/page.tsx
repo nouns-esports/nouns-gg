@@ -57,7 +57,7 @@ export default function AboutPage() {
 							<h3 className="text-white font-bebas-neue text-2xl">
 								Participate on Nouns.GG
 							</h3>
-							<Link href="/nexus" className="text-red">
+							<Link href="/user" className="text-red">
 								Enter the Nexus
 							</Link>
 						</div>

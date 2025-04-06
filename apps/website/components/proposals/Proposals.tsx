@@ -156,7 +156,7 @@ export default function Proposals(props: {
 												</p>
 												<p className="text-white">to propose</p>
 											</div>
-											<Button href="/nexus">View Nexus</Button>
+											<Button href="/user">View Nexus</Button>
 										</>
 									);
 								}
@@ -275,7 +275,7 @@ export default function Proposals(props: {
 												</p>
 												<p className="text-white">to vote</p>
 											</div>
-											<Button href="/nexus">View Nexus</Button>
+											<Button href="/user">View Nexus</Button>
 										</>
 									);
 								}
@@ -373,7 +373,7 @@ export default function Proposals(props: {
 											return (
 												<>
 													<p className="text-white">Your proposal won!</p>
-													<Button href="/nexus">View Rewards</Button>
+													<Button href="/user">View Rewards</Button>
 												</>
 											);
 										}
