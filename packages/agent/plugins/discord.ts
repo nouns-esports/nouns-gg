@@ -16,20 +16,11 @@ export function discordPlugin(options: { token: string }) {
 
 		client.on("messageCreate", async (message) => {
 			console.log(
-				"messageCreate:pre",
+				"messageCreate",
 				message.content,
-				message.id,
-				cache.state,
-			);
-
-			if (cache.has({ provider: "discord", id: message.id })) return;
-			cache.add({ provider: "discord", id: message.id });
-
-			console.log(
-				"messageCreate:post",
-				message.content,
-				message.id,
-				cache.state,
+				message.author.id,
+				message.author.bot,
+				message.author.username,
 			);
 
 			if (message.author.bot) return;
