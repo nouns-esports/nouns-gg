@@ -1,7 +1,7 @@
 import { db } from "~/packages/db";
 
 export default async function Test() {
-	const test = await db.pgpool.query.erc721Balances.findMany({
+	const test = await db.pgpool.query.nouns.findMany({
 		limit: 10,
 	});
 
@@ -10,7 +10,7 @@ export default async function Test() {
 	return (
 		<div className="px-32 pt-64">
 			{test.map((t, index) => (
-				<div key={index}>{t.toString()}</div>
+				<div key={index}>{JSON.stringify(t)}</div>
 			))}
 		</div>
 	);
