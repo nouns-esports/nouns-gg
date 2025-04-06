@@ -4,6 +4,7 @@ export function createCache() {
 	setInterval(() => cache.clear(), 1000 * 60 * 60);
 
 	return {
+		state: cache,
 		add: (context: {
 			provider: string;
 			id: string;
