@@ -16,7 +16,7 @@ export function discordPlugin(options: { token: string }) {
 
 		client.on("messageCreate", async (message) => {
 			console.log(
-				"messageCreate",
+				"messageCreate:pre",
 				message.content,
 				message.author.id,
 				message.author.bot,
@@ -25,6 +25,14 @@ export function discordPlugin(options: { token: string }) {
 
 			if (message.author.bot) return;
 			if (!client.user) return;
+
+			console.log(
+				"messageCreate:post",
+				message.content,
+				message.author.id,
+				message.author.bot,
+				message.author.username,
+			);
 
 			const mentioned = message.mentions.has(client.user.id);
 
