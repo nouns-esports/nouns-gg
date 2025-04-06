@@ -1,17 +1,17 @@
 import { db } from "~/packages/db";
 
 export default async function Test() {
-	const test = await db.pgpool.query.nouns.findMany({
-		limit: 10,
-	});
+	let error = "";
 
-	console.log(test);
+	try {
+		const test = await db.pgpool.query.nouns.findMany({
+			limit: 10,
+		});
+	} catch (e) {
+		if (e instanceof Error) {
+			error = e.message;
+		}
+	}
 
-	return (
-		<div className="px-32 pt-64">
-			{test.map((t, index) => (
-				<div key={index}>{JSON.stringify(t)}</div>
-			))}
-		</div>
-	);
+	return <div className="px-32 pt-64">{error}</div>;
 }
