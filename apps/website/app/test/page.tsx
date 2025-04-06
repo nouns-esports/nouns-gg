@@ -77,8 +77,7 @@ export default async function Test() {
 		}
 	}
 
-	console.log(db.pgpool.query.nouns);
-	console.log(db.pgpool.query.erc721Balances);
+	console.log(Object.keys(db.pgpool.query.nouns));
 
 	return (
 		<div className="px-32 pt-64 flex flex-col gap-4 text-white">
