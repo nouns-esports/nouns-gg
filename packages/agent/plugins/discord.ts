@@ -68,14 +68,11 @@ export function discordPlugin(options: { token: string }) {
 
 				// console.log("Response: ", response);
 
-				console.log(
-					"replying...",
-					response,
-					message.content,
-					message.id,
-					message.author.username,
-				);
-				await message.reply(response);
+				await message.reply({
+					content: response,
+					nonce: message.id,
+					enforceNonce: true,
+				});
 			}
 		});
 
