@@ -167,49 +167,49 @@ export const getUserStats = cache(
 	{ tags: ["getUserStats"], revalidate: 60 * 10 },
 );
 
-export async function getUserHasCredential(input: {
-	token: string;
-	wallets: string[];
-}) {
-	const holder = await db.pgpool.query.erc721Balances.findFirst({
-		where: and(
-			inArray(
-				erc721Balances.account,
-				input.wallets.map((w) => w as `0x${string}`),
-			),
-			eq(erc721Balances.collection, input.token),
-		),
-	});
+// export async function getUserHasCredential(input: {
+// 	token: string;
+// 	wallets: string[];
+// }) {
+// 	const holder = await db.pgpool.query.erc721Balances.findFirst({
+// 		where: and(
+// 			inArray(
+// 				erc721Balances.account,
+// 				input.wallets.map((w) => w as `0x${string}`),
+// 			),
+// 			eq(erc721Balances.collection, input.token),
+// 		),
+// 	});
 
-	if (holder) {
-		return true;
-	}
+// 	if (holder) {
+// 		return true;
+// 	}
 
-	if (input.token === "0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03") {
-		const nounDelegate = await db.pgpool.query.nounDelegates.findFirst({
-			where: inArray(
-				nounDelegates.to,
-				input.wallets.map((w) => w as `0x${string}`),
-			),
-		});
+// 	if (input.token === "0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03") {
+// 		const nounDelegate = await db.pgpool.query.nounDelegates.findFirst({
+// 			where: inArray(
+// 				nounDelegates.to,
+// 				input.wallets.map((w) => w as `0x${string}`),
+// 			),
+// 		});
 
-		if (nounDelegate) {
-			return true;
-		}
-	}
+// 		if (nounDelegate) {
+// 			return true;
+// 		}
+// 	}
 
-	if (input.token === "0x4b10701Bfd7BFEdc47d50562b76b436fbB5BdB3B") {
-		const lilnounDelegate = await db.pgpool.query.lilnounDelegates.findFirst({
-			where: inArray(
-				lilnounDelegates.to,
-				input.wallets.map((w) => w as `0x${string}`),
-			),
-		});
+// 	if (input.token === "0x4b10701Bfd7BFEdc47d50562b76b436fbB5BdB3B") {
+// 		const lilnounDelegate = await db.pgpool.query.lilnounDelegates.findFirst({
+// 			where: inArray(
+// 				lilnounDelegates.to,
+// 				input.wallets.map((w) => w as `0x${string}`),
+// 			),
+// 		});
 
-		if (lilnounDelegate) {
-			return true;
-		}
-	}
+// 		if (lilnounDelegate) {
+// 			return true;
+// 		}
+// 	}
 
-	return false;
-}
+// 	return false;
+// }

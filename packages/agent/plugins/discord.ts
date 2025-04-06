@@ -40,33 +40,10 @@ export function discordPlugin(options: { token: string }) {
 						embeds,
 					});
 
-					// console.log("Reply: ", reply.text);
-
 					response = reply.text;
 				} catch (error) {
-					// console.log("Error: ", error);
-					// if (error instanceof Error) {
-					// 	try {
-					// 		const errorReply = await generateReply(error.message, {
-					// 			id: message.id,
-					// 			author,
-					// 			room,
-					// 			mentions,
-					// 			embeds,
-					// 		});
-					// 		response = errorReply.text;
-					// 	} catch (error) {
-					// 		if (error instanceof Error) {
-					// 			// console.log("Deep Error: ", error);
-					// 			response = error.message;
-					// 		}
-					// 	}
-					// } else {
-					// 	response = "Sorry, an unknown error occurred.";
-					// }
+					console.log("Error: ", error);
 				}
-
-				// console.log("Response: ", response);
 
 				await message.reply({
 					content: response,

@@ -177,12 +177,12 @@ export const roundsRelations = relations(rounds, ({ one, many }) => ({
 		fields: [rounds.creator],
 		references: [nexus.id],
 	}),
-	proposerCredentialHolders: many(erc721Balances),
-	proposerCredentialNounDelegates: many(nounDelegates),
-	proposerCredentialLilnounDelegates: many(lilnounDelegates),
-	voterCredentialHolders: many(erc721Balances),
-	voterCredentialNounDelegates: many(nounDelegates),
-	voterCredentialLilnounDelegates: many(lilnounDelegates),
+	// proposerCredentialHolders: many(erc721Balances),
+	// proposerCredentialNounDelegates: many(nounDelegates),
+	// proposerCredentialLilnounDelegates: many(lilnounDelegates),
+	// voterCredentialHolders: many(erc721Balances),
+	// voterCredentialNounDelegates: many(nounDelegates),
+	// voterCredentialLilnounDelegates: many(lilnounDelegates),
 }));
 
 export const assetsRelations = relations(assets, ({ many }) => ({
@@ -475,6 +475,8 @@ export const nounsRelations = relations(nouns, ({ one, many }) => ({
 		references: [nounsTraits.id],
 	}),
 }));
+
+// There is not enough information to infer relation "rounds.proposerCredentialHolders"
 
 export const nounsTraitsRelations = relations(nounsTraits, ({ many }) => ({
 	nouns: many(nouns),
