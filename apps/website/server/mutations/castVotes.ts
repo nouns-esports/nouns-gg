@@ -12,11 +12,8 @@ import { and, eq, inArray, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { onlyRanked } from ".";
-// import {
-// 	erc721Balances,
-// 	lilnounDelegates,
-// 	nounDelegates,
-// } from "~/packages/db/schema/indexer";
+
+import { getUserHasCredential } from "../queries/users";
 
 export const castVotes = onlyRanked
 	.schema(
@@ -36,24 +33,6 @@ export const castVotes = onlyRanked
 					where: eq(proposals.user, ctx.user.id),
 				},
 				minVoterRank: true,
-				// voterCredentialHolders: {
-				// 	where: inArray(
-				// 		erc721Balances.account,
-				// 		ctx.user.wallets.map((w) => w.address as `0x${string}`),
-				// 	),
-				// },
-				// voterCredentialNounDelegates: {
-				// 	where: inArray(
-				// 		nounDelegates.to,
-				// 		ctx.user.wallets.map((w) => w.address as `0x${string}`),
-				// 	),
-				// },
-				// voterCredentialLilnounDelegates: {
-				// 	where: inArray(
-				// 		lilnounDelegates.to,
-				// 		ctx.user.wallets.map((w) => w.address as `0x${string}`),
-				// 	),
-				// },
 			},
 		});
 
@@ -69,25 +48,16 @@ export const castVotes = onlyRanked
 			throw new Error("You are not eligible to vote in this round");
 		}
 
-		// if (round.voterCredential) {
-		// 	let hasCredential = false;
+		if (round.voterCredential) {
+			const hasCredential = await getUserHasCredential({
+				token: round.voterCredential,
+				wallets: ctx.user.wallets.map((w) => w.address as `0x${string}`),
+			});
 
-		// 	if (round.voterCredentialHolders.length > 0) {
-		// 		hasCredential = true;
-		// 	}
-
-		// 	if (round.voterCredentialNounDelegates.length > 0) {
-		// 		hasCredential = true;
-		// 	}
-
-		// 	if (round.voterCredentialLilnounDelegates.length > 0) {
-		// 		hasCredential = true;
-		// 	}
-
-		// 	if (!hasCredential) {
-		// 		throw new Error("You do not have a valid credential");
-		// 	}
-		// }
+			if (!hasCredential) {
+				throw new Error("You do not have a valid credential");
+			}
+		}
 
 		const now = new Date();
 		const votingStart = new Date(round.votingStart);

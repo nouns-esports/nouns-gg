@@ -10,7 +10,7 @@ import { getPriorVotes } from "@/server/queries/votes";
 import { numberToOrdinal } from "@/utils/numberToOrdinal";
 import {
 	getAuthenticatedUser,
-	// getUserHasCredential,
+	getUserHasCredential,
 } from "@/server/queries/users";
 import { env } from "~/env";
 import { headers } from "next/headers";
@@ -179,21 +179,21 @@ export default async function Round(props: {
 			},
 		})) satisfies Activity[];
 
-	// const hasProposerCredential =
-	// 	round.proposerCredential && user
-	// 		? await getUserHasCredential({
-	// 				token: round.proposerCredential,
-	// 				wallets: user.wallets.map((w) => w.address),
-	// 			})
-	// 		: false;
+	const hasProposerCredential =
+		round.proposerCredential && user
+			? await getUserHasCredential({
+					token: round.proposerCredential,
+					wallets: user.wallets.map((w) => w.address),
+				})
+			: false;
 
-	// const hasVoterCredential =
-	// 	round.voterCredential && user
-	// 		? await getUserHasCredential({
-	// 				token: round.voterCredential,
-	// 				wallets: user.wallets.map((w) => w.address),
-	// 			})
-	// 		: false;
+	const hasVoterCredential =
+		round.voterCredential && user
+			? await getUserHasCredential({
+					token: round.voterCredential,
+					wallets: user.wallets.map((w) => w.address),
+				})
+			: false;
 
 	return (
 		<div className="flex flex-col w-full items-center">
@@ -451,8 +451,8 @@ export default async function Round(props: {
 								? {
 										...user,
 										priorVotes,
-										// hasProposerCredential,
-										// hasVoterCredential,
+										hasProposerCredential,
+										hasVoterCredential,
 									}
 								: undefined
 						}

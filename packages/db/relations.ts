@@ -177,12 +177,6 @@ export const roundsRelations = relations(rounds, ({ one, many }) => ({
 		fields: [rounds.creator],
 		references: [nexus.id],
 	}),
-	// proposerCredentialHolders: many(erc721Balances),
-	// proposerCredentialNounDelegates: many(nounDelegates),
-	// proposerCredentialLilnounDelegates: many(lilnounDelegates),
-	// voterCredentialHolders: many(erc721Balances),
-	// voterCredentialNounDelegates: many(nounDelegates),
-	// voterCredentialLilnounDelegates: many(lilnounDelegates),
 }));
 
 export const assetsRelations = relations(assets, ({ many }) => ({
@@ -400,48 +394,42 @@ export const cartsRelations = relations(carts, ({ one }) => ({
 	}),
 }));
 
-export const erc721BalancesRelations = relations(
-	erc721Balances,
-	({ one, many }) => ({
-		collection: one(assets, {
-			fields: [erc721Balances.collection],
-			references: [assets.id],
-		}),
-		nounDelegates: many(nounDelegates),
-		lilnounDelegates: many(lilnounDelegates),
-		rounds: many(rounds),
-	}),
-);
+// export const erc721BalancesRelations = relations(
+// 	erc721Balances,
+// 	({ one, many }) => ({
+// 		nounDelegates: many(nounDelegates),
+// 		lilnounDelegates: many(lilnounDelegates),
+// 	}),
+// );
 
-export const nounDelegatesRelations = relations(
-	nounDelegates,
-	({ one, many }) => ({
-		delegator: one(erc721Balances, {
-			fields: [nounDelegates.from],
-			references: [erc721Balances.account],
-		}),
-		delegatee: one(erc721Balances, {
-			fields: [nounDelegates.to],
-			references: [erc721Balances.account],
-		}),
-		rounds: many(rounds),
-	}),
-);
+// export const nounDelegatesRelations = relations(
+// 	nounDelegates,
+// 	({ one, many }) => ({
+// 		delegator: one(erc721Balances, {
+// 			fields: [nounDelegates.from],
+// 			references: [erc721Balances.account],
+// 		}),
+// 		delegatee: one(erc721Balances, {
+// 			fields: [nounDelegates.to],
+// 			references: [erc721Balances.account],
+// 		}),
 
-export const lilnounDelegatesRelations = relations(
-	lilnounDelegates,
-	({ one, many }) => ({
-		delegator: one(erc721Balances, {
-			fields: [lilnounDelegates.from],
-			references: [erc721Balances.account],
-		}),
-		delegatee: one(erc721Balances, {
-			fields: [lilnounDelegates.to],
-			references: [erc721Balances.account],
-		}),
-		rounds: many(rounds),
-	}),
-);
+// 	}),
+// );
+
+// export const lilnounDelegatesRelations = relations(
+// 	lilnounDelegates,
+// 	({ one, many }) => ({
+// 		delegator: one(erc721Balances, {
+// 			fields: [lilnounDelegates.from],
+// 			references: [erc721Balances.account],
+// 		}),
+// 		delegatee: one(erc721Balances, {
+// 			fields: [lilnounDelegates.to],
+// 			references: [erc721Balances.account],
+// 		}),
+// 	}),
+// );
 
 export const nounsProposalsRelations = relations(
 	nounsProposals,
