@@ -77,6 +77,9 @@ export default async function Test() {
 		}
 	}
 
+	console.log(db.pgpool.query.nouns);
+	console.log(db.pgpool.query.erc721Balances);
+
 	return (
 		<div className="px-32 pt-64 flex flex-col gap-4 text-white">
 			<p>nounDelegates: {test2}</p>
@@ -84,10 +87,8 @@ export default async function Test() {
 			<p>nounsVotes: {test4}</p>
 			<p>nounsBids: {test5}</p>
 			<p>nouns: {test1}</p>
-			<p>nouns query:{Object.entries(db.pgpool.query.nouns)}</p>
-			<p>
-				erc721Balances query:{Object.entries(db.pgpool.query.erc721Balances)}
-			</p>
+			<p>nouns query:{Object.keys(db.pgpool.query.nouns)}</p>
+			<p>erc721Balances query:{Object.keys(db.pgpool.query.erc721Balances)}</p>
 		</div>
 	);
 }
