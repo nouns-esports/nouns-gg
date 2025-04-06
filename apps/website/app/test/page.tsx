@@ -13,5 +13,14 @@ export default async function Test() {
 		}
 	}
 
-	return <div className="px-32 pt-64">{error}</div>;
+	const test = await db.pgpool.query.nounDelegates.findMany({
+		limit: 10,
+	});
+
+	return (
+		<div className="px-32 pt-64">
+			{error}
+			{JSON.stringify(test)}
+		</div>
+	);
 }
