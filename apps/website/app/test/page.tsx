@@ -12,7 +12,9 @@ export default async function Test() {
 			limit: 10,
 		});
 
-		test1 = JSON.stringify(test);
+		test1 = JSON.stringify(test, (_, value) =>
+			typeof value === "bigint" ? value.toString() : value,
+		);
 	} catch (e) {
 		if (e instanceof Error) {
 			test1 = e.message;
@@ -24,7 +26,9 @@ export default async function Test() {
 			limit: 10,
 		});
 
-		test2 = JSON.stringify(test);
+		test2 = JSON.stringify(test, (_, value) =>
+			typeof value === "bigint" ? value.toString() : value,
+		);
 	} catch (e) {
 		if (e instanceof Error) {
 			test2 = e.message;
@@ -36,7 +40,9 @@ export default async function Test() {
 			limit: 10,
 		});
 
-		test3 = JSON.stringify(test);
+		test3 = JSON.stringify(test, (_, value) =>
+			typeof value === "bigint" ? value.toString() : value,
+		);
 	} catch (e) {
 		if (e instanceof Error) {
 			test3 = e.message;
@@ -48,7 +54,9 @@ export default async function Test() {
 			limit: 10,
 		});
 
-		test4 = JSON.stringify(test);
+		test4 = JSON.stringify(test, (_, value) =>
+			typeof value === "bigint" ? value.toString() : value,
+		);
 	} catch (e) {
 		if (e instanceof Error) {
 			test4 = e.message;
@@ -60,7 +68,9 @@ export default async function Test() {
 			limit: 10,
 		});
 
-		test5 = JSON.stringify(test);
+		test5 = JSON.stringify(test, (_, value) =>
+			typeof value === "bigint" ? value.toString() : value,
+		);
 	} catch (e) {
 		if (e instanceof Error) {
 			test5 = e.message;
