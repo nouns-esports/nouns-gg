@@ -78,7 +78,37 @@ export default async function Test() {
 	}
 
 	console.log(Object.keys(db.pgpool.query.nouns));
+	console.log(
+		"nouns table",
+		// @ts-ignore
+		db.pgpool.query.nouns.table,
+	);
+	console.log(
+		"nouns tableConfig",
+		// @ts-ignore
+		db.pgpool.query.nouns.tableConfig,
+	);
+	console.log(
+		"nouns schema",
+		// @ts-ignore
+		db.pgpool.query.nouns.schema,
+	);
 
+	console.log(
+		"erc721Balances table",
+		// @ts-ignore
+		db.pgpool.query.erc721Balances.table,
+	);
+	console.log(
+		"erc721Balances tableConfig",
+		// @ts-ignore
+		db.pgpool.query.erc721Balances.tableConfig,
+	);
+	console.log(
+		"erc721Balances schema",
+		// @ts-ignore
+		db.pgpool.query.erc721Balances.schema,
+	);
 	return (
 		<div className="px-32 pt-64 flex flex-col gap-4 text-white">
 			<p>nounDelegates: {test2}</p>
