@@ -38,7 +38,7 @@ export const notifications = pgTable("notifications", (t) => ({
 
 export const communities = pgTable("communities", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	image: t.text().notNull(),
 	name: t.text().notNull(),
 	description: t.jsonb().$type<TipTap>(), //.notNull(),
@@ -54,10 +54,11 @@ export const communityAdmins = pgTable("community_admins", (t) => ({
 
 export const articles = pgTable("articles", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	title: t.text().notNull(),
 	image: t.text().notNull(),
 	content: t.jsonb().$type<TipTap>().notNull(),
+	draft: t.boolean().notNull().default(false),
 	publishedAt: t.timestamp("published_at", { mode: "date" }).notNull(),
 	editors: t.text().array().notNull(), //.default([]), default arrays are broken with Drizzle Kit right now
 }));
@@ -72,6 +73,7 @@ export const events = pgTable("events", (t) => ({
 	end: t.timestamp({ mode: "date" }).notNull(),
 	community: t.bigint({ mode: "number" }),
 	creator: t.text(),
+	draft: t.boolean().notNull().default(false),
 	featured: t.boolean().notNull().default(false),
 	callToAction: t.jsonb("call_to_action").$type<{
 		disabled: boolean;
@@ -96,7 +98,7 @@ export const stations = pgTable("stations", (t) => ({
 
 export const checkpoints = pgTable("checkpoints", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	key: t.text().notNull(), // random uuid
 	name: t.text().notNull(),
 	event: t.bigint({ mode: "number" }),
@@ -117,6 +119,7 @@ export const predictions = pgTable("predictions", (t) => ({
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
 	community: t.bigint({ mode: "number" }),
+	draft: t.boolean().notNull().default(false),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	rules: t.jsonb().$type<TipTap>().notNull(),
@@ -185,6 +188,7 @@ export const rounds = pgTable("rounds", (t) => ({
 	community: t.bigint({ mode: "number" }),
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
+	draft: t.boolean().notNull().default(false),
 	type: t
 		.text({ enum: ["markdown", "video", "image"] })
 		.notNull()
@@ -283,7 +287,7 @@ export const ranks = pgTable("ranks", (t) => ({
 
 export const quests = pgTable("quests", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	description: t.text().notNull(),
 	_description: t.jsonb().$type<TipTap>(), //.notNull(),
@@ -291,6 +295,7 @@ export const quests = pgTable("quests", (t) => ({
 	community: t.bigint({ mode: "number" }),
 	creator: t.text(),
 	event: t.bigint({ mode: "number" }),
+	draft: t.boolean().notNull().default(false),
 	createdAt: t.timestamp("created_at", { mode: "date" }).notNull().defaultNow(),
 	featured: t.boolean().notNull().default(false),
 	active: t.boolean().notNull().default(false),
@@ -369,7 +374,7 @@ export const creations = pgTable("creations", (t) => ({
 
 export const products = pgTable("products", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	shopifyId: t.text("shopify_id").notNull(),
 	name: t.text().notNull(),
 	description: t.text().notNull(),
@@ -397,7 +402,7 @@ export const products = pgTable("products", (t) => ({
 
 export const collections = pgTable("collections", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	featured: t.boolean().notNull().default(false),
@@ -472,7 +477,7 @@ export const linkedFarcasters = pgTable("linked_farcasters", (t) => ({
 
 export const raffles = pgTable("raffles", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull(),
+	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	description: t.jsonb().$type<TipTap>().notNull(),
 	images: t.text().array().notNull(),
@@ -480,9 +485,11 @@ export const raffles = pgTable("raffles", (t) => ({
 	end: t.timestamp().notNull(),
 	gold: t.integer().notNull(),
 	winners: t.integer().notNull(),
+	limit: t.integer(),
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
 	community: t.bigint({ mode: "number" }),
+	draft: t.boolean().notNull().default(false),
 }));
 
 export const raffleEntries = pgTable("raffle_entries", (t) => ({
