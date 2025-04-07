@@ -72,8 +72,8 @@ export const placeBet = onlyUser
 			throw new Error("Prediction has ended");
 		}
 
-		let didEarnXP = false;
-		let newUserXP = 0;
+		// let didEarnXP = false;
+		// let newUserXP = 0;
 
 		await db.primary.transaction(async (tx) => {
 			const amount = parsedInput.amount.toFixed(0);
@@ -105,27 +105,27 @@ export const placeBet = onlyUser
 				});
 			}
 
-			if (prediction.earnedXP.length === 0) {
-				await tx.insert(xp).values({
-					user: ctx.user.id,
-					amount: prediction.xp,
-					timestamp: now,
-					prediction: prediction.id,
-				});
+			// if (prediction.earnedXP.length === 0) {
+			// 	await tx.insert(xp).values({
+			// 		user: ctx.user.id,
+			// 		amount: prediction.xp,
+			// 		timestamp: now,
+			// 		prediction: prediction.id,
+			// 	});
 
-				const [updateNexus] = await tx
-					.update(nexus)
-					.set({
-						xp: sql`${nexus.xp} + ${prediction.xp}`,
-					})
-					.where(eq(nexus.id, ctx.user.id))
-					.returning({
-						xp: nexus.xp,
-					});
+			// 	const [updateNexus] = await tx
+			// 		.update(nexus)
+			// 		.set({
+			// 			xp: sql`${nexus.xp} + ${prediction.xp}`,
+			// 		})
+			// 		.where(eq(nexus.id, ctx.user.id))
+			// 		.returning({
+			// 			xp: nexus.xp,
+			// 		});
 
-				newUserXP = updateNexus.xp;
-				didEarnXP = true;
-			}
+			// 	newUserXP = updateNexus.xp;
+			// 	didEarnXP = true;
+			// }
 
 			await tx
 				.update(outcomes)
@@ -148,10 +148,10 @@ export const placeBet = onlyUser
 			revalidatePath(`/events/${prediction.event.handle}`);
 		}
 
-		if (didEarnXP) {
-			return {
-				earnedXP: prediction.xp,
-				totalXP: newUserXP,
-			};
-		}
+		// if (didEarnXP) {
+		// 	return {
+		// 		earnedXP: prediction.xp,
+		// 		totalXP: newUserXP,
+		// 	};
+		// }
 	});
