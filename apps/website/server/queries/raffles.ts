@@ -1,10 +1,10 @@
 import { unstable_cache as cache } from "next/cache";
 import { db } from "~/packages/db";
 import { raffleEntries, raffles } from "~/packages/db/schema/public";
-import { sql } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 
 export const getRaffles = cache(
-	async (input?: { event?: number }) => {
+	async (input?: { event?: number; user?: string }) => {
 		const now = new Date();
 
 		return db.pgpool.query.raffles.findMany({
@@ -14,6 +14,12 @@ export const getRaffles = cache(
 					gt(t.end, now),
 					input?.event ? eq(t.event, input.event) : undefined,
 				),
+			with: {
+				entries: {
+					where: (t, { eq }) =>
+						input?.user ? eq(t.user, input.user) : undefined,
+				},
+			},
 			extras: {
 				totalEntries: sql<number>`
                     (

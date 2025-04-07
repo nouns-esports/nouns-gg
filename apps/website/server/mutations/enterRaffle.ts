@@ -19,6 +19,9 @@ export const enterRaffle = onlyUser
 			where: (t, { eq }) => eq(t.id, parsedInput.raffle),
 			with: {
 				event: true,
+				entries: {
+					where: (t, { eq }) => eq(t.user, ctx.user.id),
+				},
 			},
 		});
 
@@ -34,6 +37,19 @@ export const enterRaffle = onlyUser
 
 		if (now > new Date(raffle.end)) {
 			throw new Error("Raffle has ended");
+		}
+
+		if (raffle.limit) {
+			const userEntries = raffle.entries.reduce(
+				(acc, curr) => acc + curr.amount,
+				0,
+			);
+
+			if (userEntries + parsedInput.amount > raffle.limit) {
+				throw new Error(
+					"You have reached the maximum number of entries for this raffle",
+				);
+			}
 		}
 
 		let newXP = 0;

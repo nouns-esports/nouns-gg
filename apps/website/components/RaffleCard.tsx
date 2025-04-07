@@ -7,6 +7,11 @@ import Countdown from "./Countdown";
 export default function ProductCard(props: {
 	raffle: NonNullable<Awaited<ReturnType<typeof getRaffles>>>[number];
 }) {
+	const userEntries = props.raffle.entries.reduce(
+		(acc, curr) => acc + curr.amount,
+		0,
+	);
+
 	return (
 		<ToggleModal
 			id={`raffle:${props.raffle.id}`}
@@ -39,7 +44,11 @@ export default function ProductCard(props: {
 						</p>
 					</div>
 					<ToggleModal id={`raffle:${props.raffle.id}`}>
-						<Button>Enter</Button>
+						<Button disabled={userEntries >= (props.raffle.limit ?? Infinity)}>
+							{userEntries >= (props.raffle.limit ?? Infinity)
+								? "Max Entries"
+								: "Enter"}
+						</Button>
 					</ToggleModal>
 				</div>
 			</div>
