@@ -234,7 +234,7 @@ export default async function Round(props: {
 									) : null}
 									{round.creator ? (
 										<Link
-											href={`/users/${round.creator}`}
+											href={`/users/${event.creator.username ?? event.creator.id}`}
 											newTab
 											className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
 										>
