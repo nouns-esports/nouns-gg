@@ -23,7 +23,7 @@ export const createProposal = createAction<{ round?: number }>(
 			) : (
 				<p>Create a proposal</p>
 			),
-			url: round ? `/rounds/${round.id}` : "/rounds",
+			url: round ? `/rounds/${round.handle}` : "/rounds",
 			check: async (user) => {
 				const proposal = await db.primary.query.proposals.findFirst({
 					where: and(

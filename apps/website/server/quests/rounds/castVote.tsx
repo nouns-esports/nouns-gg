@@ -23,7 +23,7 @@ export const castVote = createAction<{ round?: number }>(
 			) : (
 				<p>Vote on any proposal</p>
 			),
-			url: round ? `/rounds/${round.id}` : "/rounds",
+			url: round ? `/rounds/${round.handle}` : "/rounds",
 			check: async (user) => {
 				const vote = await db.primary.query.votes.findFirst({
 					where: and(
