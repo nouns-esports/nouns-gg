@@ -58,7 +58,7 @@ export const articles = pgTable("articles", (t) => ({
 	title: t.text().notNull(),
 	image: t.text().notNull(),
 	content: t.jsonb().$type<TipTap>().notNull(),
-	draft: t.boolean().notNull().default(false),
+	draft: t.boolean().notNull().default(true),
 	publishedAt: t.timestamp("published_at", { mode: "date" }).notNull(),
 	editors: t.text().array().notNull(), //.default([]), default arrays are broken with Drizzle Kit right now
 }));
@@ -73,7 +73,7 @@ export const events = pgTable("events", (t) => ({
 	end: t.timestamp({ mode: "date" }).notNull(),
 	community: t.bigint({ mode: "number" }),
 	creator: t.text(),
-	draft: t.boolean().notNull().default(false),
+	draft: t.boolean().notNull().default(true),
 	featured: t.boolean().notNull().default(false),
 	callToAction: t.jsonb("call_to_action").$type<{
 		disabled: boolean;
@@ -119,7 +119,7 @@ export const predictions = pgTable("predictions", (t) => ({
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
 	community: t.bigint({ mode: "number" }),
-	draft: t.boolean().notNull().default(false),
+	draft: t.boolean().notNull().default(true),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	rules: t.jsonb().$type<TipTap>().notNull(),
@@ -188,7 +188,7 @@ export const rounds = pgTable("rounds", (t) => ({
 	community: t.bigint({ mode: "number" }),
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
-	draft: t.boolean().notNull().default(false),
+	draft: t.boolean().notNull().default(true),
 	type: t
 		.text({ enum: ["markdown", "video", "image"] })
 		.notNull()
@@ -295,7 +295,7 @@ export const quests = pgTable("quests", (t) => ({
 	community: t.bigint({ mode: "number" }),
 	creator: t.text(),
 	event: t.bigint({ mode: "number" }),
-	draft: t.boolean().notNull().default(false),
+	draft: t.boolean().notNull().default(true),
 	createdAt: t.timestamp("created_at", { mode: "date" }).notNull().defaultNow(),
 	featured: t.boolean().notNull().default(false),
 	active: t.boolean().notNull().default(false),
@@ -489,7 +489,7 @@ export const raffles = pgTable("raffles", (t) => ({
 	event: t.bigint({ mode: "number" }),
 	creator: t.text(),
 	community: t.bigint({ mode: "number" }),
-	draft: t.boolean().notNull().default(false),
+	draft: t.boolean().notNull().default(true),
 }));
 
 export const raffleEntries = pgTable("raffle_entries", (t) => ({

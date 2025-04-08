@@ -13,6 +13,7 @@ export const getRaffles = cache(
 					lt(t.start, now),
 					gt(t.end, now),
 					input?.event ? eq(t.event, input.event) : undefined,
+					eq(t.draft, false),
 				),
 			with: {
 				entries: {

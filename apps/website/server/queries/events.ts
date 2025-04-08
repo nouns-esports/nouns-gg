@@ -9,14 +9,15 @@ import {
 	xp,
 } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { asc, desc, eq, gt, or, sql } from "drizzle-orm";
+import { and, asc, desc, eq, gt, or, sql } from "drizzle-orm";
 
 export const getEvents = cache(
 	async (input?: { limit?: number; community?: number }) => {
 		return db.pgpool.query.events.findMany({
-			where: input?.community
-				? eq(events.community, input.community)
-				: undefined,
+			where: and(
+				input?.community ? eq(events.community, input.community) : undefined,
+				eq(events.draft, false),
+			),
 			orderBy: [desc(events.featured), desc(events.start)],
 			limit: input?.limit,
 		});

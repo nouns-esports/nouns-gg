@@ -117,6 +117,7 @@ export const getQuests = cache(
 						? isNull(quests.event)
 						: undefined,
 				input.community ? eq(quests.community, input.community) : undefined,
+				eq(quests.draft, false),
 			),
 			orderBy: [desc(quests.featured), desc(quests.createdAt)],
 			with: {

@@ -21,7 +21,6 @@ export const getRoundWithProposal = cache(
 
 export const getRound = cache(
 	async (input: { handle: string }) => {
-		////
 		return db.pgpool.query.rounds.findFirst({
 			where: eq(rounds.handle, input.handle),
 			with: {
@@ -108,6 +107,7 @@ export const getRounds = cache(
 			where: and(
 				input?.event ? eq(rounds.event, input.event) : undefined,
 				input?.community ? eq(rounds.community, input.community) : undefined,
+				eq(rounds.draft, false),
 			),
 			with: {
 				community: true,

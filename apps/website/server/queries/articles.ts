@@ -1,6 +1,6 @@
 import { articles } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { desc, eq, lt } from "drizzle-orm";
+import { and, desc, eq, lt } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
 
 export const getArticle = cache(
@@ -16,7 +16,10 @@ export const getArticle = cache(
 export const getArticles = cache(
 	async () => {
 		return db.pgpool.query.articles.findMany({
-			where: lt(articles.publishedAt, new Date()),
+			where: and(
+				lt(articles.publishedAt, new Date()),
+				eq(articles.draft, false),
+			),
 			orderBy: desc(articles.publishedAt),
 			limit: 4,
 		});
