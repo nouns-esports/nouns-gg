@@ -53,11 +53,12 @@ export default async function Shop(props: {
 }) {
 	const searchParams = await props.searchParams;
 
-	const [user, products, collections, raffles] = await Promise.all([
-		getAuthenticatedUser(),
+	const user = await getAuthenticatedUser();
+
+	const [products, collections, raffles] = await Promise.all([
 		getProducts({ collection: searchParams.collection }),
 		getCollections(),
-		getRaffles(),
+		getRaffles({ event: 4, user: user?.id }),
 	]);
 
 	const featuredCollection = collections.find(
