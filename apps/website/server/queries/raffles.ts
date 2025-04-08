@@ -23,9 +23,9 @@ export const getRaffles = cache(
 			extras: {
 				totalEntries: sql<number>`
                     (
-                        SELECT COALESCE(SUM(${raffleEntries.amount}), 0)::integer
-                        FROM ${raffleEntries}
-                        WHERE ${raffleEntries.raffle} = ${raffles.id.getSQL()}
+                        SELECT COALESCE(SUM(raffle_entries.amount), 0)::integer
+                        FROM raffle_entries
+                        WHERE raffle_entries.raffle = ${raffles.id.getSQL()}
                     )
 	            `.as("totalEntries"),
 			},

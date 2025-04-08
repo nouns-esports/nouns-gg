@@ -7,7 +7,6 @@ import Countdown from "./Countdown";
 export default function RaffleCard(props: {
 	raffle: NonNullable<Awaited<ReturnType<typeof getRaffles>>>[number];
 }) {
-	console.log("raffle", props.raffle);
 	const userEntries = props.raffle.entries.reduce(
 		(acc, curr) => acc + curr.amount,
 		0,

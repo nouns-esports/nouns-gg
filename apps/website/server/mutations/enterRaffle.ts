@@ -59,7 +59,7 @@ export const enterRaffle = onlyUser
 			description: raffle.name,
 			image: raffle.images[0],
 			read: true,
-			url: `/raffles/${raffle.id}`,
+			url: `/raffles/${raffle.handle}`,
 			timestamp: now,
 		};
 
