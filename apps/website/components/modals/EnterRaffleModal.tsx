@@ -19,6 +19,11 @@ export default function EnterRaffleModal(props: {
 
 	const enterRaffleAction = useAction(enterRaffle);
 
+	const userEntries = props.raffle.entries.reduce(
+		(acc, entry) => acc + entry.amount,
+		0,
+	);
+
 	return (
 		<Modal
 			id={`raffle:${props.raffle.id}`}
@@ -87,6 +92,11 @@ export default function EnterRaffleModal(props: {
 						<button
 							onClick={() => {
 								if (amount * props.raffle.gold > props.availableGold) return;
+								if (
+									props.raffle.limit &&
+									amount + userEntries > props.raffle.limit
+								)
+									return;
 								setAmount(amount + 1);
 							}}
 							className="text-white text-sm bg-grey-500 rounded-r-lg p-2"
