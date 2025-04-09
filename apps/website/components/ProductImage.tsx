@@ -11,7 +11,7 @@ export default function ProductImage(props: {
 	const [index, setIndex] = useState(0);
 
 	return (
-		<div className="flex flex-col gap-2">
+		<div className="flex flex-col gap-2 flex-shrink-0">
 			<img
 				src={`${props.product.images[index]}?img-width=500&img-onerror=redirect`}
 				className="bg-black/30 rounded-xl w-80 h-80 object-contain p-2 flex-shrink-0 max-md:w-full max-md:h-auto aspect-square"
