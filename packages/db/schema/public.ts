@@ -419,6 +419,7 @@ export const products = pgTable("products", (t) => ({
 	creator: t.text(),
 	community: t.bigint({ mode: "number" }),
 	requiresShipping: t.boolean("requires_shipping").notNull().default(true),
+	active: t.boolean().notNull().default(true),
 }));
 
 export const collections = pgTable("collections", (t) => ({

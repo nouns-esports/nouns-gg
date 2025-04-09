@@ -64,6 +64,12 @@ export async function checkCart(input: { user: string }) {
 
 	const variants = cart.map((item) => item.variant);
 
+	for (const item of cart) {
+		if (!item.product.active) {
+			return false;
+		}
+	}
+
 	try {
 		const response = await shopifyClient.request(
 			`query($variantIds: [ID!]!) {

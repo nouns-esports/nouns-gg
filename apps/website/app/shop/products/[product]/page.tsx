@@ -113,6 +113,7 @@ export default async function ProductPage(props: {
 						</div>
 						<div className="flex items-center gap-4 max-sm:flex-col-reverse max-sm:items-start">
 							<AddToCartButton
+								active={product.active}
 								inventory={variant.inventory ?? Infinity}
 								product={product.id}
 								variant={variant.shopifyId}

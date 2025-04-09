@@ -12,6 +12,7 @@ export default function AddToCartButton(props: {
 	product: number;
 	variant: string;
 	inventory: number;
+	active: boolean;
 }) {
 	const addToCartAction = useAction(addToCart);
 
@@ -36,9 +37,15 @@ export default function AddToCartButton(props: {
 				router.refresh();
 			}}
 			loading={addToCartAction.isPending}
-			disabled={addToCartAction.isPending || props.inventory < 1}
+			disabled={
+				addToCartAction.isPending || props.inventory < 1 || !props.active
+			}
 		>
-			{props.inventory < 1 ? "Out of Stock" : "Add to Cart"}
+			{props.inventory < 1
+				? "Out of Stock"
+				: !props.active
+					? "Coming Soon"
+					: "Add to Cart"}
 		</Button>
 	);
 }
