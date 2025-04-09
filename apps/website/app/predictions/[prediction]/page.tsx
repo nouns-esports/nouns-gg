@@ -182,7 +182,8 @@ export default async function Prediction(props: {
 					</div>
 					<ul className="flex flex-col gap-2 w-full">
 						{outcomes.map(async (outcome, index) => {
-							const odds = Number(outcome.pool) / Number(prediction.pool);
+							const odds =
+								(Number(outcome.pool) / Number(prediction.pool)) * 100;
 
 							return (
 								<ToggleModal disabled={state !== "open"} id="make-prediction">

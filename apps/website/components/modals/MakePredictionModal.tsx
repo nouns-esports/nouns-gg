@@ -55,7 +55,7 @@ export default function MakePredictionModal(props: {
 
 	const outcome = props.prediction.outcomes.find((o) => o.id === outcomeId);
 
-	const odds = Number(outcome?.pool) / Number(props.prediction.pool);
+	const odds = (Number(outcome?.pool) / Number(props.prediction.pool)) * 100;
 
 	return (
 		<Modal
