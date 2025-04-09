@@ -2,7 +2,6 @@ import Link from "@/components/Link";
 import { notFound } from "next/navigation";
 import { twMerge } from "tailwind-merge";
 import { getCommunity } from "@/server/queries/communities";
-import PredictionCard from "@/components/PredictionCard";
 import QuestCard from "@/components/QuestCard";
 import RoundCard from "@/components/RoundCard";
 import { getRounds } from "@/server/queries/rounds";
@@ -11,6 +10,7 @@ import { getPredictions } from "@/server/queries/predictions";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import EventCard from "@/components/EventCard";
 import { getEvents } from "@/server/queries/events";
+import PredictionCard from "@/components/PredictionCard";
 
 export default async function Community(props: {
 	params: Promise<{ community: string }>;
@@ -126,7 +126,6 @@ export default async function Community(props: {
 											<PredictionCard
 												key={`prediction-${prediction.id}`}
 												prediction={prediction}
-												user={user}
 												className="max-md:w-full max-md:flex-shrink-0"
 											/>
 										))}
