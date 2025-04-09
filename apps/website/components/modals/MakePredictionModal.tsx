@@ -38,6 +38,7 @@ export default function MakePredictionModal(props: {
 	const { data: simulatedGains } = useQuery({
 		queryKey: ["simulateGains", shouldSimulateGains],
 		queryFn: async () => {
+			if (!outcomeId) return;
 			const result = await simulateGains({
 				prediction: props.prediction.id,
 				outcome: outcomeId,
