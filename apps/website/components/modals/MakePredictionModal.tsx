@@ -18,7 +18,7 @@ export default function MakePredictionModal(props: {
 	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
 	user: AuthenticatedUser;
 }) {
-	const { close, isOpen } = useModal("make-prediction");
+	const { close, isOpen, data } = useModal("make-prediction");
 
 	const { hasSucceeded, isPending, executeAsync, reset } = useAction(placeBet);
 
@@ -26,12 +26,12 @@ export default function MakePredictionModal(props: {
 		props.user.nexus ? Math.floor(Number(props.user.nexus.gold) / 10) : 0,
 	);
 
-	const [outcomeId, setOutcomeId] =
-		useState<
-			NonNullable<
+	const [outcomeId, setOutcomeId] = useState<
+		| NonNullable<
 				Awaited<ReturnType<typeof getPredictions>>
-			>[number]["outcomes"][number]["id"]
-		>();
+		  >[number]["outcomes"][number]["id"]
+		| undefined
+	>(data?.outcome);
 
 	const shouldSimulateGains = useDebounce(amount, 1000);
 

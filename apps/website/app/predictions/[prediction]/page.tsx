@@ -185,7 +185,11 @@ export default async function Prediction(props: {
 								(Number(outcome.pool) / Number(prediction.pool)) * 100;
 
 							return (
-								<ToggleModal disabled={state !== "open"} id="make-prediction">
+								<ToggleModal
+									disabled={state !== "open"}
+									id="make-prediction"
+									data={{ outcome: outcome.id }}
+								>
 									<li
 										className={twMerge(
 											"relative bg-grey-600 group gap-32 rounded-xl py-3 px-4 w-full flex justify-between items-center text-white",

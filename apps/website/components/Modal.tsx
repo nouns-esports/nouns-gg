@@ -14,16 +14,22 @@ import { create } from "zustand";
 
 const useModalState = create<{
 	open: Record<string, boolean>;
+	data: Record<string, any>;
 	setOpen: (id: string, open: boolean) => void;
+	setData: (id: string, data: any) => void;
 }>((set) => ({
 	open: {},
+	data: {},
 	setOpen: (id, open) => {
 		set((state) => ({ open: { ...state.open, [id]: open } }));
+	},
+	setData: (id, data) => {
+		set((state) => ({ data: { ...state.data, [id]: data } }));
 	},
 }));
 
 export function useModal(id: string) {
-	const { open, setOpen } = useModalState();
+	const { open, setOpen, data, setData } = useModalState();
 
 	const y = useMotionValue(0);
 
@@ -32,7 +38,11 @@ export function useModal(id: string) {
 
 	return {
 		isOpen: open[id],
-		open: () => setOpen(id, true),
+		data: data[id],
+		open: (data?: any) => {
+			setData(id, data);
+			setOpen(id, true);
+		},
 		close: () => {
 			const backdrop = document.getElementById(`${id}-backdrop`);
 			const modal = document.getElementById(`${id}-modal`);
@@ -75,6 +85,7 @@ export function ToggleModal(props: {
 	tabIndex?: number;
 	className?: string;
 	disabled?: boolean;
+	data?: any;
 }) {
 	const { isOpen, open, close } = useModal(props.id);
 
@@ -85,7 +96,7 @@ export function ToggleModal(props: {
 				if (props.disabled) return;
 				e.preventDefault();
 				e.stopPropagation();
-				isOpen ? close() : open();
+				isOpen ? close() : open(props.data);
 			}}
 			className={twMerge(!props.disabled && "cursor-pointer", props.className)}
 		>
