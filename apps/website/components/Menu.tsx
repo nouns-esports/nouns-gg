@@ -78,53 +78,11 @@ export default function Menu() {
 				)}
 			>
 				<ul className="flex flex-col gap-8 text-white">
-					<Group title="Esports" icon={<Trophy className="w-6 h-6" />}>
-						<div className="flex flex-col gap-2">
-							<Link
-								href="/about"
-								className="text-nowrap flex gap-4 items-center"
-							>
-								<img
-									alt="Nouns logo"
-									src="/logo/logo-square.png"
-									className="h-10 w-10 rounded-md"
-								/>
-								<div>
-									<p className="font-bebas-neue text-lg">Our Story</p>
-									<p className="text-grey-200">Learn more about our mission</p>
-								</div>
-							</Link>
-							<Link
-								href="/partners"
-								className="text-nowrap rounded-lg flex gap-4 items-center"
-							>
-								<div className="rounded-md w-10 h-10 flex overflow-hidden bg-purple text-white items-center">
-									<Handshake className="w-full h-full p-2" />
-								</div>
-								<div>
-									<p className="font-bebas-neue text-lg">Partners</p>
-									<p className="text-grey-200">Partner with us</p>
-								</div>
-							</Link>
-							<Link
-								href="/shop"
-								className="text-nowrap rounded-lg flex gap-4 items-center"
-							>
-								<div className="rounded-md w-10 h-10 flex overflow-hidden bg-bronze-500 text-white items-center">
-									<ShoppingBag className="w-full h-full p-2" />
-								</div>
-								<div>
-									<p className="font-bebas-neue text-lg">Shop</p>
-									<p className="text-grey-200">Buy merch and more</p>
-								</div>
-							</Link>
-						</div>
-					</Group>
-					<Group title="Get Involved" icon={<Shapes className="w-7 h-7" />}>
+					<Group title="Explore" icon={<Shapes className="w-7 h-7" />}>
 						<ul className="flex flex-col gap-2">
 							<li className="text-nowrap">
 								<Link href="/rounds" className="flex gap-4 items-center">
-									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-gold-500 text-white items-center">
+									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-green text-white items-center">
 										<Trophy className="w-full h-full p-2" />
 									</div>
 									<div>
@@ -168,12 +126,23 @@ export default function Menu() {
 							</li>
 							<li className="text-nowrap">
 								<Link href="/predictions" className="flex gap-4 items-center">
-									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-gold-500 text-white items-center">
+									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-purple text-white items-center">
 										<Coins className="w-full h-full p-2" />
 									</div>
 									<div>
 										<p className="font-bebas-neue text-lg">Predictions</p>
 										<p className="text-grey-200">Place bets and earn gold</p>
+									</div>
+								</Link>
+							</li>
+							<li className="text-nowrap">
+								<Link href="/shop" className="flex gap-4 items-center">
+									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-gold-500 text-white items-center">
+										<ShoppingBag className="w-full h-full p-2" />
+									</div>
+									<div>
+										<p className="font-bebas-neue text-lg">Shop</p>
+										<p className="text-grey-200">Spend your gold</p>
 									</div>
 								</Link>
 							</li>

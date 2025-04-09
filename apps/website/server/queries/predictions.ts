@@ -1,6 +1,6 @@
 "use server";
 
-import { bets, predictions, outcomes } from "~/packages/db/schema/public";
+import { bets, predictions, outcomes, gold } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { and, desc, eq, sql } from "drizzle-orm";
 
@@ -8,22 +8,19 @@ export async function getPrediction(input: { handle: string; user?: string }) {
 	return db.pgpool.query.predictions.findFirst({
 		where: eq(predictions.handle, input.handle),
 		with: {
-			outcomes: {
-				extras: {
-					totalBets:
-						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = predictions_outcomes.id)`.as(
-							"totalBets",
-						),
-				},
-			},
+			outcomes: true,
 			bets: {
 				where: input.user ? eq(bets.user, input.user) : undefined,
-				limit: input.user ? undefined : 0,
+				limit: input.user ? 1 : 0,
 				with: {
 					outcome: true,
 				},
 			},
 			event: true,
+			gold: {
+				where: input.user ? eq(gold.to, input.user) : undefined,
+				limit: input.user ? 1 : 0,
+			},
 		},
 		extras: {
 			totalBets:
@@ -45,23 +42,21 @@ export async function getPredictions(input: {
 				? eq(predictions.event, input.event)
 				: eq(predictions.closed, false),
 			input.community ? eq(predictions.community, input.community) : undefined,
+			eq(predictions.draft, false),
 		),
 		orderBy: [desc(predictions.id)],
 		with: {
-			outcomes: {
-				extras: {
-					totalBets:
-						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = predictions_outcomes.id)`.as(
-							"totalBets",
-						),
-				},
-			},
+			outcomes: true,
 			bets: {
 				where: input.user ? eq(bets.user, input.user) : undefined,
-				limit: input.user ? undefined : 0,
+				limit: input.user ? 1 : 0,
 				with: {
 					outcome: true,
 				},
+			},
+			gold: {
+				where: input.user ? eq(gold.to, input.user) : undefined,
+				limit: input.user ? 1 : 0,
 			},
 		},
 		extras: {

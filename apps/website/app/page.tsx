@@ -8,7 +8,7 @@ import Gallery from "@/components/Gallery";
 import { getVideos } from "@/server/queries/youtube";
 import Attribution from "@/components/Attribution";
 import { getTrendingPosts } from "@/server/queries/discussion";
-import { ArrowRight, ChevronUp } from "lucide-react";
+import { ArrowRight, ChevronUp, Play, PlayCircle } from "lucide-react";
 import { getRounds } from "@/server/queries/rounds";
 import { getCreator } from "@/server/queries/creations";
 import RoundCard from "@/components/RoundCard";
@@ -19,6 +19,7 @@ import QuestCard from "@/components/QuestCard";
 import EventCard from "@/components/EventCard";
 import { ToggleModal } from "@/components/Modal";
 import { getArticles } from "@/server/queries/articles";
+import Countdown from "@/components/Countdown";
 
 export default async function Home() {
 	const [user, videos, trendingPosts, rounds, events, articles] =
@@ -42,6 +43,41 @@ export default async function Home() {
 
 	return (
 		<div className="flex flex-col w-full items-center">
+			<div className="relative w-full h-screen flex flex-col items-center justify-center">
+				<video
+					src="https://ipfs.nouns.gg/ipfs/bafybeihciy2yrpxczsitnl2732j5sfccx7bqw6swon6ae7tolaaa3mk7jy"
+					className="absolute -z-10 top-0 left-0 w-full h-full object-cover brightness-50 blur-md"
+					autoPlay
+					muted
+					loop
+				/>
+				<div className="absolute z-20 top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-16 max-sm:gap-4">
+					<img
+						src="https://ipfs.nouns.gg/ipfs/bafkreigviswqen772eh2ofckzk7lzju52onnifqdlbis3zap4faceqxxs4"
+						className="h-60 object-contain w-auto"
+					/>
+					<div className="flex items-center text-white font-semibold text-lg gap-8 max-sm:gap-4">
+						<Button href="/events/nounsvitational">View Event</Button>
+						<Link
+							href="https://www.youtube.com/watch?v=6FIxf58Zv60"
+							className="flex gap-2 items-center hover:opacity-70 transition-opacity"
+							newTab
+						>
+							<PlayCircle className="w-6 h-6" />
+							Watch Trailer
+						</Link>
+					</div>
+				</div>
+				<div className="absolute bottom-32 left-0 w-full z-10 flex flex-col justify-end items-center gap-4 h-full">
+					<p className="text-white text-lg max-sm:text-base">
+						VIP passes go live in
+					</p>
+					<p className="text-white text-4xl max-sm:text-3xl font-bold">
+						<Countdown date={new Date("2025-04-11T19:00:00.000Z")} />
+					</p>
+				</div>
+				<div className="absolute -bottom-8 left-0 w-full h-64 bg-gradient-to-t from-black to-transparent" />
+			</div>
 			<div className="flex flex-col w-full gap-16 mb-16 max-sm:mb-8 max-lg:gap-12 pt-32 max-xl:pt-28 max-sm:pt-20 max-w-[1920px]">
 				<div className="flex gap-4 h-[30vw] max-h-[600px] max-lg:h-auto max-lg:max-h-none w-full px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 max-lg:flex-col">
 					<Gallery
@@ -208,97 +244,8 @@ export default async function Home() {
 						))}
 					</ul>
 				</div>
-				<div className="flex flex-col gap-4 px-32 max-2xl:px-16 max-xl:px-8 max-lg:px-0">
-					<div className="flex justify-between items-center max-lg:px-8 max-sm:px-4">
-						<h2 className="font-luckiest-guy text-white text-4xl max-sm:text-3xl">
-							Articles
-						</h2>
-					</div>
-					<ul className="flex gap-4 justify-between max-lg:w-full max-lg:overflow-x-scroll max-lg:px-8 max-sm:px-4 max-lg:scrollbar-hidden">
-						{articles.map((article) => (
-							<li key={article.id} className="w-full h-min group">
-								<Link
-									href={`/articles/${article.handle}`}
-									className="flex flex-col gap-2 w-full"
-								>
-									<div className="rounded-xl overflow-hidden w-full rotate-[0.01deg] aspect-video max-lg:w-[300px]">
-										<Image
-											draggable={false}
-											src={article.image}
-											alt={article.title}
-											fill
-											className="rounded-xl select-none object-cover group-hover:scale-105 transition-transform"
-										/>
-									</div>
-									<h3 className="group-hover:text-white transition-colors">
-										{article.title}
-									</h3>
-								</Link>
-							</li>
-						))}
-						{Array.from({ length: Math.max(0, 4 - articles.length) }).map(
-							(_, i) => (
-								<li key={i} className="w-full" />
-							),
-						)}
-					</ul>
-				</div>
-				<div className="flex flex-col gap-4 px-32 max-2xl:px-16 max-xl:px-8 max-lg:px-0">
-					<h2 className="font-luckiest-guy text-white text-4xl max-lg:pl-8 max-sm:pl-4 max-sm:text-3xl">
-						Explore
-					</h2>
-					<ul className="flex gap-4 rotate-[0.01deg] max-lg:overflow-x-scroll max-lg:px-8 max-sm:px-4 max-lg:scrollbar-hidden">
-						<ExploreCard href="/shop" title="Shop" image="/explore/shop.png" />
-						<ExploreCard
-							href="/rosters"
-							title="Our Rosters"
-							image="/explore/rosters.png"
-						/>
-						<ExploreCard
-							href="/events"
-							title="Events"
-							image="/explore/events.png"
-						/>
-						<ExploreCard
-							href="/partners"
-							title="Become a partner"
-							image="/explore/partners.png"
-						/>
-					</ul>
-				</div>
-				<div className="flex flex-col items-center gap-4 py-16 max-sm:py-8 max-[450px]:gap-8">
-					<h3 className="text-white text-4xl font-luckiest-guy max-sm:text-3xl">
-						Partners
-					</h3>
-					<div className="flex justify-center items-center gap-10 w-full max-[450px]:gap-6">
-						<Link href="https://nouns.wtf">
-							<Image
-								draggable={false}
-								alt="NounsDAO"
-								src={NounsPartnerImage}
-								className="h-10 max-sm:h-8 max-[450px]:h-6 select-none hover:opacity-70 transition-opacity w-auto"
-							/>
-						</Link>
-						<Link href="/matcha">
-							<Image
-								alt="Matcha"
-								draggable={false}
-								src={MatchaPartnerImage}
-								className="h-8 max-sm:h-6 max-[450px]:h-5 select-none hover:opacity-70 transition-opacity w-auto"
-							/>
-						</Link>
-						<Link href="https://adidas.com">
-							<Image
-								alt="Adidas"
-								draggable={false}
-								src={AdidasPartnerImage}
-								className="h-12 max-sm:h-10 max-[450px]:h-8 select-none hover:opacity-70 transition-opacity w-auto"
-							/>
-						</Link>
-					</div>
-				</div>
-				<div className="relative flex flex-col gap-4 w-full overflow-hidden">
-					<div className="flex gap-4 w-full h-60 max-sm:h-40 animate-art-marquee-top">
+				<div className="relative flex flex-col w-full overflow-hidden">
+					<div className="flex gap-4 w-full h-60 max-sm:h-40 animate-art-marquee-top mt-8">
 						{
 							await Promise.all(
 								[
@@ -347,7 +294,7 @@ export default async function Home() {
 							)
 						}
 					</div>
-					<div className="flex flex-row-reverse gap-4 h-60 max-sm:h-40 animate-art-marquee-bottom">
+					<div className="flex flex-row-reverse gap-4 h-60 max-sm:h-40 animate-art-marquee-bottom mt-4">
 						{
 							await Promise.all(
 								[
@@ -395,20 +342,7 @@ export default async function Home() {
 						}
 					</div>
 					<div className="relative">
-						<div className="flex flex-col items-center pt-32 max-sm:pt-16 gap-8 bg-gradient-to-t from-[#171717] to-black px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
-							<h3 className="font-luckiest-guy text-4xl max-sm:text-3xl text-white text-center">
-								Let's redefine esports together
-							</h3>
-							{user ? (
-								<Button href={`/users/${user.farcaster?.username ?? user.id}`}>
-									Get Started
-								</Button>
-							) : (
-								<ToggleModal id="sign-in">
-									<Button>Get Started</Button>
-								</ToggleModal>
-							)}
-						</div>
+						<div className="flex flex-col items-center h-32 max-sm:h-16 bg-gradient-to-t from-[#171717] to-black" />
 
 						<img
 							src="https://ipfs.nouns.gg/ipfs/QmV83sDpdbU2E23txL1hY7F6W81SjD4Egz41yCB5YQibQg"
@@ -424,26 +358,5 @@ export default async function Home() {
 				</div>
 			</div>
 		</div>
-	);
-}
-
-function ExploreCard(props: { image: string; title: string; href: string }) {
-	return (
-		<li className="w-full group relative aspect-[3/4] rounded-xl overflow-hidden max-lg:min-w-[300px]">
-			<div className="relative flex h-full items-end flex-col">
-				<Link href={props.href} className="absolute z-10 w-full h-full" />
-				<Image
-					src={props.image}
-					alt={props.title}
-					draggable={false}
-					quality={100}
-					fill
-					className="object-cover group-hover:scale-105 scale-100 transition-transform select-none"
-				/>
-				<div className="absolute bottom-4 left-4 z-10">
-					<Button href={props.href}>{props.title}</Button>
-				</div>
-			</div>
-		</li>
 	);
 }

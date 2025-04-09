@@ -1,7 +1,6 @@
 import DateComponent from "@/components/Date";
 import Link from "@/components/Link";
 import PlaceBetModal from "@/components/modals/PlaceBetModal";
-import PredictionCard from "@/components/PredictionCard";
 import QuestCard from "@/components/QuestCard";
 import RoundCard from "@/components/RoundCard";
 import { getEvent } from "@/server/queries/events";
@@ -9,7 +8,7 @@ import { getAuthenticatedUser } from "@/server/queries/users";
 import { CalendarDays, MapPinned } from "lucide-react";
 import type { Metadata } from "next";
 import { env } from "~/env";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Button from "@/components/Button";
 import { twMerge } from "tailwind-merge";
 import ProductCard from "@/components/ProductCard";
@@ -23,6 +22,7 @@ import { getPredictions } from "@/server/queries/predictions";
 import { getProducts } from "@/server/queries/shop";
 import { getQuests } from "@/server/queries/quests";
 import { getRaffles } from "@/server/queries/raffles";
+import PredictionCard from "@/components/PredictionCard";
 
 export async function generateMetadata(props: {
 	params: Promise<{ event: string }>;
@@ -153,53 +153,6 @@ export default async function EventPage(props: {
 				return 0;
 			}),
 	];
-
-	const semifinalPredictions =
-		event.id === 7
-			? predictions.filter((prediction) =>
-					prediction.name.toLowerCase().includes("semifinal"),
-				)
-			: [];
-
-	const finalsPredictions =
-		event.id === 7
-			? predictions.filter(
-					(prediction) =>
-						prediction.name.toLowerCase().includes("final") &&
-						!prediction.name.toLowerCase().includes("semifinal"),
-				)
-			: [];
-
-	const adPredictions =
-		event.id === 7
-			? predictions.filter(
-					(prediction) =>
-						prediction.name.toLowerCase().includes("team a vs team d") &&
-						!prediction.name.toLowerCase().includes("(match 1)") &&
-						!prediction.name.toLowerCase().includes("(match 2)"),
-				)
-			: [];
-
-	const bcPredictions =
-		event.id === 7
-			? predictions.filter(
-					(prediction) =>
-						prediction.name.toLowerCase().includes("team b vs team c") &&
-						!prediction.name.toLowerCase().includes("(match 1)") &&
-						!prediction.name.toLowerCase().includes("(match 2)"),
-				)
-			: [];
-
-	const everythingElse =
-		event.id === 7
-			? predictions.filter(
-					(prediction) =>
-						!semifinalPredictions.some((p) => p.id === prediction.id) &&
-						!finalsPredictions.some((p) => p.id === prediction.id) &&
-						!adPredictions.some((p) => p.id === prediction.id) &&
-						!bcPredictions.some((p) => p.id === prediction.id),
-				)
-			: predictions;
 
 	return (
 		<>
@@ -406,90 +359,22 @@ export default async function EventPage(props: {
 										))}
 									</div>
 								),
-								predictions:
-									semifinalPredictions.length > 0 ||
-									finalsPredictions.length > 0 ? (
-										<div className="flex flex-col gap-6">
-											<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-												{everythingElse.map((prediction) => (
-													<PredictionCard
-														key={`prediction-${prediction.id}`}
-														prediction={prediction}
-														user={user}
-														className="max-md:w-full max-md:flex-shrink-0"
-													/>
-												))}
-											</div>
-											<h2 className="text-white font-luckiest-guy text-2xl">
-												Team A vs Team D
-											</h2>
-											<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-												{adPredictions.map((prediction) => (
-													<PredictionCard
-														key={`prediction-${prediction.id}`}
-														prediction={prediction}
-														user={user}
-														className="max-md:w-full max-md:flex-shrink-0"
-													/>
-												))}
-											</div>
-											<h2 className="text-white font-luckiest-guy text-2xl">
-												Team B vs Team C
-											</h2>
-											<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-												{bcPredictions.map((prediction) => (
-													<PredictionCard
-														key={`prediction-${prediction.id}`}
-														prediction={prediction}
-														user={user}
-														className="max-md:w-full max-md:flex-shrink-0"
-													/>
-												))}
-											</div>
-											<h2 className="text-white font-luckiest-guy text-2xl">
-												Semifinals
-											</h2>
-											<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-												{semifinalPredictions.map((prediction) => (
-													<PredictionCard
-														key={`prediction-${prediction.id}`}
-														prediction={prediction}
-														user={user}
-														className="max-md:w-full max-md:flex-shrink-0"
-													/>
-												))}
-											</div>
-											<h2 className="text-white font-luckiest-guy text-2xl">
-												Finals
-											</h2>
-											<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-												{finalsPredictions.map((prediction) => (
-													<PredictionCard
-														key={`prediction-${prediction.id}`}
-														prediction={prediction}
-														user={user}
-														className="max-md:w-full max-md:flex-shrink-0"
-													/>
-												))}
-											</div>
+								predictions: (
+									<div className="flex flex-col gap-6">
+										<h2 className="text-white font-luckiest-guy text-2xl">
+											Happening Now
+										</h2>
+										<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+											{predictions.map((prediction) => (
+												<PredictionCard
+													key={`prediction-${prediction.id}`}
+													prediction={prediction}
+													className="max-md:w-full max-md:flex-shrink-0"
+												/>
+											))}
 										</div>
-									) : (
-										<div className="flex flex-col gap-6">
-											<h2 className="text-white font-luckiest-guy text-2xl">
-												Happening Now
-											</h2>
-											<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
-												{predictions.map((prediction) => (
-													<PredictionCard
-														key={`prediction-${prediction.id}`}
-														prediction={prediction}
-														user={user}
-														className="max-md:w-full max-md:flex-shrink-0"
-													/>
-												))}
-											</div>
-										</div>
-									),
+									</div>
+								),
 								shop: (
 									<div className="flex flex-col gap-6">
 										{raffles.length > 0 ? (

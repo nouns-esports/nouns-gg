@@ -74,6 +74,7 @@ export function ToggleModal(props: {
 	children: React.ReactNode;
 	tabIndex?: number;
 	className?: string;
+	disabled?: boolean;
 }) {
 	const { isOpen, open, close } = useModal(props.id);
 
@@ -81,11 +82,12 @@ export function ToggleModal(props: {
 		<div
 			tabIndex={props.tabIndex}
 			onClick={(e) => {
+				if (props.disabled) return;
 				e.preventDefault();
 				e.stopPropagation();
 				isOpen ? close() : open();
 			}}
-			className={twMerge("cursor-pointer", props.className)}
+			className={twMerge(!props.disabled && "cursor-pointer", props.className)}
 		>
 			{props.children}
 		</div>

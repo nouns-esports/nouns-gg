@@ -28,21 +28,16 @@ export default async function Footer() {
 							</p>
 						</Link>
 						<p className="w-64 max-lg:text-center max-xl:w-48 max-lg:w-64">
-							Leading the revolution in community driven esports
+							Empower your community
 						</p>
 					</div>
 					<ANounsThing />
 				</div>
 				<div className="flex gap-40 max-2xl:gap-20 max-[500px]:flex-col max-[500px]:gap-8">
-					<Group title="Esports">
-						<Item href="/about">Our Story</Item>
-						<Item href="/events">Events</Item>
-						<Item href="/partners">Partners</Item>
-					</Group>
-					<Group title="Get Involved">
+					<Group title="Explore">
 						<Item href="/rounds">Rounds</Item>
 						<Item href="/quests">Quests</Item>
-						<Item href="/discord">Discord</Item>
+						<Item href="/discord">Events</Item>
 					</Group>
 					<Group title="Resources">
 						<Item href="/privacy" newTab>

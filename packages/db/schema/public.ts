@@ -43,6 +43,11 @@ export const communities = pgTable("communities", (t) => ({
 	name: t.text().notNull(),
 	description: t.jsonb().$type<TipTap>(), //.notNull(),
 	channel: t.text(),
+	// membershipActions: t.text("membership_actions").array(),
+	// membershipActionInputs: t
+	// 	.jsonb("membership_action_inputs")
+	// 	.array()
+	// 	.$type<Array<{ [key: string]: any }>>(),
 }));
 
 export const communityAdmins = pgTable("community_admins", (t) => ({
@@ -87,6 +92,11 @@ export const events = pgTable("events", (t) => ({
 	}>(),
 	details: t.jsonb().$type<TipTap>(),
 	attendeeCount: t.integer("attendee_count"),
+	// registrationActions: t.text("registration_actions").array(),
+	// registrationActionInputs: t
+	// 	.jsonb("registration_action_inputs")
+	// 	.array()
+	// 	.$type<Array<{ [key: string]: any }>>(),
 }));
 
 export const stations = pgTable("stations", (t) => ({
@@ -203,6 +213,16 @@ export const rounds = pgTable("rounds", (t) => ({
 	minVoterRank: t.integer("min_voter_rank"),
 	proposerCredential: t.text("proposer_credential"),
 	voterCredential: t.text("voter_credential"),
+	// voterActions: t.text("voter_actions").array(),
+	// voterActionInputs: t
+	// 	.jsonb("voter_action_inputs")
+	// 	.array()
+	// 	.$type<Array<{ [key: string]: any }>>(),
+	// proposerActions: t.text("proposer_actions").array(),
+	// proposerActionInputs: t
+	// 	.jsonb("proposer_action_inputs")
+	// 	.array()
+	// 	.$type<Array<{ [key: string]: any }>>(),
 }));
 
 // add user column and update it when they claim the award
@@ -302,6 +322,7 @@ export const quests = pgTable("quests", (t) => ({
 	start: t.timestamp({ mode: "date" }),
 	end: t.timestamp({ mode: "date" }),
 	xp: t.integer().notNull(),
+	// Rethink actions, should be a global concept to rounds, quests, achievements, event signups, raffle entries, etc...
 	actions: t.text().array().notNull(),
 	actionInputs: t
 		.jsonb("action_inputs")
@@ -490,6 +511,11 @@ export const raffles = pgTable("raffles", (t) => ({
 	creator: t.text(),
 	community: t.bigint({ mode: "number" }),
 	draft: t.boolean().notNull().default(true),
+	// entryActions: t.text("entry_actions").array(),
+	// entryActionInputs: t
+	// 	.jsonb("entry_action_inputs")
+	// 	.array()
+	// 	.$type<Array<{ [key: string]: any }>>(),
 }));
 
 export const raffleEntries = pgTable("raffle_entries", (t) => ({

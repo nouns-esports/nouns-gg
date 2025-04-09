@@ -15,22 +15,23 @@ export default function Gallery(props: {
 	const [backwards, setBackwards] = useState(false);
 
 	const slides = useMemo<
-		Array<
-			{ title: string; sub: string; href: string; button: string } & (
-				| { type: "video"; mp4: string; webp: string }
-				| { type: "image"; url: string }
-			)
-		>
+		Array<{
+			title: string;
+			sub: string;
+			href: string;
+			button: string;
+			type: "video" | "image";
+			url: string;
+		}>
 	>(
 		() => [
 			{
-				title: "We're redefining esports",
-				sub: "Learn about our mission",
-				href: "/about",
-				button: "Learn more",
+				title: "Introducing Nounsvitational Tokyo 2025",
+				sub: "Coming in December",
+				href: "/events/nounsvitational",
+				button: "View Event",
 				type: "video",
-				mp4: "/gallery/landing.mp4",
-				webp: "/gallery/landing.webm",
+				url: "https://ipfs.nouns.gg/ipfs/bafybeihciy2yrpxczsitnl2732j5sfccx7bqw6swon6ae7tolaaa3mk7jy",
 			},
 			...(props.highlightedRound
 				? ([
@@ -61,14 +62,6 @@ export default function Gallery(props: {
 						},
 					] as const)
 				: []),
-			// {
-			// 	title: "Matcha",
-			// 	sub: "Where Nouns trades crypto",
-			// 	href: "/matcha",
-			// 	button: "Visit Matcha",
-			// 	type: "image",
-			// 	url: "/gallery/matcha-x-nouns.jpg",
-			// },
 		],
 		[props.highlightedEvent, props.highlightedRound],
 	);
@@ -97,7 +90,7 @@ export default function Gallery(props: {
 	return (
 		<div className="relative rounded-xl h-full flex-shrink-0 aspect-video max-lg:w-full max-lg:h-auto overflow-hidden select-none">
 			<div className="absolute z-10 top-0 left-0 w-full h-full flex flex-col justify-between p-6 max-sm:p-4 pointer-events-none">
-				<div>
+				<div className="flex flex-col gap-1">
 					<p className="text-white text-lg max-[400px]:leading-none">
 						{slides[index].sub}
 					</p>
@@ -173,15 +166,13 @@ export default function Gallery(props: {
 						return (
 							<video
 								key={slideIndex}
+								src={slide.url}
 								autoPlay
 								muted
 								loop
 								playsInline
 								className="select-none w-full h-full object-cover object-top brightness-75 snap-center"
-							>
-								<source src={slide.webp} type="video/webm" />
-								<source src={slide.mp4} type="video/mp4" />
-							</video>
+							/>
 						);
 					}
 

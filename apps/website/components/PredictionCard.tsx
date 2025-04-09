@@ -1,219 +1,192 @@
-"use client";
-
+import type { getPredictions } from "@/server/queries/predictions";
 import { twMerge } from "tailwind-merge";
 import Link from "./Link";
-import { Check, Sparkles, Vote, X } from "lucide-react";
-import { ToggleModal, useModal } from "./Modal";
-import type { AuthenticatedUser } from "@/server/queries/users";
-import { getPredictions } from "@/server/queries/predictions";
-import { getPredictionOdds } from "~/packages/utils/getPredictionOdds";
-
+import { Check, Plus, Vote } from "lucide-react";
+import { LockSimple } from "phosphor-react-sc";
+import { formatGold } from "~/packages/utils/formatGold";
 export default function PredictionCard(props: {
 	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
-	user?: AuthenticatedUser;
 	className?: string;
 }) {
+	const userPrediction =
+		props.prediction.bets.length > 0 ? props.prediction.bets[0] : undefined;
+
+	const userWinnings =
+		props.prediction.gold.length > 0 ? props.prediction.gold[0] : undefined;
+
+	const state = props.prediction.resolved
+		? "resolved"
+		: props.prediction.closed
+			? "closed"
+			: "open";
+
+	const outcomes = props.prediction.outcomes.toSorted((a, b) => {
+		const aName = a.name.toLowerCase();
+		const bName = b.name.toLowerCase();
+		if (aName === "yes") return -1;
+		if (bName === "yes") return 1;
+		if (aName === "no") return -1;
+		if (bName === "no") return 1;
+		return aName.localeCompare(bName);
+	});
+
 	return (
 		<Link
 			href={`/predictions/${props.prediction.handle}`}
 			className={twMerge(
-				"flex flex-col gap-2 bg-grey-800 rounded-xl px-2 pb-3 pt-4 hover:bg-grey-600 transition-colors aspect-video h-full justify-between",
-				props.prediction.closed && "opacity-50 pointer-events-none",
+				"relative flex flex-col gap-4 p-4 aspect-video h-full bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl",
 				props.className,
 			)}
 		>
-			<div className="flex justify-between gap-8 px-2 items-center">
-				<div className="flex items-center gap-4">
-					<img
-						alt={props.prediction.name}
-						src={props.prediction.image}
-						className="w-[44px] h-[44px] rounded-lg object-cover aspect-square"
-					/>
-					<p className="text-white font-bebas-neue text-xl line-clamp-2 leading-tight">
+			<div className="flex w-full justify-between gap-6">
+				<div className="flex items-center gap-3">
+					<img src={props.prediction.image} className="w-10 h-10 rounded-md" />
+					<p className="text-white font-bebas-neue text-lg leading-tight line-clamp-2">
 						{props.prediction.name}
 					</p>
 				</div>
-				{props.prediction.outcomes.length === 2 ? (
-					<div className="rounded-lg flex flex-col items-center">
-						<p className="text-white leading-none">
-							{
-								getPredictionOdds({
-									prediction: props.prediction,
-								})[0].chance
-							}
-							%
-						</p>
-						<p className="text-white/50 text-sm">chance</p>
-					</div>
-				) : null}
-			</div>
-			<div className="flex flex-col flex-1 min-h-0 justify-end gap-3">
-				{props.prediction.outcomes.length > 2 ? (
-					<MultiOutcome prediction={props.prediction} user={props.user} />
-				) : (
-					<BinaryOutcome prediction={props.prediction} user={props.user} />
-				)}
-			</div>
-			<div className="flex justify-between items-center px-2">
-				<p className="text-sm flex items-center gap-1.5 cursor-default">
-					<Vote className="w-4 h-4" />
-					{props.prediction.totalBets} bet
-					{props.prediction.totalBets === 1 ? "" : "s"} placed
-				</p>
-				<p
-					title={`${props.prediction.xp} xp`}
-					className="text-white flex items-center gap-2 mr-1 text-sm cursor-default"
-				>
-					<Sparkles className="w-4 h-4 text-green" />
-					{props.prediction.xp}
-				</p>
-			</div>
-		</Link>
-	);
-}
-
-function MultiOutcome(props: {
-	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
-	user?: AuthenticatedUser;
-}) {
-	return (
-		<div className="flex flex-col flex-1 overflow-y-auto custom-scrollbar mr-2">
-			{props.prediction.outcomes
-				.toSorted((a, b) => a.name.localeCompare(b.name))
-				.map((outcome) => {
-					const userBet = props.prediction.bets
-						.filter((bet) => bet.user === props.user?.id)
-						.find((bet) => bet.outcome.id === outcome.id);
-
-					const userBetAmount = Number(userBet?.amount ?? 0);
-
-					const odds = getPredictionOdds({
-						prediction: props.prediction,
-					});
-
-					const outcomeOdds = odds.find((odd) => odd.id === outcome.id);
-
-					return (
-						<div
-							key={outcome.id}
-							className="flex w-full pl-2 py-1 rounded-lg text-white hover:text-white/70 transition-colors justify-between"
-						>
-							{outcome.name}
-							<div className="flex items-center gap-3">
-								{userBetAmount > 0 ? (
-									<div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
-										<img
-											alt="Gold coin"
-											src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
-											className="rounded-full h-4 w-4 shadow-xl"
-										/>
-										{userBetAmount}
-									</div>
-								) : null}
-								{userBet?.outcome.id === outcome.id && userBetAmount === 0 ? (
-									<div className="text-sm text-green flex items-center gap-1">
-										<Check className="w-4 h-4" />
-										Your bet
-									</div>
-								) : null}
-								<p className="text-sm">{outcomeOdds?.chance}%</p>
-
-								<ToggleModal
-									id={`place-bet-${props.prediction.id}-${outcome.id}`}
-									key={`place-bet-${props.prediction.id}-${outcome.id}`}
-									className={twMerge(
-										"text-sm px-2 py-0.5 rounded-md transition-colors",
-										userBet
-											? "text-[#FEBD1C] bg-[#4F3101] hover:bg-[#623C00]"
-											: "text-green bg-green/30 hover:bg-green/50",
-									)}
-								>
-									{userBet ? "Add" : "Yes"}
-								</ToggleModal>
-							</div>
-						</div>
-					);
-				})}
-		</div>
-	);
-}
-
-function BinaryOutcome(props: {
-	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
-	user?: AuthenticatedUser;
-}) {
-	const yesOutcome =
-		props.prediction.outcomes.find((outcome) => outcome.name === "Yes") ??
-		props.prediction.outcomes.toSorted((a, b) =>
-			a.name.localeCompare(b.name),
-		)[0];
-
-	const noOutcome =
-		props.prediction.outcomes.find((outcome) => outcome.name === "No") ??
-		props.prediction.outcomes.find((outcome) => outcome.id !== yesOutcome.id);
-
-	if (!noOutcome) {
-		throw new Error("No second outcome found");
-	}
-
-	const userBet = props.prediction.bets.find(
-		(bet) => bet.user === props.user?.id,
-	);
-
-	const userBetAmount = Number(userBet?.amount ?? 0);
-
-	if (userBet) {
-		return (
-			<div className="flex justify-between items-center w-full pl-3 pr-1 gap-2 mb-1 bg-grey-500 rounded-lg py-1">
-				<p className="text-white">
-					<span>You predicted</span>
-					<span
-						className={twMerge(
-							"px-2 py-0.5 rounded-md",
-							userBet.outcome.id === yesOutcome.id ? "text-green" : "text-red",
-						)}
-					>
-						{userBet.outcome.name}
-					</span>
-				</p>
-				<div className="flex items-center justify-between gap-2 rounded-lg">
-					{userBetAmount > 0 ? (
-						<div className="text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
-							<img
-								alt="Gold coin"
-								src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
-								className="rounded-full h-4 w-4 shadow-xl"
-							/>
-							{userBetAmount}
-						</div>
-					) : null}
-					<ToggleModal
-						id={`place-bet-${props.prediction.id}-${userBet.outcome.id}`}
-						key={`place-bet-${props.prediction.id}-${userBet.outcome.id}`}
-						className="text-sm  transition-colors px-2 py-0.5 rounded-md text-[#FEBD1C] bg-[#4F3101] hover:bg-[#623C00]"
-					>
-						Add
-					</ToggleModal>
-				</div>
-			</div>
-		);
-	}
-
-	return (
-		<div className="flex w-full gap-2 px-2">
-			{[yesOutcome, noOutcome].map((outcome, index) => (
-				<ToggleModal
-					id={`place-bet-${props.prediction.id}-${outcome.id}`}
-					key={`place-bet-${props.prediction.id}-${outcome.id}`}
+				<div
 					className={twMerge(
-						"w-full flex items-center justify-center py-2 rounded-lg text-white transition-colors",
-						index === 0 && "bg-green/30  text-green hover:bg-green/50",
-						index === 1 && "bg-red/30  text-red hover:bg-red/50",
+						"flex items-center gap-1.5 px-3 py-1 h-min text-sm rounded-full bg-red/30 text-red whitespace-nowrap",
+						state === "resolved" && "bg-green/30 text-green",
+						state === "closed" && " bg-blue-500/30 text-blue-500",
 					)}
 				>
-					{outcome.name}
-				</ToggleModal>
-			))}
-		</div>
+					{state === "open" ? (
+						<div className="w-2 h-2 rounded-full animate-pulse bg-red" />
+					) : null}
+					{state === "closed" ? (
+						<LockSimple className="w-3.5 h-3.5 text-blue-500" weight="fill" />
+					) : null}
+					{
+						{
+							resolved: "Finalized",
+							closed: "Awaiting Results",
+							open: "Live",
+						}[state]
+					}
+				</div>
+			</div>
+			<div
+				className={twMerge(
+					"flex gap-16 w-full overflow-y-auto scrollbar-hidden",
+					userPrediction ? "rounded-b-xl" : "h-full",
+				)}
+			>
+				<div className="flex flex-col gap-2">
+					{outcomes.map((outcome) => (
+						<p
+							key={`outcome-left-${outcome.id}`}
+							className={twMerge(
+								"flex items-center gap-1.5 text-white text-sm whitespace-nowrap h-5",
+								state === "resolved" && outcome.result && "text-green",
+								state !== "resolved" &&
+									userPrediction?.outcome.id === outcome.id &&
+									"text-[#FEBD1C]",
+							)}
+						>
+							{outcome.result ? <Check className="w-4 h-4" /> : null}
+							{outcome.name}
+						</p>
+					))}
+					{userPrediction ? (
+						<div className="w-full h-12 flex-shrink-0" />
+					) : null}
+				</div>
+				<div className="flex flex-col gap-2 w-full">
+					{outcomes.map((outcome) => {
+						const odds = Math.ceil(
+							(Number(outcome.pool) / Number(props.prediction.pool)) * 100,
+						);
+
+						return (
+							<div
+								key={`outcome-right-${outcome.id}`}
+								className="flex w-full items-center justify-end gap-2 h-5"
+							>
+								<div
+									style={{
+										width: `${odds <= 1 ? odds + 2 : odds}%`,
+									}}
+									className={twMerge(
+										"h-3 rounded-full bg-grey-500",
+										state !== "resolved" &&
+											userPrediction?.outcome.id === outcome.id &&
+											"bg-[#FEBD1C]",
+										state === "resolved" && outcome.result && "bg-green",
+									)}
+								/>
+								<p className="text-white text-sm">{odds}%</p>
+							</div>
+						);
+					})}
+					{userPrediction ? (
+						<div className="w-full h-12 flex-shrink-0" />
+					) : null}
+				</div>
+			</div>
+			{userPrediction ? (
+				<div className="absolute bottom-4 left-0 w-full px-4">
+					<div className="flex items-center justify-between w-full bg-grey-500 rounded-lg py-2 px-3 ">
+						{userPrediction.outcome.result && userWinnings ? (
+							<>
+								<div className="flex items-center gap-1">
+									<p className="text-white text-sm">You predicted</p>
+									<p className="text-[#FEBD1C] font-semibold text-sm">
+										{userPrediction.outcome.name}
+									</p>
+									<p className="text-white text-sm">and</p>
+									<p className="text-green font-semibold text-sm">won</p>
+								</div>
+								<div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
+									<Plus className="w-3 h-3" />
+									<img
+										alt="Gold coin"
+										src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
+										className="rounded-full h-4 w-4 shadow-xl"
+									/>
+									{formatGold(Number(userWinnings.amount))}
+								</div>
+							</>
+						) : null}
+						{userPrediction.outcome.result === false ? (
+							<div className="flex items-center gap-1">
+								<p className="text-white text-sm">You predicted</p>
+								<p className="text-[#FEBD1C] font-semibold text-sm">
+									{userPrediction.outcome.name}
+								</p>
+								<p className="text-white text-sm">and</p>
+								<p className="text-red font-semibold text-sm">lost</p>
+							</div>
+						) : null}
+						{userPrediction.outcome.result === null ? (
+							<>
+								<div className="flex items-center gap-1">
+									<p className="text-white text-sm">You predicted</p>
+									<p className="text-[#FEBD1C] font-semibold text-sm">
+										{userPrediction.outcome.name}
+									</p>
+								</div>
+								<div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
+									<img
+										alt="Gold coin"
+										src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
+										className="rounded-full h-4 w-4 shadow-xl"
+									/>
+									{formatGold(Number(userPrediction.amount))}
+								</div>
+							</>
+						) : null}
+					</div>
+				</div>
+			) : null}
+			{!userPrediction ? (
+				<p className="text-sm flex items-center gap-1.5 cursor-default">
+					<Vote className="w-4 h-4" />
+					{props.prediction.totalBets} prediction
+					{props.prediction.totalBets === 1 ? "" : "s"} placed
+				</p>
+			) : null}
+		</Link>
 	);
 }
