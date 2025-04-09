@@ -1,7 +1,6 @@
 import Button from "@/components/Button";
 import { ToggleModal } from "@/components/Modal";
 import MakePredictionModal from "@/components/modals/MakePredictionModal";
-import PlaceBetModal from "@/components/modals/PlaceBetModal";
 import NavigateBack from "@/components/NavigateBack";
 import TipTap from "@/components/TipTap";
 import { getPrediction } from "@/server/queries/predictions";

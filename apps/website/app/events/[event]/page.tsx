@@ -1,6 +1,5 @@
 import DateComponent from "@/components/Date";
 import Link from "@/components/Link";
-import PlaceBetModal from "@/components/modals/PlaceBetModal";
 import QuestCard from "@/components/QuestCard";
 import RoundCard from "@/components/RoundCard";
 import { getEvent } from "@/server/queries/events";
@@ -414,18 +413,6 @@ export default async function EventPage(props: {
 				</div>
 			</div>
 			<EventAttendeesModal attendees={attendees} />
-			{user
-				? predictions.map((prediction) =>
-						prediction.outcomes.map((outcome) => (
-							<PlaceBetModal
-								key={`prediction-${prediction.id}-${outcome.id}`}
-								prediction={prediction}
-								outcome={outcome}
-								user={user}
-							/>
-						)),
-					)
-				: null}
 			{raffles.map((raffle) => {
 				return (
 					<EnterRaffleModal

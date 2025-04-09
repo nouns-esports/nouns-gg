@@ -40,7 +40,10 @@ export default function PredictionCard(props: {
 		>
 			<div className="flex w-full justify-between gap-6">
 				<div className="flex items-center gap-3">
-					<img src={props.prediction.image} className="w-10 h-10 rounded-md" />
+					<img
+						src={props.prediction.image}
+						className="w-10 h-10 rounded-md object-cover object-center"
+					/>
 					<p className="text-white font-bebas-neue text-lg leading-tight line-clamp-2">
 						{props.prediction.name}
 					</p>
