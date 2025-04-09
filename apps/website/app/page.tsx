@@ -68,7 +68,7 @@ export default async function Home() {
 						</Link>
 					</div>
 				</div>
-				<div className="absolute bottom-32 left-0 w-full z-10 flex flex-col justify-end items-center gap-4 h-full">
+				<div className="absolute bottom-32 max-sm:bottom-16 left-0 w-full z-10 flex flex-col justify-end items-center gap-4 h-full">
 					<p className="text-white text-lg max-sm:text-base">
 						VIP passes go live in
 					</p>
