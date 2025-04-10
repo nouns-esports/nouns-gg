@@ -38,6 +38,8 @@ export const getTraits = cache(
 				),
 		});
 
+		console.log("traits", traits);
+
 		const accessory = traits.find((t) => t.type === "accessory");
 		const body = traits.find((t) => t.type === "body");
 		const head = traits.find((t) => t.type === "head");
