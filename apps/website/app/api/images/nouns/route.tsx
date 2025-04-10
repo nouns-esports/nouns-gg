@@ -31,9 +31,9 @@ export async function GET(request: Request) {
 		);
 	}
 
-	if (params.seed) {
-		const counts = await getTraitCounts();
+	const counts = await getTraitCounts();
 
+	if (params.seed) {
 		const traits = generateTraitsFromSeed(params.seed, {
 			accessoryCount: counts.accessory,
 			bodyCount: counts.body,
@@ -78,24 +78,24 @@ export async function GET(request: Request) {
 		} else background = params.background === "0" ? "#d5d7e1" : "#e1d7d5";
 	}
 
-	if (!accessory) {
-		return Response.json({ error: "Missing accessory" }, { status: 400 });
+	if (accessory === undefined) {
+		accessory = Math.floor(Math.random() * counts.accessory);
 	}
 
-	if (!body) {
-		return Response.json({ error: "Missing body" }, { status: 400 });
+	if (body === undefined) {
+		body = Math.floor(Math.random() * counts.body);
 	}
 
-	if (!head) {
-		return Response.json({ error: "Missing head" }, { status: 400 });
+	if (head === undefined) {
+		head = Math.floor(Math.random() * counts.head);
 	}
 
-	if (!glasses) {
-		return Response.json({ error: "Missing glasses" }, { status: 400 });
+	if (glasses === undefined) {
+		glasses = Math.floor(Math.random() * counts.glasses);
 	}
 
-	if (!background) {
-		return Response.json({ error: "Missing background" }, { status: 400 });
+	if (background === undefined) {
+		background = Math.floor(Math.random() * 2) === 0 ? "#d5d7e1" : "#e1d7d5";
 	}
 
 	const traits = await getTraits({
