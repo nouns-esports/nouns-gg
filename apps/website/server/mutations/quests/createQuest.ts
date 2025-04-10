@@ -15,8 +15,7 @@ export const createQuest = onlyUser
 			start: z.optional(z.date()),
 			end: z.optional(z.date()),
 			xp: z.number(),
-			community: z.optional(z.number()),
-			creator: z.optional(z.string()),
+			community: z.number(),
 			event: z.optional(z.number()),
 			actions: z.array(z.string()),
 			actionInputs: z.array(z.record(z.string(), z.any())),
@@ -41,31 +40,23 @@ export const createQuest = onlyUser
 			throw new Error("End date must be after start date");
 		}
 
-		if (parsedInput.community && parsedInput.creator) {
-			throw new Error(
-				"Quests must be owned by either a creator or a community",
-			);
+		const community = await db.primary.query.communities.findFirst({
+			where: (communities, { eq }) =>
+				eq(communities.id, parsedInput.community!),
+			with: {
+				admins: {
+					where: (communityAdmins, { eq }) =>
+						eq(communityAdmins.user, ctx.user.id),
+				},
+			},
+		});
+
+		if (!community) {
+			throw new Error(`Community ${parsedInput.community} not found`);
 		}
 
-		if (parsedInput.community) {
-			const community = await db.primary.query.communities.findFirst({
-				where: (communities, { eq }) =>
-					eq(communities.id, parsedInput.community!),
-				with: {
-					admins: {
-						where: (communityAdmins, { eq }) =>
-							eq(communityAdmins.user, ctx.user.id),
-					},
-				},
-			});
-
-			if (!community) {
-				throw new Error("Community not found");
-			}
-
-			if (!community.admins.some((admin) => admin.user === ctx.user.id)) {
-				throw new Error("You are not an admin of this community");
-			}
+		if (!community.admins.some((admin) => admin.user === ctx.user.id)) {
+			throw new Error("You are not an admin of this community");
 		}
 
 		if (parsedInput.event) {
@@ -74,20 +65,12 @@ export const createQuest = onlyUser
 			});
 
 			if (!event) {
-				throw new Error("Event not found");
+				throw new Error(`Event ${parsedInput.event} not found`);
 			}
 
 			if (parsedInput.community && event.community !== parsedInput.community) {
 				throw new Error("Event is not owned by this community");
 			}
-
-			if (parsedInput.creator && event.creator !== parsedInput.creator) {
-				throw new Error("You can only create quests for your own events");
-			}
-		}
-
-		if (parsedInput.creator && parsedInput.creator !== ctx.user.id) {
-			throw new Error("You can't create an event for another user");
 		}
 
 		if (!parsedInput.image.includes("ipfs.nouns.gg")) {
@@ -131,7 +114,6 @@ export const createQuest = onlyUser
 			end: parsedInput.end,
 			xp: parsedInput.xp,
 			community: parsedInput.community,
-			creator: parsedInput.creator,
 			event: parsedInput.event,
 			actions: parsedInput.actions,
 			actionInputs: parsedInput.actionInputs,

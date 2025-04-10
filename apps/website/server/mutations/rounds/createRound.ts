@@ -20,9 +20,8 @@ export const createRound = onlyUser
 			start: z.date(),
 			votingStart: z.date(),
 			end: z.date(),
-			community: z.optional(z.number()),
+			community: z.number(),
 			event: z.optional(z.number()),
-			creator: z.optional(z.string()),
 			minProposerRank: z.optional(z.number()),
 			minVoterRank: z.optional(z.number()),
 			proposerCredential: z.optional(z.string()),
@@ -60,31 +59,23 @@ export const createRound = onlyUser
 			throw new Error("Voting start date must be after start date");
 		}
 
-		if (parsedInput.community && parsedInput.creator) {
-			throw new Error(
-				"Rounds must be owned by either a creator or a community",
-			);
+		const community = await db.primary.query.communities.findFirst({
+			where: (communities, { eq }) =>
+				eq(communities.id, parsedInput.community!),
+			with: {
+				admins: {
+					where: (communityAdmins, { eq }) =>
+						eq(communityAdmins.user, ctx.user.id),
+				},
+			},
+		});
+
+		if (!community) {
+			throw new Error(`Community ${parsedInput.community} not found`);
 		}
 
-		if (parsedInput.community) {
-			const community = await db.primary.query.communities.findFirst({
-				where: (communities, { eq }) =>
-					eq(communities.id, parsedInput.community!),
-				with: {
-					admins: {
-						where: (communityAdmins, { eq }) =>
-							eq(communityAdmins.user, ctx.user.id),
-					},
-				},
-			});
-
-			if (!community) {
-				throw new Error("Community not found");
-			}
-
-			if (!community.admins.some((admin) => admin.user === ctx.user.id)) {
-				throw new Error("You are not an admin of this community");
-			}
+		if (!community.admins.some((admin) => admin.user === ctx.user.id)) {
+			throw new Error("You are not an admin of this community");
 		}
 
 		if (parsedInput.event) {
@@ -93,20 +84,12 @@ export const createRound = onlyUser
 			});
 
 			if (!event) {
-				throw new Error("Event not found");
+				throw new Error(`Event ${parsedInput.event} not found`);
 			}
 
 			if (parsedInput.community && event.community !== parsedInput.community) {
 				throw new Error("Event is not owned by this community");
 			}
-
-			if (parsedInput.creator && event.creator !== parsedInput.creator) {
-				throw new Error("You can only create rounds for your own events");
-			}
-		}
-
-		if (parsedInput.creator && parsedInput.creator !== ctx.user.id) {
-			throw new Error("You can't create a round for another user");
 		}
 
 		if (!parsedInput.image.includes("ipfs.nouns.gg")) {
@@ -134,7 +117,6 @@ export const createRound = onlyUser
 				votingStart: parsedInput.votingStart,
 				community: parsedInput.community,
 				event: parsedInput.event,
-				creator: parsedInput.creator,
 				minProposerRank: parsedInput.minProposerRank,
 				minVoterRank: parsedInput.minVoterRank,
 				proposerCredential: parsedInput.proposerCredential,

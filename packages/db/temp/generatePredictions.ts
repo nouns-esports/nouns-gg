@@ -8,8 +8,7 @@ const rules = {
 	content: [],
 };
 const event = 9;
-const community = null;
-const creator = "";
+const community = 0;
 
 const generatedData: Array<{
 	handle: string; // unique prediction handle (for a url)
@@ -34,7 +33,6 @@ await db.primary.transaction(async (tx) => {
 				event,
 				community,
 				pool: data.outcomes.length.toString(),
-				creator,
 			})
 			.returning({
 				id: predictions.id,

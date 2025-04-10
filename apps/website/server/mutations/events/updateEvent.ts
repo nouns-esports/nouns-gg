@@ -66,15 +66,8 @@ export const updateEvent = onlyUser
 			throw new Error("End date must be after start date");
 		}
 
-		if (
-			event.community &&
-			!event.community.admins.some((admin) => admin.user === ctx.user.id)
-		) {
+		if (event.community.admins.some((admin) => admin.user === ctx.user.id)) {
 			throw new Error("You are not an admin of the event's community");
-		}
-
-		if (event.creator && event.creator !== ctx.user.id) {
-			throw new Error("You are not the creator of this event");
 		}
 
 		if (parsedInput.image && !parsedInput.image.includes("ipfs.nouns.gg")) {

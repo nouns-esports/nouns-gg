@@ -76,7 +76,7 @@ export const events = pgTable("events", (t) => ({
 	description: t.text().notNull().default(""),
 	start: t.timestamp({ mode: "date" }).notNull(),
 	end: t.timestamp({ mode: "date" }).notNull(),
-	community: t.bigint({ mode: "number" }),
+	community: t.bigint({ mode: "number" }).notNull(),
 	draft: t.boolean().notNull().default(true),
 	featured: t.boolean().notNull().default(false),
 	callToAction: t.jsonb("call_to_action").$type<{
@@ -126,7 +126,7 @@ export const predictions = pgTable("predictions", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	event: t.bigint({ mode: "number" }),
-	community: t.bigint({ mode: "number" }),
+	community: t.bigint({ mode: "number" }).notNull(),
 	draft: t.boolean().notNull().default(true),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
@@ -193,7 +193,7 @@ export const rounds = pgTable("rounds", (t) => ({
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
-	community: t.bigint({ mode: "number" }),
+	community: t.bigint({ mode: "number" }).notNull(),
 	event: t.bigint({ mode: "number" }),
 	draft: t.boolean().notNull().default(true),
 	type: t
@@ -309,7 +309,7 @@ export const quests = pgTable("quests", (t) => ({
 	description: t.text().notNull(),
 	_description: t.jsonb().$type<TipTap>(), //.notNull(),
 	image: t.text().notNull(),
-	community: t.bigint({ mode: "number" }),
+	community: t.bigint({ mode: "number" }).notNull(),
 	event: t.bigint({ mode: "number" }),
 	draft: t.boolean().notNull().default(true),
 	createdAt: t.timestamp("created_at", { mode: "date" }).notNull().defaultNow(),
@@ -412,7 +412,7 @@ export const products = pgTable("products", (t) => ({
 	// .default([]), defaults + jsonb are broken with Drizzle Kit right now
 	collection: t.bigint({ mode: "number" }),
 	event: t.bigint({ mode: "number" }),
-	community: t.bigint({ mode: "number" }),
+	community: t.bigint({ mode: "number" }).notNull(),
 	requiresShipping: t.boolean("requires_shipping").notNull().default(true),
 	active: t.boolean().notNull().default(true),
 }));
@@ -504,7 +504,7 @@ export const raffles = pgTable("raffles", (t) => ({
 	winners: t.integer().notNull(),
 	limit: t.integer(),
 	event: t.bigint({ mode: "number" }),
-	community: t.bigint({ mode: "number" }),
+	community: t.bigint({ mode: "number" }).notNull(),
 	draft: t.boolean().notNull().default(true),
 	// entryActions: t.text("entry_actions").array(),
 	// entryActionInputs: t

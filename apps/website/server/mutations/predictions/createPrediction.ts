@@ -20,8 +20,7 @@ export const createPrediction = onlyUser
 					name: z.string(),
 				}),
 			),
-			community: z.optional(z.number()),
-			creator: z.optional(z.string()),
+			community: z.number(),
 			event: z.optional(z.number()),
 		}),
 	)
@@ -44,31 +43,23 @@ export const createPrediction = onlyUser
 			throw new Error("End date must be after start date");
 		}
 
-		if (parsedInput.community && parsedInput.creator) {
-			throw new Error(
-				"Predictions must be owned by either a creator or a community",
-			);
+		const community = await db.primary.query.communities.findFirst({
+			where: (communities, { eq }) =>
+				eq(communities.id, parsedInput.community!),
+			with: {
+				admins: {
+					where: (communityAdmins, { eq }) =>
+						eq(communityAdmins.user, ctx.user.id),
+				},
+			},
+		});
+
+		if (!community) {
+			throw new Error(`Community ${parsedInput.community} not found`);
 		}
 
-		if (parsedInput.community) {
-			const community = await db.primary.query.communities.findFirst({
-				where: (communities, { eq }) =>
-					eq(communities.id, parsedInput.community!),
-				with: {
-					admins: {
-						where: (communityAdmins, { eq }) =>
-							eq(communityAdmins.user, ctx.user.id),
-					},
-				},
-			});
-
-			if (!community) {
-				throw new Error("Community not found");
-			}
-
-			if (!community.admins.some((admin) => admin.user === ctx.user.id)) {
-				throw new Error("You are not an admin of this community");
-			}
+		if (!community.admins.some((admin) => admin.user === ctx.user.id)) {
+			throw new Error("You are not an admin of this community");
 		}
 
 		if (parsedInput.event) {
@@ -83,14 +74,6 @@ export const createPrediction = onlyUser
 			if (parsedInput.community && event.community !== parsedInput.community) {
 				throw new Error("Event is not owned by this community");
 			}
-
-			if (parsedInput.creator && event.creator !== parsedInput.creator) {
-				throw new Error("You can only create predictions for your own events");
-			}
-		}
-
-		if (parsedInput.creator && parsedInput.creator !== ctx.user.id) {
-			throw new Error("You can't create a prediction for another user");
 		}
 
 		if (!parsedInput.image.includes("ipfs.nouns.gg")) {
@@ -129,7 +112,6 @@ export const createPrediction = onlyUser
 					end: parsedInput.end,
 					xp: parsedInput.xp,
 					community: parsedInput.community,
-					creator: parsedInput.creator,
 					event: parsedInput.event,
 				})
 				.returning({

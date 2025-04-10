@@ -14,8 +14,7 @@ export const createEvent = onlyUser
 			image: z.string(),
 			start: z.date(),
 			end: z.date(),
-			community: z.optional(z.number()),
-			creator: z.optional(z.string()),
+			community: z.number(),
 			location: z.object({
 				name: z.string(),
 				url: z.string(),
@@ -43,35 +42,23 @@ export const createEvent = onlyUser
 			throw new Error("End date must be after start date");
 		}
 
-		if (parsedInput.community && parsedInput.creator) {
-			throw new Error(
-				"Events must be owned by either a creator or a community",
-			);
-		}
-
-		if (parsedInput.community) {
-			const community = await db.primary.query.communities.findFirst({
-				where: (communities, { eq }) =>
-					eq(communities.id, parsedInput.community!),
-				with: {
-					admins: {
-						where: (communityAdmins, { eq }) =>
-							eq(communityAdmins.user, ctx.user.id),
-					},
+		const community = await db.primary.query.communities.findFirst({
+			where: (communities, { eq }) =>
+				eq(communities.id, parsedInput.community!),
+			with: {
+				admins: {
+					where: (communityAdmins, { eq }) =>
+						eq(communityAdmins.user, ctx.user.id),
 				},
-			});
+			},
+		});
 
-			if (!community) {
-				throw new Error("Community not found");
-			}
-
-			if (!community.admins.some((admin) => admin.user === ctx.user.id)) {
-				throw new Error("You are not an admin of this community");
-			}
+		if (!community) {
+			throw new Error("Community not found");
 		}
 
-		if (parsedInput.creator && parsedInput.creator !== ctx.user.id) {
-			throw new Error("You can't create an event for another user");
+		if (!community.admins.some((admin) => admin.user === ctx.user.id)) {
+			throw new Error("You are not an admin of this community");
 		}
 
 		if (!parsedInput.image.includes("ipfs.nouns.gg")) {
@@ -94,7 +81,6 @@ export const createEvent = onlyUser
 			start: parsedInput.start,
 			end: parsedInput.end,
 			community: parsedInput.community,
-			creator: parsedInput.creator,
 			location: parsedInput.location,
 			callToAction: parsedInput.callToAction,
 			details: parsedInput.details,

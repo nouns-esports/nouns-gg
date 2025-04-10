@@ -88,10 +88,6 @@ export const eventsRelations = relations(events, ({ one, many }) => ({
 	products: many(products),
 	checkpoints: many(checkpoints),
 	raffles: many(raffles),
-	creator: one(nexus, {
-		fields: [events.creator],
-		references: [nexus.id],
-	}),
 }));
 
 export const checkpointsRelations = relations(checkpoints, ({ one, many }) => ({
@@ -109,10 +105,7 @@ export const predictionsRelations = relations(predictions, ({ one, many }) => ({
 	}),
 	outcomes: many(outcomes),
 	bets: many(bets),
-	creator: one(nexus, {
-		fields: [predictions.creator],
-		references: [nexus.id],
-	}),
+
 	earnedXP: many(xp),
 	gold: many(gold),
 }));
@@ -172,10 +165,6 @@ export const roundsRelations = relations(rounds, ({ one, many }) => ({
 	minVoterRank: one(ranks, {
 		fields: [rounds.minVoterRank],
 		references: [ranks.id],
-	}),
-	creator: one(nexus, {
-		fields: [rounds.creator],
-		references: [nexus.id],
 	}),
 }));
 
@@ -281,10 +270,6 @@ export const questRelations = relations(quests, ({ one, many }) => ({
 		fields: [quests.event],
 		references: [events.id],
 	}),
-	creator: one(nexus, {
-		fields: [quests.creator],
-		references: [nexus.id],
-	}),
 }));
 
 export const xpRelations = relations(xp, ({ one }) => ({
@@ -361,10 +346,6 @@ export const creationsRelations = relations(creations, ({ one }) => ({
 	original: one(creations, {
 		fields: [creations.original],
 		references: [creations.id],
-	}),
-	creator: one(nexus, {
-		fields: [creations.creator],
-		references: [nexus.id],
 	}),
 }));
 
