@@ -1,9 +1,4 @@
-import {
-	getNoun,
-	getTrait,
-	getTraitCounts,
-	getTraits,
-} from "@/server/queries/nouns";
+import { getTraitCounts, getTraits } from "@/server/queries/nouns";
 import { padSVG } from "~/packages/utils/padSVG";
 import { generateTraitsFromSeed } from "~/packages/utils/getTraitsFromSeed";
 
