@@ -29,16 +29,14 @@ export const getTraits = cache(
 		glasses: number;
 	}) => {
 		const traits = await db.pgpool.query.nounsTraits.findMany({
-			where: (t, { and, eq }) =>
-				and(
+			where: (t, { or, eq }) =>
+				or(
 					eq(nounsTraits.id, `accessory:${input.accessory}`),
 					eq(nounsTraits.id, `body:${input.body}`),
 					eq(nounsTraits.id, `head:${input.head}`),
 					eq(nounsTraits.id, `glasses:${input.glasses}`),
 				),
 		});
-
-		console.log("traits", traits);
 
 		const accessory = traits.find((t) => t.type === "accessory");
 		const body = traits.find((t) => t.type === "body");
