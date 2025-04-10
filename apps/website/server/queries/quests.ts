@@ -128,7 +128,7 @@ export const getQuests = cache(
 							limit: 1,
 						}
 					: undefined,
-				creator: true,
+				event: true,
 			},
 		});
 	},
@@ -148,7 +148,6 @@ export const getQuest = cache(
 						}
 					: undefined,
 				event: true,
-				creator: true,
 			},
 		});
 	},

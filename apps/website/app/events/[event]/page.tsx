@@ -237,20 +237,6 @@ export default async function EventPage(props: {
 													{event.community.name}
 												</Link>
 											) : null}
-											{event.creator ? (
-												<Link
-													href={`/users/${event.creator.username ?? event.creator.id}`}
-													newTab
-													className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
-												>
-													<img
-														alt={event.creator.name}
-														src={event.creator.image}
-														className="w-5 h-5 rounded-full"
-													/>
-													{event.creator.name}
-												</Link>
-											) : null}
 											<div className="flex items-center gap-2 text-white flex-shrink-0">
 												<CalendarDays className="w-5 h-5 text-white" />
 												<p className="mt-0.5 whitespace-nowrap">

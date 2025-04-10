@@ -72,7 +72,6 @@ export const getRound = cache(
 				event: true,
 				minProposerRank: true,
 				minVoterRank: true,
-				creator: true,
 			},
 			extras: {
 				uniqueVoters: sql<number>`(
@@ -127,7 +126,7 @@ export const getRounds = cache(
 						user: true,
 					},
 				},
-				creator: true,
+				event: true,
 			},
 		});
 	},

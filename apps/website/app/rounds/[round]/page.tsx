@@ -218,7 +218,7 @@ export default async function Round(props: {
 									<h1 className="w-full text-white font-luckiest-guy text-3xl max-xl:text-2xl">
 										{round.name}
 									</h1>
-									{round.community ? (
+									{round.community && !round.event ? (
 										<Link
 											href={`/c/${round.community.handle}`}
 											className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
@@ -231,18 +231,17 @@ export default async function Round(props: {
 											{round.community.name}
 										</Link>
 									) : null}
-									{round.creator ? (
+									{round.event ? (
 										<Link
-											href={`/users/${round.creator.username ?? round.creator.id}`}
-											newTab
+											href={`/events/${round.event.handle}`}
 											className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
 										>
 											<img
-												alt={round.creator.name}
-												src={round.creator.image}
+												alt={round.event.name}
+												src={round.event.image}
 												className="w-5 h-5 rounded-full"
 											/>
-											{round.creator.name}
+											{round.event.name}
 										</Link>
 									) : null}
 								</div>

@@ -41,7 +41,7 @@ export default function QuestCard(props: {
 					</p>
 				</div>
 				<div className="flex justify-between items-center">
-					{props.quest.community ? (
+					{props.quest.community && !props.quest.event ? (
 						<Link
 							href={`/c/${props.quest.community.handle}`}
 							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
@@ -54,20 +54,20 @@ export default function QuestCard(props: {
 							{props.quest.community.name}
 						</Link>
 					) : null}
-					{props.quest.creator ? (
+					{props.quest.event ? (
 						<Link
-							href={`/users/${props.quest.creator.username ?? props.quest.creator.id}`}
-							newTab
+							href={`/events/${props.quest.event.handle}`}
 							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
 						>
 							<img
-								alt={props.quest.creator.name}
-								src={props.quest.creator.image}
+								alt={props.quest.event.name}
+								src={props.quest.event.image}
 								className="w-5 h-5 rounded-full"
 							/>
-							{props.quest.creator.name}
+							{props.quest.event.name}
 						</Link>
 					) : null}
+
 					{completed ? (
 						<div className="font-semibold text-sm flex items-center gap-1 text-green mr-2">
 							<Check className="w-4 h-4" />

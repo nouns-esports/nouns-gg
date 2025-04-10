@@ -72,7 +72,7 @@ export default function RoundCard(props: {
 						)}
 					</div>
 				</div>
-				{props.round.community ? (
+				{props.round.community && !props.round.event ? (
 					<div className="flex h-full items-end">
 						<Link
 							href={`/c/${props.round.community.handle}`}
@@ -86,17 +86,17 @@ export default function RoundCard(props: {
 						</Link>
 					</div>
 				) : null}
-				{props.round.creator ? (
+				{props.round.event ? (
 					<div className="flex h-full items-end">
 						<Link
-							href={`/users/${props.round.creator.username ?? props.round.creator.id}`}
+							href={`/events/${props.round.event.handle}`}
 							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit"
 						>
 							<img
-								src={props.round.creator.image}
+								src={props.round.event.image}
 								className="w-5 h-5 rounded-full"
 							/>
-							{props.round.creator.name}
+							{props.round.event.name}
 						</Link>
 					</div>
 				) : null}
