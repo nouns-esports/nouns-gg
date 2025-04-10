@@ -21,6 +21,21 @@ export async function GET(request: Request) {
 		seed: url.searchParams.get("seed"),
 	};
 
+	let background: string | undefined = undefined;
+	let accessory: number | undefined = undefined;
+	let body: number | undefined = undefined;
+	let head: number | undefined = undefined;
+	let glasses: number | undefined = undefined;
+
+	if (params.seed && params.id) {
+		return Response.json(
+			{
+				error: "Cannot specify both id and seed",
+			},
+			{ status: 400 },
+		);
+	}
+
 	if (params.seed) {
 		const counts = await getTraitCounts();
 
@@ -32,182 +47,107 @@ export async function GET(request: Request) {
 			backgroundCount: 2,
 		});
 
-		const { accessory, body, head, glasses } = await getTraits({
-			accessory: traits.accessory,
-			body: traits.body,
-			head: traits.head,
-			glasses: traits.glasses,
-		});
+		background = traits.background === 0 ? "#d5d7e1" : "#e1d7d5";
+		accessory = traits.accessory;
+		body = traits.body;
+		head = traits.head;
+		glasses = traits.glasses;
+	}
 
-		if (!accessory) {
-			return Response.json(
-				{ error: `Accessory ${traits.accessory} not found` },
-				{ status: 400 },
-			);
-		}
+	if (params.accessory) {
+		accessory = parseInt(params.accessory);
+	}
 
-		if (!body) {
-			return Response.json(
-				{ error: `Body ${traits.body} not found` },
-				{ status: 400 },
-			);
-		}
+	if (params.body) {
+		body = parseInt(params.body);
+	}
 
-		if (!head) {
-			return Response.json(
-				{ error: `Head ${traits.head} not found` },
-				{ status: 400 },
-			);
-		}
+	if (params.head) {
+		head = parseInt(params.head);
+	}
 
-		if (!glasses) {
-			return Response.json(
-				{ error: `Glasses ${traits.glasses} not found` },
-				{ status: 400 },
-			);
-		}
+	if (params.glasses) {
+		glasses = parseInt(params.glasses);
+	}
 
-		const paddedAccessory = padSVG(accessory.image, accessory.padding);
-		const paddedBody = padSVG(body.image, body.padding);
-		const paddedHead = padSVG(head.image, head.padding);
-		const paddedGlasses = padSVG(glasses.image, glasses.padding);
+	if (params.background) {
+		if (params.background.startsWith("#")) {
+			if (params.background.length !== 7) {
+				return Response.json(
+					{ error: `Invalid background hex code: ${params.background}` },
+					{ status: 400 },
+				);
+			}
 
-		return new Response(
-			`<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" fill="none">
-				<rect x="0" y="0" width="320" height="320" fill="${traits.background === 0 ? "#d5d7e1" : "#e1d7d5"}" />
-				${paddedAccessory}
-				${paddedBody}
-				${paddedHead}
-				${paddedGlasses}
-			</svg>`,
-			{
-				status: 200,
-				headers: {
-					"Content-Type": "image/svg+xml",
-				},
-			},
+			background = params.background;
+		} else background = params.background === "0" ? "#d5d7e1" : "#e1d7d5";
+	}
+
+	if (!accessory) {
+		return Response.json({ error: "Missing accessory" }, { status: 400 });
+	}
+
+	if (!body) {
+		return Response.json({ error: "Missing body" }, { status: 400 });
+	}
+
+	if (!head) {
+		return Response.json({ error: "Missing head" }, { status: 400 });
+	}
+
+	if (!glasses) {
+		return Response.json({ error: "Missing glasses" }, { status: 400 });
+	}
+
+	if (!background) {
+		return Response.json({ error: "Missing background" }, { status: 400 });
+	}
+
+	const traits = await getTraits({
+		accessory,
+		body,
+		head,
+		glasses,
+	});
+
+	if (!traits.accessory) {
+		return Response.json(
+			{ error: `Accessory not found: ${accessory}` },
+			{ status: 400 },
 		);
 	}
 
-	if (
-		params.accessory ||
-		params.body ||
-		params.head ||
-		params.glasses ||
-		params.background
-	) {
-		if (
-			!(
-				params.accessory &&
-				params.body &&
-				params.head &&
-				params.glasses &&
-				params.background
-			)
-		) {
-			return Response.json(
-				{ error: "When specifying a trait, you must specify all traits" },
-				{ status: 400 },
-			);
-		}
+	if (!traits.body) {
+		return Response.json({ error: `Body not found: ${body}` }, { status: 400 });
+	}
 
-		const [accessory, body, head, glasses] = await Promise.all([
-			getTrait({ type: "accessory", index: Number(params.accessory) }),
-			getTrait({ type: "body", index: Number(params.body) }),
-			getTrait({ type: "head", index: Number(params.head) }),
-			getTrait({ type: "glasses", index: Number(params.glasses) }),
-		]);
+	if (!traits.head) {
+		return Response.json({ error: `Head not found: ${head}` }, { status: 400 });
+	}
 
-		if (!accessory) {
-			return Response.json(
-				{ error: `Accessory ${params.accessory} not found` },
-				{ status: 400 },
-			);
-		}
+	if (!traits.glasses) {
+		return Response.json(
+			{ error: `Glasses not found: ${glasses}` },
+			{ status: 400 },
+		);
+	}
 
-		if (!body) {
-			return Response.json(
-				{ error: `Body ${params.body} not found` },
-				{ status: 400 },
-			);
-		}
+	const paddedAccessory = padSVG(
+		traits.accessory.image,
+		traits.accessory.padding,
+	);
+	const paddedBody = padSVG(traits.body.image, traits.body.padding);
+	const paddedHead = padSVG(traits.head.image, traits.head.padding);
+	const paddedGlasses = padSVG(traits.glasses.image, traits.glasses.padding);
 
-		if (!head) {
-			return Response.json(
-				{ error: `Head ${params.head} not found` },
-				{ status: 400 },
-			);
-		}
-
-		if (!glasses) {
-			return Response.json(
-				{ error: `Glasses ${params.glasses} not found` },
-				{ status: 400 },
-			);
-		}
-
-		let background = undefined;
-
-		if (typeof params.background === "number") {
-			if (params.background === 0) background = "#d5d7e1";
-			if (params.background === 1) background = "#e1d7d5";
-		}
-
-		if (
-			typeof params.background === "string" &&
-			params.background.startsWith("#")
-		) {
-			background = params.background;
-		}
-
-		if (!background) {
-			return Response.json(
-				{ error: `Invalid background: ${params.background}` },
-				{ status: 400 },
-			);
-		}
-
-		const paddedAccessory = padSVG(accessory.image, accessory.padding);
-		const paddedBody = padSVG(body.image, body.padding);
-		const paddedHead = padSVG(head.image, head.padding);
-		const paddedGlasses = padSVG(glasses.image, glasses.padding);
-
-		return new Response(
-			`<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" fill="none">
+	return new Response(
+		`<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" fill="none">
 				<rect x="0" y="0" width="320" height="320" fill="${background}" />
 				${paddedAccessory}
 				${paddedBody}
 				${paddedHead}
 				${paddedGlasses}
 			</svg>`,
-			{
-				status: 200,
-				headers: {
-					"Content-Type": "image/svg+xml",
-				},
-			},
-		);
-	}
-
-	const noun = await getNoun({ id: params.id ? BigInt(params.id) : undefined });
-
-	if (!noun) {
-		return Response.json({ error: "Noun not found" }, { status: 400 });
-	}
-
-	const paddedAccessory = padSVG(noun.accessory.image, noun.accessory.padding);
-	const paddedBody = padSVG(noun.body.image, noun.body.padding);
-	const paddedHead = padSVG(noun.head.image, noun.head.padding);
-	const paddedGlasses = padSVG(noun.glasses.image, noun.glasses.padding);
-
-	return new Response(
-		`<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" fill="none">
-            <rect x="0" y="0" width="320" height="320" fill="${noun.background}" />
-            ${paddedAccessory}
-            ${paddedBody}
-            ${paddedHead}
-            ${paddedGlasses}
-        </svg>`,
 		{
 			status: 200,
 			headers: {
