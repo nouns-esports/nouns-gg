@@ -45,10 +45,12 @@ export default async function Community(props: {
 	const rounds =
 		tab === "rounds" ? await getRounds({ community: community.id }) : [];
 	const quests =
-		tab === "quests" ? await getQuests({ community: community.id }) : [];
+		tab === "quests"
+			? await getQuests({ community: community.id, user: user?.id })
+			: [];
 	const predictions =
 		tab === "predictions"
-			? await getPredictions({ community: community.id })
+			? await getPredictions({ community: community.id, user: user?.id })
 			: [];
 	const events =
 		tab === "events" ? await getEvents({ community: community.id }) : [];

@@ -43,8 +43,7 @@ export default function QuestCard(props: {
 				<div className="flex justify-between items-center">
 					{props.quest.community ? (
 						<Link
-							href={`/communities/${props.quest.community.handle}`}
-							newTab
+							href={`/c/${props.quest.community.handle}`}
 							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
 						>
 							<img
