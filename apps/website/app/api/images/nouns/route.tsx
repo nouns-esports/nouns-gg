@@ -1,5 +1,11 @@
-import { getNoun, getTrait } from "@/server/queries/nouns";
+import {
+	getNoun,
+	getTrait,
+	getTraitCounts,
+	getTraits,
+} from "@/server/queries/nouns";
 import { padSVG } from "~/packages/utils/padSVG";
+import { generateTraitsFromSeed } from "~/packages/utils/getTraitsFromSeed";
 
 export async function GET(request: Request) {
 	const url = new URL(request.url);
@@ -12,7 +18,76 @@ export async function GET(request: Request) {
 		head: url.searchParams.get("head"),
 		glasses: url.searchParams.get("glasses"),
 		background: url.searchParams.get("background"),
+		seed: url.searchParams.get("seed"),
 	};
+
+	if (params.seed) {
+		const counts = await getTraitCounts();
+
+		const traits = generateTraitsFromSeed(params.seed, {
+			accessoryCount: counts.accessory,
+			bodyCount: counts.body,
+			headCount: counts.head,
+			glassesCount: counts.glasses,
+			backgroundCount: 2,
+		});
+
+		const { accessory, body, head, glasses } = await getTraits({
+			accessory: traits.accessory,
+			body: traits.body,
+			head: traits.head,
+			glasses: traits.glasses,
+		});
+
+		if (!accessory) {
+			return Response.json(
+				{ error: `Accessory ${traits.accessory} not found` },
+				{ status: 400 },
+			);
+		}
+
+		if (!body) {
+			return Response.json(
+				{ error: `Body ${traits.body} not found` },
+				{ status: 400 },
+			);
+		}
+
+		if (!head) {
+			return Response.json(
+				{ error: `Head ${traits.head} not found` },
+				{ status: 400 },
+			);
+		}
+
+		if (!glasses) {
+			return Response.json(
+				{ error: `Glasses ${traits.glasses} not found` },
+				{ status: 400 },
+			);
+		}
+
+		const paddedAccessory = padSVG(accessory.image, accessory.padding);
+		const paddedBody = padSVG(body.image, body.padding);
+		const paddedHead = padSVG(head.image, head.padding);
+		const paddedGlasses = padSVG(glasses.image, glasses.padding);
+
+		return new Response(
+			`<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" fill="none">
+				<rect x="0" y="0" width="320" height="320" fill="${traits.background === 0 ? "#d5d7e1" : "#e1d7d5"}" />
+				${paddedAccessory}
+				${paddedBody}
+				${paddedHead}
+				${paddedGlasses}
+			</svg>`,
+			{
+				status: 200,
+				headers: {
+					"Content-Type": "image/svg+xml",
+				},
+			},
+		);
+	}
 
 	if (
 		params.accessory ||
