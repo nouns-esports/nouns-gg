@@ -347,6 +347,10 @@ export const creationsRelations = relations(creations, ({ one }) => ({
 		fields: [creations.original],
 		references: [creations.id],
 	}),
+	creator: one(nexus, {
+		fields: [creations.creator],
+		references: [nexus.id],
+	}),
 }));
 
 export const productsRelations = relations(products, ({ one, many }) => ({
