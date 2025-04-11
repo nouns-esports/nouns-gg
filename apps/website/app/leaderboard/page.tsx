@@ -18,7 +18,7 @@ import RankingSystemExplainer from "@/components/modals/RankingSystemExplainer";
 
 function getNextFridayAt1350CST() {
 	const now = new Date();
-	const currentDay = now.getDay(); // 0-6, 0 is Sunday, 5 is Friday
+	const currentDay = now.getDay();
 	const currentHour = now.getHours();
 
 	let targetDate: Date;
@@ -37,8 +37,8 @@ function getNextFridayAt1350CST() {
 		targetDate = nextFriday(now);
 	}
 
-	// Create the target time in CST
-	const cstTargetTime = toZonedTime(
+	// Set the target time to 13:50 CST
+	return toZonedTime(
 		set(targetDate, {
 			hours: 13,
 			minutes: 50,
@@ -47,15 +47,6 @@ function getNextFridayAt1350CST() {
 		}),
 		"America/Chicago",
 	);
-
-	// Convert the CST time to the local timezone
-	const localTime = new Date(
-		cstTargetTime.toLocaleString("en-US", {
-			timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-		}),
-	);
-
-	return localTime;
 }
 
 export async function generateMetadata(props: {
