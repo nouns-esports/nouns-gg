@@ -19,17 +19,22 @@ import RankingSystemExplainer from "@/components/modals/RankingSystemExplainer";
 function getNextFridayAt1350CST() {
 	const now = new Date();
 	const currentDay = now.getDay();
-	const currentHour = now.getHours();
+
+	// Convert current time to UTC
+	const currentHourUTC = now.getUTCHours();
 
 	let targetDate: Date;
 
 	if (currentDay === 5) {
-		// If it's Friday
-		if (currentHour < 13 || (currentHour === 13 && now.getMinutes() < 50)) {
-			// If it's before 1:50 PM, use today
+		// 18:50 UTC = 13:50 CST (5 hour difference)
+		if (
+			currentHourUTC < 18 ||
+			(currentHourUTC === 18 && now.getUTCMinutes() < 50)
+		) {
+			// If it's before 18:50 UTC (13:50 CST), use today
 			targetDate = new Date();
 		} else {
-			// If it's after 1:50 PM, use next Friday
+			// If it's after 18:50 UTC (13:50 CST), use next Friday
 			targetDate = nextFriday(now);
 		}
 	} else {
@@ -37,16 +42,8 @@ function getNextFridayAt1350CST() {
 		targetDate = nextFriday(now);
 	}
 
-	// Set the target time to 13:50 CST
-	return toZonedTime(
-		set(targetDate, {
-			hours: 13,
-			minutes: 50,
-			seconds: 0,
-			milliseconds: 0,
-		}),
-		"America/Chicago",
-	);
+	// Set the target time to 18:50 UTC (13:50 CST)
+	return new Date(targetDate.setUTCHours(18, 50, 0, 0));
 }
 
 export async function generateMetadata(props: {
