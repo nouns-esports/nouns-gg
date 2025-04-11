@@ -8,8 +8,10 @@ import { env } from "~/env";
 import { twMerge } from "tailwind-merge";
 import SizeGuideModal from "@/components/modals/SizeGuideModal";
 import { ToggleModal } from "@/components/Modal";
-import { Info } from "lucide-react";
+import { AlertCircle, Bell, Check, Info } from "lucide-react";
 import ProductImage from "@/components/ProductImage";
+import { getAuthenticatedUser } from "@/server/queries/users";
+import LinkEmailModal from "@/components/modals/LinkEmailModal";
 
 export async function generateMetadata(props: {
 	params: Promise<{ product: string }>;
@@ -61,7 +63,10 @@ export default async function ProductPage(props: {
 	const params = await props.params;
 	const searchParams = await props.searchParams;
 
-	const product = await getProduct({ handle: params.product });
+	const [user, product] = await Promise.all([
+		getAuthenticatedUser(),
+		getProduct({ handle: params.product }),
+	]);
 
 	if (!product) {
 		return notFound();
@@ -137,19 +142,44 @@ export default async function ProductPage(props: {
 								</div>
 							) : null}
 						</div>
-						{product.sizeGuide ? (
-							<ToggleModal
-								id="size-guide"
-								className="text-red flex items-center gap-1"
-							>
-								<Info className="w-4 h-4" />
-								Size Guide
-							</ToggleModal>
-						) : null}
+						<div className="flex items-center gap-2">
+							{(variant.inventory !== undefined && variant.inventory < 1) ||
+							!product.active ? (
+								<ToggleModal
+									id="link-email"
+									disabled={!!user?.email?.address}
+									className={twMerge(
+										"flex items-center gap-1",
+										user?.email?.address
+											? "text-green"
+											: "text-red hover:text-red/70 transition-colors",
+									)}
+								>
+									{user?.email?.address ? (
+										<Check className="w-4 h-4" />
+									) : (
+										<Bell className="w-4 h-4" />
+									)}
+									{user?.email?.address
+										? "Email notifications on"
+										: "Notify me for changes or future drops"}
+								</ToggleModal>
+							) : null}
+							{product.sizeGuide ? (
+								<ToggleModal
+									id="size-guide"
+									className="text-red flex items-center gap-1"
+								>
+									<Info className="w-4 h-4" />
+									Size Guide
+								</ToggleModal>
+							) : null}
+						</div>
 					</div>
 				</div>
 			</div>
 			{product.sizeGuide ? <SizeGuideModal image={product.sizeGuide} /> : null}
+			{!user?.email?.address ? <LinkEmailModal /> : null}
 		</>
 	);
 }
