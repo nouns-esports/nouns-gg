@@ -147,20 +147,20 @@ export default async function ProductPage(props: {
 							!product.active ? (
 								<ToggleModal
 									id="link-email"
-									disabled={!!user?.email?.address}
+									disabled={user?.nexus?.canRecieveEmails}
 									className={twMerge(
 										"flex items-center gap-1",
-										user?.email?.address
+										user?.nexus?.canRecieveEmails
 											? "text-green"
 											: "text-red hover:text-red/70 transition-colors",
 									)}
 								>
-									{user?.email?.address ? (
+									{user?.nexus?.canRecieveEmails ? (
 										<Check className="w-4 h-4" />
 									) : (
 										<Bell className="w-4 h-4" />
 									)}
-									{user?.email?.address
+									{user?.nexus?.canRecieveEmails
 										? "Email notifications on"
 										: "Notify me for changes or future drops"}
 								</ToggleModal>
@@ -179,7 +179,9 @@ export default async function ProductPage(props: {
 				</div>
 			</div>
 			{product.sizeGuide ? <SizeGuideModal image={product.sizeGuide} /> : null}
-			{!user?.email?.address ? <LinkEmailModal /> : null}
+			{!user?.email?.address || !user?.nexus?.canRecieveEmails ? (
+				<LinkEmailModal hasEmail={!!user?.email?.address} />
+			) : null}
 		</>
 	);
 }

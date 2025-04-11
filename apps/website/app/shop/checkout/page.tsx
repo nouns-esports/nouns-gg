@@ -28,7 +28,7 @@ export default async function CheckoutPage() {
 					}))}
 				/>
 			</div>
-			<LinkEmailModal />
+			{!user.email?.address ? <LinkEmailModal hasEmail={false} /> : null}
 		</>
 	);
 }
