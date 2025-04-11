@@ -7,52 +7,42 @@ import { unstable_cache as cache } from "next/cache";
 import { products } from "~/packages/db/schema/public";
 import { shopifyClient } from "../clients/shopify";
 
-export const getProducts = cache(
-	async (input: { collection?: string; event?: number }) => {
-		const collection = input.collection
-			? await db.pgpool.query.collections.findFirst({
-					where: eq(collections.handle, input.collection),
-				})
-			: null;
+export async function getProducts(input: {
+	collection?: string;
+	event?: number;
+}) {
+	const collection = input.collection
+		? await db.pgpool.query.collections.findFirst({
+				where: eq(collections.handle, input.collection),
+			})
+		: null;
 
-		return db.pgpool.query.products.findMany({
-			where: and(
-				collection ? eq(products.collection, collection.id) : undefined,
-				input.event ? eq(products.event, input.event) : undefined,
-			),
-		});
-	},
-	["getProducts"],
-	{ revalidate: 60 },
-);
+	return db.pgpool.query.products.findMany({
+		where: and(
+			collection ? eq(products.collection, collection.id) : undefined,
+			input.event ? eq(products.event, input.event) : undefined,
+		),
+	});
+}
 
-export const getCollections = cache(
-	async () => db.pgpool.query.collections.findMany(),
-	["getCollections"],
-	{ revalidate: 60 },
-);
+export async function getCollections() {
+	return db.pgpool.query.collections.findMany();
+}
 
-export const getProduct = cache(
-	async (input: { handle: string }) =>
-		db.pgpool.query.products.findFirst({
-			where: eq(products.handle, input.handle),
-		}),
-	["getProduct"],
-	{ revalidate: 60 },
-);
+export async function getProduct(input: { handle: string }) {
+	return db.pgpool.query.products.findFirst({
+		where: eq(products.handle, input.handle),
+	});
+}
 
-export const getCollection = cache(
-	async (input: { handle: string }) =>
-		db.pgpool.query.collections.findFirst({
-			where: eq(collections.handle, input.handle),
-			with: {
-				products: true,
-			},
-		}),
-
-	["getCollection"],
-	{ revalidate: 60 },
-);
+export async function getCollection(input: { handle: string }) {
+	return db.pgpool.query.collections.findFirst({
+		where: eq(collections.handle, input.handle),
+		with: {
+			products: true,
+		},
+	});
+}
 
 export async function checkCart(input: { user: string }) {
 	const cart = await db.pgpool.query.carts.findMany({
