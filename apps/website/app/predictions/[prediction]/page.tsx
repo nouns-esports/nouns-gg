@@ -27,23 +27,25 @@ export async function generateMetadata(props: {
 		return notFound();
 	}
 
+	const image = `${env.NEXT_PUBLIC_DOMAIN}/api/images/predictions?prediction=${prediction.handle}`;
+
 	return {
 		title: prediction.name,
 		description: null,
 		metadataBase: new URL(env.NEXT_PUBLIC_DOMAIN),
 		openGraph: {
 			type: "website",
-			images: [prediction.image],
+			images: [image],
 		},
 		twitter: {
 			site: "@NounsEsports",
 			card: "summary_large_image",
-			images: [prediction.image],
+			images: [image],
 		},
 		other: {
 			"fc:frame": JSON.stringify({
 				version: "next",
-				imageUrl: prediction.image,
+				imageUrl: image,
 				button: {
 					title: "View Prediction",
 					action: {
