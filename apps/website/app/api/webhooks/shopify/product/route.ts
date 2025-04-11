@@ -1,6 +1,7 @@
 import { eq } from "drizzle-orm";
 import { products } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
+import { shopifyClient } from "@/server/clients/shopify";
 
 type ProductUpdated = {
 	admin_graphql_api_id: string;
@@ -14,40 +15,76 @@ type ProductUpdated = {
 	}>;
 };
 
+type Product = {
+	id: string;
+	variants: {
+		nodes: Array<{
+			id: string;
+			inventoryQuantity: number;
+			price: string;
+			inventoryItem: {
+				tracked: boolean;
+			};
+		}>;
+	};
+};
+
 export async function POST(request: Request) {
-	const updatedProduct: ProductUpdated = await request.json();
+	const syncProducts = (
+		await shopifyClient.request(
+			`query {
+			products(first: 250) {
+				nodes {
+					id
+					variants(first: 100) {
+						nodes {
+							id
+							price
+							inventoryQuantity
+							inventoryItem {
+								tracked
+							}
+						}
+					}
+				}
+			}
+		}`,
+		)
+	).data?.products?.nodes as Product[];
 
 	await db.primary.transaction(async (tx) => {
-		const product = await tx.query.products.findFirst({
-			where: eq(products.shopifyId, updatedProduct.admin_graphql_api_id),
-		});
+		for (const product of syncProducts) {
+			const existingProduct = await tx.query.products.findFirst({
+				where: eq(products.shopifyId, product.id),
+			});
 
-		if (!product) {
-			throw new Error("Updated product not found");
+			if (!existingProduct) {
+				continue;
+			}
+
+			await tx
+				.update(products)
+				.set({
+					variants: existingProduct.variants.map((variant) => {
+						const updatedVariant = product.variants.nodes.find(
+							(v) => v.id === variant.shopifyId,
+						);
+
+						if (!updatedVariant) {
+							return variant;
+						}
+
+						return {
+							...variant,
+							inventory: updatedVariant.inventoryItem.tracked
+								? updatedVariant.inventoryQuantity
+								: undefined,
+							price: Number(updatedVariant.price),
+						};
+					}),
+				})
+				.where(eq(products.shopifyId, product.id));
 		}
-
-		await tx
-			.update(products)
-			.set({
-				variants: product.variants.map((variant) => {
-					const updatedVariant = updatedProduct.variants.find(
-						(v) => v.admin_graphql_api_id === variant.shopifyId,
-					);
-
-					if (!updatedVariant) {
-						return variant;
-					}
-
-					return {
-						...variant,
-						inventory: updatedVariant.inventory_item.tracked
-							? updatedVariant.inventory_quantity
-							: undefined,
-						price: Number(updatedVariant.price),
-					};
-				}),
-			})
-			.where(eq(products.shopifyId, updatedProduct.admin_graphql_api_id));
 	});
 
 	return new Response("OK", { status: 200 });
