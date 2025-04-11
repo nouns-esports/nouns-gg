@@ -70,14 +70,6 @@ export default async function Home() {
 						</Link>
 					</div>
 				</div>
-				<div className="absolute bottom-32 max-sm:bottom-16 left-0 w-full z-10 flex flex-col justify-end items-center gap-4 h-full">
-					<p className="text-white text-lg max-sm:text-base">
-						VIP passes go live in
-					</p>
-					<p className="text-white text-4xl max-sm:text-3xl font-bold">
-						<Countdown date={new Date("2025-04-11T19:00:00.000Z")} />
-					</p>
-				</div>
 				<div className="absolute -bottom-8 left-0 w-full h-64 bg-gradient-to-t from-black to-transparent" />
 			</div>
 			<div className="flex flex-col w-full gap-16 mb-16 max-sm:mb-8 max-lg:gap-12 pt-32 max-xl:pt-28 max-sm:pt-20 max-w-[1920px]">
