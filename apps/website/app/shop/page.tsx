@@ -124,16 +124,22 @@ export default async function Shop(props: {
 									<CategoryTag selected={!searchParams.collection}>
 										All
 									</CategoryTag>
-									{collections.map((collection) => (
-										<CategoryTag
-											key={collection.id}
-											handle={collection.handle}
-											selected={searchParams.collection === collection.handle}
-											new={collection.handle === "coaching-sessions"}
-										>
-											{collection.name}
-										</CategoryTag>
-									))}
+									{collections
+										.toSorted((a, b) => {
+											if (a.id === 6) return -1;
+											if (b.id === 6) return 1;
+											return a.name.localeCompare(b.name);
+										})
+										.map((collection) => (
+											<CategoryTag
+												key={collection.id}
+												handle={collection.handle}
+												selected={searchParams.collection === collection.handle}
+												new={collection.id === 6}
+											>
+												{collection.name}
+											</CategoryTag>
+										))}
 								</ul>
 								{user?.nexus ? (
 									<ToggleModal id="cart" className="max-sm:hidden">
