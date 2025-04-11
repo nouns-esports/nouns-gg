@@ -57,7 +57,9 @@ export default async function Home() {
 						className="h-60 object-contain w-auto"
 					/>
 					<div className="flex items-center text-white font-semibold text-lg gap-8 max-sm:gap-4">
-						<Button href="/events/nounsvitational">View Event</Button>
+						<Button href="/events/nounsvitational?tab=shop">
+							Get VIP Pass
+						</Button>
 						<Link
 							href="https://www.youtube.com/watch?v=6FIxf58Zv60"
 							className="flex gap-2 items-center hover:opacity-70 transition-opacity"

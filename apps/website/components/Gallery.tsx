@@ -28,8 +28,8 @@ export default function Gallery(props: {
 			{
 				title: "Introducing Nounsvitational Tokyo 2025",
 				sub: "Coming in December",
-				href: "/events/nounsvitational",
-				button: "View Event",
+				href: "/events/nounsvitational?tab=shop",
+				button: "Get VIP Pass",
 				type: "video",
 				url: "https://ipfs.nouns.gg/ipfs/bafybeihciy2yrpxczsitnl2732j5sfccx7bqw6swon6ae7tolaaa3mk7jy",
 			},
