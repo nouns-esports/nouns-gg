@@ -91,8 +91,7 @@ export default async function User(props: {
 						<div
 							className={twMerge(
 								"flex flex-col gap-4  w-full",
-								(user.rank !== null || user.id === authenticatedUser?.id) &&
-									"h-60",
+								user.rank !== null && userRankings.length > 0 && "h-60",
 							)}
 						>
 							{user.rank !== null ? (
