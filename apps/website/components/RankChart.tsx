@@ -15,6 +15,10 @@ export default function RankChart(props: {
 	userRankings: Awaited<ReturnType<typeof getUserRankings>>;
 	ranks: Array<typeof ranks.$inferSelect>;
 }) {
+	if (props.userRankings.length === 0) {
+		return null;
+	}
+
 	return (
 		<ResponsiveContainer
 			width="100%"
