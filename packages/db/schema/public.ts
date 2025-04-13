@@ -43,11 +43,12 @@ export const communities = pgTable("communities", (t) => ({
 	name: t.text().notNull(),
 	description: t.jsonb().$type<TipTap>(), //.notNull(),
 	channel: t.text(),
-	// membershipActions: t.text("membership_actions").array(),
-	// membershipActionInputs: t
-	// 	.jsonb("membership_action_inputs")
-	// 	.array()
-	// 	.$type<Array<{ [key: string]: any }>>(),
+	gold: t.integer().notNull().default(0),
+	membershipActions: t.text("membership_actions").array(),
+	membershipActionInputs: t
+		.jsonb("membership_action_inputs")
+		.array()
+		.$type<Array<{ [key: string]: any }>>(),
 }));
 
 export const communityAdmins = pgTable("community_admins", (t) => ({
@@ -91,11 +92,11 @@ export const events = pgTable("events", (t) => ({
 	}>(),
 	details: t.jsonb().$type<TipTap>(),
 	attendeeCount: t.integer("attendee_count"),
-	// registrationActions: t.text("registration_actions").array(),
-	// registrationActionInputs: t
-	// 	.jsonb("registration_action_inputs")
-	// 	.array()
-	// 	.$type<Array<{ [key: string]: any }>>(),
+	registrationActions: t.text("registration_actions").array(),
+	registrationActionInputs: t
+		.jsonb("registration_action_inputs")
+		.array()
+		.$type<Array<{ [key: string]: any }>>(),
 }));
 
 export const stations = pgTable("stations", (t) => ({
@@ -197,7 +198,7 @@ export const rounds = pgTable("rounds", (t) => ({
 	event: t.bigint({ mode: "number" }),
 	draft: t.boolean().notNull().default(true),
 	type: t
-		.text({ enum: ["markdown", "video", "image"] })
+		.text({ enum: ["markdown", "video", "image", "url"] })
 		.notNull()
 		.default("markdown"),
 	featured: t.boolean().notNull().default(false),
@@ -206,21 +207,44 @@ export const rounds = pgTable("rounds", (t) => ({
 	start: t.timestamp({ mode: "date" }).notNull(),
 	votingStart: t.timestamp("voting_start", { mode: "date" }).notNull(),
 	end: t.timestamp({ mode: "date" }).notNull(),
+	voterActions: t.text("voter_actions").array(),
+	voterActionInputs: t
+		.jsonb("voter_action_inputs")
+		.array()
+		.$type<Array<{ [key: string]: any }>>(),
+	proposerActions: t.text("proposer_actions").array(),
+	proposerActionInputs: t
+		.jsonb("proposer_action_inputs")
+		.array()
+		.$type<Array<{ [key: string]: any }>>(),
+	minTitleLength: t.integer("min_title_length").notNull().default(15),
+	maxTitleLength: t.integer("max_title_length").notNull().default(100),
+	minDescriptionLength: t
+		.integer("min_description_length")
+		.notNull()
+		.default(0),
+	maxDescriptionLength: t
+		.integer("max_description_length")
+		.notNull()
+		.default(2000),
+	linkRegex: t.text("link_regex"),
+
+	// DEPRECATE
 	minProposerRank: t.integer("min_proposer_rank"),
 	minVoterRank: t.integer("min_voter_rank"),
 	proposerCredential: t.text("proposer_credential"),
 	voterCredential: t.text("voter_credential"),
-	// voterActions: t.text("voter_actions").array(),
-	// voterActionInputs: t
-	// 	.jsonb("voter_action_inputs")
-	// 	.array()
-	// 	.$type<Array<{ [key: string]: any }>>(),
-	// proposerActions: t.text("proposer_actions").array(),
-	// proposerActionInputs: t
-	// 	.jsonb("proposer_action_inputs")
-	// 	.array()
-	// 	.$type<Array<{ [key: string]: any }>>(),
 }));
+
+// export const incentives = pgTable("incentives", (t) => ({
+// 	id: t.bigserial({ mode: "number" }).primaryKey(),
+// 	pot: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
+// 	requiredActions: t.text("required_actions").array(),
+// 	requiredActionInputs: t
+// 		.jsonb("required_action_inputs")
+// 		.array()
+// 		.$type<Array<{ [key: string]: any }>>(),
+// }));
 
 // add user column and update it when they claim the award
 export const awards = pgTable("awards", (t) => ({
@@ -251,9 +275,11 @@ export const proposals = pgTable("proposals", (t) => ({
 	content: t.text(), // rename to description
 	image: t.text(),
 	video: t.text(),
+	url: t.text(),
 	createdAt: t.timestamp("created_at", { mode: "date" }).notNull(),
 	hidden: t.boolean().notNull().default(false),
 	published: t.boolean().notNull().default(true),
+	winner: t.boolean().notNull().default(false),
 }));
 
 export const nexus = pgTable(
@@ -318,7 +344,6 @@ export const quests = pgTable("quests", (t) => ({
 	start: t.timestamp({ mode: "date" }),
 	end: t.timestamp({ mode: "date" }),
 	xp: t.integer().notNull(),
-	// Rethink actions, should be a global concept to rounds, quests, achievements, event signups, raffle entries, etc...
 	actions: t.text().array().notNull(),
 	actionInputs: t
 		.jsonb("action_inputs")
@@ -345,6 +370,7 @@ export const xp = pgTable("xp", (t) => ({
 	order: t.text(), // shopify Order gid
 	raffleEntry: t.integer(),
 	attendee: t.integer(),
+	community: t.bigint({ mode: "number" }), // notNull
 }));
 
 export const rankings = pgTable(
@@ -506,11 +532,11 @@ export const raffles = pgTable("raffles", (t) => ({
 	event: t.bigint({ mode: "number" }),
 	community: t.bigint({ mode: "number" }).notNull(),
 	draft: t.boolean().notNull().default(true),
-	// entryActions: t.text("entry_actions").array(),
-	// entryActionInputs: t
-	// 	.jsonb("entry_action_inputs")
-	// 	.array()
-	// 	.$type<Array<{ [key: string]: any }>>(),
+	entryActions: t.text("entry_actions").array(),
+	entryActionInputs: t
+		.jsonb("entry_action_inputs")
+		.array()
+		.$type<Array<{ [key: string]: any }>>(),
 }));
 
 export const raffleEntries = pgTable("raffle_entries", (t) => ({
