@@ -4,15 +4,12 @@ import type { roundState } from "@/utils/roundState";
 import { motion, AnimatePresence } from "framer-motion";
 import { CaretUp, CaretDown, ChartBarHorizontal } from "phosphor-react-sc";
 import { twMerge } from "tailwind-merge";
-import type { ranks } from "~/packages/db/schema/public";
 
 export default function VoteSelector(props: {
 	proposal: number;
 	votes: number;
 	selectedVotes?: number;
 	userCanVote: boolean;
-	userRank?: typeof ranks.$inferSelect;
-	minRank?: typeof ranks.$inferSelect;
 	roundState: ReturnType<typeof roundState>;
 	awardCount?: number;
 	index?: number;
@@ -26,7 +23,6 @@ export default function VoteSelector(props: {
 	if (
 		props.roundState === "Ended" ||
 		(props.roundState === "Voting" && !props.userCanVote)
-		// (!props.userRank || props.remainingVotes < 1)
 	) {
 		return (
 			<div
