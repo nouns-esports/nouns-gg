@@ -12,6 +12,7 @@ import {
 	lilnounDelegates,
 	nounDelegates,
 } from "~/packages/db/schema/indexer";
+import { level } from "@/utils/level";
 
 export async function getAuthenticatedUser() {
 	const token = (await cookies()).get("privy-id-token");
@@ -98,6 +99,8 @@ export async function getAuthenticatedUser() {
 			}
 		} catch (e) {}
 
+const { currentLevel } = level(userNexus.xp);
+
 		return {
 			id: privyUser.id,
 			discord: privyUser.discord,
@@ -108,6 +111,15 @@ export async function getAuthenticatedUser() {
 			),
 			email: privyUser.email,
 			nexus: userNexus,
+level: currentLevel,
+			votes:
+				currentLevel >= 15
+					? 10
+					: currentLevel >= 10
+						? 5
+						: currentLevel >= 5
+							? 3
+							: 1,
 		};
 	} catch (e) {
 		console.error(e);
