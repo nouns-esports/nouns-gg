@@ -1,8 +1,8 @@
 "use server";
 
-import { nexus, proposals, rounds, xp } from "~/packages/db/schema/public";
+import { proposals, rounds } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { and, eq, inArray, sql } from "drizzle-orm";
+import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { onlyUser } from ".";
 import { z } from "zod";
@@ -16,6 +16,7 @@ export const createProposal = onlyUser
 			image: z.string().optional(),
 			content: z.string().optional(),
 			video: z.string().optional(),
+			url: z.string().optional(),
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
@@ -35,14 +36,6 @@ export const createProposal = onlyUser
 
 		if (round.proposals[0]?.user === ctx.user.id) {
 			throw new Error("You have already proposed for this round");
-		}
-
-		if (
-			round.minProposerRank &&
-			ctx.user.nexus?.rank &&
-			ctx.user.nexus.rank.place < round.minProposerRank.place
-		) {
-			throw new Error("You are not eligible to propose in this round");
 		}
 
 		if (round.proposerCredential) {
@@ -90,6 +83,16 @@ export const createProposal = onlyUser
 			}
 		}
 
+		if (round.type === "url") {
+			if (!parsedInput.url) {
+				throw new Error("Url is required");
+			}
+
+			if (!parsedInput.image) {
+				throw new Error("Cover image is required");
+			}
+		}
+
 		await db.primary.transaction(async (tx) => {
 			await tx.insert(proposals).values([
 				{
@@ -99,6 +102,7 @@ export const createProposal = onlyUser
 					round: parsedInput.round,
 					user: ctx.user.id,
 					video: parsedInput.video,
+					url: parsedInput.url,
 					createdAt: now,
 				},
 			]);

@@ -15,6 +15,7 @@ export const updateProposal = onlyUser
 			image: z.string().optional(),
 			content: z.string().optional(),
 			video: z.string().optional(),
+			url: z.string().optional(),
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
@@ -66,6 +67,16 @@ export const updateProposal = onlyUser
 			}
 		}
 
+		if (round.type === "url") {
+			if (!parsedInput.url) {
+				throw new Error("Url is required");
+			}
+
+			if (!parsedInput.image) {
+				throw new Error("Cover image is required");
+			}
+		}
+
 		await db.primary
 			.update(proposals)
 			.set({
@@ -73,6 +84,7 @@ export const updateProposal = onlyUser
 				content: parsedInput.content,
 				image: parsedInput.image,
 				video: parsedInput.video,
+				url: parsedInput.url,
 			})
 			.where(eq(proposals.id, proposal.id));
 
