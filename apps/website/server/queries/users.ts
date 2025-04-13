@@ -1,10 +1,9 @@
 import { env } from "~/env";
-import { and, asc, eq, inArray, isNotNull, or } from "drizzle-orm";
-import { nexus, ranks, xp } from "~/packages/db/schema/public";
+import { and, eq, inArray, isNotNull, or } from "drizzle-orm";
+import { nexus, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { unstable_cache as cache } from "next/cache";
 import { cookies } from "next/headers";
-import checkDiscordAccountAge from "@/utils/checkDiscordAccountAge";
 import { privyClient } from "../clients/privy";
 import { pinataClient } from "../clients/pinata";
 import {
@@ -13,6 +12,7 @@ import {
 	nounDelegates,
 } from "~/packages/db/schema/indexer";
 import { level } from "@/utils/level";
+import { toast } from "@/components/Toasts";
 
 export async function getAuthenticatedUser() {
 	const token = (await cookies()).get("privy-id-token");
@@ -36,29 +36,7 @@ export async function getAuthenticatedUser() {
 
 		try {
 			if (!userNexus) {
-				const [fullPrivyUser, lowestRank, inServer] = await Promise.all([
-					privyClient.getUser(privyUser.id),
-					db.pgpool.query.ranks.findFirst({
-						orderBy: asc(ranks.place),
-					}),
-					privyUser.discord?.subject &&
-						// checkDiscordAccountAge(privyUser.discord.subject)
-						// 	? isInServer({ subject: privyUser.discord.subject })
-						// 	: undefined,
-						isInServer({ subject: privyUser.discord.subject }),
-				]);
-
-				let rank: number | null = null;
-
-				if (lowestRank) {
-					if (fullPrivyUser.discord && inServer) {
-						rank = lowestRank.id;
-					}
-
-					if (fullPrivyUser.farcaster) {
-						rank = lowestRank.id;
-					}
-				}
+				const fullPrivyUser = await privyClient.getUser(privyUser.id);
 
 				const image = await pinataClient.upload.url(
 					fullPrivyUser.farcaster?.pfp ??
@@ -68,7 +46,6 @@ export async function getAuthenticatedUser() {
 
 				await db.primary.insert(nexus).values({
 					id: privyUser.id,
-					rank,
 					name:
 						fullPrivyUser.farcaster?.displayName ??
 						fullPrivyUser.twitter?.name ??
@@ -96,10 +73,20 @@ export async function getAuthenticatedUser() {
 						},
 					},
 				});
-			}
-		} catch (e) {}
 
-const { currentLevel } = level(userNexus.xp);
+				if (!userNexus) {
+					toast.error("Error creating user");
+				}
+			}
+		} catch (e) {
+			toast.error(`Error creating user: ${e}`);
+		}
+
+		if (!userNexus) {
+			return;
+		}
+
+		const { currentLevel } = level(userNexus.xp);
 
 		return {
 			id: privyUser.id,
@@ -111,7 +98,7 @@ const { currentLevel } = level(userNexus.xp);
 			),
 			email: privyUser.email,
 			nexus: userNexus,
-level: currentLevel,
+			level: currentLevel,
 			votes:
 				currentLevel >= 15
 					? 10
