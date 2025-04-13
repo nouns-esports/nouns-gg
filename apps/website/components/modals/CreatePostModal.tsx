@@ -150,7 +150,6 @@ export default function CreatePostModal(props: {
 				</div>
 				<div className="flex items-center gap-4">
 					<LimitMeter
-						type="character"
 						value={new TextEncoder().encode(text).length}
 						min={0}
 						max={320}
