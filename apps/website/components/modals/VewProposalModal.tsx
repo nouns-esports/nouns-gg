@@ -1,14 +1,9 @@
 "use client";
 
 import { Modal, ToggleModal, useModal } from "@/components/Modal";
-import { Plus, X } from "lucide-react";
+import { X } from "lucide-react";
 import Link from "../Link";
-import {
-	CaretDown,
-	CaretUp,
-	ChartBarHorizontal,
-	TwitterLogo,
-} from "phosphor-react-sc";
+import { TwitterLogo } from "phosphor-react-sc";
 import Markdown from "../lexical/Markdown";
 import type { rounds } from "~/packages/db/schema/public";
 import { roundState } from "@/utils/roundState";
@@ -91,6 +86,7 @@ export default function ViewProposalModal(props: {
 								) : null}
 							</div>
 						),
+						url: null,
 					}[props.round.type as (typeof rounds.$inferSelect)["type"]]
 				}
 			</div>
@@ -144,8 +140,6 @@ export default function ViewProposalModal(props: {
 						votes={props.proposal.totalVotes}
 						selectedVotes={props.selectedVotes[props.proposal.id]}
 						userCanVote={props.userCanVote}
-						userRank={props.user?.nexus?.rank ?? undefined}
-						minRank={props.round.minVoterRank ?? undefined}
 						roundState={state}
 						addVote={props.addVote}
 						removeVote={props.removeVote}

@@ -33,6 +33,24 @@ export default function ProposalEditor(props: {
 	const [title, setTitle] = useState(proposal?.title ?? "");
 	const [image, setImage] = useState(proposal?.image ?? undefined);
 	const [video, setVideo] = useState(proposal?.video ?? undefined);
+	const [url, setUrl] = useState(proposal?.url ?? undefined);
+
+	const validUrl = useMemo(() => {
+		if (!url) return;
+
+		try {
+			const validUrl = new URL(url).toString();
+
+			if (props.round.linkRegex) {
+				const regex = new RegExp(props.round.linkRegex);
+				if (!regex.test(validUrl)) return;
+			}
+
+			return validUrl;
+		} catch (error) {
+			return;
+		}
+	}, [url]);
 
 	const validVideo = useMemo(() => {
 		if (!video) return;
@@ -71,22 +89,27 @@ export default function ProposalEditor(props: {
 	const createProposalAction = useAction(createProposal);
 	const updateProposalAction = useAction(updateProposal);
 
+	console.log(
+		title.length,
+		props.round.minTitleLength,
+		props.round.maxTitleLength,
+	);
+
 	return (
 		<div className="flex flex-col gap-8 w-full">
 			<div className="flex flex-col gap-2">
 				<div className="flex items-center justify-between">
 					<h2 className="font-luckiest-guy text-white text-2xl">Title</h2>
 					<LimitMeter
-						type="character"
 						value={title.length}
-						min={15}
-						max={100}
+						min={props.round.minTitleLength}
+						max={props.round.maxTitleLength}
 					/>
 				</div>
 				<TextInput
 					placeholder="Enter a title for your proposal"
 					onChange={(value) => {
-						if (value.length <= 100) setTitle(value);
+						if (value.length <= props.round.maxTitleLength) setTitle(value);
 					}}
 					value={title}
 				/>
@@ -118,10 +141,9 @@ export default function ProposalEditor(props: {
 										Caption
 									</h2>
 									<LimitMeter
-										type="word"
-										value={parsedMarkdown.split(" ").length - 1}
-										min={0}
-										max={300}
+										value={parsedMarkdown.length}
+										min={props.round.minDescriptionLength}
+										max={props.round.maxDescriptionLength}
 									/>
 								</div>
 								<div className="relative bg-grey-800 border border-grey-600 rounded-xl overflow-hidden p-2 min-h-60">
@@ -171,10 +193,9 @@ export default function ProposalEditor(props: {
 										Proposal
 									</h2>
 									<LimitMeter
-										type="word"
-										value={parsedMarkdown.split(" ").length - 1}
-										min={150}
-										max={Infinity}
+										value={parsedMarkdown.length}
+										min={props.round.minDescriptionLength}
+										max={props.round.maxDescriptionLength}
 									/>
 								</div>
 								<div className="relative bg-grey-800 border border-grey-600 rounded-xl overflow-hidden p-2 min-h-60">
@@ -254,10 +275,9 @@ export default function ProposalEditor(props: {
 										Caption
 									</h2>
 									<LimitMeter
-										type="word"
-										value={parsedMarkdown.split(" ").length - 1}
-										min={0}
-										max={300}
+										value={parsedMarkdown.length}
+										min={props.round.minDescriptionLength}
+										max={props.round.maxDescriptionLength}
 									/>
 								</div>
 								<div className="relative bg-grey-800 border border-grey-600 rounded-xl overflow-hidden p-2 min-h-60">
@@ -279,6 +299,40 @@ export default function ProposalEditor(props: {
 										}}
 									/>
 								</div>
+							</div>
+						</>
+					),
+					url: (
+						<>
+							<div className="flex flex-col gap-3 max-w-[400px]">
+								<div className="flex items-center justify-between mt-4">
+									<h2 className="font-luckiest-guy text-white text-2xl">
+										Cover Image
+									</h2>
+									{image ? (
+										<button
+											onClick={() => setImage(undefined)}
+											className="text-red flex items-center gap-1 hover:opacity-70 transition-opacity"
+										>
+											Remove
+											<Trash2 className="w-4 h-4" />
+										</button>
+									) : null}
+								</div>
+								<PinImage image={image} setImage={setImage} />
+							</div>
+							<div className="flex flex-col gap-2 max-w-[400px]">
+								<h2 className="font-luckiest-guy text-white text-2xl">
+									Link to Farcade Game
+								</h2>
+								<TextInput
+									placeholder="Link to the Farcade game"
+									onChange={(value) => setUrl(value)}
+									value={url ?? ""}
+								/>
+								{url && !validUrl ? (
+									<small className="text-red">Not a valid link</small>
+								) : null}
 							</div>
 						</>
 					),
@@ -304,11 +358,15 @@ export default function ProposalEditor(props: {
 					disabled={
 						createProposalAction.isPending ||
 						updateProposalAction.isPending ||
-						title.length < 15 ||
+						title.length < props.round.minTitleLength ||
+						title.length > props.round.maxTitleLength ||
+						parsedMarkdown.length < props.round.minDescriptionLength ||
+						parsedMarkdown.length > props.round.maxDescriptionLength ||
 						{
 							markdown: parsedMarkdown.split(" ").length - 1 < 150,
 							image: !image,
 							video: !video && !validVideo && !image,
+							url: !url && !validUrl && !image,
 						}[props.round.type]
 					}
 					onClick={async () => {
@@ -321,6 +379,7 @@ export default function ProposalEditor(props: {
 								content: parsedMarkdown.length > 0 ? editorState : undefined,
 								image: image,
 								video: validVideo,
+								url: validUrl,
 							});
 
 							if (result?.serverError) {
@@ -337,6 +396,7 @@ export default function ProposalEditor(props: {
 							round: props.round.id,
 							image: image,
 							video: validVideo,
+							url: validUrl,
 						});
 
 						if (result?.serverError) {
