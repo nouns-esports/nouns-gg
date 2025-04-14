@@ -181,8 +181,7 @@ export default function RankingSystemExplainer() {
 								<div className="flex flex-col gap-4">
 									<Card title="Purchases">
 										Players who purchase items from the shop earn 10 XP per
-										dollar spent. Any gold discounts applied to the order are
-										not included in this calculation.
+										dollar spent, with a max of 500 XP per order.
 									</Card>
 								</div>
 							),
