@@ -58,7 +58,7 @@ export async function POST(request: Request) {
 		await tx.insert(xp).values({
 			user: privyUser.id,
 			order: order.admin_graphql_api_id,
-			amount: xpAmount,
+			amount: xpAmount > 500 ? 500 : xpAmount,
 			timestamp: new Date(order.created_at),
 		});
 
