@@ -13,7 +13,7 @@ export const getLeaderboard = cache(
 	["getLeaderboard"],
 	{
 		tags: ["getLeaderboard"],
-		revalidate: 60 * 60 * 24,
+		revalidate: 60 * 24,
 	},
 );
 
@@ -21,16 +21,22 @@ export const getRank = cache(
 	async (input: { user: string }) => {
 		const [{ rank }] = await db.pgpool
 			.select({
-				rank: sql<number>`ROW_NUMBER() OVER (ORDER BY xp DESC)`,
+				rank: sql<number>`1 + COUNT(*)`,
 			})
 			.from(nexus)
-			.where(eq(nexus.id, input.user));
+			.where(
+				sql`${nexus.xp} > (
+					SELECT xp
+					FROM nexus
+					WHERE id = ${input.user}
+				)`,
+			);
 
 		return rank;
 	},
 	["getRank"],
 	{
 		tags: ["getRank"],
-		revalidate: 60 * 60 * 24,
+		revalidate: 60 * 24,
 	},
 );
