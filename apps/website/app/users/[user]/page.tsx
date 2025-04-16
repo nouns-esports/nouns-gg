@@ -8,34 +8,26 @@ import { notFound } from "next/navigation";
 import { Level } from "@/components/Level";
 import SettingsModal from "@/components/modals/SettingsModal";
 import { ToggleModal } from "@/components/Modal";
-import RankChart from "@/components/RankChart";
-import { getCurrentRanks } from "@/server/queries/ranks";
-import { getUserRankings } from "@/server/queries/rankings";
 import { BarChart, Trophy } from "lucide-react";
 import { getAchievementsProgress } from "@/server/queries/achievements";
 import UserStatsModal from "@/components/modals/UserStatsModal";
-import { twMerge } from "tailwind-merge";
 import AchievementsModal from "@/components/modals/AchievementsModal";
-import CheckDiscordServer from "@/components/CheckDiscordServer";
-import Link from "@/components/Link";
 
 export default async function User(props: {
 	params: Promise<{ user: string }>;
 }) {
 	const params = await props.params;
 
-	const [authenticatedUser, user, ranks] = await Promise.all([
+	const [authenticatedUser, user] = await Promise.all([
 		getAuthenticatedUser(),
 		getUser({ user: decodeURIComponent(params.user) }),
-		getCurrentRanks(),
 	]);
 
 	if (!user) {
 		return notFound();
 	}
 
-	const [userRankings, userStats, achievementProgress] = await Promise.all([
-		getUserRankings({ user: user.id }),
+	const [userStats, achievementProgress] = await Promise.all([
 		getUserStats({ user: user.id }),
 		authenticatedUser
 			? getAchievementsProgress({ user: authenticatedUser })
@@ -59,14 +51,6 @@ export default async function User(props: {
 										<h1 className="text-white text-2xl leading-none font-luckiest-guy">
 											{user.name}
 										</h1>
-										{user.rank ? (
-											<img
-												alt={user.rank.name}
-												src={user.rank.image}
-												className="h-6 w-6 object-contain"
-												title={user.rank.name}
-											/>
-										) : null}
 									</div>
 									{user.bio ? <p className="line-clamp-1">{user.bio}</p> : null}
 								</div>
@@ -88,28 +72,7 @@ export default async function User(props: {
 								) : null}
 							</div>
 						</div>
-						<div
-							className={twMerge(
-								"flex flex-col gap-4  w-full",
-								user.rank !== null && userRankings.length > 0 && "h-60",
-							)}
-						>
-							{user.rank !== null ? (
-								<RankChart userRankings={userRankings} ranks={ranks} />
-							) : user.id === authenticatedUser?.id ? (
-								<div className="bg-black/30 border-grey-600 border w-full h-full rounded-xl flex flex-col gap-4 items-center justify-center">
-									<p>
-										Join the{" "}
-										<Link href="/discord" newTab className="text-red">
-											Discord server
-										</Link>{" "}
-										to enter the Nexus
-									</p>
-									<CheckDiscordServer user={authenticatedUser} />
-								</div>
-							) : null}
-							<Level xp={user.xp} />
-						</div>
+						<Level xp={user.xp} />
 					</div>
 					{user.id === authenticatedUser?.id ? (
 						<div className="flex items-center gap-4">

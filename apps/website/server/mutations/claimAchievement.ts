@@ -1,6 +1,6 @@
 "use server";
 
-import { onlyRanked } from ".";
+import { onlyUser } from ".";
 import { z } from "zod";
 import { nexus, notifications, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
@@ -9,7 +9,7 @@ import { revalidatePath } from "next/cache";
 import { checkAchievements } from "../queries/achievements";
 import { achievements } from "../achievements";
 
-export const claimAchievement = onlyRanked
+export const claimAchievement = onlyUser
 	.schema(
 		z.object({
 			id: z.string(),

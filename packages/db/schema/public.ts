@@ -345,6 +345,15 @@ export const quests = pgTable("quests", (t) => ({
 	end: t.timestamp({ mode: "date" }),
 	xp: t.integer().notNull(),
 	actions: t.text().array().notNull(),
+	// Use suspense boundry to render completion
+	_actions: t.jsonb().array().$type<
+		Array<{
+			id: string;
+			description: string;
+			highlights: string[];
+			highlightPositions: number[];
+		}>
+	>(),
 	actionInputs: t
 		.jsonb("action_inputs")
 		.array()

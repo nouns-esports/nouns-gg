@@ -1,21 +1,15 @@
 import Link from "@/components/Link";
-import { getAuthenticatedUser, isInServer } from "@/server/queries/users";
+import { getAuthenticatedUser } from "@/server/queries/users";
 import SignInButton from "./SignInButton";
 import {
 	Shapes,
 	ShoppingBag,
-	ArrowRight,
 	Trophy,
-	Handshake,
 	Gem,
-	MessageCircle,
 	CalendarDays,
-	Settings2,
 	List,
-	Plus,
 	ShoppingCart,
 	Coins,
-	Users,
 } from "lucide-react";
 import Banner from "./Banner";
 import Menu from "./Menu";
@@ -24,18 +18,12 @@ import Notifications from "./Notifications";
 import GoldModal from "./modals/GoldModal";
 import { ToggleModal } from "./Modal";
 import CartModal from "./modals/CartModal";
-import EnterNexusModal from "./modals/EnterNexusModal";
 import { formatGold } from "~/packages/utils/formatGold";
 
 export default async function Header() {
 	const user = await getAuthenticatedUser();
 
 	const notifications = user ? await getNotifications({ user: user.id }) : [];
-
-	const inServer =
-		!user?.nexus?.rank && user?.discord?.subject
-			? await isInServer({ subject: user.discord.subject })
-			: false;
 
 	return (
 		<>
@@ -176,12 +164,6 @@ export default async function Header() {
 			{user ? <GoldModal user={user} /> : null}
 			{user?.nexus?.carts ? (
 				<CartModal user={user.id} cart={user.nexus.carts} />
-			) : null}
-			{!user?.nexus?.rank ? (
-				<EnterNexusModal
-					linkedFarcaster={!!user?.farcaster?.fid}
-					inServer={inServer}
-				/>
 			) : null}
 		</>
 	);

@@ -1,50 +1,15 @@
 import Link from "@/components/Link";
-import {
-	getLeaderboard,
-	getLeaderboardPosition,
-} from "@/server/queries/rankings";
+import { getLeaderboard, getRank } from "@/server/queries/leaderboard";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import { CaretUp, CaretDown } from "phosphor-react-sc";
-import Countdown from "@/components/Countdown";
 import { twMerge } from "tailwind-merge";
 import { ToggleModal } from "@/components/Modal";
 import { Image, Info } from "lucide-react";
 import ShareRankingModal from "@/components/modals/ShareRankingModal";
-import { nextFriday, set } from "date-fns";
 import { env } from "~/env";
 import type { Metadata } from "next";
-import { format, toZonedTime } from "date-fns-tz";
 import RankingSystemExplainer from "@/components/modals/RankingSystemExplainer";
-
-function getNextFridayAt1350CST() {
-	const now = new Date();
-	const currentDay = now.getDay();
-
-	// Convert current time to UTC
-	const currentHourUTC = now.getUTCHours();
-
-	let targetDate: Date;
-
-	if (currentDay === 5) {
-		// 18:50 UTC = 13:50 CST (5 hour difference)
-		if (
-			currentHourUTC < 18 ||
-			(currentHourUTC === 18 && now.getUTCMinutes() < 50)
-		) {
-			// If it's before 18:50 UTC (13:50 CST), use today
-			targetDate = new Date();
-		} else {
-			// If it's after 18:50 UTC (13:50 CST), use next Friday
-			targetDate = nextFriday(now);
-		}
-	} else {
-		// If it's not Friday, use next Friday
-		targetDate = nextFriday(now);
-	}
-
-	// Set the target time to 18:50 UTC (13:50 CST)
-	return new Date(targetDate.setUTCHours(18, 50, 0, 0));
-}
+import { level } from "@/utils/level";
 
 export async function generateMetadata(props: {
 	searchParams: Promise<{
@@ -97,10 +62,10 @@ export async function generateMetadata(props: {
 export default async function Leaderboard() {
 	const user = await getAuthenticatedUser();
 
-	const [leaderboard, userPosition] = await Promise.all([
+	const [leaderboard, userRank] = await Promise.all([
 		getLeaderboard(),
 		user
-			? getLeaderboardPosition({
+			? getRank({
 					user: user.id,
 				})
 			: undefined,
@@ -121,19 +86,8 @@ export default async function Leaderboard() {
 								gold to spend on exclusive items and experiences in the shop.
 							</p>
 						</div>
-						<div className="flex flex-col items-center bg-grey-800 rounded-xl p-2 px-4 gap-2 max-sm:flex-row">
-							<h2 className="text-nowrap text-red flex items-center gap-1.5">
-								<div className="w-2 h-2 bg-red rounded-full animate-pulse" />
-								Updates in
-							</h2>
-							<div className="flex items-center gap-2 text-nowrap">
-								<p className="text-white">
-									<Countdown date={getNextFridayAt1350CST()} />
-								</p>
-							</div>
-						</div>
 					</div>
-					{userPosition ? (
+					{/* {userRank ? (
 						<div className="flex flex-col gap-2">
 							<div className="flex gap-2 justify-between items-center">
 								<p className="text-white text-lg font-semibold">
@@ -149,22 +103,22 @@ export default async function Leaderboard() {
 							</div>
 
 							<LeaderboardPosition
-								position={userPosition.position}
-								user={userPosition.user}
-								rank={userPosition.rank}
-								gold={Number(userPosition.gold?.amount) ?? 0}
+								position={userRank.rank}
+								user={user}
+								rank={user.rank}
+								gold={Number(user.gold?.amount) ?? 0}
 								diff={
-									userPosition.previousPosition
-										? userPosition.previousPosition - userPosition.position
+									userRank.previousPosition
+										? userRank.previousPosition - userRank.rank
 										: 0
 								}
 							/>
 						</div>
-					) : null}
+					) : null} */}
 
 					<div className="relative flex flex-col gap-2">
 						<div className="flex gap-2 items-center justify-between">
-							<p className="text-white text-lg font-semibold">This Week</p>
+							<p className="text-white text-lg font-semibold">All Time</p>
 							<ToggleModal
 								id="ranking-system-explainer"
 								className="flex items-center gap-1.5 text-red hover:text-red/70 transition-colors"
@@ -173,51 +127,32 @@ export default async function Leaderboard() {
 								How do I rank up?
 							</ToggleModal>
 						</div>
-						{leaderboard.map((ranking, index) => {
-							if (!ranking.user) return;
-
+						{leaderboard.map((user, index) => {
 							const position = index + 1;
 
 							return (
 								<LeaderboardPosition
-									key={ranking.id}
+									key={user.id}
 									position={position}
-									user={ranking.user}
-									rank={ranking.rank}
-									gold={Number(ranking.gold?.amount) ?? 0}
-									diff={
-										ranking.previousPosition
-											? ranking.previousPosition - position
-											: 0
-									}
+									user={user}
 								/>
 							);
 						})}
 					</div>
 				</div>
 			</div>
-			{userPosition ? <ShareRankingModal ranking={userPosition} /> : null}
+			{/* {userPosition ? <ShareRankingModal ranking={userPosition} /> : null} */}
 			<RankingSystemExplainer />
 		</>
 	);
 }
 
 function LeaderboardPosition(props: {
+	user: NonNullable<Awaited<ReturnType<typeof getLeaderboard>>[number]>;
 	position: number;
-	user: {
-		id: string;
-		username: string | null;
-		name: string;
-		image: string;
-	};
-	rank: {
-		id: number;
-		name: string;
-		image: string;
-	} | null;
-	gold: number;
-	diff: number;
 }) {
+	const { currentLevel } = level(props.user.xp);
+
 	return (
 		<Link
 			href={`/users/${props.user.username ?? props.user.id}`}
@@ -239,7 +174,7 @@ function LeaderboardPosition(props: {
 							{props.user.name}
 						</p>
 					</div>
-					{props.diff !== 0 ? (
+					{/* {props.diff !== 0 ? (
 						<div
 							className={twMerge(
 								"flex items-center gap-1",
@@ -253,11 +188,11 @@ function LeaderboardPosition(props: {
 							)}
 							{Math.abs(props.diff)}
 						</div>
-					) : null}
+					) : null} */}
 				</div>
 			</div>
 			<div className="flex gap-8 max-sm:gap-4 items-center">
-				{props.gold > 0 ? (
+				{/* {props.gold > 0 ? (
 					<div className="flex justify-center gap-1.5 items-center">
 						<img
 							alt="Gold coin"
@@ -270,15 +205,18 @@ function LeaderboardPosition(props: {
 								: Math.floor(props.gold)}
 						</p>
 					</div>
-				) : null}
-				{props.rank ? (
+				) : null} */}
+				{/* {props.rank ? (
 					<img
 						alt={props.rank.name}
 						title={props.rank.name}
 						className="w-6 h-6 object-contain"
 						src={props.rank.image}
 					/>
-				) : null}
+				) : null} */}
+				<p className="bg-green text-black/70 font-semibold rounded-md text-sm py-1 px-2">
+					LVL {currentLevel}
+				</p>
 			</div>
 		</Link>
 	);

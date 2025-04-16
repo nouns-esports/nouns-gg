@@ -21,19 +21,3 @@ export const onlyUser = actionClient.use(async ({ next }) => {
 		},
 	});
 });
-
-export const onlyRanked = onlyUser.use(async ({ next, ctx }) => {
-	if (!ctx.user.nexus?.rank) {
-		throw new Error("User has not entered the Nexus");
-	}
-
-	return next();
-});
-
-export const onlyAdmin = onlyUser.use(async ({ next, ctx }) => {
-	if (!ctx.user.nexus?.admin) {
-		throw new Error("You must be an admin to complete this action");
-	}
-
-	return next();
-});

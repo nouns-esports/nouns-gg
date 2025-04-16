@@ -8,14 +8,15 @@ import {
 	nexus,
 } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { and, eq, inArray, sql } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
-import { onlyRanked } from ".";
+import { onlyUser } from ".";
 
 import { getUserHasCredential } from "../queries/users";
+import { level } from "@/utils/level";
 
-export const castVotes = onlyRanked
+export const castVotes = onlyUser
 	.schema(
 		z.object({
 			round: z.number(),
@@ -40,12 +41,12 @@ export const castVotes = onlyRanked
 			throw new Error("Round not found");
 		}
 
-		if (
-			round.minVoterRank &&
-			ctx.user.nexus?.rank &&
-			ctx.user.nexus.rank.place < round.minVoterRank.place
-		) {
-			throw new Error("You are not eligible to vote in this round");
+		if (round.minVoterRank) {
+			const { currentLevel } = level(ctx.user.nexus?.xp ?? 0);
+
+			if (currentLevel < 15) {
+				throw new Error("You are not eligible to vote in this round");
+			}
 		}
 
 		if (round.voterCredential) {
@@ -98,7 +99,18 @@ export const castVotes = onlyRanked
 					throw new Error("Enter the Nexus to vote");
 				}
 
-				if (votesUsed + vote.count > ctx.user.nexus.rank.votes) {
+				const { currentLevel } = level(ctx.user.nexus.xp);
+
+				const maxVotes =
+					currentLevel >= 15
+						? 10
+						: currentLevel >= 10
+							? 5
+							: currentLevel >= 5
+								? 3
+								: 1;
+
+				if (votesUsed + vote.count > maxVotes) {
 					throw new Error("You have used all your votes");
 				}
 

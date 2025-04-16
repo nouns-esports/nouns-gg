@@ -25,7 +25,6 @@ export async function getAuthenticatedUser() {
 		let userNexus = await db.pgpool.query.nexus.findFirst({
 			where: eq(nexus.id, privyUser.id),
 			with: {
-				rank: true,
 				carts: {
 					with: {
 						product: true,
@@ -65,7 +64,6 @@ export async function getAuthenticatedUser() {
 				userNexus = await db.primary.query.nexus.findFirst({
 					where: eq(nexus.id, privyUser.id),
 					with: {
-						rank: true,
 						carts: {
 							with: {
 								product: true,

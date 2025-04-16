@@ -213,7 +213,7 @@ export default function Proposals(props: {
 													You must be level 15 or higher to vote
 												</p>
 											</div>
-											<Button href="/user">View Nexus</Button>
+											<Button href="/user">View Profile</Button>
 										</>
 									);
 								}
@@ -451,9 +451,9 @@ export default function Proposals(props: {
 													className="h-6 w-6 rounded-full"
 												/>
 												{proposal.user.name}
-												{/* <p className="bg-green text-black/60 font-semibold rounded-md text-xs py-0.5 px-1.5">
+												<p className="bg-green text-black/60 font-semibold rounded-md text-xs py-0.5 px-1.5">
 													LVL {level(proposal.user.xp).currentLevel}
-												</p> */}
+												</p>
 											</Link>
 										) : (
 											<div />

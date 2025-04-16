@@ -1,14 +1,14 @@
 "use server";
 
 import { z } from "zod";
-import { onlyRanked } from ".";
+import { onlyUser } from ".";
 import { nexus, notifications, quests, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { eq, sql } from "drizzle-orm";
 import { getAction } from "../queries/quests";
 import { revalidatePath } from "next/cache";
 
-export const completeQuest = onlyRanked
+export const completeQuest = onlyUser
 	.schema(
 		z.object({
 			quest: z.number(),

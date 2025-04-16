@@ -1,14 +1,10 @@
-import Button from "@/components/Button";
 import Link from "@/components/Link";
 import Image from "next/image";
-import NounsPartnerImage from "@/public/partners/nouns/wordmark.png";
-import MatchaPartnerImage from "@/public/partners/matcha/wordmark.svg";
-import AdidasPartnerImage from "@/public/partners/adidas/wordmark.svg";
 import Gallery from "@/components/Gallery";
 import { getVideos } from "@/server/queries/youtube";
 import Attribution from "@/components/Attribution";
 import { getTrendingPosts } from "@/server/queries/discussion";
-import { ArrowRight, ChevronUp, Play, PlayCircle } from "lucide-react";
+import { ArrowRight, ChevronUp } from "lucide-react";
 import { getRounds } from "@/server/queries/rounds";
 import { getCreator } from "@/server/queries/creations";
 import RoundCard from "@/components/RoundCard";
@@ -17,20 +13,15 @@ import { getEvents } from "@/server/queries/events";
 import { getQuests } from "@/server/queries/quests";
 import QuestCard from "@/components/QuestCard";
 import EventCard from "@/components/EventCard";
-import { ToggleModal } from "@/components/Modal";
-import { getArticles } from "@/server/queries/articles";
-import Countdown from "@/components/Countdown";
 
 export default async function Home() {
-	const [user, videos, trendingPosts, rounds, events, articles] =
-		await Promise.all([
-			getAuthenticatedUser(),
-			getVideos(),
-			getTrendingPosts(),
-			getRounds({ limit: 4 }),
-			getEvents({ limit: 3 }),
-			getArticles(),
-		]);
+	const [user, videos, trendingPosts, rounds, events] = await Promise.all([
+		getAuthenticatedUser(),
+		getVideos(),
+		getTrendingPosts(),
+		getRounds({ limit: 4 }),
+		getEvents({ limit: 3 }),
+	]);
 
 	const quests = await getQuests({
 		limit: 5,
@@ -43,35 +34,6 @@ export default async function Home() {
 
 	return (
 		<div className="flex flex-col w-full items-center">
-			<div className="relative w-full h-screen flex flex-col items-center justify-center">
-				<video
-					src="https://ipfs.nouns.gg/ipfs/bafybeihciy2yrpxczsitnl2732j5sfccx7bqw6swon6ae7tolaaa3mk7jy"
-					className="absolute -z-10 top-0 left-0 w-full h-full object-cover brightness-50 blur-md"
-					autoPlay
-					muted
-					loop
-				/>
-				<div className="absolute z-20 top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-16 max-sm:gap-4">
-					<img
-						src="https://ipfs.nouns.gg/ipfs/bafkreigviswqen772eh2ofckzk7lzju52onnifqdlbis3zap4faceqxxs4"
-						className="h-60 object-contain w-auto"
-					/>
-					<div className="flex items-center text-white font-semibold text-lg gap-8 max-sm:gap-4">
-						<Button href="/events/nounsvitational?tab=shop">
-							Get VIP Pass
-						</Button>
-						<Link
-							href="https://www.youtube.com/watch?v=6FIxf58Zv60"
-							className="flex gap-2 items-center hover:opacity-70 transition-opacity"
-							newTab
-						>
-							<PlayCircle className="w-6 h-6" />
-							Watch Trailer
-						</Link>
-					</div>
-				</div>
-				<div className="absolute -bottom-8 left-0 w-full h-64 bg-gradient-to-t from-black to-transparent" />
-			</div>
 			<div className="flex flex-col w-full gap-16 mb-16 max-sm:mb-8 max-lg:gap-12 pt-32 max-xl:pt-28 max-sm:pt-20 max-w-[1920px]">
 				<div className="flex gap-4 h-[30vw] max-h-[600px] max-lg:h-auto max-lg:max-h-none w-full px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 max-lg:flex-col">
 					<Gallery
