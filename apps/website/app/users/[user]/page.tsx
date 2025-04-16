@@ -56,15 +56,14 @@ export default async function User(props: {
 								</div>
 							</div>
 							<div className="flex items-center gap-4">
-								{user.id !== authenticatedUser?.id ? (
-									<ToggleModal
-										id="user-stats"
-										className="flex items-center gap-1.5 text-red hover:text-red/80 transition-colors"
-									>
-										<BarChart className="w-4 h-4" />
-										Stats
-									</ToggleModal>
-								) : null}
+								<ToggleModal
+									id="user-stats"
+									className="flex items-center gap-1.5 text-red hover:text-red/80 transition-colors"
+								>
+									<BarChart className="w-4 h-4" />
+									Stats
+								</ToggleModal>
+
 								{user.id === authenticatedUser?.id ? (
 									<ToggleModal id="settings">
 										<Button size="sm">Settings</Button>
@@ -74,25 +73,6 @@ export default async function User(props: {
 						</div>
 						<Level xp={user.xp} />
 					</div>
-					{user.id === authenticatedUser?.id ? (
-						<div className="flex items-center gap-4">
-							<ToggleModal
-								id="achievements"
-								className="flex justify-center items-center gap-2 text-red hover:bg-grey-600 transition-colors bg-grey-800 rounded-xl w-full h-full p-4"
-							>
-								<Trophy className="w-4 h-4" />
-								Achievements
-							</ToggleModal>
-
-							<ToggleModal
-								id="user-stats"
-								className="flex justify-center items-center gap-2 text-red hover:bg-grey-600 transition-colors bg-grey-800 rounded-xl w-full h-full p-4"
-							>
-								<BarChart className="w-4 h-4" />
-								Stats
-							</ToggleModal>
-						</div>
-					) : null}
 					{/* <div className="flex flex-col gap-4">
 						<h2 className="text-white text-3xl font-luckiest-guy leading-none">
 							Activity
@@ -100,42 +80,10 @@ export default async function User(props: {
 						Casts, Proposals creations, votes, quest completions, etc. (with filters)
 					</div> 
 					*/}
-
-					{/* <div className="bg-grey-800 relative rounded-xl flex flex-col gap-4 p-4 h-[400px] col-span-2 max-lg:col-span-4">
-						<div className="flex items-center justify-between">
-							<h2 className="text-white text-2xl font-bebas-neue leading-none">
-								Achievements
-							</h2>
-							<div className="flex items-center gap-3">
-								<p className="text-white">
-									{completed}/{Object.keys(achievementProgress).length}{" "}
-									Completed
-								</p>
-								<ProgressCircle
-									value={completed}
-									min={0}
-									size={24}
-									max={Object.keys(achievementProgress).length}
-								/>
-							</div>
-						</div>
-						<div className="bg-grey-600 rounded-xl relative w-full h-full overflow-hidden">
-							<Achievements
-								user={user}
-								achievementProgress={achievementProgress}
-							/>
-						</div>
-					</div> */}
 				</div>
 			</div>
 			{authenticatedUser && <SettingsModal user={authenticatedUser} />}
 			<UserStatsModal user={user} stats={userStats} />
-			{achievementProgress && authenticatedUser && (
-				<AchievementsModal
-					user={authenticatedUser}
-					achievementProgress={achievementProgress}
-				/>
-			)}
 		</>
 	);
 }
