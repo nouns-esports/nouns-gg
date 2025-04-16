@@ -124,7 +124,7 @@ export default async function Leaderboard() {
 								className="flex items-center gap-1.5 text-red hover:text-red/70 transition-colors"
 							>
 								<Info className="w-4 h-4" />
-								How do I rank up?
+								How do I earn XP?
 							</ToggleModal>
 						</div>
 						{leaderboard.map((user, index) => {

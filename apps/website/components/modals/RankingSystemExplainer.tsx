@@ -75,58 +75,18 @@ export default function RankingSystemExplainer() {
 							default: (
 								<div className="flex flex-col gap-4 bg-grey-800 rounded-xl p-4 max-sm:mb-10">
 									<p>
-										The Nexus is a ranking system that highlights rewards the
-										most engaged community memebers.
+										The leaderboard highlights the most engaged community
+										memebers. Earn XP by participating in events, rounds,
+										quests, and more.
 									</p>
-
-									<div className="flex flex-col gap-2">
-										<h3 className="text-white font-semibold">
-											Weekly Rankings
-										</h3>
-										<p>
-											The leaderboard refreshes every Friday at 1:50 PM CST.
-											Each player earns a score based on the total XP they've
-											earned during the week, averaged with their score from the
-											previous week. This system not only ensures that new
-											players can feasibly reach the top, but it also means
-											existing players won't immediatly get deranked if they
-											miss a week. Stay active to maintain or improve your rank!
-										</p>
-									</div>
-
 									<div className="flex flex-col gap-2">
 										<h3 className="text-white font-semibold">Earning Gold</h3>
 										<p>
-											Players in the top positions earn gold each week. Gold can
-											be used to purchase exclusive items, experiences, and
-											merch in the shop. The higher your rank, the more gold
-											you'll receive! The value of gold is fixed at 1 Gold =
-											$0.01.
-										</p>
-									</div>
-
-									<div className="flex flex-col gap-2">
-										<h3 className="text-white font-semibold">
-											Rank Progression
-										</h3>
-										<p>
-											The rank you recieve is based on your positions percentile
-											within the leaderboard. There are a total of 9 ranks
-											including{" "}
-											<span className="text-blue-700 font-semibold">
-												Explorer I, II, III
-											</span>
-											,{" "}
-											<span className="text-purple font-semibold">
-												Challenger I, II, III
-											</span>
-											, and{" "}
-											<span className="text-red font-semibold">
-												Champion I, II, III
-											</span>
-											. Each rank comes with its own badge that displays next to
-											your name on the leaderboard. Higher ranks unlock
-											additional perks and recognition within the community.
+											The top 100 XP earners each week are awarded their share
+											of 50k Gold. Gold can be used to purchase exclusive items,
+											experiences, and merch in the shop. The higher your
+											position on the leaderboard, the more gold you'll receive!
+											The value of gold is fixed at 1 Gold = $0.01.
 										</p>
 									</div>
 								</div>
@@ -134,9 +94,8 @@ export default function RankingSystemExplainer() {
 							rounds: (
 								<div className="flex flex-col gap-4">
 									<Card title="Voting" xp={50}>
-										Earn 50 XP for each vote you cast in a round. Higher ranks
-										are allocated more votes, so staying active in rounds can be
-										a good way to maintain your rank.
+										Earn 50 XP for each vote you cast in a round. Higher levels
+										are allocated more votes.
 									</Card>
 									<Card title="Recieving Votes" xp={5}>
 										Proposers recieve 5 XP for each vote someone places on their
@@ -151,9 +110,9 @@ export default function RankingSystemExplainer() {
 							quests: (
 								<div className="flex flex-col gap-4">
 									<Card title="Completing Quests">
-										Quests are a great way to climb the ranks fast. Each quest
-										completed earns you a certain amount of XP based on its
-										difficulty.
+										Quests are a great way to climb the leaderboard fast. Each
+										quest completed earns you a certain amount of XP based on
+										its difficulty.
 									</Card>
 								</div>
 							),
