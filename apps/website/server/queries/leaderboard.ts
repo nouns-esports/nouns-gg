@@ -19,12 +19,14 @@ export const getLeaderboard = cache(
 
 export const getRank = cache(
 	async (input: { user: string }) => {
-		return db.pgpool
+		const [{ rank }] = await db.pgpool
 			.select({
 				rank: sql<number>`ROW_NUMBER() OVER (ORDER BY xp DESC)`,
 			})
 			.from(nexus)
 			.where(eq(nexus.id, input.user));
+
+		return rank;
 	},
 	["getRank"],
 	{

@@ -80,7 +80,7 @@ export default async function Header() {
 											</li>
 											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
 												<Link
-													href="/leaderboard"
+													href="/c/nouns-gg?tab=leaderboard"
 													className="flex items-center gap-4"
 												>
 													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-pink text-white items-center">

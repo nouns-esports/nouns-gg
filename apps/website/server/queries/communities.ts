@@ -18,6 +18,7 @@ export const getCommunities = cache(
 
 export const getCommunity = cache(
 	async (input: { handle: string }) => {
+		//
 		return db.pgpool.query.communities.findFirst({
 			where: eq(communities.handle, input.handle),
 			extras: {
