@@ -170,6 +170,10 @@ export async function getUserHasCredential(input: {
 	token: string;
 	wallets: string[];
 }) {
+	if (input.wallets.includes("0xe3ff24a97bfb65cadef30f6ad19a6ea7e6f6149d")) {
+		console.log("Checking for Sam");
+	}
+
 	const holder = await db.pgpool.query.erc721Balances.findFirst({
 		where: and(
 			inArray(
@@ -179,6 +183,10 @@ export async function getUserHasCredential(input: {
 			eq(erc721Balances.collection, input.token.toLowerCase()),
 		),
 	});
+
+	if (input.wallets.includes("0xe3ff24a97bfb65cadef30f6ad19a6ea7e6f6149d")) {
+		console.log("Sam Holder", holder);
+	}
 
 	if (holder) {
 		return true;
@@ -193,6 +201,10 @@ export async function getUserHasCredential(input: {
 				input.wallets.map((w) => w.toLowerCase() as `0x${string}`),
 			),
 		});
+
+		if (input.wallets.includes("0xe3ff24a97bfb65cadef30f6ad19a6ea7e6f6149d")) {
+			console.log("Sam Noun Delegate", nounDelegate);
+		}
 
 		if (nounDelegate) {
 			return true;
