@@ -8,14 +8,13 @@ import {
 	nexus,
 } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq, inArray, sql } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { onlyUser } from ".";
 
 import { getUserHasCredential } from "../queries/users";
 import { level } from "@/utils/level";
-import { nounDelegates } from "~/packages/db/schema/indexer";
 
 export const castVotes = onlyUser
 	.schema(
@@ -42,28 +41,11 @@ export const castVotes = onlyUser
 			throw new Error("Round not found");
 		}
 
-		let nounDelegate = false;
-
 		if (round.minVoterRank) {
 			const { currentLevel } = level(ctx.user.nexus?.xp ?? 0);
 
 			if (currentLevel < 15) {
-				if (round.handle === "nouns-traits" || round.handle === "nouns-heads") {
-					const isDelegate = await db.primary.query.nounDelegates.findFirst({
-						where: inArray(
-							nounDelegates.to,
-							ctx.user.wallets.map(
-								(w) => w.address.toLowerCase() as `0x${string}`,
-							),
-						),
-					});
-
-					if (!isDelegate) {
-						throw new Error("You are not eligible to vote in this round");
-					}
-
-					nounDelegate = true;
-				} else throw new Error("You are not eligible to vote in this round");
+				throw new Error("You are not eligible to vote in this round");
 			}
 		}
 
@@ -122,7 +104,7 @@ export const castVotes = onlyUser
 				const { currentLevel } = level(ctx.user.nexus.xp);
 
 				const maxVotes =
-					nounDelegate || currentLevel >= 15
+					currentLevel >= 15
 						? 10
 						: currentLevel >= 10
 							? 5

@@ -26,7 +26,6 @@ export default function Proposals(props: {
 		priorVotes: number;
 		hasProposerCredential: boolean;
 		hasVoterCredential: boolean;
-		isNounsDelegate: boolean;
 	};
 	openProposal?: number;
 }) {
@@ -128,8 +127,8 @@ export default function Proposals(props: {
 									!props.user.hasProposerCredential
 								) {
 									if (
-										props.round.proposerCredential.toLowerCase() ===
-										"0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03"
+										props.round.proposerCredential ===
+										"0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03"
 									) {
 										return (
 											<>
@@ -144,8 +143,8 @@ export default function Proposals(props: {
 									}
 
 									if (
-										props.round.proposerCredential.toLowerCase() ===
-										"0x4b10701bfd7bfedc47d50562b76b436fbb5bdb3b"
+										props.round.proposerCredential ===
+										"0x4b10701Bfd7BFEdc47d50562b76b436fbB5BdB3B"
 									) {
 										return (
 											<>
@@ -207,22 +206,6 @@ export default function Proposals(props: {
 								}
 
 								if (props.round.minVoterRank && props.user.level < 15) {
-									if (
-										props.round.handle === "nouns-traits" ||
-										props.round.handle === "nouns-heads"
-									) {
-										return (
-											<>
-												<div className="flex items-center gap-2">
-													<p className="text-white">
-														Must be lvl 15 or a Noun delegate to vote
-													</p>
-												</div>
-												<Button href="/user">View Profile</Button>
-											</>
-										);
-									}
-
 									return (
 										<>
 											<div className="flex items-center gap-2">
@@ -240,8 +223,8 @@ export default function Proposals(props: {
 									!props.user.hasVoterCredential
 								) {
 									if (
-										props.round.voterCredential.toLowerCase() ===
-										"0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03"
+										props.round.voterCredential ===
+										"0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03"
 									) {
 										return (
 											<>
@@ -256,8 +239,8 @@ export default function Proposals(props: {
 									}
 
 									if (
-										props.round.voterCredential.toLowerCase() ===
-										"0x4b10701bfd7bfedc47d50562b76b436fbb5bdb3b"
+										props.round.voterCredential ===
+										"0x4b10701Bfd7BFEdc47d50562b76b436fbB5BdB3B"
 									) {
 										return (
 											<>
@@ -500,10 +483,6 @@ export default function Proposals(props: {
 												index={index}
 												roundState={state}
 												userCanVote={
-													(props.round.handle === "nouns-heads" ||
-													props.round.handle === "nouns-traits"
-														? (props.user?.isNounsDelegate ?? false)
-														: true) &&
 													!!props.user?.nexus?.rank &&
 													props.user.votes > props.user.priorVotes
 												}

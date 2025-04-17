@@ -195,29 +195,6 @@ export default async function Round(props: {
 				})
 			: false;
 
-	if (
-		user &&
-		(user.id === "did:privy:clx8g9mui0c1k10947grzks2a" ||
-			user.id === "did:privy:cm0qf63u900d9rtdzoqa3bkw2")
-	) {
-		for (const wallet of user.wallets) {
-			console.log(
-				wallet.address,
-				wallet.address.toLowerCase(),
-				"Bix: 0x073f0dc58e9989c827ba5b7b35570b7315652e63",
-				"Sam: 0xe3ff24a97bfb65cadef30f6ad19a6ea7e6f6149d",
-			);
-		}
-	}
-
-	const isNounsDelegate =
-		user && (round.handle === "nouns-traits" || round.handle === "nouns-heads")
-			? await getUserHasCredential({
-					token: "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03",
-					wallets: user.wallets.map((w) => w.address.toLowerCase()),
-				})
-			: false;
-
 	return (
 		<div className="flex flex-col w-full items-center">
 			<div className="relative flex flex-col justify-center gap-4 w-full pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 max-w-[1920px]">
@@ -476,7 +453,6 @@ export default async function Round(props: {
 										priorVotes,
 										hasProposerCredential,
 										hasVoterCredential,
-										isNounsDelegate,
 									}
 								: undefined
 						}
