@@ -49,7 +49,7 @@ export default function RoundCard(props: {
 							<p className="mt-[1px] leading-none text-grey-200">
 								{state === "Upcoming" ? "Round starts" : ""}
 								{state === "Proposing" ? "Voting starts" : ""}
-								{state === "Voting" ? "Round ends" : ""}
+								{state === "Voting" ? "Voting ends" : ""}
 								{state === "Ended" ? "Round ended" : ""}
 							</p>
 						</div>

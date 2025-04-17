@@ -206,6 +206,22 @@ export default function Proposals(props: {
 								}
 
 								if (props.round.minVoterRank && props.user.level < 15) {
+									if (
+										props.round.handle === "nouns-traits" ||
+										props.round.handle === "nouns-heads"
+									) {
+										return (
+											<>
+												<div className="flex items-center gap-2">
+													<p className="text-white">
+														Must be lvl 15 or a Noun delegate to vote
+													</p>
+												</div>
+												<Button href="/user">View Profile</Button>
+											</>
+										);
+									}
+
 									return (
 										<>
 											<div className="flex items-center gap-2">
