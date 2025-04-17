@@ -183,7 +183,7 @@ export default async function Round(props: {
 		round.proposerCredential && user
 			? await getUserHasCredential({
 					token: round.proposerCredential.toLowerCase(),
-					wallets: user.wallets.map((w) => w.address),
+					wallets: user.wallets.map((w) => w.address.toLowerCase()),
 				})
 			: false;
 
@@ -191,15 +191,30 @@ export default async function Round(props: {
 		round.voterCredential && user
 			? await getUserHasCredential({
 					token: round.voterCredential.toLowerCase(),
-					wallets: user.wallets.map((w) => w.address),
+					wallets: user.wallets.map((w) => w.address.toLowerCase()),
 				})
 			: false;
+
+	if (
+		user &&
+		(user.id === "did:privy:clx8g9mui0c1k10947grzks2a" ||
+			user.id === "did:privy:cm0qf63u900d9rtdzoqa3bkw2")
+	) {
+		for (const wallet of user.wallets) {
+			console.log(
+				wallet.address,
+				wallet.address.toLowerCase(),
+				"Bix: 0x073f0dc58e9989c827ba5b7b35570b7315652e63",
+				"Sam: 0xe3ff24a97bfb65cadef30f6ad19a6ea7e6f6149d",
+			);
+		}
+	}
 
 	const isNounsDelegate =
 		user && (round.handle === "nouns-traits" || round.handle === "nouns-heads")
 			? await getUserHasCredential({
 					token: "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03",
-					wallets: user.wallets.map((w) => w.address),
+					wallets: user.wallets.map((w) => w.address.toLowerCase()),
 				})
 			: false;
 
