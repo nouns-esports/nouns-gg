@@ -44,27 +44,29 @@ export default function QuestCard(props: {
 					{props.quest.community && !props.quest.event ? (
 						<Link
 							href={`/c/${props.quest.community.handle}`}
-							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
+							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit max-w-36"
 						>
 							<img
 								alt={props.quest.community.name}
 								src={props.quest.community.image}
-								className="w-5 h-5 rounded-full"
+								className="w-5 h-5 rounded-full object-cover"
 							/>
-							{props.quest.community.name}
+							<p className="text-white truncate">
+								{props.quest.community.name}
+							</p>
 						</Link>
 					) : null}
 					{props.quest.event ? (
 						<Link
 							href={`/events/${props.quest.event.handle}`}
-							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
+							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit max-w-36"
 						>
 							<img
 								alt={props.quest.event.name}
 								src={props.quest.event.image}
-								className="w-5 h-5 rounded-full"
+								className="w-5 h-5 rounded-full object-cover"
 							/>
-							{props.quest.event.name}
+							<p className="text-white truncate">{props.quest.event.name}</p>
 						</Link>
 					) : null}
 

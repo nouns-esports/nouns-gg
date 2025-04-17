@@ -195,6 +195,14 @@ export default async function Round(props: {
 				})
 			: false;
 
+	const isNounsDelegate =
+		user && (round.handle === "nouns-traits" || round.handle === "nouns-heads")
+			? await getUserHasCredential({
+					token: "0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03",
+					wallets: user.wallets.map((w) => w.address),
+				})
+			: false;
+
 	return (
 		<div className="flex flex-col w-full items-center">
 			<div className="relative flex flex-col justify-center gap-4 w-full pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 max-w-[1920px]">
@@ -221,27 +229,29 @@ export default async function Round(props: {
 									{round.community && !round.event ? (
 										<Link
 											href={`/c/${round.community.handle}`}
-											className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
+											className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit max-w-36"
 										>
 											<img
 												alt={round.community.name}
 												src={round.community.image}
-												className="w-5 h-5 rounded-full"
+												className="w-5 h-5 rounded-full object-cover"
 											/>
-											{round.community.name}
+											<p className="text-white truncate">
+												{round.community.name}
+											</p>
 										</Link>
 									) : null}
 									{round.event ? (
 										<Link
 											href={`/events/${round.event.handle}`}
-											className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit whitespace-nowrap"
+											className="bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 flex-shrink-0 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit max-w-36"
 										>
 											<img
 												alt={round.event.name}
 												src={round.event.image}
-												className="w-5 h-5 rounded-full"
+												className="w-5 h-5 rounded-full object-cover"
 											/>
-											{round.event.name}
+											<p className="text-white truncate">{round.event.name}</p>
 										</Link>
 									) : null}
 								</div>
@@ -451,6 +461,7 @@ export default async function Round(props: {
 										priorVotes,
 										hasProposerCredential,
 										hasVoterCredential,
+										isNounsDelegate,
 									}
 								: undefined
 						}

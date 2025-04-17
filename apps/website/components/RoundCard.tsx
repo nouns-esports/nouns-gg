@@ -76,13 +76,15 @@ export default function RoundCard(props: {
 					<div className="flex h-full items-end">
 						<Link
 							href={`/c/${props.round.community.handle}`}
-							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit"
+							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit max-w-36"
 						>
 							<img
 								src={props.round.community.image}
-								className="w-5 h-5 rounded-full"
+								className="w-5 h-5 rounded-full object-cover"
 							/>
-							{props.round.community.name}
+							<p className="text-white truncate">
+								{props.round.community.name}
+							</p>
 						</Link>
 					</div>
 				) : null}
@@ -90,13 +92,13 @@ export default function RoundCard(props: {
 					<div className="flex h-full items-end">
 						<Link
 							href={`/events/${props.round.event.handle}`}
-							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex text-white items-center gap-2 text-sm font-semibold w-fit"
+							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex  items-center gap-2 text-sm font-semibold w-fit max-w-36"
 						>
 							<img
 								src={props.round.event.image}
-								className="w-5 h-5 rounded-full"
+								className="w-5 h-5 rounded-full object-cover"
 							/>
-							{props.round.event.name}
+							<p className="text-white truncate">{props.round.event.name}</p>
 						</Link>
 					</div>
 				) : null}

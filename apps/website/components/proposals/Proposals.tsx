@@ -26,6 +26,7 @@ export default function Proposals(props: {
 		priorVotes: number;
 		hasProposerCredential: boolean;
 		hasVoterCredential: boolean;
+		isNounsDelegate: boolean;
 	};
 	openProposal?: number;
 }) {
@@ -499,6 +500,10 @@ export default function Proposals(props: {
 												index={index}
 												roundState={state}
 												userCanVote={
+													(props.round.handle === "nouns-heads" ||
+													props.round.handle === "nouns-traits"
+														? (props.user?.isNounsDelegate ?? false)
+														: true) &&
 													!!props.user?.nexus?.rank &&
 													props.user.votes > props.user.priorVotes
 												}
