@@ -26,10 +26,13 @@ export const holdERC721 = createAction<{
 		check: async (user) => {
 			const balance = await db.primary.query.erc721Balances.findFirst({
 				where: and(
-					eq(erc721Balances.collection, actionInputs.contract as `0x${string}`),
+					eq(
+						erc721Balances.collection,
+						actionInputs.contract?.toLowerCase() as `0x${string}`,
+					),
 					inArray(
 						erc721Balances.account,
-						user.wallets.map((w) => w.address as `0x${string}`),
+						user.wallets.map((w) => w.address.toLowerCase() as `0x${string}`),
 					),
 				),
 			});

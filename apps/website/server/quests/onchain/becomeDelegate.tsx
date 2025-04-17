@@ -20,13 +20,17 @@ export const becomeDelegate = createAction<{
 					? await db.primary.query.nounDelegates.findFirst({
 							where: inArray(
 								nounDelegates.to,
-								user.wallets.map((w) => w.address as `0x${string}`),
+								user.wallets.map(
+									(w) => w.address.toLowerCase() as `0x${string}`,
+								),
 							),
 						})
 					: await db.primary.query.lilnounDelegates.findFirst({
 							where: inArray(
 								lilnounDelegates.to,
-								user.wallets.map((w) => w.address as `0x${string}`),
+								user.wallets.map(
+									(w) => w.address.toLowerCase() as `0x${string}`,
+								),
 							),
 						});
 

@@ -128,8 +128,8 @@ export default function Proposals(props: {
 									!props.user.hasProposerCredential
 								) {
 									if (
-										props.round.proposerCredential ===
-										"0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03"
+										props.round.proposerCredential.toLowerCase() ===
+										"0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03"
 									) {
 										return (
 											<>
@@ -144,8 +144,8 @@ export default function Proposals(props: {
 									}
 
 									if (
-										props.round.proposerCredential ===
-										"0x4b10701Bfd7BFEdc47d50562b76b436fbB5BdB3B"
+										props.round.proposerCredential.toLowerCase() ===
+										"0x4b10701bfd7bfedc47d50562b76b436fbb5bdb3b"
 									) {
 										return (
 											<>
@@ -240,8 +240,8 @@ export default function Proposals(props: {
 									!props.user.hasVoterCredential
 								) {
 									if (
-										props.round.voterCredential ===
-										"0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03"
+										props.round.voterCredential.toLowerCase() ===
+										"0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03"
 									) {
 										return (
 											<>
@@ -256,8 +256,8 @@ export default function Proposals(props: {
 									}
 
 									if (
-										props.round.voterCredential ===
-										"0x4b10701Bfd7BFEdc47d50562b76b436fbB5BdB3B"
+										props.round.voterCredential.toLowerCase() ===
+										"0x4b10701bfd7bfedc47d50562b76b436fbb5bdb3b"
 									) {
 										return (
 											<>

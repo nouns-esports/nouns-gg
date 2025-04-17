@@ -41,7 +41,9 @@ export const createProposal = onlyUser
 		if (round.proposerCredential) {
 			const hasCredential = await getUserHasCredential({
 				token: round.proposerCredential,
-				wallets: ctx.user.wallets.map((w) => w.address as `0x${string}`),
+				wallets: ctx.user.wallets.map(
+					(w) => w.address.toLowerCase() as `0x${string}`,
+				),
 			});
 
 			if (!hasCredential) {

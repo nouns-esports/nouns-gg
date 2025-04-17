@@ -174,9 +174,9 @@ export async function getUserHasCredential(input: {
 		where: and(
 			inArray(
 				erc721Balances.account,
-				input.wallets.map((w) => w as `0x${string}`),
+				input.wallets.map((w) => w.toLowerCase() as `0x${string}`),
 			),
-			eq(erc721Balances.collection, input.token),
+			eq(erc721Balances.collection, input.token.toLowerCase()),
 		),
 	});
 
@@ -184,11 +184,13 @@ export async function getUserHasCredential(input: {
 		return true;
 	}
 
-	if (input.token === "0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03") {
+	if (
+		input.token.toLowerCase() === "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03"
+	) {
 		const nounDelegate = await db.pgpool.query.nounDelegates.findFirst({
 			where: inArray(
 				nounDelegates.to,
-				input.wallets.map((w) => w as `0x${string}`),
+				input.wallets.map((w) => w.toLowerCase() as `0x${string}`),
 			),
 		});
 
@@ -197,11 +199,13 @@ export async function getUserHasCredential(input: {
 		}
 	}
 
-	if (input.token === "0x4b10701Bfd7BFEdc47d50562b76b436fbB5BdB3B") {
+	if (
+		input.token.toLowerCase() === "0x4b10701bfd7bfedc47d50562b76b436fbb5bdb3b"
+	) {
 		const lilnounDelegate = await db.pgpool.query.lilnounDelegates.findFirst({
 			where: inArray(
 				lilnounDelegates.to,
-				input.wallets.map((w) => w as `0x${string}`),
+				input.wallets.map((w) => w.toLowerCase() as `0x${string}`),
 			),
 		});
 

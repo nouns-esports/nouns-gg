@@ -52,7 +52,9 @@ export const castVotes = onlyUser
 					const isDelegate = await db.primary.query.nounDelegates.findFirst({
 						where: inArray(
 							nounDelegates.to,
-							ctx.user.wallets.map((w) => w.address as `0x${string}`),
+							ctx.user.wallets.map(
+								(w) => w.address.toLowerCase() as `0x${string}`,
+							),
 						),
 					});
 
@@ -67,8 +69,10 @@ export const castVotes = onlyUser
 
 		if (round.voterCredential) {
 			const hasCredential = await getUserHasCredential({
-				token: round.voterCredential,
-				wallets: ctx.user.wallets.map((w) => w.address as `0x${string}`),
+				token: round.voterCredential.toLowerCase(),
+				wallets: ctx.user.wallets.map(
+					(w) => w.address.toLowerCase() as `0x${string}`,
+				),
 			});
 
 			if (!hasCredential) {

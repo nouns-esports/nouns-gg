@@ -182,7 +182,7 @@ export default async function Round(props: {
 	const hasProposerCredential =
 		round.proposerCredential && user
 			? await getUserHasCredential({
-					token: round.proposerCredential,
+					token: round.proposerCredential.toLowerCase(),
 					wallets: user.wallets.map((w) => w.address),
 				})
 			: false;
@@ -190,7 +190,7 @@ export default async function Round(props: {
 	const hasVoterCredential =
 		round.voterCredential && user
 			? await getUserHasCredential({
-					token: round.voterCredential,
+					token: round.voterCredential.toLowerCase(),
 					wallets: user.wallets.map((w) => w.address),
 				})
 			: false;
@@ -198,7 +198,7 @@ export default async function Round(props: {
 	const isNounsDelegate =
 		user && (round.handle === "nouns-traits" || round.handle === "nouns-heads")
 			? await getUserHasCredential({
-					token: "0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03",
+					token: "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03",
 					wallets: user.wallets.map((w) => w.address),
 				})
 			: false;
