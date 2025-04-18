@@ -163,7 +163,9 @@ export default function MakePredictionModal(props: {
 					</div>
 					<div className="flex flex-col items-end">
 						{outcomeId ? (
-							<p className="text-white text-sm font-semibold">{odds}%</p>
+							<p className="text-white text-sm font-semibold">
+								{odds.toFixed(2)}%
+							</p>
 						) : null}
 						{loading ? (
 							<p className="text-white text-sm">Simulating...</p>

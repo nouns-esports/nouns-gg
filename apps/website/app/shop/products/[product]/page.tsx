@@ -1,14 +1,12 @@
 import AddToCartButton from "@/components/AddToCartButton";
-import Button from "@/components/Button";
 import Link from "@/components/Link";
 import { getProduct } from "@/server/queries/shop";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { env } from "~/env";
 import { twMerge } from "tailwind-merge";
-import SizeGuideModal from "@/components/modals/SizeGuideModal";
 import { ToggleModal } from "@/components/Modal";
-import { AlertCircle, Bell, Check, Info } from "lucide-react";
+import { Bell, Check } from "lucide-react";
 import ProductImage from "@/components/ProductImage";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import LinkEmailModal from "@/components/modals/LinkEmailModal";
