@@ -101,6 +101,13 @@ export default async function Prediction(props: {
 		const poolDiff = Number(a.pool) - Number(b.pool);
 		if (poolDiff !== 0) return poolDiff;
 
+		const aNumber = parseInt(aName);
+		const bNumber = parseInt(bName);
+
+		if (!Number.isNaN(aNumber) && !Number.isNaN(bNumber)) {
+			return aNumber - bNumber;
+		}
+
 		return aName.localeCompare(bName);
 	});
 

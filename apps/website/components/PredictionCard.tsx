@@ -23,10 +23,22 @@ export default function PredictionCard(props: {
 	const outcomes = props.prediction.outcomes.toSorted((a, b) => {
 		const aName = a.name.toLowerCase();
 		const bName = b.name.toLowerCase();
+
 		if (aName === "yes") return -1;
 		if (bName === "yes") return 1;
 		if (aName === "no") return -1;
 		if (bName === "no") return 1;
+
+		const poolDiff = Number(a.pool) - Number(b.pool);
+		if (poolDiff !== 0) return poolDiff;
+
+		const aNumber = parseInt(aName);
+		const bNumber = parseInt(bName);
+
+		if (!Number.isNaN(aNumber) && !Number.isNaN(bNumber)) {
+			return aNumber - bNumber;
+		}
+
 		return aName.localeCompare(bName);
 	});
 
