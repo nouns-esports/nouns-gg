@@ -114,7 +114,10 @@ export default function Menu() {
 								</Link>
 							</li>
 							<li className="text-nowrap">
-								<Link href="/leaderboard" className="flex gap-4 items-center">
+								<Link
+									href="/c/nouns-gg?tab=leaderboard"
+									className="flex gap-4 items-center"
+								>
 									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-pink text-white items-center">
 										<List className="w-full h-full p-2" />
 									</div>

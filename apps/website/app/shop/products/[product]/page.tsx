@@ -96,8 +96,6 @@ export default async function ProductPage(props: {
 			},
 		});
 
-	console.log(imageIndexFromColor);
-
 	return (
 		<>
 			<div className="flex justify-center gap-4 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
@@ -116,9 +114,9 @@ export default async function ProductPage(props: {
 								{product.name}
 							</h1>
 							<div className="flex flex-col gap-4">
-								<div className="flex flex-col gap-2">
-									<p className="text-white">Color</p>
-									{colors.length > 1 ? (
+								{colors.length > 1 ? (
+									<div className="flex flex-col gap-2">
+										<p className="text-white">Color</p>
 										<div className="flex items-center gap-1.5">
 											{colors.map((color) => (
 												<Link
@@ -133,27 +131,42 @@ export default async function ProductPage(props: {
 												/>
 											))}
 										</div>
-									) : null}
-								</div>
-								<div className="flex flex-col gap-2">
-									<p className="text-white">Size</p>
-									{sizes.length > 1 ? (
+									</div>
+								) : null}
+								{sizes.length > 1 ? (
+									<div className="flex flex-col gap-2">
+										<p className="text-white">Size</p>
 										<div className="flex items-center gap-1.5">
-											{sizes.map((size) => (
-												<Link
-													href={`/shop/products/${product.handle}?size=${size}${selectedVariant.color ? `&color=${selectedVariant.color.id}` : ""}`}
-													key={size}
-													className={twMerge(
-														"flex items-center justify-center gap-1 w-8 h-8 text-sm text-grey-200 rounded-md border border-white/10 relative",
-														selectedVariant.size === size && "bg-white/10",
-													)}
-												>
-													{size.toUpperCase()}
-												</Link>
-											))}
+											{sizes
+												.sort((a, b) => {
+													const order = [
+														"xs",
+														"s",
+														"m",
+														"l",
+														"xl",
+														"2xl",
+														"3xl",
+														"4xl",
+														"5xl",
+													];
+													return order.indexOf(a) - order.indexOf(b);
+												})
+												.map((size) => (
+													<Link
+														href={`/shop/products/${product.handle}?size=${size}${selectedVariant.color ? `&color=${selectedVariant.color.id}` : ""}`}
+														key={size}
+														className={twMerge(
+															"flex items-center justify-center gap-1 w-8 h-8 text-sm text-grey-200 rounded-md border border-white/10 relative",
+															selectedVariant.size === size && "bg-white/10",
+														)}
+													>
+														{size.toUpperCase()}
+													</Link>
+												))}
 										</div>
-									) : null}
-								</div>
+									</div>
+								) : null}
 							</div>
 							<div className="flex flex-col gap-4">
 								<div className="flex gap-4 items-center">
