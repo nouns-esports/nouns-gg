@@ -29,7 +29,7 @@ export default function PredictionCard(props: {
 		if (aName === "no") return -1;
 		if (bName === "no") return 1;
 
-		const poolDiff = Number(a.pool) - Number(b.pool);
+		const poolDiff = Number(b.pool) - Number(a.pool);
 		if (poolDiff !== 0) return poolDiff;
 
 		const aNumber = parseInt(aName);
