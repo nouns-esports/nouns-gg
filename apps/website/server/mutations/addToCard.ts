@@ -10,7 +10,7 @@ export const addToCart = onlyUser
 	.schema(
 		z.object({
 			product: z.number(),
-			variant: z.string(),
+			variant: z.number(),
 			quantity: z.number(),
 		}),
 	)
