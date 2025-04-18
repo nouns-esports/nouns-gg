@@ -200,7 +200,7 @@ export default async function Prediction(props: {
 
 							return (
 								<ToggleModal
-									disabled={state !== "open"}
+									disabled={state !== "open" || !!userPrediction}
 									id="make-prediction"
 									data={{ outcome: outcome.id }}
 								>
