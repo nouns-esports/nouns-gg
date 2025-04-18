@@ -92,10 +92,15 @@ export default async function Prediction(props: {
 	const outcomes = prediction.outcomes.toSorted((a, b) => {
 		const aName = a.name.toLowerCase();
 		const bName = b.name.toLowerCase();
+
 		if (aName === "yes") return -1;
 		if (bName === "yes") return 1;
 		if (aName === "no") return -1;
 		if (bName === "no") return 1;
+
+		const poolDiff = Number(a.pool) - Number(b.pool);
+		if (poolDiff !== 0) return poolDiff;
+
 		return aName.localeCompare(bName);
 	});
 
