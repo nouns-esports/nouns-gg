@@ -132,9 +132,9 @@ export default async function Prediction(props: {
 								<img
 									alt={prediction.name}
 									src={prediction.image}
-									className="w-16 h-16 object-cover object-center rounded-lg"
+									className="w-16 h-16 object-cover object-center rounded-lg max-sm:w-12 max-sm:h-12"
 								/>
-								<h1 className="w-full text-white font-luckiest-guy text-2xl">
+								<h1 className="w-full text-white font-luckiest-guy text-2xl max-md:text-xl max-sm:text-lg">
 									{prediction.name}
 								</h1>
 							</div>
