@@ -22,7 +22,7 @@ export const signup = createAction<{ event?: number }>(async (actionInputs) => {
 				Sign up for <span className="text-red">{event.name}</span>
 			</p>
 		),
-		url: `/events/${event.id}`,
+		url: `/events/${event.handle}`,
 		check: async (user) => {
 			if (!event) return false;
 
