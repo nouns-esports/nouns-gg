@@ -83,7 +83,7 @@ export const createDraftOrder = onlyUser
 					variables: {
 						input: {
 							lineItems: ctx.user.nexus.carts.map((item) => ({
-								variantId: item.variant,
+								variantId: item.variant.shopifyId,
 								quantity: item.quantity,
 							})),
 							shippingAddress: parsedInput.shipping

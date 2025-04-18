@@ -1,21 +1,21 @@
 {
-  "name": "db",
-  "version": "0.0.1",
-  "type": "module",
-  "scripts": {
-    "dev": "bun --env-file=../../.env.development drizzle-kit studio --host 127.0.0.1",
-    "studio:prod": "bun --env-file=../../.env.production drizzle-kit studio --host 127.0.0.1",
-    "migrate:prod": "bun --env-file=../../.env.production drizzle-kit push --strict --verbose",
-    "migrate:dev": "bun --env-file=../../.env.development drizzle-kit push --strict --verbose",
-    "sandbox:prod": "bun --env-file=../../.env.production sandbox.ts",
-    "sandbox:dev": "bun --env-file=../../.env.development sandbox.ts"
-  },
-  "devDependencies": {
-    "@types/pg": "^8.11.5"
-  },
-  "dependencies": {
-    "drizzle-kit": "^0.30.5",
-    "drizzle-orm": "0.39.3",
-    "pg": "^8.11.3"
-  }
+	"name": "db",
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "bun --env-file=../../.env.development drizzle-kit studio --host 127.0.0.1",
+		"studio:prod": "bun --env-file=../../.env.production drizzle-kit studio --host 127.0.0.1",
+		"migrate:prod": "bun --env-file=../../.env.production drizzle-kit push --strict --verbose",
+		"migrate:dev": "bun --env-file=../../.env.development drizzle-kit push --strict --verbose",
+		"sandbox:prod": "bun --env-file=../../.env.production sandbox.ts",
+		"sandbox:dev": "bun --env-file=../../.env.development sandbox.ts"
+	},
+	"devDependencies": {
+		"@types/pg": "^8.11.5"
+	},
+	"dependencies": {
+		"drizzle-kit": "0.31.0",
+		"drizzle-orm": "0.41.0",
+		"pg": "^8.11.3"
+	}
 }

@@ -1,6 +1,10 @@
+"use client";
+
 import type { getProduct } from "@/server/queries/shop";
 import Link from "./Link";
 import { twMerge } from "tailwind-merge";
+import { useState } from "react";
+import { parseProduct } from "@/utils/parseProduct";
 
 export default function ProductCard(props: {
 	product: NonNullable<Awaited<ReturnType<typeof getProduct>>>;
@@ -12,6 +16,14 @@ export default function ProductCard(props: {
 		0,
 	);
 
+	const { colors, images, imageIndexFromColor } = parseProduct({
+		product: props.product,
+	});
+
+	const [selectedColor, setSelectedColor] = useState(
+		colors.length > 0 ? colors[0].id : undefined,
+	);
+
 	return (
 		<Link
 			href={`/shop/products/${props.product.handle}`}
@@ -21,7 +33,7 @@ export default function ProductCard(props: {
 		>
 			<img
 				alt={props.product.name}
-				src={`${props.product.images[0]}?img-width=500&img-onerror=redirect`}
+				src={`${images[selectedColor ? imageIndexFromColor[selectedColor] : 0]}?img-width=500&img-onerror=redirect`}
 				className="aspect-square w-full object-contain rounded-lg"
 			/>
 			<div className="flex flex-col gap-2">
@@ -50,6 +62,22 @@ export default function ProductCard(props: {
 							</div>
 						</div>
 					)}
+					{colors.length > 1 ? (
+						<div className="flex items-center gap-1.5">
+							{colors.map((color) => (
+								<button
+									key={color.id}
+									style={{ backgroundColor: color.hex }}
+									className={twMerge(
+										"flex items-center justify-center gap-1 w-8 h-8 rounded-md relative",
+										selectedColor === color.id && "border-gold-500 border-2",
+									)}
+									onMouseEnter={() => setSelectedColor(color.id)}
+									onMouseLeave={() => setSelectedColor(colors[0].id)}
+								/>
+							))}
+						</div>
+					) : null}
 				</div>
 			</div>
 		</Link>

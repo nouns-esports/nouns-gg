@@ -430,26 +430,26 @@ export const products = pgTable("products", (t) => ({
 	shopifyId: t.text("shopify_id").notNull(),
 	name: t.text().notNull(),
 	description: t.text().notNull(),
-	images: t.text().array().notNull(), //.default([]), default arrays are broken with Drizzle Kit right now
-	sizeGuide: t.text("size_guide"),
-	variants: t
-		.jsonb()
-		.array()
-		.$type<
-			Array<{
-				shopifyId: string;
-				size?: "s" | "m" | "l" | "xl" | "2xl";
-				price: number;
-				inventory?: number;
-			}>
-		>()
-		.notNull(),
-	// .default([]), defaults + jsonb are broken with Drizzle Kit right now
+	_description: t.jsonb().$type<TipTap>(),
 	collection: t.bigint({ mode: "number" }),
 	event: t.bigint({ mode: "number" }),
 	community: t.bigint({ mode: "number" }).notNull(),
-	requiresShipping: t.boolean("requires_shipping").notNull().default(true),
+	requiresShipping: t.boolean("requires_shipping").notNull(),
 	active: t.boolean().notNull().default(true),
+}));
+
+export const productVariants = pgTable("product_variants", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	product: t.bigint({ mode: "number" }).notNull(),
+	shopifyId: t.text("shopify_id").notNull(),
+	images: t.text().array().notNull(),
+	size: t.text({ enum: ["xs", "s", "m", "l", "xl", "2xl", "3xl", "4xl"] }),
+	color: t.jsonb().$type<{
+		name: string;
+		hex: string;
+	}>(),
+	price: t.numeric({ precision: 12, scale: 2, mode: "number" }).notNull(),
+	inventory: t.integer(),
 }));
 
 export const collections = pgTable("collections", (t) => ({
@@ -464,7 +464,7 @@ export const carts = pgTable("carts", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	product: t.bigint({ mode: "number" }).notNull(),
-	variant: t.text().notNull(),
+	variant: t.bigint({ mode: "number" }).notNull(),
 	quantity: t.integer().notNull(),
 }));
 

@@ -28,7 +28,12 @@ export async function getAuthenticatedUser() {
 				rank: true,
 				carts: {
 					with: {
-						product: true,
+						product: {
+							with: {
+								variants: true,
+							},
+						},
+						variant: true,
 					},
 				},
 			},
@@ -68,7 +73,12 @@ export async function getAuthenticatedUser() {
 						rank: true,
 						carts: {
 							with: {
-								product: true,
+								product: {
+									with: {
+										variants: true,
+									},
+								},
+								variant: true,
 							},
 						},
 					},

@@ -12,11 +12,15 @@ import { AlertCircle, Bell, Check, Info } from "lucide-react";
 import ProductImage from "@/components/ProductImage";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import LinkEmailModal from "@/components/modals/LinkEmailModal";
+import TipTap from "@/components/TipTap";
+import { parseProduct } from "@/utils/parseProduct";
 
 export async function generateMetadata(props: {
 	params: Promise<{ product: string }>;
+	searchParams: Promise<{ size?: string; color?: string }>;
 }): Promise<Metadata> {
 	const params = await props.params;
+	const searchParams = await props.searchParams;
 
 	const product = await getProduct({ handle: params.product });
 
@@ -24,22 +28,34 @@ export async function generateMetadata(props: {
 		return notFound();
 	}
 
+	const { selectedVariant, images, imageIndexFromColor } = parseProduct({
+		product,
+		preSelectedVariant: {
+			size: searchParams.size,
+			color: searchParams.color,
+		},
+	});
+
+	const image = selectedVariant?.color
+		? images[imageIndexFromColor[selectedVariant.color.id]]
+		: images[0];
+
 	return {
 		title: product.name,
 		description: product.description,
 		openGraph: {
 			type: "website",
-			images: [product.images[0]],
+			images: [image],
 		},
 		twitter: {
 			site: "@NounsGG",
 			card: "summary_large_image",
-			images: [product.images[0]],
+			images: [image],
 		},
 		other: {
 			"fc:frame": JSON.stringify({
 				version: "next",
-				imageUrl: product.images[0],
+				imageUrl: image,
 				button: {
 					title: "Buy",
 					action: {
@@ -58,7 +74,7 @@ export async function generateMetadata(props: {
 
 export default async function ProductPage(props: {
 	params: Promise<{ product: string }>;
-	searchParams: Promise<{ size?: string }>;
+	searchParams: Promise<{ size?: string; color?: string }>;
 }) {
 	const params = await props.params;
 	const searchParams = await props.searchParams;
@@ -72,113 +88,145 @@ export default async function ProductPage(props: {
 		return notFound();
 	}
 
-	const variant =
-		product.variants.find((v) => {
-			if (searchParams.size && product.variants.length > 1) {
-				return v.size === searchParams.size;
-			}
+	const { colors, sizes, images, imageIndexFromColor, selectedVariant } =
+		parseProduct({
+			product,
+			preSelectedVariant: {
+				size: searchParams.size,
+				color: searchParams.color,
+			},
+		});
 
-			return v.inventory && v.inventory > 0;
-		}) ?? product.variants[0];
-
-	if (!variant) {
-		return notFound();
-	}
+	console.log(imageIndexFromColor);
 
 	return (
 		<>
 			<div className="flex justify-center gap-4 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
-				<div className="bg-grey-800 rounded-xl p-4 flex gap-4 max-md:gap-2 max-w-4xl w-full max-md:flex-col">
-					<ProductImage product={product} />
-					<div className="flex flex-col gap-4 max-md:gap-2">
-						<div className="flex flex-col gap-4 max-md:gap-2">
+				<div className="flex flex-col gap-4 max-w-4xl w-full">
+					<div className="bg-grey-800 rounded-xl p-4 flex gap-4 max-md:gap-2 max-md:flex-col">
+						<ProductImage
+							images={images}
+							selectedImage={
+								selectedVariant.color
+									? imageIndexFromColor[selectedVariant.color.id]
+									: 0
+							}
+						/>
+						<div className="flex flex-col h-full gap-6 max-md:gap-2">
 							<h1 className="text-white text-3xl max-sm:text-2xl font-luckiest-guy">
 								{product.name}
 							</h1>
-							<div className="flex gap-2.5 items-center">
-								<p className="text-white text-lg">
-									$
-									{Number.isInteger(variant.price)
-										? variant.price
-										: variant.price.toFixed(2)}
-								</p>
-								<div className="w-0.5 h-5 bg-grey-500 rounded-full" />
-								<div className="flex items-center gap-1.5">
-									<img
-										src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
-										alt="Gold"
-										className="w-5 h-5"
-									/>
-									<p className="text-[#FEBD1C] text-lg font-semibold">
-										{(variant.price * 100).toLocaleString()}
-									</p>
+							<div className="flex flex-col gap-4">
+								<div className="flex flex-col gap-2">
+									<p className="text-white">Color</p>
+									{colors.length > 1 ? (
+										<div className="flex items-center gap-1.5">
+											{colors.map((color) => (
+												<Link
+													href={`/shop/products/${product.handle}?color=${color.id}${selectedVariant.size ? `&size=${selectedVariant.size}` : ""}`}
+													key={color.id}
+													style={{ backgroundColor: color.hex }}
+													className={twMerge(
+														"flex items-center justify-center gap-1 w-8 h-8 rounded-md relative",
+														selectedVariant.color?.id === color.id &&
+															"border-gold-500 border-2",
+													)}
+												/>
+											))}
+										</div>
+									) : null}
+								</div>
+								<div className="flex flex-col gap-2">
+									<p className="text-white">Size</p>
+									{sizes.length > 1 ? (
+										<div className="flex items-center gap-1.5">
+											{sizes.map((size) => (
+												<Link
+													href={`/shop/products/${product.handle}?size=${size}${selectedVariant.color ? `&color=${selectedVariant.color.id}` : ""}`}
+													key={size}
+													className={twMerge(
+														"flex items-center justify-center gap-1 w-8 h-8 text-sm text-grey-200 rounded-md border border-white/10 relative",
+														selectedVariant.size === size && "bg-white/10",
+													)}
+												>
+													{size.toUpperCase()}
+												</Link>
+											))}
+										</div>
+									) : null}
 								</div>
 							</div>
-							<p className="text-grey-200">{product.description}</p>
-						</div>
-						<div className="flex items-center gap-4 max-sm:flex-col-reverse max-sm:items-start">
-							<AddToCartButton
-								active={product.active}
-								inventory={variant.inventory ?? Infinity}
-								product={product.id}
-								variant={variant.shopifyId}
-								image={product.images[0]}
-								name={product.name}
-							/>
-							{product.variants.length > 1 ? (
-								<div className="flex items-center gap-1.5">
-									{product.variants.map((v) => (
-										<Link
-											href={`/shop/products/${product.handle}?size=${v.size}`}
-											key={v.shopifyId}
+							<div className="flex flex-col gap-4">
+								<div className="flex gap-4 items-center">
+									<AddToCartButton
+										active={product.active}
+										inventory={selectedVariant.inventory ?? Infinity}
+										product={product.id}
+										variant={selectedVariant.id}
+										image={
+											selectedVariant.color
+												? images[imageIndexFromColor[selectedVariant.color.id]]
+												: images[0]
+										}
+										name={product.name}
+									/>
+									<div className="flex gap-2.5 items-center">
+										<p className="text-white text-lg">
+											${selectedVariant.price.toFixed(2)}
+										</p>
+										<div className="w-0.5 h-5 bg-grey-500 rounded-full" />
+										<div className="flex items-center gap-1.5">
+											<img
+												src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
+												alt="Gold"
+												className="w-5 h-5"
+											/>
+											<p className="text-[#FEBD1C] text-lg font-semibold">
+												{(selectedVariant.price * 100)
+													.toFixed(0)
+													.toLocaleString()}
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className="flex items-center gap-2">
+									{(selectedVariant.inventory !== null &&
+										selectedVariant.inventory < 1) ||
+									!product.active ? (
+										<ToggleModal
+											id="link-email"
+											disabled={user?.nexus?.canRecieveEmails}
 											className={twMerge(
-												"flex items-center justify-center gap-1 w-8 h-8 text-sm text-grey-200 rounded-md border border-white/10 relative",
-												v.size === variant.size && "bg-white/10",
+												"flex items-center gap-1",
+												user?.nexus?.canRecieveEmails
+													? "text-green"
+													: "text-red hover:text-red/70 transition-colors",
 											)}
 										>
-											{v.size?.toUpperCase()}
-										</Link>
-									))}
+											{user?.nexus?.canRecieveEmails ? (
+												<Check className="w-4 h-4" />
+											) : (
+												<Bell className="w-4 h-4" />
+											)}
+											{user?.nexus?.canRecieveEmails
+												? "Email notifications on"
+												: "Notify me for changes or future drops"}
+										</ToggleModal>
+									) : null}
 								</div>
-							) : null}
-						</div>
-						<div className="flex items-center gap-2">
-							{(variant.inventory !== undefined && variant.inventory < 1) ||
-							!product.active ? (
-								<ToggleModal
-									id="link-email"
-									disabled={user?.nexus?.canRecieveEmails}
-									className={twMerge(
-										"flex items-center gap-1",
-										user?.nexus?.canRecieveEmails
-											? "text-green"
-											: "text-red hover:text-red/70 transition-colors",
-									)}
-								>
-									{user?.nexus?.canRecieveEmails ? (
-										<Check className="w-4 h-4" />
-									) : (
-										<Bell className="w-4 h-4" />
-									)}
-									{user?.nexus?.canRecieveEmails
-										? "Email notifications on"
-										: "Notify me for changes or future drops"}
-								</ToggleModal>
-							) : null}
-							{product.sizeGuide ? (
-								<ToggleModal
-									id="size-guide"
-									className="text-red flex items-center gap-1"
-								>
-									<Info className="w-4 h-4" />
-									Size Guide
-								</ToggleModal>
-							) : null}
+							</div>
 						</div>
 					</div>
+					{product._description ? (
+						<div className="bg-grey-800 rounded-xl p-4 flex gap-4 pl-5">
+							<p className="text-white font-bebas-neue text-2xl">Details</p>
+							{product._description ? (
+								<TipTap content={product._description} />
+							) : null}
+						</div>
+					) : null}
 				</div>
 			</div>
-			{product.sizeGuide ? <SizeGuideModal image={product.sizeGuide} /> : null}
 			{!user?.email?.address || !user?.nexus?.canRecieveEmails ? (
 				<LinkEmailModal hasEmail={!!user?.email?.address} />
 			) : null}

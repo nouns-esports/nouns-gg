@@ -1,13 +1,13 @@
 {
-  "name": "indexer",
-  "version": "0.0.1",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "test": "bun --env-file=../../.env.development ponder dev --schema=indexer-test",
-    "start": "ponder start --schema=$RAILWAY_DEPLOYMENT_ID"
-  },
-  "dependencies": {
-    "ponder": "0.10.6"
-  }
+	"name": "indexer",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"test": "bun --env-file=../../.env.development ponder dev --schema=indexer-test",
+		"start": "ponder start --schema=$RAILWAY_DEPLOYMENT_ID"
+	},
+	"dependencies": {
+		"ponder": "0.10.16"
+	}
 }

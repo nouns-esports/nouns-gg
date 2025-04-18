@@ -1,9 +1,12 @@
 "use server";
 
 import { and, eq } from "drizzle-orm";
-import { carts, collections } from "~/packages/db/schema/public";
+import {
+	carts,
+	collections,
+	productVariants,
+} from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { unstable_cache as cache } from "next/cache";
 import { products } from "~/packages/db/schema/public";
 import { shopifyClient } from "../clients/shopify";
 
@@ -22,6 +25,9 @@ export async function getProducts(input: {
 			collection ? eq(products.collection, collection.id) : undefined,
 			input.event ? eq(products.event, input.event) : undefined,
 		),
+		with: {
+			variants: true,
+		},
 	});
 }
 
@@ -32,6 +38,9 @@ export async function getCollections() {
 export async function getProduct(input: { handle: string }) {
 	return db.pgpool.query.products.findFirst({
 		where: eq(products.handle, input.handle),
+		with: {
+			variants: true,
+		},
 	});
 }
 
@@ -39,7 +48,11 @@ export async function getCollection(input: { handle: string }) {
 	return db.pgpool.query.collections.findFirst({
 		where: eq(collections.handle, input.handle),
 		with: {
-			products: true,
+			products: {
+				with: {
+					variants: true,
+				},
+			},
 		},
 	});
 }
@@ -49,10 +62,11 @@ export async function checkCart(input: { user: string }) {
 		where: eq(carts.user, input.user),
 		with: {
 			product: true,
+			variant: true,
 		},
 	});
 
-	const variants = cart.map((item) => item.variant);
+	const variants = cart.map((item) => item.variant.shopifyId);
 
 	for (const item of cart) {
 		if (!item.product.active) {
@@ -93,44 +107,20 @@ export async function checkCart(input: { user: string }) {
 
 		await db.primary.transaction(async (tx) => {
 			for (const variant of refreshedVariants) {
-				const product = cart.find(
-					(item) => item.variant === variant.id,
-				)?.product;
-
-				if (!product) continue;
-
-				const existingVariant = product.variants.find(
-					(v) => v.shopifyId === variant.id,
-				);
-
-				if (!existingVariant) continue;
-
-				if (existingVariant.inventory === variant.inventoryQuantity) continue;
-				if (existingVariant.price.toFixed(2) !== variant.price) continue;
-
 				await tx
-					.update(products)
+					.update(productVariants)
 					.set({
-						variants: product.variants.map((v) => {
-							if (v.shopifyId === variant.id) {
-								return {
-									...v,
-									inventory: variant.inventoryItem.tracked
-										? variant.inventoryQuantity
-										: undefined,
-									price: Number(variant.price),
-								};
-							}
-
-							return v;
-						}),
+						inventory: variant.inventoryItem.tracked
+							? variant.inventoryQuantity
+							: undefined,
+						price: Number(variant.price),
 					})
-					.where(eq(products.id, product.id));
+					.where(eq(productVariants.shopifyId, variant.id));
 			}
 		});
 
 		for (const variant of refreshedVariants) {
-			const item = cart.find((item) => item.variant === variant.id);
+			const item = cart.find((item) => item.variant.shopifyId === variant.id);
 
 			if (!item) continue;
 
@@ -149,7 +139,7 @@ export async function checkCart(input: { user: string }) {
 }
 
 export async function estimateOrderCost(input: {
-	items: Array<{ variant: string; quantity: number }>;
+	items: Array<{ shopifyId: string; quantity: number }>;
 	shipping: {
 		address1: string;
 		address2?: string;
@@ -189,7 +179,7 @@ export async function estimateOrderCost(input: {
 						zip: input.shipping.zip,
 					},
 					lineItems: input.items.map((item) => ({
-						variantId: item.variant,
+						variantId: item.shopifyId,
 						quantity: item.quantity,
 					})),
 				},

@@ -10,7 +10,7 @@ export default function AddToCartButton(props: {
 	image: string;
 	name: string;
 	product: number;
-	variant: string;
+	variant: number;
 	inventory: number;
 	active: boolean;
 }) {

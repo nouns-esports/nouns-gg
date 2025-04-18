@@ -28,6 +28,7 @@ import {
 	raffles,
 	raffleEntries,
 	communityAdmins,
+	productVariants,
 } from "./schema/public";
 import {
 	erc721Balances,
@@ -373,7 +374,19 @@ export const productsRelations = relations(products, ({ one, many }) => ({
 		fields: [products.event],
 		references: [events.id],
 	}),
+	variants: many(productVariants),
 }));
+
+export const productVariantsRelations = relations(
+	productVariants,
+	({ one, many }) => ({
+		product: one(products, {
+			fields: [productVariants.product],
+			references: [products.id],
+		}),
+		carts: many(carts),
+	}),
+);
 
 export const collectionsRelations = relations(collections, ({ many }) => ({
 	products: many(products),
@@ -387,6 +400,10 @@ export const cartsRelations = relations(carts, ({ one }) => ({
 	product: one(products, {
 		fields: [carts.product],
 		references: [products.id],
+	}),
+	variant: one(productVariants, {
+		fields: [carts.variant],
+		references: [productVariants.id],
 	}),
 }));
 
@@ -459,8 +476,6 @@ export const nounsRelations = relations(nouns, ({ one, many }) => ({
 		references: [nounsTraits.id],
 	}),
 }));
-
-// There is not enough information to infer relation "rounds.proposerCredentialHolders"
 
 export const nounsTraitsRelations = relations(nounsTraits, ({ many }) => ({
 	nouns: many(nouns),

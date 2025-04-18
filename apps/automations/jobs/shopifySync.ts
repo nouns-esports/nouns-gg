@@ -1,5 +1,5 @@
 import { eq } from "drizzle-orm";
-import { products } from "~/packages/db/schema/public";
+import { products, productVariants } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { createJob } from "../createJob";
 import { shopifyClient } from "../clients/shopify";
@@ -46,36 +46,25 @@ export const shopifySync = createJob({
 
 		await db.primary.transaction(async (tx) => {
 			for (const product of syncProducts) {
-				const existingProduct = await tx.query.products.findFirst({
-					where: eq(products.shopifyId, product.id),
-				});
+				for (const variant of product.variants.nodes) {
+					const existingVariant = await tx.query.productVariants.findFirst({
+						where: eq(productVariants.shopifyId, variant.id),
+					});
 
-				if (!existingProduct) {
-					continue;
+					if (!existingVariant) {
+						continue;
+					}
+
+					await tx
+						.update(productVariants)
+						.set({
+							inventory: variant.inventoryItem.tracked
+								? variant.inventoryQuantity
+								: undefined,
+							price: Number(variant.price),
+						})
+						.where(eq(productVariants.shopifyId, variant.id));
 				}
-
-				await tx
-					.update(products)
-					.set({
-						variants: existingProduct.variants.map((variant) => {
-							const updatedVariant = product.variants.nodes.find(
-								(v) => v.id === variant.shopifyId,
-							);
-
-							if (!updatedVariant) {
-								return variant;
-							}
-
-							return {
-								...variant,
-								inventory: updatedVariant.inventoryItem.tracked
-									? updatedVariant.inventoryQuantity
-									: undefined,
-								price: Number(updatedVariant.price),
-							};
-						}),
-					})
-					.where(eq(products.shopifyId, product.id));
 			}
 		});
 	},

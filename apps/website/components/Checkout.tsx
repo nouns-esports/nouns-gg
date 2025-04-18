@@ -20,6 +20,7 @@ import { useAction } from "next-safe-action/hooks";
 import { createDraftOrder } from "@/server/mutations/createDraftOrder";
 import { useRouter } from "next/navigation";
 import GoldSlider from "./GoldSlider";
+import { parseProduct } from "@/utils/parseProduct";
 
 export default function Checkout(props: {
 	user: AuthenticatedUser;
@@ -37,13 +38,7 @@ export default function Checkout(props: {
 	}
 
 	const subtotal = props.user.nexus.carts.reduce((acc, item) => {
-		const variant = item.product.variants.find(
-			(variant) => variant.shopifyId === item.variant,
-		);
-
-		if (!variant) return acc;
-
-		return acc + Number(variant.price) * item.quantity;
+		return acc + item.variant.price * item.quantity;
 	}, 0);
 
 	const [firstName, setFirstName] = useState("");
@@ -106,7 +101,7 @@ export default function Checkout(props: {
 
 			const result = await estimateOrderCost({
 				items: props.user.nexus.carts.map((cart) => ({
-					variant: cart.variant,
+					shopifyId: cart.variant.shopifyId,
 					quantity: cart.quantity,
 				})),
 				shipping: {
@@ -155,12 +150,11 @@ export default function Checkout(props: {
 						{props.user.nexus.carts
 							.toSorted((a, b) => a.product.name.localeCompare(b.product.name))
 							.map((item) => {
-								const variant = item.product.variants.find(
-									(variant) => variant.shopifyId === item.variant,
-								);
-
-								if (!variant) return;
-
+								const { images, imageIndexFromColor, selectedVariant } =
+									parseProduct({
+										product: item.product,
+										preSelectedVariant: item.variant.id,
+									});
 								return (
 									<div
 										key={`product-${item.product.id}`}
@@ -168,7 +162,13 @@ export default function Checkout(props: {
 									>
 										<div className="flex items-center gap-2 bg-grey-600 rounded-lg p-2 w-16 h-16 aspect-square">
 											<img
-												src={`${item.product.images[0]}?img-height=100&img-onerror=redirect`}
+												src={`${
+													selectedVariant?.color
+														? images[
+																imageIndexFromColor[selectedVariant.color.id]
+															]
+														: images[0]
+												}?img-height=100&img-onerror=redirect`}
 												alt={item.product.name}
 												className="w-full h-full object-contain rounded-md"
 											/>
@@ -179,7 +179,7 @@ export default function Checkout(props: {
 											</p>
 											<div className="flex items-center gap-2">
 												<p className="text-white">
-													${variant.price.toFixed(2)}
+													${item.variant.price.toFixed(2)}
 												</p>
 												<p className="text-grey-200">x{item.quantity}</p>
 											</div>
