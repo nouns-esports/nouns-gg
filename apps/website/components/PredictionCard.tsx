@@ -1,7 +1,7 @@
 import type { getPredictions } from "@/server/queries/predictions";
 import { twMerge } from "tailwind-merge";
 import Link from "./Link";
-import { Check, Plus, Vote } from "lucide-react";
+import { Check, Plus, Sparkles, Vote } from "lucide-react";
 import { LockSimple } from "phosphor-react-sc";
 import { formatGold } from "~/packages/utils/formatGold";
 export default function PredictionCard(props: {
@@ -184,11 +184,17 @@ export default function PredictionCard(props: {
 				</div>
 			) : null}
 			{!userPrediction ? (
-				<p className="text-sm flex items-center gap-1.5 cursor-default">
-					<Vote className="w-4 h-4" />
-					{props.prediction.totalBets} prediction
-					{props.prediction.totalBets === 1 ? "" : "s"} placed
-				</p>
+				<div className="w-full flex justify-between items-center">
+					<p className="text-sm flex items-center gap-1.5 cursor-default">
+						<Vote className="w-4 h-4" />
+						{props.prediction.totalBets} prediction
+						{props.prediction.totalBets === 1 ? "" : "s"} placed
+					</p>
+					<div className="flex items-center gap-2 text-white text-sm">
+						<Sparkles className="w-4 h-4 text-green" />
+						{props.prediction.xp}
+					</div>
+				</div>
 			) : null}
 		</Link>
 	);
