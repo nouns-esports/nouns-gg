@@ -45,9 +45,7 @@ export default function ProductCard(props: {
 						</p>
 					) : (
 						<div className="flex gap-2.5 items-center">
-							<p className="text-white">
-								${Number.isInteger(price) ? price : price.toFixed(2)}
-							</p>
+							<p className="text-white">${price.toFixed(2)}</p>
 
 							<div className="w-0.5 h-4 bg-grey-500 rounded-full" />
 							<div className="flex items-center gap-1.5">
