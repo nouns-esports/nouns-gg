@@ -35,7 +35,7 @@ export default function GoldModal(props: { user: AuthenticatedUser }) {
 					{Math.floor(Number(props.user?.nexus?.gold) ?? 0)}
 				</p>
 			</div>
-			<button
+			{/* <button
 				onClick={() => {
 					if (pathname === "/leaderboard") return close();
 
@@ -44,7 +44,7 @@ export default function GoldModal(props: { user: AuthenticatedUser }) {
 				className="flex justify-center items-center gap-2 w-full text-black bg-white hover:bg-white/70 font-semibold rounded-lg p-2.5 transition-colors"
 			>
 				Earn More
-			</button>
+			</button> */}
 		</Modal>
 	);
 }
