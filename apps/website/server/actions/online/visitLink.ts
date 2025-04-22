@@ -20,8 +20,17 @@ export const visitLink = createAction({
 			});
 		} else parts.push({ text: "Visit" });
 
+		let url: URL;
+
+		try {
+			url = new URL(inputs.link.url);
+		} catch (error) {
+			throw new Error(`Invalid URL: ${inputs.link.url}`);
+		}
+
 		parts.push({
 			text: inputs.link.label,
+			href: `/visit?url=${url.toString()}`,
 		});
 
 		return parts;
@@ -29,8 +38,16 @@ export const visitLink = createAction({
 	check: async ({ user, inputs }) => {
 		"use server";
 
+		let url: URL;
+
+		try {
+			url = new URL(inputs.link.url);
+		} catch (error) {
+			return false;
+		}
+
 		const visited = await db.primary.query.visits.findFirst({
-			where: and(eq(visits.user, user.id), eq(visits.url, inputs.link.url)),
+			where: and(eq(visits.user, user.id), eq(visits.url, url.toString())),
 		});
 
 		return !!visited;
