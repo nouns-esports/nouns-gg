@@ -3,10 +3,11 @@ import { redirect, RedirectType } from "next/navigation";
 import { db } from "~/packages/db";
 import { visits } from "~/packages/db/schema/public";
 import { and, eq } from "drizzle-orm";
+
 export default async function VisitPage(props: {
-	searchParams: {
+	searchParams: Promise<{
 		url?: string;
-	};
+	}>;
 }) {
 	const [searchParams, user] = await Promise.all([
 		props.searchParams,
