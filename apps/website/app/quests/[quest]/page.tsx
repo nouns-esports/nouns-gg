@@ -152,7 +152,7 @@ export default async function Quest(props: {
 											key={`action-${index}`}
 											className={twMerge(
 												"relative bg-grey-600 rounded-xl p-3 flex gap-4 items-center text-white",
-												(action.completed || !quest.active) &&
+												(action.completed || !quest.active || questClaimed) &&
 													"opacity-60 pointer-events-none",
 											)}
 										>
