@@ -17,7 +17,14 @@ export const reachLevel = createAction({
 	check: async ({ inputs, user }) => {
 		"use server";
 
-		return user.level < inputs.level.value;
+		console.log(
+			inputs,
+			inputs.level.value,
+			user.level,
+			inputs.level.value > user.level,
+		);
+
+		return user.level >= inputs.level.value;
 	},
 	filters: {
 		// TODO: Add community filter
