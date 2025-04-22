@@ -170,21 +170,6 @@ export default function Proposals(props: {
 									);
 								}
 
-								if (!props.user.canVote) {
-									return (
-										<>
-											<ToggleModal
-												id="round-actions-voting"
-												className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
-											>
-												Voting Requirements
-												<Info className="w-4 h-4" />
-											</ToggleModal>
-											<Button disabled>Submit Votes</Button>
-										</>
-									);
-								}
-
 								if (remainingVotes < 1 && votesSelected === 0) {
 									return (
 										<>
@@ -196,6 +181,21 @@ export default function Proposals(props: {
 													Share
 												</Button>
 											</ToggleModal>
+										</>
+									);
+								}
+
+								if (!props.user.canVote) {
+									return (
+										<>
+											<ToggleModal
+												id="round-actions-voting"
+												className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
+											>
+												Voting Requirements
+												<Info className="w-4 h-4" />
+											</ToggleModal>
+											<Button disabled>Submit Votes</Button>
 										</>
 									);
 								}
