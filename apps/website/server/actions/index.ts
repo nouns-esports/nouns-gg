@@ -4,7 +4,7 @@ import { linkDiscord } from "./account/linkDiscord";
 import { linkEmail } from "./account/linkEmail";
 import { linkFarcaster } from "./account/linkFarcaster";
 import { linkWallet } from "./account/linkWallet";
-import { linkX } from "./account/linkX";
+import { linkTwitter } from "./account/linkTwitter";
 import { haveRole } from "./discord/haveRole";
 import { joinServer } from "./discord/joinServer";
 import { signup } from "./events/signup";
@@ -26,14 +26,14 @@ import { repostPost } from "./social/repostPost";
 import { reachLevel } from "./xp/reachLevel";
 import { reachPercentile } from "./xp/reachPercentile";
 import { holdNFT } from "./onchain/holdNFT";
-
+import { followAccount } from "./social/followAccount";
 const actions = {
 	// Account
 	linkDiscord,
 	linkEmail,
 	linkFarcaster,
 	linkWallet,
-	linkX,
+	linkTwitter,
 
 	// Discord
 	haveRole,
@@ -73,7 +73,7 @@ const actions = {
 	createPost,
 	likePost,
 	repostPost,
-
+	followAccount,
 	// XP
 	reachLevel,
 	reachPercentile,

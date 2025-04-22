@@ -25,6 +25,7 @@ export const createPost = createAction({
 			parts.push({
 				text: `Create a post in ${community.name}`,
 				href: `/c/${community.handle}`,
+				image: community.image,
 			});
 		} else {
 			parts.push({ text: "Create a post" });
@@ -49,6 +50,7 @@ export const createPost = createAction({
 			parts.push({
 				text: mention.username,
 				href: `/user/${mention.username}`,
+				image: mention.pfpUrl ?? undefined,
 			});
 			count++;
 		}
