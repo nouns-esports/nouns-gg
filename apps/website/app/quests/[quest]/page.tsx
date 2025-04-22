@@ -141,7 +141,7 @@ export default async function Quest(props: {
 											quest={quest.id}
 											xp={quest.xp}
 											userXP={user?.nexus?.xp ?? 0}
-											completed={allCompleted}
+											completed={allCompleted || questClaimed}
 											claimed={questClaimed}
 										/>
 									</div>
