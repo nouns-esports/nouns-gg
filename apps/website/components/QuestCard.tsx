@@ -14,7 +14,7 @@ export default function QuestCard(props: {
 			? new Date(props.quest.start) < now && new Date(props.quest.end) > now
 			: true;
 
-	const completed = props.quest.completed?.length > 0;
+	const completed = props.quest.completions?.length > 0;
 	return (
 		<div
 			className={twMerge(

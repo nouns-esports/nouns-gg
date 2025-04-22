@@ -1,5 +1,4 @@
 import CastCard from "@/components/CastCard";
-import GoBack from "@/components/GoBack";
 import Link from "@/components/Link";
 import NavigateBack from "@/components/NavigateBack";
 import Upvote from "@/components/Upvote";
@@ -86,13 +85,13 @@ export default async function Cast(props: {
 	return (
 		<div className="flex flex-col items-center w-full pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
 			<div className="flex flex-col gap-4 max-w-3xl w-full">
-				<GoBack
+				<NavigateBack
 					fallback="/chat"
 					className="text-red flex items-center gap-1 group"
 				>
 					<ArrowLeft className="w-5 h-5 text-red group-hover:-translate-x-1 transition-transform" />
 					Back to feed
-				</GoBack>
+				</NavigateBack>
 				<CastCard cast={cast} expanded />
 				<h2 className="text-white text-2xl font-bebas-neue">Comments</h2>
 				{cast.direct_replies

@@ -1,24 +1,48 @@
 import { pgTable, check, index } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 import type { JSONContent as TipTap } from "@tiptap/core";
+import type { ActionDescription } from "~/apps/website/server/actions/createAction";
 
+// TODO: migrate these to new table and clean up old ones
 export const links = pgTable("links", (t) => ({
 	id: t.text().primaryKey(),
 	url: t.text().notNull(),
 }));
+
+export const visits = pgTable("visits", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	user: t.text().notNull(),
+	url: t.text().notNull(),
+	timestamp: t.timestamp({ mode: "date" }).notNull(),
+}));
+
+// export const snapshots = pgTable("snapshots", (t) => ({
+// 	id: t.bigserial({ mode: "number" }).primaryKey(),
+// 	user: t.text().notNull(),
+// 	timestamp: t.timestamp({ mode: "date" }).notNull(),
+// 	community: t.bigint({ mode: "number" }).notNull(),
+// 	tag: t.text().notNull(), // Warn before taking snapshots with existing tags
+// }));
+
+// export const topics = pgTable("topics", (t) => ({
+// 	id: t.bigserial({ mode: "number" }).primaryKey(),
+// 	tag: t.text().notNull(),
+// 	name: t.text().notNull(),
+// 	image: t.text().notNull(),
+// }));
+
+// export const interests = pgTable("interests", (t) => ({
+// 	id: t.bigserial({ mode: "number" }).primaryKey(),
+// 	topic: t.bigint({ mode: "number" }).notNull(),
+// 	user: t.text().notNull(),
+// }));
 
 export const snapshots = pgTable("snapshots", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	type: t
 		.text({
-			enum: [
-				"discord-call",
-				"visit-link",
-				"genesis",
-				"check-in",
-				"cgx-airdrop",
-			],
+			enum: ["discord-call", "visit-link", "genesis"],
 		})
 		.notNull(),
 	tag: t.text(),
@@ -44,11 +68,17 @@ export const communities = pgTable("communities", (t) => ({
 	description: t.jsonb().$type<TipTap>(), //.notNull(),
 	channel: t.text(),
 	gold: t.integer().notNull().default(0),
-	membershipActions: t.text("membership_actions").array(),
-	membershipActionInputs: t
-		.jsonb("membership_action_inputs")
-		.array()
-		.$type<Array<{ [key: string]: any }>>(),
+}));
+
+export const communityActions = pgTable("community_actions", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	community: t.bigint({ mode: "number" }).notNull(),
+	action: t.text().notNull(),
+	description: t.jsonb().array().$type<ActionDescription>().notNull(),
+	inputs: t
+		.jsonb()
+		.$type<{ [key: string]: { [key: string]: any } }>()
+		.notNull(),
 }));
 
 export const communityAdmins = pgTable("community_admins", (t) => ({
@@ -92,11 +122,17 @@ export const events = pgTable("events", (t) => ({
 	}>(),
 	details: t.jsonb().$type<TipTap>(),
 	attendeeCount: t.integer("attendee_count"),
-	registrationActions: t.text("registration_actions").array(),
-	registrationActionInputs: t
-		.jsonb("registration_action_inputs")
-		.array()
-		.$type<Array<{ [key: string]: any }>>(),
+}));
+
+export const eventActions = pgTable("event_actions", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	event: t.bigint({ mode: "number" }).notNull(),
+	action: t.text().notNull(),
+	description: t.jsonb().array().$type<ActionDescription>().notNull(),
+	inputs: t
+		.jsonb()
+		.$type<{ [key: string]: { [key: string]: any } }>()
+		.notNull(),
 }));
 
 export const stations = pgTable("stations", (t) => ({
@@ -207,16 +243,6 @@ export const rounds = pgTable("rounds", (t) => ({
 	start: t.timestamp({ mode: "date" }).notNull(),
 	votingStart: t.timestamp("voting_start", { mode: "date" }).notNull(),
 	end: t.timestamp({ mode: "date" }).notNull(),
-	voterActions: t.text("voter_actions").array(),
-	voterActionInputs: t
-		.jsonb("voter_action_inputs")
-		.array()
-		.$type<Array<{ [key: string]: any }>>(),
-	proposerActions: t.text("proposer_actions").array(),
-	proposerActionInputs: t
-		.jsonb("proposer_action_inputs")
-		.array()
-		.$type<Array<{ [key: string]: any }>>(),
 	minTitleLength: t.integer("min_title_length").notNull().default(15),
 	maxTitleLength: t.integer("max_title_length").notNull().default(100),
 	minDescriptionLength: t
@@ -236,14 +262,24 @@ export const rounds = pgTable("rounds", (t) => ({
 	voterCredential: t.text("voter_credential"),
 }));
 
+export const roundActions = pgTable("round_actions", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	round: t.bigint({ mode: "number" }).notNull(),
+	type: t
+		.text({ enum: ["voting", "proposing"] })
+		.notNull()
+		.default("voting"),
+	action: t.text().notNull(),
+	description: t.jsonb().array().$type<ActionDescription>().notNull(),
+	inputs: t
+		.jsonb()
+		.$type<{ [key: string]: { [key: string]: any } }>()
+		.notNull(),
+}));
+
 // export const incentives = pgTable("incentives", (t) => ({
 // 	id: t.bigserial({ mode: "number" }).primaryKey(),
 // 	pot: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
-// 	requiredActions: t.text("required_actions").array(),
-// 	requiredActionInputs: t
-// 		.jsonb("required_action_inputs")
-// 		.array()
-// 		.$type<Array<{ [key: string]: any }>>(),
 // }));
 
 // add user column and update it when they claim the award
@@ -293,7 +329,6 @@ export const nexus = pgTable(
 		image: t.text().notNull().default(""),
 		name: t.text().notNull().default(""),
 		bio: t.text(),
-		interests: t.text().array().notNull(), //.default([]),  default arrays are broken with Drizzle Kit right now
 		twitter: t.text(),
 		discord: t.text(),
 		fid: t.integer(),
@@ -344,22 +379,31 @@ export const quests = pgTable("quests", (t) => ({
 	start: t.timestamp({ mode: "date" }),
 	end: t.timestamp({ mode: "date" }),
 	xp: t.integer().notNull(),
-	actions: t.text().array().notNull(),
-	// Use suspense boundry to render completion
-	// _actions: t.jsonb().array().$type<
-	// 	Array<{
-	// 		id: string;
-	// 		description: string;
-	// 		highlights: string[];
-	// 		highlightPositions: number[];
-	// 	}>
-	// >(),
-	actionInputs: t
+	_actions: t.text("actions").array().notNull(),
+	_actionInputs: t
 		.jsonb("action_inputs")
 		.array()
 		.$type<Array<{ [key: string]: any }>>()
 		.notNull(),
 	// .default([]), defaults + jsonb are broken with Drizzle Kit right now
+}));
+
+export const questActions = pgTable("quest_actions", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	quest: t.bigint({ mode: "number" }).notNull(),
+	action: t.text().notNull(),
+	description: t.jsonb().array().$type<ActionDescription>().notNull(),
+	inputs: t
+		.jsonb()
+		.$type<{ [key: string]: { [key: string]: any | undefined } }>()
+		.notNull(),
+}));
+
+export const questCompletions = pgTable("quest_completions", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	quest: t.bigint({ mode: "number" }).notNull(),
+	user: t.text().notNull(),
+	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
 
 export const xp = pgTable("xp", (t) => ({
@@ -505,9 +549,7 @@ export const linkedWallets = pgTable("linked_wallets", (t) => ({
 	address: t.text().primaryKey(),
 	user: t.text().notNull(),
 	chains: t.integer().array().notNull(),
-	client: t
-		.text({ enum: ["rainbow", "metamask", "coinbase_wallet"] })
-		.notNull(),
+	client: t.text({ enum: ["rainbow", "metamask", "coinbase_wallet"] }),
 }));
 
 export const linkedTwitters = pgTable("linked_twitters", (t) => ({
@@ -523,7 +565,6 @@ export const linkedDiscords = pgTable("linked_discords", (t) => ({
 export const linkedFarcasters = pgTable("linked_farcasters", (t) => ({
 	fid: t.bigint({ mode: "number" }).primaryKey(),
 	user: t.text().notNull(),
-	username: t.text().notNull(),
 }));
 
 export const raffles = pgTable("raffles", (t) => ({

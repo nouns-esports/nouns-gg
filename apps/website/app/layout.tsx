@@ -115,7 +115,7 @@ export const viewport = {
 export default async function RootLayout(props: { children: React.ReactNode }) {
 	const user = await getAuthenticatedUser();
 
-	const maintenance = false;
+	const maintenance = true;
 
 	return (
 		<html lang="en" className="/scroll-smooth overflow-x-hidden scrollbar-main">
@@ -123,7 +123,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
 				className={`${cabin.variable} ${luckiestGuy.variable} ${bebasNeue.variable} ${londrinaSolid.variable} bg-black text-grey-200 font-cabin selection:text-white selection:bg-red flex flex-col items-center w-full h-full`}
 			>
 				<Providers user={user?.id}>
-					{maintenance ? (
+					{maintenance && user?.id !== "did:privy:clx8g9mui0c1k10947grzks2a" ? (
 						<div className="flex flex-col gap-8 items-center w-full h-screen">
 							<div className="flex flex-col gap-4 items-center justify-center w-full h-full">
 								<h1 className="text-4xl text-white font-bebas-neue text-center">

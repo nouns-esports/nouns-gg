@@ -1,25 +1,25 @@
-import { db } from "~/packages/db";
 import { createAction } from "../createAction";
-import { nounsProposals } from "~/packages/db/schema/indexer";
+import { db } from "~/packages/db";
 import { inArray } from "drizzle-orm";
+import { nounDelegates } from "~/packages/db/schema/indexer";
 
-export const createNounsProposal = createAction({
+export const becomeNounsDelegate = createAction({
 	image: "",
-	name: "Create Proposal",
+	name: "Nouns Delegate",
 	category: "nouns",
 	generateDescription: async () => {
 		"use server";
 
 		return [
 			{
-				text: "Create a",
+				text: "Become a",
 			},
 			{
 				text: "Nouns",
-				link: "https://nouns.camp/?tab=proposals",
+				href: "https://nouns.camp",
 			},
 			{
-				text: "proposal",
+				text: "delegate",
 			},
 		];
 	},
@@ -28,16 +28,14 @@ export const createNounsProposal = createAction({
 
 		if (user.wallets.length === 0) return false;
 
-		const proposal = await db.primary.query.nounsProposals.findFirst({
+		const isDelegate = await db.primary.query.nounDelegates.findFirst({
 			where: inArray(
-				nounsProposals.proposer,
+				nounDelegates.to,
 				user.wallets.map((w) => w.address as `0x${string}`),
 			),
 		});
 
-		return !!proposal;
+		return !!isDelegate;
 	},
-	filters: {
-		// TODO: State filter (passed)
-	},
+	filters: {},
 });

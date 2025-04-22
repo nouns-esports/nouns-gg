@@ -1,0 +1,77 @@
+[
+	{
+		"id": 1,
+		"name": "Check out Nouns Fest",
+		"actions": [
+			{
+				"type": "website",
+				"url": "https://nounsfest.tv/festival/"
+			},
+			{
+				"name": "Nouns Fest Trailer",
+				"type": "video",
+				"url": "https://www.youtube.com/watch?v=i3vu2kqlWfs"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Visit the official website",
+		"actions": [
+			{
+				"type": "website",
+				"url": "https://nounstown.wtf"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Begin your onchain journey with Matcha",
+		"actions": [
+			{
+				"type": "website",
+				"url": "https://matcha.xyz/?utm_source=nouns&utm_campaign=2q24"
+			},
+			{
+				"name": "Matcha partners with Nouns Esports",
+				"type": "article",
+				"url": "https://blog.matcha.xyz/article/matcha-partners-with-nouns-esports"
+			},
+			{
+				"name": "Meet Matcha",
+				"type": "video",
+				"url": "https://www.youtube.com/watch?v=GgKfH_26Vvc"
+			},
+			{
+				"name": "Interview with Peter “ppd” Dager",
+				"type": "video",
+				"url": "https://www.youtube.com/watch?v=hacuzvKvjp4"
+			}
+		]
+	},
+	{
+		"id": 6,
+		"name": "Dive into Nouns",
+		"actions": [
+			{
+				"type": "website",
+				"url": "https://nouns.camp/"
+			},
+			{
+				"name": "What is Nouns?",
+				"type": "video",
+				"url": "https://www.youtube.com/watch?v=oa79nN4gMPs"
+			},
+			{
+				"name": "What Does Nouns Fund?",
+				"type": "video",
+				"url": "https://www.youtube.com/watch?v=3LlTeb444e4"
+			},
+			{
+				"name": "What is an Open Source Brand?",
+				"type": "video",
+				"url": "https://www.youtube.com/watch?v=ANMJYNLyKIk"
+			}
+		]
+	}
+]

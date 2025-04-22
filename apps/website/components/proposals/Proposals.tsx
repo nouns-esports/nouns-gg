@@ -19,13 +19,14 @@ import type { rounds } from "~/packages/db/schema/public";
 import Countdown from "../Countdown";
 import { toast } from "../Toasts";
 import { level } from "@/utils/level";
+import { Info } from "lucide-react";
 
 export default function Proposals(props: {
 	round: NonNullable<Awaited<ReturnType<typeof getRound>>>;
 	user?: AuthenticatedUser & {
 		priorVotes: number;
-		hasProposerCredential: boolean;
-		hasVoterCredential: boolean;
+		canPropose: boolean;
+		canVote: boolean;
 	};
 	openProposal?: number;
 }) {
@@ -122,53 +123,17 @@ export default function Proposals(props: {
 									);
 								}
 
-								if (
-									props.round.proposerCredential &&
-									!props.user.hasProposerCredential
-								) {
-									if (
-										props.round.proposerCredential ===
-										"0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03"
-									) {
-										return (
-											<>
-												<p className="text-white">
-													You must be a Nouner or delegate to propose
-												</p>
-												<Button href="https://nouns.camp/" newTab>
-													View Nouns
-												</Button>
-											</>
-										);
-									}
-
-									if (
-										props.round.proposerCredential ===
-										"0x4b10701Bfd7BFEdc47d50562b76b436fbB5BdB3B"
-									) {
-										return (
-											<>
-												<p className="text-white">
-													You must be a LilNouner or delegate to propose
-												</p>
-												<Button href="https://lilnouns.wtf/" newTab>
-													View LilNouns
-												</Button>
-											</>
-										);
-									}
-
+								if (props.user.canPropose) {
 									return (
 										<>
-											<p className="text-white">
-												You must hold this token to propose
-											</p>
-											<Button
-												href={`https://matcha.xyz/tokens/ethereum/${props.round.proposerCredential}`}
-												newTab
+											<ToggleModal
+												id="round-actions-proposing"
+												className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
 											>
-												View Token
-											</Button>
+												Proposal Requirements
+												<Info className="w-4 h-4" />
+											</ToggleModal>
+											<Button disabled>Create Proposal</Button>
 										</>
 									);
 								}
@@ -205,66 +170,17 @@ export default function Proposals(props: {
 									);
 								}
 
-								if (props.round.minVoterRank && props.user.level < 15) {
+								if (!props.user.canVote) {
 									return (
 										<>
-											<div className="flex items-center gap-2">
-												<p className="text-white">
-													You must be level 15 or higher to vote
-												</p>
-											</div>
-											<Button href="/user">View Profile</Button>
-										</>
-									);
-								}
-
-								if (
-									props.round.voterCredential &&
-									!props.user.hasVoterCredential
-								) {
-									if (
-										props.round.voterCredential ===
-										"0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03"
-									) {
-										return (
-											<>
-												<p className="text-white">
-													You must be a Nouner or delegate to vote
-												</p>
-												<Button href="https://nouns.camp/" newTab>
-													View Nouns
-												</Button>
-											</>
-										);
-									}
-
-									if (
-										props.round.voterCredential ===
-										"0x4b10701Bfd7BFEdc47d50562b76b436fbB5BdB3B"
-									) {
-										return (
-											<>
-												<p className="text-white">
-													You must be a LilNouner or delegate to vote
-												</p>
-												<Button href="https://lilnouns.wtf/" newTab>
-													View LilNouns
-												</Button>
-											</>
-										);
-									}
-
-									return (
-										<>
-											<p className="text-white">
-												You must hold this token to vote
-											</p>
-											<Button
-												href={`https://matcha.xyz/tokens/ethereum/${props.round.voterCredential}`}
-												newTab
+											<ToggleModal
+												id="round-actions-voting"
+												className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
 											>
-												View Token
-											</Button>
+												Voting Requirements
+												<Info className="w-4 h-4" />
+											</ToggleModal>
+											<Button disabled>Submit Votes</Button>
 										</>
 									);
 								}

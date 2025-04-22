@@ -1,32 +1,88 @@
 import type { AuthenticatedUser } from "@/server/queries/users";
 import { z } from "zod";
+import { createFilter } from "./createFilter";
 
-// rounds page: Requirements to vote (i) opens actions modal which takes in a list of actions and shows how to do them
+export type ActionDescription = Array<{
+	text: string;
+	href?: string;
+	image?: string;
+	highlight?: boolean;
+}>;
+
 export function createAction<
-	T extends
-		| z.ZodObject<any, any>
-		| z.ZodDiscriminatedUnion<any, any>
-		| z.ZodUnion<any>,
->(props: {
-	schema?: T;
-	create: (inputs: z.infer<T>) => Promise<{
-		description: string | React.ReactNode;
-		url: string;
-		check: (user: AuthenticatedUser) => Promise<boolean>;
-	}>;
-}) {
-	return {
-		schema: props.schema,
-		load: (inputs: z.infer<T>) => {
-			if (props.schema) {
-				const result = props.schema.safeParse(inputs);
-
-				if (!result.success) {
-					throw new Error("Invalid inputs");
+	TFilters extends Record<string, ReturnType<typeof createFilter>>,
+	TInputs extends {
+		[K in keyof TFilters]: TFilters[K]["required"] extends true
+			? {
+					[O in keyof TFilters[K]["options"]]: z.infer<
+						TFilters[K]["options"][O]["schema"]
+					>;
 				}
-			}
+			:
+					| {
+							[O in keyof TFilters[K]["options"]]: z.infer<
+								TFilters[K]["options"][O]["schema"]
+							>;
+					  }
+					| undefined;
+	},
+>(init: {
+	image: string;
+	name: string;
+	category: string;
+	filters: TFilters;
+	validateInputs?: (props: { inputs: TInputs; ctx: z.RefinementCtx }) => void;
+	generateDescription: (inputs: TInputs) => Promise<ActionDescription>;
+	check: (props: {
+		user: AuthenticatedUser;
+		inputs: TInputs;
+	}) => Promise<boolean>;
+}) {
+	const schema = z.object(
+		Object.fromEntries(
+			Object.entries(init.filters).map(([key, filter]) => {
+				const filterSchema = z.object(
+					Object.fromEntries(
+						Object.entries(filter.options).map(([optKey, opt]) => [
+							optKey,
+							opt.schema,
+						]),
+					),
+				);
+				return [key, filter.required ? filterSchema : filterSchema.optional()];
+			}),
+		),
+	) as unknown as z.ZodType<TInputs, z.ZodTypeDef, TInputs>;
 
-			return props.create(inputs);
+	function validateInputs(inputs: TInputs) {
+		const parsedInput = schema
+			.superRefine((arg, ctx) => {
+				if (init.validateInputs) {
+					init.validateInputs({ inputs: arg as TInputs, ctx });
+				}
+			})
+			.parse(inputs);
+
+		return parsedInput;
+	}
+
+	return {
+		name: init.name,
+		category: init.category,
+		image: init.image,
+		check: (props: {
+			user: AuthenticatedUser;
+			inputs: TInputs;
+		}) => {
+			const validatedInputs = validateInputs(props.inputs);
+
+			return init.check({
+				user: props.user,
+				inputs: validatedInputs,
+			});
 		},
+		validateInputs,
+		generateDescription: init.generateDescription,
+		filters: init.filters,
 	};
 }

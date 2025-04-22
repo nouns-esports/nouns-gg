@@ -2,10 +2,16 @@
 
 import { z } from "zod";
 import { onlyUser } from ".";
-import { nexus, notifications, quests, xp } from "~/packages/db/schema/public";
+import {
+	nexus,
+	notifications,
+	questCompletions,
+	quests,
+	xp,
+} from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { eq, sql } from "drizzle-orm";
-import { getAction } from "../queries/quests";
+import { getAction } from "../actions";
 import { revalidatePath } from "next/cache";
 
 export const completeQuest = onlyUser
@@ -20,10 +26,11 @@ export const completeQuest = onlyUser
 		const quest = await db.primary.query.quests.findFirst({
 			where: eq(quests.id, parsedInput.quest),
 			with: {
-				completed: {
-					where: eq(xp.user, ctx.user.id),
+				completions: {
+					where: eq(questCompletions.user, ctx.user.id),
 					limit: 1,
 				},
+				actions: true,
 			},
 		});
 
@@ -31,7 +38,7 @@ export const completeQuest = onlyUser
 			throw new Error("Quest not found");
 		}
 
-		if (quest.completed?.length > 0) {
+		if (quest.completions?.length > 0) {
 			throw new Error("Quest already completed");
 		}
 
@@ -48,30 +55,26 @@ export const completeQuest = onlyUser
 		}
 
 		const actions = await Promise.all(
-			quest.actions.map(async (action, index) => {
-				return getAction({
-					quest: quest.id,
-					action: index,
-					user: ctx.user.id,
+			quest.actions.map(async (actionState) => {
+				const action = getAction({
+					action: actionState.action,
 				});
+
+				if (!action) {
+					throw new Error("Action not found");
+				}
+
+				return {
+					...actionState,
+					completed: await action.check({
+						user: ctx.user,
+						inputs: actionState.inputs,
+					}),
+				};
 			}),
 		);
 
-		for (const action of actions) {
-			if (!action) {
-				throw new Error("Action not found");
-			}
-		}
-
-		const allCompleted = (
-			await Promise.all(
-				actions.map((action, index) =>
-					action?.check(ctx.user, quest.actionInputs[index]),
-				),
-			)
-		).every((isComplete) => isComplete);
-
-		if (!allCompleted) {
+		if (!actions.every((action) => action.completed)) {
 			throw new Error("Not all actions completed");
 		}
 
@@ -82,7 +85,7 @@ export const completeQuest = onlyUser
 			description: quest.name,
 			image: quest.image,
 			read: true,
-			url: `/quests/${quest.id}`,
+			url: `/quests/${quest.handle}`,
 			timestamp: now,
 		};
 
@@ -91,6 +94,12 @@ export const completeQuest = onlyUser
 				quest: quest.id,
 				user: ctx.user.id,
 				amount: quest.xp,
+				timestamp: now,
+			});
+
+			await tx.insert(questCompletions).values({
+				quest: quest.id,
+				user: ctx.user.id,
 				timestamp: now,
 			});
 

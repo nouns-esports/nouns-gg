@@ -1,8 +1,13 @@
 import { db } from "~/packages/db";
-import { nexus } from "~/packages/db/schema/public";
+import {
+	linkedDiscords,
+	linkedFarcasters,
+	linkedTwitters,
+	linkedWallets,
+	nexus,
+} from "~/packages/db/schema/public";
 import { privyClient } from "../clients/privy";
 import { createJob } from "../createJob";
-import { eq } from "drizzle-orm";
 
 export const privySync = createJob({
 	name: "Privy Sync",
@@ -13,18 +18,61 @@ export const privySync = createJob({
 		await db.primary.transaction(async (tx) => {
 			for (const user of users) {
 				await tx
-					.update(nexus)
-					.set({
-						discord: user.discord?.username
-							? user.discord.username.split("#")[0]
-							: undefined,
-						username: user.farcaster?.username
-							? user.farcaster.username
-							: undefined,
-						fid: user.farcaster?.fid ? user.farcaster.fid : undefined,
-						twitter: user.twitter?.username ? user.twitter.username : undefined,
+					.insert(nexus)
+					.values({
+						id: user.id,
 					})
-					.where(eq(nexus.id, user.id));
+					.onConflictDoNothing();
+
+				if (user.discord?.username) {
+					await tx
+						.insert(linkedDiscords)
+						.values({
+							username: user.discord.username,
+							user: user.id,
+						})
+						.onConflictDoNothing();
+				}
+
+				if (user.farcaster) {
+					await tx
+						.insert(linkedFarcasters)
+						.values({
+							fid: user.farcaster.fid,
+							user: user.id,
+						})
+						.onConflictDoNothing();
+				}
+
+				if (user.twitter?.username) {
+					await tx
+						.insert(linkedTwitters)
+						.values({
+							username: user.twitter.username,
+							user: user.id,
+						})
+						.onConflictDoNothing();
+				}
+
+				for (const linkedAccount of user.linkedAccounts) {
+					if (linkedAccount.type === "wallet") {
+						if (linkedAccount.walletClientType === "privy") {
+							continue;
+						}
+
+						await tx
+							.insert(linkedWallets)
+							.values({
+								address: linkedAccount.address,
+								user: user.id,
+								client: linkedAccount.walletClientType as any,
+								chains: linkedAccount.chainId
+									? [parseInt(linkedAccount.chainId)]
+									: [],
+							})
+							.onConflictDoNothing();
+					}
+				}
 			}
 		});
 	},

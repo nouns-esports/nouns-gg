@@ -60,6 +60,7 @@ export const nounsProposals = onchainTable("nouns_proposals", (t) => ({
 		}>()
 		.notNull(),
 	client: t.integer(),
+	// TODO: Add state
 }));
 
 export const nounsVotes = onchainTable(
@@ -139,6 +140,7 @@ export const nounsAuctions = onchainTable("nouns_auctions", (t) => ({
 export const nounsBids = onchainTable(
 	"nouns_bids",
 	(t) => ({
+		// TODO: Add winner
 		nounId: t.bigint("noun_id").notNull(),
 		bidder: t.hex().notNull(),
 		amount: t.bigint().notNull(),
@@ -149,9 +151,3 @@ export const nounsBids = onchainTable(
 		pk: primaryKey({ columns: [t.nounId, t.amount] }),
 	}),
 );
-
-// export const ensProfiles = onchainTable("ens_profiles", (t) => ({
-// 	address: t.hex().primaryKey(),
-// 	name: t.text().notNull(),
-// 	image: t.text(),
-// }));

@@ -29,6 +29,11 @@ import {
 	raffleEntries,
 	communityAdmins,
 	productVariants,
+	questCompletions,
+	questActions,
+	roundActions,
+	eventActions,
+	communityActions,
 } from "./schema/public";
 import {
 	erc721Balances,
@@ -68,6 +73,8 @@ export const communityRelations = relations(communities, ({ one, many }) => ({
 	quests: many(quests),
 	admins: many(communityAdmins),
 	predictions: many(predictions),
+	casts: many(casts),
+	actions: many(communityActions),
 }));
 
 export const communityAdminsRelations = relations(
@@ -84,6 +91,16 @@ export const communityAdminsRelations = relations(
 	}),
 );
 
+export const communityActionsRelations = relations(
+	communityActions,
+	({ one }) => ({
+		community: one(communities, {
+			fields: [communityActions.community],
+			references: [communities.id],
+		}),
+	}),
+);
+
 export const eventsRelations = relations(events, ({ one, many }) => ({
 	community: one(communities, {
 		fields: [events.community],
@@ -96,6 +113,14 @@ export const eventsRelations = relations(events, ({ one, many }) => ({
 	products: many(products),
 	checkpoints: many(checkpoints),
 	raffles: many(raffles),
+	actions: many(eventActions),
+}));
+
+export const eventActionsRelations = relations(eventActions, ({ one }) => ({
+	event: one(events, {
+		fields: [eventActions.event],
+		references: [events.id],
+	}),
 }));
 
 export const checkpointsRelations = relations(checkpoints, ({ one, many }) => ({
@@ -173,6 +198,14 @@ export const roundsRelations = relations(rounds, ({ one, many }) => ({
 	minVoterRank: one(ranks, {
 		fields: [rounds.minVoterRank],
 		references: [ranks.id],
+	}),
+	actions: many(roundActions),
+}));
+
+export const roundActionsRelations = relations(roundActions, ({ one }) => ({
+	round: one(rounds, {
+		fields: [roundActions.round],
+		references: [rounds.id],
 	}),
 }));
 
@@ -277,10 +310,29 @@ export const questRelations = relations(quests, ({ one, many }) => ({
 		fields: [quests.community],
 		references: [communities.id],
 	}),
-	completed: many(xp),
 	event: one(events, {
 		fields: [quests.event],
 		references: [events.id],
+	}),
+	completions: many(questCompletions),
+	actions: many(questActions),
+	completed: many(xp),
+}));
+
+export const questCompletionsRelations = relations(
+	questCompletions,
+	({ one }) => ({
+		quest: one(quests, {
+			fields: [questCompletions.quest],
+			references: [quests.id],
+		}),
+	}),
+);
+
+export const questActionsRelations = relations(questActions, ({ one }) => ({
+	quest: one(quests, {
+		fields: [questActions.quest],
+		references: [quests.id],
 	}),
 }));
 
@@ -505,6 +557,10 @@ export const castRelations = relations(casts, ({ many, one }) => ({
 	creator: one(profiles, {
 		fields: [casts.fid],
 		references: [profiles.fid],
+	}),
+	community: one(communities, {
+		fields: [casts.rootParentUrl],
+		references: [communities.channel],
 	}),
 }));
 

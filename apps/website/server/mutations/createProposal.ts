@@ -7,6 +7,7 @@ import { revalidatePath } from "next/cache";
 import { onlyUser } from ".";
 import { z } from "zod";
 import { getUserHasCredential } from "../queries/users";
+import { getAction } from "../actions";
 
 export const createProposal = onlyUser
 	.schema(
@@ -26,7 +27,7 @@ export const createProposal = onlyUser
 				proposals: {
 					where: eq(proposals.user, ctx.user.id),
 				},
-				minProposerRank: true,
+				actions: true,
 			},
 		});
 
@@ -38,17 +39,30 @@ export const createProposal = onlyUser
 			throw new Error("You have already proposed for this round");
 		}
 
-		if (round.proposerCredential) {
-			const hasCredential = await getUserHasCredential({
-				token: round.proposerCredential,
-				wallets: ctx.user.wallets.map(
-					(w) => w.address.toLowerCase() as `0x${string}`,
-				),
-			});
+		const actions = await Promise.all(
+			round.actions
+				.filter((action) => action.type === "proposing")
+				.map(async (actionState) => {
+					const action = getAction({
+						action: actionState.action,
+					});
 
-			if (!hasCredential) {
-				throw new Error("You do not have a valid credential");
-			}
+					if (!action) {
+						throw new Error("Action not found");
+					}
+
+					return {
+						...actionState,
+						completed: await action.check({
+							user: ctx.user,
+							inputs: actionState.inputs,
+						}),
+					};
+				}),
+		);
+
+		if (!actions.every((action) => action.completed)) {
+			throw new Error("Proposing prerequisites not met");
 		}
 
 		const now = new Date();

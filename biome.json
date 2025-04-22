@@ -22,7 +22,8 @@
 			},
 			"correctness": {
 				"useExhaustiveDependencies": "off",
-				"useJsxKeyInIterable": "off"
+				"useJsxKeyInIterable": "off",
+				"noEmptyPattern": "off"
 			},
 			"complexity": {
 				"useOptionalChain": "off"

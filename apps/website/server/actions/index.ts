@@ -1,73 +1,96 @@
 import type { createAction } from "./createAction";
 
-// Account
 import { linkDiscord } from "./account/linkDiscord";
 import { linkEmail } from "./account/linkEmail";
 import { linkFarcaster } from "./account/linkFarcaster";
 import { linkWallet } from "./account/linkWallet";
 import { linkX } from "./account/linkX";
-
-// Discord
-import { accountAge } from "./discord/accountAge";
-import { attendCall } from "./discord/attendCall";
 import { haveRole } from "./discord/haveRole";
-
-// Events
+import { joinServer } from "./discord/joinServer";
 import { signup } from "./events/signup";
-
-// Farcaster
-import { cast } from "./farcaster/cast";
-import { followAccount } from "./farcaster/followAccount";
-
-// Lil Nouns
-import { becomeDelegate as becomeLilNounsDelegate } from "./lilnouns/becomeDelegate";
-
-// Nouns
-import { becomeDelegate as becomeNounsDelegate } from "./nouns/becomeDelegate";
-
-// XP
+import { becomeLilNounsDelegate } from "./lilnouns/becomeDelegate";
+import { becomeNounsDelegate } from "./nouns/becomeDelegate";
+import { bidAuction } from "./nouns/bidAuction";
+import { castNounsVote } from "./nouns/castVote";
+import { createNounsProposal } from "./nouns/createProposal";
+import { visitLink } from "./online/visitLink";
+import { makePrediction } from "./predictions/makePrediction";
+import { winPrediction } from "./predictions/winPrediction";
+import { completeQuest } from "./quests/completeQuest";
+import { castRoundVote } from "./rounds/castVote";
+import { createRoundProposal } from "./rounds/createProposal";
+import { recieveVotes } from "./rounds/recieveVotes";
+import { createPost } from "./social/createPost";
+import { likePost } from "./social/likePost";
+import { repostPost } from "./social/repostPost";
 import { reachLevel } from "./xp/reachLevel";
 import { reachPercentile } from "./xp/reachPercentile";
+import { holdNFT } from "./onchain/holdNFT";
 
 const actions = {
-	account: {
-		linkDiscord,
-		linkEmail,
-		linkFarcaster,
-		linkWallet,
-		linkX,
-	},
-	discord: {
-		accountAge,
-		attendCall,
-		haveRole,
-	},
-	events: {
-		signup,
-	},
-	farcaster: {
-		cast,
-		followAccount,
-	},
-	lilnouns: {
-		becomeLilNounsDelegate,
-	},
-	nouns: {
-		becomeNounsDelegate,
-	},
-	xp: {
-		reachLevel,
-		reachPercentile,
-	},
+	// Account
+	linkDiscord,
+	linkEmail,
+	linkFarcaster,
+	linkWallet,
+	linkX,
+
+	// Discord
+	haveRole,
+	joinServer,
+
+	// Events
+	signup,
+
+	// Lil Nouns
+	becomeLilNounsDelegate,
+
+	// Nouns
+	becomeNounsDelegate,
+	bidAuction,
+	castNounsVote,
+	createNounsProposal,
+
+	// Online
+	visitLink,
+
+	// Onchain
+	holdNFT,
+
+	// Predictions
+	makePrediction,
+	winPrediction,
+
+	// Quests
+	completeQuest,
+
+	// Rounds
+	castRoundVote,
+	createRoundProposal,
+	recieveVotes,
+
+	// Social
+	createPost,
+	likePost,
+	repostPost,
+
+	// XP
+	reachLevel,
+	reachPercentile,
 };
 
 export function getAction(props: {
 	action: string;
-}): ReturnType<typeof createAction> | undefined {
-	for (const category in actions) {
-		const categoryActions = actions[category as keyof typeof actions];
-		if (props.action in categoryActions) {
-			return categoryActions[props.action as keyof typeof categoryActions];
-		}
-	}
+}) {
+	return actions[props.action as keyof typeof actions] as
+		| ReturnType<typeof createAction>
+		| undefined;
+}
+
+export function getActions(props: {
+	category: string;
+}) {
+	return Object.values(actions).filter(
+		(action) => action.category === props.category,
+	) as ReturnType<typeof createAction>[];
 }

@@ -15,6 +15,7 @@ import { onlyUser } from ".";
 
 import { getUserHasCredential } from "../queries/users";
 import { level } from "@/utils/level";
+import { getAction } from "../actions";
 
 export const castVotes = onlyUser
 	.schema(
@@ -33,7 +34,7 @@ export const castVotes = onlyUser
 				proposals: {
 					where: eq(proposals.user, ctx.user.id),
 				},
-				minVoterRank: true,
+				actions: true,
 			},
 		});
 
@@ -49,17 +50,30 @@ export const castVotes = onlyUser
 			}
 		}
 
-		if (round.voterCredential) {
-			const hasCredential = await getUserHasCredential({
-				token: round.voterCredential.toLowerCase(),
-				wallets: ctx.user.wallets.map(
-					(w) => w.address.toLowerCase() as `0x${string}`,
-				),
-			});
+		const actions = await Promise.all(
+			round.actions
+				.filter((action) => action.type === "voting")
+				.map(async (actionState) => {
+					const action = getAction({
+						action: actionState.action,
+					});
 
-			if (!hasCredential) {
-				throw new Error("You do not have a valid credential");
-			}
+					if (!action) {
+						throw new Error("Action not found");
+					}
+
+					return {
+						...actionState,
+						completed: await action.check({
+							user: ctx.user,
+							inputs: actionState.inputs,
+						}),
+					};
+				}),
+		);
+
+		if (!actions.every((action) => action.completed)) {
+			throw new Error("Voting prerequisites not met");
 		}
 
 		const now = new Date();

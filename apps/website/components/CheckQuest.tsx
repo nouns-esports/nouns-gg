@@ -24,6 +24,8 @@ export default function CheckQuest(props: {
 	const completeQuestAction = useAction(completeQuest);
 	const signInModal = useModal("sign-in");
 
+	console.log("quest", props.completed, props.claimed);
+
 	return (
 		<Button
 			disabled={props.active ? props.claimed : true}
