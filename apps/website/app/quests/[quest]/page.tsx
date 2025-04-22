@@ -156,7 +156,7 @@ export default async function Quest(props: {
 													"opacity-60 pointer-events-none",
 											)}
 										>
-											{action.completed ? (
+											{action.completed || questClaimed ? (
 												<div className="rounded-full bg-green w-7 h-7 flex items-center justify-center">
 													<Check className="w-5 h-5 text-black/50" />
 												</div>
