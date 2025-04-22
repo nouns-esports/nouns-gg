@@ -186,7 +186,7 @@ export default async function Round(props: {
 				round.actions
 					.filter((action) => action.type === "proposing")
 					.map(async (actionState) => {
-						const action = await getAction({ action: actionState.action });
+						const action = getAction({ action: actionState.action });
 
 						if (!action) {
 							throw new Error(`Action ${actionState.action} not found`);
@@ -208,7 +208,7 @@ export default async function Round(props: {
 				round.actions
 					.filter((action) => action.type === "voting")
 					.map(async (actionState) => {
-						const action = await getAction({ action: actionState.action });
+						const action = getAction({ action: actionState.action });
 
 						if (!action) {
 							throw new Error(`Action ${actionState.action} not found`);

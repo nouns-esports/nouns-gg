@@ -16,6 +16,7 @@ export const reachLevel = createAction({
 	},
 	check: async ({ inputs, user }) => {
 		"use server";
+		console.log("Check level", inputs, user);
 
 		if (!user.nexus) return false;
 
