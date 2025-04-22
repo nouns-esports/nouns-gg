@@ -115,7 +115,7 @@ export const viewport = {
 export default async function RootLayout(props: { children: React.ReactNode }) {
 	const user = await getAuthenticatedUser();
 
-	const maintenance = true;
+	const maintenance = false;
 
 	return (
 		<html lang="en" className="/scroll-smooth overflow-x-hidden scrollbar-main">
