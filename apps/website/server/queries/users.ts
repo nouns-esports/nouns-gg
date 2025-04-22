@@ -64,7 +64,6 @@ export async function getAuthenticatedUser() {
 					username: fullPrivyUser.farcaster?.username ?? undefined,
 					fid: fullPrivyUser.farcaster?.fid ?? undefined,
 					canRecieveEmails: false,
-					interests: [],
 				});
 
 				userNexus = await db.primary.query.nexus.findFirst({
