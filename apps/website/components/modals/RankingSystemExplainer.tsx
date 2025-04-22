@@ -55,12 +55,6 @@ export default function RankingSystemExplainer() {
 								Shop
 							</Tab>
 							<Tab
-								selected={tab === "achievements"}
-								onClick={() => setTab("achievements")}
-							>
-								Achievements
-							</Tab>
-							<Tab
 								selected={tab === "predictions"}
 								onClick={() => setTab("predictions")}
 							>
@@ -141,13 +135,6 @@ export default function RankingSystemExplainer() {
 									<Card title="Purchases">
 										Players who purchase items from the shop earn 10 XP per
 										dollar spent, with a max of 500 XP per order.
-									</Card>
-								</div>
-							),
-							achievements: (
-								<div className="flex flex-col gap-4">
-									<Card title="Completing Achievements">
-										Earn XP when you reach milestones in your Nexus journey.
 									</Card>
 								</div>
 							),

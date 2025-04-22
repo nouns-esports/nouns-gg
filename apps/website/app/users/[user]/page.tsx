@@ -9,9 +9,7 @@ import { Level } from "@/components/Level";
 import SettingsModal from "@/components/modals/SettingsModal";
 import { ToggleModal } from "@/components/Modal";
 import { BarChart, Trophy } from "lucide-react";
-import { getAchievementsProgress } from "@/server/queries/achievements";
 import UserStatsModal from "@/components/modals/UserStatsModal";
-import AchievementsModal from "@/components/modals/AchievementsModal";
 
 export default async function User(props: {
 	params: Promise<{ user: string }>;
@@ -27,12 +25,7 @@ export default async function User(props: {
 		return notFound();
 	}
 
-	const [userStats, achievementProgress] = await Promise.all([
-		getUserStats({ user: user.id }),
-		authenticatedUser
-			? getAchievementsProgress({ user: authenticatedUser })
-			: undefined,
-	]);
+	const userStats = await getUserStats({ user: user.id });
 
 	return (
 		<>
