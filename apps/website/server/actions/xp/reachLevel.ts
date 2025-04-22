@@ -16,13 +16,8 @@ export const reachLevel = createAction({
 	},
 	check: async ({ inputs, user }) => {
 		"use server";
-		console.log("Check level", inputs, user);
 
-		if (!user.nexus) return false;
-
-		const { currentLevel } = level(user.nexus.xp);
-
-		return currentLevel < inputs.level.value;
+		return user.level < inputs.level.value;
 	},
 	filters: {
 		// TODO: Add community filter

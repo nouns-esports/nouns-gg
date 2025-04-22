@@ -170,21 +170,6 @@ export default function Proposals(props: {
 									);
 								}
 
-								if (remainingVotes < 1 && votesSelected === 0) {
-									return (
-										<>
-											<p className="text-white">
-												Your votes have been submitted
-											</p>
-											<ToggleModal id="share-votes">
-												<Button onClick={() => openShareVotesModal()}>
-													Share
-												</Button>
-											</ToggleModal>
-										</>
-									);
-								}
-
 								if (!props.user.canVote) {
 									return (
 										<>
@@ -196,6 +181,21 @@ export default function Proposals(props: {
 												<Info className="w-4 h-4" />
 											</ToggleModal>
 											<Button disabled>Submit Votes</Button>
+										</>
+									);
+								}
+
+								if (remainingVotes < 1 && votesSelected === 0) {
+									return (
+										<>
+											<p className="text-white">
+												Your votes have been submitted
+											</p>
+											<ToggleModal id="share-votes">
+												<Button onClick={() => openShareVotesModal()}>
+													Share
+												</Button>
+											</ToggleModal>
 										</>
 									);
 								}
