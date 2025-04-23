@@ -55,21 +55,9 @@ export default async function ArticlePage(props: {
 }) {
 	const params = await props.params;
 
-	const [article, user] = await Promise.all([
-		getArticle({ handle: params.article }),
-		getAuthenticatedUser(),
-	]);
+	const article = await getArticle({ handle: params.article });
 
-	if (!article) {
-		return notFound();
-	}
-
-	const now = new Date();
-
-	if (
-		new Date(article.publishedAt) > now &&
-		(!user || !article.editors.includes(user.id))
-	) {
+	if (!article || article.draft) {
 		return notFound();
 	}
 
