@@ -1,5 +1,4 @@
 import { twMerge } from "tailwind-merge";
-import Attribution from "./Attribution";
 import Link from "./Link";
 
 export default function Image(props: {
@@ -39,14 +38,6 @@ export default function Image(props: {
 			) : (
 				""
 			)}
-			{/* This will have to query the creator on the client inside the attribution component */}
-			{/* {props.attribution?.show ? (
-        <div className="absolute top-4 right-4 z-20">
-          <Attribution id={props.hash} />
-        </div>
-      ) : (
-        ""
-      )} */}
 		</div>
 	);
 }
