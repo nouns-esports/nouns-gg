@@ -10,6 +10,7 @@ import {
 	List,
 	ShoppingCart,
 	Coins,
+	Users,
 } from "lucide-react";
 import Banner from "./Banner";
 import Menu from "./Menu";
@@ -19,11 +20,13 @@ import GoldModal from "./modals/GoldModal";
 import { ToggleModal } from "./Modal";
 import CartModal from "./modals/CartModal";
 import { formatGold } from "~/packages/utils/formatGold";
-
+import { getCommunities } from "@/server/queries/communities";
 export default async function Header() {
 	const user = await getAuthenticatedUser();
-
-	const notifications = user ? await getNotifications({ user: user.id }) : [];
+	const [communities, notifications] = await Promise.all([
+		getCommunities(),
+		user ? getNotifications({ user: user.id }) : [],
+	]);
 
 	return (
 		<>
@@ -46,75 +49,28 @@ export default async function Header() {
 							<nav className="pointer-events-auto flex items-center gap-8">
 								<Menu />
 								<ul className="flex gap-6 items-center text-white max-md:gap-0">
-									<Group title="Explore" icon={<Shapes className="w-5 h-5" />}>
-										<ul className="flex flex-col gap-0 w-80">
-											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
+									<Group
+										title="Communities"
+										icon={<Users className="w-5 h-5" />}
+									>
+										<div className="grid grid-cols-2 gap-2 w-80">
+											{communities.map((community) => (
 												<Link
-													href="/rounds"
-													className="flex gap-4 items-center"
+													href={`/c/${community.handle}`}
+													key={community.id}
+													className="flex gap-2 items-center text-nowrap group/c hover:bg-grey-500 transition-colors rounded-lg p-2"
 												>
-													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-green text-white items-center">
-														<Trophy className="w-full h-full p-2" />
-													</div>
-													<div>
-														<p className="font-bebas-neue text-lg">Rounds</p>
-														<p className="text-grey-200">
-															Govern who and what we fund
-														</p>
-													</div>
+													<img
+														src={community.image}
+														alt={community.name}
+														className="w-6 h-6 rounded-md"
+													/>
+													<p className="text-nowrap group-hover/c:text-white/70 transition-colors">
+														{community.name}
+													</p>
 												</Link>
-											</li>
-											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
-												<Link
-													href="/quests"
-													className="flex gap-4 items-center"
-												>
-													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-blue-500 text-white items-center">
-														<Gem className="w-full h-full p-2" />
-													</div>
-													<div>
-														<p className="font-bebas-neue text-lg">Quests</p>
-														<p className="text-grey-200">Level up your Nexus</p>
-													</div>
-												</Link>
-											</li>
-											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
-												<Link
-													href="/c/nouns-gg?tab=leaderboard"
-													className="flex items-center gap-4"
-												>
-													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-pink text-white items-center">
-														<List className="w-full h-full p-2" />
-													</div>
-													<div>
-														<p className="font-bebas-neue text-lg">
-															Leaderboard
-														</p>
-														<p className="text-grey-200">
-															Rankup and earn rewards
-														</p>
-													</div>
-												</Link>
-											</li>
-											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
-												<Link
-													href="/predictions"
-													className="flex items-center gap-4"
-												>
-													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-gold-500 text-white items-center">
-														<Coins className="w-full h-full p-2" />
-													</div>
-													<div>
-														<p className="font-bebas-neue text-lg">
-															Predictions
-														</p>
-														<p className="text-grey-200">
-															Make predictions and earn gold
-														</p>
-													</div>
-												</Link>
-											</li>
-										</ul>
+											))}
+										</div>
 									</Group>
 									<Link href="/events" className="max-[900px]:hidden">
 										<li className="flex gap-2 items-center opacity-100 hover:opacity-80 transition-opacity relative z-[60]">
