@@ -32,7 +32,9 @@ export async function getRank(input: { user: string; community: number }) {
 			},
 		},
 		extras: {
-			rank: sql<number>`ROW_NUMBER() OVER (ORDER BY xp DESC)`.as("rank"),
+			rank: sql<number>`ROW_NUMBER() OVER (PARTITION BY community ORDER BY xp DESC)`.as(
+				"rank",
+			),
 		},
 	});
 }
