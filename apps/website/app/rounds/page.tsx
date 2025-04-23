@@ -1,8 +1,6 @@
 import { getRounds } from "@/server/queries/rounds";
 import RoundCard from "@/components/RoundCard";
-import Link from "@/components/Link";
 import { getAuthenticatedUser } from "@/server/queries/users";
-import { Plus } from "lucide-react";
 import Button from "@/components/Button";
 
 export default async function Rounds() {
@@ -53,33 +51,13 @@ export default async function Rounds() {
 						<div className="flex flex-col w-full h-full rounded-xl bg-grey-800 p-4">
 							Funds Deployed
 							<p className="text-white text-2xl font-semibold w-full h-full items-center flex justify-center">
-								$
-								{rounds
-									.reduce(
-										(total, round) =>
-											total +
-											round.awards.reduce(
-												(roundTotal, award) =>
-													award.asset === "usdc"
-														? roundTotal + Number(award.value) / 1000000
-														: roundTotal,
-												0,
-											),
-										0,
-									)
-									.toLocaleString()}
+								$58,425
 							</p>
 						</div>
 						<div className="flex flex-col w-full h-full rounded-xl bg-grey-800 p-4 max-lg:flex max-sm:hidden">
 							Total Participants
 							<p className="text-white text-2xl font-semibold w-full h-full items-center flex justify-center">
-								{
-									new Set(
-										rounds
-											.flatMap((round) => [...round.proposals, ...round.votes])
-											.map((item) => item.user),
-									).size
-								}
+								8695
 							</p>
 						</div>
 					</div>
