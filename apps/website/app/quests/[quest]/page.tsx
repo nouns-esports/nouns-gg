@@ -113,8 +113,8 @@ export default async function Quest(props: {
 								<h1 className="w-full text-white font-luckiest-guy text-3xl">
 									{quest.name}
 								</h1>
-								{quest._description ? (
-									<TipTap content={quest._description} />
+								{quest.description ? (
+									<TipTap content={quest.description} />
 								) : null}
 							</div>
 							<div className="flex flex-col gap-4">
