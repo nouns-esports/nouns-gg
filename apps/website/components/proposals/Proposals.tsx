@@ -251,25 +251,21 @@ export default function Proposals(props: {
 					{props.round.proposals
 						.toSorted((a, b) => {
 							if (state === "Ended") {
-								if (b.winner !== null && a.winner !== null) {
+								if (a.winner != null && b.winner != null) {
 									return a.winner - b.winner;
-								} else if (b.winner) {
-									return -1;
-								} else if (a.winner) {
-									return 1;
 								}
+
+								if (a.winner != null) return -1;
+								if (b.winner != null) return 1;
 							}
 
 							const votesDiff = b.totalVotes - a.totalVotes;
+							if (votesDiff !== 0) return votesDiff;
 
-							if (votesDiff === 0) {
-								return (
-									new Date(b.createdAt).getTime() -
-									new Date(a.createdAt).getTime()
-								);
-							}
-
-							return votesDiff;
+							return (
+								new Date(b.createdAt).getTime() -
+								new Date(a.createdAt).getTime()
+							);
 						})
 						.map((proposal, index) => {
 							const Component = props.round.type === "url" ? Link : ToggleModal;
