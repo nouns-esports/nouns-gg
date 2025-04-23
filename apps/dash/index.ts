@@ -9,6 +9,7 @@ import {
 	discordPlugin,
 	// farcasterPlugin,
 } from "~/packages/agent/plugins";
+import { level } from "../website/utils/level";
 
 export const agent = await createAgent({
 	// model: deepseek("deepseek-reasoner"),
@@ -54,9 +55,6 @@ export const agent = await createAgent({
 				eq(nexus.twitter, context.author),
 				eq(nexus.discord, context.author),
 			),
-			with: {
-				rank: true,
-			},
 		});
 
 		if (!user) return;
@@ -72,12 +70,12 @@ export const agent = await createAgent({
 		// 	// Regularly post and quote other tweets from selected accounts (hbox, aklo, mang0, etc...)
 		// }
 
-		if (user.rank) {
-			return (
-				`You are talking to ${user.name}\n` +
-				`They are ranked ${user.rank.name}, have ${user.xp} xp, and have ${user.gold} gold`
-			);
-		}
+		const { currentLevel } = level(user.xp);
+
+		return (
+			`You are talking to ${user.name}\n` +
+			`They are level ${currentLevel} and have ${user.gold} gold`
+		);
 	},
 });
 

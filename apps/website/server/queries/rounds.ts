@@ -21,7 +21,6 @@ export const getRoundWithProposal = cache(
 
 export const getRound = cache(
 	async (input: { handle: string }) => {
-		////
 		return db.pgpool.query.rounds.findFirst({
 			where: eq(rounds.handle, input.handle),
 			with: {
@@ -37,7 +36,7 @@ export const getRound = cache(
 					with: {
 						user: {
 							with: {
-								rank: true,
+								profile: true,
 							},
 						},
 					},
@@ -53,14 +52,14 @@ export const getRound = cache(
 					with: {
 						user: {
 							with: {
-								rank: true,
+								profile: true,
 							},
 						},
 						proposal: {
 							with: {
 								user: {
 									with: {
-										rank: true,
+										profile: true,
 									},
 								},
 							},
@@ -109,22 +108,6 @@ export const getRounds = cache(
 			),
 			with: {
 				community: true,
-				awards: {
-					columns: {
-						asset: true,
-						value: true,
-					},
-				},
-				proposals: {
-					columns: {
-						user: true,
-					},
-				},
-				votes: {
-					columns: {
-						user: true,
-					},
-				},
 				event: true,
 			},
 		});

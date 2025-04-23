@@ -5,7 +5,6 @@ import {
 	notifications,
 	communities,
 	rounds,
-	creations,
 	events,
 	quests,
 	attendees,
@@ -19,9 +18,7 @@ import {
 	awards,
 	proposals,
 	votes,
-	ranks,
 	assets,
-	rankings,
 	carts,
 	gold,
 	collections,
@@ -34,6 +31,7 @@ import {
 	roundActions,
 	eventActions,
 	communityActions,
+	linkedWallets,
 } from "./schema/public";
 import {
 	erc721Balances,
@@ -68,7 +66,6 @@ export const notificationsRelations = relations(notifications, ({ one }) => ({
 
 export const communityRelations = relations(communities, ({ one, many }) => ({
 	rounds: many(rounds),
-	creations: many(creations),
 	events: many(events),
 	quests: many(quests),
 	admins: many(communityAdmins),
@@ -191,14 +188,6 @@ export const roundsRelations = relations(rounds, ({ one, many }) => ({
 		fields: [rounds.event],
 		references: [events.id],
 	}),
-	minProposerRank: one(ranks, {
-		fields: [rounds.minProposerRank],
-		references: [ranks.id],
-	}),
-	minVoterRank: one(ranks, {
-		fields: [rounds.minVoterRank],
-		references: [ranks.id],
-	}),
 	actions: many(roundActions),
 }));
 
@@ -229,13 +218,7 @@ export const proposalsRelations = relations(proposals, ({ one, many }) => ({
 export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	votes: many(votes),
 	proposals: many(proposals),
-	rankings: many(rankings),
 	xpRecords: many(xp),
-	rank: one(ranks, {
-		fields: [nexus.rank],
-		references: [ranks.id],
-	}),
-	creations: many(creations),
 	notifications: many(notifications),
 	// orders: many(orders),
 	carts: many(carts),
@@ -244,6 +227,7 @@ export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	events: many(events),
 	quests: many(quests),
 	predictions: many(predictions),
+	wallets: many(linkedWallets),
 	profile: one(profiles, {
 		fields: [nexus.fid],
 		references: [profiles.fid],
@@ -258,10 +242,6 @@ export const goldRelations = relations(gold, ({ one }) => ({
 	to: one(nexus, {
 		fields: [gold.to],
 		references: [nexus.id],
-	}),
-	ranking: one(rankings, {
-		fields: [gold.ranking],
-		references: [rankings.id],
 	}),
 	checkin: one(checkins, {
 		fields: [gold.checkin],
@@ -299,10 +279,6 @@ export const awardsRelations = relations(awards, ({ one }) => ({
 		fields: [awards.asset],
 		references: [assets.id],
 	}),
-}));
-
-export const ranksRelations = relations(ranks, ({ one, many }) => ({
-	nexus: many(nexus),
 }));
 
 export const questRelations = relations(quests, ({ one, many }) => ({
@@ -375,21 +351,6 @@ export const xpRelations = relations(xp, ({ one }) => ({
 	// }),
 }));
 
-export const rankingsRelations = relations(rankings, ({ one, many }) => ({
-	user: one(nexus, {
-		fields: [rankings.user],
-		references: [nexus.id],
-	}),
-	rank: one(ranks, {
-		fields: [rankings.rank],
-		references: [ranks.id],
-	}),
-	gold: one(gold, {
-		fields: [rankings.gold],
-		references: [gold.id],
-	}),
-}));
-
 export const votesRelations = relations(votes, ({ one, many }) => ({
 	proposal: one(proposals, {
 		fields: [votes.proposal],
@@ -404,17 +365,6 @@ export const votesRelations = relations(votes, ({ one, many }) => ({
 		references: [nexus.id],
 	}),
 	xp: many(xp),
-}));
-
-export const creationsRelations = relations(creations, ({ one }) => ({
-	original: one(creations, {
-		fields: [creations.original],
-		references: [creations.id],
-	}),
-	creator: one(nexus, {
-		fields: [creations.creator],
-		references: [nexus.id],
-	}),
 }));
 
 export const productsRelations = relations(products, ({ one, many }) => ({
@@ -459,42 +409,48 @@ export const cartsRelations = relations(carts, ({ one }) => ({
 	}),
 }));
 
-// export const erc721BalancesRelations = relations(
-// 	erc721Balances,
-// 	({ one, many }) => ({
-// 		nounDelegates: many(nounDelegates),
-// 		lilnounDelegates: many(lilnounDelegates),
-// 	}),
-// );
+export const linkedWalletsRelations = relations(linkedWallets, ({ one }) => ({
+	user: one(nexus, {
+		fields: [linkedWallets.user],
+		references: [nexus.id],
+	}),
+}));
 
-// export const nounDelegatesRelations = relations(
-// 	nounDelegates,
-// 	({ one, many }) => ({
-// 		delegator: one(erc721Balances, {
-// 			fields: [nounDelegates.from],
-// 			references: [erc721Balances.account],
-// 		}),
-// 		delegatee: one(erc721Balances, {
-// 			fields: [nounDelegates.to],
-// 			references: [erc721Balances.account],
-// 		}),
+export const erc721BalancesRelations = relations(
+	erc721Balances,
+	({ one, many }) => ({
+		nounDelegates: many(nounDelegates),
+		lilnounDelegates: many(lilnounDelegates),
+	}),
+);
 
-// 	}),
-// );
+export const nounDelegatesRelations = relations(
+	nounDelegates,
+	({ one, many }) => ({
+		delegator: one(erc721Balances, {
+			fields: [nounDelegates.from],
+			references: [erc721Balances.account],
+		}),
+		delegatee: one(erc721Balances, {
+			fields: [nounDelegates.to],
+			references: [erc721Balances.account],
+		}),
+	}),
+);
 
-// export const lilnounDelegatesRelations = relations(
-// 	lilnounDelegates,
-// 	({ one, many }) => ({
-// 		delegator: one(erc721Balances, {
-// 			fields: [lilnounDelegates.from],
-// 			references: [erc721Balances.account],
-// 		}),
-// 		delegatee: one(erc721Balances, {
-// 			fields: [lilnounDelegates.to],
-// 			references: [erc721Balances.account],
-// 		}),
-// 	}),
-// );
+export const lilnounDelegatesRelations = relations(
+	lilnounDelegates,
+	({ one, many }) => ({
+		delegator: one(erc721Balances, {
+			fields: [lilnounDelegates.from],
+			references: [erc721Balances.account],
+		}),
+		delegatee: one(erc721Balances, {
+			fields: [lilnounDelegates.to],
+			references: [erc721Balances.account],
+		}),
+	}),
+);
 
 export const nounsProposalsRelations = relations(
 	nounsProposals,

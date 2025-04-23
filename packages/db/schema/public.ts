@@ -3,7 +3,6 @@ import { sql } from "drizzle-orm";
 import type { JSONContent as TipTap } from "@tiptap/core";
 import type { ActionDescription } from "~/apps/website/server/actions/createAction";
 
-// TODO: migrate these to new table and clean up old ones
 export const links = pgTable("links", (t) => ({
 	id: t.text().primaryKey(),
 	url: t.text().notNull(),
@@ -65,7 +64,7 @@ export const communities = pgTable("communities", (t) => ({
 	handle: t.text().notNull().unique(),
 	image: t.text().notNull(),
 	name: t.text().notNull(),
-	description: t.jsonb().$type<TipTap>(), //.notNull(),
+	description: t.jsonb().$type<TipTap>(),
 	channel: t.text(),
 	gold: t.integer().notNull().default(0),
 }));
@@ -96,7 +95,7 @@ export const articles = pgTable("articles", (t) => ({
 	content: t.jsonb().$type<TipTap>().notNull(),
 	draft: t.boolean().notNull().default(true),
 	publishedAt: t.timestamp("published_at", { mode: "date" }).notNull(),
-	editors: t.text().array().notNull(), //.default([]), default arrays are broken with Drizzle Kit right now
+	community: t.bigint({ mode: "number" }).notNull().default(0), // drop default
 }));
 
 export const events = pgTable("events", (t) => ({
@@ -254,12 +253,6 @@ export const rounds = pgTable("rounds", (t) => ({
 		.notNull()
 		.default(2000),
 	linkRegex: t.text("link_regex"),
-
-	// DEPRECATE
-	minProposerRank: t.integer("min_proposer_rank"),
-	minVoterRank: t.integer("min_voter_rank"),
-	proposerCredential: t.text("proposer_credential"),
-	voterCredential: t.text("voter_credential"),
 }));
 
 export const roundActions = pgTable("round_actions", (t) => ({
@@ -322,9 +315,7 @@ export const nexus = pgTable(
 	"nexus",
 	(t) => ({
 		id: t.text().primaryKey(),
-		username: t.text().unique(),
 		admin: t.boolean().notNull().default(false),
-		rank: t.integer(),
 		xp: t.integer().notNull().default(0),
 		image: t.text().notNull().default(""),
 		name: t.text().notNull().default(""),
@@ -352,23 +343,11 @@ export const gold = pgTable("gold", (t) => ({
 	prediction: t.bigint({ mode: "number" }),
 }));
 
-export const ranks = pgTable("ranks", (t) => ({
-	id: t.serial().primaryKey(),
-	name: t.text().notNull(),
-	image: t.text().notNull(),
-	color: t.text().notNull().default(""),
-	place: t.smallint().notNull(),
-	percentile: t.numeric({ precision: 4, scale: 3 }).notNull(), // ex: 0.01 === 1%, 0.001 === 0.1%, 0.0001 === 0.01%
-	votes: t.smallint().notNull(),
-	active: t.boolean().notNull().default(true),
-}));
-
 export const quests = pgTable("quests", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
-	description: t.text().notNull(),
-	_description: t.jsonb().$type<TipTap>(), //.notNull(),
+	_description: t.jsonb().$type<TipTap>(),
 	image: t.text().notNull(),
 	community: t.bigint({ mode: "number" }).notNull(),
 	event: t.bigint({ mode: "number" }),
@@ -379,13 +358,6 @@ export const quests = pgTable("quests", (t) => ({
 	start: t.timestamp({ mode: "date" }),
 	end: t.timestamp({ mode: "date" }),
 	xp: t.integer().notNull(),
-	_actions: t.text("actions").array().notNull(),
-	_actionInputs: t
-		.jsonb("action_inputs")
-		.array()
-		.$type<Array<{ [key: string]: any }>>()
-		.notNull(),
-	// .default([]), defaults + jsonb are broken with Drizzle Kit right now
 }));
 
 export const questActions = pgTable("quest_actions", (t) => ({
@@ -450,22 +422,6 @@ export const votes = pgTable("votes", (t) => ({
 	round: t.bigint({ mode: "number" }).notNull(),
 	count: t.smallint().notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
-}));
-
-export const creations = pgTable("creations", (t) => ({
-	id: t.text().primaryKey(),
-	creator: t.text(),
-	type: t
-		.text({
-			enum: ["art", "photograph", "video", "emote", "sticker", "gif"],
-		})
-		.notNull()
-		.default("art"),
-	title: t.text(),
-	createdAt: t.timestamp("created_at", { mode: "date" }),
-	original: t.text(),
-	width: t.integer().notNull(),
-	height: t.integer().notNull(),
 }));
 
 export const products = pgTable("products", (t) => ({
@@ -548,23 +504,7 @@ export const carts = pgTable("carts", (t) => ({
 export const linkedWallets = pgTable("linked_wallets", (t) => ({
 	address: t.text().primaryKey(),
 	user: t.text().notNull(),
-	chains: t.integer().array().notNull(),
 	client: t.text({ enum: ["rainbow", "metamask", "coinbase_wallet"] }),
-}));
-
-export const linkedTwitters = pgTable("linked_twitters", (t) => ({
-	username: t.text().primaryKey(),
-	user: t.text().notNull(),
-}));
-
-export const linkedDiscords = pgTable("linked_discords", (t) => ({
-	username: t.text().primaryKey(),
-	user: t.text().notNull(),
-}));
-
-export const linkedFarcasters = pgTable("linked_farcasters", (t) => ({
-	fid: t.bigint({ mode: "number" }).primaryKey(),
-	user: t.text().notNull(),
 }));
 
 export const raffles = pgTable("raffles", (t) => ({

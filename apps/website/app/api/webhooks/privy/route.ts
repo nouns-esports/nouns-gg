@@ -91,7 +91,6 @@ export async function POST(req: NextRequest) {
 				await db.primary
 					.update(nexus)
 					.set({
-						username: verifiedPayload.account.username,
 						fid: verifiedPayload.account.fid,
 					})
 					.where(eq(nexus.id, verifiedPayload.user.id));
@@ -119,7 +118,6 @@ export async function POST(req: NextRequest) {
 				await db.primary
 					.update(nexus)
 					.set({
-						username: null,
 						fid: null,
 					})
 					.where(eq(nexus.id, verifiedPayload.user.id));

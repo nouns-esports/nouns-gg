@@ -228,7 +228,7 @@ function LeaderboardPosition(props: {
 
 	return (
 		<Link
-			href={`/users/${props.user.username ?? props.user.id}`}
+			href={`/users/${props.user.profile?.username ?? props.user.id}`}
 			key={props.user.id}
 			className="flex justify-between items-center bg-grey-800 hover:bg-grey-600 transition-colors p-4 pr-6 rounded-xl"
 		>

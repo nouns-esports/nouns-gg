@@ -22,11 +22,14 @@ export const createPost = createAction({
 
 			if (!community) throw new Error("Community not found");
 
-			parts.push({
-				text: `Create a post in ${community.name}`,
-				href: `/c/${community.handle}`,
-				image: community.image,
-			});
+			parts.push(
+				{ text: "Create a post in " },
+				{
+					text: community.name,
+					href: `/c/${community.handle}`,
+					image: community.image,
+				},
+			);
 		} else {
 			parts.push({ text: "Create a post" });
 		}
@@ -57,7 +60,7 @@ export const createPost = createAction({
 
 		if (inputs.match) {
 			parts.push({ text: "includes" });
-			parts.push({ text: inputs.match.value });
+			parts.push({ text: inputs.match.label });
 			count++;
 		}
 

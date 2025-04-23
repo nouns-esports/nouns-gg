@@ -8,15 +8,11 @@ import type { Metadata } from "next";
 import { getRound } from "@/server/queries/rounds";
 import { getPriorVotes } from "@/server/queries/votes";
 import { numberToOrdinal } from "@/utils/numberToOrdinal";
-import {
-	getAuthenticatedUser,
-	getUserHasCredential,
-} from "@/server/queries/users";
+import { getAuthenticatedUser } from "@/server/queries/users";
 import { env } from "~/env";
-import { headers } from "next/headers";
 import RoundTimeline from "@/components/RoundTimeline";
 import Countup from "@/components/Countup";
-import { ArrowRight, Gavel, Megaphone, TicketCheck, Users } from "lucide-react";
+import { Gavel, Megaphone, TicketCheck, Users } from "lucide-react";
 import Markdown from "@/components/lexical/Markdown";
 import NavigateBack from "@/components/NavigateBack";
 import { getAction } from "@/server/actions";
@@ -151,7 +147,10 @@ export default async function Round(props: {
 			type: "proposal",
 			timestamp: new Date(proposal.createdAt),
 			user: {
-				id: proposal.user.username ?? proposal.user.discord ?? proposal.user.id,
+				id:
+					proposal.user.profile?.username ??
+					proposal.user.discord ??
+					proposal.user.id,
 				name: proposal.user.name,
 				image: proposal.user.image,
 			},
@@ -164,7 +163,7 @@ export default async function Round(props: {
 			count: vote.count,
 			timestamp: new Date(vote.timestamp),
 			user: {
-				id: vote.user.username ?? vote.user.id,
+				id: vote.user.profile?.username ?? vote.user.id,
 				name: vote.user.name,
 				image: vote.user.image,
 			},
@@ -172,7 +171,7 @@ export default async function Round(props: {
 				title: vote.proposal.title,
 				user: {
 					id:
-						vote.proposal.user.username ??
+						vote.proposal.user.profile?.username ??
 						vote.proposal.user.discord ??
 						vote.proposal.user.id,
 					name: vote.proposal.user.name,

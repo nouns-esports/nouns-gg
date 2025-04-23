@@ -250,14 +250,13 @@ export default function Proposals(props: {
 				<div className="gap-4 grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
 					{props.round.proposals
 						.toSorted((a, b) => {
-							if (state === "Proposing") {
-								return (b.user?.rank?.place ?? 0) - (a.user?.rank?.place ?? 0);
-							}
-
 							const votesDiff = b.totalVotes - a.totalVotes;
 
 							if (votesDiff === 0) {
-								return (b.user?.rank?.place ?? 0) - (a.user?.rank?.place ?? 0);
+								return (
+									new Date(b.createdAt).getTime() -
+									new Date(a.createdAt).getTime()
+								);
 							}
 
 							return votesDiff;
@@ -399,7 +398,7 @@ export default function Proposals(props: {
 												index={index}
 												roundState={state}
 												userCanVote={
-													!!props.user?.nexus?.rank &&
+													!!props.user?.nexus &&
 													props.user.votes > props.user.priorVotes
 												}
 											/>
@@ -442,8 +441,7 @@ export default function Proposals(props: {
 					removeVote={removeVote}
 					selectedVotes={selectedVotes}
 					userCanVote={
-						!!props.user?.nexus?.rank &&
-						props.user.votes > props.user.priorVotes
+						!!props.user?.nexus && props.user.votes > props.user.priorVotes
 					}
 					isOpen={props.openProposal === proposal.id}
 				/>

@@ -6,13 +6,13 @@ import { unstable_cache as cache } from "next/cache";
 import { cookies } from "next/headers";
 import { privyClient } from "../clients/privy";
 import { pinataClient } from "../clients/pinata";
-import {
-	erc721Balances,
-	lilnounDelegates,
-	nounDelegates,
-} from "~/packages/db/schema/indexer";
 import { level } from "@/utils/level";
 import { toast } from "@/components/Toasts";
+import { profiles } from "~/packages/db/schema/farcaster";
+
+export type AuthenticatedUser = NonNullable<
+	Awaited<ReturnType<typeof getAuthenticatedUser>>
+>;
 
 export async function getAuthenticatedUser() {
 	const token = (await cookies()).get("privy-id-token");
@@ -25,7 +25,6 @@ export async function getAuthenticatedUser() {
 		let userNexus = await db.pgpool.query.nexus.findFirst({
 			where: eq(nexus.id, privyUser.id),
 			with: {
-				rank: true,
 				carts: {
 					with: {
 						product: {
@@ -36,6 +35,7 @@ export async function getAuthenticatedUser() {
 						variant: true,
 					},
 				},
+				profile: true,
 			},
 		});
 
@@ -59,17 +59,12 @@ export async function getAuthenticatedUser() {
 						privyUser.id.replace("did:privy:", "").substring(0, 8),
 					image: `https://ipfs.nouns.gg/ipfs/${image.IpfsHash}`,
 					bio: fullPrivyUser.farcaster?.bio ?? "",
-					twitter: fullPrivyUser.twitter?.username,
-					discord: fullPrivyUser.discord?.username?.split("#")[0],
-					username: fullPrivyUser.farcaster?.username ?? undefined,
-					fid: fullPrivyUser.farcaster?.fid ?? undefined,
 					canRecieveEmails: false,
 				});
 
 				userNexus = await db.primary.query.nexus.findFirst({
 					where: eq(nexus.id, privyUser.id),
 					with: {
-						rank: true,
 						carts: {
 							with: {
 								product: {
@@ -80,6 +75,7 @@ export async function getAuthenticatedUser() {
 								variant: true,
 							},
 						},
+						profile: true,
 					},
 				});
 
@@ -122,31 +118,29 @@ export async function getAuthenticatedUser() {
 	}
 }
 
-export type AuthenticatedUser = NonNullable<
-	Awaited<ReturnType<typeof getAuthenticatedUser>>
->;
-
-export const isInServer = async (input: { subject: string }) => {
-	return (
-		await fetch(
-			`https://discord.com/api/guilds/${env.DISCORD_GUILD_ID}/members/${input.subject}`,
-			{
-				headers: {
-					Authorization: `Bot ${env.DISCORD_TOKEN}`,
-				},
-			},
-		)
-	).ok;
-};
-
 export const getUser = cache(
 	async (input: { user: string }) => {
-		return db.pgpool.query.nexus.findFirst({
-			where: or(eq(nexus.id, input.user), eq(nexus.username, input.user)),
-			with: {
-				rank: true,
-			},
+		if (input.user.startsWith("did:privy:")) {
+			return db.pgpool.query.nexus.findFirst({
+				where: eq(nexus.id, input.user),
+				with: {
+					profile: true,
+				},
+			});
+		}
+
+		const profile = await db.pgpool.query.profiles.findFirst({
+			where: eq(profiles.username, input.user),
 		});
+
+		if (profile) {
+			return db.pgpool.query.nexus.findFirst({
+				where: eq(nexus.fid, profile.fid),
+				with: {
+					profile: true,
+				},
+			});
+		}
 	},
 	["getUser"],
 	{ tags: ["getUser"], revalidate: 60 * 10 },
@@ -174,66 +168,3 @@ export const getUserStats = cache(
 	["getUserStats"],
 	{ tags: ["getUserStats"], revalidate: 60 * 10 },
 );
-
-export async function getUserHasCredential(input: {
-	token: string;
-	wallets: string[];
-}) {
-	if (input.wallets.includes("0xe3ff24a97bfb65cadef30f6ad19a6ea7e6f6149d")) {
-		console.log("Checking for Sam");
-	}
-
-	const holder = await db.pgpool.query.erc721Balances.findFirst({
-		where: and(
-			inArray(
-				erc721Balances.account,
-				input.wallets.map((w) => w.toLowerCase() as `0x${string}`),
-			),
-			eq(erc721Balances.collection, input.token.toLowerCase()),
-		),
-	});
-
-	if (input.wallets.includes("0xe3ff24a97bfb65cadef30f6ad19a6ea7e6f6149d")) {
-		console.log("Sam Holder", holder);
-	}
-
-	if (holder) {
-		return true;
-	}
-
-	if (
-		input.token.toLowerCase() === "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03"
-	) {
-		const nounDelegate = await db.pgpool.query.nounDelegates.findFirst({
-			where: inArray(
-				nounDelegates.to,
-				input.wallets.map((w) => w.toLowerCase() as `0x${string}`),
-			),
-		});
-
-		if (input.wallets.includes("0xe3ff24a97bfb65cadef30f6ad19a6ea7e6f6149d")) {
-			console.log("Sam Noun Delegate", nounDelegate);
-		}
-
-		if (nounDelegate) {
-			return true;
-		}
-	}
-
-	if (
-		input.token.toLowerCase() === "0x4b10701bfd7bfedc47d50562b76b436fbb5bdb3b"
-	) {
-		const lilnounDelegate = await db.pgpool.query.lilnounDelegates.findFirst({
-			where: inArray(
-				lilnounDelegates.to,
-				input.wallets.map((w) => w.toLowerCase() as `0x${string}`),
-			),
-		});
-
-		if (lilnounDelegate) {
-			return true;
-		}
-	}
-
-	return false;
-}

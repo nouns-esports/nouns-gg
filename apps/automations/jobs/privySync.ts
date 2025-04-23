@@ -1,11 +1,5 @@
 import { db } from "~/packages/db";
-import {
-	linkedDiscords,
-	linkedFarcasters,
-	linkedTwitters,
-	linkedWallets,
-	nexus,
-} from "~/packages/db/schema/public";
+import { linkedWallets, nexus } from "~/packages/db/schema/public";
 import { privyClient } from "../clients/privy";
 import { createJob } from "../createJob";
 
@@ -21,38 +15,18 @@ export const privySync = createJob({
 					.insert(nexus)
 					.values({
 						id: user.id,
+						twitter: user.twitter?.username,
+						discord: user.discord?.username?.split("#")[0],
+						fid: user.farcaster?.fid,
 					})
-					.onConflictDoNothing();
-
-				if (user.discord?.username) {
-					await tx
-						.insert(linkedDiscords)
-						.values({
-							username: user.discord.username,
-							user: user.id,
-						})
-						.onConflictDoNothing();
-				}
-
-				if (user.farcaster) {
-					await tx
-						.insert(linkedFarcasters)
-						.values({
-							fid: user.farcaster.fid,
-							user: user.id,
-						})
-						.onConflictDoNothing();
-				}
-
-				if (user.twitter?.username) {
-					await tx
-						.insert(linkedTwitters)
-						.values({
-							username: user.twitter.username,
-							user: user.id,
-						})
-						.onConflictDoNothing();
-				}
+					.onConflictDoUpdate({
+						target: [nexus.id],
+						set: {
+							twitter: user.twitter?.username,
+							discord: user.discord?.username?.split("#")[0],
+							fid: user.farcaster?.fid,
+						},
+					});
 
 				for (const linkedAccount of user.linkedAccounts) {
 					if (linkedAccount.type === "wallet") {
@@ -66,9 +40,6 @@ export const privySync = createJob({
 								address: linkedAccount.address,
 								user: user.id,
 								client: linkedAccount.walletClientType as any,
-								chains: linkedAccount.chainId
-									? [parseInt(linkedAccount.chainId)]
-									: [],
 							})
 							.onConflictDoNothing();
 					}

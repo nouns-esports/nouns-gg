@@ -12,9 +12,6 @@ import { eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { onlyUser } from ".";
-
-import { getUserHasCredential } from "../queries/users";
-import { level } from "@/utils/level";
 import { getAction } from "../actions";
 
 export const castVotes = onlyUser
@@ -40,14 +37,6 @@ export const castVotes = onlyUser
 
 		if (!round) {
 			throw new Error("Round not found");
-		}
-
-		if (round.minVoterRank) {
-			const { currentLevel } = level(ctx.user.nexus?.xp ?? 0);
-
-			if (currentLevel < 15) {
-				throw new Error("You are not eligible to vote in this round");
-			}
 		}
 
 		const actions = await Promise.all(
@@ -111,22 +100,7 @@ export const castVotes = onlyUser
 					throw new Error("You can only vote on proposals in the same round");
 				}
 
-				if (!ctx.user.nexus?.rank) {
-					throw new Error("Enter the Nexus to vote");
-				}
-
-				const { currentLevel } = level(ctx.user.nexus.xp);
-
-				const maxVotes =
-					currentLevel >= 15
-						? 10
-						: currentLevel >= 10
-							? 5
-							: currentLevel >= 5
-								? 3
-								: 1;
-
-				if (votesUsed + vote.count > maxVotes) {
+				if (votesUsed + vote.count > ctx.user.votes) {
 					throw new Error("You have used all your votes");
 				}
 

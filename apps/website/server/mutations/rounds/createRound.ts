@@ -22,10 +22,6 @@ export const createRound = onlyUser
 			end: z.date(),
 			community: z.number(),
 			event: z.optional(z.number()),
-			minProposerRank: z.optional(z.number()),
-			minVoterRank: z.optional(z.number()),
-			proposerCredential: z.optional(z.string()),
-			voterCredential: z.optional(z.string()),
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
@@ -117,10 +113,6 @@ export const createRound = onlyUser
 				votingStart: parsedInput.votingStart,
 				community: parsedInput.community,
 				event: parsedInput.event,
-				minProposerRank: parsedInput.minProposerRank,
-				minVoterRank: parsedInput.minVoterRank,
-				proposerCredential: parsedInput.proposerCredential,
-				voterCredential: parsedInput.voterCredential,
 			});
 		});
 	});
