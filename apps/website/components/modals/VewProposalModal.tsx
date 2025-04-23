@@ -115,20 +115,6 @@ export default function ViewProposalModal(props: {
 							) : (
 								""
 							)}
-							{props.proposal.user.username ? (
-								<Link
-									href={`https://warpcast.com/${props.proposal.user.username}`}
-									newTab
-								>
-									<img
-										alt="Farcaster logo"
-										src="/farcaster.svg"
-										className="w-5 h-5  hover:opacity-80 transition-opacity"
-									/>
-								</Link>
-							) : (
-								""
-							)}
 						</div>
 					</div>
 				) : (
