@@ -50,6 +50,9 @@ export async function GET(request: Request) {
 	}
 
 	if (params.id) {
+		console.log("params.id", params.id);
+		console.log("Number(params.id)", Number(params.id));
+		console.log("BigInt(params.id)", BigInt(params.id));
 		const noun = await getNoun({ id: BigInt(params.id) });
 
 		if (!noun) {
