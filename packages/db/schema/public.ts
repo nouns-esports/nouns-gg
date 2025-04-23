@@ -1,4 +1,4 @@
-import { pgTable, check, index } from "drizzle-orm/pg-core";
+import { pgTable, check, index, primaryKey } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 import type { JSONContent as TipTap } from "@tiptap/core";
 import type { ActionDescription } from "~/apps/website/server/actions/createAction";
@@ -401,15 +401,13 @@ export const xp = pgTable("xp", (t) => ({
 export const leaderboards = pgTable(
 	"leaderboards",
 	(t) => ({
-		id: t.bigserial({ mode: "number" }).primaryKey(),
 		community: t.bigint({ mode: "number" }).notNull(),
 		user: t.text().notNull(),
 		xp: t.bigint({ mode: "number" }).notNull(),
 	}),
-	(table) => [
-		index("leaderboards_community_idx").on(table.community),
-		index("leaderboards_user_idx").on(table.user),
-		index("leaderboards_xp_idx").on(table.xp),
+	(t) => [
+		primaryKey({ columns: [t.user, t.community] }),
+		index("leaderboards_xp_idx").on(t.xp),
 	],
 );
 

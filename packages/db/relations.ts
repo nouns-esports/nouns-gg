@@ -32,6 +32,7 @@ import {
 	eventActions,
 	communityActions,
 	linkedWallets,
+	leaderboards,
 } from "./schema/public";
 import {
 	erc721Balances,
@@ -232,6 +233,7 @@ export const nexusRelations = relations(nexus, ({ one, many }) => ({
 		fields: [nexus.fid],
 		references: [profiles.fid],
 	}),
+	leaderboards: many(leaderboards),
 }));
 
 export const goldRelations = relations(gold, ({ one }) => ({
@@ -349,6 +351,21 @@ export const xpRelations = relations(xp, ({ one }) => ({
 	// 	fields: [xp.order],
 	// 	references: [orders.id],
 	// }),
+	community: one(communities, {
+		fields: [xp.community],
+		references: [communities.id],
+	}),
+}));
+
+export const leaderboardsRelations = relations(leaderboards, ({ one }) => ({
+	user: one(nexus, {
+		fields: [leaderboards.user],
+		references: [nexus.id],
+	}),
+	community: one(communities, {
+		fields: [leaderboards.community],
+		references: [communities.id],
+	}),
 }));
 
 export const votesRelations = relations(votes, ({ one, many }) => ({

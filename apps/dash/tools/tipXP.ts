@@ -1,5 +1,5 @@
 import { agent } from "../";
-import { nexus, xp } from "~/packages/db/schema/public";
+import { leaderboards, nexus, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { eq, sql } from "drizzle-orm";
 import { z } from "zod";
@@ -77,6 +77,20 @@ agent.addTool({
 				timestamp: new Date(),
 				community: 7,
 			});
+
+			await tx
+				.insert(leaderboards)
+				.values({
+					user: user.id,
+					xp: parameters.amount,
+					community: 7,
+				})
+				.onConflictDoUpdate({
+					target: [leaderboards.user, leaderboards.community],
+					set: {
+						xp: sql`${leaderboards.xp} + ${parameters.amount}`,
+					},
+				});
 		});
 
 		console.log("Should be a success");

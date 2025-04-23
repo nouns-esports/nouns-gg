@@ -1,30 +1,38 @@
 import { db } from "~/packages/db";
-import { desc, eq, sql } from "drizzle-orm";
-import { nexus } from "~/packages/db/schema/public";
+import { and, desc, eq, sql } from "drizzle-orm";
+import { leaderboards } from "~/packages/db/schema/public";
 
-export async function getLeaderboard() {
-	return db.pgpool.query.nexus.findMany({
-		orderBy: [desc(nexus.xp)],
+export async function getLeaderboard(input: { community: number }) {
+	return db.pgpool.query.leaderboards.findMany({
+		where: eq(leaderboards.community, input.community),
+		orderBy: [desc(leaderboards.xp)],
 		limit: 100,
 		with: {
-			profile: true,
+			user: {
+				with: {
+					profile: true,
+				},
+			},
 		},
 	});
 }
 
-export async function getRank(input: { user: string }) {
-	const [{ rank }] = await db.pgpool
-		.select({
-			rank: sql<number>`1 + COUNT(*)`,
-		})
-		.from(nexus)
-		.where(
-			sql`${nexus.xp} > (
-					SELECT xp
-					FROM nexus
-					WHERE id = ${input.user}
-				)`,
-		);
-
-	return rank;
+export async function getRank(input: { user: string; community: number }) {
+	return db.pgpool.query.leaderboards.findFirst({
+		where: and(
+			eq(leaderboards.community, input.community),
+			eq(leaderboards.user, input.user),
+		),
+		orderBy: [desc(leaderboards.xp)],
+		with: {
+			user: {
+				with: {
+					profile: true,
+				},
+			},
+		},
+		extras: {
+			rank: sql<number>`ROW_NUMBER() OVER (ORDER BY xp DESC)`.as("rank"),
+		},
+	});
 }

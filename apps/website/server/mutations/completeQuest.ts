@@ -3,6 +3,7 @@
 import { z } from "zod";
 import { onlyUser } from ".";
 import {
+	leaderboards,
 	nexus,
 	notifications,
 	questCompletions,
@@ -97,6 +98,20 @@ export const completeQuest = onlyUser
 				timestamp: now,
 				community: quest.community,
 			});
+
+			await tx
+				.insert(leaderboards)
+				.values({
+					user: ctx.user.id,
+					xp: quest.xp,
+					community: quest.community,
+				})
+				.onConflictDoUpdate({
+					target: [leaderboards.user, leaderboards.community],
+					set: {
+						xp: sql`${leaderboards.xp} + ${quest.xp}`,
+					},
+				});
 
 			await tx.insert(questCompletions).values({
 				quest: quest.id,

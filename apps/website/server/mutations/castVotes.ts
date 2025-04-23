@@ -6,6 +6,7 @@ import {
 	rounds,
 	xp,
 	nexus,
+	leaderboards,
 } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { eq, sql } from "drizzle-orm";
@@ -119,25 +120,11 @@ export const castVotes = onlyUser
 					.returning({ id: votes.id });
 
 				// Award 50 xp per vote to the voter
+				const voterAmount = 50 * vote.count;
+
 				await tx.insert(xp).values({
 					user: ctx.user.id,
-					amount: 50 * vote.count,
-					timestamp: now,
-					vote: returnedVote[0].id,
-					community: round.community,
-				});
-
-				await tx
-					.update(nexus)
-					.set({
-						xp: sql`${nexus.xp} + ${50 * vote.count}`,
-					})
-					.where(eq(nexus.id, ctx.user.id));
-
-				// Award 5 xp per vote to the proposer
-				await tx.insert(xp).values({
-					user: proposal.user,
-					amount: 5 * vote.count,
+					amount: voterAmount,
 					timestamp: now,
 					vote: returnedVote[0].id,
 					community: round.community,
@@ -146,11 +133,57 @@ export const castVotes = onlyUser
 				const [updateNexus] = await tx
 					.update(nexus)
 					.set({
-						xp: sql`${nexus.xp} + ${5 * vote.count}`,
+						xp: sql`${nexus.xp} + ${voterAmount}`,
 					})
-					.where(eq(nexus.id, proposal.user))
+					.where(eq(nexus.id, ctx.user.id))
 					.returning({
 						xp: nexus.xp,
+					});
+
+				await tx
+					.insert(leaderboards)
+					.values({
+						user: ctx.user.id,
+						xp: voterAmount,
+						community: round.community,
+					})
+					.onConflictDoUpdate({
+						target: [leaderboards.user, leaderboards.community],
+						set: {
+							xp: sql`${leaderboards.xp} + ${voterAmount}`,
+						},
+					});
+
+				// Award 5 xp per vote to the proposer
+				const proposerAmount = 5 * vote.count;
+
+				await tx.insert(xp).values({
+					user: proposal.user,
+					amount: proposerAmount,
+					timestamp: now,
+					vote: returnedVote[0].id,
+					community: round.community,
+				});
+
+				await tx
+					.update(nexus)
+					.set({
+						xp: sql`${nexus.xp} + ${proposerAmount}`,
+					})
+					.where(eq(nexus.id, proposal.user));
+
+				await tx
+					.insert(leaderboards)
+					.values({
+						user: proposal.user,
+						xp: proposerAmount,
+						community: round.community,
+					})
+					.onConflictDoUpdate({
+						target: [leaderboards.user, leaderboards.community],
+						set: {
+							xp: sql`${leaderboards.xp} + ${proposerAmount}`,
+						},
 					});
 
 				newUserXP = updateNexus.xp;

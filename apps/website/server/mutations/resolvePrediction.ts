@@ -9,6 +9,7 @@ import {
 	predictions,
 	outcomes,
 	xp,
+	leaderboards,
 } from "~/packages/db/schema/public";
 import { eq, sql } from "drizzle-orm";
 
@@ -127,6 +128,20 @@ export const resolvePrediction = onlyUser
 					timestamp: now,
 					community: prediction.community,
 				});
+
+				await tx
+					.insert(leaderboards)
+					.values({
+						user,
+						xp: prediction.xp,
+						community: prediction.community,
+					})
+					.onConflictDoUpdate({
+						target: [leaderboards.user, leaderboards.community],
+						set: {
+							xp: sql`${leaderboards.xp} + ${prediction.xp}`,
+						},
+					});
 
 				if (winnings > 0) {
 					await tx.insert(gold).values({

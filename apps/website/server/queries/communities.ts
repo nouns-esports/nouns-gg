@@ -41,6 +41,11 @@ export const getCommunity = cache(
 						SELECT COUNT(*) FROM events WHERE events.community = communities.id
 					) > 0
 				`.as("hasEvents"),
+				hasLeaderboard: sql<boolean>`
+					(
+						SELECT COUNT(*) FROM leaderboards WHERE leaderboards.community = communities.id
+					) > 0
+				`.as("hasLeaderboard"),
 			},
 		});
 	},

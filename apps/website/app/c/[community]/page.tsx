@@ -45,11 +45,11 @@ export default async function Community(props: {
 					? "quests"
 					: community.hasPredictions
 						? "predictions"
-						: community.handle === "nouns-gg"
+						: community.hasLeaderboard
 							? "leaderboard"
 							: null);
 
-	const [rounds, quests, predictions, events, leaderboard, userRank] =
+	const [rounds, quests, predictions, events, leaderboard, userPosition] =
 		await Promise.all([
 			tab === "rounds" ? getRounds({ community: community.id }) : [],
 			tab === "quests"
@@ -59,9 +59,9 @@ export default async function Community(props: {
 				? getPredictions({ community: community.id, user: user?.id })
 				: [],
 			tab === "events" ? getEvents({ community: community.id }) : [],
-			tab === "leaderboard" ? getLeaderboard() : [],
+			tab === "leaderboard" ? getLeaderboard({ community: community.id }) : [],
 			tab === "leaderboard" && user?.nexus
-				? getRank({ user: user.id })
+				? getRank({ user: user.id, community: community.id })
 				: undefined,
 		]);
 
@@ -153,15 +153,15 @@ export default async function Community(props: {
 								leaderboard: (
 									<div className="flex flex-col items-center gap-4">
 										<div className="relative flex flex-col gap-8 max-w-2xl w-full">
-											{userRank && user?.nexus ? (
+											{userPosition && user?.nexus ? (
 												<div className="flex flex-col gap-2">
 													<p className="text-white text-lg font-semibold">
 														Your Position
 													</p>
 													<LeaderboardPosition
-														key={user?.id}
-														position={userRank}
-														user={user.nexus}
+														key={userPosition.user.id}
+														position={userPosition.rank}
+														user={userPosition.user}
 													/>
 												</div>
 											) : null}
@@ -178,14 +178,14 @@ export default async function Community(props: {
 														How do I earn XP?
 													</ToggleModal>
 												</div>
-												{leaderboard.map((user, index) => {
+												{leaderboard.map((ranking, index) => {
 													const position = index + 1;
 
 													return (
 														<LeaderboardPosition
-															key={user.id}
+															key={ranking.user.id}
 															position={position}
-															user={user}
+															user={ranking.user}
 														/>
 													);
 												})}
@@ -221,14 +221,14 @@ function Tab(props: { children: string; active: boolean; href: string }) {
 }
 
 function LeaderboardPosition(props: {
-	user: NonNullable<Awaited<ReturnType<typeof getLeaderboard>>[number]>;
+	user: NonNullable<Awaited<ReturnType<typeof getLeaderboard>>>[number]["user"];
 	position: number;
 }) {
 	const { currentLevel } = level(props.user.xp);
 
 	return (
 		<Link
-			href={`/users/${props.user.profile?.username ?? props.user.id}`}
+			href={`/users/${props.user?.profile?.username ?? props.user.id}`}
 			key={props.user.id}
 			className="flex justify-between items-center bg-grey-800 hover:bg-grey-600 transition-colors p-4 pr-6 rounded-xl"
 		>
@@ -239,8 +239,8 @@ function LeaderboardPosition(props: {
 				<div className="flex gap-4 max-sm:gap-2">
 					<div className="flex gap-3 max-sm:gap-2 items-center">
 						<img
-							alt={props.user.name}
-							src={props.user.image}
+							alt={props.user?.profile?.username ?? props.user.id}
+							src={props.user?.image ?? ""}
 							className="w-8 h-8 rounded-full object-cover bg-white"
 						/>
 						<p className="text-white text-lg max-sm:max-w-20 truncate whitespace-nowrap">

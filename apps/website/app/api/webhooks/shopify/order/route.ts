@@ -2,7 +2,7 @@ import { and, eq } from "drizzle-orm";
 
 import { privyClient } from "@/server/clients/privy";
 import { sql } from "drizzle-orm";
-import { nexus, xp } from "~/packages/db/schema/public";
+import { leaderboards, nexus, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 
 // 10 xp per $ spent (not shipping)
@@ -62,6 +62,20 @@ export async function POST(request: Request) {
 			timestamp: new Date(order.created_at),
 			community: 7,
 		});
+
+		await tx
+			.insert(leaderboards)
+			.values({
+				user: privyUser.id,
+				xp: xpAmount,
+				community: 7,
+			})
+			.onConflictDoUpdate({
+				target: [leaderboards.user, leaderboards.community],
+				set: {
+					xp: sql`${leaderboards.xp} + ${xpAmount}`,
+				},
+			});
 
 		await tx
 			.update(nexus)

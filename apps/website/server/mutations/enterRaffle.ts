@@ -3,7 +3,13 @@
 import { onlyUser } from ".";
 import { z } from "zod";
 import { db } from "~/packages/db";
-import { gold, nexus, raffleEntries, xp } from "~/packages/db/schema/public";
+import {
+	gold,
+	leaderboards,
+	nexus,
+	raffleEntries,
+	xp,
+} from "~/packages/db/schema/public";
 import { eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 
@@ -100,6 +106,20 @@ export const enterRaffle = onlyUser
 				raffleEntry: raffleEntry.id,
 				community: raffle.community,
 			});
+
+			await tx
+				.insert(leaderboards)
+				.values({
+					user: ctx.user.id,
+					xp: earnedXP,
+					community: raffle.community,
+				})
+				.onConflictDoUpdate({
+					target: [leaderboards.user, leaderboards.community],
+					set: {
+						xp: sql`${leaderboards.xp} + ${earnedXP}`,
+					},
+				});
 
 			await tx.insert(gold).values({
 				from: ctx.user.id,

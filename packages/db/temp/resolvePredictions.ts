@@ -1,5 +1,12 @@
 import { eq, sql } from "drizzle-orm";
-import { gold, nexus, outcomes, predictions, xp } from "../schema/public";
+import {
+	gold,
+	leaderboards,
+	nexus,
+	outcomes,
+	predictions,
+	xp,
+} from "../schema/public";
 import { db } from "..";
 
 const parsedInputs = [
@@ -115,7 +122,22 @@ await db.primary.transaction(async (tx) => {
 				amount: prediction.xp,
 				prediction: prediction.id,
 				timestamp: now,
+				community: prediction.community,
 			});
+
+			await tx
+				.insert(leaderboards)
+				.values({
+					user,
+					xp: prediction.xp,
+					community: prediction.community,
+				})
+				.onConflictDoUpdate({
+					target: [leaderboards.user, leaderboards.community],
+					set: {
+						xp: sql`${leaderboards.xp} + ${prediction.xp}`,
+					},
+				});
 
 			if (winnings > 0) {
 				await tx.insert(gold).values({

@@ -1,4 +1,10 @@
-import { checkins, gold, nexus, xp } from "~/packages/db/schema/public";
+import {
+	checkins,
+	gold,
+	leaderboards,
+	nexus,
+	xp,
+} from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import { redirect } from "next/navigation";
@@ -43,7 +49,22 @@ export default async function Checkpoint(props: {
 					timestamp: now,
 					checkin: checkin.id,
 					amount: checkpoint.xp,
+					community: 7,
 				});
+
+				await tx
+					.insert(leaderboards)
+					.values({
+						user: user.id,
+						xp: checkpoint.xp,
+						community: 7,
+					})
+					.onConflictDoUpdate({
+						target: [leaderboards.user, leaderboards.community],
+						set: {
+							xp: sql`${leaderboards.xp} + ${checkpoint.xp}`,
+						},
+					});
 			}
 
 			if (checkpoint.gold) {
@@ -82,7 +103,7 @@ export default async function Checkpoint(props: {
 
 	return (
 		<>
-			<div>CHeckpoint claimed</div>
+			<div>Checkpoint claimed</div>
 			{checkpoint.xp ? (
 				<Toast
 					type="xp"

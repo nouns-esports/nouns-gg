@@ -1,5 +1,5 @@
 import { db } from "~/packages/db";
-import { nexus, xp } from "~/packages/db/schema/public";
+import { leaderboards, nexus, xp } from "~/packages/db/schema/public";
 import { privyClient } from "../clients/privy";
 import { createJob } from "../createJob";
 import { eq, sql } from "drizzle-orm";
@@ -79,17 +79,33 @@ export const farcasterXP = createJob({
 
 				if (!user) continue;
 
+				const amount = likesXP + recastsXP;
+
 				await tx.insert(xp).values({
 					user: user.id,
-					amount: likesXP + recastsXP,
+					amount,
 					timestamp: now,
 					community: 7,
 				});
 
 				await tx
+					.insert(leaderboards)
+					.values({
+						user: user.id,
+						xp: amount,
+						community: 7,
+					})
+					.onConflictDoUpdate({
+						target: [leaderboards.user, leaderboards.community],
+						set: {
+							xp: sql`${leaderboards.xp} + ${amount}`,
+						},
+					});
+
+				await tx
 					.update(nexus)
 					.set({
-						xp: sql`${nexus.xp} + ${likesXP + recastsXP}`,
+						xp: sql`${nexus.xp} + ${amount}`,
 					})
 					.where(eq(nexus.id, user.id));
 			}

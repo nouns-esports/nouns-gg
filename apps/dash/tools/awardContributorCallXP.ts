@@ -1,6 +1,11 @@
-import { nexus, xp, snapshots } from "~/packages/db/schema/public";
+import {
+	nexus,
+	xp,
+	snapshots,
+	leaderboards,
+} from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { and, gte, lte, desc, eq, inArray, or } from "drizzle-orm";
+import { and, gte, lte, desc, eq, inArray, or, sql } from "drizzle-orm";
 import { agent } from "..";
 import { isToday } from "date-fns";
 
@@ -93,6 +98,20 @@ agent.addTool({
 					snapshot: snapshot.id,
 					community: 7,
 				});
+
+				await tx
+					.insert(leaderboards)
+					.values({
+						user: user.id,
+						xp: amount,
+						community: 7,
+					})
+					.onConflictDoUpdate({
+						target: [leaderboards.user, leaderboards.community],
+						set: {
+							xp: sql`${leaderboards.xp} + ${amount}`,
+						},
+					});
 
 				await tx
 					.update(nexus)
