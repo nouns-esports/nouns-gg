@@ -60,7 +60,7 @@ export default async function Community(props: {
 				: [],
 			tab === "events" ? getEvents({ community: community.id }) : [],
 			tab === "leaderboard" ? getLeaderboard({ community: community.id }) : [],
-			tab === "leaderboard" && user?.nexus
+			tab === "leaderboard" && user
 				? getRank({ user: user.id, community: community.id })
 				: undefined,
 		]);
@@ -102,7 +102,7 @@ export default async function Community(props: {
 										Events
 									</Tab>
 								) : null}
-								{community.handle === "nouns-gg" ? (
+								{community.hasLeaderboard ? (
 									<Tab href="?tab=leaderboard" active={tab === "leaderboard"}>
 										Leaderboard
 									</Tab>
@@ -153,7 +153,7 @@ export default async function Community(props: {
 								leaderboard: (
 									<div className="flex flex-col items-center gap-4">
 										<div className="relative flex flex-col gap-8 max-w-2xl w-full">
-											{userPosition && user?.nexus ? (
+											{userPosition ? (
 												<div className="flex flex-col gap-2">
 													<p className="text-white text-lg font-semibold">
 														Your Position
