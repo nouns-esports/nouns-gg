@@ -3,7 +3,7 @@
 import Privy from "@/providers/Privy";
 import { Toaster } from "react-hot-toast";
 import ReactQuery from "./ReactQuery";
-import Wagmi from "./Wagmi";
+// import Wagmi from "./Wagmi";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { create } from "zustand";
@@ -47,10 +47,10 @@ export default function Providers(props: {
 		<Privy user={props.user}>
 			<Farcaster>
 				<ReactQuery>
-					<Wagmi>
-						{props.children}
-						<Toaster position="top-center" />
-					</Wagmi>
+					{/* <Wagmi> */}
+					{props.children}
+					<Toaster position="top-center" />
+					{/* </Wagmi> */}
 				</ReactQuery>
 			</Farcaster>
 		</Privy>
