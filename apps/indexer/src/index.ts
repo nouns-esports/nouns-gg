@@ -13,7 +13,6 @@ import { isValidURL } from "~/packages/utils/isValidURL";
 import { unpadSVG } from "~/packages/utils/unpadSVG";
 import { parseVoteReason } from "~/packages/utils/parseVoteReason";
 import {
-	// ensProfiles,
 	nouns,
 	nounsBids,
 	nounsClients,
@@ -21,7 +20,6 @@ import {
 	nounsVotes,
 	voteReposts,
 } from "ponder:schema";
-// import { normalize } from "viem/ens";
 import { env } from "~/env";
 import { PinataSDK } from "pinata";
 
@@ -31,56 +29,11 @@ const pinata = new PinataSDK({
 });
 
 ponder.on("NounsToken:Transfer", async ({ event, context }) => {
-	// const toEnsName = await context.client.getEnsName({
-	// 	address: event.args.to,
-	// 	blockNumber: 19258213n,
-	// });
-
-	// if (toEnsName) {
-	// 	const toEnsAvatar = await context.client.getEnsAvatar({
-	// 		name: normalize(toEnsName),
-	// 	});
-
-	// 	await context.db
-	// 		.insert(ensProfiles)
-	// 		.values({
-	// 			address: event.args.to,
-	// 			name: toEnsName,
-	// 			image: toEnsAvatar,
-	// 		})
-	// 		.onConflictDoUpdate({
-	// 			image: toEnsAvatar,
-	// 			name: toEnsName,
-	// 		});
-	// }
-
-	// const fromEnsName = await context.client.getEnsName({
-	// 	address: event.args.from,
-	// });
-
-	// if (fromEnsName) {
-	// 	const fromEnsAvatar = await context.client.getEnsAvatar({
-	// 		name: normalize(fromEnsName),
-	// 	});
-
-	// 	await context.db
-	// 		.insert(ensProfiles)
-	// 		.values({
-	// 			address: event.args.from,
-	// 			name: fromEnsName,
-	// 			image: fromEnsAvatar,
-	// 		})
-	// 		.onConflictDoUpdate({
-	// 			image: fromEnsAvatar,
-	// 			name: fromEnsName,
-	// 		});
-	// }
-
 	await context.db
 		.insert(erc721Balances)
 		.values({
-			account: event.args.to,
-			collection: context.contracts.NounsToken.address,
+			account: event.args.to.toLowerCase() as `0x${string}`,
+			collection: context.contracts.NounsToken.address.toLowerCase(),
 			tokenId: event.args.tokenId,
 		})
 		.onConflictDoUpdate({
@@ -89,55 +42,11 @@ ponder.on("NounsToken:Transfer", async ({ event, context }) => {
 });
 
 ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
-	// const toEnsName = await context.client.getEnsName({
-	// 	address: event.args.to,
-	// });
-
-	// if (toEnsName) {
-	// 	const toEnsAvatar = await context.client.getEnsAvatar({
-	// 		name: normalize(toEnsName),
-	// 	});
-
-	// 	await context.db
-	// 		.insert(ensProfiles)
-	// 		.values({
-	// 			address: event.args.to,
-	// 			name: toEnsName,
-	// 			image: toEnsAvatar,
-	// 		})
-	// 		.onConflictDoUpdate({
-	// 			image: toEnsAvatar,
-	// 			name: toEnsName,
-	// 		});
-	// }
-
-	// const fromEnsName = await context.client.getEnsName({
-	// 	address: event.args.from,
-	// });
-
-	// if (fromEnsName) {
-	// 	const fromEnsAvatar = await context.client.getEnsAvatar({
-	// 		name: normalize(fromEnsName),
-	// 	});
-
-	// 	await context.db
-	// 		.insert(ensProfiles)
-	// 		.values({
-	// 			address: event.args.from,
-	// 			name: fromEnsName,
-	// 			image: fromEnsAvatar,
-	// 		})
-	// 		.onConflictDoUpdate({
-	// 			image: fromEnsAvatar,
-	// 			name: fromEnsName,
-	// 		});
-	// }
-
 	await context.db
 		.insert(erc721Balances)
 		.values({
-			account: event.args.to,
-			collection: context.contracts.LilNounsToken.address,
+			account: event.args.to.toLowerCase() as `0x${string}`,
+			collection: context.contracts.LilNounsToken.address.toLowerCase(),
 			tokenId: event.args.tokenId,
 		})
 		.onConflictDoUpdate({
@@ -146,116 +55,26 @@ ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
 });
 
 ponder.on("NounsToken:DelegateChanged", async ({ event, context }) => {
-	// const toDelegateEnsName = await context.client.getEnsName({
-	// 	address: event.args.toDelegate,
-	// });
-
-	// if (toDelegateEnsName) {
-	// 	const toDelegateEnsAvatar = await context.client.getEnsAvatar({
-	// 		name: normalize(toDelegateEnsName),
-	// 	});
-
-	// 	await context.db
-	// 		.insert(ensProfiles)
-	// 		.values({
-	// 			address: event.args.toDelegate,
-	// 			name: toDelegateEnsName,
-	// 			image: toDelegateEnsAvatar,
-	// 		})
-	// 		.onConflictDoUpdate({
-	// 			image: toDelegateEnsAvatar,
-	// 			name: toDelegateEnsName,
-	// 		});
-	// }
-
-	// const fromDelegateEnsName = await context.client.getEnsName({
-	// 	address: event.args.fromDelegate,
-	// });
-
-	// if (fromDelegateEnsName) {
-	// 	const fromDelegateEnsAvatar = await context.client.getEnsAvatar({
-	// 		name: normalize(fromDelegateEnsName),
-	// 	});
-
-	// 	await context.db
-	// 		.insert(ensProfiles)
-	// 		.values({
-	// 			address: event.args.fromDelegate,
-	// 			name: fromDelegateEnsName,
-	// 			image: fromDelegateEnsAvatar,
-	// 		})
-	// 		.onConflictDoUpdate({
-	// 			image: fromDelegateEnsAvatar,
-	// 			name: fromDelegateEnsName,
-	// 		});
-	// }
-
 	await context.db
 		.insert(nounDelegates)
 		.values({
-			from: event.args.fromDelegate,
-			to: event.args.toDelegate,
-			votes: 0n,
+			from: event.args.delegator.toLowerCase() as `0x${string}`,
+			to: event.args.toDelegate.toLowerCase() as `0x${string}`,
 		})
 		.onConflictDoUpdate({
-			to: event.args.toDelegate,
+			to: event.args.toDelegate.toLowerCase() as `0x${string}`,
 		});
 });
 
 ponder.on("LilNounsToken:DelegateChanged", async ({ event, context }) => {
-	// const toDelegateEnsName = await context.client.getEnsName({
-	// 	address: event.args.toDelegate,
-	// });
-
-	// if (toDelegateEnsName) {
-	// 	const toDelegateEnsAvatar = await context.client.getEnsAvatar({
-	// 		name: normalize(toDelegateEnsName),
-	// 	});
-
-	// 	await context.db
-	// 		.insert(ensProfiles)
-	// 		.values({
-	// 			address: event.args.toDelegate,
-	// 			name: toDelegateEnsName,
-	// 			image: toDelegateEnsAvatar,
-	// 		})
-	// 		.onConflictDoUpdate({
-	// 			image: toDelegateEnsAvatar,
-	// 			name: toDelegateEnsName,
-	// 		});
-	// }
-
-	// const fromDelegateEnsName = await context.client.getEnsName({
-	// 	address: event.args.fromDelegate,
-	// });
-
-	// if (fromDelegateEnsName) {
-	// 	const fromDelegateEnsAvatar = await context.client.getEnsAvatar({
-	// 		name: normalize(fromDelegateEnsName),
-	// 	});
-
-	// 	await context.db
-	// 		.insert(ensProfiles)
-	// 		.values({
-	// 			address: event.args.fromDelegate,
-	// 			name: fromDelegateEnsName,
-	// 			image: fromDelegateEnsAvatar,
-	// 		})
-	// 		.onConflictDoUpdate({
-	// 			image: fromDelegateEnsAvatar,
-	// 			name: fromDelegateEnsName,
-	// 		});
-	// }
-
 	await context.db
 		.insert(lilnounDelegates)
 		.values({
-			from: event.args.fromDelegate,
-			to: event.args.toDelegate,
-			votes: 0n,
+			from: event.args.delegator.toLowerCase() as `0x${string}`,
+			to: event.args.toDelegate.toLowerCase() as `0x${string}`,
 		})
 		.onConflictDoUpdate({
-			to: event.args.toDelegate,
+			to: event.args.toDelegate.toLowerCase() as `0x${string}`,
 		});
 });
 
@@ -281,31 +100,9 @@ ponder.on("NounsDAOGovernor:ProposalCreated", async ({ event, context }) => {
 		blocks: Number(event.args.endBlock) - Number(event.block.number),
 	});
 
-	// const ensName = await context.client.getEnsName({
-	// 	address: event.args.proposer,
-	// });
-
-	// if (ensName) {
-	// 	const ensAvatar = await context.client.getEnsAvatar({
-	// 		name: normalize(ensName),
-	// 	});
-
-	// 	await context.db
-	// 		.insert(ensProfiles)
-	// 		.values({
-	// 			address: event.args.proposer,
-	// 			name: ensName,
-	// 			image: ensAvatar,
-	// 		})
-	// 		.onConflictDoUpdate({
-	// 			image: ensAvatar,
-	// 			name: ensName,
-	// 		});
-	// }
-
 	await context.db.insert(nounsProposals).values({
 		id: event.args.id,
-		proposer: event.args.proposer,
+		proposer: event.args.proposer.toLowerCase() as `0x${string}`,
 		targets: [...event.args.targets],
 		values: [...event.args.values],
 		signatures: [...event.args.signatures],
@@ -487,28 +284,6 @@ ponder.on("NounsDAOGovernor:VoteCast", async ({ event, context }) => {
 		});
 	}
 
-	// const ensName = await context.client.getEnsName({
-	// 	address: event.args.voter,
-	// });
-
-	// if (ensName) {
-	// 	const ensAvatar = await context.client.getEnsAvatar({
-	// 		name: normalize(ensName),
-	// 	});
-
-	// 	await context.db
-	// 		.insert(ensProfiles)
-	// 		.values({
-	// 			address: event.args.voter,
-	// 			name: ensName,
-	// 			image: ensAvatar,
-	// 		})
-	// 		.onConflictDoUpdate({
-	// 			image: ensAvatar,
-	// 			name: ensName,
-	// 		});
-	// }
-
 	const reason = parseVoteReason(event.args.reason);
 
 	for (const repost of reason.reposts) {
@@ -519,15 +294,15 @@ ponder.on("NounsDAOGovernor:VoteCast", async ({ event, context }) => {
 		if (repostedVote) {
 			await context.db.insert(voteReposts).values({
 				proposal: event.args.proposalId,
-				reposter: event.args.voter,
-				voter: repostedVote.voter,
+				reposter: event.args.voter.toLowerCase() as `0x${string}`,
+				voter: repostedVote.voter.toLowerCase() as `0x${string}`,
 			});
 		}
 	}
 
 	await context.db.insert(nounsVotes).values({
 		proposal: event.args.proposalId,
-		voter: event.args.voter,
+		voter: event.args.voter.toLowerCase() as `0x${string}`,
 		support: event.args.support,
 		amount: event.args.votes,
 		timestamp: new Date(Number(event.block.timestamp) * 1000),
@@ -541,7 +316,7 @@ ponder.on(
 		await context.db
 			.update(nounsVotes, {
 				proposal: event.args.proposalId,
-				voter: event.args.voter,
+				voter: event.args.voter.toLowerCase() as `0x${string}`,
 			})
 			.set({
 				client: event.args.clientId,
@@ -627,12 +402,20 @@ ponder.on("NounsArt:BodiesAdded", async ({ event, context }) => {
 	);
 
 	for (let i = bodyCount - event.args.count; i < bodyCount; i++) {
+		const imageData = await context.client.readContract({
+			address: context.contracts.NounsArt.address,
+			abi: context.contracts.NounsArt.abi,
+			functionName: "bodies",
+			args: [BigInt(i)],
+		});
+
 		const body = generateSVGPart({
-			image: await context.client.readContract({
+			image: imageData,
+			palette: await context.client.readContract({
 				address: context.contracts.NounsArt.address,
 				abi: context.contracts.NounsArt.abi,
-				functionName: "bodies",
-				args: [BigInt(i)],
+				functionName: "palettes",
+				args: [Number(imageData.slice(0, 4))],
 			}),
 		});
 
@@ -676,12 +459,20 @@ ponder.on("NounsArt:AccessoriesAdded", async ({ event, context }) => {
 	);
 
 	for (let i = accessoryCount - event.args.count; i < accessoryCount; i++) {
+		const imageData = await context.client.readContract({
+			address: context.contracts.NounsArt.address,
+			abi: context.contracts.NounsArt.abi,
+			functionName: "accessories",
+			args: [BigInt(i)],
+		});
+
 		const accessory = generateSVGPart({
-			image: await context.client.readContract({
+			image: imageData,
+			palette: await context.client.readContract({
 				address: context.contracts.NounsArt.address,
 				abi: context.contracts.NounsArt.abi,
-				functionName: "accessories",
-				args: [BigInt(i)],
+				functionName: "palettes",
+				args: [Number(imageData.slice(0, 4))],
 			}),
 		});
 
@@ -725,12 +516,20 @@ ponder.on("NounsArt:HeadsAdded", async ({ event, context }) => {
 	);
 
 	for (let i = headCount - event.args.count; i < headCount; i++) {
+		const imageData = await context.client.readContract({
+			address: context.contracts.NounsArt.address,
+			abi: context.contracts.NounsArt.abi,
+			functionName: "heads",
+			args: [BigInt(i)],
+		});
+
 		const head = generateSVGPart({
-			image: await context.client.readContract({
+			image: imageData,
+			palette: await context.client.readContract({
 				address: context.contracts.NounsArt.address,
 				abi: context.contracts.NounsArt.abi,
-				functionName: "heads",
-				args: [BigInt(i)],
+				functionName: "palettes",
+				args: [Number(imageData.slice(0, 4))],
 			}),
 		});
 
@@ -774,12 +573,20 @@ ponder.on("NounsArt:GlassesAdded", async ({ event, context }) => {
 	);
 
 	for (let i = glassesCount - event.args.count; i < glassesCount; i++) {
+		const imageData = await context.client.readContract({
+			address: context.contracts.NounsArt.address,
+			abi: context.contracts.NounsArt.abi,
+			functionName: "glasses",
+			args: [BigInt(i)],
+		});
+
 		const glasses = generateSVGPart({
-			image: await context.client.readContract({
+			image: imageData,
+			palette: await context.client.readContract({
 				address: context.contracts.NounsArt.address,
 				abi: context.contracts.NounsArt.abi,
-				functionName: "glasses",
-				args: [BigInt(i)],
+				functionName: "palettes",
+				args: [Number(imageData.slice(0, 4))],
 			}),
 		});
 
@@ -823,12 +630,20 @@ ponder.on("NounsArt:BodiesUpdated", async ({ event, context }) => {
 	);
 
 	for (let i = 0; i < bodyCount; i++) {
+		const imageData = await context.client.readContract({
+			address: context.contracts.NounsArt.address,
+			abi: context.contracts.NounsArt.abi,
+			functionName: "bodies",
+			args: [BigInt(i)],
+		});
+
 		const body = generateSVGPart({
-			image: await context.client.readContract({
+			image: imageData,
+			palette: await context.client.readContract({
 				address: context.contracts.NounsArt.address,
 				abi: context.contracts.NounsArt.abi,
-				functionName: "bodies",
-				args: [BigInt(i)],
+				functionName: "palettes",
+				args: [Number(imageData.slice(0, 4))],
 			}),
 		});
 
@@ -872,12 +687,20 @@ ponder.on("NounsArt:AccessoriesUpdated", async ({ event, context }) => {
 	);
 
 	for (let i = 0; i < accessoryCount; i++) {
+		const imageData = await context.client.readContract({
+			address: context.contracts.NounsArt.address,
+			abi: context.contracts.NounsArt.abi,
+			functionName: "accessories",
+			args: [BigInt(i)],
+		});
+
 		const accessory = generateSVGPart({
-			image: await context.client.readContract({
+			image: imageData,
+			palette: await context.client.readContract({
 				address: context.contracts.NounsArt.address,
 				abi: context.contracts.NounsArt.abi,
-				functionName: "accessories",
-				args: [BigInt(i)],
+				functionName: "palettes",
+				args: [Number(imageData.slice(0, 4))],
 			}),
 		});
 
@@ -921,12 +744,20 @@ ponder.on("NounsArt:HeadsUpdated", async ({ event, context }) => {
 	);
 
 	for (let i = 0; i < headCount; i++) {
+		const imageData = await context.client.readContract({
+			address: context.contracts.NounsArt.address,
+			abi: context.contracts.NounsArt.abi,
+			functionName: "heads",
+			args: [BigInt(i)],
+		});
+
 		const head = generateSVGPart({
-			image: await context.client.readContract({
+			image: imageData,
+			palette: await context.client.readContract({
 				address: context.contracts.NounsArt.address,
 				abi: context.contracts.NounsArt.abi,
-				functionName: "heads",
-				args: [BigInt(i)],
+				functionName: "palettes",
+				args: [Number(imageData.slice(0, 4))],
 			}),
 		});
 
@@ -970,12 +801,20 @@ ponder.on("NounsArt:GlassesUpdated", async ({ event, context }) => {
 	);
 
 	for (let i = 0; i < glassesCount; i++) {
+		const imageData = await context.client.readContract({
+			address: context.contracts.NounsArt.address,
+			abi: context.contracts.NounsArt.abi,
+			functionName: "glasses",
+			args: [BigInt(i)],
+		});
+
 		const glasses = generateSVGPart({
-			image: await context.client.readContract({
+			image: imageData,
+			palette: await context.client.readContract({
 				address: context.contracts.NounsArt.address,
 				abi: context.contracts.NounsArt.abi,
-				functionName: "glasses",
-				args: [BigInt(i)],
+				functionName: "palettes",
+				args: [Number(imageData.slice(0, 4))],
 			}),
 		});
 
@@ -1011,7 +850,8 @@ ponder.on("NounsArt:GlassesUpdated", async ({ event, context }) => {
 
 ponder.on("NounsAuctionHouse:AuctionCreated", async ({ event, context }) => {
 	const minBid = await context.client.readContract({
-		address: context.contracts.NounsAuctionHouse.address,
+		address:
+			context.contracts.NounsAuctionHouse.address.toLowerCase() as `0x${string}`,
 		abi: context.contracts.NounsAuctionHouse.abi,
 		functionName: "reservePrice",
 	});
@@ -1026,31 +866,9 @@ ponder.on("NounsAuctionHouse:AuctionCreated", async ({ event, context }) => {
 });
 
 ponder.on("NounsAuctionHouse:AuctionBid", async ({ event, context }) => {
-	// const ensName = await context.client.getEnsName({
-	// 	address: event.args.sender,
-	// });
-
-	// if (ensName) {
-	// 	const ensAvatar = await context.client.getEnsAvatar({
-	// 		name: normalize(ensName),
-	// 	});
-
-	// 	await context.db
-	// 		.insert(ensProfiles)
-	// 		.values({
-	// 			address: event.args.sender,
-	// 			name: ensName,
-	// 			image: ensAvatar,
-	// 		})
-	// 		.onConflictDoUpdate({
-	// 			image: ensAvatar,
-	// 			name: ensName,
-	// 		});
-	// }
-
 	await context.db.insert(nounsBids).values({
 		nounId: event.args.nounId,
-		bidder: event.args.sender,
+		bidder: event.args.sender.toLowerCase() as `0x${string}`,
 		amount: event.args.value,
 		timestamp: new Date(Number(event.block.timestamp) * 1000),
 	});

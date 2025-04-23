@@ -1,4 +1,4 @@
-import { getTraitCounts, getTraits } from "@/server/queries/nouns";
+import { getNoun, getTraitCounts, getTraits } from "@/server/queries/nouns";
 import { padSVG } from "~/packages/utils/padSVG";
 import { generateTraitsFromSeed } from "~/packages/utils/getTraitsFromSeed";
 
@@ -47,6 +47,23 @@ export async function GET(request: Request) {
 		body = traits.body;
 		head = traits.head;
 		glasses = traits.glasses;
+	}
+
+	if (params.id) {
+		const noun = await getNoun({ id: BigInt(params.id) });
+
+		if (!noun) {
+			return Response.json(
+				{ error: `Noun not found: ${params.id}` },
+				{ status: 400 },
+			);
+		}
+
+		background = noun.background;
+		accessory = noun.accessory.index;
+		body = noun.body.index;
+		head = noun.head.index;
+		glasses = noun.glasses.index;
 	}
 
 	if (params.accessory) {
