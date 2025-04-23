@@ -1,12 +1,9 @@
 import Link from "@/components/Link";
 import Image from "next/image";
 import Gallery from "@/components/Gallery";
-import { getVideos } from "@/server/queries/youtube";
-import Attribution from "@/components/Attribution";
 import { getTrendingPosts } from "@/server/queries/discussion";
 import { ArrowRight, ChevronUp } from "lucide-react";
 import { getRounds } from "@/server/queries/rounds";
-import { getCreator } from "@/server/queries/creations";
 import RoundCard from "@/components/RoundCard";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import { getEvents } from "@/server/queries/events";
@@ -15,9 +12,8 @@ import QuestCard from "@/components/QuestCard";
 import EventCard from "@/components/EventCard";
 
 export default async function Home() {
-	const [user, videos, trendingPosts, rounds, events] = await Promise.all([
+	const [user, trendingPosts, rounds, events] = await Promise.all([
 		getAuthenticatedUser(),
-		getVideos(),
 		getTrendingPosts(),
 		getRounds({ limit: 4 }),
 		getEvents({ limit: 3 }),
