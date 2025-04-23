@@ -14,7 +14,7 @@ export default function RankingSystemExplainer() {
 		>
 			<div className="flex justify-between items-center">
 				<p className="text-white text-2xl font-bebas-neue leading-none">
-					Ranking System
+					Leaderboards
 				</p>
 				<ToggleModal
 					id="ranking-system-explainer"
@@ -69,18 +69,17 @@ export default function RankingSystemExplainer() {
 							default: (
 								<div className="flex flex-col gap-4 bg-grey-800 rounded-xl p-4 max-sm:mb-10">
 									<p>
-										The leaderboard highlights the most engaged community
-										memebers. Earn XP by participating in events, rounds,
+										The leaderboard highlights the most engaged participants in
+										a community. Earn XP by participating in events, rounds,
 										quests, and more.
 									</p>
 									<div className="flex flex-col gap-2">
-										<h3 className="text-white font-semibold">Earning Gold</h3>
+										<h3 className="text-white font-semibold">Leveling Up</h3>
 										<p>
-											The top 100 XP earners each week are awarded their share
-											of 50k Gold. Gold can be used to purchase exclusive items,
-											experiences, and merch in the shop. The higher your
-											position on the leaderboard, the more gold you'll receive!
-											The value of gold is fixed at 1 Gold = $0.01.
+											XP earned from rounds, quests, predictions, etc. is tied
+											to the community it was earned in. Stay active in your
+											favorite communities to level up and climb to the top of
+											the leaderboard!
 										</p>
 									</div>
 								</div>
