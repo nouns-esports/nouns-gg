@@ -6,7 +6,6 @@ import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { onlyUser } from ".";
 import { z } from "zod";
-import { getUserHasCredential } from "../queries/users";
 import { getAction } from "../actions";
 
 export const createProposal = onlyUser
