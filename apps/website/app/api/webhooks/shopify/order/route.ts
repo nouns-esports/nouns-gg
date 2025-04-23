@@ -60,6 +60,7 @@ export async function POST(request: Request) {
 			order: order.admin_graphql_api_id,
 			amount: xpAmount > 500 ? 500 : xpAmount,
 			timestamp: new Date(order.created_at),
+			community: 7,
 		});
 
 		await tx

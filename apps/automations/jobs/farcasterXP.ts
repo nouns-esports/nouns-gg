@@ -83,6 +83,7 @@ export const farcasterXP = createJob({
 					user: user.id,
 					amount: likesXP + recastsXP,
 					timestamp: now,
+					community: 7,
 				});
 
 				await tx

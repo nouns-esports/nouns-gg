@@ -95,6 +95,7 @@ export const completeQuest = onlyUser
 				user: ctx.user.id,
 				amount: quest.xp,
 				timestamp: now,
+				community: quest.community,
 			});
 
 			await tx.insert(questCompletions).values({

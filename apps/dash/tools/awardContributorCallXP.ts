@@ -91,6 +91,7 @@ agent.addTool({
 					amount,
 					timestamp: now,
 					snapshot: snapshot.id,
+					community: 7,
 				});
 
 				await tx

@@ -125,6 +125,7 @@ export const resolvePrediction = onlyUser
 					amount: prediction.xp,
 					prediction: prediction.id,
 					timestamp: now,
+					community: prediction.community,
 				});
 
 				if (winnings > 0) {

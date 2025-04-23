@@ -124,6 +124,7 @@ export const castVotes = onlyUser
 					amount: 50 * vote.count,
 					timestamp: now,
 					vote: returnedVote[0].id,
+					community: round.community,
 				});
 
 				await tx
@@ -139,6 +140,7 @@ export const castVotes = onlyUser
 					amount: 5 * vote.count,
 					timestamp: now,
 					vote: returnedVote[0].id,
+					community: round.community,
 				});
 
 				const [updateNexus] = await tx

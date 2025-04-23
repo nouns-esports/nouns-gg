@@ -75,6 +75,7 @@ agent.addTool({
 				user: mentionedUser.id,
 				amount: parameters.amount,
 				timestamp: new Date(),
+				community: 7,
 			});
 		});
 

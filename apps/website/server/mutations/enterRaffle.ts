@@ -98,6 +98,7 @@ export const enterRaffle = onlyUser
 				amount: earnedXP,
 				timestamp: now,
 				raffleEntry: raffleEntry.id,
+				community: raffle.community,
 			});
 
 			await tx.insert(gold).values({
