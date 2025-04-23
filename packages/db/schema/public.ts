@@ -332,7 +332,9 @@ export const nexus = pgTable(
 export const gold = pgTable("gold", (t) => ({
 	id: t.serial().primaryKey(),
 	from: t.text(),
+	fromCommunity: t.bigint({ mode: "number" }),
 	to: t.text(),
+	toCommunity: t.bigint({ mode: "number" }),
 	amount: t.numeric({ precision: 12, scale: 2 }).notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 	ranking: t.integer(),

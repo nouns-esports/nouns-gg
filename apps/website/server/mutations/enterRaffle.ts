@@ -4,6 +4,7 @@ import { onlyUser } from ".";
 import { z } from "zod";
 import { db } from "~/packages/db";
 import {
+	communities,
 	gold,
 	leaderboards,
 	nexus,
@@ -123,11 +124,18 @@ export const enterRaffle = onlyUser
 
 			await tx.insert(gold).values({
 				from: ctx.user.id,
-				to: null,
+				toCommunity: raffle.community,
 				amount: cost.toString(),
 				timestamp: now,
 				raffleEntry: raffleEntry.id,
 			});
+
+			await tx
+				.update(communities)
+				.set({
+					gold: sql`${communities.gold} + ${cost}`,
+				})
+				.where(eq(communities.id, raffle.community));
 		});
 
 		revalidatePath("/shop");

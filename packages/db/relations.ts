@@ -256,6 +256,10 @@ export const goldRelations = relations(gold, ({ one }) => ({
 		fields: [gold.bet],
 		references: [bets.id],
 	}),
+	raffleEntry: one(raffleEntries, {
+		fields: [gold.raffleEntry],
+		references: [raffleEntries.id],
+	}),
 }));
 
 export const checkinsRelations = relations(checkins, ({ one, many }) => ({
@@ -513,16 +517,20 @@ export const rafflesRelations = relations(raffles, ({ many, one }) => ({
 	}),
 }));
 
-export const raffleEntriesRelations = relations(raffleEntries, ({ one }) => ({
-	raffle: one(raffles, {
-		fields: [raffleEntries.raffle],
-		references: [raffles.id],
+export const raffleEntriesRelations = relations(
+	raffleEntries,
+	({ one, many }) => ({
+		raffle: one(raffles, {
+			fields: [raffleEntries.raffle],
+			references: [raffles.id],
+		}),
+		user: one(nexus, {
+			fields: [raffleEntries.user],
+			references: [nexus.id],
+		}),
+		gold: many(gold),
 	}),
-	user: one(nexus, {
-		fields: [raffleEntries.user],
-		references: [nexus.id],
-	}),
-}));
+);
 
 export const castRelations = relations(casts, ({ many, one }) => ({
 	reactions: many(reactions),
