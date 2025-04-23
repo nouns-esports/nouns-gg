@@ -17,9 +17,9 @@ await db.primary.transaction(async (tx) => {
 			.onConflictDoUpdate({
 				target: [nexus.id],
 				set: {
-					twitter: user.twitter?.username,
-					discord: user.discord?.username?.split("#")[0],
-					fid: user.farcaster?.fid,
+					twitter: user.twitter?.username ?? null,
+					discord: user.discord?.username?.split("#")[0] ?? null,
+					fid: user.farcaster?.fid ?? null,
 				},
 			});
 
