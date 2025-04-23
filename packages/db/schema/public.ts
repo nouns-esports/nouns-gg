@@ -347,7 +347,7 @@ export const quests = pgTable("quests", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
-	_description: t.jsonb().$type<TipTap>(),
+	description: t.jsonb().$type<TipTap>(),
 	image: t.text().notNull(),
 	community: t.bigint({ mode: "number" }).notNull(),
 	event: t.bigint({ mode: "number" }),
@@ -395,8 +395,23 @@ export const xp = pgTable("xp", (t) => ({
 	order: t.text(), // shopify Order gid
 	raffleEntry: t.integer(),
 	attendee: t.integer(),
-	community: t.bigint({ mode: "number" }), // notNull
+	community: t.bigint({ mode: "number" }).notNull(),
 }));
+
+export const leaderboards = pgTable(
+	"leaderboards",
+	(t) => ({
+		id: t.bigserial({ mode: "number" }).primaryKey(),
+		community: t.bigint({ mode: "number" }).notNull(),
+		user: t.text().notNull(),
+		xp: t.bigint({ mode: "number" }).notNull(),
+	}),
+	(table) => [
+		index("leaderboards_community_idx").on(table.community),
+		index("leaderboards_user_idx").on(table.user),
+		index("leaderboards_xp_idx").on(table.xp),
+	],
+);
 
 export const rankings = pgTable(
 	"rankings",
