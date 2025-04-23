@@ -161,7 +161,7 @@ export default async function Community(props: {
 													<LeaderboardPosition
 														key={userPosition.user.id}
 														position={userPosition.rank}
-														user={userPosition.user}
+														ranking={userPosition}
 													/>
 												</div>
 											) : null}
@@ -185,7 +185,7 @@ export default async function Community(props: {
 														<LeaderboardPosition
 															key={ranking.user.id}
 															position={position}
-															user={ranking.user}
+															ranking={ranking}
 														/>
 													);
 												})}
@@ -221,15 +221,15 @@ function Tab(props: { children: string; active: boolean; href: string }) {
 }
 
 function LeaderboardPosition(props: {
-	user: NonNullable<Awaited<ReturnType<typeof getLeaderboard>>>[number]["user"];
+	ranking: NonNullable<Awaited<ReturnType<typeof getLeaderboard>>>[number];
 	position: number;
 }) {
-	const { currentLevel } = level(props.user.xp);
+	const { currentLevel } = level(props.ranking.xp);
 
 	return (
 		<Link
-			href={`/users/${props.user?.profile?.username ?? props.user.id}`}
-			key={props.user.id}
+			href={`/users/${props.ranking.user.profile?.username ?? props.ranking.user.id}`}
+			key={props.ranking.user.id}
 			className="flex justify-between items-center bg-grey-800 hover:bg-grey-600 transition-colors p-4 pr-6 rounded-xl"
 		>
 			<div className="flex gap-4 items-center">
@@ -239,12 +239,14 @@ function LeaderboardPosition(props: {
 				<div className="flex gap-4 max-sm:gap-2">
 					<div className="flex gap-3 max-sm:gap-2 items-center">
 						<img
-							alt={props.user?.profile?.username ?? props.user.id}
-							src={props.user?.image ?? ""}
+							alt={
+								props.ranking.user.profile?.username ?? props.ranking.user.id
+							}
+							src={props.ranking.user?.image ?? ""}
 							className="w-8 h-8 rounded-full object-cover bg-white"
 						/>
 						<p className="text-white text-lg max-sm:max-w-20 truncate whitespace-nowrap">
-							{props.user.name}
+							{props.ranking.user.name}
 						</p>
 					</div>
 					{/* {props.diff !== 0 ? (

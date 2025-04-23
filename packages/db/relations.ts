@@ -136,7 +136,6 @@ export const predictionsRelations = relations(predictions, ({ one, many }) => ({
 	}),
 	outcomes: many(outcomes),
 	bets: many(bets),
-
 	earnedXP: many(xp),
 	gold: many(gold),
 }));
@@ -294,7 +293,7 @@ export const questRelations = relations(quests, ({ one, many }) => ({
 	}),
 	completions: many(questCompletions),
 	actions: many(questActions),
-	completed: many(xp),
+	xpRecords: many(xp),
 }));
 
 export const questCompletionsRelations = relations(

@@ -64,7 +64,7 @@ export default async function User(props: {
 								) : null}
 							</div>
 						</div>
-						<Level xp={user.xp} />
+						{/* <Level xp={user.xp} /> */}
 					</div>
 					{/* <div className="flex flex-col gap-4">
 						<h2 className="text-white text-3xl font-luckiest-guy leading-none">
