@@ -308,7 +308,6 @@ export const proposals = pgTable("proposals", (t) => ({
 	createdAt: t.timestamp("created_at", { mode: "date" }).notNull(),
 	hidden: t.boolean().notNull().default(false),
 	published: t.boolean().notNull().default(true),
-	// winner: t.boolean().notNull().default(false),
 	winner: t.smallint(),
 }));
 

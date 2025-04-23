@@ -250,6 +250,16 @@ export default function Proposals(props: {
 				<div className="gap-4 grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
 					{props.round.proposals
 						.toSorted((a, b) => {
+							if (state === "Ended") {
+								if (b.winner !== null && a.winner !== null) {
+									return a.winner - b.winner;
+								} else if (b.winner) {
+									return -1;
+								} else if (a.winner) {
+									return 1;
+								}
+							}
+
 							const votesDiff = b.totalVotes - a.totalVotes;
 
 							if (votesDiff === 0) {
