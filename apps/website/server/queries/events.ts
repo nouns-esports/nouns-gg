@@ -45,11 +45,8 @@ export const getEvent = cache(
 				attendees: {
 					with: {
 						user: {
-							columns: {
-								id: true,
-								image: true,
-								name: true,
-								username: true,
+							with: {
+								profile: true,
 							},
 						},
 					},

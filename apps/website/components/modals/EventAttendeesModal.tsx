@@ -1,16 +1,9 @@
 import { ArrowRight, X } from "lucide-react";
 import { Modal, ToggleModal } from "../Modal";
 import Link from "../Link";
-
+import type { getEvent } from "@/server/queries/events";
 export default function EventAttendeesModal(props: {
-	attendees: Array<{
-		user: {
-			id: string;
-			image: string;
-			name: string;
-			username: string | null;
-		};
-	}>;
+	attendees: NonNullable<Awaited<ReturnType<typeof getEvent>>>["attendees"];
 }) {
 	return (
 		<Modal
@@ -47,7 +40,7 @@ export default function EventAttendeesModal(props: {
 						</div>
 						{attendee.user.id !== "_" ? (
 							<Link
-								href={`/users/${attendee.user.username ?? attendee.user.id}`}
+								href={`/users/${attendee.user.profile?.username ?? attendee.user.id}`}
 								className="text-red group hover:text-red/70 transition-colors flex items-center gap-1"
 							>
 								View
