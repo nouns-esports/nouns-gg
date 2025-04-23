@@ -5,7 +5,7 @@ export default async function UserPage() {
 	const user = await getAuthenticatedUser();
 
 	if (user) {
-		return redirect(`/users/${user.nexus?.username ?? user.id}`);
+		return redirect(`/users/${user.nexus?.profile?.username ?? user.id}`);
 	}
 
 	return redirect("/");
