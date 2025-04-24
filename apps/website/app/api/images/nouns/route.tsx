@@ -21,7 +21,7 @@ export async function GET(request: Request) {
 	let head: number | undefined = undefined;
 	let glasses: number | undefined = undefined;
 
-	if (params.seed && params.id) {
+	if (params.seed !== null && params.id !== null) {
 		return Response.json(
 			{
 				error: "Cannot specify both id and seed",
@@ -65,23 +65,23 @@ export async function GET(request: Request) {
 		glasses = noun.glasses.index;
 	}
 
-	if (params.accessory) {
+	if (params.accessory !== null) {
 		accessory = parseInt(params.accessory);
 	}
 
-	if (params.body) {
+	if (params.body !== null) {
 		body = parseInt(params.body);
 	}
 
-	if (params.head) {
+	if (params.head !== null) {
 		head = parseInt(params.head);
 	}
 
-	if (params.glasses) {
+	if (params.glasses !== null) {
 		glasses = parseInt(params.glasses);
 	}
 
-	if (params.background) {
+	if (params.background !== null) {
 		if (params.background.startsWith("#")) {
 			if (params.background.length !== 7) {
 				return Response.json(
