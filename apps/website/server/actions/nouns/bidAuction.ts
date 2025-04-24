@@ -48,7 +48,7 @@ export const bidAuction = createAction({
 			where: and(
 				inArray(
 					nounsBids.bidder,
-					user.wallets.map((w) => w.address as `0x${string}`),
+					user.wallets.map((w) => w.address.toLowerCase() as `0x${string}`),
 				),
 				inputs.amount
 					? gte(nounsBids.amount, BigInt(inputs.amount.min))

@@ -39,7 +39,7 @@ export const castNounsVote = createAction({
 			where: and(
 				inArray(
 					nounsVotes.voter,
-					user.wallets.map((w) => w.address as `0x${string}`),
+					user.wallets.map((w) => w.address.toLowerCase() as `0x${string}`),
 				),
 				inputs.proposal
 					? eq(nounsVotes.proposal, BigInt(inputs.proposal.id))

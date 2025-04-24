@@ -35,9 +35,9 @@ export const holdNFT = createAction({
 			where: and(
 				inArray(
 					erc721Balances.account,
-					user.wallets.map((w) => w.address as `0x${string}`),
+					user.wallets.map((w) => w.address.toLowerCase() as `0x${string}`),
 				),
-				eq(erc721Balances.collection, inputs.token.address),
+				eq(erc721Balances.collection, inputs.token.address.toLowerCase()),
 				inputs.token.id
 					? eq(erc721Balances.tokenId, BigInt(inputs.token.id))
 					: undefined,

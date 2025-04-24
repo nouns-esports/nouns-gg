@@ -31,7 +31,7 @@ export const createNounsProposal = createAction({
 		const proposal = await db.primary.query.nounsProposals.findFirst({
 			where: inArray(
 				nounsProposals.proposer,
-				user.wallets.map((w) => w.address as `0x${string}`),
+				user.wallets.map((w) => w.address.toLowerCase() as `0x${string}`),
 			),
 		});
 
