@@ -152,10 +152,10 @@ export async function GET(request: Request) {
 	const paddedGlasses = padSVG(traits.glasses.image, traits.glasses.padding);
 
 	return new Response(
-		`<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" fill="none">
+		`<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" width="320" height="320" viewBox="0 0 320 320" fill="none">
 				<rect x="0" y="0" width="320" height="320" fill="${background}" />
-				${paddedAccessory}
 				${paddedBody}
+				${paddedAccessory}
 				${paddedHead}
 				${paddedGlasses}
 			</svg>`,
