@@ -548,7 +548,8 @@ export const profileRelations = relations(profiles, ({ many, one }) => ({
 	casts: many(casts),
 	reactions: many(reactions),
 	verifications: many(verifications),
-	follows: many(follows),
+	followers: many(follows, { relationName: "from" }),
+	following: many(follows, { relationName: "to" }),
 	user: one(nexus, {
 		fields: [profiles.fid],
 		references: [nexus.fid],
@@ -559,10 +560,12 @@ export const followRelations = relations(follows, ({ one }) => ({
 	from: one(profiles, {
 		fields: [follows.fid],
 		references: [profiles.fid],
+		relationName: "from",
 	}),
 	to: one(profiles, {
 		fields: [follows.targetFid],
 		references: [profiles.fid],
+		relationName: "to",
 	}),
 }));
 
