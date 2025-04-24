@@ -3,7 +3,7 @@
 import { unstable_cache as cache } from "next/cache";
 import { db } from "~/packages/db";
 import { nouns, nounsTraits } from "~/packages/db/schema/indexer";
-import { count, eq, sql } from "drizzle-orm";
+import { count, desc, eq, sql } from "drizzle-orm";
 
 export const getTrait = cache(
 	async (input: {
@@ -66,11 +66,11 @@ export const getTraitCounts = cache(async () => {
 
 export const getNoun = cache(
 	async (input: {
-		id?: bigint;
+		id?: number;
 	}) => {
 		return db.pgpool.query.nouns.findFirst({
-			where: input.id ? (t, { eq }) => eq(nouns.id, input.id!) : undefined,
-			orderBy: (t, { desc }) => [desc(t.id)],
+			where: input.id ? eq(nouns.id, BigInt(input.id)) : undefined,
+			orderBy: [desc(nouns.id)],
 			with: {
 				accessory: true,
 				body: true,
