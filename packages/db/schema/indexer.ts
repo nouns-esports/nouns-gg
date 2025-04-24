@@ -31,9 +31,9 @@ export const nounsProposals = onchainTable("nouns_proposals", (t) => ({
 	signatures: t.text().array().notNull(),
 	calldatas: t.hex().array().notNull(),
 	description: t.jsonb().$type<JSONContent>().notNull(),
-	createdAt: t.timestamp().notNull(),
-	startTime: t.timestamp().notNull(),
-	endTime: t.timestamp().notNull(),
+	createdAt: t.timestamp("created_at").notNull(),
+	startTime: t.timestamp("start_time").notNull(),
+	endTime: t.timestamp("end_time").notNull(),
 	canceled: t.boolean().notNull(),
 	vetoed: t.boolean().notNull(),
 	quorum: t
