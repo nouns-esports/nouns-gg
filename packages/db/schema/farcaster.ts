@@ -11,10 +11,7 @@ import {
 import { bytea } from "./custom/bytea";
 import { relations } from "drizzle-orm";
 
-const farcasterSchema = pgSchema(
-	// Change to your schema name
-	"farcaster_v3",
-);
+const farcasterSchema = pgSchema("farcaster_v3");
 
 export const casts = farcasterSchema.table("casts", {
 	id: uuid("id").primaryKey(),
