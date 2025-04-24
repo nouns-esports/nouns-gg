@@ -49,7 +49,7 @@ export async function GET(request: Request) {
 	}
 
 	if (params.id) {
-		const noun = await getNoun({ id: params.id });
+		const noun = await getNoun({ id: parseInt(params.id) });
 
 		if (!noun) {
 			return Response.json(
