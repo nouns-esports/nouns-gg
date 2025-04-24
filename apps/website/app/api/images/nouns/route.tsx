@@ -32,7 +32,7 @@ export async function GET(request: Request) {
 
 	const counts = await getTraitCounts();
 
-	if (params.seed) {
+	if (params.seed !== null) {
 		const traits = generateTraitsFromSeed(params.seed, {
 			accessoryCount: counts.accessory,
 			bodyCount: counts.body,
@@ -48,7 +48,7 @@ export async function GET(request: Request) {
 		glasses = traits.glasses;
 	}
 
-	if (params.id) {
+	if (params.id !== null) {
 		const noun = await getNoun({ id: parseInt(params.id) });
 
 		if (!noun) {
