@@ -12,6 +12,8 @@ import { getCheckpoint } from "@/server/queries/checkpoints";
 import { Toast } from "@/components/Toasts";
 import { eq, sql } from "drizzle-orm";
 import SignIn from "@/components/SignIn";
+import { Check } from "lucide-react";
+import Button from "@/components/Button";
 
 export default async function Checkpoint(props: {
 	params: Promise<{ key: string }>;
@@ -22,6 +24,7 @@ export default async function Checkpoint(props: {
 	const user = await getAuthenticatedUser();
 	const checkpoint = await getCheckpoint({ key: params.key, user: user?.id });
 
+	console.log("checkpoint", checkpoint);
 	if (!checkpoint) {
 		return redirect("/");
 	}
@@ -103,7 +106,18 @@ export default async function Checkpoint(props: {
 
 	return (
 		<>
-			<div>Checkpoint claimed</div>
+			<div className="w-screen h-screen flex justify-center items-center">
+				<div className="w-full flex flex-col items-center gap-4">
+					<h1 className="text-white text-4xl font-luckiest-guy">
+						{checkpoint.name}
+					</h1>
+					<p className="text-green flex items-center gap-1.5">
+						<Check className="w-4 h-4" />
+						Claimed
+					</p>
+					<Button href="/">Back to Home</Button>
+				</div>
+			</div>
 			{checkpoint.xp ? (
 				<Toast
 					type="xp"
