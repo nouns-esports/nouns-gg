@@ -30,7 +30,7 @@ export default async function Chat(props: {
 		//@ts-ignore FIX ISSUE LATER
 		channels: community
 			? [
-					community.channel,
+					community.parentUrl,
 					//...(subChannels ?? [])
 				]
 			: [
@@ -84,7 +84,7 @@ export default async function Chat(props: {
 									key={cast.hash}
 									cast={cast}
 									community={communities.find(
-										(c) => c.channel === cast.channel?.id,
+										(c) => c.parentUrl === cast.channel?.id,
 									)}
 								/>
 							))}
