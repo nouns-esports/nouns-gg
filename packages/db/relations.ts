@@ -540,7 +540,7 @@ export const castRelations = relations(casts, ({ many, one }) => ({
 	}),
 	community: one(communities, {
 		fields: [casts.rootParentUrl],
-		references: [communities.channel],
+		references: [communities.parentUrl],
 	}),
 }));
 
