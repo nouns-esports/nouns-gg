@@ -24,7 +24,6 @@ export default async function Checkpoint(props: {
 	const user = await getAuthenticatedUser();
 	const checkpoint = await getCheckpoint({ key: params.key, user: user?.id });
 
-	console.log("checkpoint", checkpoint);
 	if (!checkpoint) {
 		return redirect("/");
 	}
