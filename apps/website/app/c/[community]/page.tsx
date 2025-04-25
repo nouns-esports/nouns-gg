@@ -16,6 +16,7 @@ import { level } from "@/utils/level";
 import { ToggleModal } from "@/components/Modal";
 import { Info } from "lucide-react";
 import RankingSystemExplainer from "@/components/modals/RankingSystemExplainer";
+import TipTap from "@/components/TipTap";
 
 export default async function Community(props: {
 	params: Promise<{ community: string }>;
@@ -37,17 +38,19 @@ export default async function Community(props: {
 
 	const tab =
 		searchParams.tab ??
-		(community.hasEvents
-			? "events"
-			: community.hasRounds
-				? "rounds"
-				: community.hasQuests
-					? "quests"
-					: community.hasPredictions
-						? "predictions"
-						: community.hasLeaderboard
-							? "leaderboard"
-							: null);
+		(community.details
+			? "details"
+			: community.hasEvents
+				? "events"
+				: community.hasRounds
+					? "rounds"
+					: community.hasQuests
+						? "quests"
+						: community.hasPredictions
+							? "predictions"
+							: community.hasLeaderboard
+								? "leaderboard"
+								: null);
 
 	const [rounds, quests, predictions, events, leaderboard, userPosition] =
 		await Promise.all([
@@ -82,6 +85,14 @@ export default async function Community(props: {
 						</div>
 						{tab ? (
 							<ul className="flex gap-2 w-full overflow-x-auto">
+								{community.details ? (
+									<Tab
+										href={`/c/${community.handle}`}
+										active={tab === "details"}
+									>
+										Details
+									</Tab>
+								) : null}
 								{community.hasRounds ? (
 									<Tab href="?tab=rounds" active={tab === "rounds"}>
 										Rounds
@@ -113,6 +124,16 @@ export default async function Community(props: {
 					<div className="flex flex-col gap-8 w-full">
 						{
 							{
+								details: (
+									<div className="w-full flex justify-center">
+										{community.details ? (
+											<TipTap
+												content={community.details}
+												className="bg-grey-800 rounded-xl px-6 py-5 max-sm:px-4 max-sm:py-3 max-w-screen-lg"
+											/>
+										) : null}
+									</div>
+								),
 								events: (
 									<div className="grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1  gap-4">
 										{events.map((event) => (

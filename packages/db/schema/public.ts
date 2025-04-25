@@ -67,6 +67,7 @@ export const communities = pgTable("communities", (t) => ({
 	description: t.jsonb().$type<TipTap>(),
 	channel: t.text(),
 	gold: t.integer().notNull().default(0),
+	details: t.jsonb().$type<TipTap>(),
 }));
 
 export const communityActions = pgTable("community_actions", (t) => ({
