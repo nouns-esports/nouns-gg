@@ -16,6 +16,7 @@
 	"dependencies": {
 		"drizzle-kit": "0.31.0",
 		"drizzle-orm": "0.41.0",
-		"pg": "^8.11.3"
+		"pg": "^8.11.3",
+		"posthog-js": "^1.236.7"
 	}
 }

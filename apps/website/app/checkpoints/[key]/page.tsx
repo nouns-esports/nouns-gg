@@ -33,6 +33,8 @@ export default async function Checkpoint(props: {
 	}
 
 	let totalXP = 0;
+	let didEarnXP = false;
+	let didEarnGold = false;
 
 	if (checkpoint.checkins.length === 0) {
 		await db.primary.transaction(async (tx) => {
@@ -45,7 +47,8 @@ export default async function Checkpoint(props: {
 				})
 				.returning({ id: checkins.id });
 
-			if (checkpoint.xp) {
+			if (checkpoint.xp !== null) {
+				didEarnXP = true;
 				await tx.insert(xp).values({
 					user: user.id,
 					timestamp: now,
@@ -69,7 +72,8 @@ export default async function Checkpoint(props: {
 					});
 			}
 
-			if (checkpoint.gold) {
+			if (checkpoint.gold !== null) {
+				didEarnGold = true;
 				await tx.insert(gold).values({
 					to: user.id,
 					timestamp: now,
@@ -78,7 +82,7 @@ export default async function Checkpoint(props: {
 				});
 			}
 
-			if (checkpoint.xp) {
+			if (checkpoint.xp !== null) {
 				const [updateNexus] = await tx
 					.update(nexus)
 					.set({
@@ -92,7 +96,7 @@ export default async function Checkpoint(props: {
 				totalXP = updateNexus.xp;
 			}
 
-			if (checkpoint.gold) {
+			if (checkpoint.gold !== null) {
 				await tx
 					.update(nexus)
 					.set({
@@ -117,7 +121,7 @@ export default async function Checkpoint(props: {
 					<Button href="/">Back to Home</Button>
 				</div>
 			</div>
-			{checkpoint.xp ? (
+			{didEarnXP && checkpoint.xp !== null ? (
 				<Toast
 					type="xp"
 					inputs={{
@@ -126,7 +130,7 @@ export default async function Checkpoint(props: {
 					}}
 				/>
 			) : null}
-			{checkpoint.gold ? (
+			{didEarnGold && checkpoint.gold !== null ? (
 				<Toast
 					type="gold"
 					inputs={{
