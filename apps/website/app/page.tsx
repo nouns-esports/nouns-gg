@@ -1,6 +1,5 @@
 import Link from "@/components/Link";
 import Gallery from "@/components/Gallery";
-import { getTrendingPosts } from "@/server/queries/discussion";
 import { ArrowRight, ChevronUp } from "lucide-react";
 import { getRounds } from "@/server/queries/rounds";
 import RoundCard from "@/components/RoundCard";
@@ -10,15 +9,13 @@ import { getQuests } from "@/server/queries/quests";
 import QuestCard from "@/components/QuestCard";
 import EventCard from "@/components/EventCard";
 import { getFeed } from "@/server/queries/farcaster";
-import CastCard from "@/components/CastCard";
 import CreatePost from "@/components/CreatePost";
+import { getPosts } from "@/server/queries/posts";
+import PostCard from "@/components/PostCard";
 
 export default async function Home() {
 	const user = await getAuthenticatedUser();
-	const feed = await getFeed({
-		channels: ["nouns-esports"],
-		viewerFid: user?.farcaster?.fid,
-	});
+	const posts = await getPosts();
 	return (
 		<div className="flex flex-col w-full items-center">
 			<div className="flex w-full gap-16 mb-16 max-sm:mb-8 max-lg:gap-12 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 max-w-[1920px]">
@@ -30,21 +27,9 @@ export default async function Home() {
 							</h2>
 							<CreatePost user={user} communities={[]} />
 						</div>
-						{feed
-							.toSorted((a, b) => {
-								return (
-									new Date(b.timestamp).getTime() -
-									new Date(a.timestamp).getTime()
-								);
-							})
-							.map((cast) => (
-								<CastCard
-									key={cast.hash}
-									cast={cast}
-									// @ts-ignore FIX ISSUE LATER
-									community={{ id: 7, name: "Nouns", image: "/logo/logo.png" }}
-								/>
-							))}
+						{posts.map((post) => (
+							<PostCard key={post.hash} post={post} />
+						))}
 					</div>
 				</div>
 				<aside className="flex flex-col gap-8 w-[500px] flex-shrink-0">

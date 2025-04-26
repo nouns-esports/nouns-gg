@@ -41,7 +41,7 @@ for (let i = 0; i < eligibleForGold; i++) {
 		index: i,
 	});
 
-	console.log(i + 1, user.username ?? user.id, earning);
+	console.log(i + 1, user.name ?? user.id, earning);
 
 	// await tx.insert(gold).values({
 	// 	to: user.id,

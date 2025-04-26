@@ -92,8 +92,8 @@ export const createPost = createAction({
 		const post = await db.primary.query.casts.findFirst({
 			where: and(
 				eq(casts.fid, user.farcaster.fid),
-				community?.channel
-					? eq(casts.rootParentUrl, community.channel)
+				community?.parentUrl
+					? eq(casts.rootParentUrl, community.parentUrl)
 					: undefined,
 				inputs.match ? sql`${casts.text} ~ ${inputs.match.value}` : undefined,
 				inputs.mention

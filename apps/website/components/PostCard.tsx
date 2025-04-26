@@ -26,31 +26,31 @@ import Recast from "./Recast";
 import Upvote from "./Upvote";
 import CastText from "./CastText";
 import type { communities } from "~/packages/db/schema/public";
+import type { getPosts } from "@/server/queries/posts";
 
-export default function CastCard(props: {
-	cast: CastWithInteractions;
-	community?: typeof communities.$inferSelect;
+export default function PostCard(props: {
+	post: NonNullable<Awaited<ReturnType<typeof getPosts>>>[number];
 	expanded?: boolean;
 }) {
-	const embeds = parseCastEmbeds(props.cast.embeds);
+	const embeds = parseCastEmbeds(props.post.embeds ?? []);
 
 	return (
 		<div className="relative flex gap-3 bg-grey-800 rounded-xl pl-2 pr-4 py-4 w-full">
 			{!props.expanded ? (
 				<Link
-					href={`/chat/${props.cast.hash}`}
+					href={`/chat/${props.post.hash}`}
 					className="w-full h-full absolute top-0 left-0"
 				/>
 			) : null}
 			<Link
-				href={`/users/${props.cast.author.username}`}
+				href={`/users/${props.post.creator.username}`}
 				newTab
 				className="relative z-10 ml-2 w-12 h-12 flex-shrink-0 flex"
 			>
 				<img
-					alt={props.cast.author.display_name}
-					key={props.cast.author.pfp_url}
-					src={props.cast.author.pfp_url}
+					alt={props.post.creator.displayName ?? ""}
+					key={props.post.creator.pfpUrl}
+					src={props.post.creator.pfpUrl ?? undefined}
 					className="w-full h-full rounded-full object-cover object-center hover:brightness-75 transition-all"
 				/>
 			</Link>
@@ -59,14 +59,14 @@ export default function CastCard(props: {
 					<div className="flex items-center gap-2">
 						<Link
 							newTab
-							href={`/users/${props.cast.author.username}`}
+							href={`/users/${props.post.creator.username}`}
 							className="flex relative z-10 gap-2 items-center w-min hover:opacity-70 transition-opacity"
 						>
 							<h2 className="text-white text-nowrap">
-								{props.cast.author.display_name}
+								{props.post.creator.displayName}
 							</h2>
 						</Link>
-						{props.community ? (
+						{/* {props.community ? (
 							<>
 								<p className="text-grey-200 font-semibold text-sm">in</p>
 								<Link
@@ -84,34 +84,35 @@ export default function CastCard(props: {
 									</h2>
 								</Link>
 							</>
-						) : null}
+						) : null} */}
 						<p className="text-grey-200 font-semibold text-sm pointer-events-none">
-							<Countup date={props.cast.timestamp} />
+							<Countup date={props.post.createdAt} />
 						</p>
 					</div>
 					<MoreHorizontal className="w-5 h-5 text-grey-200 hover:text-white transition-colors mr-2" />
 				</div>
 				<div className="flex flex-col gap-3 w-full">
 					<CastText className="text-white w-full pointer-events-none">
-						{embeds.website
+						{props.post.text}
+						{/* {embeds.website
 							? props.cast.text.replace(embeds.website.url, "")
-							: props.cast.text}
+							: props.cast.text} */}
 					</CastText>
 					<div className="flex flex-col gap-1">
 						{embeds.image ? <CastImage image={embeds.image} /> : ""}
 						{embeds.website ? (
 							<WebsitePreview
 								website={embeds.website}
-								small={props.cast.embeds.length > 0}
+								small={(props.post.embeds?.length ?? 0) > 0}
 							/>
 						) : null}
 						{embeds.video ? <VideoPlayer video={embeds.video} /> : null}
-						{embeds.quoteCast ? (
+						{/* {embeds.quoteCast ? (
 							<QuoteCast
 								quoteCast={embeds.quoteCast}
 								small={props.cast.embeds.length > 0}
 							/>
-						) : null}
+						) : null} */}
 					</div>
 					<div
 						className={twMerge(
@@ -127,7 +128,7 @@ export default function CastCard(props: {
 						>
 							{!props.expanded ? (
 								<Link
-									href={`/chat/${props.cast.hash}`}
+									href={`/chat/${props.post.hash}`}
 									className="relative z-10"
 								>
 									<MessageSquare
@@ -137,35 +138,32 @@ export default function CastCard(props: {
 									/>
 								</Link>
 							) : null}
-							<Recast
-								hash={props.cast.hash}
-								recast={!!props.cast.viewer_context?.recasted}
-							/>
+							<Recast hash={props.post.hash} recast={false} />
 							{props.expanded ? (
 								<p className="cursor-default mr-2">
-									{props.cast.reactions.recasts_count} repost
-									{props.cast.reactions.recasts_count === 1 ? "" : "s"}
+									{0} repost
+									{/* biome-ignore lint/correctness/noConstantCondition: <explanation> */}
+									{0 === 1 ? "" : "s"}
 								</p>
 							) : null}
-							<Upvote
-								hash={props.cast.hash}
-								upvoted={!!props.cast.viewer_context?.liked}
-							/>
+							<Upvote hash={props.post.hash} upvoted={false} />
 						</div>
 
 						<div className="flex items-center gap-2 text-sm text-grey-200">
 							{!props.expanded ? (
 								<Link
-									href={`/chat/${props.cast.hash.substring(0, 10)}`}
+									href={`/chat/${props.post.hash.substring(0, 10)}`}
 									className="relative z-10 hover:text-grey-200/70 transition-colors"
 								>
-									{props.cast.replies.count} comment
-									{props.cast.replies.count === 1 ? "" : "s"}
+									{0} comment
+									{/* biome-ignore lint/correctness/noConstantCondition: <explanation> */}
+									{0 === 1 ? "" : "s"}
 								</Link>
 							) : null}
 							<p className="cursor-default">
-								{props.cast.reactions.likes_count} upvote
-								{props.cast.reactions.likes_count === 1 ? "" : "s"}
+								{0} upvote
+								{/* biome-ignore lint/correctness/noConstantCondition: <explanation> */}
+								{0 === 1 ? "" : "s"}
 							</p>
 						</div>
 					</div>

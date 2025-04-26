@@ -1,4 +1,4 @@
-import CastCard from "@/components/CastCard";
+import CastCard from "@/components/PostCard";
 import Link from "@/components/Link";
 import NavigateBack from "@/components/NavigateBack";
 import Upvote from "@/components/Upvote";

@@ -1,4 +1,4 @@
-import CastCard from "@/components/CastCard";
+import CastCard from "@/components/PostCard";
 import { getCommunities } from "@/server/queries/communities";
 import { getFeed } from "@/server/queries/farcaster";
 import { ArrowLeft } from "lucide-react";
@@ -30,7 +30,7 @@ export default async function Chat(props: {
 		//@ts-ignore FIX ISSUE LATER
 		channels: community
 			? [
-					community.channel,
+					community.parentUrl,
 					//...(subChannels ?? [])
 				]
 			: [
@@ -84,7 +84,7 @@ export default async function Chat(props: {
 									key={cast.hash}
 									cast={cast}
 									community={communities.find(
-										(c) => c.channel === cast.channel?.id,
+										(c) => c.parentUrl === cast.channel?.id,
 									)}
 								/>
 							))}
