@@ -7,6 +7,7 @@ import { revalidatePath } from "next/cache";
 import { onlyUser } from ".";
 import { z } from "zod";
 import { getAction } from "../actions";
+import { posthogClient } from "../clients/posthog";
 
 export const createProposal = onlyUser
 	.schema(
@@ -108,19 +109,38 @@ export const createProposal = onlyUser
 			}
 		}
 
+		let proposalId = 0;
+
 		await db.primary.transaction(async (tx) => {
-			await tx.insert(proposals).values([
-				{
-					title: parsedInput.title,
-					content: parsedInput.content,
-					image: parsedInput.image,
-					round: parsedInput.round,
-					user: ctx.user.id,
-					video: parsedInput.video,
-					url: parsedInput.url,
-					createdAt: now,
-				},
-			]);
+			const [proposal] = await tx
+				.insert(proposals)
+				.values([
+					{
+						title: parsedInput.title,
+						content: parsedInput.content,
+						image: parsedInput.image,
+						round: parsedInput.round,
+						user: ctx.user.id,
+						video: parsedInput.video,
+						url: parsedInput.url,
+						createdAt: now,
+					},
+				])
+				.returning({
+					id: proposals.id,
+				});
+
+			proposalId = proposal.id;
+		});
+
+		posthogClient.capture({
+			event: "proposal-created",
+			distinctId: ctx.user.id,
+			properties: {
+				round: round.id,
+				proposal: proposalId,
+				community: round.community,
+			},
 		});
 
 		revalidatePath(`/rounds/${round.handle}`);
