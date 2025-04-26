@@ -21,7 +21,9 @@ export default function PostHog(props: { children: React.ReactNode }) {
 
 	return (
 		<PHProvider client={posthog}>
-			<SuspendedPageView />
+			<Suspense fallback={null}>
+				<CapturePageView />
+			</Suspense>
 			{props.children}
 		</PHProvider>
 	);
@@ -47,20 +49,10 @@ function CapturePageView() {
 				url += `?${searchParams.toString()}`;
 			}
 
+			console.log("Capturing pageview", url);
 			posthog.capture("$pageview", { $current_url: url });
 		}
 	}, [pathname, searchParams, posthog]);
 
 	return null;
-}
-
-// Wrap this in Suspense to avoid the `useSearchParams` usage above
-// from de-opting the whole app into client-side rendering
-// See: https://nextjs.org/docs/messages/deopted-into-client-rendering
-function SuspendedPageView() {
-	return (
-		<Suspense fallback={null}>
-			<CapturePageView />
-		</Suspense>
-	);
 }
