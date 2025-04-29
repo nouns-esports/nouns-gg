@@ -224,10 +224,6 @@ export default async function Round(props: {
 			)
 		: [];
 
-	if (user?.id === "did:privy:clx8g9mui0c1k10947grzks2a") {
-		console.log(votingActions);
-	}
-
 	return (
 		<>
 			<div className="flex flex-col w-full items-center">

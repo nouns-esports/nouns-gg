@@ -2,7 +2,7 @@
 
 import { proposals, rounds } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { onlyUser } from ".";
@@ -16,6 +16,7 @@ export const updateProposal = onlyUser
 			content: z.string().optional(),
 			video: z.string().optional(),
 			url: z.string().optional(),
+			proposal: z.number(),
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
@@ -23,7 +24,11 @@ export const updateProposal = onlyUser
 			where: eq(rounds.id, parsedInput.round),
 			with: {
 				proposals: {
-					where: eq(proposals.user, ctx.user.id),
+					where: and(
+						eq(proposals.user, ctx.user.id),
+						eq(proposals.id, parsedInput.proposal),
+					),
+					limit: 1,
 				},
 			},
 		});

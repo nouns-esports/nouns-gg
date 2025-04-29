@@ -25,15 +25,15 @@ const Markdown = dynamic(() => import("../lexical/Markdown"), {
 
 export default function ProposalEditor(props: {
 	round: NonNullable<Awaited<ReturnType<typeof getRoundWithProposal>>>;
+	proposal?: NonNullable<
+		Awaited<ReturnType<typeof getRoundWithProposal>>
+	>["proposals"][number];
 	user: string;
 }) {
-	const proposal =
-		props.round.proposals.length > 0 ? props.round.proposals[0] : undefined;
-
-	const [title, setTitle] = useState(proposal?.title ?? "");
-	const [image, setImage] = useState(proposal?.image ?? undefined);
-	const [video, setVideo] = useState(proposal?.video ?? undefined);
-	const [url, setUrl] = useState(proposal?.url ?? undefined);
+	const [title, setTitle] = useState(props.proposal?.title ?? "");
+	const [image, setImage] = useState(props.proposal?.image ?? undefined);
+	const [video, setVideo] = useState(props.proposal?.video ?? undefined);
+	const [url, setUrl] = useState(props.proposal?.url ?? undefined);
 
 	const validUrl = useMemo(() => {
 		if (!url) return;
@@ -61,7 +61,7 @@ export default function ProposalEditor(props: {
 	}, [video]);
 
 	const [editorState, setEditorState] = useState(
-		proposal?.content ??
+		props.proposal?.content ??
 			JSON.stringify({
 				children: [
 					{
@@ -82,7 +82,9 @@ export default function ProposalEditor(props: {
 			}),
 	);
 
-	const [parsedMarkdown, setParsedMarkdown] = useState(proposal?.content ?? "");
+	const [parsedMarkdown, setParsedMarkdown] = useState(
+		props.proposal?.content ?? "",
+	);
 
 	const router = useRouter();
 
@@ -372,7 +374,7 @@ export default function ProposalEditor(props: {
 					onClick={async () => {
 						if (!props.user) return;
 
-						if (proposal) {
+						if (props.proposal) {
 							const result = await updateProposalAction.executeAsync({
 								round: props.round.id,
 								title,
@@ -380,6 +382,7 @@ export default function ProposalEditor(props: {
 								image: image,
 								video: validVideo,
 								url: validUrl,
+								proposal: props.proposal.id,
 							});
 
 							if (result?.serverError) {
@@ -407,7 +410,7 @@ export default function ProposalEditor(props: {
 						return router.push(`/rounds/${props.round.handle}`);
 					}}
 				>
-					{proposal ? "Update Proposal" : "Create Proposal"}
+					{props.proposal ? "Update Proposal" : "Create Proposal"}
 				</Button>
 			</div>
 		</div>

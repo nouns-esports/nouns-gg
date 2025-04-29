@@ -254,6 +254,7 @@ export const rounds = pgTable("rounds", (t) => ({
 		.notNull()
 		.default(2000),
 	linkRegex: t.text("link_regex"),
+	maxProposals: t.smallint("max_proposals").default(1),
 }));
 
 export const roundActions = pgTable("round_actions", (t) => ({

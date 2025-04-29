@@ -16,10 +16,6 @@ export default function VoteSelector(props: {
 	addVote: (proposal: number, votes: number) => void;
 	removeVote: (proposal: number, votes: number) => void;
 }) {
-	if (props.roundState === "Proposing" || props.roundState === "Upcoming") {
-		return;
-	}
-
 	if (
 		props.roundState === "Ended" ||
 		(props.roundState === "Voting" && !props.userCanVote)

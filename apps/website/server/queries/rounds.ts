@@ -3,21 +3,19 @@ import { db } from "~/packages/db";
 import { eq, asc, desc, sql, and } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
 
-export const getRoundWithProposal = cache(
-	async (input: { round: string; user: string }) => {
-		return db.pgpool.query.rounds.findFirst({
-			where: eq(rounds.handle, input.round),
-			with: {
-				proposals: {
-					where: eq(proposals.user, input.user),
-					limit: 1,
-				},
+export async function getRoundWithProposal(input: {
+	round: string;
+	user: string;
+}) {
+	return db.pgpool.query.rounds.findFirst({
+		where: eq(rounds.handle, input.round),
+		with: {
+			proposals: {
+				where: eq(proposals.user, input.user),
 			},
-		});
-	},
-	["rounds"],
-	{ tags: ["rounds"], revalidate: 60 * 10 },
-);
+		},
+	});
+}
 
 export const getRound = cache(
 	async (input: { handle: string }) => {

@@ -35,8 +35,10 @@ export const createProposal = onlyUser
 			throw new Error("Round not found");
 		}
 
-		if (round.proposals[0]?.user === ctx.user.id) {
-			throw new Error("You have already proposed for this round");
+		if (round.proposals.length >= (round.maxProposals ?? Infinity)) {
+			throw new Error(
+				"You have reached the maximum number of proposals for this round",
+			);
 		}
 
 		const actions = await Promise.all(
