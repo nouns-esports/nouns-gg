@@ -1,7 +1,6 @@
 "use client";
 
-import { usePrivy } from "@privy-io/react-auth";
-import { usePathname, useSearchParams } from "next/navigation";
+import CapturePageView from "@/components/CapturePageView";
 import { posthog } from "posthog-js";
 import { PostHogProvider as PHProvider, usePostHog } from "posthog-js/react";
 import { Suspense, useEffect } from "react";
@@ -27,32 +26,4 @@ export default function PostHog(props: { children: React.ReactNode }) {
 			{props.children}
 		</PHProvider>
 	);
-}
-
-function CapturePageView() {
-	const pathname = usePathname();
-	const searchParams = useSearchParams();
-	const posthog = usePostHog();
-	const { user } = usePrivy();
-
-	useEffect(() => {
-		if (user) {
-			posthog.identify(user.id);
-		}
-	}, [user]);
-
-	useEffect(() => {
-		if (pathname && posthog) {
-			let url = window.origin + pathname;
-
-			if (searchParams.toString()) {
-				url += `?${searchParams.toString()}`;
-			}
-
-			console.log("Capturing pageview", url);
-			posthog.capture("$pageview", { $current_url: url });
-		}
-	}, [pathname, searchParams, posthog]);
-
-	return null;
 }
