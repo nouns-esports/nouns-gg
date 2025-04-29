@@ -363,7 +363,7 @@ export default function ProposalEditor(props: {
 						parsedMarkdown.length < props.round.minDescriptionLength ||
 						parsedMarkdown.length > props.round.maxDescriptionLength ||
 						{
-							markdown: parsedMarkdown.split(" ").length - 1 < 150,
+							markdown: false,
 							image: !image,
 							video: !video && !validVideo && !image,
 							url: !url && !validUrl && !image,
