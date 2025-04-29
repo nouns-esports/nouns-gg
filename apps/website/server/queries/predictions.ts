@@ -38,9 +38,7 @@ export async function getPredictions(input: {
 }) {
 	return db.pgpool.query.predictions.findMany({
 		where: and(
-			input.event
-				? eq(predictions.event, input.event)
-				: eq(predictions.closed, false),
+			input.event ? eq(predictions.event, input.event) : undefined,
 			input.community ? eq(predictions.community, input.community) : undefined,
 			eq(predictions.draft, false),
 		),
