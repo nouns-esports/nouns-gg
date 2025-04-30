@@ -46,7 +46,7 @@ export default function PredictionCard(props: {
 		<Link
 			href={`/predictions/${props.prediction.handle}`}
 			className={twMerge(
-				"relative flex flex-col gap-4 p-4 aspect-video h-full bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl",
+				"relative flex flex-col gap-4 p-4 aspect-video min-h-0 w-full bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl",
 				props.className,
 			)}
 		>
