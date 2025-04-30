@@ -9,21 +9,6 @@ export const getTrendingPosts = cache(
 				filterType: "channel_id",
 				channelId: "nouns-esports",
 			}),
-			// neynarClient.fetchFeed("filter", {
-			// 	limit: 5,
-			// 	filterType: "channel_id",
-			// 	channelId: "cs2",
-			// }),
-			// neynarClient.fetchFeed("filter", {
-			// 	limit: 5,
-			// 	filterType: "channel_id",
-			// 	channelId: "smash",
-			// }),
-			// neynarClient.fetchFeed("filter", {
-			// 	limit: 5,
-			// 	filterType: "channel_id",
-			// 	channelId: "dota2",
-			// }),
 		]);
 
 		const posts = responses.flatMap((response) => response.casts.flat());
