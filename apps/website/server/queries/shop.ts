@@ -24,6 +24,7 @@ export async function getProducts(input: {
 		where: and(
 			collection ? eq(products.collection, collection.id) : undefined,
 			input.event ? eq(products.event, input.event) : undefined,
+			!input.event ? eq(products.active, true) : undefined,
 		),
 		with: {
 			variants: true,
