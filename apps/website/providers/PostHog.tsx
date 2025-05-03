@@ -1,9 +1,8 @@
 "use client";
 
-import CapturePageView from "@/components/CapturePageView";
 import { posthog } from "posthog-js";
-import { PostHogProvider as PHProvider, usePostHog } from "posthog-js/react";
-import { Suspense, useEffect } from "react";
+import { PostHogProvider as PHProvider } from "posthog-js/react";
+import { useEffect } from "react";
 import { env } from "~/env";
 
 export default function PostHog(props: { children: React.ReactNode }) {
@@ -18,12 +17,5 @@ export default function PostHog(props: { children: React.ReactNode }) {
 		}
 	}, []);
 
-	return (
-		<PHProvider client={posthog}>
-			<Suspense fallback={null}>
-				<CapturePageView />
-			</Suspense>
-			{props.children}
-		</PHProvider>
-	);
+	return <PHProvider client={posthog}>{props.children}</PHProvider>;
 }
