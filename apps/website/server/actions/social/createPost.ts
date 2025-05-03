@@ -66,7 +66,7 @@ export const createPost = createAction({
 
 		if (inputs.embed) {
 			parts.push({ text: "links" });
-			parts.push({ text: inputs.embed.label, href: inputs.embed.url });
+			parts.push({ text: inputs.embed.label, highlight: true });
 			count++;
 		}
 
@@ -95,11 +95,17 @@ export const createPost = createAction({
 				community?.parentUrl
 					? eq(casts.rootParentUrl, community.parentUrl)
 					: undefined,
-				inputs.match ? sql`${casts.text} ~ ${inputs.match.value}` : undefined,
+				inputs.match ? sql`${casts.text} ~ '${inputs.match.value}'` : undefined,
 				inputs.mention
 					? arrayContains(casts.mentions, [inputs.mention.fid])
 					: undefined,
-				inputs.embed ? sql`${inputs.embed} ~ ANY(${casts.embeds})` : undefined,
+				inputs.embed
+					? sql`EXISTS (
+					SELECT 1
+					FROM UNNEST(${casts.embeddedUrls}) AS url
+					WHERE url ~ '${inputs.embed.value}'
+				  )`
+					: undefined,
 			),
 		});
 
@@ -143,9 +149,9 @@ export const createPost = createAction({
 		}),
 		embed: createFilter({
 			options: {
-				url: {
-					name: "URL",
-					description: "URL to embed",
+				value: {
+					name: "Value",
+					description: "URL regex to match",
 					schema: z.string(),
 				},
 				label: {
