@@ -16,8 +16,7 @@ import Providers from "@/providers";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import Script from "next/script";
 import { env } from "~/env";
-import dynamic from "next/dynamic";
-
+import CapturePageView from "@/components/CapturePageView";
 const cabin = Cabin({ subsets: ["latin"], variable: "--font-cabin" });
 
 const luckiestGuy = Luckiest_Guy({
@@ -112,10 +111,6 @@ export const metadata = {
 export const viewport = {
 	themeColor: "black",
 } satisfies Viewport;
-
-const CapturePageView = dynamic(() => import("@/components/CapturePageView"), {
-	ssr: false,
-});
 
 export default async function RootLayout(props: { children: React.ReactNode }) {
 	const user = await getAuthenticatedUser();
