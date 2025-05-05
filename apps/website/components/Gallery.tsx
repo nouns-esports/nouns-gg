@@ -151,9 +151,9 @@ export default function Gallery(props: {
 				ref={backgroundRef}
 				className="w-full h-full flex scrollbar-hidden overflow-scroll snap-x snap-mandatory scroll-smooth"
 				onScroll={(e) => {
-					const nextIndex = Math.round(
-						e.currentTarget.scrollLeft / e.currentTarget.clientWidth,
-					);
+					const scrollLeft = e.currentTarget.scrollLeft;
+					const width = e.currentTarget.clientWidth;
+					const nextIndex = Math.floor((scrollLeft + width / 2) / width);
 
 					if (nextIndex === 0) setBackwards(false);
 					if (nextIndex === slides.length - 1) setBackwards(true);
@@ -161,31 +161,27 @@ export default function Gallery(props: {
 					setIndex(nextIndex);
 				}}
 			>
-				{slides.map((slide, slideIndex) => {
-					if (slide.type === "video") {
-						return (
+				{slides.map((slide, i) => (
+					<div key={i} className="flex-shrink-0 w-full h-full snap-center">
+						{slide.type === "video" ? (
 							<video
-								key={slideIndex}
 								src={slide.url}
 								autoPlay
 								muted
 								loop
 								playsInline
-								className="select-none w-full h-full object-cover object-top brightness-75 snap-center"
+								className="w-full h-full object-cover brightness-75"
 							/>
-						);
-					}
-
-					return (
-						<img
-							key={slideIndex}
-							src={slide.url}
-							alt={slide.title}
-							draggable={false}
-							className="object-cover w-full min-w-full last:min-w-[calc(100%_+_1px)] last:w-[calc(100%_+_1px)] snap-center brightness-75"
-						/>
-					);
-				})}
+						) : (
+							<img
+								src={slide.url}
+								alt={slide.title}
+								draggable={false}
+								className="w-full h-full object-cover brightness-75"
+							/>
+						)}
+					</div>
+				))}
 			</div>
 		</div>
 	);
