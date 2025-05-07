@@ -46,6 +46,11 @@ export const getCommunity = cache(
 						SELECT COUNT(*) FROM leaderboards WHERE leaderboards.community = communities.id
 					) > 0
 				`.as("hasLeaderboard"),
+				hasShop: sql<boolean>`
+					(
+						SELECT COUNT(*) FROM products WHERE products.community = communities.id
+					) > 0
+				`.as("hasShop"),
 			},
 		});
 	},

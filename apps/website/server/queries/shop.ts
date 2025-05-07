@@ -13,6 +13,7 @@ import { shopifyClient } from "../clients/shopify";
 export async function getProducts(input: {
 	collection?: string;
 	event?: number;
+	community?: number;
 }) {
 	const collection = input.collection
 		? await db.pgpool.query.collections.findFirst({
@@ -25,6 +26,7 @@ export async function getProducts(input: {
 			collection ? eq(products.collection, collection.id) : undefined,
 			input.event ? eq(products.event, input.event) : undefined,
 			!input.event ? eq(products.active, true) : undefined,
+			input.community ? eq(products.community, input.community) : undefined,
 		),
 		with: {
 			variants: true,

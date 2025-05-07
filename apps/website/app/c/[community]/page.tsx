@@ -17,6 +17,8 @@ import { ToggleModal } from "@/components/Modal";
 import { Info } from "lucide-react";
 import RankingSystemExplainer from "@/components/modals/RankingSystemExplainer";
 import TipTap from "@/components/TipTap";
+import { getProducts } from "@/server/queries/shop";
+import ProductCard from "@/components/ProductCard";
 
 export default async function Community(props: {
 	params: Promise<{ community: string }>;
@@ -50,23 +52,33 @@ export default async function Community(props: {
 							? "predictions"
 							: community.hasLeaderboard
 								? "leaderboard"
-								: null);
+								: community.hasShop
+									? "shop"
+									: null);
 
-	const [rounds, quests, predictions, events, leaderboard, userPosition] =
-		await Promise.all([
-			tab === "rounds" ? getRounds({ community: community.id }) : [],
-			tab === "quests"
-				? getQuests({ community: community.id, user: user?.id })
-				: [],
-			tab === "predictions"
-				? getPredictions({ community: community.id, user: user?.id })
-				: [],
-			tab === "events" ? getEvents({ community: community.id }) : [],
-			tab === "leaderboard" ? getLeaderboard({ community: community.id }) : [],
-			tab === "leaderboard" && user
-				? getRank({ user: user.id, community: community.id })
-				: undefined,
-		]);
+	const [
+		rounds,
+		quests,
+		predictions,
+		events,
+		leaderboard,
+		userPosition,
+		products,
+	] = await Promise.all([
+		tab === "rounds" ? getRounds({ community: community.id }) : [],
+		tab === "quests"
+			? getQuests({ community: community.id, user: user?.id })
+			: [],
+		tab === "predictions"
+			? getPredictions({ community: community.id, user: user?.id })
+			: [],
+		tab === "events" ? getEvents({ community: community.id }) : [],
+		tab === "leaderboard" ? getLeaderboard({ community: community.id }) : [],
+		tab === "leaderboard" && user
+			? getRank({ user: user.id, community: community.id })
+			: undefined,
+		tab === "shop" ? getProducts({ community: community.id }) : [],
+	]);
 
 	return (
 		<>
@@ -116,6 +128,11 @@ export default async function Community(props: {
 								{community.hasLeaderboard ? (
 									<Tab href="?tab=leaderboard" active={tab === "leaderboard"}>
 										Leaderboard
+									</Tab>
+								) : null}
+								{community.hasShop ? (
+									<Tab href="?tab=shop" active={tab === "shop"}>
+										Shop
 									</Tab>
 								) : null}
 							</ul>
@@ -212,6 +229,16 @@ export default async function Community(props: {
 												})}
 											</div>
 										</div>
+									</div>
+								),
+								shop: (
+									<div className="grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-4">
+										{products.map((product) => (
+											<ProductCard
+												key={`product-${product.id}`}
+												product={product}
+											/>
+										))}
 									</div>
 								),
 								default: null,
