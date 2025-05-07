@@ -25,7 +25,7 @@ export const createRoundProposal = createAction({
 			if (!round) throw new Error("Round not found");
 
 			return [
-				{ text: "Create a proposal in any round in" },
+				{ text: "Create a proposal in" },
 				{ text: round.name, href: `/rounds/${round.handle}` },
 			];
 		}
