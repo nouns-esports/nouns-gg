@@ -103,7 +103,7 @@ export const createPost = createAction({
 					? sql`EXISTS (
 					SELECT 1
 					FROM UNNEST(${casts.embeddedUrls}) AS url
-					WHERE url ~ '${inputs.embed.value}'
+					WHERE url ~ ${inputs.embed.value}::text
 				  )`
 					: undefined,
 			),
