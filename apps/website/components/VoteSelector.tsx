@@ -49,6 +49,7 @@ export default function VoteSelector(props: {
 		>
 			<button
 				onClick={(e) => {
+					e.preventDefault();
 					e.stopPropagation();
 					props.addVote(props.proposal, 1);
 				}}
@@ -78,6 +79,7 @@ export default function VoteSelector(props: {
 			</div>
 			<button
 				onClick={(e) => {
+					e.preventDefault();
 					e.stopPropagation();
 					props.removeVote(props.proposal, 1);
 				}}
