@@ -35,6 +35,7 @@ export async function getPredictions(input: {
 	user?: string;
 	event?: number;
 	community?: number;
+	limit?: number;
 }) {
 	return db.pgpool.query.predictions.findMany({
 		where: and(
@@ -45,6 +46,7 @@ export async function getPredictions(input: {
 			eq(predictions.draft, false),
 		),
 		orderBy: [desc(predictions.id)],
+		limit: input.limit,
 		with: {
 			outcomes: true,
 			bets: {

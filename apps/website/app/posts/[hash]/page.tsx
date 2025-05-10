@@ -11,14 +11,14 @@ import type { CastWithInteractionsAndConversationsRef } from "@neynar/nodejs-sdk
 import { ArrowLeft, MoreHorizontal } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 
-export default async function Cast(props: {
-	params: Promise<{ cast: string }>;
+export default async function Post(props: {
+	params: Promise<{ hash: string }>;
 }) {
 	const params = await props.params;
 	const user = await getAuthenticatedUser();
 
 	const cast = await getCast({
-		hash: params.cast,
+		hash: params.hash,
 		viewerFid: user?.farcaster?.fid,
 	});
 

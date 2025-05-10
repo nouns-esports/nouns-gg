@@ -8,8 +8,7 @@ import {
 	uuid,
 	real,
 } from "drizzle-orm/pg-core";
-import { bytea } from "./custom/bytea";
-import { relations } from "drizzle-orm";
+import { bytea, byteaArray } from "./custom/bytea";
 
 const farcasterSchema = pgSchema("farcaster_v3");
 
@@ -28,7 +27,7 @@ export const casts = farcasterSchema.table("casts", {
 	rootParentHash: bytea("root_parent_hash").notNull(),
 	rootParentUrl: text("root_parent_url"),
 	embeddedUrls: text("embedded_urls").array(),
-	embeddedCasts: bytea("embedded_casts").array(),
+	embeddedCasts: byteaArray("embedded_casts"),
 	mentions: bigint("mentions", { mode: "number" }).array(),
 	mentionsPositions: smallint("mentions_positions").array(),
 	tickerMentions: text("ticker_mentions").array(),

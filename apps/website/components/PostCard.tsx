@@ -25,14 +25,13 @@ import Countup from "./Countup";
 import Recast from "./Recast";
 import Upvote from "./Upvote";
 import CastText from "./CastText";
-import type { communities } from "~/packages/db/schema/public";
 import type { getPosts } from "@/server/queries/posts";
 
 export default function PostCard(props: {
 	post: NonNullable<Awaited<ReturnType<typeof getPosts>>>[number];
 	expanded?: boolean;
 }) {
-	const embeds = parseCastEmbeds(props.post.embeds ?? []);
+	// const embeds = parseCastEmbeds(props.post.embeds ?? []);
 
 	return (
 		<div className="relative flex gap-3 bg-grey-800 rounded-xl pl-2 pr-4 py-4 w-full">
@@ -66,25 +65,25 @@ export default function PostCard(props: {
 								{props.post.creator.displayName}
 							</h2>
 						</Link>
-						{/* {props.community ? (
+						{props.post.community ? (
 							<>
 								<p className="text-grey-200 font-semibold text-sm">in</p>
 								<Link
-									href={`/chat?c=${props.community.id}`}
+									href={`/chat?c=${props.post.community.id}`}
 									className="flex relative z-10  items-center gap-1 bg-grey-600 hover:bg-grey-500 transition-colors rounded-full px-2 py-1"
 								>
 									<img
-										alt={props.community.name}
-										key={props.community.image}
-										src={props.community.image}
+										alt={props.post.community.name}
+										key={props.post.community.image}
+										src={props.post.community.image}
 										className="w-4 h-4 rounded-full object-cover object-center"
 									/>
 									<h2 className="text-white text-nowrap text-sm">
-										{props.community.name}
+										{props.post.community.name}
 									</h2>
 								</Link>
 							</>
-						) : null} */}
+						) : null}
 						<p className="text-grey-200 font-semibold text-sm pointer-events-none">
 							<Countup date={props.post.createdAt} />
 						</p>
@@ -98,7 +97,7 @@ export default function PostCard(props: {
 							? props.cast.text.replace(embeds.website.url, "")
 							: props.cast.text} */}
 					</CastText>
-					<div className="flex flex-col gap-1">
+					{/* <div className="flex flex-col gap-1">
 						{embeds.image ? <CastImage image={embeds.image} /> : ""}
 						{embeds.website ? (
 							<WebsitePreview
@@ -107,13 +106,13 @@ export default function PostCard(props: {
 							/>
 						) : null}
 						{embeds.video ? <VideoPlayer video={embeds.video} /> : null}
-						{/* {embeds.quoteCast ? (
+						{embeds.quoteCast ? (
 							<QuoteCast
 								quoteCast={embeds.quoteCast}
 								small={props.cast.embeds.length > 0}
 							/>
-						) : null} */}
-					</div>
+						) : null}
+					</div> */}
 					<div
 						className={twMerge(
 							"flex",
@@ -141,7 +140,7 @@ export default function PostCard(props: {
 							<Recast hash={props.post.hash} recast={false} />
 							{props.expanded ? (
 								<p className="cursor-default mr-2">
-									{0} repost
+									{props.post.recastsCount} repost
 									{/* biome-ignore lint/correctness/noConstantCondition: <explanation> */}
 									{0 === 1 ? "" : "s"}
 								</p>
@@ -161,7 +160,7 @@ export default function PostCard(props: {
 								</Link>
 							) : null}
 							<p className="cursor-default">
-								{0} upvote
+								{props.post.likesCount} upvote
 								{/* biome-ignore lint/correctness/noConstantCondition: <explanation> */}
 								{0 === 1 ? "" : "s"}
 							</p>

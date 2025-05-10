@@ -4,12 +4,13 @@ import { and, asc, eq, inArray, isNull, sql } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
 
 export const getCommunities = cache(
-	async (input?: { handles?: string[] }) => {
+	async (input?: { handles?: string[]; limit?: number }) => {
 		return db.pgpool.query.communities.findMany({
 			where: and(
 				input?.handles ? inArray(communities.handle, input.handles) : undefined,
 			),
 			orderBy: asc(communities.name),
+			limit: input?.limit,
 		});
 	},
 	["getCommunities"],

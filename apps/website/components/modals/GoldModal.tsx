@@ -25,7 +25,7 @@ export default function GoldModal(props: { user: AuthenticatedUser }) {
 				</ToggleModal>
 			</div>
 
-			<div className="flex justify-center gap-2.5 items-center">
+			<div className="flex justify-center gap-2.5 mb-8 items-center">
 				<img
 					alt="Gold coin"
 					src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"

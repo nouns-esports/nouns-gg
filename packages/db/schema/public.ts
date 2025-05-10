@@ -67,6 +67,7 @@ export const communities = pgTable("communities", (t) => ({
 	description: t.jsonb().$type<TipTap>(),
 	parentUrl: t.text("parent_url"),
 	gold: t.integer().notNull().default(0),
+	// featured: t.boolean().notNull().default(false),
 }));
 
 export const communityActions = pgTable("community_actions", (t) => ({
@@ -201,28 +202,38 @@ export const attendees = pgTable("attendees", (t) => ({
 	user: t.text().notNull(),
 }));
 
-// export const brackets = pgTable("brackets", {
-// 	id: serial("id").primaryKey(),
-// 	event: text("event").notNull(),
-// 	name: text("name").notNull(),
-// 	image: text("image").notNull(),
-// });
+export const brackets = pgTable("brackets", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	event: t.bigint({ mode: "number" }).notNull(),
+	name: t.text().notNull(), // Melee Singles
+	image: t.text().notNull(),
+	type: t
+		.text({ enum: ["double-elim", "single-elim", "round-robin"] })
+		.notNull(),
+}));
 
-// export const phases = pgTable("phases", {
-// 	id: serial("id").primaryKey(),
-// 	bracket: text("bracket").notNull(),
-// 	name: text("name").notNull(),
-// });
+export const phases = pgTable("phases", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	bracket: t.bigint({ mode: "number" }).notNull(),
+	name: t.text().notNull(), // Top 32
+}));
 
-// export const matches = pgTable("matches", {
-// 	id: serial("id").primaryKey(),
-// 	bracket: text("bracket").notNull(),
-// 	event: text("event").notNull(),
-// 	player1: text("player1"),
-// 	player2: text("player2"),
-// 	player1Score: integer("player1_score"),
-// 	player2Score: integer("player2_score"),
-// });
+export const matches = pgTable("matches", (t) => ({
+	id: t.bigserial({ mode: "number" }).primaryKey(),
+	name: t.text().notNull(), // AB
+	phase: t.bigint({ mode: "number" }).notNull(),
+	bracket: t.bigint({ mode: "number" }).notNull(),
+	event: t.bigint({ mode: "number" }).notNull(),
+	player1: t.text("player1"),
+	player2: t.text("player2"),
+	player1Score: t.integer("player1_score"),
+	player2Score: t.integer("player2_score"),
+	stream: t.jsonb().$type<{
+		url: string;
+		live: boolean;
+	}>(),
+	next: t.bigint({ mode: "number" }),
+}));
 
 export const rounds = pgTable("rounds", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
