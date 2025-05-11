@@ -13,6 +13,7 @@ import { getPredictions } from "@/server/queries/predictions";
 import { getEvents } from "@/server/queries/events";
 import { Suspense } from "react";
 import { env } from "~/env";
+import type { Metadata } from "next";
 
 export const metadata = {
 	title: "Nouns",
