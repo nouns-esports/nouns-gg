@@ -1,8 +1,8 @@
-import CastCard from "@/components/CastCard";
+import CastCard from "@/components/PostCard";
 import Link from "@/components/Link";
 import NavigateBack from "@/components/NavigateBack";
 import Upvote from "@/components/Upvote";
-import { getCast } from "@/server/queries/farcaster";
+import { getPost } from "@/server/queries/posts";
 import {
 	getAuthenticatedUser,
 	type AuthenticatedUser,
@@ -11,16 +11,20 @@ import type { CastWithInteractionsAndConversationsRef } from "@neynar/nodejs-sdk
 import { ArrowLeft, MoreHorizontal } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 
-export default async function Cast(props: {
-	params: Promise<{ cast: string }>;
+export default async function Post(props: {
+	params: Promise<{ hash: string }>;
 }) {
 	const params = await props.params;
 	const user = await getAuthenticatedUser();
 
-	const cast = await getCast({
-		hash: params.cast,
-		viewerFid: user?.farcaster?.fid,
+	const post = await getPost({
+		hash: params.hash,
+		// viewerFid: user?.farcaster?.fid,
 	});
+
+	if (!post) {
+		return <div>Post not found</div>;
+	}
 
 	function renderComments(
 		comment: CastWithInteractionsAndConversationsRef,
@@ -92,9 +96,9 @@ export default async function Cast(props: {
 					<ArrowLeft className="w-5 h-5 text-red group-hover:-translate-x-1 transition-transform" />
 					Back to feed
 				</NavigateBack>
-				<CastCard cast={cast} expanded />
+				<CastCard post={post} expanded />
 				<h2 className="text-white text-2xl font-bebas-neue">Comments</h2>
-				{cast.direct_replies
+				{/* {post.comments
 					.toSorted(
 						(a, b) =>
 							(b as CastWithInteractionsAndConversationsRef).reactions
@@ -102,7 +106,7 @@ export default async function Cast(props: {
 							(a as CastWithInteractionsAndConversationsRef).reactions
 								.likes_count,
 					)
-					.map((comment) => renderComments(comment, 0))}
+					.map((comment) => renderComments(comment, 0))} */}
 			</div>
 		</div>
 	);

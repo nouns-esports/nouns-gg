@@ -9,17 +9,17 @@ import {
 } from "../schema/public";
 import { db } from "..";
 
-const parsedInputs = [
+const predictionInputs = [
 	{
-		prediction: 0,
-		winningOutcomes: [0],
+		id: 77,
+		winningOutcomes: [217, 219],
 	},
 ];
 
-await db.primary.transaction(async (tx) => {
-	for (const parsedInput of parsedInputs) {
+for (const predictionInput of predictionInputs) {
+	await db.primary.transaction(async (tx) => {
 		const prediction = await db.primary.query.predictions.findFirst({
-			where: (t, { eq }) => eq(predictions.id, parsedInput.prediction),
+			where: (t, { eq }) => eq(predictions.id, predictionInput.id),
 			with: {
 				outcomes: {
 					with: {
@@ -44,10 +44,15 @@ await db.primary.transaction(async (tx) => {
 		const now = new Date();
 
 		const winningOutcomes = prediction.outcomes.filter((outcome) =>
-			parsedInput.winningOutcomes.includes(outcome.id),
+			predictionInput.winningOutcomes.includes(outcome.id),
 		);
 		const losingOutcomes = prediction.outcomes.filter(
-			(outcome) => !parsedInput.winningOutcomes.includes(outcome.id),
+			(outcome) => !predictionInput.winningOutcomes.includes(outcome.id),
+		);
+
+		console.log(
+			winningOutcomes.map((o) => o.id),
+			losingOutcomes.map((o) => o.id),
 		);
 
 		const losingPool = losingOutcomes.reduce(
@@ -148,5 +153,5 @@ await db.primary.transaction(async (tx) => {
 				});
 			}
 		}
-	}
-});
+	});
+}

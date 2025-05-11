@@ -11,6 +11,7 @@ import {
 	ShoppingCart,
 	Coins,
 	Users,
+	ArrowRight,
 } from "lucide-react";
 import Banner from "./Banner";
 import Menu from "./Menu";
@@ -21,10 +22,11 @@ import { ToggleModal } from "./Modal";
 import CartModal from "./modals/CartModal";
 import { formatGold } from "~/packages/utils/formatGold";
 import { getCommunities } from "@/server/queries/communities";
+
 export default async function Header() {
 	const user = await getAuthenticatedUser();
 	const [communities, notifications] = await Promise.all([
-		getCommunities(),
+		getCommunities({ featured: true }),
 		user ? getNotifications({ user: user.id }) : [],
 	]);
 
@@ -49,35 +51,106 @@ export default async function Header() {
 							<nav className="pointer-events-auto flex items-center gap-8">
 								<Menu />
 								<ul className="flex gap-6 items-center text-white max-md:gap-0">
+									<Group title="Explore" icon={<Shapes className="w-5 h-5" />}>
+										<ul className="flex flex-col gap-0 w-80">
+											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
+												<Link
+													href="/rounds"
+													className="flex gap-4 items-center"
+												>
+													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-green text-white items-center">
+														<Trophy className="w-full h-full p-2" />
+													</div>
+													<div>
+														<p className="font-bebas-neue text-lg">Rounds</p>
+														<p className="text-grey-200">
+															Govern who and what we fund
+														</p>
+													</div>
+												</Link>
+											</li>
+											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
+												<Link
+													href="/quests"
+													className="flex gap-4 items-center"
+												>
+													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-blue-500 text-white items-center">
+														<Gem className="w-full h-full p-2" />
+													</div>
+													<div>
+														<p className="font-bebas-neue text-lg">Quests</p>
+														<p className="text-grey-200">Level up your Nexus</p>
+													</div>
+												</Link>
+											</li>
+											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
+												<Link
+													href="/events"
+													className="flex items-center gap-4"
+												>
+													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-pink text-white items-center">
+														<CalendarDays className="w-full h-full p-2" />
+													</div>
+													<div>
+														<p className="font-bebas-neue text-lg">Events</p>
+														<p className="text-grey-200">
+															Check out upcoming events
+														</p>
+													</div>
+												</Link>
+											</li>
+											<li className="text-nowrap hover:bg-grey-500 transition-colors py-1.5 px-3 rounded-lg">
+												<Link
+													href="/predictions"
+													className="flex items-center gap-4"
+												>
+													<div className="rounded-md w-10 h-10 flex overflow-hidden bg-gold-500 text-white items-center">
+														<Coins className="w-full h-full p-2" />
+													</div>
+													<div>
+														<p className="font-bebas-neue text-lg">
+															Predictions
+														</p>
+														<p className="text-grey-200">
+															Make predictions and earn gold
+														</p>
+													</div>
+												</Link>
+											</li>
+										</ul>
+									</Group>
 									<Group
 										title="Communities"
 										icon={<Users className="w-5 h-5" />}
 									>
-										<div className="grid grid-cols-2 gap-2 w-80">
-											{communities.map((community) => (
-												<Link
-													href={`/c/${community.handle}`}
-													key={community.id}
-													className="flex gap-2 items-center text-nowrap group/c hover:bg-grey-500 transition-colors rounded-lg p-2"
-												>
-													<img
-														src={community.image}
-														alt={community.name}
-														className="w-6 h-6 rounded-md"
-													/>
-													<p className="text-nowrap group-hover/c:text-white/70 transition-colors">
-														{community.name}
-													</p>
-												</Link>
-											))}
+										<div className="flex flex-col gap-2">
+											<div className="grid grid-cols-2 w-80">
+												{communities.map((community) => (
+													<Link
+														href={`/c/${community.handle}`}
+														key={community.id}
+														className="flex gap-2 items-center text-nowrap group/c hover:bg-grey-500 transition-colors rounded-lg p-2"
+													>
+														<img
+															src={community.image}
+															alt={community.name}
+															className="w-6 h-6 rounded-md"
+														/>
+														<p className="text-nowrap group-hover/c:text-white/70 transition-colors">
+															{community.name}
+														</p>
+													</Link>
+												))}
+											</div>
+											<Link
+												href="/communities"
+												className="text-red gap-1.5 pl-2 flex items-center group/view-all transition-colors hover:text-red/70"
+											>
+												View All
+												<ArrowRight className="w-4 h-4 group-hover/view-all:translate-x-1 transition-transform" />
+											</Link>
 										</div>
 									</Group>
-									<Link href="/events" className="max-[900px]:hidden">
-										<li className="flex gap-2 items-center opacity-100 hover:opacity-80 transition-opacity relative z-[60]">
-											<CalendarDays className="w-5 h-5" />
-											Events
-										</li>
-									</Link>
 									<Link href="/shop" className="max-[900px]:hidden">
 										<li className="flex gap-2 items-center opacity-100 hover:opacity-80 transition-opacity relative z-[60]">
 											<ShoppingBag className="w-5 h-5" />

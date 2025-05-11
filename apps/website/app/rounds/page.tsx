@@ -26,11 +26,6 @@ export default async function Rounds() {
 					<div className="flex flex-col gap-4">
 						<div className="flex items-center justify-between gap-4">
 							<h1 className="font-luckiest-guy text-white text-4xl">Rounds</h1>
-							{user?.nexus?.admin ? (
-								<Button href="/rounds/create" size="sm">
-									Create
-								</Button>
-							) : null}
 						</div>
 						<p className="max-w-screen-sm max-lg:max-w-none">
 							Welcome to Rounds, where the Nouns community plays an active role

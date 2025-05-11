@@ -2,7 +2,7 @@ import { inArray } from "drizzle-orm";
 import { db } from "..";
 import { raffles } from "../schema/public";
 
-const ids = [2, 3, 4, 5, 6, 7, 8];
+const ids = [1];
 
 const allRaffles = await db.primary.query.raffles.findMany({
 	where: inArray(raffles.id, ids),
