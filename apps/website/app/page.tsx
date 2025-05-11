@@ -11,6 +11,7 @@ import Feed from "@/components/Feed";
 import { getQuests } from "@/server/queries/quests";
 import { getPredictions } from "@/server/queries/predictions";
 import { getEvents } from "@/server/queries/events";
+import { Suspense } from "react";
 
 export default async function Home() {
 	const [user, posts, rounds, communities, quests] = await Promise.all([
@@ -27,14 +28,16 @@ export default async function Home() {
 		<div className="flex flex-col w-full items-center">
 			<div className="flex w-full gap-16 mb-16 max-sm:mb-8 max-lg:gap-12 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 max-w-[1920px]">
 				<div className="flex flex-col items-center w-full">
-					<Feed
-						user={user}
-						posts={posts as any}
-						// rounds={rounds}
-						// quests={quests}
-						// predictions={predictions}
-						// events={events}
-					/>
+					<Suspense>
+						<Feed
+							user={user}
+							posts={posts as any}
+							// rounds={rounds}
+							// quests={quests}
+							// predictions={predictions}
+							// events={events}
+						/>
+					</Suspense>
 				</div>
 				<aside className="flex flex-col gap-4 w-[400px] flex-shrink-0 max-lg:hidden">
 					<Gallery />
