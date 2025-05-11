@@ -62,7 +62,7 @@ export default function Proposals(props: {
 		);
 	}, [votesSelected, props.user?.votes, props.user?.priorVotes]);
 
-	const userProposal = props.round.proposals.find(
+	const userProposals = props.round.proposals.filter(
 		(proposal) => proposal.user?.id === props.user?.id,
 	);
 
@@ -123,22 +123,18 @@ export default function Proposals(props: {
 									);
 								}
 
-								if (userProposal) {
-									return (
-										<>
+								return (
+									<>
+										{userProposals.length >=
+										(props.round.maxProposals ?? Infinity) ? (
 											<p className="text-white">
-												You can edit your proposal until voting starts
+												You can only make {props.round.maxProposals} proposals
 											</p>
-											<Button href={`/rounds/${props.round.handle}/propose`}>
-												Edit Proposal
-											</Button>
-										</>
-									);
-								}
-
-								if (!props.user.canPropose) {
-									return (
-										<>
+										) : null}
+										{!(
+											userProposals.length >=
+											(props.round.maxProposals ?? Infinity)
+										) && props.round.actions.length > 0 ? (
 											<ToggleModal
 												id="round-actions-proposing"
 												className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
@@ -146,15 +142,18 @@ export default function Proposals(props: {
 												Proposal Requirements
 												<Info className="w-4 h-4" />
 											</ToggleModal>
-											<Button disabled>Create Proposal</Button>
-										</>
-									);
-								}
-
-								return (
-									<Button href={`/rounds/${props.round.handle}/propose`}>
-										Create Proposal
-									</Button>
+										) : null}
+										<Button
+											href={`/rounds/${props.round.handle}/propose`}
+											disabled={
+												userProposals.length >=
+													(props.round.maxProposals ?? Infinity) ||
+												!props.user.canPropose
+											}
+										>
+											Create Proposal
+										</Button>
+									</>
 								);
 							}
 
@@ -393,21 +392,34 @@ export default function Proposals(props: {
 											) : (
 												""
 											)}
+											{state === "Proposing" &&
+											userProposals.some((p) => p.id === proposal.id) ? (
+												<Button
+													onClick={(e) => e.stopPropagation()}
+													href={`/rounds/${props.round.handle}/proposals/${proposal.id}`}
+													size="sm"
+													className="relative z-50"
+												>
+													Edit
+												</Button>
+											) : null}
 
-											<VoteSelector
-												proposal={proposal.id}
-												votes={proposal.totalVotes}
-												addVote={addVote}
-												removeVote={removeVote}
-												selectedVotes={selectedVotes[proposal.id]}
-												awardCount={props.round.awards.length}
-												index={index}
-												roundState={state}
-												userCanVote={
-													!!props.user?.nexus &&
-													props.user.votes > props.user.priorVotes
-												}
-											/>
+											{state === "Voting" || state === "Ended" ? (
+												<VoteSelector
+													proposal={proposal.id}
+													votes={proposal.totalVotes}
+													addVote={addVote}
+													removeVote={removeVote}
+													selectedVotes={selectedVotes[proposal.id]}
+													awardCount={props.round.awards.length}
+													index={index}
+													roundState={state}
+													userCanVote={
+														!!props.user?.nexus &&
+														props.user.votes > props.user.priorVotes
+													}
+												/>
+											) : null}
 										</div>
 									</div>
 								</Component>

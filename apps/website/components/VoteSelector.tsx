@@ -16,10 +16,6 @@ export default function VoteSelector(props: {
 	addVote: (proposal: number, votes: number) => void;
 	removeVote: (proposal: number, votes: number) => void;
 }) {
-	if (props.roundState === "Proposing" || props.roundState === "Upcoming") {
-		return;
-	}
-
 	if (
 		props.roundState === "Ended" ||
 		(props.roundState === "Voting" && !props.userCanVote)
@@ -53,6 +49,7 @@ export default function VoteSelector(props: {
 		>
 			<button
 				onClick={(e) => {
+					e.preventDefault();
 					e.stopPropagation();
 					props.addVote(props.proposal, 1);
 				}}
@@ -82,6 +79,7 @@ export default function VoteSelector(props: {
 			</div>
 			<button
 				onClick={(e) => {
+					e.preventDefault();
 					e.stopPropagation();
 					props.removeVote(props.proposal, 1);
 				}}

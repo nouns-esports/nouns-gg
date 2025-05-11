@@ -14,6 +14,7 @@ import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { onlyUser } from ".";
 import { getAction } from "../actions";
+import { posthogClient } from "../clients/posthog";
 
 export const castVotes = onlyUser
 	.schema(
@@ -189,6 +190,19 @@ export const castVotes = onlyUser
 				newUserXP = updateNexus.xp;
 			}
 		});
+
+		for (const vote of parsedInput.votes) {
+			posthogClient.capture({
+				event: "cast-votes",
+				distinctId: ctx.user.id,
+				properties: {
+					round: round.id,
+					proposal: vote.proposal,
+					community: round.community,
+					amount: vote.count,
+				},
+			});
+		}
 
 		revalidatePath(`/rounds/${round.handle}`);
 

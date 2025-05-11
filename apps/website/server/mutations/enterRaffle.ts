@@ -13,6 +13,7 @@ import {
 } from "~/packages/db/schema/public";
 import { eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
+import { posthogClient } from "../clients/posthog";
 
 export const enterRaffle = onlyUser
 	.schema(
@@ -136,6 +137,16 @@ export const enterRaffle = onlyUser
 					gold: sql`${communities.gold} + ${cost}`,
 				})
 				.where(eq(communities.id, raffle.community));
+		});
+
+		posthogClient.capture({
+			event: "raffle-entry",
+			distinctId: ctx.user.id,
+			properties: {
+				raffle: raffle.id,
+				community: raffle.community,
+				amount: parsedInput.amount,
+			},
 		});
 
 		revalidatePath("/shop");

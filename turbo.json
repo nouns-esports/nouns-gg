@@ -1,53 +1,55 @@
 {
-  "$schema": "https://turbo.build/schema.json",
-  "globalEnv": [
-    "NODE_ENV",
-    "GOOGLE_API_KEY",
-    "NEYNAR_API_KEY",
-    "DATABASE_URL",
-    "PRIVY_APP_SECRET",
-    "PRIVY_VERIFICATION_KEY",
-    "PRIVY_WEBHOOK_SIGNING_KEY",
-    "DISCORD_TOKEN",
-    "DISCORD_GUILD_ID",
-    "DISCORD_CLIENT_ID",
-    "PINATA_JWT",
-    "MATCHA_API_KEY",
-    "NEXT_PUBLIC_ENVIRONMENT",
-    "NEXT_PUBLIC_PRIVY_APP_ID",
-    "NEXT_PUBLIC_DOMAIN",
-    "SHOPIFY_ADMIN_API_ACCESS_TOKEN",
-    "CGX_AIRDROP_URL",
-    "ANTHROPIC_API_KEY",
-    "DEEPSEEK_API_KEY",
-    "DASH_DISCORD_TOKEN",
-    "DASH_DISCORD_SECRET",
-    "DASH_DISCORD_CLIENT_ID",
-    "TWITTER_USERNAME",
-    "TWITTER_PASSWORD",
-    "TWITTER_EMAIL",
-    "TWITTER_COOKIES",
-    "DASH_FARCASTER_FID",
-    "START_GG_ACCESS_TOKEN",
-    "INFURA_API_KEY",
-    "INDEXER_SCHEMA",
-    "RAILWAY_DEPLOYMENT_ID",
-    "PGPOOL_URL",
-    "PRIMARY_DATABASE_URL"
-  ],
-  "tasks": {
-    "build": {
-      "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"],
-      "cache": false
-    },
-    "dev": {
-      "cache": false,
-      "persistent": true
-    },
-    "start": {
-      "cache": false,
-      "persistent": true
-    }
-  }
+	"$schema": "https://turbo.build/schema.json",
+	"globalEnv": [
+		"NODE_ENV",
+		"GOOGLE_API_KEY",
+		"NEYNAR_API_KEY",
+		"DATABASE_URL",
+		"PRIVY_APP_SECRET",
+		"PRIVY_VERIFICATION_KEY",
+		"PRIVY_WEBHOOK_SIGNING_KEY",
+		"DISCORD_TOKEN",
+		"DISCORD_GUILD_ID",
+		"DISCORD_CLIENT_ID",
+		"PINATA_JWT",
+		"MATCHA_API_KEY",
+		"NEXT_PUBLIC_ENVIRONMENT",
+		"NEXT_PUBLIC_PRIVY_APP_ID",
+		"NEXT_PUBLIC_DOMAIN",
+		"SHOPIFY_ADMIN_API_ACCESS_TOKEN",
+		"CGX_AIRDROP_URL",
+		"ANTHROPIC_API_KEY",
+		"DEEPSEEK_API_KEY",
+		"DASH_DISCORD_TOKEN",
+		"DASH_DISCORD_SECRET",
+		"DASH_DISCORD_CLIENT_ID",
+		"TWITTER_USERNAME",
+		"TWITTER_PASSWORD",
+		"TWITTER_EMAIL",
+		"TWITTER_COOKIES",
+		"DASH_FARCASTER_FID",
+		"START_GG_ACCESS_TOKEN",
+		"INFURA_API_KEY",
+		"INDEXER_SCHEMA",
+		"RAILWAY_DEPLOYMENT_ID",
+		"PGPOOL_URL",
+		"PRIMARY_DATABASE_URL",
+		"NEXT_PUBLIC_POSTHOG_KEY",
+		"NEXT_PUBLIC_POSTHOG_HOST"
+	],
+	"tasks": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": [".next/**", "!.next/cache/**"],
+			"cache": false
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"start": {
+			"cache": false,
+			"persistent": true
+		}
+	}
 }

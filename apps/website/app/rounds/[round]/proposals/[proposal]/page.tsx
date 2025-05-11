@@ -6,8 +6,8 @@ import ProposalEditor from "@/components/proposals/ProposalEditor";
 import { getRoundWithProposal } from "@/server/queries/rounds";
 import Markdown from "@/components/lexical/Markdown";
 
-export default async function Propose(props: {
-	params: Promise<{ round: string }>;
+export default async function UpdateProposal(props: {
+	params: Promise<{ round: string; proposal: string }>;
 }) {
 	const params = await props.params;
 	const user = await getAuthenticatedUser();
@@ -25,6 +25,14 @@ export default async function Propose(props: {
 
 	if (!user) {
 		return redirect(`/rounds/${params.round}`);
+	}
+
+	const proposal = round.proposals.find(
+		(p) => p.id === parseInt(params.proposal),
+	);
+
+	if (!proposal) {
+		return notFound();
 	}
 
 	return (
@@ -52,7 +60,7 @@ export default async function Propose(props: {
 						</div>
 					</div>
 				</div>
-				<ProposalEditor round={round} user={user.id} />
+				<ProposalEditor round={round} proposal={proposal} user={user.id} />
 			</div>
 		</div>
 	);

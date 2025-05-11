@@ -14,6 +14,7 @@ import { db } from "~/packages/db";
 import { eq, sql } from "drizzle-orm";
 import { getAction } from "../actions";
 import { revalidatePath } from "next/cache";
+import { posthogClient } from "../clients/posthog";
 
 export const completeQuest = onlyUser
 	.schema(
@@ -132,6 +133,15 @@ export const completeQuest = onlyUser
 				});
 
 			newXP = updateXP.xp;
+		});
+
+		posthogClient.capture({
+			event: "quest-completed",
+			distinctId: ctx.user.id,
+			properties: {
+				quest: quest.id,
+				community: quest.community,
+			},
 		});
 
 		revalidatePath(`/quests/${quest.handle}`);

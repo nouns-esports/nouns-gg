@@ -16,6 +16,9 @@ import { level } from "@/utils/level";
 import { ToggleModal } from "@/components/Modal";
 import { Info } from "lucide-react";
 import RankingSystemExplainer from "@/components/modals/RankingSystemExplainer";
+import TipTap from "@/components/TipTap";
+import { getProducts } from "@/server/queries/shop";
+import ProductCard from "@/components/ProductCard";
 
 export default async function Community(props: {
 	params: Promise<{ community: string }>;
@@ -37,33 +40,45 @@ export default async function Community(props: {
 
 	const tab =
 		searchParams.tab ??
-		(community.hasEvents
-			? "events"
-			: community.hasRounds
-				? "rounds"
-				: community.hasQuests
-					? "quests"
-					: community.hasPredictions
-						? "predictions"
-						: community.hasLeaderboard
-							? "leaderboard"
-							: null);
+		(community.details
+			? "details"
+			: community.hasEvents
+				? "events"
+				: community.hasRounds
+					? "rounds"
+					: community.hasQuests
+						? "quests"
+						: community.hasPredictions
+							? "predictions"
+							: community.hasLeaderboard
+								? "leaderboard"
+								: community.hasShop
+									? "shop"
+									: null);
 
-	const [rounds, quests, predictions, events, leaderboard, userPosition] =
-		await Promise.all([
-			tab === "rounds" ? getRounds({ community: community.id }) : [],
-			tab === "quests"
-				? getQuests({ community: community.id, user: user?.id })
-				: [],
-			tab === "predictions"
-				? getPredictions({ community: community.id, user: user?.id })
-				: [],
-			tab === "events" ? getEvents({ community: community.id }) : [],
-			tab === "leaderboard" ? getLeaderboard({ community: community.id }) : [],
-			tab === "leaderboard" && user
-				? getRank({ user: user.id, community: community.id })
-				: undefined,
-		]);
+	const [
+		rounds,
+		quests,
+		predictions,
+		events,
+		leaderboard,
+		userPosition,
+		products,
+	] = await Promise.all([
+		tab === "rounds" ? getRounds({ community: community.id }) : [],
+		tab === "quests"
+			? getQuests({ community: community.id, user: user?.id })
+			: [],
+		tab === "predictions"
+			? getPredictions({ community: community.id, user: user?.id })
+			: [],
+		tab === "events" ? getEvents({ community: community.id }) : [],
+		tab === "leaderboard" ? getLeaderboard({ community: community.id }) : [],
+		tab === "leaderboard" && user
+			? getRank({ user: user.id, community: community.id })
+			: undefined,
+		tab === "shop" ? getProducts({ community: community.id }) : [],
+	]);
 
 	return (
 		<>
@@ -82,6 +97,14 @@ export default async function Community(props: {
 						</div>
 						{tab ? (
 							<ul className="flex gap-2 w-full overflow-x-auto">
+								{community.details ? (
+									<Tab
+										href={`/c/${community.handle}`}
+										active={tab === "details"}
+									>
+										Details
+									</Tab>
+								) : null}
 								{community.hasRounds ? (
 									<Tab href="?tab=rounds" active={tab === "rounds"}>
 										Rounds
@@ -107,12 +130,27 @@ export default async function Community(props: {
 										Leaderboard
 									</Tab>
 								) : null}
+								{community.hasShop ? (
+									<Tab href="?tab=shop" active={tab === "shop"}>
+										Shop
+									</Tab>
+								) : null}
 							</ul>
 						) : null}
 					</div>
 					<div className="flex flex-col gap-8 w-full">
 						{
 							{
+								details: (
+									<div className="w-full flex justify-center">
+										{community.details ? (
+											<TipTap
+												content={community.details}
+												className="bg-grey-800 rounded-xl px-6 py-5 max-sm:px-4 max-sm:py-3 max-w-screen-lg"
+											/>
+										) : null}
+									</div>
+								),
 								events: (
 									<div className="grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1  gap-4">
 										{events.map((event) => (
@@ -191,6 +229,16 @@ export default async function Community(props: {
 												})}
 											</div>
 										</div>
+									</div>
+								),
+								shop: (
+									<div className="grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-4">
+										{products.map((product) => (
+											<ProductCard
+												key={`product-${product.id}`}
+												product={product}
+											/>
+										))}
 									</div>
 								),
 								default: null,

@@ -57,6 +57,11 @@ export const joinServer = createAction({
 					description: "The ID of the server",
 					schema: z.string(),
 				},
+				invite: {
+					name: "Invite",
+					description: "The invite URL of the server",
+					schema: z.string(),
+				},
 			},
 			name: "Server",
 			required: true,

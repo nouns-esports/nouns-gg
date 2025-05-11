@@ -121,15 +121,17 @@ export default function ViewProposalModal(props: {
 					<div />
 				)}
 				<div className="flex gap-4">
-					<VoteSelector
-						proposal={props.proposal.id}
-						votes={props.proposal.totalVotes}
-						selectedVotes={props.selectedVotes[props.proposal.id]}
-						userCanVote={props.userCanVote}
-						roundState={state}
-						addVote={props.addVote}
-						removeVote={props.removeVote}
-					/>
+					{state === "Voting" || state === "Ended" ? (
+						<VoteSelector
+							proposal={props.proposal.id}
+							votes={props.proposal.totalVotes}
+							selectedVotes={props.selectedVotes[props.proposal.id]}
+							userCanVote={props.userCanVote}
+							roundState={state}
+							addVote={props.addVote}
+							removeVote={props.removeVote}
+						/>
+					) : null}
 					{state === "Voting" && props.userCanVote ? (
 						<Button
 							disabled={!props.selectedVotes[props.proposal.id]}

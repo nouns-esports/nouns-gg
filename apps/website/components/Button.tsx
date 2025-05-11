@@ -7,7 +7,7 @@ export default function Button(props: {
 	disabled?: boolean;
 	href?: string;
 	newTab?: boolean;
-	onClick?: () => void;
+	onClick?: (e: React.MouseEvent<any>) => void;
 	backgroundColor?: string;
 	scroll?: boolean;
 	form?: boolean;
@@ -15,13 +15,14 @@ export default function Button(props: {
 	loading?: boolean;
 	children: React.ReactNode;
 	fill?: boolean;
+	className?: string;
 }) {
 	const Component = props.href ? Link : props.form ? "input" : "button";
 
 	return (
 		<Component
 			disabled={props.disabled}
-			onClick={props.onClick}
+			onClick={props.onClick ? (e) => props.onClick!(e) : undefined}
 			// @ts-ignore
 			href={props.href}
 			{...(props.href
@@ -34,6 +35,8 @@ export default function Button(props: {
 			className={twMerge(
 				"relative w-min cursor-pointer",
 				props.fill && "w-full",
+				props.disabled && props.href && "pointer-events-none",
+				props.className,
 			)}
 		>
 			<div

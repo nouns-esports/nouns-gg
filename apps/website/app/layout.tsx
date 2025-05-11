@@ -16,7 +16,8 @@ import Providers from "@/providers";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import Script from "next/script";
 import { env } from "~/env";
-
+import CapturePageView from "@/components/CapturePageView";
+import { Suspense } from "react";
 const cabin = Cabin({ subsets: ["latin"], variable: "--font-cabin" });
 
 const luckiestGuy = Luckiest_Guy({
@@ -115,7 +116,7 @@ export const viewport = {
 export default async function RootLayout(props: { children: React.ReactNode }) {
 	const user = await getAuthenticatedUser();
 
-	const maintenance = false;
+	const maintenance = true;
 
 	return (
 		<html lang="en" className="/scroll-smooth overflow-x-hidden scrollbar-main">
@@ -150,15 +151,9 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
 					)}
 				</Providers>
 			</body>
-			{env.NEXT_PUBLIC_ENVIRONMENT === "production" ? (
-				<Script
-					defer
-					src="https://cloud.umami.is/script.js"
-					data-website-id="114c634e-5845-4e09-9653-7df37301aed9"
-				/>
-			) : (
-				""
-			)}
+			<Suspense>
+				<CapturePageView />
+			</Suspense>
 		</html>
 	);
 }

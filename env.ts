@@ -37,10 +37,14 @@ export const env = createEnv({
 		NEXT_PUBLIC_ENVIRONMENT: z.enum(["development", "production"]),
 		NEXT_PUBLIC_PRIVY_APP_ID: z.string().min(1),
 		NEXT_PUBLIC_DOMAIN: z.string().min(1),
+		NEXT_PUBLIC_POSTHOG_KEY: z.string().min(1),
+		NEXT_PUBLIC_POSTHOG_HOST: z.string().min(1),
 	},
 	experimental__runtimeEnv: {
 		NEXT_PUBLIC_ENVIRONMENT: process.env.NEXT_PUBLIC_ENVIRONMENT,
 		NEXT_PUBLIC_PRIVY_APP_ID: process.env.NEXT_PUBLIC_PRIVY_APP_ID,
 		NEXT_PUBLIC_DOMAIN: process.env.NEXT_PUBLIC_DOMAIN,
+		NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
+		NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,
 	},
 });

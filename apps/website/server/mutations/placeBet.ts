@@ -13,6 +13,7 @@ import {
 import { eq, sql, and } from "drizzle-orm";
 import { db } from "~/packages/db";
 import { revalidatePath } from "next/cache";
+import { posthogClient } from "../clients/posthog";
 
 export const placeBet = onlyUser
 	.schema(
@@ -140,6 +141,17 @@ export const placeBet = onlyUser
 					pool: sql`${predictions.pool} + ${amount}`,
 				})
 				.where(eq(predictions.id, parsedInput.prediction));
+		});
+
+		posthogClient.capture({
+			event: "prediction-placed",
+			distinctId: ctx.user.id,
+			properties: {
+				prediction: prediction.id,
+				outcome: parsedInput.outcome,
+				community: prediction.community,
+				amount: parsedInput.amount,
+			},
 		});
 
 		revalidatePath(`/predictions/${prediction.handle}`);
