@@ -134,7 +134,7 @@ export default async function Home() {
 										<img
 											src={community.image}
 											alt={community.name}
-											className="w-6 h-6 rounded-md"
+											className="w-6 h-6 rounded-md object-cover"
 										/>
 										{community.name}
 									</li>
@@ -162,7 +162,7 @@ export default async function Home() {
 										<img
 											src={round.image}
 											alt={round.name}
-											className="w-6 h-6 rounded-md"
+											className="w-6 h-6 rounded-md object-cover"
 										/>
 										{round.name}
 									</li>
@@ -190,7 +190,7 @@ export default async function Home() {
 										<img
 											src={quest.image}
 											alt={quest.name}
-											className="w-6 h-6 rounded-md"
+											className="w-6 h-6 rounded-md object-cover"
 										/>
 										{quest.name}
 									</li>
