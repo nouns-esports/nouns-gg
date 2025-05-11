@@ -134,7 +134,7 @@ export default async function Header() {
 														<img
 															src={community.image}
 															alt={community.name}
-															className="w-6 h-6 rounded-md"
+															className="w-6 h-6 rounded-md object-cover"
 														/>
 														<p className="text-nowrap group-hover/c:text-white/70 transition-colors">
 															{community.name}
