@@ -542,6 +542,12 @@ export const castRelations = relations(casts, ({ many, one }) => ({
 		fields: [casts.rootParentUrl],
 		references: [communities.parentUrl],
 	}),
+	comments: many(casts, { relationName: "comments" }),
+	parent: one(casts, {
+		fields: [casts.parentHash],
+		references: [casts.hash],
+		relationName: "parent",
+	}),
 }));
 
 export const profileRelations = relations(profiles, ({ many, one }) => ({

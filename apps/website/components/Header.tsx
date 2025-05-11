@@ -124,7 +124,7 @@ export default async function Header() {
 										icon={<Users className="w-5 h-5" />}
 									>
 										<div className="flex flex-col gap-2">
-											<div className="grid grid-cols-2 gap-2 w-80">
+											<div className="grid grid-cols-2 w-80">
 												{communities.map((community) => (
 													<Link
 														href={`/c/${community.handle}`}
