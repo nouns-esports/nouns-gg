@@ -42,7 +42,7 @@ export default function PostCard(props: {
 			: props.post.text;
 
 	return (
-		<div className="relative flex gap-3 bg-grey-800 rounded-xl pl-2 pr-4 py-4 w-full">
+		<div className="relative flex gap-3 bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl pl-2 pr-4 py-4 w-full">
 			{!props.expanded ? (
 				<Link
 					href={`https://warpcast.com/${props.post.creator.username}/${props.post.hash.substring(0, 10)}`}
