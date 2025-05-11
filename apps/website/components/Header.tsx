@@ -26,7 +26,7 @@ import { getCommunities } from "@/server/queries/communities";
 export default async function Header() {
 	const user = await getAuthenticatedUser();
 	const [communities, notifications] = await Promise.all([
-		getCommunities(),
+		getCommunities({ featured: true }),
 		user ? getNotifications({ user: user.id }) : [],
 	]);
 

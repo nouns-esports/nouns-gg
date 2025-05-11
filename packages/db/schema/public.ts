@@ -67,7 +67,8 @@ export const communities = pgTable("communities", (t) => ({
 	description: t.jsonb().$type<TipTap>(),
 	parentUrl: t.text("parent_url"),
 	gold: t.integer().notNull().default(0),
-	// featured: t.boolean().notNull().default(false),
+	details: t.jsonb().$type<TipTap>(),
+	featured: t.boolean().notNull().default(false),
 }));
 
 export const communityActions = pgTable("community_actions", (t) => ({
@@ -202,38 +203,38 @@ export const attendees = pgTable("attendees", (t) => ({
 	user: t.text().notNull(),
 }));
 
-export const brackets = pgTable("brackets", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
-	event: t.bigint({ mode: "number" }).notNull(),
-	name: t.text().notNull(), // Melee Singles
-	image: t.text().notNull(),
-	type: t
-		.text({ enum: ["double-elim", "single-elim", "round-robin"] })
-		.notNull(),
-}));
+// export const brackets = pgTable("brackets", (t) => ({
+// 	id: t.bigserial({ mode: "number" }).primaryKey(),
+// 	event: t.bigint({ mode: "number" }).notNull(),
+// 	name: t.text().notNull(), // Melee Singles
+// 	image: t.text().notNull(),
+// 	type: t
+// 		.text({ enum: ["double-elim", "single-elim", "round-robin"] })
+// 		.notNull(),
+// }));
 
-export const phases = pgTable("phases", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
-	bracket: t.bigint({ mode: "number" }).notNull(),
-	name: t.text().notNull(), // Top 32
-}));
+// export const phases = pgTable("phases", (t) => ({
+// 	id: t.bigserial({ mode: "number" }).primaryKey(),
+// 	bracket: t.bigint({ mode: "number" }).notNull(),
+// 	name: t.text().notNull(), // Top 32
+// }));
 
-export const matches = pgTable("matches", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
-	name: t.text().notNull(), // AB
-	phase: t.bigint({ mode: "number" }).notNull(),
-	bracket: t.bigint({ mode: "number" }).notNull(),
-	event: t.bigint({ mode: "number" }).notNull(),
-	player1: t.text("player1"),
-	player2: t.text("player2"),
-	player1Score: t.integer("player1_score"),
-	player2Score: t.integer("player2_score"),
-	stream: t.jsonb().$type<{
-		url: string;
-		live: boolean;
-	}>(),
-	next: t.bigint({ mode: "number" }),
-}));
+// export const matches = pgTable("matches", (t) => ({
+// 	id: t.bigserial({ mode: "number" }).primaryKey(),
+// 	name: t.text().notNull(), // AB
+// 	phase: t.bigint({ mode: "number" }).notNull(),
+// 	bracket: t.bigint({ mode: "number" }).notNull(),
+// 	event: t.bigint({ mode: "number" }).notNull(),
+// 	player1: t.text("player1"),
+// 	player2: t.text("player2"),
+// 	player1Score: t.integer("player1_score"),
+// 	player2Score: t.integer("player2_score"),
+// 	stream: t.jsonb().$type<{
+// 		url: string;
+// 		live: boolean;
+// 	}>(),
+// 	next: t.bigint({ mode: "number" }),
+// }));
 
 export const rounds = pgTable("rounds", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
@@ -264,6 +265,7 @@ export const rounds = pgTable("rounds", (t) => ({
 		.notNull()
 		.default(2000),
 	linkRegex: t.text("link_regex"),
+	maxProposals: t.smallint("max_proposals").default(1),
 }));
 
 export const roundActions = pgTable("round_actions", (t) => ({

@@ -77,81 +77,82 @@ export default function Menu() {
 					pathname === "/" && "pt-32",
 				)}
 			>
-				<ul className="flex flex-col gap-8 text-white">
-					<Group title="Explore" icon={<Shapes className="w-7 h-7" />}>
-						<ul className="flex flex-col gap-2">
-							<li className="text-nowrap">
-								<Link href="/rounds" className="flex gap-4 items-center">
-									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-green text-white items-center">
-										<Trophy className="w-full h-full p-2" />
-									</div>
-									<div>
-										<p className="font-bebas-neue text-lg">Rounds</p>
-										<p className="text-grey-200">Govern who and what we fund</p>
-									</div>
-								</Link>
-							</li>
-							<li className="text-nowrap">
-								<Link href="/quests" className="flex gap-4 items-center">
-									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-blue-500 text-white items-center">
-										<Gem className="w-full h-full p-2" />
-									</div>
-									<div>
-										<p className="font-bebas-neue text-lg">Quests</p>
-										<p className="text-grey-200">Level up your nexus</p>
-									</div>
-								</Link>
-							</li>
-							<li className="text-nowrap">
-								<Link href="/events" className="flex gap-4 items-center">
-									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-red text-white items-center">
-										<CalendarDays className="w-full h-full p-2" />
-									</div>
-									<div>
-										<p className="font-bebas-neue text-lg">Events</p>
-										<p className="text-grey-200">View upcoming events</p>
-									</div>
-								</Link>
-							</li>
-							<li className="text-nowrap">
-								<Link
-									href="/c/nouns-gg?tab=leaderboard"
-									className="flex gap-4 items-center"
-								>
-									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-pink text-white items-center">
-										<List className="w-full h-full p-2" />
-									</div>
-									<div>
-										<p className="font-bebas-neue text-lg">Leaderboard</p>
-										<p className="text-grey-200">Rankup and earn rewards</p>
-									</div>
-								</Link>
-							</li>
-							<li className="text-nowrap">
-								<Link href="/predictions" className="flex gap-4 items-center">
-									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-purple text-white items-center">
-										<Coins className="w-full h-full p-2" />
-									</div>
-									<div>
-										<p className="font-bebas-neue text-lg">Predictions</p>
-										<p className="text-grey-200">Place bets and earn gold</p>
-									</div>
-								</Link>
-							</li>
-							<li className="text-nowrap">
-								<Link href="/shop" className="flex gap-4 items-center">
-									<div className="rounded-md w-10 h-10 flex overflow-hidden bg-gold-500 text-white items-center">
-										<ShoppingBag className="w-full h-full p-2" />
-									</div>
-									<div>
-										<p className="font-bebas-neue text-lg">Shop</p>
-										<p className="text-grey-200">Spend your gold</p>
-									</div>
-								</Link>
-							</li>
-						</ul>
-					</Group>
+				<ul className="flex flex-col gap-2">
+					<li className="text-nowrap">
+						<Link href="/rounds" className="flex gap-4 items-center">
+							<div className="rounded-md w-10 h-10 flex overflow-hidden bg-green text-white items-center">
+								<Trophy className="w-full h-full p-2" />
+							</div>
+							<div>
+								<p className="font-bebas-neue text-lg text-white">Rounds</p>
+								<p className="text-grey-200">Govern who and what we fund</p>
+							</div>
+						</Link>
+					</li>
+					<li className="text-nowrap">
+						<Link href="/quests" className="flex gap-4 items-center">
+							<div className="rounded-md w-10 h-10 flex overflow-hidden bg-blue-500 text-white items-center">
+								<Gem className="w-full h-full p-2" />
+							</div>
+							<div>
+								<p className="font-bebas-neue text-lg text-white">Quests</p>
+								<p className="text-grey-200">Level up your nexus</p>
+							</div>
+						</Link>
+					</li>
+					<li className="text-nowrap">
+						<Link href="/events" className="flex gap-4 items-center">
+							<div className="rounded-md w-10 h-10 flex overflow-hidden bg-red text-white items-center">
+								<CalendarDays className="w-full h-full p-2" />
+							</div>
+							<div>
+								<p className="font-bebas-neue text-lg text-white">Events</p>
+								<p className="text-grey-200">View upcoming events</p>
+							</div>
+						</Link>
+					</li>
+					<li className="text-nowrap">
+						<Link
+							href="/c/nouns-gg?tab=leaderboard"
+							className="flex gap-4 items-center"
+						>
+							<div className="rounded-md w-10 h-10 flex overflow-hidden bg-pink text-white items-center">
+								<Users className="w-full h-full p-2" />
+							</div>
+							<div>
+								<p className="font-bebas-neue text-lg text-white">
+									Communities
+								</p>
+								<p className="text-grey-200">Explore communities</p>
+							</div>
+						</Link>
+					</li>
+					<li className="text-nowrap">
+						<Link href="/predictions" className="flex gap-4 items-center">
+							<div className="rounded-md w-10 h-10 flex overflow-hidden bg-purple text-white items-center">
+								<Coins className="w-full h-full p-2" />
+							</div>
+							<div>
+								<p className="font-bebas-neue text-lg text-white">
+									Predictions
+								</p>
+								<p className="text-grey-200">Place bets and earn gold</p>
+							</div>
+						</Link>
+					</li>
+					<li className="text-nowrap">
+						<Link href="/shop" className="flex gap-4 items-center">
+							<div className="rounded-md w-10 h-10 flex overflow-hidden bg-gold-500 text-white items-center">
+								<ShoppingBag className="w-full h-full p-2" />
+							</div>
+							<div>
+								<p className="font-bebas-neue text-lg text-white">Shop</p>
+								<p className="text-grey-200">Spend your gold</p>
+							</div>
+						</Link>
+					</li>
 				</ul>
+
 				<div className="flex items-center gap-4 w-full h-full justify-center">
 					<Link href="/discord">
 						<DiscordLogo

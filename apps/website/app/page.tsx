@@ -655,13 +655,14 @@ export default async function Home() {
 		// posts,
 		rounds,
 		communities,
+		quests,
 	] = await Promise.all([
 		getAuthenticatedUser(),
 		// getPosts(),
-		getRounds({ limit: 5 }),
-		getCommunities({ limit: 5 }),
+		getRounds({ limit: 4 }),
+		getCommunities({ featured: true, limit: 4 }),
+		getQuests({ limit: 4 }),
 	]);
-	// const quests = await getQuests({ limit: 5 });
 	// const predictions = await getPredictions({ limit: 5 });
 	// const events = await getEvents({ limit: 5 });
 
@@ -678,7 +679,7 @@ export default async function Home() {
 						// events={events}
 					/>
 				</div>
-				<aside className="flex flex-col gap-4 w-[400px] flex-shrink-0">
+				<aside className="flex flex-col gap-4 w-[400px] flex-shrink-0 max-lg:hidden">
 					<Gallery />
 					<div className="flex flex-col gap-4 bg-grey-800 py-3 px-4 rounded-xl">
 						<div className="flex justify-between">
@@ -711,7 +712,7 @@ export default async function Home() {
 					<div className="flex flex-col gap-4 bg-grey-800 py-3 px-4 rounded-xl">
 						<div className="flex justify-between">
 							<h2 className="text-white text-2xl font-bebas-neue">
-								Active Rounds
+								Latest Rounds
 							</h2>
 							<Link
 								href="/rounds"
@@ -731,6 +732,34 @@ export default async function Home() {
 											className="w-6 h-6 rounded-md"
 										/>
 										{round.name}
+									</li>
+								</Link>
+							))}
+						</ul>
+					</div>
+					<div className="flex flex-col gap-4 bg-grey-800 py-3 px-4 rounded-xl">
+						<div className="flex justify-between">
+							<h2 className="text-white text-2xl font-bebas-neue">
+								Featured Quests
+							</h2>
+							<Link
+								href="/quests"
+								className="text-red group hover:text-red/70 transition-colors flex items-center gap-1"
+							>
+								View All
+								<ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+							</Link>
+						</div>
+						<ul className="flex flex-col gap-3">
+							{quests.map((quest) => (
+								<Link href={`/quests/${quest.handle}`} key={quest.id}>
+									<li className="flex items-center gap-2 text-white hover:text-white/70 transition-colors">
+										<img
+											src={quest.image}
+											alt={quest.name}
+											className="w-6 h-6 rounded-md"
+										/>
+										{quest.name}
 									</li>
 								</Link>
 							))}
