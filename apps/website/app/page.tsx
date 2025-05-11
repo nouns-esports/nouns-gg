@@ -12,6 +12,78 @@ import { getQuests } from "@/server/queries/quests";
 import { getPredictions } from "@/server/queries/predictions";
 import { getEvents } from "@/server/queries/events";
 import { Suspense } from "react";
+import { env } from "~/env";
+
+export const metadata = {
+	title: "Nouns",
+	description: "Esports, powered by you!",
+	keywords: [
+		"esports",
+		"nouns",
+		"nounsdao",
+		"web3",
+		"crypto",
+		"community",
+		"gaming",
+		"blockchain",
+		"nft",
+		"dao",
+		"governance",
+	],
+	metadataBase: new URL(env.NEXT_PUBLIC_DOMAIN),
+	openGraph: {
+		type: "website",
+		images: [
+			"https://ipfs.nouns.gg/ipfs/bafybeih4hyyo6jakdqvg6xjc26pmh5kg5peqkig2wmjufzjbnum6oyb25y",
+		],
+	},
+	twitter: {
+		site: "@NounsGG",
+		card: "summary_large_image",
+		images: [
+			"https://ipfs.nouns.gg/ipfs/bafybeih4hyyo6jakdqvg6xjc26pmh5kg5peqkig2wmjufzjbnum6oyb25y",
+		],
+	},
+	icons: {
+		apple: [
+			{
+				url: "/logo/logo-square.png",
+				sizes: "180x180",
+				type: "image/png",
+			},
+		],
+		icon: [
+			{
+				url: "/logo/logo.png",
+				sizes: "32x32",
+				type: "image/png",
+			},
+			{
+				url: "/logo/logo.png",
+				sizes: "16x16",
+				type: "image/png",
+			},
+		],
+	},
+	other: {
+		"fc:frame": JSON.stringify({
+			version: "next",
+			imageUrl:
+				"https://ipfs.nouns.gg/ipfs/bafybeigrwccl3n7cy3jizjfvy2wmvklwvono3ju7hq2lp4bcplrv6x74ua",
+			button: {
+				title: "Launch",
+				action: {
+					type: "launch_frame",
+					name: "Nouns GG",
+					url: env.NEXT_PUBLIC_DOMAIN,
+					splashImageUrl:
+						"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
+					splashBackgroundColor: "#040404",
+				},
+			},
+		}),
+	},
+} satisfies Metadata;
 
 export default async function Home() {
 	const [user, posts, rounds, communities, quests] = await Promise.all([
