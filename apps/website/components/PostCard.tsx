@@ -51,7 +51,7 @@ export default function PostCard(props: {
 				/>
 			) : null}
 			<Link
-				href={`/users/${props.post.creator.username}`}
+				href={`https://warpcast.com/${props.post.creator.username}`}
 				newTab
 				className="relative z-10 ml-2 w-12 h-12 flex-shrink-0 flex"
 			>
@@ -67,7 +67,7 @@ export default function PostCard(props: {
 					<div className="flex items-center gap-2">
 						<Link
 							newTab
-							href={`/users/${props.post.creator.username}`}
+							href={`https://warpcast.com/${props.post.creator.username}`}
 							className="flex relative z-10 gap-2 items-center w-min hover:opacity-70 transition-opacity"
 						>
 							<h2 className="text-white text-nowrap">
