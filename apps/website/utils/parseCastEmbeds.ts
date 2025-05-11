@@ -8,11 +8,9 @@ export default function parseCastEmbeds(
 
 	for (const embeddedUrl of post.embeddedUrls ?? []) {
 		if (
-			[
-				"supercast.mypinata.cloud",
-				"ipfs.nouns.gg",
-				"imagedelivery.net",
-			].includes(embeddedUrl)
+			embeddedUrl.includes("supercast.mypinata.cloud") ||
+			embeddedUrl.includes("ipfs.nouns.gg") ||
+			embeddedUrl.includes("imagedelivery.net")
 		) {
 			image = embeddedUrl;
 		}
