@@ -15,9 +15,6 @@ export default async function Predictions() {
 			<div className="flex flex-col h-full gap-6 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 max-w-[1920px]">
 				<div className="flex items-center justify-between w-full">
 					<h1 className="font-luckiest-guy text-white text-3xl">Predictions</h1>
-					{user?.nexus?.admin ? (
-						<Button href="/predictions/create">Create</Button>
-					) : null}
 				</div>
 				<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
 					{predictions.map((prediction) => (

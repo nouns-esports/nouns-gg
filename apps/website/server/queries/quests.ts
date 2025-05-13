@@ -17,11 +17,7 @@ export const getQuests = cache(
 			limit: input.limit,
 			where: and(
 				eq(quests.active, true),
-				input.event
-					? eq(quests.event, input.event)
-					: !input.community
-						? isNull(quests.event)
-						: undefined,
+				input.event ? eq(quests.event, input.event) : undefined,
 				input.community ? eq(quests.community, input.community) : undefined,
 				eq(quests.draft, false),
 			),

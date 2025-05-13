@@ -5,9 +5,13 @@ import { PinataSDK } from "pinata";
 import { env } from "~/env";
 
 const importProducts = [
-	10015543656749, 10015514100013, 10015508594989, 10015500992813,
-	10015022186797, 10015016124717, 10015554666797, 10015590351149,
+	10033389764909, 10033389699373, 10033389469997, 10033389011245,
+	10033388945709, 10033388159277, 10033387962669, 10033387209005,
+	10033386881325, 10033386094893,
 ];
+
+const community = 7;
+const event = 5;
 
 const pinata = new PinataSDK({
 	pinataJwt: env.PINATA_JWT,
@@ -56,7 +60,8 @@ await db.primary.transaction(async (tx) => {
 				shopifyId: product.id,
 				name: product.title,
 				handle: product.handle,
-				community: 7,
+				community,
+				event,
 				requiresShipping: true,
 				active: true,
 			})
@@ -90,14 +95,14 @@ await db.primary.transaction(async (tx) => {
 					: hasSize
 						? variant.title.toLowerCase()
 						: null,
-				color: {
-					name: hasSizeAndColor
-						? variant.title.split(" / ")[0]
-						: hasColor
-							? variant.title
-							: null,
-					hex: "#000000",
-				},
+				color: hasColor
+					? {
+							name: hasSizeAndColor
+								? variant.title.split(" / ")[0]
+								: variant.title,
+							hex: "#000000",
+						}
+					: null,
 			});
 		}
 	}

@@ -1,64 +1,61 @@
-import { Extension } from "@tiptap/core";
-import { Plugin, PluginKey } from "@tiptap/pm/state";
-import { DecorationSet, Decoration } from "@tiptap/pm/view";
+import {
+	Node,
+	mergeAttributes,
+	nodeInputRule,
+	nodePasteRule,
+} from "@tiptap/core";
 
-export default function EmoteExtension(props: {
-	name: string;
+export default function EmoteExtension(options: {
 	pattern: RegExp;
 }) {
-	return Extension.create({
-		name: props.name,
-		addProseMirrorPlugins() {
+	return Node.create({
+		name: "EmoteExtension",
+		inline: true,
+		group: "inline",
+		atom: true,
+
+		addAttributes() {
+			return {
+				src: {
+					default:
+						"https://ipfs.nouns.gg/ipfs/QmQQGnQEarwqHc2VQeQhEtKwnyjXSBqpAyZKhjhhSusY4i",
+				},
+				title: { default: ":noggles:" },
+				class: {
+					default:
+						"relative z-10 inline-flex my-0 mx-1 h-[1em] pointer-events-auto",
+				},
+			};
+		},
+
+		parseHTML() {
 			return [
-				new Plugin({
-					key: new PluginKey(props.name),
-					props: {
-						decorations: (state) => {
-							const decorations: Decoration[] = [];
-							const doc = state.doc;
+				{
+					tag: `img.${this.name}`,
+				},
+			];
+		},
 
-							doc.descendants((node, pos) => {
-								if (!node.isText) return;
+		renderHTML({ HTMLAttributes }) {
+			return ["img", mergeAttributes(HTMLAttributes, { class: this.name })];
+		},
 
-								const text = node.text as string;
-								const matches: RegExpExecArray[] = [];
-								let currentMatch: RegExpExecArray | null = null;
+		addInputRules() {
+			return [
+				nodeInputRule({
+					find: options.pattern,
+					type: this.type,
+					getAttributes: () => ({}),
+				}),
+			];
+		},
 
-								// Collect all matches first
-								currentMatch = props.pattern.exec(text);
-								while (currentMatch !== null) {
-									matches.push(currentMatch);
-									currentMatch = props.pattern.exec(text);
-								}
-
-								// Process matches
-								for (const match of matches) {
-									const start = pos + match.index;
-									const end = start + match[0].length;
-
-									decorations.push(
-										Decoration.widget(start, () => {
-											const img = document.createElement("img");
-											img.src =
-												"https://ipfs.nouns.gg/ipfs/QmQQGnQEarwqHc2VQeQhEtKwnyjXSBqpAyZKhjhhSusY4i";
-											img.title = ":noggles:";
-											img.className =
-												"relative z-10 inline-flex mx-1 h-[1em] pointer-events-auto";
-											return img;
-										}),
-									);
-
-									decorations.push(
-										Decoration.inline(start, end, {
-											class: "hidden",
-										}),
-									);
-								}
-							});
-
-							return DecorationSet.create(doc, decorations);
-						},
-					},
+		addPasteRules() {
+			return [
+				nodePasteRule({
+					find: options.pattern,
+					type: this.type,
+					getAttributes: () => ({}),
 				}),
 			];
 		},

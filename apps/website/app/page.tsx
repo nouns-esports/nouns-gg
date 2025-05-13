@@ -7,7 +7,6 @@ import CreatePost from "@/components/CreatePost";
 import { getPosts } from "@/server/queries/posts";
 import PostCard from "@/components/PostCard";
 import { getCommunities } from "@/server/queries/communities";
-import Feed from "@/components/Feed";
 import { getQuests } from "@/server/queries/quests";
 import { getPredictions } from "@/server/queries/predictions";
 import { getEvents } from "@/server/queries/events";
@@ -101,23 +100,18 @@ export default async function Home() {
 		<div className="flex flex-col w-full items-center">
 			<div className="flex w-full gap-16 mb-16 max-sm:mb-8 max-lg:gap-12 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 max-w-[1920px]">
 				<div className="flex flex-col items-center w-full">
-					<Suspense>
-						<Feed
-							user={user}
-							posts={posts as any}
-							// rounds={rounds}
-							// quests={quests}
-							// predictions={predictions}
-							// events={events}
-						/>
-					</Suspense>
+					<div className="flex flex-col gap-4 max-w-3xl">
+						{posts.map((post) => (
+							<PostCard key={post.hash} post={post} />
+						))}
+					</div>
 				</div>
 				<aside className="flex flex-col gap-4 w-[400px] flex-shrink-0 max-lg:hidden">
 					<Gallery />
 					<div className="flex flex-col gap-4 bg-grey-800 py-3 px-4 rounded-xl">
 						<div className="flex justify-between">
 							<h2 className="text-white text-2xl font-bebas-neue">
-								Trending Communities
+								Communities
 							</h2>
 							<Link
 								href="/communities"
@@ -144,9 +138,7 @@ export default async function Home() {
 					</div>
 					<div className="flex flex-col gap-4 bg-grey-800 py-3 px-4 rounded-xl">
 						<div className="flex justify-between">
-							<h2 className="text-white text-2xl font-bebas-neue">
-								Latest Rounds
-							</h2>
+							<h2 className="text-white text-2xl font-bebas-neue">Rounds</h2>
 							<Link
 								href="/rounds"
 								className="text-red group hover:text-red/70 transition-colors flex items-center gap-1"
@@ -172,9 +164,7 @@ export default async function Home() {
 					</div>
 					<div className="flex flex-col gap-4 bg-grey-800 py-3 px-4 rounded-xl">
 						<div className="flex justify-between">
-							<h2 className="text-white text-2xl font-bebas-neue">
-								Featured Quests
-							</h2>
+							<h2 className="text-white text-2xl font-bebas-neue">Quests</h2>
 							<Link
 								href="/quests"
 								className="text-red group hover:text-red/70 transition-colors flex items-center gap-1"

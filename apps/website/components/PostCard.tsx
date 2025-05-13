@@ -24,8 +24,8 @@ import { twMerge } from "tailwind-merge";
 import Countup from "./Countup";
 import Recast from "./Recast";
 import Upvote from "./Upvote";
-import CastText from "./CastText";
 import type { getPosts } from "@/server/queries/posts";
+import TipTap from "./TipTap";
 
 export default function PostCard(props: {
 	post: NonNullable<Awaited<ReturnType<typeof getPosts>>>[number];
@@ -42,14 +42,11 @@ export default function PostCard(props: {
 			: props.post.text;
 
 	return (
-		<div className="relative flex gap-3 bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl pl-2 pr-4 py-4 w-full">
-			{!props.expanded ? (
-				<Link
-					href={`https://warpcast.com/${props.post.creator.username}/${props.post.hash.substring(0, 10)}`}
-					newTab
-					className="w-full h-full absolute top-0 left-0"
-				/>
-			) : null}
+		<Link
+			href={`https://warpcast.com/${props.post.creator.username}/${props.post.hash.substring(0, 10)}`}
+			newTab
+			className="relative flex gap-3 bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl pl-2 pr-4 py-4 w-full"
+		>
 			<Link
 				href={`https://warpcast.com/${props.post.creator.username}`}
 				newTab
@@ -100,9 +97,7 @@ export default function PostCard(props: {
 					{/* <MoreHorizontal className="w-5 h-5 text-grey-200 hover:text-white transition-colors mr-2" /> */}
 				</div>
 				<div className="flex flex-col gap-3 w-full">
-					<CastText className="text-white w-full pointer-events-none">
-						{text}
-					</CastText>
+					<TipTap content={text} className="text-white w-full" />
 					<div className="flex flex-col gap-1">
 						{embeds.image ? <CastImage image={embeds.image} /> : ""}
 						{/* {embeds.website ? (
@@ -173,7 +168,7 @@ export default function PostCard(props: {
 					</div>
 				</div>
 			</div>
-		</div>
+		</Link>
 	);
 }
 
