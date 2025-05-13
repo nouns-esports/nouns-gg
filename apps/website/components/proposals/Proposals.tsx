@@ -123,18 +123,18 @@ export default function Proposals(props: {
 									);
 								}
 
+								const maxProposals = props.round.maxProposals ?? Infinity;
+
 								return (
 									<>
-										{userProposals.length >=
-										(props.round.maxProposals ?? Infinity) ? (
+										{userProposals.length >= maxProposals ? (
 											<p className="text-white">
-												You can only make {props.round.maxProposals} proposals
+												You can only make {maxProposals} proposals
 											</p>
 										) : null}
-										{!(
-											userProposals.length >=
-											(props.round.maxProposals ?? Infinity)
-										) && props.round.actions.length > 0 ? (
+										{!(userProposals.length >= maxProposals) &&
+										props.round.actions.filter((a) => a.type === "proposing")
+											.length > 0 ? (
 											<ToggleModal
 												id="round-actions-proposing"
 												className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
@@ -146,8 +146,7 @@ export default function Proposals(props: {
 										<Button
 											href={`/rounds/${props.round.handle}/propose`}
 											disabled={
-												userProposals.length >=
-													(props.round.maxProposals ?? Infinity) ||
+												userProposals.length >= maxProposals ||
 												!props.user.canPropose
 											}
 										>
@@ -187,13 +186,16 @@ export default function Proposals(props: {
 								if (!props.user.canVote) {
 									return (
 										<>
-											<ToggleModal
-												id="round-actions-voting"
-												className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
-											>
-												Voting Requirements
-												<Info className="w-4 h-4" />
-											</ToggleModal>
+											{props.round.actions.filter((a) => a.type === "voting")
+												.length > 0 ? (
+												<ToggleModal
+													id="round-actions-voting"
+													className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
+												>
+													Voting Requirements
+													<Info className="w-4 h-4" />
+												</ToggleModal>
+											) : null}
 											<Button disabled>Submit Votes</Button>
 										</>
 									);
