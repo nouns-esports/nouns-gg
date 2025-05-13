@@ -1,6 +1,6 @@
 import { questCompletions, quests, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { and, asc, desc, eq, gte, isNull, lte } from "drizzle-orm";
+import { and, asc, desc, eq, gt, gte, isNull, lt, lte } from "drizzle-orm";
 import {
 	unstable_cache as cache,
 	unstable_noStore as noStore,
@@ -13,10 +13,14 @@ export const getQuests = cache(
 		event?: number;
 		community?: number;
 	}) => {
+		const now = new Date();
+
 		return db.pgpool.query.quests.findMany({
 			limit: input.limit,
 			where: and(
 				eq(quests.active, true),
+				gt(quests.start, now),
+				lt(quests.end, now),
 				input.event ? eq(quests.event, input.event) : undefined,
 				input.community ? eq(quests.community, input.community) : undefined,
 				eq(quests.draft, false),
