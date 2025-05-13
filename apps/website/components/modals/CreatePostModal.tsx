@@ -8,7 +8,6 @@ import LimitMeter from "../LimitMeter";
 import { useState } from "react";
 import type { communities } from "~/packages/db/schema/public";
 import { twMerge } from "tailwind-merge";
-import CastText, { useCastTextEditor } from "../CastText";
 
 export default function CreatePostModal(props: {
 	user?: AuthenticatedUser;
@@ -18,9 +17,9 @@ export default function CreatePostModal(props: {
 
 	const [text, setText] = useState("");
 
-	const editor = useCastTextEditor({
-		onUpdate: ({ editor }) => setText(editor.getText()),
-	});
+	// const editor = useCastTextEditor({
+	// 	onUpdate: ({ editor }) => setText(editor.getText()),
+	// });
 
 	const [community, setCommunity] = useState<typeof communities.$inferSelect>();
 
@@ -79,7 +78,7 @@ export default function CreatePostModal(props: {
 								Start typing a new post here...
 							</p>
 						) : null}
-						<CastText editor={editor} />
+						{/* <CastText editor={editor} /> */}
 					</div>
 				</div>
 			</div>
