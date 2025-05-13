@@ -1,6 +1,6 @@
 import { db } from "~/packages/db";
 import { casts, reactions } from "~/packages/db/schema/farcaster";
-import { and, desc, eq, ilike, isNotNull, sql } from "drizzle-orm";
+import { and, desc, eq, ilike, isNull, sql } from "drizzle-orm";
 import { rounds } from "~/packages/db/schema/public";
 import { unstable_cache as cache } from "next/cache";
 
@@ -9,7 +9,7 @@ export const getPosts = cache(
 		return db.pgpool.query.casts.findMany({
 			where: and(
 				eq(casts.parentUrl, "https://nouns.gg"),
-				isNotNull(casts.deletedAt),
+				isNull(casts.deletedAt),
 			),
 			orderBy: desc(casts.timestamp),
 			limit: 100,
