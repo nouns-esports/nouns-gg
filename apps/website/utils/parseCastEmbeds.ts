@@ -10,9 +10,22 @@ export default function parseCastEmbeds(
 		if (
 			embeddedUrl.includes("supercast.mypinata.cloud") ||
 			embeddedUrl.includes("ipfs.nouns.gg") ||
-			embeddedUrl.includes("imagedelivery.net")
+			embeddedUrl.includes("imagedelivery.net") ||
+			embeddedUrl.includes("i.imgur.com") ||
+			embeddedUrl.includes(".jpg") ||
+			embeddedUrl.includes(".png") ||
+			embeddedUrl.includes(".gif") ||
+			embeddedUrl.includes(".webp")
 		) {
 			image = embeddedUrl;
+		}
+
+		if (
+			embeddedUrl.includes(".m3u8") ||
+			embeddedUrl.includes("stream.warpcast.com") ||
+			embeddedUrl.includes(".mp4")
+		) {
+			video = embeddedUrl;
 		}
 	}
 

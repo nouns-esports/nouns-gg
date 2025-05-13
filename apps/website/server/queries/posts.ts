@@ -35,7 +35,7 @@ export const getPosts = cache(
     `.as("round"),
 				likesCount: sql<number>`
         (
-          SELECT COUNT(*) 
+          SELECT COUNT(*)::int 
           FROM ${reactions}
           WHERE reaction_type = 1
             AND target_hash = ${casts.hash}
@@ -43,19 +43,19 @@ export const getPosts = cache(
       `.as("likesCount"),
 				recastsCount: sql<number>`
         (
-          SELECT COUNT(*) 
+          SELECT COUNT(*)::int
           FROM ${reactions}
           WHERE reaction_type = 0
             AND target_hash = ${casts.hash}
         )
       `.as("recastsCount"),
 				commentsCount: sql<number>`
-        (
-          SELECT COUNT(*)
-          FROM ${casts}
-          WHERE parent_hash = ${casts.hash}
-        )
-      `.as("commentsCount"),
+     (
+       SELECT COUNT(*)::int
+       FROM ${casts} AS child
+       WHERE child.parent_hash = casts.hash  
+     )
+     `.as("commentsCount"),
 			},
 		});
 	},

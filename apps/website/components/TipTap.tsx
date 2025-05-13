@@ -62,7 +62,7 @@ export default function TipTap(props: {
 				),
 			}}
 			className={twMerge(
-				"outline-none prose text-grey-200 prose-headings:font-normal prose-headings:text-white prose-headings:font-luckiest-guy prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-h4:text-lg prose-strong:font-bold prose-strong:text-white [&_li_p]:m-0 prose-li:m-0 prose-a:no-underline max-w-none",
+				"relative z-10 outline-none prose text-grey-200 prose-headings:font-normal prose-headings:text-white prose-headings:font-luckiest-guy prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-h4:text-lg prose-strong:font-bold prose-strong:text-white [&_li_p]:m-0 prose-li:m-0 prose-a:no-underline max-w-none",
 				props.className,
 			)}
 		/>
