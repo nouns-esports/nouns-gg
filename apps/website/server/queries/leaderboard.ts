@@ -32,9 +32,14 @@ export async function getRank(input: { user: string; community: number }) {
 			},
 		},
 		extras: {
-			rank: sql<number>`ROW_NUMBER() OVER (PARTITION BY community ORDER BY xp DESC)`.as(
-				"rank",
-			),
+			rank: sql<number>`
+        (
+          SELECT COUNT(*) + 1
+          FROM ${leaderboards} AS lb2
+          WHERE lb2.community = ${leaderboards.community}
+            AND lb2.xp > ${leaderboards.xp}
+        )
+      `.as("rank"),
 		},
 	});
 }

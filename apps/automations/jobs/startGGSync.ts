@@ -20,6 +20,7 @@ const targetEvents = {
 	"nouns-bowl": "nouns-bowl-2025",
 	nounsvitational: "nounsvitational-2024",
 	"tipped-off-16": "tipped-off-16-safari",
+	"the-works": "the-works-2025",
 };
 
 export const startGGSync = createJob({

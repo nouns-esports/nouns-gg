@@ -105,14 +105,22 @@ export default function PostCard(props: {
 							/>
 						) : null}
 					
-						{embeds.quoteCast ? (
-							<QuoteCast
-								quoteCast={embeds.quoteCast}
-								small={props.cast.embeds.length > 0}
-							/>
-						) : null} */}
+						 */}
+						{props.post.quotedPosts
+							? props.post.quotedPosts.map((quotedPost) => (
+									<QuoteCast
+										key={quotedPost.hash}
+										quoteCast={quotedPost}
+										small={
+											!!embeds.image || !!embeds.video || !!props.post.round
+										}
+									/>
+								))
+							: null}
 						{embeds.video ? <VideoPlayer video={embeds.video} /> : null}
-						{embeds.round ? <RoundPreview round={embeds.round} /> : null}
+						{props.post.round ? (
+							<RoundPreview round={props.post.round} />
+						) : null}
 					</div>
 					<div
 						className={twMerge(
@@ -172,15 +180,33 @@ export default function PostCard(props: {
 }
 
 function parseCastText(
-	post: NonNullable<Awaited<ReturnType<typeof getPosts>>>[number],
+	post:
+		| NonNullable<Awaited<ReturnType<typeof getPosts>>>[number]
+		| NonNullable<
+				Awaited<ReturnType<typeof getPosts>>[number]["quotedPosts"]
+		  >[number],
 ) {
-	let text =
-		post.text && post.embeddedUrls
-			? post.embeddedUrls.reduce(
-					(text, url) => text.replace(url, "").trim(),
-					post.text,
-				)
-			: post.text;
+	let text = post.text;
+
+	// Remove embedded URLs from text
+	if (post.text && post.embeddedUrls) {
+		text = post.embeddedUrls.reduce(
+			(text, url) => text.replace(url, "").trim(),
+			post.text,
+		);
+	}
+
+	// Remove embedded cast URLs from text
+	if (post.text && post.embeddedCasts) {
+		text = post.embeddedCasts.reduce((text, castHash) => {
+			const hashPrefix = castHash.substring(0, 10);
+			// remove any urls containing this hash prefix in text
+			return text.replace(
+				new RegExp(`https?://[^\\s]*${hashPrefix}[^\\s]*`, "g"),
+				"",
+			);
+		}, text);
+	}
 
 	if (
 		post.mentions !== null &&
@@ -218,7 +244,7 @@ function parseCastText(
 				const before = post.text.slice(0, charPosition);
 				const after = post.text.slice(charPosition);
 
-				text = before + `@${username}` + after;
+				text = before + `@${username} ` + after;
 			}
 		}
 	}
@@ -298,56 +324,60 @@ function CastImage(props: {
 	);
 }
 
-// function QuoteCast(props: {
-// 	quoteCast: NonNullable<ReturnType<typeof parseCastEmbeds>["quoteCast"]>;
-// 	small?: boolean;
-// }) {
-// 	return (
-// 		<div className="relative z-10 rounded-xl flex flex-col gap-1 border bg-black/20 hover:bg-grey-800 transition-colors border-grey-600 p-2 mb-1">
-// 			<Link
-// 				href={`/chat/${props.quoteCast.cast.hash.substring(0, 10)}`}
-// 				className="w-full h-full absolute top-0 left-0"
-// 			/>
-// 			<Link
-// 				href={`/users/${props.quoteCast.cast.author.username}`}
-// 				className="relative z-10 flex items-center gap-2 group w-fit"
-// 			>
-// 				<img
-// 					alt={props.quoteCast.cast.author.display_name}
-// 					src={props.quoteCast.cast.author.pfp_url}
-// 					className="w-4 h-4 rounded-full object-cover object-center group-hover:brightness-75 transition-all"
-// 				/>
-// 				<p className="text-white group-hover:opacity-70 transition-opacity text-nowrap">
-// 					{props.quoteCast.cast.author.display_name}
-// 				</p>
-// 			</Link>
-// 			<div className="flex justify-between gap-1">
-// 				{props.quoteCast.cast.text ? (
-// 					<CastText className="text-white text-sm">
-// 						{props.quoteCast.cast.text}
-// 					</CastText>
-// 				) : null}
-// 				{props.quoteCast.embeds.image ? (
-// 					<div
-// 						className={twMerge(
-// 							"flex h-full w-32 flex-shrink-0 rounded-xl overflow-hidden",
-// 							!props.small && "w-full aspect-video",
-// 						)}
-// 					>
-// 						<img
-// 							alt={props.quoteCast.embeds.image.url}
-// 							src={props.quoteCast.embeds.image.url}
-// 							className="w-full h-full object-cover object-center"
-// 						/>
-// 					</div>
-// 				) : null}
-// 			</div>
-// 		</div>
-// 	);
-// }
+function QuoteCast(props: {
+	quoteCast: NonNullable<
+		Awaited<ReturnType<typeof getPosts>>[number]["quotedPosts"]
+	>[number];
+	small?: boolean;
+}) {
+	const text = parseCastText(props.quoteCast);
+	const embeds = parseCastEmbeds(props.quoteCast);
+
+	return (
+		<div className="relative z-10 rounded-xl flex flex-col border bg-black/20 hover:bg-grey-800 transition-colors border-grey-600 p-2 mb-1">
+			<Link
+				href={`https://warpcast.com/${props.quoteCast.creator?.username}/${props.quoteCast.hash.substring(0, 10)}`}
+				className="w-full h-full absolute top-0 left-0"
+			/>
+			{props.quoteCast.creator ? (
+				<Link
+					href={`/users/${props.quoteCast.creator.username}`}
+					className="relative z-10 flex items-center gap-2 group w-fit"
+				>
+					<img
+						alt={props.quoteCast.creator.displayName ?? ""}
+						src={props.quoteCast.creator.pfpUrl ?? ""}
+						className="w-4 h-4 rounded-full object-cover object-center group-hover:brightness-75 transition-all"
+					/>
+					<p className="text-white group-hover:opacity-70 transition-opacity text-nowrap">
+						{props.quoteCast.creator.displayName}
+					</p>
+				</Link>
+			) : null}
+			<div
+				className={twMerge(
+					"flex justify-between gap-2",
+					!props.small && "flex-col",
+				)}
+			>
+				{text ? <TipTap content={text} className="text-white text-sm" /> : null}
+				{embeds.image ? (
+					<img
+						alt={embeds.image}
+						src={embeds.image}
+						className={twMerge(
+							"flex h-full aspect-video w-full rounded-xl object-cover object-center",
+							props.small && "w-32",
+						)}
+					/>
+				) : null}
+			</div>
+		</div>
+	);
+}
 
 function RoundPreview(props: {
-	round: NonNullable<ReturnType<typeof parseCastEmbeds>["round"]>;
+	round: NonNullable<Awaited<ReturnType<typeof getPosts>>[number]["round"]>;
 }) {
 	return (
 		<Link

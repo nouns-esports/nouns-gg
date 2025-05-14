@@ -75,7 +75,7 @@ export function textToTipTap(text: string) {
 
 	const isUrl =
 		/^(https?:\/\/[^\s]+|[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}(?:\/[^\s]*)?)$/;
-	const isHandle = /^@[A-Za-z0-9_]+$/;
+	const isHandle = /^@[A-Za-z0-9_]+(?:\.[A-Za-z0-9_]+)*$/;
 	const isChannel = /^\/[A-Za-z0-9-]+$/;
 	const isEmote = /^(?::[A-Za-z0-9_+\-]+:|⌐◨-◨)$/;
 

@@ -1,7 +1,11 @@
 import type { getPosts } from "@/server/queries/posts";
 
 export default function parseCastEmbeds(
-	post: NonNullable<Awaited<ReturnType<typeof getPosts>>>[number],
+	post:
+		| NonNullable<Awaited<ReturnType<typeof getPosts>>>[number]
+		| NonNullable<
+				Awaited<ReturnType<typeof getPosts>>[number]["quotedPosts"]
+		  >[number],
 ) {
 	let image: string | undefined;
 	let video: string | undefined;
@@ -30,5 +34,5 @@ export default function parseCastEmbeds(
 		}
 	}
 
-	return { image, video, round: post.round ?? undefined };
+	return { image, video };
 }
