@@ -15,7 +15,8 @@ export default function parseCastEmbeds(
 			embeddedUrl.includes(".jpg") ||
 			embeddedUrl.includes(".png") ||
 			embeddedUrl.includes(".gif") ||
-			embeddedUrl.includes(".webp")
+			embeddedUrl.includes(".webp") ||
+			embeddedUrl.includes("media.tenor.com")
 		) {
 			image = embeddedUrl;
 		}
