@@ -1,5 +1,5 @@
 import { db } from "~/packages/db";
-import { casts, reactions } from "~/packages/db/schema/farcaster";
+import { casts, profiles, reactions } from "~/packages/db/schema/farcaster";
 import { and, desc, eq, ilike, isNull, sql } from "drizzle-orm";
 import { rounds } from "~/packages/db/schema/public";
 import { unstable_cache as cache } from "next/cache";
@@ -33,6 +33,13 @@ export const getPosts = cache(
           )
         )
     `.as("round"),
+				mentionedProfiles: sql<(typeof profiles.$inferSelect)[] | null>`
+      (
+        SELECT json_agg(row_to_json(p))
+        FROM unnest(${casts.mentions}) AS mention(fid)
+        JOIN ${profiles} p ON p.fid = mention.fid
+      )
+    `.as("mentionedProfiles"),
 				likesCount: sql<number>`
         (
           SELECT COUNT(*)::int 

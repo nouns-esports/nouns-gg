@@ -42,6 +42,15 @@ export default function PostCard(props: {
 				)
 			: props.post.text;
 
+	const textWithMentions =
+		props.post.text && props.post.mentionedProfiles
+			? props.post.mentionedProfiles.reduce((text, profile) => {
+					const mention = `@${profile.username}`;
+					const position = props.post.mentionsPositions?.[profile.fid];
+					return text.slice(0, position) + mention + text.slice(position);
+				}, props.post.text)
+			: props.post.text;
+
 	return (
 		<div className="relative flex gap-3 bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl pl-2 pr-4 py-4 w-full">
 			{!props.expanded ? (
@@ -101,7 +110,7 @@ export default function PostCard(props: {
 					{/* <MoreHorizontal className="w-5 h-5 text-grey-200 hover:text-white transition-colors mr-2" /> */}
 				</div>
 				<div className="flex flex-col gap-3 w-full">
-					<TipTap content={text} className="text-white w-full" />
+					<TipTap content={textWithMentions} className="text-white w-full" />
 					<div className="flex flex-col gap-1">
 						{embeds.image ? <CastImage image={embeds.image} /> : ""}
 						{/* {embeds.website ? (
