@@ -6,7 +6,6 @@ import {
 	type Editor,
 	type Content,
 } from "@tiptap/react";
-import RegexExtension from "./RegexExtension";
 import LinkExtension from "@tiptap/extension-link";
 import Document from "@tiptap/extension-document";
 import Text from "@tiptap/extension-text";
@@ -40,12 +39,12 @@ export function useMarkdownEditor(props?: Parameters<typeof useEditor>[0]) {
 				autolink: true,
 				linkOnPaste: true,
 			}),
-			RegexExtension({
-				name: "AutoLinkExtension",
-				pattern:
-					/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/g,
-				href: (url) => url,
-			}),
+			// RegexExtension({
+			// 	name: "AutoLinkExtension",
+			// 	pattern:
+			// 		/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/g,
+			// 	href: (url) => url,
+			// }),
 			Image.configure({
 				HTMLAttributes: {
 					class: "rounded-xl pointer-events-auto",
