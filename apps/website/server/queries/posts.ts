@@ -93,6 +93,13 @@ export async function getPost(props: { hash: string }) {
           )
         )
     `.as("round"),
+			mentionedProfiles: sql<(typeof profiles.$inferSelect)[] | null>`
+    (
+      SELECT json_agg(row_to_json(p))
+      FROM unnest(${casts.mentions}) AS mention(fid)
+      JOIN ${profiles} p ON p.fid = mention.fid
+    )
+  `.as("mentionedProfiles"),
 			likesCount: sql<number>`
         (
           SELECT COUNT(*)
