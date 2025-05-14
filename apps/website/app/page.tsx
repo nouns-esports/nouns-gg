@@ -98,7 +98,7 @@ export default async function Home() {
 
 	return (
 		<div className="flex flex-col w-full items-center">
-			<div className="flex w-full gap-16 mb-16 max-sm:mb-8 max-lg:gap-12 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 max-w-[1920px]">
+			<div className="items-start flex w-full gap-16 mb-16 max-sm:mb-8 max-lg:gap-12 pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4 max-w-[1920px]">
 				<div className="flex flex-col items-center w-full">
 					<div className="flex flex-col gap-4 max-w-3xl">
 						{posts.map((post) => (
@@ -106,7 +106,7 @@ export default async function Home() {
 						))}
 					</div>
 				</div>
-				<aside className="flex flex-col gap-4 w-[400px] flex-shrink-0 max-lg:hidden">
+				<aside className="sticky top-32 self-start flex flex-col gap-4 w-[400px] flex-shrink-0 max-lg:hidden">
 					<Gallery />
 					<div className="flex flex-col gap-4 bg-grey-800 py-3 px-4 rounded-xl">
 						<div className="flex justify-between">
