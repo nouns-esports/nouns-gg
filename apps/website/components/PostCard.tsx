@@ -34,22 +34,7 @@ export default function PostCard(props: {
 }) {
 	const embeds = parseCastEmbeds(props.post);
 
-	const text =
-		props.post.text && props.post.embeddedUrls
-			? props.post.embeddedUrls.reduce(
-					(text, url) => text.replace(url, "").trim(),
-					props.post.text,
-				)
-			: props.post.text;
-
-	const textWithMentions =
-		props.post.text && props.post.mentionedProfiles
-			? props.post.mentionedProfiles.reduce((text, profile) => {
-					const mention = `@${profile.username}`;
-					const position = props.post.mentionsPositions?.[profile.fid];
-					return text.slice(0, position) + mention + text.slice(position);
-				}, props.post.text)
-			: props.post.text;
+	const text = parseCastText(props.post);
 
 	return (
 		<div className="relative flex gap-3 bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl pl-2 pr-4 py-4 w-full">
@@ -110,7 +95,7 @@ export default function PostCard(props: {
 					{/* <MoreHorizontal className="w-5 h-5 text-grey-200 hover:text-white transition-colors mr-2" /> */}
 				</div>
 				<div className="flex flex-col gap-3 w-full">
-					<TipTap content={textWithMentions} className="text-white w-full" />
+					<TipTap content={text} className="text-white w-full" />
 					<div className="flex flex-col gap-1">
 						{embeds.image ? <CastImage image={embeds.image} /> : ""}
 						{/* {embeds.website ? (
@@ -184,6 +169,61 @@ export default function PostCard(props: {
 			</div>
 		</div>
 	);
+}
+
+function parseCastText(
+	post: NonNullable<Awaited<ReturnType<typeof getPosts>>>[number],
+) {
+	let text =
+		post.text && post.embeddedUrls
+			? post.embeddedUrls.reduce(
+					(text, url) => text.replace(url, "").trim(),
+					post.text,
+				)
+			: post.text;
+
+	if (
+		post.mentions !== null &&
+		post.mentionedProfiles !== null &&
+		post.mentionsPositions !== null &&
+		post.mentionsPositions.length === post.mentionedProfiles.length
+	) {
+		for (let i = 0; i < post.mentionsPositions.length; i++) {
+			const bytePosition = post.mentionsPositions[i];
+			const username = post.mentionedProfiles[i].username;
+
+			if (username) {
+				// Convert byte position to character position
+				let charPosition = 0;
+				let currentBytePos = 0;
+
+				for (let j = 0; j < post.text.length; j++) {
+					if (currentBytePos >= bytePosition) {
+						charPosition = j;
+						break;
+					}
+					// Count bytes for the current character
+					const charCode = post.text.charCodeAt(j);
+					if (charCode <= 0x7f) {
+						currentBytePos += 1; // ASCII character (1 byte)
+					} else if (charCode <= 0x7ff) {
+						currentBytePos += 2; // 2-byte character
+					} else if (charCode <= 0xffff) {
+						currentBytePos += 3; // 3-byte character
+					} else {
+						currentBytePos += 4; // 4-byte character
+					}
+				}
+
+				const before = post.text.slice(0, charPosition);
+				const after = post.text.slice(charPosition);
+
+				text = before + `@${username}` + after;
+			}
+		}
+	}
+
+	return text;
 }
 
 // function WebsitePreview(props: {
