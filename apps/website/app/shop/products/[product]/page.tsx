@@ -228,7 +228,7 @@ export default async function ProductPage(props: {
 						</div>
 					</div>
 					{product.description ? (
-						<div className="bg-grey-800 rounded-xl p-4 flex gap-4 pl-5">
+						<div className="bg-grey-800 rounded-xl p-4 flex flex-col gap-4 pl-5">
 							<p className="text-white font-bebas-neue text-2xl">Details</p>
 							{product.description ? (
 								<TipTap content={product.description} />
