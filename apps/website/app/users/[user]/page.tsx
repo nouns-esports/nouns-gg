@@ -42,7 +42,7 @@ export default async function User(props: {
 								<img
 									alt={user.name}
 									src={user.image}
-									className="w-12 h-12 rounded-full object-cover bg-white"
+									className="w-12 h-12 flex-shrink-0 rounded-full object-cover bg-white"
 								/>
 								<div className="flex flex-col gap-2">
 									<div className="flex items-center gap-2">
