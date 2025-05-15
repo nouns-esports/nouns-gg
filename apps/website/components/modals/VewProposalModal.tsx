@@ -93,14 +93,17 @@ export default function ViewProposalModal(props: {
 			<div className="flex justify-between items-center">
 				{props.proposal.user ? (
 					<div className="flex gap-4 items-center">
-						<div className="rounded-full flex items-center text-white gap-3 font-semibold text-xl">
+						<Link
+							href={`/users/${props.proposal.user.profile?.username ?? props.proposal.user.id}`}
+							className="rounded-full flex items-center text-white gap-3 font-semibold text-xl hover:opacity-80 transition-opacity"
+						>
 							<img
 								alt={props.proposal.user.name}
 								src={props.proposal.user.image}
 								className="rounded-full h-9 w-9"
 							/>
 							{props.proposal.user.name}
-						</div>
+						</Link>
 						<div className="flex gap-3 items-center">
 							{props.proposal.user.twitter ? (
 								<Link
