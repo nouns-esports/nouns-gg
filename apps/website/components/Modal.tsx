@@ -8,6 +8,7 @@ import {
 	useDragControls,
 	useMotionValue,
 } from "framer-motion";
+import { usePathname } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { create } from "zustand";
@@ -120,6 +121,14 @@ export function Modal(props: {
 	const openCount = useMemo(() => {
 		return Object.values(openModals).filter((modal) => modal).length;
 	}, [openModals]);
+
+	const pathname = usePathname();
+
+	useEffect(() => {
+		const root = document.documentElement;
+		root.classList.remove("prevent-scroll");
+		root.style.paddingRight = "0px";
+	}, [pathname]);
 
 	useEffect(() => {
 		if (props.isOpen) open();
