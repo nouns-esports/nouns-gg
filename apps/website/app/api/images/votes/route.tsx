@@ -4,6 +4,7 @@ import { ImageResponse } from "next/og";
 import fs from "fs";
 import path, { join } from "path";
 import { getRound } from "@/server/queries/rounds";
+import sharp from "sharp";
 
 export async function GET(request: Request) {
 	const url = new URL(request.url);
@@ -50,6 +51,19 @@ export async function GET(request: Request) {
 			return acc;
 		}, {}),
 	);
+
+	const userImage = await fetch(user.image);
+
+	let imageUrl = user.image;
+
+	const isSVG = userImage.headers.get("content-type")?.includes("svg");
+
+	if (isSVG) {
+		const pngBuf = await sharp(Buffer.from(await userImage.text()))
+			.png()
+			.toBuffer();
+		imageUrl = `data:image/png;base64,${pngBuf.toString("base64")}`;
+	}
 
 	return new ImageResponse(
 		<div
@@ -103,7 +117,7 @@ export async function GET(request: Request) {
 						}}
 					>
 						<img
-							src={user.image}
+							src={imageUrl}
 							style={{ width: 90, height: 90, borderRadius: "100%" }}
 						/>
 						<div
