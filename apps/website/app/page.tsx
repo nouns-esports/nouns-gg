@@ -88,7 +88,7 @@ export const metadata = {
 export default async function Home() {
 	const [user, posts, rounds, communities, quests] = await Promise.all([
 		getAuthenticatedUser(),
-		getPosts(),
+		getPosts({ parentUrl: "https://nouns.gg" }),
 		getRounds({ limit: 4 }),
 		getCommunities({ featured: true, limit: 4 }),
 		getQuests({ limit: 4 }),
