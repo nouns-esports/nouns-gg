@@ -60,6 +60,9 @@ export async function getAuthenticatedUser() {
 					image: `https://ipfs.nouns.gg/ipfs/${image.IpfsHash}`,
 					bio: fullPrivyUser.farcaster?.bio ?? "",
 					canRecieveEmails: false,
+					discord: fullPrivyUser.discord?.username ?? null,
+					twitter: fullPrivyUser.twitter?.username ?? null,
+					fid: fullPrivyUser.farcaster?.fid ?? null,
 				});
 
 				userNexus = await db.primary.query.nexus.findFirst({
