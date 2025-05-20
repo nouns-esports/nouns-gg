@@ -57,9 +57,14 @@ export default function Proposals(props: {
 	}, [selectedVotes]);
 
 	const remainingVotes = useMemo(() => {
-		return (
-			(props.user?.votes ?? 1) - votesSelected - (props.user?.priorVotes ?? 0)
-		);
+		const allocatedVotes =
+			props.round.community.handle === "lilnouns"
+				? 1
+				: (props.user?.votes ?? 1);
+
+		const priorVotes = props.user?.priorVotes ?? 0;
+
+		return allocatedVotes - votesSelected - priorVotes;
 	}, [votesSelected, props.user?.votes, props.user?.priorVotes]);
 
 	const userProposals = props.round.proposals.filter(

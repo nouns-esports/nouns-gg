@@ -34,6 +34,7 @@ export const castVotes = onlyUser
 					where: eq(proposals.user, ctx.user.id),
 				},
 				actions: true,
+				community: true,
 			},
 		});
 
@@ -102,7 +103,10 @@ export const castVotes = onlyUser
 					throw new Error("You can only vote on proposals in the same round");
 				}
 
-				if (votesUsed + vote.count > ctx.user.votes) {
+				const allocatedVotes =
+					round.community.handle === "lilnouns" ? 1 : ctx.user.votes;
+
+				if (votesUsed + vote.count > allocatedVotes) {
 					throw new Error("You have used all your votes");
 				}
 
