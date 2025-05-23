@@ -40,7 +40,7 @@ export default function PostCard(props: {
 		<div className="relative flex gap-3 bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl pl-2 pr-4 py-4 w-full">
 			{!props.expanded ? (
 				<Link
-					href={`https://warpcast.com/${props.post.creator.username}/${props.post.hash.substring(0, 10)}`}
+					href={`https://farcaster.xyz/${props.post.creator.username}/${props.post.hash.substring(0, 10)}`}
 					newTab
 					className="absolute top-0 left-0 w-full h-full"
 				/>
@@ -134,7 +134,7 @@ export default function PostCard(props: {
 						>
 							{!props.expanded ? (
 								<Link
-									href={`https://warpcast.com/${props.post.creator.username}/${props.post.hash.substring(0, 10)}`}
+									href={`https://farcaster.xyz/${props.post.creator.username}/${props.post.hash.substring(0, 10)}`}
 									className="relative z-10"
 								>
 									<MessageSquare
@@ -161,7 +161,7 @@ export default function PostCard(props: {
 							</p>
 							{!props.expanded ? (
 								<Link
-									href={`https://warpcast.com/${props.post.creator.username}/${props.post.hash.substring(0, 10)}`}
+									href={`https://farcaster.xyz/${props.post.creator.username}/${props.post.hash.substring(0, 10)}`}
 									newTab
 									className="relative z-10 hover:text-grey-200/70 transition-colors"
 								>
@@ -334,7 +334,7 @@ function QuoteCast(props: {
 	return (
 		<div className="relative z-10 rounded-xl flex flex-col border bg-black/20 hover:bg-grey-800 transition-colors border-grey-600 p-2 mb-1">
 			<Link
-				href={`https://warpcast.com/${props.quoteCast.creator?.username}/${props.quoteCast.hash.substring(0, 10)}`}
+				href={`https://farcaster.xyz/${props.quoteCast.creator?.username}/${props.quoteCast.hash.substring(0, 10)}`}
 				className="w-full h-full absolute top-0 left-0"
 			/>
 			{props.quoteCast.creator ? (
