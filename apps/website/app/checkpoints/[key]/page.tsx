@@ -63,6 +63,7 @@ export default async function Checkpoint(props: {
 						user: user.id,
 						xp: checkpoint.xp,
 						community: 7,
+						points: 0,
 					})
 					.onConflictDoUpdate({
 						target: [leaderboards.user, leaderboards.community],

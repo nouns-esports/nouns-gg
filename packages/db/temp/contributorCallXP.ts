@@ -51,6 +51,7 @@ await db.primary.transaction(async (tx) => {
 				user,
 				xp: amount,
 				community: 7,
+				points: 0,
 			})
 			.onConflictDoUpdate({
 				target: [leaderboards.user, leaderboards.community],

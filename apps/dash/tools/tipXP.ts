@@ -41,8 +41,8 @@ agent.addTool({
 			}),
 			context.mentions?.[0]
 				? db.primary.query.nexus.findFirst({
-						where: eq(nexus.discord, context.mentions[0]),
-					})
+					where: eq(nexus.discord, context.mentions[0]),
+				})
 				: undefined,
 		]);
 
@@ -84,6 +84,7 @@ agent.addTool({
 					user: user.id,
 					xp: parameters.amount,
 					community: 7,
+					points: 0,
 				})
 				.onConflictDoUpdate({
 					target: [leaderboards.user, leaderboards.community],
