@@ -147,7 +147,6 @@ export const castVotes = onlyUser
 						user: ctx.user.id,
 						xp: voterAmount,
 						community: round.community,
-						points: 0,
 					})
 					.onConflictDoUpdate({
 						target: [leaderboards.user, leaderboards.community],
@@ -180,7 +179,6 @@ export const castVotes = onlyUser
 						user: proposal.user,
 						xp: proposerAmount,
 						community: round.community,
-						points: 0,
 					})
 					.onConflictDoUpdate({
 						target: [leaderboards.user, leaderboards.community],

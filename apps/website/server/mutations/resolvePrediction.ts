@@ -135,7 +135,6 @@ export const resolvePrediction = onlyUser
 						user,
 						xp: prediction.xp,
 						community: prediction.community,
-						points: 0,
 					})
 					.onConflictDoUpdate({
 						target: [leaderboards.user, leaderboards.community],

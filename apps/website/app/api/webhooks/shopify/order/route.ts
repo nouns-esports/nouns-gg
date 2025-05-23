@@ -69,7 +69,6 @@ export async function POST(request: Request) {
 				user: privyUser.id,
 				xp: xpAmount,
 				community: 7,
-				points: 0,
 			})
 			.onConflictDoUpdate({
 				target: [leaderboards.user, leaderboards.community],

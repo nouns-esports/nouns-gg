@@ -115,7 +115,6 @@ export const enterRaffle = onlyUser
 					user: ctx.user.id,
 					xp: earnedXP,
 					community: raffle.community,
-					points: 0,
 				})
 				.onConflictDoUpdate({
 					target: [leaderboards.user, leaderboards.community],

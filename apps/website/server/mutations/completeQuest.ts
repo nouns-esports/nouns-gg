@@ -106,7 +106,6 @@ export const completeQuest = onlyUser
 					user: ctx.user.id,
 					xp: quest.xp,
 					community: quest.community,
-					points: 0,
 				})
 				.onConflictDoUpdate({
 					target: [leaderboards.user, leaderboards.community],

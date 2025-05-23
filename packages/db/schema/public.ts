@@ -60,7 +60,6 @@ export const notifications = pgTable("notifications", (t) => ({
 }));
 
 export const communities = pgTable("communities", (t) => ({
-	_id: t.uuid().defaultRandom(),
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	image: t.text().notNull(),
@@ -70,22 +69,6 @@ export const communities = pgTable("communities", (t) => ({
 	gold: t.integer().notNull().default(0),
 	details: t.jsonb().$type<TipTap>(),
 	featured: t.boolean().notNull().default(false),
-	tier: t.smallint().notNull().default(0),
-	levels: t.jsonb().$type<{
-		max: number;
-		midpoint: number;
-		steepness: number;
-	}>(),
-	points: t.jsonb().$type<{
-		name: string;
-		image: string;
-	}>(),
-	agent: t.jsonb().$type<{
-		name: string;
-		image: string;
-		prompt: string;
-	}>(),
-	createdAt: t.timestamp().notNull().defaultNow(),
 }));
 
 export const communityActions = pgTable("community_actions", (t) => ({
@@ -100,7 +83,6 @@ export const communityActions = pgTable("community_actions", (t) => ({
 }));
 
 export const communityAdmins = pgTable("community_admins", (t) => ({
-	_id: t.uuid().defaultRandom(),
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	community: t.bigint({ mode: "number" }).notNull(),
 	user: t.text().notNull(),
@@ -343,9 +325,8 @@ export const proposals = pgTable("proposals", (t) => ({
 }));
 
 export const nexus = pgTable(
-	"users",
+	"nexus",
 	(t) => ({
-		_id: t.uuid().defaultRandom(),
 		id: t.text().primaryKey(),
 		admin: t.boolean().notNull().default(false),
 		xp: t.integer().notNull().default(0),
@@ -361,9 +342,7 @@ export const nexus = pgTable(
 	(table) => [check("gold_balance", sql`${table.gold} >= 0`)],
 );
 
-export const gold = pgTable("points", (t) => ({
-	_id: t.uuid().defaultRandom(),
-	community: t.uuid(), //.notNull(),
+export const gold = pgTable("gold", (t) => ({
 	id: t.serial().primaryKey(),
 	from: t.text(),
 	fromCommunity: t.bigint({ mode: "number" }),
@@ -415,7 +394,6 @@ export const questCompletions = pgTable("quest_completions", (t) => ({
 }));
 
 export const xp = pgTable("xp", (t) => ({
-	_id: t.uuid().defaultRandom(),
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	amount: t.integer().notNull(),
@@ -436,18 +414,15 @@ export const xp = pgTable("xp", (t) => ({
 }));
 
 export const leaderboards = pgTable(
-	"passes",
+	"leaderboards",
 	(t) => ({
-		_id: t.uuid().defaultRandom(),
 		community: t.bigint({ mode: "number" }).notNull(),
 		user: t.text().notNull(),
-		heir: t.uuid(),
 		xp: t.bigint({ mode: "number" }).notNull(),
-		points: t.bigint({ mode: "number" }).notNull(),
 	}),
 	(t) => [
 		primaryKey({ columns: [t.user, t.community] }),
-		index("passes_xp_idx").on(t.xp),
+		index("leaderboards_xp_idx").on(t.xp),
 	],
 );
 

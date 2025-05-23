@@ -43,7 +43,7 @@ export const getCommunity = cache(
 				`.as("hasEvents"),
 				hasLeaderboard: sql<boolean>`
 					(
-						SELECT COUNT(*) FROM passes WHERE passes.community = communities.id
+						SELECT COUNT(*) FROM leaderboards WHERE leaderboards.community = communities.id
 					) > 0
 				`.as("hasLeaderboard"),
 				hasShop: sql<boolean>`

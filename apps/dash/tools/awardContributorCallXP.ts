@@ -105,7 +105,6 @@ agent.addTool({
 						user: user.id,
 						xp: amount,
 						community: 7,
-						points: 0,
 					})
 					.onConflictDoUpdate({
 						target: [leaderboards.user, leaderboards.community],
