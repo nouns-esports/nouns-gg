@@ -132,7 +132,7 @@ export const castVotes = onlyUser
 					amount: voterAmount,
 					timestamp: now,
 					vote: returnedVote[0].id,
-					community: round.community,
+					community: round.community.id,
 				});
 
 				const [updateNexus] = await tx
@@ -150,7 +150,7 @@ export const castVotes = onlyUser
 					.values({
 						user: ctx.user.id,
 						xp: voterAmount,
-						community: round.community,
+						community: round.community.id,
 					})
 					.onConflictDoUpdate({
 						target: [leaderboards.user, leaderboards.community],
@@ -167,7 +167,7 @@ export const castVotes = onlyUser
 					amount: proposerAmount,
 					timestamp: now,
 					vote: returnedVote[0].id,
-					community: round.community,
+					community: round.community.id,
 				});
 
 				await tx
@@ -182,7 +182,7 @@ export const castVotes = onlyUser
 					.values({
 						user: proposal.user,
 						xp: proposerAmount,
-						community: round.community,
+						community: round.community.id,
 					})
 					.onConflictDoUpdate({
 						target: [leaderboards.user, leaderboards.community],
@@ -202,7 +202,7 @@ export const castVotes = onlyUser
 				properties: {
 					round: round.id,
 					proposal: vote.proposal,
-					community: round.community,
+					community: round.community.id,
 					amount: vote.count,
 				},
 			});
