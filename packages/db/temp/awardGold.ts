@@ -32,7 +32,7 @@ const sortedXpByUser = Object.entries(xpByUser).sort(
 const now = new Date();
 
 // await db.primary.transaction(async (tx) => {
-for (let i = 0; i < eligibleForGold; i++) {
+for (let i = 0; i < (sortedXpByUser.length >= eligibleForGold ? eligibleForGold : sortedXpByUser.length); i++) {
 	const [_, { amount, user }] = sortedXpByUser[i];
 
 	const earning = generateEarning({
