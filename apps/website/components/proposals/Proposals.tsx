@@ -56,16 +56,17 @@ export default function Proposals(props: {
 		return Object.values(selectedVotes).reduce((acc, curr) => acc + curr, 0);
 	}, [selectedVotes]);
 
-	const remainingVotes = useMemo(() => {
-		const allocatedVotes =
-			props.round.community.handle === "lilnouns"
-				? 1
-				: (props.user?.votes ?? 1);
+	const allocatedVotes = useMemo(() => {
+		return props.round.community.handle === "lilnouns"
+			? 1
+			: (props.user?.votes ?? 1);
+	}, [props.round.community.handle, props.user?.votes]);
 
+	const remainingVotes = useMemo(() => {
 		const priorVotes = props.user?.priorVotes ?? 0;
 
 		return allocatedVotes - votesSelected - priorVotes;
-	}, [votesSelected, props.user?.votes, props.user?.priorVotes]);
+	}, [votesSelected, allocatedVotes, props.user?.priorVotes]);
 
 	const userProposals = props.round.proposals.filter(
 		(proposal) => proposal.user?.id === props.user?.id,
@@ -209,7 +210,7 @@ export default function Proposals(props: {
 								return (
 									<>
 										<p className="text-white">
-											{remainingVotes}/{props.user.votes} votes remaining
+											{remainingVotes}/{allocatedVotes} votes remaining
 										</p>
 										<Button
 											disabled={votesSelected < 1}
