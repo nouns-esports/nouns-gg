@@ -56,25 +56,25 @@ export const getEvent = cache(
 			extras: {
 				hasRounds: sql<boolean>`
 					(
-						SELECT COUNT(*) FROM rounds WHERE rounds.event = ${events.id}
+						SELECT COUNT(*) FROM archive.rounds WHERE archive.rounds.event = ${events.id}
 					) > 0
 				`.as("hasRounds"),
 				hasQuests: sql<boolean>`
 					(
-						SELECT COUNT(*) FROM quests WHERE quests.event = ${events.id}
+						SELECT COUNT(*) FROM archive.quests WHERE archive.quests.event = ${events.id}
 					) > 0
 				`.as("hasQuests"),
 				hasPredictions: sql<boolean>`
 					(	
-						SELECT COUNT(*) FROM predictions WHERE predictions.event = ${events.id}
+						SELECT COUNT(*) FROM archive.predictions WHERE archive.predictions.event = ${events.id}
 					) > 0
 				`.as("hasPredictions"),
 				hasShop: sql<boolean>`
 					(
 						SELECT COUNT(*) > 0 FROM (
-							SELECT 1 FROM products WHERE products.event = ${events.id}
+							SELECT 1 FROM archive.products WHERE archive.products.event = ${events.id}
 							UNION ALL
-							SELECT 1 FROM raffles WHERE raffles.event = ${events.id}
+							SELECT 1 FROM archive.raffles WHERE archive.raffles.event = ${events.id}
 						)
 					)
 				`.as("hasShop"),
