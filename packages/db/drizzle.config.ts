@@ -4,7 +4,7 @@ import { env } from "~/env";
 
 export default {
 	dialect: "postgresql",
-	schemaFilter: ["public"],
+	schemaFilter: ["public", "archive"],
 	schema: "./schema/public.ts",
 	dbCredentials: {
 		url: env.PRIMARY_DATABASE_URL,

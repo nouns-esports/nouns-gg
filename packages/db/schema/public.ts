@@ -1,42 +1,23 @@
-import { pgTable, check, index, primaryKey } from "drizzle-orm/pg-core";
+import { pgTable, check, index, primaryKey, pgSchema } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 import type { JSONContent as TipTap } from "@tiptap/core";
 import type { ActionDescription } from "~/apps/website/server/actions/createAction";
 
-export const links = pgTable("links", (t) => ({
+export const archiveSchema = pgSchema("archive");
+
+export const links = archiveSchema.table("links", (t) => ({
 	id: t.text().primaryKey(),
 	url: t.text().notNull(),
 }));
 
-export const visits = pgTable("visits", (t) => ({
+export const visits = archiveSchema.table("visits", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	user: t.text().notNull(),
 	url: t.text().notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
 
-// export const snapshots = pgTable("snapshots", (t) => ({
-// 	id: t.bigserial({ mode: "number" }).primaryKey(),
-// 	user: t.text().notNull(),
-// 	timestamp: t.timestamp({ mode: "date" }).notNull(),
-// 	community: t.bigint({ mode: "number" }).notNull(),
-// 	tag: t.text().notNull(), // Warn before taking snapshots with existing tags
-// }));
-
-// export const topics = pgTable("topics", (t) => ({
-// 	id: t.bigserial({ mode: "number" }).primaryKey(),
-// 	tag: t.text().notNull(),
-// 	name: t.text().notNull(),
-// 	image: t.text().notNull(),
-// }));
-
-// export const interests = pgTable("interests", (t) => ({
-// 	id: t.bigserial({ mode: "number" }).primaryKey(),
-// 	topic: t.bigint({ mode: "number" }).notNull(),
-// 	user: t.text().notNull(),
-// }));
-
-export const snapshots = pgTable("snapshots", (t) => ({
+export const snapshots = archiveSchema.table("snapshots", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	type: t
@@ -48,7 +29,7 @@ export const snapshots = pgTable("snapshots", (t) => ({
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
 
-export const notifications = pgTable("notifications", (t) => ({
+export const notifications = archiveSchema.table("notifications", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
@@ -59,7 +40,7 @@ export const notifications = pgTable("notifications", (t) => ({
 	read: t.boolean().notNull().default(false),
 }));
 
-export const communities = pgTable("communities", (t) => ({
+export const communities = archiveSchema.table("communities", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	image: t.text().notNull(),
@@ -71,7 +52,7 @@ export const communities = pgTable("communities", (t) => ({
 	featured: t.boolean().notNull().default(false),
 }));
 
-export const communityActions = pgTable("community_actions", (t) => ({
+export const communityActions = archiveSchema.table("community_actions", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	community: t.bigint({ mode: "number" }).notNull(),
 	action: t.text().notNull(),
@@ -82,14 +63,14 @@ export const communityActions = pgTable("community_actions", (t) => ({
 		.notNull(),
 }));
 
-export const communityAdmins = pgTable("community_admins", (t) => ({
+export const communityAdmins = archiveSchema.table("community_admins", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	community: t.bigint({ mode: "number" }).notNull(),
 	user: t.text().notNull(),
 	owner: t.boolean().notNull(),
 }));
 
-export const articles = pgTable("articles", (t) => ({
+export const articles = archiveSchema.table("articles", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	title: t.text().notNull(),
@@ -100,7 +81,7 @@ export const articles = pgTable("articles", (t) => ({
 	community: t.bigint({ mode: "number" }).notNull().default(0), // drop default
 }));
 
-export const events = pgTable("events", (t) => ({
+export const events = archiveSchema.table("events", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
@@ -125,7 +106,7 @@ export const events = pgTable("events", (t) => ({
 	attendeeCount: t.integer("attendee_count"),
 }));
 
-export const eventActions = pgTable("event_actions", (t) => ({
+export const eventActions = archiveSchema.table("event_actions", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	event: t.bigint({ mode: "number" }).notNull(),
 	action: t.text().notNull(),
@@ -136,14 +117,14 @@ export const eventActions = pgTable("event_actions", (t) => ({
 		.notNull(),
 }));
 
-export const stations = pgTable("stations", (t) => ({
+export const stations = archiveSchema.table("stations", (t) => ({
 	id: t.serial().primaryKey(),
 	name: t.text().notNull(),
 	event: t.text().notNull(),
 	xp: t.integer().notNull(),
 }));
 
-export const checkpoints = pgTable("checkpoints", (t) => ({
+export const checkpoints = archiveSchema.table("checkpoints", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	key: t.text().notNull(), // random uuid
@@ -153,14 +134,14 @@ export const checkpoints = pgTable("checkpoints", (t) => ({
 	gold: t.numeric({ precision: 12, scale: 2 }),
 }));
 
-export const checkins = pgTable("checkins", (t) => ({
+export const checkins = archiveSchema.table("checkins", (t) => ({
 	id: t.serial().primaryKey(),
 	checkpoint: t.bigint({ mode: "number" }).notNull(),
 	user: t.text(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
 
-export const predictions = pgTable("predictions", (t) => ({
+export const predictions = archiveSchema.table("predictions", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	event: t.bigint({ mode: "number" }),
@@ -178,7 +159,7 @@ export const predictions = pgTable("predictions", (t) => ({
 	pool: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
 }));
 
-export const outcomes = pgTable("outcomes", (t) => ({
+export const outcomes = archiveSchema.table("outcomes", (t) => ({
 	id: t.serial().primaryKey(),
 	prediction: t.bigint({ mode: "number" }).notNull(),
 	name: t.text().notNull(),
@@ -187,7 +168,7 @@ export const outcomes = pgTable("outcomes", (t) => ({
 	pool: t.numeric({ precision: 12, scale: 2 }).notNull().default("0"),
 }));
 
-export const bets = pgTable("bets", (t) => ({
+export const bets = archiveSchema.table("bets", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	outcome: t.integer().notNull(),
@@ -196,47 +177,14 @@ export const bets = pgTable("bets", (t) => ({
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
 
-export const attendees = pgTable("attendees", (t) => ({
+export const attendees = archiveSchema.table("attendees", (t) => ({
 	id: t.serial().primaryKey(),
 	event: t.bigint({ mode: "number" }).notNull(),
 	featured: t.boolean().notNull().default(false),
 	user: t.text().notNull(),
 }));
 
-// export const brackets = pgTable("brackets", (t) => ({
-// 	id: t.bigserial({ mode: "number" }).primaryKey(),
-// 	event: t.bigint({ mode: "number" }).notNull(),
-// 	name: t.text().notNull(), // Melee Singles
-// 	image: t.text().notNull(),
-// 	type: t
-// 		.text({ enum: ["double-elim", "single-elim", "round-robin"] })
-// 		.notNull(),
-// }));
-
-// export const phases = pgTable("phases", (t) => ({
-// 	id: t.bigserial({ mode: "number" }).primaryKey(),
-// 	bracket: t.bigint({ mode: "number" }).notNull(),
-// 	name: t.text().notNull(), // Top 32
-// }));
-
-// export const matches = pgTable("matches", (t) => ({
-// 	id: t.bigserial({ mode: "number" }).primaryKey(),
-// 	name: t.text().notNull(), // AB
-// 	phase: t.bigint({ mode: "number" }).notNull(),
-// 	bracket: t.bigint({ mode: "number" }).notNull(),
-// 	event: t.bigint({ mode: "number" }).notNull(),
-// 	player1: t.text("player1"),
-// 	player2: t.text("player2"),
-// 	player1Score: t.integer("player1_score"),
-// 	player2Score: t.integer("player2_score"),
-// 	stream: t.jsonb().$type<{
-// 		url: string;
-// 		live: boolean;
-// 	}>(),
-// 	next: t.bigint({ mode: "number" }),
-// }));
-
-export const rounds = pgTable("rounds", (t) => ({
+export const rounds = archiveSchema.table("rounds", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
@@ -268,7 +216,7 @@ export const rounds = pgTable("rounds", (t) => ({
 	maxProposals: t.smallint("max_proposals").default(1),
 }));
 
-export const roundActions = pgTable("round_actions", (t) => ({
+export const roundActions = archiveSchema.table("round_actions", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	round: t.bigint({ mode: "number" }).notNull(),
 	type: t
@@ -289,7 +237,7 @@ export const roundActions = pgTable("round_actions", (t) => ({
 // }));
 
 // add user column and update it when they claim the award
-export const awards = pgTable("awards", (t) => ({
+export const awards = archiveSchema.table("awards", (t) => ({
 	id: t.serial().primaryKey(),
 	round: t.bigint({ mode: "number" }).notNull(),
 	place: t.smallint().notNull(),
@@ -299,7 +247,7 @@ export const awards = pgTable("awards", (t) => ({
 }));
 
 // Rethink the way we handle awards and assets
-export const assets = pgTable("assets", (t) => ({
+export const assets = archiveSchema.table("assets", (t) => ({
 	id: t.text().primaryKey(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
@@ -309,7 +257,7 @@ export const assets = pgTable("assets", (t) => ({
 	tokenId: t.text("token_id"),
 }));
 
-export const proposals = pgTable("proposals", (t) => ({
+export const proposals = archiveSchema.table("proposals", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	round: t.bigint({ mode: "number" }).notNull(),
@@ -324,7 +272,7 @@ export const proposals = pgTable("proposals", (t) => ({
 	winner: t.smallint(),
 }));
 
-export const nexus = pgTable(
+export const nexus = archiveSchema.table(
 	"nexus",
 	(t) => ({
 		id: t.text().primaryKey(),
@@ -342,7 +290,7 @@ export const nexus = pgTable(
 	(table) => [check("gold_balance", sql`${table.gold} >= 0`)],
 );
 
-export const gold = pgTable("gold", (t) => ({
+export const gold = archiveSchema.table("gold", (t) => ({
 	id: t.serial().primaryKey(),
 	from: t.text(),
 	fromCommunity: t.bigint({ mode: "number" }),
@@ -358,7 +306,7 @@ export const gold = pgTable("gold", (t) => ({
 	prediction: t.bigint({ mode: "number" }),
 }));
 
-export const quests = pgTable("quests", (t) => ({
+export const quests = archiveSchema.table("quests", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
@@ -375,7 +323,7 @@ export const quests = pgTable("quests", (t) => ({
 	xp: t.integer().notNull(),
 }));
 
-export const questActions = pgTable("quest_actions", (t) => ({
+export const questActions = archiveSchema.table("quest_actions", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	quest: t.bigint({ mode: "number" }).notNull(),
 	action: t.text().notNull(),
@@ -386,14 +334,14 @@ export const questActions = pgTable("quest_actions", (t) => ({
 		.notNull(),
 }));
 
-export const questCompletions = pgTable("quest_completions", (t) => ({
+export const questCompletions = archiveSchema.table("quest_completions", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	quest: t.bigint({ mode: "number" }).notNull(),
 	user: t.text().notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
 
-export const xp = pgTable("xp", (t) => ({
+export const xp = archiveSchema.table("xp", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	amount: t.integer().notNull(),
@@ -413,7 +361,7 @@ export const xp = pgTable("xp", (t) => ({
 	community: t.bigint({ mode: "number" }).notNull(),
 }));
 
-export const leaderboards = pgTable(
+export const leaderboards = archiveSchema.table(
 	"leaderboards",
 	(t) => ({
 		community: t.bigint({ mode: "number" }).notNull(),
@@ -426,7 +374,7 @@ export const leaderboards = pgTable(
 	],
 );
 
-export const rankings = pgTable(
+export const rankings = archiveSchema.table(
 	"rankings",
 	(t) => ({
 		id: t.serial().primaryKey(),
@@ -443,7 +391,7 @@ export const rankings = pgTable(
 	],
 );
 
-export const votes = pgTable("votes", (t) => ({
+export const votes = archiveSchema.table("votes", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	proposal: t.integer().notNull(),
@@ -452,7 +400,7 @@ export const votes = pgTable("votes", (t) => ({
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
 
-export const products = pgTable("products", (t) => ({
+export const products = archiveSchema.table("products", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	shopifyId: t.text("shopify_id").notNull(),
@@ -465,7 +413,7 @@ export const products = pgTable("products", (t) => ({
 	active: t.boolean().notNull().default(true),
 }));
 
-export const productVariants = pgTable("product_variants", (t) => ({
+export const productVariants = archiveSchema.table("product_variants", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	product: t.bigint({ mode: "number" }).notNull(),
 	shopifyId: t.text("shopify_id").notNull(),
@@ -479,7 +427,7 @@ export const productVariants = pgTable("product_variants", (t) => ({
 	inventory: t.integer(),
 }));
 
-export const collections = pgTable("collections", (t) => ({
+export const collections = archiveSchema.table("collections", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
@@ -487,7 +435,7 @@ export const collections = pgTable("collections", (t) => ({
 	featured: t.boolean().notNull().default(false),
 }));
 
-export const carts = pgTable("carts", (t) => ({
+export const carts = archiveSchema.table("carts", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	product: t.bigint({ mode: "number" }).notNull(),
@@ -495,47 +443,14 @@ export const carts = pgTable("carts", (t) => ({
 	quantity: t.integer().notNull(),
 }));
 
-// export const orders = pgTable("orders", {
-// 	id: serial("id").primaryKey(),
-// 	draft: boolean("draft").notNull().default(true),
-// 	shopifyId: text("shopify_id").notNull(),
-// 	customer: text("customer").notNull(),
-// 	createdAt: timestamp("created_at", { mode: "date" }).notNull(),
-// 	items: jsonb("items")
-// 		.array()
-// 		.$type<
-// 			Array<{
-// 				shopifyId: string;
-// 				quantity: number;
-// 				price: number;
-// 			}>
-// 		>()
-// 		.notNull()
-// 		.default([]),
-// });
 
-// export const ordersRelations = relations(orders, ({ one }) => ({
-// 	customer: one(nexus, {
-// 		fields: [orders.customer],
-// 		references: [nexus.id],
-// 	}),
-// 	xp: one(xp, {
-// 		fields: [orders.id],
-// 		references: [xp.order],
-// 	}),
-// 	gold: one(gold, {
-// 		fields: [orders.id],
-// 		references: [gold.order],
-// 	}),
-// }));
-
-export const linkedWallets = pgTable("linked_wallets", (t) => ({
+export const linkedWallets = archiveSchema.table("linked_wallets", (t) => ({
 	address: t.text().primaryKey(),
 	user: t.text().notNull(),
 	client: t.text({ enum: ["rainbow", "metamask", "coinbase_wallet"] }),
 }));
 
-export const raffles = pgTable("raffles", (t) => ({
+export const raffles = archiveSchema.table("raffles", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
@@ -556,7 +471,7 @@ export const raffles = pgTable("raffles", (t) => ({
 		.$type<Array<{ [key: string]: any }>>(),
 }));
 
-export const raffleEntries = pgTable("raffle_entries", (t) => ({
+export const raffleEntries = archiveSchema.table("raffle_entries", (t) => ({
 	id: t.serial().primaryKey(),
 	raffle: t.bigint({ mode: "number" }).notNull(),
 	user: t.text().notNull(),

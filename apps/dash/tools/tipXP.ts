@@ -41,8 +41,8 @@ agent.addTool({
 			}),
 			context.mentions?.[0]
 				? db.primary.query.nexus.findFirst({
-						where: eq(nexus.discord, context.mentions[0]),
-					})
+					where: eq(nexus.discord, context.mentions[0]),
+				})
 				: undefined,
 		]);
 
