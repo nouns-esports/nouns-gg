@@ -58,7 +58,7 @@ export default function Proposals(props: {
 
 	const allocatedVotes = useMemo(() => {
 		return props.round.community.handle === "lilnouns"
-			? 1
+			? 5
 			: (props.user?.votes ?? 1);
 	}, [props.round.community.handle, props.user?.votes]);
 

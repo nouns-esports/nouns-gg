@@ -104,7 +104,7 @@ export const castVotes = onlyUser
 				}
 
 				const allocatedVotes =
-					round.community.handle === "lilnouns" ? 1 : ctx.user.votes;
+					round.community.handle === "lilnouns" ? 5 : ctx.user.votes;
 
 				if (votesUsed + vote.count > allocatedVotes) {
 					throw new Error("You have used all your votes");
