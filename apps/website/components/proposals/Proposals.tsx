@@ -424,7 +424,7 @@ export default function Proposals(props: {
 													roundState={state}
 													userCanVote={
 														!!props.user?.nexus &&
-														props.user.votes > props.user.priorVotes
+														allocatedVotes > props.user.priorVotes
 													}
 												/>
 											) : null}
