@@ -41,12 +41,12 @@ export async function getAuthenticatedUser() {
 
 		try {
 			if (!userNexus) {
-				const fullPrivyUser = await privyClient.getUser(privyUser.id);
+				const fullPrivyUser = await privyClient.getUserById(privyUser.id);
 
 				const image = await pinataClient.upload.url(
 					fullPrivyUser.farcaster?.pfp ??
-						fullPrivyUser.twitter?.profilePictureUrl ??
-						`https://api.cloudnouns.com/v1/pfp?text=${privyUser.id}&background=1`,
+					fullPrivyUser.twitter?.profilePictureUrl ??
+					`https://api.cloudnouns.com/v1/pfp?text=${privyUser.id}&background=1`,
 				);
 
 				await db.primary.insert(nexus).values({

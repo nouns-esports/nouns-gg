@@ -39,7 +39,7 @@ export const joinServer = createAction({
 			`https://discord.com/api/guilds/${inputs.server.id}/members/${user.discord.subject}`,
 			{
 				headers: {
-					Authorization: `Bot ${env.DISCORD_TOKEN}`,
+					Authorization: `Bot ${env.DASH_DISCORD_TOKEN}`,
 					"Content-Type": "application/json",
 				},
 			},
