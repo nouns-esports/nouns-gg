@@ -19,6 +19,8 @@ import RankingSystemExplainer from "@/components/modals/RankingSystemExplainer";
 import TipTap from "@/components/TipTap";
 import { getProducts } from "@/server/queries/shop";
 import ProductCard from "@/components/ProductCard";
+import { getRaffles } from "@/server/queries/raffles";
+import RaffleCard from "@/components/RaffleCard";
 
 export default async function Community(props: {
 	params: Promise<{ community: string }>;
@@ -64,6 +66,7 @@ export default async function Community(props: {
 		leaderboard,
 		userPosition,
 		products,
+		raffles,
 	] = await Promise.all([
 		tab === "rounds" ? getRounds({ community: community.id }) : [],
 		tab === "quests"
@@ -78,6 +81,7 @@ export default async function Community(props: {
 			? getRank({ user: user.id, community: community.id })
 			: undefined,
 		tab === "shop" ? getProducts({ community: community.id }) : [],
+		tab === "shop" ? getRaffles({ community: community.id }) : [],
 	]);
 
 	return (
@@ -232,13 +236,35 @@ export default async function Community(props: {
 									</div>
 								),
 								shop: (
-									<div className="grid grid-cols-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-4">
-										{products.map((product) => (
-											<ProductCard
-												key={`product-${product.id}`}
-												product={product}
-											/>
-										))}
+									<div className="flex flex-col gap-6">
+										{raffles.length > 0 ? (
+											<div className="flex flex-col gap-4">
+												<h2 className="text-white font-luckiest-guy text-2xl">
+													Raffles
+												</h2>
+												<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+													{raffles.map((raffle) => {
+														return (
+															<RaffleCard key={raffle.id} raffle={raffle} />
+														);
+													})}
+												</div>
+											</div>
+										) : null}
+										{products.length > 0 ? (
+											<div className="flex flex-col gap-4">
+												<h2 className="text-white font-luckiest-guy text-2xl">
+													Products
+												</h2>
+												<div className="grid grid-cols-4 max-2xl:grid-cols-3 max-lg:grid-cols-2 max-md:flex max-md:flex-col gap-4">
+													{products.map((product) => {
+														return (
+															<ProductCard key={product.id} product={product} />
+														);
+													})}
+												</div>
+											</div>
+										) : null}
 									</div>
 								),
 								default: null,
