@@ -48,8 +48,12 @@ export const getCommunity = cache(
 				`.as("hasLeaderboard"),
 				hasShop: sql<boolean>`
 					(
-						SELECT COUNT(*) FROM archive.products WHERE products.community = communities.id
-					) > 0
+						SELECT COUNT(*) > 0 FROM (
+							SELECT 1 FROM archive.products WHERE products.community = communities.id
+							UNION ALL
+							SELECT 1 FROM archive.raffles WHERE raffles.community = communities.id
+						)
+					)
 				`.as("hasShop"),
 			},
 		});
