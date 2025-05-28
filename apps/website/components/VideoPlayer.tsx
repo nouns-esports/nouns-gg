@@ -16,14 +16,15 @@ import type parseCastEmbeds from "@/utils/parseCastEmbeds";
 import Spinner from "./Spinner";
 
 export default function VideoPlayer(props: {
-	video: NonNullable<ReturnType<typeof parseCastEmbeds>["video"]>;
+	url: NonNullable<ReturnType<typeof parseCastEmbeds>["video"]>["url"];
 }) {
+	console.log(props.url);
 	return (
 		<Player.Root
 			src={[
 				{
 					type: "hls",
-					src: props.video as `${string}m3u8`,
+					src: props.url as `${string}m3u8`,
 					mime: null,
 					width: null,
 					height: null,
