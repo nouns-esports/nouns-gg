@@ -123,7 +123,6 @@ export default function EnterRaffleModal(props: {
 									total: result.data.newXP,
 									earned: result.data.earnedXP,
 								});
-								toast.custom(result.data.notification);
 							}
 
 							confetti();

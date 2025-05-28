@@ -50,7 +50,6 @@ export default function CheckQuest(props: {
 
 					if (result?.data) {
 						toast.xp({ total: result.data.newXP, earned: props.xp });
-						toast.custom(result.data.notification);
 					}
 
 					confetti();

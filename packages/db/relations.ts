@@ -2,7 +2,6 @@ import { relations } from "drizzle-orm";
 import {
 	snapshots,
 	nexus,
-	notifications,
 	communities,
 	rounds,
 	events,
@@ -54,13 +53,6 @@ import {
 export const snapshotsRelations = relations(snapshots, ({ one }) => ({
 	user: one(nexus, {
 		fields: [snapshots.user],
-		references: [nexus.id],
-	}),
-}));
-
-export const notificationsRelations = relations(notifications, ({ one }) => ({
-	user: one(nexus, {
-		fields: [notifications.user],
 		references: [nexus.id],
 	}),
 }));
@@ -219,8 +211,6 @@ export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	votes: many(votes),
 	proposals: many(proposals),
 	xpRecords: many(xp),
-	notifications: many(notifications),
-	// orders: many(orders),
 	carts: many(carts),
 	communities: many(communityAdmins),
 	rounds: many(rounds),

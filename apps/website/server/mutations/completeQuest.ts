@@ -5,7 +5,6 @@ import { onlyUser } from ".";
 import {
 	leaderboards,
 	nexus,
-	notifications,
 	questCompletions,
 	quests,
 	xp,
@@ -81,15 +80,6 @@ export const completeQuest = onlyUser
 		}
 
 		let newXP = 0;
-		const notification = {
-			user: ctx.user.id,
-			title: "You completed a quest!",
-			description: quest.name,
-			image: quest.image,
-			read: true,
-			url: `/quests/${quest.handle}`,
-			timestamp: now,
-		};
 
 		await db.primary.transaction(async (tx) => {
 			await tx.insert(xp).values({
@@ -120,7 +110,6 @@ export const completeQuest = onlyUser
 				timestamp: now,
 			});
 
-			await tx.insert(notifications).values(notification);
 
 			const [updateXP] = await tx
 				.update(nexus)
@@ -151,5 +140,5 @@ export const completeQuest = onlyUser
 			revalidatePath(`/users/${ctx.user.farcaster.username}`);
 		} else revalidatePath(`/users/${ctx.user.id}`);
 
-		return { newXP, notification };
+		return { newXP };
 	});

@@ -15,8 +15,6 @@ import {
 } from "lucide-react";
 import Banner from "./Banner";
 import Menu from "./Menu";
-import { getNotifications } from "@/server/queries/notifications";
-import Notifications from "./Notifications";
 import GoldModal from "./modals/GoldModal";
 import { ToggleModal } from "./Modal";
 import CartModal from "./modals/CartModal";
@@ -25,10 +23,7 @@ import { getCommunities } from "@/server/queries/communities";
 
 export default async function Header() {
 	const user = await getAuthenticatedUser();
-	const [communities, notifications] = await Promise.all([
-		getCommunities({ featured: true }),
-		user ? getNotifications({ user: user.id }) : [],
-	]);
+	const communities = await getCommunities({ featured: true });
 
 	return (
 		<>
@@ -162,7 +157,6 @@ export default async function Header() {
 						</div>
 						<div className="pointer-events-auto flex gap-6 max-[425px]:gap-4 items-center relative z-[60]">
 							<div className="flex items-center gap-4 max-[425px]:gap-2">
-								<Notifications notifications={notifications} />
 								<ToggleModal id="cart">
 									<ShoppingCart className="w-[22px] h-[22px] text-white hover:text-grey-200 transition-colors" />
 								</ToggleModal>

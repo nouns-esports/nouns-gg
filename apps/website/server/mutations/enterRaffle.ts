@@ -61,15 +61,6 @@ export const enterRaffle = onlyUser
 		}
 
 		let newXP = 0;
-		const notification = {
-			user: ctx.user.id,
-			title: "You entered a raffle!",
-			description: raffle.name,
-			image: raffle.images[0],
-			read: true,
-			url: `/raffles/${raffle.handle}`,
-			timestamp: now,
-		};
 
 		const earnedXP = 10 * parsedInput.amount;
 
@@ -159,5 +150,5 @@ export const enterRaffle = onlyUser
 			revalidatePath(`/users/${ctx.user.farcaster.username}`);
 		} else revalidatePath(`/users/${ctx.user.id}`);
 
-		return { earnedXP, newXP, notification };
+		return { earnedXP, newXP };
 	});

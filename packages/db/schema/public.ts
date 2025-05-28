@@ -29,17 +29,6 @@ export const snapshots = archiveSchema.table("snapshots", (t) => ({
 	timestamp: t.timestamp({ mode: "date" }).notNull(),
 }));
 
-export const notifications = archiveSchema.table("notifications", (t) => ({
-	id: t.serial().primaryKey(),
-	user: t.text().notNull(),
-	timestamp: t.timestamp({ mode: "date" }).notNull(),
-	image: t.text().notNull(),
-	title: t.text().notNull(),
-	description: t.text().notNull(),
-	url: t.text(),
-	read: t.boolean().notNull().default(false),
-}));
-
 export const communities = archiveSchema.table("communities", (t) => ({
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
