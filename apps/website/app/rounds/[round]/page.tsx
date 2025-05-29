@@ -147,10 +147,7 @@ export default async function Round(props: {
 			type: "proposal",
 			timestamp: new Date(proposal.createdAt),
 			user: {
-				id:
-					proposal.user.profile?.username ??
-					proposal.user.discord ??
-					proposal.user.id,
+				id: proposal.user.id,
 				name: proposal.user.name,
 				image: proposal.user.image,
 			},
@@ -163,17 +160,14 @@ export default async function Round(props: {
 			count: vote.count,
 			timestamp: new Date(vote.timestamp),
 			user: {
-				id: vote.user.profile?.username ?? vote.user.id,
+				id: vote.user.id,
 				name: vote.user.name,
 				image: vote.user.image,
 			},
 			for: {
 				title: vote.proposal.title,
 				user: {
-					id:
-						vote.proposal.user.profile?.username ??
-						vote.proposal.user.discord ??
-						vote.proposal.user.id,
+					id: vote.proposal.user.id,
 					name: vote.proposal.user.name,
 					image: vote.proposal.user.image,
 				},

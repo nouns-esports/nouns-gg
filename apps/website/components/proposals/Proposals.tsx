@@ -370,7 +370,7 @@ export default function Proposals(props: {
 									<div className="flex justify-between items-center flex-shrink-0">
 										{proposal.user ? (
 											<Link
-												href={`/users/${proposal.user.profile ?? proposal.user.id}`}
+												href={`/users/${proposal.user.id}`}
 												className="flex gap-2 items-center text-white"
 											>
 												<img

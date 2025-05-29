@@ -40,7 +40,7 @@ export default function EventAttendeesModal(props: {
 						</div>
 						{attendee.user.id !== "_" ? (
 							<Link
-								href={`/users/${attendee.user.profile?.username ?? attendee.user.id}`}
+								href={`/users/${attendee.user.id}`}
 								className="text-red group hover:text-red/70 transition-colors flex items-center gap-1"
 							>
 								View

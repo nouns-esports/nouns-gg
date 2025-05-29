@@ -1,8 +1,6 @@
 import { z } from "zod";
 import { createAction } from "../createAction";
-import { db } from "~/packages/db";
-import { casts, reactions } from "~/packages/db/schema/farcaster";
-import { and, eq } from "drizzle-orm";
+import { neynarClient } from "@/server/clients/neynar";
 
 export const likePost = createAction({
 	image: "",
@@ -11,9 +9,8 @@ export const likePost = createAction({
 	generateDescription: async (inputs) => {
 		"use server";
 
-		const post = await db.primary.query.casts.findFirst({
-			where: eq(casts.hash, inputs.post.hash),
-		});
+		const response = await neynarClient.fetchBulkCasts([inputs.post.hash]);
+		const post = response.result.casts[0];
 
 		if (!post) throw new Error("Post not found");
 
@@ -25,21 +22,12 @@ export const likePost = createAction({
 
 		if (!user.farcaster) return false;
 
-		const post = await db.primary.query.casts.findFirst({
-			where: eq(casts.hash, inputs.post.hash),
-			with: {
-				reactions: {
-					where: and(
-						eq(reactions.fid, user.farcaster.fid),
-						eq(reactions.reactionType, 1),
-					),
-				},
-			},
-		});
+		const response = await neynarClient.fetchBulkCasts([inputs.post.hash], { viewerFid: user.farcaster.fid });
+		const post = response.result.casts[0];
 
-		if (!post) throw new Error("Post not found");
+		if (!post) return false;
 
-		return post.reactions.length > 0;
+		return !!post.viewer_context?.liked;
 	},
 	filters: {
 		post: {

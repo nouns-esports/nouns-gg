@@ -3,7 +3,6 @@ import { env } from "~/env";
 import { Table, is } from "drizzle-orm";
 
 import * as _indexerSchema from "./schema/indexer";
-import * as farcasterSchema from "./schema/farcaster";
 import * as publicSchema from "./schema/public";
 
 import * as relations from "./relations";
@@ -25,7 +24,6 @@ const indexerSchema = setDatabaseSchema(_indexerSchema, env.INDEXER_SCHEMA);
 
 const schema = {
 	...indexerSchema,
-	...farcasterSchema,
 	...publicSchema,
 	...relations,
 };

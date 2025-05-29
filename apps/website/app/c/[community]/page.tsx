@@ -302,7 +302,7 @@ function LeaderboardPosition(props: {
 
 	return (
 		<Link
-			href={`/users/${props.ranking.user.profile?.username ?? props.ranking.user.id}`}
+			href={`/users/${props.ranking.user.id}`}
 			key={props.ranking.user.id}
 			className="flex justify-between items-center bg-grey-800 hover:bg-grey-600 transition-colors p-4 pr-6 rounded-xl"
 		>
@@ -313,9 +313,7 @@ function LeaderboardPosition(props: {
 				<div className="flex gap-4 max-sm:gap-2">
 					<div className="flex gap-3 max-sm:gap-2 items-center">
 						<img
-							alt={
-								props.ranking.user.profile?.username ?? props.ranking.user.id
-							}
+							alt={props.ranking.user.id}
 							src={props.ranking.user?.image ?? ""}
 							className="w-8 h-8 rounded-full object-cover bg-white"
 						/>

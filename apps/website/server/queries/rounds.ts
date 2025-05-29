@@ -32,11 +32,7 @@ export const getRound = cache(
 				proposals: {
 					where: eq(proposals.hidden, false),
 					with: {
-						user: {
-							with: {
-								profile: true,
-							},
-						},
+						user: true,
 					},
 					extras: {
 						totalVotes: sql<number>`(
@@ -48,18 +44,10 @@ export const getRound = cache(
 				},
 				votes: {
 					with: {
-						user: {
-							with: {
-								profile: true,
-							},
-						},
+						user: true,
 						proposal: {
 							with: {
-								user: {
-									with: {
-										profile: true,
-									},
-								},
+								user: true,
 							},
 						},
 					},

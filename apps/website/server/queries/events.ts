@@ -44,11 +44,7 @@ export const getEvent = cache(
 			with: {
 				attendees: {
 					with: {
-						user: {
-							with: {
-								profile: true,
-							},
-						},
+						user: true,
 					},
 				},
 				community: true,

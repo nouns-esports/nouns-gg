@@ -1,8 +1,6 @@
 import { z } from "zod";
 import { createAction } from "../createAction";
-import { db } from "~/packages/db";
-import { and, eq } from "drizzle-orm";
-import { follows, profiles } from "~/packages/db/schema/farcaster";
+import { neynarClient } from "@/server/clients/neynar";
 
 export const followAccount = createAction({
 	image: "",
@@ -11,9 +9,8 @@ export const followAccount = createAction({
 	generateDescription: async (inputs) => {
 		"use server";
 
-		const account = await db.primary.query.profiles.findFirst({
-			where: eq(profiles.fid, inputs.account.fid),
-		});
+		const response = await neynarClient.fetchBulkUsers([inputs.account.fid]);
+		const account = response.users[0];
 
 		if (!account) throw new Error("Account not found");
 		if (!account.username) throw new Error("Account has no username");
@@ -22,7 +19,7 @@ export const followAccount = createAction({
 			{ text: "Follow" },
 			{
 				text: `@${account.username}`,
-				href: `/users/${account.username}`,
+				href: `https://farcaster.xyz/${account.username}`,
 			},
 		];
 	},
@@ -31,14 +28,12 @@ export const followAccount = createAction({
 
 		if (!user.farcaster) return false;
 
-		const hasFollowed = await db.primary.query.follows.findFirst({
-			where: and(
-				eq(follows.fid, user.farcaster.fid),
-				eq(follows.targetFid, inputs.account.fid),
-			),
-		});
+		const response = await neynarClient.fetchBulkUsers([inputs.account.fid], { viewerFid: user.farcaster.fid });
+		const account = response.users[0];
 
-		return !!hasFollowed;
+		if (!account) return false;
+
+		return !!account.viewer_context?.following;
 	},
 	filters: {
 		account: {

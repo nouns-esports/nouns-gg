@@ -8,11 +8,7 @@ export async function getLeaderboard(input: { community: number }) {
 		orderBy: [desc(leaderboards.xp)],
 		limit: 100,
 		with: {
-			user: {
-				with: {
-					profile: true,
-				},
-			},
+			user: true,
 		},
 	});
 }
@@ -25,11 +21,7 @@ export async function getRank(input: { user: string; community: number }) {
 		),
 		orderBy: [desc(leaderboards.xp)],
 		with: {
-			user: {
-				with: {
-					profile: true,
-				},
-			},
+			user: true,
 		},
 		extras: {
 			rank: sql<number>`

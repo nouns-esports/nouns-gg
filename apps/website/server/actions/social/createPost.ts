@@ -3,8 +3,8 @@ import { createAction } from "../createAction";
 import { db } from "~/packages/db";
 import { and, arrayContains, eq, sql } from "drizzle-orm";
 import { communities } from "~/packages/db/schema/public";
-import { casts, profiles } from "~/packages/db/schema/farcaster";
 import { createFilter } from "../createFilter";
+import { neynarClient } from "@/server/clients/neynar";
 
 export const createPost = createAction({
 	image: "",
@@ -34,29 +34,11 @@ export const createPost = createAction({
 			parts.push({ text: "Create a post" });
 		}
 
-		if (inputs.match || inputs.mention || inputs.embed) {
+		if (inputs.match || inputs.embed) {
 			parts.push({ text: "that" });
 		}
 
 		let count = 0;
-
-		if (inputs.mention) {
-			parts.push({ text: "mentions" });
-
-			const mention = await db.primary.query.profiles.findFirst({
-				where: eq(profiles.fid, inputs.mention.fid),
-			});
-
-			if (!mention) throw new Error("Mention profile not found");
-			if (!mention.username) throw new Error("Mention profile has no username");
-
-			parts.push({
-				text: mention.username,
-				href: `/user/${mention.username}`,
-				image: mention.pfpUrl ?? undefined,
-			});
-			count++;
-		}
 
 		if (inputs.match) {
 			parts.push({ text: "includes" });
@@ -85,31 +67,35 @@ export const createPost = createAction({
 
 		const community = inputs.community
 			? await db.primary.query.communities.findFirst({
-					where: eq(communities.id, inputs.community.id),
-				})
+				where: eq(communities.id, inputs.community.id),
+			})
 			: undefined;
 
-		const post = await db.primary.query.casts.findFirst({
-			where: and(
-				eq(casts.fid, user.farcaster.fid),
-				community?.parentUrl
-					? eq(casts.rootParentUrl, community.parentUrl)
-					: undefined,
-				inputs.match ? sql`${casts.text} ~ '${inputs.match.value}'` : undefined,
-				inputs.mention
-					? arrayContains(casts.mentions, [inputs.mention.fid])
-					: undefined,
-				inputs.embed
-					? sql`EXISTS (
-					SELECT 1
-					FROM UNNEST(${casts.embeddedUrls}) AS url
-					WHERE url ~ ${inputs.embed.value}::text
-				  )`
-					: undefined,
-			),
-		});
+		const response = await neynarClient.fetchCastsForUser(user.farcaster.fid, { limit: 5 });
 
-		return !!post;
+		for (const post of response.casts) {
+			for (const post of response.casts) {
+				const matchesCommunity = !community?.parentUrl || post.parent_url === community.parentUrl;
+				const matchesText = !inputs.match || (post.text && post.text.match(inputs.match.value));
+				const matchesEmbed =
+					!inputs.embed ||
+					(Array.isArray(post.embeds) &&
+						post.embeds.some(
+							(e) =>
+								typeof e === "object" &&
+								"url" in e &&
+								typeof e.url === "string" &&
+								inputs.embed &&
+								e.url.match(inputs.embed.value)
+						));
+
+				if (matchesCommunity && matchesText && matchesEmbed) {
+					return true;
+				}
+			}
+		}
+
+		return false;
 	},
 	filters: {
 		community: createFilter({
@@ -136,16 +122,6 @@ export const createPost = createAction({
 				},
 			},
 			name: "Match",
-		}),
-		mention: createFilter({
-			options: {
-				fid: {
-					name: "Farcaster ID",
-					description: "The user's Farcaster ID",
-					schema: z.number(),
-				},
-			},
-			name: "Mention",
 		}),
 		embed: createFilter({
 			options: {

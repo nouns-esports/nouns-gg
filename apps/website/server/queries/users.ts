@@ -8,7 +8,6 @@ import { privyClient } from "../clients/privy";
 import { pinataClient } from "../clients/pinata";
 import { level } from "@/utils/level";
 import { toast } from "@/components/Toasts";
-import { profiles } from "~/packages/db/schema/farcaster";
 
 export type AuthenticatedUser = NonNullable<
 	Awaited<ReturnType<typeof getAuthenticatedUser>>
@@ -35,7 +34,6 @@ export async function getAuthenticatedUser() {
 						variant: true,
 					},
 				},
-				profile: true,
 			},
 		});
 
@@ -78,7 +76,6 @@ export async function getAuthenticatedUser() {
 								variant: true,
 							},
 						},
-						profile: true,
 					},
 				});
 
@@ -123,27 +120,11 @@ export async function getAuthenticatedUser() {
 
 export const getUser = cache(
 	async (input: { user: string }) => {
-		if (input.user.startsWith("did:privy:")) {
-			return db.pgpool.query.nexus.findFirst({
-				where: eq(nexus.id, input.user),
-				with: {
-					profile: true,
-				},
-			});
-		}
 
-		const profile = await db.pgpool.query.profiles.findFirst({
-			where: eq(profiles.username, input.user),
+		return db.pgpool.query.nexus.findFirst({
+			where: eq(nexus.id, input.user),
 		});
 
-		if (profile) {
-			return db.pgpool.query.nexus.findFirst({
-				where: eq(nexus.fid, profile.fid),
-				with: {
-					profile: true,
-				},
-			});
-		}
 	},
 	["getUser"],
 	{ tags: ["getUser"], revalidate: 60 * 10 },

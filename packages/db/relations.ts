@@ -42,13 +42,6 @@ import {
 	nounsTraits,
 	nouns,
 } from "./schema/indexer";
-import {
-	casts,
-	reactions,
-	profiles,
-	verifications,
-	follows,
-} from "./schema/farcaster";
 
 export const snapshotsRelations = relations(snapshots, ({ one }) => ({
 	user: one(nexus, {
@@ -63,7 +56,6 @@ export const communityRelations = relations(communities, ({ one, many }) => ({
 	quests: many(quests),
 	admins: many(communityAdmins),
 	predictions: many(predictions),
-	casts: many(casts),
 	actions: many(communityActions),
 }));
 
@@ -218,10 +210,6 @@ export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	quests: many(quests),
 	predictions: many(predictions),
 	wallets: many(linkedWallets),
-	profile: one(profiles, {
-		fields: [nexus.fid],
-		references: [profiles.fid],
-	}),
 	leaderboards: many(leaderboards),
 }));
 
@@ -521,64 +509,3 @@ export const raffleEntriesRelations = relations(
 		gold: many(gold),
 	}),
 );
-
-export const castRelations = relations(casts, ({ many, one }) => ({
-	reactions: many(reactions),
-	creator: one(profiles, {
-		fields: [casts.fid],
-		references: [profiles.fid],
-	}),
-	community: one(communities, {
-		fields: [casts.rootParentUrl],
-		references: [communities.parentUrl],
-	}),
-	comments: many(casts, { relationName: "comments" }),
-	parent: one(casts, {
-		fields: [casts.parentHash],
-		references: [casts.hash],
-		relationName: "parent",
-	}),
-}));
-
-export const profileRelations = relations(profiles, ({ many, one }) => ({
-	casts: many(casts),
-	reactions: many(reactions),
-	verifications: many(verifications),
-	followers: many(follows, { relationName: "from" }),
-	following: many(follows, { relationName: "to" }),
-	user: one(nexus, {
-		fields: [profiles.fid],
-		references: [nexus.fid],
-	}),
-}));
-
-export const followRelations = relations(follows, ({ one }) => ({
-	from: one(profiles, {
-		fields: [follows.fid],
-		references: [profiles.fid],
-		relationName: "from",
-	}),
-	to: one(profiles, {
-		fields: [follows.targetFid],
-		references: [profiles.fid],
-		relationName: "to",
-	}),
-}));
-
-export const reactionRelations = relations(reactions, ({ one }) => ({
-	cast: one(casts, {
-		fields: [reactions.targetHash],
-		references: [casts.hash],
-	}),
-	reactor: one(profiles, {
-		fields: [reactions.fid],
-		references: [profiles.fid],
-	}),
-}));
-
-export const verificationRelations = relations(verifications, ({ one }) => ({
-	profile: one(profiles, {
-		fields: [verifications.fid],
-		references: [profiles.fid],
-	}),
-}));

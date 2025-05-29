@@ -94,7 +94,7 @@ export default function ViewProposalModal(props: {
 				{props.proposal.user ? (
 					<div className="flex gap-4 items-center">
 						<Link
-							href={`/users/${props.proposal.user.profile?.username ?? props.proposal.user.id}`}
+							href={`/users/${props.proposal.user.id}`}
 							className="rounded-full flex items-center text-white gap-3 font-semibold text-xl hover:opacity-80 transition-opacity"
 						>
 							<img
