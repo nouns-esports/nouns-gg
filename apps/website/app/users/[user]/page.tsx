@@ -10,8 +10,6 @@ import SettingsModal from "@/components/modals/SettingsModal";
 import { ToggleModal } from "@/components/Modal";
 import { BarChart, Trophy } from "lucide-react";
 import UserStatsModal from "@/components/modals/UserStatsModal";
-import PostCard from "@/components/PostCard";
-import { getPosts } from "@/server/queries/posts";
 
 export default async function User(props: {
 	params: Promise<{ user: string }>;
@@ -27,10 +25,7 @@ export default async function User(props: {
 		return notFound();
 	}
 
-	const [userStats, posts] = await Promise.all([
-		getUserStats({ user: user.id }),
-		user.fid ? getPosts({ fid: user.fid }) : [],
-	]);
+	const userStats = await getUserStats({ user: user.id });
 
 	return (
 		<>
@@ -71,13 +66,6 @@ export default async function User(props: {
 						</div>
 						{/* <Level xp={user.xp} /> */}
 					</div>
-					{posts.length > 0 ? (
-						<div className="flex flex-col gap-4 w-full">
-							{posts.map((post) => (
-								<PostCard key={post.hash} post={post} />
-							))}
-						</div>
-					) : null}
 				</div>
 			</div>
 			{authenticatedUser && <SettingsModal user={authenticatedUser} />}
