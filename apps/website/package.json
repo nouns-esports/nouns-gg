@@ -28,7 +28,7 @@
 		"@shopify/admin-api-client": "^1.0.5",
 		"@tailwindcss/typography": "^0.5.12",
 		"@tsparticles/confetti": "^3.5.0",
-		"@uidotdev/usehooks": "experimental",
+		"@uidotdev/usehooks": "^2.4.1",
 		"autoprefixer": "^10.4.17",
 		"country-state-city": "^3.2.1",
 		"date-fns": "^4.1.0",
