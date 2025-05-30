@@ -2,6 +2,7 @@ import { db } from "~/packages/db";
 import { predictions } from "~/packages/db/schema/public";
 import { eq } from "drizzle-orm";
 import { notFound } from "next/navigation";
+import Refresh from "@/components/Refresh";
 
 export default async function StreamPage(props: {
 	params: Promise<{ prediction: string; index: string }>;
@@ -55,8 +56,11 @@ export default async function StreamPage(props: {
 
 	const binary = outcomes.length === 2;
 
+	const random = Math.random();
+
 	return (
 		<>
+			<Refresh />
 			<style
 				// biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
 				dangerouslySetInnerHTML={{
@@ -81,7 +85,8 @@ export default async function StreamPage(props: {
 								className="font-londrina-solid"
 								style={{ fontSize: "30vw", lineHeight: 1 }}
 							>
-								{odds === 0 ? 1 : odds === 100 ? 99 : odds}%
+								{/* {odds === 0 ? 1 : odds === 100 ? 99 : odds}% */}
+								{random}
 							</p>
 						</div>
 					</>
