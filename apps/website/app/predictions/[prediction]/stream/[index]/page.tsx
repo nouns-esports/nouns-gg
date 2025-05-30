@@ -85,8 +85,7 @@ export default async function StreamPage(props: {
 								className="font-londrina-solid"
 								style={{ fontSize: "30vw", lineHeight: 1 }}
 							>
-								{/* {odds === 0 ? 1 : odds === 100 ? 99 : odds}% */}
-								{random}
+								{odds === 0 ? 1 : odds === 100 ? 99 : odds}%
 							</p>
 						</div>
 					</>
