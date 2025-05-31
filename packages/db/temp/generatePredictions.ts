@@ -33,6 +33,7 @@ await db.primary.transaction(async (tx) => {
 				event,
 				community,
 				pool: data.outcomes.length.toString(),
+				draft: false,
 			})
 			.returning({
 				id: predictions.id,
