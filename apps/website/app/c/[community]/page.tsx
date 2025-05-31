@@ -73,7 +73,7 @@ export default async function Community(props: {
 			? getQuests({ community: community.id, user: user?.id })
 			: [],
 		tab === "predictions"
-			? getPredictions({ community: community.id, user: user?.id })
+			? getPredictions({ community: community.id, user: user?.id, limit: 40 })
 			: [],
 		tab === "events" ? getEvents({ community: community.id }) : [],
 		tab === "leaderboard" ? getLeaderboard({ community: community.id }) : [],

@@ -2,7 +2,7 @@ import { getCommunities } from "@/server/queries/communities";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import Link from "@/components/Link";
 
-export default async function Events() {
+export default async function Communities() {
 	const [communities, user] = await Promise.all([
 		getCommunities(),
 		getAuthenticatedUser(),

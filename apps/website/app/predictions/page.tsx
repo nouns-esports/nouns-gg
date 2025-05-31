@@ -8,6 +8,7 @@ export default async function Predictions() {
 
 	const predictions = await getPredictions({
 		user: user?.id,
+		limit: 50,
 	});
 
 	return (
