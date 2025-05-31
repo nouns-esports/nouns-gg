@@ -6,5 +6,5 @@ export const getPosts = cache(async (input: { parentUrl: string; }) => {
 		filterType: "parent_url",
 		parentUrl: input.parentUrl,
 		limit: 25,
-	}).then(posts => posts.casts)
+	}).then(posts => posts.casts.filter(cast => cast.author.experimental?.neynar_user_score ?? 1 > 0.5))
 }, ["posts"], { tags: ["posts"], revalidate: 60 * 10 })
