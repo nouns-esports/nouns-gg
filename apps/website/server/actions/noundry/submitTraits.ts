@@ -40,17 +40,21 @@ export const submitTraits = createAction({
 
         if (user.wallets.length === 0) return false;
 
-        const stats = await fetch("https://gallery.noundry.wtf/api/artists/stats").then(res => res.json()) as Array<{
-            address: string;
-            traits: number;
-        }>;
+        try {
+            const stats = await fetch("https://gallery.noundry.wtf/api/artists/stats").then(res => res.json()) as Array<{
+                address: string;
+                traits: number;
+            }>;
 
-        for (const wallet of user.wallets) {
-            const artist = stats.find(artist => artist.address.toLowerCase() === wallet.address.toLowerCase());
+            for (const wallet of user.wallets) {
+                const artist = stats.find(artist => artist.address.toLowerCase() === wallet.address.toLowerCase());
 
-            if (artist && artist.traits >= inputs.count.value) {
-                return true;
+                if (artist && artist.traits >= inputs.count.value) {
+                    return true;
+                }
             }
+        } catch (e) {
+            console.error("Error checking traits", e);
         }
 
         return false;

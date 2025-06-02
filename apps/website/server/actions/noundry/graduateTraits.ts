@@ -45,14 +45,18 @@ export const graduateTraits = createAction({
 
         if (user.wallets.length === 0) return false;
 
-        const graduates = await fetch("https://gallery.noundry.wtf/api/graduations").then(res => res.json()) as Record<string, number | undefined>;
+        try {
+            const graduates = await fetch("https://gallery.noundry.wtf/api/graduations").then(res => res.json()) as Record<string, number | undefined>;
 
-        for (const wallet of user.wallets) {
-            const count = graduates[wallet.address.toLowerCase()];
+            for (const wallet of user.wallets) {
+                const count = graduates[wallet.address.toLowerCase()];
 
-            if (count && count >= inputs.count.value) {
-                return true;
+                if (count && count >= inputs.count.value) {
+                    return true;
+                }
             }
+        } catch (e) {
+            console.error("Error checking graduates", e);
         }
 
         return false;
