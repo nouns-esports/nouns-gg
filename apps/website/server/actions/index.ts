@@ -27,6 +27,9 @@ import { reachLevel } from "./xp/reachLevel";
 import { reachPercentile } from "./xp/reachPercentile";
 import { holdNFT } from "./onchain/holdNFT";
 import { followAccount } from "./social/followAccount";
+import { graduateTraits } from "./noundry/graduateTraits";
+import { submitTraits } from "./noundry/submitTraits";
+
 const actions = {
 	// Account
 	linkDiscord,
@@ -74,9 +77,14 @@ const actions = {
 	likePost,
 	repostPost,
 	followAccount,
+
 	// XP
 	reachLevel,
 	reachPercentile,
+
+	// Noundry
+	graduateTraits,
+	submitTraits,
 };
 
 export function getAction(props: {

@@ -2,9 +2,9 @@ import { z } from "zod";
 import { createAction } from "../createAction";
 import { createFilter } from "../createFilter";
 
-export const graduateTrait = createAction({
+export const graduateTraits = createAction({
     image: "",
-    name: "Graduate Trait",
+    name: "Graduate Traits",
     category: "noundry",
     generateDescription: async (inputs) => {
         "use server";

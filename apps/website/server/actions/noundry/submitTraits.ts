@@ -2,9 +2,9 @@ import { z } from "zod";
 import { createAction } from "../createAction";
 import { createFilter } from "../createFilter";
 
-export const submitTrait = createAction({
+export const submitTraits = createAction({
     image: "",
-    name: "Submit Trait",
+    name: "Submit Traits",
     category: "noundry",
     generateDescription: async (inputs) => {
         "use server";
