@@ -123,16 +123,28 @@ export default function MakePredictionModal(props: {
 				</ul>
 			) : null}
 
-			<div className="flex flex-col gap-2 w-full">
-				<div className="flex justify-between items-center">
+			{Number(props.user.nexus?.gold ?? 0) > 0 ? (
+				<div className="flex flex-col gap-2 w-full">
 					<p className="text-white font-bebas-neue text-xl">Amount</p>
-					{Number(props.user.nexus?.gold ?? 0) > 0 ? (
-						<p className="text-gold-500 font-semibold">{amount}</p>
-					) : (
-						<p className="text-red">You don't have any gold</p>
-					)}
-				</div>
-				<div
+					<input
+						type="number"
+						placeholder={`Your gold: ${props.user.nexus?.gold ?? 0}`}
+						value={amount === 0 ? "" : amount}
+						onChange={(e) => {
+							const value = Number(e.target.value);
+
+							if (value !== amount) {
+								setLoading(true);
+							}
+
+							if (value > Number(props.user.nexus?.gold ?? 0)) {
+								setAmount(Number(props.user.nexus?.gold ?? 0));
+							} else setAmount(value);
+						}}
+						className=" bg-grey-800 rounded-xl p-2 px-3 text-white w-min placeholder:text-grey-400"
+					/>
+
+					{/* <div
 					className={twMerge(
 						"bg-grey-800 rounded-xl p-2 px-3",
 						Number(props.user.nexus?.gold ?? 0) < 1 &&
@@ -151,8 +163,9 @@ export default function MakePredictionModal(props: {
 							}
 						}}
 					/>
+				</div> */}
 				</div>
-			</div>
+			) : null}
 
 			<div className="flex flex-col gap-2 w-full">
 				<p className="text-white font-bebas-neue text-xl">Your Bet</p>
