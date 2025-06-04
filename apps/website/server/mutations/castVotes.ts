@@ -42,6 +42,13 @@ export const castVotes = onlyUser
 			throw new Error("Round not found");
 		}
 
+		const percentile = ctx.user.nexus.leaderboards.find(
+			(leaderboard) => leaderboard.community === round.community.id,
+		)?.percentile ?? 1;
+
+		const allocatedVotes =
+			percentile <= 0.15 ? 10 : percentile <= 0.3 ? 5 : percentile <= 0.5 ? 3 : 1;
+
 		const actions = await Promise.all(
 			round.actions
 				.filter((action) => action.type === "voting")
@@ -103,10 +110,7 @@ export const castVotes = onlyUser
 					throw new Error("You can only vote on proposals in the same round");
 				}
 
-				const allocatedVotes =
-					round.community.handle === "lilnouns" ? 5 : ctx.user.votes;
-
-				if (votesUsed + vote.count > allocatedVotes) {
+				if (votesUsed + vote.count > (round.community.handle === "lilnouns" ? 5 : allocatedVotes)) {
 					throw new Error("You have used all your votes");
 				}
 

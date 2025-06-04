@@ -1,6 +1,6 @@
 import { env } from "~/env";
-import { and, eq, inArray, isNotNull, or } from "drizzle-orm";
-import { nexus, xp } from "~/packages/db/schema/public";
+import { and, eq, inArray, isNotNull, or, sql } from "drizzle-orm";
+import { leaderboards, nexus, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { unstable_cache as cache } from "next/cache";
 import { cookies } from "next/headers";
@@ -24,6 +24,26 @@ export async function getAuthenticatedUser() {
 		let userNexus = await db.pgpool.query.nexus.findFirst({
 			where: eq(nexus.id, privyUser.id),
 			with: {
+				leaderboards: {
+					extras: {
+						percentile: sql<number>`
+							(
+								(
+									SELECT 1 + COUNT(*) 
+									FROM ${leaderboards} AS l2 
+									WHERE l2.community = ${leaderboards.community}
+									AND l2.xp > ${leaderboards.xp}
+								)::float
+								/
+								(
+									SELECT COUNT(*) 
+									FROM ${leaderboards} AS l3 
+									WHERE l3.community = ${leaderboards.community}
+								)
+							)
+						`.as("percentile"),
+					}
+				},
 				carts: {
 					with: {
 						product: {
@@ -66,6 +86,26 @@ export async function getAuthenticatedUser() {
 				userNexus = await db.primary.query.nexus.findFirst({
 					where: eq(nexus.id, privyUser.id),
 					with: {
+						leaderboards: {
+							extras: {
+								percentile: sql<number>`
+									(
+										(
+											SELECT 1 + COUNT(*) 
+											FROM ${leaderboards} AS l2 
+											WHERE l2.community = ${leaderboards.community}
+											AND l2.xp > ${leaderboards.xp}
+										)::float
+										/
+										(
+											SELECT COUNT(*) 
+											FROM ${leaderboards} AS l3 
+											WHERE l3.community = ${leaderboards.community}
+										)
+									)
+								`.as("percentile"),
+							}
+						},
 						carts: {
 							with: {
 								product: {
@@ -91,7 +131,7 @@ export async function getAuthenticatedUser() {
 			return;
 		}
 
-		const { currentLevel } = level(userNexus.xp);
+		// const { currentLevel } = level(userNexus.xp);
 
 		return {
 			id: privyUser.id,
@@ -103,15 +143,15 @@ export async function getAuthenticatedUser() {
 			) ?? [],
 			email: privyUser.email,
 			nexus: userNexus,
-			level: currentLevel,
-			votes:
-				currentLevel >= 15
-					? 10
-					: currentLevel >= 10
-						? 5
-						: currentLevel >= 5
-							? 3
-							: 1,
+			// level: currentLevel,
+			// votes:
+			// 	currentLevel >= 15
+			// 		? 10
+			// 		: currentLevel >= 10
+			// 			? 5
+			// 			: currentLevel >= 5
+			// 				? 3
+			// 				: 1,
 		};
 	} catch (e) {
 		console.error(e);

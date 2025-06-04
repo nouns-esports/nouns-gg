@@ -57,10 +57,22 @@ export default function Proposals(props: {
 	}, [selectedVotes]);
 
 	const allocatedVotes = useMemo(() => {
-		return props.round.community.handle === "lilnouns"
-			? 5
-			: (props.user?.votes ?? 1);
-	}, [props.round.community.handle, props.user?.votes]);
+		const percentile =
+			props.user?.nexus.leaderboards.find(
+				(leaderboard) => leaderboard.community === props.round.community.id,
+			)?.percentile ?? 1;
+
+		const userVotes =
+			percentile <= 0.15
+				? 10
+				: percentile <= 0.3
+					? 5
+					: percentile <= 0.5
+						? 3
+						: 1;
+
+		return props.round.community.handle === "lilnouns" ? 5 : userVotes;
+	}, [props.round.community.handle, props.user?.nexus.leaderboards]);
 
 	const remainingVotes = useMemo(() => {
 		const priorVotes = props.user?.priorVotes ?? 0;
@@ -467,7 +479,7 @@ export default function Proposals(props: {
 					removeVote={removeVote}
 					selectedVotes={selectedVotes}
 					userCanVote={
-						!!props.user?.nexus && props.user.votes > props.user.priorVotes
+						!!props.user?.nexus && allocatedVotes > props.user.priorVotes
 					}
 					isOpen={props.openProposal === proposal.id}
 				/>
