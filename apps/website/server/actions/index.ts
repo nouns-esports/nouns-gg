@@ -23,7 +23,6 @@ import { recieveVotes } from "./rounds/recieveVotes";
 import { createPost } from "./social/createPost";
 import { likePost } from "./social/likePost";
 import { repostPost } from "./social/repostPost";
-import { reachLevel } from "./xp/reachLevel";
 import { reachPercentile } from "./xp/reachPercentile";
 import { holdNFT } from "./onchain/holdNFT";
 import { followAccount } from "./social/followAccount";
@@ -79,7 +78,6 @@ const actions = {
 	followAccount,
 
 	// XP
-	reachLevel,
 	reachPercentile,
 
 	// Noundry
