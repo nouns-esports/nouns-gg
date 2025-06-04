@@ -38,7 +38,7 @@ export const submitTraits = createAction({
     check: async ({ user, inputs }) => {
         "use server";
 
-        if (user.wallets.length === 0) return false;
+        if (user?.wallets?.length === 0) return false;
 
         try {
             const stats = await fetch("https://gallery.noundry.wtf/api/artists/stats").then(res => res.json()) as Array<{

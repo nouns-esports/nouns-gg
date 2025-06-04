@@ -120,7 +120,7 @@ export default async function Quest(props: {
 							<div className="flex flex-col gap-4">
 								<div className="flex gap-8 items-center justify-between">
 									<h2 className="font-bebas-neue text-white text-2xl">
-										{quest.active && quest.actions.length > 0
+										{quest.active && quest.actions?.length > 0
 											? user
 												? questClaimed
 													? "Quest completed"
@@ -137,7 +137,7 @@ export default async function Quest(props: {
 										</div>
 										<CheckQuest
 											user={!!user?.nexus}
-											active={quest.active && quest.actions.length > 0}
+											active={quest.active && quest.actions?.length > 0}
 											quest={quest.id}
 											xp={quest.xp}
 											userXP={user?.nexus?.xp ?? 0}

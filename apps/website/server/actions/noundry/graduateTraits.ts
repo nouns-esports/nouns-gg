@@ -43,7 +43,7 @@ export const graduateTraits = createAction({
     check: async ({ user, inputs }) => {
         "use server";
 
-        if (user.wallets.length === 0) return false;
+        if (user?.wallets?.length === 0) return false;
 
         try {
             const graduates = await fetch("https://gallery.noundry.wtf/api/graduations").then(res => res.json()) as Record<string, number | undefined>;
