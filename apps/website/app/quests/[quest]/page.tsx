@@ -61,15 +61,13 @@ export default async function Quest(props: {
 	const params = await props.params;
 	const user = await getAuthenticatedUser();
 
-	console.log("Quest page user", user, user?.wallets);
-
 	const quest = await getQuest({ handle: params.quest, user: user?.id });
 
 	if (!quest) {
 		return notFound();
 	}
 
-	const questClaimed = quest.completions.length > 0;
+	const questClaimed = quest.completions?.length > 0;
 
 	const actions = await Promise.all(
 		quest.actions.map(async (actionState) => {
