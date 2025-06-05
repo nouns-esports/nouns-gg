@@ -93,13 +93,13 @@ export default async function StreamPage(props: {
 					<div className="w-full h-full flex items-center justify-between px-[20vh]">
 						<p
 							className="font-londrina-solid text-nowrap text-[#FFFFFF]"
-							style={{ fontSize: "30vh", lineHeight: 1 }}
+							style={{ fontSize: "36vh", lineHeight: 1 }}
 						>
 							{outcome.name}
 						</p>
 						<p
 							className="font-londrina-solid text-[#FED439]"
-							style={{ fontSize: "30vh", lineHeight: 1 }}
+							style={{ fontSize: "36vh", lineHeight: 1 }}
 						>
 							{odds === 0 ? 1 : odds === 100 ? 99 : odds}%
 						</p>
