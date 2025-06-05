@@ -26,6 +26,8 @@ export const becomeNounsDelegate = createAction({
 	check: async ({ user }) => {
 		"use server";
 
+		console.log("Action user", user, user.wallets)
+
 		if (user.wallets.length === 0) return false;
 
 		const [isDelegate, isHolder] = await Promise.all([
