@@ -2,6 +2,7 @@ import Button from "@/components/Button";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import { getPredictions } from "@/server/queries/predictions";
 import PredictionCard from "@/components/PredictionCard";
+import Refresh from "@/components/Refresh";
 
 export default async function Predictions() {
 	const user = await getAuthenticatedUser();
@@ -27,6 +28,7 @@ export default async function Predictions() {
 					))}
 				</div>
 			</div>
+			<Refresh />
 		</div>
 	);
 }
