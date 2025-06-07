@@ -118,7 +118,7 @@ export default async function Checkpoint(props: {
 						<Check className="w-4 h-4" />
 						Claimed
 					</p>
-					<Button href="/">Back to Home</Button>
+					<Button href="/predict">View Predictions</Button>
 				</div>
 			</div>
 			{didEarnXP && checkpoint.xp !== null ? (
