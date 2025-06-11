@@ -37,7 +37,7 @@ ponder.on("NounsToken:Transfer", async ({ event, context }) => {
 			tokenId: event.args.tokenId,
 		})
 		.onConflictDoUpdate({
-			account: event.args.to,
+			account: event.args.to.toLowerCase() as `0x${string}`,
 		});
 });
 
@@ -50,7 +50,7 @@ ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
 			tokenId: event.args.tokenId,
 		})
 		.onConflictDoUpdate({
-			account: event.args.to,
+			account: event.args.to.toLowerCase() as `0x${string}`,
 		});
 });
 
@@ -86,7 +86,7 @@ ponder.on("NounsDAOGovernor:ProposalCreated", async ({ event, context }) => {
 				const upload = await pinata.upload.public.url(src);
 
 				return `https://ipfs.nouns.gg/ipfs/${upload.cid}`;
-			} catch {}
+			} catch { }
 
 			return src;
 		},
@@ -191,7 +191,7 @@ ponder.on("NounsDAOGovernor:ProposalUpdated", async ({ event, context }) => {
 				const upload = await pinata.upload.public.url(src);
 
 				return `https://ipfs.nouns.gg/ipfs/${upload.cid}`;
-			} catch {}
+			} catch { }
 
 			return src;
 		},
