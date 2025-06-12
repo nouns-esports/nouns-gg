@@ -1,7 +1,10 @@
-import { pgTable, check, index, primaryKey, pgSchema } from "drizzle-orm/pg-core";
+import { pgTable, check, index, primaryKey, text } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 import type { JSONContent as TipTap } from "@tiptap/core";
 import type { ActionDescription } from "~/apps/website/server/actions/createAction";
+
+const platforms = () => text({ enum: ["discord", "farcaster"] });
+const connections = () => text({ enum: ["discord:server", "farcaster:channel", "farcaster:account"] });
 
 export const links = pgTable("links", (t) => ({
 	id: t.text().primaryKey(),
@@ -28,10 +31,26 @@ export const snapshots = pgTable("snapshots", (t) => ({
 }));
 
 export const communities = pgTable("communities", (t) => ({
+	_id: t.uuid().defaultRandom(),
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	handle: t.text().notNull().unique(),
 	image: t.text().notNull(),
 	name: t.text().notNull(),
+	levels: t.jsonb().$type<{
+		max: number;
+		midpoint: number;
+		steepness: number;
+	}>(),
+	points: t.jsonb().$type<{
+		name: string;
+		image: string;
+		marketcap: number;
+	}>(),
+	agent: t.jsonb().$type<{
+		name: string;
+		image: string;
+		prompt: string;
+	}>(),
 	description: t.jsonb().$type<TipTap>(),
 	parentUrl: t.text("parent_url"),
 	gold: t.integer().notNull().default(0),
@@ -39,22 +58,49 @@ export const communities = pgTable("communities", (t) => ({
 	featured: t.boolean().notNull().default(false),
 }));
 
-export const communityActions = pgTable("community_actions", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
-	community: t.bigint({ mode: "number" }).notNull(),
-	action: t.text().notNull(),
-	description: t.jsonb().array().$type<ActionDescription>().notNull(),
-	inputs: t
-		.jsonb()
-		.$type<{ [key: string]: { [key: string]: any } }>()
-		.notNull(),
-}));
-
 export const communityAdmins = pgTable("community_admins", (t) => ({
+	_id: t.uuid().defaultRandom(),
 	id: t.bigserial({ mode: "number" }).primaryKey(),
 	community: t.bigint({ mode: "number" }).notNull(),
 	user: t.text().notNull(),
 	owner: t.boolean().notNull(),
+}));
+
+export const communityConnections = pgTable("community_connections", (t) => ({
+	id: t.uuid().primaryKey().defaultRandom(),
+	type: connections().notNull(),
+	platform: platforms().notNull(),
+	community: t.uuid().notNull(),
+	config: t.jsonb().notNull().$type<Record<string, any>>(),
+}));
+
+export const wallets = pgTable("wallets", (t) => ({
+	id: t.uuid().primaryKey().defaultRandom(),
+	address: t.text().unique().notNull(),
+	user: t.uuid(),
+	community: t.uuid(),
+}), (t) => [
+	check(
+		"user_or_community_exists",
+		sql`(user IS NOT NULL OR community IS NOT NULL)`
+	)
+]);
+
+export const accounts = pgTable("accounts", (t) => ({
+	id: t.uuid().primaryKey().defaultRandom(),
+	platform: platforms().notNull(),
+	// Discord user id, Farcaster FID, Twitter user id, etc.
+	identifier: t.text().notNull(),
+	user: t.uuid().notNull(),
+}));
+
+export const escrows = pgTable("escrows", (t) => ({
+	id: t.uuid().primaryKey().defaultRandom(),
+	// The account that, in the future, can claim the contents of this escrow to their user account that doesn't exist in the present
+	heir: t.uuid().notNull(),
+	community: t.uuid().notNull(),
+	points: t.bigint({ mode: "number" }).notNull().default(0),
+	xp: t.bigint({ mode: "number" }).notNull().default(0),
 }));
 
 export const articles = pgTable("articles", (t) => ({
@@ -262,6 +308,7 @@ export const proposals = pgTable("proposals", (t) => ({
 export const nexus = pgTable(
 	"nexus",
 	(t) => ({
+		_id: t.uuid().defaultRandom(),
 		id: t.text().primaryKey(),
 		admin: t.boolean().notNull().default(false),
 		xp: t.integer().notNull().default(0),
@@ -278,6 +325,7 @@ export const nexus = pgTable(
 );
 
 export const gold = pgTable("gold", (t) => ({
+	_id: t.uuid().defaultRandom(),
 	id: t.serial().primaryKey(),
 	from: t.text(),
 	fromCommunity: t.bigint({ mode: "number" }),
@@ -329,6 +377,7 @@ export const questCompletions = pgTable("quest_completions", (t) => ({
 }));
 
 export const xp = pgTable("xp", (t) => ({
+	_id: t.uuid().defaultRandom(),
 	id: t.serial().primaryKey(),
 	user: t.text().notNull(),
 	amount: t.integer().notNull(),
@@ -351,9 +400,12 @@ export const xp = pgTable("xp", (t) => ({
 export const leaderboards = pgTable(
 	"leaderboards",
 	(t) => ({
+		_id: t.uuid().defaultRandom(),
 		community: t.bigint({ mode: "number" }).notNull(),
 		user: t.text().notNull(),
-		xp: t.bigint({ mode: "number" }).notNull(),
+		xp: t.bigint({ mode: "number" }).notNull().default(0),
+		points: t.bigint({ mode: "number" }).default(0),
+		boosts: t.integer().default(0),
 	}),
 	(t) => [
 		primaryKey({ columns: [t.user, t.community] }),
@@ -428,13 +480,6 @@ export const carts = pgTable("carts", (t) => ({
 	product: t.bigint({ mode: "number" }).notNull(),
 	variant: t.bigint({ mode: "number" }).notNull(),
 	quantity: t.integer().notNull(),
-}));
-
-
-export const linkedWallets = pgTable("linked_wallets", (t) => ({
-	address: t.text().primaryKey(),
-	user: t.text().notNull(),
-	client: t.text({ enum: ["rainbow", "metamask", "coinbase_wallet"] }),
 }));
 
 export const raffles = pgTable("raffles", (t) => ({

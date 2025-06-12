@@ -29,8 +29,6 @@ import {
 	questActions,
 	roundActions,
 	eventActions,
-	communityActions,
-	linkedWallets,
 	leaderboards,
 } from "./schema/public";
 import {
@@ -56,7 +54,6 @@ export const communityRelations = relations(communities, ({ one, many }) => ({
 	quests: many(quests),
 	admins: many(communityAdmins),
 	predictions: many(predictions),
-	actions: many(communityActions),
 }));
 
 export const communityAdminsRelations = relations(
@@ -69,16 +66,6 @@ export const communityAdminsRelations = relations(
 		user: one(nexus, {
 			fields: [communityAdmins.user],
 			references: [nexus.id],
-		}),
-	}),
-);
-
-export const communityActionsRelations = relations(
-	communityActions,
-	({ one }) => ({
-		community: one(communities, {
-			fields: [communityActions.community],
-			references: [communities.id],
 		}),
 	}),
 );
@@ -209,7 +196,6 @@ export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	events: many(events),
 	quests: many(quests),
 	predictions: many(predictions),
-	wallets: many(linkedWallets),
 	leaderboards: many(leaderboards),
 }));
 
@@ -404,13 +390,6 @@ export const cartsRelations = relations(carts, ({ one }) => ({
 	variant: one(productVariants, {
 		fields: [carts.variant],
 		references: [productVariants.id],
-	}),
-}));
-
-export const linkedWalletsRelations = relations(linkedWallets, ({ one }) => ({
-	user: one(nexus, {
-		fields: [linkedWallets.user],
-		references: [nexus.id],
 	}),
 }));
 

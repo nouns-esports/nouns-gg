@@ -1,5 +1,5 @@
 import { db } from "~/packages/db";
-import { linkedWallets, nexus } from "~/packages/db/schema/public";
+import { nexus } from "~/packages/db/schema/public";
 import { privyClient } from "../clients/privy";
 import { createJob } from "../createJob";
 
@@ -27,23 +27,6 @@ export const privySync = createJob({
 							fid: user.farcaster?.fid ?? null,
 						},
 					});
-
-				for (const linkedAccount of user.linkedAccounts) {
-					if (linkedAccount.type === "wallet") {
-						if (linkedAccount.walletClientType === "privy") {
-							continue;
-						}
-
-						await tx
-							.insert(linkedWallets)
-							.values({
-								address: linkedAccount.address,
-								user: user.id,
-								client: linkedAccount.walletClientType as any,
-							})
-							.onConflictDoNothing();
-					}
-				}
 			}
 		});
 	},
