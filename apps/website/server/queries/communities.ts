@@ -23,7 +23,7 @@ export const getCommunity = cache(
 			extras: {
 				hasRounds: sql<boolean>`
 					(
-						SELECT COUNT(*) FROM archive.rounds WHERE rounds.community = communities.id
+						SELECT COUNT(*) FROM rounds WHERE rounds.community = communities.id
 					) > 0
 				`.as("hasRounds"),
 				hasQuests: sql<boolean>`
@@ -33,25 +33,25 @@ export const getCommunity = cache(
 				`.as("hasQuests"),
 				hasPredictions: sql<boolean>`
 					(	
-						SELECT COUNT(*) FROM archive.predictions WHERE predictions.community = communities.id
+						SELECT COUNT(*) FROM predictions WHERE predictions.community = communities.id
 					) > 0
 				`.as("hasPredictions"),
 				hasEvents: sql<boolean>`
 					(
-						SELECT COUNT(*) FROM archive.events WHERE events.community = communities.id
+						SELECT COUNT(*) FROM events WHERE events.community = communities.id
 					) > 0
 				`.as("hasEvents"),
 				hasLeaderboard: sql<boolean>`
 					(
-						SELECT COUNT(*) FROM archive.leaderboards WHERE leaderboards.community = communities.id
+						SELECT COUNT(*) FROM leaderboards WHERE leaderboards.community = communities.id
 					) > 0
 				`.as("hasLeaderboard"),
 				hasShop: sql<boolean>`
 					(
 						SELECT COUNT(*) > 0 FROM (
-							SELECT 1 FROM archive.products WHERE products.community = communities.id
+							SELECT 1 FROM products WHERE products.community = communities.id
 							UNION ALL
-							SELECT 1 FROM archive.raffles WHERE raffles.community = communities.id
+							SELECT 1 FROM raffles WHERE raffles.community = communities.id
 						)
 					)
 				`.as("hasShop"),

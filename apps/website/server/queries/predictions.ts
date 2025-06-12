@@ -24,7 +24,7 @@ export async function getPrediction(input: { handle: string; user?: string }) {
 		},
 		extras: {
 			totalBets:
-				sql<number>`(SELECT COUNT(*) FROM archive.bets WHERE bets.prediction = predictions.id)`.as(
+				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)`.as(
 					"totalBets",
 				),
 		},
@@ -61,7 +61,7 @@ export async function getPredictions(input: {
 		},
 		extras: {
 			totalBets:
-				sql<number>`(SELECT COUNT(*) FROM archive.bets WHERE bets.prediction = predictions.id)`.as(
+				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)`.as(
 					"totalBets",
 				),
 		},

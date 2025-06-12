@@ -26,7 +26,7 @@ export const getRaffles = cache(
 				totalEntries: sql<number>`
                     (
                         SELECT COALESCE(SUM(amount), 0)::integer
-                        FROM archive.raffle_entries
+                        FROM raffle_entries
                         WHERE raffle = raffles.id
                     )
 	            `.as("totalEntries"),
