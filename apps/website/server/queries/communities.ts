@@ -28,7 +28,7 @@ export const getCommunity = cache(
 				`.as("hasRounds"),
 				hasQuests: sql<boolean>`
 					(
-						SELECT COUNT(*) FROM archive.quests WHERE quests.community = communities.id AND quests.active = true
+						SELECT COUNT(*) FROM quests WHERE quests.community = communities.id AND quests.active = true
 					) > 0
 				`.as("hasQuests"),
 				hasPredictions: sql<boolean>`
