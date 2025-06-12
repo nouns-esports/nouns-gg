@@ -42,6 +42,14 @@ ponder.on("NounsToken:Transfer", async ({ event, context }) => {
 });
 
 ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
+	if (event.block.number === 22691195n) {
+		console.log("account", event.args.to.toLowerCase() as `0x${string}`);
+		console.log("tokenId", event.args.tokenId);
+		console.log("collection", context.contracts.LilNounsToken.address.toLowerCase());
+
+		console.log("event", event);
+	}
+
 	await context.db
 		.insert(erc721Balances)
 		.values({
