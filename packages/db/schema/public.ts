@@ -404,8 +404,8 @@ export const leaderboards = pgTable(
 		community: t.bigint({ mode: "number" }).notNull(),
 		user: t.text().notNull(),
 		xp: t.bigint({ mode: "number" }).notNull().default(0),
-		points: t.bigint({ mode: "number" }).default(0),
-		boosts: t.integer().default(0),
+		points: t.bigint({ mode: "number" }).notNull().default(0),
+		boosts: t.integer().notNull().default(0),
 	}),
 	(t) => [
 		primaryKey({ columns: [t.user, t.community] }),
