@@ -153,6 +153,12 @@ export default async function EventPage(props: {
 			}),
 	];
 
+	const goldBalance =
+		user?.nexus.leaderboards.find(
+			(leaderboard) =>
+				leaderboard.community === "98e09ea8-4c19-423c-9733-b946b6f70902",
+		)?.points ?? 0;
+
 	return (
 		<>
 			<div className="flex flex-col items-center w-full">
@@ -402,7 +408,7 @@ export default async function EventPage(props: {
 				return (
 					<EnterRaffleModal
 						key={raffle.id}
-						availableGold={Number(user?.nexus?.gold ?? 0)}
+						availableGold={goldBalance}
 						raffle={raffle}
 					/>
 				);
