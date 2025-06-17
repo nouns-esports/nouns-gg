@@ -32,7 +32,7 @@ export default function GoldModal(props: { user: AuthenticatedUser }) {
 					className="rounded-full h-10 w-10 shadow-xl"
 				/>
 				<p className="font-semibold text-4xl text-[#FEBD1C]">
-					{Math.floor(Number(props.user?.nexus?.gold) ?? 0)}
+					{Math.floor(props.user.gold)}
 				</p>
 			</div>
 			{/* <button
