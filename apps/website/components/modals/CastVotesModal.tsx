@@ -21,6 +21,7 @@ import { castVotes } from "@/server/mutations/castVotes";
 import Link from "../Link";
 import { usePrivy } from "@privy-io/react-auth";
 import { env } from "~/env";
+import type { AuthenticatedUser } from "@/server/queries/users";
 
 export default function CastVotesModal(props: {
 	round: {
@@ -32,11 +33,11 @@ export default function CastVotesModal(props: {
 			user: typeof nexus.$inferSelect;
 		}
 	>;
+	user: AuthenticatedUser;
 	selectedVotes: Record<string, number>;
 	onVotesCast?: () => void;
 }) {
 	const { close, isOpen } = useModal("cast-votes");
-	const { user } = usePrivy();
 
 	const { hasSucceeded, isPending, executeAsync, reset } = useAction(castVotes);
 
@@ -59,12 +60,12 @@ export default function CastVotesModal(props: {
 					</div>
 					<img
 						alt={`${props.round.handle} votes`}
-						src={`/api/images/votes?round=${props.round.handle}&user=${user?.id}`}
+						src={`/api/images/votes?round=${props.round.handle}&user=${props.user.id}`}
 						className="w-96 rounded-xl"
 					/>
 					<Link
 						newTab
-						href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/rounds/${props.round.handle}?user=${user?.id}`}
+						href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/rounds/${props.round.handle}?user=${props.user.id}`}
 						className="flex gap-1 items-center group hover:opacity-80 transition-opacity text-red"
 					>
 						Share this image on Warpcast{" "}

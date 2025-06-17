@@ -462,13 +462,18 @@ export default function Proposals(props: {
 					)}
 				</div>
 			</div>
-			<CastVotesModal
-				round={{ id: props.round.id, handle: props.round.handle }}
-				proposals={props.round.proposals}
-				selectedVotes={selectedVotes}
-				onVotesCast={() => setSelectedVotes({})}
-			/>
-			<ShareVotesModal round={props.round.handle} />
+			{props.user ? (
+				<CastVotesModal
+					round={{ id: props.round.id, handle: props.round.handle }}
+					proposals={props.round.proposals}
+					user={props.user}
+					selectedVotes={selectedVotes}
+					onVotesCast={() => setSelectedVotes({})}
+				/>
+			) : null}
+			{props.user ? (
+				<ShareVotesModal round={props.round.handle} user={props.user} />
+			) : null}
 			{props.round.proposals.map((proposal) => (
 				<ViewProposalModal
 					key={proposal.id}
