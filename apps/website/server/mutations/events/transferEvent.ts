@@ -10,7 +10,7 @@ export const transferEvent = onlyUser
 	.schema(
 		z.object({
 			event: z.number(),
-			community: z.number(),
+			community: z.string(),
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
