@@ -14,7 +14,7 @@ export const createEvent = onlyUser
 			image: z.string(),
 			start: z.date(),
 			end: z.date(),
-			community: z.number(),
+			community: z.string(),
 			location: z.object({
 				name: z.string(),
 				url: z.string(),

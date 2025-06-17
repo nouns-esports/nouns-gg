@@ -1,18 +1,10 @@
-import { env } from "~/env";
 import { unstable_cache as cache } from "next/cache";
-import {
-	bets,
-	events,
-	quests,
-	raffleEntries,
-	raffles,
-	xp,
-} from "~/packages/db/schema/public";
+import { events } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { and, asc, desc, eq, gt, or, sql } from "drizzle-orm";
+import { and, desc, eq, gt, or, sql } from "drizzle-orm";
 
 export const getEvents = cache(
-	async (input?: { limit?: number; community?: number }) => {
+	async (input?: { limit?: number; community?: string }) => {
 		return db.pgpool.query.events.findMany({
 			where: and(
 				input?.community ? eq(events.community, input.community) : undefined,

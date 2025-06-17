@@ -90,13 +90,14 @@ agent.addTool({
 					.returning({ id: snapshots.id });
 
 				const amount = 500;
+				const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
 
 				await tx.insert(xp).values({
 					user: user.id,
 					amount,
 					timestamp: now,
 					snapshot: snapshot.id,
-					community: 7,
+					community: nounsgg,
 				});
 
 				await tx
@@ -104,7 +105,7 @@ agent.addTool({
 					.values({
 						user: user.id,
 						xp: amount,
-						community: 7,
+						community: nounsgg,
 					})
 					.onConflictDoUpdate({
 						target: [leaderboards.user, leaderboards.community],
@@ -112,13 +113,6 @@ agent.addTool({
 							xp: sql`${leaderboards.xp} + ${amount}`,
 						},
 					});
-
-				await tx
-					.update(nexus)
-					.set({
-						xp: user.xp + amount,
-					})
-					.where(eq(nexus.id, user.id));
 			}
 		});
 	},

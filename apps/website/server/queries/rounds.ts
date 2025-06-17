@@ -82,7 +82,7 @@ export const getRounds = cache(
 	async (input?: {
 		limit?: number;
 		event?: number;
-		community?: number;
+		community?: string;
 	}) => {
 		return db.pgpool.query.rounds.findMany({
 			limit: input?.limit,

@@ -22,7 +22,7 @@ export async function getAuthenticatedUser() {
 		const privyUser = await privyClient.getUser({ idToken: token.value });
 
 		let userNexus = await db.pgpool.query.nexus.findFirst({
-			where: eq(nexus.id, privyUser.id),
+			where: eq(nexus.privyId, privyUser.id),
 			with: {
 				leaderboards: {
 					extras: {
@@ -68,7 +68,7 @@ export async function getAuthenticatedUser() {
 				);
 
 				await db.primary.insert(nexus).values({
-					id: privyUser.id,
+					privyId: privyUser.id,
 					name:
 						fullPrivyUser.farcaster?.displayName ??
 						fullPrivyUser.twitter?.name ??
@@ -84,7 +84,7 @@ export async function getAuthenticatedUser() {
 				});
 
 				userNexus = await db.primary.query.nexus.findFirst({
-					where: eq(nexus.id, privyUser.id),
+					where: eq(nexus.privyId, privyUser.id),
 					with: {
 						leaderboards: {
 							extras: {
@@ -131,10 +131,10 @@ export async function getAuthenticatedUser() {
 			return;
 		}
 
-		// const { currentLevel } = level(userNexus.xp);
+		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
 
 		return {
-			id: privyUser.id,
+			id: userNexus.id,
 			discord: privyUser.discord,
 			twitter: privyUser.twitter,
 			farcaster: privyUser.farcaster,
@@ -143,15 +143,7 @@ export async function getAuthenticatedUser() {
 			) ?? [],
 			email: privyUser.email,
 			nexus: userNexus,
-			// level: currentLevel,
-			// votes:
-			// 	currentLevel >= 15
-			// 		? 10
-			// 		: currentLevel >= 10
-			// 			? 5
-			// 			: currentLevel >= 5
-			// 				? 3
-			// 				: 1,
+			gold: userNexus.leaderboards.find((leaderboard) => leaderboard.community === nounsgg)?.points ?? 0,
 		};
 	} catch (e) {
 		console.error(e);

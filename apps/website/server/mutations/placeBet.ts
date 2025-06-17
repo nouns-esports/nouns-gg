@@ -5,6 +5,7 @@ import { onlyUser } from ".";
 import {
 	bets,
 	gold,
+	leaderboards,
 	nexus,
 	outcomes,
 	predictions,
@@ -77,8 +78,6 @@ export const placeBet = onlyUser
 		// let newUserXP = 0;
 
 		await db.primary.transaction(async (tx) => {
-			const amount = parsedInput.amount.toFixed(0);
-
 			const [bet] = await tx
 				.insert(bets)
 				.values({
@@ -86,23 +85,26 @@ export const placeBet = onlyUser
 					prediction: parsedInput.prediction,
 					outcome: parsedInput.outcome,
 					timestamp: now,
-					amount,
+					amount: parsedInput.amount,
 				})
 				.returning({ id: bets.id });
 
 			if (parsedInput.amount > 0) {
-				await tx
-					.update(nexus)
-					.set({
-						gold: sql`${nexus.gold} - ${amount}`,
-					})
-					.where(eq(nexus.id, ctx.user.id));
+				await tx.insert(leaderboards).values({
+					user: ctx.user.id,
+					community: prediction.community,
+				}).onConflictDoUpdate({
+					target: [leaderboards.user, leaderboards.community],
+					set: {
+						points: sql`${leaderboards.points} - ${parsedInput.amount}`,
+					},
+				});
 
 				await tx.insert(gold).values({
 					from: ctx.user.id,
-					amount,
-					timestamp: now,
+					amount: parsedInput.amount,
 					bet: bet.id,
+					community: prediction.community,
 				});
 			}
 
@@ -131,14 +133,14 @@ export const placeBet = onlyUser
 			await tx
 				.update(outcomes)
 				.set({
-					pool: sql`${outcomes.pool} + ${amount}`,
+					pool: sql`${outcomes.pool} + ${parsedInput.amount}`,
 				})
 				.where(eq(outcomes.id, parsedInput.outcome));
 
 			await tx
 				.update(predictions)
 				.set({
-					pool: sql`${predictions.pool} + ${amount}`,
+					pool: sql`${predictions.pool} + ${parsedInput.amount}`,
 				})
 				.where(eq(predictions.id, parsedInput.prediction));
 		});

@@ -9,6 +9,8 @@ import {
 } from "../schema/public";
 import { db } from "..";
 
+// throw new Error("FIX GOLD ROUNDING")
+
 const predictionInputs = [
 	{
 		id: 77,
@@ -40,8 +42,6 @@ for (const predictionInput of predictionInputs) {
 		if (prediction.resolved) {
 			throw new Error("Prediction already resolved");
 		}
-
-		const now = new Date();
 
 		const winningOutcomes = prediction.outcomes.filter((outcome) =>
 			predictionInput.winningOutcomes.includes(outcome.id),
@@ -111,22 +111,12 @@ for (const predictionInput of predictionInputs) {
 			.where(eq(predictions.id, prediction.id));
 
 		for (const [user, winnings] of Object.entries(totalUserWinnings)) {
-			await tx
-				.update(nexus)
-				.set({
-					gold:
-						winnings > 0
-							? sql`${nexus.gold} + ${winnings.toFixed(2)}`
-							: undefined,
-					xp: sql`${nexus.xp} + ${prediction.xp}`,
-				})
-				.where(eq(nexus.id, user));
+
 
 			await tx.insert(xp).values({
 				user,
 				amount: prediction.xp,
 				prediction: prediction.id,
-				timestamp: now,
 				community: prediction.community,
 			});
 
@@ -148,10 +138,22 @@ for (const predictionInput of predictionInputs) {
 			if (winnings > 0) {
 				await tx.insert(gold).values({
 					to: user,
-					amount: winnings.toFixed(2),
+					amount: winnings,
 					prediction: prediction.id,
-					timestamp: now,
+					community: prediction.community,
 				});
+
+				await tx
+					.insert(leaderboards).values({
+						user,
+						points: winnings,
+						community: prediction.community,
+					}).onConflictDoUpdate({
+						target: [leaderboards.user, leaderboards.community],
+						set: {
+							points: sql`${leaderboards.points} + ${winnings}`,
+						},
+					});
 			}
 		}
 	});

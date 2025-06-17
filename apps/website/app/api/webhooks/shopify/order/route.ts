@@ -55,12 +55,14 @@ export async function POST(request: Request) {
 
 		const xpAmount = Math.round(subTotalWithoutDiscounts * 10);
 
+		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
+
 		await tx.insert(xp).values({
 			user: privyUser.id,
 			order: order.admin_graphql_api_id,
 			amount: xpAmount > 500 ? 500 : xpAmount,
 			timestamp: new Date(order.created_at),
-			community: 7,
+			community: nounsgg,
 		});
 
 		await tx
@@ -68,7 +70,7 @@ export async function POST(request: Request) {
 			.values({
 				user: privyUser.id,
 				xp: xpAmount,
-				community: 7,
+				community: nounsgg,
 			})
 			.onConflictDoUpdate({
 				target: [leaderboards.user, leaderboards.community],
@@ -76,13 +78,6 @@ export async function POST(request: Request) {
 					xp: sql`${leaderboards.xp} + ${xpAmount}`,
 				},
 			});
-
-		await tx
-			.update(nexus)
-			.set({
-				xp: sql`${nexus.xp} + ${xpAmount}`,
-			})
-			.where(eq(nexus.id, privyUser.id));
 	});
 
 	return new Response("OK", { status: 200 });

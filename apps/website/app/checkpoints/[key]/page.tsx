@@ -10,7 +10,7 @@ import { getAuthenticatedUser } from "@/server/queries/users";
 import { redirect } from "next/navigation";
 import { getCheckpoint } from "@/server/queries/checkpoints";
 import { Toast } from "@/components/Toasts";
-import { eq, sql } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
 import SignIn from "@/components/SignIn";
 import { Check } from "lucide-react";
 import Button from "@/components/Button";
@@ -19,7 +19,6 @@ export default async function Checkpoint(props: {
 	params: Promise<{ key: string }>;
 }) {
 	const params = await props.params;
-	const now = new Date();
 
 	const user = await getAuthenticatedUser();
 	const checkpoint = await getCheckpoint({ key: params.key, user: user?.id });
@@ -36,6 +35,8 @@ export default async function Checkpoint(props: {
 	let didEarnXP = false;
 	let didEarnGold = false;
 
+	const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902";
+
 	if (checkpoint.checkins.length === 0) {
 		await db.primary.transaction(async (tx) => {
 			const [checkin] = await tx
@@ -43,7 +44,6 @@ export default async function Checkpoint(props: {
 				.values({
 					checkpoint: checkpoint.id,
 					user: user.id,
-					timestamp: now,
 				})
 				.returning({ id: checkins.id });
 
@@ -51,58 +51,55 @@ export default async function Checkpoint(props: {
 				didEarnXP = true;
 				await tx.insert(xp).values({
 					user: user.id,
-					timestamp: now,
 					checkin: checkin.id,
 					amount: checkpoint.xp,
-					community: 7,
+					community: nounsgg,
 				});
 
-				await tx
+				const [updatePass] = await tx
 					.insert(leaderboards)
 					.values({
 						user: user.id,
 						xp: checkpoint.xp,
-						community: 7,
+						community: nounsgg,
 					})
 					.onConflictDoUpdate({
 						target: [leaderboards.user, leaderboards.community],
 						set: {
 							xp: sql`${leaderboards.xp} + ${checkpoint.xp}`,
 						},
+					})
+					.returning({
+						xp: leaderboards.xp,
 					});
+
+				totalXP = updatePass.xp;
 			}
 
 			if (checkpoint.gold !== null) {
 				didEarnGold = true;
 				await tx.insert(gold).values({
 					to: user.id,
-					timestamp: now,
 					checkin: checkin.id,
 					amount: checkpoint.gold,
+					community: nounsgg,
 				});
-			}
-
-			if (checkpoint.xp !== null) {
-				const [updateNexus] = await tx
-					.update(nexus)
-					.set({
-						xp: sql`${nexus.xp} + ${checkpoint.xp}`,
-					})
-					.where(eq(nexus.id, user.id))
-					.returning({
-						xp: nexus.xp,
-					});
-
-				totalXP = updateNexus.xp;
 			}
 
 			if (checkpoint.gold !== null) {
 				await tx
-					.update(nexus)
-					.set({
-						gold: sql`${nexus.gold} + ${checkpoint.gold}`,
+					.insert(leaderboards)
+					.values({
+						user: user.id,
+						points: checkpoint.gold,
+						community: nounsgg,
 					})
-					.where(eq(nexus.id, user.id));
+					.onConflictDoUpdate({
+						target: [leaderboards.user, leaderboards.community],
+						set: {
+							points: sql`${leaderboards.points} + ${checkpoint.gold}`,
+						},
+					});
 			}
 		});
 	}

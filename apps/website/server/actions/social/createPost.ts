@@ -103,7 +103,7 @@ export const createPost = createAction({
 				id: {
 					name: "ID",
 					description: "Community ID",
-					schema: z.number(),
+					schema: z.string(),
 				},
 			},
 			name: "Community",

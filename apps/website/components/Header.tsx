@@ -174,7 +174,7 @@ export default async function Header() {
 											draggable={false}
 										/>
 										<p className="font-semibold text-[#FEBD1C] select-none">
-											{formatGold(Number(user.nexus.gold ?? 0))}
+											{formatGold(user.gold)}
 										</p>
 									</ToggleModal>
 								) : null}

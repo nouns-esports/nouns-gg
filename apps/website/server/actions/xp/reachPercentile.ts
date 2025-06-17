@@ -1,8 +1,5 @@
 import { z } from "zod";
 import { createAction } from "../createAction";
-import { db } from "~/packages/db";
-import { sql } from "drizzle-orm";
-import { nexus } from "~/packages/db/schema/public";
 
 export const reachPercentile = createAction({
 	image: "",
@@ -21,19 +18,13 @@ export const reachPercentile = createAction({
 
 		if (!user.nexus) return false;
 
-		const [{ rank, total }] = await db.pgpool
-			.select({
-				rank: sql<number>`rank() over (order by ${nexus.xp} desc)`.as("rank"),
-				total: sql<number>`count(*)`.as("total"),
-			})
-			.from(nexus);
+		const percentile = user.nexus.leaderboards.find(
+			(leaderboard) => leaderboard.community === inputs.community.id,
+		)?.percentile ?? 1;
 
-		const percentile = (rank / total) * 100;
-
-		return percentile < inputs.percentile.value;
+		return percentile <= inputs.percentile.value;
 	},
 	filters: {
-		// TODO: Add community filter
 		percentile: {
 			required: true,
 			options: {
@@ -44,6 +35,13 @@ export const reachPercentile = createAction({
 				},
 			},
 			name: "Percentile",
+		},
+		community: {
+			required: true,
+			options: {
+				id: { name: "ID", description: "The community ID", schema: z.string() },
+			},
+			name: "Community",
 		},
 	},
 });

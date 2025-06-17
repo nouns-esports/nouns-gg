@@ -20,7 +20,7 @@ export const createPrediction = onlyUser
 					name: z.string(),
 				}),
 			),
-			community: z.number(),
+			community: z.string(),
 			event: z.optional(z.number()),
 		}),
 	)

@@ -2,7 +2,7 @@ import { db } from "~/packages/db";
 import { and, desc, eq, sql } from "drizzle-orm";
 import { leaderboards } from "~/packages/db/schema/public";
 
-export async function getLeaderboard(input: { community: number }) {
+export async function getLeaderboard(input: { community: string }) {
 	return db.pgpool.query.leaderboards.findMany({
 		where: eq(leaderboards.community, input.community),
 		orderBy: [desc(leaderboards.xp)],
@@ -13,7 +13,7 @@ export async function getLeaderboard(input: { community: number }) {
 	});
 }
 
-export async function getRank(input: { user: string; community: number }) {
+export async function getRank(input: { user: string; community: string }) {
 	return db.pgpool.query.leaderboards.findFirst({
 		where: and(
 			eq(leaderboards.community, input.community),

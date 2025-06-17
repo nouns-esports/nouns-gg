@@ -81,11 +81,13 @@ export const farcasterXP = createJob({
 
 				const amount = likesXP + recastsXP;
 
+				const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
+
 				await tx.insert(xp).values({
 					user: user.id,
 					amount,
 					timestamp: now,
-					community: 7,
+					community: nounsgg,
 				});
 
 				await tx
@@ -93,7 +95,7 @@ export const farcasterXP = createJob({
 					.values({
 						user: user.id,
 						xp: amount,
-						community: 7,
+						community: nounsgg,
 					})
 					.onConflictDoUpdate({
 						target: [leaderboards.user, leaderboards.community],
@@ -101,13 +103,6 @@ export const farcasterXP = createJob({
 							xp: sql`${leaderboards.xp} + ${amount}`,
 						},
 					});
-
-				await tx
-					.update(nexus)
-					.set({
-						xp: sql`${nexus.xp} + ${amount}`,
-					})
-					.where(eq(nexus.id, user.id));
 			}
 		});
 	},

@@ -23,6 +23,7 @@ const attendees = [
 ];
 
 const now = new Date();
+const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
 
 await db.primary.transaction(async (tx) => {
 	for (const user of attendees) {
@@ -42,7 +43,7 @@ await db.primary.transaction(async (tx) => {
 			amount,
 			timestamp: now,
 			snapshot: snapshot.id,
-			community: 7,
+			community: nounsgg,
 		});
 
 		await tx
@@ -50,7 +51,7 @@ await db.primary.transaction(async (tx) => {
 			.values({
 				user,
 				xp: amount,
-				community: 7,
+				community: nounsgg,
 			})
 			.onConflictDoUpdate({
 				target: [leaderboards.user, leaderboards.community],
@@ -58,12 +59,5 @@ await db.primary.transaction(async (tx) => {
 					xp: sql`${leaderboards.xp} + ${amount}`,
 				},
 			});
-
-		await tx
-			.update(nexus)
-			.set({
-				xp: sql`${nexus.xp} + ${amount}`,
-			})
-			.where(eq(nexus.id, user));
 	}
 });

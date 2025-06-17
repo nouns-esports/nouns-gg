@@ -20,7 +20,7 @@ export const createRound = onlyUser
 			start: z.date(),
 			votingStart: z.date(),
 			end: z.date(),
-			community: z.number(),
+			community: z.string(),
 			event: z.optional(z.number()),
 		}),
 	)

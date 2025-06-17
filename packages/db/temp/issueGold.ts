@@ -1,7 +1,7 @@
 import { sql } from "drizzle-orm";
 import { eq } from "drizzle-orm";
 import { db } from "..";
-import { gold, nexus } from "../schema/public";
+import { gold, leaderboards, nexus } from "../schema/public";
 
 const users = {
 	"did:privy:clyqngc880bvr7lidaed43ntn": 1750,
@@ -12,21 +12,26 @@ const users = {
 	"did:privy:cm0u49y4s036i98yrh8nsko5o": 1000,
 };
 
+const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
+
 await db.primary.transaction(async (tx) => {
-	const now = new Date();
 	for (const [user, amount] of Object.entries(users)) {
 		await tx.insert(gold).values({
-			amount: amount.toString(),
+			amount: amount,
 			from: null,
-			timestamp: now,
 			to: user,
+			community: nounsgg,
 		});
 
-		await tx
-			.update(nexus)
-			.set({
-				gold: sql`${nexus.gold} + ${amount}`,
-			})
-			.where(eq(nexus.id, user));
+		await tx.insert(leaderboards).values({
+			user,
+			points: amount,
+			community: nounsgg,
+		}).onConflictDoUpdate({
+			target: [leaderboards.user, leaderboards.community],
+			set: {
+				points: sql`${leaderboards.points} + ${amount}`,
+			},
+		});
 	}
 });

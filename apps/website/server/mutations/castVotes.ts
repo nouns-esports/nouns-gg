@@ -139,17 +139,9 @@ export const castVotes = onlyUser
 					community: round.community.id,
 				});
 
-				const [updateNexus] = await tx
-					.update(nexus)
-					.set({
-						xp: sql`${nexus.xp} + ${voterAmount}`,
-					})
-					.where(eq(nexus.id, ctx.user.id))
-					.returning({
-						xp: nexus.xp,
-					});
 
-				await tx
+
+				const [updatePass] = await tx
 					.insert(leaderboards)
 					.values({
 						user: ctx.user.id,
@@ -161,7 +153,12 @@ export const castVotes = onlyUser
 						set: {
 							xp: sql`${leaderboards.xp} + ${voterAmount}`,
 						},
+					}).returning({
+						xp: leaderboards.xp,
 					});
+
+				newUserXP = updatePass.xp;
+
 
 				// Award 5 xp per vote to the proposer
 				const proposerAmount = 5 * vote.count;
@@ -175,13 +172,6 @@ export const castVotes = onlyUser
 				});
 
 				await tx
-					.update(nexus)
-					.set({
-						xp: sql`${nexus.xp} + ${proposerAmount}`,
-					})
-					.where(eq(nexus.id, proposal.user));
-
-				await tx
 					.insert(leaderboards)
 					.values({
 						user: proposal.user,
@@ -193,9 +183,7 @@ export const castVotes = onlyUser
 						set: {
 							xp: sql`${leaderboards.xp} + ${proposerAmount}`,
 						},
-					});
-
-				newUserXP = updateNexus.xp;
+					})
 			}
 		});
 

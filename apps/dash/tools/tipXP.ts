@@ -63,19 +63,13 @@ agent.addTool({
 			throw new Error("You can't tip xp to yourself");
 		}
 
-		await db.primary.transaction(async (tx) => {
-			await tx
-				.update(nexus)
-				.set({
-					xp: sql`${nexus.xp} + ${parameters.amount}`,
-				})
-				.where(eq(nexus.id, mentionedUser.id));
+		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
 
+		await db.primary.transaction(async (tx) => {
 			await tx.insert(xp).values({
 				user: mentionedUser.id,
 				amount: parameters.amount,
-				timestamp: new Date(),
-				community: 7,
+				community: nounsgg,
 			});
 
 			await tx
@@ -83,7 +77,7 @@ agent.addTool({
 				.values({
 					user: user.id,
 					xp: parameters.amount,
-					community: 7,
+					community: nounsgg,
 				})
 				.onConflictDoUpdate({
 					target: [leaderboards.user, leaderboards.community],

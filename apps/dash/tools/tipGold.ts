@@ -1,7 +1,7 @@
 import { agent } from "../";
-import { gold, nexus, rounds } from "~/packages/db/schema/public";
+import { gold, leaderboards, nexus, rounds } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq, sql } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
 import { z } from "zod";
 
 agent.addTool({
@@ -14,18 +14,27 @@ agent.addTool({
 		console.log(parameters);
 		console.log(context);
 
+		const amount = Math.floor(parameters.amount);
+
 		if (context.mentions?.length === 0) {
 			throw new Error("You must mention a user to tip gold to");
 		}
 
+		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
+
 		const [user, mentionedUser] = await Promise.all([
 			db.primary.query.nexus.findFirst({
 				where: eq(nexus.discord, context.author),
+				with: {
+					leaderboards: {
+						where: eq(leaderboards.community, nounsgg),
+					},
+				},
 			}),
 			context.mentions?.[0]
 				? db.primary.query.nexus.findFirst({
-						where: eq(nexus.discord, context.mentions[0]),
-					})
+					where: eq(nexus.discord, context.mentions[0]),
+				})
 				: undefined,
 		]);
 
@@ -43,33 +52,43 @@ agent.addTool({
 			throw new Error("You can't tip gold to yourself");
 		}
 
-		if (Number(user.gold) < parameters.amount) {
+		if (user.leaderboards?.[0]?.points ?? 0 < amount) {
 			throw new Error("You don't have enough gold to tip");
 		}
 
-		await db.primary.transaction(async (tx) => {
-			await tx
-				.update(nexus)
-				.set({
-					gold: sql`${nexus.gold} - ${parameters.amount}`,
-				})
-				.where(eq(nexus.id, user.id));
 
-			await tx
-				.update(nexus)
-				.set({
-					gold: sql`${nexus.gold} + ${parameters.amount}`,
-				})
-				.where(eq(nexus.id, mentionedUser.id));
+
+		await db.primary.transaction(async (tx) => {
+			await tx.insert(leaderboards).values({
+				user: user.id,
+				community: nounsgg,
+				points: sql`${leaderboards.points} - ${amount}`,
+			}).onConflictDoUpdate({
+				target: [leaderboards.user, leaderboards.community],
+				set: {
+					points: sql`${leaderboards.points} - ${amount}`,
+				},
+			});
+
+			await tx.insert(leaderboards).values({
+				user: mentionedUser.id,
+				community: nounsgg,
+				points: sql`${leaderboards.points} + ${amount}`,
+			}).onConflictDoUpdate({
+				target: [leaderboards.user, leaderboards.community],
+				set: {
+					points: sql`${leaderboards.points} + ${amount}`,
+				},
+			});
 
 			await tx.insert(gold).values({
+				community: nounsgg,
 				from: user.id,
 				to: mentionedUser.id,
-				amount: parameters.amount.toString(),
-				timestamp: new Date(),
+				amount,
 			});
 		});
 
-		return `Successfully tipped ${parameters.amount} gold to ${mentionedUser.discord}`;
+		return `Successfully tipped ${amount} gold to ${mentionedUser.discord}`;
 	},
 });

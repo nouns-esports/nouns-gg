@@ -34,7 +34,7 @@ export async function getPrediction(input: { handle: string; user?: string }) {
 export async function getPredictions(input: {
 	user?: string;
 	event?: number;
-	community?: number;
+	community?: string;
 	limit?: number;
 }) {
 	return db.pgpool.query.predictions.findMany({

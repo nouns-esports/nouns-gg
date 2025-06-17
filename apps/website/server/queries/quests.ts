@@ -11,7 +11,7 @@ export const getQuests = cache(
 		limit?: number;
 		user?: string;
 		event?: number;
-		community?: number;
+		community?: string;
 	}) => {
 		const now = new Date();
 
@@ -28,9 +28,9 @@ export const getQuests = cache(
 				community: true,
 				completions: input.user
 					? {
-							where: eq(questCompletions.user, input.user),
-							limit: 1,
-						}
+						where: eq(questCompletions.user, input.user),
+						limit: 1,
+					}
 					: undefined,
 				event: true,
 			},
@@ -47,9 +47,9 @@ export const getQuest = cache(
 			with: {
 				completions: input.user
 					? {
-							where: eq(questCompletions.user, input.user),
-							limit: 1,
-						}
+						where: eq(questCompletions.user, input.user),
+						limit: 1,
+					}
 					: undefined,
 				event: true,
 				actions: true,

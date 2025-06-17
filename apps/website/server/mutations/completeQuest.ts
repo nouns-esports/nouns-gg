@@ -90,7 +90,7 @@ export const completeQuest = onlyUser
 				community: quest.community,
 			});
 
-			await tx
+			const [updatePass] = await tx
 				.insert(leaderboards)
 				.values({
 					user: ctx.user.id,
@@ -102,26 +102,17 @@ export const completeQuest = onlyUser
 					set: {
 						xp: sql`${leaderboards.xp} + ${quest.xp}`,
 					},
+				}).returning({
+					xp: leaderboards.xp,
 				});
+
+			newXP = updatePass.xp;
 
 			await tx.insert(questCompletions).values({
 				quest: quest.id,
 				user: ctx.user.id,
 				timestamp: now,
 			});
-
-
-			const [updateXP] = await tx
-				.update(nexus)
-				.set({
-					xp: sql`${nexus.xp} + ${quest.xp}`,
-				})
-				.where(eq(nexus.id, ctx.user.id))
-				.returning({
-					xp: nexus.xp,
-				});
-
-			newXP = updateXP.xp;
 		});
 
 		posthogClient.capture({

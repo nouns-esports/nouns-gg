@@ -67,19 +67,6 @@ export const enterRaffle = onlyUser
 		await db.primary.transaction(async (tx) => {
 			const cost = raffle.gold * parsedInput.amount;
 
-			const [updateNexus] = await tx
-				.update(nexus)
-				.set({
-					gold: sql`${nexus.gold} - ${cost}`,
-					xp: sql`${nexus.xp} + ${earnedXP}`,
-				})
-				.where(eq(nexus.id, ctx.user.id))
-				.returning({
-					xp: nexus.xp,
-				});
-
-			newXP = updateNexus.xp;
-
 			const [raffleEntry] = await tx
 				.insert(raffleEntries)
 				.values({
@@ -100,7 +87,7 @@ export const enterRaffle = onlyUser
 				community: raffle.community,
 			});
 
-			await tx
+			const [updatePass] = await tx
 				.insert(leaderboards)
 				.values({
 					user: ctx.user.id,
@@ -111,23 +98,21 @@ export const enterRaffle = onlyUser
 					target: [leaderboards.user, leaderboards.community],
 					set: {
 						xp: sql`${leaderboards.xp} + ${earnedXP}`,
+						points: sql`${leaderboards.points} - ${cost}`,
 					},
+				}).returning({
+					xp: leaderboards.xp,
 				});
+
+			newXP = updatePass.xp;
 
 			await tx.insert(gold).values({
 				from: ctx.user.id,
-				toCommunity: raffle.community,
-				amount: cost.toString(),
-				timestamp: now,
+				to: null,
+				amount: cost,
 				raffleEntry: raffleEntry.id,
+				community: raffle.community,
 			});
-
-			await tx
-				.update(communities)
-				.set({
-					gold: sql`${communities.gold} + ${cost}`,
-				})
-				.where(eq(communities.id, raffle.community));
 		});
 
 		posthogClient.capture({

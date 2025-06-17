@@ -248,7 +248,7 @@ export const recieveVotes = createAction({
 		}),
 		community: createFilter({
 			options: {
-				id: { name: "ID", description: "The community ID", schema: z.number() },
+				id: { name: "ID", description: "The community ID", schema: z.string() },
 			},
 			name: "Community",
 		}),

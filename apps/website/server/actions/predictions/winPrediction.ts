@@ -91,7 +91,7 @@ export const winPrediction = createAction({
 				id: {
 					name: "ID",
 					description: "The community ID",
-					schema: z.number(),
+					schema: z.string(),
 				},
 			},
 			name: "Community",

@@ -563,7 +563,7 @@ export default function Checkout(props: {
 					</div>
 				) : null}
 
-				{total > 0 && props.user.nexus && Number(props.user.nexus.gold) > 0 ? (
+				{total > 0 && props.user.gold > 0 ? (
 					<div className="w-full flex flex-col gap-4 bg-grey-800 rounded-xl p-4">
 						<div className="flex justify-between items-center">
 							<h1 className="text-white text-2xl font-bebas-neue leading-none">
@@ -571,17 +571,17 @@ export default function Checkout(props: {
 							</h1>
 							<p className="text-sm text-white">
 								{goldUsed} /{" "}
-								{Number(props.user.nexus.gold) >= subtotal * 100
+								{props.user.gold >= subtotal * 100
 									? subtotal * 100
-									: Math.floor(Number(props.user.nexus.gold))}
+									: Math.floor(props.user.gold)}
 							</p>
 						</div>
 						<GoldSlider
 							min={0}
 							max={
-								Number(props.user.nexus.gold) >= subtotal * 100
+								props.user.gold >= subtotal * 100
 									? subtotal * 100
-									: Math.floor(Number(props.user.nexus.gold))
+									: Math.floor(props.user.gold)
 							}
 							value={goldUsed}
 							onChange={(value) => setGoldUsed(value)}

@@ -12,7 +12,6 @@ import { useQuery } from "@tanstack/react-query";
 import { simulateGains } from "@/server/queries/predictions";
 import { toast } from "../Toasts";
 import { twMerge } from "tailwind-merge";
-import GoldSlider from "../GoldSlider";
 
 export default function MakePredictionModal(props: {
 	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
@@ -22,9 +21,7 @@ export default function MakePredictionModal(props: {
 
 	const { hasSucceeded, isPending, executeAsync, reset } = useAction(placeBet);
 
-	const [amount, setAmount] = useState(
-		props.user.nexus ? Math.floor(Number(props.user.nexus.gold) / 10) : 0,
-	);
+	const [amount, setAmount] = useState(Math.floor(props.user.gold / 10));
 
 	const [outcomeId, setOutcomeId] = useState<
 		| NonNullable<
@@ -123,12 +120,12 @@ export default function MakePredictionModal(props: {
 				</ul>
 			) : null}
 
-			{Number(props.user.nexus?.gold ?? 0) > 0 ? (
+			{props.user.gold > 0 ? (
 				<div className="flex flex-col gap-2 w-full">
 					<p className="text-white font-bebas-neue text-xl">Amount</p>
 					<input
 						type="number"
-						placeholder={`Your gold: ${props.user.nexus?.gold ?? 0}`}
+						placeholder={`Your gold: ${props.user.gold}`}
 						value={amount === 0 ? "" : amount}
 						onChange={(e) => {
 							const value = Number(e.target.value);
@@ -137,33 +134,12 @@ export default function MakePredictionModal(props: {
 								setLoading(true);
 							}
 
-							if (value > Number(props.user.nexus?.gold ?? 0)) {
-								setAmount(Number(props.user.nexus?.gold ?? 0));
+							if (value > props.user.gold) {
+								setAmount(props.user.gold);
 							} else setAmount(value);
 						}}
 						className=" bg-grey-800 rounded-xl p-2 px-3 text-white w-min placeholder:text-grey-400"
 					/>
-
-					{/* <div
-					className={twMerge(
-						"bg-grey-800 rounded-xl p-2 px-3",
-						Number(props.user.nexus?.gold ?? 0) < 1 &&
-							"pointer-events-none opacity-50",
-					)}
-				>
-					<GoldSlider
-						min={0}
-						max={Number(props.user.nexus?.gold ?? 0)}
-						value={amount}
-						onChange={(value) => {
-							setAmount(value);
-
-							if (value !== amount) {
-								setLoading(true);
-							}
-						}}
-					/>
-				</div> */}
 				</div>
 			) : null}
 

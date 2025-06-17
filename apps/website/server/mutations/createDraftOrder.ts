@@ -3,9 +3,9 @@
 import { onlyUser } from ".";
 import { z } from "zod";
 import { shopifyClient } from "../clients/shopify";
-import { carts, gold, nexus } from "~/packages/db/schema/public";
+import { carts, gold, leaderboards, nexus } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq, sql } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 
 const CREATE_DRAFT_ORDER_MUTATION = `
@@ -54,13 +54,14 @@ export const createDraftOrder = onlyUser
 	.action(async ({ parsedInput, ctx }) => {
 		let draftOrder:
 			| {
-					id: string;
-					invoiceUrl: string;
-					status: string;
-			  }
+				id: string;
+				invoiceUrl: string;
+				status: string;
+			}
 			| undefined;
 
-		const now = new Date();
+		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
+
 
 		await db.primary.transaction(async (tx) => {
 			if (!ctx.user.nexus) {
@@ -70,11 +71,11 @@ export const createDraftOrder = onlyUser
 			// Make sure the user has enough gold before creating the draft order
 			if (parsedInput.goldApplied > 0) {
 				await tx
-					.update(nexus)
+					.update(leaderboards)
 					.set({
-						gold: sql`${nexus.gold} - ${parsedInput.goldApplied}`,
+						points: sql`${leaderboards.points} - ${parsedInput.goldApplied}`,
 					})
-					.where(eq(nexus.id, ctx.user.id));
+					.where(and(eq(leaderboards.user, ctx.user.id), eq(leaderboards.community, nounsgg)));
 			}
 
 			const response = await shopifyClient.request(
@@ -88,25 +89,25 @@ export const createDraftOrder = onlyUser
 							})),
 							shippingAddress: parsedInput.shipping
 								? {
-										firstName: parsedInput.shipping.firstName,
-										lastName: parsedInput.shipping.lastName,
-										address1: parsedInput.shipping.address1,
-										address2: parsedInput.shipping.address2 || null,
-										city: parsedInput.shipping.city,
-										province: parsedInput.shipping.province,
-										country: parsedInput.shipping.country,
-										zip: parsedInput.shipping.zip,
-									}
+									firstName: parsedInput.shipping.firstName,
+									lastName: parsedInput.shipping.lastName,
+									address1: parsedInput.shipping.address1,
+									address2: parsedInput.shipping.address2 || null,
+									city: parsedInput.shipping.city,
+									province: parsedInput.shipping.province,
+									country: parsedInput.shipping.country,
+									zip: parsedInput.shipping.zip,
+								}
 								: undefined,
 							email: parsedInput.email,
 							useCustomerDefaultAddress: false,
 							appliedDiscount:
 								parsedInput.goldApplied > 0
 									? {
-											title: "Gold Redemption",
-											value: parsedInput.goldApplied / 100,
-											valueType: "FIXED_AMOUNT",
-										}
+										title: "Gold Redemption",
+										value: parsedInput.goldApplied / 100,
+										valueType: "FIXED_AMOUNT",
+									}
 									: undefined,
 						},
 					},
@@ -125,14 +126,15 @@ export const createDraftOrder = onlyUser
 				status: string;
 			};
 
+
 			if (parsedInput.goldApplied > 0) {
 				// Save a history of the gold transaction
 				await tx.insert(gold).values({
-					amount: parsedInput.goldApplied.toString(),
+					amount: parsedInput.goldApplied,
 					order: draftOrder.id,
 					from: ctx.user.id,
 					to: null,
-					timestamp: now,
+					community: nounsgg,
 				});
 			}
 

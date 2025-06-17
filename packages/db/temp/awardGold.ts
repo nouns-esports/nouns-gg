@@ -45,7 +45,7 @@ for (let i = 0; i < (sortedXpByUser.length >= eligibleForGold ? eligibleForGold 
 
 	// await tx.insert(gold).values({
 	// 	to: user.id,
-	// 	amount: earning.toString(),
+	// 	amount: earning,
 	// 	timestamp: now,
 	// });
 
