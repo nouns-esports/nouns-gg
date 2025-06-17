@@ -166,7 +166,7 @@ export default async function Shop(props: {
 			{raffles.map((raffle) => (
 				<EnterRaffleModal
 					key={raffle.id}
-					availableGold={Number(user?.nexus?.gold ?? 0)}
+					availableGold={user?.gold ?? 0}
 					raffle={raffle}
 				/>
 			))}
