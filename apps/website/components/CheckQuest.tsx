@@ -16,15 +16,12 @@ export default function CheckQuest(props: {
 	xp: number;
 	claimed: boolean;
 	completed: boolean;
-	userXP: number;
 }) {
 	const router = useRouter();
 
 	const [isPending, startTransition] = useTransition();
 	const completeQuestAction = useAction(completeQuest);
 	const signInModal = useModal("sign-in");
-
-	console.log("quest", props.completed, props.claimed);
 
 	return (
 		<Button

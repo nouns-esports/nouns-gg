@@ -140,7 +140,6 @@ export default async function Quest(props: {
 											active={quest.active && quest.actions?.length > 0}
 											quest={quest.id}
 											xp={quest.xp}
-											userXP={user?.nexus?.xp ?? 0}
 											completed={allCompleted || questClaimed}
 											claimed={questClaimed}
 										/>
