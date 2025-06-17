@@ -14,8 +14,6 @@ agent.addTool({
 		console.log(parameters);
 		console.log(context);
 
-		const amount = Math.floor(parameters.amount);
-
 		if (context.mentions?.length === 0) {
 			throw new Error("You must mention a user to tip gold to");
 		}
@@ -52,32 +50,32 @@ agent.addTool({
 			throw new Error("You can't tip gold to yourself");
 		}
 
-		if (user.leaderboards?.[0]?.points ?? 0 < amount) {
+		const userBalance = user.leaderboards.find(leaderboard => leaderboard.community === nounsgg)?.points ?? 0;
+
+		if (userBalance < parameters.amount) {
 			throw new Error("You don't have enough gold to tip");
 		}
-
-
 
 		await db.primary.transaction(async (tx) => {
 			await tx.insert(leaderboards).values({
 				user: user.id,
 				community: nounsgg,
-				points: sql`${leaderboards.points} - ${amount}`,
+				points: sql`${leaderboards.points} - ${parameters.amount}`,
 			}).onConflictDoUpdate({
 				target: [leaderboards.user, leaderboards.community],
 				set: {
-					points: sql`${leaderboards.points} - ${amount}`,
+					points: sql`${leaderboards.points} - ${parameters.amount}`,
 				},
 			});
 
 			await tx.insert(leaderboards).values({
 				user: mentionedUser.id,
 				community: nounsgg,
-				points: sql`${leaderboards.points} + ${amount}`,
+				points: sql`${leaderboards.points} + ${parameters.amount}`,
 			}).onConflictDoUpdate({
 				target: [leaderboards.user, leaderboards.community],
 				set: {
-					points: sql`${leaderboards.points} + ${amount}`,
+					points: sql`${leaderboards.points} + ${parameters.amount}`,
 				},
 			});
 
@@ -85,10 +83,10 @@ agent.addTool({
 				community: nounsgg,
 				from: user.id,
 				to: mentionedUser.id,
-				amount,
+				amount: parameters.amount,
 			});
 		});
 
-		return `Successfully tipped ${amount} gold to ${mentionedUser.discord}`;
+		return `Successfully tipped ${parameters.amount} gold to ${mentionedUser.discord}`;
 	},
 });
