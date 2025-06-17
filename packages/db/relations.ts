@@ -224,6 +224,10 @@ export const goldRelations = relations(gold, ({ one }) => ({
 		fields: [gold.raffleEntry],
 		references: [raffleEntries.id],
 	}),
+	quest: one(quests, {
+		fields: [gold.quest],
+		references: [quests.id],
+	}),
 }));
 
 export const checkinsRelations = relations(checkins, ({ one, many }) => ({
