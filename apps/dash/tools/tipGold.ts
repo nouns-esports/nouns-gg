@@ -60,7 +60,6 @@ agent.addTool({
 			await tx.insert(leaderboards).values({
 				user: user.id,
 				community: nounsgg,
-				points: sql`${leaderboards.points} - ${parameters.amount}`,
 			}).onConflictDoUpdate({
 				target: [leaderboards.user, leaderboards.community],
 				set: {
@@ -71,7 +70,7 @@ agent.addTool({
 			await tx.insert(leaderboards).values({
 				user: mentionedUser.id,
 				community: nounsgg,
-				points: sql`${leaderboards.points} + ${parameters.amount}`,
+				points: parameters.amount,
 			}).onConflictDoUpdate({
 				target: [leaderboards.user, leaderboards.community],
 				set: {

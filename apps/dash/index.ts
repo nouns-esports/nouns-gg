@@ -68,14 +68,9 @@ export const agent = await createAgent({
 		// if (provider === "twitter") {
 		// 	// Always reply to @nounsgg tweets
 		// 	// Regularly post and quote other tweets from selected accounts (hbox, aklo, mang0, etc...)
-		// }
+		// 
 
-		const { currentLevel } = level(user.xp);
-
-		return (
-			`You are talking to ${user.name}\n` +
-			`They are level ${currentLevel} and have ${user.gold} gold`
-		);
+		return `You are talking to ${user.name}\n`;
 	},
 });
 
