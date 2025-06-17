@@ -27,13 +27,6 @@ export default function UserStatsModal(props: {
 
 			<div className="flex bg-grey-800 rounded-xl flex-col gap-2 px-4 py-3">
 				<div className="flex justify-between items-center gap-2">
-					<p className="">All Time XP</p>
-					<p className="text-white flex items-center gap-2">
-						<Sparkles className="w-4 h-4 text-green" />
-						{props.user.xp}
-					</p>
-				</div>
-				<div className="flex justify-between items-center gap-2">
 					<p className="">Votes Cast</p>
 					<p className="text-white">{props.stats.votesCast}</p>
 				</div>
