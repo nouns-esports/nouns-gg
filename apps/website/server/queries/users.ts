@@ -1,6 +1,6 @@
 import { env } from "~/env";
 import { and, eq, inArray, isNotNull, or, sql } from "drizzle-orm";
-import { leaderboards, nexus, xp } from "~/packages/db/schema/public";
+import { accounts, leaderboards, nexus, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { unstable_cache as cache } from "next/cache";
 import { cookies } from "next/headers";
@@ -58,37 +58,81 @@ export async function getAuthenticatedUser() {
 		});
 
 		try {
-			if (!userNexus) {
-				const fullPrivyUser = await privyClient.getUserById(privyUser.id);
+			await db.primary.transaction(async (tx) => {
 
-				const image = await pinataClient.upload.url(
-					fullPrivyUser.farcaster?.pfp ??
-					fullPrivyUser.twitter?.profilePictureUrl ??
-					`https://api.cloudnouns.com/v1/pfp?text=${privyUser.id}&background=1`,
-				);
 
-				await db.primary.insert(nexus).values({
-					privyId: privyUser.id,
-					name:
-						fullPrivyUser.farcaster?.displayName ??
-						fullPrivyUser.twitter?.name ??
-						fullPrivyUser.discord?.username?.split("#")[0] ??
-						fullPrivyUser.email?.address.split("@")[0] ??
-						privyUser.id.replace("did:privy:", "").substring(0, 8),
-					image: `https://ipfs.nouns.gg/ipfs/${image.IpfsHash}`,
-					bio: fullPrivyUser.farcaster?.bio ?? "",
-					canRecieveEmails: false,
-					discord: fullPrivyUser.discord?.username ?? null,
-					twitter: fullPrivyUser.twitter?.username ?? null,
-					fid: fullPrivyUser.farcaster?.fid ?? null,
-				});
+				if (!userNexus) {
+					const fullPrivyUser = await privyClient.getUserById(privyUser.id);
 
-				userNexus = await db.primary.query.nexus.findFirst({
-					where: eq(nexus.privyId, privyUser.id),
-					with: {
-						leaderboards: {
-							extras: {
-								percentile: sql<number>`
+					const image = await pinataClient.upload.url(
+						fullPrivyUser.farcaster?.pfp ??
+						fullPrivyUser.twitter?.profilePictureUrl ??
+						`https://api.cloudnouns.com/v1/pfp?text=${privyUser.id}&background=1`,
+					);
+
+					const [createdNexus] = await tx.insert(nexus).values({
+						privyId: privyUser.id,
+						name:
+							fullPrivyUser.farcaster?.displayName ??
+							fullPrivyUser.twitter?.name ??
+							fullPrivyUser.discord?.username?.split("#")[0] ??
+							fullPrivyUser.email?.address.split("@")[0] ??
+							privyUser.id.replace("did:privy:", "").substring(0, 8),
+						image: `https://ipfs.nouns.gg/ipfs/${image.IpfsHash}`,
+						bio: fullPrivyUser.farcaster?.bio ?? "",
+						canRecieveEmails: false,
+						discord: fullPrivyUser.discord?.username ?? null,
+						twitter: fullPrivyUser.twitter?.username ?? null,
+						fid: fullPrivyUser.farcaster?.fid ?? null,
+					}).onConflictDoNothing().returning();
+
+					for (const account of fullPrivyUser.linkedAccounts) {
+						if (account.type === "discord_oauth") {
+							await tx.insert(accounts).values({
+								user: createdNexus.id,
+								platform: "discord",
+								identifier: account.subject,
+							}).onConflictDoUpdate({
+								target: [accounts.platform, accounts.identifier],
+								set: {
+									user: createdNexus.id,
+								},
+							});
+						}
+
+						if (account.type === "twitter_oauth") {
+							await tx.insert(accounts).values({
+								user: createdNexus.id,
+								platform: "twitter",
+								identifier: account.subject,
+							}).onConflictDoUpdate({
+								target: [accounts.platform, accounts.identifier],
+								set: {
+									user: createdNexus.id,
+								},
+							});
+						}
+
+						if (account.type === "farcaster") {
+							await tx.insert(accounts).values({
+								user: createdNexus.id,
+								platform: "farcaster",
+								identifier: account.fid.toString(),
+							}).onConflictDoUpdate({
+								target: [accounts.platform, accounts.identifier],
+								set: {
+									user: createdNexus.id,
+								},
+							});
+						}
+					}
+
+					userNexus = await tx.query.nexus.findFirst({
+						where: eq(nexus.privyId, privyUser.id),
+						with: {
+							leaderboards: {
+								extras: {
+									percentile: sql<number>`
 									(
 										(
 											SELECT 1 + COUNT(*) 
@@ -104,25 +148,26 @@ export async function getAuthenticatedUser() {
 										)
 									)
 								`.as("percentile"),
-							}
-						},
-						carts: {
-							with: {
-								product: {
-									with: {
-										variants: true,
+								}
+							},
+							carts: {
+								with: {
+									product: {
+										with: {
+											variants: true,
+										},
 									},
+									variant: true,
 								},
-								variant: true,
 							},
 						},
-					},
-				});
+					});
 
-				if (!userNexus) {
-					toast.error("Error creating user");
+					if (!userNexus) {
+						toast.error("Error creating user");
+					}
 				}
-			}
+			});
 		} catch (e) {
 			toast.error(`Error creating user: ${e}`);
 		}
