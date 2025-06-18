@@ -3,7 +3,7 @@ import { sql } from "drizzle-orm";
 import type { JSONContent as TipTap } from "@tiptap/core";
 import type { ActionDescription } from "~/apps/website/server/actions/createAction";
 
-const platforms = () => text({ enum: ["discord", "farcaster"] });
+const platforms = () => text({ enum: ["discord", "farcaster", "twitter"] });
 const connections = () => text({ enum: ["discord:server", "farcaster:channel", "farcaster:account"] });
 
 export const links = pgTable("links", (t) => ({
@@ -89,7 +89,9 @@ export const accounts = pgTable("accounts", (t) => ({
 	// Discord user id, Farcaster FID, Twitter user id, etc.
 	identifier: t.text().notNull(),
 	user: t.uuid(),
-}));
+}), (t) => [
+	uniqueIndex("accounts_platform_identifier_unique").on(t.platform, t.identifier),
+]);
 
 export const escrows = pgTable("escrows", (t) => ({
 	id: t.uuid().primaryKey().defaultRandom(),
