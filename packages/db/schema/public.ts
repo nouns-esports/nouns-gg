@@ -88,7 +88,7 @@ export const accounts = pgTable("accounts", (t) => ({
 	platform: platforms().notNull(),
 	// Discord user id, Farcaster FID, Twitter user id, etc.
 	identifier: t.text().notNull(),
-	user: t.uuid().notNull(),
+	user: t.uuid(),
 }));
 
 export const escrows = pgTable("escrows", (t) => ({

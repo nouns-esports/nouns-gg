@@ -30,6 +30,8 @@ import {
 	roundActions,
 	eventActions,
 	leaderboards,
+	communityConnections,
+	accounts,
 } from "./schema/public";
 import {
 	erc721Balances,
@@ -54,6 +56,14 @@ export const communityRelations = relations(communities, ({ one, many }) => ({
 	quests: many(quests),
 	admins: many(communityAdmins),
 	predictions: many(predictions),
+	connections: many(communityConnections),
+}));
+
+export const communityConnectionsRelations = relations(communityConnections, ({ one }) => ({
+	community: one(communities, {
+		fields: [communityConnections.community],
+		references: [communities.id],
+	}),
 }));
 
 export const communityAdminsRelations = relations(
@@ -197,6 +207,14 @@ export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	quests: many(quests),
 	predictions: many(predictions),
 	leaderboards: many(leaderboards),
+	accounts: many(accounts),
+}));
+
+export const accountsRelations = relations(accounts, ({ one }) => ({
+	nexus: one(nexus, {
+		fields: [accounts.user],
+		references: [nexus.id],
+	}),
 }));
 
 export const goldRelations = relations(gold, ({ one }) => ({
