@@ -28,6 +28,7 @@ import { holdNFT } from "./onchain/holdNFT";
 import { followAccount } from "./social/followAccount";
 import { graduateTraits } from "./noundry/graduateTraits";
 import { submitTraits } from "./noundry/submitTraits";
+import { lilnounsSnapshot } from "./lilnouns/lilnounsSnapshot";
 
 const actions = {
 	// Account
@@ -46,6 +47,7 @@ const actions = {
 
 	// Lil Nouns
 	becomeLilNounsDelegate,
+	lilnounsSnapshot,
 
 	// Nouns
 	becomeNounsDelegate,
