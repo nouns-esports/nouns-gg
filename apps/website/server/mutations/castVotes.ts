@@ -127,7 +127,7 @@ export const castVotes = onlyUser
 					throw new Error("You can only vote on proposals in the same round");
 				}
 
-				if (votesUsed + vote.count > (round.community.handle === "lilnouns" ? 5 : allocatedVotes)) {
+				if (votesUsed + vote.count > allocatedVotes) {
 					throw new Error("You have used all your votes");
 				}
 
