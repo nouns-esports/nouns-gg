@@ -223,21 +223,22 @@ export default async function Round(props: {
 
 	const lilnounVotes =
 		round.community?.handle === "lilnouns" && user && user.wallets.length > 0
-			? (Number(
-					(
-						await db.pgpool.query.snapshots.findFirst({
+			? await (async () => {
+					let votes = 0;
+					for (const wallet of user.wallets) {
+						const snapshot = await db.pgpool.query.snapshots.findFirst({
 							where: and(
 								eq(snapshots.type, "lilnouns-open-round"),
-								sql`${snapshots.tag} LIKE ANY(ARRAY[${sql.join(
-									user.wallets.map(
-										(w) => sql`${w.address.toLowerCase()} || ':%'`,
-									),
-									", ",
-								)}])`,
+								ilike(snapshots.tag, `${wallet.address.toLowerCase()}:%`),
 							),
-						})
-					)?.tag?.split(":")[1],
-				) ?? 0)
+						});
+
+						if (snapshot) {
+							votes = votes + Number(snapshot.tag?.split(":")[1] ?? 0);
+						}
+					}
+					return votes;
+				})()
 			: 0;
 
 	return (

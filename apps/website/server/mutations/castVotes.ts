@@ -10,7 +10,7 @@ import {
 	snapshots,
 } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { and, eq, sql } from "drizzle-orm";
+import { and, eq, ilike, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { onlyUser } from ".";
@@ -43,24 +43,19 @@ export const castVotes = onlyUser
 			throw new Error("Round not found");
 		}
 
-		const lilnounVotes =
-			round.community?.handle === "lilnouns" && ctx.user.wallets.length > 0
-				? (Number(
-					(
-						await db.pgpool.query.snapshots.findFirst({
-							where: and(
-								eq(snapshots.type, "lilnouns-open-round"),
-								sql`${snapshots.tag} LIKE ANY(ARRAY[${sql.join(
-									ctx.user.wallets.map(
-										(w) => sql`${w.address.toLowerCase()} || ':%'`,
-									),
-									", ",
-								)}])`,
-							),
-						})
-					)?.tag?.split(":")[1],
-				) ?? 0)
-				: 0;
+		let lilnounVotes = 0;
+		for (const wallet of ctx.user.wallets) {
+			const snapshot = await db.pgpool.query.snapshots.findFirst({
+				where: and(
+					eq(snapshots.type, "lilnouns-open-round"),
+					ilike(snapshots.tag, `${wallet.address.toLowerCase()}:%`),
+				),
+			});
+
+			if (snapshot) {
+				lilnounVotes = lilnounVotes + Number(snapshot.tag?.split(":")[1] ?? 0);
+			}
+		}
 
 		const percentile = ctx.user.nexus.leaderboards.find(
 			(leaderboard) => leaderboard.community === round.community.id,
