@@ -22,9 +22,7 @@ export const snapshots = pgTable("snapshots", (t) => ({
 	id: t.serial().primaryKey(),
 	user: t.uuid().notNull(),
 	type: t
-		.text({
-			enum: ["discord-call", "visit-link", "genesis"],
-		})
+		.text()
 		.notNull(),
 	tag: t.text(),
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),

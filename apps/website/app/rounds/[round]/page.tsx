@@ -17,6 +17,9 @@ import Markdown from "@/components/lexical/Markdown";
 import NavigateBack from "@/components/NavigateBack";
 import { getAction } from "@/server/actions";
 import RoundActionsModal from "@/components/modals/RoundActionsModal";
+import { db } from "~/packages/db";
+import { snapshots } from "~/packages/db/schema/public";
+import { and, eq, ilike, inArray, or, sql } from "drizzle-orm";
 
 export async function generateMetadata(props: {
 	params: Promise<{ round: string }>;
@@ -217,6 +220,25 @@ export default async function Round(props: {
 					}),
 			)
 		: [];
+
+	const lilnounVotes =
+		round.community?.handle === "lilnouns" && user && user.wallets.length > 0
+			? (Number(
+					(
+						await db.pgpool.query.snapshots.findFirst({
+							where: and(
+								eq(snapshots.type, "lilnouns-open-round"),
+								sql`${snapshots.tag} LIKE ANY(ARRAY[${sql.join(
+									user.wallets.map(
+										(w) => sql`${w.address.toLowerCase()} || ':%'`,
+									),
+									", ",
+								)}])`,
+							),
+						})
+					)?.tag?.split(":")[1],
+				) ?? 0)
+			: 0;
 
 	return (
 		<>
@@ -488,6 +510,7 @@ export default async function Round(props: {
 									: undefined
 							}
 							openProposal={searchParams.p ? Number(searchParams.p) : undefined}
+							lilnounVotes={lilnounVotes}
 						/>
 					</div>
 				</div>

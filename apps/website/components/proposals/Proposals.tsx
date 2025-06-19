@@ -29,6 +29,7 @@ export default function Proposals(props: {
 		canVote: boolean;
 	};
 	openProposal?: number;
+	lilnounVotes: number;
 }) {
 	const [selectedVotes, setSelectedVotes] = useState<Record<string, number>>(
 		{},
@@ -71,7 +72,9 @@ export default function Proposals(props: {
 						? 3
 						: 1;
 
-		return props.round.community.handle === "lilnouns" ? 5 : userVotes;
+		return props.round.community.handle === "lilnouns"
+			? props.lilnounVotes
+			: userVotes;
 	}, [props.round.community.handle, props.user?.nexus.leaderboards]);
 
 	const remainingVotes = useMemo(() => {

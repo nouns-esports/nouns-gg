@@ -7,9 +7,10 @@ import {
 	xp,
 	nexus,
 	leaderboards,
+	snapshots,
 } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq, sql } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { onlyUser } from ".";
@@ -42,12 +43,33 @@ export const castVotes = onlyUser
 			throw new Error("Round not found");
 		}
 
+		const lilnounVotes =
+			round.community?.handle === "lilnouns" && ctx.user.wallets.length > 0
+				? (Number(
+					(
+						await db.pgpool.query.snapshots.findFirst({
+							where: and(
+								eq(snapshots.type, "lilnouns-open-round"),
+								sql`${snapshots.tag} LIKE ANY(ARRAY[${sql.join(
+									ctx.user.wallets.map(
+										(w) => sql`${w.address.toLowerCase()} || ':%'`,
+									),
+									", ",
+								)}])`,
+							),
+						})
+					)?.tag?.split(":")[1],
+				) ?? 0)
+				: 0;
+
 		const percentile = ctx.user.nexus.leaderboards.find(
 			(leaderboard) => leaderboard.community === round.community.id,
 		)?.percentile ?? 1;
 
 		const allocatedVotes =
-			percentile <= 0.15 ? 10 : percentile <= 0.3 ? 5 : percentile <= 0.5 ? 3 : 1;
+			round.community.handle === "lilnouns" ? lilnounVotes : percentile <= 0.15 ? 10 : percentile <= 0.3 ? 5 : percentile <= 0.5 ? 3 : 1;
+
+
 
 		const actions = await Promise.all(
 			round.actions
