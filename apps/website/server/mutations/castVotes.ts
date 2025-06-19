@@ -45,7 +45,7 @@ export const castVotes = onlyUser
 
 		let lilnounVotes = 0;
 		for (const wallet of ctx.user.wallets) {
-			const snapshot = await db.pgpool.query.snapshots.findFirst({
+			const snapshot = await db.primary.query.snapshots.findFirst({
 				where: and(
 					eq(snapshots.type, "lilnouns-open-round"),
 					ilike(snapshots.tag, `${wallet.address.toLowerCase()}:%`),

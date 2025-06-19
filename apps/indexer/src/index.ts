@@ -18,6 +18,7 @@ import {
 	nounsClients,
 	nounsTraits,
 	nounsVotes,
+	lilnounsVotes,
 	voteReposts,
 } from "ponder:schema";
 import { env } from "~/env";
@@ -60,6 +61,15 @@ ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
 		.onConflictDoUpdate({
 			account: event.args.to.toLowerCase() as `0x${string}`,
 		});
+});
+
+ponder.on("LilNounsToken:DelegateVotesChanged", async ({ event, context }) => {
+	await context.db.insert(lilnounsVotes).values({
+		account: event.args.delegate.toLowerCase() as `0x${string}`,
+		count: Number(event.args.newBalance),
+	}).onConflictDoUpdate({
+		count: Number(event.args.newBalance),
+	});
 });
 
 ponder.on("NounsToken:DelegateChanged", async ({ event, context }) => {

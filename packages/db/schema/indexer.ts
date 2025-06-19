@@ -23,6 +23,11 @@ export const lilnounDelegates = onchainTable("lilnoun_delegates", (t) => ({
 	to: t.hex().notNull(),
 }));
 
+export const lilnounsVotes = onchainTable("lilnouns_votes", (t) => ({
+	account: t.hex().primaryKey(),
+	count: t.integer().notNull(),
+}));
+
 export const nounsProposals = onchainTable("nouns_proposals", (t) => ({
 	id: t.bigint().primaryKey(),
 	proposer: t.hex().notNull(),
