@@ -22,7 +22,7 @@ export const lilnounsSnapshot = createAction({
         for (const wallet of user.wallets) {
             const snapshot = await db.pgpool.query.snapshots.findFirst({
                 where: and(
-                    eq(snapshots.type, "lilnouns-open-round"),
+                    eq(snapshots.type, "lilnouns-open-round-fixed"),
                     ilike(snapshots.tag, `${wallet.address.toLowerCase()}:%`)
                 ),
             });
