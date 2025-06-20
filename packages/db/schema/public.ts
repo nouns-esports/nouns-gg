@@ -98,6 +98,7 @@ export const escrows = pgTable("escrows", (t) => ({
 	community: t.uuid().notNull(),
 	points: t.numeric({ precision: 38, scale: 18, mode: "number" }).notNull().default(0),
 	xp: t.bigint({ mode: "number" }).notNull().default(0),
+	claimed: t.boolean().notNull().default(false),
 }));
 
 export const articles = pgTable("articles", (t) => ({
@@ -318,7 +319,9 @@ export const gold = pgTable("points", (t) => ({
 	id: t.uuid().defaultRandom().primaryKey(),
 	community: t.uuid().notNull(),
 	from: t.uuid(),
+	fromEscrow: t.uuid(),
 	to: t.uuid(),
+	toEscrow: t.uuid(),
 	amount: t.numeric({ precision: 38, scale: 18, mode: "number" }).notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
 	order: t.text(), // shopify DraftOrder gid
@@ -329,9 +332,17 @@ export const gold = pgTable("points", (t) => ({
 	quest: t.bigint({ mode: "number" }),
 }), (t) => [
 	check(
-		"from_or_to_exists",
-		sql`("from" IS NOT NULL OR "to" IS NOT NULL)`
-	)
+		"from_or_to_or_fromEscrow_or_toEscrow_exists",
+		sql`("from" IS NOT NULL OR "to" IS NOT NULL OR "fromEscrow" IS NOT NULL OR "toEscrow" IS NOT NULL)`
+	),
+	check(
+		"from_and_fromEscrow_not_both_present",
+		sql`NOT ("from" IS NOT NULL AND "fromEscrow" IS NOT NULL)`
+	),
+	check(
+		"to_and_toEscrow_not_both_present",
+		sql`NOT ("to" IS NOT NULL AND "toEscrow" IS NOT NULL)`
+	),
 ]);
 
 export const quests = pgTable("quests", (t) => ({

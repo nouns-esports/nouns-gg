@@ -32,6 +32,7 @@ import {
 	leaderboards,
 	communityConnections,
 	accounts,
+	escrows,
 } from "./schema/public";
 import {
 	erc721Balances,
@@ -79,6 +80,14 @@ export const communityAdminsRelations = relations(
 		}),
 	}),
 );
+
+export const escrowsRelations = relations(escrows, ({ one, many }) => ({
+	heir: one(accounts, {
+		fields: [escrows.heir],
+		references: [accounts.id],
+	}),
+	gold: many(gold),
+}));
 
 export const eventsRelations = relations(events, ({ one, many }) => ({
 	community: one(communities, {
@@ -224,6 +233,14 @@ export const goldRelations = relations(gold, ({ one }) => ({
 	}),
 	to: one(nexus, {
 		fields: [gold.to],
+		references: [nexus.id],
+	}),
+	fromEscrow: one(nexus, {
+		fields: [gold.fromEscrow],
+		references: [nexus.id],
+	}),
+	toEscrow: one(nexus, {
+		fields: [gold.toEscrow],
 		references: [nexus.id],
 	}),
 	checkin: one(checkins, {
