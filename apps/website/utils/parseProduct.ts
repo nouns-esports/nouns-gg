@@ -4,7 +4,7 @@ type Product = NonNullable<Awaited<ReturnType<typeof getProduct>>>;
 
 export function parseProduct(props: {
 	product: Product;
-	preSelectedVariant?: { size?: string; color?: string } | number;
+	preSelectedVariant?: { size?: string; color?: string } | string;
 }) {
 	const colors: Array<{ id: string; name: string; hex: string }> = [];
 	const sizes: Array<string> = [];
@@ -56,7 +56,7 @@ export function parseProduct(props: {
 		imageIndexFromColor,
 		selectedVariant:
 			variants.find((v) => {
-				if (typeof props.preSelectedVariant === "number") {
+				if (typeof props.preSelectedVariant === "string") {
 					return v.id === props.preSelectedVariant;
 				}
 
