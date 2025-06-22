@@ -27,9 +27,7 @@ export default async function UpdateProposal(props: {
 		return redirect(`/rounds/${params.round}`);
 	}
 
-	const proposal = round.proposals.find(
-		(p) => p.id === parseInt(params.proposal),
-	);
+	const proposal = round.proposals.find((p) => p.id === params.proposal);
 
 	if (!proposal) {
 		return notFound();
