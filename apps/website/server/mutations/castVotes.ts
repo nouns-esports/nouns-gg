@@ -20,8 +20,8 @@ import { posthogClient } from "../clients/posthog";
 export const castVotes = onlyUser
 	.schema(
 		z.object({
-			round: z.number(),
-			votes: z.array(z.object({ proposal: z.number(), count: z.number() })),
+			round: z.string(),
+			votes: z.array(z.object({ proposal: z.string(), count: z.number() })),
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
@@ -57,14 +57,21 @@ export const castVotes = onlyUser
 			}
 		}
 
-		const percentile = ctx.user.nexus.leaderboards.find(
-			(leaderboard) => leaderboard.community === round.community.id,
-		)?.percentile ?? 1;
+		const percentile =
+			ctx.user.nexus.leaderboards.find(
+				(leaderboard) => leaderboard.community === round.community.id,
+			)?.percentile ?? 1;
 
 		const allocatedVotes =
-			round.community.handle === "lilnouns" ? lilnounVotes : percentile <= 0.15 ? 10 : percentile <= 0.3 ? 5 : percentile <= 0.5 ? 3 : 1;
-
-
+			round.community.handle === "lilnouns"
+				? lilnounVotes
+				: percentile <= 0.15
+					? 10
+					: percentile <= 0.3
+						? 5
+						: percentile <= 0.5
+							? 3
+							: 1;
 
 		const actions = await Promise.all(
 			round.actions
@@ -156,8 +163,6 @@ export const castVotes = onlyUser
 					community: round.community.id,
 				});
 
-
-
 				const [updatePass] = await tx
 					.insert(leaderboards)
 					.values({
@@ -170,12 +175,12 @@ export const castVotes = onlyUser
 						set: {
 							xp: sql`${leaderboards.xp} + ${voterAmount}`,
 						},
-					}).returning({
+					})
+					.returning({
 						xp: leaderboards.xp,
 					});
 
 				newUserXP = updatePass.xp;
-
 
 				// Award 5 xp per vote to the proposer
 				const proposerAmount = 5 * vote.count;
@@ -200,7 +205,7 @@ export const castVotes = onlyUser
 						set: {
 							xp: sql`${leaderboards.xp} + ${proposerAmount}`,
 						},
-					})
+					});
 			}
 		});
 

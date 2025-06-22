@@ -12,7 +12,7 @@ import { confetti } from "@/utils/confetti";
 export default function CheckQuest(props: {
 	user: boolean;
 	active: boolean;
-	quest: number;
+	quest: string;
 	xp: number;
 	claimed: boolean;
 	completed: boolean;

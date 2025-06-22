@@ -18,7 +18,7 @@ import { posthogClient } from "../clients/posthog";
 export const completeQuest = onlyUser
 	.schema(
 		z.object({
-			quest: z.number(),
+			quest: z.string(),
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {
@@ -102,7 +102,8 @@ export const completeQuest = onlyUser
 					set: {
 						xp: sql`${leaderboards.xp} + ${quest.xp}`,
 					},
-				}).returning({
+				})
+				.returning({
 					xp: leaderboards.xp,
 				});
 

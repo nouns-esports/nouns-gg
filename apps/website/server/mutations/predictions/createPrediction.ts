@@ -21,7 +21,7 @@ export const createPrediction = onlyUser
 				}),
 			),
 			community: z.string(),
-			event: z.optional(z.number()),
+			event: z.optional(z.string()),
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {

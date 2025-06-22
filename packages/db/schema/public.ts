@@ -1,10 +1,18 @@
-import { pgTable, check, index, primaryKey, text, uniqueIndex } from "drizzle-orm/pg-core";
+import {
+	pgTable,
+	check,
+	index,
+	primaryKey,
+	text,
+	unique,
+} from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 import type { JSONContent as TipTap } from "@tiptap/core";
 import type { ActionDescription } from "~/apps/website/server/actions/createAction";
 
 const platforms = () => text({ enum: ["discord", "farcaster", "twitter"] });
-const connections = () => text({ enum: ["discord:server", "farcaster:channel", "farcaster:account"] });
+const connections = () =>
+	text({ enum: ["discord:server", "farcaster:channel", "farcaster:account"] });
 
 export const links = pgTable("links", (t) => ({
 	id: t.text().primaryKey(),
@@ -12,18 +20,18 @@ export const links = pgTable("links", (t) => ({
 }));
 
 export const visits = pgTable("visits", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
 	user: t.uuid().notNull(),
 	url: t.text().notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
 }));
 
 export const snapshots = pgTable("snapshots", (t) => ({
-	id: t.serial().primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.serial(),
 	user: t.uuid().notNull(),
-	type: t
-		.text()
-		.notNull(),
+	type: t.text().notNull(),
 	tag: t.text(),
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
 }));
@@ -69,40 +77,52 @@ export const communityConnections = pgTable("community_connections", (t) => ({
 	config: t.jsonb().notNull().$type<Record<string, any>>(),
 }));
 
-export const wallets = pgTable("wallets", (t) => ({
-	id: t.uuid().primaryKey().defaultRandom(),
-	address: t.text().unique().notNull(),
-	user: t.uuid(),
-	community: t.uuid(),
-}), (t) => [
-	check(
-		"user_or_community_exists",
-		sql`(user IS NOT NULL OR community IS NOT NULL)`
-	)
-]);
+export const wallets = pgTable(
+	"wallets",
+	(t) => ({
+		id: t.uuid().primaryKey().defaultRandom(),
+		address: t.text().unique().notNull(),
+		user: t.uuid(),
+		community: t.uuid(),
+	}),
+	(t) => [
+		check(
+			"user_or_community_exists",
+			sql`(user IS NOT NULL OR community IS NOT NULL)`,
+		),
+	],
+);
 
-export const accounts = pgTable("accounts", (t) => ({
-	id: t.uuid().primaryKey().defaultRandom(),
-	platform: platforms().notNull(),
-	// Discord user id, Farcaster FID, Twitter user id, etc.
-	identifier: t.text().notNull(),
-	user: t.uuid(),
-}), (t) => [
-	uniqueIndex("accounts_platform_identifier_unique").on(t.platform, t.identifier),
-]);
+export const accounts = pgTable(
+	"accounts",
+	(t) => ({
+		id: t.uuid().primaryKey().defaultRandom(),
+		platform: platforms().notNull(),
+		// Discord user id, Farcaster FID, Twitter user id, etc.
+		identifier: t.text().notNull(),
+		user: t.uuid(),
+	}),
+	(t) => [
+		unique("accounts_platform_identifier_unique").on(t.platform, t.identifier),
+	],
+);
 
 export const escrows = pgTable("escrows", (t) => ({
 	id: t.uuid().primaryKey().defaultRandom(),
 	// The account that, in the future, can claim the contents of this escrow to their user account that doesn't exist in the present
 	heir: t.uuid().notNull(),
 	community: t.uuid().notNull(),
-	points: t.numeric({ precision: 38, scale: 18, mode: "number" }).notNull().default(0),
+	points: t
+		.numeric({ precision: 38, scale: 18, mode: "number" })
+		.notNull()
+		.default(0),
 	xp: t.bigint({ mode: "number" }).notNull().default(0),
 	claimed: t.boolean().notNull().default(false),
 }));
 
 export const articles = pgTable("articles", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
 	handle: t.text().notNull().unique(),
 	title: t.text().notNull(),
 	image: t.text().notNull(),
@@ -113,7 +133,8 @@ export const articles = pgTable("articles", (t) => ({
 }));
 
 export const events = pgTable("events", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
@@ -137,8 +158,10 @@ export const events = pgTable("events", (t) => ({
 }));
 
 export const eventActions = pgTable("event_actions", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
-	event: t.bigint({ mode: "number" }).notNull(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
+	__event: t.bigint({ mode: "number" }),
+	event: t.uuid().notNull(),
 	action: t.text().notNull(),
 	description: t.jsonb().array().$type<ActionDescription>().notNull(),
 	inputs: t
@@ -155,26 +178,32 @@ export const stations = pgTable("stations", (t) => ({
 }));
 
 export const checkpoints = pgTable("checkpoints", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
 	handle: t.text().notNull().unique(),
 	key: t.text().notNull(),
 	name: t.text().notNull(),
-	event: t.bigint({ mode: "number" }),
+	__event: t.bigint({ mode: "number" }),
+	event: t.uuid(),
 	xp: t.integer(),
 	gold: t.numeric({ precision: 38, scale: 18, mode: "number" }),
 }));
 
 export const checkins = pgTable("checkins", (t) => ({
-	id: t.serial().primaryKey(),
-	checkpoint: t.bigint({ mode: "number" }).notNull(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.serial(),
+	__checkpoint: t.bigint({ mode: "number" }),
+	checkpoint: t.uuid().notNull(),
 	user: t.uuid(),
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
 }));
 
 export const predictions = pgTable("predictions", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
 	handle: t.text().notNull().unique(),
-	event: t.bigint({ mode: "number" }),
+	__event: t.bigint({ mode: "number" }),
+	event: t.uuid(),
 	community: t.uuid().notNull(),
 	draft: t.boolean().notNull().default(true),
 	name: t.text().notNull(),
@@ -186,43 +215,60 @@ export const predictions = pgTable("predictions", (t) => ({
 	featured: t.boolean().notNull().default(false),
 	start: t.timestamp(),
 	end: t.timestamp(),
-	pool: t.numeric({ precision: 38, scale: 18, mode: "number" }).notNull().default(0),
+	pool: t
+		.numeric({ precision: 38, scale: 18, mode: "number" })
+		.notNull()
+		.default(0),
 }));
 
 export const outcomes = pgTable("outcomes", (t) => ({
-	id: t.serial().primaryKey(),
-	prediction: t.bigint({ mode: "number" }).notNull(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.serial(),
+	__prediction: t.bigint({ mode: "number" }),
+	prediction: t.uuid().notNull(),
 	name: t.text().notNull(),
 	image: t.text(),
 	result: t.boolean(),
-	pool: t.numeric({ precision: 38, scale: 18, mode: "number" }).notNull().default(0),
+	pool: t
+		.numeric({ precision: 38, scale: 18, mode: "number" })
+		.notNull()
+		.default(0),
 }));
 
 export const bets = pgTable("bets", (t) => ({
-	id: t.serial().primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.serial(),
 	user: t.uuid().notNull(),
-	outcome: t.integer().notNull(),
-	amount: t.numeric({ precision: 38, scale: 18, mode: "number" }).notNull().default(0),
-	prediction: t.bigint({ mode: "number" }).notNull(),
+	__outcome: t.integer(),
+	outcome: t.uuid().notNull(),
+	amount: t
+		.numeric({ precision: 38, scale: 18, mode: "number" })
+		.notNull()
+		.default(0),
+	__prediction: t.bigint({ mode: "number" }),
+	prediction: t.uuid().notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
 }));
 
 export const attendees = pgTable("attendees", (t) => ({
-	id: t.serial().primaryKey(),
-	event: t.bigint({ mode: "number" }).notNull(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.serial(),
+	__event: t.bigint({ mode: "number" }),
+	event: t.uuid().notNull(),
 	featured: t.boolean().notNull().default(false),
 	__user: t.text(),
 	user: t.uuid().notNull(),
-
 }));
 
 export const rounds = pgTable("rounds", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	community: t.uuid().notNull(),
-	event: t.bigint({ mode: "number" }),
+	__event: t.bigint({ mode: "number" }),
+	event: t.uuid(),
 	draft: t.boolean().notNull().default(true),
 	type: t
 		.text({ enum: ["markdown", "video", "image", "url"] })
@@ -249,8 +295,10 @@ export const rounds = pgTable("rounds", (t) => ({
 }));
 
 export const roundActions = pgTable("round_actions", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
-	round: t.bigint({ mode: "number" }).notNull(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
+	__round: t.bigint({ mode: "number" }),
+	round: t.uuid().notNull(),
 	type: t
 		.text({ enum: ["voting", "proposing"] })
 		.notNull()
@@ -265,17 +313,21 @@ export const roundActions = pgTable("round_actions", (t) => ({
 
 // add user column and update it when they claim the award
 export const awards = pgTable("awards", (t) => ({
-	id: t.serial().primaryKey(),
-	round: t.bigint({ mode: "number" }).notNull(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.serial(),
+	__round: t.bigint({ mode: "number" }),
+	round: t.uuid().notNull(),
 	place: t.smallint().notNull(),
-	asset: t.text().notNull(),
+	__asset: t.text(),
+	asset: t.uuid().notNull(),
 	value: t.numeric({ precision: 78, scale: 0 }).notNull(),
 	claimed: t.boolean().notNull().default(false),
 }));
 
 // Rethink the way we handle awards and assets
 export const assets = pgTable("assets", (t) => ({
-	id: t.text().primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.text(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
 	decimals: t.smallint(),
@@ -285,9 +337,11 @@ export const assets = pgTable("assets", (t) => ({
 }));
 
 export const proposals = pgTable("proposals", (t) => ({
-	id: t.serial().primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.serial(),
 	user: t.uuid().notNull(),
-	round: t.bigint({ mode: "number" }).notNull(),
+	__round: t.bigint({ mode: "number" }),
+	round: t.uuid().notNull(),
 	title: t.text().notNull(),
 	content: t.text(), // rename to description
 	image: t.text(),
@@ -299,73 +353,96 @@ export const proposals = pgTable("proposals", (t) => ({
 	winner: t.smallint(),
 }));
 
-export const nexus = pgTable(
-	"users",
-	(t) => ({
-		id: t.uuid().defaultRandom().primaryKey(),
-		privyId: t.text("privy_id").notNull().unique(),
-		admin: t.boolean().notNull().default(false),
-		image: t.text().notNull().default(""),
-		name: t.text().notNull().default(""),
-		bio: t.text(),
-		twitter: t.text(),
-		discord: t.text(),
-		fid: t.integer(),
-		canRecieveEmails: t.boolean("can_recieve_emails").notNull().default(false),
-	})
-);
-
-export const gold = pgTable("points", (t) => ({
+export const nexus = pgTable("users", (t) => ({
 	id: t.uuid().defaultRandom().primaryKey(),
-	community: t.uuid().notNull(),
-	from: t.uuid(),
-	fromEscrow: t.uuid(),
-	to: t.uuid(),
-	toEscrow: t.uuid(),
-	amount: t.numeric({ precision: 38, scale: 18, mode: "number" }).notNull(),
-	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
-	order: t.text(), // shopify DraftOrder gid
-	checkin: t.integer(),
-	raffleEntry: t.integer(),
-	bet: t.integer(),
-	prediction: t.bigint({ mode: "number" }),
-	quest: t.bigint({ mode: "number" }),
-}), (t) => [
-	check(
-		"from_or_to_or_fromEscrow_or_toEscrow_exists",
-		sql`("from" IS NOT NULL OR "to" IS NOT NULL OR "fromEscrow" IS NOT NULL OR "toEscrow" IS NOT NULL)`
-	),
-	check(
-		"from_and_fromEscrow_not_both_present",
-		sql`NOT ("from" IS NOT NULL AND "fromEscrow" IS NOT NULL)`
-	),
-	check(
-		"to_and_toEscrow_not_both_present",
-		sql`NOT ("to" IS NOT NULL AND "toEscrow" IS NOT NULL)`
-	),
-]);
-
-export const quests = pgTable("quests", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
-	handle: t.text().notNull().unique(),
-	name: t.text().notNull(),
-	description: t.jsonb().$type<TipTap>(),
-	image: t.text().notNull(),
-	community: t.uuid().notNull(),
-	event: t.bigint({ mode: "number" }),
-	draft: t.boolean().notNull().default(true),
-	createdAt: t.timestamp("created_at", { mode: "date" }).notNull().defaultNow(),
-	featured: t.boolean().notNull().default(false),
-	active: t.boolean().notNull().default(false),
-	start: t.timestamp({ mode: "date" }),
-	end: t.timestamp({ mode: "date" }),
-	xp: t.integer().notNull(),
-	points: t.numeric({ precision: 38, scale: 18, mode: "number" }).notNull().default(0),
+	privyId: t.text("privy_id").notNull().unique(),
+	admin: t.boolean().notNull().default(false),
+	image: t.text().notNull().default(""),
+	name: t.text().notNull().default(""),
+	bio: t.text(),
+	twitter: t.text(),
+	discord: t.text(),
+	fid: t.integer(),
+	canRecieveEmails: t.boolean("can_recieve_emails").notNull().default(false),
 }));
 
+export const gold = pgTable(
+	"points",
+	(t) => ({
+		id: t.uuid().defaultRandom().primaryKey(),
+		community: t.uuid().notNull(),
+		from: t.uuid(),
+		fromEscrow: t.uuid(),
+		to: t.uuid(),
+		toEscrow: t.uuid(),
+		amount: t.numeric({ precision: 38, scale: 18, mode: "number" }).notNull(),
+		timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
+		order: t.text(), // shopify DraftOrder gid
+		__checkin: t.integer(),
+		checkin: t.uuid(),
+		__raffleEntry: t.integer(),
+		raffleEntry: t.uuid(),
+		__bet: t.integer(),
+		bet: t.uuid(),
+		__prediction: t.bigint({ mode: "number" }),
+		prediction: t.uuid(),
+		__quest: t.bigint({ mode: "number" }),
+		quest: t.uuid(),
+	}),
+	(t) => [
+		check(
+			"from_or_to_or_fromEscrow_or_toEscrow_exists",
+			sql`("from" IS NOT NULL OR "to" IS NOT NULL OR "fromEscrow" IS NOT NULL OR "toEscrow" IS NOT NULL)`,
+		),
+		check(
+			"from_and_fromEscrow_not_both_present",
+			sql`NOT ("from" IS NOT NULL AND "fromEscrow" IS NOT NULL)`,
+		),
+		check(
+			"to_and_toEscrow_not_both_present",
+			sql`NOT ("to" IS NOT NULL AND "toEscrow" IS NOT NULL)`,
+		),
+	],
+);
+
+export const quests = pgTable(
+	"quests",
+	(t) => ({
+		id: t.uuid().primaryKey().defaultRandom(),
+		__id: t.bigserial({ mode: "number" }),
+		handle: t.text().notNull(),
+		name: t.text().notNull(),
+		// TODO: Convert to string
+		description: t.jsonb().$type<TipTap>(),
+		image: t.text().notNull(),
+		community: t.uuid().notNull(),
+		__event: t.bigint({ mode: "number" }),
+		event: t.uuid(),
+		draft: t.boolean().notNull().default(true),
+		createdAt: t
+			.timestamp("created_at", { mode: "date" })
+			.notNull()
+			.defaultNow(),
+		featured: t.boolean().notNull().default(false),
+		active: t.boolean().notNull().default(false),
+		start: t.timestamp({ mode: "date" }),
+		end: t.timestamp({ mode: "date" }),
+		xp: t.integer().notNull(),
+		points: t
+			.numeric({ precision: 38, scale: 18, mode: "number" })
+			.notNull()
+			.default(0),
+	}),
+	(t) => [
+		unique("quests_handle_and_community_unique").on(t.handle, t.community),
+	],
+);
+
 export const questActions = pgTable("quest_actions", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
-	quest: t.bigint({ mode: "number" }).notNull(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
+	__quest: t.bigint({ mode: "number" }),
+	quest: t.uuid().notNull(),
 	action: t.text().notNull(),
 	description: t.jsonb().array().$type<ActionDescription>().notNull(),
 	inputs: t
@@ -375,8 +452,10 @@ export const questActions = pgTable("quest_actions", (t) => ({
 }));
 
 export const questCompletions = pgTable("quest_completions", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
-	quest: t.bigint({ mode: "number" }).notNull(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
+	__quest: t.bigint({ mode: "number" }),
+	quest: t.uuid().notNull(),
 	user: t.uuid().notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
 }));
@@ -386,16 +465,23 @@ export const xp = pgTable("xp", (t) => ({
 	user: t.uuid().notNull(),
 	amount: t.bigint({ mode: "number" }).notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
-	quest: t.bigint({ mode: "number" }),
-	snapshot: t.integer(),
+	__quest: t.bigint({ mode: "number" }),
+	quest: t.uuid(),
+	__snapshot: t.integer(),
+	snapshot: t.uuid(),
 	station: t.integer(),
-	checkin: t.integer(),
-	prediction: t.bigint({ mode: "number" }),
-	vote: t.integer(),
-	proposal: t.integer(),
+	__checkin: t.integer(),
+	checkin: t.uuid(),
+	__prediction: t.bigint({ mode: "number" }),
+	prediction: t.uuid(),
+	__vote: t.integer(),
+	vote: t.uuid(),
+	__proposal: t.integer(),
+	proposal: t.uuid(),
 	order: t.text(), // shopify Order gid
-	raffleEntry: t.integer(),
-	attendee: t.integer(),
+	__raffleEntry: t.integer(),
+	raffleEntry: t.uuid(),
+	attendee: t.uuid(),
 	community: t.uuid().notNull(),
 }));
 
@@ -406,11 +492,14 @@ export const leaderboards = pgTable(
 		community: t.uuid().notNull(),
 		user: t.uuid().notNull(),
 		xp: t.bigint({ mode: "number" }).notNull().default(0),
-		points: t.numeric({ precision: 38, scale: 18, mode: "number" }).notNull().default(0),
+		points: t
+			.numeric({ precision: 38, scale: 18, mode: "number" })
+			.notNull()
+			.default(0),
 		boosts: t.integer().notNull().default(0),
 	}),
 	(t) => [
-		uniqueIndex("passes_user_community_unique").on(t.user, t.community),
+		unique("passes_user_community_unique").on(t.user, t.community),
 		index("passes_xp_idx").on(t.xp),
 		index("passes_points_idx").on(t.points),
 		index("passes_boosts_idx").on(t.boosts),
@@ -419,30 +508,38 @@ export const leaderboards = pgTable(
 );
 
 export const votes = pgTable("votes", (t) => ({
-	id: t.serial().primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.serial(),
 	user: t.uuid().notNull(),
-	proposal: t.integer().notNull(),
-	round: t.bigint({ mode: "number" }).notNull(),
+	__proposal: t.integer(),
+	proposal: t.uuid().notNull(),
+	__round: t.bigint({ mode: "number" }),
+	round: t.uuid().notNull(),
 	count: t.smallint().notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
 }));
 
 export const products = pgTable("products", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
 	handle: t.text().notNull().unique(),
 	shopifyId: t.text("shopify_id").notNull(),
 	name: t.text().notNull(),
 	description: t.jsonb().$type<TipTap>(),
-	collection: t.bigint({ mode: "number" }),
-	event: t.bigint({ mode: "number" }),
+	__collection: t.bigint({ mode: "number" }),
+	collection: t.uuid(),
+	__event: t.bigint({ mode: "number" }),
+	event: t.uuid(),
 	community: t.uuid().notNull(),
 	requiresShipping: t.boolean("requires_shipping").notNull(),
 	active: t.boolean().notNull().default(true),
 }));
 
 export const productVariants = pgTable("product_variants", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
-	product: t.bigint({ mode: "number" }).notNull(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
+	__product: t.bigint({ mode: "number" }),
+	product: t.uuid().notNull(),
 	shopifyId: t.text("shopify_id").notNull(),
 	images: t.text().array().notNull(),
 	size: t.text({ enum: ["xs", "s", "m", "l", "xl", "2xl", "3xl", "4xl"] }),
@@ -455,7 +552,8 @@ export const productVariants = pgTable("product_variants", (t) => ({
 }));
 
 export const collections = pgTable("collections", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	image: t.text().notNull(),
@@ -463,15 +561,19 @@ export const collections = pgTable("collections", (t) => ({
 }));
 
 export const carts = pgTable("carts", (t) => ({
-	id: t.serial().primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.serial(),
 	user: t.uuid().notNull(),
-	product: t.bigint({ mode: "number" }).notNull(),
-	variant: t.bigint({ mode: "number" }).notNull(),
+	__product: t.bigint({ mode: "number" }),
+	product: t.uuid().notNull(),
+	__variant: t.bigint({ mode: "number" }),
+	variant: t.uuid().notNull(),
 	quantity: t.integer().notNull(),
 }));
 
 export const raffles = pgTable("raffles", (t) => ({
-	id: t.bigserial({ mode: "number" }).primaryKey(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.bigserial({ mode: "number" }),
 	handle: t.text().notNull().unique(),
 	name: t.text().notNull(),
 	description: t.jsonb().$type<TipTap>().notNull(),
@@ -481,7 +583,8 @@ export const raffles = pgTable("raffles", (t) => ({
 	gold: t.integer().notNull(), // change to .numeric({ precision: 38, scale: 18, mode: "number" })
 	winners: t.integer().notNull(),
 	limit: t.integer(),
-	event: t.bigint({ mode: "number" }),
+	__event: t.bigint({ mode: "number" }),
+	event: t.uuid(),
 	community: t.uuid().notNull(),
 	draft: t.boolean().notNull().default(true),
 	entryActions: t.text("entry_actions").array(),
@@ -492,8 +595,10 @@ export const raffles = pgTable("raffles", (t) => ({
 }));
 
 export const raffleEntries = pgTable("raffle_entries", (t) => ({
-	id: t.serial().primaryKey(),
-	raffle: t.bigint({ mode: "number" }).notNull(),
+	id: t.uuid().primaryKey().defaultRandom(),
+	__id: t.serial(),
+	__raffle: t.bigint({ mode: "number" }),
+	raffle: t.uuid().notNull(),
 	user: t.uuid().notNull(),
 	timestamp: t.timestamp().notNull().defaultNow(),
 	amount: t.integer().notNull(),

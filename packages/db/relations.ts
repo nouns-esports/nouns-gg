@@ -60,12 +60,15 @@ export const communityRelations = relations(communities, ({ one, many }) => ({
 	connections: many(communityConnections),
 }));
 
-export const communityConnectionsRelations = relations(communityConnections, ({ one }) => ({
-	community: one(communities, {
-		fields: [communityConnections.community],
-		references: [communities.id],
+export const communityConnectionsRelations = relations(
+	communityConnections,
+	({ one }) => ({
+		community: one(communities, {
+			fields: [communityConnections.community],
+			references: [communities.id],
+		}),
 	}),
-}));
+);
 
 export const communityAdminsRelations = relations(
 	communityAdmins,
@@ -348,10 +351,6 @@ export const xpRelations = relations(xp, ({ one }) => ({
 	proposal: one(proposals, {
 		fields: [xp.proposal],
 		references: [proposals.id],
-	}),
-	attendee: one(attendees, {
-		fields: [xp.attendee],
-		references: [attendees.id],
 	}),
 	// order: one(orders, {
 	// 	fields: [xp.order],

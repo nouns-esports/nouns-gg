@@ -19,8 +19,8 @@ import { posthogClient } from "../clients/posthog";
 export const placeBet = onlyUser
 	.schema(
 		z.object({
-			prediction: z.number(),
-			outcome: z.number(),
+			prediction: z.string(),
+			outcome: z.string(),
 			amount: z.number(),
 		}),
 	)
@@ -90,15 +90,18 @@ export const placeBet = onlyUser
 				.returning({ id: bets.id });
 
 			if (parsedInput.amount > 0) {
-				await tx.insert(leaderboards).values({
-					user: ctx.user.id,
-					community: prediction.community,
-				}).onConflictDoUpdate({
-					target: [leaderboards.user, leaderboards.community],
-					set: {
-						points: sql`${leaderboards.points} - ${parsedInput.amount}`,
-					},
-				});
+				await tx
+					.insert(leaderboards)
+					.values({
+						user: ctx.user.id,
+						community: prediction.community,
+					})
+					.onConflictDoUpdate({
+						target: [leaderboards.user, leaderboards.community],
+						set: {
+							points: sql`${leaderboards.points} - ${parsedInput.amount}`,
+						},
+					});
 
 				await tx.insert(gold).values({
 					from: ctx.user.id,

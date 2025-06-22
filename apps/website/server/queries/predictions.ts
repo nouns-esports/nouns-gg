@@ -33,7 +33,7 @@ export async function getPrediction(input: { handle: string; user?: string }) {
 
 export async function getPredictions(input: {
 	user?: string;
-	event?: number;
+	event?: string;
 	community?: string;
 	limit?: number;
 }) {
@@ -68,8 +68,8 @@ export async function getPredictions(input: {
 	});
 }
 export async function simulateGains(input: {
-	prediction: number;
-	outcome: number;
+	prediction: string;
+	outcome: string;
 	amount: number;
 }) {
 	const prediction = await db.primary.query.predictions.findFirst({

@@ -21,7 +21,7 @@ export const createRound = onlyUser
 			votingStart: z.date(),
 			end: z.date(),
 			community: z.string(),
-			event: z.optional(z.number()),
+			event: z.optional(z.string()),
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {

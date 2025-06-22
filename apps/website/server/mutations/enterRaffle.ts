@@ -18,7 +18,7 @@ import { posthogClient } from "../clients/posthog";
 export const enterRaffle = onlyUser
 	.schema(
 		z.object({
-			raffle: z.number(),
+			raffle: z.string(),
 			amount: z.number(),
 		}),
 	)
@@ -100,7 +100,8 @@ export const enterRaffle = onlyUser
 						xp: sql`${leaderboards.xp} + ${earnedXP}`,
 						points: sql`${leaderboards.points} - ${cost}`,
 					},
-				}).returning({
+				})
+				.returning({
 					xp: leaderboards.xp,
 				});
 

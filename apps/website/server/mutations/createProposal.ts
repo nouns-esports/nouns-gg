@@ -12,7 +12,7 @@ import { posthogClient } from "../clients/posthog";
 export const createProposal = onlyUser
 	.schema(
 		z.object({
-			round: z.number(),
+			round: z.string(),
 			title: z.string(),
 			image: z.string().optional(),
 			content: z.string().optional(),
@@ -111,7 +111,7 @@ export const createProposal = onlyUser
 			}
 		}
 
-		let proposalId = 0;
+		let proposalId = "";
 
 		await db.primary.transaction(async (tx) => {
 			const [proposal] = await tx

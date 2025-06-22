@@ -9,7 +9,7 @@ import { eq } from "drizzle-orm";
 export const transferEvent = onlyUser
 	.schema(
 		z.object({
-			event: z.number(),
+			event: z.string(),
 			community: z.string(),
 		}),
 	)

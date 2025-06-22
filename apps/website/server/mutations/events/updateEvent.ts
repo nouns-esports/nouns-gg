@@ -9,7 +9,7 @@ import { eq } from "drizzle-orm";
 export const updateEvent = onlyUser
 	.schema(
 		z.object({
-			event: z.number(),
+			event: z.string(),
 			handle: z.optional(z.string()),
 			name: z.optional(z.string()),
 			description: z.optional(z.string()),

@@ -10,13 +10,13 @@ import { onlyUser } from ".";
 export const updateProposal = onlyUser
 	.schema(
 		z.object({
-			round: z.number(),
+			round: z.string(),
 			title: z.string(),
 			image: z.string().optional(),
 			content: z.string().optional(),
 			video: z.string().optional(),
 			url: z.string().optional(),
-			proposal: z.number(),
+			proposal: z.string(),
 		}),
 	)
 	.action(async ({ parsedInput, ctx }) => {

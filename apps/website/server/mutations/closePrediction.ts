@@ -9,7 +9,7 @@ import { eq } from "drizzle-orm";
 export const closePrediction = onlyUser
 	.schema(
 		z.object({
-			prediction: z.number(),
+			prediction: z.string(),
 		}),
 	)
 	.action(async ({ parsedInput }) => {

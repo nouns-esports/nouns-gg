@@ -3,7 +3,7 @@ import { db } from "~/packages/db";
 import { eq, sql } from "drizzle-orm";
 
 export const getRaffles = cache(
-	async (input?: { event?: number; user?: string; community?: string }) => {
+	async (input?: { event?: string; user?: string; community?: string }) => {
 		const now = new Date();
 
 		return db.pgpool.query.raffles.findMany({

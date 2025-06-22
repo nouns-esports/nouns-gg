@@ -4,7 +4,7 @@ import { and, desc, eq, or } from "drizzle-orm";
 import { unstable_noStore as noStore } from "next/cache";
 
 export async function getPriorVotes(input: {
-	round: number;
+	round: string;
 	user: string;
 	wallet?: string;
 }) {
@@ -24,7 +24,7 @@ export async function getPriorVotes(input: {
 	return previousVotes.reduce((votes, vote) => votes + vote.count, 0);
 }
 
-export async function getVotes(input: { round: number; user: string }) {
+export async function getVotes(input: { round: string; user: string }) {
 	return db.pgpool.query.votes.findMany({
 		where: and(eq(votes.user, input.user), eq(votes.round, input.round)),
 		with: {
