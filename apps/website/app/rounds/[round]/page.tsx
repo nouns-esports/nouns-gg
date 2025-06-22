@@ -34,7 +34,7 @@ export async function generateMetadata(props: {
 	}
 
 	const proposal = searchParams.p
-		? round.proposals.find((p) => p.id === Number(searchParams.p))
+		? round.proposals.find((p) => p.id === searchParams.p)
 		: undefined;
 
 	const image = searchParams.user
