@@ -158,7 +158,7 @@ export const makePrediction = createAction({
 				id: {
 					name: "ID",
 					description: "The prediction ID",
-					schema: z.number(),
+					schema: z.string(),
 				},
 			},
 			name: "Prediction",
@@ -178,7 +178,7 @@ export const makePrediction = createAction({
 				id: {
 					name: "ID",
 					description: "The event ID",
-					schema: z.number(),
+					schema: z.string(),
 				},
 			},
 			name: "Event",

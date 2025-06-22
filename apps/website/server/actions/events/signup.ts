@@ -86,7 +86,7 @@ export const signup = createAction({
 				id: {
 					name: "ID",
 					description: "The event ID",
-					schema: z.number(),
+					schema: z.string(),
 				},
 			},
 			name: "Event",

@@ -161,7 +161,7 @@ export const completeQuest = createAction({
 	filters: {
 		quest: createFilter({
 			options: {
-				id: { name: "ID", description: "The quest ID", schema: z.number() },
+				id: { name: "ID", description: "The quest ID", schema: z.string() },
 			},
 			name: "Quest",
 		}),
@@ -173,7 +173,7 @@ export const completeQuest = createAction({
 		}),
 		event: createFilter({
 			options: {
-				id: { name: "ID", description: "The event ID", schema: z.number() },
+				id: { name: "ID", description: "The event ID", schema: z.string() },
 			},
 			name: "Event",
 		}),

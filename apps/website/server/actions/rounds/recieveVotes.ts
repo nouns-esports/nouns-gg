@@ -242,7 +242,7 @@ export const recieveVotes = createAction({
 	filters: {
 		round: createFilter({
 			options: {
-				id: { name: "ID", description: "The round ID", schema: z.number() },
+				id: { name: "ID", description: "The round ID", schema: z.string() },
 			},
 			name: "Round",
 		}),
@@ -254,7 +254,7 @@ export const recieveVotes = createAction({
 		}),
 		event: createFilter({
 			options: {
-				id: { name: "ID", description: "The event ID", schema: z.number() },
+				id: { name: "ID", description: "The event ID", schema: z.string() },
 			},
 			name: "Event",
 		}),
