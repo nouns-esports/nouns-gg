@@ -23,8 +23,8 @@ export default function ViewProposalModal(props: {
 		priorVotes: number;
 	};
 	isOpen?: boolean;
-	addVote: (proposal: number, amount: number) => void;
-	removeVote: (proposal: number, amount: number) => void;
+	addVote: (proposal: string, amount: number) => void;
+	removeVote: (proposal: string, amount: number) => void;
 	selectedVotes: Record<string, number>;
 	userCanVote: boolean;
 }) {

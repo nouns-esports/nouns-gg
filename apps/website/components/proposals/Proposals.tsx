@@ -28,14 +28,14 @@ export default function Proposals(props: {
 		canPropose: boolean;
 		canVote: boolean;
 	};
-	openProposal?: number;
+	openProposal?: string;
 	lilnounVotes: number;
 }) {
 	const [selectedVotes, setSelectedVotes] = useState<Record<string, number>>(
 		{},
 	);
 
-	function addVote(proposal: number, count: number) {
+	function addVote(proposal: string, count: number) {
 		if (remainingVotes < 1) return;
 
 		setSelectedVotes((prev) => ({
@@ -44,7 +44,7 @@ export default function Proposals(props: {
 		}));
 	}
 
-	function removeVote(proposal: number, count: number) {
+	function removeVote(proposal: string, count: number) {
 		if ((selectedVotes[proposal] ?? 0) < 1) return;
 
 		setSelectedVotes((prev) => ({

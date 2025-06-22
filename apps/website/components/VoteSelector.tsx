@@ -6,15 +6,15 @@ import { CaretUp, CaretDown, ChartBarHorizontal } from "phosphor-react-sc";
 import { twMerge } from "tailwind-merge";
 
 export default function VoteSelector(props: {
-	proposal: number;
+	proposal: string;
 	votes: number;
 	selectedVotes?: number;
 	userCanVote: boolean;
 	roundState: ReturnType<typeof roundState>;
 	awardCount?: number;
 	index?: number;
-	addVote: (proposal: number, votes: number) => void;
-	removeVote: (proposal: number, votes: number) => void;
+	addVote: (proposal: string, votes: number) => void;
+	removeVote: (proposal: string, votes: number) => void;
 }) {
 	if (
 		props.roundState === "Ended" ||

@@ -25,7 +25,7 @@ import type { AuthenticatedUser } from "@/server/queries/users";
 
 export default function CastVotesModal(props: {
 	round: {
-		id: number;
+		id: string;
 		handle: string;
 	};
 	proposals: Array<
@@ -95,7 +95,7 @@ export default function CastVotesModal(props: {
 						{Object.entries(props.selectedVotes).map(
 							([proposalId, voteCount]) => {
 								const proposal = props.proposals.find(
-									(proposal) => proposal.id === Number(proposalId),
+									(proposal) => proposal.id === proposalId,
 								);
 
 								if (!proposal) return;
@@ -134,7 +134,7 @@ export default function CastVotesModal(props: {
 								round: props.round.id,
 								votes: Object.entries(props.selectedVotes).map(
 									([proposal, count]) => ({
-										proposal: Number(proposal),
+										proposal,
 										count,
 									}),
 								),

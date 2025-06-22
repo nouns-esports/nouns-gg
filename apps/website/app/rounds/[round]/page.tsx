@@ -510,7 +510,7 @@ export default async function Round(props: {
 										}
 									: undefined
 							}
-							openProposal={searchParams.p ? Number(searchParams.p) : undefined}
+							openProposal={searchParams.p ? searchParams.p : undefined}
 							lilnounVotes={lilnounVotes}
 						/>
 					</div>
