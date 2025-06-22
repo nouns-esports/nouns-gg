@@ -58,7 +58,7 @@ export default async function Shop(props: {
 	const [products, collections, raffles] = await Promise.all([
 		getProducts({ collection: searchParams.collection }),
 		getCollections(),
-		getRaffles({ event: 4, user: user?.id }),
+		getRaffles({ user: user?.id }),
 	]);
 
 	const featuredCollection = collections.find(
@@ -126,8 +126,8 @@ export default async function Shop(props: {
 									</CategoryTag>
 									{collections
 										.toSorted((a, b) => {
-											if (a.id === 6) return -1;
-											if (b.id === 6) return 1;
+											if (a.id === "nounsvitational") return -1;
+											if (b.id === "nounsvitational") return 1;
 											return a.name.localeCompare(b.name);
 										})
 										.map((collection) => (
@@ -135,7 +135,7 @@ export default async function Shop(props: {
 												key={collection.id}
 												handle={collection.handle}
 												selected={searchParams.collection === collection.handle}
-												new={collection.id === 6}
+												new={collection.id === "nounsvitational"}
 											>
 												{collection.name}
 											</CategoryTag>
