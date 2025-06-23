@@ -6,9 +6,16 @@ import { unstable_cache as cache } from "next/cache";
 export async function getRoundWithProposal(input: {
 	round: string;
 	user: string;
+	community: string;
 }) {
 	return db.pgpool.query.rounds.findFirst({
-		where: eq(rounds.handle, input.round),
+		where: and(
+			eq(rounds.handle, input.round),
+			eq(
+				rounds.community,
+				sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
+			),
+		),
 		with: {
 			proposals: {
 				where: eq(proposals.user, input.user),
@@ -80,9 +87,7 @@ export const getRound = cache(
 			// 		WHERE ${
 			// 			"id" in input
 			// 				? sql`r.id = ${input.id}`
-			// 				: input.community
-			// 					? sql`r.handle = ${input.handle} AND r.community = ${input.community}`
-			// 					: sql`r.handle = ${input.handle}`
+			// 				: sql`r.handle = ${input.handle}`
 			// 		}
 			// 	  )`.as("uniqueVoters"),
 			// 	uniqueProposers: sql<number>`(
@@ -92,9 +97,7 @@ export const getRound = cache(
 			// 		WHERE ${
 			// 			"id" in input
 			// 				? sql`r.id = ${input.id}`
-			// 				: input.community
-			// 					? sql`r.handle = ${input.handle} AND r.community = ${input.community}`
-			// 					: sql`r.handle = ${input.handle}`
+			// 				: sql`r.handle = ${input.handle}`
 			// 		}
 			// 	  )`.as("uniqueProposers"),
 			// },

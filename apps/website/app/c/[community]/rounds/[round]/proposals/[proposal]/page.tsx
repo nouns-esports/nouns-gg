@@ -7,7 +7,7 @@ import { getRoundWithProposal } from "@/server/queries/rounds";
 import Markdown from "@/components/lexical/Markdown";
 
 export default async function UpdateProposal(props: {
-	params: Promise<{ round: string; proposal: string }>;
+	params: Promise<{ round: string; proposal: string; community: string }>;
 }) {
 	const params = await props.params;
 	const user = await getAuthenticatedUser();
@@ -16,6 +16,7 @@ export default async function UpdateProposal(props: {
 		? await getRoundWithProposal({
 				user: user.id,
 				round: params.round,
+				community: params.community,
 			})
 		: undefined;
 
