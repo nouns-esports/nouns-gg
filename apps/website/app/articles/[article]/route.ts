@@ -2,9 +2,7 @@ import { getArticle } from "@/server/queries/articles";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
 
-export default async function Article(props: {
-	params: Promise<{ article: string }>;
-}) {
+export async function GET(props: { params: Promise<{ article: string }> }) {
 	const params = await props.params;
 
 	if (isUUID(params.article)) {

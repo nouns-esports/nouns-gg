@@ -2,9 +2,7 @@ import { getQuest } from "@/server/queries/quests";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
 
-export default async function Quest(props: {
-	params: Promise<{ quest: string }>;
-}) {
+export async function GET(props: { params: Promise<{ quest: string }> }) {
 	const params = await props.params;
 
 	if (isUUID(params.quest)) {

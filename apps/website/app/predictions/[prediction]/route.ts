@@ -2,9 +2,7 @@ import { getPrediction } from "@/server/queries/predictions";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
 
-export default async function Prediction(props: {
-	params: Promise<{ prediction: string }>;
-}) {
+export async function GET(props: { params: Promise<{ prediction: string }> }) {
 	const params = await props.params;
 
 	if (isUUID(params.prediction)) {
