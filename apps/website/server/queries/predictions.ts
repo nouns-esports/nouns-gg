@@ -16,10 +16,12 @@ export async function getPrediction(
 				? eq(predictions.id, input.id)
 				: and(
 						eq(predictions.handle, input.handle),
-						eq(
-							predictions.community,
-							sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
-						),
+						input.community
+							? eq(
+									predictions.community,
+									sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
+								)
+							: undefined,
 					),
 		with: {
 			outcomes: true,

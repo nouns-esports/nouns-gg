@@ -25,10 +25,12 @@ export const getRound = cache(
 					? eq(rounds.id, input.id)
 					: and(
 							eq(rounds.handle, input.handle),
-							eq(
-								rounds.community,
-								sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
-							),
+							input.community
+								? eq(
+										rounds.community,
+										sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
+									)
+								: undefined,
 						),
 			with: {
 				awards: {

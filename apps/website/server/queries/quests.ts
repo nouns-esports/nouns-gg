@@ -55,10 +55,12 @@ export const getQuest = cache(
 					? eq(quests.id, input.id)
 					: and(
 							eq(quests.handle, input.handle),
-							eq(
-								quests.community,
-								sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
-							),
+							input.community
+								? eq(
+										quests.community,
+										sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
+									)
+								: undefined,
 						),
 			with: {
 				completions: input.user
