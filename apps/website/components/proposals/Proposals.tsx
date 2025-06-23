@@ -165,7 +165,7 @@ export default function Proposals(props: {
 											</ToggleModal>
 										) : null}
 										<Button
-											href={`/rounds/${props.round.handle}/propose`}
+											href={`/c/${props.round.community.handle}/rounds/${props.round.handle}/propose`}
 											disabled={
 												userProposals.length >= maxProposals ||
 												!props.user.canPropose
@@ -419,7 +419,7 @@ export default function Proposals(props: {
 											userProposals.some((p) => p.id === proposal.id) ? (
 												<Button
 													onClick={(e) => e.stopPropagation()}
-													href={`/rounds/${props.round.handle}/proposals/${proposal.id}`}
+													href={`/c/${props.round.community.handle}/rounds/${props.round.handle}/proposals/${proposal.id}`}
 													size="sm"
 													className="relative z-50"
 												>
