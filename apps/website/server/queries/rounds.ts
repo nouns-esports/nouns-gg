@@ -77,7 +77,7 @@ export const getRound = cache(
 					${
 						"id" in input
 							? sql`WHERE r.id = ${input.id}`
-							: sql`WHERE r.handle = ${input.handle}${input.community ? ` AND r.community = ${input.community}` : sql``}`
+							: sql`WHERE r.handle = ${input.handle}${input.community ? sql` AND r.community = ${input.community}` : sql``}`
 					}
 				  )`.as("uniqueVoters"),
 				uniqueProposers: sql<number>`(
@@ -87,7 +87,7 @@ export const getRound = cache(
 					${
 						"id" in input
 							? sql`WHERE r.id = ${input.id}`
-							: sql`WHERE r.handle = ${input.handle}${input.community ? ` AND r.community = ${input.community}` : sql``}`
+							: sql`WHERE r.handle = ${input.handle}${input.community ? sql` AND r.community = ${input.community}` : sql``}`
 					}
 				  )`.as("uniqueProposers"),
 			},
