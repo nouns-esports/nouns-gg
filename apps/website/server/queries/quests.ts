@@ -1,6 +1,6 @@
 import { questCompletions, quests, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { and, asc, desc, eq, gt, gte, isNull, lt, lte } from "drizzle-orm";
+import { and, asc, desc, eq, gt, gte, isNull, lt, lte, sql } from "drizzle-orm";
 import {
 	unstable_cache as cache,
 	unstable_noStore as noStore,
@@ -55,9 +55,10 @@ export const getQuest = cache(
 					? eq(quests.id, input.id)
 					: and(
 							eq(quests.handle, input.handle),
-							// input.community
-							// 	? eq(quests.community, input.community)
-							// 	: undefined,
+							eq(
+								quests.community,
+								sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
+							),
 						),
 			with: {
 				completions: input.user

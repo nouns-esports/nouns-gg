@@ -45,9 +45,10 @@ export const getEvent = cache(
 					? eq(events.id, input.id)
 					: and(
 							eq(events.handle, input.handle),
-							// input.community
-							// 	? eq(events.community, input.community)
-							// 	: undefined,
+							eq(
+								events.community,
+								sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
+							),
 						),
 			with: {
 				attendees: {
