@@ -2,8 +2,16 @@ import { getQuest } from "@/server/queries/quests";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
 
-export async function GET(props: { params: Promise<{ quest: string }> }) {
-	const params = await props.params;
+export async function GET(request: Request) {
+	const url = new URL(request.url);
+
+	const params = {
+		quest: url.searchParams.get("quest"),
+	};
+
+	if (!params.quest) {
+		return notFound();
+	}
 
 	if (isUUID(params.quest)) {
 		const quest = await getQuest({ handle: params.quest });

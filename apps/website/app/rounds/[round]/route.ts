@@ -2,8 +2,16 @@ import { getRound } from "@/server/queries/rounds";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
 
-export async function GET(props: { params: Promise<{ round: string }> }) {
-	const params = await props.params;
+export async function GET(request: Request) {
+	const url = new URL(request.url);
+
+	const params = {
+		round: url.searchParams.get("round"),
+	};
+
+	if (!params.round) {
+		return notFound();
+	}
 
 	if (isUUID(params.round)) {
 		const round = await getRound({ id: params.round });

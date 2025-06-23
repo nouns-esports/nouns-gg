@@ -2,8 +2,16 @@ import { getEvent } from "@/server/queries/events";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
 
-export async function GET(props: { params: Promise<{ event: string }> }) {
-	const params = await props.params;
+export async function GET(request: Request) {
+	const url = new URL(request.url);
+
+	const params = {
+		event: url.searchParams.get("event"),
+	};
+
+	if (!params.event) {
+		return notFound();
+	}
 
 	if (isUUID(params.event)) {
 		const event = await getEvent({ id: params.event });
