@@ -42,7 +42,7 @@ export async function getAuthenticatedUser() {
 								)
 							)
 						`.as("percentile"),
-					}
+					},
 				},
 				carts: {
 					with: {
@@ -59,71 +59,82 @@ export async function getAuthenticatedUser() {
 
 		try {
 			await db.primary.transaction(async (tx) => {
-
-
 				if (!userNexus) {
 					const fullPrivyUser = await privyClient.getUserById(privyUser.id);
 
 					const image = await pinataClient.upload.url(
 						fullPrivyUser.farcaster?.pfp ??
-						fullPrivyUser.twitter?.profilePictureUrl ??
-						`https://api.cloudnouns.com/v1/pfp?text=${privyUser.id}&background=1`,
+							fullPrivyUser.twitter?.profilePictureUrl ??
+							`https://api.cloudnouns.com/v1/pfp?text=${privyUser.id}&background=1`,
 					);
 
-					const [createdNexus] = await tx.insert(nexus).values({
-						privyId: privyUser.id,
-						name:
-							fullPrivyUser.farcaster?.displayName ??
-							fullPrivyUser.twitter?.name ??
-							fullPrivyUser.discord?.username?.split("#")[0] ??
-							fullPrivyUser.email?.address.split("@")[0] ??
-							privyUser.id.replace("did:privy:", "").substring(0, 8),
-						image: `https://ipfs.nouns.gg/ipfs/${image.IpfsHash}`,
-						bio: fullPrivyUser.farcaster?.bio ?? "",
-						canRecieveEmails: false,
-						discord: fullPrivyUser.discord?.username ?? null,
-						twitter: fullPrivyUser.twitter?.username ?? null,
-						fid: fullPrivyUser.farcaster?.fid ?? null,
-					}).onConflictDoNothing().returning();
+					const [createdNexus] = await tx
+						.insert(nexus)
+						.values({
+							privyId: privyUser.id,
+							name:
+								fullPrivyUser.farcaster?.displayName ??
+								fullPrivyUser.twitter?.name ??
+								fullPrivyUser.discord?.username?.split("#")[0] ??
+								fullPrivyUser.email?.address.split("@")[0] ??
+								privyUser.id.replace("did:privy:", "").substring(0, 8),
+							image: `https://ipfs.nouns.gg/ipfs/${image.IpfsHash}`,
+							bio: fullPrivyUser.farcaster?.bio ?? "",
+							canRecieveEmails: false,
+							discord: fullPrivyUser.discord?.username ?? null,
+							twitter: fullPrivyUser.twitter?.username ?? null,
+							fid: fullPrivyUser.farcaster?.fid ?? null,
+						})
+						.onConflictDoNothing()
+						.returning();
 
 					for (const account of fullPrivyUser.linkedAccounts) {
 						if (account.type === "discord_oauth") {
-							await tx.insert(accounts).values({
-								user: createdNexus.id,
-								platform: "discord",
-								identifier: account.subject,
-							}).onConflictDoUpdate({
-								target: [accounts.platform, accounts.identifier],
-								set: {
+							await tx
+								.insert(accounts)
+								.values({
 									user: createdNexus.id,
-								},
-							});
+									platform: "discord",
+									identifier: account.subject,
+								})
+								.onConflictDoUpdate({
+									target: [accounts.platform, accounts.identifier],
+									set: {
+										user: createdNexus.id,
+									},
+								});
 						}
 
 						if (account.type === "twitter_oauth") {
-							await tx.insert(accounts).values({
-								user: createdNexus.id,
-								platform: "twitter",
-								identifier: account.subject,
-							}).onConflictDoUpdate({
-								target: [accounts.platform, accounts.identifier],
-								set: {
+							await tx
+								.insert(accounts)
+								.values({
 									user: createdNexus.id,
-								},
-							});
+									platform: "twitter",
+									identifier: account.subject,
+								})
+								.onConflictDoUpdate({
+									target: [accounts.platform, accounts.identifier],
+									set: {
+										user: createdNexus.id,
+									},
+								});
 						}
 
 						if (account.type === "farcaster") {
-							await tx.insert(accounts).values({
-								user: createdNexus.id,
-								platform: "farcaster",
-								identifier: account.fid.toString(),
-							}).onConflictDoUpdate({
-								target: [accounts.platform, accounts.identifier],
-								set: {
+							await tx
+								.insert(accounts)
+								.values({
 									user: createdNexus.id,
-								},
-							});
+									platform: "farcaster",
+									identifier: account.fid.toString(),
+								})
+								.onConflictDoUpdate({
+									target: [accounts.platform, accounts.identifier],
+									set: {
+										user: createdNexus.id,
+									},
+								});
 						}
 					}
 
@@ -148,7 +159,7 @@ export async function getAuthenticatedUser() {
 										)
 									)
 								`.as("percentile"),
-								}
+								},
 							},
 							carts: {
 								with: {
@@ -176,19 +187,23 @@ export async function getAuthenticatedUser() {
 			return;
 		}
 
-		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
+		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902";
 
 		return {
 			id: userNexus.id,
 			discord: privyUser.discord,
 			twitter: privyUser.twitter,
 			farcaster: privyUser.farcaster,
-			wallets: privyUser.linkedAccounts.filter(
-				(account) => account.type === "wallet",
-			) ?? [],
+			wallets:
+				privyUser.linkedAccounts.filter(
+					(account) => account.type === "wallet",
+				) ?? [],
 			email: privyUser.email,
 			nexus: userNexus,
-			gold: userNexus.leaderboards.find((leaderboard) => leaderboard.community === nounsgg)?.points ?? 0,
+			gold:
+				userNexus.leaderboards.find(
+					(leaderboard) => leaderboard.community === nounsgg,
+				)?.points ?? 0,
 		};
 	} catch (e) {
 		console.error(e);
@@ -196,12 +211,11 @@ export async function getAuthenticatedUser() {
 }
 
 export const getUser = cache(
-	async (input: { user: string }) => {
-
+	async (input: { id: string } | { privy: string }) => {
 		return db.pgpool.query.nexus.findFirst({
-			where: eq(nexus.id, input.user),
+			where:
+				"id" in input ? eq(nexus.id, input.id) : eq(nexus.privyId, input.privy),
 		});
-
 	},
 	["getUser"],
 	{ tags: ["getUser"], revalidate: 60 * 10 },

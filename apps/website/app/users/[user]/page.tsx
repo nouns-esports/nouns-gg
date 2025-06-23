@@ -10,16 +10,22 @@ import SettingsModal from "@/components/modals/SettingsModal";
 import { ToggleModal } from "@/components/Modal";
 import { BarChart, Trophy } from "lucide-react";
 import UserStatsModal from "@/components/modals/UserStatsModal";
+import { isUUID } from "@/utils/isUUID";
 
 export default async function User(props: {
 	params: Promise<{ user: string }>;
 }) {
 	const params = await props.params;
 
-	const [authenticatedUser, user] = await Promise.all([
-		getAuthenticatedUser(),
-		getUser({ user: decodeURIComponent(params.user) }),
-	]);
+	const authenticatedUser = await getAuthenticatedUser();
+
+	let user: Awaited<ReturnType<typeof getUser>>;
+
+	if (isUUID(params.user)) {
+		user = await getUser({ id: params.user });
+	} else {
+		user = await getUser({ privy: params.user });
+	}
 
 	if (!user) {
 		return notFound();
