@@ -72,32 +72,32 @@ export const getRound = cache(
 				},
 				actions: true,
 			},
-			extras: {
-				uniqueVoters: sql<number>`(
-					SELECT COUNT(DISTINCT v.user)
-					FROM ${votes} v
-					JOIN ${rounds} r ON r.id = v.round
-					WHERE ${
-						"id" in input
-							? sql`r.id = ${input.id}`
-							: input.community
-								? sql`r.handle = ${input.handle} AND r.community = ${input.community}`
-								: sql`r.handle = ${input.handle}`
-					}
-				  )`.as("uniqueVoters"),
-				uniqueProposers: sql<number>`(
-					SELECT COUNT(DISTINCT v.user)
-					FROM ${proposals} v
-					JOIN ${rounds} r ON r.id = v.round
-					WHERE ${
-						"id" in input
-							? sql`r.id = ${input.id}`
-							: input.community
-								? sql`r.handle = ${input.handle} AND r.community = ${input.community}`
-								: sql`r.handle = ${input.handle}`
-					}
-				  )`.as("uniqueProposers"),
-			},
+			// extras: {
+			// 	uniqueVoters: sql<number>`(
+			// 		SELECT COUNT(DISTINCT v.user)
+			// 		FROM ${votes} v
+			// 		JOIN ${rounds} r ON r.id = v.round
+			// 		WHERE ${
+			// 			"id" in input
+			// 				? sql`r.id = ${input.id}`
+			// 				: input.community
+			// 					? sql`r.handle = ${input.handle} AND r.community = ${input.community}`
+			// 					: sql`r.handle = ${input.handle}`
+			// 		}
+			// 	  )`.as("uniqueVoters"),
+			// 	uniqueProposers: sql<number>`(
+			// 		SELECT COUNT(DISTINCT v.user)
+			// 		FROM ${proposals} v
+			// 		JOIN ${rounds} r ON r.id = v.round
+			// 		WHERE ${
+			// 			"id" in input
+			// 				? sql`r.id = ${input.id}`
+			// 				: input.community
+			// 					? sql`r.handle = ${input.handle} AND r.community = ${input.community}`
+			// 					: sql`r.handle = ${input.handle}`
+			// 		}
+			// 	  )`.as("uniqueProposers"),
+			// },
 		});
 	},
 
