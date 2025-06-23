@@ -1,4 +1,3 @@
-import Button from "@/components/Button";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import { getPredictions } from "@/server/queries/predictions";
 import PredictionCard from "@/components/PredictionCard";

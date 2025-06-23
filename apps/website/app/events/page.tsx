@@ -1,13 +1,8 @@
 import EventCard from "@/components/EventCard";
 import { getEvents } from "@/server/queries/events";
-import { getAuthenticatedUser } from "@/server/queries/users";
-import Button from "@/components/Button";
 
 export default async function Events() {
-	const [events, user] = await Promise.all([
-		getEvents(),
-		getAuthenticatedUser(),
-	]);
+	const events = await getEvents();
 
 	const happeningNow = events.filter(
 		(event) =>

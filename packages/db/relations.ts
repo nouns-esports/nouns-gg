@@ -33,6 +33,7 @@ import {
 	communityConnections,
 	accounts,
 	escrows,
+	articles,
 } from "./schema/public";
 import {
 	erc721Balances,
@@ -43,6 +44,13 @@ import {
 	nounsTraits,
 	nouns,
 } from "./schema/indexer";
+
+export const articlesRelations = relations(articles, ({ one }) => ({
+	community: one(communities, {
+		fields: [articles.community],
+		references: [communities.id],
+	}),
+}));
 
 export const snapshotsRelations = relations(snapshots, ({ one }) => ({
 	user: one(nexus, {
@@ -58,6 +66,7 @@ export const communityRelations = relations(communities, ({ one, many }) => ({
 	admins: many(communityAdmins),
 	predictions: many(predictions),
 	connections: many(communityConnections),
+	articles: many(articles),
 }));
 
 export const communityConnectionsRelations = relations(
@@ -131,6 +140,10 @@ export const predictionsRelations = relations(predictions, ({ one, many }) => ({
 	bets: many(bets),
 	earnedXP: many(xp),
 	gold: many(gold),
+	community: one(communities, {
+		fields: [predictions.community],
+		references: [communities.id],
+	}),
 }));
 
 export const outcomesRelations = relations(outcomes, ({ one, many }) => ({

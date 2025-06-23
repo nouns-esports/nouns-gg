@@ -8,6 +8,7 @@ import {
 	getAuthenticatedUser,
 	type AuthenticatedUser,
 } from "@/server/queries/users";
+import { isUUID } from "@/utils/isUUID";
 import { ArrowLeft, Check, Plus, Sparkles } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -17,11 +18,20 @@ import { env } from "~/env";
 import { formatGold } from "~/packages/utils/formatGold";
 
 export async function generateMetadata(props: {
-	params: Promise<{ prediction: string }>;
+	params: Promise<{ prediction: string; community: string }>;
 }): Promise<Metadata> {
 	const params = await props.params;
 
-	const prediction = await getPrediction({ handle: params.prediction });
+	let prediction: Awaited<ReturnType<typeof getPrediction>> | undefined;
+
+	if (isUUID(params.prediction)) {
+		prediction = await getPrediction({ id: params.prediction });
+	} else {
+		prediction = await getPrediction({
+			handle: params.prediction,
+			community: params.community,
+		});
+	}
 
 	if (!prediction) {
 		return notFound();
@@ -63,15 +73,22 @@ export async function generateMetadata(props: {
 }
 
 export default async function Prediction(props: {
-	params: Promise<{ prediction: string }>;
+	params: Promise<{ prediction: string; community: string }>;
 }) {
 	const params = await props.params;
 	const user = await getAuthenticatedUser();
 
-	const prediction = await getPrediction({
-		handle: params.prediction,
-		user: user?.id,
-	});
+	let prediction: Awaited<ReturnType<typeof getPrediction>> | undefined;
+
+	if (isUUID(params.prediction)) {
+		prediction = await getPrediction({ id: params.prediction, user: user?.id });
+	} else {
+		prediction = await getPrediction({
+			handle: params.prediction,
+			community: params.community,
+			user: user?.id,
+		});
+	}
 
 	if (!prediction) {
 		return notFound();

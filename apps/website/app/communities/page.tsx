@@ -1,12 +1,8 @@
 import { getCommunities } from "@/server/queries/communities";
-import { getAuthenticatedUser } from "@/server/queries/users";
 import Link from "@/components/Link";
 
 export default async function Communities() {
-	const [communities, user] = await Promise.all([
-		getCommunities(),
-		getAuthenticatedUser(),
-	]);
+	const communities = await getCommunities();
 
 	// Index communities by the first letter of their name
 	const communitiesByLetter: Record<string, typeof communities> = {};

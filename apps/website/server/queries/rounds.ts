@@ -18,9 +18,17 @@ export async function getRoundWithProposal(input: {
 }
 
 export const getRound = cache(
-	async (input: { handle: string }) => {
+	async (input: { id: string } | { handle: string; community?: string }) => {
 		return db.pgpool.query.rounds.findFirst({
-			where: eq(rounds.handle, input.handle),
+			where:
+				"id" in input
+					? eq(rounds.id, input.id)
+					: and(
+							eq(rounds.handle, input.handle),
+							input.community
+								? eq(rounds.community, input.community)
+								: undefined,
+						),
 			with: {
 				awards: {
 					orderBy: asc(awards.place),
@@ -62,13 +70,21 @@ export const getRound = cache(
 					SELECT COUNT(DISTINCT v.user)
 					FROM ${votes} v
 					JOIN ${rounds} r ON r.id = v.round
-					WHERE r.handle = ${input.handle}
+					${
+						"id" in input
+							? `WHERE r.id = ${input.id}`
+							: `WHERE r.handle = ${input.handle}${input.community ? ` AND r.community = ${input.community}` : ""}`
+					}
 				  )`.as("uniqueVoters"),
 				uniqueProposers: sql<number>`(
 					SELECT COUNT(DISTINCT v.user)
 					FROM ${proposals} v
 					JOIN ${rounds} r ON r.id = v.round
-					WHERE r.handle = ${input.handle}
+					${
+						"id" in input
+							? `WHERE r.id = ${input.id}`
+							: `WHERE r.handle = ${input.handle}${input.community ? ` AND r.community = ${input.community}` : ""}`
+					}
 				  )`.as("uniqueProposers"),
 			},
 		});

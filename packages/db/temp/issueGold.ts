@@ -1,21 +1,23 @@
-import { sql } from "drizzle-orm";
-import { eq } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 import { db } from "..";
 import { gold, leaderboards, nexus } from "../schema/public";
 
 const users = {
-	"did:privy:clyqngc880bvr7lidaed43ntn": 1750,
-	"did:privy:cm19rapl6028pf8xggalbw7rd": 1000,
-	"did:privy:clyrjox0p0dd4rwe1lilqaf7v": 1000,
-	"did:privy:cm5oipddl03yvnvfnf55ztp1p": 1000,
-	"did:privy:clx9goa170bm3wjgyx8ktxxor": 1000,
-	"did:privy:cm0u49y4s036i98yrh8nsko5o": 1000,
+	"2e043760-6fa7-4c41-89da-7bcf6b39ace1": 2000,
 };
 
-const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
+const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902";
 
 await db.primary.transaction(async (tx) => {
 	for (const [user, amount] of Object.entries(users)) {
+		const userRecord = await tx.query.nexus.findFirst({
+			where: eq(nexus.id, user),
+		});
+
+		if (!userRecord) {
+			throw new Error(`User ${user} not found`);
+		}
+
 		await tx.insert(gold).values({
 			amount: amount,
 			from: null,
@@ -23,15 +25,18 @@ await db.primary.transaction(async (tx) => {
 			community: nounsgg,
 		});
 
-		await tx.insert(leaderboards).values({
-			user,
-			points: amount,
-			community: nounsgg,
-		}).onConflictDoUpdate({
-			target: [leaderboards.user, leaderboards.community],
-			set: {
-				points: sql`${leaderboards.points} + ${amount}`,
-			},
-		});
+		await tx
+			.insert(leaderboards)
+			.values({
+				user,
+				points: amount,
+				community: nounsgg,
+			})
+			.onConflictDoUpdate({
+				target: [leaderboards.user, leaderboards.community],
+				set: {
+					points: sql`${leaderboards.points} + ${amount}`,
+				},
+			});
 	}
 });

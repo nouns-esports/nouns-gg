@@ -4,9 +4,22 @@ import { bets, predictions, outcomes, gold } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { and, desc, eq, sql } from "drizzle-orm";
 
-export async function getPrediction(input: { handle: string; user?: string }) {
+export async function getPrediction(
+	input: { user?: string } & (
+		| { handle: string; community?: string }
+		| { id: string }
+	),
+) {
 	return db.pgpool.query.predictions.findFirst({
-		where: eq(predictions.handle, input.handle),
+		where:
+			"id" in input
+				? eq(predictions.id, input.id)
+				: and(
+						eq(predictions.handle, input.handle),
+						input.community
+							? eq(predictions.community, input.community)
+							: undefined,
+					),
 		with: {
 			outcomes: true,
 			bets: {
@@ -21,6 +34,7 @@ export async function getPrediction(input: { handle: string; user?: string }) {
 				where: input.user ? eq(gold.to, input.user) : undefined,
 				limit: input.user ? 1 : 0,
 			},
+			community: true,
 		},
 		extras: {
 			totalBets:

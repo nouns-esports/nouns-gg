@@ -13,8 +13,6 @@ export const getQuests = cache(
 		event?: string;
 		community?: string;
 	}) => {
-		const now = new Date();
-
 		return db.pgpool.query.quests.findMany({
 			limit: input.limit,
 			where: and(
@@ -41,9 +39,22 @@ export const getQuests = cache(
 );
 
 export const getQuest = cache(
-	async (input: { handle: string; user?: string }) => {
+	async (
+		input: { user?: string } & (
+			| { id: string }
+			| { handle: string; community?: string }
+		),
+	) => {
 		return db.pgpool.query.quests.findFirst({
-			where: eq(quests.handle, input.handle),
+			where:
+				"id" in input
+					? eq(quests.id, input.id)
+					: and(
+							eq(quests.handle, input.handle),
+							input.community
+								? eq(quests.community, input.community)
+								: undefined,
+						),
 			with: {
 				completions: input.user
 					? {
@@ -53,6 +64,7 @@ export const getQuest = cache(
 					: undefined,
 				event: true,
 				actions: true,
+				community: true,
 			},
 		});
 	},

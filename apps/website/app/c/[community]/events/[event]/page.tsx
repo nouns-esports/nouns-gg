@@ -22,12 +22,23 @@ import { getProducts } from "@/server/queries/shop";
 import { getQuests } from "@/server/queries/quests";
 import { getRaffles } from "@/server/queries/raffles";
 import PredictionCard from "@/components/PredictionCard";
+import { isUUID } from "@/utils/isUUID";
 
 export async function generateMetadata(props: {
-	params: Promise<{ event: string }>;
+	params: Promise<{ event: string; community: string }>;
 }): Promise<Metadata> {
 	const params = await props.params;
-	const event = await getEvent({ handle: params.event });
+
+	let event: Awaited<ReturnType<typeof getEvent>> | undefined;
+
+	if (isUUID(params.event)) {
+		event = await getEvent({ id: params.event });
+	} else {
+		event = await getEvent({
+			handle: params.event,
+			community: params.community,
+		});
+	}
 
 	if (!event) {
 		return notFound();
@@ -67,7 +78,7 @@ export async function generateMetadata(props: {
 }
 
 export default async function EventPage(props: {
-	params: Promise<{ event: string }>;
+	params: Promise<{ event: string; community: string }>;
 	searchParams: Promise<{
 		tab?: "rounds" | "quests" | "predictions" | "shop";
 	}>;
@@ -76,10 +87,17 @@ export default async function EventPage(props: {
 	const searchParams = await props.searchParams;
 	const user = await getAuthenticatedUser();
 
-	const event = await getEvent({
-		handle: params.event,
-		user: user?.id,
-	});
+	let event: Awaited<ReturnType<typeof getEvent>> | undefined;
+
+	if (isUUID(params.event)) {
+		event = await getEvent({ id: params.event, user: user?.id });
+	} else {
+		event = await getEvent({
+			handle: params.event,
+			community: params.community,
+			user: user?.id,
+		});
+	}
 
 	if (!event) {
 		return notFound();

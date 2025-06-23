@@ -1,4 +1,3 @@
-import Button from "@/components/Button";
 import QuestCard from "@/components/QuestCard";
 import { getAuthenticatedUser } from "@/server/queries/users";
 import { getQuests } from "@/server/queries/quests";

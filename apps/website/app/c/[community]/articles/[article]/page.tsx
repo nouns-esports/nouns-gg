@@ -6,12 +6,23 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { env } from "~/env";
 import TipTap from "@/components/TipTap";
+import { isUUID } from "@/utils/isUUID";
 
 export async function generateMetadata(props: {
-	params: Promise<{ article: string }>;
+	params: Promise<{ article: string; community: string }>;
 }): Promise<Metadata> {
 	const params = await props.params;
-	const article = await getArticle({ handle: params.article });
+
+	let article: Awaited<ReturnType<typeof getArticle>> | undefined;
+
+	if (isUUID(params.article)) {
+		article = await getArticle({ id: params.article });
+	} else {
+		article = await getArticle({
+			handle: params.article,
+			community: params.community,
+		});
+	}
 
 	if (!article) {
 		return notFound();
@@ -51,11 +62,20 @@ export async function generateMetadata(props: {
 }
 
 export default async function ArticlePage(props: {
-	params: Promise<{ article: string }>;
+	params: Promise<{ article: string; community: string }>;
 }) {
 	const params = await props.params;
 
-	const article = await getArticle({ handle: params.article });
+	let article: Awaited<ReturnType<typeof getArticle>> | undefined;
+
+	if (isUUID(params.article)) {
+		article = await getArticle({ id: params.article });
+	} else {
+		article = await getArticle({
+			handle: params.article,
+			community: params.community,
+		});
+	}
 
 	if (!article || article.draft) {
 		return notFound();

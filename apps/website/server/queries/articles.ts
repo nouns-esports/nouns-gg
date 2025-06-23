@@ -4,9 +4,21 @@ import { and, desc, eq, lt } from "drizzle-orm";
 import { unstable_cache as cache } from "next/cache";
 
 export const getArticle = cache(
-	async (input: { handle: string }) => {
+	async (input: { id: string } | { handle: string; community?: string }) => {
 		return db.pgpool.query.articles.findFirst({
-			where: eq(articles.handle, input.handle),
+			where:
+				"id" in input
+					? eq(articles.id, input.id)
+					: and(
+							eq(articles.handle, input.handle),
+							input.community
+								? eq(articles.community, input.community)
+								: undefined,
+						),
+
+			with: {
+				community: true,
+			},
 		});
 	},
 	["articles"],

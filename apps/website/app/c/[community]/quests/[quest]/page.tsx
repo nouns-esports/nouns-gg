@@ -5,6 +5,7 @@ import TipTap from "@/components/TipTap";
 import { getAction } from "@/server/actions";
 import { getQuest } from "@/server/queries/quests";
 import { getAuthenticatedUser } from "@/server/queries/users";
+import { isUUID } from "@/utils/isUUID";
 import { ArrowLeft, ArrowRight, Check, Sparkles } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -12,11 +13,20 @@ import { twMerge } from "tailwind-merge";
 import { env } from "~/env";
 
 export async function generateMetadata(props: {
-	params: Promise<{ quest: string }>;
+	params: Promise<{ quest: string; community: string }>;
 }): Promise<Metadata> {
 	const params = await props.params;
 
-	const quest = await getQuest({ handle: params.quest });
+	let quest: Awaited<ReturnType<typeof getQuest>> | undefined;
+
+	if (isUUID(params.quest)) {
+		quest = await getQuest({ id: params.quest });
+	} else {
+		quest = await getQuest({
+			handle: params.quest,
+			community: params.community,
+		});
+	}
 
 	if (!quest) {
 		return notFound();
@@ -56,12 +66,22 @@ export async function generateMetadata(props: {
 }
 
 export default async function Quest(props: {
-	params: Promise<{ quest: string }>;
+	params: Promise<{ quest: string; community: string }>;
 }) {
 	const params = await props.params;
 	const user = await getAuthenticatedUser();
 
-	const quest = await getQuest({ handle: params.quest, user: user?.id });
+	let quest: Awaited<ReturnType<typeof getQuest>> | undefined;
+
+	if (isUUID(params.quest)) {
+		quest = await getQuest({ id: params.quest, user: user?.id });
+	} else {
+		quest = await getQuest({
+			handle: params.quest,
+			community: params.community,
+			user: user?.id,
+		});
+	}
 
 	if (!quest) {
 		return notFound();
@@ -71,7 +91,7 @@ export default async function Quest(props: {
 
 	const actions = await Promise.all(
 		quest.actions.map(async (actionState) => {
-			const action = await getAction({ action: actionState.action });
+			const action = getAction({ action: actionState.action });
 
 			if (!action) {
 				throw new Error(`Action ${actionState.action} not found`);

@@ -30,9 +30,22 @@ export const getFeaturedEvent = cache(
 );
 
 export const getEvent = cache(
-	async (input: { handle: string; user?: string }) => {
+	async (
+		input: { user?: string } & (
+			| { id: string }
+			| { handle: string; community?: string }
+		),
+	) => {
 		return db.pgpool.query.events.findFirst({
-			where: eq(events.handle, input.handle),
+			where:
+				"id" in input
+					? eq(events.id, input.id)
+					: and(
+							eq(events.handle, input.handle),
+							input.community
+								? eq(events.community, input.community)
+								: undefined,
+						),
 			with: {
 				attendees: {
 					with: {

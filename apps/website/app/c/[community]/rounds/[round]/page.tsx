@@ -20,14 +20,25 @@ import RoundActionsModal from "@/components/modals/RoundActionsModal";
 import { db } from "~/packages/db";
 import { snapshots } from "~/packages/db/schema/public";
 import { and, eq, ilike, inArray, or, sql } from "drizzle-orm";
+import { isUUID } from "@/utils/isUUID";
 
 export async function generateMetadata(props: {
-	params: Promise<{ round: string }>;
+	params: Promise<{ round: string; community: string }>;
 	searchParams: Promise<{ user?: string; p?: string }>;
 }): Promise<Metadata> {
 	const params = await props.params;
 	const searchParams = await props.searchParams;
-	const round = await getRound({ handle: params.round });
+
+	let round: Awaited<ReturnType<typeof getRound>> | undefined;
+
+	if (isUUID(params.round)) {
+		round = await getRound({ id: params.round });
+	} else {
+		round = await getRound({
+			handle: params.round,
+			community: params.community,
+		});
+	}
 
 	if (!round) {
 		return notFound();
@@ -123,15 +134,24 @@ type Activity = {
 );
 
 export default async function Round(props: {
-	params: Promise<{ round: string }>;
+	params: Promise<{ round: string; community: string }>;
 	searchParams: Promise<{ p?: string }>;
 }) {
 	const params = await props.params;
 	const searchParams = await props.searchParams;
-	const [user, round] = await Promise.all([
-		getAuthenticatedUser(),
-		getRound({ handle: params.round }),
-	]);
+
+	const user = await getAuthenticatedUser();
+
+	let round: Awaited<ReturnType<typeof getRound>> | undefined;
+
+	if (isUUID(params.round)) {
+		round = await getRound({ id: params.round });
+	} else {
+		round = await getRound({
+			handle: params.round,
+			community: params.community,
+		});
+	}
 
 	if (!round) {
 		return notFound();
