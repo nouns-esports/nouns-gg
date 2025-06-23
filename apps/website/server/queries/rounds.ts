@@ -74,20 +74,24 @@ export const getRound = cache(
 					SELECT COUNT(DISTINCT v.user)
 					FROM ${votes} v
 					JOIN ${rounds} r ON r.id = v.round
-					${
+					WHERE ${
 						"id" in input
-							? sql`WHERE r.id = ${input.id}`
-							: sql`WHERE r.handle = ${input.handle}${input.community ? sql` AND r.community = ${input.community}` : sql``}`
+							? sql`r.id = ${input.id}`
+							: input.community
+								? sql`r.handle = ${input.handle} AND r.community = ${input.community}`
+								: sql`r.handle = ${input.handle}`
 					}
 				  )`.as("uniqueVoters"),
 				uniqueProposers: sql<number>`(
 					SELECT COUNT(DISTINCT v.user)
 					FROM ${proposals} v
 					JOIN ${rounds} r ON r.id = v.round
-					${
+					WHERE ${
 						"id" in input
-							? sql`WHERE r.id = ${input.id}`
-							: sql`WHERE r.handle = ${input.handle}${input.community ? sql` AND r.community = ${input.community}` : sql``}`
+							? sql`r.id = ${input.id}`
+							: input.community
+								? sql`r.handle = ${input.handle} AND r.community = ${input.community}`
+								: sql`r.handle = ${input.handle}`
 					}
 				  )`.as("uniqueProposers"),
 			},
