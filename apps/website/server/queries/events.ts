@@ -45,9 +45,9 @@ export const getEvent = cache(
 					? eq(events.id, input.id)
 					: and(
 							eq(events.handle, input.handle),
-							input.community
-								? eq(events.community, input.community)
-								: undefined,
+							// input.community
+							// 	? eq(events.community, input.community)
+							// 	: undefined,
 						),
 			with: {
 				attendees: {

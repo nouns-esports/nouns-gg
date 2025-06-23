@@ -55,9 +55,9 @@ export const getQuest = cache(
 					? eq(quests.id, input.id)
 					: and(
 							eq(quests.handle, input.handle),
-							input.community
-								? eq(quests.community, input.community)
-								: undefined,
+							// input.community
+							// 	? eq(quests.community, input.community)
+							// 	: undefined,
 						),
 			with: {
 				completions: input.user

@@ -16,9 +16,9 @@ export async function getPrediction(
 				? eq(predictions.id, input.id)
 				: and(
 						eq(predictions.handle, input.handle),
-						input.community
-							? eq(predictions.community, input.community)
-							: undefined,
+						// input.community
+						// 	? eq(predictions.community, input.community)
+						// 	: undefined,
 					),
 		with: {
 			outcomes: true,
