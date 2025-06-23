@@ -12,6 +12,9 @@ export const getEvents = cache(
 			),
 			orderBy: [desc(events.featured), desc(events.start)],
 			limit: input?.limit,
+			with: {
+				community: true,
+			},
 		});
 	},
 	["getEvents"],

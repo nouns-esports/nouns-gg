@@ -30,7 +30,11 @@ export const getQuests = cache(
 							limit: 1,
 						}
 					: undefined,
-				event: true,
+				event: {
+					with: {
+						community: true,
+					},
+				},
 			},
 		});
 	},
@@ -62,7 +66,11 @@ export const getQuest = cache(
 							limit: 1,
 						}
 					: undefined,
-				event: true,
+				event: {
+					with: {
+						community: true,
+					},
+				},
 				actions: true,
 				community: true,
 			},

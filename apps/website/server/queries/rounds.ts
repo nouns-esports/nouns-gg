@@ -62,7 +62,11 @@ export const getRound = cache(
 					limit: 100,
 					orderBy: desc(votes.timestamp),
 				},
-				event: true,
+				event: {
+					with: {
+						community: true,
+					},
+				},
 				actions: true,
 			},
 			extras: {
@@ -110,7 +114,11 @@ export const getRounds = cache(
 			),
 			with: {
 				community: true,
-				event: true,
+				event: {
+					with: {
+						community: true,
+					},
+				},
 			},
 		});
 	},

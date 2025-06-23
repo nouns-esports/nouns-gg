@@ -24,7 +24,7 @@ export default function RoundCard(props: {
 			)}
 		>
 			<Link
-				href={`/rounds/${props.round.handle}`}
+				href={`/c/${props.round.community.handle}/rounds/${props.round.handle}`}
 				className="absolute z-10 top-0 left-0 w-full h-full"
 			/>
 			<div className="flex flex-shrink-0 w-full h-[40%] overflow-hidden">
@@ -91,7 +91,7 @@ export default function RoundCard(props: {
 				{props.round.event ? (
 					<div className="flex h-full items-end">
 						<Link
-							href={`/events/${props.round.event.handle}`}
+							href={`/c/${props.round.event.community.handle}/events/${props.round.event.handle}`}
 							className="relative z-20 bg-grey-500 hover:bg-grey-400 transition-colors py-2 pl-2 pr-3 rounded-full flex  items-center gap-2 text-sm font-semibold w-fit max-w-36"
 						>
 							<img

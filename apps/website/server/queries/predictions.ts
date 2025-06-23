@@ -60,6 +60,7 @@ export async function getPredictions(input: {
 		orderBy: [desc(predictions.id)],
 		limit: input.limit,
 		with: {
+			community: true,
 			outcomes: true,
 			bets: {
 				where: input.user ? eq(bets.user, input.user) : undefined,

@@ -16,7 +16,7 @@ export default function EventCard(props: {
 			)}
 		>
 			<Link
-				href={`/events/${props.event.handle}`}
+				href={`/c/${props.event.community.handle}/events/${props.event.handle}`}
 				className="absolute z-10 top-0 left-0 w-full h-full"
 			/>
 			<img
@@ -29,7 +29,11 @@ export default function EventCard(props: {
 					{props.event.name}
 				</p>
 				<div className="pointer-events-auto w-full flex justify-between items-center">
-					<Button href={`/events/${props.event.handle}`}>View Event</Button>
+					<Button
+						href={`/c/${props.event.community.handle}/events/${props.event.handle}`}
+					>
+						View Event
+					</Button>
 					<div className="text-sm text-white bg-black/60 backdrop-blur-sm rounded-full px-2.5 py-1.5 w-min text-nowrap flex items-center gap-2 cursor-pointer">
 						<CalendarDays className="w-4 h-4" />
 						{new Date() < new Date(props.event.start) ? (

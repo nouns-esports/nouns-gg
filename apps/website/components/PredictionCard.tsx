@@ -4,6 +4,7 @@ import Link from "./Link";
 import { Check, Plus, Sparkles, Vote } from "lucide-react";
 import { LockSimple } from "phosphor-react-sc";
 import { formatGold } from "~/packages/utils/formatGold";
+
 export default function PredictionCard(props: {
 	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
 	className?: string;
@@ -44,7 +45,7 @@ export default function PredictionCard(props: {
 
 	return (
 		<Link
-			href={`/predictions/${props.prediction.handle}`}
+			href={`/c/${props.prediction.community.handle}/predictions/${props.prediction.handle}`}
 			className={twMerge(
 				"relative flex flex-col gap-4 p-4 aspect-video min-h-0 w-full bg-grey-800 hover:bg-grey-600 transition-colors rounded-xl",
 				props.className,
