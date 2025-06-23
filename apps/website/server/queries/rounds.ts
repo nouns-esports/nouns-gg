@@ -76,8 +76,8 @@ export const getRound = cache(
 					JOIN ${rounds} r ON r.id = v.round
 					${
 						"id" in input
-							? `WHERE r.id = ${input.id}`
-							: `WHERE r.handle = ${input.handle}${input.community ? ` AND r.community = ${input.community}` : ""}`
+							? sql`WHERE r.id = ${input.id}`
+							: sql`WHERE r.handle = ${input.handle}${input.community ? ` AND r.community = ${input.community}` : sql``}`
 					}
 				  )`.as("uniqueVoters"),
 				uniqueProposers: sql<number>`(
@@ -86,8 +86,8 @@ export const getRound = cache(
 					JOIN ${rounds} r ON r.id = v.round
 					${
 						"id" in input
-							? `WHERE r.id = ${input.id}`
-							: `WHERE r.handle = ${input.handle}${input.community ? ` AND r.community = ${input.community}` : ""}`
+							? sql`WHERE r.id = ${input.id}`
+							: sql`WHERE r.handle = ${input.handle}${input.community ? ` AND r.community = ${input.community}` : sql``}`
 					}
 				  )`.as("uniqueProposers"),
 			},
