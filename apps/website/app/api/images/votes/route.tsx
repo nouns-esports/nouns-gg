@@ -5,6 +5,7 @@ import fs from "fs";
 import path, { join } from "path";
 import { getRound } from "@/server/queries/rounds";
 import sharp from "sharp";
+import { isUUID } from "@/utils/isUUID";
 
 export async function GET(request: Request) {
 	const url = new URL(request.url);
@@ -21,7 +22,13 @@ export async function GET(request: Request) {
 		);
 	}
 
-	const user = await getUser({ user: params.user });
+	let user: Awaited<ReturnType<typeof getUser>>;
+
+	if (isUUID(params.user)) {
+		user = await getUser({ id: params.user });
+	} else {
+		user = await getUser({ privy: params.user });
+	}
 
 	if (!user) {
 		return Response.json({ error: "User not found" }, { status: 404 });
