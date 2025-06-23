@@ -191,6 +191,7 @@ export async function getAuthenticatedUser() {
 
 		return {
 			id: userNexus.id,
+			privyId: privyUser.id,
 			discord: privyUser.discord,
 			twitter: privyUser.twitter,
 			farcaster: privyUser.farcaster,
