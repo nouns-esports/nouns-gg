@@ -186,22 +186,12 @@ export const eventActions = pgTable("event_actions", (t) => ({
 		.notNull(),
 }));
 
-export const stations = pgTable("stations", (t) => ({
-	id: t.serial().primaryKey(),
-	name: t.text().notNull(),
-	event: t.text().notNull(),
-	xp: t.integer().notNull(),
-}));
-
 export const checkpoints = pgTable(
 	"checkpoints",
 	(t) => ({
 		id: t.uuid().primaryKey().defaultRandom(),
 		handle: t.text().notNull(),
-		community: t
-			.uuid()
-			.notNull()
-			.default("98e09ea8-4c19-423c-9733-b946b6f70902"),
+		community: t.uuid().notNull(),
 		key: t.text().notNull(),
 		name: t.text().notNull(),
 		event: t.uuid(),
@@ -480,7 +470,6 @@ export const xp = pgTable("xp", (t) => ({
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
 	quest: t.uuid(),
 	snapshot: t.uuid(),
-	station: t.integer(),
 	checkin: t.uuid(),
 	prediction: t.uuid(),
 	vote: t.uuid(),
@@ -558,10 +547,7 @@ export const collections = pgTable(
 	(t) => ({
 		id: t.uuid().primaryKey().defaultRandom(),
 		handle: t.text().notNull(),
-		community: t
-			.uuid()
-			.notNull()
-			.default("98e09ea8-4c19-423c-9733-b946b6f70902"),
+		community: t.uuid().notNull(),
 		name: t.text().notNull(),
 		image: t.text().notNull(),
 		featured: t.boolean().notNull().default(false),
