@@ -8,7 +8,7 @@ export default async function Quest(props: {
 	const params = await props.params;
 
 	if (isUUID(params.quest)) {
-		const quest = await getQuest({ handle: params.quest });
+		const quest = await getQuest({ id: params.quest });
 
 		if (!quest) {
 			return notFound();
