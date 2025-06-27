@@ -102,7 +102,7 @@ export default async function Quest(props: {
 				completed: user
 					? await action.check({
 							user,
-							inputs: actionState.inputs,
+							inputs: actionState.input,
 						})
 					: false,
 			};

@@ -89,7 +89,7 @@ export const castVotes = onlyUser
 						...actionState,
 						completed: await action.check({
 							user: ctx.user,
-							inputs: actionState.inputs,
+							inputs: actionState.input,
 						}),
 					};
 				}),

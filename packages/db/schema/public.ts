@@ -79,7 +79,6 @@ export const communityAdmins = pgTable(
 
 export const communityConnections = pgTable("community_connections", (t) => ({
 	id: t.uuid().primaryKey().defaultRandom(),
-	type: connections().notNull(),
 	platform: platforms().notNull(),
 	community: t.uuid().notNull(),
 	config: t.jsonb().notNull().$type<Record<string, any>>(),
@@ -179,11 +178,9 @@ export const eventActions = pgTable("event_actions", (t) => ({
 	id: t.uuid().primaryKey().defaultRandom(),
 	event: t.uuid().notNull(),
 	action: t.text().notNull(),
+	platform: platforms(),
 	description: t.jsonb().array().$type<ActionDescription>().notNull(),
-	inputs: t
-		.jsonb()
-		.$type<{ [key: string]: { [key: string]: any } }>()
-		.notNull(),
+	input: t.jsonb().$type<{ [key: string]: { [key: string]: any } }>().notNull(),
 }));
 
 export const checkpoints = pgTable(
@@ -315,12 +312,12 @@ export const roundActions = pgTable("round_actions", (t) => ({
 		.text({ enum: ["voting", "proposing"] })
 		.notNull()
 		.default("voting"),
+	required: t.boolean().notNull().default(true),
+	votes: t.integer().notNull().default(0),
+	platform: platforms(),
 	action: t.text().notNull(),
 	description: t.jsonb().array().$type<ActionDescription>().notNull(),
-	inputs: t
-		.jsonb()
-		.$type<{ [key: string]: { [key: string]: any } }>()
-		.notNull(),
+	input: t.jsonb().$type<{ [key: string]: { [key: string]: any } }>().notNull(),
 }));
 
 // add user column and update it when they claim the award
@@ -445,8 +442,9 @@ export const questActions = pgTable("quest_actions", (t) => ({
 	id: t.uuid().primaryKey().defaultRandom(),
 	quest: t.uuid().notNull(),
 	action: t.text().notNull(),
+	platform: platforms(),
 	description: t.jsonb().array().$type<ActionDescription>().notNull(),
-	inputs: t
+	input: t
 		.jsonb()
 		.$type<{ [key: string]: { [key: string]: any | undefined } }>()
 		.notNull(),

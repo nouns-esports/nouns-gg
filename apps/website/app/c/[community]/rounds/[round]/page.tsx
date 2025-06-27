@@ -212,7 +212,7 @@ export default async function Round(props: {
 							...actionState,
 							completed: await action.check({
 								user: user,
-								inputs: actionState.inputs,
+								inputs: actionState.input,
 							}),
 						};
 					}),
@@ -234,7 +234,7 @@ export default async function Round(props: {
 							...actionState,
 							completed: await action.check({
 								user: user,
-								inputs: actionState.inputs,
+								inputs: actionState.input,
 							}),
 						};
 					}),
