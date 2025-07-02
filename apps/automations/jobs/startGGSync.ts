@@ -81,9 +81,16 @@ export const startGGSync = createJob({
 					if (!participant.email) continue;
 
 					await new Promise((resolve) => setTimeout(resolve, 1000));
-					const user = await privyClient.getUserByEmail(participant.email);
+					const privyUser = await privyClient.getUserByEmail(participant.email);
+
+					if (!privyUser) continue;
+
+					const user = await tx.query.nexus.findFirst({
+						where: eq(nexus.privyId, privyUser.id),
+					});
 
 					if (!user) continue;
+
 					if (event.attendees.some((attendee) => attendee.user === user.id)) {
 						continue;
 					}
