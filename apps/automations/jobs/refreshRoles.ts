@@ -1,17 +1,13 @@
-import { and, isNotNull } from "drizzle-orm";
 import { discordClient, rest } from "../clients/discord";
 import { env } from "~/env";
-import { nexus } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { createJob } from "../createJob";
 import { Routes } from "discord.js";
-import { level } from "~/apps/website/utils/level";
 
 const roles = {
 	verified: "1296891293385101343",
 	lilnouner: "1333162119838830602",
 	nouner: "1288240474305462404",
-	champion: "1362108474057560104",
 } as const;
 
 export const refreshRoles = createJob({
@@ -38,7 +34,6 @@ export const refreshRoles = createJob({
 
 			return {
 				id: user.id,
-				xp: user.xp,
 				discord: {
 					id: guildMember.user.id,
 					roles: guildMember.roles.cache.map((role) => role.id) ?? [],
@@ -49,19 +44,10 @@ export const refreshRoles = createJob({
 		for (const user of users) {
 			if (!user) continue;
 
-			const { currentLevel } = level(user.xp);
-
 			if (!user.discord.roles.includes(roles.verified)) {
 				await addRole({
 					user: user.discord.id,
 					role: roles.verified,
-				});
-			}
-
-			if (!user.discord.roles.includes(roles.champion) && currentLevel >= 100) {
-				await addRole({
-					user: user.discord.id,
-					role: roles.champion,
 				});
 			}
 		}
