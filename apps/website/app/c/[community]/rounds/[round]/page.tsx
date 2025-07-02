@@ -241,6 +241,13 @@ export default async function Round(props: {
 			)
 		: [];
 
+	const requiredProposingActions = proposingActions.filter(
+		(action) => action.required,
+	);
+	const requiredVotingActions = votingActions.filter(
+		(action) => action.required,
+	);
+
 	const lilnounVotes =
 		round.community?.handle === "lilnouns" && user && user.wallets.length > 0
 			? await (async () => {
@@ -522,10 +529,10 @@ export default async function Round(props: {
 									? {
 											...user,
 											priorVotes,
-											canPropose: proposingActions.every(
+											canPropose: requiredProposingActions.every(
 												(action) => action.completed,
 											),
-											canVote: votingActions.every(
+											canVote: requiredVotingActions.every(
 												(action) => action.completed,
 											),
 										}

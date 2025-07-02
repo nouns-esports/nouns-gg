@@ -97,6 +97,11 @@ export default function Proposals(props: {
 		end: props.round.end,
 	});
 
+	const hasProposingRequirements =
+		props.round.actions.filter((a) => a.type === "proposing").length > 0;
+	const hasVotingRequirements =
+		props.round.actions.filter((a) => a.type === "voting").length > 0;
+
 	return (
 		<>
 			<div className="flex flex-col gap-4">
@@ -131,139 +136,88 @@ export default function Proposals(props: {
 					</div>
 
 					<div className="flex gap-4 items-center max-md:justify-between max-md:w-full">
+						{(state === "Proposing" || state === "Upcoming") &&
+						hasProposingRequirements ? (
+							<ToggleModal
+								id="round-actions-proposing"
+								className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
+							>
+								Proposal Requirements
+								<Info className="w-4 h-4" />
+							</ToggleModal>
+						) : null}
+						{state === "Voting" && hasVotingRequirements ? (
+							<ToggleModal
+								id="round-actions-voting"
+								className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
+							>
+								Voting Requirements
+								<Info className="w-4 h-4" />
+							</ToggleModal>
+						) : null}
 						{(() => {
 							if (state === "Proposing") {
 								if (!props.user) {
 									return (
-										<>
-											<p className="text-white">
-												You must be signed in to propose
-											</p>
-											<Button onClick={() => openSignInModal()}>Sign In</Button>
-										</>
+										<Button onClick={() => openSignInModal()}>Sign In</Button>
 									);
 								}
 
 								const maxProposals = props.round.maxProposals ?? Infinity;
 
 								return (
-									<>
-										{userProposals.length >= maxProposals ? (
-											<p className="text-white">
-												You can only make {maxProposals} proposals
-											</p>
-										) : null}
-										{!(userProposals.length >= maxProposals) &&
-										props.round.actions.filter((a) => a.type === "proposing")
-											.length > 0 ? (
-											<ToggleModal
-												id="round-actions-proposing"
-												className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
-											>
-												Proposal Requirements
-												<Info className="w-4 h-4" />
-											</ToggleModal>
-										) : null}
-										<Button
-											href={`/c/${props.round.community.handle}/rounds/${props.round.handle}/propose`}
-											disabled={
-												userProposals.length >= maxProposals ||
-												!props.user.canPropose
-											}
-										>
-											Create Proposal
-										</Button>
-									</>
+									<Button
+										href={`/c/${props.round.community.handle}/rounds/${props.round.handle}/propose`}
+										disabled={
+											userProposals.length >= maxProposals ||
+											!props.user.canPropose
+										}
+									>
+										Create Proposal
+									</Button>
 								);
 							}
 
 							if (state === "Voting") {
 								if (!props.user) {
 									return (
-										<>
-											<p className="text-white">
-												You must be signed in to vote
-											</p>
-											<Button onClick={() => openSignInModal()}>Sign In</Button>
-										</>
+										<Button onClick={() => openSignInModal()}>Sign In</Button>
 									);
 								}
 
 								if (remainingVotes < 1 && votesSelected === 0) {
 									return (
-										<>
-											<p className="text-white">
-												Your votes have been submitted
-											</p>
-											<ToggleModal id="share-votes">
-												<Button onClick={() => openShareVotesModal()}>
-													Share
-												</Button>
-											</ToggleModal>
-										</>
+										<ToggleModal id="share-votes">
+											<Button onClick={() => openShareVotesModal()}>
+												Share Votes
+											</Button>
+										</ToggleModal>
 									);
 								}
 
 								if (!props.user.canVote) {
-									return (
-										<>
-											{props.round.actions.filter((a) => a.type === "voting")
-												.length > 0 ? (
-												<ToggleModal
-													id="round-actions-voting"
-													className="text-red flex items-center gap-1.5 hover:text-red/70 transition-colors"
-												>
-													Voting Requirements
-													<Info className="w-4 h-4" />
-												</ToggleModal>
-											) : null}
-											<Button disabled>Submit Votes</Button>
-										</>
-									);
+									return <Button disabled>Submit Votes</Button>;
 								}
 
 								return (
-									<>
-										<p className="text-white">
-											{remainingVotes}/{allocatedVotes} votes remaining
-										</p>
-										<Button
-											disabled={votesSelected < 1}
-											onClick={() => openCastVotesModal()}
-										>
-											Submit Votes
-										</Button>
-									</>
+									<Button
+										disabled={votesSelected < 1}
+										onClick={() => openCastVotesModal()}
+									>
+										Submit Votes - {votesSelected}/{allocatedVotes}
+									</Button>
 								);
 							}
 
-							if (state === "Ended") {
-								if (props.user) {
-									for (let i = 0; i < props.round.awards.length; i++) {
-										if (props.round.proposals[i]?.user === props.user.id) {
-											return (
-												<>
-													<p className="text-white">Your proposal won!</p>
-													<Button href="/user">View Rewards</Button>
-												</>
-											);
-										}
-									}
-
-									if (remainingVotes < 1 && votesSelected === 0) {
-										return (
-											<>
-												<p className="text-white">
-													Your votes have been submitted
-												</p>
-												<ToggleModal id="share-votes">
-													<Button onClick={() => openShareVotesModal()}>
-														Share
-													</Button>
-												</ToggleModal>
-											</>
-										);
-									}
+							if (state === "Ended" && props.user) {
+								if (remainingVotes < 1 && votesSelected === 0) {
+									return (
+										<ToggleModal id="share-votes">
+											<Button onClick={() => openShareVotesModal()}>
+												Share Votes
+											</Button>
+										</ToggleModal>
+									);
 								}
 							}
 						})()}

@@ -62,7 +62,7 @@ export const castVotes = onlyUser
 				(leaderboard) => leaderboard.community === round.community.id,
 			)?.percentile ?? 1;
 
-		const allocatedVotes =
+		let allocatedVotes =
 			round.community.handle === "lilnouns"
 				? lilnounVotes
 				: percentile <= 0.15
@@ -73,30 +73,32 @@ export const castVotes = onlyUser
 							? 3
 							: 1;
 
-		const actions = await Promise.all(
-			round.actions
-				.filter((action) => action.type === "voting")
-				.map(async (actionState) => {
-					const action = getAction({
-						action: actionState.action,
-					});
+		const actions = round.actions.filter((action) => action.type === "voting");
 
-					if (!action) {
-						throw new Error("Action not found");
-					}
+		for (const actionState of actions) {
+			const action = getAction({
+				action: actionState.action,
+			});
 
-					return {
-						...actionState,
-						completed: await action.check({
-							user: ctx.user,
-							inputs: actionState.input,
-						}),
-					};
-				}),
-		);
+			if (!action) {
+				throw new Error("Action not found");
+			}
 
-		if (!actions.every((action) => action.completed)) {
-			throw new Error("Voting prerequisites not met");
+			const completed = await action.check({
+				user: ctx.user,
+				inputs: actionState.input,
+			});
+
+			if (actionState.required && !completed) {
+				throw new Error("Voting prerequisites not met");
+			}
+
+			allocatedVotes = allocatedVotes + actionState.votes;
+
+			return {
+				...actionState,
+				completed,
+			};
 		}
 
 		const now = new Date();

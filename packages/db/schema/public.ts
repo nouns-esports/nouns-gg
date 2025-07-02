@@ -114,6 +114,24 @@ export const accounts = pgTable(
 	],
 );
 
+// export const charges = pgTable(
+// 	"charges",
+// 	(t) => ({
+// 		id: t.uuid().primaryKey().defaultRandom(),
+// 		user: t.uuid().notNull(),
+// 		community: t.uuid().notNull(),
+// 		payer: t.uuid().notNull(),
+// 		count: t.integer().notNull(),
+// 		timestamp: t.timestamp().notNull().defaultNow(),
+// 		expires: t.timestamp().notNull(),
+// 		renew: t.boolean().notNull(),
+// 	}),
+// 	(t) => [
+// 		unique("charges_user_community_unique").on(t.user, t.community, t.payer),
+// 		check("count_positive", sql`${t.count} > 0`),
+// 	],
+// );
+
 export const escrows = pgTable(
 	"escrows",
 	(t) => ({
@@ -489,13 +507,11 @@ export const leaderboards = pgTable(
 			.numeric({ precision: 38, scale: 18, mode: "number" })
 			.notNull()
 			.default(0),
-		boosts: t.integer().notNull().default(0),
 	}),
 	(t) => [
 		unique("passes_user_community_unique").on(t.user, t.community),
 		index("passes_xp_idx").on(t.xp),
 		index("passes_points_idx").on(t.points),
-		index("passes_boosts_idx").on(t.boosts),
 		check("points_balance", sql`${t.points} >= 0`),
 	],
 );

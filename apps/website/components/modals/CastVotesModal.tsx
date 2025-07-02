@@ -119,7 +119,7 @@ export default function CastVotesModal(props: {
 											</div>
 										) : (
 											<p className="text-white text-lg font-bebas-neue leading-none">
-												Proposal {proposal.id}
+												{proposal.title.substring(0, 20)}
 											</p>
 										)}
 										<p className="text-lg text-white">+ {voteCount}</p>
@@ -146,8 +146,8 @@ export default function CastVotesModal(props: {
 
 							if (result?.data) {
 								toast.xp({
-									earned: result.data.earnedXP,
-									total: result.data.totalXP,
+									earned: result.data.earnedXP ?? 0,
+									total: result.data.totalXP ?? 0,
 								});
 							}
 

@@ -41,30 +41,32 @@ export const createProposal = onlyUser
 			);
 		}
 
-		const actions = await Promise.all(
-			round.actions
-				.filter((action) => action.type === "proposing")
-				.map(async (actionState) => {
-					const action = getAction({
-						action: actionState.action,
-					});
-
-					if (!action) {
-						throw new Error("Action not found");
-					}
-
-					return {
-						...actionState,
-						completed: await action.check({
-							user: ctx.user,
-							inputs: actionState.input,
-						}),
-					};
-				}),
+		const actions = round.actions.filter(
+			(action) => action.type === "proposing",
 		);
 
-		if (!actions.every((action) => action.completed)) {
-			throw new Error("Proposing prerequisites not met");
+		for (const actionState of actions) {
+			const action = getAction({
+				action: actionState.action,
+			});
+
+			if (!action) {
+				throw new Error("Action not found");
+			}
+
+			const completed = await action.check({
+				user: ctx.user,
+				inputs: actionState.input,
+			});
+
+			if (actionState.required && !completed) {
+				throw new Error("Proposing prerequisites not met");
+			}
+
+			return {
+				...actionState,
+				completed,
+			};
 		}
 
 		const now = new Date();
