@@ -1,41 +1,31 @@
 import { articles } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { and, desc, eq, lt } from "drizzle-orm";
-import { unstable_cache as cache } from "next/cache";
 
-export const getArticle = cache(
-	async (input: { id: string } | { handle: string; community?: string }) => {
-		return db.pgpool.query.articles.findFirst({
-			where:
-				"id" in input
-					? eq(articles.id, input.id)
-					: and(
-							eq(articles.handle, input.handle),
-							input.community
-								? eq(articles.community, input.community)
-								: undefined,
-						),
+export async function getArticle(
+	input: { id: string } | { handle: string; community?: string },
+) {
+	return db.pgpool.query.articles.findFirst({
+		where:
+			"id" in input
+				? eq(articles.id, input.id)
+				: and(
+						eq(articles.handle, input.handle),
+						input.community
+							? eq(articles.community, input.community)
+							: undefined,
+					),
 
-			with: {
-				community: true,
-			},
-		});
-	},
-	["articles"],
-	{ tags: ["articles"], revalidate: 60 * 10 },
-);
+		with: {
+			community: true,
+		},
+	});
+}
 
-export const getArticles = cache(
-	async () => {
-		return db.pgpool.query.articles.findMany({
-			where: and(
-				lt(articles.publishedAt, new Date()),
-				eq(articles.draft, false),
-			),
-			orderBy: desc(articles.publishedAt),
-			limit: 4,
-		});
-	},
-	["articles"],
-	{ tags: ["articles"], revalidate: 60 * 10 },
-);
+export async function getArticles() {
+	return db.pgpool.query.articles.findMany({
+		where: and(lt(articles.publishedAt, new Date()), eq(articles.draft, false)),
+		orderBy: desc(articles.publishedAt),
+		limit: 4,
+	});
+}

@@ -211,36 +211,28 @@ export async function getAuthenticatedUser() {
 	}
 }
 
-export const getUser = cache(
-	async (input: { id: string } | { privy: string }) => {
-		return db.pgpool.query.nexus.findFirst({
-			where:
-				"id" in input ? eq(nexus.id, input.id) : eq(nexus.privyId, input.privy),
-		});
-	},
-	["getUser"],
-	{ tags: ["getUser"], revalidate: 60 * 10 },
-);
+export async function getUser(input: { id: string } | { privy: string }) {
+	return db.pgpool.query.nexus.findFirst({
+		where:
+			"id" in input ? eq(nexus.id, input.id) : eq(nexus.privyId, input.privy),
+	});
+}
 
-export const getUserStats = cache(
-	async (input: { user: string }) => {
-		const user = await db.pgpool.query.nexus.findFirst({
-			where: eq(nexus.id, input.user),
-			with: {
-				proposals: true,
-				xpRecords: {
-					where: isNotNull(xp.quest),
-				},
-				votes: true,
+export async function getUserStats(input: { user: string }) {
+	const user = await db.pgpool.query.nexus.findFirst({
+		where: eq(nexus.id, input.user),
+		with: {
+			proposals: true,
+			xpRecords: {
+				where: isNotNull(xp.quest),
 			},
-		});
+			votes: true,
+		},
+	});
 
-		return {
-			proposalsCreated: user?.proposals.length ?? 0,
-			questsCompleted: user?.xpRecords.length ?? 0,
-			votesCast: user?.votes.length ?? 0,
-		};
-	},
-	["getUserStats"],
-	{ tags: ["getUserStats"], revalidate: 60 * 10 },
-);
+	return {
+		proposalsCreated: user?.proposals.length ?? 0,
+		questsCompleted: user?.xpRecords.length ?? 0,
+		votesCast: user?.votes.length ?? 0,
+	};
+}
