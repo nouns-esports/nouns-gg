@@ -73,15 +73,21 @@ export const farcasterXP = createJob({
 			for (const [caster, { likes, recasts }] of Object.entries(totals)) {
 				const likesXP = likes * 25;
 				const recastsXP = recasts * 75;
-				const user = users.find(
+				const privyUser = users.find(
 					(user) => user.farcaster?.fid === Number(caster),
 				);
+
+				if (!privyUser) continue;
+
+				const user = await tx.query.nexus.findFirst({
+					where: eq(nexus.privyId, privyUser.id),
+				});
 
 				if (!user) continue;
 
 				const amount = likesXP + recastsXP;
 
-				const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
+				const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902";
 
 				await tx.insert(xp).values({
 					user: user.id,
