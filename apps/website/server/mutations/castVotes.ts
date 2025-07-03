@@ -47,7 +47,7 @@ export const castVotes = onlyUser
 		for (const wallet of ctx.user.wallets) {
 			const snapshot = await db.primary.query.snapshots.findFirst({
 				where: and(
-					eq(snapshots.type, "lilnouns-open-round-fixed"),
+					eq(snapshots.type, "lilnouns-software"),
 					ilike(snapshots.tag, `${wallet.address.toLowerCase()}:%`),
 				),
 			});
