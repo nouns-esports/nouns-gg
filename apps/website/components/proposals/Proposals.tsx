@@ -185,6 +185,10 @@ export default function Proposals(props: {
 									);
 								}
 
+								if (!props.user.canVote || allocatedVotes === 0) {
+									return <Button disabled>Submit Votes</Button>;
+								}
+
 								if (remainingVotes < 1 && votesSelected === 0) {
 									return (
 										<ToggleModal id="share-votes">
@@ -193,10 +197,6 @@ export default function Proposals(props: {
 											</Button>
 										</ToggleModal>
 									);
-								}
-
-								if (!props.user.canVote) {
-									return <Button disabled>Submit Votes</Button>;
 								}
 
 								return (
