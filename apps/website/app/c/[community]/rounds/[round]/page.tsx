@@ -255,7 +255,7 @@ export default async function Round(props: {
 					for (const wallet of user.wallets) {
 						const snapshot = await db.pgpool.query.snapshots.findFirst({
 							where: and(
-								eq(snapshots.type, "lilnouns-open-round-fixed"),
+								eq(snapshots.type, "lilnouns-software"),
 								ilike(snapshots.tag, `${wallet.address.toLowerCase()}:%`),
 							),
 						});
