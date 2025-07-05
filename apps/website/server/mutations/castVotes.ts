@@ -116,6 +116,8 @@ export const castVotes = onlyUser
 		let votesUsed = round.votes.reduce((votes, vote) => votes + vote.count, 0);
 		let newUserXP = 0;
 
+		console.log(parsedInput.votes);
+
 		await db.primary.transaction(async (tx) => {
 			for (const vote of parsedInput.votes) {
 				if (vote.count === 0) continue;
