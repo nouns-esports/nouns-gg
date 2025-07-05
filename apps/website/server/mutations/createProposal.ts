@@ -62,11 +62,6 @@ export const createProposal = onlyUser
 			if (actionState.required && !completed) {
 				throw new Error("Proposing prerequisites not met");
 			}
-
-			return {
-				...actionState,
-				completed,
-			};
 		}
 
 		const now = new Date();

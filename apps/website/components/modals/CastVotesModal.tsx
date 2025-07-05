@@ -141,14 +141,6 @@ export default function CastVotesModal(props: {
 								),
 							});
 
-							console.log(
-								"result",
-								result?.validationErrors,
-								result?.bindArgsValidationErrors,
-								result?.serverError,
-								result?.data,
-							);
-
 							if (result?.serverError) {
 								return toast.error(result.serverError);
 							}
