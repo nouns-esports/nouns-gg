@@ -130,6 +130,7 @@ export default function CastVotesModal(props: {
 					</div>
 					<button
 						onClick={async () => {
+							console.log("submitting votes");
 							const result = await executeAsync({
 								round: props.round.id,
 								votes: Object.entries(props.selectedVotes).map(
@@ -139,6 +140,14 @@ export default function CastVotesModal(props: {
 									}),
 								),
 							});
+
+							console.log(
+								"result",
+								result?.validationErrors,
+								result?.bindArgsValidationErrors,
+								result?.serverError,
+								result?.data,
+							);
 
 							if (result?.serverError) {
 								return toast.error(result.serverError);
