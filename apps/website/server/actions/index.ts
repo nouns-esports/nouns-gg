@@ -29,6 +29,7 @@ import { followAccount } from "./social/followAccount";
 import { graduateTraits } from "./noundry/graduateTraits";
 import { submitTraits } from "./noundry/submitTraits";
 import { lilnounsSnapshot } from "./lilnouns/lilnounsSnapshot";
+import { purchaseItem } from "./shop/purchaseItem";
 
 const actions = {
 	// Account
@@ -85,6 +86,9 @@ const actions = {
 	// Noundry
 	graduateTraits,
 	submitTraits,
+
+	// Shop
+	purchaseItem,
 };
 
 export function getAction(props: {
