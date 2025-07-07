@@ -2,7 +2,7 @@ import { and, eq } from "drizzle-orm";
 
 import { privyClient } from "@/server/clients/privy";
 import { sql } from "drizzle-orm";
-import { leaderboards, nexus, xp } from "~/packages/db/schema/public";
+import { leaderboards, nexus, orders, xp } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 
 // 10 xp per $ spent (not shipping)
@@ -42,9 +42,17 @@ export async function POST(request: Request) {
 			throw new Error("User not found");
 		}
 
+		const user = await tx.query.nexus.findFirst({
+			where: eq(nexus.privyId, privyUser.id),
+		});
+
+		if (!user) {
+			throw new Error("User not found");
+		}
+
 		const existingXP = await tx.query.xp.findFirst({
 			where: and(
-				eq(xp.user, privyUser.id),
+				eq(xp.user, user.id),
 				eq(xp.order, order.admin_graphql_api_id),
 			),
 		});
@@ -55,10 +63,10 @@ export async function POST(request: Request) {
 
 		const xpAmount = Math.round(subTotalWithoutDiscounts * 10);
 
-		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
+		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902";
 
 		await tx.insert(xp).values({
-			user: privyUser.id,
+			user: user.id,
 			order: order.admin_graphql_api_id,
 			amount: xpAmount > 500 ? 500 : xpAmount,
 			timestamp: new Date(order.created_at),
@@ -68,7 +76,7 @@ export async function POST(request: Request) {
 		await tx
 			.insert(leaderboards)
 			.values({
-				user: privyUser.id,
+				user: user.id,
 				xp: xpAmount,
 				community: nounsgg,
 			})
@@ -78,6 +86,14 @@ export async function POST(request: Request) {
 					xp: sql`${leaderboards.xp} + ${xpAmount}`,
 				},
 			});
+
+		await tx.insert(orders).values({
+			user: user.id,
+			community: nounsgg,
+			identifier: order.admin_graphql_api_id,
+			platform: "shopify",
+			createdAt: new Date(order.created_at),
+		});
 	});
 
 	return new Response("OK", { status: 200 });
