@@ -20,6 +20,7 @@ import Countdown from "../Countdown";
 import { toast } from "../Toasts";
 import { level } from "@/utils/level";
 import { Info } from "lucide-react";
+import HideProposalModal from "../modals/HideProposalModal";
 
 export default function Proposals(props: {
 	round: NonNullable<Awaited<ReturnType<typeof getRound>>>;
@@ -101,6 +102,10 @@ export default function Proposals(props: {
 		props.round.actions.filter((a) => a.type === "proposing").length > 0;
 	const hasVotingRequirements =
 		props.round.actions.filter((a) => a.type === "voting").length > 0;
+
+	const userIsAdmin = props.round.community.admins.some(
+		(admin) => admin.user === props.user?.id,
+	);
 
 	return (
 		<>
@@ -381,6 +386,14 @@ export default function Proposals(props: {
 												</Button>
 											) : null}
 
+											{state === "Proposing" && userIsAdmin ? (
+												<ToggleModal id={`hide-proposal-${proposal.id}`}>
+													<Button size="sm" className="relative z-50">
+														Hide
+													</Button>
+												</ToggleModal>
+											) : null}
+
 											{state === "Voting" || state === "Ended" ? (
 												<VoteSelector
 													proposal={proposal.id}
@@ -446,6 +459,11 @@ export default function Proposals(props: {
 					isOpen={props.openProposal === proposal.id}
 				/>
 			))}
+			{props.round.proposals.map((proposal) =>
+				userIsAdmin ? (
+					<HideProposalModal key={proposal.id} proposal={proposal.id} />
+				) : null,
+			)}
 		</>
 	);
 }

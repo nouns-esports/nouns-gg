@@ -46,7 +46,11 @@ export async function getRound(
 					asset: true,
 				},
 			},
-			community: true,
+			community: {
+				with: {
+					admins: true,
+				},
+			},
 			proposals: {
 				where: eq(proposals.hidden, false),
 				with: {

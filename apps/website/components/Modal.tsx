@@ -94,9 +94,9 @@ export function ToggleModal(props: {
 		<div
 			tabIndex={props.tabIndex}
 			onClick={(e) => {
-				if (props.disabled) return;
 				e.preventDefault();
 				e.stopPropagation();
+				if (props.disabled) return;
 				isOpen ? close() : open(props.data);
 			}}
 			className={twMerge(!props.disabled && "cursor-pointer", props.className)}
