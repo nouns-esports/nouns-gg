@@ -1,8 +1,14 @@
 import { eq } from "drizzle-orm";
-import { products, productVariants } from "~/packages/db/schema/public";
+import {
+	nexus,
+	orders,
+	products,
+	productVariants,
+} from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { createJob } from "../createJob";
 import { shopifyClient } from "../clients/shopify";
+import { privyClient } from "../clients/privy";
 
 type Product = {
 	id: string;
@@ -16,6 +22,12 @@ type Product = {
 			};
 		}>;
 	};
+};
+
+type Order = {
+	id: string;
+	email: string | null;
+	createdAt: string;
 };
 
 export const shopifySync = createJob({
@@ -65,6 +77,57 @@ export const shopifySync = createJob({
 						})
 						.where(eq(productVariants.shopifyId, variant.id));
 				}
+			}
+		});
+
+		const syncOrders = (
+			await shopifyClient.request(
+				`query {
+				orders(first: 100, sortKey: CREATED_AT, reverse: true) {
+					nodes {
+						id
+						email
+						createdAt
+					}
+				}
+			}`,
+			)
+		).data?.orders?.nodes as Order[];
+
+		await db.primary.transaction(async (tx) => {
+			for (const order of syncOrders) {
+				if (!order.email) {
+					continue;
+				}
+
+				await new Promise((resolve) => setTimeout(resolve, 500));
+
+				const privyUser = await privyClient.getUserByEmail(order.email);
+
+				if (!privyUser) {
+					continue;
+				}
+
+				const user = await tx.query.nexus.findFirst({
+					where: eq(nexus.privyId, privyUser.id),
+				});
+
+				if (!user) {
+					continue;
+				}
+
+				const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902";
+
+				await tx
+					.insert(orders)
+					.values({
+						platform: "shopify",
+						identifier: order.id,
+						user: user.id,
+						community: nounsgg,
+						createdAt: new Date(order.createdAt),
+					})
+					.onConflictDoNothing();
 			}
 		});
 	},

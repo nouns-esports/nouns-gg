@@ -591,6 +591,21 @@ export const carts = pgTable(
 	],
 );
 
+export const orders = pgTable(
+	"orders",
+	(t) => ({
+		id: t.uuid().primaryKey().defaultRandom(),
+		platform: t.text({ enum: ["shopify", "stripe"] }).notNull(),
+		identifier: t.text().notNull(),
+		user: t.uuid().notNull(),
+		community: t.uuid().notNull(),
+		createdAt: t.timestamp("created_at").notNull(),
+	}),
+	(t) => [
+		unique("orders_platform_identifier_unique").on(t.platform, t.identifier),
+	],
+);
+
 export const raffles = pgTable(
 	"raffles",
 	(t) => ({
