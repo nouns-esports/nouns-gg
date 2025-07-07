@@ -1,6 +1,6 @@
 import { awards, proposals, rounds, votes } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq, asc, desc, sql, and } from "drizzle-orm";
+import { eq, asc, desc, sql, and, isNull } from "drizzle-orm";
 
 export async function getRoundWithProposal(input: {
 	round: string;
@@ -52,7 +52,11 @@ export async function getRound(
 				},
 			},
 			proposals: {
-				where: eq(proposals.hidden, false),
+				where: and(
+					eq(proposals.hidden, false),
+					isNull(proposals.hiddenAt),
+					isNull(proposals.deletedAt),
+				),
 				with: {
 					user: true,
 				},

@@ -2,11 +2,16 @@
 
 import { X } from "lucide-react";
 import { Modal, ToggleModal, useModal } from "../Modal";
+import { toast } from "../Toasts";
+import { useAction } from "next-safe-action/hooks";
+import { hideProposal } from "@/server/mutations/hideProposal";
 
 export default function HideProposalModal(props: {
 	proposal: string;
 }) {
 	const { isOpen, close } = useModal(`hide-proposal-${props.proposal}`);
+
+	const hideProposalAction = useAction(hideProposal);
 
 	return (
 		<Modal
@@ -31,11 +36,32 @@ export default function HideProposalModal(props: {
 			</p>
 
 			<button
-				onClick={() => {
+				onClick={async () => {
+					const result = await hideProposalAction.executeAsync({
+						proposal: props.proposal,
+					});
+
+					if (result?.serverError) {
+						return toast.error(result.serverError);
+					}
+
+					if (result?.data) {
+						toast.success("Proposal hidden");
+					}
+
 					close();
 				}}
-				className="flex justify-center items-center gap-2 w-full text-black bg-white hover:bg-white/70 font-semibold rounded-lg p-2.5 transition-colors"
+				className="flex justify-center items-center gap-2 w-full text-black bg-white hover:bg-white/70 font-semibold rounded-lg p-2.5 disabled:opacity-50 disabled:cursor-not-allowed transition-opacity"
 			>
+				{hideProposalAction.isPending ? (
+					<img
+						alt="loading spinner"
+						src="/spinner.svg"
+						className="h-[18px] animate-spin"
+					/>
+				) : (
+					""
+				)}
 				Confirm
 			</button>
 		</Modal>
