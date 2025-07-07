@@ -5,6 +5,7 @@ import { Modal, ToggleModal, useModal } from "../Modal";
 import { toast } from "../Toasts";
 import { useAction } from "next-safe-action/hooks";
 import { hideProposal } from "@/server/mutations/hideProposal";
+import { useRouter } from "next/navigation";
 
 export default function HideProposalModal(props: {
 	proposal: string;
@@ -12,6 +13,8 @@ export default function HideProposalModal(props: {
 	const { isOpen, close } = useModal(`hide-proposal-${props.proposal}`);
 
 	const hideProposalAction = useAction(hideProposal);
+
+	const router = useRouter();
 
 	return (
 		<Modal
@@ -48,6 +51,8 @@ export default function HideProposalModal(props: {
 					if (result?.data) {
 						toast.success("Proposal hidden");
 					}
+
+					router.refresh();
 
 					close();
 				}}
