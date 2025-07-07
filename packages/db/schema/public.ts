@@ -373,6 +373,8 @@ export const proposals = pgTable("proposals", (t) => ({
 	video: t.text(),
 	url: t.text(),
 	createdAt: t.timestamp("created_at", { mode: "date" }).notNull().defaultNow(),
+	hiddenAt: t.timestamp("hidden_at", { mode: "date" }),
+	deletedAt: t.timestamp("deleted_at", { mode: "date" }),
 	hidden: t.boolean().notNull().default(false),
 	published: t.boolean().notNull().default(true),
 	winner: t.smallint(),
