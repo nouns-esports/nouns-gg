@@ -219,6 +219,8 @@ export default async function Round(props: {
 			)
 		: [];
 
+	let extraActionVotes = 0;
+
 	const votingActions = user
 		? await Promise.all(
 				round.actions
@@ -230,12 +232,18 @@ export default async function Round(props: {
 							throw new Error(`Action ${actionState.action} not found`);
 						}
 
+						const completed = await action.check({
+							user: user,
+							inputs: actionState.input,
+						});
+
+						if (completed) {
+							extraActionVotes = extraActionVotes + actionState.votes;
+						}
+
 						return {
 							...actionState,
-							completed: await action.check({
-								user: user,
-								inputs: actionState.input,
-							}),
+							completed,
 						};
 					}),
 			)
@@ -550,6 +558,7 @@ export default async function Round(props: {
 							openProposal={searchParams.p ? searchParams.p : undefined}
 							lilnounVotes={lilnounVotes}
 							japanExtraVotes={japanExtraVotes}
+							extraActionVotes={extraActionVotes}
 						/>
 					</div>
 				</div>

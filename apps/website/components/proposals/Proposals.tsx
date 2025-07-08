@@ -32,6 +32,7 @@ export default function Proposals(props: {
 	openProposal?: string;
 	lilnounVotes: number;
 	japanExtraVotes: number;
+	extraActionVotes: number;
 }) {
 	const [selectedVotes, setSelectedVotes] = useState<Record<string, number>>(
 		{},
@@ -76,11 +77,12 @@ export default function Proposals(props: {
 
 		return props.round.community.handle === "lilnouns"
 			? props.lilnounVotes
-			: userVotes + props.japanExtraVotes;
+			: userVotes + props.japanExtraVotes + props.extraActionVotes;
 	}, [
 		props.round.community.handle,
 		props.user?.nexus.leaderboards,
 		props.japanExtraVotes,
+		props.extraActionVotes,
 	]);
 
 	const remainingVotes = useMemo(() => {
