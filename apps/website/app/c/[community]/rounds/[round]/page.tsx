@@ -18,7 +18,7 @@ import NavigateBack from "@/components/NavigateBack";
 import { getAction } from "@/server/actions";
 import RoundActionsModal from "@/components/modals/RoundActionsModal";
 import { db } from "~/packages/db";
-import { snapshots } from "~/packages/db/schema/public";
+import { nounsvitationalVotes, snapshots } from "~/packages/db/schema/public";
 import { and, eq, ilike, inArray, or, sql } from "drizzle-orm";
 import { isUUID } from "@/utils/isUUID";
 
@@ -266,6 +266,15 @@ export default async function Round(props: {
 					}
 					return votes;
 				})()
+			: 0;
+
+	const japanExtraVotes =
+		round.handle === "japan-round-1" && user
+			? ((
+					await db.primary.query.nounsvitationalVotes.findFirst({
+						where: eq(nounsvitationalVotes.user, user.id),
+					})
+				)?.count ?? 0)
 			: 0;
 
 	return (
@@ -540,6 +549,7 @@ export default async function Round(props: {
 							}
 							openProposal={searchParams.p ? searchParams.p : undefined}
 							lilnounVotes={lilnounVotes}
+							japanExtraVotes={japanExtraVotes}
 						/>
 					</div>
 				</div>

@@ -8,6 +8,7 @@ import {
 	nexus,
 	leaderboards,
 	snapshots,
+	nounsvitationalVotes,
 } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { and, eq, ilike, sql } from "drizzle-orm";
@@ -72,6 +73,17 @@ export const castVotes = onlyUser
 						: percentile <= 0.5
 							? 3
 							: 1;
+
+		if (round.handle === "japan-round-1") {
+			const japanExtraVotes =
+				await db.primary.query.nounsvitationalVotes.findFirst({
+					where: eq(nounsvitationalVotes.user, ctx.user.id),
+				});
+
+			if (japanExtraVotes) {
+				allocatedVotes = allocatedVotes + japanExtraVotes.count;
+			}
+		}
 
 		const actions = round.actions.filter((action) => action.type === "voting");
 

@@ -1,12 +1,12 @@
 import { db } from "..";
-import { eq, gt, sql } from "drizzle-orm";
-import { gold, nexus, xp } from "../schema/public";
+import { and, eq, gt, sql } from "drizzle-orm";
+import { gold, leaderboards, nexus, xp } from "../schema/public";
 
 const eligibleForGold = 100;
 const potOfGold = 50_000;
 
 const xpEarnedThisWeek = await db.pgpool.query.xp.findMany({
-	where: gt(xp.timestamp, new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)),
+	where: gt(xp.timestamp, new Date(Date.now() - 21 * 24 * 60 * 60 * 1000)),
 	with: {
 		user: true,
 	},
@@ -29,10 +29,16 @@ for (const xp of xpEarnedThisWeek) {
 const sortedXpByUser = Object.entries(xpByUser).sort(
 	(a, b) => b[1].amount - a[1].amount,
 );
-const now = new Date();
 
 // await db.primary.transaction(async (tx) => {
-for (let i = 0; i < (sortedXpByUser.length >= eligibleForGold ? eligibleForGold : sortedXpByUser.length); i++) {
+for (
+	let i = 0;
+	i <
+	(sortedXpByUser.length >= eligibleForGold
+		? eligibleForGold
+		: sortedXpByUser.length);
+	i++
+) {
 	const [_, { amount, user }] = sortedXpByUser[i];
 
 	const earning = generateEarning({
@@ -43,18 +49,27 @@ for (let i = 0; i < (sortedXpByUser.length >= eligibleForGold ? eligibleForGold 
 
 	console.log(i + 1, user.name ?? user.id, earning);
 
+	const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902";
+
 	// await tx.insert(gold).values({
+	// 	community: nounsgg,
 	// 	to: user.id,
 	// 	amount: earning,
-	// 	timestamp: now,
 	// });
 
 	// await tx
-	// 	.update(nexus)
-	// 	.set({
-	// 		gold: sql`${nexus.gold} + ${earning}`,
+	// 	.insert(leaderboards)
+	// 	.values({
+	// 		user: user.id,
+	// 		community: nounsgg,
+	// 		points: earning,
 	// 	})
-	// 	.where(eq(nexus.id, user.id));
+	// 	.onConflictDoUpdate({
+	// 		target: [leaderboards.user, leaderboards.community],
+	// 		set: {
+	// 			points: sql`${leaderboards.points} + ${earning}`,
+	// 		},
+	// 	});
 }
 // });
 
