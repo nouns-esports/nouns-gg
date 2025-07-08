@@ -26,7 +26,7 @@ export default createConfig({
 			rpc: rateLimit(
 				http(`https://mainnet.infura.io/v3/${env.INFURA_API_KEY}`),
 				{
-					requestsPerSecond: 20,
+					requestsPerSecond: 10,
 				},
 			),
 		},
@@ -35,7 +35,7 @@ export default createConfig({
 			rpc: rateLimit(
 				http(`https://mantle-mainnet.infura.io/v3/${env.INFURA_API_KEY}`),
 				{
-					requestsPerSecond: 20,
+					requestsPerSecond: 10,
 				},
 			),
 		},
