@@ -20,6 +20,9 @@ import {
 	nounsVotes,
 	lilnounsVotes,
 	voteReposts,
+	nounsVotingPower,
+	mntBalances,
+	cookBalances,
 } from "ponder:schema";
 import { env } from "~/env";
 import { PinataSDK } from "pinata";
@@ -46,7 +49,10 @@ ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
 	if (event.block.number === 22691195n) {
 		console.log("account", event.args.to.toLowerCase() as `0x${string}`);
 		console.log("tokenId", event.args.tokenId);
-		console.log("collection", context.contracts.LilNounsToken.address.toLowerCase());
+		console.log(
+			"collection",
+			context.contracts.LilNounsToken.address.toLowerCase(),
+		);
 
 		console.log("event", event);
 	}
@@ -64,12 +70,107 @@ ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
 });
 
 ponder.on("LilNounsToken:DelegateVotesChanged", async ({ event, context }) => {
-	await context.db.insert(lilnounsVotes).values({
-		account: event.args.delegate.toLowerCase() as `0x${string}`,
-		count: Number(event.args.newBalance),
-	}).onConflictDoUpdate({
-		count: Number(event.args.newBalance),
-	});
+	await context.db
+		.insert(lilnounsVotes)
+		.values({
+			account: event.args.delegate.toLowerCase() as `0x${string}`,
+			count: Number(event.args.newBalance),
+		})
+		.onConflictDoUpdate({
+			count: Number(event.args.newBalance),
+		});
+});
+
+ponder.on("NounsToken:DelegateVotesChanged", async ({ event, context }) => {
+	await context.db
+		.insert(nounsVotingPower)
+		.values({
+			account: event.args.delegate.toLowerCase() as `0x${string}`,
+			count: Number(event.args.newBalance),
+		})
+		.onConflictDoUpdate({
+			count: Number(event.args.newBalance),
+		});
+});
+
+ponder.on("MantleMainnetToken:Transfer", async ({ event, context }) => {
+	await context.db
+		.update(mntBalances, {
+			account: event.args.from.toLowerCase() as `0x${string}`,
+		})
+		.set((row) => ({
+			count: row.count - Number(event.args.value),
+		}));
+
+	await context.db
+		.insert(mntBalances)
+		.values({
+			account: event.args.to.toLowerCase() as `0x${string}`,
+			count: Number(event.args.value),
+		})
+		.onConflictDoUpdate((row) => ({
+			count: row.count + Number(event.args.value),
+		}));
+});
+
+ponder.on("MantleToken:Transfer", async ({ event, context }) => {
+	await context.db
+		.update(mntBalances, {
+			account: event.args.from.toLowerCase() as `0x${string}`,
+		})
+		.set((row) => ({
+			count: row.count - Number(event.args.value),
+		}));
+
+	await context.db
+		.insert(mntBalances)
+		.values({
+			account: event.args.to.toLowerCase() as `0x${string}`,
+			count: Number(event.args.value),
+		})
+		.onConflictDoUpdate((row) => ({
+			count: row.count + Number(event.args.value),
+		}));
+});
+
+ponder.on("CookMainnetToken:Transfer", async ({ event, context }) => {
+	await context.db
+		.update(cookBalances, {
+			account: event.args.from.toLowerCase() as `0x${string}`,
+		})
+		.set((row) => ({
+			count: row.count - Number(event.args.value),
+		}));
+
+	await context.db
+		.insert(cookBalances)
+		.values({
+			account: event.args.to.toLowerCase() as `0x${string}`,
+			count: Number(event.args.value),
+		})
+		.onConflictDoUpdate((row) => ({
+			count: row.count + Number(event.args.value),
+		}));
+});
+
+ponder.on("CookToken:Transfer", async ({ event, context }) => {
+	await context.db
+		.update(cookBalances, {
+			account: event.args.from.toLowerCase() as `0x${string}`,
+		})
+		.set((row) => ({
+			count: row.count - Number(event.args.value),
+		}));
+
+	await context.db
+		.insert(cookBalances)
+		.values({
+			account: event.args.to.toLowerCase() as `0x${string}`,
+			count: Number(event.args.value),
+		})
+		.onConflictDoUpdate((row) => ({
+			count: row.count + Number(event.args.value),
+		}));
 });
 
 ponder.on("NounsToken:DelegateChanged", async ({ event, context }) => {
@@ -104,7 +205,7 @@ ponder.on("NounsDAOGovernor:ProposalCreated", async ({ event, context }) => {
 				const upload = await pinata.upload.public.url(src);
 
 				return `https://ipfs.nouns.gg/ipfs/${upload.cid}`;
-			} catch { }
+			} catch {}
 
 			return src;
 		},
@@ -209,7 +310,7 @@ ponder.on("NounsDAOGovernor:ProposalUpdated", async ({ event, context }) => {
 				const upload = await pinata.upload.public.url(src);
 
 				return `https://ipfs.nouns.gg/ipfs/${upload.cid}`;
-			} catch { }
+			} catch {}
 
 			return src;
 		},

@@ -30,6 +30,15 @@ export default createConfig({
 				},
 			),
 		},
+		mantle: {
+			id: 5000,
+			rpc: rateLimit(
+				http(`https://mantle-mainnet.infura.io/v3/${env.INFURA_API_KEY}`),
+				{
+					requestsPerSecond: 20,
+				},
+			),
+		},
 		// base: {
 		// 	chainId: 8453,
 		// 	transport: rateLimit(
@@ -94,6 +103,30 @@ export default createConfig({
 		// 	address: "0x0a93a7be7e7e426fc046e204c44d6b03a302b631",
 		// 	startBlock: 15399701,
 		// },
+		MantleMainnetToken: {
+			chain: "mainnet",
+			abi: ERC20ABI,
+			address: "0x3c3a81e81dc49a522a592e7622a7e711c06bf354",
+			startBlock: 17519070,
+		},
+		MantleToken: {
+			chain: "mantle",
+			abi: ERC20ABI,
+			address: "0x78c1b0c915c4faa5fffa6cabf0219da63d7f4cb8",
+			startBlock: 2832,
+		},
+		CookMainnetToken: {
+			chain: "mainnet",
+			abi: ERC20ABI,
+			address: "0x9F0C013016E8656bC256f948CD4B79ab25c7b94D ",
+			startBlock: 20618978,
+		},
+		CookToken: {
+			chain: "mantle",
+			abi: ERC20ABI,
+			address: "0x9F0C013016E8656bC256f948CD4B79ab25c7b94D",
+			startBlock: 68309647,
+		},
 	},
 	database: {
 		kind: "postgres",
