@@ -95,10 +95,12 @@ ponder.on("NounsToken:DelegateVotesChanged", async ({ event, context }) => {
 
 ponder.on("MantleMainnetToken:Transfer", async ({ event, context }) => {
 	await context.db
-		.update(mntBalances, {
+		.insert(mntBalances)
+		.values({
 			account: event.args.from.toLowerCase() as `0x${string}`,
+			count: 0,
 		})
-		.set((row) => ({
+		.onConflictDoUpdate((row) => ({
 			count: row.count - Number(event.args.value),
 		}));
 
@@ -115,10 +117,12 @@ ponder.on("MantleMainnetToken:Transfer", async ({ event, context }) => {
 
 ponder.on("MantleToken:Transfer", async ({ event, context }) => {
 	await context.db
-		.update(mntBalances, {
+		.insert(mntBalances)
+		.values({
 			account: event.args.from.toLowerCase() as `0x${string}`,
+			count: 0,
 		})
-		.set((row) => ({
+		.onConflictDoUpdate((row) => ({
 			count: row.count - Number(event.args.value),
 		}));
 
@@ -135,10 +139,12 @@ ponder.on("MantleToken:Transfer", async ({ event, context }) => {
 
 ponder.on("CookMainnetToken:Transfer", async ({ event, context }) => {
 	await context.db
-		.update(cookBalances, {
+		.insert(cookBalances)
+		.values({
 			account: event.args.from.toLowerCase() as `0x${string}`,
+			count: 0,
 		})
-		.set((row) => ({
+		.onConflictDoUpdate((row) => ({
 			count: row.count - Number(event.args.value),
 		}));
 
@@ -155,10 +161,12 @@ ponder.on("CookMainnetToken:Transfer", async ({ event, context }) => {
 
 ponder.on("CookToken:Transfer", async ({ event, context }) => {
 	await context.db
-		.update(cookBalances, {
+		.insert(cookBalances)
+		.values({
 			account: event.args.from.toLowerCase() as `0x${string}`,
+			count: 0,
 		})
-		.set((row) => ({
+		.onConflictDoUpdate((row) => ({
 			count: row.count - Number(event.args.value),
 		}));
 
