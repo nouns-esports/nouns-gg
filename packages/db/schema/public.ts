@@ -391,6 +391,7 @@ export const nexus = pgTable("users", (t) => ({
 	discord: t.text(),
 	fid: t.integer(),
 	canRecieveEmails: t.boolean("can_recieve_emails").notNull().default(false),
+	deletedAt: t.timestamp("deleted_at", { mode: "date" }),
 }));
 
 export const gold = pgTable(
