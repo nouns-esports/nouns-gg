@@ -1,4 +1,4 @@
-import { Check, X } from "lucide-react";
+import { Check, Info, X } from "lucide-react";
 import { Modal, ToggleModal } from "../Modal";
 import type { AuthenticatedUser } from "@/server/queries/users";
 import { getRound } from "@/server/queries/rounds";
@@ -20,7 +20,7 @@ export default function RoundActionsModal(props: {
 	return (
 		<Modal
 			id={`round-actions-${props.type}`}
-			className="p-4 flex flex-col max-w-[700px] min-w-80 gap-4"
+			className="p-4 flex flex-col max-w-[600px] min-w-80 gap-4"
 		>
 			<div className="flex justify-between items-center">
 				<p className="text-white text-2xl font-bebas-neue leading-none">
@@ -137,6 +137,23 @@ export default function RoundActionsModal(props: {
 						</li>
 					))}
 				</ul>
+			) : null}
+			{props.actions.some(
+				(action) => action.round === "b9b80bdd-69d6-4172-bc34-85ede97fb038",
+			) ? (
+				<Link
+					href="https://discord.gg/HqZHMjgUCm"
+					newTab
+					className="flex gap-2 bg-grey-600 rounded-xl p-3 hover:bg-grey-500 transition-colors"
+				>
+					<Info className="w-4 h-4 text-red" />
+					<p className="text-white text-sm">
+						Additional votes can be purchased for{" "}
+						<span className="font-bold underline">100 Gold</span> each by asking{" "}
+						<span className="font-bold underline">Dash</span> in our{" "}
+						<span className="text-red">Discord server</span>
+					</p>
+				</Link>
 			) : null}
 		</Modal>
 	);
