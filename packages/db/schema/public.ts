@@ -639,3 +639,13 @@ export const raffleEntries = pgTable("raffle_entries", (t) => ({
 	amount: t.integer().notNull(),
 	winner: t.boolean().notNull().default(false),
 }));
+
+export const nounsvitationalVotes = pgTable(
+	"nounsvitational_votes",
+	(t) => ({
+		id: t.uuid().primaryKey().defaultRandom(),
+		user: t.uuid().notNull(),
+		count: t.integer().notNull(),
+	}),
+	(t) => [unique("nounsvitational_votes_user_unique").on(t.user)],
+);
