@@ -118,7 +118,7 @@ export default createConfig({
 		CookMainnetToken: {
 			chain: "mainnet",
 			abi: ERC20ABI,
-			address: "0x9F0C013016E8656bC256f948CD4B79ab25c7b94D ",
+			address: "0x9F0C013016E8656bC256f948CD4B79ab25c7b94D",
 			startBlock: 20618978,
 		},
 		CookToken: {
