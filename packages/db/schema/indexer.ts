@@ -25,22 +25,22 @@ export const lilnounDelegates = onchainTable("lilnoun_delegates", (t) => ({
 
 export const lilnounsVotes = onchainTable("lilnouns_votes", (t) => ({
 	account: t.hex().primaryKey(),
-	count: t.integer().notNull(),
+	count: t.bigint().notNull(),
 }));
 
 export const nounsVotingPower = onchainTable("nouns_voting_power", (t) => ({
 	account: t.hex().primaryKey(),
-	count: t.integer().notNull(),
+	count: t.bigint().notNull(),
 }));
 
 export const mntBalances = onchainTable("mnt_balances", (t) => ({
 	account: t.hex().primaryKey(),
-	count: t.integer().notNull(),
+	count: t.bigint().notNull(),
 }));
 
 export const cookBalances = onchainTable("cook_balances", (t) => ({
 	account: t.hex().primaryKey(),
-	count: t.integer().notNull(),
+	count: t.bigint().notNull(),
 }));
 
 export const nounsProposals = onchainTable("nouns_proposals", (t) => ({
