@@ -216,7 +216,7 @@ export default function Proposals(props: {
 										disabled={votesSelected < 1}
 										onClick={() => openCastVotesModal()}
 									>
-										Submit Votes - {votesSelected}/{allocatedVotes}
+										Submit Votes - {votesSelected}/{remainingVotes}
 									</Button>
 								);
 							}
