@@ -1,6 +1,6 @@
 import { articles } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { and, desc, eq, lt } from "drizzle-orm";
+import { and, desc, eq, lt, sql } from "drizzle-orm";
 
 export async function getArticle(
 	input: { id: string } | { handle: string; community?: string },
@@ -12,7 +12,10 @@ export async function getArticle(
 				: and(
 						eq(articles.handle, input.handle),
 						input.community
-							? eq(articles.community, input.community)
+							? eq(
+									articles.community,
+									sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
+								)
 							: undefined,
 					),
 
