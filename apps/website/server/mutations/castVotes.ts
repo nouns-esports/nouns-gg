@@ -66,11 +66,11 @@ export const castVotes = onlyUser
 		let allocatedVotes =
 			round.community.handle === "lilnouns"
 				? lilnounVotes
-				: percentile <= 0.15
+				: percentile <= 0.1
 					? 10
-					: percentile <= 0.3
+					: percentile <= 0.25
 						? 5
-						: percentile <= 0.5
+						: percentile <= 0.4
 							? 3
 							: 1;
 
