@@ -30,6 +30,7 @@ import { graduateTraits } from "./noundry/graduateTraits";
 import { submitTraits } from "./noundry/submitTraits";
 import { lilnounsSnapshot } from "./lilnouns/lilnounsSnapshot";
 import { purchaseItem } from "./shop/purchaseItem";
+import { leaderboardPosition } from "./xp/leaderboardPosition";
 
 const actions = {
 	// Account
@@ -82,6 +83,7 @@ const actions = {
 
 	// XP
 	reachPercentile,
+	leaderboardPosition,
 
 	// Noundry
 	graduateTraits,
