@@ -33,12 +33,14 @@ export async function getAuthenticatedUser() {
 									FROM ${leaderboards} AS l2 
 									WHERE l2.community = ${leaderboards.community}
 									AND l2.xp > ${leaderboards.xp}
+									AND l2.xp > 0
 								)::float
 								/
 								(
 									SELECT COUNT(*) 
 									FROM ${leaderboards} AS l3 
 									WHERE l3.community = ${leaderboards.community}
+									AND l3.xp > 0
 								)
 							)
 						`.as("percentile"),
