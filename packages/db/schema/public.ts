@@ -38,31 +38,41 @@ export const snapshots = pgTable("snapshots", (t) => ({
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
 }));
 
-export const communities = pgTable("communities", (t) => ({
-	id: t.uuid().primaryKey().defaultRandom(),
-	handle: t.text().notNull().unique(),
-	image: t.text().notNull(),
-	name: t.text().notNull(),
-	levels: t.jsonb().$type<{
-		max: number;
-		midpoint: number;
-		steepness: number;
-	}>(),
-	points: t.jsonb().$type<{
-		name: string;
-		image: string;
-		marketcap: number;
-	}>(),
-	agent: t.jsonb().$type<{
-		name: string;
-		image: string;
-		prompt: string;
-	}>(),
-	description: t.jsonb().$type<TipTap>(),
-	parentUrl: t.text("parent_url"),
-	details: t.jsonb().$type<TipTap>(),
-	featured: t.boolean().notNull().default(false),
-}));
+export const communities = pgTable(
+	"communities",
+	(t) => ({
+		id: t.uuid().primaryKey().defaultRandom(),
+		handle: t.text().notNull().unique(),
+		image: t.text().notNull(),
+		name: t.text().notNull(),
+		levels: t.jsonb().$type<{
+			max: number;
+			midpoint: number;
+			steepness: number;
+		}>(),
+		points: t.jsonb().$type<{
+			name: string;
+			image: string;
+			marketcap: number;
+		}>(),
+		agent: t.jsonb().$type<{
+			name: string;
+			image: string;
+			prompt: string;
+		}>(),
+		description: t.jsonb().$type<TipTap>(),
+		parentUrl: t.text("parent_url"),
+		details: t.jsonb().$type<TipTap>(),
+		featured: t.boolean().notNull().default(false),
+		embedding: t.vector({ dimensions: 1536 }),
+	}),
+	(t) => [
+		index("communities_cosine_index").using(
+			"hnsw",
+			t.embedding.op("vector_cosine_ops"),
+		),
+	],
+);
 
 export const communityAdmins = pgTable(
 	"community_admins",
@@ -160,8 +170,15 @@ export const articles = pgTable(
 		draft: t.boolean().notNull().default(true),
 		publishedAt: t.timestamp("published_at", { mode: "date" }).notNull(),
 		community: t.uuid().notNull(),
+		embedding: t.vector({ dimensions: 1536 }),
 	}),
-	(t) => [unique("articles_handle_community_unique").on(t.handle, t.community)],
+	(t) => [
+		unique("articles_handle_community_unique").on(t.handle, t.community),
+		index("articles_cosine_index").using(
+			"hnsw",
+			t.embedding.op("vector_cosine_ops"),
+		),
+	],
 );
 
 export const events = pgTable(
@@ -188,8 +205,15 @@ export const events = pgTable(
 		}>(),
 		details: t.jsonb().$type<TipTap>(),
 		attendeeCount: t.integer("attendee_count"),
+		embedding: t.vector({ dimensions: 1536 }),
 	}),
-	(t) => [unique("events_handle_community_unique").on(t.handle, t.community)],
+	(t) => [
+		unique("events_handle_community_unique").on(t.handle, t.community),
+		index("events_cosine_index").using(
+			"hnsw",
+			t.embedding.op("vector_cosine_ops"),
+		),
+	],
 );
 
 export const eventActions = pgTable("event_actions", (t) => ({
@@ -246,9 +270,14 @@ export const predictions = pgTable(
 			.numeric({ precision: 38, scale: 18, mode: "number" })
 			.notNull()
 			.default(0),
+		embedding: t.vector({ dimensions: 1536 }),
 	}),
 	(t) => [
 		unique("predictions_handle_community_unique").on(t.handle, t.community),
+		index("predictions_cosine_index").using(
+			"hnsw",
+			t.embedding.op("vector_cosine_ops"),
+		),
 	],
 );
 
@@ -319,8 +348,15 @@ export const rounds = pgTable(
 			.default(2000),
 		linkRegex: t.text("link_regex"),
 		maxProposals: t.smallint("max_proposals").default(1),
+		embedding: t.vector({ dimensions: 1536 }),
 	}),
-	(t) => [unique("rounds_handle_community_unique").on(t.handle, t.community)],
+	(t) => [
+		unique("rounds_handle_community_unique").on(t.handle, t.community),
+		index("rounds_cosine_index").using(
+			"hnsw",
+			t.embedding.op("vector_cosine_ops"),
+		),
+	],
 );
 
 export const roundActions = pgTable("round_actions", (t) => ({
@@ -363,22 +399,35 @@ export const assets = pgTable("assets", (t) => ({
 	tokenId: t.text("token_id"),
 }));
 
-export const proposals = pgTable("proposals", (t) => ({
-	id: t.uuid().primaryKey().defaultRandom(),
-	user: t.uuid().notNull(),
-	round: t.uuid().notNull(),
-	title: t.text().notNull(),
-	content: t.text(), // rename to description
-	image: t.text(),
-	video: t.text(),
-	url: t.text(),
-	createdAt: t.timestamp("created_at", { mode: "date" }).notNull().defaultNow(),
-	hiddenAt: t.timestamp("hidden_at", { mode: "date" }),
-	deletedAt: t.timestamp("deleted_at", { mode: "date" }),
-	hidden: t.boolean().notNull().default(false),
-	published: t.boolean().notNull().default(true),
-	winner: t.smallint(),
-}));
+export const proposals = pgTable(
+	"proposals",
+	(t) => ({
+		id: t.uuid().primaryKey().defaultRandom(),
+		user: t.uuid().notNull(),
+		round: t.uuid().notNull(),
+		title: t.text().notNull(),
+		content: t.text(), // rename to description
+		image: t.text(),
+		video: t.text(),
+		url: t.text(),
+		createdAt: t
+			.timestamp("created_at", { mode: "date" })
+			.notNull()
+			.defaultNow(),
+		hiddenAt: t.timestamp("hidden_at", { mode: "date" }),
+		deletedAt: t.timestamp("deleted_at", { mode: "date" }),
+		hidden: t.boolean().notNull().default(false),
+		published: t.boolean().notNull().default(true),
+		winner: t.smallint(),
+		embedding: t.vector({ dimensions: 1536 }),
+	}),
+	(t) => [
+		index("proposals_cosine_index").using(
+			"hnsw",
+			t.embedding.op("vector_cosine_ops"),
+		),
+	],
+);
 
 export const nexus = pgTable("users", (t) => ({
 	id: t.uuid().defaultRandom().primaryKey(),
@@ -453,9 +502,14 @@ export const quests = pgTable(
 			.numeric({ precision: 38, scale: 18, mode: "number" })
 			.notNull()
 			.default(0),
+		embedding: t.vector({ dimensions: 1536 }),
 	}),
 	(t) => [
 		unique("quests_handle_and_community_unique").on(t.handle, t.community),
+		index("quests_cosine_index").using(
+			"hnsw",
+			t.embedding.op("vector_cosine_ops"),
+		),
 	],
 );
 
@@ -541,8 +595,15 @@ export const products = pgTable(
 		community: t.uuid().notNull(),
 		requiresShipping: t.boolean("requires_shipping").notNull(),
 		active: t.boolean().notNull().default(true),
+		embedding: t.vector({ dimensions: 1536 }),
 	}),
-	(t) => [unique("products_handle_community_unique").on(t.handle, t.community)],
+	(t) => [
+		unique("products_handle_community_unique").on(t.handle, t.community),
+		index("products_cosine_index").using(
+			"hnsw",
+			t.embedding.op("vector_cosine_ops"),
+		),
+	],
 );
 
 export const productVariants = pgTable("product_variants", (t) => ({
@@ -628,8 +689,15 @@ export const raffles = pgTable(
 			.jsonb("entry_action_inputs")
 			.array()
 			.$type<Array<{ [key: string]: any }>>(),
+		embedding: t.vector({ dimensions: 1536 }),
 	}),
-	(t) => [unique("raffles_handle_community_unique").on(t.handle, t.community)],
+	(t) => [
+		unique("raffles_handle_community_unique").on(t.handle, t.community),
+		index("raffles_cosine_index").using(
+			"hnsw",
+			t.embedding.op("vector_cosine_ops"),
+		),
+	],
 );
 
 export const raffleEntries = pgTable("raffle_entries", (t) => ({
@@ -650,3 +718,13 @@ export const nounsvitationalVotes = pgTable(
 	}),
 	(t) => [unique("nounsvitational_votes_user_unique").on(t.user)],
 );
+
+// export const activity = pgTable("activity", (t) => ({
+// 	id: t.uuid().primaryKey().defaultRandom(),
+// 	identifier: t.text().notNull(), // Discord message id, Farcaster cast hash, Twitter tweet id
+// 	user: t.uuid().notNull(),
+// 	community: t.uuid().notNull(),
+// 	platform: t.text({ enum: ["discord", "farcaster", "twitter"] }).notNull(),
+// 	action: t.text({ enum: ["chat"] }).notNull(),
+// 	timestamp: t.timestamp().notNull().defaultNow(),
+// }));
