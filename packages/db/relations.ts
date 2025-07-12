@@ -240,6 +240,10 @@ export const accountsRelations = relations(accounts, ({ one }) => ({
 		fields: [accounts.user],
 		references: [nexus.id],
 	}),
+	user: one(nexus, {
+		fields: [accounts.user],
+		references: [nexus.id],
+	}),
 }));
 
 export const goldRelations = relations(gold, ({ one }) => ({
@@ -411,6 +415,10 @@ export const productsRelations = relations(products, ({ one, many }) => ({
 		fields: [products.event],
 		references: [events.id],
 	}),
+	community: one(communities, {
+		fields: [products.community],
+		references: [communities.id],
+	}),
 	variants: many(productVariants),
 }));
 
@@ -522,6 +530,10 @@ export const rafflesRelations = relations(raffles, ({ many, one }) => ({
 	event: one(events, {
 		fields: [raffles.event],
 		references: [events.id],
+	}),
+	community: one(communities, {
+		fields: [raffles.community],
+		references: [communities.id],
 	}),
 }));
 

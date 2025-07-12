@@ -19,6 +19,7 @@ const xpByUser: Record<
 
 for (const xp of xpEarnedThisWeek) {
 	if (!xp.user) continue;
+	if (xp.user.deletedAt !== null) continue;
 
 	xpByUser[xp.user.id] = {
 		amount: (xpByUser[xp.user.id]?.amount ?? 0) + xp.amount,

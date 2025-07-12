@@ -1,63 +1,117 @@
-import { desc, eq, sql } from "drizzle-orm";
-import { leaderboards, nexus, snapshots, xp } from "../schema/public";
+import { and, desc, eq, sql } from "drizzle-orm";
+import {
+	accounts,
+	escrows,
+	leaderboards,
+	nexus,
+	snapshots,
+	xp,
+} from "../schema/public";
 import { db } from "..";
 
 const attendees = [
-	"did:privy:cmah6w9ss00orl30mlql0deqt",
-	"did:privy:cly8tor6x098910tpl4ng4n6o",
-	"did:privy:clyvzz0v505x7nldclj3xcnqw",
-	"did:privy:cm4e7gpth058pw1t6zyw6o610",
-	"did:privy:clzhsduen023t91vegvl7o5dj",
-	"did:privy:cm2y3rid20aq713wpavh3azio",
-	"did:privy:clzhiy9gd00bn12g9yax2114c",
-	"did:privy:clyqb0g630dlrepj83lquymjp",
-	"did:privy:clx9g6yp500s5m4rmm11th7kt",
-	"did:privy:cly54ecit00nvipx51of0u91i",
-	"did:privy:clz28rcfn02wqjrehsj1ck0ws",
-	"did:privy:cm4wmuo0b02fb10zshun8k1wh",
-	"did:privy:clx9goa170bm3wjgyx8ktxxor",
-	"did:privy:clziwqu440dk8xx4bgoa6b0g2",
-	"did:privy:clzw6alkf074lg18iz5fy80ep",
-	"did:privy:clx9ef4zd030211agumsnuh0p",
-	"did:privy:cm6gzzbsq0243gwo2vrj9celh",
+	"103629588353007616",
+	"405120207300853761",
+	"1344139561386639430",
+	"232343860121042945",
+	"960536210625929276",
+	"236907172808753152",
+	"214245556757725185",
+	"124347112182775809",
+	"153701297214849024",
+	"720674343960707132",
+	"179396250318143488",
+	"835989319701233704",
+	"688862120468938816",
+	"135377635168616448",
+	"174640628456620032",
+	"135215986407243776",
+	"95704393151680512",
+	"197786946527952906",
+	"900067308150587442",
+	"754779772340535428",
+	"114038641071882248",
+	"1042518382173499412",
+	"146467134103355392",
+	"342006631078428672",
+	"938952067656069151",
+	"708894360560730163",
+	"271087536258940930",
 ];
 
 const now = new Date();
-const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
+const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902";
 
 await db.primary.transaction(async (tx) => {
+	let count = 0;
 	for (const user of attendees) {
-		const [snapshot] = await tx
-			.insert(snapshots)
-			.values({
-				type: "discord-call",
-				user,
-				timestamp: now,
-			})
-			.returning({ id: snapshots.id });
+		count++;
+		console.log("Processing user", count, attendees.length);
+		let account = await tx.query.accounts.findFirst({
+			where: and(
+				eq(accounts.identifier, user),
+				eq(accounts.platform, "discord"),
+			),
+			with: { user: true },
+		});
+
+		if (!account) {
+			await tx.insert(accounts).values({
+				identifier: user,
+				platform: "discord",
+			});
+
+			account = await tx.query.accounts.findFirst({
+				where: and(
+					eq(accounts.identifier, user),
+					eq(accounts.platform, "discord"),
+				),
+				with: { user: true },
+			});
+
+			if (!account) {
+				console.error("Account not found after insert", user);
+				continue;
+			}
+		}
 
 		const amount = 500;
 
-		await tx.insert(xp).values({
-			user,
-			amount,
-			timestamp: now,
-			snapshot: snapshot.id,
-			community: nounsgg,
-		});
-
-		await tx
-			.insert(leaderboards)
-			.values({
-				user,
-				xp: amount,
+		if (account.user) {
+			await tx.insert(xp).values({
+				user: account.user.id,
+				amount,
+				timestamp: now,
 				community: nounsgg,
-			})
-			.onConflictDoUpdate({
-				target: [leaderboards.user, leaderboards.community],
-				set: {
-					xp: sql`${leaderboards.xp} + ${amount}`,
-				},
 			});
+
+			await tx
+				.insert(leaderboards)
+				.values({
+					user: account.user.id,
+					xp: amount,
+					community: nounsgg,
+				})
+				.onConflictDoUpdate({
+					target: [leaderboards.user, leaderboards.community],
+					set: {
+						xp: sql`${leaderboards.xp} + ${amount}`,
+					},
+				});
+		} else {
+			await tx
+				.insert(escrows)
+				.values({
+					community: nounsgg,
+					heir: account.id,
+					xp: amount,
+				})
+				.onConflictDoUpdate({
+					target: [escrows.community, escrows.heir],
+					set: {
+						xp: sql`${escrows.xp} + ${amount}`,
+					},
+				});
+		}
 	}
 });

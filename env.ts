@@ -32,6 +32,7 @@ export const env = createEnv({
 		INDEXER_SCHEMA: z.string().min(1),
 		PGPOOL_URL: z.string().url(),
 		PRIMARY_DATABASE_URL: z.string().url(),
+		OPENAI_API_KEY: z.string().optional(),
 	},
 	client: {
 		NEXT_PUBLIC_ENVIRONMENT: z.enum(["development", "production"]),
