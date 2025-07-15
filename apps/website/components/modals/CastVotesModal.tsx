@@ -130,7 +130,6 @@ export default function CastVotesModal(props: {
 					</div>
 					<button
 						onClick={async () => {
-							console.log("submitting votes");
 							const result = await executeAsync({
 								round: props.round.id,
 								votes: Object.entries(props.selectedVotes).map(
