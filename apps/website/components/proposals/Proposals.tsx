@@ -63,15 +63,15 @@ export default function Proposals(props: {
 	const allocatedVotes = useMemo(() => {
 		const percentile =
 			props.user?.nexus.leaderboards.find(
-				(leaderboard) => leaderboard.community === props.round.community.id,
+				(leaderboard) => leaderboard.community.id === props.round.community.id,
 			)?.percentile ?? 1;
 
 		const userVotes =
-			percentile <= 0.15
+			percentile <= 0.1
 				? 10
-				: percentile <= 0.3
+				: percentile <= 0.25
 					? 5
-					: percentile <= 0.5
+					: percentile <= 0.4
 						? 3
 						: 1;
 

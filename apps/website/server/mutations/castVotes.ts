@@ -65,7 +65,7 @@ export const castVotes = onlyUser
 
 		const percentile =
 			ctx.user.nexus.leaderboards.find(
-				(leaderboard) => leaderboard.community === round.community.id,
+				(leaderboard) => leaderboard.community.id === round.community.id,
 			)?.percentile ?? 1;
 
 		let allocatedVotes =
