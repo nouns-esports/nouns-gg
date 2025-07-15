@@ -293,15 +293,6 @@ export default async function Round(props: {
 				)?.count ?? 0)
 			: 0;
 
-	if (round.handle === "japan-round-2") {
-		console.log(
-			"VOTING ACTIVITY",
-			voteActivity
-				.filter((event) => event.timestamp < new Date())
-				.sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime()).length,
-		);
-	}
-
 	return (
 		<>
 			<div className="flex flex-col w-full items-center">
