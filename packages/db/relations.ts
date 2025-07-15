@@ -236,10 +236,6 @@ export const nexusRelations = relations(nexus, ({ one, many }) => ({
 }));
 
 export const accountsRelations = relations(accounts, ({ one }) => ({
-	nexus: one(nexus, {
-		fields: [accounts.user],
-		references: [nexus.id],
-	}),
 	user: one(nexus, {
 		fields: [accounts.user],
 		references: [nexus.id],
