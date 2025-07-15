@@ -203,18 +203,8 @@ export async function getAuthenticatedUser() {
 
 		const gold =
 			userNexus.leaderboards.find(
-				(leaderboard) => leaderboard.community === nounsgg,
+				(leaderboard) => leaderboard.community.id === nounsgg,
 			)?.points ?? 0;
-
-		if (privyUser.farcaster?.fid === 11500) {
-			for (const leaderboard of userNexus.leaderboards) {
-				console.log(
-					"Leaderboard",
-					leaderboard.community.name,
-					leaderboard.points,
-				);
-			}
-		}
 
 		return {
 			id: userNexus.id,
