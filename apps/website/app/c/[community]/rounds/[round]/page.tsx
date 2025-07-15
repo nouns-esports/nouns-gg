@@ -285,7 +285,7 @@ export default async function Round(props: {
 			: 0;
 
 	const japanExtraVotes =
-		round.handle === "japan-round-1" && user
+		round.handle === "japan-round-2" && user
 			? ((
 					await db.primary.query.nounsvitationalVotes.findFirst({
 						where: eq(nounsvitationalVotes.user, user.id),
