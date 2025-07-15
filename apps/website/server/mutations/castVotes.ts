@@ -168,60 +168,62 @@ export const castVotes = onlyUser
 					})
 					.returning({ id: votes.id });
 
-				// Award 50 xp per vote to the voter
-				const voterAmount = 50 * vote.count;
+				if (round.handle !== "japan-round-2") {
+					// Award 50 xp per vote to the voter
+					const voterAmount = 50 * vote.count;
 
-				await tx.insert(xp).values({
-					user: ctx.user.id,
-					amount: voterAmount,
-					timestamp: now,
-					vote: returnedVote[0].id,
-					community: round.community.id,
-				});
-
-				const [updatePass] = await tx
-					.insert(leaderboards)
-					.values({
+					await tx.insert(xp).values({
 						user: ctx.user.id,
-						xp: voterAmount,
+						amount: voterAmount,
+						timestamp: now,
+						vote: returnedVote[0].id,
 						community: round.community.id,
-					})
-					.onConflictDoUpdate({
-						target: [leaderboards.user, leaderboards.community],
-						set: {
-							xp: sql`${leaderboards.xp} + ${voterAmount}`,
-						},
-					})
-					.returning({
-						xp: leaderboards.xp,
 					});
 
-				newUserXP = updatePass.xp;
+					const [updatePass] = await tx
+						.insert(leaderboards)
+						.values({
+							user: ctx.user.id,
+							xp: voterAmount,
+							community: round.community.id,
+						})
+						.onConflictDoUpdate({
+							target: [leaderboards.user, leaderboards.community],
+							set: {
+								xp: sql`${leaderboards.xp} + ${voterAmount}`,
+							},
+						})
+						.returning({
+							xp: leaderboards.xp,
+						});
 
-				// Award 5 xp per vote to the proposer
-				const proposerAmount = 5 * vote.count;
+					newUserXP = updatePass.xp;
 
-				await tx.insert(xp).values({
-					user: proposal.user,
-					amount: proposerAmount,
-					timestamp: now,
-					vote: returnedVote[0].id,
-					community: round.community.id,
-				});
+					// Award 5 xp per vote to the proposer
+					const proposerAmount = 5 * vote.count;
 
-				await tx
-					.insert(leaderboards)
-					.values({
+					await tx.insert(xp).values({
 						user: proposal.user,
-						xp: proposerAmount,
+						amount: proposerAmount,
+						timestamp: now,
+						vote: returnedVote[0].id,
 						community: round.community.id,
-					})
-					.onConflictDoUpdate({
-						target: [leaderboards.user, leaderboards.community],
-						set: {
-							xp: sql`${leaderboards.xp} + ${proposerAmount}`,
-						},
 					});
+
+					await tx
+						.insert(leaderboards)
+						.values({
+							user: proposal.user,
+							xp: proposerAmount,
+							community: round.community.id,
+						})
+						.onConflictDoUpdate({
+							target: [leaderboards.user, leaderboards.community],
+							set: {
+								xp: sql`${leaderboards.xp} + ${proposerAmount}`,
+							},
+						});
+				}
 			}
 		});
 
@@ -241,7 +243,7 @@ export const castVotes = onlyUser
 		revalidatePath(`/rounds/${round.handle}`);
 
 		return {
-			earnedXP: 50 * votesUsed,
+			earnedXP: round.handle === "japan-round-2" ? 0 : 50 * votesUsed,
 			totalXP: newUserXP,
 		};
 	});
