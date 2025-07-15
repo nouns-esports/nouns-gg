@@ -10,7 +10,7 @@ export const lilnounsVoter = createAction({
 		block: z.number().nullable().describe("The block number to check from"),
 	}),
 	check: async ({ user, input }) => {
-		const privyUser = await privyClient.getUserById(user.id);
+		const privyUser = await privyClient.getUserById(user.privyId);
 
 		if (!privyUser) return false;
 

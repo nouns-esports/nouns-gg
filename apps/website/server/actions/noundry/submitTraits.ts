@@ -8,7 +8,7 @@ export const submitTraits = createAction({
 		count: z.number().min(1).describe("The number of traits to submit"),
 	}),
 	check: async ({ user, input }) => {
-		const privyUser = await privyClient.getUserById(user.id);
+		const privyUser = await privyClient.getUserById(user.privyId);
 
 		if (!privyUser) return false;
 
