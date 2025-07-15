@@ -293,7 +293,12 @@ export default async function Round(props: {
 				)?.count ?? 0)
 			: 0;
 
-	console.log("VOTING ACTIVITY", voteActivity.length);
+	console.log(
+		"VOTING ACTIVITY",
+		voteActivity
+			.filter((event) => event.timestamp < new Date())
+			.sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime()).length,
+	);
 
 	return (
 		<>
