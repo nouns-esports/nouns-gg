@@ -207,10 +207,12 @@ export async function getAuthenticatedUser() {
 			)?.points ?? 0;
 
 		if (privyUser.farcaster?.fid === 11500) {
-			console.log("gold", gold);
-			console.log("leaderboards Count", userNexus.leaderboards.length);
 			for (const leaderboard of userNexus.leaderboards) {
-				console.log("Leaderboard", leaderboard.community, leaderboard.points);
+				console.log(
+					"Leaderboard",
+					leaderboard.community.name,
+					leaderboard.points,
+				);
 			}
 		}
 
