@@ -230,14 +230,10 @@ export default async function Round(props: {
 				round.actions
 					.filter((action) => action.type === "voting")
 					.map(async (actionState) => {
-						console.log("Action State", actionState);
-
 						const action = getAction({
 							action: actionState.action,
 							platform: actionState.platform ?? "dash",
 						});
-
-						console.log("Action", action);
 
 						if (!action) {
 							throw new Error(`Action ${actionState.action} not found`);

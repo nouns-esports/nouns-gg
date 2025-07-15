@@ -14,15 +14,15 @@ export const joinServer = createAction({
 
 		if (!account) return false;
 
-		const server = community.connections.find(
-			(connection) =>
-				connection.platform === "discord" &&
-				connection.config?.guild === input.server,
-		);
+		// const server = community.connections.find(
+		// 	(connection) =>
+		// 		connection.platform === "discord" &&
+		// 		connection.config?.guild === input.server,
+		// );
 
-		if (!server) {
-			throw new Error("The provided server is not linked to this community");
-		}
+		// if (!server) {
+		// 	throw new Error("The provided server is not linked to this community");
+		// }
 
 		const response = await fetch(
 			`https://discord.com/api/guilds/${input.server}/members/${account.identifier}`,
