@@ -44,13 +44,11 @@ const actions: Record<
 		makePrediction,
 		castVote,
 		createProposal,
+		registerEvent,
 	},
 	discord: {
 		haveRole,
 		joinServer,
-	},
-	events: {
-		registerEvent,
 	},
 	lilnouns: {
 		lilnounsVoter,
