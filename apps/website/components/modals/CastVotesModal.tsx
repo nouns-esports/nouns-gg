@@ -145,10 +145,10 @@ export default function CastVotesModal(props: {
 								return toast.error(result.serverError);
 							}
 
-							if (result?.data) {
+							if ((result?.data?.earnedXP ?? 0) > 0) {
 								toast.xp({
-									earned: result.data.earnedXP ?? 0,
-									total: result.data.totalXP ?? 0,
+									earned: result?.data?.earnedXP ?? 0,
+									total: result?.data?.totalXP ?? 0,
 								});
 							}
 
