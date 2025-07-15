@@ -73,8 +73,17 @@ export async function getRound(
 				with: {
 					user: true,
 					proposal: {
+						columns: {
+							title: true,
+						},
 						with: {
-							user: true,
+							user: {
+								columns: {
+									id: true,
+									name: true,
+									image: true,
+								},
+							},
 						},
 					},
 				},
