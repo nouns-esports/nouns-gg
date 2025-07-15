@@ -201,6 +201,19 @@ export async function getAuthenticatedUser() {
 
 		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902";
 
+		const gold =
+			userNexus.leaderboards.find(
+				(leaderboard) => leaderboard.community === nounsgg,
+			)?.points ?? 0;
+
+		if (privyUser.farcaster?.fid === 11500) {
+			console.log("gold", gold);
+			console.log("leaderboards Count", userNexus.leaderboards.length);
+			for (const leaderboard of userNexus.leaderboards) {
+				console.log("Leaderboard", leaderboard.community, leaderboard.points);
+			}
+		}
+
 		return {
 			id: userNexus.id,
 			privyId: privyUser.id,
@@ -213,10 +226,7 @@ export async function getAuthenticatedUser() {
 				) ?? [],
 			email: privyUser.email,
 			nexus: userNexus,
-			gold:
-				userNexus.leaderboards.find(
-					(leaderboard) => leaderboard.community === nounsgg,
-				)?.points ?? 0,
+			gold,
 		};
 	} catch (e) {
 		console.error(e);
