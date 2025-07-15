@@ -26,6 +26,6 @@ export const joinServer = createAction({
 
 		if (!response.ok) return false;
 
-		return false;
+		return true;
 	},
 });
