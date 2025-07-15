@@ -2,18 +2,9 @@
 
 import { z } from "zod";
 import { onlyUser } from ".";
-import {
-	bets,
-	gold,
-	leaderboards,
-	nexus,
-	outcomes,
-	predictions,
-	xp,
-} from "~/packages/db/schema/public";
-import { eq, sql, and } from "drizzle-orm";
+import { bets, outcomes, predictions, xp } from "~/packages/db/schema/public";
+import { eq, and } from "drizzle-orm";
 import { db } from "~/packages/db";
-import { revalidatePath } from "next/cache";
 import { posthogClient } from "../clients/posthog";
 
 export const placeBet = onlyUser
@@ -21,7 +12,6 @@ export const placeBet = onlyUser
 		z.object({
 			prediction: z.string(),
 			outcome: z.string(),
-			amount: z.number(),
 		}),
 	)
 	.action(async ({ ctx, parsedInput }) => {
@@ -52,10 +42,6 @@ export const placeBet = onlyUser
 			throw new Error("Outcome not found");
 		}
 
-		if (parsedInput.amount === 0 && prediction.bets.length > 0) {
-			throw new Error("You can only bet for free once");
-		}
-
 		if (prediction.closed) {
 			throw new Error("Prediction is closed");
 		}
@@ -74,6 +60,10 @@ export const placeBet = onlyUser
 			throw new Error("Prediction has ended");
 		}
 
+		if (prediction.bets.length > 0) {
+			throw new Error("You already placed a prediction");
+		}
+
 		// let didEarnXP = false;
 		// let newUserXP = 0;
 
@@ -84,32 +74,9 @@ export const placeBet = onlyUser
 					user: ctx.user.id,
 					prediction: parsedInput.prediction,
 					outcome: parsedInput.outcome,
-					timestamp: now,
-					amount: parsedInput.amount,
+					amount: 0,
 				})
 				.returning({ id: bets.id });
-
-			if (parsedInput.amount > 0) {
-				await tx
-					.insert(leaderboards)
-					.values({
-						user: ctx.user.id,
-						community: prediction.community,
-					})
-					.onConflictDoUpdate({
-						target: [leaderboards.user, leaderboards.community],
-						set: {
-							points: sql`${leaderboards.points} - ${parsedInput.amount}`,
-						},
-					});
-
-				await tx.insert(gold).values({
-					from: ctx.user.id,
-					amount: parsedInput.amount,
-					bet: bet.id,
-					community: prediction.community,
-				});
-			}
 
 			// if (prediction.earnedXP.length === 0) {
 			// 	await tx.insert(xp).values({
@@ -132,20 +99,6 @@ export const placeBet = onlyUser
 			// 	newUserXP = updateNexus.xp;
 			// 	didEarnXP = true;
 			// }
-
-			await tx
-				.update(outcomes)
-				.set({
-					pool: sql`${outcomes.pool} + ${parsedInput.amount}`,
-				})
-				.where(eq(outcomes.id, parsedInput.outcome));
-
-			await tx
-				.update(predictions)
-				.set({
-					pool: sql`${predictions.pool} + ${parsedInput.amount}`,
-				})
-				.where(eq(predictions.id, parsedInput.prediction));
 		});
 
 		posthogClient.capture({
@@ -155,15 +108,9 @@ export const placeBet = onlyUser
 				prediction: prediction.id,
 				outcome: parsedInput.outcome,
 				community: prediction.community,
-				amount: parsedInput.amount,
+				amount: 0,
 			},
 		});
-
-		revalidatePath(`/predictions/${prediction.handle}`);
-		revalidatePath("/predictions");
-		if (prediction.event) {
-			revalidatePath(`/events/${prediction.event.handle}`);
-		}
 
 		// if (didEarnXP) {
 		// 	return {

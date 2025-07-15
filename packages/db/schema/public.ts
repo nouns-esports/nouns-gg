@@ -273,6 +273,7 @@ export const predictions = pgTable(
 		image: t.text().notNull(),
 		rules: t.jsonb().$type<TipTap>().notNull(),
 		xp: t.integer().notNull(),
+		points: t.integer().notNull().default(0),
 		closed: t.boolean().notNull().default(false),
 		resolved: t.boolean().notNull().default(false),
 		featured: t.boolean().notNull().default(false),

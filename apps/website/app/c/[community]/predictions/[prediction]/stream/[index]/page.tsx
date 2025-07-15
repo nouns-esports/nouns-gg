@@ -1,6 +1,6 @@
 import { db } from "~/packages/db";
 import { predictions } from "~/packages/db/schema/public";
-import { eq } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 import { notFound } from "next/navigation";
 import Refresh from "@/components/Refresh";
 
@@ -14,7 +14,20 @@ export default async function StreamPage(props: {
 	const prediction = await db.pgpool.query.predictions.findFirst({
 		where: eq(predictions.handle, params.prediction),
 		with: {
-			outcomes: true,
+			outcomes: {
+				extras: {
+					totalBets:
+						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = outcomes.id)`.as(
+							"totalBets",
+						),
+				},
+			},
+		},
+		extras: {
+			totalBets:
+				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)`.as(
+					"totalBets",
+				),
 		},
 	});
 
@@ -35,6 +48,10 @@ export default async function StreamPage(props: {
 		if (aName === "no") return -1;
 		if (bName === "no") return 1;
 
+		if (a.pool === 0 && b.pool === 0) {
+			return b.totalBets - a.totalBets;
+		}
+
 		const poolDiff = Number(b.pool) - Number(a.pool);
 		if (poolDiff !== 0) return poolDiff;
 
@@ -50,13 +67,13 @@ export default async function StreamPage(props: {
 
 	const outcome = outcomes[parseInt(params.index) - 1];
 
-	const odds = Number(
-		((Number(outcome.pool) / Number(prediction.pool)) * 100).toFixed(0),
-	);
+	const hasPool = outcomes.some((o) => o.pool > 0);
+
+	const odds = hasPool
+		? (Number(outcome.pool) / Number(prediction.pool)) * 100
+		: (outcome.totalBets / prediction.totalBets) * 100;
 
 	const binary = outcomes.length === 2;
-
-	const random = Math.random();
 
 	return (
 		<>

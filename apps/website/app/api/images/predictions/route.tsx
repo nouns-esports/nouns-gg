@@ -124,10 +124,26 @@ export async function GET(request: Request) {
 						.toSorted((a, b) => {
 							const aName = a.name.toLowerCase();
 							const bName = b.name.toLowerCase();
+
 							if (aName === "yes") return -1;
 							if (bName === "yes") return 1;
 							if (aName === "no") return -1;
 							if (bName === "no") return 1;
+
+							if (a.pool === 0 && b.pool === 0) {
+								return b.totalBets - a.totalBets;
+							}
+
+							const poolDiff = Number(b.pool) - Number(a.pool);
+							if (poolDiff !== 0) return poolDiff;
+
+							const aNumber = parseInt(aName);
+							const bNumber = parseInt(bName);
+
+							if (!Number.isNaN(aNumber) && !Number.isNaN(bNumber)) {
+								return aNumber - bNumber;
+							}
+
 							return aName.localeCompare(bName);
 						})
 						.map((outcome) => (
@@ -179,16 +195,34 @@ export async function GET(request: Request) {
 						.toSorted((a, b) => {
 							const aName = a.name.toLowerCase();
 							const bName = b.name.toLowerCase();
+
 							if (aName === "yes") return -1;
 							if (bName === "yes") return 1;
 							if (aName === "no") return -1;
 							if (bName === "no") return 1;
+
+							if (a.pool === 0 && b.pool === 0) {
+								return b.totalBets - a.totalBets;
+							}
+
+							const poolDiff = Number(b.pool) - Number(a.pool);
+							if (poolDiff !== 0) return poolDiff;
+
+							const aNumber = parseInt(aName);
+							const bNumber = parseInt(bName);
+
+							if (!Number.isNaN(aNumber) && !Number.isNaN(bNumber)) {
+								return aNumber - bNumber;
+							}
+
 							return aName.localeCompare(bName);
 						})
 						.map((outcome) => {
-							const odds = Math.ceil(
-								(Number(outcome.pool) / Number(prediction.pool)) * 100,
-							);
+							const hasPool = prediction.outcomes.some((o) => o.pool > 0);
+
+							const odds = hasPool
+								? (Number(outcome.pool) / Number(prediction.pool)) * 100
+								: (outcome.totalBets / prediction.totalBets) * 100;
 							return (
 								<div
 									key={`outcome-right-${outcome.id}`}

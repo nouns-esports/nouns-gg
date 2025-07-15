@@ -7,9 +7,6 @@ import type { AuthenticatedUser } from "@/server/queries/users";
 import { placeBet } from "@/server/mutations/placeBet";
 import { useAction } from "next-safe-action/hooks";
 import { useState } from "react";
-import { useDebounce } from "@uidotdev/usehooks";
-import { useQuery } from "@tanstack/react-query";
-import { simulateGains } from "@/server/queries/predictions";
 import { toast } from "../Toasts";
 import { twMerge } from "tailwind-merge";
 
@@ -21,8 +18,6 @@ export default function MakePredictionModal(props: {
 
 	const { hasSucceeded, isPending, executeAsync, reset } = useAction(placeBet);
 
-	const [amount, setAmount] = useState(Math.floor(props.user.gold / 10));
-
 	const [outcomeId, setOutcomeId] = useState<
 		| NonNullable<
 				Awaited<ReturnType<typeof getPredictions>>
@@ -30,29 +25,13 @@ export default function MakePredictionModal(props: {
 		| undefined
 	>(data?.outcome);
 
-	const shouldSimulateGains = useDebounce(amount, 1000);
-
-	const { data: simulatedGains } = useQuery({
-		queryKey: ["simulateGains", shouldSimulateGains],
-		queryFn: async () => {
-			if (!outcomeId) return;
-			const result = await simulateGains({
-				prediction: props.prediction.id,
-				outcome: outcomeId,
-				amount,
-			});
-
-			setLoading(false);
-
-			return result;
-		},
-	});
-
-	const [loading, setLoading] = useState(false);
-
 	const outcome = props.prediction.outcomes.find((o) => o.id === outcomeId);
 
-	const odds = (Number(outcome?.pool) / Number(props.prediction.pool)) * 100;
+	const hasPool = props.prediction.outcomes.some((o) => o.pool > 0);
+
+	const odds = hasPool
+		? (Number(outcome?.pool) / Number(props.prediction.pool)) * 100
+		: (Number(outcome?.totalBets) / Number(props.prediction.totalBets)) * 100;
 
 	return (
 		<Modal
@@ -119,30 +98,6 @@ export default function MakePredictionModal(props: {
 					))}
 				</ul>
 			) : null}
-
-			{props.user.gold > 0 ? (
-				<div className="flex flex-col gap-2 w-full">
-					<p className="text-white font-bebas-neue text-xl">Amount</p>
-					<input
-						type="number"
-						placeholder={`Your gold: ${props.user.gold}`}
-						value={amount === 0 ? "" : amount}
-						onChange={(e) => {
-							const value = Number(e.target.value);
-
-							if (value !== amount) {
-								setLoading(true);
-							}
-
-							if (value > props.user.gold) {
-								setAmount(props.user.gold);
-							} else setAmount(value);
-						}}
-						className=" bg-grey-800 rounded-xl p-2 px-3 text-white w-min placeholder:text-grey-400"
-					/>
-				</div>
-			) : null}
-
 			<div className="flex flex-col gap-2 w-full">
 				<p className="text-white font-bebas-neue text-xl">Your Bet</p>
 				<div className="flex w-full justify-between gap-2">
@@ -156,39 +111,36 @@ export default function MakePredictionModal(props: {
 								{odds.toFixed(2)}%
 							</p>
 						) : null}
-						{loading ? (
-							<p className="text-white text-sm">Simulating...</p>
-						) : (
-							<div className="flex items-center gap-4">
-								<div className=" flex items-center gap-1.5 text-sm text-white">
-									<Sparkles className="w-4 h-4 text-green" />
-									{props.prediction.xp}
-								</div>
-								{amount > 0 && simulatedGains ? (
-									<div className="flex justify-center gap-1.5 items-center">
-										<img
-											alt="Gold coin"
-											src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
-											className="rounded-full h-4 w-4 shadow-xl"
-										/>
-										<p className="font-semibold text-[#FEBD1C]">
-											{Number(simulatedGains).toFixed(2)}
-										</p>
-									</div>
-								) : null}
+						<div className="flex items-center gap-4">
+							<div className=" flex items-center gap-1.5 text-sm text-white">
+								<Sparkles className="w-4 h-4 text-green" />
+								{props.prediction.xp}
 							</div>
-						)}
+							{props.prediction.points > 0 ? (
+								<div className="flex justify-center gap-1.5 items-center">
+									<img
+										alt="Gold coin"
+										src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
+										className="rounded-full h-4 w-4 shadow-xl"
+									/>
+									<p className="font-semibold text-[#FEBD1C]">
+										{(
+											props.prediction.points / props.prediction.totalBets
+										).toFixed(2)}
+									</p>
+								</div>
+							) : null}
+						</div>
 					</div>
 				</div>
 				<button
-					disabled={loading || isPending || !outcomeId}
+					disabled={isPending || !outcomeId}
 					onClick={async () => {
 						if (!outcomeId) return;
 
 						const result = await executeAsync({
 							prediction: props.prediction.id,
 							outcome: outcomeId,
-							amount,
 						});
 
 						if (result?.serverError) {
@@ -200,10 +152,10 @@ export default function MakePredictionModal(props: {
 					}}
 					className={twMerge(
 						"flex justify-center items-center gap-2 w-full text-black bg-white hover:bg-white/70 font-semibold rounded-lg p-2.5 transition-colors",
-						loading || isPending || !outcomeId ? "opacity-50" : "",
+						isPending || !outcomeId ? "opacity-50" : "",
 					)}
 				>
-					{loading || isPending ? (
+					{isPending ? (
 						<img
 							alt="loading spinner"
 							src="/spinner.svg"

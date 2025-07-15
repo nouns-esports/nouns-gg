@@ -24,7 +24,14 @@ export async function getPrediction(
 							: undefined,
 					),
 		with: {
-			outcomes: true,
+			outcomes: {
+				extras: {
+					totalBets:
+						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = outcomes.id)`.as(
+							"totalBets",
+						),
+				},
+			},
 			bets: {
 				where: input.user ? eq(bets.user, input.user) : undefined,
 				limit: input.user ? 1 : 0,
@@ -64,7 +71,14 @@ export async function getPredictions(input: {
 		limit: input.limit,
 		with: {
 			community: true,
-			outcomes: true,
+			outcomes: {
+				extras: {
+					totalBets:
+						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = outcomes.id)`.as(
+							"totalBets",
+						),
+				},
+			},
 			bets: {
 				where: input.user ? eq(bets.user, input.user) : undefined,
 				limit: input.user ? 1 : 0,

@@ -115,6 +115,10 @@ export default async function Prediction(props: {
 		if (aName === "no") return -1;
 		if (bName === "no") return 1;
 
+		if (a.pool === 0 && b.pool === 0) {
+			return b.totalBets - a.totalBets;
+		}
+
 		const poolDiff = Number(b.pool) - Number(a.pool);
 		if (poolDiff !== 0) return poolDiff;
 
@@ -212,8 +216,11 @@ export default async function Prediction(props: {
 					</div>
 					<ul className="flex flex-col gap-2 w-full">
 						{outcomes.map(async (outcome, index) => {
-							const odds =
-								(Number(outcome.pool) / Number(prediction.pool)) * 100;
+							const hasPool = outcomes.some((o) => o.pool > 0);
+
+							const odds = hasPool
+								? (Number(outcome.pool) / Number(prediction.pool)) * 100
+								: (outcome.totalBets / prediction.totalBets) * 100;
 
 							return (
 								<ToggleModal
