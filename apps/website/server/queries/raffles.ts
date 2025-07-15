@@ -1,5 +1,6 @@
 import { db } from "~/packages/db";
-import { eq, sql } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
+import { raffles } from "~/packages/db/schema/public";
 
 export async function getRaffles(input?: {
 	event?: string;
@@ -32,6 +33,28 @@ export async function getRaffles(input?: {
                         WHERE raffle = raffles.id
                     )
 	            `.as("totalEntries"),
+		},
+	});
+}
+
+export async function getRaffle(
+	input: { user?: string } & (
+		| { id: string }
+		| { handle: string; community?: string }
+	),
+) {
+	return db.pgpool.query.raffles.findFirst({
+		where:
+			"id" in input
+				? eq(raffles.id, input.id)
+				: and(
+						eq(raffles.handle, input.handle),
+						input.community
+							? eq(raffles.community, input.community)
+							: undefined,
+					),
+		with: {
+			community: true,
 		},
 	});
 }
