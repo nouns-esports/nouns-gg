@@ -19,7 +19,7 @@ export const haveRole = createAction({
 			`https://discord.com/api/guilds/${input.server}/members/${account.identifier}`,
 			{
 				headers: {
-					Authorization: `Bot ${env.DISCORD_TOKEN}`,
+					Authorization: `Bot ${env.DASH_DISCORD_TOKEN}`,
 					"Content-Type": "application/json",
 				},
 			},
