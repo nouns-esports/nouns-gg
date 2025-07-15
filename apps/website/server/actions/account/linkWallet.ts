@@ -8,7 +8,7 @@ export const linkWallet = createAction({
 		provider: z.string().nullable().describe("The wallet provider"),
 	}),
 	check: async ({ input, user }) => {
-		const privyUser = await privyClient.getUserById(user.id);
+		const privyUser = await privyClient.getUserById(user.privyId);
 
 		if (!privyUser) return false;
 

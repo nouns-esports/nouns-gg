@@ -6,7 +6,7 @@ export const linkEmail = createAction({
 	name: "linkEmail",
 	schema: z.object({}),
 	check: async ({ user }) => {
-		const privyUser = await privyClient.getUserById(user.id);
+		const privyUser = await privyClient.getUserById(user.privyId);
 
 		if (!privyUser) return false;
 
