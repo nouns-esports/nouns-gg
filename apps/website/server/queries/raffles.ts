@@ -22,6 +22,7 @@ export async function getRaffles(input?: {
 				where: (t, { eq }) =>
 					input?.user ? eq(t.user, input.user) : undefined,
 			},
+			community: true,
 		},
 		extras: {
 			totalEntries: sql<number>`

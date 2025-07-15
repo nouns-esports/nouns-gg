@@ -35,8 +35,12 @@ export default function RaffleCard(props: {
 				<div className="flex items-center justify-between gap-2">
 					<div className="flex items-center gap-2">
 						<img
-							src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
-							alt="Gold"
+							src={
+								props.raffle.community.handle === "nounsgg"
+									? "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
+									: props.raffle.community.image
+							}
+							alt={`${props.raffle.community.name} ${props.raffle.community.points?.name ?? "Points"}`}
 							className="w-6 h-6"
 						/>
 						<p className="text-[#FEBD1C] text-lg font-semibold">
