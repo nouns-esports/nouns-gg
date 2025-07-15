@@ -293,6 +293,8 @@ export default async function Round(props: {
 				)?.count ?? 0)
 			: 0;
 
+	console.log("VOTING ACTIVITY", voteActivity.length);
+
 	return (
 		<>
 			<div className="flex flex-col w-full items-center">
