@@ -79,7 +79,7 @@ export const castVotes = onlyUser
 							? 3
 							: 1;
 
-		if (round.handle === "japan-round-1") {
+		if (round.handle === "japan-round-2") {
 			const japanExtraVotes =
 				await db.primary.query.nounsvitationalVotes.findFirst({
 					where: eq(nounsvitationalVotes.user, ctx.user.id),
