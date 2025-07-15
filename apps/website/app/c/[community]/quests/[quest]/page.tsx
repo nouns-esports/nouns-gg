@@ -91,7 +91,10 @@ export default async function Quest(props: {
 
 	const actions = await Promise.all(
 		quest.actions.map(async (actionState) => {
-			const action = getAction({ action: actionState.action });
+			const action = getAction({
+				action: actionState.action,
+				platform: actionState.platform ?? "dash",
+			});
 
 			if (!action) {
 				throw new Error(`Action ${actionState.action} not found`);
@@ -101,8 +104,9 @@ export default async function Quest(props: {
 				...actionState,
 				completed: user
 					? await action.check({
-							user,
-							inputs: actionState.input,
+							user: user.nexus,
+							input: actionState.input,
+							community: quest.community,
 						})
 					: false,
 			};

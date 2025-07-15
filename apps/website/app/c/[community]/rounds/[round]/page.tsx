@@ -202,7 +202,10 @@ export default async function Round(props: {
 				round.actions
 					.filter((action) => action.type === "proposing")
 					.map(async (actionState) => {
-						const action = getAction({ action: actionState.action });
+						const action = getAction({
+							action: actionState.action,
+							platform: actionState.platform ?? "dash",
+						});
 
 						if (!action) {
 							throw new Error(`Action ${actionState.action} not found`);
@@ -211,8 +214,9 @@ export default async function Round(props: {
 						return {
 							...actionState,
 							completed: await action.check({
-								user: user,
-								inputs: actionState.input,
+								user: user.nexus,
+								input: actionState.input,
+								community: round.community,
 							}),
 						};
 					}),
@@ -226,15 +230,19 @@ export default async function Round(props: {
 				round.actions
 					.filter((action) => action.type === "voting")
 					.map(async (actionState) => {
-						const action = getAction({ action: actionState.action });
+						const action = getAction({
+							action: actionState.action,
+							platform: actionState.platform ?? "dash",
+						});
 
 						if (!action) {
 							throw new Error(`Action ${actionState.action} not found`);
 						}
 
 						const completed = await action.check({
-							user: user,
-							inputs: actionState.input,
+							user: user.nexus,
+							input: actionState.input,
+							community: round.community,
 						});
 
 						if (completed) {

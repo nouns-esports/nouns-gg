@@ -66,7 +66,12 @@ export async function getQuest(
 				},
 			},
 			actions: true,
-			community: true,
+			community: {
+				with: {
+					admins: true,
+					connections: true,
+				},
+			},
 		},
 	});
 }

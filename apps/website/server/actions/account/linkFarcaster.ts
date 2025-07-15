@@ -1,23 +1,16 @@
 import { createAction } from "../createAction";
+import { z } from "zod";
 
 export const linkFarcaster = createAction({
-	image: "",
-	name: "Link Farcaster",
-	category: "account",
-	generateDescription: async () => {
-		"use server";
-
-		return [
-			{ text: "Link a Farcaster account to" },
-			{ text: "Your Profile", href: "/user" },
-		];
-	},
+	name: "linkFarcaster",
+	schema: z.object({}),
 	check: async ({ user }) => {
-		"use server";
+		for (const account of user.accounts) {
+			if (account.platform === "farcaster") {
+				return true;
+			}
+		}
 
-		if (!user.farcaster) return false;
-
-		return true;
+		return false;
 	},
-	filters: {},
 });

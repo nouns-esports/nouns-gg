@@ -1,77 +1,33 @@
 import { z } from "zod";
+import { privyClient } from "../../clients/privy";
 import { createAction } from "../createAction";
-import { createFilter } from "../createFilter";
 
 export const graduateTraits = createAction({
-    image: "",
-    name: "Graduate Traits",
-    category: "noundry",
-    generateDescription: async (inputs) => {
-        "use server";
+	name: "Graduate Traits",
+	schema: z.object({
+		count: z.number().min(1).describe("The number of traits to graduate"),
+	}),
+	check: async ({ user, input }) => {
+		const privyUser = await privyClient.getUserById(user.id);
 
-        const parts = [];
+		if (!privyUser) return false;
 
-        if (inputs.count.value > 1) {
-            parts.push({
-                text: "Graduate at least",
-                highlight: true,
-            });
-            parts.push({
-                text: inputs.count.value.toString(),
-                highlight: true,
-            });
-            parts.push({
-                text: "traits from",
-            });
-        } else {
-            parts.push({
-                text: "Graduate a trait from",
-            });
-        }
+		const wallets = privyUser.linkedAccounts.filter(
+			(account) => account.type === "wallet",
+		);
 
-        parts.push({
-            text: "Noundry",
-            href: "https://noundry.wtf",
-        });
+		const graduates = (await fetch(
+			"https://gallery.noundry.wtf/api/graduations",
+		).then((res) => res.json())) as Record<string, number | undefined>;
 
-        parts.push({
-            text: "to Nouns",
-        });
+		for (const wallet of wallets) {
+			const count = graduates[wallet.address.toLowerCase()];
 
-        return parts;
-    },
-    check: async ({ user, inputs }) => {
-        "use server";
+			if (count && count >= input.count) {
+				return true;
+			}
+		}
 
-        if (user?.wallets?.length === 0) return false;
-
-        try {
-            const graduates = await fetch("https://gallery.noundry.wtf/api/graduations").then(res => res.json()) as Record<string, number | undefined>;
-
-            for (const wallet of user.wallets) {
-                const count = graduates[wallet.address.toLowerCase()];
-
-                if (count && count >= inputs.count.value) {
-                    return true;
-                }
-            }
-        } catch (e) {
-            console.error("Error checking graduates", e);
-        }
-
-        return false;
-    },
-    filters: {
-        count: createFilter({
-            name: "Count",
-            required: true,
-            options: {
-                value: {
-                    name: "At least",
-                    description: "The number of traits to graduate",
-                    schema: z.number().min(1),
-                },
-            },
-        }),
-    },
+		return false;
+	},
 });

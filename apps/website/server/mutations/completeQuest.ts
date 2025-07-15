@@ -32,6 +32,12 @@ export const completeQuest = onlyUser
 					limit: 1,
 				},
 				actions: true,
+				community: {
+					with: {
+						admins: true,
+						connections: true,
+					},
+				},
 			},
 		});
 
@@ -59,6 +65,7 @@ export const completeQuest = onlyUser
 			quest.actions.map(async (actionState) => {
 				const action = getAction({
 					action: actionState.action,
+					platform: actionState.platform ?? "dash",
 				});
 
 				if (!action) {
@@ -68,8 +75,9 @@ export const completeQuest = onlyUser
 				return {
 					...actionState,
 					completed: await action.check({
-						user: ctx.user,
-						inputs: actionState.input,
+						user: ctx.user.nexus,
+						input: actionState.input,
+						community: quest.community,
 					}),
 				};
 			}),

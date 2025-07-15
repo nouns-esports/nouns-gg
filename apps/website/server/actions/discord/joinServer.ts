@@ -1,17 +1,31 @@
-import { z } from "zod";
-import { createAction } from "../createAction";
 import { env } from "~/env";
-import { createFilter } from "../createFilter";
+import { createAction } from "../createAction";
+import { z } from "zod";
 
 export const joinServer = createAction({
-	image: "",
 	name: "Join Server",
-	category: "discord",
-	generateDescription: async (inputs) => {
-		"use server";
+	schema: z.object({
+		server: z.string().describe("The Discord server ID"),
+	}),
+	check: async ({ input, user, community }) => {
+		const account = user.accounts.find(
+			(account) => account.platform === "discord",
+		);
 
-		const serverResponse = await fetch(
-			`https://discord.com/api/guilds/${inputs.server.id}`,
+		if (!account) return false;
+
+		const server = community.connections.find(
+			(connection) =>
+				connection.platform === "discord" &&
+				connection.config?.guild === input.server,
+		);
+
+		if (!server) {
+			throw new Error("The provided server is not linked to this community");
+		}
+
+		const response = await fetch(
+			`https://discord.com/api/guilds/${input.server}/members/${account.identifier}`,
 			{
 				headers: {
 					Authorization: `Bot ${env.DISCORD_TOKEN}`,
@@ -20,51 +34,8 @@ export const joinServer = createAction({
 			},
 		);
 
-		if (!serverResponse.ok) throw new Error("Failed to fetch server");
-
-		const server: { name: string } = await serverResponse.json();
-
-		return [
-			{ text: "Join the" },
-			{ text: server.name, highlight: true },
-			{ text: "Discord server" },
-		];
-	},
-	check: async ({ inputs, user }) => {
-		"use server";
-
-		if (!user.discord?.subject) return false;
-
-		const response = await fetch(
-			`https://discord.com/api/guilds/${inputs.server.id}/members/${user.discord.subject}`,
-			{
-				headers: {
-					Authorization: `Bot ${env.DASH_DISCORD_TOKEN}`,
-					"Content-Type": "application/json",
-				},
-			},
-		);
-
 		if (!response.ok) return false;
 
-		return true;
-	},
-	filters: {
-		server: createFilter({
-			options: {
-				id: {
-					name: "ID",
-					description: "The ID of the server",
-					schema: z.string(),
-				},
-				invite: {
-					name: "Invite",
-					description: "The invite URL of the server",
-					schema: z.string(),
-				},
-			},
-			name: "Server",
-			required: true,
-		}),
+		return false;
 	},
 });

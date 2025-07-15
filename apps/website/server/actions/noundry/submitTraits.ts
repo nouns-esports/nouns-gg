@@ -1,75 +1,39 @@
 import { z } from "zod";
+import { privyClient } from "../../clients/privy";
 import { createAction } from "../createAction";
-import { createFilter } from "../createFilter";
 
 export const submitTraits = createAction({
-    image: "",
-    name: "Submit Traits",
-    category: "noundry",
-    generateDescription: async (inputs) => {
-        "use server";
+	name: "Submit Traits",
+	schema: z.object({
+		count: z.number().min(1).describe("The number of traits to submit"),
+	}),
+	check: async ({ user, input }) => {
+		const privyUser = await privyClient.getUserById(user.id);
 
-        const parts = [];
+		if (!privyUser) return false;
 
-        if (inputs.count.value > 1) {
-            parts.push({
-                text: "Submit at least",
-            });
-            parts.push({
-                text: inputs.count.value.toString(),
-                highlight: true,
-            });
-            parts.push({
-                text: "traits to",
-            });
-        } else {
-            parts.push({
-                text: "Submit a trait to",
-            });
-        }
+		const wallets = privyUser.linkedAccounts.filter(
+			(account) => account.type === "wallet",
+		);
 
-        parts.push({
-            text: "Noundry",
-            href: "https://noundry.wtf",
-        });
+		const stats = (await fetch(
+			"https://gallery.noundry.wtf/api/artists/stats",
+		).then((res) => res.json())) as Array<{
+			address: string;
+			traits: number;
+		}>;
 
-        return parts;
-    },
-    check: async ({ user, inputs }) => {
-        "use server";
+		for (const wallet of wallets) {
+			const artist = stats.find(
+				(artist) =>
+					artist.address.toLowerCase() === wallet.address.toLowerCase(),
+			);
 
-        if (user?.wallets?.length === 0) return false;
+			if (artist && artist.traits >= input.count) {
+				return true;
+			}
+		}
 
-        try {
-            const stats = await fetch("https://gallery.noundry.wtf/api/artists/stats").then(res => res.json()) as Array<{
-                address: string;
-                traits: number;
-            }>;
-
-            for (const wallet of user.wallets) {
-                const artist = stats.find(artist => artist.address.toLowerCase() === wallet.address.toLowerCase());
-
-                if (artist && artist.traits >= inputs.count.value) {
-                    return true;
-                }
-            }
-        } catch (e) {
-            console.error("Error checking traits", e);
-        }
-
-        return false;
-    },
-    filters: {
-        count: createFilter({
-            name: "Count",
-            required: true,
-            options: {
-                value: {
-                    name: "At least",
-                    description: "The number of traits to submit",
-                    schema: z.number().min(1),
-                },
-            },
-        }),
-    },
+		return false;
+	},
 });

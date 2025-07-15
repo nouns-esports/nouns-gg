@@ -1,67 +1,35 @@
-import { z } from "zod";
+import { privyClient } from "../../clients/privy";
 import { createAction } from "../createAction";
-import { createFilter } from "../createFilter";
+import { z } from "zod";
 
 export const linkWallet = createAction({
-	image: "",
-	name: "Link Wallet",
-	category: "account",
-	generateDescription: async (inputs) => {
-		"use server";
+	name: "linkWallet",
+	schema: z.object({
+		provider: z.string().nullable().describe("The wallet provider"),
+	}),
+	check: async ({ input, user }) => {
+		const privyUser = await privyClient.getUserById(user.id);
 
-		const parts = [];
+		if (!privyUser) return false;
 
-		switch (inputs.provider?.type) {
-			case "rainbow":
-				parts.push({ text: "Link a" });
-				parts.push({ text: "Rainbow", href: "/rainbow" });
-				parts.push({ text: "wallet to" });
-				break;
-			case "coinbase_wallet":
-				parts.push({ text: "Link a" });
-				parts.push({ text: "Coinbase", href: "https://wallet.coinbase.com" });
-				parts.push({ text: "wallet to" });
-				break;
-			default:
-				parts.push({ text: "Link a wallet to" });
-				break;
-		}
-
-		parts.push({ text: "Your Profile", href: "/user" });
-
-		return parts;
-	},
-	check: async ({ user, inputs }) => {
-		"use server";
-
-		if (user.wallets.length === 0) return false;
-
-		if (inputs.provider) {
-			if (inputs.provider.type === "rainbow") {
-				return user.wallets.some(
-					(wallet) => wallet.walletClientType === "rainbow",
-				);
+		if (input.provider) {
+			for (const account of privyUser.linkedAccounts) {
+				if (
+					account.type === "wallet" &&
+					account.walletClientType?.toLowerCase() ===
+						input.provider.toLowerCase()
+				) {
+					return true;
+				}
 			}
 
-			if (inputs.provider.type === "coinbase_wallet") {
-				return user.wallets.some(
-					(wallet) => wallet.walletClientType === "coinbase_wallet",
-				);
-			}
+			return false;
 		}
 
-		return true;
-	},
-	filters: {
-		provider: createFilter({
-			options: {
-				type: {
-					name: "Type",
-					description: "Name of wallet provider",
-					schema: z.enum(["rainbow", "coinbase_wallet"]),
-				},
-			},
-			name: "Wallet Provider",
-		}),
+		const hasWallet = privyUser.linkedAccounts.some(
+			(account) => account.type === "wallet",
+		);
+
+		return hasWallet;
 	},
 });

@@ -1,23 +1,17 @@
+import { privyClient } from "../../clients/privy";
 import { createAction } from "../createAction";
+import { z } from "zod";
 
 export const linkEmail = createAction({
-	image: "",
-	name: "Link Email",
-	category: "account",
-	generateDescription: async () => {
-		"use server";
-
-		return [
-			{ text: "Link an email to" },
-			{ text: "Your Profile", href: "/user" },
-		];
-	},
+	name: "linkEmail",
+	schema: z.object({}),
 	check: async ({ user }) => {
-		"use server";
+		const privyUser = await privyClient.getUserById(user.id);
 
-		if (!user.email) return false;
+		if (!privyUser) return false;
 
-		return true;
+		if (privyUser.email?.address) return true;
+
+		return false;
 	},
-	filters: {},
 });

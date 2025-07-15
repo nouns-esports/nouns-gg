@@ -10,7 +10,19 @@ import { sql } from "drizzle-orm";
 import type { JSONContent as TipTap } from "@tiptap/core";
 import type { ActionDescription } from "~/apps/website/server/actions/createAction";
 
-const platforms = () => text({ enum: ["discord", "farcaster", "twitter"] });
+const platforms = () =>
+	text({
+		enum: [
+			"discord",
+			"farcaster",
+			"twitter",
+			"noundry",
+			"dash",
+			"lilnouns",
+			"nouns",
+			"ethereum",
+		],
+	});
 const connections = () =>
 	text({ enum: ["discord:server", "farcaster:channel", "farcaster:account"] });
 
@@ -371,7 +383,7 @@ export const roundActions = pgTable("round_actions", (t) => ({
 	platform: platforms(),
 	action: t.text().notNull(),
 	description: t.jsonb().array().$type<ActionDescription>().notNull(),
-	input: t.jsonb().$type<{ [key: string]: { [key: string]: any } }>().notNull(),
+	input: t.jsonb().$type<{ [key: string]: any }>().notNull(),
 }));
 
 // add user column and update it when they claim the award
@@ -519,10 +531,7 @@ export const questActions = pgTable("quest_actions", (t) => ({
 	action: t.text().notNull(),
 	platform: platforms(),
 	description: t.jsonb().array().$type<ActionDescription>().notNull(),
-	input: t
-		.jsonb()
-		.$type<{ [key: string]: { [key: string]: any | undefined } }>()
-		.notNull(),
+	input: t.jsonb().$type<{ [key: string]: any }>().notNull(),
 }));
 
 export const questCompletions = pgTable(

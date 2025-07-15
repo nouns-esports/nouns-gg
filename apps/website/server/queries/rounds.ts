@@ -49,6 +49,7 @@ export async function getRound(
 			community: {
 				with: {
 					admins: true,
+					connections: true,
 				},
 			},
 			proposals: {

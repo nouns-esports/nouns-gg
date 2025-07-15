@@ -1,23 +1,16 @@
 import { createAction } from "../createAction";
+import { z } from "zod";
 
 export const linkTwitter = createAction({
-	image: "",
-	name: "Link Twitter",
-	category: "account",
-	generateDescription: async () => {
-		"use server";
-
-		return [
-			{ text: "Link a Twitter account to" },
-			{ text: "Your Profile", href: "/user" },
-		];
-	},
+	name: "linkTwitter",
+	schema: z.object({}),
 	check: async ({ user }) => {
-		"use server";
+		for (const account of user.accounts) {
+			if (account.platform === "farcaster") {
+				return true;
+			}
+		}
 
-		if (!user.twitter) return false;
-
-		return true;
+		return false;
 	},
-	filters: {},
 });

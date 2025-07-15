@@ -24,7 +24,11 @@ export async function getAuthenticatedUser() {
 		let userNexus = await db.pgpool.query.nexus.findFirst({
 			where: eq(nexus.privyId, privyUser.id),
 			with: {
+				accounts: true,
 				leaderboards: {
+					with: {
+						community: true,
+					},
 					extras: {
 						percentile: sql<number>`
 							(
@@ -143,7 +147,11 @@ export async function getAuthenticatedUser() {
 					userNexus = await tx.query.nexus.findFirst({
 						where: eq(nexus.privyId, privyUser.id),
 						with: {
+							accounts: true,
 							leaderboards: {
+								with: {
+									community: true,
+								},
 								extras: {
 									percentile: sql<number>`
 									(

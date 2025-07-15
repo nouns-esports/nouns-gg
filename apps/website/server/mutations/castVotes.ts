@@ -36,7 +36,12 @@ export const castVotes = onlyUser
 					where: eq(proposals.user, ctx.user.id),
 				},
 				actions: true,
-				community: true,
+				community: {
+					with: {
+						admins: true,
+						connections: true,
+					},
+				},
 			},
 		});
 
@@ -90,6 +95,7 @@ export const castVotes = onlyUser
 		for (const actionState of actions) {
 			const action = getAction({
 				action: actionState.action,
+				platform: actionState.platform ?? "dash",
 			});
 
 			if (!action) {
@@ -97,8 +103,9 @@ export const castVotes = onlyUser
 			}
 
 			const completed = await action.check({
-				user: ctx.user,
-				inputs: actionState.input,
+				user: ctx.user.nexus,
+				input: actionState.input,
+				community: round.community,
 			});
 
 			if (actionState.required && !completed) {

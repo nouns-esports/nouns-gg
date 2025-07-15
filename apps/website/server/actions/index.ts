@@ -7,104 +7,74 @@ import { linkWallet } from "./account/linkWallet";
 import { linkTwitter } from "./account/linkTwitter";
 import { haveRole } from "./discord/haveRole";
 import { joinServer } from "./discord/joinServer";
-import { signup } from "./events/signup";
-import { becomeLilNounsDelegate } from "./lilnouns/becomeDelegate";
-import { becomeNounsDelegate } from "./nouns/becomeDelegate";
-import { bidAuction } from "./nouns/bidAuction";
-import { castNounsVote } from "./nouns/castVote";
-import { createNounsProposal } from "./nouns/createProposal";
+import { registerEvent } from "./events/registerEvent";
+import { lilnounsVoter } from "./lilnouns/lilnounsVoter";
+import { nounsVoter } from "./nouns/nounsVoter";
 import { visitLink } from "./online/visitLink";
 import { makePrediction } from "./predictions/makePrediction";
-import { winPrediction } from "./predictions/winPrediction";
-import { completeQuest } from "./quests/completeQuest";
-import { castRoundVote } from "./rounds/castVote";
-import { createRoundProposal } from "./rounds/createProposal";
-import { recieveVotes } from "./rounds/recieveVotes";
+import { castVote } from "./rounds/castVote";
+import { createProposal } from "./rounds/createProposal";
 import { createPost } from "./social/createPost";
 import { likePost } from "./social/likePost";
 import { repostPost } from "./social/repostPost";
 import { reachPercentile } from "./xp/reachPercentile";
-import { holdNFT } from "./onchain/holdNFT";
+import { holdERC721 } from "./ethereum/holdERC721";
 import { followAccount } from "./social/followAccount";
 import { graduateTraits } from "./noundry/graduateTraits";
 import { submitTraits } from "./noundry/submitTraits";
-import { lilnounsSnapshot } from "./lilnouns/lilnounsSnapshot";
 import { purchaseItem } from "./shop/purchaseItem";
 import { leaderboardPosition } from "./xp/leaderboardPosition";
+import { holdERC20 } from "./ethereum/holdERC20";
+import { holdERC1155 } from "./ethereum/holdERC1155";
 
-const actions = {
-	// Account
-	linkDiscord,
-	linkEmail,
-	linkFarcaster,
-	linkWallet,
-	linkTwitter,
-
-	// Discord
-	haveRole,
-	joinServer,
-
-	// Events
-	signup,
-
-	// Lil Nouns
-	becomeLilNounsDelegate,
-	lilnounsSnapshot,
-
-	// Nouns
-	becomeNounsDelegate,
-	bidAuction,
-	castNounsVote,
-	createNounsProposal,
-
-	// Online
-	visitLink,
-
-	// Onchain
-	holdNFT,
-
-	// Predictions
-	makePrediction,
-	winPrediction,
-
-	// Quests
-	completeQuest,
-
-	// Rounds
-	castRoundVote,
-	createRoundProposal,
-	recieveVotes,
-
-	// Social
-	createPost,
-	likePost,
-	repostPost,
-	followAccount,
-
-	// XP
-	reachPercentile,
-	leaderboardPosition,
-
-	// Noundry
-	graduateTraits,
-	submitTraits,
-
-	// Shop
-	purchaseItem,
+const actions: Record<
+	string,
+	Record<string, ReturnType<typeof createAction<any>>>
+> = {
+	dash: {
+		linkDiscord,
+		linkEmail,
+		linkFarcaster,
+		linkWallet,
+		linkTwitter,
+		visitLink,
+		reachPercentile,
+		leaderboardPosition,
+		purchaseItem,
+		makePrediction,
+		castVote,
+		createProposal,
+	},
+	discord: {
+		haveRole,
+		joinServer,
+	},
+	events: {
+		registerEvent,
+	},
+	lilnouns: {
+		lilnounsVoter,
+	},
+	nouns: {
+		nounsVoter,
+	},
+	farcaster: {
+		createPost,
+		likePost,
+		repostPost,
+		followAccount,
+	},
+	ethereum: {
+		holdERC721,
+		holdERC20,
+		holdERC1155,
+	},
+	noundry: {
+		graduateTraits,
+		submitTraits,
+	},
 };
 
-export function getAction(props: {
-	action: string;
-}) {
-	return actions[props.action as keyof typeof actions] as
-		| ReturnType<typeof createAction>
-		| undefined;
-}
-
-export function getActions(props: {
-	category: string;
-}) {
-	return Object.values(actions).filter(
-		(action) => action.category === props.category,
-	) as ReturnType<typeof createAction>[];
+export function getAction(input: { action: string; platform: string }) {
+	return actions[input.platform][input.action];
 }
