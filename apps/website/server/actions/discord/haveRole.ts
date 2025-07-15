@@ -8,22 +8,12 @@ export const haveRole = createAction({
 		server: z.string().describe("The Discord server ID"),
 		role: z.string().describe("The Discord role ID"),
 	}),
-	check: async ({ input, user, community }) => {
+	check: async ({ input, user }) => {
 		const account = user.accounts.find(
 			(account) => account.platform === "discord",
 		);
 
 		if (!account) return false;
-
-		const server = community.connections.find(
-			(connection) =>
-				connection.platform === "discord" &&
-				connection.config?.guild === input.server,
-		);
-
-		if (!server) {
-			throw new Error("The provided server is not linked to this community");
-		}
 
 		const memberResponse = await fetch(
 			`https://discord.com/api/guilds/${input.server}/members/${account.identifier}`,
