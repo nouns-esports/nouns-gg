@@ -57,17 +57,17 @@ export function parsePrediction(prediction: Prediction) {
 
 			let odds = 0;
 
-			console.log(
-				"ODDS",
-				prediction.name,
-				outcome.name,
-				prediction.totalBets, //0
-				prediction.outcomes.length, //3
-				outcome.totalBets, //0
-				hasPool, //false
-				outcome.pool, //0
-				prediction.pool, //0
-			);
+			// console.log(
+			// 	"ODDS",
+			// 	prediction.name,
+			// 	outcome.name,
+			// 	prediction.totalBets, //0
+			// 	prediction.outcomes.length, //3
+			// 	outcome.totalBets, //0
+			// 	hasPool, //false
+			// 	outcome.pool, //0
+			// 	prediction.pool, //0
+			// );
 
 			if (hasPool) odds = (outcome.pool / prediction.pool) * 100;
 			else {
@@ -77,7 +77,7 @@ export function parsePrediction(prediction: Prediction) {
 				else odds = (outcome.totalBets / prediction.totalBets) * 100;
 			}
 
-			console.log("FINAL ODDS", prediction.name, outcome.name, odds);
+			// console.log("FINAL ODDS", prediction.name, outcome.name, odds);
 
 			return {
 				...outcome,

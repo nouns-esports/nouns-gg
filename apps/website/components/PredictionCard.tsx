@@ -12,6 +12,11 @@ export default function PredictionCard(props: {
 }) {
 	const { state, outcomes, userBet } = parsePrediction(props.prediction);
 
+	console.log(
+		"OUTCOMES",
+		outcomes.map((o) => `${o.name}: ${o.odds}`),
+	);
+
 	return (
 		<Link
 			href={`/c/${props.prediction.community.handle}/predictions/${props.prediction.handle}`}
