@@ -77,32 +77,26 @@ export default function PredictionCard(props: {
 					{userBet ? <div className="w-full h-12 flex-shrink-0" /> : null}
 				</div>
 				<div className="flex flex-col gap-2 w-full">
-					{outcomes.map((outcome) => {
-						const odds = Math.ceil(
-							(Number(outcome.pool) / Number(props.prediction.pool)) * 100,
-						);
-
-						return (
+					{outcomes.map((outcome) => (
+						<div
+							key={`outcome-right-${outcome.id}`}
+							className="flex w-full items-center justify-end gap-2 h-5"
+						>
 							<div
-								key={`outcome-right-${outcome.id}`}
-								className="flex w-full items-center justify-end gap-2 h-5"
-							>
-								<div
-									style={{
-										width: `${odds <= 1 ? odds + 2 : odds}%`,
-									}}
-									className={twMerge(
-										"h-3 rounded-full bg-grey-500",
-										state !== "resolved" &&
-											userBet?.outcome.id === outcome.id &&
-											"bg-[#FEBD1C]",
-										state === "resolved" && outcome.result && "bg-green",
-									)}
-								/>
-								<p className="text-white text-sm">{odds}%</p>
-							</div>
-						);
-					})}
+								style={{
+									width: `${outcome.odds <= 1 ? outcome.odds + 2 : outcome.odds}%`,
+								}}
+								className={twMerge(
+									"h-3 rounded-full bg-grey-500",
+									state !== "resolved" &&
+										userBet?.outcome.id === outcome.id &&
+										"bg-[#FEBD1C]",
+									state === "resolved" && outcome.result && "bg-green",
+								)}
+							/>
+							<p className="text-white text-sm">{outcome.odds}%</p>
+						</div>
+					))}
 					{userBet ? <div className="w-full h-12 flex-shrink-0" /> : null}
 				</div>
 			</div>
