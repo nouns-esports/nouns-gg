@@ -67,7 +67,7 @@ export function parsePrediction(prediction: Prediction) {
 
 			return {
 				...outcome,
-				odds: Number(odds.toFixed(2)),
+				odds: Number(odds.toFixed(0)),
 			};
 		}),
 		binary,
