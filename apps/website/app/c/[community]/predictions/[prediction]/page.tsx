@@ -16,6 +16,7 @@ import { LockSimple } from "phosphor-react-sc";
 import { twMerge } from "tailwind-merge";
 import { env } from "~/env";
 import { formatGold } from "~/packages/utils/formatGold";
+import { parsePrediction } from "~/packages/utils/parsePrediction";
 
 export async function generateMetadata(props: {
 	params: Promise<{ prediction: string; community: string }>;
@@ -94,43 +95,7 @@ export default async function Prediction(props: {
 		return notFound();
 	}
 
-	const userPrediction =
-		prediction.bets.length > 0 ? prediction.bets[0] : undefined;
-
-	const userWinnings =
-		prediction.gold.length > 0 ? prediction.gold[0] : undefined;
-
-	const state = prediction.resolved
-		? "resolved"
-		: prediction.closed
-			? "closed"
-			: "open";
-
-	const outcomes = prediction.outcomes.toSorted((a, b) => {
-		const aName = a.name.toLowerCase();
-		const bName = b.name.toLowerCase();
-
-		if (aName === "yes") return -1;
-		if (bName === "yes") return 1;
-		if (aName === "no") return -1;
-		if (bName === "no") return 1;
-
-		if (a.pool === 0 && b.pool === 0) {
-			return b.totalBets - a.totalBets;
-		}
-
-		const poolDiff = Number(b.pool) - Number(a.pool);
-		if (poolDiff !== 0) return poolDiff;
-
-		const aNumber = parseInt(aName);
-		const bNumber = parseInt(bName);
-
-		if (!Number.isNaN(aNumber) && !Number.isNaN(bNumber)) {
-			return aNumber - bNumber;
-		}
-
-		return aName.localeCompare(bName);
-	});
+	const { state, outcomes, userBet } = parsePrediction(prediction);
 
 	return (
 		<div className="relative flex justify-center gap-16 w-full pt-32 max-xl:pt-28 max-sm:pt-20 px-32 max-2xl:px-16 max-xl:px-8 max-sm:px-4">
@@ -205,26 +170,17 @@ export default async function Prediction(props: {
 								{prediction.xp}
 							</div>
 							<ToggleModal id="make-prediction">
-								<Button
-									disabled={state !== "open" || !!userPrediction}
-									size="sm"
-								>
+								<Button disabled={state !== "open" || !!userBet} size="sm">
 									Predict
 								</Button>
 							</ToggleModal>
 						</div>
 					</div>
 					<ul className="flex flex-col gap-2 w-full">
-						{outcomes.map(async (outcome, index) => {
-							const hasPool = outcomes.some((o) => o.pool > 0);
-
-							const odds = hasPool
-								? (Number(outcome.pool) / Number(prediction.pool)) * 100
-								: (outcome.totalBets / prediction.totalBets) * 100;
-
+						{outcomes.map((outcome) => {
 							return (
 								<ToggleModal
-									disabled={state !== "open" || !!userPrediction}
+									disabled={state !== "open" || !!userBet}
 									id="make-prediction"
 									data={{ outcome: outcome.id }}
 								>
@@ -239,7 +195,7 @@ export default async function Prediction(props: {
 												"flex items-center gap-1.5 text-white whitespace-nowrap",
 												state === "resolved" && outcome.result && "text-green",
 												state !== "resolved" &&
-													userPrediction?.outcome.id === outcome.id &&
+													userBet?.outcome.id === outcome.id &&
 													"text-[#FEBD1C]",
 											)}
 										>
@@ -249,75 +205,77 @@ export default async function Prediction(props: {
 										<div className="flex w-full items-center justify-end gap-2">
 											<div
 												style={{
-													width: `${odds <= 1 ? odds + 2 : odds}%`,
+													width: `${outcome.odds <= 1 ? outcome.odds + 2 : outcome.odds}%`,
 												}}
 												className={twMerge(
 													"h-3 rounded-full bg-grey-500 group-hover:bg-grey-400 transition-colors",
 													state !== "resolved" &&
-														userPrediction?.outcome.id === outcome.id &&
+														userBet?.outcome.id === outcome.id &&
 														"bg-[#FEBD1C] group-hover:bg-[#FEBD1C]",
 													state === "resolved" &&
 														outcome.result &&
 														"bg-green group-hover:bg-green",
 												)}
 											/>
-											<p className="text-white text-sm">{odds.toFixed(2)}%</p>
+											<p className="text-white text-sm">
+												{outcome.odds.toFixed(2)}%
+											</p>
 										</div>
 									</li>
 								</ToggleModal>
 							);
 						})}
 					</ul>
-					{userPrediction ? (
+					{userBet ? (
 						<div className="flex gap-4 pl-1">
-							{userPrediction.outcome.result && userWinnings ? (
+							{userBet.outcome.result && userBet ? (
 								<>
 									<div className="flex items-center gap-1">
 										<p className="text-white text-sm">You predicted</p>
 										<p className="text-[#FEBD1C] font-semibold text-sm">
-											{userPrediction.outcome.name}
+											{userBet.outcome.name}
 										</p>
 										<p className="text-white text-sm">and</p>
-										<p className="text-green font-semibold text-sm">won</p>
+										<p className="text-green font-semibold text-sm">won!</p>
 									</div>
-									<div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
+									{/* <div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
 										<Plus className="w-3 h-3" />
 										<img
 											alt="Gold coin"
 											src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
 											className="rounded-full h-4 w-4 shadow-xl"
 										/>
-										{formatGold(Number(userWinnings.amount))}
-									</div>
+										{formatGold(Number(userBet.amount))}
+									</div> */}
 								</>
 							) : null}
-							{userPrediction.outcome.result === false ? (
+							{userBet.outcome.result === false ? (
 								<div className="flex items-center gap-1">
 									<p className="text-white text-sm">You predicted</p>
 									<p className="text-[#FEBD1C] font-semibold text-sm">
-										{userPrediction.outcome.name}
+										{userBet.outcome.name}
 									</p>
 									<p className="text-white text-sm">and</p>
 									<p className="text-red font-semibold text-sm">lost</p>
 								</div>
 							) : null}
-							{userPrediction.outcome.result === null ? (
+							{userBet.outcome.result === null ? (
 								<>
 									<div className="flex items-center gap-1">
 										<p className="text-white text-sm">You predicted</p>
 										<p className="text-[#FEBD1C] font-semibold text-sm">
-											{userPrediction.outcome.name}
+											{userBet.outcome.name}
 										</p>
-										<p className="text-white text-sm">with</p>
+										{/* <p className="text-white text-sm">with</p> */}
 									</div>
-									<div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
+									{/* <div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
 										<img
 											alt="Gold coin"
 											src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
 											className="rounded-full h-4 w-4 shadow-xl"
 										/>
-										{formatGold(Number(userPrediction.amount))}
-									</div>
+										{formatGold(Number(userBet.amount))}
+									</div> */}
 								</>
 							) : null}
 						</div>

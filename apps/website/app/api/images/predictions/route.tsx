@@ -2,6 +2,7 @@ import { getPrediction } from "@/server/queries/predictions";
 import { ImageResponse } from "next/og";
 import fs from "fs";
 import { join } from "path";
+import { parsePrediction } from "~/packages/utils/parsePrediction";
 
 export async function GET(request: Request) {
 	const url = new URL(request.url);
@@ -23,6 +24,8 @@ export async function GET(request: Request) {
 	if (!prediction) {
 		return Response.json({ error: "Prediction not found" }, { status: 404 });
 	}
+
+	const { outcomes } = parsePrediction(prediction);
 
 	return new ImageResponse(
 		<div
@@ -120,50 +123,24 @@ export async function GET(request: Request) {
 						gap: 32,
 					}}
 				>
-					{prediction.outcomes
-						.toSorted((a, b) => {
-							const aName = a.name.toLowerCase();
-							const bName = b.name.toLowerCase();
-
-							if (aName === "yes") return -1;
-							if (bName === "yes") return 1;
-							if (aName === "no") return -1;
-							if (bName === "no") return 1;
-
-							if (a.pool === 0 && b.pool === 0) {
-								return b.totalBets - a.totalBets;
-							}
-
-							const poolDiff = Number(b.pool) - Number(a.pool);
-							if (poolDiff !== 0) return poolDiff;
-
-							const aNumber = parseInt(aName);
-							const bNumber = parseInt(bName);
-
-							if (!Number.isNaN(aNumber) && !Number.isNaN(bNumber)) {
-								return aNumber - bNumber;
-							}
-
-							return aName.localeCompare(bName);
-						})
-						.map((outcome) => (
-							<p
-								key={`outcome-left-${outcome.id}`}
-								style={{
-									display: "flex",
-									color:
-										prediction.resolved && outcome.result ? "#22C55E" : "white",
-									fontSize: 36,
-									height: 48,
-									flexShrink: 0,
-									margin: 0,
-									alignItems: "center",
-									whiteSpace: "nowrap",
-								}}
-							>
-								{outcome.name}
-							</p>
-						))}
+					{outcomes.map((outcome) => (
+						<p
+							key={`outcome-left-${outcome.id}`}
+							style={{
+								display: "flex",
+								color:
+									prediction.resolved && outcome.result ? "#22C55E" : "white",
+								fontSize: 36,
+								height: 48,
+								flexShrink: 0,
+								margin: 0,
+								alignItems: "center",
+								whiteSpace: "nowrap",
+							}}
+						>
+							{outcome.name}
+						</p>
+					))}
 					{prediction.outcomes.length > 5 ? (
 						<p
 							style={{
@@ -191,65 +168,34 @@ export async function GET(request: Request) {
 						flex: 1,
 					}}
 				>
-					{prediction.outcomes
-						.toSorted((a, b) => {
-							const aName = a.name.toLowerCase();
-							const bName = b.name.toLowerCase();
-
-							if (aName === "yes") return -1;
-							if (bName === "yes") return 1;
-							if (aName === "no") return -1;
-							if (bName === "no") return 1;
-
-							if (a.pool === 0 && b.pool === 0) {
-								return b.totalBets - a.totalBets;
-							}
-
-							const poolDiff = Number(b.pool) - Number(a.pool);
-							if (poolDiff !== 0) return poolDiff;
-
-							const aNumber = parseInt(aName);
-							const bNumber = parseInt(bName);
-
-							if (!Number.isNaN(aNumber) && !Number.isNaN(bNumber)) {
-								return aNumber - bNumber;
-							}
-
-							return aName.localeCompare(bName);
-						})
-						.map((outcome) => {
-							const hasPool = prediction.outcomes.some((o) => o.pool > 0);
-
-							const odds = hasPool
-								? (Number(outcome.pool) / Number(prediction.pool)) * 100
-								: (outcome.totalBets / prediction.totalBets) * 100;
-							return (
+					{outcomes.map((outcome) => {
+						return (
+							<div
+								key={`outcome-right-${outcome.id}`}
+								style={{
+									display: "flex",
+									alignItems: "center",
+									justifyContent: "flex-end",
+									gap: 16,
+									height: 48,
+								}}
+							>
 								<div
-									key={`outcome-right-${outcome.id}`}
 									style={{
 										display: "flex",
-										alignItems: "center",
-										justifyContent: "flex-end",
-										gap: 16,
-										height: 48,
+										width: `${outcome.odds <= 1 ? outcome.odds + 2 : outcome.odds}%`,
+										height: 32,
+										borderRadius: 9999,
+										backgroundColor:
+											prediction.resolved && outcome.result
+												? "#4cc87d"
+												: "#333333",
 									}}
-								>
-									<div
-										style={{
-											display: "flex",
-											width: `${odds <= 1 ? odds + 2 : odds}%`,
-											height: 32,
-											borderRadius: 9999,
-											backgroundColor:
-												prediction.resolved && outcome.result
-													? "#4cc87d"
-													: "#333333",
-										}}
-									/>
-									<p style={{ color: "white", fontSize: 36 }}>{odds}%</p>
-								</div>
-							);
-						})}
+								/>
+								<p style={{ color: "white", fontSize: 36 }}>{outcome.odds}%</p>
+							</div>
+						);
+					})}
 				</div>
 			</div>
 
@@ -261,7 +207,7 @@ export async function GET(request: Request) {
 					fontFamily: "Cabin",
 				}}
 			>
-				nouns.gg/predictions/{prediction.handle}
+				nouns.gg/c/{prediction.community.handle}/predictions/{prediction.handle}
 			</div>
 		</div>,
 		{

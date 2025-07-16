@@ -3,13 +3,12 @@ import { predictions } from "~/packages/db/schema/public";
 import { eq, sql } from "drizzle-orm";
 import { notFound } from "next/navigation";
 import Refresh from "@/components/Refresh";
+import { parsePrediction } from "~/packages/utils/parsePrediction";
 
 export default async function StreamPage(props: {
 	params: Promise<{ prediction: string; index: string }>;
 }) {
 	const params = await props.params;
-
-	console.log(params);
 
 	const prediction = await db.pgpool.query.predictions.findFirst({
 		where: eq(predictions.handle, params.prediction),
@@ -39,41 +38,9 @@ export default async function StreamPage(props: {
 		return notFound();
 	}
 
-	const outcomes = prediction.outcomes.toSorted((a, b) => {
-		const aName = a.name.toLowerCase();
-		const bName = b.name.toLowerCase();
-
-		if (aName === "yes") return -1;
-		if (bName === "yes") return 1;
-		if (aName === "no") return -1;
-		if (bName === "no") return 1;
-
-		if (a.pool === 0 && b.pool === 0) {
-			return b.totalBets - a.totalBets;
-		}
-
-		const poolDiff = Number(b.pool) - Number(a.pool);
-		if (poolDiff !== 0) return poolDiff;
-
-		const aNumber = parseInt(aName);
-		const bNumber = parseInt(bName);
-
-		if (!Number.isNaN(aNumber) && !Number.isNaN(bNumber)) {
-			return aNumber - bNumber;
-		}
-
-		return aName.localeCompare(bName);
-	});
+	const { outcomes, binary } = parsePrediction(prediction);
 
 	const outcome = outcomes[parseInt(params.index) - 1];
-
-	const hasPool = outcomes.some((o) => o.pool > 0);
-
-	const odds = hasPool
-		? (Number(outcome.pool) / Number(prediction.pool)) * 100
-		: (outcome.totalBets / prediction.totalBets) * 100;
-
-	const binary = outcomes.length === 2;
 
 	return (
 		<>
@@ -93,7 +60,7 @@ export default async function StreamPage(props: {
 							<div
 								className="w-full bg-gold-500"
 								style={{
-									height: `${odds === 0 ? 1 : odds === 100 ? 99 : odds}%`,
+									height: `${outcome.odds === 0 ? 1 : outcome.odds === 100 ? 99 : outcome.odds}%`,
 								}}
 							/>
 						</div>
@@ -102,7 +69,12 @@ export default async function StreamPage(props: {
 								className="font-londrina-solid"
 								style={{ fontSize: "30vw", lineHeight: 1 }}
 							>
-								{odds === 0 ? 1 : odds === 100 ? 99 : odds}%
+								{outcome.odds === 0
+									? 1
+									: outcome.odds === 100
+										? 99
+										: outcome.odds}
+								%
 							</p>
 						</div>
 					</>
@@ -118,7 +90,12 @@ export default async function StreamPage(props: {
 							className="font-londrina-solid text-[#FED439]"
 							style={{ fontSize: "36vh", lineHeight: 1 }}
 						>
-							{odds === 0 ? 1 : odds === 100 ? 99 : odds}%
+							{outcome.odds === 0
+								? 1
+								: outcome.odds === 100
+									? 99
+									: outcome.odds}
+							%
 						</p>
 					</div>
 				)}

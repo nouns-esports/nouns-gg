@@ -4,44 +4,13 @@ import Link from "./Link";
 import { Check, Plus, Sparkles, Vote } from "lucide-react";
 import { LockSimple } from "phosphor-react-sc";
 import { formatGold } from "~/packages/utils/formatGold";
+import { parsePrediction } from "~/packages/utils/parsePrediction";
 
 export default function PredictionCard(props: {
 	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
 	className?: string;
 }) {
-	const userPrediction =
-		props.prediction.bets.length > 0 ? props.prediction.bets[0] : undefined;
-
-	const userWinnings =
-		props.prediction.gold.length > 0 ? props.prediction.gold[0] : undefined;
-
-	const state = props.prediction.resolved
-		? "resolved"
-		: props.prediction.closed
-			? "closed"
-			: "open";
-
-	const outcomes = props.prediction.outcomes.toSorted((a, b) => {
-		const aName = a.name.toLowerCase();
-		const bName = b.name.toLowerCase();
-
-		if (aName === "yes") return -1;
-		if (bName === "yes") return 1;
-		if (aName === "no") return -1;
-		if (bName === "no") return 1;
-
-		const poolDiff = Number(b.pool) - Number(a.pool);
-		if (poolDiff !== 0) return poolDiff;
-
-		const aNumber = parseInt(aName);
-		const bNumber = parseInt(bName);
-
-		if (!Number.isNaN(aNumber) && !Number.isNaN(bNumber)) {
-			return aNumber - bNumber;
-		}
-
-		return aName.localeCompare(bName);
-	});
+	const { state, outcomes, userBet } = parsePrediction(props.prediction);
 
 	return (
 		<Link
@@ -86,7 +55,7 @@ export default function PredictionCard(props: {
 			<div
 				className={twMerge(
 					"flex gap-16 w-full overflow-y-auto scrollbar-hidden",
-					userPrediction ? "rounded-b-xl" : "h-full",
+					userBet ? "rounded-b-xl" : "h-full",
 				)}
 			>
 				<div className="flex flex-col gap-2">
@@ -97,7 +66,7 @@ export default function PredictionCard(props: {
 								"flex items-center gap-1.5 text-white text-sm whitespace-nowrap h-5",
 								state === "resolved" && outcome.result && "text-green",
 								state !== "resolved" &&
-									userPrediction?.outcome.id === outcome.id &&
+									userBet?.outcome.id === outcome.id &&
 									"text-[#FEBD1C]",
 							)}
 						>
@@ -105,9 +74,7 @@ export default function PredictionCard(props: {
 							{outcome.name}
 						</p>
 					))}
-					{userPrediction ? (
-						<div className="w-full h-12 flex-shrink-0" />
-					) : null}
+					{userBet ? <div className="w-full h-12 flex-shrink-0" /> : null}
 				</div>
 				<div className="flex flex-col gap-2 w-full">
 					{outcomes.map((outcome) => {
@@ -127,7 +94,7 @@ export default function PredictionCard(props: {
 									className={twMerge(
 										"h-3 rounded-full bg-grey-500",
 										state !== "resolved" &&
-											userPrediction?.outcome.id === outcome.id &&
+											userBet?.outcome.id === outcome.id &&
 											"bg-[#FEBD1C]",
 										state === "resolved" && outcome.result && "bg-green",
 									)}
@@ -136,67 +103,65 @@ export default function PredictionCard(props: {
 							</div>
 						);
 					})}
-					{userPrediction ? (
-						<div className="w-full h-12 flex-shrink-0" />
-					) : null}
+					{userBet ? <div className="w-full h-12 flex-shrink-0" /> : null}
 				</div>
 			</div>
-			{userPrediction ? (
+			{userBet ? (
 				<div className="absolute bottom-4 left-0 w-full px-4">
 					<div className="flex items-center justify-between w-full bg-grey-500 rounded-lg py-2 px-3 ">
-						{userPrediction.outcome.result && userWinnings ? (
+						{userBet.outcome.result && userBet ? (
 							<>
 								<div className="flex items-center gap-1">
 									<p className="text-white text-sm">You predicted</p>
 									<p className="text-[#FEBD1C] font-semibold text-sm">
-										{userPrediction.outcome.name}
+										{userBet.outcome.name}
 									</p>
 									<p className="text-white text-sm">and</p>
 									<p className="text-green font-semibold text-sm">won</p>
 								</div>
-								<div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
+								{/* <div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
 									<Plus className="w-3 h-3" />
 									<img
 										alt="Gold coin"
 										src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
 										className="rounded-full h-4 w-4 shadow-xl"
 									/>
-									{formatGold(Number(userWinnings.amount))}
-								</div>
+									{formatGold(Number(user.winnings.amount))}
+								</div> */}
 							</>
 						) : null}
-						{userPrediction.outcome.result === false ? (
+						{userBet.outcome.result === false ? (
 							<div className="flex items-center gap-1">
 								<p className="text-white text-sm">You predicted</p>
 								<p className="text-[#FEBD1C] font-semibold text-sm">
-									{userPrediction.outcome.name}
+									{userBet.outcome.name}
 								</p>
 								<p className="text-white text-sm">and</p>
 								<p className="text-red font-semibold text-sm">lost</p>
 							</div>
 						) : null}
-						{userPrediction.outcome.result === null ? (
+						{userBet.outcome.result === null ? (
 							<>
 								<div className="flex items-center gap-1">
 									<p className="text-white text-sm">You predicted</p>
 									<p className="text-[#FEBD1C] font-semibold text-sm">
-										{userPrediction.outcome.name}
+										{userBet.outcome.name}
 									</p>
 								</div>
-								<div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
+								{/* <div className="text-sm text-[#FEBD1C] font-semibold rounded-md flex items-center gap-1">
 									<img
 										alt="Gold coin"
 										src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
 										className="rounded-full h-4 w-4 shadow-xl"
 									/>
-									{formatGold(Number(userPrediction.amount))}
-								</div>
+									{formatGold(Number(user.bet.amount))}
+								</div> */}
 							</>
 						) : null}
 					</div>
 				</div>
 			) : null}
-			{!userPrediction ? (
+			{!userBet ? (
 				<div className="w-full flex justify-between items-center">
 					<p className="text-sm flex items-center gap-1.5 cursor-default">
 						<Vote className="w-4 h-4" />
