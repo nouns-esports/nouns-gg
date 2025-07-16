@@ -65,9 +65,11 @@ export function parsePrediction(prediction: Prediction) {
 				else odds = (outcome.totalBets / prediction.totalBets) * 100;
 			}
 
+			odds = Number(odds.toFixed(0));
+
 			return {
 				...outcome,
-				odds: Number(odds.toFixed(0)),
+				odds: odds < 1 ? 1 : odds,
 			};
 		}),
 		binary,
