@@ -55,9 +55,16 @@ export function parsePrediction(prediction: Prediction) {
 		outcomes: outcomes.map((outcome) => {
 			const hasPool = outcomes.some((o) => o.pool > 0);
 
-			const odds = hasPool
-				? (Number(outcome.pool) / Number(prediction.pool)) * 100
-				: (outcome.totalBets / prediction.totalBets) * 100;
+			let odds = 0;
+
+			if (hasPool) {
+				odds = (outcome.pool / prediction.pool) * 100;
+			} else {
+				if (prediction.totalBets === 0) odds = 100 / prediction.outcomes.length;
+				else if (outcome.totalBets === 0)
+					odds = (1 / prediction.totalBets) * 100;
+				else odds = (outcome.totalBets / prediction.totalBets) * 100;
+			}
 
 			return {
 				...outcome,
