@@ -57,42 +57,17 @@ export function parsePrediction(prediction: Prediction) {
 
 			let odds = 0;
 
-			// console.log(
-			// 	"ODDS",
-			// 	prediction.name,
-			// 	outcome.name,
-			// 	prediction.totalBets, //0
-			// 	prediction.outcomes.length, //3
-			// 	outcome.totalBets, //0
-			// 	hasPool, //false
-			// 	outcome.pool, //0
-			// 	prediction.pool, //0
-			// );
-
-			console.log("OUTCOME", outcome.name, prediction.name);
-
-			if (hasPool) {
-				console.log("has pool scenario");
-				odds = (outcome.pool / prediction.pool) * 100;
-			} else {
-				console.log("no pool scenario");
-				if (prediction.totalBets === 0) {
-					console.log("no prediction bets scenario");
-					odds = 100 / prediction.outcomes.length;
-				} else if (outcome.totalBets === 0) {
-					console.log("no outcome bets scenario", typeof prediction.totalBets);
+			if (hasPool) odds = (outcome.pool / prediction.pool) * 100;
+			else {
+				if (prediction.totalBets === 0) odds = 100 / prediction.outcomes.length;
+				else if (outcome.totalBets === 0)
 					odds = (1 / prediction.totalBets) * 100;
-				} else {
-					console.log("normal scenario");
-					odds = (outcome.totalBets / prediction.totalBets) * 100;
-				}
+				else odds = (outcome.totalBets / prediction.totalBets) * 100;
 			}
-
-			// console.log("FINAL ODDS", prediction.name, outcome.name, odds);
 
 			return {
 				...outcome,
-				odds,
+				odds: Number(odds.toFixed(2)),
 			};
 		}),
 		binary,
