@@ -2,7 +2,7 @@ import { privyClient } from "@/server/clients/privy";
 import { eq } from "drizzle-orm";
 import { NextResponse, type NextRequest } from "next/server";
 import { env } from "~/env";
-import { nexus } from "~/packages/db/schema/public";
+import { accounts, nexus } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 
 type AccountType =
@@ -13,10 +13,12 @@ type AccountType =
 	| {
 			type: "twitter";
 			username: string;
+			subject: string;
 	  }
 	| {
 			type: "discord";
 			username: string;
+			subject: string;
 	  }
 	| {
 			type: "farcaster";
@@ -72,28 +74,49 @@ export async function POST(req: NextRequest) {
 			verifiedPayload.type === "user.linked_account"
 		) {
 			if (verifiedPayload.account.type === "twitter") {
-				await db.primary
+				const [nexusUser] = await db.primary
 					.update(nexus)
 					.set({
 						twitter: verifiedPayload.account.username,
 					})
-					.where(eq(nexus.id, verifiedPayload.user.id));
+					.where(eq(nexus.privyId, verifiedPayload.user.id))
+					.returning();
+
+				await db.primary.insert(accounts).values({
+					platform: "twitter",
+					identifier: verifiedPayload.account.subject,
+					user: nexusUser.id,
+				});
 			}
 			if (verifiedPayload.account.type === "discord") {
-				await db.primary
+				const [nexusUser] = await db.primary
 					.update(nexus)
 					.set({
 						discord: verifiedPayload.account.username.split("#")[0],
 					})
-					.where(eq(nexus.id, verifiedPayload.user.id));
+					.where(eq(nexus.privyId, verifiedPayload.user.id))
+					.returning();
+
+				await db.primary.insert(accounts).values({
+					platform: "discord",
+					identifier: verifiedPayload.account.subject,
+					user: nexusUser.id,
+				});
 			}
 			if (verifiedPayload.account.type === "farcaster") {
-				await db.primary
+				const [nexusUser] = await db.primary
 					.update(nexus)
 					.set({
 						fid: verifiedPayload.account.fid,
 					})
-					.where(eq(nexus.id, verifiedPayload.user.id));
+					.where(eq(nexus.privyId, verifiedPayload.user.id))
+					.returning();
+
+				await db.primary.insert(accounts).values({
+					platform: "farcaster",
+					identifier: verifiedPayload.account.fid.toString(),
+					user: nexusUser.id,
+				});
 			}
 		}
 
@@ -104,7 +127,7 @@ export async function POST(req: NextRequest) {
 					.set({
 						twitter: null,
 					})
-					.where(eq(nexus.id, verifiedPayload.user.id));
+					.where(eq(nexus.privyId, verifiedPayload.user.id));
 			}
 			if (verifiedPayload.account.type === "discord") {
 				await db.primary
@@ -112,7 +135,7 @@ export async function POST(req: NextRequest) {
 					.set({
 						discord: null,
 					})
-					.where(eq(nexus.id, verifiedPayload.user.id));
+					.where(eq(nexus.privyId, verifiedPayload.user.id));
 			}
 			if (verifiedPayload.account.type === "farcaster") {
 				await db.primary
@@ -120,7 +143,7 @@ export async function POST(req: NextRequest) {
 					.set({
 						fid: null,
 					})
-					.where(eq(nexus.id, verifiedPayload.user.id));
+					.where(eq(nexus.privyId, verifiedPayload.user.id));
 			}
 		}
 
