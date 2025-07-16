@@ -3,6 +3,7 @@ import { ToggleModal } from "./Modal";
 import Button from "./Button";
 import { Clock, User } from "lucide-react";
 import Countdown from "./Countdown";
+import { twMerge } from "tailwind-merge";
 
 export default function RaffleCard(props: {
 	raffle: NonNullable<Awaited<ReturnType<typeof getRaffles>>>[number];
@@ -41,9 +42,16 @@ export default function RaffleCard(props: {
 									: props.raffle.community.image
 							}
 							alt={`${props.raffle.community.name} ${props.raffle.community.points?.name ?? "Points"}`}
-							className="w-6 h-6"
+							className="w-6 h-6 rounded-full"
 						/>
-						<p className="text-[#FEBD1C] text-lg font-semibold">
+						<p
+							className={twMerge(
+								"text-lg font-semibold",
+								props.raffle.community.points?.name === "Gold"
+									? "text-[#FEBD1C]"
+									: "text-white",
+							)}
+						>
 							{props.raffle.gold}
 						</p>
 					</div>
