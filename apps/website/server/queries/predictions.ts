@@ -27,7 +27,7 @@ export async function getPrediction(
 			outcomes: {
 				extras: {
 					totalBets:
-						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = predictions_outcomes.id)`.as(
+						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = predictions_outcomes.id)::integer`.as(
 							"totalBets",
 						),
 				},
@@ -48,7 +48,7 @@ export async function getPrediction(
 		},
 		extras: {
 			totalBets:
-				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)`.as(
+				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)::integer`.as(
 					"totalBets",
 				),
 		},
@@ -74,7 +74,7 @@ export async function getPredictions(input: {
 			outcomes: {
 				extras: {
 					totalBets:
-						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = predictions_outcomes.id)`.as(
+						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = predictions_outcomes.id)::integer`.as(
 							"totalBets",
 						),
 				},
@@ -93,7 +93,7 @@ export async function getPredictions(input: {
 		},
 		extras: {
 			totalBets:
-				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)`.as(
+				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)::integer`.as(
 					"totalBets",
 				),
 		},
