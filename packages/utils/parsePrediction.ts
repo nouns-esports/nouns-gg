@@ -80,7 +80,7 @@ export function parsePrediction(prediction: Prediction) {
 					console.log("no prediction bets scenario");
 					odds = 100 / prediction.outcomes.length;
 				} else if (outcome.totalBets === 0) {
-					console.log("no outcome bets scenario");
+					console.log("no outcome bets scenario", typeof prediction.totalBets);
 					odds = (1 / prediction.totalBets) * 100;
 				} else {
 					console.log("normal scenario");
