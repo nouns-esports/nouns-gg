@@ -75,6 +75,8 @@ export function parsePrediction(prediction: Prediction) {
 				else odds = (outcome.totalBets / prediction.totalBets) * 100;
 			}
 
+			console.log("FINAL ODDS", prediction.name, outcome.name, odds);
+
 			return {
 				...outcome,
 				odds,
