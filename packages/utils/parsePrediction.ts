@@ -57,9 +57,14 @@ export function parsePrediction(prediction: Prediction) {
 
 			let odds = 0;
 
-			if (hasPool) {
-				odds = (outcome.pool / prediction.pool) * 100;
-			} else {
+			if (hasPool) odds = (outcome.pool / prediction.pool) * 100;
+			else {
+				console.log(
+					"ODDS",
+					prediction.totalBets,
+					prediction.outcomes.length,
+					outcome.totalBets,
+				);
 				if (prediction.totalBets === 0) odds = 100 / prediction.outcomes.length;
 				else if (outcome.totalBets === 0)
 					odds = (1 / prediction.totalBets) * 100;
