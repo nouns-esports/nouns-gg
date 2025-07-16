@@ -95,7 +95,7 @@ export const completeQuest = onlyUser
 				user: ctx.user.id,
 				amount: quest.xp,
 				timestamp: now,
-				community: quest.community,
+				community: quest.community.id,
 			});
 
 			const [updatePass] = await tx
@@ -103,7 +103,7 @@ export const completeQuest = onlyUser
 				.values({
 					user: ctx.user.id,
 					xp: quest.xp,
-					community: quest.community,
+					community: quest.community.id,
 				})
 				.onConflictDoUpdate({
 					target: [leaderboards.user, leaderboards.community],
@@ -129,7 +129,7 @@ export const completeQuest = onlyUser
 			distinctId: ctx.user.id,
 			properties: {
 				quest: quest.id,
-				community: quest.community,
+				community: quest.community.id,
 			},
 		});
 
