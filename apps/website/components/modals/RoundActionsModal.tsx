@@ -15,7 +15,9 @@ export default function RoundActionsModal(props: {
 	>;
 }) {
 	const requiredActions = props.actions.filter((action) => action.required);
-	const optionalActions = props.actions.filter((action) => !action.required);
+	const optionalActions = props.actions.filter(
+		(action) => !action.required && action.votes > 0,
+	);
 
 	return (
 		<Modal
