@@ -64,7 +64,7 @@ export function parsePrediction(prediction: Prediction) {
 				else odds = (outcome.totalBets / prediction.totalBets) * 100;
 			}
 
-			odds = Number(odds.toFixed(0));
+			odds = Number(odds.toFixed(2));
 
 			return {
 				...outcome,

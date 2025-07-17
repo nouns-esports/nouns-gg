@@ -94,7 +94,7 @@ export default function PredictionCard(props: {
 									state === "resolved" && outcome.result && "bg-green",
 								)}
 							/>
-							<p className="text-white text-sm">{outcome.odds}%</p>
+							<p className="text-white text-sm">{outcome.odds.toFixed(0)}%</p>
 						</div>
 					))}
 					{userBet ? <div className="w-full h-12 flex-shrink-0" /> : null}
