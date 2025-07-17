@@ -33,6 +33,8 @@ export async function POST(req: NextRequest) {
 
 	const body = await req.json();
 
+	console.log("New Webhook Received", id, timestamp);
+
 	try {
 		const verifiedPayload = (await privyClient.verifyWebhook(
 			body,
@@ -67,6 +69,8 @@ export async function POST(req: NextRequest) {
 						id: string;
 					};
 			  };
+
+		console.log("Webhook Payload", verifiedPayload);
 
 		if (
 			verifiedPayload.type === "user.authenticated" ||
