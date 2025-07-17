@@ -10,6 +10,7 @@ import { useState } from "react";
 import { toast } from "../Toasts";
 import { twMerge } from "tailwind-merge";
 import { parsePrediction } from "~/packages/utils/parsePrediction";
+import { useRouter } from "next/navigation";
 
 export default function MakePredictionModal(props: {
 	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
@@ -29,6 +30,8 @@ export default function MakePredictionModal(props: {
 	const { outcomes } = parsePrediction(props.prediction);
 
 	const outcome = outcomes.find((o) => o.id === outcomeId);
+
+	const router = useRouter();
 
 	return (
 		<Modal
@@ -156,6 +159,8 @@ export default function MakePredictionModal(props: {
 						if (result?.serverError) {
 							return toast.error(result.serverError);
 						}
+
+						router.refresh();
 
 						toast.success("Bet placed successfully");
 						close();
