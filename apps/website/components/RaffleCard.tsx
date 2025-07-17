@@ -37,7 +37,7 @@ export default function RaffleCard(props: {
 					<div className="flex items-center gap-2">
 						<img
 							src={
-								props.raffle.community.handle === "nounsgg"
+								props.raffle.community.handle === "nouns-gg"
 									? "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
 									: props.raffle.community.image
 							}

@@ -9,6 +9,7 @@ import { useAction } from "next-safe-action/hooks";
 import { useState } from "react";
 import { toast } from "../Toasts";
 import { twMerge } from "tailwind-merge";
+import { parsePrediction } from "~/packages/utils/parsePrediction";
 
 export default function MakePredictionModal(props: {
 	prediction: NonNullable<Awaited<ReturnType<typeof getPredictions>>>[number];
@@ -25,13 +26,9 @@ export default function MakePredictionModal(props: {
 		| undefined
 	>(data?.outcome);
 
-	const outcome = props.prediction.outcomes.find((o) => o.id === outcomeId);
+	const { outcomes } = parsePrediction(props.prediction);
 
-	const hasPool = props.prediction.outcomes.some((o) => o.pool > 0);
-
-	const odds = hasPool
-		? (Number(outcome?.pool) / Number(props.prediction.pool)) * 100
-		: (Number(outcome?.totalBets) / Number(props.prediction.totalBets)) * 100;
+	const outcome = outcomes.find((o) => o.id === outcomeId);
 
 	return (
 		<Modal
@@ -99,7 +96,7 @@ export default function MakePredictionModal(props: {
 				</ul>
 			) : null}
 			<div className="flex flex-col gap-2 w-full">
-				<p className="text-white font-bebas-neue text-xl">Your Bet</p>
+				<p className="text-white font-bebas-neue text-xl">Your Prediction</p>
 				<div className="flex w-full justify-between gap-2">
 					<div className="flex flex-col">
 						{outcomeId ? <p>Odds</p> : null}
@@ -108,7 +105,7 @@ export default function MakePredictionModal(props: {
 					<div className="flex flex-col items-end">
 						{outcomeId ? (
 							<p className="text-white text-sm font-semibold">
-								{odds.toFixed(2)}%
+								{outcome?.odds}%
 							</p>
 						) : null}
 						<div className="flex items-center gap-4">
@@ -119,14 +116,27 @@ export default function MakePredictionModal(props: {
 							{props.prediction.points > 0 ? (
 								<div className="flex justify-center gap-1.5 items-center">
 									<img
-										alt="Gold coin"
-										src="https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
-										className="rounded-full h-4 w-4 shadow-xl"
+										src={
+											props.prediction.community.handle === "nouns-gg"
+												? "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu"
+												: props.prediction.community.image
+										}
+										alt={`${props.prediction.community.name} ${props.prediction.community.points?.name ?? "Points"}`}
+										className="w-4 h-4 rounded-full"
 									/>
-									<p className="font-semibold text-[#FEBD1C]">
-										{(
-											props.prediction.points / props.prediction.totalBets
-										).toFixed(2)}
+									<p
+										className={twMerge(
+											"font-semibold ",
+											props.prediction.community.handle === "nouns-gg"
+												? "text-[#FEBD1C]"
+												: "text-white",
+										)}
+									>
+										{props.prediction.totalBets === 0
+											? props.prediction.points
+											: (
+													props.prediction.points / props.prediction.totalBets
+												).toFixed(2)}
 									</p>
 								</div>
 							) : null}
