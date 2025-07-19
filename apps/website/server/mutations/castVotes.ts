@@ -94,10 +94,8 @@ export const castVotes = onlyUser
 			};
 		}
 
-		let allocatedVotes = round.purchasedVotes.reduce(
-			(votes, vote) => votes + vote.count,
-			0,
-		);
+		let allocatedVotes =
+			round.purchasedVotes?.reduce((votes, vote) => votes + vote.count, 0) ?? 0;
 
 		if (round.votingConfig?.mode === "leaderboard") {
 			const percentile =

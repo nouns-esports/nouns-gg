@@ -236,10 +236,8 @@ export default async function Round(props: {
 			)
 		: [];
 
-	let allocatedVotes = round.purchasedVotes.reduce(
-		(votes, vote) => votes + vote.count,
-		0,
-	);
+	let allocatedVotes =
+		round.purchasedVotes?.reduce((votes, vote) => votes + vote.count, 0) ?? 0;
 
 	const votingActions = user
 		? await Promise.all(
