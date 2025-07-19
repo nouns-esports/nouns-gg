@@ -96,6 +96,7 @@ export const completeQuest = onlyUser
 				amount: quest.xp,
 				timestamp: now,
 				community: quest.community.id,
+				for: "COMPLETING_QUEST",
 			});
 
 			const [updatePass] = await tx
