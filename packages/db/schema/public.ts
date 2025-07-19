@@ -378,11 +378,21 @@ export const rounds = pgTable(
 						mode: "token-weight";
 						tokens: Array<
 							| {
-									type: "erc20" | "erc721";
+									type: "erc20";
+									address: string;
+									chain: keyof typeof chains;
+									decimals: number;
+									block: number | null;
+									minBalance: number;
+									conversionRate: number;
+							  }
+							| {
+									type: "erc721";
 									address: string;
 									chain: keyof typeof chains;
 									block: number | null;
-									votes: number;
+									minBalance: number;
+									conversionRate: number;
 							  }
 							| {
 									type: "erc1155";
@@ -390,7 +400,8 @@ export const rounds = pgTable(
 									chain: keyof typeof chains;
 									tokenId: number;
 									block: number | null;
-									votes: number;
+									minBalance: number;
+									conversionRate: number;
 							  }
 						>;
 				  }

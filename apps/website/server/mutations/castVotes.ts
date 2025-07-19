@@ -158,7 +158,7 @@ export const castVotes = onlyUser
 
 			for (const token of round.votingConfig.tokens) {
 				for (const wallet of ctx.user.wallets) {
-					if (token.type === "erc20" || token.type === "erc721") {
+					if (token.type === "erc20") {
 						const balance = await client.readContract({
 							address: token.address as `0x${string}`,
 							abi: [
@@ -171,7 +171,31 @@ export const castVotes = onlyUser
 							args: [wallet.address as `0x${string}`],
 						});
 
-						allocatedVotes += Math.floor(Number(balance) * token.votes);
+						const balanceWithDecimals = Number(balance) / 10 ** token.decimals;
+
+						if (balanceWithDecimals < token.minBalance) continue;
+
+						allocatedVotes += Math.floor(
+							balanceWithDecimals / token.conversionRate,
+						);
+					} else if (token.type === "erc721") {
+						const balance = await client.readContract({
+							address: token.address as `0x${string}`,
+							abi: [
+								parseAbiItem(
+									"function balanceOf(address owner) view returns (uint256)",
+								),
+							],
+							functionName: "balanceOf",
+							blockNumber: token.block ? BigInt(token.block) : undefined,
+							args: [wallet.address as `0x${string}`],
+						});
+
+						if (Number(balance) < token.minBalance) continue;
+
+						allocatedVotes += Math.floor(
+							Number(balance) / token.conversionRate,
+						);
 					} else if (token.type === "erc1155") {
 						const balance = await client.readContract({
 							address: token.address as `0x${string}`,
@@ -185,7 +209,11 @@ export const castVotes = onlyUser
 							args: [wallet.address as `0x${string}`, BigInt(token.tokenId)],
 						});
 
-						allocatedVotes += Math.floor(Number(balance) * token.votes);
+						if (Number(balance) < token.minBalance) continue;
+
+						allocatedVotes += Math.floor(
+							Number(balance) / token.conversionRate,
+						);
 					}
 				}
 			}
