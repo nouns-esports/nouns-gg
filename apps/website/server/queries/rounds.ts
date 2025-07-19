@@ -61,11 +61,7 @@ export async function getRound(
 				},
 			},
 			proposals: {
-				where: and(
-					eq(proposals.hidden, false),
-					isNull(proposals.hiddenAt),
-					isNull(proposals.deletedAt),
-				),
+				where: and(isNull(proposals.hiddenAt), isNull(proposals.deletedAt)),
 				with: {
 					user: true,
 				},

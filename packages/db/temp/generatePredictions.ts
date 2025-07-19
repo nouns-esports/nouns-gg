@@ -14,7 +14,7 @@ const generatedData: Array<{
 	handle: string; // prediction handle (for a url)
 	name: string; // prediction name
 	xp: 150 | 250 | 500;
-	points: 25 | 50 | 100;
+	prizePool: 25 | 50 | 100;
 	outcomes: Array<{
 		name: string;
 	}>;
@@ -23,28 +23,28 @@ const generatedData: Array<{
 		handle: "series-length",
 		name: "How many games will the series last?",
 		xp: 250,
-		points: 100,
+		prizePool: 100,
 		outcomes: [{ name: "3 games" }, { name: "4 games" }, { name: "5 games" }],
 	},
 	{
 		handle: "game-under-25-minutes",
 		name: "Will a game last less than 25 minutes?",
 		xp: 250,
-		points: 100,
+		prizePool: 100,
 		outcomes: [{ name: "Yes" }, { name: "No" }],
 	},
 	{
 		handle: "match-over-55-minutes",
 		name: "Will a match last more than 55 minutes?",
 		xp: 250,
-		points: 100,
+		prizePool: 100,
 		outcomes: [{ name: "Yes" }, { name: "No" }],
 	},
 	{
 		handle: "rampage-in-match",
 		name: "Will any match have a Rampage (5 kills by one player)?",
 		xp: 250,
-		points: 100,
+		prizePool: 100,
 		outcomes: [{ name: "Yes" }, { name: "No" }],
 	},
 ];
@@ -58,8 +58,11 @@ await db.primary.transaction(async (tx) => {
 				image,
 				handle: data.handle,
 				name: data.name,
-				xp: data.xp,
-				prizePool: data.points,
+				_xp: {
+					winning: data.xp,
+					predicting: 100,
+				},
+				prizePool: data.prizePool,
 				event,
 				community,
 				pool: 0,

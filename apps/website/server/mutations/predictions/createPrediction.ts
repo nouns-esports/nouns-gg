@@ -110,7 +110,11 @@ export const createPrediction = onlyUser
 					image: parsedInput.image,
 					start: parsedInput.start,
 					end: parsedInput.end,
-					xp: parsedInput.xp,
+					_xp: {
+						winning: parsedInput.xp,
+						predicting: 100,
+					},
+					prizePool: 100,
 					community: parsedInput.community,
 					event: parsedInput.event,
 				})

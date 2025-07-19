@@ -6,7 +6,7 @@ const eligibleForGold = 100;
 const potOfGold = 50_000;
 
 const xpEarnedThisWeek = await db.pgpool.query.xp.findMany({
-	where: gt(xp.timestamp, new Date(Date.now() - 21 * 24 * 60 * 60 * 1000)),
+	where: gt(xp.timestamp, new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)),
 	with: {
 		user: true,
 	},

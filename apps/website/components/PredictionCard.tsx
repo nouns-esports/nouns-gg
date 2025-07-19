@@ -164,7 +164,7 @@ export default function PredictionCard(props: {
 					</p>
 					<div className="flex items-center gap-2 text-white text-sm">
 						<Sparkles className="w-4 h-4 text-green" />
-						{props.prediction.xp}
+						{props.prediction._xp.winning}
 					</div>
 				</div>
 			) : null}

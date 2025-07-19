@@ -50,7 +50,6 @@ export const hideProposal = onlyUser
 		await db.primary
 			.update(proposals)
 			.set({
-				hidden: true,
 				hiddenAt: new Date(),
 			})
 			.where(eq(proposals.id, parsedInput.proposal));
