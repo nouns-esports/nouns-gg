@@ -83,8 +83,10 @@ export default async function Checkpoint(props: {
 				await tx.insert(gold).values({
 					to: user.id,
 					checkin: checkin.id,
+					checkpoint: checkpoint.id,
 					amount: checkpoint.gold,
 					community: nounsgg,
+					for: "CHECKING_IN",
 				});
 			}
 
