@@ -2,7 +2,7 @@ import { parseAbiItem } from "viem";
 import { z } from "zod";
 import { privyClient } from "../../clients/privy";
 import { createAction } from "../createAction";
-import { viemPublicClients } from "../../clients/viem";
+import { supportedChains, viemClient } from "../../clients/viem";
 
 export const lilnounsVoter = createAction({
 	name: "LilNouns Voter",
@@ -20,7 +20,7 @@ export const lilnounsVoter = createAction({
 
 		if (wallets.length === 0) return false;
 
-		const client = viemPublicClients.mainnet;
+		const client = viemClient("mainnet");
 
 		for (const wallet of wallets) {
 			const votes = await client.readContract({

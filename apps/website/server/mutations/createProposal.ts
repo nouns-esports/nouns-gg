@@ -1,8 +1,13 @@
 "use server";
 
-import { proposals, rounds } from "~/packages/db/schema/public";
+import {
+	leaderboards,
+	proposals,
+	rounds,
+	xp,
+} from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { eq } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { onlyUser } from ".";
 import { z } from "zod";
@@ -31,7 +36,7 @@ export const createProposal = onlyUser
 				community: {
 					with: {
 						admins: true,
-						connections: true,
+						plugins: true,
 					},
 				},
 			},
@@ -54,7 +59,7 @@ export const createProposal = onlyUser
 		for (const actionState of actions) {
 			const action = getAction({
 				action: actionState.action,
-				platform: actionState.platform ?? "dash",
+				plugin: actionState.plugin ?? "dash",
 			});
 
 			if (!action) {
@@ -117,6 +122,8 @@ export const createProposal = onlyUser
 		}
 
 		let proposalId = "";
+		let newUserXP = 0;
+		let earnedXP = 0;
 
 		await db.primary.transaction(async (tx) => {
 			const [proposal] = await tx
@@ -138,6 +145,37 @@ export const createProposal = onlyUser
 				});
 
 			proposalId = proposal.id;
+
+			if (round.xp && round.xp.creatingProposal > 0) {
+				await tx.insert(xp).values({
+					user: ctx.user.id,
+					amount: round.xp.creatingProposal,
+					round: round.id,
+					proposal: proposal.id,
+					community: round.community.id,
+					for: "CREATING_PROPOSAL",
+				});
+
+				const [updatePass] = await tx
+					.insert(leaderboards)
+					.values({
+						user: ctx.user.id,
+						xp: round.xp.creatingProposal,
+						community: round.community.id,
+					})
+					.onConflictDoUpdate({
+						target: [leaderboards.user, leaderboards.community],
+						set: {
+							xp: sql`${leaderboards.xp} + ${round.xp.creatingProposal}`,
+						},
+					})
+					.returning({
+						xp: leaderboards.xp,
+					});
+
+				newUserXP = updatePass.xp;
+				earnedXP = round.xp.creatingProposal;
+			}
 		});
 
 		posthogClient.capture({
@@ -150,6 +188,8 @@ export const createProposal = onlyUser
 			},
 		});
 
-		revalidatePath(`/rounds/${round.handle}`);
-		revalidatePath(`/rounds/${round.handle}/propose`);
+		return {
+			earnedXP,
+			totalXP: newUserXP,
+		};
 	});

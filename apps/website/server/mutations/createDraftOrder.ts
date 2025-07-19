@@ -3,7 +3,13 @@
 import { onlyUser } from ".";
 import { z } from "zod";
 import { shopifyClient } from "../clients/shopify";
-import { carts, gold, leaderboards, nexus } from "~/packages/db/schema/public";
+import {
+	carts,
+	gold,
+	leaderboards,
+	nexus,
+	orders,
+} from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { and, eq, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
@@ -54,14 +60,13 @@ export const createDraftOrder = onlyUser
 	.action(async ({ parsedInput, ctx }) => {
 		let draftOrder:
 			| {
-				id: string;
-				invoiceUrl: string;
-				status: string;
-			}
+					id: string;
+					invoiceUrl: string;
+					status: string;
+			  }
 			| undefined;
 
-		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902"
-
+		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902";
 
 		await db.primary.transaction(async (tx) => {
 			if (!ctx.user.nexus) {
@@ -75,7 +80,12 @@ export const createDraftOrder = onlyUser
 					.set({
 						points: sql`${leaderboards.points} - ${parsedInput.goldApplied}`,
 					})
-					.where(and(eq(leaderboards.user, ctx.user.id), eq(leaderboards.community, nounsgg)));
+					.where(
+						and(
+							eq(leaderboards.user, ctx.user.id),
+							eq(leaderboards.community, nounsgg),
+						),
+					);
 			}
 
 			const response = await shopifyClient.request(
@@ -89,25 +99,25 @@ export const createDraftOrder = onlyUser
 							})),
 							shippingAddress: parsedInput.shipping
 								? {
-									firstName: parsedInput.shipping.firstName,
-									lastName: parsedInput.shipping.lastName,
-									address1: parsedInput.shipping.address1,
-									address2: parsedInput.shipping.address2 || null,
-									city: parsedInput.shipping.city,
-									province: parsedInput.shipping.province,
-									country: parsedInput.shipping.country,
-									zip: parsedInput.shipping.zip,
-								}
+										firstName: parsedInput.shipping.firstName,
+										lastName: parsedInput.shipping.lastName,
+										address1: parsedInput.shipping.address1,
+										address2: parsedInput.shipping.address2 || null,
+										city: parsedInput.shipping.city,
+										province: parsedInput.shipping.province,
+										country: parsedInput.shipping.country,
+										zip: parsedInput.shipping.zip,
+									}
 								: undefined,
 							email: parsedInput.email,
 							useCustomerDefaultAddress: false,
 							appliedDiscount:
 								parsedInput.goldApplied > 0
 									? {
-										title: "Gold Redemption",
-										value: parsedInput.goldApplied / 100,
-										valueType: "FIXED_AMOUNT",
-									}
+											title: "Points Redemption",
+											value: parsedInput.goldApplied / 100,
+											valueType: "FIXED_AMOUNT",
+										}
 									: undefined,
 						},
 					},
@@ -126,15 +136,26 @@ export const createDraftOrder = onlyUser
 				status: string;
 			};
 
+			const [createdDraftOrder] = await tx
+				.insert(orders)
+				.values({
+					identifier: draftOrder.id,
+					user: ctx.user.id,
+					community: nounsgg,
+					platform: "shopify",
+					draft: true,
+				})
+				.returning();
 
 			if (parsedInput.goldApplied > 0) {
 				// Save a history of the gold transaction
 				await tx.insert(gold).values({
 					amount: parsedInput.goldApplied,
-					order: draftOrder.id,
+					order: createdDraftOrder.id,
 					from: ctx.user.id,
 					to: null,
 					community: nounsgg,
+					for: "REDEMPTION_DISCOUNT",
 				});
 			}
 
@@ -159,9 +180,6 @@ export const createDraftOrder = onlyUser
 
 			await new Promise((resolve) => setTimeout(resolve, 1000));
 		}
-
-		revalidatePath("/shop", "page");
-		revalidatePath("/shop/products");
 
 		return draftOrder.invoiceUrl;
 	});

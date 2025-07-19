@@ -35,7 +35,7 @@ export const completeQuest = onlyUser
 				community: {
 					with: {
 						admins: true,
-						connections: true,
+						plugins: true,
 					},
 				},
 			},
@@ -65,7 +65,7 @@ export const completeQuest = onlyUser
 			quest.actions.map(async (actionState) => {
 				const action = getAction({
 					action: actionState.action,
-					platform: actionState.platform ?? "dash",
+					plugin: actionState.plugin ?? "dash",
 				});
 
 				if (!action) {

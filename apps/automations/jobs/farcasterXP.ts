@@ -94,6 +94,7 @@ export const farcasterXP = createJob({
 					amount,
 					timestamp: now,
 					community: nounsgg,
+					for: "FARCASTER_ACTIVITY",
 				});
 
 				await tx

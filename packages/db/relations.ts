@@ -30,15 +30,14 @@ import {
 	roundActions,
 	eventActions,
 	leaderboards,
-	communityConnections,
+	communityPlugins,
 	accounts,
 	escrows,
 	articles,
+	orders,
+	purchasedVotes,
 } from "./schema/public";
 import {
-	erc721Balances,
-	nounDelegates,
-	lilnounDelegates,
 	nounsProposals,
 	nounsVotes,
 	nounsTraits,
@@ -65,15 +64,17 @@ export const communityRelations = relations(communities, ({ one, many }) => ({
 	quests: many(quests),
 	admins: many(communityAdmins),
 	predictions: many(predictions),
-	connections: many(communityConnections),
+	plugins: many(communityPlugins),
 	articles: many(articles),
+	raffles: many(raffles),
+	products: many(products),
 }));
 
-export const communityConnectionsRelations = relations(
-	communityConnections,
+export const communityPluginsRelations = relations(
+	communityPlugins,
 	({ one }) => ({
 		community: one(communities, {
-			fields: [communityConnections.community],
+			fields: [communityPlugins.community],
 			references: [communities.id],
 		}),
 	}),
@@ -195,6 +196,7 @@ export const roundsRelations = relations(rounds, ({ one, many }) => ({
 		references: [events.id],
 	}),
 	actions: many(roundActions),
+	purchasedVotes: many(purchasedVotes),
 }));
 
 export const roundActionsRelations = relations(roundActions, ({ one }) => ({
@@ -233,6 +235,7 @@ export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	predictions: many(predictions),
 	leaderboards: many(leaderboards),
 	accounts: many(accounts),
+	purchasedVotes: many(purchasedVotes),
 }));
 
 export const accountsRelations = relations(accounts, ({ one }) => ({
@@ -278,6 +281,10 @@ export const goldRelations = relations(gold, ({ one }) => ({
 	quest: one(quests, {
 		fields: [gold.quest],
 		references: [quests.id],
+	}),
+	order: one(orders, {
+		fields: [gold.order],
+		references: [orders.id],
 	}),
 }));
 
@@ -365,10 +372,10 @@ export const xpRelations = relations(xp, ({ one }) => ({
 		fields: [xp.proposal],
 		references: [proposals.id],
 	}),
-	// order: one(orders, {
-	// 	fields: [xp.order],
-	// 	references: [orders.id],
-	// }),
+	order: one(orders, {
+		fields: [xp.order],
+		references: [orders.id],
+	}),
 	community: one(communities, {
 		fields: [xp.community],
 		references: [communities.id],
@@ -448,42 +455,6 @@ export const cartsRelations = relations(carts, ({ one }) => ({
 	}),
 }));
 
-export const erc721BalancesRelations = relations(
-	erc721Balances,
-	({ one, many }) => ({
-		nounDelegates: many(nounDelegates),
-		lilnounDelegates: many(lilnounDelegates),
-	}),
-);
-
-export const nounDelegatesRelations = relations(
-	nounDelegates,
-	({ one, many }) => ({
-		delegator: one(erc721Balances, {
-			fields: [nounDelegates.from],
-			references: [erc721Balances.account],
-		}),
-		delegatee: one(erc721Balances, {
-			fields: [nounDelegates.to],
-			references: [erc721Balances.account],
-		}),
-	}),
-);
-
-export const lilnounDelegatesRelations = relations(
-	lilnounDelegates,
-	({ one, many }) => ({
-		delegator: one(erc721Balances, {
-			fields: [lilnounDelegates.from],
-			references: [erc721Balances.account],
-		}),
-		delegatee: one(erc721Balances, {
-			fields: [lilnounDelegates.to],
-			references: [erc721Balances.account],
-		}),
-	}),
-);
-
 export const nounsProposalsRelations = relations(
 	nounsProposals,
 	({ one, many }) => ({
@@ -547,3 +518,22 @@ export const raffleEntriesRelations = relations(
 		gold: many(gold),
 	}),
 );
+
+export const ordersRelations = relations(orders, ({ one, many }) => ({
+	user: one(nexus, {
+		fields: [orders.user],
+		references: [nexus.id],
+	}),
+	xp: many(xp),
+}));
+
+export const purchasedVotesRelations = relations(purchasedVotes, ({ one }) => ({
+	user: one(nexus, {
+		fields: [purchasedVotes.user],
+		references: [nexus.id],
+	}),
+	round: one(rounds, {
+		fields: [purchasedVotes.round],
+		references: [rounds.id],
+	}),
+}));

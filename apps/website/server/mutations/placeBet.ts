@@ -2,8 +2,14 @@
 
 import { z } from "zod";
 import { onlyUser } from ".";
-import { bets, outcomes, predictions, xp } from "~/packages/db/schema/public";
-import { eq, and } from "drizzle-orm";
+import {
+	bets,
+	leaderboards,
+	outcomes,
+	predictions,
+	xp,
+} from "~/packages/db/schema/public";
+import { eq, and, sql } from "drizzle-orm";
 import { db } from "~/packages/db";
 import { posthogClient } from "../clients/posthog";
 
@@ -64,8 +70,8 @@ export const placeBet = onlyUser
 			throw new Error("You already placed a prediction");
 		}
 
-		// let didEarnXP = false;
-		// let newUserXP = 0;
+		let newUserXP = 0;
+		let earnedXP = 0;
 
 		await db.primary.transaction(async (tx) => {
 			const [bet] = await tx
@@ -78,27 +84,36 @@ export const placeBet = onlyUser
 				})
 				.returning({ id: bets.id });
 
-			// if (prediction.earnedXP.length === 0) {
-			// 	await tx.insert(xp).values({
-			// 		user: ctx.user.id,
-			// 		amount: prediction.xp,
-			// 		timestamp: now,
-			// 		prediction: prediction.id,
-			// 	});
+			if (prediction._xp?.predicting) {
+				await tx.insert(xp).values({
+					user: ctx.user.id,
+					amount: prediction._xp.predicting,
+					bet: bet.id,
+					prediction: prediction.id,
+					community: prediction.community,
+					for: "PLACING_PREDICTION",
+				});
 
-			// 	const [updateNexus] = await tx
-			// 		.update(nexus)
-			// 		.set({
-			// 			xp: sql`${nexus.xp} + ${prediction.xp}`,
-			// 		})
-			// 		.where(eq(nexus.id, ctx.user.id))
-			// 		.returning({
-			// 			xp: nexus.xp,
-			// 		});
+				const [updateNexus] = await tx
+					.insert(leaderboards)
+					.values({
+						user: ctx.user.id,
+						xp: prediction._xp.predicting,
+						community: prediction.community,
+					})
+					.onConflictDoUpdate({
+						target: [leaderboards.user, leaderboards.community],
+						set: {
+							xp: sql`${leaderboards.xp} + ${prediction._xp.predicting}`,
+						},
+					})
+					.returning({
+						xp: leaderboards.xp,
+					});
 
-			// 	newUserXP = updateNexus.xp;
-			// 	didEarnXP = true;
-			// }
+				newUserXP = updateNexus.xp;
+				earnedXP = prediction._xp.predicting;
+			}
 		});
 
 		posthogClient.capture({
@@ -112,10 +127,8 @@ export const placeBet = onlyUser
 			},
 		});
 
-		// if (didEarnXP) {
-		// 	return {
-		// 		earnedXP: prediction.xp,
-		// 		totalXP: newUserXP,
-		// 	};
-		// }
+		return {
+			earnedXP,
+			totalXP: newUserXP,
+		};
 	});

@@ -8,15 +8,16 @@ import {
 	nexus,
 	leaderboards,
 	snapshots,
-	nounsvitationalVotes,
+	purchasedVotes,
 } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { and, eq, ilike, sql } from "drizzle-orm";
-import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { onlyUser } from ".";
 import { getAction } from "../actions";
 import { posthogClient } from "../clients/posthog";
+import { viemClient } from "../clients/viem";
+import { parseAbiItem } from "viem";
 
 export const castVotes = onlyUser
 	.schema(
@@ -39,8 +40,11 @@ export const castVotes = onlyUser
 				community: {
 					with: {
 						admins: true,
-						connections: true,
+						plugins: true,
 					},
+				},
+				purchasedVotes: {
+					where: eq(purchasedVotes.user, ctx.user.id),
 				},
 			},
 		});
@@ -49,44 +53,143 @@ export const castVotes = onlyUser
 			throw new Error("Round not found");
 		}
 
-		let lilnounVotes = 0;
-		for (const wallet of ctx.user.wallets) {
-			const snapshot = await db.primary.query.snapshots.findFirst({
+		const now = new Date();
+		const votingStart = new Date(round.votingStart);
+		const roundEnd = new Date(round.end);
+
+		if (now < votingStart) {
+			throw new Error("Voting has not started yet");
+		}
+
+		if (now > roundEnd) {
+			throw new Error("Round has ended");
+		}
+
+		const ballot: Record<
+			string,
+			{ count: number; proposal: typeof proposals.$inferSelect }
+		> = {};
+
+		for (const vote of parsedInput.votes) {
+			if (vote.count === 0) continue;
+
+			const proposal = await db.primary.query.proposals.findFirst({
 				where: and(
-					eq(snapshots.type, "lilnouns-software"),
-					ilike(snapshots.tag, `${wallet.address.toLowerCase()}:%`),
+					eq(proposals.id, vote.proposal),
+					eq(proposals.round, round.id),
 				),
 			});
 
-			if (snapshot) {
-				lilnounVotes = lilnounVotes + Number(snapshot.tag?.split(":")[1] ?? 0);
+			if (!proposal) {
+				throw new Error("Proposal not found");
+			}
+
+			if (proposal.user === ctx.user.id) {
+				throw new Error("You cannot vote on your own proposal");
+			}
+
+			ballot[vote.proposal] = {
+				count: (ballot[vote.proposal]?.count ?? 0) + vote.count,
+				proposal,
+			};
+		}
+
+		let allocatedVotes = round.purchasedVotes.reduce(
+			(votes, vote) => votes + vote.count,
+			0,
+		);
+
+		if (round.votingConfig?.mode === "leaderboard") {
+			const percentile =
+				ctx.user.nexus.leaderboards.find(
+					(leaderboard) => leaderboard.community.id === round.community.id,
+				)?.percentile ?? 1;
+
+			if (percentile <= 0.1) allocatedVotes += 10;
+			else if (percentile <= 0.25) allocatedVotes += 5;
+			else if (percentile <= 0.4) allocatedVotes += 3;
+			else allocatedVotes += 1;
+		}
+
+		if (round.votingConfig?.mode === "nouns") {
+			const client = viemClient("mainnet");
+
+			for (const wallet of ctx.user.wallets) {
+				const votes = await client.readContract({
+					address: "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03",
+					abi: [
+						parseAbiItem(
+							"function getCurrentVotes(address) view returns (uint96)",
+						),
+					],
+					functionName: "getCurrentVotes",
+					blockNumber: round.votingConfig.block
+						? BigInt(round.votingConfig.block)
+						: undefined,
+					args: [wallet.address as `0x${string}`],
+				});
+
+				allocatedVotes += Number(votes);
 			}
 		}
 
-		const percentile =
-			ctx.user.nexus.leaderboards.find(
-				(leaderboard) => leaderboard.community.id === round.community.id,
-			)?.percentile ?? 1;
+		if (round.votingConfig?.mode === "lilnouns") {
+			const client = viemClient("mainnet");
 
-		let allocatedVotes =
-			round.community.handle === "lilnouns"
-				? lilnounVotes
-				: percentile <= 0.1
-					? 10
-					: percentile <= 0.25
-						? 5
-						: percentile <= 0.4
-							? 3
-							: 1;
-
-		if (round.handle === "japan-round-2") {
-			const japanExtraVotes =
-				await db.primary.query.nounsvitationalVotes.findFirst({
-					where: eq(nounsvitationalVotes.user, ctx.user.id),
+			for (const wallet of ctx.user.wallets) {
+				const votes = await client.readContract({
+					address: "0x4b10701bfd7bfedc47d50562b76b436fbb5bdb3b",
+					abi: [
+						parseAbiItem(
+							"function getCurrentVotes(address) view returns (uint96)",
+						),
+					],
+					functionName: "getCurrentVotes",
+					blockNumber: round.votingConfig.block
+						? BigInt(round.votingConfig.block)
+						: undefined,
+					args: [wallet.address as `0x${string}`],
 				});
 
-			if (japanExtraVotes) {
-				allocatedVotes = allocatedVotes + japanExtraVotes.count;
+				allocatedVotes += Number(votes);
+			}
+		}
+
+		if (round.votingConfig?.mode === "token-weight") {
+			const client = viemClient("mainnet");
+
+			for (const token of round.votingConfig.tokens) {
+				for (const wallet of ctx.user.wallets) {
+					if (token.type === "erc20" || token.type === "erc721") {
+						const balance = await client.readContract({
+							address: token.address as `0x${string}`,
+							abi: [
+								parseAbiItem(
+									"function balanceOf(address owner) view returns (uint256)",
+								),
+							],
+							functionName: "balanceOf",
+							blockNumber: token.block ? BigInt(token.block) : undefined,
+							args: [wallet.address as `0x${string}`],
+						});
+
+						allocatedVotes += Math.floor(Number(balance) * token.votes);
+					} else if (token.type === "erc1155") {
+						const balance = await client.readContract({
+							address: token.address as `0x${string}`,
+							abi: [
+								parseAbiItem(
+									"function balanceOf(address owner, uint256 id) view returns (uint256)",
+								),
+							],
+							functionName: "balanceOf",
+							blockNumber: token.block ? BigInt(token.block) : undefined,
+							args: [wallet.address as `0x${string}`, BigInt(token.tokenId)],
+						});
+
+						allocatedVotes += Math.floor(Number(balance) * token.votes);
+					}
+				}
 			}
 		}
 
@@ -95,7 +198,7 @@ export const castVotes = onlyUser
 		for (const actionState of actions) {
 			const action = getAction({
 				action: actionState.action,
-				platform: actionState.platform ?? "dash",
+				plugin: actionState.plugin ?? "dash",
 			});
 
 			if (!action) {
@@ -112,44 +215,17 @@ export const castVotes = onlyUser
 				throw new Error("Voting prerequisites not met");
 			}
 
-			allocatedVotes = allocatedVotes + actionState.votes;
-		}
-
-		const now = new Date();
-		const votingStart = new Date(round.votingStart);
-		const roundEnd = new Date(round.end);
-
-		if (now < votingStart) {
-			throw new Error("Voting has not started yet");
-		}
-
-		if (now > roundEnd) {
-			throw new Error("Round has ended");
+			allocatedVotes += actionState.votes;
 		}
 
 		let votesUsed = round.votes.reduce((votes, vote) => votes + vote.count, 0);
 		let newUserXP = 0;
+		let earnedXP = 0;
+
+		const voteRecords: Array<typeof votes.$inferSelect> = [];
 
 		await db.primary.transaction(async (tx) => {
-			for (const vote of parsedInput.votes) {
-				if (vote.count === 0) continue;
-
-				const proposal = await tx.query.proposals.findFirst({
-					where: eq(proposals.id, vote.proposal),
-				});
-
-				if (!proposal) {
-					throw new Error("Proposal not found");
-				}
-
-				if (proposal.user === ctx.user.id) {
-					throw new Error("You cannot vote on your own proposal");
-				}
-
-				if (proposal.round !== parsedInput.round) {
-					throw new Error("You can only vote on proposals in the same round");
-				}
-
+			for (const vote of Object.values(ballot)) {
 				if (votesUsed + vote.count > allocatedVotes) {
 					throw new Error("You have used all your votes");
 				}
@@ -157,40 +233,38 @@ export const castVotes = onlyUser
 				votesUsed += vote.count;
 
 				// Insert the vote
-				const returnedVote = await tx
+				const [returnedVote] = await tx
 					.insert(votes)
 					.values({
 						user: ctx.user.id,
-						proposal: vote.proposal,
+						proposal: vote.proposal.id,
 						round: round.id,
 						count: vote.count,
-						timestamp: now,
 					})
-					.returning({ id: votes.id });
+					.returning();
 
-				if (round.handle !== "japan-round-2") {
-					// Award 50 xp per vote to the voter
-					const voterAmount = 50 * vote.count;
+				voteRecords.push(returnedVote);
 
+				if (round.xp && round.xp.castingVotes > 0 && round.votes.length === 0) {
 					await tx.insert(xp).values({
 						user: ctx.user.id,
-						amount: voterAmount,
-						timestamp: now,
-						vote: returnedVote[0].id,
+						amount: round.xp.castingVotes,
+						round: round.id,
 						community: round.community.id,
+						for: "CASTING_VOTE",
 					});
 
 					const [updatePass] = await tx
 						.insert(leaderboards)
 						.values({
 							user: ctx.user.id,
-							xp: voterAmount,
+							xp: round.xp.castingVotes,
 							community: round.community.id,
 						})
 						.onConflictDoUpdate({
 							target: [leaderboards.user, leaderboards.community],
 							set: {
-								xp: sql`${leaderboards.xp} + ${voterAmount}`,
+								xp: sql`${leaderboards.xp} + ${round.xp.castingVotes}`,
 							},
 						})
 						.returning({
@@ -198,52 +272,64 @@ export const castVotes = onlyUser
 						});
 
 					newUserXP = updatePass.xp;
+					earnedXP = round.xp.castingVotes;
+				}
+			}
 
-					// Award 5 xp per vote to the proposer
-					const proposerAmount = 5 * vote.count;
+			for (const vote of Object.values(ballot)) {
+				const proposerRecievedXP = !!round.votes.find(
+					(v) => v.proposal === vote.proposal.id,
+				);
+
+				if (round.xp && round.xp.receivingVotes > 0 && !proposerRecievedXP) {
+					const voteRecord = voteRecords.find(
+						(v) => v.proposal === vote.proposal.id,
+					);
+
+					if (!voteRecord) continue;
 
 					await tx.insert(xp).values({
-						user: proposal.user,
-						amount: proposerAmount,
-						timestamp: now,
-						vote: returnedVote[0].id,
+						user: vote.proposal.user,
+						amount: round.xp.receivingVotes,
+						round: round.id,
+						proposal: vote.proposal.id,
+						vote: voteRecord.id,
 						community: round.community.id,
+						for: "RECEIVING_VOTE",
 					});
 
 					await tx
 						.insert(leaderboards)
 						.values({
-							user: proposal.user,
-							xp: proposerAmount,
+							user: vote.proposal.user,
+							xp: round.xp.receivingVotes,
 							community: round.community.id,
 						})
 						.onConflictDoUpdate({
 							target: [leaderboards.user, leaderboards.community],
 							set: {
-								xp: sql`${leaderboards.xp} + ${proposerAmount}`,
+								xp: sql`${leaderboards.xp} + ${round.xp.receivingVotes}`,
 							},
 						});
 				}
 			}
 		});
 
-		for (const vote of parsedInput.votes) {
+		for (const vote of Object.values(ballot)) {
 			posthogClient.capture({
 				event: "cast-votes",
 				distinctId: ctx.user.id,
 				properties: {
 					round: round.id,
-					proposal: vote.proposal,
+					proposal: vote.proposal.id,
 					community: round.community.id,
 					amount: vote.count,
 				},
 			});
 		}
 
-		revalidatePath(`/rounds/${round.handle}`);
-
 		return {
-			earnedXP: round.handle === "japan-round-2" ? 0 : 50 * votesUsed,
+			earnedXP,
 			totalXP: newUserXP,
 		};
 	});

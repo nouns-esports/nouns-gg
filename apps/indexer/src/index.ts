@@ -1,11 +1,4 @@
 import { ponder } from "ponder:registry";
-import {
-	lilnounDelegates,
-	nounDelegates,
-	erc721Balances,
-	nounsProposals,
-	nounsAuctions,
-} from "../ponder.schema";
 import { markdownToTipTap } from "~/packages/utils/markdownToTipTap";
 import { estimateTimestamp } from "~/packages/utils/estimateTimestamp";
 import { generateSVGPart } from "~/packages/utils/generateSVGParts";
@@ -18,11 +11,9 @@ import {
 	nounsClients,
 	nounsTraits,
 	nounsVotes,
-	lilnounsVotes,
 	voteReposts,
-	nounsVotingPower,
-	mntBalances,
-	cookBalances,
+	nounsProposals,
+	nounsAuctions,
 } from "ponder:schema";
 import { env } from "~/env";
 import { PinataSDK } from "pinata";
@@ -30,179 +21,6 @@ import { PinataSDK } from "pinata";
 const pinata = new PinataSDK({
 	pinataJwt: env.PINATA_JWT,
 	pinataGateway: "ipfs.nouns.gg",
-});
-
-ponder.on("NounsToken:Transfer", async ({ event, context }) => {
-	await context.db
-		.insert(erc721Balances)
-		.values({
-			account: event.args.to.toLowerCase() as `0x${string}`,
-			collection: context.contracts.NounsToken.address.toLowerCase(),
-			tokenId: event.args.tokenId,
-		})
-		.onConflictDoUpdate({
-			account: event.args.to.toLowerCase() as `0x${string}`,
-		});
-});
-
-ponder.on("LilNounsToken:Transfer", async ({ event, context }) => {
-	if (event.block.number === 22691195n) {
-		console.log("account", event.args.to.toLowerCase() as `0x${string}`);
-		console.log("tokenId", event.args.tokenId);
-		console.log(
-			"collection",
-			context.contracts.LilNounsToken.address.toLowerCase(),
-		);
-
-		console.log("event", event);
-	}
-
-	await context.db
-		.insert(erc721Balances)
-		.values({
-			account: event.args.to.toLowerCase() as `0x${string}`,
-			collection: context.contracts.LilNounsToken.address.toLowerCase(),
-			tokenId: event.args.tokenId,
-		})
-		.onConflictDoUpdate({
-			account: event.args.to.toLowerCase() as `0x${string}`,
-		});
-});
-
-ponder.on("LilNounsToken:DelegateVotesChanged", async ({ event, context }) => {
-	await context.db
-		.insert(lilnounsVotes)
-		.values({
-			account: event.args.delegate.toLowerCase() as `0x${string}`,
-			count: event.args.newBalance,
-		})
-		.onConflictDoUpdate({
-			count: event.args.newBalance,
-		});
-});
-
-ponder.on("NounsToken:DelegateVotesChanged", async ({ event, context }) => {
-	await context.db
-		.insert(nounsVotingPower)
-		.values({
-			account: event.args.delegate.toLowerCase() as `0x${string}`,
-			count: event.args.newBalance,
-		})
-		.onConflictDoUpdate({
-			count: event.args.newBalance,
-		});
-});
-
-ponder.on("MantleMainnetToken:Transfer", async ({ event, context }) => {
-	await context.db
-		.insert(mntBalances)
-		.values({
-			account: event.args.from.toLowerCase() as `0x${string}`,
-			count: 0n,
-		})
-		.onConflictDoUpdate((row) => ({
-			count: row.count - event.args.value,
-		}));
-
-	await context.db
-		.insert(mntBalances)
-		.values({
-			account: event.args.to.toLowerCase() as `0x${string}`,
-			count: event.args.value,
-		})
-		.onConflictDoUpdate((row) => ({
-			count: row.count + event.args.value,
-		}));
-});
-
-ponder.on("MantleToken:Transfer", async ({ event, context }) => {
-	await context.db
-		.insert(mntBalances)
-		.values({
-			account: event.args.from.toLowerCase() as `0x${string}`,
-			count: 0n,
-		})
-		.onConflictDoUpdate((row) => ({
-			count: row.count - event.args.value,
-		}));
-
-	await context.db
-		.insert(mntBalances)
-		.values({
-			account: event.args.to.toLowerCase() as `0x${string}`,
-			count: event.args.value,
-		})
-		.onConflictDoUpdate((row) => ({
-			count: row.count + event.args.value,
-		}));
-});
-
-ponder.on("CookMainnetToken:Transfer", async ({ event, context }) => {
-	await context.db
-		.insert(cookBalances)
-		.values({
-			account: event.args.from.toLowerCase() as `0x${string}`,
-			count: 0n,
-		})
-		.onConflictDoUpdate((row) => ({
-			count: row.count - event.args.value,
-		}));
-
-	await context.db
-		.insert(cookBalances)
-		.values({
-			account: event.args.to.toLowerCase() as `0x${string}`,
-			count: event.args.value,
-		})
-		.onConflictDoUpdate((row) => ({
-			count: row.count + event.args.value,
-		}));
-});
-
-ponder.on("CookToken:Transfer", async ({ event, context }) => {
-	await context.db
-		.insert(cookBalances)
-		.values({
-			account: event.args.from.toLowerCase() as `0x${string}`,
-			count: 0n,
-		})
-		.onConflictDoUpdate((row) => ({
-			count: row.count - event.args.value,
-		}));
-
-	await context.db
-		.insert(cookBalances)
-		.values({
-			account: event.args.to.toLowerCase() as `0x${string}`,
-			count: event.args.value,
-		})
-		.onConflictDoUpdate((row) => ({
-			count: row.count + event.args.value,
-		}));
-});
-
-ponder.on("NounsToken:DelegateChanged", async ({ event, context }) => {
-	await context.db
-		.insert(nounDelegates)
-		.values({
-			from: event.args.delegator.toLowerCase() as `0x${string}`,
-			to: event.args.toDelegate.toLowerCase() as `0x${string}`,
-		})
-		.onConflictDoUpdate({
-			to: event.args.toDelegate.toLowerCase() as `0x${string}`,
-		});
-});
-
-ponder.on("LilNounsToken:DelegateChanged", async ({ event, context }) => {
-	await context.db
-		.insert(lilnounDelegates)
-		.values({
-			from: event.args.delegator.toLowerCase() as `0x${string}`,
-			to: event.args.toDelegate.toLowerCase() as `0x${string}`,
-		})
-		.onConflictDoUpdate({
-			to: event.args.toDelegate.toLowerCase() as `0x${string}`,
-		});
 });
 
 ponder.on("NounsDAOGovernor:ProposalCreated", async ({ event, context }) => {

@@ -93,7 +93,7 @@ export default async function Quest(props: {
 		quest.actions.map(async (actionState) => {
 			const action = getAction({
 				action: actionState.action,
-				platform: actionState.platform ?? "dash",
+				plugin: actionState.plugin ?? "dash",
 			});
 
 			if (!action) {

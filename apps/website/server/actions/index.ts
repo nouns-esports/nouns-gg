@@ -40,12 +40,13 @@ const actions: Record<
 		visitLink,
 		reachPercentile,
 		leaderboardPosition,
-		purchaseItem,
-		makePrediction,
-		castVote,
-		createProposal,
-		registerEvent,
 	},
+	events: { registerEvent },
+	rounds: { castVote, createProposal },
+	predictions: { makePrediction },
+	raffles: {},
+	quests: {},
+	shop: { purchaseItem },
 	discord: {
 		haveRole,
 		joinServer,
@@ -73,6 +74,6 @@ const actions: Record<
 	},
 };
 
-export function getAction(input: { action: string; platform: string }) {
-	return actions[input.platform][input.action];
+export function getAction(input: { action: string; plugin: string }) {
+	return actions[input.plugin][input.action];
 }

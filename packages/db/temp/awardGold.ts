@@ -56,6 +56,7 @@ for (
 	// 	community: nounsgg,
 	// 	to: user.id,
 	// 	amount: earning,
+	// 	for: "ENGAGEMENT_ACTIVITY",
 	// });
 
 	// await tx

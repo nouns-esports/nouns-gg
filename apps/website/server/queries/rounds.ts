@@ -1,4 +1,10 @@
-import { awards, proposals, rounds, votes } from "~/packages/db/schema/public";
+import {
+	awards,
+	proposals,
+	purchasedVotes,
+	rounds,
+	votes,
+} from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { eq, asc, desc, sql, and, isNull } from "drizzle-orm";
 
@@ -24,7 +30,9 @@ export async function getRoundWithProposal(input: {
 }
 
 export async function getRound(
-	input: { id: string } | { handle: string; community?: string },
+	input:
+		| { id: string; user: string | undefined }
+		| { handle: string; community?: string; user: string | undefined },
 ) {
 	return db.pgpool.query.rounds.findFirst({
 		where:
@@ -49,7 +57,7 @@ export async function getRound(
 			community: {
 				with: {
 					admins: true,
-					connections: true,
+					plugins: true,
 				},
 			},
 			proposals: {
@@ -90,6 +98,11 @@ export async function getRound(
 				limit: 100,
 				orderBy: desc(votes.timestamp),
 			},
+			purchasedVotes: input.user
+				? {
+						where: eq(purchasedVotes.user, input.user),
+					}
+				: undefined,
 			event: {
 				with: {
 					community: true,
@@ -133,7 +146,7 @@ export async function getRounds(input?: {
 		where: and(
 			input?.event ? eq(rounds.event, input.event) : undefined,
 			input?.community ? eq(rounds.community, input.community) : undefined,
-			eq(rounds.draft, false),
+			eq(rounds.active, true),
 		),
 		with: {
 			community: true,

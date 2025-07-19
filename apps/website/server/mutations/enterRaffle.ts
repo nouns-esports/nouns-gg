@@ -61,8 +61,7 @@ export const enterRaffle = onlyUser
 		}
 
 		let newXP = 0;
-
-		const earnedXP = 10 * parsedInput.amount;
+		let earnedXP = 0;
 
 		await db.primary.transaction(async (tx) => {
 			const cost = raffle.gold * parsedInput.amount;
@@ -73,31 +72,35 @@ export const enterRaffle = onlyUser
 					raffle: parsedInput.raffle,
 					user: ctx.user.id,
 					amount: parsedInput.amount,
-					timestamp: now,
 				})
 				.returning({
 					id: raffleEntries.id,
 				});
 
-			await tx.insert(xp).values({
-				user: ctx.user.id,
-				amount: earnedXP,
-				timestamp: now,
-				raffleEntry: raffleEntry.id,
-				community: raffle.community,
-			});
+			const amount = raffle.xp ? raffle.xp.entering * parsedInput.amount : 0;
+
+			if (amount > 0) {
+				await tx.insert(xp).values({
+					user: ctx.user.id,
+					amount,
+					raffle: raffle.id,
+					raffleEntry: raffleEntry.id,
+					community: raffle.community,
+					for: "ENTERING_RAFFLE",
+				});
+			}
 
 			const [updatePass] = await tx
 				.insert(leaderboards)
 				.values({
 					user: ctx.user.id,
-					xp: earnedXP,
+					xp: amount,
 					community: raffle.community,
 				})
 				.onConflictDoUpdate({
 					target: [leaderboards.user, leaderboards.community],
 					set: {
-						xp: sql`${leaderboards.xp} + ${earnedXP}`,
+						xp: sql`${leaderboards.xp} + ${amount}`,
 						points: sql`${leaderboards.points} - ${cost}`,
 					},
 				})
@@ -106,13 +109,16 @@ export const enterRaffle = onlyUser
 				});
 
 			newXP = updatePass.xp;
+			earnedXP = amount;
 
 			await tx.insert(gold).values({
 				from: ctx.user.id,
 				to: null,
 				amount: cost,
+				raffle: raffle.id,
 				raffleEntry: raffleEntry.id,
 				community: raffle.community,
+				for: "ENTERING_RAFFLE",
 			});
 		});
 
@@ -126,15 +132,5 @@ export const enterRaffle = onlyUser
 			},
 		});
 
-		revalidatePath("/shop");
-
-		if (raffle.event) {
-			revalidatePath(`/events/${raffle.event.handle}`);
-		}
-
-		if (ctx.user.farcaster?.username) {
-			revalidatePath(`/users/${ctx.user.farcaster.username}`);
-		} else revalidatePath(`/users/${ctx.user.id}`);
-
-		return { earnedXP, newXP };
+		return { earnedXP, totalXP: newXP };
 	});

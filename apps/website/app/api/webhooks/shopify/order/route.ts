@@ -50,27 +50,45 @@ export async function POST(request: Request) {
 			throw new Error("User not found");
 		}
 
-		const existingXP = await tx.query.xp.findFirst({
+		const existingOrder = await tx.query.orders.findFirst({
 			where: and(
 				eq(xp.user, user.id),
 				eq(xp.order, order.admin_graphql_api_id),
 			),
+			with: {
+				xp: {
+					where: and(eq(xp.for, "PLACING_ORDER"), eq(xp.user, user.id)),
+				},
+			},
 		});
 
-		if (existingXP) {
-			throw new Error("XP already distributed for this order");
+		if (existingOrder) {
+			throw new Error("Order already exists");
 		}
 
 		const xpAmount = Math.round(subTotalWithoutDiscounts * 10);
 
 		const nounsgg = "98e09ea8-4c19-423c-9733-b946b6f70902";
 
+		const [createdOrder] = await tx
+			.insert(orders)
+			.values({
+				user: user.id,
+				community: nounsgg,
+				identifier: order.admin_graphql_api_id,
+				platform: "shopify",
+				createdAt: new Date(order.created_at),
+				spend: subTotalWithoutDiscounts,
+			})
+			.returning();
+
 		await tx.insert(xp).values({
 			user: user.id,
-			order: order.admin_graphql_api_id,
-			amount: xpAmount > 500 ? 500 : xpAmount,
+			amount: xpAmount,
 			timestamp: new Date(order.created_at),
 			community: nounsgg,
+			for: "PLACING_ORDER",
+			order: createdOrder.id,
 		});
 
 		await tx
@@ -86,14 +104,6 @@ export async function POST(request: Request) {
 					xp: sql`${leaderboards.xp} + ${xpAmount}`,
 				},
 			});
-
-		await tx.insert(orders).values({
-			user: user.id,
-			community: nounsgg,
-			identifier: order.admin_graphql_api_id,
-			platform: "shopify",
-			createdAt: new Date(order.created_at),
-		});
 	});
 
 	return new Response("OK", { status: 200 });

@@ -30,9 +30,7 @@ export default function Proposals(props: {
 		canVote: boolean;
 	};
 	openProposal?: string;
-	lilnounVotes: number;
-	japanExtraVotes: number;
-	extraActionVotes: number;
+	allocatedVotes: number;
 }) {
 	const [selectedVotes, setSelectedVotes] = useState<Record<string, number>>(
 		{},
@@ -60,36 +58,11 @@ export default function Proposals(props: {
 		return Object.values(selectedVotes).reduce((acc, curr) => acc + curr, 0);
 	}, [selectedVotes]);
 
-	const allocatedVotes = useMemo(() => {
-		const percentile =
-			props.user?.nexus.leaderboards.find(
-				(leaderboard) => leaderboard.community.id === props.round.community.id,
-			)?.percentile ?? 1;
-
-		const userVotes =
-			percentile <= 0.1
-				? 10
-				: percentile <= 0.25
-					? 5
-					: percentile <= 0.4
-						? 3
-						: 1;
-
-		return props.round.community.handle === "lilnouns"
-			? props.lilnounVotes
-			: userVotes + props.japanExtraVotes + props.extraActionVotes;
-	}, [
-		props.round.community.handle,
-		props.user?.nexus.leaderboards,
-		props.japanExtraVotes,
-		props.extraActionVotes,
-	]);
-
 	const remainingVotes = useMemo(() => {
 		const priorVotes = props.user?.priorVotes ?? 0;
 
-		return allocatedVotes - votesSelected - priorVotes;
-	}, [votesSelected, allocatedVotes, props.user?.priorVotes]);
+		return props.allocatedVotes - votesSelected - priorVotes;
+	}, [votesSelected, props.allocatedVotes, props.user?.priorVotes]);
 
 	const userProposals = props.round.proposals.filter(
 		(proposal) => proposal.user?.id === props.user?.id,
@@ -197,7 +170,7 @@ export default function Proposals(props: {
 									);
 								}
 
-								if (!props.user.canVote || allocatedVotes === 0) {
+								if (!props.user.canVote || props.allocatedVotes === 0) {
 									return <Button disabled>Submit Votes</Button>;
 								}
 
@@ -217,7 +190,7 @@ export default function Proposals(props: {
 										onClick={() => openCastVotesModal()}
 									>
 										Submit Votes - {votesSelected}/
-										{allocatedVotes - props.user.priorVotes}
+										{props.allocatedVotes - props.user.priorVotes}
 									</Button>
 								);
 							}
@@ -414,7 +387,7 @@ export default function Proposals(props: {
 													roundState={state}
 													userCanVote={
 														!!props.user?.nexus &&
-														allocatedVotes > props.user.priorVotes
+														props.allocatedVotes > props.user.priorVotes
 													}
 												/>
 											) : null}
@@ -462,7 +435,7 @@ export default function Proposals(props: {
 					removeVote={removeVote}
 					selectedVotes={selectedVotes}
 					userCanVote={
-						!!props.user?.nexus && allocatedVotes > props.user.priorVotes
+						!!props.user?.nexus && props.allocatedVotes > props.user.priorVotes
 					}
 					isOpen={props.openProposal === proposal.id}
 				/>

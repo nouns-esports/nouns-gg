@@ -16,7 +16,7 @@ export async function getRaffles(input?: {
 				gt(t.end, now),
 				input?.event ? eq(t.event, input.event) : undefined,
 				input?.community ? eq(t.community, input.community) : undefined,
-				eq(t.draft, false),
+				eq(t.active, true),
 			),
 		with: {
 			entries: {

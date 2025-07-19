@@ -9,7 +9,7 @@ export async function getEvents(input?: {
 	return db.pgpool.query.events.findMany({
 		where: and(
 			input?.community ? eq(events.community, input.community) : undefined,
-			eq(events.draft, false),
+			eq(events.active, true),
 		),
 		orderBy: [desc(events.featured), desc(events.start)],
 		limit: input?.limit,

@@ -118,9 +118,9 @@ export default function EnterRaffleModal(props: {
 								return toast.error(result.serverError);
 							}
 
-							if (result?.data) {
+							if (result?.data?.earnedXP) {
 								toast.xp({
-									total: result.data.newXP,
+									total: result.data.totalXP,
 									earned: result.data.earnedXP,
 								});
 							}

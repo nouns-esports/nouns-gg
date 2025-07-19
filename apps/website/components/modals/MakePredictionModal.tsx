@@ -116,7 +116,7 @@ export default function MakePredictionModal(props: {
 								<Sparkles className="w-4 h-4 text-green" />
 								{props.prediction.xp}
 							</div>
-							{props.prediction.points > 0 ? (
+							{props.prediction.prizePool > 0 ? (
 								<div className="flex justify-center gap-1.5 items-center">
 									<img
 										src={
@@ -136,9 +136,10 @@ export default function MakePredictionModal(props: {
 										)}
 									>
 										{props.prediction.totalBets === 0
-											? props.prediction.points
+											? props.prediction.prizePool
 											: (
-													props.prediction.points / props.prediction.totalBets
+													props.prediction.prizePool /
+													props.prediction.totalBets
 												).toFixed(2)}
 									</p>
 								</div>
@@ -158,6 +159,13 @@ export default function MakePredictionModal(props: {
 
 						if (result?.serverError) {
 							return toast.error(result.serverError);
+						}
+
+						if (result?.data?.earnedXP) {
+							toast.xp({
+								total: result.data.totalXP,
+								earned: result.data.earnedXP,
+							});
 						}
 
 						router.refresh();

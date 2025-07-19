@@ -14,7 +14,6 @@ export async function getQuests(input: {
 			eq(quests.active, true),
 			input.event ? eq(quests.event, input.event) : undefined,
 			input.community ? eq(quests.community, input.community) : undefined,
-			eq(quests.draft, false),
 		),
 		orderBy: [desc(quests.featured), desc(quests.createdAt)],
 		with: {
@@ -69,7 +68,7 @@ export async function getQuest(
 			community: {
 				with: {
 					admins: true,
-					connections: true,
+					plugins: true,
 				},
 			},
 		},

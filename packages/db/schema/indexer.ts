@@ -1,48 +1,6 @@
 import type { JSONContent } from "@tiptap/react";
 import { onchainTable, primaryKey } from "ponder";
 
-export const erc721Balances = onchainTable(
-	"erc721_balances",
-	(t) => ({
-		account: t.hex().notNull(),
-		collection: t.text().notNull(),
-		tokenId: t.bigint("token_id").notNull(),
-	}),
-	(t) => ({
-		pk: primaryKey({ columns: [t.collection, t.tokenId] }),
-	}),
-);
-
-export const nounDelegates = onchainTable("noun_delegates", (t) => ({
-	from: t.hex().primaryKey(),
-	to: t.hex().notNull(),
-}));
-
-export const lilnounDelegates = onchainTable("lilnoun_delegates", (t) => ({
-	from: t.hex().primaryKey(),
-	to: t.hex().notNull(),
-}));
-
-export const lilnounsVotes = onchainTable("lilnouns_votes", (t) => ({
-	account: t.hex().primaryKey(),
-	count: t.bigint().notNull(),
-}));
-
-export const nounsVotingPower = onchainTable("nouns_voting_power", (t) => ({
-	account: t.hex().primaryKey(),
-	count: t.bigint().notNull(),
-}));
-
-export const mntBalances = onchainTable("mnt_balances", (t) => ({
-	account: t.hex().primaryKey(),
-	count: t.bigint().notNull(),
-}));
-
-export const cookBalances = onchainTable("cook_balances", (t) => ({
-	account: t.hex().primaryKey(),
-	count: t.bigint().notNull(),
-}));
-
 export const nounsProposals = onchainTable("nouns_proposals", (t) => ({
 	id: t.bigint().primaryKey(),
 	proposer: t.hex().notNull(),

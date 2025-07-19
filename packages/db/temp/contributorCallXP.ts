@@ -83,6 +83,7 @@ await db.primary.transaction(async (tx) => {
 				amount,
 				timestamp: now,
 				community: nounsgg,
+				for: "SNAPSHOT",
 			});
 
 			await tx

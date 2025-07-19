@@ -9,8 +9,13 @@ import {
 import { sql } from "drizzle-orm";
 import type { JSONContent as TipTap } from "@tiptap/core";
 import type { ActionDescription } from "~/apps/website/server/actions/createAction";
-
+import * as chains from "viem/chains";
 const platforms = () =>
+	text({
+		enum: ["discord", "farcaster", "twitter"],
+	});
+
+const plugins = () =>
 	text({
 		enum: [
 			"discord",
@@ -21,10 +26,14 @@ const platforms = () =>
 			"lilnouns",
 			"nouns",
 			"ethereum",
+			"quests",
+			"rounds",
+			"predictions",
+			"raffles",
+			"events",
+			"shop",
 		],
 	});
-const connections = () =>
-	text({ enum: ["discord:server", "farcaster:channel", "farcaster:account"] });
 
 export const meta = pgTable("meta", (t) => ({
 	maintenance: t.boolean().notNull().default(false),
@@ -65,13 +74,11 @@ export const communities = pgTable(
 		points: t.jsonb().$type<{
 			name: string;
 			image: string;
-			marketcap: number;
 		}>(),
 		agent: t.jsonb().$type<{
-			name: string;
-			image: string;
-			prompt: string;
+			context: string;
 		}>(),
+		createdAt: t.timestamp("created_at").notNull().defaultNow(),
 		description: t.jsonb().$type<TipTap>(),
 		parentUrl: t.text("parent_url"),
 		details: t.jsonb().$type<TipTap>(),
@@ -99,9 +106,9 @@ export const communityAdmins = pgTable(
 	],
 );
 
-export const communityConnections = pgTable("community_connections", (t) => ({
+export const communityPlugins = pgTable("community_plugins", (t) => ({
 	id: t.uuid().primaryKey().defaultRandom(),
-	platform: platforms().notNull(),
+	plugin: plugins().notNull(),
 	community: t.uuid().notNull(),
 	config: t.jsonb().notNull().$type<Record<string, any>>(),
 }));
@@ -201,10 +208,12 @@ export const events = pgTable(
 		name: t.text().notNull(),
 		image: t.text().notNull(),
 		description: t.text().notNull().default(""),
+		createdAt: t.timestamp("created_at").notNull().defaultNow(),
+		deletedAt: t.timestamp("deleted_at"),
 		start: t.timestamp({ mode: "date" }).notNull(),
 		end: t.timestamp({ mode: "date" }).notNull(),
 		community: t.uuid().notNull(),
-		draft: t.boolean().notNull().default(true),
+		active: t.boolean().notNull().default(false),
 		featured: t.boolean().notNull().default(false),
 		callToAction: t.jsonb("call_to_action").$type<{
 			disabled: boolean;
@@ -232,7 +241,7 @@ export const eventActions = pgTable("event_actions", (t) => ({
 	id: t.uuid().primaryKey().defaultRandom(),
 	event: t.uuid().notNull(),
 	action: t.text().notNull(),
-	platform: platforms(),
+	plugin: plugins(),
 	description: t.jsonb().array().$type<ActionDescription>().notNull(),
 	input: t.jsonb().$type<{ [key: string]: { [key: string]: any } }>().notNull(),
 }));
@@ -268,15 +277,21 @@ export const predictions = pgTable(
 		handle: t.text().notNull(),
 		event: t.uuid(),
 		community: t.uuid().notNull(),
-		draft: t.boolean().notNull().default(true),
+		active: t.boolean().notNull().default(false),
 		name: t.text().notNull(),
 		image: t.text().notNull(),
 		rules: t.jsonb().$type<TipTap>().notNull(),
+		_xp: t.jsonb().$type<{
+			predicting: number;
+			winning: number;
+		}>(),
 		xp: t.integer().notNull(),
-		points: t.integer().notNull().default(0),
+		prizePool: t.integer().notNull().default(0),
 		closed: t.boolean().notNull().default(false),
 		resolved: t.boolean().notNull().default(false),
 		featured: t.boolean().notNull().default(false),
+		createdAt: t.timestamp("created_at").notNull().defaultNow(),
+		deletedAt: t.timestamp("deleted_at"),
 		start: t.timestamp(),
 		end: t.timestamp(),
 		pool: t
@@ -338,14 +353,53 @@ export const rounds = pgTable(
 		image: t.text().notNull(),
 		community: t.uuid().notNull(),
 		event: t.uuid(),
-		draft: t.boolean().notNull().default(true),
+		active: t.boolean().notNull().default(false),
 		type: t
 			.text({ enum: ["markdown", "video", "image", "url"] })
 			.notNull()
 			.default("markdown"),
 		featured: t.boolean().notNull().default(false),
+		xp: t.jsonb().$type<{
+			// XP recieved for participating in proposing
+			creatingProposal: number;
+			// XP recieved for participating in voting
+			castingVotes: number;
+			// XP recieved per unique voter
+			receivingVotes: number;
+			// XP recieved for winning the round
+			winning: number;
+		}>(),
+		votingConfig: t.jsonb().$type<
+			{ purchaseLimit: number | null } & (
+				| { mode: "nouns"; block: number | null }
+				| { mode: "lilnouns"; block: number | null }
+				| { mode: "leaderboard" }
+				| {
+						mode: "token-weight";
+						tokens: Array<
+							| {
+									type: "erc20" | "erc721";
+									address: string;
+									chain: keyof typeof chains;
+									block: number | null;
+									votes: number;
+							  }
+							| {
+									type: "erc1155";
+									address: string;
+									chain: keyof typeof chains;
+									tokenId: number;
+									block: number | null;
+									votes: number;
+							  }
+						>;
+				  }
+			)
+		>(),
 		content: t.text().notNull(),
 		description: t.jsonb().$type<TipTap>(), //.notNull(),  tiptap migration
+		createdAt: t.timestamp("created_at").notNull().defaultNow(),
+		deletedAt: t.timestamp("deleted_at"),
 		start: t.timestamp({ mode: "date" }).notNull(),
 		votingStart: t.timestamp("voting_start", { mode: "date" }).notNull(),
 		end: t.timestamp({ mode: "date" }).notNull(),
@@ -381,7 +435,7 @@ export const roundActions = pgTable("round_actions", (t) => ({
 		.default("voting"),
 	required: t.boolean().notNull().default(true),
 	votes: t.integer().notNull().default(0),
-	platform: platforms(),
+	plugin: plugins(),
 	action: t.text().notNull(),
 	description: t.jsonb().array().$type<ActionDescription>().notNull(),
 	input: t.jsonb().$type<{ [key: string]: any }>().notNull(),
@@ -430,7 +484,6 @@ export const proposals = pgTable(
 		hiddenAt: t.timestamp("hidden_at", { mode: "date" }),
 		deletedAt: t.timestamp("deleted_at", { mode: "date" }),
 		hidden: t.boolean().notNull().default(false),
-		published: t.boolean().notNull().default(true),
 		winner: t.smallint(),
 		embedding: t.vector({ dimensions: 1536 }),
 	}),
@@ -445,7 +498,6 @@ export const proposals = pgTable(
 export const nexus = pgTable("users", (t) => ({
 	id: t.uuid().defaultRandom().primaryKey(),
 	privyId: t.text("privy_id").notNull().unique(),
-	admin: t.boolean().notNull().default(false),
 	image: t.text().notNull().default(""),
 	name: t.text().notNull().default(""),
 	bio: t.text(),
@@ -467,12 +519,41 @@ export const gold = pgTable(
 		toEscrow: t.uuid(),
 		amount: t.numeric({ precision: 38, scale: 18, mode: "number" }).notNull(),
 		timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
+		for: t.text({
+			enum: [
+				// Predictions
+				"WINNING_PREDICTION",
+				"PLACING_PREDICTION",
+				// Quests
+				"COMPLETING_QUEST",
+				// Raffles
+				"ENTERING_RAFFLE",
+				"WINNING_RAFFLE",
+				// Shop
+				"PLACING_ORDER",
+				"REDEMPTION_DISCOUNT",
+				// Checkins
+				"CHECKING_IN",
+				// Snapshot
+				"SNAPSHOT",
+				// Issuance
+				"ENGAGEMENT_ACTIVITY",
+				"GENERAL_ISSUANCE",
+				// Transfer
+				"USER_TRANSFER",
+				// Claim
+				"ESCROW_CLAIM",
+			],
+		}),
 		order: t.text(), // shopify DraftOrder gid
 		checkin: t.uuid(),
+		checkpoint: t.uuid(),
+		raffle: t.uuid(),
 		raffleEntry: t.uuid(),
 		bet: t.uuid(),
 		prediction: t.uuid(),
 		quest: t.uuid(),
+		snapshot: t.uuid(),
 	}),
 	(t) => [
 		check(
@@ -501,11 +582,11 @@ export const quests = pgTable(
 		image: t.text().notNull(),
 		community: t.uuid().notNull(),
 		event: t.uuid(),
-		draft: t.boolean().notNull().default(true),
 		createdAt: t
 			.timestamp("created_at", { mode: "date" })
 			.notNull()
 			.defaultNow(),
+		deletedAt: t.timestamp("deleted_at"),
 		featured: t.boolean().notNull().default(false),
 		active: t.boolean().notNull().default(false),
 		start: t.timestamp({ mode: "date" }),
@@ -530,7 +611,7 @@ export const questActions = pgTable("quest_actions", (t) => ({
 	id: t.uuid().primaryKey().defaultRandom(),
 	quest: t.uuid().notNull(),
 	action: t.text().notNull(),
-	platform: platforms(),
+	plugin: plugins(),
 	description: t.jsonb().array().$type<ActionDescription>().notNull(),
 	input: t.jsonb().$type<{ [key: string]: any }>().notNull(),
 }));
@@ -551,13 +632,44 @@ export const xp = pgTable("xp", (t) => ({
 	user: t.uuid().notNull(),
 	amount: t.bigint({ mode: "number" }).notNull(),
 	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
+	for: t.text({
+		enum: [
+			// Rounds
+			"CASTING_VOTE",
+			"RECEIVING_VOTE",
+			"CREATING_PROPOSAL",
+			"WINNING_ROUND",
+			// Events
+			"ATTENDING_EVENT",
+			// Predictions
+			"PLACING_PREDICTION",
+			"WINNING_PREDICTION",
+			// Quests
+			"COMPLETING_QUEST",
+			// Raffles
+			"ENTERING_RAFFLE",
+			"WINNING_RAFFLE",
+			// Shop
+			"PLACING_ORDER",
+			// Shapshot
+			"SNAPSHOT",
+			// Checkins
+			"CHECKING_IN",
+			// Farcaster
+			"FARCASTER_ACTIVITY",
+		],
+	}),
 	quest: t.uuid(),
 	snapshot: t.uuid(),
 	checkin: t.uuid(),
+	checkpoint: t.uuid(),
 	prediction: t.uuid(),
+	bet: t.uuid(),
 	vote: t.uuid(),
+	round: t.uuid(),
 	proposal: t.uuid(),
-	order: t.text(), // shopify Order gid
+	order: t.text(), // TODO: Change to UUID and integrate with orders table
+	raffle: t.uuid(),
 	raffleEntry: t.uuid(),
 	attendee: t.uuid(),
 	community: t.uuid().notNull(),
@@ -583,14 +695,20 @@ export const leaderboards = pgTable(
 	],
 );
 
-export const votes = pgTable("votes", (t) => ({
-	id: t.uuid().primaryKey().defaultRandom(),
-	user: t.uuid().notNull(),
-	proposal: t.uuid().notNull(),
-	round: t.uuid().notNull(),
-	count: t.smallint().notNull(),
-	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
-}));
+export const votes = pgTable(
+	"votes",
+	(t) => ({
+		id: t.uuid().primaryKey().defaultRandom(),
+		user: t.uuid().notNull(),
+		proposal: t.uuid().notNull(),
+		round: t.uuid().notNull(),
+		count: t.smallint().notNull(),
+		timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
+	}),
+	// (t) => [
+	// 	unique("votes_user_proposal_round_unique").on(t.user, t.proposal, t.round),
+	// ],
+);
 
 export const products = pgTable(
 	"products",
@@ -602,9 +720,11 @@ export const products = pgTable(
 		description: t.jsonb().$type<TipTap>(),
 		collection: t.uuid(),
 		event: t.uuid(),
+		createdAt: t.timestamp("created_at").notNull().defaultNow(),
+		deletedAt: t.timestamp("deleted_at"),
 		community: t.uuid().notNull(),
 		requiresShipping: t.boolean("requires_shipping").notNull(),
-		active: t.boolean().notNull().default(true),
+		active: t.boolean().notNull().default(false),
 		embedding: t.vector({ dimensions: 1536 }),
 	}),
 	(t) => [
@@ -667,11 +787,16 @@ export const orders = pgTable(
 	"orders",
 	(t) => ({
 		id: t.uuid().primaryKey().defaultRandom(),
+		draft: t.boolean().notNull().default(false),
 		platform: t.text({ enum: ["shopify", "stripe"] }).notNull(),
-		identifier: t.text().notNull(),
+		identifier: t.text().notNull().unique(),
 		user: t.uuid().notNull(),
 		community: t.uuid().notNull(),
-		createdAt: t.timestamp("created_at").notNull(),
+		createdAt: t.timestamp("created_at").notNull().defaultNow(),
+		spend: t
+			.numeric({ precision: 38, scale: 18, mode: "number" })
+			.notNull()
+			.default(0),
 	}),
 	(t) => [
 		unique("orders_platform_identifier_unique").on(t.platform, t.identifier),
@@ -688,12 +813,18 @@ export const raffles = pgTable(
 		images: t.text().array().notNull(),
 		start: t.timestamp().notNull(),
 		end: t.timestamp().notNull(),
-		gold: t.integer().notNull(), // change to .numeric({ precision: 38, scale: 18, mode: "number" })
+		createdAt: t.timestamp("created_at").notNull().defaultNow(),
+		deletedAt: t.timestamp("deleted_at"),
+		gold: t.integer("cost").notNull(), // change to .numeric({ precision: 38, scale: 18, mode: "number" })
+		xp: t.jsonb().$type<{
+			entering: number;
+			winning: number;
+		}>(),
 		winners: t.integer().notNull(),
 		limit: t.integer(),
 		event: t.uuid(),
 		community: t.uuid().notNull(),
-		draft: t.boolean().notNull().default(true),
+		active: t.boolean().notNull().default(false),
 		entryActions: t.text("entry_actions").array(),
 		entryActionInputs: t
 			.jsonb("entry_action_inputs")
@@ -719,14 +850,16 @@ export const raffleEntries = pgTable("raffle_entries", (t) => ({
 	winner: t.boolean().notNull().default(false),
 }));
 
-export const nounsvitationalVotes = pgTable(
-	"nounsvitational_votes",
+export const purchasedVotes = pgTable(
+	"purchased_votes",
 	(t) => ({
 		id: t.uuid().primaryKey().defaultRandom(),
+		round: t.uuid().notNull().default("c6fd484a-67e7-4ccb-97ac-4cbeb2a07405"),
 		user: t.uuid().notNull(),
 		count: t.integer().notNull(),
+		timestamp: t.timestamp().notNull().defaultNow(),
 	}),
-	(t) => [unique("nounsvitational_votes_user_unique").on(t.user)],
+	(t) => [unique("purchased_votes_user_round_unique").on(t.user, t.round)],
 );
 
 // export const activity = pgTable("activity", (t) => ({

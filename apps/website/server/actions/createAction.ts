@@ -3,7 +3,7 @@ import type {
 	accounts,
 	communities,
 	communityAdmins,
-	communityConnections,
+	communityPlugins,
 	leaderboards,
 	nexus,
 } from "~/packages/db/schema/public";
@@ -17,7 +17,7 @@ export type ActionDescription = Array<{
 
 export type Community = typeof communities.$inferSelect & {
 	admins: (typeof communityAdmins.$inferSelect)[];
-	connections: (typeof communityConnections.$inferSelect)[];
+	plugins: (typeof communityPlugins.$inferSelect)[];
 };
 
 type User = typeof nexus.$inferSelect & {

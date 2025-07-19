@@ -406,6 +406,13 @@ export default function ProposalEditor(props: {
 							return toast.error(result.serverError);
 						}
 
+						if (result?.data?.earnedXP) {
+							toast.xp({
+								total: result.data.totalXP,
+								earned: result.data.earnedXP,
+							});
+						}
+
 						toast.success("Successfully created proposal");
 						return router.push(`/rounds/${props.round.handle}`);
 					}}

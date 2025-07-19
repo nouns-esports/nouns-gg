@@ -65,7 +65,7 @@ export async function getPredictions(input: {
 		where: and(
 			input.event ? eq(predictions.event, input.event) : undefined,
 			input.community ? eq(predictions.community, input.community) : undefined,
-			eq(predictions.draft, false),
+			eq(predictions.active, true),
 		),
 		orderBy: [desc(predictions.id)],
 		limit: input.limit,
@@ -98,37 +98,4 @@ export async function getPredictions(input: {
 				),
 		},
 	});
-}
-export async function simulateGains(input: {
-	prediction: string;
-	outcome: string;
-	amount: number;
-}) {
-	const prediction = await db.primary.query.predictions.findFirst({
-		where: eq(predictions.id, input.prediction),
-		with: {
-			outcomes: true,
-		},
-	});
-
-	if (!prediction) {
-		throw new Error("Prediction not found");
-	}
-
-	const selectedOutcome = prediction.outcomes.find(
-		(o) => o.id === input.outcome,
-	);
-	if (!selectedOutcome) {
-		throw new Error("Outcome not found");
-	}
-
-	const futureTotalPool = Number(prediction.pool) + input.amount;
-	const futureOutcomePool = Number(selectedOutcome.pool) + input.amount;
-
-	const totalWinningPool = futureOutcomePool;
-	const totalLosingPool = futureTotalPool - totalWinningPool;
-
-	const share = input.amount / totalWinningPool;
-
-	return share * totalLosingPool;
 }

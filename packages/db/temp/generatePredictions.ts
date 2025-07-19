@@ -59,11 +59,10 @@ await db.primary.transaction(async (tx) => {
 				handle: data.handle,
 				name: data.name,
 				xp: data.xp,
-				points: data.points,
+				prizePool: data.points,
 				event,
 				community,
 				pool: 0,
-				draft: false,
 			})
 			.returning({
 				id: predictions.id,

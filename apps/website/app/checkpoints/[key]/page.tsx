@@ -52,8 +52,10 @@ export default async function Checkpoint(props: {
 				await tx.insert(xp).values({
 					user: user.id,
 					checkin: checkin.id,
+					checkpoint: checkpoint.id,
 					amount: checkpoint.xp,
 					community: nounsgg,
+					for: "CHECKING_IN",
 				});
 
 				const [updatePass] = await tx

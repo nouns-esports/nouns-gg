@@ -23,6 +23,7 @@ await db.primary.transaction(async (tx) => {
 			from: null,
 			to: user,
 			community: nounsgg,
+			for: "GENERAL_ISSUANCE",
 		});
 
 		await tx
