@@ -8,7 +8,7 @@ export default async function Round(props: {
 	const params = await props.params;
 
 	if (isUUID(params.round)) {
-		const round = await getRound({ id: params.round });
+		const round = await getRound({ id: params.round, user: undefined });
 
 		if (!round) {
 			return notFound();
@@ -17,7 +17,7 @@ export default async function Round(props: {
 		return redirect(`/c/${round.community.handle}/rounds/${round.handle}`);
 	}
 
-	const round = await getRound({ handle: params.round });
+	const round = await getRound({ handle: params.round, user: undefined });
 
 	if (!round) {
 		return notFound();
