@@ -34,7 +34,7 @@ export async function GET(request: Request) {
 		return Response.json({ error: "User not found" }, { status: 404 });
 	}
 
-	const round = await getRound({ handle: params.round });
+	const round = await getRound({ handle: params.round, user: undefined });
 
 	if (!round) {
 		return Response.json({ error: "Round not found" }, { status: 404 });
