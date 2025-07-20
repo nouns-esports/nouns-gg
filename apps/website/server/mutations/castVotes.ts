@@ -267,6 +267,12 @@ export const castVotes = onlyUser
 						round: round.id,
 						count: vote.count,
 					})
+					.onConflictDoUpdate({
+						target: [votes.user, votes.proposal, votes.round],
+						set: {
+							count: sql`${votes.count} + ${vote.count}`,
+						},
+					})
 					.returning();
 
 				voteRecords.push(returnedVote);
