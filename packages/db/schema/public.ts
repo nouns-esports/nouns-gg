@@ -568,8 +568,7 @@ export const gold = pgTable(
 				],
 			})
 			.notNull(),
-		order: t.text(), // shopify DraftOrder gid
-		_order: t.uuid(),
+		order: t.uuid(),
 		checkin: t.uuid(),
 		checkpoint: t.uuid(),
 		raffle: t.uuid(),
@@ -696,8 +695,7 @@ export const xp = pgTable("xp", (t) => ({
 	vote: t.uuid(),
 	round: t.uuid(),
 	proposal: t.uuid(),
-	order: t.text(), // TODO: Change to UUID and integrate with orders table
-	_order: t.uuid(),
+	order: t.uuid(),
 	raffle: t.uuid(),
 	raffleEntry: t.uuid(),
 	attendee: t.uuid(),
