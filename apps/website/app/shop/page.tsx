@@ -56,9 +56,14 @@ export default async function Shop(props: {
 	const user = await getAuthenticatedUser();
 
 	const [products, collections, raffles] = await Promise.all([
-		getProducts({ collection: searchParams.collection }),
+		getProducts({
+			collection: searchParams.collection,
+		}),
 		getCollections(),
-		getRaffles({ user: user?.id }),
+		getRaffles({
+			user: user?.id,
+			community: "98e09ea8-4c19-423c-9733-b946b6f70902",
+		}),
 	]);
 
 	const featuredCollection = collections.find(
