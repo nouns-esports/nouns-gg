@@ -1,9 +1,8 @@
 import { embed } from "ai";
-import { openai } from "~/packages/agent/models";
 import { db } from "..";
 import { eq, isNull } from "drizzle-orm";
 import { predictions } from "../schema/public";
-import { tiptapToText } from "~/packages/utils/tiptapToText";
+import { openai } from "@ai-sdk/openai";
 
 const allPredictions = await db.primary.query.predictions.findMany({
 	where: isNull(predictions.embedding),
@@ -35,7 +34,7 @@ for (const prediction of allPredictions) {
 		prediction.community?.handle
 			? `Prediction Community Handle: ${prediction.community.handle}`
 			: null,
-		`Prediction XP Reward: ${prediction.xp}`,
+		`Prediction XP Reward: ${prediction._xp.winning}`,
 		`Prediction Outcomes: ${prediction.outcomes.map((o) => o.name).join(", ")}`,
 	]
 		.filter(Boolean)

@@ -1,8 +1,8 @@
 import { embed } from "ai";
-import { openai } from "~/packages/agent/models";
 import { db } from "..";
 import { eq, isNull } from "drizzle-orm";
 import { raffles } from "../schema/public";
+import { openai } from "@ai-sdk/openai";
 import { tiptapToText } from "~/packages/utils/tiptapToText";
 
 const allRaffles = await db.primary.query.raffles.findMany({

@@ -1,9 +1,9 @@
 import { embed } from "ai";
-import { openai } from "~/packages/agent/models";
-import { db } from "..";
+import { db } from "../";
 import { eq, isNull } from "drizzle-orm";
 import { products } from "../schema/public";
 import { tiptapToText } from "~/packages/utils/tiptapToText";
+import { openai } from "@ai-sdk/openai";
 
 const allProducts = await db.primary.query.products.findMany({
 	where: isNull(products.embedding),

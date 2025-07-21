@@ -1,5 +1,4 @@
 import { embed } from "ai";
-import { openai } from "~/packages/agent/models";
 import { db } from "..";
 import { eq, isNull } from "drizzle-orm";
 import { proposals } from "../schema/public";
@@ -7,6 +6,7 @@ import {
 	lexicalToText,
 	type LexicalNode,
 } from "~/packages/utils/lexicalToText";
+import { openai } from "@ai-sdk/openai";
 
 const allProposals = await db.primary.query.proposals.findMany({
 	where: isNull(proposals.embedding),

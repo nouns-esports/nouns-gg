@@ -1,8 +1,8 @@
 import { embed } from "ai";
-import { openai } from "~/packages/agent/models";
 import { db } from "..";
 import { eq, isNull } from "drizzle-orm";
 import { rounds } from "../schema/public";
+import { openai } from "@ai-sdk/openai";
 import {
 	lexicalToText,
 	type LexicalNode,
