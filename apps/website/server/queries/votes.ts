@@ -1,15 +1,12 @@
 import { rounds, votes } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { and, desc, eq, or } from "drizzle-orm";
-import { unstable_noStore as noStore } from "next/cache";
 
 export async function getPriorVotes(input: {
 	round: string;
 	user: string;
 	wallet?: string;
 }) {
-	noStore();
-
 	const previousVotes = await db.pgpool.query.votes.findMany({
 		where: and(
 			or(
