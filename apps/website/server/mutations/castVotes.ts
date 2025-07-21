@@ -268,7 +268,7 @@ export const castVotes = onlyUser
 						count: vote.count,
 					})
 					.onConflictDoUpdate({
-						target: [votes.user, votes.proposal, votes.round],
+						target: [votes.user, votes.proposal],
 						set: {
 							count: sql`${votes.count} + ${vote.count}`,
 						},
