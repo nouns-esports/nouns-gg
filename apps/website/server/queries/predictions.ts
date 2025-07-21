@@ -2,7 +2,7 @@
 
 import { bets, predictions, outcomes, gold } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { and, desc, eq, sql } from "drizzle-orm";
+import { and, desc, eq, isNull, sql } from "drizzle-orm";
 
 export async function getPrediction(
 	input: { user?: string } & (
@@ -66,6 +66,7 @@ export async function getPredictions(input: {
 			input.event ? eq(predictions.event, input.event) : undefined,
 			input.community ? eq(predictions.community, input.community) : undefined,
 			eq(predictions.active, true),
+			isNull(predictions.deletedAt),
 		),
 		orderBy: [desc(predictions.id)],
 		limit: input.limit,

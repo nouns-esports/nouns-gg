@@ -1,5 +1,5 @@
 import { db } from "~/packages/db";
-import { and, eq, sql } from "drizzle-orm";
+import { and, eq, isNull, sql } from "drizzle-orm";
 import { raffles } from "~/packages/db/schema/public";
 
 export async function getRaffles(input?: {
@@ -17,6 +17,7 @@ export async function getRaffles(input?: {
 				input?.event ? eq(t.event, input.event) : undefined,
 				input?.community ? eq(t.community, input.community) : undefined,
 				eq(t.active, true),
+				isNull(t.deletedAt),
 			),
 		with: {
 			entries: {

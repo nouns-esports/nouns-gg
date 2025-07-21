@@ -1,6 +1,6 @@
 import { events } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
-import { and, desc, eq, gt, or, sql } from "drizzle-orm";
+import { and, desc, eq, gt, isNull, or, sql } from "drizzle-orm";
 
 export async function getEvents(input?: {
 	limit?: number;
@@ -10,6 +10,7 @@ export async function getEvents(input?: {
 		where: and(
 			input?.community ? eq(events.community, input.community) : undefined,
 			eq(events.active, true),
+			isNull(events.deletedAt),
 		),
 		orderBy: [desc(events.featured), desc(events.start)],
 		limit: input?.limit,

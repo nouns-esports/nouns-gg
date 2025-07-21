@@ -14,6 +14,7 @@ export async function getQuests(input: {
 			eq(quests.active, true),
 			input.event ? eq(quests.event, input.event) : undefined,
 			input.community ? eq(quests.community, input.community) : undefined,
+			isNull(quests.deletedAt),
 		),
 		orderBy: [desc(quests.featured), desc(quests.createdAt)],
 		with: {

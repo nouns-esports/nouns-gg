@@ -143,6 +143,7 @@ export async function getRounds(input?: {
 			input?.event ? eq(rounds.event, input.event) : undefined,
 			input?.community ? eq(rounds.community, input.community) : undefined,
 			eq(rounds.active, true),
+			isNull(rounds.deletedAt),
 		),
 		with: {
 			community: true,
