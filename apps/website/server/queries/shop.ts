@@ -1,6 +1,6 @@
 "use server";
 
-import { and, eq } from "drizzle-orm";
+import { and, eq, isNull } from "drizzle-orm";
 import {
 	carts,
 	collections,
@@ -27,6 +27,8 @@ export async function getProducts(input: {
 			input.event ? eq(products.event, input.event) : undefined,
 			!input.event ? eq(products.active, true) : undefined,
 			input.community ? eq(products.community, input.community) : undefined,
+			eq(products.active, true),
+			isNull(products.deletedAt),
 		),
 		with: {
 			variants: true,
