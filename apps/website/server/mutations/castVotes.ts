@@ -30,9 +30,6 @@ export const castVotes = onlyUser
 		const round = await db.primary.query.rounds.findFirst({
 			where: eq(rounds.id, parsedInput.round),
 			with: {
-				votes: {
-					where: eq(votes.user, ctx.user.id),
-				},
 				proposals: {
 					where: eq(proposals.user, ctx.user.id),
 				},
@@ -244,13 +241,27 @@ export const castVotes = onlyUser
 			allocatedVotes += actionState.votes;
 		}
 
-		let votesUsed = round.votes.reduce((votes, vote) => votes + vote.count, 0);
 		let newUserXP = 0;
 		let earnedXP = 0;
 
 		const voteRecords: Array<typeof votes.$inferSelect> = [];
 
 		await db.primary.transaction(async (tx) => {
+			await tx.execute(sql`
+				SELECT pg_advisory_xact_lock(
+				  hashtext(${ctx.user.id}::text),  
+				  hashtext(${round.id}::text) 
+				)
+			`);
+
+			const priorVotes = await tx
+				.select()
+				.from(votes)
+				.where(and(eq(votes.user, ctx.user.id), eq(votes.round, round.id)))
+				.for("update");
+
+			let votesUsed = priorVotes.reduce((n, v) => n + v.count, 0);
+
 			for (const vote of Object.values(ballot)) {
 				if (votesUsed + vote.count > allocatedVotes) {
 					throw new Error("You have used all your votes");
@@ -267,11 +278,12 @@ export const castVotes = onlyUser
 						round: round.id,
 						count: vote.count,
 					})
+
 					.returning();
 
 				voteRecords.push(returnedVote);
 
-				if (round.xp && round.xp.castingVotes > 0 && round.votes.length === 0) {
+				if (round.xp && round.xp.castingVotes > 0 && priorVotes.length === 0) {
 					await tx.insert(xp).values({
 						user: ctx.user.id,
 						amount: round.xp.castingVotes,
@@ -303,7 +315,7 @@ export const castVotes = onlyUser
 			}
 
 			for (const vote of Object.values(ballot)) {
-				const proposerRecievedXP = !!round.votes.find(
+				const proposerRecievedXP = !!priorVotes.find(
 					(v) => v.proposal === vote.proposal.id,
 				);
 
