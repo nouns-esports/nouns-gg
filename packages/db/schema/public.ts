@@ -722,18 +722,14 @@ export const leaderboards = pgTable(
 	],
 );
 
-export const votes = pgTable(
-	"votes",
-	(t) => ({
-		id: t.uuid().primaryKey().defaultRandom(),
-		user: t.uuid().notNull(),
-		proposal: t.uuid().notNull(),
-		round: t.uuid().notNull(),
-		count: t.smallint().notNull(),
-		timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
-	}),
-	(t) => [unique("votes_user_proposal_unique").on(t.user, t.proposal)],
-);
+export const votes = pgTable("votes", (t) => ({
+	id: t.uuid().primaryKey().defaultRandom(),
+	user: t.uuid().notNull(),
+	proposal: t.uuid().notNull(),
+	round: t.uuid().notNull(),
+	count: t.smallint().notNull(),
+	timestamp: t.timestamp({ mode: "date" }).notNull().defaultNow(),
+}));
 
 export const products = pgTable(
 	"products",
