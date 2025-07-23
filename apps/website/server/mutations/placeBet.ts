@@ -84,10 +84,10 @@ export const placeBet = onlyUser
 				})
 				.returning({ id: bets.id });
 
-			if (prediction._xp?.predicting) {
+			if (prediction.xp?.predicting) {
 				await tx.insert(xp).values({
 					user: ctx.user.id,
-					amount: prediction._xp.predicting,
+					amount: prediction.xp.predicting,
 					bet: bet.id,
 					prediction: prediction.id,
 					community: prediction.community,
@@ -98,13 +98,13 @@ export const placeBet = onlyUser
 					.insert(leaderboards)
 					.values({
 						user: ctx.user.id,
-						xp: prediction._xp.predicting,
+						xp: prediction.xp.predicting,
 						community: prediction.community,
 					})
 					.onConflictDoUpdate({
 						target: [leaderboards.user, leaderboards.community],
 						set: {
-							xp: sql`${leaderboards.xp} + ${prediction._xp.predicting}`,
+							xp: sql`${leaderboards.xp} + ${prediction.xp.predicting}`,
 						},
 					})
 					.returning({
@@ -112,7 +112,7 @@ export const placeBet = onlyUser
 					});
 
 				newUserXP = updateNexus.xp;
-				earnedXP = prediction._xp.predicting;
+				earnedXP = prediction.xp.predicting;
 			}
 		});
 

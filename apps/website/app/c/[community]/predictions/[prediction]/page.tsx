@@ -167,7 +167,7 @@ export default async function Prediction(props: {
 						<div className="flex items-center gap-4">
 							<div className="flex items-center gap-2 text-white">
 								Earns <Sparkles className="w-4 h-4 text-green" />
-								{prediction._xp.winning}
+								{prediction.xp.winning}
 							</div>
 							<ToggleModal id="make-prediction">
 								<Button disabled={state !== "open" || !!userBet} size="sm">

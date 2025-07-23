@@ -114,7 +114,7 @@ export default function MakePredictionModal(props: {
 						<div className="flex items-center gap-4">
 							<div className="flex items-center gap-1.5 text-sm text-white">
 								<Sparkles className="w-4 h-4 text-green" />
-								{props.prediction._xp.winning}
+								{props.prediction.xp.winning}
 							</div>
 							{props.prediction.prizePool > 0 ? (
 								<div className="flex justify-center gap-1.5 items-center">

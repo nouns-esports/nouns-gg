@@ -58,7 +58,7 @@ await db.primary.transaction(async (tx) => {
 				image,
 				handle: data.handle,
 				name: data.name,
-				_xp: {
+				xp: {
 					winning: data.xp,
 					predicting: 100,
 				},

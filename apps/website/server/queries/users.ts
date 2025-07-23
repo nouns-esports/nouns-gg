@@ -237,7 +237,7 @@ export async function getUserStats(input: { user: string }) {
 		where: eq(nexus.id, input.user),
 		with: {
 			proposals: true,
-			xpRecords: {
+			xp: {
 				where: isNotNull(xp.quest),
 			},
 			votes: true,
@@ -246,7 +246,7 @@ export async function getUserStats(input: { user: string }) {
 
 	return {
 		proposalsCreated: user?.proposals.length ?? 0,
-		questsCompleted: user?.xpRecords.length ?? 0,
+		questsCompleted: user?.xp.length ?? 0,
 		votesCast: user?.votes.length ?? 0,
 	};
 }

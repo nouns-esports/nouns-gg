@@ -34,7 +34,7 @@ for (const prediction of allPredictions) {
 		prediction.community?.handle
 			? `Prediction Community Handle: ${prediction.community.handle}`
 			: null,
-		`Prediction XP Reward: ${prediction._xp.winning}`,
+		`Prediction XP Reward: ${prediction.xp.winning}`,
 		`Prediction Outcomes: ${prediction.outcomes.map((o) => o.name).join(", ")}`,
 	]
 		.filter(Boolean)

@@ -226,16 +226,20 @@ export const proposalsRelations = relations(proposals, ({ one, many }) => ({
 export const nexusRelations = relations(nexus, ({ one, many }) => ({
 	votes: many(votes),
 	proposals: many(proposals),
-	xpRecords: many(xp),
+	xp: many(xp),
+	gold: many(gold),
 	carts: many(carts),
-	communities: many(communityAdmins),
-	rounds: many(rounds),
-	events: many(events),
-	quests: many(quests),
-	predictions: many(predictions),
 	leaderboards: many(leaderboards),
 	accounts: many(accounts),
 	purchasedVotes: many(purchasedVotes),
+	bets: many(bets),
+	questCompletions: many(questCompletions),
+	orders: many(orders),
+	raffleEntries: many(raffleEntries),
+	checkins: many(checkins),
+	admins: many(communityAdmins),
+	attendees: many(attendees),
+	snapshots: many(snapshots),
 }));
 
 export const accountsRelations = relations(accounts, ({ one }) => ({
@@ -332,6 +336,10 @@ export const questCompletionsRelations = relations(
 		quest: one(quests, {
 			fields: [questCompletions.quest],
 			references: [quests.id],
+		}),
+		user: one(nexus, {
+			fields: [questCompletions.user],
+			references: [nexus.id],
 		}),
 	}),
 );

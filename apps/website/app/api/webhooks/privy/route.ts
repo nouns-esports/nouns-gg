@@ -11,12 +11,12 @@ type AccountType =
 			address: string;
 	  }
 	| {
-			type: "twitter";
+			type: "twitter_oauth";
 			username: string;
 			subject: string;
 	  }
 	| {
-			type: "discord";
+			type: "discord_oauth";
 			username: string;
 			subject: string;
 	  }
@@ -77,7 +77,7 @@ export async function POST(req: NextRequest) {
 			verifiedPayload.type === "user.updated_account" ||
 			verifiedPayload.type === "user.linked_account"
 		) {
-			if (verifiedPayload.account.type === "twitter") {
+			if (verifiedPayload.account.type === "twitter_oauth") {
 				const [nexusUser] = await db.primary
 					.update(nexus)
 					.set({
@@ -92,7 +92,7 @@ export async function POST(req: NextRequest) {
 					user: nexusUser.id,
 				});
 			}
-			if (verifiedPayload.account.type === "discord") {
+			if (verifiedPayload.account.type === "discord_oauth") {
 				const [nexusUser] = await db.primary
 					.update(nexus)
 					.set({
@@ -125,7 +125,7 @@ export async function POST(req: NextRequest) {
 		}
 
 		if (verifiedPayload.type === "user.unlinked_account") {
-			if (verifiedPayload.account.type === "twitter") {
+			if (verifiedPayload.account.type === "twitter_oauth") {
 				await db.primary
 					.update(nexus)
 					.set({
@@ -133,7 +133,7 @@ export async function POST(req: NextRequest) {
 					})
 					.where(eq(nexus.privyId, verifiedPayload.user.id));
 			}
-			if (verifiedPayload.account.type === "discord") {
+			if (verifiedPayload.account.type === "discord_oauth") {
 				await db.primary
 					.update(nexus)
 					.set({

@@ -282,7 +282,7 @@ export const predictions = pgTable(
 		name: t.text().notNull(),
 		image: t.text().notNull(),
 		rules: t.jsonb().$type<TipTap>().notNull(),
-		_xp: t
+		xp: t
 			.jsonb()
 			.$type<{
 				predicting: number;

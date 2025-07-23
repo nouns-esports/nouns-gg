@@ -110,7 +110,7 @@ export const createPrediction = onlyUser
 					image: parsedInput.image,
 					start: parsedInput.start,
 					end: parsedInput.end,
-					_xp: {
+					xp: {
 						winning: parsedInput.xp,
 						predicting: 100,
 					},

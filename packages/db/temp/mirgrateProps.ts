@@ -2,8 +2,11 @@
 // import { db } from ".";
 // import { awards, proposals, rounds, votes } from "./schema/public";
 
+// const oldRoundId = "c6fd484a-67e7-4ccb-97ac-4cbeb2a07405";
+// const newRoundId = "efaecac8-883f-4a57-91c4-4ca47d917895";
+
 // const round = await db.primary.query.rounds.findFirst({
-// 	where: eq(rounds.id, "b9b80bdd-69d6-4172-bc34-85ede97fb038"),
+// 	where: eq(rounds.id, oldRoundId),
 // 	with: {
 // 		awards: {
 // 			orderBy: asc(awards.place),
@@ -12,11 +15,7 @@
 // 			},
 // 		},
 // 		proposals: {
-// 			where: and(
-// 				eq(proposals.hidden, false),
-// 				isNull(proposals.hiddenAt),
-// 				isNull(proposals.deletedAt),
-// 			),
+// 			where: and(isNull(proposals.hiddenAt), isNull(proposals.deletedAt)),
 // 			with: {
 // 				votes: true,
 // 			},
@@ -36,15 +35,6 @@
 // }
 
 // const roundProposals = round.proposals.toSorted((a, b) => {
-// 	// if (state === "Ended") {
-// 	//     if (a.winner != null && b.winner != null) {
-// 	//         return a.winner - b.winner;
-// 	//     }
-
-// 	//     if (a.winner != null) return -1;
-// 	//     if (b.winner != null) return 1;
-// 	// }
-
 // 	const votesDiff = b.totalVotes - a.totalVotes;
 // 	if (votesDiff !== 0) return votesDiff;
 
@@ -60,15 +50,15 @@
 // 	} of roundProposals) {
 // 		count++;
 
-// 		if (count <= 24) {
+// 		if (count <= 8) {
 // 			console.log(proposal.title, totalVotes);
 // 			const [newProposal] = await tx
 // 				.insert(proposals)
 // 				.values({
 // 					...proposal,
 // 					id: undefined,
-// 					round: "c6fd484a-67e7-4ccb-97ac-4cbeb2a07405",
-// 					createdAt: new Date("2025-07-15 15:45:00"),
+// 					round: newRoundId,
+// 					createdAt: new Date("2025-07-23 16:21:00"),
 // 				})
 // 				.returning();
 
@@ -80,8 +70,8 @@
 // 					...vote,
 // 					id: undefined,
 // 					proposal: newProposal.id,
-// 					timestamp: new Date("2025-07-15 15:45:00"),
-// 					round: "c6fd484a-67e7-4ccb-97ac-4cbeb2a07405",
+// 					timestamp: new Date("2025-07-23 16:22:00"),
+// 					round: newRoundId,
 // 				});
 // 			}
 // 		}

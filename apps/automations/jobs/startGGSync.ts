@@ -22,6 +22,7 @@ const targetEvents = {
 	"tipped-off-16": "tipped-off-16-safari",
 	"the-works": "the-works-2025",
 	"quebecup-2025": "quebecup",
+	"fast-falls": "fast-fall-2025",
 };
 
 export const startGGSync = createJob({
