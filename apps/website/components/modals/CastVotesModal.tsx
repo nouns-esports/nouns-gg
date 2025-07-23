@@ -43,6 +43,8 @@ export default function CastVotesModal(props: {
 
 	useEffect(() => reset(), [isOpen]);
 
+	const router = useRouter();
+
 	return (
 		<Modal id="cast-votes" className="p-4 flex flex-col min-w-80 gap-6">
 			{hasSucceeded ? (
@@ -150,6 +152,8 @@ export default function CastVotesModal(props: {
 									total: result?.data?.totalXP ?? 0,
 								});
 							}
+
+							router.refresh();
 
 							props.onVotesCast?.();
 						}}
