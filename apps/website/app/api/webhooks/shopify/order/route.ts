@@ -52,8 +52,8 @@ export async function POST(request: Request) {
 
 		const existingOrder = await tx.query.orders.findFirst({
 			where: and(
-				eq(xp.user, user.id),
-				eq(xp.order, order.admin_graphql_api_id),
+				eq(orders.user, user.id),
+				eq(orders.identifier, order.admin_graphql_api_id),
 			),
 			with: {
 				xp: {
