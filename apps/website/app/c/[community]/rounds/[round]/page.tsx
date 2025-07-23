@@ -409,6 +409,15 @@ export default async function Round(props: {
 		(action) => action.required,
 	);
 
+	let count = 0;
+
+	for (const vote of voteActivity) {
+		count++;
+		if (count > 1) continue;
+
+		console.log("LATEST VOTE", vote.timestamp, new Date());
+	}
+
 	return (
 		<>
 			<div className="flex flex-col w-full items-center">
