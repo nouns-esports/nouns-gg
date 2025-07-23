@@ -2,7 +2,7 @@ import { db } from "~/packages/db";
 import { createAction } from "../createAction";
 import { z } from "zod";
 import { and, desc, eq, sql } from "drizzle-orm";
-import { leaderboards } from "~/packages/db/schema/public";
+import { leaderboards, nexus } from "~/packages/db/schema/public";
 
 export const leaderboardPosition = createAction({
 	name: "Leaderboard Position",
@@ -10,26 +10,27 @@ export const leaderboardPosition = createAction({
 		minPosition: z.number().describe("The minimum position to reach"),
 	}),
 	check: async ({ user, community, input }) => {
-		const pass = await db.pgpool.query.leaderboards.findFirst({
-			where: and(
-				eq(leaderboards.community, community.id),
-				eq(leaderboards.user, user.id),
-			),
-			orderBy: [desc(leaderboards.xp)],
-			extras: {
-				rank: sql<number>`
-            (
-              SELECT COUNT(*) + 1
-              FROM ${leaderboards} AS p2
-              WHERE p2.community = ${leaderboards.community}
-                AND p2.xp > ${leaderboards.xp}
-            )
-          `.as("rank"),
+		const data = await db.pgpool.query.nexus.findFirst({
+			where: eq(nexus.id, user.id),
+			with: {
+				leaderboards: {
+					where: eq(leaderboards.community, community.id),
+					extras: {
+						rank: sql<number>`
+						(
+						  SELECT COUNT(*) + 1
+						  FROM ${leaderboards} AS p2
+						  WHERE p2.community = ${leaderboards.community}
+							AND p2.xp > ${leaderboards.xp}
+						)
+					  `.as("rank"),
+					},
+				},
 			},
 		});
 
-		if (!pass) return false;
+		if (!data?.leaderboards[0]) return false;
 
-		return pass.rank <= input.minPosition;
+		return data.leaderboards[0].rank <= input.minPosition;
 	},
 });
