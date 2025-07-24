@@ -26,6 +26,8 @@ import { purchaseItem } from "./shop/purchaseItem";
 import { leaderboardPosition } from "./xp/leaderboardPosition";
 import { holdERC20 } from "./ethereum/holdERC20";
 import { holdERC1155 } from "./ethereum/holdERC1155";
+import { nounishVoter } from "./nouns/nounishVoter";
+import { gnarsVoter } from "./gnars/gnarsVoter";
 
 const actions: Record<
 	string,
@@ -56,6 +58,10 @@ const actions: Record<
 	},
 	nouns: {
 		nounsVoter,
+		nounishVoter,
+	},
+	gnars: {
+		gnarsVoter,
 	},
 	farcaster: {
 		createPost,
