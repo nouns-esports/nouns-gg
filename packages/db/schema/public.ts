@@ -379,8 +379,25 @@ export const rounds = pgTable(
 			.jsonb()
 			.$type<
 				{ purchaseLimit: number | null } & (
+					| { mode: "fixed"; count: number }
 					| { mode: "nouns"; block: number | null }
 					| { mode: "lilnouns"; block: number | null }
+					| { mode: "gnars"; block: number | null }
+					| {
+							mode: "nounish";
+							nouns: {
+								block: number | null;
+								conversionRate: number;
+							} | null;
+							lilnouns: {
+								block: number | null;
+								conversionRate: number;
+							} | null;
+							gnars: {
+								block: number | null;
+								conversionRate: number;
+							} | null;
+					  }
 					| { mode: "leaderboard" }
 					| {
 							mode: "token-weight";
