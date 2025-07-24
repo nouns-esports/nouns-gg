@@ -285,9 +285,9 @@ export default async function Round(props: {
 					(leaderboard) => leaderboard.community.id === round.community.id,
 				)?.percentile ?? 1;
 
-			if (percentile <= 0.1) allocatedVotes += 10;
-			else if (percentile <= 0.25) allocatedVotes += 5;
-			else if (percentile <= 0.4) allocatedVotes += 3;
+			if (percentile <= 0.02) allocatedVotes += 10;
+			else if (percentile <= 0.05) allocatedVotes += 5;
+			else if (percentile <= 0.25) allocatedVotes += 3;
 			else allocatedVotes += 1;
 		}
 
