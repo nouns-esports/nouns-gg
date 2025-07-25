@@ -295,6 +295,47 @@ export default async function Round(props: {
 			allocatedVotes += round.votingConfig.count;
 		}
 
+		if (round.votingConfig?.mode === "discord-roles") {
+			const account = user.nexus.accounts.find(
+				(account) => account.platform === "discord",
+			);
+
+			if (account) {
+				const serverRoles: Record<string, Record<string, number>> = {};
+
+				for (const role of round.votingConfig.roles) {
+					serverRoles[role.server] = {
+						...(serverRoles[role.server] ?? {}),
+						[role.id]: role.count,
+					};
+				}
+
+				for (const [server, roles] of Object.entries(serverRoles)) {
+					const memberResponse = await fetch(
+						`https://discord.com/api/guilds/${server}/members/${account.identifier}`,
+						{
+							headers: {
+								Authorization: `Bot ${env.DASH_DISCORD_TOKEN}`,
+								"Content-Type": "application/json",
+							},
+						},
+					);
+
+					if (memberResponse.ok) {
+						const data = (await memberResponse.json()) as { roles: string[] };
+
+						for (const role of data.roles) {
+							const requiredRole = roles[role];
+
+							if (requiredRole) {
+								allocatedVotes += requiredRole;
+							}
+						}
+					}
+				}
+			}
+		}
+
 		if (round.votingConfig?.mode === "nouns") {
 			const client = viemClient("mainnet");
 

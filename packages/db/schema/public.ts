@@ -398,6 +398,14 @@ export const rounds = pgTable(
 								conversionRate: number;
 							} | null;
 					  }
+					| {
+							mode: "discord-roles";
+							roles: Array<{
+								id: string;
+								server: string;
+								count: number;
+							}>;
+					  }
 					| { mode: "leaderboard" }
 					| {
 							mode: "token-weight";
