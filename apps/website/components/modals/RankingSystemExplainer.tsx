@@ -86,13 +86,9 @@ export default function RankingSystemExplainer() {
 							),
 							rounds: (
 								<div className="flex flex-col gap-4">
-									<Card title="Voting" xp={50}>
-										Earn 50 XP for each vote you cast in a round. Higher levels
-										are allocated more votes.
-									</Card>
-									<Card title="Recieving Votes" xp={5}>
-										Proposers recieve 5 XP for each vote someone places on their
-										proposal.
+									<Card title="Voting">Earn XP for voting in rounds.</Card>
+									<Card title="Recieving Votes">
+										Proposers earn XP for each vote they recieve.
 									</Card>
 									{/* <Card title="Proposing" xp={300}>
 										Participate in a round by creating a proposal and earn 300
@@ -121,19 +117,19 @@ export default function RankingSystemExplainer() {
 									</Card>
 								</div>
 							),
-							"community-calls": (
-								<div className="flex flex-col gap-4">
-									<Card title="Attending Community Calls" xp={500}>
-										We host a weekly community call each Friday at 2pm CST.
-										Attendees are awarded 500 XP for attending the call.
-									</Card>
-								</div>
-							),
+							// "community-calls": (
+							// 	<div className="flex flex-col gap-4">
+							// 		<Card title="Attending Community Calls">
+							// 			We host a weekly community call each Friday at 2pm CST.
+							// 			Attendees are awarded XP for attending the call.
+							// 		</Card>
+							// 	</div>
+							// ),
 							shop: (
 								<div className="flex flex-col gap-4">
 									<Card title="Purchases">
-										Players who purchase items from the shop earn 10 XP per
-										dollar spent, with a max of 500 XP per order.
+										Players who purchase items from the shop earn XP for every
+										dollar you spend.
 									</Card>
 								</div>
 							),
