@@ -45,12 +45,12 @@ export default function RankingSystemExplainer() {
 							>
 								Farcaster
 							</Tab>
-							<Tab
+							{/* <Tab
 								selected={tab === "community-calls"}
 								onClick={() => setTab("community-calls")}
 							>
 								Discord
-							</Tab>
+							</Tab> */}
 							<Tab selected={tab === "shop"} onClick={() => setTab("shop")}>
 								Shop
 							</Tab>
