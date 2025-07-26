@@ -86,11 +86,19 @@ export async function POST(req: NextRequest) {
 					.where(eq(nexus.privyId, verifiedPayload.user.id))
 					.returning();
 
-				await db.primary.insert(accounts).values({
-					platform: "twitter",
-					identifier: verifiedPayload.account.subject,
-					user: nexusUser.id,
-				});
+				await db.primary
+					.insert(accounts)
+					.values({
+						platform: "twitter",
+						identifier: verifiedPayload.account.subject,
+						user: nexusUser.id,
+					})
+					.onConflictDoUpdate({
+						target: [accounts.platform, accounts.identifier],
+						set: {
+							user: nexusUser.id,
+						},
+					});
 			}
 			if (verifiedPayload.account.type === "discord_oauth") {
 				const [nexusUser] = await db.primary
@@ -101,11 +109,19 @@ export async function POST(req: NextRequest) {
 					.where(eq(nexus.privyId, verifiedPayload.user.id))
 					.returning();
 
-				await db.primary.insert(accounts).values({
-					platform: "discord",
-					identifier: verifiedPayload.account.subject,
-					user: nexusUser.id,
-				});
+				await db.primary
+					.insert(accounts)
+					.values({
+						platform: "discord",
+						identifier: verifiedPayload.account.subject,
+						user: nexusUser.id,
+					})
+					.onConflictDoUpdate({
+						target: [accounts.platform, accounts.identifier],
+						set: {
+							user: nexusUser.id,
+						},
+					});
 			}
 			if (verifiedPayload.account.type === "farcaster") {
 				const [nexusUser] = await db.primary
@@ -116,11 +132,19 @@ export async function POST(req: NextRequest) {
 					.where(eq(nexus.privyId, verifiedPayload.user.id))
 					.returning();
 
-				await db.primary.insert(accounts).values({
-					platform: "farcaster",
-					identifier: verifiedPayload.account.fid.toString(),
-					user: nexusUser.id,
-				});
+				await db.primary
+					.insert(accounts)
+					.values({
+						platform: "farcaster",
+						identifier: verifiedPayload.account.fid.toString(),
+						user: nexusUser.id,
+					})
+					.onConflictDoUpdate({
+						target: [accounts.platform, accounts.identifier],
+						set: {
+							user: nexusUser.id,
+						},
+					});
 			}
 		}
 
