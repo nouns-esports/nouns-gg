@@ -657,9 +657,8 @@ export default async function Round(props: {
 												className="flex items-center gap-2 text-white pr-2"
 											>
 												<Users className="w-4 h-4" />
-												{/* {Number(round.uniqueProposers) +
-													Number(round.uniqueVoters)} */}
-												0
+												{Number(round.uniqueProposers) +
+													Number(round.uniqueVoters)}
 											</div>
 										</div>
 										<div className="flex flex-col gap-3 h-full overflow-y-auto overflow-x-hidden custom-scrollbar">
