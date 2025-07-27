@@ -901,6 +901,7 @@ export const purchasedVotes = pgTable(
 		round: t.uuid().notNull(),
 		user: t.uuid().notNull(),
 		count: t.integer().notNull(),
+		used: t.integer().notNull().default(0),
 		timestamp: t.timestamp().notNull().defaultNow(),
 	}),
 	(t) => [unique("purchased_votes_user_round_unique").on(t.user, t.round)],
