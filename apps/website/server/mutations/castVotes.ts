@@ -12,7 +12,7 @@ import {
 } from "~/packages/db/schema/public";
 import { db } from "~/packages/db";
 import { and, eq, ilike, sql } from "drizzle-orm";
-import { z } from "zod";
+import { nullable, z } from "zod";
 import { onlyUser } from ".";
 import { getAction } from "../actions";
 import { posthogClient } from "../clients/posthog";
@@ -40,9 +40,6 @@ export const castVotes = onlyUser
 						admins: true,
 						plugins: true,
 					},
-				},
-				purchasedVotes: {
-					where: eq(purchasedVotes.user, ctx.user.id),
 				},
 			},
 		});
@@ -92,8 +89,7 @@ export const castVotes = onlyUser
 			};
 		}
 
-		let allocatedVotes =
-			round.purchasedVotes?.reduce((votes, vote) => votes + vote.count, 0) ?? 0;
+		let allocatedVotes = 0;
 
 		if (round.votingConfig?.mode === "leaderboard") {
 			const percentile =
@@ -390,14 +386,41 @@ export const castVotes = onlyUser
 				.where(and(eq(votes.user, ctx.user.id), eq(votes.round, round.id)))
 				.for("update");
 
-			let votesUsed = priorVotes.reduce((n, v) => n + v.count, 0);
+			const votesUsedTotal = priorVotes.reduce((n, v) => n + v.count, 0);
+
+			const boughtVotes = await tx
+				.select()
+				.from(purchasedVotes)
+				.where(
+					and(
+						eq(purchasedVotes.user, ctx.user.id),
+						eq(purchasedVotes.round, round.id),
+					),
+				)
+				.for("update");
+
+			let purchasedRemaining = boughtVotes.reduce(
+				(n, v) => n + v.count - v.used,
+				0,
+			);
+
+			const purchasedUsed = boughtVotes.reduce((n, v) => n + v.used, 0);
+
+			const dynamicUsed = Math.min(
+				votesUsedTotal - purchasedUsed,
+				allocatedVotes,
+			);
+
+			let dynamicRemaining = allocatedVotes - dynamicUsed;
 
 			for (const vote of Object.values(ballot)) {
-				if (votesUsed + vote.count > allocatedVotes) {
+				if (vote.count > dynamicRemaining + purchasedRemaining) {
 					throw new Error("You have used all your votes");
 				}
 
-				votesUsed += vote.count;
+				const useFromDynamic = Math.min(vote.count, dynamicRemaining);
+				dynamicRemaining -= useFromDynamic;
+				let toAllocate = vote.count - useFromDynamic;
 
 				// Insert the vote
 				const [returnedVote] = await tx
@@ -408,8 +431,23 @@ export const castVotes = onlyUser
 						round: round.id,
 						count: vote.count,
 					})
-
 					.returning();
+
+				if (toAllocate > 0) {
+					for (const pv of boughtVotes) {
+						const avail = pv.count - pv.used;
+						if (avail <= 0) continue;
+						const use = Math.min(avail, toAllocate);
+						await tx
+							.update(purchasedVotes)
+							.set({ used: pv.used + use })
+							.where(eq(purchasedVotes.id, pv.id));
+						pv.used += use;
+						purchasedRemaining -= use;
+						toAllocate -= use;
+						if (toAllocate === 0) break;
+					}
+				}
 
 				voteRecords.push(returnedVote);
 

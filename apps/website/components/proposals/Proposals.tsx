@@ -31,6 +31,7 @@ export default function Proposals(props: {
 	};
 	openProposal?: string;
 	allocatedVotes: number;
+	unusedPurchasedVotes: number;
 }) {
 	const [selectedVotes, setSelectedVotes] = useState<Record<string, number>>(
 		{},
@@ -58,11 +59,21 @@ export default function Proposals(props: {
 		return Object.values(selectedVotes).reduce((acc, curr) => acc + curr, 0);
 	}, [selectedVotes]);
 
-	const remainingVotes = useMemo(() => {
+	const allocatedVotes = useMemo(() => {
 		const priorVotes = props.user?.priorVotes ?? 0;
 
-		return props.allocatedVotes - votesSelected - priorVotes;
-	}, [votesSelected, props.allocatedVotes, props.user?.priorVotes]);
+		const dynamicRemaining = Math.max(props.allocatedVotes - priorVotes, 0);
+
+		return dynamicRemaining + props.unusedPurchasedVotes;
+	}, [
+		props.allocatedVotes,
+		props.unusedPurchasedVotes,
+		props.user?.priorVotes,
+	]);
+
+	const remainingVotes = useMemo(() => {
+		return allocatedVotes - votesSelected;
+	}, [votesSelected, allocatedVotes]);
 
 	const userProposals = props.round.proposals.filter(
 		(proposal) => proposal.user?.id === props.user?.id,
@@ -170,7 +181,7 @@ export default function Proposals(props: {
 									);
 								}
 
-								if (!props.user.canVote || props.allocatedVotes === 0) {
+								if (!props.user.canVote || allocatedVotes === 0) {
 									return <Button disabled>Submit Votes</Button>;
 								}
 
@@ -189,8 +200,7 @@ export default function Proposals(props: {
 										disabled={votesSelected < 1}
 										onClick={() => openCastVotesModal()}
 									>
-										Submit Votes - {votesSelected}/
-										{props.allocatedVotes - props.user.priorVotes}
+										Submit Votes - {votesSelected}/{allocatedVotes}
 									</Button>
 								);
 							}
@@ -386,8 +396,7 @@ export default function Proposals(props: {
 													index={index}
 													roundState={state}
 													userCanVote={
-														!!props.user?.nexus &&
-														props.allocatedVotes > props.user.priorVotes
+														!!props.user?.nexus && allocatedVotes > 0
 													}
 												/>
 											) : null}
@@ -434,9 +443,7 @@ export default function Proposals(props: {
 					addVote={addVote}
 					removeVote={removeVote}
 					selectedVotes={selectedVotes}
-					userCanVote={
-						!!props.user?.nexus && props.allocatedVotes > props.user.priorVotes
-					}
+					userCanVote={!!props.user?.nexus && allocatedVotes > 0}
 					isOpen={props.openProposal === proposal.id}
 				/>
 			))}

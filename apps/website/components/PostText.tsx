@@ -79,7 +79,7 @@ export function useCastTextEditor(props?: Parameters<typeof useEditor>[0]) {
 				name: "ChannelExtension",
 				pattern: /(?:^|\s)\/[a-zA-Z-]+/g,
 				href: (value) =>
-					`https://warpcast.com/~/channel/${value.replace("/", "")}`,
+					`https://farcaster.xyz/~/channel/${value.replace("/", "")}`,
 			}),
 			EmoteExtension({
 				pattern: /⌐◨-◨/g,

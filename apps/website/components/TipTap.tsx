@@ -103,7 +103,7 @@ export function textToTipTap(text: string) {
 						marks: [
 							{
 								type: "link",
-								attrs: { href: `https://warpcast.com/${username}` },
+								attrs: { href: `https://farcaster.xyz/${username}` },
 							},
 						],
 					});
@@ -115,7 +115,7 @@ export function textToTipTap(text: string) {
 						marks: [
 							{
 								type: "link",
-								attrs: { href: `https://warpcast.com/~/channel/${channel}` },
+								attrs: { href: `https://farcaster.xyz/~/channel/${channel}` },
 							},
 						],
 					});

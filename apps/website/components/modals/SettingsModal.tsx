@@ -314,12 +314,12 @@ export default function SettingsModal(props: { user: AuthenticatedUser }) {
 								<div className="flex gap-2 justify-between items-center">
 									<div className="flex items-center gap-3">
 										<img
-											alt="Warpcast logo"
-											src="https://ipfs.nouns.gg/ipfs/Qmcqq8J9wXCDTTbVmB8n5xSdGQ3Kna2K6dnTXriNs7MeHc"
+											alt="Farcaster logo"
+											src="https://ipfs.nouns.gg/ipfs/bafkreid7inuwklsstmjefvzzxq33oun4ckiqoqvgsjfec5whdsfxpjjyvu"
 											className="h-10 w-10 rounded-md"
 										/>
 										<div className="flex flex-col">
-											<p className="text-white font-semibold">Warpcast</p>
+											<p className="text-white font-semibold">Farcaster</p>
 											<p
 												className={twMerge(
 													props.user.farcaster ? "text-green" : "text-red",

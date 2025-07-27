@@ -236,8 +236,7 @@ export default async function Round(props: {
 			)
 		: [];
 
-	let allocatedVotes =
-		round.purchasedVotes?.reduce((votes, vote) => votes + vote.count, 0) ?? 0;
+	let allocatedVotes = 0;
 
 	const votingActions = user
 		? await Promise.all(
@@ -810,6 +809,12 @@ export default async function Round(props: {
 							}
 							openProposal={searchParams.p ? searchParams.p : undefined}
 							allocatedVotes={allocatedVotes}
+							unusedPurchasedVotes={
+								round.purchasedVotes?.reduce(
+									(votes, vote) => votes + vote.count - vote.used,
+									0,
+								) ?? 0
+							}
 						/>
 					</div>
 				</div>

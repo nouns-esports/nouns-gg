@@ -38,10 +38,10 @@ export default function ShareVotesModal(props: {
 			<Link
 				newTab
 				// href={`/chat?post=true&embeds[]=${env.NEXT_PUBLIC_DOMAIN}/api/frames/rounds/${props.round}/votes/${user?.id}/`}
-				href={`https://warpcast.com/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/rounds/${props.round}?user=${props.user.id}`}
+				href={`https://farcaster.xyz/~/compose?embeds[]=${env.NEXT_PUBLIC_DOMAIN}/rounds/${props.round}?user=${props.user.id}`}
 				className="flex gap-1 items-center group hover:opacity-80 transition-opacity text-red"
 			>
-				Share this image on Warpcast
+				Share this image on Farcaster
 				<ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
 			</Link>
 			<button

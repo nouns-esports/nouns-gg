@@ -4,7 +4,7 @@
 // import fs from "fs";
 
 // const farcasterData = await db.pgpool.query.casts.findMany({
-// 	where: eq(casts.parentUrl, "https://warpcast.com/~/channel/noundry"),
+// 	where: eq(casts.parentUrl, "https://farcaster.xyz/~/channel/noundry"),
 // 	limit: 10,
 // 	with: {
 // 		reactions: {
