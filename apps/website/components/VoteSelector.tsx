@@ -50,7 +50,7 @@ export default function VoteSelector(props: {
 		>
 			{props.ten ? (
 				<button
-					className="text-grey-200 rounded-lg border-grey-400 border-2 mr-1 p-1 hover:bg-grey-400 hover:text-white transition-colors"
+					className="text-grey-200 bg-grey-600 rounded-lg text-sm mr-1 pt-1 px-2 hover:bg-grey-400 hover:text-white transition-colors"
 					onClick={(e) => {
 						e.preventDefault();
 						e.stopPropagation();
