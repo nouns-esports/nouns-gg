@@ -99,7 +99,7 @@ export const castVotes = onlyUser
 
 			if (percentile <= 0.02) allocatedVotes += 10;
 			else if (percentile <= 0.05) allocatedVotes += 5;
-			else if (percentile <= 0.25) allocatedVotes += 3;
+			else if (percentile <= 0.15) allocatedVotes += 3;
 			else allocatedVotes += 1;
 		}
 
