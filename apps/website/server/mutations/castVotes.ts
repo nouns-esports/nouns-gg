@@ -277,9 +277,9 @@ export const castVotes = onlyUser
 		}
 
 		if (round.votingConfig?.mode === "token-weight") {
-			const client = viemClient("mainnet");
-
 			for (const token of round.votingConfig.tokens) {
+				const client = viemClient(token.chain);
+
 				for (const wallet of ctx.user.wallets) {
 					if (token.type === "erc20") {
 						const balance = await client.readContract({

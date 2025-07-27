@@ -10,6 +10,7 @@ import { sql } from "drizzle-orm";
 import type { JSONContent as TipTap } from "@tiptap/core";
 import type { ActionDescription } from "~/apps/website/server/actions/createAction";
 import * as chains from "viem/chains";
+import type { supportedChains } from "~/apps/website/server/clients/viem";
 
 const platforms = () =>
 	text({
@@ -413,7 +414,7 @@ export const rounds = pgTable(
 								| {
 										type: "erc20";
 										address: string;
-										chain: keyof typeof chains;
+										chain: keyof typeof supportedChains;
 										decimals: number;
 										block: number | null;
 										minBalance: number;
@@ -422,7 +423,7 @@ export const rounds = pgTable(
 								| {
 										type: "erc721";
 										address: string;
-										chain: keyof typeof chains;
+										chain: keyof typeof supportedChains;
 										block: number | null;
 										minBalance: number;
 										conversionRate: number;
@@ -430,7 +431,7 @@ export const rounds = pgTable(
 								| {
 										type: "erc1155";
 										address: string;
-										chain: keyof typeof chains;
+										chain: keyof typeof supportedChains;
 										tokenId: number;
 										block: number | null;
 										minBalance: number;
