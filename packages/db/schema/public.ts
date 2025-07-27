@@ -904,7 +904,10 @@ export const purchasedVotes = pgTable(
 		used: t.integer().notNull().default(0),
 		timestamp: t.timestamp().notNull().defaultNow(),
 	}),
-	(t) => [unique("purchased_votes_user_round_unique").on(t.user, t.round)],
+	(t) => [
+		unique("purchased_votes_user_round_unique").on(t.user, t.round),
+		check("purchased_votes_used_le_count", sql`${t.used} <= ${t.count}`),
+	],
 );
 
 // export const activity = pgTable("activity", (t) => ({
