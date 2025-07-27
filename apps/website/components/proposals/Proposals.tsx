@@ -38,7 +38,7 @@ export default function Proposals(props: {
 	);
 
 	function addVote(proposal: string, count: number) {
-		if (remainingVotes < 1) return;
+		if (remainingVotes - count < 0) return;
 
 		setSelectedVotes((prev) => ({
 			...prev,
@@ -387,6 +387,7 @@ export default function Proposals(props: {
 
 											{state === "Voting" || state === "Ended" ? (
 												<VoteSelector
+													ten={props.round.handle === "cooking-bad"}
 													proposal={proposal.id}
 													votes={proposal.totalVotes}
 													addVote={addVote}

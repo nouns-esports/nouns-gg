@@ -6,6 +6,7 @@ import { CaretUp, CaretDown, ChartBarHorizontal } from "phosphor-react-sc";
 import { twMerge } from "tailwind-merge";
 
 export default function VoteSelector(props: {
+	ten: boolean;
 	proposal: string;
 	votes: number;
 	selectedVotes?: number;
@@ -47,6 +48,18 @@ export default function VoteSelector(props: {
 			animate={{ width: "auto" }}
 			transition={{ type: "spring", stiffness: 300, damping: 30 }}
 		>
+			{props.ten ? (
+				<button
+					className="text-grey-200 rounded-sm text-sm border-grey-400 border-2 mr-2 p-2 hover:bg-grey-400 hover:text-white transition-colors"
+					onClick={(e) => {
+						e.preventDefault();
+						e.stopPropagation();
+						props.addVote(props.proposal, 10);
+					}}
+				>
+					+10
+				</button>
+			) : null}
 			<button
 				onClick={(e) => {
 					e.preventDefault();
