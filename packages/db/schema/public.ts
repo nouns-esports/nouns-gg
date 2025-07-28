@@ -414,7 +414,6 @@ export const rounds = pgTable(
 								| {
 										type: "native";
 										chain: keyof typeof supportedChains;
-										decimals: number;
 										block: number | null;
 										minBalance: number;
 										conversionRate: number;

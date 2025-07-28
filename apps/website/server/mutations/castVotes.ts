@@ -287,7 +287,8 @@ export const castVotes = onlyUser
 							blockNumber: token.block ? BigInt(token.block) : undefined,
 						});
 
-						const balanceWithDecimals = Number(balance) / 10 ** token.decimals;
+						const balanceWithDecimals =
+							Number(balance) / 10 ** client.chain.nativeCurrency.decimals;
 
 						if (balanceWithDecimals < token.minBalance) continue;
 
