@@ -412,6 +412,14 @@ export const rounds = pgTable(
 							mode: "token-weight";
 							tokens: Array<
 								| {
+										type: "native";
+										chain: keyof typeof supportedChains;
+										decimals: number;
+										block: number | null;
+										minBalance: number;
+										conversionRate: number;
+								  }
+								| {
 										type: "erc20";
 										address: string;
 										chain: keyof typeof supportedChains;

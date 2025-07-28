@@ -281,6 +281,21 @@ export const castVotes = onlyUser
 				const client = viemClient(token.chain);
 
 				for (const wallet of ctx.user.wallets) {
+					if (token.type === "native") {
+						const balance = await client.getBalance({
+							address: wallet.address as `0x${string}`,
+							blockNumber: token.block ? BigInt(token.block) : undefined,
+						});
+
+						const balanceWithDecimals = Number(balance) / 10 ** token.decimals;
+
+						if (balanceWithDecimals < token.minBalance) continue;
+
+						allocatedVotes += Math.floor(
+							balanceWithDecimals / token.conversionRate,
+						);
+					}
+
 					if (token.type === "erc20") {
 						const balance = await client.readContract({
 							address: token.address as `0x${string}`,
