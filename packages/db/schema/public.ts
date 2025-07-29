@@ -381,24 +381,6 @@ export const rounds = pgTable(
 			.$type<
 				{ purchaseLimit: number | null } & (
 					| { mode: "fixed"; count: number }
-					| { mode: "nouns"; block: number | null }
-					| { mode: "lilnouns"; block: number | null }
-					| { mode: "gnars"; block: number | null }
-					| {
-							mode: "nounish";
-							nouns: {
-								block: number | null;
-								conversionRate: number;
-							} | null;
-							lilnouns: {
-								block: number | null;
-								conversionRate: number;
-							} | null;
-							gnars: {
-								block: number | null;
-								conversionRate: number;
-							} | null;
-					  }
 					| {
 							mode: "discord-roles";
 							roles: Array<{
@@ -440,6 +422,24 @@ export const rounds = pgTable(
 										address: string;
 										chain: keyof typeof supportedChains;
 										tokenId: number;
+										block: number | null;
+										minBalance: number;
+										conversionRate: number;
+								  }
+								| {
+										type: "nouns";
+										block: number | null;
+										minBalance: number;
+										conversionRate: number;
+								  }
+								| {
+										type: "lilnouns";
+										block: number | null;
+										minBalance: number;
+										conversionRate: number;
+								  }
+								| {
+										type: "gnars";
 										block: number | null;
 										minBalance: number;
 										conversionRate: number;
