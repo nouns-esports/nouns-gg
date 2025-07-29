@@ -425,73 +425,61 @@ export default async function Round(props: {
 					if (token.type === "nouns") {
 						const client = viemClient("mainnet");
 
-						for (const wallet of user.wallets) {
-							const votes = await client.readContract({
-								address: "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03",
-								abi: [
-									parseAbiItem(
-										"function getCurrentVotes(address) view returns (uint96)",
-									),
-								],
-								functionName: "getCurrentVotes",
-								blockNumber: token.block ? BigInt(token.block) : undefined,
-								args: [wallet.address as `0x${string}`],
-							});
+						const votes = await client.readContract({
+							address: "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03",
+							abi: [
+								parseAbiItem(
+									"function getCurrentVotes(address) view returns (uint96)",
+								),
+							],
+							functionName: "getCurrentVotes",
+							blockNumber: token.block ? BigInt(token.block) : undefined,
+							args: [wallet.address as `0x${string}`],
+						});
 
-							if (Number(votes) < token.minBalance) continue;
+						if (Number(votes) < token.minBalance) continue;
 
-							allocatedVotes += Math.floor(
-								Number(votes) / token.conversionRate,
-							);
-						}
+						allocatedVotes += Math.floor(Number(votes) / token.conversionRate);
 					}
 
 					if (token.type === "lilnouns") {
 						const client = viemClient("mainnet");
 
-						for (const wallet of user.wallets) {
-							const votes = await client.readContract({
-								address: "0x4b10701bfd7bfedc47d50562b76b436fbb5bdb3b",
-								abi: [
-									parseAbiItem(
-										"function getCurrentVotes(address) view returns (uint96)",
-									),
-								],
-								functionName: "getCurrentVotes",
-								blockNumber: token.block ? BigInt(token.block) : undefined,
-								args: [wallet.address as `0x${string}`],
-							});
+						const votes = await client.readContract({
+							address: "0x4b10701bfd7bfedc47d50562b76b436fbb5bdb3b",
+							abi: [
+								parseAbiItem(
+									"function getCurrentVotes(address) view returns (uint96)",
+								),
+							],
+							functionName: "getCurrentVotes",
+							blockNumber: token.block ? BigInt(token.block) : undefined,
+							args: [wallet.address as `0x${string}`],
+						});
 
-							if (Number(votes) < token.minBalance) continue;
+						if (Number(votes) < token.minBalance) continue;
 
-							allocatedVotes += Math.floor(
-								Number(votes) / token.conversionRate,
-							);
-						}
+						allocatedVotes += Math.floor(Number(votes) / token.conversionRate);
 					}
 
 					if (token.type === "gnars") {
 						const client = viemClient("mainnet");
 
-						for (const wallet of user.wallets) {
-							const votes = await client.readContract({
-								address: "0x880Fb3Cf5c6Cc2d7DFC13a993E839a9411200C17",
-								abi: [
-									parseAbiItem(
-										"function getVotes(address) view returns (uint256)",
-									),
-								],
-								functionName: "getVotes",
-								blockNumber: token.block ? BigInt(token.block) : undefined,
-								args: [wallet.address as `0x${string}`],
-							});
+						const votes = await client.readContract({
+							address: "0x880Fb3Cf5c6Cc2d7DFC13a993E839a9411200C17",
+							abi: [
+								parseAbiItem(
+									"function getVotes(address) view returns (uint256)",
+								),
+							],
+							functionName: "getVotes",
+							blockNumber: token.block ? BigInt(token.block) : undefined,
+							args: [wallet.address as `0x${string}`],
+						});
 
-							if (Number(votes) < token.minBalance) continue;
+						if (Number(votes) < token.minBalance) continue;
 
-							allocatedVotes += Math.floor(
-								Number(votes) / token.conversionRate,
-							);
-						}
+						allocatedVotes += Math.floor(Number(votes) / token.conversionRate);
 					}
 				}
 			}
