@@ -213,10 +213,9 @@ export async function getAuthenticatedUser() {
 			twitter: privyUser.twitter,
 			farcaster: privyUser.farcaster,
 			wallets:
-				privyUser.linkedAccounts.filter(
-					(account) =>
-						account.type === "wallet" && account.walletClientType !== "privy",
-				) ?? [],
+				privyUser.linkedAccounts
+					.filter((account) => account.type === "wallet")
+					.filter((account) => account.walletClientType !== "privy") ?? [],
 			email: privyUser.email,
 			nexus: userNexus,
 			gold,
