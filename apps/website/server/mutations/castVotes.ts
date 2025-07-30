@@ -320,7 +320,9 @@ export const castVotes = onlyUser
 				throw new Error("Voting prerequisites not met");
 			}
 
-			allocatedVotes += actionState.votes;
+			if (completed) {
+				allocatedVotes += actionState.votes;
+			}
 		}
 
 		let newUserXP = 0;
