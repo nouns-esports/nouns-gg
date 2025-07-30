@@ -25,7 +25,9 @@ export const linkDiscord = createAction({
 						now.getTime() - input.minAge * 30 * 24 * 60 * 60 * 1000,
 					);
 
-					if (creationDate < monthsAgo) return false;
+					if (creationDate < monthsAgo) return true;
+
+					return false;
 				}
 
 				return true;
