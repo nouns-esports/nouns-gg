@@ -9,7 +9,11 @@ export const purchaseItem = createAction({
 	schema: z.object({}),
 	check: async ({ user, community }) => {
 		const order = await db.primary.query.orders.findFirst({
-			where: and(eq(orders.user, user.id), eq(orders.community, community.id)),
+			where: and(
+				eq(orders.draft, false),
+				eq(orders.user, user.id),
+				eq(orders.community, community.id),
+			),
 		});
 
 		return !!order;
