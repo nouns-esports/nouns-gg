@@ -17,6 +17,7 @@
 		"drizzle-kit": "0.31.0",
 		"drizzle-orm": "0.41.0",
 		"pg": "^8.11.3",
-		"posthog-js": "^1.236.7"
+		"posthog-js": "^1.236.7",
+		"superjson": "^1.1.0"
 	}
 }

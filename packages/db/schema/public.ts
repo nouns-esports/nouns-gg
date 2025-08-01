@@ -9,7 +9,6 @@ import {
 import { sql } from "drizzle-orm";
 import type { JSONContent as TipTap } from "@tiptap/core";
 import type { ActionDescription } from "~/apps/website/server/actions/createAction";
-import * as chains from "viem/chains";
 import type { supportedChains } from "~/apps/website/server/clients/viem";
 
 const platforms = () =>
@@ -493,6 +492,28 @@ export const roundActions = pgTable("round_actions", (t) => ({
 	description: t.jsonb().array().$type<ActionDescription>().notNull(),
 	input: t.jsonb().$type<{ [key: string]: any }>().notNull(),
 }));
+
+export const cachedContractReads = pgTable(
+	"cached_contract_reads",
+	(t) => ({
+		id: t.uuid().primaryKey().defaultRandom(),
+		chain: t.text().$type<keyof typeof supportedChains>().notNull(),
+		block: t.bigint({ mode: "number" }).notNull(),
+		address: t.text().notNull(),
+		selector: t.text().notNull(),
+		args: t.text().notNull(),
+		result: t.text().notNull(),
+	}),
+	(t) => [
+		index("cached_contract_reads_chain_block_address_selector_idx").on(
+			t.chain,
+			t.block,
+			t.address,
+			t.selector,
+			t.args,
+		),
+	],
+);
 
 // add user column and update it when they claim the award
 export const awards = pgTable(
