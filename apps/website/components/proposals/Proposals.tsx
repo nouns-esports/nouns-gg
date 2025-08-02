@@ -178,7 +178,7 @@ export default function Proposals(props: {
 								console.log(
 									"CHECK",
 									props.user?.canVote,
-									allocatedVotes,
+									props.allocatedVotes,
 									remainingVotes,
 									votesSelected,
 								);
