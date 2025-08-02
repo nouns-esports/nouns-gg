@@ -175,6 +175,13 @@ export default function Proposals(props: {
 							}
 
 							if (state === "Voting") {
+								console.log(
+									"CHECK",
+									props.user?.canVote,
+									allocatedVotes,
+									remainingVotes,
+									votesSelected,
+								);
 								if (!props.user) {
 									return (
 										<Button onClick={() => openSignInModal()}>Sign In</Button>
