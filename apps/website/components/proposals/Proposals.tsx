@@ -188,7 +188,7 @@ export default function Proposals(props: {
 									);
 								}
 
-								if (!props.user.canVote || allocatedVotes === 0) {
+								if (!props.user.canVote || props.allocatedVotes === 0) {
 									return <Button disabled>Submit Votes</Button>;
 								}
 
