@@ -20,6 +20,6 @@ export function createJob(config: {
 				console.error(`Failed to run job ${config.name}`, e);
 			}
 		},
-		{ timezone: "America/Chicago" },
+		{ timezone: "America/Chicago", runOnInit: false },
 	);
 }
