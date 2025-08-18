@@ -20,7 +20,7 @@ export const gnarsVoter = createAction({
 
 		if (wallets.length === 0) return false;
 
-		const client = viemClient("mainnet");
+		const client = viemClient("base");
 
 		for (const wallet of wallets) {
 			const votes = await client.readContract({

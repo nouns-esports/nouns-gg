@@ -276,7 +276,7 @@ export const castVotes = onlyUser
 					}
 
 					if (token.type === "gnars") {
-						const client = viemClient("mainnet");
+						const client = viemClient("base");
 
 						const votes = await client.readContract({
 							address: "0x880Fb3Cf5c6Cc2d7DFC13a993E839a9411200C17",

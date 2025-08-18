@@ -29,6 +29,7 @@ export const nounishVoter = createAction({
 		if (wallets.length === 0) return false;
 
 		const client = viemClient("mainnet");
+		const baseClient = viemClient("base");
 
 		for (const wallet of wallets) {
 			const nounsVotes = await client.readContract({
@@ -65,7 +66,7 @@ export const nounishVoter = createAction({
 				return true;
 			}
 
-			const gnarsVotes = await client.readContract({
+			const gnarsVotes = await baseClient.readContract({
 				address: "0x880Fb3Cf5c6Cc2d7DFC13a993E839a9411200C17",
 				abi: [
 					parseAbiItem("function getVotes(address) view returns (uint256)"),
