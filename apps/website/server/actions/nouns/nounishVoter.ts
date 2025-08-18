@@ -7,7 +7,15 @@ import { parseAbiItem } from "viem";
 export const nounishVoter = createAction({
 	name: "Nounish Voter",
 	schema: z.object({
-		block: z.number().nullable().describe("The block number to check from"),
+		nouns: z.object({
+			block: z.number().nullable().describe("The block number to check from"),
+		}),
+		lilnouns: z.object({
+			block: z.number().nullable().describe("The block number to check from"),
+		}),
+		gnars: z.object({
+			block: z.number().nullable().describe("The block number to check from"),
+		}),
 	}),
 	check: async ({ user, input }) => {
 		const privyUser = await privyClient.getUserById(user.privyId);
@@ -31,7 +39,7 @@ export const nounishVoter = createAction({
 					),
 				],
 				functionName: "getCurrentVotes",
-				blockNumber: input.block ? BigInt(input.block) : undefined,
+				blockNumber: input.nouns.block ? BigInt(input.nouns.block) : undefined,
 				args: [wallet.address as `0x${string}`],
 			});
 
@@ -47,7 +55,9 @@ export const nounishVoter = createAction({
 					),
 				],
 				functionName: "getCurrentVotes",
-				blockNumber: input.block ? BigInt(input.block) : undefined,
+				blockNumber: input.lilnouns.block
+					? BigInt(input.lilnouns.block)
+					: undefined,
 				args: [wallet.address as `0x${string}`],
 			});
 
@@ -61,7 +71,7 @@ export const nounishVoter = createAction({
 					parseAbiItem("function getVotes(address) view returns (uint256)"),
 				],
 				functionName: "getVotes",
-				blockNumber: input.block ? BigInt(input.block) : undefined,
+				blockNumber: input.gnars.block ? BigInt(input.gnars.block) : undefined,
 				args: [wallet.address as `0x${string}`],
 			});
 
