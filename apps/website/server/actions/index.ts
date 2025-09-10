@@ -28,12 +28,14 @@ import { holdERC20 } from "./ethereum/holdERC20";
 import { holdERC1155 } from "./ethereum/holdERC1155";
 import { nounishVoter } from "./nouns/nounishVoter";
 import { gnarsVoter } from "./gnars/gnarsVoter";
+import { haveAccount } from "./account/haveAccount";
 
 const actions: Record<
 	string,
 	Record<string, ReturnType<typeof createAction<any>>>
 > = {
 	dash: {
+		haveAccount,
 		linkDiscord,
 		linkEmail,
 		linkFarcaster,
