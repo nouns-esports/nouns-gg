@@ -387,7 +387,7 @@ export default function Proposals(props: {
 
 											{state === "Voting" || state === "Ended" ? (
 												<VoteSelector
-													ten={props.round.handle === "nounish-surfboards"}
+													ten={props.round.handle === "art-of-anger"}
 													proposal={proposal.id}
 													votes={proposal.totalVotes}
 													addVote={addVote}
