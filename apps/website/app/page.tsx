@@ -88,13 +88,11 @@ export const metadata = {
 export default async function Home() {
 	const [user, posts, rounds, communities, quests] = await Promise.all([
 		getAuthenticatedUser(),
-		getPosts({ parentUrl: "https://nouns.gg" }),
+		getPosts({ channelId: "nouns-esports" }),
 		getRounds({ limit: 4 }),
 		getCommunities({ featured: true, limit: 4 }),
 		getQuests({ limit: 4 }),
 	]);
-	// const predictions = await getPredictions({ limit: 5 });
-	// const events = await getEvents({ limit: 5 });
 
 	return (
 		<div className="flex flex-col w-full items-center">
