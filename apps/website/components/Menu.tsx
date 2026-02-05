@@ -137,7 +137,7 @@ export default function Menu() {
 							</div>
 						</Link>
 					</li>
-					<li className="text-nowrap">
+					{/* <li className="text-nowrap">
 						<Link href="/shop" className="flex gap-4 items-center">
 							<div className="rounded-md w-10 h-10 flex overflow-hidden bg-gold-500 text-white items-center">
 								<ShoppingBag className="w-full h-full p-2" />
@@ -147,7 +147,7 @@ export default function Menu() {
 								<p className="text-grey-200">Spend your gold</p>
 							</div>
 						</Link>
-					</li>
+					</li> */}
 				</ul>
 
 				<div className="flex items-center gap-4 w-full h-full justify-center">

@@ -146,12 +146,12 @@ export default async function Header() {
 											</Link>
 										</div>
 									</Group>
-									<Link href="/shop" className="max-[900px]:hidden">
+									{/* <Link href="/shop" className="max-[900px]:hidden">
 										<li className="flex gap-2 items-center opacity-100 hover:opacity-80 transition-opacity relative z-[60]">
 											<ShoppingBag className="w-5 h-5" />
 											Shop
 										</li>
-									</Link>
+									</Link> */}
 								</ul>
 							</nav>
 						</div>
