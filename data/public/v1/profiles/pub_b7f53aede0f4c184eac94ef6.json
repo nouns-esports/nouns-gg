@@ -1,0 +1,18 @@
+{
+  "id": "pub_b7f53aede0f4c184eac94ef6",
+  "name": "QUACKERS",
+  "image": "https://pbs.twimg.com/profile_images/1797862243280793600/8KqUpdJR_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "QuackersEsports",
+    "name": "QUACKERS",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1797862243280793600/8KqUpdJR_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8e4d10a50150dc1955beBfc65FcFAF509C7ED5c1",
+      "kind": "external"
+    }
+  ]
+}

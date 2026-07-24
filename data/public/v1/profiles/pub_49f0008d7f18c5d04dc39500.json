@@ -1,0 +1,18 @@
+{
+  "id": "pub_49f0008d7f18c5d04dc39500",
+  "name": "universe reality alternative",
+  "image": "https://pbs.twimg.com/profile_images/1839312800436596737/chrLobMk_normal.jpg",
+  "bio": "ルシ怪 RUSHIKAI",
+  "twitter": {
+    "username": "UrealityA",
+    "name": "universe reality alternative",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1839312800436596737/chrLobMk_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe48FCb142c21a29d6Ebe531Eba336975248Cb662",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_ad785ea728412c3cdbcd3123",
+  "name": "humpty",
+  "image": "https://ipfs.nouns.gg/ipfs/QmVQxCxoTL4JNNHbFMk6VFuqNa9a7h2VUUvBxa2BN83bLw",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x624e05D9A8dEFF331d2685EF3d789B25f9BeC80F",
+      "kind": "external"
+    }
+  ]
+}

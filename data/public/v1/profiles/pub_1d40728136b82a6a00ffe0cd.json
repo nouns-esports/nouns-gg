@@ -1,0 +1,18 @@
+{
+  "id": "pub_1d40728136b82a6a00ffe0cd",
+  "name": "TITAN",
+  "image": "https://pbs.twimg.com/profile_images/1851888015259426816/UnXy1RN8_normal.jpg",
+  "bio": "\nVisual artist ✧✧✧\n\nhttps://linktr.ee/tiitaaaan",
+  "twitter": {
+    "username": "TIITAAAAN",
+    "name": "TITAN",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1851888015259426816/UnXy1RN8_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xAa9dCeC11d221704F91D705148FacC9b6756A35a",
+      "kind": "external"
+    }
+  ]
+}

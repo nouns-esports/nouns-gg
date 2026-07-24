@@ -1,0 +1,14 @@
+{
+  "id": "pub_a83774c83ddbb5560dcf40b9",
+  "name": "cyan",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiffman7uxponpvv2usilacx4sdjdw5sqa7b433j4vqcc42fs7xhoq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1B6019153E86c2fa17EAc816b34d895821E6B337",
+      "kind": "external"
+    }
+  ]
+}

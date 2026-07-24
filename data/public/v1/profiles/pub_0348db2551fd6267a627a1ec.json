@@ -1,0 +1,14 @@
+{
+  "id": "pub_0348db2551fd6267a627a1ec",
+  "name": "cmdn0x40",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihzeypcgi44ihtro6ssixxw5kag4jgbjcobxl2jito3pdj3t2ovpy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd70a3883F0b851c90Cf4662018006CE9aa50FBa2",
+      "kind": "external"
+    }
+  ]
+}

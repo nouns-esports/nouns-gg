@@ -1,0 +1,18 @@
+{
+  "id": "pub_c23019daa57db5e41d68224a",
+  "name": "Woozy",
+  "image": "https://pbs.twimg.com/profile_images/1818717922291757056/NBW9R3cK_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "liluwuzivertttt",
+    "name": "Woozy",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1818717922291757056/NBW9R3cK_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4927A91bd93FcDF2Fa29FA5165f665a9d168Bf07",
+      "kind": "external"
+    }
+  ]
+}

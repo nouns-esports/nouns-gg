@@ -1,0 +1,18 @@
+{
+  "id": "pub_6ee52922f4153010b962b64b",
+  "name": "seijuro.base.eth.ink KGeN 🦭/acc | HUDL | 𝔽rAI",
+  "image": "https://pbs.twimg.com/profile_images/1886514291630657537/tYXBJ5N6_normal.jpg",
+  "bio": "mechanic repairman | oncha↑n summer",
+  "twitter": {
+    "username": "seijurobase",
+    "name": "seijuro.base.eth.ink KGeN 🦭/acc | HUDL | 𝔽rAI",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1886514291630657537/tYXBJ5N6_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x17916fDa367a6Ce7Ed9417a52280Ed901fFef0f6",
+      "kind": "external"
+    }
+  ]
+}

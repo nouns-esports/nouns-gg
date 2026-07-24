@@ -1,0 +1,18 @@
+{
+  "id": "pub_a8a25e04ea64ede9bf23d8c9",
+  "name": "Budster",
+  "image": "https://pbs.twimg.com/profile_images/1026653098486321152/3Auwqao1_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "BudsterStream",
+    "name": "Budster",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1026653098486321152/3Auwqao1_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x861d321862a2B5b88e47da337cEe543F4437F089",
+      "kind": "external"
+    }
+  ]
+}

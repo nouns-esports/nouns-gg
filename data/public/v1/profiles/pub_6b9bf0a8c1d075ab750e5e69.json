@@ -1,0 +1,14 @@
+{
+  "id": "pub_6b9bf0a8c1d075ab750e5e69",
+  "name": "cmdmzl72",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicvuxf2rqfu6x7jad5eizju7wpcqg7nvsqgy5ndqh3kz5vcadxini",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x69155E7cA2E688ccDc247f6c4DDF374b3ae77Bd6",
+      "kind": "external"
+    }
+  ]
+}

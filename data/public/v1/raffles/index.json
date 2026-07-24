@@ -1,0 +1,771 @@
+[
+  {
+    "id": "raffle:nadcl:nadcl-snapfire-mug",
+    "handle": "nadcl-snapfire-mug",
+    "name": "Snapfire Mug",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafkreidmmv2m7gx2rmogi2n4lf5cwu4c5brckngbyhbwhjcqn7nskk4wpy"
+    ],
+    "start": "2025-05-28T22:14:17.907Z",
+    "end": "2025-07-31T10:00:00.000Z",
+    "createdAt": "2025-05-28T22:14:17.907Z",
+    "gold": 100,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": null,
+    "active": true,
+    "totalEntries": 21,
+    "community": {
+      "id": "community:nadcl",
+      "handle": "nadcl",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+      "name": "NADCL",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nadcl:nadcl-season-9",
+    "entries": []
+  },
+  {
+    "id": "raffle:nadcl:ti-battle-pass",
+    "handle": "ti-battle-pass",
+    "name": "TI Battle Pass Lvl 100",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafybeiah6fhquyrgf2ueqopemih3b4x4mjrcwatgny3s7427oabkyvlbq4"
+    ],
+    "start": "2025-05-28T22:14:17.854Z",
+    "end": "2025-08-13T10:00:00.000Z",
+    "createdAt": "2025-05-28T22:14:17.854Z",
+    "gold": 100,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 2,
+    "limit": null,
+    "active": true,
+    "totalEntries": 32,
+    "community": {
+      "id": "community:nadcl",
+      "handle": "nadcl",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+      "name": "NADCL",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nadcl:nadcl-season-9",
+    "entries": []
+  },
+  {
+    "id": "raffle:nouns:nouns-jersey",
+    "handle": "nouns-jersey",
+    "name": "Nouns GG Jersey",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafybeid53vf4o6c5hnjknjcrjg5epjb3mpvynhtxwfjoupi33uev6oq4fy"
+    ],
+    "start": "2025-04-30T00:19:18.770Z",
+    "end": "2025-05-05T05:00:00.000Z",
+    "createdAt": "2025-04-30T00:19:18.770Z",
+    "gold": 300,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": null,
+    "active": true,
+    "totalEntries": 71,
+    "community": {
+      "id": "community:nouns",
+      "handle": "nouns",
+      "image": "https://warpcast.com/~/channel-images/nouns.png",
+      "name": "Nouns",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": false,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns:haus-of-nouns-nyc",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:snapfire-black",
+    "handle": "snapfire-black",
+    "name": "Snapfire Mug (Black)",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafkreidmmv2m7gx2rmogi2n4lf5cwu4c5brckngbyhbwhjcqn7nskk4wpy"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-14T02:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 10,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": 5,
+    "active": true,
+    "totalEntries": 16,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:snapfire-pink",
+    "handle": "snapfire-pink",
+    "name": "Snapfire Mug (Pink)",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafkreigt4ylmsoodtqeh2knnvhtscibw27robgaypjdl4xan5cjbzacjhi"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-14T02:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 10,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": 5,
+    "active": true,
+    "totalEntries": 6,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:ardalan-arsonist",
+    "handle": "ardalan-arsonist",
+    "name": "Ardalan Arsonist",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafkreiaf42taxrpt3yt64ejo2sfeisyqjaqzuqsgiyuwwqnwi35jgdmhaa"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-19T04:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 100,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": null,
+    "active": true,
+    "totalEntries": 7,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:zeus-arcana",
+    "handle": "zeus-arcana",
+    "name": "Zeus Arcana",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafkreib6gk3ps36qte63kmcxihnu27em7ix5gawi3eljcsjrxwrx66kcki"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-19T04:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 100,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": null,
+    "active": true,
+    "totalEntries": 29,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:vile-vessel",
+    "handle": "vile-vessel",
+    "name": "Vile Vessel",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafkreiahs5gzxpeqgrtigmtlq6vzjbnu63ceghogm3huh2htm57nvqgykq"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-19T04:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 100,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": null,
+    "active": true,
+    "totalEntries": 9,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:mechamancer",
+    "handle": "mechamancer",
+    "name": "Mechamancer",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafybeigumhl6rifivvt2mhqmk26js3d4mmyzzoutinrs4rfselgxujcvme"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-19T04:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 100,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": null,
+    "active": true,
+    "totalEntries": 7,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:little-red",
+    "handle": "little-red",
+    "name": "Little Red",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafkreihshtjv5h67obbp67wwcsqs2rcb2dmhmv3azwhb7nxhbudmu536hq"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-19T04:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 100,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": null,
+    "active": true,
+    "totalEntries": 7,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:snapfire-blue",
+    "handle": "snapfire-blue",
+    "name": "Snapfire Mug (Blue)",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafkreid6xtor76tcj6v6zep22megzjfvdgkkllwr37dhrda3stcvtt3vv4"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-14T02:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 10,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": 5,
+    "active": true,
+    "totalEntries": 11,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:snapfire-lightblue",
+    "handle": "snapfire-lightblue",
+    "name": "Snapfire Mug (Light Blue)",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafkreie5aj5e5hsx7cgjwboy26razpxobi4ehocc3dk66flt6mi2by4n5q"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-14T02:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 10,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": 5,
+    "active": true,
+    "totalEntries": 13,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:keep-it-weird-tshirt",
+    "handle": "keep-it-weird-tshirt",
+    "name": "Keep It Weird T-shirt (Ivory, L)",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafkreibbann3swkrzpqiddmgq6stxoeqzam2jt63clk46kopnbon2nqneu"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-14T02:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 10,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": 5,
+    "active": true,
+    "totalEntries": 8,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:bigshot-noggles-red",
+    "handle": "bigshot-noggles-red",
+    "name": "Bigshot Noggles (Red)",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafybeib7zvpto5csrqyjnkabf3vyewlfk7nce3je2u7ylgbzhrxuybokk4"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-14T02:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 10,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": 5,
+    "active": true,
+    "totalEntries": 11,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:rubick-arcana",
+    "handle": "rubick-arcana",
+    "name": "Rubick Arcana",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafybeihzzpxuf74c6m2g67prqkuc7lg6dbwyau6ytk2wg3efvr3o3a4xp4"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-19T04:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 100,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": null,
+    "active": true,
+    "totalEntries": 50,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:chompix:velveteen-vanquisher-persona",
+    "handle": "velveteen-vanquisher-persona",
+    "name": "Velveteen Vanquisher + Persona",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafybeidli7566yblermoukyglfnblbk4bqmehsosabupccico762lnyzga"
+    ],
+    "start": "2025-04-07T05:00:00.000Z",
+    "end": "2025-04-19T04:00:00.000Z",
+    "createdAt": "2025-04-07T05:00:00.000Z",
+    "gold": 100,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": null,
+    "active": true,
+    "totalEntries": 7,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh",
+    "entries": []
+  },
+  {
+    "id": "raffle:nouns-gg:nouns-bowl-controller",
+    "handle": "nouns-bowl-controller",
+    "name": "Nouns Bowl Controller",
+    "description": {
+      "type": "doc",
+      "content": []
+    },
+    "images": [
+      "https://ipfs.nouns.gg/ipfs/bafybeiaf7sfx4yrgyh3slm2by3a4gd7okktmhdizvmxgiasgrzytnq6bmi"
+    ],
+    "start": "2025-03-25T05:00:00.000Z",
+    "end": "2025-04-28T07:00:00.000Z",
+    "createdAt": "2025-03-25T05:00:00.000Z",
+    "gold": 500,
+    "xp": {
+      "winning": 0,
+      "entering": 0
+    },
+    "winners": 1,
+    "limit": null,
+    "active": true,
+    "totalEntries": 84,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl",
+    "entries": []
+  }
+]

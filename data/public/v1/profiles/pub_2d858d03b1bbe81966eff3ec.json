@@ -1,0 +1,14 @@
+{
+  "id": "pub_2d858d03b1bbe81966eff3ec",
+  "name": "Malbek",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifuaqhdt6fuaco7ixwuq2gs3dxmxkavglqwi2tfjsggnb6v5th5jq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7D2e4D645c0Acc5A6Bf596B612caB351864f4090",
+      "kind": "external"
+    }
+  ]
+}

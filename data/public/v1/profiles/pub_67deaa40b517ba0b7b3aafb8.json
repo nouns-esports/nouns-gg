@@ -1,0 +1,18 @@
+{
+  "id": "pub_67deaa40b517ba0b7b3aafb8",
+  "name": "Bless Skateshop",
+  "image": "https://pbs.twimg.com/profile_images/1814084612093616128/Y25PzYln_normal.jpg",
+  "bio": "Bless Skateshop & Web3 ",
+  "twitter": {
+    "username": "DesouzaDel1830",
+    "name": "Bless Skateshop",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1814084612093616128/Y25PzYln_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x356D8Dac5F0da039DcC3e22C8b42FDe00E79F7E6",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_8c05eee4d3b5693ef5b3e410",
+  "name": "Spark",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib7vlwnwnjc3qy4yg4mn6ylk5xtl5pki435pziopkjxr4awxc5huy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x18C5BEC95D7767cA95F7CCa35EF3A5Bdf6f782f8",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xb9D818bA2A7b21843E04EA1623fBA7DE04c76542",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_7db1397cab9c295d9db255fd",
+  "name": "tanaka-san",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidsuzy3fqfum7fkoh65fed777bkf5lg2jgid7lcgsjlwct46e7mhe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xebd49a02B7b6Ea409B1599850163Cf62ECA2aD29",
+      "kind": "external"
+    }
+  ]
+}

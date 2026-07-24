@@ -1,0 +1,14 @@
+{
+  "id": "pub_a0cbeb2be8832879150c0037",
+  "name": "cmanchyy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigpkmh76ainsew3i7f2txzb3hfxhdtyxljcnepe3gybmm446cxhuu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf0247DDfB5E26C62a0f86E1D744f3B3f9B738B99",
+      "kind": "external"
+    }
+  ]
+}

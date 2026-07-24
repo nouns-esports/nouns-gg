@@ -1,0 +1,23 @@
+{
+  "id": "pub_2981d972acf82648f356465a",
+  "name": "Tu Anh Nguyen",
+  "image": "https://pbs.twimg.com/profile_images/1919222785144135680/OxF-_hWm_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "TuAnhNguye85941",
+    "name": "Tu Anh Nguyen",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1919222785144135680/OxF-_hWm_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf73F4a6A67bd4e5006B2C704Ad6AE2bea3149C07",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x4507fd2A1631bAD585BFa8eeb8Fc68B6f4B805dD",
+      "kind": "external"
+    }
+  ]
+}

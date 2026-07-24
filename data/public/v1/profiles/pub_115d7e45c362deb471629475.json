@@ -1,0 +1,14 @@
+{
+  "id": "pub_115d7e45c362deb471629475",
+  "name": "cmaldekf",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihgzcgjasevta5guz7sktooa4mafy3ctdn4fa4ynclqjj2423icfy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x811634cce9A41000935a7A57CC19d14bF330Fd9a",
+      "kind": "external"
+    }
+  ]
+}

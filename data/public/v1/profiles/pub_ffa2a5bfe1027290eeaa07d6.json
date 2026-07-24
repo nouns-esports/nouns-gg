@@ -1,0 +1,14 @@
+{
+  "id": "pub_ffa2a5bfe1027290eeaa07d6",
+  "name": "Cool Beans 🌞",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaumkiat7b22g5abkrwkithebm7flfa4ehvffakkr2pb3st7hxxqa",
+  "bio": "Solarpunk ☀️\n/replacereality \n /flows\n/permacoolture",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7f928751b5abCAed3BEb47d29B88d4afe6AaA3eB",
+      "kind": "external"
+    }
+  ]
+}

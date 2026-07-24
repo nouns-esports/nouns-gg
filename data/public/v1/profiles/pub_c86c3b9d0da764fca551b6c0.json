@@ -1,0 +1,18 @@
+{
+  "id": "pub_c86c3b9d0da764fca551b6c0",
+  "name": "Verror.09",
+  "image": "https://pbs.twimg.com/profile_images/1718695652543299584/v1UDSo1x_normal.jpg",
+  "bio": "Tranquility in a chaotic world",
+  "twitter": {
+    "username": "Verror09",
+    "name": "Verror.09",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1718695652543299584/v1UDSo1x_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd2fb4D81D8DF4bB0D4e2680A6A2CC4bF984DE913",
+      "kind": "external"
+    }
+  ]
+}

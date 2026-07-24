@@ -1,0 +1,62 @@
+{
+  "id": "product:nouns-gg:yoshi-denim-hat",
+  "handle": "yoshi-denim-hat",
+  "name": "Yoshi Denim Hat",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:tipped-off-16",
+  "collectionHandle": "tipped-off-16",
+  "variants": [
+    {
+      "id": "variant:811cb410-f437-465e-ad47-702ac67ddd4c",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeic36e2ltvhw37s2qv4emt5bjd5pzf77apmep4cf25fc5ufvyr3cwe"
+      ],
+      "size": null,
+      "color": {
+        "hex": "#1E1E1E",
+        "name": "Black"
+      },
+      "price": "25.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:345769cf-43b6-4824-99eb-c8bb6bb7d8ae",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeieudwjzo2nyxdwed42yalt2rxqqbl7u6l6adskwseg4ba4vvex5uy"
+      ],
+      "size": null,
+      "color": {
+        "hex": "#587C92",
+        "name": "Blue"
+      },
+      "price": "25.00",
+      "inventory": null
+    }
+  ]
+}

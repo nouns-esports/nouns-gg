@@ -1,0 +1,18 @@
+{
+  "id": "pub_1e5aedaf771a7b05a7984ba4",
+  "name": "Mike Spot",
+  "image": "https://pbs.twimg.com/profile_images/1947592737135464448/8rbt-EVg_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "MikeSpotBTC",
+    "name": "Mike Spot",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947592737135464448/8rbt-EVg_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x57e03D4035eBFE1111A349D10abE88225D7D6de8",
+      "kind": "external"
+    }
+  ]
+}

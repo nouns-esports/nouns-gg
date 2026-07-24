@@ -1,0 +1,18 @@
+{
+  "id": "pub_f751555f831d4f2183af244c",
+  "name": "Swoggles",
+  "image": "https://pbs.twimg.com/profile_images/1683847525768331266/6fOViGQh_normal.jpg",
+  "bio": "swogging ",
+  "twitter": {
+    "username": "Swoggles802",
+    "name": "Swoggles",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1683847525768331266/6fOViGQh_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf65f0305AFB396ea268DA45891ac2954744e4D2D",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_f4f79d2496c7bf8b3b55764e",
+  "name": "Alex Martin 💢",
+  "image": "https://pbs.twimg.com/profile_images/1962667328627499009/WfKqZFYo_normal.jpg",
+  "bio": "Know Thyself",
+  "twitter": {
+    "username": "alexmartinbtc",
+    "name": "Alex Martin 💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1962667328627499009/WfKqZFYo_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8d8D97A3058771ae563e86B68A08a37C0C00e285",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pub_3f015b3316ab0e76b660d67d",
+  "name": "Orion 🦝🪐",
+  "image": "https://pbs.twimg.com/profile_images/1872278047111462912/XVvxijVb_normal.jpg",
+  "bio": "Many giant hunters in a farm",
+  "twitter": {
+    "username": "OrionMagnusX",
+    "name": "Orion 🦝🪐",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1872278047111462912/XVvxijVb_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0F65f0f9653C93C7Aaa7851749A6370EF5b620c7",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xcFE58E22A172fC86ec1e75a73f5cF6A18f924FD8",
+      "kind": "external"
+    }
+  ]
+}

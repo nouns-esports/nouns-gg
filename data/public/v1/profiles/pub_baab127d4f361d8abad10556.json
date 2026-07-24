@@ -1,0 +1,14 @@
+{
+  "id": "pub_baab127d4f361d8abad10556",
+  "name": "Joy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieiac7rb6f2alpqn2akow5nyepqwiok2xd65ujyhx2nixq6xpzpt4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5CA48bcFbd948db80223E20c9593f03BF7a816Ee",
+      "kind": "external"
+    }
+  ]
+}

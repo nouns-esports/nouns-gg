@@ -1,0 +1,14 @@
+{
+  "id": "pub_3d3e55050991277817fd9320",
+  "name": "kregen",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=sgo1qh&background=1",
+  "bio": "3d generalist | Filmmaker ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD2F751Feb85a19D1E5F66f2C5DB2B5a1e558CfdC",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_e7d2346a4fc5d4a33649bf34",
+  "name": "max (COME TO start.gg/letg)",
+  "image": "https://pbs.twimg.com/profile_images/1815474323768930304/yMztFgLf_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ssbmmax",
+    "name": "max (COME TO start.gg/letg)",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1815474323768930304/yMztFgLf_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2f16B37C4b2F9A4637550A24CFd8225D7a0Aefce",
+      "kind": "external"
+    }
+  ]
+}

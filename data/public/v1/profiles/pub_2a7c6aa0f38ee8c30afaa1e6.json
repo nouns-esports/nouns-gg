@@ -1,0 +1,18 @@
+{
+  "id": "pub_2a7c6aa0f38ee8c30afaa1e6",
+  "name": "Nounci",
+  "image": "https://pbs.twimg.com/profile_images/1946951551773196288/qmEjIoVh_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "nouncii",
+    "name": "Nounci",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1946951551773196288/qmEjIoVh_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3B6a7fDeABd4405991bfb1c80E61e1056da20c9a",
+      "kind": "external"
+    }
+  ]
+}

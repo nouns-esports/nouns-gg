@@ -1,0 +1,45 @@
+{
+  "id": "round:nouns-gg:japan-round-final",
+  "handle": "japan-round-final",
+  "name": "Participate at the Nounsvitational in Tokyo! - Final Round",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeihvkr2t54oinljrpgbondrrv4o6z4kqep5rtionpxiz74pb2aweh4",
+  "active": true,
+  "type": "markdown",
+  "featured": true,
+  "xp": {
+    "winning": 0,
+    "castingVotes": 250,
+    "receivingVotes": 5,
+    "creatingProposal": 500
+  },
+  "content": "{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Nouns Esports will provide full travel and accommodation to two round winners wishing to participate in our very own Nounsvitational taking place this December 1-8th in Tokyo, Japan! \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"In order to be eligible submit a proposal explaining why you'd be an excellent addition to this competition. Tell us about yourself, your previous results, and why our community should choose you.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"The top 2 proposals will advance directly to the Nounsvitational in Tokyo. 3rd and 4th will be given flights, accommodations, and entry to Fast Fall$ where the final 2 Nounsvitational slots will be decided.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1,\"textStyle\":\"font-size: 16px;\"}",
+  "description": null,
+  "createdAt": "2025-07-23T21:20:40.000Z",
+  "start": "2025-07-23T21:20:41.899Z",
+  "votingStart": "2025-07-23T21:20:41.899Z",
+  "end": "2025-07-30T23:00:00.000Z",
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:nounsvitational"
+}

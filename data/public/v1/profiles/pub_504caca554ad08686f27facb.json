@@ -1,0 +1,18 @@
+{
+  "id": "pub_504caca554ad08686f27facb",
+  "name": "jess dang3r 🔜 filler fest 🔜 home",
+  "image": "https://pbs.twimg.com/profile_images/1927582567563153408/et6A0Jcy_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "jessdang3r",
+    "name": "jess dang3r 🔜 filler fest 🔜 home",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1927582567563153408/et6A0Jcy_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC8072ee5521A382164Ff74857a32c3CACaE8F69a",
+      "kind": "external"
+    }
+  ]
+}

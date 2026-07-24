@@ -1,0 +1,23 @@
+{
+  "id": "pub_2574a31c0027f65c7ca588ac",
+  "name": "killstreak.exe",
+  "image": "https://pbs.twimg.com/profile_images/1923318233433804800/SA3gfdT4_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "killstreak0z",
+    "name": "killstreak.exe",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923318233433804800/SA3gfdT4_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x757b0840b41655efDe952B619bF8e48B819DDCe9",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x8C5b61A13797cb1De45f9Ec3054D6C466796adD8",
+      "kind": "external"
+    }
+  ]
+}

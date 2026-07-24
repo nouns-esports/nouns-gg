@@ -1,0 +1,18 @@
+{
+  "id": "pub_b850ce341e59f01a782fe3b0",
+  "name": "MiMi ❤️ Tabi 💢",
+  "image": "https://pbs.twimg.com/profile_images/1873368680178089984/ceHRUSjY_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "_not_MiMi",
+    "name": "MiMi ❤️ Tabi 💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1873368680178089984/ceHRUSjY_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf23A449d74005c499E35BfbAbbf8730cBfa239E7",
+      "kind": "external"
+    }
+  ]
+}

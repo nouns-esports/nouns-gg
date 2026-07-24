@@ -1,0 +1,18 @@
+{
+  "id": "pub_a1a4a2a1553288ed379e3ab2",
+  "name": "Maceo",
+  "image": "https://pbs.twimg.com/profile_images/1648452902665736193/OQJ664Dt_normal.png",
+  "bio": "Founder and Executive Director at We Them Media",
+  "twitter": {
+    "username": "maceo_whatley",
+    "name": "Maceo",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1648452902665736193/OQJ664Dt_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xF143db60A0B1cBb8076B786Eb6635b93f18db744",
+      "kind": "external"
+    }
+  ]
+}

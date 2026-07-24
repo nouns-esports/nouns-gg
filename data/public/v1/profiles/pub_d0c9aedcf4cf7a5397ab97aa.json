@@ -1,0 +1,19 @@
+{
+  "id": "pub_d0c9aedcf4cf7a5397ab97aa",
+  "name": "Flux Fang",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibfkqgzozknzudn3okgsfw7balrjwfwgjt2o4yjnblwsxqcx4d4m4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2c0329E8DAb35BA7D9d89a23D9Fe05c91e4e81d3",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x38868289FA93Fa923E7722807503bEd831b78Ad4",
+      "kind": "external"
+    }
+  ]
+}

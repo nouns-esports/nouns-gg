@@ -1,0 +1,18 @@
+{
+  "id": "pub_6867a9c416290ecbb1a4ead9",
+  "name": "Knucklehead",
+  "image": "https://pbs.twimg.com/profile_images/1800675258397081600/0m1xKWEA_normal.jpg",
+  "bio": "I love to have fun",
+  "twitter": {
+    "username": "knklhed",
+    "name": "Knucklehead",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1800675258397081600/0m1xKWEA_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5E640dbd0d46330829aE9ff900948356E17773ea",
+      "kind": "external"
+    }
+  ]
+}

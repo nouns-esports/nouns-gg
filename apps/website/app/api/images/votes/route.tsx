@@ -1,11 +1,9 @@
 import { getUser } from "@/server/queries/users";
 import { getVotes } from "@/server/queries/votes";
 import { ImageResponse } from "next/og";
-import fs from "fs";
-import path, { join } from "path";
 import { getRound } from "@/server/queries/rounds";
-import sharp from "sharp";
 import { isUUID } from "@/utils/isUUID";
+import { loadImageFonts } from "../fonts";
 
 export async function GET(request: Request) {
 	const url = new URL(request.url);
@@ -59,18 +57,8 @@ export async function GET(request: Request) {
 		}, {}),
 	);
 
-	const userImage = await fetch(user.image);
-
-	let imageUrl = user.image;
-
-	const isSVG = userImage.headers.get("content-type")?.includes("svg");
-
-	if (isSVG) {
-		const pngBuf = await sharp(Buffer.from(await userImage.text()))
-			.png()
-			.toBuffer();
-		imageUrl = `data:image/png;base64,${pngBuf.toString("base64")}`;
-	}
+	const imageUrl = user.image;
+	const fonts = loadImageFonts();
 
 	return new ImageResponse(
 		<div
@@ -223,40 +211,7 @@ export async function GET(request: Request) {
 		{
 			width: 1200,
 			height: 800,
-			fonts: [
-				{
-					name: "Cabin",
-					data: fs.readFileSync(
-						join(process.cwd(), "./public/fonts/Cabin-Regular.ttf"),
-					),
-					weight: 400,
-					style: "normal",
-				},
-				{
-					name: "Luckiest Guy",
-					data: fs.readFileSync(
-						join(process.cwd(), "./public/fonts/LuckiestGuy-Regular.ttf"),
-					),
-					weight: 400,
-					style: "normal",
-				},
-				{
-					name: "Bebas Neue",
-					data: fs.readFileSync(
-						join(process.cwd(), "./public/fonts/BebasNeue-Regular.ttf"),
-					),
-					weight: 400,
-					style: "normal",
-				},
-				{
-					name: "Londrina Solid",
-					data: fs.readFileSync(
-						join(process.cwd(), "./public/fonts/LondrinaSolid-Regular.ttf"),
-					),
-					weight: 400,
-					style: "normal",
-				},
-			],
+			fonts,
 		},
 	);
 }

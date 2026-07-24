@@ -1,0 +1,14 @@
+{
+  "id": "pub_3d10f3ce2c239ea23dac21e9",
+  "name": "heathcliffin",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=n1xk1&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5835BA94aa232D8298D56F031D61387a56fb1560",
+      "kind": "external"
+    }
+  ]
+}

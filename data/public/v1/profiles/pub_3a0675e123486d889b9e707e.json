@@ -1,0 +1,14 @@
+{
+  "id": "pub_3a0675e123486d889b9e707e",
+  "name": "santiagogr78.eth",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib2xapvkb55g7x4kdypfobkb7dywujvwoflgxz4lee34lwuo5gsnm",
+  "bio": "Hincha de River, apasionado x el mundo blockchain/cripto/descentralización y la tecnología IoT. Fanático de la 🏊 y el 🍷\nIntegrante de la Crypto Gira",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1Fe5844315ba92E86eB64c8317CDB2f11C8FE544",
+      "kind": "external"
+    }
+  ]
+}

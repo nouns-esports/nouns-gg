@@ -1,0 +1,18 @@
+{
+  "id": "pub_095f23063ece4a286c952fa7",
+  "name": "Honeyb ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1939428721850462208/oBk_P0GF_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Honeyb_eth",
+    "name": "Honeyb ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1939428721850462208/oBk_P0GF_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9A57ea4b1E64CC64B26E51291441ca1d9EEc045a",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_5536650d7b92b1b9b294a884",
+  "name": "Major Shade",
+  "image": "https://pbs.twimg.com/profile_images/683662985496256512/01H3zUSx_normal.jpg",
+  "bio": "editor moment",
+  "twitter": {
+    "username": "Major_Shade",
+    "name": "Major Shade",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/683662985496256512/01H3zUSx_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x891f87Bf66387F56bE9bbAE6988468B9CCab5D7C",
+      "kind": "external"
+    }
+  ]
+}

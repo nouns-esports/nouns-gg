@@ -1,0 +1,18 @@
+{
+  "id": "pub_47f09138b61326b367a05167",
+  "name": "Kristina See",
+  "image": "https://pbs.twimg.com/profile_images/1947568962574647296/fpCfR2Kl_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "SeeKristinArt",
+    "name": "Kristina See",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947568962574647296/fpCfR2Kl_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xbe036CdFbBB3D31C834043C54DcB7c5ba2fB5A10",
+      "kind": "external"
+    }
+  ]
+}

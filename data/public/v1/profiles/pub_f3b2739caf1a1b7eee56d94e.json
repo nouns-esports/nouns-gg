@@ -1,0 +1,14 @@
+{
+  "id": "pub_f3b2739caf1a1b7eee56d94e",
+  "name": "Dani B ",
+  "image": "https://ipfs.nouns.gg/ipfs/Qmah9p8S9TQ2oh6qfA7HiQfCV3heb67XeW6UMd6cb16VbJ",
+  "bio": "Human Being - Creative Producer - Founder of FilmKilo",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa98faB866D5133B860dA62FeF901d63851eBf68B",
+      "kind": "external"
+    }
+  ]
+}

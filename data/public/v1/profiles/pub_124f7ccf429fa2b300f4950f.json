@@ -1,0 +1,14 @@
+{
+  "id": "pub_124f7ccf429fa2b300f4950f",
+  "name": "clxp8tbr",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidikyho62qn5kj64jsy542yb4xjbx5kf6aouhaybo6oi7wogun7m4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x90BF710d9aBA7e0F9F073C1421444D7E603f3464",
+      "kind": "external"
+    }
+  ]
+}

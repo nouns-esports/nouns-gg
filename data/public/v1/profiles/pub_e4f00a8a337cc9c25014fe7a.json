@@ -1,0 +1,14 @@
+{
+  "id": "pub_e4f00a8a337cc9c25014fe7a",
+  "name": "arcadeguy",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=0xv76&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE9fE514124999cBda2db245A40CC1C160240E64B",
+      "kind": "external"
+    }
+  ]
+}

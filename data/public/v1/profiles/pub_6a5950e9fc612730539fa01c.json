@@ -1,0 +1,18 @@
+{
+  "id": "pub_6a5950e9fc612730539fa01c",
+  "name": "fΞllΞnz",
+  "image": "https://pbs.twimg.com/profile_images/1923447871338315777/Ib29EZ_H_normal.jpg",
+  "bio": "Let's get the Shot and Mint it!\n\nI am a Rock Guitarist, Soundtrack Composer, Head of Product for RightStudio, Founder of NFTMusicHall.io (on Hyperfy) and a very involved community member in multiple communities!",
+  "twitter": {
+    "username": "FellenzMusic",
+    "name": "fΞllΞnz",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923447871338315777/Ib29EZ_H_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x82Cb2305388C853eCfe9eA83a1604Acf58466659",
+      "kind": "external"
+    }
+  ]
+}

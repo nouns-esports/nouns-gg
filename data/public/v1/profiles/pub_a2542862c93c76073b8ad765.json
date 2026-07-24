@@ -1,0 +1,14 @@
+{
+  "id": "pub_a2542862c93c76073b8ad765",
+  "name": "pop",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiant7xxto7gov3uwm7lsztozs56asxua5gofbamhkccc73qt6diyu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x274ee610fC2B3d43b5E61ef1309E011c9d518B48",
+      "kind": "external"
+    }
+  ]
+}

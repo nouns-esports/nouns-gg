@@ -1,0 +1,14 @@
+{
+  "id": "pub_9994ba5090b0e0903eee9ca3",
+  "name": "cmdns2f2",
+  "image": "https://ipfs.nouns.gg/ipfs/QmRoSNevVdX3Y5KqW5HJyZzcgH8V4yJMAciz9PV3v1F7MJ",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7170016C8fbAe275904045873C988000CD0A4638",
+      "kind": "external"
+    }
+  ]
+}

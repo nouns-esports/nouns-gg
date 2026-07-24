@@ -1,0 +1,18 @@
+{
+  "id": "pub_f90f0062d8e0906464eaf3fb",
+  "name": "SeongSuKim 🍄",
+  "image": "https://pbs.twimg.com/profile_images/1945809349357502466/ZBoccy_1_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "kss4319",
+    "name": "SeongSuKim 🍄",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1945809349357502466/ZBoccy_1_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x42D7c7ac04A4924f7E4f24776d99345298276545",
+      "kind": "external"
+    }
+  ]
+}

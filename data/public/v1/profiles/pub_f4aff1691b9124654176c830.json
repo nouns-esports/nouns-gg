@@ -1,0 +1,18 @@
+{
+  "id": "pub_f4aff1691b9124654176c830",
+  "name": "LSKChan ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1445462985770627087/ksbSbq0x_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "LSKChan",
+    "name": "LSKChan ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1445462985770627087/ksbSbq0x_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf10dDc2268Dd0441938F45724137A3595D077643",
+      "kind": "external"
+    }
+  ]
+}

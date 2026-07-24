@@ -1,0 +1,19 @@
+{
+  "id": "pub_27af124167ab22c70f17516d",
+  "name": "DandyDoodle",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreif66idgdfwesz2qpwtkva2f5be6spmqoqoupmvfsmktfkgltuatea",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf2D9696A22Ce98651e07050135E06d405A87823a",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xF6aaC23246D5494b180606444da0309e269eD454",
+      "kind": "external"
+    }
+  ]
+}

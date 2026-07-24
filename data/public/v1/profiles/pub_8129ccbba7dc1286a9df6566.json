@@ -1,0 +1,18 @@
+{
+  "id": "pub_8129ccbba7dc1286a9df6566",
+  "name": "XTincT",
+  "image": "https://pbs.twimg.com/profile_images/1953667507161903105/O2LL1q7-_normal.jpg",
+  "bio": "Melodically screaming into the void \n\nRecording Artist and internationally exhibited artist -- https://bento.me/XTincT",
+  "twitter": {
+    "username": "XTincT_io",
+    "name": "XTincT",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1953667507161903105/O2LL1q7-_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x381CC779761212344f8400373a994d29E17522c6",
+      "kind": "external"
+    }
+  ]
+}

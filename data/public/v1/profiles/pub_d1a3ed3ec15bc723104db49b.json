@@ -1,0 +1,14 @@
+{
+  "id": "pub_d1a3ed3ec15bc723104db49b",
+  "name": "s0urlem",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreia4gi4773cyescs2s35t5wee37ztuksouo6246ctmntd3a7thi5bu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x515c39ECBbE88c19C8cCf21cFf73C69E19E62A5c",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "product:nouns-gg:nounsvitational-vip-hotel",
+  "handle": "nounsvitational-vip-hotel",
+  "name": "Nounsvitational Tokyo 2025 VIP + Hotel Experience Pass",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": false,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:nounsvitational",
+  "collectionHandle": "nounsvitational",
+  "variants": [
+    {
+      "id": "variant:92729c58-072e-4dd4-82b5-7ca0bc5043a5",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiggl5bs6wqs3jhpjduh6l42u2asw524myirmx2ujkx3o3hvitc7ea"
+      ],
+      "size": null,
+      "color": null,
+      "price": "2000.00",
+      "inventory": null
+    }
+  ]
+}

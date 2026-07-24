@@ -1,0 +1,14 @@
+{
+  "id": "pub_1961ccd0327f5a9fbaf6d273",
+  "name": "cmdtkgy8",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreig32fcarjdif4krgprzdcdrwtrgtewfb26i245uopp4eeupo57kai",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xDaFc58EEe91BD6E6A56Ed67dFF163fa8921Eb182",
+      "kind": "external"
+    }
+  ]
+}

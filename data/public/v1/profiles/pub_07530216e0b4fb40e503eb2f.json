@@ -1,0 +1,18 @@
+{
+  "id": "pub_07530216e0b4fb40e503eb2f",
+  "name": "hombredinero",
+  "image": "https://pbs.twimg.com/profile_images/1859577209280679936/oyKlnqRL_normal.jpg",
+  "bio": "Mantle maven",
+  "twitter": {
+    "username": "hombredinero7",
+    "name": "hombredinero",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1859577209280679936/oyKlnqRL_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4Eea8F5BE5efE13b00904c8162F68009A0D15330",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_f6c09295cc81af4e809357d4",
+  "name": "BURNAGAINSTI",
+  "image": "https://ipfs.nouns.gg/ipfs/QmbcoQpWb9ph8jqMSDHwfCv7KYaYJ93PHxwpqQVtHKmcEQ",
+  "bio": "building ideas  and moving with them",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x41Bc0332b4f83a25fde673cc168DF7D4e177aD73",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_76a74737949b62143ebd394a",
+  "name": "Snug Squirrel",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieejtig6xp4dk5eowkrzeeqya7zcyc7y2bsrzr7apowucdo2dtizu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xDEdd59186234B09748C93061E0ED2c0Acdc31140",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xFc5C0E2A8d706d80EEaC389cb282e194892D62b6",
+      "kind": "external"
+    }
+  ]
+}

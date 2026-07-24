@@ -1,0 +1,18 @@
+{
+  "id": "pub_2f89361ff53eb84a1dbf15b3",
+  "name": "iphone",
+  "image": "https://pbs.twimg.com/profile_images/1877101642258001920/5nDauUQm_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "iphone194629174",
+    "name": "iphone",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1877101642258001920/5nDauUQm_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x71E89ED2EBD08f4B93f019eC2909cD266C9ab255",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_4cf9d3a67317bd17f2629652",
+  "name": "Web3 Dude",
+  "image": "https://pbs.twimg.com/profile_images/1947407284860043264/hjjHQH9k_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "DudeFromWeb3",
+    "name": "Web3 Dude",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947407284860043264/hjjHQH9k_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8FB453C12901Dc1dCa036bEc5788cE0f05C4B748",
+      "kind": "external"
+    }
+  ]
+}

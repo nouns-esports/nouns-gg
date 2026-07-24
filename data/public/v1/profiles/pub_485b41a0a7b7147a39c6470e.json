@@ -1,0 +1,18 @@
+{
+  "id": "pub_485b41a0a7b7147a39c6470e",
+  "name": "Sara Spencer",
+  "image": "https://pbs.twimg.com/profile_images/1948390287505584128/XPOEr5lm_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "SaraSpencerArt",
+    "name": "Sara Spencer",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948390287505584128/XPOEr5lm_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE78a0248Ba78106cdFB8AA2183871E872C908437",
+      "kind": "external"
+    }
+  ]
+}

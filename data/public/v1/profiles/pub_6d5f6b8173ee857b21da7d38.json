@@ -1,0 +1,19 @@
+{
+  "id": "pub_6d5f6b8173ee857b21da7d38",
+  "name": "Juke box",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifzsgfngbp3qqehkzqmtguylesjqcgisao7v4vpcsnkoxmj5xr4qy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5b6e30c149f4cb7C966480b66371C996e2840Dd2",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x19711E6F40a98eb919579E8AC9090F884487e44e",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_74565077f224d9c802be1a4b",
+  "name": "Gamixx ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1948057335395733504/7Jw_6x3v_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Gamixxh",
+    "name": "Gamixx ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948057335395733504/7Jw_6x3v_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC4DB7D07b490a5bb5D06d5bEc892Dc411C8839e7",
+      "kind": "external"
+    }
+  ]
+}

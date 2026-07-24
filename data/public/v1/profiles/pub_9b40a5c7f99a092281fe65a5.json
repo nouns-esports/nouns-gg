@@ -1,0 +1,18 @@
+{
+  "id": "pub_9b40a5c7f99a092281fe65a5",
+  "name": "WHALE 💎🐋",
+  "image": "https://pbs.twimg.com/profile_images/1948366535988289536/35atpdvo_normal.jpg",
+  "bio": "Web3 content creator and architect ",
+  "twitter": {
+    "username": "Innfinity20",
+    "name": "WHALE 💎🐋",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948366535988289536/35atpdvo_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5F06c920B31Beb61aaC99ef0f61Ec75FF0C9bf12",
+      "kind": "external"
+    }
+  ]
+}

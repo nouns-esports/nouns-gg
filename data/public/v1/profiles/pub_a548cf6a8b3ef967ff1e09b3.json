@@ -1,0 +1,14 @@
+{
+  "id": "pub_a548cf6a8b3ef967ff1e09b3",
+  "name": "prizik",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiexvystyf4uxs3ysczaewgafl6s6gwa24odizwh7kzjdyw4vfl5xu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1749B4e3090Ea8F2c16c409C50a2C9A3C9F422eB",
+      "kind": "external"
+    }
+  ]
+}

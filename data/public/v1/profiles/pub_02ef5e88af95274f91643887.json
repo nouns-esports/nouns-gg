@@ -1,0 +1,18 @@
+{
+  "id": "pub_02ef5e88af95274f91643887",
+  "name": "Dawn Queen",
+  "image": "https://pbs.twimg.com/profile_images/1939984810388144128/xMeFSzU4_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "DawnQueen279820",
+    "name": "Dawn Queen",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1939984810388144128/xMeFSzU4_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6e3324dB24C652eB96cBB3dfb7486D813D51A508",
+      "kind": "external"
+    }
+  ]
+}

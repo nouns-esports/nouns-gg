@@ -1,0 +1,14 @@
+{
+  "id": "pub_ec10bbc99dc90bb1937458b7",
+  "name": "zimardrp",
+  "image": "https://ipfs.nouns.gg/ipfs/QmTfnxc1YEwjvsmnoooMEXdaLnstisEXmPrZ4usuarB9sb",
+  "bio": "1% everyday. as above so below\nrunning @nogglesboard / nouns\ngnars builder \nARDRP\n⌐◨-◨",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2feb329b9289b60064904Fa61Fc347157a5AEd6a",
+      "kind": "external"
+    }
+  ]
+}

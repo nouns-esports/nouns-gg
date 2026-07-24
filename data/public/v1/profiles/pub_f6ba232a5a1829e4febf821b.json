@@ -1,0 +1,19 @@
+{
+  "id": "pub_f6ba232a5a1829e4febf821b",
+  "name": "Melee",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigb2bhttebv57z2bwyxk745vpou6z3p24nx3b4tnnzashf6xkwmha",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x67d3DD343471C023A115695103e72159490e3C3b",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x6a92e9b34505C03AC00d8DC3552C6dEEa9Bd60E7",
+      "kind": "external"
+    }
+  ]
+}

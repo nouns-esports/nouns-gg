@@ -1,0 +1,14 @@
+{
+  "id": "pub_e78246cb34af200e2fafe9d8",
+  "name": "Rino Age",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiepclrvmarg4eltxecekm26j34cizkceocid6hwa6ilingkfg3fsq",
+  "bio": "100% Human 🏌🏻‍♂️",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1ba34B9C2B97592fcb04Eb51d901247e62103D2C",
+      "kind": "external"
+    }
+  ]
+}

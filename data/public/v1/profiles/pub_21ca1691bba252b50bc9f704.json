@@ -1,0 +1,14 @@
+{
+  "id": "pub_21ca1691bba252b50bc9f704",
+  "name": "cmg1wtkl",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihmnsz5kexnl4qp4luxz2hrmaoa3zwjcb2gldkew4mbzcj7dclxyy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe52f7FDAad67bB3E8e9089aB2C3B4D4198594770",
+      "kind": "external"
+    }
+  ]
+}

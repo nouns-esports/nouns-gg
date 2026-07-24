@@ -1,0 +1,14 @@
+{
+  "id": "pub_1bcf70c37a0058bd000a45b8",
+  "name": "jbrov",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=h4qka&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB13c14bD6b8854D1Ed81842622E5f112a2Ad4503",
+      "kind": "external"
+    }
+  ]
+}

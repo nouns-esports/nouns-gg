@@ -1,0 +1,18 @@
+{
+  "id": "pub_d499c59c0368c566258e4517",
+  "name": "Echo",
+  "image": "https://pbs.twimg.com/profile_images/1888598181723959296/3peVY_VM_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Echo_021301",
+    "name": "Echo",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1888598181723959296/3peVY_VM_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC88c2146c778edca82Aaf73FC2Bd42D88219dD0D",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pub_42cde06925eb6a122c167491",
+  "name": "cosmo.shiftz",
+  "image": "https://pbs.twimg.com/profile_images/1923329029035458560/60YqQvF-_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "cosmo_shiftz",
+    "name": "cosmo.shiftz",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923329029035458560/60YqQvF-_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc6e9e23E103452782fBE84F060e4caD7f0b60368",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x31A52147123213384fCE3758d52aD59F7F2e923E",
+      "kind": "external"
+    }
+  ]
+}

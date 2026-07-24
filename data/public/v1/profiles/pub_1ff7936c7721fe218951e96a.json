@@ -1,0 +1,14 @@
+{
+  "id": "pub_1ff7936c7721fe218951e96a",
+  "name": "cmede9dy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicqiioi335tnvafjgksk45rsavlgmlvamlrdbcyy3lxw7jgxm2lim",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x11Bc4E001dc60FBcEE33C49C44F3acA14a9C49cC",
+      "kind": "external"
+    }
+  ]
+}

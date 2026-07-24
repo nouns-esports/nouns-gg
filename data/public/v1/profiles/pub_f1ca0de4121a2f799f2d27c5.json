@@ -1,0 +1,18 @@
+{
+  "id": "pub_f1ca0de4121a2f799f2d27c5",
+  "name": "旧梦💢Noya",
+  "image": "https://pbs.twimg.com/profile_images/1966971318462803971/fN76BpOg_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "NahueBeliz",
+    "name": "旧梦💢Noya",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1966971318462803971/fN76BpOg_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x870E46e0C08ad07C9ee1A3225f5a169160eE12b6",
+      "kind": "external"
+    }
+  ]
+}

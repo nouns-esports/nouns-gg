@@ -1,0 +1,19 @@
+{
+  "id": "pub_6fb1de52e59353981fcc48a6",
+  "name": "Kooky",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigon4xw4jjfoxrnvt7oalpwl2vrdbzwptbnds33sjzyyp7jkkt5wu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8E8Ee79dB866DBA8B4462d83Ed5cfF59CB72cB7e",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x5ED53Fd06A5A183072C3231d40EE3C3F3cE85BC1",
+      "kind": "external"
+    }
+  ]
+}

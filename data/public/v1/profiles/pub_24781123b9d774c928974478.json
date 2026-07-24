@@ -1,0 +1,18 @@
+{
+  "id": "pub_24781123b9d774c928974478",
+  "name": "burner - start.gg/KREWE",
+  "image": "https://pbs.twimg.com/profile_images/1802793002370207745/k3-Dcbw0_normal.jpg",
+  "bio": "gamer",
+  "twitter": {
+    "username": "batrickburner",
+    "name": "burner - start.gg/KREWE",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1802793002370207745/k3-Dcbw0_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0E64De6a97693d890eE24535F6ABdD31DdEF1Ac1",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_1bafca2d48878b07ec8875f8",
+  "name": "loseing my religion",
+  "image": "https://pbs.twimg.com/profile_images/1511132125319376900/cbyzmRFN_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "sap2pad1",
+    "name": "loseing my religion",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1511132125319376900/cbyzmRFN_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xAd32CA30D816b2f81D5bb346b04Ef7c4e10Ee8cA",
+      "kind": "external"
+    }
+  ]
+}

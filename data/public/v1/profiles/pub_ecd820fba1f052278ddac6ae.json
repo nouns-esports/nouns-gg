@@ -1,0 +1,14 @@
+{
+  "id": "pub_ecd820fba1f052278ddac6ae",
+  "name": "DarkStar",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=4le5el&background=1",
+  "bio": "Gotta eat",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x724D37177b079e597951f6933a506b5C81Ce505b",
+      "kind": "external"
+    }
+  ]
+}

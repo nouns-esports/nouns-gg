@@ -1,0 +1,14 @@
+{
+  "id": "pub_d8363fe459d0779513a3beab",
+  "name": "Kogs",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=drzt4b&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD53813e093cb8412fE85d9f9C3Bb0fa759BCEA29",
+      "kind": "external"
+    }
+  ]
+}

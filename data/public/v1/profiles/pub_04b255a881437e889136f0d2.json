@@ -1,0 +1,14 @@
+{
+  "id": "pub_04b255a881437e889136f0d2",
+  "name": "nintendo_potato",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreih3f6qx6j6uje2qzzvjtah5ftugnvtf3m5dum6ludgpqhq4pnrffu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x09a85d75E90bE1d0dcD89DA1D1858eef8E67c928",
+      "kind": "external"
+    }
+  ]
+}

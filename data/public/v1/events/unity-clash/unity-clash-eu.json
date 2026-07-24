@@ -1,0 +1,42 @@
+{
+  "id": "event:unity-clash:unity-clash-eu",
+  "handle": "unity-clash-eu",
+  "name": "Unity Clash's European League",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeibzaepckvwwfg4wl6y4a4wtxcpt26emnzqqa72qzcjvaj74p3jszq",
+  "description": "Welcome to the Europe League by Unity Clash! This league aims to help the teams of Europe to make connections, grow, practice and learn to stay together while having loads of fun. This European League will be hosted on Ghatlue's Channel on Twitch & YouTube, your hosts, SpartanTano & Kelosaurus will guide you throughout the league under Unity Clash Production! EUL is the first part of the League, the continuation of this League is EUL Masters will feature the Top 6 Teams from EUL & teams who have proven themselves already in the UCS!",
+  "createdAt": "2025-06-29T10:00:00.000Z",
+  "start": "2025-06-29T10:00:00.000Z",
+  "end": "2025-10-05T10:00:00.000Z",
+  "active": true,
+  "featured": false,
+  "callToAction": {
+    "disabled": false,
+    "label": "Register",
+    "url": "https://www.start.gg/tournament/unity-clash-spring-showdown-season-11/register"
+  },
+  "location": {
+    "name": "Online",
+    "url": "https://www.start.gg/tournament/unity-clash-spring-showdown-season-11/details"
+  },
+  "details": null,
+  "attendeeCount": null,
+  "community": {
+    "id": "community:unity-clash",
+    "handle": "unity-clash",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeieaepjeia3gcszug2wlgtd7tegjiqnuzgxobdgxux4nbbiddkwwdy",
+    "name": "Unity Clash",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": false,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": false,
+    "hasShop": false
+  }
+}

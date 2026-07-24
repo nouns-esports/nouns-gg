@@ -1,0 +1,18 @@
+{
+  "id": "pub_e1fcb63fa140c8ffe753eb6d",
+  "name": "ToonSlim ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1497406090958581760/xUkZCkWg_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Toon_Slim",
+    "name": "ToonSlim ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1497406090958581760/xUkZCkWg_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa4D1f6f9eF0Ec2E2a6c6cEBe5Bf728b8CDBF2141",
+      "kind": "external"
+    }
+  ]
+}

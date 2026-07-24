@@ -1,0 +1,14 @@
+{
+  "id": "pub_c524eec0a9b024f4d42f0a02",
+  "name": "Kim ",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreig23nwsbz2celgfrek4hcyfhszvdqgkravk6qmu3f25n43oqoviim",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x91b36b2cc6C63DdF3316d8756655234814fBD825",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_20724a8bd886dd53f6944e31",
+  "name": "Kampayn",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=ut9nb8&background=1",
+  "bio": "I have the Midas touch ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x61EC90C88f2A915310E8054134DE6c8b620C078A",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_a912cdf34f804ba01c48f3a9",
+  "name": "r4to",
+  "image": "https://ipfs.nouns.gg/ipfs/QmZUeCaVUoybRQGZS5GmogHnxZ2aPzdLxJGzbMmvz6FREk",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x39a7B6fa1597BB6657Fe84e64E3B836c37d6F75d",
+      "kind": "external"
+    }
+  ]
+}

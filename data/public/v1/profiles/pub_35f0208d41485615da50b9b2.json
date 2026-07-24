@@ -1,0 +1,19 @@
+{
+  "id": "pub_35f0208d41485615da50b9b2",
+  "name": "Zany",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidhx6d72vdvwdghibhv2r5k5mnesrjygygc65q2byswjtkzrqyjj4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0B51437ea8f1Ea4cfcd58e4a7f31Dd7674c13538",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x474836b15468c3a64a78d9B522e76e6be9178cd5",
+      "kind": "external"
+    }
+  ]
+}

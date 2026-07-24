@@ -1,0 +1,14 @@
+{
+  "id": "pub_a9b5af907a313eb82b0a7e82",
+  "name": "hello hell",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=0hp42&background=1",
+  "bio": "hell is real",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc881c1F0e034ad2675924db4ffc3e4268d4F6d4B",
+      "kind": "external"
+    }
+  ]
+}

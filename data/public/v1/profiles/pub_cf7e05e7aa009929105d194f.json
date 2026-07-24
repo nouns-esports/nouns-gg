@@ -1,0 +1,14 @@
+{
+  "id": "pub_cf7e05e7aa009929105d194f",
+  "name": "e11evene11even",
+  "image": "https://ipfs.nouns.gg/ipfs/QmSXPbdzjZaAu5c7yUKdoTjB1MZKLiMRbKe4S1LyKdvaZj",
+  "bio": "Benbodhi’s cake",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB395A32b9df74f5E80f51aBc31285e482e17e77D",
+      "kind": "external"
+    }
+  ]
+}

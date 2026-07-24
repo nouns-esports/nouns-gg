@@ -1,0 +1,14 @@
+{
+  "id": "pub_8364fc7a6661327f8d1a8a6b",
+  "name": "Nogglesboard",
+  "image": "https://ipfs.nouns.gg/ipfs/QmVMVbYUb7ryfv3UaJJTmiUiLddJGX1fCPMFtEueqiGY5J",
+  "bio": "promoting noggles through art, sports, public goods, (up)recycling and inclusive NFT projects. \n\n nounishsurfboards prop 752",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2cE320C47c39CB0019ccc30e713aE54527B5e1Ef",
+      "kind": "external"
+    }
+  ]
+}

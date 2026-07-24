@@ -1,0 +1,2474 @@
+[
+  {
+    "id": "vote:cf3e47a9-8ba3-4dfd-878b-8b948bb5c174",
+    "userId": "pub_42d44ab6e6ca89b06fc943b6",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T13:48:09.350Z"
+  },
+  {
+    "id": "vote:334f68d0-5562-469b-8f44-1655aebb76a5",
+    "userId": "pub_8653b464c58b7abe5dcb6926",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 7,
+    "timestamp": "2025-02-12T14:02:27.738Z"
+  },
+  {
+    "id": "vote:b6993c0f-0537-4237-b138-a9aa7be2af7f",
+    "userId": "pub_bb2692b35ca109e31e96138d",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 4,
+    "timestamp": "2025-02-12T14:50:46.730Z"
+  },
+  {
+    "id": "vote:8235509b-1021-48ab-8275-3d235695e676",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T14:53:47.701Z"
+  },
+  {
+    "id": "vote:2809a520-fe37-4291-85e6-4daeb4a270a8",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T14:53:47.701Z"
+  },
+  {
+    "id": "vote:848087f1-c0dd-4680-be2a-a10d445c6e7f",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:0835b8f3-cd64-4877-9c4a-8136b80b1d73",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T14:53:47.701Z"
+  },
+  {
+    "id": "vote:6f3114ae-6147-42ce-8d45-9c1926840085",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:aedcc4b2-c0bb-4635-b5db-f529fa604699",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T14:53:47.701Z"
+  },
+  {
+    "id": "vote:2922fafa-855e-4757-8036-9520e793ea4f",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T14:53:47.701Z"
+  },
+  {
+    "id": "vote:d068f5e3-1243-4876-9d8e-49f3d86c099a",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T14:53:47.701Z"
+  },
+  {
+    "id": "vote:d1431a80-5725-4c99-b7fa-d6dadd3ec508",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T14:53:47.701Z"
+  },
+  {
+    "id": "vote:333c78ce-cbc9-4e27-b08b-2f3c18638c12",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T14:53:47.701Z"
+  },
+  {
+    "id": "vote:6ebfc37d-1be3-461a-8130-379cee74ba09",
+    "userId": "pub_d262fbe392c13571383faabe",
+    "proposalId": "proposal:0835b8f3-cd64-4877-9c4a-8136b80b1d73",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T14:57:48.884Z"
+  },
+  {
+    "id": "vote:a52a4ca4-15a4-455f-aec2-e092d955fc7a",
+    "userId": "pub_93f34db873645c16b1774a49",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T15:08:31.645Z"
+  },
+  {
+    "id": "vote:ff884627-9853-4644-8ede-1fc1c0698244",
+    "userId": "pub_265c0c0097590f50e17fde32",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T16:43:28.649Z"
+  },
+  {
+    "id": "vote:fcc9d7ce-942b-44e8-995d-9a8e5638afb5",
+    "userId": "pub_265c0c0097590f50e17fde32",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T16:43:28.649Z"
+  },
+  {
+    "id": "vote:450d509b-7372-4479-bcbc-914e98d283cd",
+    "userId": "pub_265c0c0097590f50e17fde32",
+    "proposalId": "proposal:aedcc4b2-c0bb-4635-b5db-f529fa604699",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T16:43:28.649Z"
+  },
+  {
+    "id": "vote:a6f2fa14-efc2-41cb-b09a-a828769f5321",
+    "userId": "pub_265c0c0097590f50e17fde32",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T16:43:28.649Z"
+  },
+  {
+    "id": "vote:3f317f8a-04ee-47b6-a9f7-bb1a2dbe9605",
+    "userId": "pub_d5c8687a304dfa6d4eb717e1",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T17:16:04.239Z"
+  },
+  {
+    "id": "vote:3bd00001-dfe8-4b7b-bcbe-10d2776a5030",
+    "userId": "pub_261b7ead7bceb064d14df602",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 4,
+    "timestamp": "2025-02-12T17:43:41.579Z"
+  },
+  {
+    "id": "vote:99a5c7bb-6505-433d-a401-29a59294a736",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T17:44:47.162Z"
+  },
+  {
+    "id": "vote:8db0d143-fb59-4486-ab60-745ad99c5243",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:aedcc4b2-c0bb-4635-b5db-f529fa604699",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T17:44:47.162Z"
+  },
+  {
+    "id": "vote:71e060b8-fc90-43d2-8b01-c1f26aae0028",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T17:44:47.162Z"
+  },
+  {
+    "id": "vote:577a74e2-e9d4-4034-a3fb-6ed6fcad612f",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:0835b8f3-cd64-4877-9c4a-8136b80b1d73",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T17:44:47.162Z"
+  },
+  {
+    "id": "vote:9364e0c1-f8f9-4a69-ae9a-fb5b2c2b427b",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T17:44:47.162Z"
+  },
+  {
+    "id": "vote:22f9836b-3592-4770-8c45-e53ec13302e1",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T17:44:47.162Z"
+  },
+  {
+    "id": "vote:339d2d65-28ba-4f5b-a80e-a07f2f488cd8",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-12T17:44:47.162Z"
+  },
+  {
+    "id": "vote:c6952518-7657-4eab-a0c0-871284ceb6f6",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:aedcc4b2-c0bb-4635-b5db-f529fa604699",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T17:52:14.419Z"
+  },
+  {
+    "id": "vote:384d6fc8-63f5-48e3-b38f-81568b06b397",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T17:52:14.419Z"
+  },
+  {
+    "id": "vote:00005630-a57e-4d65-89a2-3c65d62b3ba7",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:0835b8f3-cd64-4877-9c4a-8136b80b1d73",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T17:52:14.419Z"
+  },
+  {
+    "id": "vote:261ec28d-8861-4717-a2de-b01e09699bb1",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T17:52:14.419Z"
+  },
+  {
+    "id": "vote:33bc5448-a209-4a82-843b-0baa7c0e6586",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T17:52:14.419Z"
+  },
+  {
+    "id": "vote:d097ce20-275c-4f22-ae30-bd5613ea2f05",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T17:52:14.419Z"
+  },
+  {
+    "id": "vote:7a3d2883-5655-4d65-be98-b7784171d88f",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:c49efac3-3f2f-4e99-aaba-279073a0f357",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T17:52:14.419Z"
+  },
+  {
+    "id": "vote:45a9b7af-9f3e-4b85-8f35-d95eab7eaabc",
+    "userId": "pub_f3b1b9617352e264a359d1ea",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T17:52:34.565Z"
+  },
+  {
+    "id": "vote:4a7868d7-9ad1-49a9-b049-6e7a1b17f664",
+    "userId": "pub_15df648b48ddc42d28e81d01",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 4,
+    "timestamp": "2025-02-12T18:05:21.198Z"
+  },
+  {
+    "id": "vote:a32481af-69ce-4bb1-a198-f72298616c2b",
+    "userId": "pub_fa9ce1ccf2e9aa1e2bc02dcf",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T19:29:20.832Z"
+  },
+  {
+    "id": "vote:d77b7894-bae0-4ea8-bcff-75b39f39137b",
+    "userId": "pub_e5be49abd0d80e987a9968d0",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T19:58:34.763Z"
+  },
+  {
+    "id": "vote:2383e779-77a9-4e31-9065-8ff94913911a",
+    "userId": "pub_73e776a675abc6ac5efbe5e4",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T20:00:05.096Z"
+  },
+  {
+    "id": "vote:603e7f30-aff1-4579-a4b1-15d46ae19640",
+    "userId": "pub_2110b29a57c7a9ae35ab2ee8",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T20:12:40.910Z"
+  },
+  {
+    "id": "vote:f501cb03-3c47-4853-a5f9-3cfe8cf1700a",
+    "userId": "pub_0df3ce67f5435af9574a2f01",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T20:13:03.118Z"
+  },
+  {
+    "id": "vote:851c8e93-6f70-45bd-ae22-cea371f65b94",
+    "userId": "pub_9f40da397ecc56086218188b",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T20:14:46.843Z"
+  },
+  {
+    "id": "vote:12f41b2c-dff8-4c46-83b5-310df3a3b569",
+    "userId": "pub_f81d0e81fd2eeb5a950a9df5",
+    "proposalId": "proposal:c49efac3-3f2f-4e99-aaba-279073a0f357",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T20:16:44.166Z"
+  },
+  {
+    "id": "vote:d22ab8cd-6f90-4eb9-b8d7-17d98905c66e",
+    "userId": "pub_ff2f598cc6b816f51054c8ee",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T20:16:47.056Z"
+  },
+  {
+    "id": "vote:10c66c23-9fe4-437d-91cc-d3b38e04f5ea",
+    "userId": "pub_62fe9bbcb83d70b380aa41da",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T20:30:56.469Z"
+  },
+  {
+    "id": "vote:33d40a2b-8241-4903-9731-018165a9b7ae",
+    "userId": "pub_2d28b74a5a7ac851cf9899c4",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T20:43:26.759Z"
+  },
+  {
+    "id": "vote:596e821b-0a07-4ce9-ace6-5a3fcbdfdf7f",
+    "userId": "pub_b375e04814f3df951a214d52",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T21:07:44.945Z"
+  },
+  {
+    "id": "vote:e342b2a0-b5fe-41da-8bdc-adeb77d14164",
+    "userId": "pub_bcae816aa127982022b3324b",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T21:23:11.980Z"
+  },
+  {
+    "id": "vote:7e37a52a-1839-4564-a50a-8d560e8d8612",
+    "userId": "pub_e78de7bcd96cb80801b1cbae",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T21:26:10.774Z"
+  },
+  {
+    "id": "vote:98d86efb-6bb3-470f-992d-93c21f84bba4",
+    "userId": "pub_e20f622e3fe6eb3050144260",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T21:26:51.572Z"
+  },
+  {
+    "id": "vote:855acdb5-4b9e-408e-a456-b4c37496943c",
+    "userId": "pub_4b997dc2925828d510c6a80b",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T21:47:07.539Z"
+  },
+  {
+    "id": "vote:7dacf60a-40af-4068-aaa3-5d6c79c007d6",
+    "userId": "pub_b285c80cdd1c2b399e7ca54d",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T21:49:10.629Z"
+  },
+  {
+    "id": "vote:bfe92a2a-f5ac-4c1e-aa10-9f0197e0bebd",
+    "userId": "pub_95985d5547fbcdd1162c69ff",
+    "proposalId": "proposal:c49efac3-3f2f-4e99-aaba-279073a0f357",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T21:57:08.982Z"
+  },
+  {
+    "id": "vote:f2cf3194-4d70-4e49-9478-272cef25c9cd",
+    "userId": "pub_008b3f5372527b6aaad29053",
+    "proposalId": "proposal:0835b8f3-cd64-4877-9c4a-8136b80b1d73",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 7,
+    "timestamp": "2025-02-12T21:59:12.575Z"
+  },
+  {
+    "id": "vote:cf487cf6-1d42-42bc-9626-a072e6e7aa69",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:aedcc4b2-c0bb-4635-b5db-f529fa604699",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:16:54.307Z"
+  },
+  {
+    "id": "vote:59340050-b4b9-4f2b-9f33-431843622d0b",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:16:54.307Z"
+  },
+  {
+    "id": "vote:21b8cd78-4b71-41a5-a0df-0b4cf59f5ca2",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:16:54.307Z"
+  },
+  {
+    "id": "vote:bbb8b90f-a80b-4f9f-abbf-e3e995be1572",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:16:54.307Z"
+  },
+  {
+    "id": "vote:823dca24-bbf0-4d6a-8132-06e471482778",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:16:54.307Z"
+  },
+  {
+    "id": "vote:9bcef6fa-c41e-43c4-8920-5c65ec037a3f",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:0835b8f3-cd64-4877-9c4a-8136b80b1d73",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:16:54.307Z"
+  },
+  {
+    "id": "vote:555e0f3d-231e-443c-9e79-9bd9edebd109",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T22:16:54.307Z"
+  },
+  {
+    "id": "vote:636cc0f1-f3d6-4c81-b6d0-71df5d779db5",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T22:16:54.307Z"
+  },
+  {
+    "id": "vote:cbc09805-7cd9-4583-9a6b-9374e6125df4",
+    "userId": "pub_57000c54044f48ca21e886f2",
+    "proposalId": "proposal:aedcc4b2-c0bb-4635-b5db-f529fa604699",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T22:31:55.158Z"
+  },
+  {
+    "id": "vote:a969cb65-8158-4444-8f72-6c678279c20b",
+    "userId": "pub_f9543946cc663489dff6e953",
+    "proposalId": "proposal:aedcc4b2-c0bb-4635-b5db-f529fa604699",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:42:30.824Z"
+  },
+  {
+    "id": "vote:280cc701-b1cf-482e-8bfc-e27d3c4d7507",
+    "userId": "pub_f9543946cc663489dff6e953",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:42:30.824Z"
+  },
+  {
+    "id": "vote:5372deb8-a88d-45ea-90f8-15c1c703d064",
+    "userId": "pub_f9543946cc663489dff6e953",
+    "proposalId": "proposal:c49efac3-3f2f-4e99-aaba-279073a0f357",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:42:30.824Z"
+  },
+  {
+    "id": "vote:866e65fb-d1db-42ca-95f1-0371c0482d13",
+    "userId": "pub_f9543946cc663489dff6e953",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:42:30.824Z"
+  },
+  {
+    "id": "vote:92c18505-27f3-4966-b361-94c2b0710a87",
+    "userId": "pub_2beec2c4ca7be0b72f66d75f",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 8,
+    "timestamp": "2025-02-12T22:43:14.968Z"
+  },
+  {
+    "id": "vote:588957dd-8803-407c-bdaa-16ff33642190",
+    "userId": "pub_2beec2c4ca7be0b72f66d75f",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:43:14.968Z"
+  },
+  {
+    "id": "vote:f40c552c-7046-4056-a11c-16b6e955860b",
+    "userId": "pub_2beec2c4ca7be0b72f66d75f",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:43:14.968Z"
+  },
+  {
+    "id": "vote:9231435d-9697-428e-88ad-8f4895b49ed6",
+    "userId": "pub_b8aa7dfd847b080fd8015f00",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T22:57:58.090Z"
+  },
+  {
+    "id": "vote:111b3f45-4f94-4289-84f2-deebffb4eacc",
+    "userId": "pub_a4d2a7dea43355d796e87660",
+    "proposalId": "proposal:0835b8f3-cd64-4877-9c4a-8136b80b1d73",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T23:01:34.334Z"
+  },
+  {
+    "id": "vote:27658cd0-dd35-4d28-bcb8-855315dae812",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:07:46.227Z"
+  },
+  {
+    "id": "vote:b84a5503-3a42-4191-98b5-cda1839ca9cd",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:c49efac3-3f2f-4e99-aaba-279073a0f357",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:07:46.227Z"
+  },
+  {
+    "id": "vote:a8e6f40d-6852-425d-a0e5-a931f354abff",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:07:46.227Z"
+  },
+  {
+    "id": "vote:910680a0-2238-4485-99f8-110f576b0d58",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:a49fbb08-3cef-407f-b310-a70e9c7aa37c",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:07:46.227Z"
+  },
+  {
+    "id": "vote:9d8e163b-ad93-46c1-87d6-2a9ed80adfba",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:07:46.227Z"
+  },
+  {
+    "id": "vote:2816cf78-b830-46e9-a38e-edc73802ca2a",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:07:46.227Z"
+  },
+  {
+    "id": "vote:8d6160db-aeb0-4a7f-a1bd-d6ccea4199ac",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:07:46.227Z"
+  },
+  {
+    "id": "vote:7f6fab21-d496-48dd-81db-6a236dd22061",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:07:46.227Z"
+  },
+  {
+    "id": "vote:40cd7739-44c3-4366-ba8a-ca2cd534486b",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:aedcc4b2-c0bb-4635-b5db-f529fa604699",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:07:46.227Z"
+  },
+  {
+    "id": "vote:c6ed8a2b-6c71-4977-bb7a-211f729ec09c",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:07:46.227Z"
+  },
+  {
+    "id": "vote:b9897b77-390b-4fd1-a737-8e5c3220c9ef",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:17:34.393Z"
+  },
+  {
+    "id": "vote:2c540c02-ab47-4720-b00c-adca6cadf128",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:0835b8f3-cd64-4877-9c4a-8136b80b1d73",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:17:34.393Z"
+  },
+  {
+    "id": "vote:7d29d2ea-7595-4c27-b4cd-7b1a3a5321ff",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-12T23:17:34.393Z"
+  },
+  {
+    "id": "vote:962f5303-3f77-4ca3-bc9c-ef555fce6128",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:17:34.393Z"
+  },
+  {
+    "id": "vote:77ef92bd-ec34-407d-846e-6d12fbf44ffa",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:17:34.393Z"
+  },
+  {
+    "id": "vote:99bc30a8-f253-483d-b3af-fad4017b16f4",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:17:34.393Z"
+  },
+  {
+    "id": "vote:1cf95ed8-3095-4c51-b8f2-a567cc951ba1",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:17:34.393Z"
+  },
+  {
+    "id": "vote:73c27bc3-4732-4a5e-87f6-4b5a2a66585f",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:aedcc4b2-c0bb-4635-b5db-f529fa604699",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:17:34.393Z"
+  },
+  {
+    "id": "vote:187ee7d3-97f1-4afb-b8e1-f1224fd37d42",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:17:34.393Z"
+  },
+  {
+    "id": "vote:ff141037-0945-4ff3-a5e9-97518492da78",
+    "userId": "pub_0205796e94833ddbcf4ea9d7",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-12T23:22:17.545Z"
+  },
+  {
+    "id": "vote:a4809af8-70d7-4177-b425-e8377473b833",
+    "userId": "pub_0b8da1f722787e9463f71710",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-12T23:39:07.551Z"
+  },
+  {
+    "id": "vote:7bd49aa9-3eb5-409f-ac5d-bbd12a83093c",
+    "userId": "pub_af5d99834eda81e9ef80ee5e",
+    "proposalId": "proposal:0835b8f3-cd64-4877-9c4a-8136b80b1d73",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-13T00:37:02.108Z"
+  },
+  {
+    "id": "vote:7e51b9e2-750b-4034-a291-ca6bcc3e46b6",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-13T01:10:11.806Z"
+  },
+  {
+    "id": "vote:0d8bb373-fad0-4613-ba11-5145030d1997",
+    "userId": "pub_228bf5c7fdf6d3cdb2fb50de",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-13T02:04:09.366Z"
+  },
+  {
+    "id": "vote:dc1e577f-8a5d-4318-85a2-d40203f71ae9",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 8,
+    "timestamp": "2025-02-13T03:08:23.627Z"
+  },
+  {
+    "id": "vote:226f0dcd-46a0-40d7-899e-5e5aa82d56fb",
+    "userId": "pub_6653d325724e20673ecc3184",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-13T03:10:27.368Z"
+  },
+  {
+    "id": "vote:fdb2fa63-9f7d-4594-b3e9-3c0109c9f0eb",
+    "userId": "pub_d262fbe392c13571383faabe",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-13T05:37:11.206Z"
+  },
+  {
+    "id": "vote:349dafb8-fb49-4d3f-babc-c4cfb8542ab4",
+    "userId": "pub_bbc3f5f9e7580756c2b0fa5f",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-13T05:50:20.822Z"
+  },
+  {
+    "id": "vote:0fcc452f-8fb7-4b92-bc07-75c3d9beb40a",
+    "userId": "pub_14cde2d80dc122baaac866f1",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-13T05:55:00.589Z"
+  },
+  {
+    "id": "vote:d74fad7d-47bc-4f45-8e5b-96b1e18fd8c8",
+    "userId": "pub_b2905870a048fd6e631d1c4b",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-13T06:10:34.768Z"
+  },
+  {
+    "id": "vote:9e394d28-958c-427b-b5b5-4447f6ed166c",
+    "userId": "pub_0e70e71a4bd751efd6aff78a",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-13T06:40:16.334Z"
+  },
+  {
+    "id": "vote:2a1a5766-6b05-400e-a677-ce7da936ddd9",
+    "userId": "pub_075285736d601859b3510cb3",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-13T07:16:55.427Z"
+  },
+  {
+    "id": "vote:dfe80fc9-6e5e-4d87-b733-b3cdee414bf2",
+    "userId": "pub_3a447517e3421ece627cb404",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-13T07:47:49.636Z"
+  },
+  {
+    "id": "vote:ed24a674-fe22-4c53-9b31-82c470b97cc5",
+    "userId": "pub_945985b9bb33f30292586319",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-13T11:38:18.308Z"
+  },
+  {
+    "id": "vote:bfb07f6b-bb0f-444f-9dc3-13fdc128bfb7",
+    "userId": "pub_945985b9bb33f30292586319",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-13T11:38:18.308Z"
+  },
+  {
+    "id": "vote:2f90a52e-050d-4285-8109-4c76ef5ca230",
+    "userId": "pub_555bc361db2430e14d5f65ee",
+    "proposalId": "proposal:0835b8f3-cd64-4877-9c4a-8136b80b1d73",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 8,
+    "timestamp": "2025-02-13T11:51:02.871Z"
+  },
+  {
+    "id": "vote:5e28c930-2cdc-4bb3-8c19-d59ca5638de0",
+    "userId": "pub_34b2476e34be38d88f766f08",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-13T18:26:49.582Z"
+  },
+  {
+    "id": "vote:7cd6718f-3771-4597-9c9a-944b19a9ed7e",
+    "userId": "pub_d369951f5edcf60f7a74a532",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-13T18:52:50.207Z"
+  },
+  {
+    "id": "vote:95a8a7f6-5269-4d14-b1a9-7b2cf263a67c",
+    "userId": "pub_839ccff67100c3a3a3ed7690",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-13T19:30:41.573Z"
+  },
+  {
+    "id": "vote:7b5933ec-7be5-410e-9168-f6e672c68121",
+    "userId": "pub_c4a3b0c924e6537680505fd4",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-13T21:16:58.692Z"
+  },
+  {
+    "id": "vote:1569b7eb-689e-413e-9db4-5ed22f682950",
+    "userId": "pub_73b467a754c4d3f123af892d",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 4,
+    "timestamp": "2025-02-13T22:28:18.149Z"
+  },
+  {
+    "id": "vote:4fde6eb4-3f04-43f1-9e3b-962b394a703f",
+    "userId": "pub_6db28729b75c409f6aa47108",
+    "proposalId": "proposal:c49efac3-3f2f-4e99-aaba-279073a0f357",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T00:55:25.982Z"
+  },
+  {
+    "id": "vote:9186a976-a358-447e-acdb-7089b89d1ff9",
+    "userId": "pub_e16a82bb68b256b444078169",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-14T03:52:26.606Z"
+  },
+  {
+    "id": "vote:1a05f5eb-fa57-44f9-abbd-967393554d22",
+    "userId": "pub_fac4b7c5caa349fcefdc661a",
+    "proposalId": "proposal:618aa569-4c13-4784-ab5a-bd88747a0dcb",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T03:57:57.459Z"
+  },
+  {
+    "id": "vote:ca1e55ae-03c1-4c66-932c-a02f56e53a96",
+    "userId": "pub_d262fbe392c13571383faabe",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T04:29:33.832Z"
+  },
+  {
+    "id": "vote:dfafd772-46dd-4441-b598-9b5dbc90fe20",
+    "userId": "pub_d262fbe392c13571383faabe",
+    "proposalId": "proposal:66a69b9b-5d93-4e22-b58f-282ee965357a",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T04:29:33.832Z"
+  },
+  {
+    "id": "vote:258fc152-51d8-4a05-bf90-6d8c1a491248",
+    "userId": "pub_af5d99834eda81e9ef80ee5e",
+    "proposalId": "proposal:618aa569-4c13-4784-ab5a-bd88747a0dcb",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T04:58:38.576Z"
+  },
+  {
+    "id": "vote:f4b62aea-cec0-4724-b908-5f387b3b8cb9",
+    "userId": "pub_af5d99834eda81e9ef80ee5e",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T05:00:52.152Z"
+  },
+  {
+    "id": "vote:dbbd8391-a93b-4bd2-a5e4-dcb69a44939a",
+    "userId": "pub_261b7ead7bceb064d14df602",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-14T05:05:25.588Z"
+  },
+  {
+    "id": "vote:fe0b5265-92ef-456e-84e1-7a1c80633baa",
+    "userId": "pub_261b7ead7bceb064d14df602",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T05:05:25.588Z"
+  },
+  {
+    "id": "vote:91d76731-0545-4612-8b63-ef87acf066d3",
+    "userId": "pub_2d52f05b156e6f8411680447",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-14T05:20:56.969Z"
+  },
+  {
+    "id": "vote:3ea90321-871c-47e6-a324-0eb001889fcb",
+    "userId": "pub_68cf7bb3c6adb1fd2b668f95",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T05:33:05.392Z"
+  },
+  {
+    "id": "vote:37370663-223f-4dc7-921a-1f452fa9cd89",
+    "userId": "pub_7e8c5be9ae8d6c072fca7d50",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T05:39:23.844Z"
+  },
+  {
+    "id": "vote:940a83d1-1fc7-4f72-be67-f700dbd7ec49",
+    "userId": "pub_31736a75382e5b68b4a4726d",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T05:46:11.674Z"
+  },
+  {
+    "id": "vote:2231200e-d9fc-4c84-8dae-6b5c54388562",
+    "userId": "pub_b0dd9618df7622d7ddc85e90",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T05:46:44.359Z"
+  },
+  {
+    "id": "vote:95970967-6d0d-486f-a42e-2194aca5ab7f",
+    "userId": "pub_81385dd22394adc295897999",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T05:50:18.794Z"
+  },
+  {
+    "id": "vote:dcdede21-9c6a-458f-a845-f5d58b967e67",
+    "userId": "pub_18c1fdb10c97b0e3451b57e2",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T06:35:57.994Z"
+  },
+  {
+    "id": "vote:d5336140-1bbf-4200-b736-80fb9df18243",
+    "userId": "pub_690ffaf431d8fa9e24f06464",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-14T06:37:24.684Z"
+  },
+  {
+    "id": "vote:36cabe40-115f-4d2b-a5d7-777f53058d20",
+    "userId": "pub_690ffaf431d8fa9e24f06464",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 5,
+    "timestamp": "2025-02-14T06:37:24.684Z"
+  },
+  {
+    "id": "vote:7359c6b3-ac7b-4861-ad9f-f76e458f4d8d",
+    "userId": "pub_33185d8dbcf4d1b7997ce14e",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T06:55:19.763Z"
+  },
+  {
+    "id": "vote:06b22c7a-1567-44eb-8af1-dcd1a13ff2ab",
+    "userId": "pub_7c48b2b7d7e84e3c3b30d329",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T06:55:32.915Z"
+  },
+  {
+    "id": "vote:f8864915-a488-4061-a24c-88d0604b0681",
+    "userId": "pub_519278f3a76ed2058aaa307e",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T08:14:41.197Z"
+  },
+  {
+    "id": "vote:dc974a04-d71b-48a6-8bdf-7a4a0b7953f1",
+    "userId": "pub_27d4b995fb68513c154ddcb0",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T10:27:56.289Z"
+  },
+  {
+    "id": "vote:c77719ba-8fb9-43b8-825c-e906f5cc0952",
+    "userId": "pub_862eda28159ab44592d9cb73",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-14T10:50:09.569Z"
+  },
+  {
+    "id": "vote:7bbd9b85-6472-43dc-88a0-7bc88306a9df",
+    "userId": "pub_b41f0625131dc1020d54bb19",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T10:50:20.604Z"
+  },
+  {
+    "id": "vote:0625d412-05b5-434a-93fd-d534ec1385b0",
+    "userId": "pub_70ca87f57435f26ddd6fe371",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T13:36:57.404Z"
+  },
+  {
+    "id": "vote:fcc77a73-3f2a-4043-8a98-f3379e2c029a",
+    "userId": "pub_231f70b799d16d8f4220bbdd",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T17:13:20.547Z"
+  },
+  {
+    "id": "vote:008581b8-fac7-47cb-8b88-75f7fdb0323c",
+    "userId": "pub_e1d7bc8c10fa46b08e90a400",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-14T18:43:20.371Z"
+  },
+  {
+    "id": "vote:d0528597-e76e-4d8e-b762-b80186f2cd28",
+    "userId": "pub_5dc40e708ca8ea29d8d92be9",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-14T20:02:15.680Z"
+  },
+  {
+    "id": "vote:1a493c0b-8660-4c0d-aa40-73f4c23ae520",
+    "userId": "pub_466ef628bc52b62ddd23cb62",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T01:11:34.958Z"
+  },
+  {
+    "id": "vote:8d3fd108-6b2d-47a5-b06a-f7bfaa5f3506",
+    "userId": "pub_d5c8687a304dfa6d4eb717e1",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 7,
+    "timestamp": "2025-02-15T01:17:08.310Z"
+  },
+  {
+    "id": "vote:38aeb314-de23-4ad2-9b12-b32eeb0eecea",
+    "userId": "pub_d2182bb87955705749c38d29",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-15T01:28:34.971Z"
+  },
+  {
+    "id": "vote:f2937c0d-231a-48ac-9218-f3c9708dcd70",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-15T02:21:36.688Z"
+  },
+  {
+    "id": "vote:e76fc2f7-3b66-4c69-a940-0a07a671d20e",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-15T02:22:03.259Z"
+  },
+  {
+    "id": "vote:6dfa2880-843c-4716-89c9-015311112da4",
+    "userId": "pub_f10b755d1df9833c8ed033aa",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 8,
+    "timestamp": "2025-02-15T02:22:19.752Z"
+  },
+  {
+    "id": "vote:fce52206-6f90-453d-8972-134ac7b0654e",
+    "userId": "pub_040f4bbed37b998edc023898",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-15T03:11:39.588Z"
+  },
+  {
+    "id": "vote:76ea2bc8-12ff-4e20-a69f-7ab564c318f6",
+    "userId": "pub_f48dcd01529e8cc10dc75037",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-15T03:27:11.063Z"
+  },
+  {
+    "id": "vote:156fb1eb-dbb5-482f-92ab-8134bf51f1a2",
+    "userId": "pub_c8f9010b0a91ecf0247fe421",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T03:38:50.029Z"
+  },
+  {
+    "id": "vote:1a2f9f1b-21aa-4011-8db7-1a1a6572774b",
+    "userId": "pub_d262fbe392c13571383faabe",
+    "proposalId": "proposal:1c86bdab-a7fe-48ae-aa63-9928584575bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T04:27:00.882Z"
+  },
+  {
+    "id": "vote:6984da77-5a95-43a0-acbf-fb2ca0ab82e8",
+    "userId": "pub_42d44ab6e6ca89b06fc943b6",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-15T04:50:35.594Z"
+  },
+  {
+    "id": "vote:c699559c-5191-44e6-82dc-8cfdc5452657",
+    "userId": "pub_a4d2a7dea43355d796e87660",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T05:52:26.651Z"
+  },
+  {
+    "id": "vote:71bbe72c-c6b4-441f-865e-86ee6f93de59",
+    "userId": "pub_8ec323dbdad96f933da9b36f",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T06:41:28.873Z"
+  },
+  {
+    "id": "vote:a443f0ba-9e04-4716-877e-4dae29739d36",
+    "userId": "pub_8ec323dbdad96f933da9b36f",
+    "proposalId": "proposal:618aa569-4c13-4784-ab5a-bd88747a0dcb",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T06:41:39.798Z"
+  },
+  {
+    "id": "vote:aae0ac5d-c0db-44b0-a827-0a92f5b5bdd6",
+    "userId": "pub_8ec323dbdad96f933da9b36f",
+    "proposalId": "proposal:1c86bdab-a7fe-48ae-aa63-9928584575bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T06:41:53.373Z"
+  },
+  {
+    "id": "vote:5bb70886-e0fd-4e68-bc37-0e908a7452fc",
+    "userId": "pub_8ec323dbdad96f933da9b36f",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T06:42:11.621Z"
+  },
+  {
+    "id": "vote:43728abe-03f5-4ceb-8a8d-62a4abc01d3c",
+    "userId": "pub_8ec323dbdad96f933da9b36f",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T06:42:22.478Z"
+  },
+  {
+    "id": "vote:eaf2ec38-9584-4635-be9e-7c6bc29de0e2",
+    "userId": "pub_8ec323dbdad96f933da9b36f",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T06:42:35.486Z"
+  },
+  {
+    "id": "vote:f9989d5a-14a5-4639-91c5-880424c9f086",
+    "userId": "pub_1d9323a9a6c5d50987b0cc67",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 8,
+    "timestamp": "2025-02-15T11:27:23.497Z"
+  },
+  {
+    "id": "vote:f18e68e7-ff84-4f40-ac38-fc253acf8d4f",
+    "userId": "pub_7c5bdada6e07dc9d168c2860",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T19:34:16.503Z"
+  },
+  {
+    "id": "vote:d46adaa0-6d51-4211-884a-f5c15729c785",
+    "userId": "pub_8e34d86a73c947cef1291107",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T20:07:02.314Z"
+  },
+  {
+    "id": "vote:ccfff70b-d44e-488d-942f-1787cafc7b37",
+    "userId": "pub_59376caa64407d9f30a798bf",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T22:46:47.585Z"
+  },
+  {
+    "id": "vote:ed644a4b-b8f4-4e0f-87a9-13448fa83f39",
+    "userId": "pub_81baf112c657c9f54bf0f1b0",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T23:13:04.544Z"
+  },
+  {
+    "id": "vote:4d0c2a0f-aac1-4f07-be7e-c82ec26f49ba",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:aedcc4b2-c0bb-4635-b5db-f529fa604699",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T23:52:13.098Z"
+  },
+  {
+    "id": "vote:5a14e43e-c940-4557-8610-96ed56ac19f5",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T23:52:13.098Z"
+  },
+  {
+    "id": "vote:b6b1140d-fc48-414b-a9eb-071e99c94b1b",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-15T23:52:13.098Z"
+  },
+  {
+    "id": "vote:e4788720-9eda-4e76-9d63-cb279a768094",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-15T23:52:13.098Z"
+  },
+  {
+    "id": "vote:5f4b341a-fc8a-4cdb-b297-5b34fe459545",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-15T23:52:13.098Z"
+  },
+  {
+    "id": "vote:81ec74b3-b60a-418c-909f-38255feff497",
+    "userId": "pub_156ed1a4d7363df3a5a2058e",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T00:07:51.507Z"
+  },
+  {
+    "id": "vote:ce1b5596-9c47-4b01-be84-9ff39e0ca4e6",
+    "userId": "pub_6e4ff48eec7a0fb203f09d77",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T00:37:02.859Z"
+  },
+  {
+    "id": "vote:df5aec32-156e-4a35-9920-db2d2f6f708d",
+    "userId": "pub_bd3037b313705dc182efb9ec",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T01:02:32.804Z"
+  },
+  {
+    "id": "vote:327cb143-8645-4cb0-9dc5-c06374801ad7",
+    "userId": "pub_557d52b6a59a438b14f675fe",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T02:06:36.116Z"
+  },
+  {
+    "id": "vote:9a5aade9-3b94-4f0b-a0cb-8c7c52d86e48",
+    "userId": "pub_7867950f5d9d0e334d64fc72",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T02:39:11.509Z"
+  },
+  {
+    "id": "vote:20698dac-aae8-4e97-96c6-e559ab37331c",
+    "userId": "pub_3996d3aef248ceb0619735db",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T02:43:39.437Z"
+  },
+  {
+    "id": "vote:fce74d8f-4762-4052-85f5-d6d6847dda28",
+    "userId": "pub_80411f9a8b1dac94ec86528e",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T02:48:53.592Z"
+  },
+  {
+    "id": "vote:bc280f21-473d-4628-a78d-06b5ee88c82a",
+    "userId": "pub_0cc48c31081b4b6bbf380b1e",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T02:57:45.594Z"
+  },
+  {
+    "id": "vote:7d738ed2-9719-45b8-ab0d-712d73f316b5",
+    "userId": "pub_8653b464c58b7abe5dcb6926",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T03:04:09.863Z"
+  },
+  {
+    "id": "vote:0e097ac6-930d-4733-bde3-df2e36b0710a",
+    "userId": "pub_0420697f8cee2ad66f6a75a2",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T03:24:35.598Z"
+  },
+  {
+    "id": "vote:4e2503dc-4e00-49f5-9e05-e03608c473b9",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-16T03:31:19.446Z"
+  },
+  {
+    "id": "vote:14c6a43d-32a5-4b65-8d6d-bac295c9b84f",
+    "userId": "pub_f55a93eaa5849772a92b0260",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T04:01:39.499Z"
+  },
+  {
+    "id": "vote:4e64c405-14d6-450d-bb14-39ccd5baee7f",
+    "userId": "pub_429cb0b340634556435ca859",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T04:02:06.623Z"
+  },
+  {
+    "id": "vote:b41ae997-c893-45f0-a476-643881f70338",
+    "userId": "pub_19fd08261305d34d82ffeeca",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T04:12:14.581Z"
+  },
+  {
+    "id": "vote:28e23624-31d2-41ad-9892-c9a925475332",
+    "userId": "pub_5c73f567ab626dd4b4e7b7b5",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-16T04:46:15.828Z"
+  },
+  {
+    "id": "vote:4c6fd1b7-1891-4351-9374-9f867312ba4a",
+    "userId": "pub_1314765a7abbc4f067ece341",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T05:01:56.417Z"
+  },
+  {
+    "id": "vote:51545fc7-92da-46bc-9fab-be96b15d6d72",
+    "userId": "pub_432fc7fd98e507cd16751d17",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T05:06:29.984Z"
+  },
+  {
+    "id": "vote:b9f9bbb1-4a55-4dbe-bb26-9c05311d72bb",
+    "userId": "pub_e789c8b8cef16750da0458c6",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T05:40:09.437Z"
+  },
+  {
+    "id": "vote:3e1f274d-e675-4230-b09f-b33a20f82f08",
+    "userId": "pub_7c563e474f3aff32c6b2a680",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T05:57:30.411Z"
+  },
+  {
+    "id": "vote:93ee01e0-da1d-4afd-bc91-fd62257082ad",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-16T06:22:52.993Z"
+  },
+  {
+    "id": "vote:163a3762-fe47-415d-b096-027d47cfd272",
+    "userId": "pub_4c76dd5b9638cc6bde63c630",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 5,
+    "timestamp": "2025-02-16T07:08:58.153Z"
+  },
+  {
+    "id": "vote:634c2585-f2c1-40dd-a72f-edd687113226",
+    "userId": "pub_4c76dd5b9638cc6bde63c630",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 5,
+    "timestamp": "2025-02-16T07:08:58.153Z"
+  },
+  {
+    "id": "vote:78ef2326-b6b1-4f1d-a504-dfaf9ee2d80d",
+    "userId": "pub_27948173f8888290cf1be32d",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T07:18:50.605Z"
+  },
+  {
+    "id": "vote:a650a8c8-c9b6-4a61-aa2f-af27f302ad8e",
+    "userId": "pub_a94913bc3f512b8cd81c3135",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-16T07:22:21.906Z"
+  },
+  {
+    "id": "vote:c4c0d978-b864-4859-9438-2a14c20c647f",
+    "userId": "pub_3a7b6101245706835c451057",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T07:26:30.323Z"
+  },
+  {
+    "id": "vote:5dc6cd0e-373b-4244-bd9a-9e5d364931e5",
+    "userId": "pub_037caebffc064116acbcf80a",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-16T07:31:43.898Z"
+  },
+  {
+    "id": "vote:12876e0e-9405-466a-9aba-fe80a3598f9c",
+    "userId": "pub_44fd4df13563bb119f21d949",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T07:35:26.523Z"
+  },
+  {
+    "id": "vote:7bd54d21-1fde-434b-8cd4-0d6495c921e2",
+    "userId": "pub_bb330a814201f01b742f5daf",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-16T07:43:05.493Z"
+  },
+  {
+    "id": "vote:70d07cd8-bd53-42f8-9644-1ef6f7fab6b9",
+    "userId": "pub_7a37d36f61c1b3caf85e5581",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T07:47:30.100Z"
+  },
+  {
+    "id": "vote:09d1f3d1-0f3a-4c36-ba2a-8cfee72f4ae1",
+    "userId": "pub_42d02b17791d06a9c62d584f",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-16T07:49:17.324Z"
+  },
+  {
+    "id": "vote:688771c3-2ecf-4b44-bb58-21af66c48674",
+    "userId": "pub_de7077ca7eff4e6c05b2c847",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T08:13:35.594Z"
+  },
+  {
+    "id": "vote:c2fb8151-985c-4088-8112-8f9e6f93ce0d",
+    "userId": "pub_04bff3d4184b2a950bda98ac",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T09:12:28.572Z"
+  },
+  {
+    "id": "vote:548f7447-684a-4c22-a8c2-5b56e16a92f1",
+    "userId": "pub_04f7ff6595630cf5309fb2b3",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 10,
+    "timestamp": "2025-02-16T09:23:47.377Z"
+  },
+  {
+    "id": "vote:d78e4e74-02c8-408e-b684-033df64c0095",
+    "userId": "pub_8f787e072a3af3266f0f8de6",
+    "proposalId": "proposal:0835b8f3-cd64-4877-9c4a-8136b80b1d73",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T11:11:28.520Z"
+  },
+  {
+    "id": "vote:dd8f3105-7246-4583-9532-e5368273d381",
+    "userId": "pub_5536650d7b92b1b9b294a884",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 7,
+    "timestamp": "2025-02-16T11:44:21.859Z"
+  },
+  {
+    "id": "vote:7af27732-14cd-4c37-9fb9-b0f21cf263ac",
+    "userId": "pub_d6ff6b3e17233aa0c98e47fa",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T14:09:45.017Z"
+  },
+  {
+    "id": "vote:3c73c20c-e951-4eb8-b6a1-9ae37fcd1adf",
+    "userId": "pub_ad92116d8de556daf79c6809",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-16T14:24:48.560Z"
+  },
+  {
+    "id": "vote:a587cc23-b969-4d73-a285-99d736a5a7c8",
+    "userId": "pub_cf216663827d3f95aecf8a20",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-16T15:04:20.845Z"
+  },
+  {
+    "id": "vote:407a7c7b-46c4-4d88-b991-4d0f7ceb78aa",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T16:59:28.373Z"
+  },
+  {
+    "id": "vote:7fb5672c-347b-48bc-8a3f-d862ec98092f",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T16:59:28.373Z"
+  },
+  {
+    "id": "vote:670491a9-5aed-48da-961f-97acd5a92ca6",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-16T16:59:28.373Z"
+  },
+  {
+    "id": "vote:e2bbc1c1-644e-4fef-9c3e-8f21814608e8",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 4,
+    "timestamp": "2025-02-16T16:59:28.373Z"
+  },
+  {
+    "id": "vote:fb7037a3-bc98-4ba9-86a4-a68bb84d47e2",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T16:59:28.373Z"
+  },
+  {
+    "id": "vote:6c479bf6-d673-43a2-a671-cab88e9867b0",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T16:59:28.373Z"
+  },
+  {
+    "id": "vote:b591f3ef-0780-4d07-a87a-130eabbe17d5",
+    "userId": "pub_cffe74effda461afcb3c6e76",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T18:21:54.558Z"
+  },
+  {
+    "id": "vote:04aae35b-000c-474c-8467-b5204c9ebd2e",
+    "userId": "pub_3266140b898a556c567c98c6",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T19:48:25.017Z"
+  },
+  {
+    "id": "vote:b1cca21f-33e3-4477-926b-cb0c9fc8ec49",
+    "userId": "pub_e21f8d03c8bcef362fedb4dc",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T20:08:25.532Z"
+  },
+  {
+    "id": "vote:346bee94-18e9-42f3-ae90-854d46100d27",
+    "userId": "pub_19ee91ba6e285fb040606240",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T20:10:07.897Z"
+  },
+  {
+    "id": "vote:4c28aedb-d8f1-4431-9bb8-f4eb25f63f9b",
+    "userId": "pub_df1c0fabbc928c3d53a485ce",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T20:20:09.194Z"
+  },
+  {
+    "id": "vote:26541a9f-5282-4b48-b12a-cc6864d704c2",
+    "userId": "pub_2e7f73bbad2e28a022e90e7c",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T20:41:21.943Z"
+  },
+  {
+    "id": "vote:3df171cd-38eb-4f05-9670-954b907453aa",
+    "userId": "pub_a3cbae07836bbbd490a7cc45",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T20:45:02.911Z"
+  },
+  {
+    "id": "vote:e18a3500-7826-43e0-a65d-b7118f3926ae",
+    "userId": "pub_67a6fb1777bffe6b2028562f",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T21:06:48.985Z"
+  },
+  {
+    "id": "vote:02b7040d-db9f-432f-b3e7-d19771d33dd3",
+    "userId": "pub_f1778ff28c58692f5913624b",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T21:16:42.747Z"
+  },
+  {
+    "id": "vote:77e3e350-5b7c-449f-922f-a548a833993a",
+    "userId": "pub_fe98682c3e4745b46c304d49",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T21:34:38.543Z"
+  },
+  {
+    "id": "vote:5eb06089-cc28-44f7-8d56-ea9f788e4d62",
+    "userId": "pub_c28ae2a8f88a8097cdc8c970",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T21:48:50.392Z"
+  },
+  {
+    "id": "vote:4cd01232-b224-446f-b69b-4fa295f569c0",
+    "userId": "pub_4542e5c9138b41754af20930",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T21:58:16.129Z"
+  },
+  {
+    "id": "vote:48e87175-c398-466e-af46-359225825f3f",
+    "userId": "pub_b51980abaf6e40752b72b3f4",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T21:59:38.557Z"
+  },
+  {
+    "id": "vote:03193eea-815d-4c86-b32e-2714daff298a",
+    "userId": "pub_d369951f5edcf60f7a74a532",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T22:32:18.317Z"
+  },
+  {
+    "id": "vote:63aa9f79-69e6-4e7a-b93a-da04b30402b6",
+    "userId": "pub_e58f0acebecae2bda7bc2ce1",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T22:48:22.407Z"
+  },
+  {
+    "id": "vote:8dffc7c0-4bcc-4f66-9863-3d0302d582ee",
+    "userId": "pub_8f13284927dbcf7a6ddab3c5",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 7,
+    "timestamp": "2025-02-16T23:08:00.402Z"
+  },
+  {
+    "id": "vote:b58381d5-0136-484d-86a7-1c76969e7b7f",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 5,
+    "timestamp": "2025-02-16T23:11:36.827Z"
+  },
+  {
+    "id": "vote:c8cea6dd-41b6-49f6-bf37-024446e8bd0c",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-16T23:11:47.547Z"
+  },
+  {
+    "id": "vote:cbba4dc4-c969-4048-b887-e55c6e1f649d",
+    "userId": "pub_424822b09f38c1a98faef2f4",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T23:20:25.860Z"
+  },
+  {
+    "id": "vote:924e862a-6dd0-4ede-af56-84d0b30fe0ac",
+    "userId": "pub_2085a441e5ca271edec080e9",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-16T23:27:05.698Z"
+  },
+  {
+    "id": "vote:56f00dac-3960-40db-99e9-4880c657b6be",
+    "userId": "pub_e41e2cafe9aee595ad46fb80",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T00:15:18.226Z"
+  },
+  {
+    "id": "vote:9524bc87-29af-458e-b548-dd7ff4eaf7fb",
+    "userId": "pub_754203f1ca1cd02df713efd4",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 7,
+    "timestamp": "2025-02-17T00:58:34.782Z"
+  },
+  {
+    "id": "vote:76189f43-da7f-422a-891e-b5bd906d7ae4",
+    "userId": "pub_9277099f411ebcbd7a273f6f",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T01:05:08.197Z"
+  },
+  {
+    "id": "vote:ec83557e-6cfc-46e4-bf6b-bcfb75925ce3",
+    "userId": "pub_9353eb84c0c3ec0ba34da84e",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T01:06:49.242Z"
+  },
+  {
+    "id": "vote:a7c80f2d-212e-4313-aeb1-630bc141fd9a",
+    "userId": "pub_ba86f6049031c69e842632a8",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T01:07:39.996Z"
+  },
+  {
+    "id": "vote:5486aa34-25a6-4cf8-91f1-3a496920138c",
+    "userId": "pub_7044cbf6f0917e9af9908d3f",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T01:11:36.838Z"
+  },
+  {
+    "id": "vote:99dcab0e-28ca-47d8-a7b4-69e885f7749a",
+    "userId": "pub_64298bf3ebfbc14e2f333dae",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T01:13:23.039Z"
+  },
+  {
+    "id": "vote:11d7f5ae-aa9f-4d9d-b15c-4027584b71b1",
+    "userId": "pub_beadba1db2f3b2aea72d5314",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T01:14:31.545Z"
+  },
+  {
+    "id": "vote:2a8293f1-01d5-4679-aa64-57a96434ee79",
+    "userId": "pub_19497299523caaad3ab4259e",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T01:16:20.691Z"
+  },
+  {
+    "id": "vote:4532ed8a-8b94-4374-a18b-1ecfc5c1166c",
+    "userId": "pub_9fdee19bd83353a2375b2ec9",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T01:16:26.176Z"
+  },
+  {
+    "id": "vote:226e05ae-f423-489e-944b-595a3d614e55",
+    "userId": "pub_b3fc6fb375e00460ffa1a93c",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-17T01:26:34.894Z"
+  },
+  {
+    "id": "vote:7da5b5a8-05f8-4074-9fd8-f3b8bfe0a46e",
+    "userId": "pub_60f25a02600ad14ddf6451c0",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T01:35:14.259Z"
+  },
+  {
+    "id": "vote:4a4f9a5c-b804-4b40-93fa-4363fe76a1ba",
+    "userId": "pub_8ac6d1fd415f870abb6f6cb0",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T01:38:41.422Z"
+  },
+  {
+    "id": "vote:4a01b982-ca7d-431f-9e50-02683a608c56",
+    "userId": "pub_5bf79051565681dead7612e2",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T01:56:58.291Z"
+  },
+  {
+    "id": "vote:2931d5cd-38cd-4289-ae31-ee1df28a9441",
+    "userId": "pub_a2ee09daa6cb46238193084b",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T02:06:25.900Z"
+  },
+  {
+    "id": "vote:b163d042-4093-42a5-9085-a50e14b29e6a",
+    "userId": "pub_d52c35ee2aab19f31ad93724",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T02:07:29.702Z"
+  },
+  {
+    "id": "vote:42898177-f2a1-4915-b2ed-63b97066ca7f",
+    "userId": "pub_164b9a54880ef792fd21261d",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T02:10:44.280Z"
+  },
+  {
+    "id": "vote:57c9b4c8-7144-4193-8935-c26e4d062827",
+    "userId": "pub_cdd00edbd078de9f5a4e4e38",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T02:13:01.349Z"
+  },
+  {
+    "id": "vote:d776815b-2874-414b-9c70-969f4676e3ab",
+    "userId": "pub_f3c7043034795f34a74b3b20",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T02:13:38.704Z"
+  },
+  {
+    "id": "vote:09e34ab2-1409-48d3-b476-f61d0bb221df",
+    "userId": "pub_0d2ea05793395f001fe6127e",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T02:14:22.236Z"
+  },
+  {
+    "id": "vote:c570c746-6f8b-4308-bc16-ba8f04a89e37",
+    "userId": "pub_383f64bdfae3ebc6e4f07465",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T02:18:33.008Z"
+  },
+  {
+    "id": "vote:81905c87-e961-4754-88b9-8bd1eacaca9d",
+    "userId": "pub_e41a52010315841b2170afaf",
+    "proposalId": "proposal:c87722a2-8c47-4d68-b2a5-56ef6cdb1ab5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T02:19:23.236Z"
+  },
+  {
+    "id": "vote:2749dd71-9792-4bcb-9e25-25af0f177fb5",
+    "userId": "pub_657c69e8ea9823afb30f139b",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T02:19:33.787Z"
+  },
+  {
+    "id": "vote:b06ee984-9d24-4ff4-b4b2-5acfc4fadee1",
+    "userId": "pub_873fd67fedbac22b620c32d8",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T02:33:33.897Z"
+  },
+  {
+    "id": "vote:11ab4ce8-cd9a-46d4-b426-94808d981803",
+    "userId": "pub_b2a35dfe31a476ed3eda4b17",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T02:41:53.294Z"
+  },
+  {
+    "id": "vote:7c4ab438-0ab5-4e75-8dc8-944ff264f697",
+    "userId": "pub_b21ba4dc875b85b0038c384a",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T03:00:42.424Z"
+  },
+  {
+    "id": "vote:0c606d30-ec6e-4a13-bf54-d99df829e07b",
+    "userId": "pub_75f048a2784e2ce49c0a4c77",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T03:10:12.183Z"
+  },
+  {
+    "id": "vote:34a30cec-8d70-4676-bf76-96d3592e9bff",
+    "userId": "pub_29528cdf6cc90117283dcdba",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T03:17:02.194Z"
+  },
+  {
+    "id": "vote:d60485eb-f404-420f-88cd-f0c6959e64fb",
+    "userId": "pub_4bb0a3e30d46f8ff5d6a8d45",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T03:20:47.484Z"
+  },
+  {
+    "id": "vote:c1ef797f-c17f-4b75-99b0-96a3f0a9c71a",
+    "userId": "pub_aa4ff9dfa7aca32869b48603",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T03:28:04.373Z"
+  },
+  {
+    "id": "vote:95ba4af4-05e8-4941-af1c-3521e26ff164",
+    "userId": "pub_b1aabd4525435cbdb35b6fc1",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T03:32:00.427Z"
+  },
+  {
+    "id": "vote:ea7a603e-88a6-4867-946f-db415dfdb45a",
+    "userId": "pub_e5a507b1d2133a45ea13156d",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T03:40:41.308Z"
+  },
+  {
+    "id": "vote:47034664-2162-4058-a80a-2c377dea75e8",
+    "userId": "pub_ac9766fcca8565f50363934a",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T03:56:29.995Z"
+  },
+  {
+    "id": "vote:d452935c-8893-4885-8ef7-e5ae8128ff82",
+    "userId": "pub_7db4e0726b0ba7056157adc5",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T04:15:42.289Z"
+  },
+  {
+    "id": "vote:cc968d60-e348-4341-92c0-3134b17bd69e",
+    "userId": "pub_4e231302a90862db1a30ec43",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T04:16:36.603Z"
+  },
+  {
+    "id": "vote:ba144832-4a73-4818-b692-117893ea9d63",
+    "userId": "pub_de9dbcf0187e8521ae006435",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T04:17:20.608Z"
+  },
+  {
+    "id": "vote:b0ceb6c1-57c0-4fa1-85aa-a6c199893ce0",
+    "userId": "pub_bfbb1dacc0c5a4029bd2fa27",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T04:23:31.446Z"
+  },
+  {
+    "id": "vote:4a1702ff-3a8c-4959-9c0e-17db05e04f77",
+    "userId": "pub_4cb8eed2b72b7a6602767775",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T04:24:03.998Z"
+  },
+  {
+    "id": "vote:e22fb208-e820-4978-9efe-c87bd7f615cf",
+    "userId": "pub_6227198891f6cf16a6d4386c",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T04:27:50.134Z"
+  },
+  {
+    "id": "vote:a4331e98-294b-4815-8e5b-3aafbe0e1f20",
+    "userId": "pub_7b09e384896f199eb9279d6f",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 4,
+    "timestamp": "2025-02-17T04:33:18.523Z"
+  },
+  {
+    "id": "vote:1c5d020c-e163-4f0c-a554-0ff56b7c5639",
+    "userId": "pub_7b09e384896f199eb9279d6f",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-17T04:33:18.523Z"
+  },
+  {
+    "id": "vote:c7173f2f-1cc9-46e0-bdc0-6670fbb4cd6a",
+    "userId": "pub_7b09e384896f199eb9279d6f",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T04:33:18.523Z"
+  },
+  {
+    "id": "vote:c444c627-ce9b-4dc7-a7b5-7d04145b0d70",
+    "userId": "pub_7b09e384896f199eb9279d6f",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T04:33:18.523Z"
+  },
+  {
+    "id": "vote:bdd0ac60-9e77-423f-984d-3613bad57043",
+    "userId": "pub_7b09e384896f199eb9279d6f",
+    "proposalId": "proposal:4a066496-aa7e-48f3-af9d-f40efb7a0e69",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-17T04:33:18.523Z"
+  },
+  {
+    "id": "vote:ec03eedc-ef64-489f-bf72-6bfa3182e3d8",
+    "userId": "pub_b7f3cdcaa6cceb664ffba006",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T04:43:58.333Z"
+  },
+  {
+    "id": "vote:14c6656c-cfb2-4f15-824f-f0cc8354d867",
+    "userId": "pub_ef19c6561278067e7fb09816",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T04:56:56.526Z"
+  },
+  {
+    "id": "vote:d5c7d8d1-a35d-40be-90b4-a414adbbb1e8",
+    "userId": "pub_266bc0cd3ceea1c43ef7d782",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T04:59:15.546Z"
+  },
+  {
+    "id": "vote:891b955c-413b-4f36-9e48-150a641a2b4b",
+    "userId": "pub_e46fe5ddcbb4dcda10bfbcac",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T05:01:34.878Z"
+  },
+  {
+    "id": "vote:9834b2b1-01c3-4bff-9538-24576d65e806",
+    "userId": "pub_67808d723102202bcdbeb6b4",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T05:11:32.907Z"
+  },
+  {
+    "id": "vote:33abf8da-d095-4e63-af6f-1cf107d82d20",
+    "userId": "pub_4b4fc4f01672fc1cb4849792",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T05:19:49.051Z"
+  },
+  {
+    "id": "vote:35fd3bfa-ae25-4172-9449-b4716dba86e1",
+    "userId": "pub_d3b2e935529c1735449610fa",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T05:21:04.206Z"
+  },
+  {
+    "id": "vote:3f109f40-eb66-405f-b4b4-7cf3903ee757",
+    "userId": "pub_f9a4bd14e4964181127cfb82",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T05:23:21.900Z"
+  },
+  {
+    "id": "vote:1fe50ad6-25cc-4bab-81ab-9ee91d31aaa9",
+    "userId": "pub_ce43b79ff949ca5a3cca8e21",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T05:24:48.486Z"
+  },
+  {
+    "id": "vote:18e40223-360d-4daa-af6e-08b0fdad7b0c",
+    "userId": "pub_d1e9413f36c4d796205fc97a",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T05:26:46.471Z"
+  },
+  {
+    "id": "vote:f296bab2-c690-4c15-89ff-38bbd31795b0",
+    "userId": "pub_a574da1b50a4804bc42f562a",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T05:39:09.745Z"
+  },
+  {
+    "id": "vote:260aedfd-1790-4215-91c2-98f65459cafa",
+    "userId": "pub_6e122add6e0fa3a5e4be9d41",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T05:39:12.362Z"
+  },
+  {
+    "id": "vote:72c83c49-8728-493c-b884-74bd1018794e",
+    "userId": "pub_dc8c32e2d556058e8dad01d2",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T05:47:21.775Z"
+  },
+  {
+    "id": "vote:d7f266dd-f15b-4028-9a22-e823b1bfb5fa",
+    "userId": "pub_696fbd4a4c0e55950cf34ada",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T06:02:53.562Z"
+  },
+  {
+    "id": "vote:08c8b243-0c13-42ed-939a-7040cf5a75ac",
+    "userId": "pub_27a8ab67122dcf223850d009",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T06:08:40.813Z"
+  },
+  {
+    "id": "vote:547c0e1d-7284-4214-abdd-5caa75019e4c",
+    "userId": "pub_0e0b06a8ebd33244831cedeb",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T06:58:23.808Z"
+  },
+  {
+    "id": "vote:db48ca89-79e2-4428-a9a5-d875aeb86495",
+    "userId": "pub_d34fb24eadbb8c995d1e0c28",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T07:17:22.022Z"
+  },
+  {
+    "id": "vote:a06e38ae-7919-4dce-9dd3-978ab3fc8719",
+    "userId": "pub_c6138cbfec675d432ac02f5c",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T07:31:23.500Z"
+  },
+  {
+    "id": "vote:163c05cb-db88-4b5d-b39b-da6b3a34381d",
+    "userId": "pub_d52baab3d6a1300a09152c2f",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T07:38:13.194Z"
+  },
+  {
+    "id": "vote:a9073697-3c65-45b6-b0c1-6fc87bad8a05",
+    "userId": "pub_b2f9257738922013618dbf75",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T07:42:03.209Z"
+  },
+  {
+    "id": "vote:c2974910-7357-4063-a4ad-337173989e32",
+    "userId": "pub_3bf01e7e07695581497e5805",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T07:59:03.400Z"
+  },
+  {
+    "id": "vote:97a87937-0f02-43d8-a6c2-328673224af3",
+    "userId": "pub_767023f2f05bd9615ebb3265",
+    "proposalId": "proposal:962f632c-a5f5-47f1-879d-cdc5aa7d7319",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 5,
+    "timestamp": "2025-02-17T08:04:28.562Z"
+  },
+  {
+    "id": "vote:8f42ab6d-ae99-4f10-a156-263eca82ea23",
+    "userId": "pub_767023f2f05bd9615ebb3265",
+    "proposalId": "proposal:56f41efd-b6a4-479c-80b5-281fb05a18f5",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-17T08:04:28.562Z"
+  },
+  {
+    "id": "vote:3c47a704-9268-4704-91d1-b308775e8686",
+    "userId": "pub_3214daed213386f3409be637",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T08:18:23.129Z"
+  },
+  {
+    "id": "vote:28847122-7655-43cb-a1d5-c4f7de053ac3",
+    "userId": "pub_ec23f5c7d5b471c0cbe59443",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-17T08:42:34.787Z"
+  },
+  {
+    "id": "vote:83de7eab-dd56-44da-ac0f-f24a50d2134b",
+    "userId": "pub_a81cde46aa70d27e28b6473b",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 3,
+    "timestamp": "2025-02-17T08:45:07.418Z"
+  },
+  {
+    "id": "vote:0be9308b-6a2b-41ce-b324-4e3443f53b84",
+    "userId": "pub_63913f90e1e5b6558ab4497d",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T09:01:49.844Z"
+  },
+  {
+    "id": "vote:1f4a6a27-8b25-49ae-9d2c-73b1f09c18ce",
+    "userId": "pub_4531051931e9479b218bffd2",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 8,
+    "timestamp": "2025-02-17T09:34:18.129Z"
+  },
+  {
+    "id": "vote:1948623f-8ddb-4432-840f-3c59c9609076",
+    "userId": "pub_08a7581872b2c3a9df58f4a0",
+    "proposalId": "proposal:49e8b666-0125-4b56-8df1-d528cffca0bc",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-17T09:36:00.883Z"
+  },
+  {
+    "id": "vote:065e395b-075e-48d8-ba1c-2b3611805b33",
+    "userId": "pub_08a7581872b2c3a9df58f4a0",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 2,
+    "timestamp": "2025-02-17T09:36:00.883Z"
+  },
+  {
+    "id": "vote:f2eafc12-fabe-4c80-8ed7-ebabeb4b47a3",
+    "userId": "pub_08a7581872b2c3a9df58f4a0",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 6,
+    "timestamp": "2025-02-17T09:36:00.883Z"
+  },
+  {
+    "id": "vote:6edecf5f-0066-43aa-a6de-39ea8bb59bc8",
+    "userId": "pub_262e29d35274827712c23b35",
+    "proposalId": "proposal:8025c064-0382-402f-9da7-a25e5ee2ca0b",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T09:55:50.898Z"
+  },
+  {
+    "id": "vote:2debc3df-a6f7-40d1-a7d7-6f91903f3597",
+    "userId": "pub_c24600036f7102df4b72eba1",
+    "proposalId": "proposal:d960fe92-5dc6-45f9-b71b-1f136b405cdd",
+    "roundId": "round:nouns-unite:euic-meet-and-greet",
+    "count": 1,
+    "timestamp": "2025-02-17T10:47:12.735Z"
+  }
+]

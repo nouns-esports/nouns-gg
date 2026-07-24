@@ -1,0 +1,14 @@
+{
+  "id": "pub_1a6677962ee3c303c60c80d1",
+  "name": "wardenunleashed",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=qdp6g&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0c87677b30f8AE2c159Eaa1F5646346c307a8873",
+      "kind": "external"
+    }
+  ]
+}

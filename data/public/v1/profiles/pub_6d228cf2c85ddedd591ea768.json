@@ -1,0 +1,18 @@
+{
+  "id": "pub_6d228cf2c85ddedd591ea768",
+  "name": "nouns lunari ♡ ⌐◧w◨",
+  "image": "https://pbs.twimg.com/profile_images/1846289859163439106/5QHH5zVs_normal.jpg",
+  "bio": "professional cs - nounsfe ",
+  "twitter": {
+    "username": "lunariFPS",
+    "name": "nouns lunari ♡ ⌐◧w◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1846289859163439106/5QHH5zVs_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x56ebD346d5013A531105aAEeb574B31F003E11DD",
+      "kind": "external"
+    }
+  ]
+}

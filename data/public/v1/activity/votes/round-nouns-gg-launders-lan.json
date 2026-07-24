@@ -1,0 +1,2122 @@
+[
+  {
+    "id": "vote:4e6d64fc-f14e-41cf-b883-3ea4d63dc117",
+    "userId": "pub_16e5cc0ba45ee8846bba6b8b",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:09:26.750Z"
+  },
+  {
+    "id": "vote:608d6ae8-77f3-41ff-aa8e-0ea186ad24bb",
+    "userId": "pub_2b3fc3d7b04363309697e6dd",
+    "proposalId": "proposal:5273304e-0b9e-4ba9-8d0d-4d8f253edc7a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:10:40.304Z"
+  },
+  {
+    "id": "vote:5400a232-8c77-446d-acd9-303bf7b6ab99",
+    "userId": "pub_e0895689f1703f7fa39aa067",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-18T11:15:56.124Z"
+  },
+  {
+    "id": "vote:bdce8090-fda9-4b77-89ac-9eacb58cf256",
+    "userId": "pub_90cd8b59cc529af9ed0cddde",
+    "proposalId": "proposal:8203c1d7-9c8a-4a33-8cf5-4cab398d006b",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:18:34.806Z"
+  },
+  {
+    "id": "vote:07e188ee-8657-4a1d-b425-ac580ccf9683",
+    "userId": "pub_90cd8b59cc529af9ed0cddde",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:18:34.806Z"
+  },
+  {
+    "id": "vote:4286f6d9-ccec-4235-ac1a-6453699c2242",
+    "userId": "pub_90cd8b59cc529af9ed0cddde",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:18:34.806Z"
+  },
+  {
+    "id": "vote:5ae53423-3fe3-4457-8b92-37bfd77f2fbf",
+    "userId": "pub_1b1ca4270c2909805b331066",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-18T11:20:02.323Z"
+  },
+  {
+    "id": "vote:a3b8e657-a2fa-482e-9109-333131824801",
+    "userId": "pub_9ab3099485d2055de39916a4",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 5,
+    "timestamp": "2024-12-18T11:20:17.045Z"
+  },
+  {
+    "id": "vote:ddb6f14b-3aa8-44e2-8fd6-9f4f41baf255",
+    "userId": "pub_c1d5148354f189fdfae2f7f0",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:21:31.389Z"
+  },
+  {
+    "id": "vote:c868ea05-d985-4116-b06a-41b094587e29",
+    "userId": "pub_b964e72a801b4ffd74cd8cae",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-18T11:23:40.534Z"
+  },
+  {
+    "id": "vote:b6133b32-1cd9-4d0b-923c-ff716a823719",
+    "userId": "pub_9620ef9eb9ce187a38026b9e",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-18T11:28:57.897Z"
+  },
+  {
+    "id": "vote:b93be6c0-111d-4ffe-baa3-674af6c283c1",
+    "userId": "pub_a0d0e455b97710ca25565391",
+    "proposalId": "proposal:447e42d2-85a6-4e61-ad84-534baab99c9a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:34:51.054Z"
+  },
+  {
+    "id": "vote:486007f5-c930-48f6-b405-f049486d17d8",
+    "userId": "pub_613a9973d7367d698a4ad79a",
+    "proposalId": "proposal:447e42d2-85a6-4e61-ad84-534baab99c9a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:35:13.593Z"
+  },
+  {
+    "id": "vote:4de9b67e-f81e-4787-8494-5cadc6400134",
+    "userId": "pub_e6c4c9e9398d2625dc656aa7",
+    "proposalId": "proposal:447e42d2-85a6-4e61-ad84-534baab99c9a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:36:33.054Z"
+  },
+  {
+    "id": "vote:aad9a80c-a7c0-4139-8e63-9180263cce33",
+    "userId": "pub_a0bbac8b4a4701a10cba60e7",
+    "proposalId": "proposal:447e42d2-85a6-4e61-ad84-534baab99c9a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:37:51.208Z"
+  },
+  {
+    "id": "vote:72bab39f-c8ef-446a-ad3c-0de58e8f098f",
+    "userId": "pub_847734f2a056b1bee9c09a1b",
+    "proposalId": "proposal:447e42d2-85a6-4e61-ad84-534baab99c9a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:38:50.688Z"
+  },
+  {
+    "id": "vote:9a0484a0-8a63-41ba-b74a-f2866ae1c47e",
+    "userId": "pub_909785aafbf914840eb175a4",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T11:39:02.513Z"
+  },
+  {
+    "id": "vote:1d1ef45f-92f6-4f49-b3b7-3011992db00d",
+    "userId": "pub_bbe09d404c3753c44c072818",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-18T11:39:50.883Z"
+  },
+  {
+    "id": "vote:be021b13-a267-4145-b60b-5bda7315f4ff",
+    "userId": "pub_c1465d2aab0557e2d2973f9f",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-18T11:49:43.890Z"
+  },
+  {
+    "id": "vote:31767445-b2ea-48e0-929d-d4aca7bc372b",
+    "userId": "pub_0d75293d2a26d6ed84d60a8e",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-18T11:58:47.965Z"
+  },
+  {
+    "id": "vote:a3eb2398-38c2-4635-bc66-585409adbb3a",
+    "userId": "pub_9c182d1ea1ef8865c6abc9d3",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T12:13:23.019Z"
+  },
+  {
+    "id": "vote:6cbc9b1f-a095-497e-8d2e-d8fa8c35124e",
+    "userId": "pub_c95b2e5b4420c0dfad90018b",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-18T12:42:32.309Z"
+  },
+  {
+    "id": "vote:063e61f1-6032-4f68-a270-ea6fb14ab56c",
+    "userId": "pub_28a2694919df00fbfa92544c",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-18T12:53:07.256Z"
+  },
+  {
+    "id": "vote:efaf1e44-8e14-420b-a5b1-5bff3cec9d00",
+    "userId": "pub_9c2bdde5e667995fc9bcc21f",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T13:15:56.789Z"
+  },
+  {
+    "id": "vote:7ce03c90-4f5b-467a-86e1-1480b5edbf30",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T13:33:44.820Z"
+  },
+  {
+    "id": "vote:8c53fd16-3f10-44cb-a447-c1c0bc804754",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:8203c1d7-9c8a-4a33-8cf5-4cab398d006b",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-18T13:33:44.820Z"
+  },
+  {
+    "id": "vote:1ce84f1e-13be-4012-b51f-8c0906c58632",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 5,
+    "timestamp": "2024-12-18T13:33:44.820Z"
+  },
+  {
+    "id": "vote:84aa20e0-39cf-4e93-9d4a-6f99033dda37",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-18T13:33:44.820Z"
+  },
+  {
+    "id": "vote:779a74dc-3e46-4454-86e4-db9ece910298",
+    "userId": "pub_20ecefe179fabe90cffc0a2c",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T15:06:36.298Z"
+  },
+  {
+    "id": "vote:b9e56194-9108-4423-b287-cc1c6a99b07c",
+    "userId": "pub_448e3bcc80af511fc2627ff4",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T15:06:38.846Z"
+  },
+  {
+    "id": "vote:d3d4be7b-6f3b-46d0-a5c5-9285a38495ea",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-18T15:08:25.031Z"
+  },
+  {
+    "id": "vote:88723055-ac02-41fe-9325-1c991b43a282",
+    "userId": "pub_73a9b4e97f3e70707ceb4150",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T15:09:10.366Z"
+  },
+  {
+    "id": "vote:0bfb034b-1f10-4fcb-9f49-648d57cc941e",
+    "userId": "pub_a375d071425301ae51c412e4",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T15:10:31.928Z"
+  },
+  {
+    "id": "vote:7939e748-0ba8-4b77-9e2c-9ec7f980b14c",
+    "userId": "pub_1af2d588d67a6ac5671d5b7c",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T15:18:39.592Z"
+  },
+  {
+    "id": "vote:22f9e70d-fe1a-4f38-83e0-6a458e894b10",
+    "userId": "pub_56582fc74d98b962105f9f28",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T15:25:22.273Z"
+  },
+  {
+    "id": "vote:16560878-c644-42df-9735-e9cdc15b1c06",
+    "userId": "pub_83e51920b9ec94ef62f74a07",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 5,
+    "timestamp": "2024-12-18T16:44:51.849Z"
+  },
+  {
+    "id": "vote:bf31df2e-ec80-4b51-9dbb-28694061b5da",
+    "userId": "pub_2beec2c4ca7be0b72f66d75f",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-18T17:02:48.988Z"
+  },
+  {
+    "id": "vote:be9f4e2e-223c-4186-a113-0ed133b6d00f",
+    "userId": "pub_bb1c6b24c1e209fb93d1c8c2",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-18T17:10:17.922Z"
+  },
+  {
+    "id": "vote:569dfd5f-8bce-4521-90b6-434b51bace3d",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 8,
+    "timestamp": "2024-12-18T17:50:34.518Z"
+  },
+  {
+    "id": "vote:0db2b93e-9bae-462d-a324-49129985e635",
+    "userId": "pub_8f13284927dbcf7a6ddab3c5",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-18T19:02:49.890Z"
+  },
+  {
+    "id": "vote:d82c2cc9-d060-483f-929d-8b6f88b44c4d",
+    "userId": "pub_f8812a39658959c3fdbf7f5b",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T19:46:58.298Z"
+  },
+  {
+    "id": "vote:dffbfb5f-43b6-428f-9409-33764dfbdba5",
+    "userId": "pub_a6cc2751892c7c11c6da1692",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-18T19:53:33.976Z"
+  },
+  {
+    "id": "vote:096e692f-6bda-4d66-b2d6-a6222029dff8",
+    "userId": "pub_f48dcd01529e8cc10dc75037",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-18T20:07:30.020Z"
+  },
+  {
+    "id": "vote:b8ecb0c8-3cb9-44ce-8046-c45b7db64a0f",
+    "userId": "pub_690ffaf431d8fa9e24f06464",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T20:07:56.940Z"
+  },
+  {
+    "id": "vote:7aa5a91d-553e-4e66-8823-38c409bc3a11",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-18T20:11:19.907Z"
+  },
+  {
+    "id": "vote:4dea3676-95e7-4bd5-9664-8f7bb5a17b96",
+    "userId": "pub_c418d2f12a275b68c34c65a4",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T20:23:31.872Z"
+  },
+  {
+    "id": "vote:9683a87b-cf33-4745-b08d-487392f273a1",
+    "userId": "pub_f7b8545ed214fbb6d6519072",
+    "proposalId": "proposal:5273304e-0b9e-4ba9-8d0d-4d8f253edc7a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T20:28:44.988Z"
+  },
+  {
+    "id": "vote:02a24840-8ef2-495d-8b74-c722a39e645b",
+    "userId": "pub_bc89a16cabcce60ea62f716b",
+    "proposalId": "proposal:bcfb0655-d184-4b12-aeba-75e0f1524eed",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-18T20:50:35.644Z"
+  },
+  {
+    "id": "vote:891929fa-3e56-4a79-bd54-5abedb6cf41c",
+    "userId": "pub_bc89a16cabcce60ea62f716b",
+    "proposalId": "proposal:447e42d2-85a6-4e61-ad84-534baab99c9a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-18T20:50:35.644Z"
+  },
+  {
+    "id": "vote:1bcdaf49-1b9e-45a9-8f98-9419feaaeb4d",
+    "userId": "pub_229abc19382f65ab00a86b24",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-18T21:05:46.276Z"
+  },
+  {
+    "id": "vote:95616972-a4d0-44ab-bd5e-af29068592e5",
+    "userId": "pub_51d61b54dd248273e0e6c1e6",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 8,
+    "timestamp": "2024-12-18T21:10:25.067Z"
+  },
+  {
+    "id": "vote:12d2cc0c-ec0b-4dfd-b7fc-07911e52b502",
+    "userId": "pub_59bebced56c17bcb72e02fd8",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-18T21:18:08.393Z"
+  },
+  {
+    "id": "vote:623a0a9f-8098-40bf-8262-2b1c63ad1c88",
+    "userId": "pub_875542cea6b803598c3e7ae7",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T21:19:58.531Z"
+  },
+  {
+    "id": "vote:e7ebcece-ff3a-45d2-a42e-6b00c5f5fb85",
+    "userId": "pub_da3c4b31661b53f6d7dc20c8",
+    "proposalId": "proposal:5273304e-0b9e-4ba9-8d0d-4d8f253edc7a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T21:25:44.924Z"
+  },
+  {
+    "id": "vote:273086a6-00b7-431d-91c4-d6e2d45475b6",
+    "userId": "pub_1ab0a4e8f28d99d2195818ef",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-18T21:34:52.645Z"
+  },
+  {
+    "id": "vote:fb0c5316-aeb3-4813-99fe-ab31153b9de5",
+    "userId": "pub_1a3200958a67bb41f8d9ff02",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 8,
+    "timestamp": "2024-12-18T21:58:27.769Z"
+  },
+  {
+    "id": "vote:98f2c0fa-e542-4816-ac69-c5bb14a0c2e7",
+    "userId": "pub_f0b64e1048beb31d3c1ad243",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T22:45:04.420Z"
+  },
+  {
+    "id": "vote:0bd4c2d9-5a0f-4adc-b9fe-0e84ecbf6d6d",
+    "userId": "pub_33034d1fc31358ae9e1f2017",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T23:00:03.072Z"
+  },
+  {
+    "id": "vote:cc48d13a-35ac-4fb6-a7a8-3206025ee481",
+    "userId": "pub_6b2eb2235fe798c658492542",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-18T23:03:40.069Z"
+  },
+  {
+    "id": "vote:83616a9e-1439-4a51-977c-cdb128806858",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T23:04:55.262Z"
+  },
+  {
+    "id": "vote:d38ccda5-cb6e-44be-9fc5-9f3613754a51",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-18T23:04:55.262Z"
+  },
+  {
+    "id": "vote:88804747-d114-4446-bb4d-9a6e6c8cba99",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:bcfb0655-d184-4b12-aeba-75e0f1524eed",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-18T23:04:55.262Z"
+  },
+  {
+    "id": "vote:0a6dfa85-5d38-44c8-822b-e2e3e907322d",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-18T23:06:19.777Z"
+  },
+  {
+    "id": "vote:a8912208-a448-419f-ac53-f265b8a29858",
+    "userId": "pub_61cadb39306fac9286872218",
+    "proposalId": "proposal:bcfb0655-d184-4b12-aeba-75e0f1524eed",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 8,
+    "timestamp": "2024-12-18T23:07:38.084Z"
+  },
+  {
+    "id": "vote:f9f591ed-3886-46fe-ab3e-58dbffa29ce9",
+    "userId": "pub_2d6f6fdee2d6afbbb6eeb5c1",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-18T23:53:20.156Z"
+  },
+  {
+    "id": "vote:cdfb7b70-6280-411a-88a6-526547415e92",
+    "userId": "pub_6653d325724e20673ecc3184",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-19T00:22:31.161Z"
+  },
+  {
+    "id": "vote:ddfdf7da-375a-428f-b78a-1301888352d3",
+    "userId": "pub_40d1102c0abe6abf77fbae04",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 7,
+    "timestamp": "2024-12-19T00:27:40.359Z"
+  },
+  {
+    "id": "vote:4fe4d029-9333-41c2-8887-624e12e99c74",
+    "userId": "pub_607a961cef7a9e800e7af590",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 7,
+    "timestamp": "2024-12-19T00:28:49.646Z"
+  },
+  {
+    "id": "vote:db763f56-c672-415a-9e6f-76a2c5196dba",
+    "userId": "pub_698c49180a00518b795f94ec",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-19T00:34:41.598Z"
+  },
+  {
+    "id": "vote:8775bac4-0cc7-4b7b-a1fb-8525c9c1c50a",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-19T00:43:37.361Z"
+  },
+  {
+    "id": "vote:578a5c98-1011-4333-a274-0cfcb8558833",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-19T00:43:37.361Z"
+  },
+  {
+    "id": "vote:6e5a9e21-cad5-42a7-b1da-6ccfce22bfb8",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-19T00:43:37.361Z"
+  },
+  {
+    "id": "vote:19ac5ba6-eee0-4a80-8e27-75a3c4b576fd",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:bcfb0655-d184-4b12-aeba-75e0f1524eed",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T00:43:37.361Z"
+  },
+  {
+    "id": "vote:e1f44e55-cf38-410c-aef6-d45941cef3d5",
+    "userId": "pub_e4eeca2511261c3054f2efee",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T00:57:37.261Z"
+  },
+  {
+    "id": "vote:db0376b9-2e4a-4f12-a031-429e6d2055e9",
+    "userId": "pub_aef2564963b406d31422110b",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T01:05:50.153Z"
+  },
+  {
+    "id": "vote:253f360e-c450-40f6-8f37-9dae9b4e3f8d",
+    "userId": "pub_14c7d153b12ec0b2e2e462d4",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T01:07:26.354Z"
+  },
+  {
+    "id": "vote:8fbac261-960d-417d-9d4c-65a3cb902092",
+    "userId": "pub_3d024f6af4dd2767260f6d7c",
+    "proposalId": "proposal:5273304e-0b9e-4ba9-8d0d-4d8f253edc7a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-19T01:15:28.955Z"
+  },
+  {
+    "id": "vote:337c27ec-e137-4d70-bf9d-93d754d83c69",
+    "userId": "pub_e1c0da3ccd21573499ab2304",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 7,
+    "timestamp": "2024-12-19T01:15:42.507Z"
+  },
+  {
+    "id": "vote:d982c783-5c20-49d4-9d2c-efc2b1a639f4",
+    "userId": "pub_24c8ba547799a121caf5bce1",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-19T02:15:43.312Z"
+  },
+  {
+    "id": "vote:c335f669-7320-4669-9887-5e8cf98526d7",
+    "userId": "pub_74d4b9b2a45b489fb9b203c5",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-19T02:36:42.513Z"
+  },
+  {
+    "id": "vote:ace0e7ee-4270-4dc9-b8ae-a6d5626f40b6",
+    "userId": "pub_2069dd2fad63f20f632cf3f8",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-19T02:36:58.802Z"
+  },
+  {
+    "id": "vote:5635a6b9-7066-43a9-ba64-e0ad31ed41dc",
+    "userId": "pub_bb2e0ce0a882ca92b234ef77",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T02:57:31.978Z"
+  },
+  {
+    "id": "vote:dcc1eb61-95fb-41d0-9c10-2635f17a0197",
+    "userId": "pub_6f5898de5ed572446ad04c9e",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-19T03:09:03.837Z"
+  },
+  {
+    "id": "vote:5bef8233-c164-4210-99fd-e615a42b69c3",
+    "userId": "pub_b1206e9699816a3957093e06",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-19T03:19:15.870Z"
+  },
+  {
+    "id": "vote:caa4ea25-3270-4235-846e-b9e73313480f",
+    "userId": "pub_98d74a4e8e1227de6b048057",
+    "proposalId": "proposal:5273304e-0b9e-4ba9-8d0d-4d8f253edc7a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T03:27:20.860Z"
+  },
+  {
+    "id": "vote:2b7d7f6e-499f-42ae-996a-2c2d0ac89bd4",
+    "userId": "pub_5bfe1ac657c5fc85a1556ebf",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T03:43:38.232Z"
+  },
+  {
+    "id": "vote:565db0e6-62f0-48f6-b027-eb97bab87802",
+    "userId": "pub_a9c38a150fe882cf68ea5d44",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T03:55:01.115Z"
+  },
+  {
+    "id": "vote:b54ffc81-0b22-4bb6-9a08-51a095cfe742",
+    "userId": "pub_c1ec1b6162029506e05533d8",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T03:56:15.468Z"
+  },
+  {
+    "id": "vote:74967f32-7ff5-43c9-8ba7-843e8180bd8e",
+    "userId": "pub_8c3e512b1cfcd0b12c7295f7",
+    "proposalId": "proposal:5273304e-0b9e-4ba9-8d0d-4d8f253edc7a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T03:59:17.011Z"
+  },
+  {
+    "id": "vote:bdf6736f-427b-45bb-bec5-c8727c4dccb5",
+    "userId": "pub_0b8da1f722787e9463f71710",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-19T04:11:52.586Z"
+  },
+  {
+    "id": "vote:86e57e70-0ec2-4f8c-a501-d25406f931a1",
+    "userId": "pub_de9a46fbcbd311f76fc83851",
+    "proposalId": "proposal:8203c1d7-9c8a-4a33-8cf5-4cab398d006b",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T04:54:31.148Z"
+  },
+  {
+    "id": "vote:ca925b6d-bde2-49ca-9a85-a75e2eb8fe0d",
+    "userId": "pub_5e6af775e64c9898425f1732",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-19T05:01:01.903Z"
+  },
+  {
+    "id": "vote:c3498616-26dc-4449-bff2-3d1c4fbd8348",
+    "userId": "pub_1f0571e3a803f8ef8e2a50d4",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T05:06:41.586Z"
+  },
+  {
+    "id": "vote:6bd47de4-a5c7-4675-adf6-7852e57ab7c7",
+    "userId": "pub_c544e0baff911f6a296d71a6",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T05:25:57.891Z"
+  },
+  {
+    "id": "vote:0c1f38ad-a729-4f46-a700-9256572bb283",
+    "userId": "pub_6d228cf2c85ddedd591ea768",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 5,
+    "timestamp": "2024-12-19T05:29:27.844Z"
+  },
+  {
+    "id": "vote:d0052558-5c0d-4cb3-b634-d1a0a78bec2a",
+    "userId": "pub_6d228cf2c85ddedd591ea768",
+    "proposalId": "proposal:447e42d2-85a6-4e61-ad84-534baab99c9a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 5,
+    "timestamp": "2024-12-19T05:29:27.844Z"
+  },
+  {
+    "id": "vote:0413234a-9760-4607-9345-965395eee86e",
+    "userId": "pub_23f8228cc4ee8a8abc5fa0f0",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-19T05:39:10.980Z"
+  },
+  {
+    "id": "vote:ca716c47-d584-47b2-9f5c-b400a3cedbb0",
+    "userId": "pub_f10a3b9ee8c96e8062dd8f3b",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T05:48:07.972Z"
+  },
+  {
+    "id": "vote:6cf1c2c3-5b23-4c39-8568-807b003458ff",
+    "userId": "pub_c23019daa57db5e41d68224a",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-19T05:49:37.529Z"
+  },
+  {
+    "id": "vote:bc290f6b-5393-42bc-9e0c-a024240e5f73",
+    "userId": "pub_c988d6b9c2e43b1aa590ce3a",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T05:49:46.987Z"
+  },
+  {
+    "id": "vote:105fe30b-094e-4a7f-a09d-b4a1a517fa03",
+    "userId": "pub_140a1be9f49360ceba03e937",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T05:50:25.156Z"
+  },
+  {
+    "id": "vote:4dbc65be-3b85-4ed4-a373-efcc2b6ec97b",
+    "userId": "pub_aac1d8b96e639f5ac8044886",
+    "proposalId": "proposal:447e42d2-85a6-4e61-ad84-534baab99c9a",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T05:53:20.789Z"
+  },
+  {
+    "id": "vote:228affbc-3752-4450-94c7-61447224fcc1",
+    "userId": "pub_c9eb407440a3807d664cda06",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-19T06:02:19.475Z"
+  },
+  {
+    "id": "vote:9962d9ed-d634-4b52-8e4d-781701862baf",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-19T06:06:11.813Z"
+  },
+  {
+    "id": "vote:e71bae3e-bd60-410c-9b20-b4278d2a30b1",
+    "userId": "pub_5536650d7b92b1b9b294a884",
+    "proposalId": "proposal:8203c1d7-9c8a-4a33-8cf5-4cab398d006b",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T06:36:27.558Z"
+  },
+  {
+    "id": "vote:297ad17b-d347-44bd-b712-9eea8b61af58",
+    "userId": "pub_1904ad69b49a2c73c3afc5f0",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T06:45:05.167Z"
+  },
+  {
+    "id": "vote:b2e93007-c97a-419d-a25e-95dee7f3aa07",
+    "userId": "pub_a919135b56839bc02e3a5132",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 5,
+    "timestamp": "2024-12-19T06:51:26.328Z"
+  },
+  {
+    "id": "vote:27ffe6dc-7f72-48db-a3df-0172c0245591",
+    "userId": "pub_10dfedb1798702bf7a1c1d00",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T06:54:50.968Z"
+  },
+  {
+    "id": "vote:0fbf2f8b-7418-4dc3-8130-f5c5a3237b30",
+    "userId": "pub_4e7925ba4ed4fe3bf6d459e1",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T07:08:25.520Z"
+  },
+  {
+    "id": "vote:6ccc91b9-5537-44b9-9246-ca2e62462380",
+    "userId": "pub_18fcafef51c63d011baf9275",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-19T08:24:01.454Z"
+  },
+  {
+    "id": "vote:95081935-4788-44e5-ba1c-278c490b7314",
+    "userId": "pub_2edfc32f77c062c14023a1f9",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T08:27:33.908Z"
+  },
+  {
+    "id": "vote:96071571-018d-4610-9e7e-9290543b4676",
+    "userId": "pub_cd4595fae8e53178f2790f7d",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T08:48:17.379Z"
+  },
+  {
+    "id": "vote:6f27d814-a3b6-4b97-a3f2-c6736cc1be33",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T09:02:28.472Z"
+  },
+  {
+    "id": "vote:730088df-f6ab-4f6a-a0e6-6066a124c4e0",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T09:02:28.472Z"
+  },
+  {
+    "id": "vote:fae9bac0-18d6-4c6d-a244-975271ed1044",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T09:02:28.472Z"
+  },
+  {
+    "id": "vote:fb3dc60a-c966-4b7c-a15c-6046b7a39d57",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:8944abee-270c-4801-b90f-6dda6a438068",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T09:02:28.472Z"
+  },
+  {
+    "id": "vote:cb2b16fb-3e9c-4283-a90c-f036d8373bba",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:bcfb0655-d184-4b12-aeba-75e0f1524eed",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-19T09:02:28.472Z"
+  },
+  {
+    "id": "vote:951a666b-2736-4cb0-a296-64c439163afa",
+    "userId": "pub_3b1f02e12d17196c4e4d4440",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 8,
+    "timestamp": "2024-12-19T09:30:28.455Z"
+  },
+  {
+    "id": "vote:82ab40b8-038a-404a-8b70-02389b67e613",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 8,
+    "timestamp": "2024-12-19T09:41:15.862Z"
+  },
+  {
+    "id": "vote:329bd92b-ec86-446a-bda9-48daef4954a8",
+    "userId": "pub_6a3d263250975705a2f4865b",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T10:39:31.625Z"
+  },
+  {
+    "id": "vote:32a032d6-d02b-4483-8b54-09b66b7bc224",
+    "userId": "pub_ae6d09956f5702f18393a352",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 5,
+    "timestamp": "2024-12-19T11:35:20.493Z"
+  },
+  {
+    "id": "vote:ad6efe57-47f7-456c-b42d-48aaebcc822b",
+    "userId": "pub_af46235e8f618158b7c36145",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 7,
+    "timestamp": "2024-12-19T11:41:22.471Z"
+  },
+  {
+    "id": "vote:56113463-8a66-4081-9b37-2ec82914f8ce",
+    "userId": "pub_fa64dbce8efef80a3b09da46",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 8,
+    "timestamp": "2024-12-19T11:56:01.824Z"
+  },
+  {
+    "id": "vote:3b652b9b-7c56-4dd9-aa94-39533c14b555",
+    "userId": "pub_e4f84a32ecc3bc940a8098fc",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-19T12:35:05.637Z"
+  },
+  {
+    "id": "vote:64ac1cfc-81aa-4ae9-a303-f22eaec075f2",
+    "userId": "pub_4ca103c6d25693230c282bfb",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-19T13:51:14.915Z"
+  },
+  {
+    "id": "vote:a0d62742-c1c7-4785-a16c-5aaab0701c31",
+    "userId": "pub_633ac3f429f7393dc7ae44e3",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-19T15:08:47.419Z"
+  },
+  {
+    "id": "vote:564913a8-b185-4caa-b4c5-81c057d80788",
+    "userId": "pub_6e814b220cfcaa79c7530753",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-19T19:39:13.186Z"
+  },
+  {
+    "id": "vote:032ac524-af63-41f2-90b0-177bca9f2657",
+    "userId": "pub_5c73f567ab626dd4b4e7b7b5",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-19T22:46:20.403Z"
+  },
+  {
+    "id": "vote:0b1b2590-90fe-4d36-99c7-759e865638aa",
+    "userId": "pub_28eeff11063801bdee6bf1d5",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-19T22:51:01.290Z"
+  },
+  {
+    "id": "vote:99cc801e-a147-4571-9098-a6634933b623",
+    "userId": "pub_04f7ff6595630cf5309fb2b3",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-19T22:54:00.416Z"
+  },
+  {
+    "id": "vote:730eaf57-c228-43ec-a75a-958c1951d56e",
+    "userId": "pub_a94913bc3f512b8cd81c3135",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-19T23:01:05.938Z"
+  },
+  {
+    "id": "vote:a20bddfe-279c-4670-b32e-092afb7cc961",
+    "userId": "pub_b0ed333c07d07f23c4f9f231",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-19T23:05:25.560Z"
+  },
+  {
+    "id": "vote:59112951-5e2f-4015-909a-c9565b16cca1",
+    "userId": "pub_2ce16dcfcd38450a44e88c18",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-19T23:30:23.495Z"
+  },
+  {
+    "id": "vote:c08bee11-3ba8-4f08-8231-45064ddea6e8",
+    "userId": "pub_e1111096d6ed1e0f58b2320a",
+    "proposalId": "proposal:bcfb0655-d184-4b12-aeba-75e0f1524eed",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T00:24:48.803Z"
+  },
+  {
+    "id": "vote:056fa10c-2c28-4389-8fc2-d4c05bec1991",
+    "userId": "pub_e1111096d6ed1e0f58b2320a",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 5,
+    "timestamp": "2024-12-20T00:24:48.803Z"
+  },
+  {
+    "id": "vote:24c3d9fa-3a68-4ba7-8f0f-edda44c90ec1",
+    "userId": "pub_e1111096d6ed1e0f58b2320a",
+    "proposalId": "proposal:8203c1d7-9c8a-4a33-8cf5-4cab398d006b",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T00:24:48.803Z"
+  },
+  {
+    "id": "vote:13dcda87-3365-487a-86b9-7be803c7e1ac",
+    "userId": "pub_d0034c6882755050e20ec618",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 8,
+    "timestamp": "2024-12-20T00:33:39.450Z"
+  },
+  {
+    "id": "vote:f6f82471-eb10-4724-871e-7d8191a90b23",
+    "userId": "pub_430ef0ebaa1c636ec375194b",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-20T00:57:26.571Z"
+  },
+  {
+    "id": "vote:00e3be4e-612e-43b0-bf1b-75519094589b",
+    "userId": "pub_65322c7d34fe2442bbef3fa0",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-20T01:01:49.927Z"
+  },
+  {
+    "id": "vote:0ed50011-ac3e-496b-ab27-fb77bdbe87d1",
+    "userId": "pub_d3bb601a43e95186ee5fe333",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-20T01:26:07.406Z"
+  },
+  {
+    "id": "vote:667f3542-4874-44c4-a636-a99481e5c17a",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T02:27:17.468Z"
+  },
+  {
+    "id": "vote:b9a70228-25e5-4ee7-bcc2-edd6170f2ddc",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-20T02:27:17.468Z"
+  },
+  {
+    "id": "vote:e7f0b82f-9e29-41fd-97cf-7cb365c2f7ab",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-20T02:27:17.468Z"
+  },
+  {
+    "id": "vote:5377d5f7-1482-450b-a1a5-c346602cd912",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T02:27:17.468Z"
+  },
+  {
+    "id": "vote:ec301d24-c62d-4b5d-81ae-125ca09c3828",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-20T02:27:17.468Z"
+  },
+  {
+    "id": "vote:c520e7fa-755c-454b-95ad-69196605fe3f",
+    "userId": "pub_286ab66d1162f514acead298",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-20T03:19:15.435Z"
+  },
+  {
+    "id": "vote:acec7745-632e-4595-86a1-e4fa43bd651c",
+    "userId": "pub_0de6f066cd0cbbd340068f80",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-20T03:28:07.469Z"
+  },
+  {
+    "id": "vote:6a13cfa9-d37e-4ed8-a25f-ce1fc591dad6",
+    "userId": "pub_bb539524314d4f072759a1a5",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-20T03:43:51.960Z"
+  },
+  {
+    "id": "vote:c4dc211a-407f-42f6-9c0f-2aeb2fb266d5",
+    "userId": "pub_5195452778cf31fa9f6bb089",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T04:01:40.817Z"
+  },
+  {
+    "id": "vote:929ad8f5-fa4a-4230-aec2-243a54de647f",
+    "userId": "pub_406ddfc769d4a8a03be15458",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T04:08:23.409Z"
+  },
+  {
+    "id": "vote:b0fd6655-0eda-4a50-9ab8-f48441633a78",
+    "userId": "pub_7443efdccac53e2c8b682f39",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-20T04:37:00.993Z"
+  },
+  {
+    "id": "vote:fa3d8a62-f206-4841-b62f-8e7d8c0c32a0",
+    "userId": "pub_2f86c930b994c969913efc68",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-20T04:59:30.785Z"
+  },
+  {
+    "id": "vote:0ab7ee60-4a71-48fc-840f-797df803719d",
+    "userId": "pub_20d7f4d24378d7f721a51f07",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-20T05:50:14.637Z"
+  },
+  {
+    "id": "vote:6a9b343c-4441-4e61-bb25-26844016c66d",
+    "userId": "pub_f873e607c38cbb9aecfd6743",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 7,
+    "timestamp": "2024-12-20T06:51:47.541Z"
+  },
+  {
+    "id": "vote:b1282bb0-b491-4c01-9874-842950879e55",
+    "userId": "pub_12aa4c165d52f61476a9b097",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-20T07:40:48.970Z"
+  },
+  {
+    "id": "vote:1a3199be-9d38-420a-89fe-0fb9d8f017cf",
+    "userId": "pub_12aa4c165d52f61476a9b097",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-20T07:40:48.970Z"
+  },
+  {
+    "id": "vote:6f862d4c-0662-4f10-bdfb-28cf30fbfbe3",
+    "userId": "pub_cf0d8523b1d3852b79d87831",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T07:42:44.752Z"
+  },
+  {
+    "id": "vote:b63c0fe8-1aa0-47bc-a8a3-6e31e912de5b",
+    "userId": "pub_32653ea36a09e6ea5966f0fa",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T11:31:30.924Z"
+  },
+  {
+    "id": "vote:b933bcd5-6e60-4963-b36b-ebe7cfb3d2fe",
+    "userId": "pub_99a45b8c410432537c9b3038",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T14:28:38.449Z"
+  },
+  {
+    "id": "vote:445725b2-9c15-48d2-b6c6-4c4d1730ad6e",
+    "userId": "pub_b56f25af9c4eb6a94394301a",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T15:09:40.634Z"
+  },
+  {
+    "id": "vote:0d374c18-8ac5-4b80-a88c-87cc24880630",
+    "userId": "pub_4b4802828a412a54a5e1046c",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T15:10:32.944Z"
+  },
+  {
+    "id": "vote:c87b2637-d1c0-4c44-8993-e6b9790801f1",
+    "userId": "pub_4c76dd5b9638cc6bde63c630",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-20T17:18:20.481Z"
+  },
+  {
+    "id": "vote:6e675af1-af1e-43de-ba06-440afff8b57a",
+    "userId": "pub_bb330a814201f01b742f5daf",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-20T19:36:57.908Z"
+  },
+  {
+    "id": "vote:a772ddb7-c1ef-40b8-bd1d-5c41da0ffbf5",
+    "userId": "pub_a9c38a150fe882cf68ea5d44",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-20T20:22:16.451Z"
+  },
+  {
+    "id": "vote:3691cfbc-ad7b-44b5-b2dd-3b6174d84c46",
+    "userId": "pub_d93e88097bb92b1ae71b5ef9",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-20T20:40:51.596Z"
+  },
+  {
+    "id": "vote:d75299d0-b203-4b6d-8648-9c0fe01b313a",
+    "userId": "pub_1031a87780be9605954f70b9",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-20T20:53:16.306Z"
+  },
+  {
+    "id": "vote:8d08e330-6bc8-4cef-8ee2-29c89f25f172",
+    "userId": "pub_69fad8f91492ab482e05f903",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-20T21:26:09.531Z"
+  },
+  {
+    "id": "vote:830210c4-d81a-4b41-bd39-e65d10815bcf",
+    "userId": "pub_bf98dc58606a83015c101aed",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-20T21:47:20.268Z"
+  },
+  {
+    "id": "vote:8ffd5090-2498-404f-80c7-d38f63eadbc5",
+    "userId": "pub_f91932bb4e426382a8a56d9c",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-20T22:18:41.556Z"
+  },
+  {
+    "id": "vote:819c764b-9e2a-4b72-9523-2848d76e59ff",
+    "userId": "pub_9741d3f6280743f122906d79",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-21T00:45:32.329Z"
+  },
+  {
+    "id": "vote:d000708c-81e4-40a7-9578-8f9c2fe52f48",
+    "userId": "pub_7b8047e92884c2017c9e4bdc",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-21T01:20:56.603Z"
+  },
+  {
+    "id": "vote:4daf59b9-80ad-42dd-b1ba-2b169fded7a1",
+    "userId": "pub_38d61ec9ddf65a047d45b1d6",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-21T01:29:46.891Z"
+  },
+  {
+    "id": "vote:9e780291-3c65-4cc4-9369-4373eb2ad574",
+    "userId": "pub_858b7639073de92cce732875",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-21T02:11:13.950Z"
+  },
+  {
+    "id": "vote:647fefc5-038e-43f2-aeb7-304ee1de1750",
+    "userId": "pub_a8a25e04ea64ede9bf23d8c9",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 8,
+    "timestamp": "2024-12-21T02:16:59.498Z"
+  },
+  {
+    "id": "vote:74c49245-2827-4b8b-8be0-1a420af00818",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 8,
+    "timestamp": "2024-12-21T02:47:55.422Z"
+  },
+  {
+    "id": "vote:93854a98-dd28-4eb6-ad87-8965fe6e0489",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-21T02:47:55.422Z"
+  },
+  {
+    "id": "vote:9861ecd7-e1cd-455d-942f-99c940b14d1e",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-21T02:47:55.422Z"
+  },
+  {
+    "id": "vote:3eed1353-5246-4bd7-b0e6-f417c1417b7c",
+    "userId": "pub_555bc361db2430e14d5f65ee",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 5,
+    "timestamp": "2024-12-21T03:01:35.331Z"
+  },
+  {
+    "id": "vote:7981b0d0-c8dc-4afa-8043-bbf02949fb57",
+    "userId": "pub_a39adb80fd2bd3e45d0f2064",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-21T03:35:10.553Z"
+  },
+  {
+    "id": "vote:f496236b-66b0-4b14-81b3-2ba3a2edd20a",
+    "userId": "pub_68c171481ba0b940a2561536",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-21T07:36:09.402Z"
+  },
+  {
+    "id": "vote:8bbb4197-7a32-4e43-bca1-72d8dc6f952c",
+    "userId": "pub_3bdcf764e5240d52efee1563",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 10,
+    "timestamp": "2024-12-21T22:07:58.711Z"
+  },
+  {
+    "id": "vote:536163e7-3642-430f-ad49-aa795cff7ab7",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 6,
+    "timestamp": "2024-12-22T02:33:05.925Z"
+  },
+  {
+    "id": "vote:45c94913-d93c-423b-bd84-02cddcd7c50a",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-22T02:33:05.925Z"
+  },
+  {
+    "id": "vote:701b1b4a-058f-4054-b8b4-df30f48515f8",
+    "userId": "pub_833958debbef2a645c2829dd",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T02:38:39.809Z"
+  },
+  {
+    "id": "vote:3b4337f1-9d80-4312-af5d-80646c9baf65",
+    "userId": "pub_8174484c0a5e81e75bda070d",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T02:48:15.555Z"
+  },
+  {
+    "id": "vote:0882d9b1-f242-4a21-96c4-ba7b93347ffe",
+    "userId": "pub_e8e744191fd881ccfa229a61",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-22T03:28:36.823Z"
+  },
+  {
+    "id": "vote:64241458-6750-4b80-a441-cfebf2194a85",
+    "userId": "pub_fe24ce596b441cc52f748122",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-22T03:34:58.941Z"
+  },
+  {
+    "id": "vote:1126f6bf-c441-4413-a2e3-b0e77d097200",
+    "userId": "pub_c0274d7e3c1c4e63ebab7e3d",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T03:58:07.766Z"
+  },
+  {
+    "id": "vote:263f72c0-f882-4ae9-a3c6-d873a33ca5c9",
+    "userId": "pub_58c7acfa5ce14f03b170c460",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-22T04:44:29.451Z"
+  },
+  {
+    "id": "vote:abccd918-48c7-4b87-ab8e-0a597bdaa250",
+    "userId": "pub_f3ceedd4f453afa32d43e4ff",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-22T04:59:54.694Z"
+  },
+  {
+    "id": "vote:03faf22c-314b-4bb2-b18a-c68387ba7db2",
+    "userId": "pub_df3bb01eac1f2b8cde142170",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T05:00:26.421Z"
+  },
+  {
+    "id": "vote:307288b5-3a2c-4457-ba51-03429a719908",
+    "userId": "pub_403a4a9d819f265cf7a96852",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T05:11:51.588Z"
+  },
+  {
+    "id": "vote:abb179b8-04bb-45fc-b122-7ef45f66d9a2",
+    "userId": "pub_991f79557453fd19b4cccfd2",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T05:18:47.470Z"
+  },
+  {
+    "id": "vote:0f1396eb-9363-4761-ae9a-937a5ba8eb01",
+    "userId": "pub_2b233fbfad9333ebb33796fb",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T05:27:03.625Z"
+  },
+  {
+    "id": "vote:cfd49f78-f50a-4b52-bda0-dd9b982fb6ae",
+    "userId": "pub_504caca554ad08686f27facb",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 8,
+    "timestamp": "2024-12-22T06:17:42.916Z"
+  },
+  {
+    "id": "vote:f3652d5f-61f4-4a14-9c55-95ad35a394b7",
+    "userId": "pub_a10b3374db8f148b49747f82",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T06:23:50.810Z"
+  },
+  {
+    "id": "vote:0993f3f8-21dc-4c1b-bb8a-af3fca961b86",
+    "userId": "pub_89ecca6760921c68338b8d2c",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T06:37:12.683Z"
+  },
+  {
+    "id": "vote:eed27538-cc5c-41e2-9893-0b926bc59c89",
+    "userId": "pub_86cbcca13094f4124a47b259",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 5,
+    "timestamp": "2024-12-22T06:37:32.462Z"
+  },
+  {
+    "id": "vote:0320237e-fef4-4aec-bdc7-c0e091004113",
+    "userId": "pub_8a344532a7807ef0ca242b80",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T06:38:52.326Z"
+  },
+  {
+    "id": "vote:1a6681d6-9c90-449d-8170-c643c0484de9",
+    "userId": "pub_3256646e3dc8d0acc3fca40b",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T06:41:16.723Z"
+  },
+  {
+    "id": "vote:1455230e-ec22-454a-81b2-eaf41b66e3a4",
+    "userId": "pub_12f5808bcba43cfe79f261a0",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 5,
+    "timestamp": "2024-12-22T06:49:48.359Z"
+  },
+  {
+    "id": "vote:1cea56ae-f2e0-43b6-98bb-3410362e9bf1",
+    "userId": "pub_3a4a207fec734c659f45bc5e",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T06:52:40.699Z"
+  },
+  {
+    "id": "vote:404ff1c8-3b5b-47af-81c3-de5818e655e8",
+    "userId": "pub_e2270ffa5be4e441ec65f88d",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T06:53:21.569Z"
+  },
+  {
+    "id": "vote:d381afc8-8724-492b-95e0-7a24d800d0de",
+    "userId": "pub_03d6d05cf44c3e91f4c78e3e",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-22T07:20:58.889Z"
+  },
+  {
+    "id": "vote:b7531c3c-7b3a-4ccb-af6d-ecf5b47dda31",
+    "userId": "pub_7f896933e7cc94992d8d0649",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T07:25:03.608Z"
+  },
+  {
+    "id": "vote:cfaf5527-b90d-4cef-b19d-9707cb172409",
+    "userId": "pub_017e45f1dcc4fdee62ab6959",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T07:28:26.513Z"
+  },
+  {
+    "id": "vote:a096d295-40c1-46d8-a05a-1ba931a9cb6f",
+    "userId": "pub_037caebffc064116acbcf80a",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-22T07:40:49.817Z"
+  },
+  {
+    "id": "vote:1965c9c9-adf3-4601-bef1-b94af48fbe9d",
+    "userId": "pub_037caebffc064116acbcf80a",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-22T07:40:49.817Z"
+  },
+  {
+    "id": "vote:32e85ae4-8c17-4da5-b1f3-0d3da15e5d4d",
+    "userId": "pub_037caebffc064116acbcf80a",
+    "proposalId": "proposal:186de79d-a033-468f-acd6-5dd6f8eae8e1",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-22T07:40:49.817Z"
+  },
+  {
+    "id": "vote:d3c2020c-e67b-4473-8aa8-a6a3ddfdd8be",
+    "userId": "pub_01c465fff137fc734cc1c1e4",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T07:55:08.788Z"
+  },
+  {
+    "id": "vote:ac290492-5021-4599-aa1b-6be06a95a91b",
+    "userId": "pub_61cea15cdd34302e89b08693",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:02:01.948Z"
+  },
+  {
+    "id": "vote:4c9d22da-784d-416a-a62b-b8652a576e86",
+    "userId": "pub_6eebb0075054615452a37142",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:11:21.403Z"
+  },
+  {
+    "id": "vote:18690835-77d2-4a21-a983-1969c0010fb9",
+    "userId": "pub_0953682394c4016f1a6e5951",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:16:38.877Z"
+  },
+  {
+    "id": "vote:ac49d3a9-7fff-41d9-a6c3-4682ad323662",
+    "userId": "pub_44cbe2c21c77d3c4169c003d",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:21:23.769Z"
+  },
+  {
+    "id": "vote:d8d63db0-c558-42a7-9b29-2b08f42f9329",
+    "userId": "pub_766015b8ae986a952bce9cb4",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:22:29.437Z"
+  },
+  {
+    "id": "vote:2434be59-9fee-4aa6-a2e8-f08eac8aaf1d",
+    "userId": "pub_1b480df17bb813da981db23c",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:23:44.769Z"
+  },
+  {
+    "id": "vote:cd3e25b4-23a1-4245-81cf-fa5d49cb6c01",
+    "userId": "pub_e126e10b48d7f21ac89e71ec",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:36:25.580Z"
+  },
+  {
+    "id": "vote:795e344d-b5bf-49ea-aa63-b6f55c149b3b",
+    "userId": "pub_26f0b4e6280a3e0956fd7634",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:37:21.161Z"
+  },
+  {
+    "id": "vote:273d0ba1-db94-47ee-8ead-d170e797eddd",
+    "userId": "pub_5f8c58099933bf4567b1f5db",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:37:53.455Z"
+  },
+  {
+    "id": "vote:6f731c8d-67cc-4cec-b0d5-bf796d1f611f",
+    "userId": "pub_b6d92fe9d04ab4c79c9c3bc6",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:41:13.616Z"
+  },
+  {
+    "id": "vote:5c6e74c0-a563-4711-b93b-75c848bcd02e",
+    "userId": "pub_c1d1cf01c78306b0b5b62145",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:45:25.974Z"
+  },
+  {
+    "id": "vote:9419293e-d25b-408b-bb48-5eb90e0c16cb",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-22T08:48:40.744Z"
+  },
+  {
+    "id": "vote:8cb5e87e-8f32-4f22-b6c1-0ead973e7032",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:bcfb0655-d184-4b12-aeba-75e0f1524eed",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:48:40.744Z"
+  },
+  {
+    "id": "vote:b71a8ff4-b785-444d-82ce-fdf31f56582c",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-22T08:48:40.744Z"
+  },
+  {
+    "id": "vote:ec013274-c198-4984-9ff8-dc581a457473",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-22T08:48:40.744Z"
+  },
+  {
+    "id": "vote:b22053b5-e706-4926-a0d8-3906afcae6ce",
+    "userId": "pub_a2025e9e6c74dc224ee32c64",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:50:36.095Z"
+  },
+  {
+    "id": "vote:b4325121-891d-438f-9989-5efca9cd26bf",
+    "userId": "pub_fec87e7bcacf823c5dd99577",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:51:37.857Z"
+  },
+  {
+    "id": "vote:de12e4f9-02ef-4fd5-8702-51d7b06a8c24",
+    "userId": "pub_1d5dec93bd455bf6b7590b3d",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:53:20.371Z"
+  },
+  {
+    "id": "vote:34f6d7fc-936a-441d-be39-d33f8599e005",
+    "userId": "pub_73c9f41bd203d8812d9beba7",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:54:11.792Z"
+  },
+  {
+    "id": "vote:aa614c8b-4447-4f7b-a8f9-f7b398880add",
+    "userId": "pub_31e9997f1b3d8dc7d87fb162",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:54:51.127Z"
+  },
+  {
+    "id": "vote:aa125995-08be-4cb9-9598-56c879fa4207",
+    "userId": "pub_c625dfd7e6cc6f623b665ff3",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T08:55:08.314Z"
+  },
+  {
+    "id": "vote:0d8be89e-a923-4b5f-beb2-1985952e486a",
+    "userId": "pub_1be0d888ed6fda80fd044d70",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 3,
+    "timestamp": "2024-12-22T08:55:53.878Z"
+  },
+  {
+    "id": "vote:103a2c2b-c32b-4b75-b28d-6d1bd2e19f45",
+    "userId": "pub_794575dda0c50a41aaa4228a",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:01:10.885Z"
+  },
+  {
+    "id": "vote:786cdd48-7025-4836-9a9b-5dd260311922",
+    "userId": "pub_7b1df317d1c0ae2d13099913",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:02:23.487Z"
+  },
+  {
+    "id": "vote:8c70bbef-b1a8-46ec-98c6-372dc286e4b3",
+    "userId": "pub_0c9ed8a85eea6eac05463723",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:05:35.796Z"
+  },
+  {
+    "id": "vote:6b9b47d2-a3a2-452c-89db-8edb2a7df9ba",
+    "userId": "pub_0358077a59ea775dabc9bbf0",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-22T09:05:49.471Z"
+  },
+  {
+    "id": "vote:aa313e40-de5f-470d-ab76-e92d3e834e2c",
+    "userId": "pub_b325c7fb94515384fbbda367",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:18:43.503Z"
+  },
+  {
+    "id": "vote:1a5e79ff-07a1-41d8-959e-c2a9a2a675b5",
+    "userId": "pub_4f1cc15846a22d97a19bba7b",
+    "proposalId": "proposal:9eea2803-a08d-4822-b48f-37e040f51c76",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:23:16.518Z"
+  },
+  {
+    "id": "vote:c8f1f98b-08d5-4d64-9b89-f3f01143b816",
+    "userId": "pub_eef7c5aab9cd8288bab9c449",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:23:49.394Z"
+  },
+  {
+    "id": "vote:03542188-ad0c-43db-b414-3455733344d5",
+    "userId": "pub_69fa402196891b3073cbaa66",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:33:31.178Z"
+  },
+  {
+    "id": "vote:0a80307c-ce5f-4821-a4d6-12afc16ffef4",
+    "userId": "pub_a7e3dca45292e6a959bcb1ec",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:36:21.172Z"
+  },
+  {
+    "id": "vote:9af3a4ea-cb67-4817-8dea-17b434470805",
+    "userId": "pub_c15eb9a3397658786449675f",
+    "proposalId": "proposal:6eae2cdb-bd10-4197-9603-1553cc86ee1e",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:38:27.495Z"
+  },
+  {
+    "id": "vote:66929573-ad2a-4f1a-adea-45202e2b5db1",
+    "userId": "pub_ee1f1e877e39ff352a3ee05e",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:53:41.817Z"
+  },
+  {
+    "id": "vote:bf2c6027-be44-4e97-b21f-e7f50aa5c6f3",
+    "userId": "pub_e28b6d49bb2200ea0e376ed7",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:55:27.492Z"
+  },
+  {
+    "id": "vote:afb965e5-14d1-4453-ac00-3ae5f59e7d14",
+    "userId": "pub_d11f8ca613793c0b54b36876",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T09:58:47.615Z"
+  },
+  {
+    "id": "vote:bf0db1d4-8c02-4486-8548-7fd59c9d1bd1",
+    "userId": "pub_ceed5fc55e0de116941a8941",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:15:11.050Z"
+  },
+  {
+    "id": "vote:1a083577-23a3-4611-a6bb-d83dc96e62c3",
+    "userId": "pub_9f8860318d7797a45a2f9da6",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:16:24.476Z"
+  },
+  {
+    "id": "vote:e6e8b263-e2f4-4bfd-baa6-c500229d02a2",
+    "userId": "pub_5123d5d304e2e7579c26dcfd",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:19:08.528Z"
+  },
+  {
+    "id": "vote:9a0b95f7-7961-4097-8805-a0b0f3d5d4f7",
+    "userId": "pub_7feadf8cdd5c35bc536c5cf0",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:23:55.722Z"
+  },
+  {
+    "id": "vote:d6e143f4-407c-4969-b34a-4cba6461027b",
+    "userId": "pub_bbeb5b1ba5fb6b4fa24d7a04",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:25:19.903Z"
+  },
+  {
+    "id": "vote:0f2e63e0-67f7-4f81-85f7-1cc2a8f91fe8",
+    "userId": "pub_cd2352424e672e5ecf61f6d4",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:26:49.661Z"
+  },
+  {
+    "id": "vote:5bfffbdc-4cc9-4ae9-bfd8-b08b43649c0a",
+    "userId": "pub_d53f0bb5b43c215a75e47d5b",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-22T10:26:53.171Z"
+  },
+  {
+    "id": "vote:7177396d-daef-42c8-b56b-2e4b50f51c9d",
+    "userId": "pub_49862f9beef964f810a958d5",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:32:16.978Z"
+  },
+  {
+    "id": "vote:20d3d03b-5412-40f8-8a44-4970aaba02ce",
+    "userId": "pub_fa81df78efdbcd2bbf01422c",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:34:46.633Z"
+  },
+  {
+    "id": "vote:d6a8de40-825c-48b0-b953-02a2c5998df6",
+    "userId": "pub_87b9276338bcac24aae3805a",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:38:28.864Z"
+  },
+  {
+    "id": "vote:8dd7b2ae-e07e-4084-90e4-024af4dcd568",
+    "userId": "pub_807decc7bcc6de8d04bcfbab",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 2,
+    "timestamp": "2024-12-22T10:42:17.022Z"
+  },
+  {
+    "id": "vote:b8364009-6775-4bca-b168-b81b8748a763",
+    "userId": "pub_7285b09c1db018df772e4714",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:48:58.461Z"
+  },
+  {
+    "id": "vote:1414f244-8a74-4980-a29b-d173b4c6a44d",
+    "userId": "pub_0edb82e1f61065617f4fc663",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:51:48.520Z"
+  },
+  {
+    "id": "vote:368388a1-b1c1-473d-8763-88dfbebf9b31",
+    "userId": "pub_427986ea89ad7b1bf522acd9",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:51:58.510Z"
+  },
+  {
+    "id": "vote:0b4005bd-0eb8-453e-8b9f-e445362d4313",
+    "userId": "pub_46a08fa7d99823db28fbff8a",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:52:13.416Z"
+  },
+  {
+    "id": "vote:a7d92538-2930-4cb9-a6bb-bdf32c25f233",
+    "userId": "pub_e7f65b003fee0aa493a75f82",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:54:57.779Z"
+  },
+  {
+    "id": "vote:74300dc5-0236-4756-bc16-994ff81576b6",
+    "userId": "pub_ce19ef9da9c7b818a8bcd157",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:56:03.945Z"
+  },
+  {
+    "id": "vote:ef19d723-4b4c-41f8-a2c7-413cd85433b7",
+    "userId": "pub_2146cf834118c5360ec4207b",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-22T10:57:16.977Z"
+  },
+  {
+    "id": "vote:518ebd8f-4da2-4718-aaff-75cf1ebec6f7",
+    "userId": "pub_506999746be9a2dde51b823c",
+    "proposalId": "proposal:e5223ea2-03e1-4774-af83-66e2b004cc7f",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 1,
+    "timestamp": "2024-12-22T10:59:12.430Z"
+  },
+  {
+    "id": "vote:60df4856-2a42-466d-93b8-5fef78de50e4",
+    "userId": "pub_36b9500895ade4f0a98b6774",
+    "proposalId": "proposal:43f9da25-1dbf-46f4-84ad-e3ee92a27ae7",
+    "roundId": "round:nouns-gg:launders-lan",
+    "count": 4,
+    "timestamp": "2024-12-22T10:59:27.496Z"
+  }
+]

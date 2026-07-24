@@ -1,0 +1,19 @@
+{
+  "id": "pub_ce20764f1b7b723dcfeea31d",
+  "name": "Blitz Bolt",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigep2qbkee2lo73qm6dn55qymy4y5g4vepjwbwpjfparxuhq5mbr4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC4Ede51d5644b1506d30789d9B091d4d7125DD7D",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xB3CaCdF1ae59BFAdD4225E9117170Aa8fC08cA6B",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_b143287f1aedf604eb9f24c6",
+  "name": "Nasse.ink 💢 | 🧙‍♂️/acc",
+  "image": "https://pbs.twimg.com/profile_images/1893948845031116801/bzi4AB1V_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Idknasse",
+    "name": "Nasse.ink 💢 | 🧙‍♂️/acc",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1893948845031116801/bzi4AB1V_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xcc65f4A50f7e30c6E399da61F1b0A5D25b1Da997",
+      "kind": "external"
+    }
+  ]
+}

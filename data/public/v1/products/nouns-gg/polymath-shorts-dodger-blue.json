@@ -1,0 +1,78 @@
+{
+  "id": "product:nouns-gg:polymath-shorts-dodger-blue",
+  "handle": "polymath-shorts-dodger-blue",
+  "name": "Polymath Shorts - Dodger Blue",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": "dopamine",
+  "variants": [
+    {
+      "id": "variant:4aaae22a-cf3f-4264-9089-e954b07b0e23",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeifv4xv2orlkjj4w64zybieyq4x34koh2xwcdavejkmb3k2vaqawb4"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:315970ea-9ed2-4ea0-9516-54c20aba030d",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:60034654-d88f-49ba-9494-19209be7bd3d",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:e72aa06a-70e8-4114-a0f7-057f695b9bdb",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:577c29db-5943-4af1-be4e-f3de1cb983b6",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    }
+  ]
+}

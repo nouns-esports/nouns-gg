@@ -1,0 +1,14 @@
+{
+  "id": "pub_6a1217208b9b70635ba7862a",
+  "name": "₿Ξnbodhi",
+  "image": "https://ipfs.nouns.gg/ipfs/QmUcaHhKmgZZM3BSb6Zh6uoUhXnUpPAe3EKnaTH5HVVx2x",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa903C06BF35286f6d1cDAD25396748353979a44C",
+      "kind": "external"
+    }
+  ]
+}

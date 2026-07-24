@@ -1,0 +1,14 @@
+{
+  "id": "pub_9f5a566d84be0be9f157725c",
+  "name": "antiguian",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=i3a0m9&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x921Ba1c1F4b5eCae30b70E2833c6F297ee9E815b",
+      "kind": "external"
+    }
+  ]
+}

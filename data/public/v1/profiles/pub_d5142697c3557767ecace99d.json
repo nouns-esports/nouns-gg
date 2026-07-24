@@ -1,0 +1,23 @@
+{
+  "id": "pub_d5142697c3557767ecace99d",
+  "name": "Hatlord",
+  "image": "https://pbs.twimg.com/profile_images/1675696139662680064/xzc2Xpd-_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "NadclFryboys",
+    "name": "Hatlord",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1675696139662680064/xzc2Xpd-_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4e8DdAB8e468C212A92da06dd57255F5Baab1E8d",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xD0D2Fd74E2a31B9c95976Af8df39B0543A297Ee7",
+      "kind": "external"
+    }
+  ]
+}

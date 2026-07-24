@@ -1,0 +1,14 @@
+{
+  "id": "pub_adb27d44fcf9ec672203a3ca",
+  "name": "Jazy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihe5mwopjco6rzfq2iigxqyahzcgddioiqbo7p2y2n3klgpccawaq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb735156a62C72cF05d25202216ddD0f29d252194",
+      "kind": "external"
+    }
+  ]
+}

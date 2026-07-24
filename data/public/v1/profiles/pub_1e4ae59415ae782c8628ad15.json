@@ -1,0 +1,18 @@
+{
+  "id": "pub_1e4ae59415ae782c8628ad15",
+  "name": "genvix ",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreig6uwroyi77hn6lq6jtufigypdukk6qrgq3yqlk2zc5msdstkb7ba",
+  "bio": "Hi",
+  "twitter": {
+    "username": "BoknB62571",
+    "name": null,
+    "profilePictureUrl": null
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5Bac829EA8ED4e38C745962Dc5CC9cf99875e985",
+      "kind": "external"
+    }
+  ]
+}

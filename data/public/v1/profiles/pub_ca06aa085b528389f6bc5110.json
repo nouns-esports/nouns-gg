@@ -1,0 +1,18 @@
+{
+  "id": "pub_ca06aa085b528389f6bc5110",
+  "name": "agostini",
+  "image": "https://pbs.twimg.com/profile_images/1415417134281277443/jzzM3SK3_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "phagostini",
+    "name": "agostini",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1415417134281277443/jzzM3SK3_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8B0f6aE565AbC2B7bB24495cE1A9B92A36a888Ed",
+      "kind": "external"
+    }
+  ]
+}

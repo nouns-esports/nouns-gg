@@ -1,0 +1,18 @@
+{
+  "id": "pub_8cc2e773e1c4680c50264d20",
+  "name": "Crypto_Armada",
+  "image": "https://pbs.twimg.com/profile_images/1691354382510530560/l4Awqatv_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ArmadaWeb3",
+    "name": "Crypto_Armada",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1691354382510530560/l4Awqatv_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5508aB714AdabE1191EeCa6b1Ba29d7E128548F1",
+      "kind": "external"
+    }
+  ]
+}

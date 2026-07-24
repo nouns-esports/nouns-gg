@@ -1,0 +1,14 @@
+{
+  "id": "pub_6a028be4460714084309fac1",
+  "name": "Rickyday ",
+  "image": "https://ipfs.nouns.gg/ipfs/QmZzcSPqKEeseWgkAQ8BVK44A6QbUc1B6fxRNwPh8Dgeeh",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb2b7D66bb56ce8FF7838dC8053fF35050Ed95E9D",
+      "kind": "external"
+    }
+  ]
+}

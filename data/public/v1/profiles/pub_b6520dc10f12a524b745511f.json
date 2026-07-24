@@ -1,0 +1,19 @@
+{
+  "id": "pub_b6520dc10f12a524b745511f",
+  "name": "Groovy Grape",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiciiygrj7ipopiorgjrkcp3tuk4z24x6ls3wgyzmi2amdvgp22u6m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xcE593F96cD3b0993532041FC720686Cf0282E414",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x3c1039c685Fe80Cf3ccE0d66f418688fA1302F13",
+      "kind": "external"
+    }
+  ]
+}

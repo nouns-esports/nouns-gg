@@ -1,0 +1,14 @@
+{
+  "id": "pub_4a362dd49766e3e3eac21178",
+  "name": "yes2crypto",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifwvehvr4725473zb33jvz2rg4lau26ff2ysmjjfoihr7hzfsu3ca",
+  "bio": "Whatever your decentralized, borderless, neutral, censorship-resistant open blockchain question is, the answer is YES… to Crypto!",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4bF88042De0220647ACb314AF3c5F310AEc3bCc0",
+      "kind": "external"
+    }
+  ]
+}

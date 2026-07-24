@@ -1,0 +1,19 @@
+{
+  "id": "pub_2d8770b88d8471bf29975eec",
+  "name": "TickleTulip",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaacgzkvxqxomypdci3hbfju3uj57x7kscpyfft44rmnrcke4vhka",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe92c22336eE7B9a9057096183177d305BE905b80",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xE96C6933d7b6f427Af20223A458589f81293d166",
+      "kind": "external"
+    }
+  ]
+}

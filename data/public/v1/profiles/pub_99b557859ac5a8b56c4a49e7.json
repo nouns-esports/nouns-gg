@@ -1,0 +1,14 @@
+{
+  "id": "pub_99b557859ac5a8b56c4a49e7",
+  "name": "cmdklnaw",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidllpaw6a4zs3xsztcy3dwenzsf4ignew6xm2zt7rdc34bzlbswja",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x59b61A50aC4d372902B0736fAE7d7773A74d8a9b",
+      "kind": "external"
+    }
+  ]
+}

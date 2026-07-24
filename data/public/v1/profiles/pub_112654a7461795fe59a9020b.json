@@ -1,0 +1,23 @@
+{
+  "id": "pub_112654a7461795fe59a9020b",
+  "name": "mi Fangi",
+  "image": "https://pbs.twimg.com/profile_images/1922542320601202688/MkicH4XC_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Fangimi36",
+    "name": "mi Fangi",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922542320601202688/MkicH4XC_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd10Be1c3891B5906587778fa05970015dd4D907f",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x7102D589EBAe1Da58b29EF8Ea8B7f91e2D22a672",
+      "kind": "external"
+    }
+  ]
+}

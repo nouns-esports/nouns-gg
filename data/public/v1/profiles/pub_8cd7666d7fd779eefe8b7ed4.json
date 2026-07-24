@@ -1,0 +1,23 @@
+{
+  "id": "pub_8cd7666d7fd779eefe8b7ed4",
+  "name": "sincancuan",
+  "image": "https://pbs.twimg.com/profile_images/1886452818485362690/md7U1LjA_normal.jpg",
+  "bio": "Part of yellow ",
+  "twitter": {
+    "username": "CandraHandoko3",
+    "name": "sincancuan",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1886452818485362690/md7U1LjA_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa635a137bbddC01a7a8A09680a91DD72cb71c100",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x314317E88Ac666aEe81b728d7f5F51cf1e39a190",
+      "kind": "external"
+    }
+  ]
+}

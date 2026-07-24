@@ -1,0 +1,18 @@
+{
+  "id": "pub_fe78723525726a73bf955588",
+  "name": "Trinity Morphy",
+  "image": "https://pbs.twimg.com/profile_images/1815756324019245056/QS6PfZWv_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "TrinityMorphy",
+    "name": "Trinity Morphy",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1815756324019245056/QS6PfZWv_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xaEC559FDeB88389C7D0CBBEE50Ed0B54428273bF",
+      "kind": "external"
+    }
+  ]
+}

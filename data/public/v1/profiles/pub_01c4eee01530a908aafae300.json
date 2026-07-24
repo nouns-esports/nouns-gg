@@ -1,0 +1,14 @@
+{
+  "id": "pub_01c4eee01530a908aafae300",
+  "name": "draxaumax",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=0shc4d&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc44AAD029b056571b302f18aA3C0F194C539918a",
+      "kind": "external"
+    }
+  ]
+}

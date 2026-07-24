@@ -1,0 +1,14 @@
+{
+  "id": "pub_2a24e1c217ee1953c5cec7ae",
+  "name": "cmc5410.base.eth",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=w9vdrj&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb0D42463997A26cDB9dEB92E3ed276e2696B6f27",
+      "kind": "external"
+    }
+  ]
+}

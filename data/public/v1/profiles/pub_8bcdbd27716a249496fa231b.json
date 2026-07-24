@@ -1,0 +1,23 @@
+{
+  "id": "pub_8bcdbd27716a249496fa231b",
+  "name": "melihcansunay",
+  "image": "https://pbs.twimg.com/profile_images/1667392877272367105/kxR7CAGP_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "melihcansunay",
+    "name": "melihcansunay",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1667392877272367105/kxR7CAGP_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x66B0f4D8b4f24b1a2277643276cB9DB3DB458279",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x977766864cfeF916b0D546696a048566bab947B6",
+      "kind": "external"
+    }
+  ]
+}

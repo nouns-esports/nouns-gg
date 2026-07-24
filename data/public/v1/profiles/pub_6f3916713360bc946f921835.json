@@ -1,0 +1,14 @@
+{
+  "id": "pub_6f3916713360bc946f921835",
+  "name": "cmdn38ui",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidzb7dz5ztziglkxouh7kzxwovzq37owzmh7mklkzio2swxxlgoyq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x477A14dc3A5D5bca676e834f7860273516240544",
+      "kind": "external"
+    }
+  ]
+}

@@ -13,6 +13,7 @@
       "~/*": ["../../*"]
     },
     "incremental": true,
+    "noImplicitAny": false,
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "jsx": "preserve"

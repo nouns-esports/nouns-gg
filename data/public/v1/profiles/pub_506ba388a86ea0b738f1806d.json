@@ -1,0 +1,18 @@
+{
+  "id": "pub_506ba388a86ea0b738f1806d",
+  "name": "0xishal ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1805991638323675136/YMXrFSc4_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "0xishal",
+    "name": "0xishal ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1805991638323675136/YMXrFSc4_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf705c4b106D1B09B5CE446b53E69369ebd64c3B3",
+      "kind": "external"
+    }
+  ]
+}

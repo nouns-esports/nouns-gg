@@ -1,0 +1,18 @@
+{
+  "id": "pub_e330ca6f6cf4a7423712fb10",
+  "name": "Dúo Dø Music ♬₊˚.💧 ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1295146633680883713/lL3aUIw7_normal.jpg",
+  "bio": "Genre-free and in-motion music💫 Turning stories into songs 🎶 🇦🇷📍",
+  "twitter": {
+    "username": "duodomusica",
+    "name": "Dúo Dø Music ♬₊˚.💧 ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1295146633680883713/lL3aUIw7_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0d3c16F2D152373539610dA87D231f4d78F73a35",
+      "kind": "external"
+    }
+  ]
+}

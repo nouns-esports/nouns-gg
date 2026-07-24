@@ -1,0 +1,18 @@
+{
+  "id": "pub_96fa42a832bcf3d616692287",
+  "name": "The Design Bender",
+  "image": "https://pbs.twimg.com/profile_images/1919717312229146624/9Q2QKphp_normal.jpg",
+  "bio": "Creative Designer & Artist",
+  "twitter": {
+    "username": "Doms_V2",
+    "name": "The Design Bender",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1919717312229146624/9Q2QKphp_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x86AD8488115f893CA35Cc50781C98B3Ba9032bB6",
+      "kind": "external"
+    }
+  ]
+}

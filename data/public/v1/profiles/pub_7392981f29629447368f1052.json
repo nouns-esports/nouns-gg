@@ -1,0 +1,14 @@
+{
+  "id": "pub_7392981f29629447368f1052",
+  "name": "Mei Mei",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifd5vjdflrlbh6prykaiojbyxil7nygi6wdbwf77qdf7qi2jc4ml4",
+  "bio": "Si yaaaa☺",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1cf4c4E9Ee3E1A9A67FFE13683903AFf43A17483",
+      "kind": "external"
+    }
+  ]
+}

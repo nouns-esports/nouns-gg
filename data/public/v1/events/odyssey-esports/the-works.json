@@ -1,0 +1,288 @@
+{
+  "id": "event:odyssey-esports:the-works",
+  "handle": "the-works",
+  "name": "The Works 2025",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeiej2qqkew3ur3uumzbksly4bnlubi6jcizstjjv4vnduwjlilhjqq",
+  "description": "Odyssey Esports' premiere summer spectacle event for 3 years running feat. Ultimate, Melee, Rivals, SF6 & more!",
+  "createdAt": "2025-06-28T10:00:00.000Z",
+  "start": "2025-06-28T10:00:00.000Z",
+  "end": "2025-05-30T10:00:00.000Z",
+  "active": true,
+  "featured": false,
+  "callToAction": {
+    "disabled": false,
+    "label": "Register",
+    "url": "https://www.start.gg/tournament/the-works-2025/register"
+  },
+  "location": {
+    "name": "Fort Wayne, IN",
+    "url": "https://maps.app.goo.gl/14pVVPJsSSRXvNpx7"
+  },
+  "details": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "The Works 2025 is the Odyssey’s third premier FGC summer regional since inception in 2023 focused around Smash, Rivals, and Street Fighter 6.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "The event takes place in beautiful downtown Fort Wayne, Indiana at the newly built Electric Works campus – formerly an old GE plant. The campus features lots of different businesses and great food options with a new but rustic vibe!",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "The Works 2025 is held in the GE Gym with 10,000 sq. ft for some great Midwest gaming. The event theme is based around the Electric Works campus and the lightbulb with great aesthetic designing and merchandise available before the event.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "The first Smash 2023 was a culmination of the Odyssey Esports movement, making Fort Wayne the hub for esports in the Midwest and breaking the record for the largest Smash Ultimate event since COVID in Indiana. The Works honors this special event in Indiana FGC history (while remaining Big N compliant :p).",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "This year looks to shatter records and be more exciting than ever with top players for Smash Ultimate, Melee, & Rivals alongside the great talent from all over the Midwest! Odyssey Esports’ last trademark event, Afterburner 2025 in January, brought over 450 players for the LAN and this event looks to follow its heat and excitement in the heart of downtown Fort Wayne!",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Who’s Attending",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Attendees will be released in May; previous The Works events have brought 200 players respectively, while Afterburner 2025 brought 450. We are expecting somewhere in the middle for this summer spectacle.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Activities & Highlights",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "The Works will primarily focus on the open competitive brackets for Super Smash Bros. Ultimate, Melee, Rivals 2, and Street Fighter 6 alongside an open Ultimate ladder and other exciting treats for our attendees!",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Our events also tend to feature free snacks, deodorant, and hot hands which, while simple, have been a standout to attendees!",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Livestream & Content Channels",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Streams will be on CollisionSeriesTV channels and Odyssey Esports channels",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "CollisionSeriesTV - https://www.twitch.tv/collisionseriestv",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "OdysseyEsportsIN - https://www.twitch.tv/odysseyesportsin",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Additional Info",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "All ages event; venue fees range from $35–60 depending on when players register.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "We also have a special $30 youth venue fee for any players 18 and under or still in high school, helping younger players attend our events!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "We are very invested in the growth and improvement of our next generation of players alongside the high school and collegiate esports scenes and love the opportunities they provide for students.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Top quality production through the Collision and Odyssey team members, top quality commentary teams managed by KevinWithAK, best graphics in the business by Fungi, and a high-quality GRASSROOTS-focused Midwest team to bring it all together.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Will you make it Work this summer?",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "attendeeCount": 219,
+  "community": {
+    "id": "community:odyssey-esports",
+    "handle": "odyssey-esports",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreigf3pum6hynmtjhouhdn7vc76nk3gkgyqd3prvo4yiihieq4org4m",
+    "name": "Odyssey Esports",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  }
+}

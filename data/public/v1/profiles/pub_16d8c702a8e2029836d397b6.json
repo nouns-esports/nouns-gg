@@ -1,0 +1,18 @@
+{
+  "id": "pub_16d8c702a8e2029836d397b6",
+  "name": "metamorpheus.root | Dune Crew",
+  "image": "https://pbs.twimg.com/profile_images/1911582326867279873/fSun_ROJ_normal.jpg",
+  "bio": "BUIDL'ing",
+  "twitter": {
+    "username": "Cooley504NOLA",
+    "name": "metamorpheus.root | Dune Crew",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1911582326867279873/fSun_ROJ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x924Ff2c66e09861Fc63103Caaf98Fb99e3C67A88",
+      "kind": "external"
+    }
+  ]
+}

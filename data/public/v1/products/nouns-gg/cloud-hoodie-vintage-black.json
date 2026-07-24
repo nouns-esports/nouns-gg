@@ -1,0 +1,79 @@
+{
+  "id": "product:nouns-gg:cloud-hoodie-vintage-black",
+  "handle": "cloud-hoodie-vintage-black",
+  "name": "Cloud Hoodie - Vintage Black",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": "dopamine",
+  "variants": [
+    {
+      "id": "variant:72bbabc1-a338-4ddc-8a0c-a26d0e8b1d66",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "75.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:a6a921fb-c8f3-44df-abdf-9c245433e2d2",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "75.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:9c82ebc1-014e-4b27-8f53-fb1b73ced94f",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeibkgnoq3iymnvjtbjmlwgpmqscyekwmlpbxozvrnfsndzi3wgfdgq",
+        "https://ipfs.nouns.gg/ipfs/bafkreialdgrza5bkasezzy23xfwqew4xxx7a53lxfkczyf62glymam7vju"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "75.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:7e7f7afd-29cd-4ee7-962b-4d51cbe784c2",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "75.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:ea5d30f7-2370-4742-a8af-20ca00a76c48",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "75.00",
+      "inventory": null
+    }
+  ]
+}

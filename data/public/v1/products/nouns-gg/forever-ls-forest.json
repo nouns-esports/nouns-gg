@@ -1,0 +1,78 @@
+{
+  "id": "product:nouns-gg:forever-ls-forest",
+  "handle": "forever-ls-forest",
+  "name": "Forever LS - Forest",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": "dopamine",
+  "variants": [
+    {
+      "id": "variant:9d0c2462-cfd9-491b-98e7-452574fd2912",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeidean3dyntqrjip3yj2nurg5j5wehlffyijobdm2zpfpukdbgsgbi"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "45.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:b5e9fa9e-49f8-4cb3-8375-ccc121a3d7ed",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "45.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:654edbd5-4c41-492f-9ecc-0f7428bcf97d",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "45.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:d17e714e-8b2c-445a-b1ad-71e17bc2b8bd",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "45.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:ac342b64-4e78-4c5f-8194-f7434debbd0f",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "45.00",
+      "inventory": null
+    }
+  ]
+}

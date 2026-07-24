@@ -1,0 +1,14 @@
+{
+  "id": "pub_09c86b630f79a22e1dd47b34",
+  "name": "clxauex2",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibnikgw2zt7bx544mcdpwqzsraodo2xyf7uk5mahoppaxphyollt4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xF3070a6b9663e8371749eE3E6845e21ab19C14cf",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_8652e7b1d5a29f8bd2d7aafd",
+  "name": "Peppy Penguin",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifgdwlsalx5zo5zpsenpf26kegjqpmafthltj4ceg3jr24buqrplm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc5802902277A3924D7af943B6d9f26736EB4dA04",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x921784C3558B2543E94d22de71ED68467dABAC54",
+      "kind": "external"
+    }
+  ]
+}

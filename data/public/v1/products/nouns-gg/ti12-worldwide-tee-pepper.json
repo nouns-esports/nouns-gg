@@ -1,0 +1,81 @@
+{
+  "id": "product:nouns-gg:ti12-worldwide-tee-pepper",
+  "handle": "ti12-worldwide-tee-pepper",
+  "name": "TI12 Worldwide T-Shirt - Pepper",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:212f777a-1b65-4e12-9ae0-b4c8d94a9a45",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeih4ixxdaqmcrx32wjvgfjco4ufb5albwusdy2vypelvjdbzmsk3ju",
+        "https://ipfs.nouns.gg/ipfs/bafybeigro6zjx5ucpnmghafftve7mahkwze4kq52yembfnrqzkyvtueqiu",
+        "https://ipfs.nouns.gg/ipfs/bafybeie3epi6adce57qwqbgpqh26lvzubf5xbmbtuh2cwf5g3ha2psjpyu",
+        "https://ipfs.nouns.gg/ipfs/bafybeie6meqvajutesyriuoux27ncdastctu5m5ptkqcduqzrgffqa3wim"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:feda5af6-610b-4eb6-9d37-80b0e3ff0a19",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:e028eaf9-4467-4734-8088-09762f9a110e",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:8a6acbe7-315c-44ae-8576-7da9856ab042",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:67d828cd-2969-4f1d-b41e-6d37aabeba0d",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_fab0f4e2d0c4dd3ac7572dbf",
+  "name": "Abece",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreif6iqmspajxzb2lr3vmyuy45ur3wem5fmcpwtz5xtqbuncv62mpm4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x56b285862776CDF447dB78Faa131293d757FFF7C",
+      "kind": "external"
+    }
+  ]
+}

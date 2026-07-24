@@ -1,0 +1,18 @@
+{
+  "id": "pub_9baaf61b8228bdf8fad7cb2d",
+  "name": "GusFromTheBlock",
+  "image": "https://pbs.twimg.com/profile_images/1611046303563120643/37oMvlEF_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "GussGonzz",
+    "name": "GusFromTheBlock",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1611046303563120643/37oMvlEF_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x90c3ff9859E09B97c4E6b2ffED3C33f19f4bd815",
+      "kind": "external"
+    }
+  ]
+}

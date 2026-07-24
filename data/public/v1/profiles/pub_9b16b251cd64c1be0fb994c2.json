@@ -1,0 +1,14 @@
+{
+  "id": "pub_9b16b251cd64c1be0fb994c2",
+  "name": "The Park ",
+  "image": "https://ipfs.nouns.gg/ipfs/QmTUYDvGXsbPXFWgPySx2MrUTNU3DTosg8mqVphjierbgv",
+  "bio": "⌐Ⓗ-Ⓕ Fridays at The Park ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x589FFBbdA0EaCD5A9C2BA208b379c886B2630503",
+      "kind": "external"
+    }
+  ]
+}

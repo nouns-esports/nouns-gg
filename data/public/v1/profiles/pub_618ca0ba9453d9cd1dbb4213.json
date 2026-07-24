@@ -1,0 +1,18 @@
+{
+  "id": "pub_618ca0ba9453d9cd1dbb4213",
+  "name": "🎩🎩🎩Eternal Reconn",
+  "image": "https://pbs.twimg.com/profile_images/1891202528798273536/umK5qcDm_normal.jpg",
+  "bio": "Early Base User\nEarly SocialFi investor",
+  "twitter": {
+    "username": "reconneternal",
+    "name": "🎩🎩🎩Eternal Reconn",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1891202528798273536/umK5qcDm_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3b2cD73b2ddB8AeEcf500FBCfeECCf8141D6B512",
+      "kind": "external"
+    }
+  ]
+}

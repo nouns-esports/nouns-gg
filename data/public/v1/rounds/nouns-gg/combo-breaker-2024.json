@@ -1,0 +1,45 @@
+{
+  "id": "round:nouns-gg:combo-breaker-2024",
+  "handle": "combo-breaker-2024",
+  "name": "Join our Street Fighter Roster at COMBO BREAKER 2024!",
+  "image": "https://ipfs.nouns.gg/ipfs/QmcFVzo2KsoJf6StR9ZHrAjP2bGbv12nMk7tcWDY9BzMhX",
+  "active": true,
+  "type": "markdown",
+  "featured": false,
+  "xp": {
+    "winning": 0,
+    "castingVotes": 250,
+    "receivingVotes": 5,
+    "creatingProposal": 500
+  },
+  "content": "{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Nouns Esports is offering 1 winner $1,500 to join our Street Fighter Roster at COMBO BREAKER 2024! \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Nouns Esports will provide you with a jersey and a care package of swag to represent Nouns at the event. We expect active participation in sharing our key event posts before, during, and after the event. \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"In order to be eligible submit a proposal explaining why you'd be an excellent representative for Nouns. Tell us about yourself, your previous results, and why our community should choose you. Please include a link to your preferred social media account so we know who you are! \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}",
+  "description": null,
+  "createdAt": "2024-04-12T10:00:00.000Z",
+  "start": "2024-04-12T10:00:00.000Z",
+  "votingStart": "2024-04-19T10:00:01.000Z",
+  "end": "2024-04-22T10:00:01.000Z",
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null
+}

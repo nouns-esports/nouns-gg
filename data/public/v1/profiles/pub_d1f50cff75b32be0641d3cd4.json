@@ -1,0 +1,14 @@
+{
+  "id": "pub_d1f50cff75b32be0641d3cd4",
+  "name": "samchalom",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigsdguebjc3he7vvxhbt7qtjomk6w57c24erdjsvj5spstfuhsysu",
+  "bio": "https://farcaster.xyz/samchalom",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x94A6556585b481468c6Da3Ce0bDe8B8b9b8B583C",
+      "kind": "external"
+    }
+  ]
+}

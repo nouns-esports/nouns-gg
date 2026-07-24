@@ -1,0 +1,150 @@
+{
+  "id": "product:nouns-gg:nouns-bowl-t-shirt",
+  "handle": "nouns-bowl-t-shirt",
+  "name": "Nouns Bowl t-shirt",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:nouns-bowl",
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:1f859089-5d01-4aa5-9130-1323e2dcc2f5",
+      "images": [],
+      "size": "m",
+      "color": {
+        "hex": "#144281",
+        "name": "True Royal"
+      },
+      "price": "25.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:a3d1922a-b0e3-4bb3-8dd0-b853f11013a7",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiakl76ypiosqcynvd4zq557ev3kduckp4uhfbuar6qnef7x7moa2a"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#144281",
+        "name": "True Royal"
+      },
+      "price": "25.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:1721073c-04b9-482f-a225-03a60730135e",
+      "images": [],
+      "size": "2xl",
+      "color": {
+        "hex": "#144281",
+        "name": "True Royal"
+      },
+      "price": "25.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:81ec27f1-7a4a-4cdc-a330-fb17cd2fe73a",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreibdwjmyhatkn5id6lx4dejsc2psu32iyzh2xgrhtl5oumlmlhypvq"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#728AD4",
+        "name": "Heather Columbia Blue"
+      },
+      "price": "25.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:28ea17ab-5f06-4bdf-b5c5-5a2e051e993d",
+      "images": [],
+      "size": "m",
+      "color": {
+        "hex": "#728AD4",
+        "name": "Heather Columbia Blue"
+      },
+      "price": "25.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:f61b6c60-5e0d-4f6f-ab74-87e7de61d372",
+      "images": [],
+      "size": "l",
+      "color": {
+        "hex": "#728AD4",
+        "name": "Heather Columbia Blue"
+      },
+      "price": "25.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:a3ff9957-4122-4cc2-83b1-262955acc52c",
+      "images": [],
+      "size": "xl",
+      "color": {
+        "hex": "#728AD4",
+        "name": "Heather Columbia Blue"
+      },
+      "price": "25.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:127e141a-307e-49e0-9beb-f3370e5ee148",
+      "images": [],
+      "size": "2xl",
+      "color": {
+        "hex": "#728AD4",
+        "name": "Heather Columbia Blue"
+      },
+      "price": "25.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:9eb50efc-228a-4ed2-afcf-773f57b0e318",
+      "images": [],
+      "size": "xl",
+      "color": {
+        "hex": "#144281",
+        "name": "True Royal"
+      },
+      "price": "25.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:233311da-216d-4b0c-a8fe-8df113b89575",
+      "images": [],
+      "size": "l",
+      "color": {
+        "hex": "#144281",
+        "name": "True Royal"
+      },
+      "price": "25.00",
+      "inventory": null
+    }
+  ]
+}

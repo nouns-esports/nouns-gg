@@ -1,0 +1,19 @@
+{
+  "id": "pub_0c28321dd08215b21a679c81",
+  "name": "NiftyNugget",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicaeyqobcc6lo5dznxahhoziknebcar73bdx2fl3uuwhjck2up6v4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6B54A96a8e279c292F54038b9D79431342C4350D",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xD0B1Bf4E1448cD43593eb158F13d5EAC6dA3700C",
+      "kind": "external"
+    }
+  ]
+}

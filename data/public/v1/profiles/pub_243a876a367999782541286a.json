@@ -1,0 +1,18 @@
+{
+  "id": "pub_243a876a367999782541286a",
+  "name": "Yield Hustle",
+  "image": "https://pbs.twimg.com/profile_images/1948771318234517504/kFNyBrMk_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "YieldHustleArt",
+    "name": "Yield Hustle",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948771318234517504/kFNyBrMk_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5Ad28cD53298D271056687343Ac66d8d9Ac4156e",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_5d9d4dd9fb7b6f8f351fd63d",
+  "name": "cmapi05r",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiav5rk5np6xbu44zh4u6z762ocjk3a66iozzqa5g5yurddzudpj4i",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x843a3c4ED93fb1f1335D5d174745551468106715",
+      "kind": "external"
+    }
+  ]
+}

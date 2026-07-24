@@ -1,0 +1,14 @@
+{
+  "id": "pub_97be92ea8a62f5af703ef35a",
+  "name": "ytwishy",
+  "image": "https://ipfs.nouns.gg/ipfs/QmTHyAATKV2Jtz4gwfK5s8hwM9rL1YZNPzrX5egAum7JkD",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x858E26595a071d43e318E8989A9D735D6f3a4333",
+      "kind": "external"
+    }
+  ]
+}

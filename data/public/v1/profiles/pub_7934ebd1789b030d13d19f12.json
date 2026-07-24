@@ -1,0 +1,19 @@
+{
+  "id": "pub_7934ebd1789b030d13d19f12",
+  "name": "Pickle",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiatktlzegkp6uvyg7qowq2in2aumogmglzyxo5pll5jqzuszqbt2q",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9a47074Cb07bA6199F54c4b98e42f393D520C2C9",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x6B4B1734113e1c352A96e5F258782A84e5631c31",
+      "kind": "external"
+    }
+  ]
+}

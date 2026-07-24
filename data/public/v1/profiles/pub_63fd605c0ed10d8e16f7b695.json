@@ -1,0 +1,18 @@
+{
+  "id": "pub_63fd605c0ed10d8e16f7b695",
+  "name": "lianggong",
+  "image": "https://pbs.twimg.com/profile_images/1967642206707286016/4PLKDIIT_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "xiashuntao24065",
+    "name": "lianggong",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1967642206707286016/4PLKDIIT_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x63cc968AEff6f9d735089A92aab76F2EfD9b0C0b",
+      "kind": "external"
+    }
+  ]
+}

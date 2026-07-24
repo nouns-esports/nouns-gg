@@ -1,0 +1,166 @@
+{
+  "id": "product:nouns-gg:tipped-off-yoshi-t-shirt",
+  "handle": "tipped-off-yoshi-t-shirt",
+  "name": "Tipped Off Yoshi T-Shirt",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:tipped-off-16",
+  "collectionHandle": "tipped-off-16",
+  "variants": [
+    {
+      "id": "variant:0b7f7642-e33f-4ced-966b-e9f326157044",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeidodupw6puxvfutu46q7sgsgbb7v5atg3574untxudd3iyjgytwve"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#4C5C67",
+        "name": "Heather Slate"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:096218ce-f3e5-4a4c-bbde-5d62f5305de5",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeidodupw6puxvfutu46q7sgsgbb7v5atg3574untxudd3iyjgytwve"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#4C5C67",
+        "name": "Heather Slate"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:beecd1c5-909c-4fa2-82eb-733284991add",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeidodupw6puxvfutu46q7sgsgbb7v5atg3574untxudd3iyjgytwve"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#4C5C67",
+        "name": "Heather Slate"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:50b10788-87d9-407a-b623-548960102c65",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeidodupw6puxvfutu46q7sgsgbb7v5atg3574untxudd3iyjgytwve"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#4C5C67",
+        "name": "Heather Slate"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:e39bfed3-97ee-4e55-8666-07ba84d00a5d",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeidodupw6puxvfutu46q7sgsgbb7v5atg3574untxudd3iyjgytwve"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#4C5C67",
+        "name": "Heather Slate"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:49461ee5-ee8b-4c54-a898-eff54c0ecfdd",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreibrwp6k7cz22iiqqfspmcgpahg7jshzsmayo4pg75ne3me62e2phe"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#6B5B54",
+        "name": "Pebble"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:0241c852-2442-4255-bdfa-af717a388111",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreibrwp6k7cz22iiqqfspmcgpahg7jshzsmayo4pg75ne3me62e2phe"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#6B5B54",
+        "name": "Pebble"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:f9323250-8b18-4a3d-88e1-a64acef945c2",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreibrwp6k7cz22iiqqfspmcgpahg7jshzsmayo4pg75ne3me62e2phe"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#6B5B54",
+        "name": "Pebble"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:867fc982-b195-4cc5-b125-5f20fd3eb911",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreibrwp6k7cz22iiqqfspmcgpahg7jshzsmayo4pg75ne3me62e2phe"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#6B5B54",
+        "name": "Pebble"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:b336b570-a597-430d-b7a7-4dd220bb7515",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreibrwp6k7cz22iiqqfspmcgpahg7jshzsmayo4pg75ne3me62e2phe"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#6B5B54",
+        "name": "Pebble"
+      },
+      "price": "20.00",
+      "inventory": null
+    }
+  ]
+}

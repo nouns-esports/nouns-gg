@@ -1,0 +1,18 @@
+{
+  "id": "pub_3308029100c09937c592e287",
+  "name": "Tom (Ø,G) base.eth (evm/acc)",
+  "image": "https://pbs.twimg.com/profile_images/1870694864830259200/m1EVmwef_normal.jpg",
+  "bio": "Gm world 👀\n(Chéo nhé ae) ❤️🚀\nFollow back 100% 🫡",
+  "twitter": {
+    "username": "LeThanhThuan16",
+    "name": "Tom (Ø,G) base.eth (evm/acc)",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1870694864830259200/m1EVmwef_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7b88Ff8997ed543524135E4A13c024e4AcfB8169",
+      "kind": "external"
+    }
+  ]
+}

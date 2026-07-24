@@ -1,0 +1,14 @@
+{
+  "id": "pub_bb19487dc8f12f02448f9dfa",
+  "name": "willoscar",
+  "image": "https://i.imgur.com/szsUKQq.jpg",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x40C9dF02C9c1927820ff3DB2a597ED22e10be875",
+      "kind": "external"
+    }
+  ]
+}

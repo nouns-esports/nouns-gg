@@ -1,0 +1,18 @@
+{
+  "id": "pub_24e96ad060eb90b5f988c3e8",
+  "name": "IVG | frames",
+  "image": "https://pbs.twimg.com/profile_images/1740290907604217856/ajjOmRLM_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "framesSSB",
+    "name": "IVG | frames",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1740290907604217856/ajjOmRLM_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa90760F43F651232dCd25D977306E31F024be731",
+      "kind": "external"
+    }
+  ]
+}

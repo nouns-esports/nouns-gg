@@ -1,0 +1,426 @@
+{
+  "id": "product:nouns-gg:year-of-the-goat-tee",
+  "handle": "year-of-the-goat-tee",
+  "name": "Year of the GOAT Tee",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:tipped-off-16",
+  "collectionHandle": "tipped-off-16",
+  "variants": [
+    {
+      "id": "variant:9a046718-23e0-4e1e-8b0e-adf34b68b6a0",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+      ],
+      "size": "3xl",
+      "color": {
+        "hex": "#EEF3DC",
+        "name": "Citron"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:9a1333e2-1bb4-45f7-a96d-6bfa5e9862ca",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+      ],
+      "size": "xs",
+      "color": {
+        "hex": "#E6B9AB",
+        "name": "Heather Prism Peach"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:2f3962c1-0573-43e9-8d85-b7f7f9a51cfa",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#E6B9AB",
+        "name": "Heather Prism Peach"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:1ec41698-9a7a-486c-b114-09a1ac67f350",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#E6B9AB",
+        "name": "Heather Prism Peach"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:f7289ec2-3024-49ed-9877-ed312a972a9f",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#E6B9AB",
+        "name": "Heather Prism Peach"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:5cc32ba7-68ff-45ee-a856-8e79d35d5c0c",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+      ],
+      "size": "xs",
+      "color": {
+        "hex": "#DECCB9",
+        "name": "Soft Cream"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:e5847dde-d74d-4ddb-9ce7-390b406db0e2",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#DECCB9",
+        "name": "Soft Cream"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:d247e171-7a2f-407f-8dae-22326e29428f",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+      ],
+      "size": "3xl",
+      "color": {
+        "hex": "#DECCB9",
+        "name": "Soft Cream"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:37d00f87-c665-4a6b-9948-2005ed535db0",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+      ],
+      "size": "xs",
+      "color": {
+        "hex": "#EEF3DC",
+        "name": "Citron"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:8d1365d0-07f4-4d3f-902a-6e6c6a8b8067",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#E6B9AB",
+        "name": "Heather Prism Peach"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:fed51269-155c-47e3-8d21-0a398f4d4683",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#C5C9D4",
+        "name": "Light Blue"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:55de116a-9ffb-4d61-b3ec-8839bf7e61d7",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#C5C9D4",
+        "name": "Light Blue"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:8532c1a3-57fe-4e03-bf1a-497cbc9fc4fd",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#C5C9D4",
+        "name": "Light Blue"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:4e3cde0e-1eb3-4b1c-b97a-bcb176291939",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#DECCB9",
+        "name": "Soft Cream"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:65344b4b-48e9-4d66-8201-8d90f77811e9",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#DECCB9",
+        "name": "Soft Cream"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:67e60cdf-b2ad-4bcf-b5d3-0bcbfaf001c3",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#DECCB9",
+        "name": "Soft Cream"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:135fdcb5-918d-4c0d-aa4c-2a53dc825ac1",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#EEF3DC",
+        "name": "Citron"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:62713ceb-56b0-4928-ac7d-cb1d85d7fc34",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#DECCB9",
+        "name": "Soft Cream"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:4260dfff-50db-4326-a2d0-4e5684e92795",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+      ],
+      "size": "4xl",
+      "color": {
+        "hex": "#DECCB9",
+        "name": "Soft Cream"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:d4fab77a-a216-4063-895d-e8cce04d812b",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#EEF3DC",
+        "name": "Citron"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:4511bb48-6889-4298-a8af-108241c76947",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+      ],
+      "size": "4xl",
+      "color": {
+        "hex": "#EEF3DC",
+        "name": "Citron"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:ff587422-32e3-4819-8c49-86476b80b73f",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#EEF3DC",
+        "name": "Citron"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:048a629e-d3f0-4dad-ace2-6ece158eac3c",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#EEF3DC",
+        "name": "Citron"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:9aaf708a-92ca-44d2-bf33-98d3b594db72",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#EEF3DC",
+        "name": "Citron"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:086da66b-c463-410d-8ab9-a64b0d1412ae",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#E6B9AB",
+        "name": "Heather Prism Peach"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:be2a1fba-ac25-4160-9db2-66bbf51f6705",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+      ],
+      "size": "3xl",
+      "color": {
+        "hex": "#E6B9AB",
+        "name": "Heather Prism Peach"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:2e8d5334-47f2-42c1-9c62-08138d1442eb",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+      ],
+      "size": "4xl",
+      "color": {
+        "hex": "#E6B9AB",
+        "name": "Heather Prism Peach"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:ad9eed61-64c9-4369-afce-34596cba53c8",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+      ],
+      "size": "xs",
+      "color": {
+        "hex": "#C5C9D4",
+        "name": "Light Blue"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:d02fdd51-4861-4f60-a490-12fd6ebd766e",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#C5C9D4",
+        "name": "Light Blue"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:948b6734-5b36-4a55-a2fc-9eaef31fb92b",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#C5C9D4",
+        "name": "Light Blue"
+      },
+      "price": "20.00",
+      "inventory": null
+    }
+  ]
+}

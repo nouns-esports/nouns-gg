@@ -1,0 +1,19 @@
+{
+  "id": "pub_b39ed8787ca5a8b293a9c242",
+  "name": "Holo Hammer",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibr3pqfxql6g53vyf6twckfteeujvahzt2ugw4hwjfhxf2ynn2u7a",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x08ace5d22266f90DD210Db3142A79A335360C8bE",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x8117b1Ca27CE0876B4Cb4e216F00be770b40060B",
+      "kind": "external"
+    }
+  ]
+}

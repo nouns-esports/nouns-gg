@@ -1,0 +1,14 @@
+{
+  "id": "pub_3e1f01ca984d3a62fa2a3b0e",
+  "name": "akisremla",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihrvuthqutwilmj4fjtbghhydmiheac7go4kefbkv3ushdky2vwqe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xffCa36f9C6cfFb323C9ecd92398d8Af7eCd0678e",
+      "kind": "external"
+    }
+  ]
+}

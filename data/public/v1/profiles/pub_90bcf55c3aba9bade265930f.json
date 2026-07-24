@@ -1,0 +1,18 @@
+{
+  "id": "pub_90bcf55c3aba9bade265930f",
+  "name": "DEGUMA",
+  "image": "https://pbs.twimg.com/profile_images/1901640967985504257/jS7Wymt2_normal.jpg",
+  "bio": "Artis",
+  "twitter": {
+    "username": "Degudhadharma",
+    "name": "DEGUMA",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1901640967985504257/jS7Wymt2_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC2320b6B6e7486b1743d6d0CfC62Ad5cfc23F86e",
+      "kind": "external"
+    }
+  ]
+}

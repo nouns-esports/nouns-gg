@@ -1,0 +1,14 @@
+{
+  "id": "pub_d831a68824090b97b775baeb",
+  "name": "cmdn8ti7",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreie4krx4eng5maydacwjtkncu67nitf62yafdkto3yrzbe7gs5w6fu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6901E68219435A093f2Aed025DbA8Dd94B751dE1",
+      "kind": "external"
+    }
+  ]
+}

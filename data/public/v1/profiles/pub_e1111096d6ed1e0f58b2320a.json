@@ -1,0 +1,23 @@
+{
+  "id": "pub_e1111096d6ed1e0f58b2320a",
+  "name": "PracticalFAS",
+  "image": "https://pbs.twimg.com/profile_images/1824508424383549440/tiF0Zn7i_normal.jpg",
+  "bio": "watch twinz 2",
+  "twitter": {
+    "username": "shieldgrabber",
+    "name": "PracticalFAS",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1824508424383549440/tiF0Zn7i_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x159E27B07352D2b577eD07e0F51d1A019b7C0C11",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x1C9B8e413d2e4F2db543336350068CBC107B3a43",
+      "kind": "external"
+    }
+  ]
+}

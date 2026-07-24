@@ -1,0 +1,19 @@
+{
+  "id": "pub_ac476c3ea8ac9e71fad281d6",
+  "name": "Janky",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibs7gjhpesooew3djbzto44d65p3ihtrdnvbft3orim6vgkjgg5vm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2E00D999967E6D177A1B687eaA36EF60156B4709",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x5F1f37c2c9d6E4Aa3b0ba6E3566C8A776E0094a5",
+      "kind": "external"
+    }
+  ]
+}

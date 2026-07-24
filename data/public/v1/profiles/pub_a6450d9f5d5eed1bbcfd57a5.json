@@ -1,0 +1,18 @@
+{
+  "id": "pub_a6450d9f5d5eed1bbcfd57a5",
+  "name": "hamtaro1H",
+  "image": "https://pbs.twimg.com/profile_images/1101021399555043328/ekbm01FP_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "hamtaro1H",
+    "name": "hamtaro1H",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1101021399555043328/ekbm01FP_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2bEa6FB8d74B8bA8A79ee8339FBEd293dB9C4277",
+      "kind": "external"
+    }
+  ]
+}

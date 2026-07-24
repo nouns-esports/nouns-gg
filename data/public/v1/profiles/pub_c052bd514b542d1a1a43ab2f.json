@@ -1,0 +1,14 @@
+{
+  "id": "pub_c052bd514b542d1a1a43ab2f",
+  "name": "hollytias",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibjs7r4crkfbwe7jwulwlmuvhjugl7374l4mbk2gdn36sq7bfayba",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA502d53d4FF6f72785cBD214E8C69e8079D57e18",
+      "kind": "external"
+    }
+  ]
+}

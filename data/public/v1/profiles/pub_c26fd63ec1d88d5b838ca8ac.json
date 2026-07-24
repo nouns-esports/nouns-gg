@@ -1,0 +1,14 @@
+{
+  "id": "pub_c26fd63ec1d88d5b838ca8ac",
+  "name": "allisonalvarez",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidjuzcdrrcvq7fwrkisn74y2i3ddwnfgbefwd3323udpqaiasnfx4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9731b90c320ec3649B6ad1fE2246C99bBBcF81Cf",
+      "kind": "external"
+    }
+  ]
+}

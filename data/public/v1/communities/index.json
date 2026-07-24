@@ -1,0 +1,476 @@
+[
+  {
+    "id": "community:chompix",
+    "handle": "chompix",
+    "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+    "name": "Chompix",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  {
+    "id": "community:eurank",
+    "handle": "eurank",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreig3zjys7eserjphl2k7tro55hjmlevq2iy7zq6v5b7smbvzc6bbxu",
+    "name": "EURank",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": false,
+    "hasQuests": false,
+    "hasPredictions": false,
+    "hasEvents": false,
+    "hasLeaderboard": false,
+    "hasShop": false
+  },
+  {
+    "id": "community:lilnouns",
+    "handle": "lilnouns",
+    "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/9460da51-7bb1-445b-c733-e18723c25c00/original",
+    "name": "Lil Nouns",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": "https://warpcast.com/~/channel/lilnouns",
+    "details": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 1
+          },
+          "content": [
+            {
+              "text": "🧠 What is a Lil Noun?",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Launched in May 2022, Lil Nouns is a community-run DAO built on the same principles as Nouns DAO. It introduces a new layer to the ecosystem, designed to welcome more people in with lower-cost, always-available NFTs. By doing so, Lil Nouns helps grow awareness of Nouns while empowering a new generation of collectors and contributors.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Each Lil Noun is a 16×16 pixel art character, randomly generated and minted on the Ethereum blockchain every 15 minutes. With traits like colorful heads, accessories, and backgrounds, no two Lil Nouns are the same. And thanks to their CC0 (Creative Commons Zero) license, anyone can use, remix, or build on them—no restrictions, no permission needed.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Lil Nouns isn't just a collection—it's a gateway into a vibrant, creative, and decentralized community.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "🗳️ How Does the DAO Work?",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Owning a Lil Noun gives you a voice in the Lil Nouns DAO, with each NFT counting as one vote. The DAO manages a shared treasury that's funded by ongoing NFT auctions, and it's up to the community to decide how those funds are used. Anyone can submit a proposal and vote on initiatives they care about. So far, the DAO has backed a wide range of projects like esports sponsorships, creative public goods, and even podcasts like The Lil Nouns Show. It's a flexible system powered by the ideas and votes of the Lil Nouns community.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "🔗 Explore More",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🌐 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Official Website",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://lilnouns.wtf/"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🔨 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Lil Nouns Camp",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://lilnouns.camp/"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "👨‍💻 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "GitHub",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://github.com/lilnouns"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🖥️ ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Discord",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://discord.gg/4avSUMVWyF"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": false,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  {
+    "id": "community:mantle",
+    "handle": "mantle",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreigqggcql4c7iynvf6xejewfgnvm36jgbnc2e44swrmm6wffc3636i",
+    "name": "Mantle",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": false,
+    "hasPredictions": false,
+    "hasEvents": false,
+    "hasLeaderboard": true,
+    "hasShop": false
+  },
+  {
+    "id": "community:nadcl",
+    "handle": "nadcl",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+    "name": "NADCL",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  {
+    "id": "community:noundry",
+    "handle": "noundry",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreigw5pbbm6kvwsr5toj4vzzfooitlw5mxqbvdepslacw4nmfmtkvbq",
+    "name": "Noundry",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": "https://warpcast.com/~/channel/noundry",
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": false,
+    "hasQuests": true,
+    "hasPredictions": false,
+    "hasEvents": false,
+    "hasLeaderboard": true,
+    "hasShop": false
+  },
+  {
+    "id": "community:nouns",
+    "handle": "nouns",
+    "image": "https://warpcast.com/~/channel-images/nouns.png",
+    "name": "Nouns",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  {
+    "id": "community:nounsfe",
+    "handle": "nounsfe",
+    "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/fbc2980c-975d-467d-5c48-8f165e0f6a00/original",
+    "name": "Nounsfe",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": "https://warpcast.com/~/channel/nounsfe",
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": false,
+    "hasPredictions": false,
+    "hasEvents": false,
+    "hasLeaderboard": false,
+    "hasShop": false
+  },
+  {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  {
+    "id": "community:nouns-unite",
+    "handle": "nouns-unite",
+    "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/40a9b6c3-2425-4d53-969f-1ac85edcea00/original",
+    "name": "Nouns Unite",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": "https://warpcast.com/~/channel/unite",
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": false,
+    "hasPredictions": false,
+    "hasEvents": false,
+    "hasLeaderboard": false,
+    "hasShop": false
+  },
+  {
+    "id": "community:odyssey-esports",
+    "handle": "odyssey-esports",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreigf3pum6hynmtjhouhdn7vc76nk3gkgyqd3prvo4yiihieq4org4m",
+    "name": "Odyssey Esports",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  {
+    "id": "community:oliyoun",
+    "handle": "oliyoun",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+    "name": "Oliyoun",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  {
+    "id": "community:ssb-montreal",
+    "handle": "ssb-montreal",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreicbg2sx7xqzdubmvidja2n33twzdtwwhtuksfumyta4d2xxs6xt3a",
+    "name": "SSB Montreal",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": false
+  },
+  {
+    "id": "community:thegathering",
+    "handle": "thegathering",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreihs45zjfkocdt6jfy5efoqbhf4dcq6t7crhp7nmn5kp26aq2k667y",
+    "name": "The Gathering",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": false,
+    "hasQuests": false,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": false,
+    "hasShop": false
+  },
+  {
+    "id": "community:unity-clash",
+    "handle": "unity-clash",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeieaepjeia3gcszug2wlgtd7tegjiqnuzgxobdgxux4nbbiddkwwdy",
+    "name": "Unity Clash",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": false,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": false,
+    "hasShop": false
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "id": "pub_991b77c4d59166af72320bf2",
+  "name": "cmdollyz",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieknxyzan7cqxtu3ugekh3k5pnnn5srabriu2f5fa7qalkz2m547a",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x19B3205632ddc3b713D65c499d044809D4656E43",
+      "kind": "external"
+    }
+  ]
+}

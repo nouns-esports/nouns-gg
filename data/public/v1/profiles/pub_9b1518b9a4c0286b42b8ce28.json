@@ -1,0 +1,18 @@
+{
+  "id": "pub_9b1518b9a4c0286b42b8ce28",
+  "name": "JED XO",
+  "image": "https://pbs.twimg.com/profile_images/1882077328118820864/NuOjAGrN_normal.jpg",
+  "bio": ".",
+  "twitter": {
+    "username": "1jedxo",
+    "name": "JED XO",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1882077328118820864/NuOjAGrN_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA70fE49c71529808EB881455073bEdED47f7016C",
+      "kind": "external"
+    }
+  ]
+}

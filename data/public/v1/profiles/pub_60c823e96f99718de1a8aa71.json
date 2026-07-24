@@ -1,0 +1,18 @@
+{
+  "id": "pub_60c823e96f99718de1a8aa71",
+  "name": "Phat",
+  "image": "https://pbs.twimg.com/profile_images/1898982058913083392/Mjak35YS_normal.jpg",
+  "bio": "do airdrop to earn . Bullish Farcade",
+  "twitter": {
+    "username": "dqpnt1999",
+    "name": "Phat",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1898982058913083392/Mjak35YS_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc4f1E9000e039E97DC5092fba83c8d34DD41f727",
+      "kind": "external"
+    }
+  ]
+}

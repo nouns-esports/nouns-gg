@@ -1,6 +1,11 @@
 import { getRaffle } from "@/server/queries/raffles";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
+import { raffleParams } from "@/server/data/params";
+
+export function generateStaticParams() {
+	return raffleParams;
+}
 
 export default async function Raffle(props: {
 	params: Promise<{ raffle: string }>;

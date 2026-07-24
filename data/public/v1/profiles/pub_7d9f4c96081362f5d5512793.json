@@ -1,0 +1,18 @@
+{
+  "id": "pub_7d9f4c96081362f5d5512793",
+  "name": "Rodrigo adelino",
+  "image": "https://pbs.twimg.com/profile_images/1985344826301087744/_txfeoez_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "rodrigobascode",
+    "name": "Rodrigo adelino",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1985344826301087744/_txfeoez_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x72396daD00b9ED4591bE8F829EB62997eD16608c",
+      "kind": "external"
+    }
+  ]
+}

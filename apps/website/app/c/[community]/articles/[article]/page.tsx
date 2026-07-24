@@ -1,10 +1,14 @@
 import Link from "@/components/Link";
 import { getArticle } from "@/server/queries/articles";
-import { getAuthenticatedUser } from "@/server/queries/users";
 import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { env } from "~/env";
+import { siteConfig } from "@/config";
+import { articleParams } from "@/server/data/params";
+
+export function generateStaticParams() {
+	return articleParams;
+}
 import TipTap from "@/components/TipTap";
 import { isUUID } from "@/utils/isUUID";
 
@@ -31,7 +35,7 @@ export async function generateMetadata(props: {
 	return {
 		title: article.title,
 		description: null,
-		metadataBase: new URL(env.NEXT_PUBLIC_DOMAIN),
+		metadataBase: new URL(siteConfig.domain),
 		openGraph: {
 			type: "website",
 			images: [article.image],
@@ -50,7 +54,7 @@ export async function generateMetadata(props: {
 					action: {
 						type: "launch_frame",
 						name: "Nouns GG",
-						url: `${env.NEXT_PUBLIC_DOMAIN}/articles/${article.handle}`,
+						url: `${siteConfig.domain}/articles/${article.handle}`,
 						splashImageUrl:
 							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
 						splashBackgroundColor: "#040404",

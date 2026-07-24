@@ -1,0 +1,86 @@
+{
+  "id": "product:nouns-gg:nouns-stadium-premium-sweatshirt",
+  "handle": "nouns-stadium-premium-sweatshirt",
+  "name": "Nouns Stadium Premium Sweatshirt",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:nouns-bowl",
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:033f9bb6-9a8a-44c2-b0ce-f7eadd2c6533",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:6f37eade-d689-45b6-93ef-a61e428074df",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:b6c7b1ca-a308-4817-93da-9d270a453991",
+      "images": [],
+      "size": "3xl",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:1188aed6-8f4c-463d-8387-7dca0a2fbac8",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:fa408572-34ca-4e28-8edb-4f616aaa79b2",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiaz5onwzytsjl4xsschazpdcpd66debsnsqf7biqj4msfncaosvmq"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:6448b144-444e-443e-8e67-fdaf5530e4fe",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    }
+  ]
+}

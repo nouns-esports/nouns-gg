@@ -1,0 +1,18 @@
+{
+  "id": "pub_eee177373431311b73ed1fa1",
+  "name": "Stary | 𝔽rAI",
+  "image": "https://pbs.twimg.com/profile_images/1921234172279926784/CXSrVmLH_normal.jpg",
+  "bio": "Web3 researcher",
+  "twitter": {
+    "username": "starydesign",
+    "name": "Stary | 𝔽rAI",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1921234172279926784/CXSrVmLH_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x67019a2983a39B0f0e122487E9DCe162CA0B4C4B",
+      "kind": "external"
+    }
+  ]
+}

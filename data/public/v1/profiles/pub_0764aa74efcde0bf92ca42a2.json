@@ -1,0 +1,14 @@
+{
+  "id": "pub_0764aa74efcde0bf92ca42a2",
+  "name": "cmdlq7ar",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidnazxl5youpvb7erc6agnrtdu4ggh3cscn5gxzxlbeybdwa7b3wa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb8cA1cA759B5aeD3751c07A0E49Fb3D8126486f3",
+      "kind": "external"
+    }
+  ]
+}

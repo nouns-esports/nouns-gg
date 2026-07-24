@@ -1,0 +1,18 @@
+{
+  "id": "pub_42d44ab6e6ca89b06fc943b6",
+  "name": "Sara",
+  "image": "https://pbs.twimg.com/profile_images/1899953158719217664/B1y9bmXW_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "bouncy_fluff",
+    "name": "Sara",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1899953158719217664/B1y9bmXW_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x574aFF3Fa1eeC0d7C0741e2835c2E0fb99C0756b",
+      "kind": "external"
+    }
+  ]
+}

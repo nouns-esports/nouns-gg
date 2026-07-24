@@ -1,0 +1,19 @@
+{
+  "id": "pub_d8b994574e7de86a6ee9c5ab",
+  "name": "Posh Pancake",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaoh2navp2aifjtdbsb43tn47s2jsuunqck6u65kb4u2ehrzajcbq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x24e44DeB9f22B4615dD98C22f0185d51F446d3c4",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xc75F6a040C7cA2036502dB68d5d21494212D20ed",
+      "kind": "external"
+    }
+  ]
+}

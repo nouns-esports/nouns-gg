@@ -1,0 +1,14 @@
+{
+  "id": "pub_11044215cad11d875bfac216",
+  "name": "icecubeeater1911",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihenswovvroqob4vtk7f6zjogb3yt3r3xccfit4l4u5ypqludtcz4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc924d37f78b7cf2823eFa696F77DA91FC298A54E",
+      "kind": "external"
+    }
+  ]
+}

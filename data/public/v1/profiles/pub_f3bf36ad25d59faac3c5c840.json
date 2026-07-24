@@ -1,0 +1,14 @@
+{
+  "id": "pub_f3bf36ad25d59faac3c5c840",
+  "name": "matynwkl13.",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidooswlhuzpxyvze36fmkc52sqzeglnz2gi6o6y3udqzj6egxr5ly",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB73Ef130C5790b129863508df45f3AbeeBD76DaB",
+      "kind": "external"
+    }
+  ]
+}

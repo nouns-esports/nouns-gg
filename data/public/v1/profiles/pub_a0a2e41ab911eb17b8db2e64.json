@@ -1,0 +1,18 @@
+{
+  "id": "pub_a0a2e41ab911eb17b8db2e64",
+  "name": "Sei",
+  "image": "https://pbs.twimg.com/profile_images/1729142763588104192/a252PPt0_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "sseiseikaii",
+    "name": "Sei",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1729142763588104192/a252PPt0_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE56c1EBbD3e93Bc22c81792d4ad7FfB2610e716E",
+      "kind": "external"
+    }
+  ]
+}

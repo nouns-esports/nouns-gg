@@ -1,0 +1,23 @@
+{
+  "id": "pub_7c4b9efd3527d76509b094a4",
+  "name": "Mraudirs7",
+  "image": "https://pbs.twimg.com/profile_images/1922132432481906688/xwq5mPKW_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Mraudirs709",
+    "name": "Mraudirs7",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922132432481906688/xwq5mPKW_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x77e267BD8d6563cdF9aF087940B1728b52b86E20",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xa7B65c887eF34F3ea61FCe2268963F99F32560cc",
+      "kind": "external"
+    }
+  ]
+}

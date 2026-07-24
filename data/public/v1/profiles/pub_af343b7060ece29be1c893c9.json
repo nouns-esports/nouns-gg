@@ -1,0 +1,14 @@
+{
+  "id": "pub_af343b7060ece29be1c893c9",
+  "name": "BrettDrawsStuff",
+  "image": "https://ipfs.nouns.gg/ipfs/QmQv2RwY6xGFZMc7bUHZTVQFfCne6MFzzvgNvyYnR9pAuG",
+  "bio": "i draw stuff",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "kind": "external"
+    }
+  ]
+}

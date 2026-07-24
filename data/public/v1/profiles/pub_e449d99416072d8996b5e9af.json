@@ -1,0 +1,18 @@
+{
+  "id": "pub_e449d99416072d8996b5e9af",
+  "name": "sativa music",
+  "image": "https://pbs.twimg.com/profile_images/1727483263361355776/1c_sHZ3G_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "sativa",
+    "name": "sativa music",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1727483263361355776/1c_sHZ3G_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0E20CbD1c10994DED1dD2Cff22063b9894114758",
+      "kind": "external"
+    }
+  ]
+}

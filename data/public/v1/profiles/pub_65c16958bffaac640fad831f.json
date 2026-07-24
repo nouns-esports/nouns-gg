@@ -1,0 +1,19 @@
+{
+  "id": "pub_65c16958bffaac640fad831f",
+  "name": "Funky",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicwkmz4zgc3l5pren45vvlv5oe3eot46qtnwbpucqykzqm4bri6ka",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x783FBA5FC903133158a0a2585e73071De393EF73",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x7a2F9CD183120030Cc1C6848d7d136785dAA5ad9",
+      "kind": "external"
+    }
+  ]
+}

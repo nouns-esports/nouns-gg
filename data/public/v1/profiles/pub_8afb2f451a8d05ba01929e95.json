@@ -1,0 +1,14 @@
+{
+  "id": "pub_8afb2f451a8d05ba01929e95",
+  "name": "cmdm8tsp",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiednlmjfs54pphckjqmgfwjiqqycfxr3kmv6rwqsnccsh5vf57xwi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8e0f05B4345eDd81EF8636AB7A121D28C451CD5D",
+      "kind": "external"
+    }
+  ]
+}

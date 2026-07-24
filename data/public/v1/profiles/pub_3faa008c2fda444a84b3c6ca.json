@@ -1,0 +1,23 @@
+{
+  "id": "pub_3faa008c2fda444a84b3c6ca",
+  "name": "Nejo Out 🎃",
+  "image": "https://pbs.twimg.com/profile_images/1385404620361584641/F7I6b3dQ_normal.jpg",
+  "bio": "Visual artist & illustrator ✦ Exploring tenderness and strangeness in bodies and emotions 💖",
+  "twitter": {
+    "username": "nejoout",
+    "name": "Nejo Out 🎃",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1385404620361584641/F7I6b3dQ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb73b9D43c0B96b9DEc7DFD2f1487eB508bf8cdA1",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x1b77aCCe1E3426b0512dA78318afC844829759f9",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_767023f2f05bd9615ebb3265",
+  "name": "Viv ∞",
+  "image": "https://pbs.twimg.com/profile_images/1807875522401390594/fVshpVxt_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "VividDarkFPS",
+    "name": "Viv ∞",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1807875522401390594/fVshpVxt_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xce4EDD3ee422FF9c6aaB00c89b741F77B942A932",
+      "kind": "external"
+    }
+  ]
+}

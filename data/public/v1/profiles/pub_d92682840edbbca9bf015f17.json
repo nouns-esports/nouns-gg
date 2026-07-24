@@ -1,0 +1,14 @@
+{
+  "id": "pub_d92682840edbbca9bf015f17",
+  "name": "MacaECO",
+  "image": "https://ipfs.nouns.gg/ipfs/QmXbd2spGKSZGbhm15L9YAprHby3KcPtbVhgP32stmifTK",
+  "bio": "Agroforest Volunteers",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xae9357107225aa50cBB57C99aC40F282701e2835",
+      "kind": "external"
+    }
+  ]
+}

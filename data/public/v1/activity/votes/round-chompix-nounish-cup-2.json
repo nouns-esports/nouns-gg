@@ -1,0 +1,5346 @@
+[
+  {
+    "id": "vote:b00a4c37-9ec6-4c73-8475-d9f7611572de",
+    "userId": "pub_de667856b6c5b8327847109e",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T12:02:34.432Z"
+  },
+  {
+    "id": "vote:f3cd9949-0b3b-4ad2-a51f-fc9a5d329721",
+    "userId": "pub_de667856b6c5b8327847109e",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T12:02:34.432Z"
+  },
+  {
+    "id": "vote:dd5488be-ad40-478f-a51f-d3f460138ed8",
+    "userId": "pub_46ae564f9e2671efa26c00e2",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T12:04:38.487Z"
+  },
+  {
+    "id": "vote:ef3bb7ef-6474-4bdf-9d28-dcda86f068a2",
+    "userId": "pub_87eef18a0fbd083fd598ad25",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T12:15:02.546Z"
+  },
+  {
+    "id": "vote:b389d2f2-d85a-4791-81c3-d8e540963551",
+    "userId": "pub_1d9323a9a6c5d50987b0cc67",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 8,
+    "timestamp": "2025-01-27T12:16:44.230Z"
+  },
+  {
+    "id": "vote:89590410-5d7e-4055-b4c0-eb8b68edd06f",
+    "userId": "pub_ff6ba949960e952850f17a33",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-27T12:57:04.935Z"
+  },
+  {
+    "id": "vote:f3a3baaa-6b9b-418a-b4c8-1a59b540e113",
+    "userId": "pub_f68af5bb87bedaf71036c6eb",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-27T13:01:59.546Z"
+  },
+  {
+    "id": "vote:86623f8c-b00d-457d-b0da-8a8e2640aef9",
+    "userId": "pub_aa774468c07cd047a2e137ed",
+    "proposalId": "proposal:f225ab66-6175-4619-aa26-193eda4abb23",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T13:33:46.544Z"
+  },
+  {
+    "id": "vote:405e63cc-16ec-4bd5-87c4-706816250a84",
+    "userId": "pub_a8a25e04ea64ede9bf23d8c9",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 8,
+    "timestamp": "2025-01-27T13:37:03.253Z"
+  },
+  {
+    "id": "vote:ef27ab3c-ba09-47c9-b9a9-bec45f3ce168",
+    "userId": "pub_53772d69137b5fc04b69eb22",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T13:43:56.864Z"
+  },
+  {
+    "id": "vote:857e037e-345e-4a03-8cb8-8f20c244d5f1",
+    "userId": "pub_b7892b6cf6f0f55f3eefd88f",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T14:00:01.537Z"
+  },
+  {
+    "id": "vote:62e16ab3-480d-487d-ac40-9aded1836313",
+    "userId": "pub_25d85e5afd7836a3f79b60e9",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T14:02:28.551Z"
+  },
+  {
+    "id": "vote:4bc8c1b9-d1e6-47dd-9d1b-e82bc91bbb75",
+    "userId": "pub_bc8ee8ff0811fdf1a879ad37",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T14:22:03.894Z"
+  },
+  {
+    "id": "vote:860b1c4b-be3c-47a0-854b-b48e17f13aff",
+    "userId": "pub_dccea48e6b9c08e3e153e83c",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T14:29:16.569Z"
+  },
+  {
+    "id": "vote:b29cebb1-4ad8-43fa-bee6-a93cc2f188dd",
+    "userId": "pub_f1b94a521c7229b2c9d0fd7a",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T14:45:59.769Z"
+  },
+  {
+    "id": "vote:3c9b71f5-ba76-4b26-9a47-009f011b5761",
+    "userId": "pub_3c8f9b1149d48fbf86b3565c",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T14:49:38.460Z"
+  },
+  {
+    "id": "vote:f4cb8ba1-5526-4d13-a6c0-966035136fd9",
+    "userId": "pub_3f4662a905926079e7f48951",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-27T14:54:23.100Z"
+  },
+  {
+    "id": "vote:c36fe17e-90e2-4491-9ce7-d9f097267528",
+    "userId": "pub_49eb66ace81a914711d685de",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T15:25:56.828Z"
+  },
+  {
+    "id": "vote:b76dca57-6f4e-4abc-995f-362f09920fcd",
+    "userId": "pub_b4f8d8d2e9e96556baf60581",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-27T17:51:28.010Z"
+  },
+  {
+    "id": "vote:5218b51e-12c5-4152-9fc6-af4484fd288e",
+    "userId": "pub_1a1a7e9390d944cfe7bbe220",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T17:55:21.746Z"
+  },
+  {
+    "id": "vote:3f23936a-95fc-4570-aade-e9ca9b103fad",
+    "userId": "pub_aa17263cc30ae8310a9755ff",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T18:11:03.821Z"
+  },
+  {
+    "id": "vote:c6cf80f7-3583-4143-ac18-745e895fc698",
+    "userId": "pub_55308d61a1ceb0beea2ac31c",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T18:14:49.537Z"
+  },
+  {
+    "id": "vote:92d10ec5-58da-47d8-a628-44d057dc9c57",
+    "userId": "pub_b42b17824d9e4e5bb096fdf6",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T18:17:53.546Z"
+  },
+  {
+    "id": "vote:185d6c90-60aa-490e-894e-d80f15ef0e23",
+    "userId": "pub_e41264ccc3ff0eecd792a4df",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T18:19:21.169Z"
+  },
+  {
+    "id": "vote:e5ce3d82-eb91-4fa9-abfd-c31a3dc9f4f4",
+    "userId": "pub_dc3c48f106bed55e4520d395",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T18:19:34.176Z"
+  },
+  {
+    "id": "vote:e431ed9f-81b6-48a4-bae3-9d2daecf13b5",
+    "userId": "pub_c284b09875cfca516cfeab52",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-27T18:20:19.727Z"
+  },
+  {
+    "id": "vote:ef1a8f0d-05cb-4fd5-a9d5-222ab7a109ad",
+    "userId": "pub_0fb676c7f64b4b9818093649",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T18:40:14.484Z"
+  },
+  {
+    "id": "vote:c9c97987-aa8f-42c0-a4a5-22cbc250d2cc",
+    "userId": "pub_bdc7eea3dd3e6b719eb92ba1",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T18:41:46.887Z"
+  },
+  {
+    "id": "vote:60dc4f09-9668-422e-bae7-09896817c9d6",
+    "userId": "pub_11ae49cfabf872c837bbc3a8",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T18:48:41.616Z"
+  },
+  {
+    "id": "vote:33584929-08ad-4cf0-9b80-1a2e4383ac7a",
+    "userId": "pub_8b5857845c24c0dda7457ac9",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T19:14:24.716Z"
+  },
+  {
+    "id": "vote:f5b29ed0-572b-4852-8fb5-2229e031f737",
+    "userId": "pub_54f306bf83070df812f269ea",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T19:21:12.935Z"
+  },
+  {
+    "id": "vote:33049781-4d85-4fca-87b7-acfd9607fbe2",
+    "userId": "pub_baf49fc8ea5da13e16712761",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T19:38:52.129Z"
+  },
+  {
+    "id": "vote:b7f661ea-d2c3-4505-b343-936bc3b2508a",
+    "userId": "pub_5a208fb0060f290a69672ea1",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T20:06:11.335Z"
+  },
+  {
+    "id": "vote:d79ff8a5-f19d-4982-b64a-d08424f05c86",
+    "userId": "pub_e32e49e22ac0492ecce48a50",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-27T20:08:46.668Z"
+  },
+  {
+    "id": "vote:49c26893-148e-444a-84e2-0c6993df3c05",
+    "userId": "pub_205d102febedffc464be0aa8",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-27T20:21:29.960Z"
+  },
+  {
+    "id": "vote:f506e23d-5a6d-4eff-bfd0-f7ecc2e39a79",
+    "userId": "pub_9a493f5e5caa88141c3b3690",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T20:28:31.770Z"
+  },
+  {
+    "id": "vote:f4304f2a-945d-40e6-b56a-b4ffc7c60c29",
+    "userId": "pub_1d6a76b18ec9fdf8a876fad2",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T20:36:54.905Z"
+  },
+  {
+    "id": "vote:9a117e02-a440-45fa-957c-551f6e7b6275",
+    "userId": "pub_8b10f14d385595fff3bf8005",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T20:44:08.559Z"
+  },
+  {
+    "id": "vote:98b26fbf-17d9-4a6f-a084-af56cd95da35",
+    "userId": "pub_701739528c21a502766cae12",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T21:25:06.877Z"
+  },
+  {
+    "id": "vote:0926b5d2-c09f-48b8-ac7b-f80fb64b133e",
+    "userId": "pub_6342462057766db53683401c",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T21:25:25.002Z"
+  },
+  {
+    "id": "vote:4ef3e40a-7d90-4eab-888a-152603240fd9",
+    "userId": "pub_df69226a3688386bd4d36bf1",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T21:30:14.551Z"
+  },
+  {
+    "id": "vote:42d14b4b-6b6e-435c-874e-5ae05a286ed3",
+    "userId": "pub_a1fd25b88294d2eacb3164cf",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T21:41:09.967Z"
+  },
+  {
+    "id": "vote:10ac8305-2e47-4f67-b7a8-408de745972d",
+    "userId": "pub_16ebc4024e8417efd1f70fa9",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-27T22:18:04.560Z"
+  },
+  {
+    "id": "vote:99e72dc6-1432-478f-ac95-9f7aed662eb5",
+    "userId": "pub_1fe39ad30d059bb7ab91bf95",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-27T22:32:32.890Z"
+  },
+  {
+    "id": "vote:2299687e-4ea2-4a7d-af7f-e08214210dc1",
+    "userId": "pub_f69f18b5133c2fb8a9f18e53",
+    "proposalId": "proposal:f5962ee9-9654-4445-bcc3-e0aab1a6288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T22:34:03.735Z"
+  },
+  {
+    "id": "vote:5d200dd8-adef-4736-90c1-dd2763760c8a",
+    "userId": "pub_6a4a5bbb4cfb9a10f9fcf9a8",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-27T22:35:34.420Z"
+  },
+  {
+    "id": "vote:6112bac2-8292-4686-9cd1-55c7b71d5bca",
+    "userId": "pub_ed3cb72293a4b359a565f393",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-27T22:38:12.410Z"
+  },
+  {
+    "id": "vote:5678a5d9-4eaf-4531-a259-6824abfc6ec5",
+    "userId": "pub_4999a34ee1aaeb6d97239d4e",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T22:39:37.620Z"
+  },
+  {
+    "id": "vote:3430aebe-c24e-4305-8092-69835da2f1cd",
+    "userId": "pub_c927b8ac4e307756b4c5d284",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T22:46:18.963Z"
+  },
+  {
+    "id": "vote:2fb1a13e-df67-49d7-8e09-4bbd70202266",
+    "userId": "pub_5305a6a7b9e4601a4876412d",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T23:02:12.701Z"
+  },
+  {
+    "id": "vote:2b2f08b3-cb29-4526-8f16-dd2244dabdb3",
+    "userId": "pub_eb8e6044da2c59deebc6292c",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T23:02:22.873Z"
+  },
+  {
+    "id": "vote:c72829a9-0d70-4783-8fac-054d8bbc4503",
+    "userId": "pub_0dfe8396413832d8e1474d87",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-27T23:08:53.852Z"
+  },
+  {
+    "id": "vote:56d0b541-f14b-4965-97a7-54617a877516",
+    "userId": "pub_41526a120bca2dfd445c1516",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T23:13:40.710Z"
+  },
+  {
+    "id": "vote:470ad550-e30e-47c0-9085-820354b16c3c",
+    "userId": "pub_e802a1f2db127257394f5d1c",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-27T23:19:12.934Z"
+  },
+  {
+    "id": "vote:6f92db36-c5f8-4f76-9b74-b3e2d5184283",
+    "userId": "pub_efa0417bbd12341514d6b6fa",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T23:21:20.758Z"
+  },
+  {
+    "id": "vote:355985ba-f84e-4bbf-8c25-7f40a9abcbf1",
+    "userId": "pub_c413b33afb08bada834aa8da",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T23:23:29.263Z"
+  },
+  {
+    "id": "vote:b3474b2e-54d1-4efa-b5ea-4b7c8abd58db",
+    "userId": "pub_ab9e16b3df3f9d0e06e4718c",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-27T23:25:16.905Z"
+  },
+  {
+    "id": "vote:c1437d7a-a7d9-4402-9652-7dedea80efc9",
+    "userId": "pub_df67d5f43205877d50dffa96",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T23:28:10.216Z"
+  },
+  {
+    "id": "vote:c79edaa0-4d61-4e27-b8f6-e5218290dd6f",
+    "userId": "pub_0af88dd38183953f2cf11b7b",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T23:28:35.269Z"
+  },
+  {
+    "id": "vote:3f64c926-5758-4272-9295-7c3140d4deef",
+    "userId": "pub_17676a461ad25a44b1253b05",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-27T23:32:57.530Z"
+  },
+  {
+    "id": "vote:a010663b-82cc-4d0c-ae55-5a48b8dde9ef",
+    "userId": "pub_f82bd39c1c8d16a608cd015b",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T00:15:40.162Z"
+  },
+  {
+    "id": "vote:fc27f524-e2b4-42c7-a1c9-122ae1c78a4a",
+    "userId": "pub_36cb5f26d8808c2f39941277",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T00:19:58.404Z"
+  },
+  {
+    "id": "vote:dbb838f0-5a58-429c-ad5d-d865f07b0bb9",
+    "userId": "pub_b86e3d27ca85cf0f4f3c0361",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T00:31:53.192Z"
+  },
+  {
+    "id": "vote:1523753a-a081-4232-b770-d0c54be99258",
+    "userId": "pub_f2deed5336efd30da3289be6",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T00:34:54.155Z"
+  },
+  {
+    "id": "vote:56609f89-0910-4929-ad72-db8a86315f29",
+    "userId": "pub_b4ee29893a4264ab66d88dff",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T00:38:16.607Z"
+  },
+  {
+    "id": "vote:6c97dc39-4081-410b-a827-3ec65465ca2f",
+    "userId": "pub_2a3ee6fa868103a7216cc85f",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T00:41:25.524Z"
+  },
+  {
+    "id": "vote:c11d2d6b-ceb7-485f-9399-6fe16782edff",
+    "userId": "pub_c0a979fd75194252599613a8",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T00:48:59.267Z"
+  },
+  {
+    "id": "vote:e5e3ffec-bd0e-417e-8d78-d4bf746a69ec",
+    "userId": "pub_288cc2c8cb81ff1f939e9747",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T00:50:11.874Z"
+  },
+  {
+    "id": "vote:6321539d-7740-49ec-b294-f00be978119e",
+    "userId": "pub_eb1535779aeac4e3e25ad8ca",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T01:01:53.978Z"
+  },
+  {
+    "id": "vote:8c234b3a-6b2d-48a1-8638-679bdd6fb91c",
+    "userId": "pub_5e604acab3a8be09870164cc",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T01:31:44.092Z"
+  },
+  {
+    "id": "vote:a652ca72-a907-4b32-8742-977aeacb6c0b",
+    "userId": "pub_a448e0abaa590dd29b91cb50",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T01:32:25.563Z"
+  },
+  {
+    "id": "vote:aef7e2e7-d6ba-42f7-b0ea-d4e65f1410e5",
+    "userId": "pub_69ba2364284a8dd84604a7aa",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T01:43:31.981Z"
+  },
+  {
+    "id": "vote:3fbee291-45c1-4330-9e10-bd59f0204b8f",
+    "userId": "pub_88213e7e9161a6c88b940ee3",
+    "proposalId": "proposal:59620883-d3f1-4c4f-b57c-14fa671f4edf",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T02:13:12.525Z"
+  },
+  {
+    "id": "vote:f2205a7a-4658-4ef2-8c3d-86edbee0a6e3",
+    "userId": "pub_b1de8c7c70b9bf09c1a20739",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T02:21:05.947Z"
+  },
+  {
+    "id": "vote:9e7fb512-eac9-4ee2-931b-919428b15012",
+    "userId": "pub_7305d6e76c9cf5742e27cfc0",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T02:28:02.399Z"
+  },
+  {
+    "id": "vote:2df86f31-c3ab-49ed-9511-9ceb57437522",
+    "userId": "pub_7970d81af78c17df4d98a688",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T02:28:54.334Z"
+  },
+  {
+    "id": "vote:5083b178-ae22-439b-ad1f-83cfa90da413",
+    "userId": "pub_01dfa1155cdeeda31cdc2dec",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T02:29:42.186Z"
+  },
+  {
+    "id": "vote:1afc3424-2be9-4866-9d5a-63b16bd82790",
+    "userId": "pub_685406f76bafdd8f73ebc302",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T02:39:49.561Z"
+  },
+  {
+    "id": "vote:25e2bbf5-24d7-420c-96e1-381892b698cc",
+    "userId": "pub_1034465140e276a1aad84612",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T02:40:13.476Z"
+  },
+  {
+    "id": "vote:5f20c61d-6be9-4e12-959a-20445970252c",
+    "userId": "pub_cd8fd686a2cd7cfaab86d04b",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T02:40:44.817Z"
+  },
+  {
+    "id": "vote:48f13579-4359-4c69-8de4-0d88117b0ff6",
+    "userId": "pub_033dc3306d67575583bbc6d8",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T02:48:32.827Z"
+  },
+  {
+    "id": "vote:5e1fc256-b692-464f-aefa-8ef597d264d9",
+    "userId": "pub_d8e7349d67f6a96a47b2ed8c",
+    "proposalId": "proposal:59620883-d3f1-4c4f-b57c-14fa671f4edf",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T02:57:52.640Z"
+  },
+  {
+    "id": "vote:d516a661-d195-4dc4-9c1a-3d02b85018ed",
+    "userId": "pub_e274d8b4c4211b2664eb1408",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T03:07:35.222Z"
+  },
+  {
+    "id": "vote:3bc000fc-09d8-4bf4-8b90-6be7a10eb073",
+    "userId": "pub_8bdc256a7e998d9f19ccfe93",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T03:07:45.894Z"
+  },
+  {
+    "id": "vote:3ef28dbc-5379-40ce-84b8-2faf85601170",
+    "userId": "pub_fe1ada39caa5460593423f5b",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T03:16:10.454Z"
+  },
+  {
+    "id": "vote:726f875b-1be0-4bef-81a0-cb593e7a7cc2",
+    "userId": "pub_92bd2facefadd9b75823bf2c",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T03:18:49.891Z"
+  },
+  {
+    "id": "vote:a54917ef-f86a-49bf-82aa-bb2b2ef0e91c",
+    "userId": "pub_504d9bd78f8700179791aef1",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T03:19:21.218Z"
+  },
+  {
+    "id": "vote:9b7dcc9d-e674-4939-9545-840282c6b873",
+    "userId": "pub_d611d56093ee16202fc05a42",
+    "proposalId": "proposal:59620883-d3f1-4c4f-b57c-14fa671f4edf",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T03:29:51.098Z"
+  },
+  {
+    "id": "vote:b5ff7f3d-cda7-4a98-8f3e-d65177276a5a",
+    "userId": "pub_083fdc85443ff06e6a054007",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T03:38:22.979Z"
+  },
+  {
+    "id": "vote:0c2324a6-dcdf-4fb3-b089-f0a2faee6b04",
+    "userId": "pub_7da772baae20e4ca7d8d6160",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T03:41:49.036Z"
+  },
+  {
+    "id": "vote:1e36f306-ead1-451f-a2d3-adb0ee897216",
+    "userId": "pub_be47dd6fa5e64eb0299c3c76",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T03:44:51.470Z"
+  },
+  {
+    "id": "vote:501022cf-57a7-48f5-9d7d-ec76f59d11dd",
+    "userId": "pub_43541f6dae4bc144e82efde3",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T03:46:53.829Z"
+  },
+  {
+    "id": "vote:287c1696-e069-4901-bd8a-b30d14457850",
+    "userId": "pub_275dbeb3e8f177a2ccc66878",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T03:51:16.681Z"
+  },
+  {
+    "id": "vote:02d915bc-5075-4edc-b63b-ea0216add592",
+    "userId": "pub_8754ce9111d936fd817ad3d8",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:03:46.046Z"
+  },
+  {
+    "id": "vote:aae5357a-0931-4327-a518-ab8936e8e822",
+    "userId": "pub_5f2c3a8188df1f8e9289e0d4",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T04:06:46.002Z"
+  },
+  {
+    "id": "vote:ddb1df47-2e6b-49cf-89b1-77d6e67d06e5",
+    "userId": "pub_ba1d83324ada6d8f3ab3716d",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:11:04.574Z"
+  },
+  {
+    "id": "vote:4449f42c-ce71-467d-86e0-7b0abab1c619",
+    "userId": "pub_a3c5b8f1cacf78e26bd7a9a0",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:13:46.513Z"
+  },
+  {
+    "id": "vote:5bc74775-04f9-4fe6-937b-739b59a49bbd",
+    "userId": "pub_b2ddeb088b8a1466318db32a",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:25:39.539Z"
+  },
+  {
+    "id": "vote:099d8099-6b86-4dbd-a75c-18af18b0f87b",
+    "userId": "pub_c975a1b0e02c27801042f412",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:25:54.739Z"
+  },
+  {
+    "id": "vote:1cc4e2be-9894-43fa-aeb6-363644439a96",
+    "userId": "pub_c1cf6decfc1834f11e0e817e",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:29:36.376Z"
+  },
+  {
+    "id": "vote:1beba2fc-68b0-4945-b8e3-46a607c7db88",
+    "userId": "pub_d6bcf9859b0bdda41c94b025",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:45:30.252Z"
+  },
+  {
+    "id": "vote:441c4d68-05f7-480c-be6f-98871f0cff1f",
+    "userId": "pub_e929042c7558b95a12a675b4",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:47:30.488Z"
+  },
+  {
+    "id": "vote:016bc7af-1238-462c-a925-a9acdb261c86",
+    "userId": "pub_99af381574b59c0df35d3c4f",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:48:05.176Z"
+  },
+  {
+    "id": "vote:d9fc22bb-c626-4415-bdf6-7fc119dc2b23",
+    "userId": "pub_00cd2247422a52e56527a1b8",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:48:53.907Z"
+  },
+  {
+    "id": "vote:dfa89c1c-9bc4-4160-aa7f-870c398ce3bb",
+    "userId": "pub_286baf8bd3a00244c791a360",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:51:25.660Z"
+  },
+  {
+    "id": "vote:fef4b61a-1b4e-4c30-a43d-82aecbb18e2e",
+    "userId": "pub_5242daff18e84a9be7e2d26e",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:51:36.384Z"
+  },
+  {
+    "id": "vote:45a11b7f-dc2e-41c3-9403-0033502ed4f3",
+    "userId": "pub_d12811c7c8dee6179ac7ae0f",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:53:13.324Z"
+  },
+  {
+    "id": "vote:493e8a05-dc45-4c02-9ff9-12d8a0d9f915",
+    "userId": "pub_5e91031f1a291f76e91cd066",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T04:59:50.922Z"
+  },
+  {
+    "id": "vote:06bce8e5-c9f9-4b34-b62b-5fc86fb3765a",
+    "userId": "pub_d91ec753adaac9193225493d",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:04:04.335Z"
+  },
+  {
+    "id": "vote:7c0e9581-0786-44ce-b11d-edd096f4d57a",
+    "userId": "pub_2c0f09f7b2590ec16c3ee703",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:08:32.214Z"
+  },
+  {
+    "id": "vote:10142351-54f0-4e68-aa1f-60f409eca5a2",
+    "userId": "pub_a346ba0e966322932f16c2ed",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:08:54.490Z"
+  },
+  {
+    "id": "vote:74fb028b-969e-4a24-9c74-3ef851c5207b",
+    "userId": "pub_00ebd702328922831b977e39",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:10:23.808Z"
+  },
+  {
+    "id": "vote:df1a00ee-490e-4df2-ae2a-dccb953dc18d",
+    "userId": "pub_ad8e8fe8765ee3781adeda1d",
+    "proposalId": "proposal:59620883-d3f1-4c4f-b57c-14fa671f4edf",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:21:05.845Z"
+  },
+  {
+    "id": "vote:ff445c6e-85d6-49a5-b08e-3bb22c08e69a",
+    "userId": "pub_e3eabe6441e06503db8098ee",
+    "proposalId": "proposal:008a6d31-28da-460b-a0e4-119658acc3a0",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:27:40.854Z"
+  },
+  {
+    "id": "vote:648c560f-de74-44db-9ad7-398367e8a0de",
+    "userId": "pub_677576c65d76eed19295e589",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:31:15.873Z"
+  },
+  {
+    "id": "vote:85e67324-c74b-4158-9f69-b17771906893",
+    "userId": "pub_d7b66d4ffb7629dc951ba8dc",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:31:33.156Z"
+  },
+  {
+    "id": "vote:7fdc2246-1555-4428-8cfd-2167184a882e",
+    "userId": "pub_119cdd8ce73d29d19821c97c",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:33:29.772Z"
+  },
+  {
+    "id": "vote:f4e0143c-34b7-4256-b230-5dd0109879ac",
+    "userId": "pub_6653d325724e20673ecc3184",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 10,
+    "timestamp": "2025-01-28T05:35:12.616Z"
+  },
+  {
+    "id": "vote:a7a591e3-aa49-4573-876d-f7cba3981936",
+    "userId": "pub_6bf7110b8e4d67f93b58487b",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:43:54.686Z"
+  },
+  {
+    "id": "vote:e04862d8-d8ed-46c4-8e5a-3fa919259d65",
+    "userId": "pub_d2516a925c526fd63f3f54af",
+    "proposalId": "proposal:008a6d31-28da-460b-a0e4-119658acc3a0",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:49:24.415Z"
+  },
+  {
+    "id": "vote:f73978dc-2dba-41bd-b5fb-59222d98c1de",
+    "userId": "pub_4806bd80c7a8a85f30c7d2f5",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:49:52.931Z"
+  },
+  {
+    "id": "vote:bd1786a8-6d8e-428e-a6b6-37ce477c95f6",
+    "userId": "pub_0b8da1f722787e9463f71710",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 5,
+    "timestamp": "2025-01-28T05:52:13.662Z"
+  },
+  {
+    "id": "vote:ac6d659a-fb05-4508-a7bc-915d83224d17",
+    "userId": "pub_0b8da1f722787e9463f71710",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 5,
+    "timestamp": "2025-01-28T05:52:13.662Z"
+  },
+  {
+    "id": "vote:6e84f64f-e336-4cd9-89ef-deb5ab207607",
+    "userId": "pub_4531051931e9479b218bffd2",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 8,
+    "timestamp": "2025-01-28T05:56:05.652Z"
+  },
+  {
+    "id": "vote:b9eff2b7-537a-472a-9d26-7a6a4fe2c752",
+    "userId": "pub_250a51d5de13948f2501c8ea",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:56:52.295Z"
+  },
+  {
+    "id": "vote:b100af87-3bd9-4cf9-b4d8-a869bf55a9b0",
+    "userId": "pub_b467786fd202f6e1cf338d4e",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T05:59:09.070Z"
+  },
+  {
+    "id": "vote:f0fb6c13-7bf0-4e2c-a6d2-447c85e1f57b",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 6,
+    "timestamp": "2025-01-28T06:02:00.658Z"
+  },
+  {
+    "id": "vote:13b692cf-d5df-4263-a30e-f044d4ef3ad7",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T06:02:00.658Z"
+  },
+  {
+    "id": "vote:21d9d7ed-4c15-4ed8-959b-4a5d5287ab34",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T06:02:00.658Z"
+  },
+  {
+    "id": "vote:c7a8457a-7c13-48d2-8f52-4604333678d8",
+    "userId": "pub_791e73878860a215333b6c4b",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T06:02:56.567Z"
+  },
+  {
+    "id": "vote:a9020b99-1171-4f10-8988-78e8fd95f1c5",
+    "userId": "pub_1cbda3fb029715248173bcd2",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T06:03:14.267Z"
+  },
+  {
+    "id": "vote:07cef1ea-d4d8-4192-9f46-d55177160d99",
+    "userId": "pub_6d228cf2c85ddedd591ea768",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 10,
+    "timestamp": "2025-01-28T06:03:37.198Z"
+  },
+  {
+    "id": "vote:64db1401-b01e-4b18-bab7-16af400daa93",
+    "userId": "pub_b8d47f5d36147558f3377449",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T06:10:49.971Z"
+  },
+  {
+    "id": "vote:4b0e46ea-1ae9-4a35-8e68-94d6c83a3a8b",
+    "userId": "pub_a613384657629de0a88c0607",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T06:36:34.713Z"
+  },
+  {
+    "id": "vote:ec1eedb9-4bc2-4aa4-a3e2-b0c708eb24f8",
+    "userId": "pub_844666c74db61798d57895d5",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T06:39:07.578Z"
+  },
+  {
+    "id": "vote:cc5a9dd0-d7af-4ec9-bd79-0149e3ddd68a",
+    "userId": "pub_8ac1be7d7ab13e8fed5bb317",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T06:41:05.269Z"
+  },
+  {
+    "id": "vote:814446ee-81ec-4f50-b598-f98b0d2721bb",
+    "userId": "pub_4f7ba92077a27de7f8225dd9",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T06:43:51.395Z"
+  },
+  {
+    "id": "vote:c2195e65-ab65-4f87-a07b-a8833e4353ee",
+    "userId": "pub_66f589335ec5d84dc8d407b9",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T06:44:29.752Z"
+  },
+  {
+    "id": "vote:11455bea-a2f2-42f1-a4db-fd5a82571254",
+    "userId": "pub_75d9dbe52a853597b29f3507",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T06:56:00.568Z"
+  },
+  {
+    "id": "vote:ec9a7aed-52af-41ef-961b-7d09ff325931",
+    "userId": "pub_5984107da6747b1f9578ea6f",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T07:01:13.625Z"
+  },
+  {
+    "id": "vote:b4381a4b-501e-4fbe-bf25-d5c1864a801e",
+    "userId": "pub_f1b4034c0f49e5c2894fbfc8",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T07:01:36.886Z"
+  },
+  {
+    "id": "vote:d64aebd4-1c28-47e6-bc31-b6c21e062283",
+    "userId": "pub_a0bcc9fa8303854a270c8326",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T07:07:18.240Z"
+  },
+  {
+    "id": "vote:23899499-842a-4f6c-8799-0956b81ed728",
+    "userId": "pub_2ebdea2a60b7473d0f62fb27",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T07:21:28.346Z"
+  },
+  {
+    "id": "vote:ac3d835d-8a84-44c4-9bb6-e528f4638ad7",
+    "userId": "pub_fbc6222c565fb07e9f477a0b",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T07:22:50.691Z"
+  },
+  {
+    "id": "vote:8dde4c6d-02ad-4c6a-b60b-7fe0c6758578",
+    "userId": "pub_9fe63c39eede03118d6fd948",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T07:23:36.155Z"
+  },
+  {
+    "id": "vote:a8e526f3-ba54-4c11-b8e8-64ede2008e6a",
+    "userId": "pub_037caebffc064116acbcf80a",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 10,
+    "timestamp": "2025-01-28T07:44:43.636Z"
+  },
+  {
+    "id": "vote:5f43fafd-2cbe-4953-bc4f-a44cd2b4c5f9",
+    "userId": "pub_7a69c08716b975e1aa926308",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T07:54:22.842Z"
+  },
+  {
+    "id": "vote:60851500-50a7-4c27-ab92-1651832e7c01",
+    "userId": "pub_b06440a2f542ba18c92c296e",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:03:50.927Z"
+  },
+  {
+    "id": "vote:6f744539-ed2f-4ade-bd8d-6183afb639e8",
+    "userId": "pub_6fe7820fdbf8625b7a60181c",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:06:55.882Z"
+  },
+  {
+    "id": "vote:d012a720-29dd-4bd7-adde-92c0e95cced2",
+    "userId": "pub_88d0f96ddfe7cf042a022f80",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:12:16.686Z"
+  },
+  {
+    "id": "vote:089775d5-de60-496b-ab86-0907ccd718e2",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T08:12:44.504Z"
+  },
+  {
+    "id": "vote:ac32b194-06f8-49af-b68c-64fe061fc228",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T08:12:44.504Z"
+  },
+  {
+    "id": "vote:26c034da-6014-40cf-915a-42d5a765493c",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:008a6d31-28da-460b-a0e4-119658acc3a0",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T08:12:44.504Z"
+  },
+  {
+    "id": "vote:8ce52eba-68ef-4978-baf6-ab83c02f97c9",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T08:12:44.504Z"
+  },
+  {
+    "id": "vote:220c2ecd-6f78-424b-9006-86e05f308d6d",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T08:12:44.504Z"
+  },
+  {
+    "id": "vote:43df76e5-b724-4b4c-bde6-75ee0950e4a3",
+    "userId": "pub_5c929e6662a28f7fe48fcace",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:15:26.308Z"
+  },
+  {
+    "id": "vote:01f30c6f-c79c-4546-b2b6-b90b2f27bad5",
+    "userId": "pub_a6c3e6290d95af9aebe59f40",
+    "proposalId": "proposal:ad703714-40b6-46fb-a147-3aad0f7047ab",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:18:06.470Z"
+  },
+  {
+    "id": "vote:5b387b81-e6cf-4767-82c3-1cc8f46012c0",
+    "userId": "pub_e64c1ddf9fa05391cd6c2ce0",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:19:41.292Z"
+  },
+  {
+    "id": "vote:0695acd7-4c6e-4c7f-917a-3cfa12c4d330",
+    "userId": "pub_2089829fbf57f434735c2052",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:20:32.449Z"
+  },
+  {
+    "id": "vote:4f5ff16f-1d39-4c52-8d0d-ff73cf1d355b",
+    "userId": "pub_0c3caec1a770c9e87ecb6717",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:25:50.401Z"
+  },
+  {
+    "id": "vote:8a7bb5ea-65eb-4e3e-8665-3022edb68584",
+    "userId": "pub_047504f7e0ed631a7eeebaaf",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:28:24.322Z"
+  },
+  {
+    "id": "vote:e9f97b1e-588f-41d7-9089-edb439f05e1e",
+    "userId": "pub_605b185fe70f669f179a03e5",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:28:59.858Z"
+  },
+  {
+    "id": "vote:239762fb-a0fc-4b43-8bbd-b97b03f58d0a",
+    "userId": "pub_bd1c877d07708f292e4a7023",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:29:46.011Z"
+  },
+  {
+    "id": "vote:2e7841da-37d0-40f9-867b-23467bcb7681",
+    "userId": "pub_1f3ec45245410f28ad3fd19e",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:34:19.195Z"
+  },
+  {
+    "id": "vote:0cc3848e-4a85-4dd8-b427-9041d62604b8",
+    "userId": "pub_fbf13934b01d5dd4f59c8872",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:43:29.168Z"
+  },
+  {
+    "id": "vote:f77c6df4-03cf-4f75-a2d7-6f8f97c61cab",
+    "userId": "pub_9e1ed4b5364a866150c6642e",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T08:51:20.887Z"
+  },
+  {
+    "id": "vote:04413846-8765-45b5-b2dd-76e324248486",
+    "userId": "pub_9ae092d25df1692e5dcf738b",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T09:04:38.182Z"
+  },
+  {
+    "id": "vote:9e90af70-6fe4-4281-a5d4-78ba06b0065a",
+    "userId": "pub_96c5c6ddfe15432fcdea9bd3",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T09:11:01.290Z"
+  },
+  {
+    "id": "vote:d1b9d631-8f19-4618-a564-3ca20e3ca8c9",
+    "userId": "pub_830532d2b2c4bf3d934894d7",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T09:17:50.939Z"
+  },
+  {
+    "id": "vote:c034ac96-61e7-4192-92b9-e42df5c490cb",
+    "userId": "pub_53b75dcfb5258c1f131368d9",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T09:21:52.716Z"
+  },
+  {
+    "id": "vote:0d9f771a-8c8c-49ed-b29b-8c77e4ba9961",
+    "userId": "pub_a8acfde34a1f54ca0df73f9a",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T09:36:32.873Z"
+  },
+  {
+    "id": "vote:49048019-1be0-43f9-b11b-75cc977ed996",
+    "userId": "pub_b6ec50abba1f13677bd3420c",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 5,
+    "timestamp": "2025-01-28T09:50:16.892Z"
+  },
+  {
+    "id": "vote:f295fce8-954b-4382-b1ef-bd4f50599d74",
+    "userId": "pub_f7bb789b440e45842211ac1f",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T09:54:30.880Z"
+  },
+  {
+    "id": "vote:1bf44058-7747-4f69-a4ad-c3b477092fa0",
+    "userId": "pub_ac2c65c75567664e0a041abe",
+    "proposalId": "proposal:f225ab66-6175-4619-aa26-193eda4abb23",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T10:31:54.593Z"
+  },
+  {
+    "id": "vote:d7e5be2f-34a4-49cc-8303-7393af109182",
+    "userId": "pub_193e1e05e51348505d11be85",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T10:33:09.982Z"
+  },
+  {
+    "id": "vote:76be82c4-208d-48a4-96c8-64d76ba1059e",
+    "userId": "pub_9ebcc866bcd294d713a8e640",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T10:34:28.950Z"
+  },
+  {
+    "id": "vote:ab346d92-f888-48c4-90f5-547629defd57",
+    "userId": "pub_6ff680257e1ba7c72546c962",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T11:03:34.469Z"
+  },
+  {
+    "id": "vote:b651be90-a111-41f1-bcbe-101de90687ab",
+    "userId": "pub_9bba2b4b687a1c3350fe24bc",
+    "proposalId": "proposal:f225ab66-6175-4619-aa26-193eda4abb23",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T11:04:45.376Z"
+  },
+  {
+    "id": "vote:6b71d525-8636-463a-a074-37b179928ae8",
+    "userId": "pub_de667856b6c5b8327847109e",
+    "proposalId": "proposal:f225ab66-6175-4619-aa26-193eda4abb23",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T11:23:33.754Z"
+  },
+  {
+    "id": "vote:42cd6e1b-b6d2-48ac-8625-866b1cd79328",
+    "userId": "pub_3bfbaf04b90d6e242115d189",
+    "proposalId": "proposal:f225ab66-6175-4619-aa26-193eda4abb23",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T12:01:06.469Z"
+  },
+  {
+    "id": "vote:dd1d6a49-b275-469e-8fa7-461caf9687c3",
+    "userId": "pub_ee62113266d2e81b42a71895",
+    "proposalId": "proposal:f225ab66-6175-4619-aa26-193eda4abb23",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T12:37:51.203Z"
+  },
+  {
+    "id": "vote:08607292-f632-479a-9f88-4defb208e6b7",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 5,
+    "timestamp": "2025-01-28T17:50:08.644Z"
+  },
+  {
+    "id": "vote:f64038c2-a2c1-4b64-b4ed-85ee3c432c48",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T17:50:08.644Z"
+  },
+  {
+    "id": "vote:ab774f82-175b-4195-9fa0-5e004881ccc7",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T17:50:08.644Z"
+  },
+  {
+    "id": "vote:7c179a46-ecfa-4c7c-a11b-53756648710b",
+    "userId": "pub_2beec2c4ca7be0b72f66d75f",
+    "proposalId": "proposal:f225ab66-6175-4619-aa26-193eda4abb23",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 7,
+    "timestamp": "2025-01-28T18:17:06.150Z"
+  },
+  {
+    "id": "vote:a10b3e08-da97-4613-b318-ead7048fa694",
+    "userId": "pub_2beec2c4ca7be0b72f66d75f",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-28T18:17:06.150Z"
+  },
+  {
+    "id": "vote:b7f5d785-9b70-4349-a34c-7f950ab3fa61",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-28T20:16:07.008Z"
+  },
+  {
+    "id": "vote:f753b052-59d8-485f-b6e7-2f34a881abb8",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T20:16:07.008Z"
+  },
+  {
+    "id": "vote:43a5261d-dd52-4ff5-8c2c-26194195c461",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-28T20:16:07.008Z"
+  },
+  {
+    "id": "vote:edc7150c-7df4-4e38-b87f-14f2923c639d",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T20:16:07.008Z"
+  },
+  {
+    "id": "vote:2e4a8d41-b496-400d-8d65-4c062a1ad3ff",
+    "userId": "pub_72483fd593bbbdcc9872d966",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T21:07:40.736Z"
+  },
+  {
+    "id": "vote:8864404d-fdf7-4a6d-9ab9-f2690b6ffb4f",
+    "userId": "pub_5d0f7a2045164933f5ff43c3",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T21:46:31.532Z"
+  },
+  {
+    "id": "vote:56f830be-10a3-4121-9c7c-b9f7b2e4d9ec",
+    "userId": "pub_42d02b17791d06a9c62d584f",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 10,
+    "timestamp": "2025-01-28T21:56:35.122Z"
+  },
+  {
+    "id": "vote:086bc7ae-b42f-473e-a228-b5b39b647b37",
+    "userId": "pub_cf785066af6e69fb0248d0f3",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T22:07:03.582Z"
+  },
+  {
+    "id": "vote:e9fd2771-9bf5-4ac4-b488-81e97f86f8b2",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 4,
+    "timestamp": "2025-01-28T22:27:29.242Z"
+  },
+  {
+    "id": "vote:5a6c9f4d-5019-469a-9519-e7d5ab4c6a87",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 4,
+    "timestamp": "2025-01-28T22:27:29.242Z"
+  },
+  {
+    "id": "vote:2bcccb91-a432-4bee-967c-8947730ed58c",
+    "userId": "pub_4e4a73c73cd0bd8641280d14",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-28T22:27:38.740Z"
+  },
+  {
+    "id": "vote:03de0047-ff5d-438b-918d-98d959f10659",
+    "userId": "pub_2606eeea9fa52960dd089562",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T22:31:25.793Z"
+  },
+  {
+    "id": "vote:3f3c0561-6ba6-4fef-9439-47a1050a7ab0",
+    "userId": "pub_e59e2394c121ce6f30ad230b",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T22:35:39.304Z"
+  },
+  {
+    "id": "vote:ab8bb6c2-87d1-4b92-ad49-275a27155620",
+    "userId": "pub_f90243badb2261bbdec3f969",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T22:36:10.905Z"
+  },
+  {
+    "id": "vote:a27bbc41-65d3-4407-865f-b9572e8704ba",
+    "userId": "pub_7cc8d51d0106bf1ea26a35dd",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T22:36:40.110Z"
+  },
+  {
+    "id": "vote:69d3a590-4a67-42b2-857b-968558cd6b1e",
+    "userId": "pub_a6c020d91cfb4b5f8d310588",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T22:40:20.322Z"
+  },
+  {
+    "id": "vote:735dc315-ad39-43aa-8cb7-406c1c24dd3e",
+    "userId": "pub_5e604acab3a8be09870164cc",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T23:18:41.998Z"
+  },
+  {
+    "id": "vote:24f3ef8f-2729-46ee-868c-8966c8bae80f",
+    "userId": "pub_5536650d7b92b1b9b294a884",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-28T23:38:25.609Z"
+  },
+  {
+    "id": "vote:698bd875-7bf7-4e75-bf33-e120c810a9ba",
+    "userId": "pub_5536650d7b92b1b9b294a884",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 5,
+    "timestamp": "2025-01-28T23:38:25.609Z"
+  },
+  {
+    "id": "vote:16116e7b-55fa-4c64-85c3-f7113eb026a6",
+    "userId": "pub_c6d330482735a78604c90e42",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-28T23:50:10.492Z"
+  },
+  {
+    "id": "vote:f5914ead-87b2-4413-b551-f40dd2316160",
+    "userId": "pub_f076649bab8a0a059aec25fe",
+    "proposalId": "proposal:ef8fc986-35f2-4848-94ce-d9e1b07f1ca5",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T00:08:29.716Z"
+  },
+  {
+    "id": "vote:97796b42-bbb6-4126-8dc3-dffce3e3d09a",
+    "userId": "pub_fef00d62cc8b8fe0a895012d",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T00:25:18.653Z"
+  },
+  {
+    "id": "vote:892cd664-0218-4873-931e-f581fd0f9237",
+    "userId": "pub_96df198c942df361c34cf6c6",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T00:39:58.567Z"
+  },
+  {
+    "id": "vote:4b0a35dc-452a-4138-8aed-c7984402796b",
+    "userId": "pub_c15c4fc3b3902829ca05e09d",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T00:41:10.571Z"
+  },
+  {
+    "id": "vote:0dfe8413-3fc2-4e7f-8dfa-68514874268f",
+    "userId": "pub_58c6cb3b6b39ca59875f6bba",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T00:45:25.330Z"
+  },
+  {
+    "id": "vote:6279c6fa-812b-4f39-9034-2f5531ddd7ba",
+    "userId": "pub_32d031a2d15ba4d7eee21b42",
+    "proposalId": "proposal:ef8fc986-35f2-4848-94ce-d9e1b07f1ca5",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T01:00:35.039Z"
+  },
+  {
+    "id": "vote:14f13df3-f348-4601-9ad7-0d2c8ff76f8e",
+    "userId": "pub_ac1c6aa53898c7264a049429",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-29T01:01:36.485Z"
+  },
+  {
+    "id": "vote:cfae05fa-4d5d-4bb2-9da4-d5dfe062e06a",
+    "userId": "pub_92a90d01751766939af35c67",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T01:06:03.041Z"
+  },
+  {
+    "id": "vote:b5802172-2fac-4bf4-bfe1-b31c9b2c34ab",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 10,
+    "timestamp": "2025-01-29T01:19:29.210Z"
+  },
+  {
+    "id": "vote:91b136a1-c3a8-4b8d-9759-766993bcba2e",
+    "userId": "pub_a3309beffc241391e4ae95e1",
+    "proposalId": "proposal:f5962ee9-9654-4445-bcc3-e0aab1a6288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T01:39:47.689Z"
+  },
+  {
+    "id": "vote:84744b8b-aaf7-42e0-84d8-a8da6f4a5437",
+    "userId": "pub_4c76dd5b9638cc6bde63c630",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-29T01:43:48.657Z"
+  },
+  {
+    "id": "vote:33c14ce7-3cfa-4fa6-8507-be7e71ff6a5f",
+    "userId": "pub_4c76dd5b9638cc6bde63c630",
+    "proposalId": "proposal:8de601cc-6d80-40b9-b2b0-c88b0c86b5f3",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 6,
+    "timestamp": "2025-01-29T01:43:48.657Z"
+  },
+  {
+    "id": "vote:9a830558-c9d3-4627-9db6-06d2834b87d0",
+    "userId": "pub_4c76dd5b9638cc6bde63c630",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-29T01:43:48.657Z"
+  },
+  {
+    "id": "vote:c13f64cf-d757-4942-83ee-fd295931ee7b",
+    "userId": "pub_9c2f5a41c2a3b8c088ac8ddd",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T02:18:18.631Z"
+  },
+  {
+    "id": "vote:825b1da2-fc27-4b74-89ca-708a7e4495da",
+    "userId": "pub_f3e9c537c342267483dd4d25",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T02:19:37.699Z"
+  },
+  {
+    "id": "vote:75229dc1-34c6-4623-8273-200e9f85ad15",
+    "userId": "pub_6a93a61c615556bd402405e7",
+    "proposalId": "proposal:f5962ee9-9654-4445-bcc3-e0aab1a6288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T03:15:14.082Z"
+  },
+  {
+    "id": "vote:207fe173-6cdd-4b5f-aec5-eb367aa6a52e",
+    "userId": "pub_c7c4aa3c579a7444c538a2c7",
+    "proposalId": "proposal:f5962ee9-9654-4445-bcc3-e0aab1a6288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T03:34:20.171Z"
+  },
+  {
+    "id": "vote:796d959c-f6b5-498c-8fb7-0fb7a366b2cc",
+    "userId": "pub_716ff6b649f7a6eaec17d7d3",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T03:40:41.781Z"
+  },
+  {
+    "id": "vote:04cb9cc3-c7e3-4ad2-a2bb-89ba23ec4953",
+    "userId": "pub_7adb2669e455ed64557beec3",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T03:43:16.261Z"
+  },
+  {
+    "id": "vote:ae23f49d-cf86-416b-bdc6-5a94a0cd5256",
+    "userId": "pub_424e84526bc34bf8d51bacd6",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T03:44:56.297Z"
+  },
+  {
+    "id": "vote:81c6dce8-4b74-402e-b283-e143ab296d68",
+    "userId": "pub_94f071df2b481a75acda8bfd",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T03:49:31.839Z"
+  },
+  {
+    "id": "vote:f1da983f-1ff7-419b-a990-3c5f87cb8e57",
+    "userId": "pub_a85ad8cbdb4ce373a826a483",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T03:54:54.323Z"
+  },
+  {
+    "id": "vote:188c23d1-0412-4a34-83b6-6b5a0097d835",
+    "userId": "pub_4818aa49d0a79701b7fef4a8",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T03:56:20.488Z"
+  },
+  {
+    "id": "vote:f600e24f-81fb-49b8-a154-55b052189be7",
+    "userId": "pub_9896cf1ad298ba2aa4f96c41",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:05:45.635Z"
+  },
+  {
+    "id": "vote:038127bb-4eae-4292-9ec3-794797b38c9a",
+    "userId": "pub_cfddf10900752781e2cc82f2",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:09:04.563Z"
+  },
+  {
+    "id": "vote:2650b1a9-e813-4dad-bc36-ccb2652946e4",
+    "userId": "pub_315add6c38dc5d0161342e47",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:13:03.492Z"
+  },
+  {
+    "id": "vote:ab818f4d-9ff8-4411-b566-0530f266b6a1",
+    "userId": "pub_0580b14adada64c4a81c9030",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:15:27.563Z"
+  },
+  {
+    "id": "vote:809a86dc-cf1d-41ea-ba85-0a110e523cf1",
+    "userId": "pub_8b81c86bf338e2b67a4027c8",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:15:29.093Z"
+  },
+  {
+    "id": "vote:a6e96e95-9f96-4e7c-adf5-faf0e46a7881",
+    "userId": "pub_f827f44e02e459f908470a71",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:16:28.756Z"
+  },
+  {
+    "id": "vote:0ba23cc0-f3bc-498d-bc55-584a7fba5e1b",
+    "userId": "pub_0630ebbd68c158f5dd61b545",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:18:45.048Z"
+  },
+  {
+    "id": "vote:a7714945-b4e1-4dd9-b3e0-8573b5a92645",
+    "userId": "pub_bc14b5ea8e01d9542e1a967c",
+    "proposalId": "proposal:c1f1a681-61dc-4afd-b3f2-b1c388e15fdb",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:19:25.919Z"
+  },
+  {
+    "id": "vote:b95fb7b3-f302-4b75-9081-29d0d754822e",
+    "userId": "pub_f645f5319fc35833e50232e8",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:30:17.870Z"
+  },
+  {
+    "id": "vote:a600616b-e97b-4aa9-aaaf-aae1de11ab4c",
+    "userId": "pub_e6fd82891f38e223bbbdc288",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:34:18.623Z"
+  },
+  {
+    "id": "vote:7f714dcf-3c21-4b26-a969-982e1cec60cd",
+    "userId": "pub_df75fdb0ed7fe147f9d6360a",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:34:32.281Z"
+  },
+  {
+    "id": "vote:bc1742d4-cdad-4d1f-b150-6f038fdf3f37",
+    "userId": "pub_d75f0f61d01206ed3ed7ac28",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:37:11.405Z"
+  },
+  {
+    "id": "vote:b99b55d0-abe8-4986-8b3b-e62fc5cd72c8",
+    "userId": "pub_4ebac62288aa9e548b8d36c3",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:38:49.293Z"
+  },
+  {
+    "id": "vote:ddf61529-c919-48fc-8e64-038057807c6c",
+    "userId": "pub_35987ab30c4d27119cf8ead0",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:39:43.033Z"
+  },
+  {
+    "id": "vote:46564e10-4b1f-43a2-b238-f5c6f7159bad",
+    "userId": "pub_5186f73266d36b282f59133f",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:40:23.472Z"
+  },
+  {
+    "id": "vote:77de0da6-2eb8-4163-83a8-7ed8841cf92b",
+    "userId": "pub_02e64de827b855de70fee389",
+    "proposalId": "proposal:f5962ee9-9654-4445-bcc3-e0aab1a6288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:45:44.476Z"
+  },
+  {
+    "id": "vote:8dd8d26e-fcde-43cf-9daa-f3b836ab71d4",
+    "userId": "pub_b23e725d026142aaab9a07fd",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:47:12.254Z"
+  },
+  {
+    "id": "vote:4c4d88bd-cb38-4728-819d-346c65158c72",
+    "userId": "pub_b6abcd1dc5541347d133b583",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T04:56:08.311Z"
+  },
+  {
+    "id": "vote:c128c3b3-a60e-4a32-a81c-499026122cb3",
+    "userId": "pub_60d3aa1bf66ecee78d5f75a5",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:09:47.994Z"
+  },
+  {
+    "id": "vote:261bcd77-2635-4396-b3d3-dbb5e04c3cf8",
+    "userId": "pub_cb6283fcd2a9a85210df84c2",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-29T05:09:58.382Z"
+  },
+  {
+    "id": "vote:f5617533-1dd0-4ac4-86df-bcde456fc5a7",
+    "userId": "pub_8f249963ad9203ddb1eedb04",
+    "proposalId": "proposal:c1f1a681-61dc-4afd-b3f2-b1c388e15fdb",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:14:05.247Z"
+  },
+  {
+    "id": "vote:80189389-6aa4-40ea-9fba-7b4f93f2509e",
+    "userId": "pub_88687f8313e567b001995909",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:16:47.347Z"
+  },
+  {
+    "id": "vote:68b0d54e-a54d-4435-9c9b-f55122ace91f",
+    "userId": "pub_586a3619b6f0934665fae3eb",
+    "proposalId": "proposal:c1f1a681-61dc-4afd-b3f2-b1c388e15fdb",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:18:07.415Z"
+  },
+  {
+    "id": "vote:d2acb362-d586-488d-8f9b-24a0dcdce587",
+    "userId": "pub_61b434249ff9633b7360228d",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:18:40.522Z"
+  },
+  {
+    "id": "vote:19118ad4-96c7-4345-9946-25357447f456",
+    "userId": "pub_401c2ab8e54e6d69e7fdf25b",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:18:47.930Z"
+  },
+  {
+    "id": "vote:a9c4a339-bbbf-49f7-84c0-ea24dd92d7c3",
+    "userId": "pub_715c6751281acec3c1a5d9e3",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:19:14.125Z"
+  },
+  {
+    "id": "vote:bd152513-01aa-4e34-ae85-ec7f7c37c91e",
+    "userId": "pub_54cf51e8eb5c421a1ecbe343",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:20:18.316Z"
+  },
+  {
+    "id": "vote:eb3e8c58-83b3-4310-968e-858699a1ba76",
+    "userId": "pub_fdb64756d4b947c076a0dad5",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:23:14.768Z"
+  },
+  {
+    "id": "vote:487e3a9a-34a5-461f-b5de-52447db9cb98",
+    "userId": "pub_27b6e99f0a9e03ccecdf13db",
+    "proposalId": "proposal:c1f1a681-61dc-4afd-b3f2-b1c388e15fdb",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:24:48.441Z"
+  },
+  {
+    "id": "vote:febfc6f7-4a35-48c0-9a6c-6df7bb4c1f6c",
+    "userId": "pub_7921ec5c66242e1e28dfc12e",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:29:56.451Z"
+  },
+  {
+    "id": "vote:83996736-ff6b-4b34-b6e4-62d75f0e8f59",
+    "userId": "pub_2a9f5d9af705874610d9326a",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:30:31.192Z"
+  },
+  {
+    "id": "vote:dac618d6-6ef9-4b03-afde-e9cc81293e6f",
+    "userId": "pub_7df07dd28cdb30b955a09efd",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:33:05.443Z"
+  },
+  {
+    "id": "vote:711b820e-92be-4dfa-9528-2fd945f55c63",
+    "userId": "pub_f580cc69e912f69b9322d1e4",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:34:12.380Z"
+  },
+  {
+    "id": "vote:b5cbae26-7dab-49c3-8e97-b824df9efcc6",
+    "userId": "pub_5c66cab3064aa976271e8f42",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:35:25.609Z"
+  },
+  {
+    "id": "vote:8a163233-fe61-4a2f-8b5f-8f3d3fc21a80",
+    "userId": "pub_35c2b5ac2b9d62fbf276cc3f",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:47:32.707Z"
+  },
+  {
+    "id": "vote:aced6174-57a5-4906-9ce8-8f23e003adfe",
+    "userId": "pub_e92995f20a323ab15930997f",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-29T05:48:01.317Z"
+  },
+  {
+    "id": "vote:40e4d916-667b-4678-a5cd-53dfd0be95ca",
+    "userId": "pub_e8f5d5d2a568fab051be25b6",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:50:32.245Z"
+  },
+  {
+    "id": "vote:ae3676bd-2480-48f4-b094-e047385ceb6e",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:008a6d31-28da-460b-a0e4-119658acc3a0",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:54:16.602Z"
+  },
+  {
+    "id": "vote:ea0f1fc5-f6dc-473a-94b3-19fb18c740ca",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:8de601cc-6d80-40b9-b2b0-c88b0c86b5f3",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 7,
+    "timestamp": "2025-01-29T05:54:16.602Z"
+  },
+  {
+    "id": "vote:60ff92c2-3eac-4c79-88ce-a799b90c32d5",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:54:16.602Z"
+  },
+  {
+    "id": "vote:0579c42e-e574-499c-b4ce-aae884dab11f",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T05:54:16.602Z"
+  },
+  {
+    "id": "vote:f0b7ea7d-7d70-4c57-b2e4-b960f853d831",
+    "userId": "pub_9a0467aab7d4195fb864953f",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T06:00:30.723Z"
+  },
+  {
+    "id": "vote:3b64d9aa-aa34-4868-bded-50a442631efb",
+    "userId": "pub_3157d83382805c467b00e17a",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T06:22:13.241Z"
+  },
+  {
+    "id": "vote:1b704d58-425d-45fc-83aa-b875009b1b79",
+    "userId": "pub_f2cfa4879651127aa357da19",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T06:24:55.182Z"
+  },
+  {
+    "id": "vote:13fddf54-e324-49f4-87e7-25b17162b60e",
+    "userId": "pub_ccc222d788e60af7b96a5ed0",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T06:29:46.806Z"
+  },
+  {
+    "id": "vote:3c510fc2-f6d3-49bc-a69a-3d1058ab4a95",
+    "userId": "pub_24844c5a3e2037b30bd788dc",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T06:35:43.101Z"
+  },
+  {
+    "id": "vote:9e259db8-3350-48d3-9c64-61ea5f02934f",
+    "userId": "pub_ce8b767497de670d0e837b44",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T06:42:35.719Z"
+  },
+  {
+    "id": "vote:fa47acc1-f8a2-476d-b7fb-217acdecbc9e",
+    "userId": "pub_470de7967cb52a3a96d227d7",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T06:53:35.267Z"
+  },
+  {
+    "id": "vote:aa3b3191-48cf-4aaf-bdc4-0b6f3a729fb8",
+    "userId": "pub_52c902f88c443f304a8c94ef",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T06:58:17.378Z"
+  },
+  {
+    "id": "vote:d42b14f1-bf82-49ce-95b1-76ccd5c6b0d0",
+    "userId": "pub_da9c2f59927cc29dfe59fd1d",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T07:07:59.337Z"
+  },
+  {
+    "id": "vote:1e583fce-4973-4593-987b-73bb95db0d08",
+    "userId": "pub_4f6ad1ae50cdb0622b296ad9",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T07:33:16.258Z"
+  },
+  {
+    "id": "vote:836f9d53-2285-4916-a711-ee9d2a830eb5",
+    "userId": "pub_ad0e61689054ce6c493c0e00",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T07:39:53.387Z"
+  },
+  {
+    "id": "vote:bb5724a5-067d-40ca-8b0c-a8090609d5c3",
+    "userId": "pub_03fd7f00173e7313e92232e5",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-29T07:53:38.774Z"
+  },
+  {
+    "id": "vote:f8022316-f351-4ac3-8116-2f9e782ec8c7",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 5,
+    "timestamp": "2025-01-29T08:21:03.226Z"
+  },
+  {
+    "id": "vote:59c5fd23-81eb-4e4a-9ac8-4a76d1415ff0",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-29T08:21:03.226Z"
+  },
+  {
+    "id": "vote:53a48f38-dc2e-4793-826f-27f240a22cf5",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-29T08:21:03.226Z"
+  },
+  {
+    "id": "vote:00bd4345-539a-45ac-b904-ddc02be9e393",
+    "userId": "pub_491cb627466ea086ad71d8c3",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T08:34:14.817Z"
+  },
+  {
+    "id": "vote:56f70c1d-6261-446c-86b2-164aa19fe1bc",
+    "userId": "pub_901b19ae3eded6b7d423b43a",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T08:50:42.343Z"
+  },
+  {
+    "id": "vote:2bd3b12d-f925-49e6-94f7-5e942c617257",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 10,
+    "timestamp": "2025-01-29T09:07:00.632Z"
+  },
+  {
+    "id": "vote:e5d55318-2b25-4dd9-8167-94ebafb41c36",
+    "userId": "pub_cc8adf8f9a08f8668cf80f03",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T09:08:43.229Z"
+  },
+  {
+    "id": "vote:faa97018-3668-4286-8a33-cf90c695a0fc",
+    "userId": "pub_67e2af727f9f45d10c8c71a7",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T09:11:59.269Z"
+  },
+  {
+    "id": "vote:6c804d85-934b-4111-90e3-06d3f481d46c",
+    "userId": "pub_e50853e1092c099db7f9b06b",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T09:19:52.745Z"
+  },
+  {
+    "id": "vote:db5f5ad0-9d25-41f9-880d-c79cee9d06d3",
+    "userId": "pub_b8cac4f5364be4be7a59aba4",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T09:19:54.332Z"
+  },
+  {
+    "id": "vote:3a40e800-e675-4b94-98db-2a6eb3952883",
+    "userId": "pub_c75f8ba0d2be87f5eac37f89",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T09:20:58.333Z"
+  },
+  {
+    "id": "vote:2c0e8810-e0c1-4b96-bfcb-c9b9c7c95893",
+    "userId": "pub_a3e301b9a1c9da54ce4dd962",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T09:24:29.196Z"
+  },
+  {
+    "id": "vote:a56e97c2-1cf3-4c14-856f-374bfaae4cec",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 8,
+    "timestamp": "2025-01-29T09:29:35.890Z"
+  },
+  {
+    "id": "vote:af76b5e3-16b7-4ad4-9c28-ccc37229cb05",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:e390c8f8-e85d-4dd0-8a6b-56982e92a581",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-29T09:29:35.890Z"
+  },
+  {
+    "id": "vote:b1092ae3-0ca1-4949-bb8d-850e9210b38f",
+    "userId": "pub_15fa4877ba6adfc0dc5d8724",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T09:49:22.244Z"
+  },
+  {
+    "id": "vote:88d35553-9207-4b44-a546-ee62f37f3293",
+    "userId": "pub_db53645d57aac9b726e940ac",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T09:57:52.658Z"
+  },
+  {
+    "id": "vote:d897b722-bf46-4aa1-ba06-f39a2e296b2a",
+    "userId": "pub_071f0e2d242d9604034f9061",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T09:59:32.413Z"
+  },
+  {
+    "id": "vote:a58bc167-ac55-4c24-929c-9b1779da6d80",
+    "userId": "pub_2b65f4cc8de3f2ce5fb7a6cc",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T10:02:16.133Z"
+  },
+  {
+    "id": "vote:89bdce29-18ff-43dc-9fbe-236355681efc",
+    "userId": "pub_6269cc528304a5603ab171d7",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T10:07:00.308Z"
+  },
+  {
+    "id": "vote:3baa9aca-5c4d-479b-bdde-31ed2942572b",
+    "userId": "pub_87fa23b2c37f75ca34a82667",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T10:13:15.954Z"
+  },
+  {
+    "id": "vote:504620e5-de3f-4b25-afd4-8594693195de",
+    "userId": "pub_1341553063a23b6e801ffef8",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T10:26:32.172Z"
+  },
+  {
+    "id": "vote:cd0c599f-c618-4e1a-9e74-c307910fee52",
+    "userId": "pub_ef20545add3cb77bb8ee9881",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T10:28:32.349Z"
+  },
+  {
+    "id": "vote:3b9336ab-e6eb-4ca8-a975-a472bffeff1b",
+    "userId": "pub_738e2fedadcc65803da2af63",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T10:32:54.431Z"
+  },
+  {
+    "id": "vote:b57a29e1-1bb5-4821-aec8-7399f976bcb4",
+    "userId": "pub_f10b755d1df9833c8ed033aa",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 8,
+    "timestamp": "2025-01-29T10:33:50.279Z"
+  },
+  {
+    "id": "vote:84f72515-fe09-4457-8593-a295e8ae4395",
+    "userId": "pub_5ef85fd0fcc8c65b8fb83185",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T10:38:38.151Z"
+  },
+  {
+    "id": "vote:b82944e7-493c-4d58-bd0d-d072f888bdae",
+    "userId": "pub_9140fbec017b3da5a93517c1",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-29T10:42:28.299Z"
+  },
+  {
+    "id": "vote:8651c32a-b0e3-4393-9eb4-9c9ef2b3f4c2",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:008a6d31-28da-460b-a0e4-119658acc3a0",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T11:12:26.078Z"
+  },
+  {
+    "id": "vote:33cfe70b-f394-4b77-8448-1a7a0122496a",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-29T11:12:26.078Z"
+  },
+  {
+    "id": "vote:515028c7-0eaa-4c31-a133-efa049206a2d",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-29T11:12:26.078Z"
+  },
+  {
+    "id": "vote:80a0a264-368a-4679-a77f-40eb5070c154",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-29T11:12:26.078Z"
+  },
+  {
+    "id": "vote:bd6a5c7b-d768-403f-9f26-865de378217c",
+    "userId": "pub_2ac3eafc749fa9636c93ae16",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T11:36:27.388Z"
+  },
+  {
+    "id": "vote:3e2252ff-3a37-4035-b44a-a503df7906c8",
+    "userId": "pub_416bab941cfa2c5ee4259ea8",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T11:55:59.526Z"
+  },
+  {
+    "id": "vote:532c050e-90fa-41b5-82d7-74ed338576c6",
+    "userId": "pub_12ea0d9d72b2267218754a90",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T12:08:35.948Z"
+  },
+  {
+    "id": "vote:453f245c-0d75-43b5-886c-ee150eb7f7b7",
+    "userId": "pub_8a4c2ef863dc78905ca082e1",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T12:26:22.688Z"
+  },
+  {
+    "id": "vote:7b11edd9-e9a4-41e2-950e-8c3679fe5487",
+    "userId": "pub_d3bb601a43e95186ee5fe333",
+    "proposalId": "proposal:008a6d31-28da-460b-a0e4-119658acc3a0",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 6,
+    "timestamp": "2025-01-29T15:15:18.447Z"
+  },
+  {
+    "id": "vote:4db475cb-617f-470b-a121-2cf2dacf754c",
+    "userId": "pub_e7af9aa10aa0fcb08ed73630",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T15:45:40.413Z"
+  },
+  {
+    "id": "vote:9df37711-79ae-4a95-8a7f-5e17ea4756de",
+    "userId": "pub_f58c3cf6d3a9e2145ef2fe20",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T16:02:30.426Z"
+  },
+  {
+    "id": "vote:87127723-c7ec-4fb8-ad88-965f13147794",
+    "userId": "pub_7c8ce5fcde29b1e35a7770c9",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T16:32:31.036Z"
+  },
+  {
+    "id": "vote:b2e8f759-943a-4905-8d08-4d6160a455b0",
+    "userId": "pub_eaf6fc1a542a4b423c5ded3b",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T16:44:25.532Z"
+  },
+  {
+    "id": "vote:41cbffd6-9806-4ae4-a487-cef0550f473e",
+    "userId": "pub_df4e74c17b276178d0ed99d5",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T17:58:45.461Z"
+  },
+  {
+    "id": "vote:62045758-062e-4379-9f4a-2beff5f42f0a",
+    "userId": "pub_5222955c34a660d7add2a600",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T18:00:41.512Z"
+  },
+  {
+    "id": "vote:97628127-99b8-40fe-8647-78eba545201e",
+    "userId": "pub_7f45408fdff8bc00fbf2be92",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T19:14:16.856Z"
+  },
+  {
+    "id": "vote:0f438e2d-ba03-41e0-a19b-ddeda39bbd2c",
+    "userId": "pub_ad57c64b6dc0eb73860a858c",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T19:54:23.772Z"
+  },
+  {
+    "id": "vote:15296ba7-87f0-4454-aa8a-46def0b338eb",
+    "userId": "pub_4055ab9a3fc78ac1651c31ed",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T19:54:54.884Z"
+  },
+  {
+    "id": "vote:53479ea6-749c-441e-8d38-1beda380d8d6",
+    "userId": "pub_2ceb61c40125516a614f98f5",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T20:15:51.263Z"
+  },
+  {
+    "id": "vote:c93c40ce-66a6-4a6d-942f-b74fd2929a38",
+    "userId": "pub_a8d4b5b06cc93ffde2f18a25",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T20:36:44.212Z"
+  },
+  {
+    "id": "vote:b981d647-5e36-4851-8de0-e46653189b5b",
+    "userId": "pub_169bd73f43bf734fe20792e8",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T20:41:44.766Z"
+  },
+  {
+    "id": "vote:b7835647-5ec9-433d-be1d-95f7965cb8fc",
+    "userId": "pub_bbad2089b35cbecedd8ad08e",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T20:41:49.505Z"
+  },
+  {
+    "id": "vote:2c0118e2-9642-4861-b5c0-02bca57c0074",
+    "userId": "pub_e8db261bee5771cb1a5b5967",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T20:44:27.889Z"
+  },
+  {
+    "id": "vote:fa0adad5-90ad-49f4-94cf-3f7eaecebf27",
+    "userId": "pub_609c0c3ff3320fea8369f1c4",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T20:57:43.526Z"
+  },
+  {
+    "id": "vote:dd78381e-dc12-45e7-bd49-23da51b6c62b",
+    "userId": "pub_85f7a4973b46014d3c6f99d4",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:04:27.284Z"
+  },
+  {
+    "id": "vote:69f8a164-5d64-457f-aae6-27e13a68ca81",
+    "userId": "pub_ff5df6ffefa1fd7cd8f47cf3",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:05:49.739Z"
+  },
+  {
+    "id": "vote:04cfec16-b51c-4160-8981-de2c2e1f869a",
+    "userId": "pub_5d555dcaf86901a4cdf3509f",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:10:15.289Z"
+  },
+  {
+    "id": "vote:5e2cd6c6-4ebf-402d-9f5c-5ee04df960dd",
+    "userId": "pub_b96c003e32179910db1ce7c6",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:11:16.617Z"
+  },
+  {
+    "id": "vote:c5ba5314-1b32-4c5f-ae6c-924e01a7dddd",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:13:05.265Z"
+  },
+  {
+    "id": "vote:6f21e60b-ed06-4e9c-8393-0771bfbcc15b",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:13:05.265Z"
+  },
+  {
+    "id": "vote:6616ce3c-1452-4031-a7a7-ec3dc7a265b2",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:13:05.265Z"
+  },
+  {
+    "id": "vote:d0535229-a281-48d9-a064-0ab5dd4752b7",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:13:05.265Z"
+  },
+  {
+    "id": "vote:c7ae911e-dcda-40a2-bd27-a0905d612c1d",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:13:05.265Z"
+  },
+  {
+    "id": "vote:15cd7ab0-e062-49c3-9f4a-7a5947e31625",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:13:05.265Z"
+  },
+  {
+    "id": "vote:a78859cd-0d7b-47f7-8df5-db9d375cb2f8",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-29T21:13:05.265Z"
+  },
+  {
+    "id": "vote:6211c76e-ad62-47b7-9bdb-8d2dddfd25eb",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-29T21:13:05.265Z"
+  },
+  {
+    "id": "vote:81ed0cb8-8200-468d-a4f3-b306d67686f7",
+    "userId": "pub_91157a464832851df05c44fb",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:21:39.456Z"
+  },
+  {
+    "id": "vote:a5fd6fc6-f34c-4cdd-8c9d-25dfe5fe1349",
+    "userId": "pub_f8395eb17b6e42bb904d51b7",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:21:47.249Z"
+  },
+  {
+    "id": "vote:d89185c5-f6d3-4c79-b57d-33706fec4a7a",
+    "userId": "pub_58688d8d1a5351097972d63c",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:22:10.289Z"
+  },
+  {
+    "id": "vote:93aa2f82-b246-4966-a1c4-945081c1ab10",
+    "userId": "pub_65b68ce373e0117bf9997364",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:25:46.263Z"
+  },
+  {
+    "id": "vote:701896fd-789f-44d1-ba05-2f5bf6852424",
+    "userId": "pub_d54f50a1e11ae7dfca71ed01",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:30:58.198Z"
+  },
+  {
+    "id": "vote:08c87ef8-f8af-41c5-8198-6d2c52ffb0d4",
+    "userId": "pub_05240974b298f0b03d0fddd2",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:33:40.881Z"
+  },
+  {
+    "id": "vote:b71cd22d-6234-4208-8b2f-a03616084632",
+    "userId": "pub_1ceb78d21b5c9f39632ca8c6",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:38:37.605Z"
+  },
+  {
+    "id": "vote:da60d1c7-8528-4ae2-92a8-ed2108cafa06",
+    "userId": "pub_f501913c948777e4e8dbc21c",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:50:37.605Z"
+  },
+  {
+    "id": "vote:c0673377-9e9a-4e3a-916a-7adafe840413",
+    "userId": "pub_6c3a28c72d4885b5902d7ff9",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:57:13.789Z"
+  },
+  {
+    "id": "vote:3615de1c-24b6-4d35-b650-b7f881c470ff",
+    "userId": "pub_dcf14d9a08055b73489a4bf6",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T21:58:29.233Z"
+  },
+  {
+    "id": "vote:304c71fd-bb6a-4c8a-8115-63114d8ba065",
+    "userId": "pub_c60ee26bfd51503608a9e0c6",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:00:14.910Z"
+  },
+  {
+    "id": "vote:12d766b5-6e09-4b14-8515-63f98e4b1e4b",
+    "userId": "pub_4469c1c258868e4bce241bb0",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:10:13.516Z"
+  },
+  {
+    "id": "vote:7ac8564e-d7ea-42c3-9221-dd3f15d8849f",
+    "userId": "pub_5c6d1065c7783cf1b7cb0b51",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:11:26.964Z"
+  },
+  {
+    "id": "vote:a6203b6a-b986-4e4c-9d11-5e282853415a",
+    "userId": "pub_a01367cad21a03abafd45b4e",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-29T22:26:51.118Z"
+  },
+  {
+    "id": "vote:fff4e785-be94-4d4f-aa02-b6d7abeac05b",
+    "userId": "pub_9e575d973c9347d05036e7ef",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:39:20.339Z"
+  },
+  {
+    "id": "vote:0de0e435-de88-497f-9a3f-b7194c8607f9",
+    "userId": "pub_d4b745ad64ec5bca5b99dffe",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:43:11.117Z"
+  },
+  {
+    "id": "vote:9d4bb667-2cb2-4bf2-b55a-ef838d1d695b",
+    "userId": "pub_90d8a50c5eb78d8a75aebbde",
+    "proposalId": "proposal:ef8fc986-35f2-4848-94ce-d9e1b07f1ca5",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:45:36.517Z"
+  },
+  {
+    "id": "vote:a834440a-adc9-41c0-a6d4-03dbfeab70d3",
+    "userId": "pub_90d8a50c5eb78d8a75aebbde",
+    "proposalId": "proposal:ad703714-40b6-46fb-a147-3aad0f7047ab",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:45:36.517Z"
+  },
+  {
+    "id": "vote:c3bb45f8-4515-4405-9bcf-2359956ee21a",
+    "userId": "pub_90d8a50c5eb78d8a75aebbde",
+    "proposalId": "proposal:7e4c125e-701f-4cc3-8bea-7f8ce34698b3",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:45:36.517Z"
+  },
+  {
+    "id": "vote:25e362f4-4964-4f08-ba25-7b8e3af91222",
+    "userId": "pub_610e8c1532e01462dc72d6fa",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:45:47.243Z"
+  },
+  {
+    "id": "vote:210ae40d-8890-4417-923a-0b50bf364233",
+    "userId": "pub_f1066d7d943f72e056c769d7",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:52:15.559Z"
+  },
+  {
+    "id": "vote:304156d9-0b6c-46a6-93e3-a48fbf5a1d0d",
+    "userId": "pub_e967bbee382826b713e318b5",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:56:37.558Z"
+  },
+  {
+    "id": "vote:5e60eecc-9591-4c30-b9a4-6875b1b3d745",
+    "userId": "pub_950656459c6128578020dfe5",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:56:58.893Z"
+  },
+  {
+    "id": "vote:848559b5-0fcf-4fc9-b312-42c89d434341",
+    "userId": "pub_1ec6eb8118e575dbc35d92c5",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T22:59:51.929Z"
+  },
+  {
+    "id": "vote:b5938cd0-a7ee-4111-9d18-74570f5ce933",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 10,
+    "timestamp": "2025-01-29T23:07:17.688Z"
+  },
+  {
+    "id": "vote:c861ac0b-0b89-4a83-93cc-b1cd22546268",
+    "userId": "pub_f43afc408575211f89645fe0",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T23:15:42.770Z"
+  },
+  {
+    "id": "vote:1eec3569-99e7-4e66-927a-542a782c6216",
+    "userId": "pub_0f9f95b61a8e68094fa83c2e",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-29T23:36:25.135Z"
+  },
+  {
+    "id": "vote:55e9d2e3-702e-4363-92d4-0e435e711209",
+    "userId": "pub_c7e29e61582e1d6bd1cb3a4f",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T00:02:01.379Z"
+  },
+  {
+    "id": "vote:73ab83e7-088d-444b-90ac-9c1453c96190",
+    "userId": "pub_d2ae40b1b657fa38f5cb7640",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 4,
+    "timestamp": "2025-01-30T00:12:03.281Z"
+  },
+  {
+    "id": "vote:495a2df5-0a2d-4c6b-912b-47f9e0376f33",
+    "userId": "pub_cfa2fb4131e8affa68e04c99",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T00:14:01.599Z"
+  },
+  {
+    "id": "vote:a2cb6642-e2d9-4961-bc40-ebc460b10c58",
+    "userId": "pub_7474415d3c75c48c37eefcee",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T00:22:29.854Z"
+  },
+  {
+    "id": "vote:cc97ea37-6dd2-4268-9e77-606e7a22897f",
+    "userId": "pub_042d52d6281451c617ade862",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T00:24:49.797Z"
+  },
+  {
+    "id": "vote:1d405c9d-160f-4e6d-8ed9-4fddb64ea5b9",
+    "userId": "pub_a7a097bee1ee09f815cf27ec",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T00:25:27.402Z"
+  },
+  {
+    "id": "vote:10b531c3-28ca-4261-a7d0-1a24616e89c2",
+    "userId": "pub_4fc10926fe62816f90850879",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T00:32:11.964Z"
+  },
+  {
+    "id": "vote:f4303ba3-2bc8-44ca-8760-d60f0a78d839",
+    "userId": "pub_4215d76e03a1d184664b2485",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T00:40:06.256Z"
+  },
+  {
+    "id": "vote:997ae0a7-ce0b-43f5-acef-05b9d318d348",
+    "userId": "pub_e594f498cdc1e32d0de39996",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T00:56:25.383Z"
+  },
+  {
+    "id": "vote:e1783714-3425-4e02-a629-0d99937fb063",
+    "userId": "pub_1720a37b76c2e46eba89457e",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T01:03:57.440Z"
+  },
+  {
+    "id": "vote:17aff8d0-6bc6-4221-90fb-f37aa3048e4d",
+    "userId": "pub_632cd1359ab0652399a67c5f",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T01:16:33.345Z"
+  },
+  {
+    "id": "vote:5f4d5a00-6612-4f55-8f5d-5447f64256df",
+    "userId": "pub_95a8e0ca4fca6893b506f29d",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T01:17:28.727Z"
+  },
+  {
+    "id": "vote:bbcf373a-69a6-47fe-8b03-8e7005c1852d",
+    "userId": "pub_3e7d1b490341d4f51d8de263",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T01:21:21.437Z"
+  },
+  {
+    "id": "vote:70455d77-dbc7-458f-b365-95d075a3671b",
+    "userId": "pub_78dfe6dde92b42293d2dc2c3",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T01:22:51.294Z"
+  },
+  {
+    "id": "vote:90571880-c9ee-43d8-b3f3-d0f382b2dfe2",
+    "userId": "pub_4695f168fdbabcaa698151b9",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T01:25:16.412Z"
+  },
+  {
+    "id": "vote:640fa79e-607a-43ea-a104-e9cce0eeb178",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-30T01:32:07.892Z"
+  },
+  {
+    "id": "vote:a85024f7-7702-48c6-a3dd-f61dced37dde",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-30T01:32:07.892Z"
+  },
+  {
+    "id": "vote:5092c789-d4ff-4142-96f5-bc349f9ea925",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-30T01:32:07.892Z"
+  },
+  {
+    "id": "vote:abfa9d02-1904-4aa2-bbe4-3ca9d9c35e27",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:8de601cc-6d80-40b9-b2b0-c88b0c86b5f3",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-30T01:32:07.892Z"
+  },
+  {
+    "id": "vote:83ea6755-09af-428a-8fb7-e89546a026f2",
+    "userId": "pub_8f13284927dbcf7a6ddab3c5",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-30T01:32:54.577Z"
+  },
+  {
+    "id": "vote:9860c617-a236-4bb4-80f2-703fa0735aef",
+    "userId": "pub_8f13284927dbcf7a6ddab3c5",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 4,
+    "timestamp": "2025-01-30T01:32:54.577Z"
+  },
+  {
+    "id": "vote:9f345b1f-c357-4f61-b287-0a015d983feb",
+    "userId": "pub_59ddd0e79e3c23bf66022bb2",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T01:34:34.652Z"
+  },
+  {
+    "id": "vote:e8c73581-57d8-4381-8412-515a5b165ed2",
+    "userId": "pub_a7df9c82b95d4bf849d1395c",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T01:34:35.355Z"
+  },
+  {
+    "id": "vote:bf7eaf3d-1b49-4c3c-b072-eec6ae67b270",
+    "userId": "pub_555bc361db2430e14d5f65ee",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-30T01:47:34.746Z"
+  },
+  {
+    "id": "vote:cc419ffd-3aed-425b-a317-1dcba7843a0d",
+    "userId": "pub_555bc361db2430e14d5f65ee",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-30T01:47:34.746Z"
+  },
+  {
+    "id": "vote:14c71a44-cb72-4910-a783-1dc0d3e0671c",
+    "userId": "pub_555bc361db2430e14d5f65ee",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-30T01:47:34.746Z"
+  },
+  {
+    "id": "vote:32978e4e-c354-4600-9169-9590fd771c0c",
+    "userId": "pub_d4d697a5c17cd53fdd8813f0",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:07:25.245Z"
+  },
+  {
+    "id": "vote:b752de74-07d4-471a-866b-f98ddef04cb9",
+    "userId": "pub_963fcb7a5aa78b5f027b1221",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:08:03.743Z"
+  },
+  {
+    "id": "vote:2eb203ea-2cb7-49be-83cc-47b7e7f10989",
+    "userId": "pub_e83b8d7a43ac80f8711370a1",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:08:31.972Z"
+  },
+  {
+    "id": "vote:45ba64a4-b972-4931-aa1a-d219f06edb4b",
+    "userId": "pub_ac5f060cdff6dccbab3e5dc4",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:12:18.675Z"
+  },
+  {
+    "id": "vote:d688855f-501b-4e53-8912-29ca60908a49",
+    "userId": "pub_ceb662b312988887693bafa3",
+    "proposalId": "proposal:81487973-9a3e-459f-8c52-e42f8363e975",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:20:21.294Z"
+  },
+  {
+    "id": "vote:649248ce-b81f-4f89-91a5-2f4879f0964d",
+    "userId": "pub_6d7084fcf8705ef79225488b",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:25:59.292Z"
+  },
+  {
+    "id": "vote:1528ba0f-7c1a-407b-ae4d-b2e2334ee5be",
+    "userId": "pub_ff367149a38d80ca866c14b4",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-30T02:26:26.460Z"
+  },
+  {
+    "id": "vote:36508d62-cfba-4765-ab35-d726a115eb6d",
+    "userId": "pub_aa482e8d77f62aaa1b2db8c3",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:31:43.146Z"
+  },
+  {
+    "id": "vote:f16defd5-4afa-4fe3-94cb-897464a7b0fa",
+    "userId": "pub_d753c77f3ee5807ff8fd25da",
+    "proposalId": "proposal:f225ab66-6175-4619-aa26-193eda4abb23",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:31:46.473Z"
+  },
+  {
+    "id": "vote:da0ee0a1-0095-46c1-9a72-9fa5d282fefc",
+    "userId": "pub_c0495079d91cf51b42cce158",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:34:57.720Z"
+  },
+  {
+    "id": "vote:e5da5c57-3e1c-4913-a366-91496c010c18",
+    "userId": "pub_1bd736787d34a44083851ffc",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:43:01.821Z"
+  },
+  {
+    "id": "vote:2f2b73d3-8b94-443b-929f-3e255aabb46b",
+    "userId": "pub_a17a3ae56e90684d6cde6795",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:51:45.744Z"
+  },
+  {
+    "id": "vote:6444b544-cb1b-4307-a772-ee1ee93b6783",
+    "userId": "pub_9592888f8c864fad051dbeb6",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T02:58:57.216Z"
+  },
+  {
+    "id": "vote:5e2321c6-db9f-4747-8493-2dcbca98b651",
+    "userId": "pub_1948bed0179d479127fb811b",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:01:00.607Z"
+  },
+  {
+    "id": "vote:91ebde6b-154f-4849-b304-03f04a6423df",
+    "userId": "pub_52d96147affa849198487704",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:02:31.315Z"
+  },
+  {
+    "id": "vote:2731280f-a5af-4a97-bc7b-61954a13f044",
+    "userId": "pub_fa3742a4e645c2669b5d43fe",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:06:11.779Z"
+  },
+  {
+    "id": "vote:350591e2-860a-40cf-8632-bdfd0411b2c1",
+    "userId": "pub_08a7581872b2c3a9df58f4a0",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 5,
+    "timestamp": "2025-01-30T03:06:56.960Z"
+  },
+  {
+    "id": "vote:a7a75da2-71f6-4855-8369-ad9cc2ec7c31",
+    "userId": "pub_72f418a1080d0b4a02a19984",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:10:46.078Z"
+  },
+  {
+    "id": "vote:66de3e09-77c5-4c4e-8e0c-f38cdc666e3c",
+    "userId": "pub_4469c1c258868e4bce241bb0",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:10:50.706Z"
+  },
+  {
+    "id": "vote:278ae854-702c-4ecd-b128-7821c35f8218",
+    "userId": "pub_24f2c10edd96075ca8a59845",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:14:48.076Z"
+  },
+  {
+    "id": "vote:ab23c95b-a51d-40da-812e-4a15b70129cf",
+    "userId": "pub_9fb999f6e49d4311df450c34",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:29:25.365Z"
+  },
+  {
+    "id": "vote:1cfd3b1f-a786-428a-9381-af38e33d8e3b",
+    "userId": "pub_e39526d94cb937f1748e2f54",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-30T03:29:41.228Z"
+  },
+  {
+    "id": "vote:f450207f-4d72-40e3-a03d-741a04113f8b",
+    "userId": "pub_61cadb39306fac9286872218",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 8,
+    "timestamp": "2025-01-30T03:29:42.895Z"
+  },
+  {
+    "id": "vote:4e29c3cf-7b8f-4093-88ad-d3560fc07492",
+    "userId": "pub_5730eeaa5e21d9fece719e63",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:31:07.566Z"
+  },
+  {
+    "id": "vote:820cd04b-a416-42b4-9eb3-949bff84f489",
+    "userId": "pub_999583b5e1d5dbe16f644e06",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:33:20.622Z"
+  },
+  {
+    "id": "vote:c03d4b83-50eb-4152-ad26-9ae9a704d411",
+    "userId": "pub_733e5e86afce552dc0bf4541",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:40:59.938Z"
+  },
+  {
+    "id": "vote:db5c3001-4c66-4682-8a33-9670702aefef",
+    "userId": "pub_1c8e9aa0c9dfe118a53ad7ed",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:41:48.939Z"
+  },
+  {
+    "id": "vote:b97708e1-483e-4c9b-8a58-c5745e47849f",
+    "userId": "pub_481b1b5dac2826bc2281435f",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:47:20.147Z"
+  },
+  {
+    "id": "vote:41710495-764a-4923-9cfc-9d930b7227ae",
+    "userId": "pub_61fd9b62632e866c8b36b140",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:54:53.753Z"
+  },
+  {
+    "id": "vote:b4b34e0e-404b-4928-aa15-b85f4cdf23dc",
+    "userId": "pub_a56aab1739e62ce52cc03b41",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T03:58:33.659Z"
+  },
+  {
+    "id": "vote:80c2d5d0-8c5a-4898-97b2-df71642c9df2",
+    "userId": "pub_02398bececf2524ea71ec09b",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 8,
+    "timestamp": "2025-01-30T03:59:42.927Z"
+  },
+  {
+    "id": "vote:edc9514a-e88a-41b9-b76f-f25d5eb5e235",
+    "userId": "pub_99f3d8ebf747f15ed51e699a",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:01:32.927Z"
+  },
+  {
+    "id": "vote:c19b0663-506e-4e48-b1f9-43d0927378d7",
+    "userId": "pub_7e2f7bb53a3912ea180e1dc8",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:03:07.416Z"
+  },
+  {
+    "id": "vote:2eb7292d-ce30-4eb2-a419-d8550beb3783",
+    "userId": "pub_57e92ae7718f3f5b66ebb7b6",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:04:27.310Z"
+  },
+  {
+    "id": "vote:61877f78-5331-446a-aeab-0880e420020f",
+    "userId": "pub_c85286ed9df9fedf3d10d0e1",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:07:39.734Z"
+  },
+  {
+    "id": "vote:7f98bf44-a4e1-47c4-9ac0-126dd6786a32",
+    "userId": "pub_46ae564f9e2671efa26c00e2",
+    "proposalId": "proposal:e390c8f8-e85d-4dd0-8a6b-56982e92a581",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-30T04:11:13.804Z"
+  },
+  {
+    "id": "vote:707810d9-010e-401e-ad6b-0023d5ffd03f",
+    "userId": "pub_a93da1603672f1572bd37dbf",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:11:45.303Z"
+  },
+  {
+    "id": "vote:d6270ce1-cb60-46f8-bee7-3616172dcd64",
+    "userId": "pub_c5ac12264795b1ed0bc75ea2",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:11:45.967Z"
+  },
+  {
+    "id": "vote:8917b9bc-d029-4870-a5ca-e3184afeb02f",
+    "userId": "pub_a83f5dac83532524913d7e32",
+    "proposalId": "proposal:f225ab66-6175-4619-aa26-193eda4abb23",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:14:40.952Z"
+  },
+  {
+    "id": "vote:20e13bd7-d833-4e53-a479-a8b4b0db61b2",
+    "userId": "pub_9f9c2ff2ccd9090d228c68e1",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:14:41.909Z"
+  },
+  {
+    "id": "vote:5e4766e8-5982-4d85-9970-ddd8fdae3db3",
+    "userId": "pub_b1ebd68d31ccc62ed8f8c7d1",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:18:39.038Z"
+  },
+  {
+    "id": "vote:bf1837a8-7c80-4937-9033-4c34902dcb2d",
+    "userId": "pub_9baa04457bbcf719ec6f0af2",
+    "proposalId": "proposal:f225ab66-6175-4619-aa26-193eda4abb23",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:19:23.684Z"
+  },
+  {
+    "id": "vote:4dd1bce1-3d0e-4373-8144-03a58ea5f4b2",
+    "userId": "pub_6f51e444d5e9536ba66e2cb5",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:20:53.580Z"
+  },
+  {
+    "id": "vote:d393bd49-4090-4278-84f1-ea09aac30b25",
+    "userId": "pub_f844ab1fc4b00ad592cd44d9",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:30:37.918Z"
+  },
+  {
+    "id": "vote:590057f1-079c-4c1f-ac5f-ff0cbfd4a7d4",
+    "userId": "pub_99ab1c9ea8f762809530d302",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:34:13.849Z"
+  },
+  {
+    "id": "vote:e3d5603c-8ec7-4007-8eea-7992d14b3018",
+    "userId": "pub_fbddce91cc500ac4140b5b2e",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:38:15.258Z"
+  },
+  {
+    "id": "vote:a2a6c38f-1f7d-4bc4-a22e-242356cf308f",
+    "userId": "pub_071bf6adb777fbed8f830c40",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:41:34.861Z"
+  },
+  {
+    "id": "vote:ea2ddf0e-99f7-42a0-8f1d-8930e4c6a882",
+    "userId": "pub_f800b85011785a7ef4172f0b",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:43:58.314Z"
+  },
+  {
+    "id": "vote:0ff469f6-4036-4e66-9d79-f50fa13ab1af",
+    "userId": "pub_582dad2a8b38755430a4595a",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:46:31.219Z"
+  },
+  {
+    "id": "vote:28c06c20-433c-42e5-b8f9-e872073c25be",
+    "userId": "pub_bc38ccca6ff6bfd2f160ada9",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:46:34.999Z"
+  },
+  {
+    "id": "vote:1cff50c2-da53-4828-8140-3c0e204e2bc5",
+    "userId": "pub_4fb3ad13dfa14eae84b523db",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:48:54.026Z"
+  },
+  {
+    "id": "vote:57cc78c4-4df8-4e37-b55f-f3617d28c7d0",
+    "userId": "pub_547640d97bd1f145e3c96c59",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:49:27.543Z"
+  },
+  {
+    "id": "vote:4a80585e-c8cb-44af-8127-4ef6f3d51d7b",
+    "userId": "pub_994c336bf01f5e5dbc370164",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:51:48.144Z"
+  },
+  {
+    "id": "vote:ea73de9f-1771-4933-8e4c-90a6211da319",
+    "userId": "pub_ffaa0f08145ca7ef1e8cb4a7",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:52:01.466Z"
+  },
+  {
+    "id": "vote:97ca75e3-b762-4f8c-84ae-deba923e8868",
+    "userId": "pub_0c764502972fdf44d99ad7a6",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:52:19.211Z"
+  },
+  {
+    "id": "vote:e6125c79-90c5-4305-b2d2-fb3019a427c8",
+    "userId": "pub_d386a8905fd89789c71dfdf7",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:58:28.492Z"
+  },
+  {
+    "id": "vote:f35cb970-885f-4c71-a3ab-1d3c1d70c0c6",
+    "userId": "pub_b8d538e494efb39ca3621ccf",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T04:58:33.417Z"
+  },
+  {
+    "id": "vote:a14837ac-5d92-4edd-91d8-411570c8563a",
+    "userId": "pub_bf5d9e77dfa390254c4eb57a",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:01:02.899Z"
+  },
+  {
+    "id": "vote:9440e80a-bd5e-4c2e-b713-3e21a8bdb834",
+    "userId": "pub_76725a75751b65870630de3c",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:03:45.251Z"
+  },
+  {
+    "id": "vote:ca0cec0b-7a2c-46c6-b1f6-6cac8a38fe80",
+    "userId": "pub_2e7336e2d2a8c8b34031e5e9",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:03:52.559Z"
+  },
+  {
+    "id": "vote:1f9d9b01-283e-4e91-a880-7a623cded42c",
+    "userId": "pub_995072184f56dc5f542a8d93",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:04:04.274Z"
+  },
+  {
+    "id": "vote:7f8e1bc7-6432-4acc-9264-d2d7be303a52",
+    "userId": "pub_d323223236276078d3302dec",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:06:11.457Z"
+  },
+  {
+    "id": "vote:f3cc46c3-6e85-4c12-81fc-490272cd51a0",
+    "userId": "pub_49cfe399aa8f89195e853943",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:18:54.062Z"
+  },
+  {
+    "id": "vote:30c10f80-7d4b-48ad-b4dd-44415cfa4ac9",
+    "userId": "pub_1727b1e2f832a3b009947d2f",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:26:00.857Z"
+  },
+  {
+    "id": "vote:5d2d7b29-186a-4c87-b5a2-0caed76d1a12",
+    "userId": "pub_32c8dc4e9de7ffb05eaf1f0a",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:31:21.797Z"
+  },
+  {
+    "id": "vote:0102271e-f4a8-4324-b4c0-769d1a55e355",
+    "userId": "pub_fffdd3e3c6afae5fc588ead7",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:37:18.754Z"
+  },
+  {
+    "id": "vote:56dc0e33-28dd-429f-8463-d4bfbec1ef1d",
+    "userId": "pub_6269cc528304a5603ab171d7",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:37:28.677Z"
+  },
+  {
+    "id": "vote:43059862-380a-405b-b183-ce0f3e67c7d7",
+    "userId": "pub_85b8cc1cc675b0007aa637f4",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:38:06.335Z"
+  },
+  {
+    "id": "vote:a651956d-0222-44ef-9a1c-f049a2491008",
+    "userId": "pub_2f1a613f5b3f4d4b8a95dd49",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:52:30.415Z"
+  },
+  {
+    "id": "vote:d752f5a7-8444-4983-98e3-3f73a9e6a02e",
+    "userId": "pub_0a3d0776598f7fa280360012",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:52:57.365Z"
+  },
+  {
+    "id": "vote:2474398f-b5b4-44e0-af45-e390193348e6",
+    "userId": "pub_6c4b124d9375cfce784a19d2",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:53:33.096Z"
+  },
+  {
+    "id": "vote:68da7f88-5acf-4aec-80eb-7718409fc849",
+    "userId": "pub_b2e97731e782ae19066deb68",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:54:37.313Z"
+  },
+  {
+    "id": "vote:124bb940-2068-48e5-85bb-17acb5f7b306",
+    "userId": "pub_70e63ab17f32d8c292b4cf12",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:54:58.256Z"
+  },
+  {
+    "id": "vote:f1463c31-09eb-40e4-85b1-9f9ea3862a88",
+    "userId": "pub_578b543a8a119c2b62e6d0ad",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:59:35.256Z"
+  },
+  {
+    "id": "vote:64384d6a-552d-46b2-b091-afc5ab482825",
+    "userId": "pub_47c728a440918127f9255c5e",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T05:59:52.781Z"
+  },
+  {
+    "id": "vote:3d78d2c3-55f9-44ed-a26a-4c0862dfc403",
+    "userId": "pub_adb95780c1ecf90d1b6a067b",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:01:35.992Z"
+  },
+  {
+    "id": "vote:1b3f28d1-d06d-4531-a800-c207b99d9db0",
+    "userId": "pub_c84c9297d11a2edb1c13821c",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:02:32.403Z"
+  },
+  {
+    "id": "vote:0699ca97-4496-46c5-a468-25bcea131d00",
+    "userId": "pub_f9831152ae4d83c05822167e",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:07:28.075Z"
+  },
+  {
+    "id": "vote:709dac73-73c3-49b3-9e96-2a492290ad3c",
+    "userId": "pub_a3f72f6d58a1968ea75fb354",
+    "proposalId": "proposal:7e4c125e-701f-4cc3-8bea-7f8ce34698b3",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:08:41.252Z"
+  },
+  {
+    "id": "vote:d71cdd07-7e4d-41bb-a635-ed4204cbe1f2",
+    "userId": "pub_e1cd0fe17188e44580b12529",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:08:56.124Z"
+  },
+  {
+    "id": "vote:9d047a0c-4dff-4c5d-b60b-59904bf4e536",
+    "userId": "pub_e7b5bec99900cbf5d7b0e543",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:09:17.206Z"
+  },
+  {
+    "id": "vote:1b00d871-da93-484d-8aaf-ddbcd745eb7a",
+    "userId": "pub_860fc2cbc38ca56cb2d71748",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:11:26.079Z"
+  },
+  {
+    "id": "vote:646d24ab-f42b-4de7-8473-767b4bd616ff",
+    "userId": "pub_7a1e4a403b8a37e0859e58d3",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:16:23.255Z"
+  },
+  {
+    "id": "vote:25c79249-1f40-46b5-a4af-9aea26045459",
+    "userId": "pub_6a4f493cb6ad8222cf00f3a7",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:19:14.494Z"
+  },
+  {
+    "id": "vote:3e2224a6-8094-4444-8fb1-1cac08a70ac9",
+    "userId": "pub_adf3fe5270207abe0482c819",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:21:03.284Z"
+  },
+  {
+    "id": "vote:1ea9600d-f04e-43e2-a3a5-b2319f92da12",
+    "userId": "pub_a7a1b35a59684f6ebbd70737",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:25:06.284Z"
+  },
+  {
+    "id": "vote:01a2d836-4357-4748-8114-885b047a4235",
+    "userId": "pub_8a4313eeb096880dd3d64a2b",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:38:03.229Z"
+  },
+  {
+    "id": "vote:cdac878a-9014-445b-af57-016ee9332495",
+    "userId": "pub_8be0386ec23c191d9e99a206",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:38:22.288Z"
+  },
+  {
+    "id": "vote:93a2c17b-2cec-4e5d-bb0b-9bbb0cfd668a",
+    "userId": "pub_f3472ded3b738deeb970e4e5",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:42:12.517Z"
+  },
+  {
+    "id": "vote:d572fd5d-0f11-402f-b80a-9cc8843ff7d0",
+    "userId": "pub_0e4417b2e5272833f25d3c7a",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:43:19.244Z"
+  },
+  {
+    "id": "vote:ceec80bf-dc1f-4115-a63a-106d953ea371",
+    "userId": "pub_5dcccaf568aa0399c536b026",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:47:48.958Z"
+  },
+  {
+    "id": "vote:09e2f5f4-b8ec-4f76-8a4f-14107a0e0d07",
+    "userId": "pub_c7df9e980790d5daf65f436a",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:48:41.697Z"
+  },
+  {
+    "id": "vote:348dba2f-10f5-4515-8e8e-a7a61fc21e66",
+    "userId": "pub_efa2c6df185a30bc4822c6fc",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:51:13.588Z"
+  },
+  {
+    "id": "vote:f29fbec6-7ca1-41b6-a76e-35589408ff4a",
+    "userId": "pub_fe86167d720a0a957256c311",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:52:19.733Z"
+  },
+  {
+    "id": "vote:ba9c03f7-0c0f-4d46-934e-f6ebb091e249",
+    "userId": "pub_c931c903e6bb13431d0383f1",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:56:11.769Z"
+  },
+  {
+    "id": "vote:6868b870-922d-4e91-87e8-d58449776b91",
+    "userId": "pub_914795306ee71400f1268360",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:56:29.515Z"
+  },
+  {
+    "id": "vote:4b28fb85-c73b-49d4-ac02-800e58bf1c4d",
+    "userId": "pub_711939fb72548c22d5a319fa",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:57:43.346Z"
+  },
+  {
+    "id": "vote:a00459a4-5a2a-48b2-b065-9a0863b9b0b1",
+    "userId": "pub_0a6249ff035a30cec2c05bbf",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T06:58:43.619Z"
+  },
+  {
+    "id": "vote:268b40a3-c9b2-4a4d-ae74-1373c8a93b05",
+    "userId": "pub_73902aad8a037df624d6b964",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:00:19.706Z"
+  },
+  {
+    "id": "vote:4c061f60-b1ef-48ce-8df6-23ac092df8e6",
+    "userId": "pub_0469bd99e4ba8d238aee9cc0",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:01:28.189Z"
+  },
+  {
+    "id": "vote:6aa548ce-7314-4241-97f8-658bf2d29166",
+    "userId": "pub_5e53abc4bb885b2282fe2211",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:03:21.462Z"
+  },
+  {
+    "id": "vote:0d18734a-9a9e-4dd5-b115-b2247b34a2c1",
+    "userId": "pub_50756ba77faf1ed7b4ddb32c",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:07:06.360Z"
+  },
+  {
+    "id": "vote:b9e7157a-3df0-438f-8e02-38f36da8fa57",
+    "userId": "pub_f6d9e9911c34563452d64380",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:09:23.236Z"
+  },
+  {
+    "id": "vote:e203b587-00c1-4882-ab1d-b589e16fa558",
+    "userId": "pub_ead82cd4ee7a9d0038d7be1e",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:11:35.277Z"
+  },
+  {
+    "id": "vote:bd258e9c-266c-4f5f-9ce4-f3ac11a5e81f",
+    "userId": "pub_236925b9209db4dc991a8425",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:13:36.263Z"
+  },
+  {
+    "id": "vote:bfcac31b-4f09-4dbd-b7f9-07de7229497e",
+    "userId": "pub_ad45a8c3c5ae38cb9511c88d",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:14:13.265Z"
+  },
+  {
+    "id": "vote:f299f4e0-9bd5-46ad-ace6-e2a3437b1de9",
+    "userId": "pub_a255e956e1c1deb11452e8ba",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:14:36.027Z"
+  },
+  {
+    "id": "vote:cf850a75-81c6-45a5-8322-abba6c50eff2",
+    "userId": "pub_f0c5f043850cba7b29679c1d",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:18:30.694Z"
+  },
+  {
+    "id": "vote:dbba703f-3f43-4012-b84e-0275d1624987",
+    "userId": "pub_785b4c5f6a9956c6ad15a312",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:25:32.170Z"
+  },
+  {
+    "id": "vote:7b407ece-ad09-44c9-af7e-0acc8a33fee5",
+    "userId": "pub_612f5f80a723d46aa3014650",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:27:20.014Z"
+  },
+  {
+    "id": "vote:96bd49fc-b2f9-42f9-8a09-5493e9dd3a36",
+    "userId": "pub_6b6a7dd02f233ecc93c69ff0",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:30:05.907Z"
+  },
+  {
+    "id": "vote:48db15f5-1a34-4075-b56a-901e501d9645",
+    "userId": "pub_39519078f7f582a06221fbcc",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:35:39.252Z"
+  },
+  {
+    "id": "vote:d8a92cc4-65b4-4a81-8e4f-66f73c92038e",
+    "userId": "pub_f7a35f34e52d7faf616888e5",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:37:05.440Z"
+  },
+  {
+    "id": "vote:a9b56c18-2171-4b8f-a652-63d7d08af6b6",
+    "userId": "pub_3e7e7beb01643755d25f7809",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:40:35.726Z"
+  },
+  {
+    "id": "vote:bb9ea5d3-13d7-48ed-9645-a1482576a844",
+    "userId": "pub_bf25e0b3a3ccb601d45bfd3d",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:40:38.814Z"
+  },
+  {
+    "id": "vote:d7f0e667-4905-4748-9101-cbb01caee784",
+    "userId": "pub_c0ed360f81b2e775e7152439",
+    "proposalId": "proposal:9ac05ad4-5525-469b-bb2e-4c367ffe8640",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:42:51.251Z"
+  },
+  {
+    "id": "vote:5b23e4c2-ac3f-43f7-9fa8-76488a4bdefc",
+    "userId": "pub_b58f12d2125292c255c59f86",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:45:41.274Z"
+  },
+  {
+    "id": "vote:41d54824-f084-4307-b98d-64e57f797631",
+    "userId": "pub_03cf7e0f84721073125ab8b8",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:48:10.219Z"
+  },
+  {
+    "id": "vote:e9f4d842-5ad4-40d2-a922-930b41186ef5",
+    "userId": "pub_03765aff699c356516cc47ea",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:50:03.822Z"
+  },
+  {
+    "id": "vote:5887bc40-2886-43b8-8786-86030a4977b8",
+    "userId": "pub_c62c5cdfdd3a8e29789fdbc7",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:50:21.554Z"
+  },
+  {
+    "id": "vote:acb74275-3588-49b8-b74e-3ea3b1d30dc3",
+    "userId": "pub_8e39a6e703dcfed56c2c1816",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:55:14.314Z"
+  },
+  {
+    "id": "vote:1b41b8a6-ead4-4db4-8e1c-9ba57f6fa579",
+    "userId": "pub_a547701a0cd31fc8f15b4a44",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:55:31.062Z"
+  },
+  {
+    "id": "vote:a6233c17-b1f4-4903-ab77-8dd23c3a8560",
+    "userId": "pub_7400aab585c97b6861f54a29",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:57:59.147Z"
+  },
+  {
+    "id": "vote:3921f074-4a34-4246-932d-e5d3cea50908",
+    "userId": "pub_35f3c3deed62e7e06421dbc9",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:58:26.462Z"
+  },
+  {
+    "id": "vote:80c23696-e604-4ce9-b622-789477f6519d",
+    "userId": "pub_814f1e4dde5eca6e7dd0f511",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T07:59:38.434Z"
+  },
+  {
+    "id": "vote:b6748d26-f049-4bdf-8f84-d75e1d712db9",
+    "userId": "pub_d525462827d794de9c9e11b3",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:00:13.281Z"
+  },
+  {
+    "id": "vote:2be3084b-f49c-495c-a391-15d37fe26bae",
+    "userId": "pub_154ca9a0d685799e248fb795",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:05:16.664Z"
+  },
+  {
+    "id": "vote:b1ad0e87-3574-4ee5-b9cd-e909a00c30ad",
+    "userId": "pub_17d4d7627531bf6fcf1911d1",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:10:06.708Z"
+  },
+  {
+    "id": "vote:b1b0bb83-f64d-4a0a-ade3-7c6779f433b1",
+    "userId": "pub_ae946d94813fa01f8093ed35",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:10:14.081Z"
+  },
+  {
+    "id": "vote:9b950cb9-5f27-4719-bfd7-a570f182cd83",
+    "userId": "pub_ad850b44abf27a33bd39f194",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:11:34.634Z"
+  },
+  {
+    "id": "vote:5e349522-4bfb-4e22-8c31-4567705597f5",
+    "userId": "pub_54fa9c377456bae88071f757",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:14:25.646Z"
+  },
+  {
+    "id": "vote:112ff79c-d757-46b4-a543-553ebaa746ab",
+    "userId": "pub_15ea311f84409acfdea470ef",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:14:43.837Z"
+  },
+  {
+    "id": "vote:28089acd-b083-4002-80ff-58324a361108",
+    "userId": "pub_69f3692dc8e3ddcbbe5c80c0",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:17:30.676Z"
+  },
+  {
+    "id": "vote:e308ea95-f61b-4efd-8f6d-13da76d6417a",
+    "userId": "pub_0db3e4c82133b21d171d5658",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:18:49.183Z"
+  },
+  {
+    "id": "vote:593af4ed-7495-4c3a-87e0-57252650460e",
+    "userId": "pub_048e0a87babf5380b84b1e72",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:19:28.899Z"
+  },
+  {
+    "id": "vote:c3c03b64-fd37-483a-b82f-0b2755345c57",
+    "userId": "pub_c901f5585f70470631b6b224",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:20:03.708Z"
+  },
+  {
+    "id": "vote:59d6fcda-5333-4c42-8d89-8d615218f648",
+    "userId": "pub_c31e4bdccc03a78a15089636",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:20:28.317Z"
+  },
+  {
+    "id": "vote:757d5a86-bfa8-49e4-8b31-e5c8a7586f10",
+    "userId": "pub_73f96e5ef4fd3f07d3354fd6",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:21:58.590Z"
+  },
+  {
+    "id": "vote:f229ce58-03a0-40a5-9cca-be1bcdd5cc0a",
+    "userId": "pub_d4cda244392cfe7af494dde5",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:24:54.723Z"
+  },
+  {
+    "id": "vote:74f8670d-ccd2-4fbf-9209-90430f4c3b6b",
+    "userId": "pub_b578ff460bee95f3c1c86495",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:28:50.017Z"
+  },
+  {
+    "id": "vote:f5189b2f-d5ae-4d71-b0b5-a4304eb99c32",
+    "userId": "pub_57fbb443985b1275cbe4a11a",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:30:08.911Z"
+  },
+  {
+    "id": "vote:f0edef8a-835b-4898-8758-801726769de8",
+    "userId": "pub_3e4b4859d6188f2bbc711dc5",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:30:48.920Z"
+  },
+  {
+    "id": "vote:47db59a6-ea2e-476b-9716-c7c52f7db6fe",
+    "userId": "pub_91aa4d4648f08d9b577a1bee",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:32:35.308Z"
+  },
+  {
+    "id": "vote:1508e3e0-c60f-4311-b636-67ee922d2c12",
+    "userId": "pub_947e9ab1dbc30a057e65a8f3",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:34:46.759Z"
+  },
+  {
+    "id": "vote:ff41b74e-b116-42c8-832b-b828b23efcef",
+    "userId": "pub_c344296a49fe43ff15563998",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:34:48.574Z"
+  },
+  {
+    "id": "vote:551399ef-f3cf-4c55-9ba3-a6b5a955a348",
+    "userId": "pub_e7f22c29c742ca21da03818d",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:35:10.220Z"
+  },
+  {
+    "id": "vote:790b07e5-594b-430e-bf4c-ec23e5ae9bb6",
+    "userId": "pub_a66fcaccd17b0b667348a3ff",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:37:14.291Z"
+  },
+  {
+    "id": "vote:2066fef8-4d2f-450d-a07a-c389fe3ae0e6",
+    "userId": "pub_1879d97be858abbcf83b6a54",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:37:51.076Z"
+  },
+  {
+    "id": "vote:4cca27db-91ef-4538-9db0-1ad0031e7af0",
+    "userId": "pub_d00a2cfcafa5570918c7a411",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:38:29.601Z"
+  },
+  {
+    "id": "vote:e2e289cb-dde5-4560-ac7b-88ea7397f20a",
+    "userId": "pub_3a0cbb1dd766e668cfd3da0a",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:41:18.196Z"
+  },
+  {
+    "id": "vote:11a94d89-3568-46f1-ac95-fd349b571ce1",
+    "userId": "pub_68dd551a63d1f15675ccfcb6",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:43:58.858Z"
+  },
+  {
+    "id": "vote:01c194b3-eb5c-49cb-bc21-508352e80627",
+    "userId": "pub_5433a3908d3b3b0a676a2653",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:45:33.734Z"
+  },
+  {
+    "id": "vote:9c435a94-ecec-4acc-b786-7c5147e5e582",
+    "userId": "pub_4b2571dad60bd11e31c906dd",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:46:07.626Z"
+  },
+  {
+    "id": "vote:71f79cfb-bf48-4f2b-960f-3921b50cc500",
+    "userId": "pub_db6a9b98a95d1ed0ea2d87d5",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:46:20.593Z"
+  },
+  {
+    "id": "vote:847528c4-e871-435d-b78b-486ae4e2994d",
+    "userId": "pub_00d6ad123bcc8df16db3f4d9",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:48:26.381Z"
+  },
+  {
+    "id": "vote:64283ad5-e1b0-4fe6-ba05-5ec67cdd211f",
+    "userId": "pub_d265239495a1cb83fcfc2a6a",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:48:43.353Z"
+  },
+  {
+    "id": "vote:aff42aa1-92d2-4f36-8448-ccc2f5ed29e6",
+    "userId": "pub_0883cf5beaa2cced0f5a6ae9",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 5,
+    "timestamp": "2025-01-30T08:49:05.529Z"
+  },
+  {
+    "id": "vote:c5cda4b6-239f-42c8-bda5-d6660e79eeaf",
+    "userId": "pub_285f1476618641326131db7c",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:50:39.050Z"
+  },
+  {
+    "id": "vote:35c40da8-e17c-4b3a-a717-00e851afe2ad",
+    "userId": "pub_ea0263c808dd9650c4bdc304",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:53:15.500Z"
+  },
+  {
+    "id": "vote:410fed39-6ae5-453e-958b-10b6ba7fe0e7",
+    "userId": "pub_db37f8b3a776277893ba48b6",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:53:30.520Z"
+  },
+  {
+    "id": "vote:b401b05f-030c-457d-a7b6-f0019fbc0009",
+    "userId": "pub_9d3638bc253a19b3f52f8d05",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:55:58.878Z"
+  },
+  {
+    "id": "vote:9ea045df-9092-40e8-b87c-506bddcaeb31",
+    "userId": "pub_ce46255d99d5554f11443008",
+    "proposalId": "proposal:971c245a-47d7-4264-83ab-dbf336c9a779",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:59:29.786Z"
+  },
+  {
+    "id": "vote:2429cdf7-c882-428f-8981-070e123e068d",
+    "userId": "pub_19a4337083d83e20561e7196",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T08:59:58.879Z"
+  },
+  {
+    "id": "vote:236cff41-dc67-4faf-9f96-defe9c55854a",
+    "userId": "pub_859694be68744f4b9459e9eb",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:01:15.032Z"
+  },
+  {
+    "id": "vote:d60d4828-d52e-492c-9494-e1fd53630160",
+    "userId": "pub_246068d302f7d9273551e184",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:02:06.769Z"
+  },
+  {
+    "id": "vote:f3f24efe-4089-40d3-bfa7-be14c6bc1a0a",
+    "userId": "pub_d202327138d8bba7b54d6516",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:03:48.489Z"
+  },
+  {
+    "id": "vote:94b8b4f1-a000-490c-9f0c-d5d2444001d2",
+    "userId": "pub_d5b5c88b45dd8d3ffcbf1e2e",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:04:12.732Z"
+  },
+  {
+    "id": "vote:565231df-c6f1-431a-8582-a32c0ddca9cc",
+    "userId": "pub_be8221a4e908563516a80ad9",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:04:20.671Z"
+  },
+  {
+    "id": "vote:9d800db5-cca1-497d-a481-9c8c1ef1e275",
+    "userId": "pub_c9f96fd535cf8509f562ca1b",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:05:26.231Z"
+  },
+  {
+    "id": "vote:57ef8c98-a711-41f7-806d-167fd44571d9",
+    "userId": "pub_2cf9ef9c27b7249fd6faea5d",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:07:08.551Z"
+  },
+  {
+    "id": "vote:187533dc-a013-4a68-b497-c8966ce674a3",
+    "userId": "pub_84e213ef2e56647375c85bf5",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:09:56.021Z"
+  },
+  {
+    "id": "vote:851d8227-3d65-444d-a292-ee34c7ff4ef2",
+    "userId": "pub_bddae0e5518b04f5d5d83009",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:13:08.273Z"
+  },
+  {
+    "id": "vote:d5764f2b-df94-4036-a126-1ceeb88399f0",
+    "userId": "pub_2c91831ec25325a9c55d3599",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:13:47.655Z"
+  },
+  {
+    "id": "vote:314f8046-a74f-4ff6-803e-4d00b67d1c99",
+    "userId": "pub_279992b48826b1e270b37062",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:16:28.663Z"
+  },
+  {
+    "id": "vote:a7b438df-99b9-43e9-ae20-71013d2f2064",
+    "userId": "pub_97101ef3bae5f41299a2c8d1",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:19:09.193Z"
+  },
+  {
+    "id": "vote:e51a25e3-15ce-4264-b939-ba96e7c74d57",
+    "userId": "pub_8acf5c5851ebae08ca47630f",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:24:58.808Z"
+  },
+  {
+    "id": "vote:7f538c27-ae6d-451d-bc4c-e50d888a883a",
+    "userId": "pub_5075935756cec2b1824bb192",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:27:49.269Z"
+  },
+  {
+    "id": "vote:ca643c9f-188e-4da2-9ed2-1e6d33712a6d",
+    "userId": "pub_f82e08bfb633d2fdd725cf00",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:28:29.410Z"
+  },
+  {
+    "id": "vote:fbe5dab5-120b-4b96-944d-0505400a5106",
+    "userId": "pub_782f25ec04801923a2e2b473",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:30:47.305Z"
+  },
+  {
+    "id": "vote:46137862-0034-486b-b191-431c0e1b5864",
+    "userId": "pub_687a72eaa87c8d43cf586803",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:34:55.179Z"
+  },
+  {
+    "id": "vote:aa5dae64-ebaa-480a-a668-357830a4a0f6",
+    "userId": "pub_264eedf227d037abecd992dc",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:36:10.346Z"
+  },
+  {
+    "id": "vote:ff64feb6-c6d6-4668-9829-2ce806f3c8f7",
+    "userId": "pub_c2ad33bfb12d3ab90d5ad46e",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:38:22.783Z"
+  },
+  {
+    "id": "vote:462b5571-6bc4-4403-9e89-92fffb362f31",
+    "userId": "pub_4dd9cb07559e221dcfbdc33f",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:38:49.292Z"
+  },
+  {
+    "id": "vote:f5baa1cc-5cf5-48e4-901a-321df55c5521",
+    "userId": "pub_1d5aa0b34e7bd9f9e714b2b9",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:41:21.523Z"
+  },
+  {
+    "id": "vote:161df2a6-3eca-49ba-a982-d1a42b770d82",
+    "userId": "pub_b1711c562bf6bcc1c962fd49",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:49:36.939Z"
+  },
+  {
+    "id": "vote:03b4822c-688e-4eff-9594-3981451283ad",
+    "userId": "pub_6bcfe1e6475d07737fba7291",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:49:47.338Z"
+  },
+  {
+    "id": "vote:21a261cd-5307-4f8c-ade5-e6950581bc58",
+    "userId": "pub_efd7d236ebc98b6ef239a390",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:49:51.233Z"
+  },
+  {
+    "id": "vote:c3a91e08-9f9a-4838-9b4a-df177b119c0c",
+    "userId": "pub_3487777af1b9a03af7a94754",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:56:57.708Z"
+  },
+  {
+    "id": "vote:cdfeaf7c-35bc-45e4-8313-b028a9ee5685",
+    "userId": "pub_74cb0279c32dfe4dffdca1b1",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T09:57:05.886Z"
+  },
+  {
+    "id": "vote:000dd6b7-e960-43ef-88a4-a325e94b7a69",
+    "userId": "pub_83d38da40c86781626f6b2d9",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:01:55.580Z"
+  },
+  {
+    "id": "vote:5b62317f-e67a-4443-b06d-6913067ddb3d",
+    "userId": "pub_e2b7d998bb4132aab2da0880",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:03:07.235Z"
+  },
+  {
+    "id": "vote:e1b1691f-06d1-4435-8ae6-0b6fc5a2f4a4",
+    "userId": "pub_59e8b58d3ad50cf08126c15b",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:05:58.116Z"
+  },
+  {
+    "id": "vote:ffd1192c-8e6e-473d-bac6-83cfd3d6ca6a",
+    "userId": "pub_fa73e42bde2d6f8d4431f74e",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:06:36.620Z"
+  },
+  {
+    "id": "vote:4a5da6d3-422e-410f-945d-1cb6701967eb",
+    "userId": "pub_a0eede900f4768487e78cee1",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:14:30.405Z"
+  },
+  {
+    "id": "vote:a2a0f1b3-52a2-4deb-b86a-2cc017b613d9",
+    "userId": "pub_3f950d7c282c99a8db0bd1f2",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:16:28.586Z"
+  },
+  {
+    "id": "vote:6ff9d041-30b8-4360-a2c8-fb795ee2e073",
+    "userId": "pub_055d94df253ec61c06ad8791",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:17:37.572Z"
+  },
+  {
+    "id": "vote:9b05eaa0-00f2-45bc-a45a-7fa1c1289a21",
+    "userId": "pub_e99a350a523965199d7480f1",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:23:29.668Z"
+  },
+  {
+    "id": "vote:dd264403-3778-4206-9333-2648ea8f3b0c",
+    "userId": "pub_11f0e6d13ec8759c5d10f9e0",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:23:30.379Z"
+  },
+  {
+    "id": "vote:ea7a1b57-f1d6-43e3-bc47-33247d91fe20",
+    "userId": "pub_568f55a4a8e7b4ad76e9be82",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:24:43.247Z"
+  },
+  {
+    "id": "vote:c1d091c9-efeb-4ca9-9538-da223728a097",
+    "userId": "pub_74cfb6a8b1d1d7073a3c83d5",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:25:33.996Z"
+  },
+  {
+    "id": "vote:dec8ed95-e21a-420e-a17f-89fa41cfd341",
+    "userId": "pub_a4439276b41f45fd1e454064",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:26:59.775Z"
+  },
+  {
+    "id": "vote:13be5f31-19ba-4d75-8550-00b64e4f43b6",
+    "userId": "pub_e868362e50aca43e4aeff577",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:28:29.106Z"
+  },
+  {
+    "id": "vote:fe54081b-ae58-42dc-b453-a4a1c6e071a3",
+    "userId": "pub_3c47631f2f8dcc8483b1034d",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:28:41.042Z"
+  },
+  {
+    "id": "vote:d5855930-671e-4176-a885-efb2b9b030a7",
+    "userId": "pub_67693e3362677ad1340a8397",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:29:34.163Z"
+  },
+  {
+    "id": "vote:5f539875-bc8d-44c3-9d14-b93e7e67454f",
+    "userId": "pub_9719f66e14c4977897cd98b1",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:32:00.753Z"
+  },
+  {
+    "id": "vote:ae4e88aa-fe41-4ded-8f56-5104276601f2",
+    "userId": "pub_5fd8b119f663f02dc38d1bbc",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:32:39.302Z"
+  },
+  {
+    "id": "vote:3d7e00a7-b116-4d24-a5d3-b41d3e7eb93d",
+    "userId": "pub_bcbf42914e61e20e66400501",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:34:28.811Z"
+  },
+  {
+    "id": "vote:02fff8c0-2b16-4e19-b32d-a051a20ed752",
+    "userId": "pub_a9775a81593ba0602e98f615",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:34:33.091Z"
+  },
+  {
+    "id": "vote:6f3170ef-673c-40b6-9d04-66f8dc26e906",
+    "userId": "pub_c1831c1d6c7ab0ed612a3540",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:35:19.610Z"
+  },
+  {
+    "id": "vote:ba869802-f22b-4304-aa72-9498110810cd",
+    "userId": "pub_990834c77142bea99ad516b1",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:36:39.096Z"
+  },
+  {
+    "id": "vote:8a4da10e-360a-4cf1-bd25-bc7116503abc",
+    "userId": "pub_9ba1a28a7286e47e186edb11",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:36:43.084Z"
+  },
+  {
+    "id": "vote:6ad6ede1-bc22-4dad-8a15-8541e8292ec1",
+    "userId": "pub_cd56d70c1dab109272b3f9b9",
+    "proposalId": "proposal:ef2c5a7e-61ab-49ef-be09-3fa6ccd2f1c1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:36:53.118Z"
+  },
+  {
+    "id": "vote:26c411af-af9d-4496-877e-e68d0558acf9",
+    "userId": "pub_f298bd85c87fd83b097341ac",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:36:59.234Z"
+  },
+  {
+    "id": "vote:eb849898-8233-450d-9f1d-c5aa13a95c2f",
+    "userId": "pub_cf7d06767a5bbffba94cf447",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:38:50.428Z"
+  },
+  {
+    "id": "vote:b91542f1-46cb-4fd9-b544-a4d74c9f26da",
+    "userId": "pub_b6ff26406d0905b9cdbb7912",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:38:53.631Z"
+  },
+  {
+    "id": "vote:2a65aa83-aa61-47e6-a8b9-212800dcc77a",
+    "userId": "pub_39cd892afb234f08a67f06e1",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:38:58.741Z"
+  },
+  {
+    "id": "vote:3245d1ef-a123-4ec9-91e0-5e5c90fd2fbf",
+    "userId": "pub_345854ab9b58d1c1ae48e772",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:39:47.305Z"
+  },
+  {
+    "id": "vote:1d73191b-014f-4689-b7a1-3459054c7f3a",
+    "userId": "pub_d930acc3de91e9398f441336",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:40:01.455Z"
+  },
+  {
+    "id": "vote:0a476afb-0be3-42cb-bde1-603ac7fbcd08",
+    "userId": "pub_4c7e2d28de115646310c170f",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:40:47.114Z"
+  },
+  {
+    "id": "vote:95b1b886-1e2d-4a4e-8c03-18efd5921e65",
+    "userId": "pub_1f14e4f9d82c08c34c4b0c46",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:41:01.670Z"
+  },
+  {
+    "id": "vote:cbd1c3f6-f106-4760-a3b1-a0837d84a0e4",
+    "userId": "pub_1d7cf43d958812b76c59928a",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:42:14.897Z"
+  },
+  {
+    "id": "vote:86c869cb-8222-49bb-b904-95b634b59da2",
+    "userId": "pub_a6b87d3c06e4cbf003ccdbad",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:43:01.834Z"
+  },
+  {
+    "id": "vote:66346cc7-6420-4b41-8d53-1feadc591baa",
+    "userId": "pub_856ee39327bd85da2edaf1e4",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:43:07.858Z"
+  },
+  {
+    "id": "vote:c91f9eef-551c-453e-84bc-cfb276aeacc1",
+    "userId": "pub_6af4672fbd24c0d875a674e3",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:43:39.664Z"
+  },
+  {
+    "id": "vote:e76729e4-4d81-43d4-8f21-a47da6ccc7d4",
+    "userId": "pub_93aa3f9add0098a520e0c4df",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:44:12.461Z"
+  },
+  {
+    "id": "vote:89687789-8b66-4ea7-a318-90fccfc9441d",
+    "userId": "pub_087da2178ca7520dfbe8a40a",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:44:18.130Z"
+  },
+  {
+    "id": "vote:ca5b4fbd-4306-46a7-b9c4-5b22d64065cf",
+    "userId": "pub_7152d3ca1805286111245831",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:45:18.346Z"
+  },
+  {
+    "id": "vote:cfe32055-95cc-4058-9486-05275b7f638a",
+    "userId": "pub_5e5d1a177c25dba530ee695b",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:46:15.251Z"
+  },
+  {
+    "id": "vote:7750ac95-d896-41a1-87f1-68093f945878",
+    "userId": "pub_61565be3faa7d945c04a2d6f",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:46:25.092Z"
+  },
+  {
+    "id": "vote:92a2b82e-e84a-416e-a3e4-51a9fc45ae1c",
+    "userId": "pub_4408a0fce8a9c9051b8ac754",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:47:16.986Z"
+  },
+  {
+    "id": "vote:acfa10bb-0bef-4888-981e-3bfddf3a248b",
+    "userId": "pub_da096fad5d37600fbb0322a4",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:47:28.786Z"
+  },
+  {
+    "id": "vote:265842ef-f453-4138-81ba-a0dd9efed405",
+    "userId": "pub_503da5d01dcdf4427465c11c",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:48:35.946Z"
+  },
+  {
+    "id": "vote:392c0f4c-3161-49a5-9f76-9ccbf5c774c2",
+    "userId": "pub_f569b539392cb903d6869d98",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:48:38.601Z"
+  },
+  {
+    "id": "vote:e1d7fc0f-8718-454d-800f-6ce10c75f900",
+    "userId": "pub_9d44028f60ecc964267f2418",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:48:50.945Z"
+  },
+  {
+    "id": "vote:b8d0737a-ec47-4a4e-b5ec-74d7ab607095",
+    "userId": "pub_49cb6ffc7fc13fc5cada1b12",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:49:23.817Z"
+  },
+  {
+    "id": "vote:babaef55-7405-479f-8d2a-9f245f064b05",
+    "userId": "pub_1f195355648c08f632ccf906",
+    "proposalId": "proposal:7ec30e2b-3e2c-4c44-9f5b-d46d72a304df",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:49:44.795Z"
+  },
+  {
+    "id": "vote:5c63a280-3c86-49bf-bd1f-7a4b5bc5b8ef",
+    "userId": "pub_7fa4b9525c1568efebc74682",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:49:59.205Z"
+  },
+  {
+    "id": "vote:809ac945-94be-4530-b78f-4cb65e1db550",
+    "userId": "pub_f9ba7a3cb8b022c53bdb14b4",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:50:53.860Z"
+  },
+  {
+    "id": "vote:6f23f352-e4a0-4b21-a2e4-2db5c808208d",
+    "userId": "pub_abaa4e241c49abc336a42e8f",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:51:15.702Z"
+  },
+  {
+    "id": "vote:38ce75da-f8fb-4117-bbf1-966afd416037",
+    "userId": "pub_043baf70eb37a93489c12c19",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:51:15.707Z"
+  },
+  {
+    "id": "vote:e39a8deb-bdb8-490a-8c3e-e22298c32423",
+    "userId": "pub_3ad1c60cb6c0e1e8d28d4767",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:51:39.284Z"
+  },
+  {
+    "id": "vote:a68e4d1a-2d3d-44b6-a18d-a25fff50b8fb",
+    "userId": "pub_4c0ce980d03fe6c0930989d5",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:51:56.880Z"
+  },
+  {
+    "id": "vote:b3a2396e-2906-45aa-8b07-56d2e0c6ee2e",
+    "userId": "pub_8add6b38c597c8a6b6ea8d02",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:52:12.228Z"
+  },
+  {
+    "id": "vote:74958761-ed27-4a25-8e8e-61b1cbef5895",
+    "userId": "pub_55871d60d9f96752f79da21c",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:52:16.661Z"
+  },
+  {
+    "id": "vote:3dd7015d-d42d-4a23-8b63-362301dcd765",
+    "userId": "pub_891db071f5eed50f9ae366bf",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:52:35.899Z"
+  },
+  {
+    "id": "vote:987b7018-a5de-4e7e-b47a-7fba160f1142",
+    "userId": "pub_96eed7bcb8a34758ac12bb86",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:53:02.988Z"
+  },
+  {
+    "id": "vote:88937843-9192-4181-a0be-dbcf05372435",
+    "userId": "pub_e58aa3e0ab85cb4cefbb7573",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:53:06.223Z"
+  },
+  {
+    "id": "vote:d774ac9f-ce58-496e-811b-d50740813c81",
+    "userId": "pub_b6b6adf1eb1ee681249cfecc",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:53:15.118Z"
+  },
+  {
+    "id": "vote:c9e6514c-19d0-4fcb-bc96-9c9f59137755",
+    "userId": "pub_a223507166875c157cbe8cab",
+    "proposalId": "proposal:59620883-d3f1-4c4f-b57c-14fa671f4edf",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:53:38.671Z"
+  },
+  {
+    "id": "vote:d1affdbe-cd97-409d-8180-08671318cf22",
+    "userId": "pub_8f7c68c83ea4355ad19442ae",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:53:53.470Z"
+  },
+  {
+    "id": "vote:f6c5e7a8-e225-406f-9e93-7a810c28a99c",
+    "userId": "pub_4eeabf33317c94de19a8b08b",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 2,
+    "timestamp": "2025-01-30T10:53:58.270Z"
+  },
+  {
+    "id": "vote:22b64e80-cf92-4bb9-87c3-15fc552b75aa",
+    "userId": "pub_e8346205c27ad96268d8d24d",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:54:35.454Z"
+  },
+  {
+    "id": "vote:8230d7c3-067d-47c0-82d9-22c0a3715ba1",
+    "userId": "pub_56329d7968a4361e1d5fc33c",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:55:19.111Z"
+  },
+  {
+    "id": "vote:e87289cb-709e-4c67-b6be-f1602469b8c5",
+    "userId": "pub_f35c414262758153e8d83138",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:55:53.656Z"
+  },
+  {
+    "id": "vote:88878b7c-4559-44fb-8652-f2f1f8bfeec5",
+    "userId": "pub_4065e05528dfdbe94c185ebf",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:56:37.224Z"
+  },
+  {
+    "id": "vote:563fde83-7469-4f93-9c57-a8de4926f764",
+    "userId": "pub_fff8ceac0dcb420ec5ea53a5",
+    "proposalId": "proposal:44fac936-d9f3-43f4-89a1-170ce591a292",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:57:19.106Z"
+  },
+  {
+    "id": "vote:c0d3a8c4-770b-441a-be24-7a11b198b470",
+    "userId": "pub_5f2b79c5cb6d79d556682af4",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:57:30.336Z"
+  },
+  {
+    "id": "vote:c724a710-77b5-4ba0-9ddc-5aaeb74aa208",
+    "userId": "pub_c56d9c652869deba924c0337",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:57:30.583Z"
+  },
+  {
+    "id": "vote:60e20571-2d0a-4de9-a083-9b566cc8d668",
+    "userId": "pub_41fe6fabec32fbfcb2fe2cbc",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:57:54.192Z"
+  },
+  {
+    "id": "vote:e0c7f913-7a36-41d6-9ffa-aa2f5039950a",
+    "userId": "pub_41fe6fabec32fbfcb2fe2cbc",
+    "proposalId": "proposal:e2a7dc45-76a7-4ec0-9151-eaad9d4849a1",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 6,
+    "timestamp": "2025-01-30T10:57:54.192Z"
+  },
+  {
+    "id": "vote:f6b664b3-38ff-40f7-a799-dac896b5475d",
+    "userId": "pub_41fe6fabec32fbfcb2fe2cbc",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:57:54.192Z"
+  },
+  {
+    "id": "vote:8e813da8-141a-4240-bd92-66a70d28577b",
+    "userId": "pub_08a7581872b2c3a9df58f4a0",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:57:54.488Z"
+  },
+  {
+    "id": "vote:de3e97c1-b914-473a-ac3a-2de5d978a345",
+    "userId": "pub_08a7581872b2c3a9df58f4a0",
+    "proposalId": "proposal:2e28b4ec-caf6-4fdf-9527-b5d78b63d84e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 4,
+    "timestamp": "2025-01-30T10:57:54.488Z"
+  },
+  {
+    "id": "vote:28664877-39a6-45d7-a35d-f7aa875f527b",
+    "userId": "pub_7f1f6d78689eb978193d5196",
+    "proposalId": "proposal:50b7de7f-0463-47af-b7a0-6200280a46aa",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:58:40.103Z"
+  },
+  {
+    "id": "vote:05e75159-79dc-4d45-9aca-823d90172772",
+    "userId": "pub_47c0f0a84752813271b4fa39",
+    "proposalId": "proposal:42fc6fc0-badb-4238-91d6-99e7387ef14e",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:58:56.990Z"
+  },
+  {
+    "id": "vote:3b9abb65-e928-4755-ba81-d998c8256a7f",
+    "userId": "pub_2573949feb86620b955828b7",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:58:59.930Z"
+  },
+  {
+    "id": "vote:48841ab6-b3dd-4829-9ca0-5a416414437c",
+    "userId": "pub_8089d79e4e171dfc421598fb",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:59:11.302Z"
+  },
+  {
+    "id": "vote:580dccc6-bc5e-49f5-abb3-cb34ec9c9acd",
+    "userId": "pub_664bd87c7b2563ceb573e80f",
+    "proposalId": "proposal:cd21a1fe-7189-41ec-ba61-94f7ca7ff6ed",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 3,
+    "timestamp": "2025-01-30T10:59:24.621Z"
+  },
+  {
+    "id": "vote:56649b0c-0eb9-405a-aa3b-9ec19fa410a2",
+    "userId": "pub_751a7961ed9c67077da3dabe",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:59:43.540Z"
+  },
+  {
+    "id": "vote:0bfdfd59-2889-49f5-9bfe-9d71c07435aa",
+    "userId": "pub_796bc730cd2a317316100581",
+    "proposalId": "proposal:28d3f629-4903-412f-b1f9-1adb0c7f288f",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:59:49.474Z"
+  },
+  {
+    "id": "vote:85be293a-4988-4324-8639-b5561ba023f2",
+    "userId": "pub_0ae2b37de612835cc68dd635",
+    "proposalId": "proposal:a489dbc8-c2fe-448f-9743-ebbf06f3721b",
+    "roundId": "round:chompix:nounish-cup-2",
+    "count": 1,
+    "timestamp": "2025-01-30T10:59:51.818Z"
+  }
+]

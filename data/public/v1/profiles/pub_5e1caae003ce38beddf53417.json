@@ -1,0 +1,14 @@
+{
+  "id": "pub_5e1caae003ce38beddf53417",
+  "name": "cmdtddja",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieyepvebzkca7e4fgujq2xxt63fd6tjunm3ijsweropktbf5xakca",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb2214C5Bb4eD36CF74c7c1a0B95fa2A83Cbe3548",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_65abf7e978249cd09ab2b406",
+  "name": "KryptoKat2022",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihlckfgdekvemd24sf3s6z2oj7bheb45u5mkxuqeemhjkxzubz3dm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x91b277fC08CF10c6fAB3b58FeeACC885E3Fa0EB0",
+      "kind": "external"
+    }
+  ]
+}

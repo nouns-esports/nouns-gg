@@ -1,0 +1,14 @@
+{
+  "id": "pub_7427fbcb3aad3e6e0192d322",
+  "name": "miz",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiasq75inj6yhj53h4tjyxglf26elpsg36da56t5bf3bdtbtzl6zpq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6B7B6C5837331d7b5A2D927c2CdcC63e5d79Ea2b",
+      "kind": "external"
+    }
+  ]
+}

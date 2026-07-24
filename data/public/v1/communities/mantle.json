@@ -1,0 +1,19 @@
+{
+  "id": "community:mantle",
+  "handle": "mantle",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigqggcql4c7iynvf6xejewfgnvm36jgbnc2e44swrmm6wffc3636i",
+  "name": "Mantle",
+  "levels": null,
+  "points": null,
+  "description": null,
+  "parentUrl": null,
+  "details": null,
+  "featured": true,
+  "createdAt": "2025-07-20T01:50:10.707Z",
+  "hasRounds": true,
+  "hasQuests": false,
+  "hasPredictions": false,
+  "hasEvents": false,
+  "hasLeaderboard": true,
+  "hasShop": false
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_e6f18e06c29007b54ed17118",
+  "name": "Aurora",
+  "image": "https://pbs.twimg.com/profile_images/1800955091790217216/OwqHLeKm_normal.jpg",
+  "bio": "Top 1 Piggy Speedrunner",
+  "twitter": {
+    "username": "AurwhoraSrc",
+    "name": "Aurora",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1800955091790217216/OwqHLeKm_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7f23b496a600F59b264494d5f4D58Ca75592b70D",
+      "kind": "external"
+    }
+  ]
+}

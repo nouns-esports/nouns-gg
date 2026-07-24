@@ -1,0 +1,18 @@
+{
+  "id": "pub_3d024f6af4dd2767260f6d7c",
+  "name": "RobloxGamer",
+  "image": "https://pbs.twimg.com/profile_images/1685797047012884480/rqG6XxqY_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "RobloxG77",
+    "name": "RobloxGamer",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1685797047012884480/rqG6XxqY_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xbb902547a489ab307f5999c6c565d58ca11c6570",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_4be1f0c87d416bf9a77e997a",
+  "name": "cmej87yw",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicio2c5i4ryl3hdgqwwvr67z45gyeik6hs7lcg6cqulrhn2e6t72m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xFc27B375fAf1FBd3F3462044Cf810082F042a45B",
+      "kind": "external"
+    }
+  ]
+}

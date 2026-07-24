@@ -1,0 +1,18 @@
+{
+  "id": "pub_d44230f3a0c9fd7dcbb5fc61",
+  "name": "Tea H",
+  "image": "https://pbs.twimg.com/profile_images/1787217392554090496/UhYXFMHY_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "moth_ssbm",
+    "name": "Tea H",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1787217392554090496/UhYXFMHY_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8d9D95Bb924e43E6c0B459a9f71F29d492b90e10",
+      "kind": "external"
+    }
+  ]
+}

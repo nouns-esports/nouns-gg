@@ -1,0 +1,14 @@
+{
+  "id": "pub_35f0b41d5dbd3ea58ec06ee1",
+  "name": "meemix 666",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=buukrg&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7f50AEe42FA63c2Bd1c3Ff4Ba2c88a551050D5Da",
+      "kind": "external"
+    }
+  ]
+}

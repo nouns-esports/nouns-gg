@@ -1,0 +1,179 @@
+{
+  "id": "event:ssb-montreal:quebecup-2025",
+  "handle": "quebecup-2025",
+  "name": "Québecup 2025",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeig72ruk37oa6fnenfuaajh5exbqhjxzmyjpz6ujyqrtzz3v3ewa6m",
+  "description": "Québecup is one of Montréal's biggest smash tournaments featuring Melee, Ultimate and Project+.",
+  "createdAt": "2025-10-04T19:00:00.000Z",
+  "start": "2025-10-04T19:00:00.000Z",
+  "end": "2025-10-05T08:00:00.000Z",
+  "active": false,
+  "featured": false,
+  "callToAction": {
+    "disabled": false,
+    "label": "Register",
+    "url": "https://www.start.gg/tournament/qu-becup-2025/register"
+  },
+  "location": {
+    "name": "Montreal, Quebec",
+    "url": "https://maps.app.goo.gl/v6pG5LBo8TmoANpg6"
+  },
+  "details": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Québecup is one of Montréal's biggest smash tournaments featuring Melee, Ultimate and Project+. We will also be offering really good carpool deals and discounts, such as 10$ for each player in a carpool of 3-4+ and a 30-50$ gas rebate to the drivers.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Who's Attending",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Hungrybox, MOF, Salt, Zamu, Chickenman400, Dawson, Faust, Stavino, Inky, Lunar Dusk, Squid, Kage and more",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Livestream",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "It will be streamed but i'm not sure on which channel yet!",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Additional Info",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Pricing will go as is:",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Early Bird | July 1st - 14th: $50.00 CAD",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Normal | July 15th - September 1st: $60.00 CAD",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Late | September 2nd - 20th: $75.00 CAD",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Last Second | September 21st - 30th: $90.00 CAD",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "attendeeCount": 315,
+  "community": {
+    "id": "community:ssb-montreal",
+    "handle": "ssb-montreal",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreicbg2sx7xqzdubmvidja2n33twzdtwwhtuksfumyta4d2xxs6xt3a",
+    "name": "SSB Montreal",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": false
+  }
+}

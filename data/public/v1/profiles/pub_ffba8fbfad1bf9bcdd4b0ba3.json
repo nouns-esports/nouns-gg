@@ -1,0 +1,18 @@
+{
+  "id": "pub_ffba8fbfad1bf9bcdd4b0ba3",
+  "name": "ruohan",
+  "image": "https://pbs.twimg.com/profile_images/1594493436643655683/OqBuneLM_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ro_liuu",
+    "name": "ruohan",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1594493436643655683/OqBuneLM_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB3552F11f78ccE4A7A844c29A8419d32eC48981f",
+      "kind": "external"
+    }
+  ]
+}

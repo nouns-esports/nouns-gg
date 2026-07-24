@@ -1,0 +1,18 @@
+{
+  "id": "pub_173d0fe3e3c59ed9af718762",
+  "name": "socxld",
+  "image": "https://pbs.twimg.com/profile_images/1913352547068215296/LwDRQHHR_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "socxlddd",
+    "name": "socxld",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1913352547068215296/LwDRQHHR_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf8D3B9D85e60Ae610da8E9F0B65a5dEF3e19E3e0",
+      "kind": "external"
+    }
+  ]
+}

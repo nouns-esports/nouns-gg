@@ -1,0 +1,23 @@
+{
+  "id": "pub_04f7ff6595630cf5309fb2b3",
+  "name": "Shashwat",
+  "image": "https://pbs.twimg.com/profile_images/1465884864016756738/I7PTZE04_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Schmeez__",
+    "name": "Shashwat",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1465884864016756738/I7PTZE04_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x23D3D5DA30b04771f82E87BFa7FF430088025cb5",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x6d887466b2Ea73B82A555dAd2f59Ed888A8FFaAE",
+      "kind": "external"
+    }
+  ]
+}

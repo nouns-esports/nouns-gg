@@ -1,0 +1,14 @@
+{
+  "id": "pub_407251d9a68db52cd38d57ef",
+  "name": "PLUTO'S NFT ",
+  "image": "https://ipfs.nouns.gg/ipfs/QmaV3n3FTozifD3kJG6TjbvgJXWQ4zFJGJJzSSVtX9nCfn",
+  "bio": "CEO of @PLUTOSNFT telegram dao",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2B3eFD6D250Ea76e3A603fdf15F9e254FC5a3D68",
+      "kind": "external"
+    }
+  ]
+}

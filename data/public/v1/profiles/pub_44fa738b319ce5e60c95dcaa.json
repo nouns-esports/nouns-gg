@@ -1,0 +1,14 @@
+{
+  "id": "pub_44fa738b319ce5e60c95dcaa",
+  "name": "Yaboibizzy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieel5cfzpqubdyuxiamsilq6matpgsbbxbtp3j6uybebf5k4ykmcu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd5c571d6713a27628FE9E3C84209624e44F4f21E",
+      "kind": "external"
+    }
+  ]
+}

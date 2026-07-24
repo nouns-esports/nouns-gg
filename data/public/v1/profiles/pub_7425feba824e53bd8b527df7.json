@@ -1,0 +1,14 @@
+{
+  "id": "pub_7425feba824e53bd8b527df7",
+  "name": "jayxvee",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=n87rsi&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1ffD639A6E26Da0E8b2a1Bd6caD1E910739e6Ec7",
+      "kind": "external"
+    }
+  ]
+}

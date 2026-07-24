@@ -1,0 +1,14 @@
+{
+  "id": "pub_5d1157961707fefb40640931",
+  "name": "cm9aso15",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibawc6fjpblduxjlsqezlcb37lvht7lykmezp624j4ycotef7tpqe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1FCf9A9D40f2F47C0F4c308Fd8852C945BC7ad9E",
+      "kind": "external"
+    }
+  ]
+}

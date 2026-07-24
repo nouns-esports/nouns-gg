@@ -1,0 +1,23 @@
+{
+  "id": "pub_0f1214628e753db3887c07c9",
+  "name": "peachie daydream",
+  "image": "https://pbs.twimg.com/profile_images/1923343313245233153/5P0E6l_b_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "pea_daydream",
+    "name": "peachie daydream",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923343313245233153/5P0E6l_b_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc53DCAcEBB54Bb48bA5E12Ba28b7994bfB83BdF7",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xe6129634078f0d8067dA91a909be2B0909E610FE",
+      "kind": "external"
+    }
+  ]
+}

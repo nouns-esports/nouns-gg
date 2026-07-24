@@ -1,0 +1,14 @@
+{
+  "id": "pub_32f4d953f1a0d9394469f65c",
+  "name": "PDiddy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidxb2a2ztjvfzfezsqszkmeuek3wo4tk7t2lvhcblewbefbkv6pta",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x61d9d31754e6d6c940745597406a642c55097f73",
+      "kind": "external"
+    }
+  ]
+}

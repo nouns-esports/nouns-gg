@@ -1,0 +1,18 @@
+{
+  "id": "pub_e5e80097034e796759ce246e",
+  "name": "Carol Clark",
+  "image": "https://pbs.twimg.com/profile_images/1947576064370257920/FdsVhB6j_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "CarolClark87876",
+    "name": "Carol Clark",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947576064370257920/FdsVhB6j_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3E0766d9B61DeEcdC9953aa1C1aeb7A13407970F",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_24adc47e637b8fb99886d735",
+  "name": "MetaMú.⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1820522188396797953/F7VPwrWL_normal.jpg",
+  "bio": "I'm here because you built it and they came...",
+  "twitter": {
+    "username": "MetaM00",
+    "name": "MetaMú.⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1820522188396797953/F7VPwrWL_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2d9cBC4ECFBd1B8F66Aa798FD51585AE058dAA8B",
+      "kind": "external"
+    }
+  ]
+}

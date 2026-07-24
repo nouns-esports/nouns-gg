@@ -1,0 +1,18 @@
+{
+  "id": "pub_61c01222d321e32177f9e943",
+  "name": "Not Till 4",
+  "image": "https://pbs.twimg.com/profile_images/1841369383974649856/GfYl2MgT_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "NotTill_4",
+    "name": "Not Till 4",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1841369383974649856/GfYl2MgT_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x36A871442B170Dd0Da0916B31bC3B014Fba668d0",
+      "kind": "external"
+    }
+  ]
+}

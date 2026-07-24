@@ -1,0 +1,78 @@
+{
+  "id": "product:nouns-gg:polymath-shorts-soft-grey",
+  "handle": "polymath-shorts-soft-grey",
+  "name": "Polymath Shorts - Soft Grey",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": "dopamine",
+  "variants": [
+    {
+      "id": "variant:1006b587-be04-4763-8819-5f54a71e01b9",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:ea88eab0-075b-499a-8426-23cf86162636",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:aaa9c2b0-8e67-44a8-94f4-daba03a42e6b",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeigkdqkqekyou4xh3mn3ujimrtqgwtrdvbvy3o5gti5tyvgtd7cbcq"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:0b06534d-202b-475b-897c-1f70f021d1fc",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:d9cc2098-a8c5-4cc8-a1e0-2d8e105a445a",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    }
+  ]
+}

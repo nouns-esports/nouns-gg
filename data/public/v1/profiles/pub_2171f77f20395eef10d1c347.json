@@ -1,0 +1,18 @@
+{
+  "id": "pub_2171f77f20395eef10d1c347",
+  "name": "SirTaco",
+  "image": "https://pbs.twimg.com/profile_images/1791678559376887808/22YMGCwM_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "SSBM_SirTaco",
+    "name": "SirTaco",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1791678559376887808/22YMGCwM_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7ac5019FecCCF250929E9c707eEd262A4C86B39d",
+      "kind": "external"
+    }
+  ]
+}

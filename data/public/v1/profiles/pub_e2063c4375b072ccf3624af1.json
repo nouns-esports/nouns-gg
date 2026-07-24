@@ -1,0 +1,14 @@
+{
+  "id": "pub_e2063c4375b072ccf3624af1",
+  "name": "Soda",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibnezn5llk4snpqlykhlpty2reh2fzefhjn7ejmbm45wkdwzghrc4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x24545CB85EE597d9eCDE781D279b3A43f12C77eC",
+      "kind": "external"
+    }
+  ]
+}

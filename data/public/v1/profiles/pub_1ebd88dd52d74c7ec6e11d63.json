@@ -1,0 +1,14 @@
+{
+  "id": "pub_1ebd88dd52d74c7ec6e11d63",
+  "name": "Yudho",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaemtnfng2apebimxb2motb4zykljvnkvf6c3tylscdokfhhzuy3m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8142519C843F53419c74aD8825aeAa3e167ed12b",
+      "kind": "external"
+    }
+  ]
+}

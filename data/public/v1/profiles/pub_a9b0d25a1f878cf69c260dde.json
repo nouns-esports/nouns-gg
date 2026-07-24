@@ -1,0 +1,14 @@
+{
+  "id": "pub_a9b0d25a1f878cf69c260dde",
+  "name": "Very Apriyatno Official",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibquib4szohqvffoynzmdbosjjglvcecawtfweeii5y5446qyb2si",
+  "bio": "Official Account \"Veri Apriyatno\" (Master of realistic)",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7DcFf286f8E45b9A5c31Bb990c0007d4EE5f7Ec0",
+      "kind": "external"
+    }
+  ]
+}

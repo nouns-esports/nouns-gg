@@ -1,0 +1,18 @@
+{
+  "id": "pub_6ab634e08405c3db8982b0a6",
+  "name": "Al Toe",
+  "image": "https://pbs.twimg.com/profile_images/1792209334887219200/rSPGf_KA_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "toe_al6244",
+    "name": "Al Toe",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1792209334887219200/rSPGf_KA_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x309B894662319294746C5043dEf02aBfb34B5A06",
+      "kind": "external"
+    }
+  ]
+}

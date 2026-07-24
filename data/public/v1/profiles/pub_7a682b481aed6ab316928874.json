@@ -1,0 +1,14 @@
+{
+  "id": "pub_7a682b481aed6ab316928874",
+  "name": "ishan",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihvovupf5vkmibfq3swijzkkmd2qqvf7dlcq2hvcbwrx5og74ytqe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6956f030d8DD105a5422Ba7809Afc28e697A8e12",
+      "kind": "external"
+    }
+  ]
+}

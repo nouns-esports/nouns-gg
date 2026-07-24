@@ -1,0 +1,14 @@
+{
+  "id": "pub_88a5734797fd74fa3168ca83",
+  "name": "cmdnd24h",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib4qwy77sesqiu2zgp5qu4ddd66vknvqonsuzk4lodgfmfgtxbx3y",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC2d46Da9F3A73C8d313b258058078eD9B9A6165E",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "id": "product:nouns-gg:tipped-off-hoodie",
+  "handle": "tipped-off-hoodie",
+  "name": "Tipped Off Hoodie",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:tipped-off-16",
+  "collectionHandle": "tipped-off-16",
+  "variants": [
+    {
+      "id": "variant:fda8a6ad-3e46-4146-8edd-a8568220d9ce",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#1A1F28",
+        "name": "Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:8a94bd62-493a-4610-963c-784bdf054846",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#322620",
+        "name": "Dark Chocolate"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:a906f72e-e289-4b85-a832-11514a1caf0a",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#555B68",
+        "name": "Heather Sport Dark Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:05ae32f3-d795-4256-b03e-fd8c476e7d67",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#1A1F28",
+        "name": "Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:228a3db1-1d9b-4229-a533-7c42ee007d9f",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#1A1F28",
+        "name": "Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:499229b0-6d3c-48f1-8ec7-c536491aa835",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#555B68",
+        "name": "Heather Sport Dark Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:39f61b70-7df3-46ea-828c-ea327c37583c",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+      ],
+      "size": "3xl",
+      "color": {
+        "hex": "#555B68",
+        "name": "Heather Sport Dark Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:34b49e1c-8c4e-48a5-8bdf-5c37dce5c541",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#1A1F28",
+        "name": "Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:e349771a-ed2b-4fb0-8e46-e377e5da216a",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#1A1F28",
+        "name": "Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:8ca059ee-b1bd-4b8d-a253-b111e40761eb",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+      ],
+      "size": "3xl",
+      "color": {
+        "hex": "#1A1F28",
+        "name": "Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:e860ac12-1726-4b5b-831d-3eb874e64a8a",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+      ],
+      "size": "4xl",
+      "color": {
+        "hex": "#1A1F28",
+        "name": "Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:af23b5c0-498b-4d91-a1a9-3bedf04258c9",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+      ],
+      "size": "5xl",
+      "color": {
+        "hex": "#1A1F28",
+        "name": "Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:e9b74e99-9e43-410d-9755-a9aecc3fa8f9",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#555B68",
+        "name": "Heather Sport Dark Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:a06f1329-1323-4b8f-aa9f-15129594c941",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#555B68",
+        "name": "Heather Sport Dark Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:033288e3-d29e-4232-814c-174f637611d0",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+      ],
+      "size": "3xl",
+      "color": {
+        "hex": "#72765B",
+        "name": "Military Green"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:d2ce95ae-de56-43ba-9a5a-5dd4b60fc64e",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+      ],
+      "size": "5xl",
+      "color": {
+        "hex": "#72765B",
+        "name": "Military Green"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:2512629e-f36e-4401-b096-c8f4cc7ce713",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#72765B",
+        "name": "Military Green"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:58afd4e4-ebd8-480c-a423-7cb10b10eaca",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#72765B",
+        "name": "Military Green"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:5af77825-87b2-40d9-9491-46ac5a0816bd",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#72765B",
+        "name": "Military Green"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:fc56aedb-9285-4b9a-b6ec-5e9862c75cd9",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#72765B",
+        "name": "Military Green"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:60f51b87-7bad-4a5f-8b93-ee2f2c68718d",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#72765B",
+        "name": "Military Green"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:13d8474d-26d4-4b52-ba53-02d10dfb5f1a",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#322620",
+        "name": "Dark Chocolate"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:7e97d918-f66e-4ddb-9267-32defdafe262",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#322620",
+        "name": "Dark Chocolate"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:6c51c4db-0630-48ce-b491-4fb6d54639ee",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#322620",
+        "name": "Dark Chocolate"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:f0f9d3a7-8ee1-489d-8155-f26a5179a19f",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#322620",
+        "name": "Dark Chocolate"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:0a362e84-77e7-4a73-a434-cbc53667631b",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+      ],
+      "size": "3xl",
+      "color": {
+        "hex": "#322620",
+        "name": "Dark Chocolate"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:7736435f-b829-4f27-9ec7-93519f4b32bb",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#555B68",
+        "name": "Heather Sport Dark Navy"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:1353dedc-30ef-4171-827e-fdd7183ab93e",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+      ],
+      "size": "4xl",
+      "color": {
+        "hex": "#72765B",
+        "name": "Military Green"
+      },
+      "price": "35.00",
+      "inventory": null
+    }
+  ]
+}

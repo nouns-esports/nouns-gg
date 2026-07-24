@@ -1,0 +1,18 @@
+{
+  "id": "pub_cb100a9f456e652a1ef5a3ed",
+  "name": "MattTaylorLoL",
+  "image": "https://pbs.twimg.com/profile_images/1866591595602083840/NkLhIDif_normal.jpg",
+  "bio": "Pickleball player for Nouns :D",
+  "twitter": {
+    "username": "MattTaylorLoL",
+    "name": "MattTaylorLoL",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1866591595602083840/NkLhIDif_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x94f88B353674B2AcC82A2Fec99c00764aE631F00",
+      "kind": "external"
+    }
+  ]
+}

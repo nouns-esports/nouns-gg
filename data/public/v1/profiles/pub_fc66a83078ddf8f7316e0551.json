@@ -1,0 +1,19 @@
+{
+  "id": "pub_fc66a83078ddf8f7316e0551",
+  "name": "Neon Nerve",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihaibpxp6g4ugr5dec5737523n32c3thvyghdtksyzhhgcr3cf44a",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd565daBb6b3Ced66b1EbF6554c78B354437e01A4",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x95210120B396476255282a2De0e9dEc6b7278CD1",
+      "kind": "external"
+    }
+  ]
+}

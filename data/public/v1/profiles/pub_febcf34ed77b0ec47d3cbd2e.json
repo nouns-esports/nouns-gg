@@ -1,0 +1,23 @@
+{
+  "id": "pub_febcf34ed77b0ec47d3cbd2e",
+  "name": "ta Cami",
+  "image": "https://pbs.twimg.com/profile_images/1922482456998842368/QcWDv055_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "nguyentuanh1991",
+    "name": "ta Cami",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922482456998842368/QcWDv055_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x19057e1caF7d1f93e6570D40dCF012a893119145",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x8AA482d77357a7EF0803Dd616EaC16787D882843",
+      "kind": "external"
+    }
+  ]
+}

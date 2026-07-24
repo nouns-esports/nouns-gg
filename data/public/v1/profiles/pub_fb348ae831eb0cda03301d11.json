@@ -1,0 +1,23 @@
+{
+  "id": "pub_fb348ae831eb0cda03301d11",
+  "name": "ozone.fxr",
+  "image": "https://pbs.twimg.com/profile_images/1923314435407704065/ibq8rCrV_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ozonefxr",
+    "name": "ozone.fxr",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923314435407704065/ibq8rCrV_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x153667397DF44Ba45D2cF278F38E52Ea18925a68",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x701d239166d8C33cA4329e79E4875f05CFeb77eB",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_4a1e8c68b4e23d4b4141e4fd",
+  "name": "Spunky",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiatxycpmgn6zcrhhn5e5pblnnqp7ihr4vizghnjsig4z62yiump3a",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3CAc459bC83500e23614cDFdD6aBBB3891BCE2b8",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x4Ced51611e034b9E9CCEe7A97e39a2aD9b1Ef278",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "round:nouns-gg:reward-the-nounish",
+  "handle": "reward-the-nounish",
+  "name": "Reward the Nounish (EOY Award Show) ❄️⛄",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeibgapwacasclazhb7kwaqrvfhoqzc32iiwq6mytblswr7dvozlon4",
+  "active": true,
+  "type": "markdown",
+  "featured": true,
+  "xp": {
+    "winning": 0,
+    "castingVotes": 250,
+    "receivingVotes": 5,
+    "creatingProposal": 500
+  },
+  "content": "{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 14px;\",\"text\":\"Nouns EOY Award Show aims to highlight Nounishness and spread festive cheer amongst our society. Each day from December 27-31 the race leader will be rewarded a Noun, and the show goes on. By midnight on December 31st all five Nouns will have found a new home in the community.\",\"type\":\"text\",\"version\":1}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"font-size: 14px;\"}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}",
+  "description": null,
+  "createdAt": "2025-12-23T03:24:43.316Z",
+  "start": "2025-12-23T03:24:43.316Z",
+  "votingStart": "2025-12-27T11:00:00.000Z",
+  "end": "2026-01-01T11:00:00.000Z",
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null
+}

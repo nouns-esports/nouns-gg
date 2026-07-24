@@ -1,0 +1,18 @@
+{
+  "id": "pub_68de1ee88e2bf06284dbac69",
+  "name": "gtsb",
+  "image": "https://pbs.twimg.com/profile_images/1819773055784361984/B--pbbml_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "nounsgg",
+    "name": "gtsb",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1819773055784361984/B--pbbml_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x87a0Dee820326C2CAcbB37F54FF849Db5fd3A5f9",
+      "kind": "external"
+    }
+  ]
+}

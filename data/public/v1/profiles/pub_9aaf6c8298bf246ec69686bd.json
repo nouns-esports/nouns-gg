@@ -1,0 +1,18 @@
+{
+  "id": "pub_9aaf6c8298bf246ec69686bd",
+  "name": "Daniel Unchained",
+  "image": "https://pbs.twimg.com/profile_images/1911994363598508032/G6vPhDot_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "UnchainedDaniel",
+    "name": "Daniel Unchained",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1911994363598508032/G6vPhDot_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xCC5339fe232c98Ccf5Ac79a6F6d07d5A08273226",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pub_a8b1431ad498bd65afa7f748",
+  "name": "tanguyen",
+  "image": "https://pbs.twimg.com/profile_images/1923014014520655874/R3BdC1v8_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "tanguyen44",
+    "name": "tanguyen",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923014014520655874/R3BdC1v8_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe263908C3D1804E0382493206D3DaFbE3aebCD1D",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xe430bEdE28983E8F4305A9A3bB7A69f9454c9566",
+      "kind": "external"
+    }
+  ]
+}

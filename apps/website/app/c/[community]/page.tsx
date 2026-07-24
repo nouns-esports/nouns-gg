@@ -7,11 +7,10 @@ import RoundCard from "@/components/RoundCard";
 import { getRounds } from "@/server/queries/rounds";
 import { getQuests } from "@/server/queries/quests";
 import { getPredictions } from "@/server/queries/predictions";
-import { getAuthenticatedUser } from "@/server/queries/users";
 import EventCard from "@/components/EventCard";
 import { getEvents } from "@/server/queries/events";
 import PredictionCard from "@/components/PredictionCard";
-import { getLeaderboard, getRank } from "@/server/queries/leaderboard";
+import { getLeaderboard } from "@/server/queries/leaderboard";
 import { level } from "@/utils/level";
 import { ToggleModal } from "@/components/Modal";
 import { Info } from "lucide-react";
@@ -21,6 +20,11 @@ import { getProducts } from "@/server/queries/shop";
 import ProductCard from "@/components/ProductCard";
 import { getRaffles } from "@/server/queries/raffles";
 import RaffleCard from "@/components/RaffleCard";
+import { communityParams } from "@/server/data/params";
+
+export function generateStaticParams() {
+	return communityParams;
+}
 
 export default async function Community(props: {
 	params: Promise<{ community: string }>;
@@ -31,10 +35,7 @@ export default async function Community(props: {
 	const params = await props.params;
 	const searchParams = await props.searchParams;
 
-	const [community, user] = await Promise.all([
-		getCommunity({ handle: params.community }),
-		getAuthenticatedUser(),
-	]);
+	const community = await getCommunity({ handle: params.community });
 
 	if (!community) {
 		return notFound();
@@ -70,16 +71,14 @@ export default async function Community(props: {
 	] = await Promise.all([
 		tab === "rounds" ? getRounds({ community: community.id }) : [],
 		tab === "quests"
-			? getQuests({ community: community.id, user: user?.id })
+			? getQuests({ community: community.id })
 			: [],
 		tab === "predictions"
-			? getPredictions({ community: community.id, user: user?.id, limit: 40 })
+			? getPredictions({ community: community.id, limit: 40 })
 			: [],
 		tab === "events" ? getEvents({ community: community.id }) : [],
 		tab === "leaderboard" ? getLeaderboard({ community: community.id }) : [],
-		tab === "leaderboard" && user
-			? getRank({ user: user.id, community: community.id })
-			: undefined,
+		undefined as any,
 		tab === "shop" ? getProducts({ community: community.id }) : [],
 		tab === "shop" ? getRaffles({ community: community.id }) : [],
 	]);

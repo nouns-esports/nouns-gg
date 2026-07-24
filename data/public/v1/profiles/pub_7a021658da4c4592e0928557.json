@@ -1,0 +1,14 @@
+{
+  "id": "pub_7a021658da4c4592e0928557",
+  "name": "cmdtenl1",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiazblpgpit6lbxlqiw62qqtfuksfavqkpg55cajqaxfjyktqxjl3u",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xDa4f7148f87435314f9Ca7d7EfECBcA03D85D02B",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_f67e470a5e0b6a413cf9651d",
+  "name": "SolBuyer",
+  "image": "https://pbs.twimg.com/profile_images/1947424148780695552/4hRDdPZo_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "buyer_sol_",
+    "name": "SolBuyer",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947424148780695552/4hRDdPZo_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x22Ae2152c6b55866d177BEB9112110dD8F432ab3",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_9056af7cb16cee97661fadd6",
+  "name": "Dlim DD",
+  "image": "https://pbs.twimg.com/profile_images/1841977178487193601/idZ88haj_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "DlimDhady",
+    "name": "Dlim DD",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1841977178487193601/idZ88haj_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb22d2978e7c8948cB680E289939d134F55501F13",
+      "kind": "external"
+    }
+  ]
+}

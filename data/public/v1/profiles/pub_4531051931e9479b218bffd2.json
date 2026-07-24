@@ -1,0 +1,18 @@
+{
+  "id": "pub_4531051931e9479b218bffd2",
+  "name": "Mario Hackney",
+  "image": "https://pbs.twimg.com/profile_images/1787882912668655616/8Nl4s3th_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "MarioTheLatino",
+    "name": "Mario Hackney",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1787882912668655616/8Nl4s3th_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5E3244EcF7C40604a937422Ec6F2517576f1e3e6",
+      "kind": "external"
+    }
+  ]
+}

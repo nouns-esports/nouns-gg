@@ -1,0 +1,18 @@
+{
+  "id": "pub_7f5fa9ba1c12d9a25fb1616d",
+  "name": "CGCKS",
+  "image": "https://pbs.twimg.com/profile_images/1904103806214045696/8A1ao0lr_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "CrossGuildCKS",
+    "name": "CGCKS",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1904103806214045696/8A1ao0lr_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x183510159D209692481E633930b1d0db4Af27A64",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_c047379129e4aee93a172de2",
+  "name": "_clement_⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1838203618991783936/ETx4X4-j_normal.jpg",
+  "bio": "just on lfg vibes",
+  "twitter": {
+    "username": "cn47006",
+    "name": "_clement_⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1838203618991783936/ETx4X4-j_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf6343D7d517635B4562211F87006d4C129D596BF",
+      "kind": "external"
+    }
+  ]
+}

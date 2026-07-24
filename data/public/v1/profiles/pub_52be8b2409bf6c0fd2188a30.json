@@ -1,0 +1,14 @@
+{
+  "id": "pub_52be8b2409bf6c0fd2188a30",
+  "name": "cmblg48h",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidwm2ca2qa5b5i47c2gvovgykfznieug44xuym5uybh62mvvaiwgu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x55Abb1b8359D7bff4Ba9352b411E5c0E03bEEf07",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_72726473d49de17a61818c94",
+  "name": "jason.ink (Ø,G) (✸,✸) ꧁IP꧂ ⌘",
+  "image": "https://pbs.twimg.com/profile_images/1912472778470469632/TNW5oR7h_normal.jpg",
+  "bio": "Developer and Creator",
+  "twitter": {
+    "username": "tigerdev68",
+    "name": "jason.ink (Ø,G) (✸,✸) ꧁IP꧂ ⌘",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1912472778470469632/TNW5oR7h_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3054e1986fe5faa920CFae137f711f66F82cDE07",
+      "kind": "external"
+    }
+  ]
+}

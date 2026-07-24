@@ -1,0 +1,43 @@
+{
+  "id": "prediction:chompix:chompix-esl-raleigh-zero-deaths",
+  "handle": "chompix-esl-raleigh-zero-deaths",
+  "name": "Will a winning team have a hero with 0 deaths?",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+  "rules": {
+    "type": "doc",
+    "content": []
+  },
+  "xp": {
+    "winning": 300,
+    "predicting": 0
+  },
+  "prizePool": 0,
+  "closed": true,
+  "resolved": true,
+  "featured": false,
+  "createdAt": "2025-04-08T00:02:13.319Z",
+  "start": null,
+  "end": null,
+  "pool": "676.000000000000000000",
+  "totalBets": 24,
+  "community": {
+    "id": "community:chompix",
+    "handle": "chompix",
+    "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+    "name": "Chompix",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:chompix:chompix-esl-raleigh"
+}

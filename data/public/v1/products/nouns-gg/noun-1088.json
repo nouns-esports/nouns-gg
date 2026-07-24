@@ -1,0 +1,46 @@
+{
+  "id": "product:nouns-gg:noun-1088",
+  "handle": "noun-1088",
+  "name": "Noun #1088",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": false,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:3a8cc461-fbfa-4007-bc63-af1700398c9c",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreid6lvarw77hlsm6ihniqsy7kt5g6tncqredvyesjisvgq5x2z7nxi"
+      ],
+      "size": null,
+      "color": null,
+      "price": "3000.00",
+      "inventory": null
+    }
+  ]
+}

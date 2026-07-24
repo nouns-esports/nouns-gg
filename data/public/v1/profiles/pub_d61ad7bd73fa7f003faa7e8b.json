@@ -1,0 +1,14 @@
+{
+  "id": "pub_d61ad7bd73fa7f003faa7e8b",
+  "name": "ilustradora.eth",
+  "image": "https://ipfs.nouns.gg/ipfs/QmTXZHwypGiZwypyyA1QcFeoHWfoxGQtsQS2QR7bG9tTkr",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7ce294D2Bcb2dE76a15fcf7055b0B14253Dd3B33",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_2607f8acf6b0d9c72f2e0216",
+  "name": "cmdolhtk",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreielkij65bfmlzoxg5ot3xrhkeuykzrmnfwnn25ne5edmurrz5rpea",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x147eb928367FB359fd1e321d7f72E7A897939FC8",
+      "kind": "external"
+    }
+  ]
+}

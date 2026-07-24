@@ -1,0 +1,14 @@
+{
+  "id": "pub_1993d635b5a016593d90d96e",
+  "name": "Jakestudyos",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiant7xxto7gov3uwm7lsztozs56asxua5gofbamhkccc73qt6diyu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3CE1c91E33a0777a32C9b615908f3D9B8821aa07",
+      "kind": "external"
+    }
+  ]
+}

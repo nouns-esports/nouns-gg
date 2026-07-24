@@ -1,0 +1,28 @@
+{
+  "id": "pub_42d02b17791d06a9c62d584f",
+  "name": "Mr. Lasagne",
+  "image": "https://pbs.twimg.com/profile_images/1798028604594323456/f6i7YJ28_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "xboxlasagne",
+    "name": "Mr. Lasagne",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1798028604594323456/f6i7YJ28_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xF4dcbFC19E3C63918ce4413fC03DE643740F91F1",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x0aC67543feDdA8Ac1238964a610ebE69bf140247",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x9F4cd4a0FD4C47032533fB4bC2ad76fc74bEE09B",
+      "kind": "external"
+    }
+  ]
+}

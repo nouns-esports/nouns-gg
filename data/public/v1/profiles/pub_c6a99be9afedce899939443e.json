@@ -1,0 +1,23 @@
+{
+  "id": "pub_c6a99be9afedce899939443e",
+  "name": "Mukhlis AbsArt",
+  "image": "https://pbs.twimg.com/profile_images/1759624703537520641/bwSRHFvJ_normal.jpg",
+  "bio": "NFT artist independent.\nYour biggest enemy is yourself..\n\nhttps://www.mukhlis.xyz/",
+  "twitter": {
+    "username": "absart6",
+    "name": "Mukhlis AbsArt",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1759624703537520641/bwSRHFvJ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xbD856773c538368eB6e58037CD36095adf909b73",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x93F73f1434DaA5bD8722B62b7aa0BBBD563817E0",
+      "kind": "external"
+    }
+  ]
+}

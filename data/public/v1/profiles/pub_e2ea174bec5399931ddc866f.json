@@ -1,0 +1,14 @@
+{
+  "id": "pub_e2ea174bec5399931ddc866f",
+  "name": "cmdklohg",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifoi624pm3b7kbkwrnrfhuhhrgy6psxjaf4lpyo5v4g6mrn2dizra",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x68C5d71505153008a5c478A8313aD47424563f06",
+      "kind": "external"
+    }
+  ]
+}

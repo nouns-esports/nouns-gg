@@ -1,0 +1,14 @@
+{
+  "id": "pub_158acc0a4b872fbd92469268",
+  "name": "Jinwoo",
+  "image": "https://ipfs.nouns.gg/ipfs/QmZg17PBmcoJXNh7veNXf193KbxQ3ooyfyW3oWAFConESC",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1940E5c06d6f66571A210E34a04f853AEd388b69",
+      "kind": "external"
+    }
+  ]
+}

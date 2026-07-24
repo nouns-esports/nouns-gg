@@ -1,0 +1,19 @@
+{
+  "id": "pub_b2c7310b375b876bc477c6e2",
+  "name": "SassySprocket",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicyr54yw72ca6wuygj2e3rw74d7cp4tgbn4e6xcmy2vc7mzw7egmq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC8a0AedEC6df0Cd5Bb3E6637E23454Eee9237476",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x8f866Bf10Eed5a659Bd6C6e96F8336A1a83A98f1",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_b0b7795327775ea9dd1d9313",
+  "name": "Swarthy ( Timo ) Hatter",
+  "image": "https://pbs.twimg.com/profile_images/1982642152736788480/YNeS6q03_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "SwarthyHatter",
+    "name": "Swarthy ( Timo ) Hatter",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1982642152736788480/YNeS6q03_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4D16FCE1BD6E327AE31398CE9A2c4E12C077ecB1",
+      "kind": "external"
+    }
+  ]
+}

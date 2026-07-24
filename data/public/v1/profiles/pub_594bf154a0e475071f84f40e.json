@@ -1,0 +1,18 @@
+{
+  "id": "pub_594bf154a0e475071f84f40e",
+  "name": "SΔM (💜,🏛️) 🍳",
+  "image": "https://pbs.twimg.com/profile_images/1926706459141627904/vthG3uoS_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "xparser_",
+    "name": "SΔM (💜,🏛️) 🍳",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1926706459141627904/vthG3uoS_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8faDeB8e6E7CDe7e5b4c8a575Ca78E6407375a1C",
+      "kind": "external"
+    }
+  ]
+}

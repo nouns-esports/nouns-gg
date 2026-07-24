@@ -1,0 +1,18 @@
+{
+  "id": "pub_b5d70730aa0a4ad1abe47f30",
+  "name": "0xDiablö☠️🧛",
+  "image": "https://pbs.twimg.com/profile_images/1870032760754020352/ykqIxxHI_normal.jpg",
+  "bio": "I am a Digital Artist, Music Producer, Thespian and web3 enthusiast.\n\nHappy to connect.",
+  "twitter": {
+    "username": "thegr8liberat0r",
+    "name": "0xDiablö☠️🧛",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1870032760754020352/ykqIxxHI_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa4766930cc0B134b1eef868aC760652D495287D0",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pub_9e8457c49c82511bc2e9af7a",
+  "name": "KRUSH",
+  "image": "https://pbs.twimg.com/profile_images/1836216030311366656/unzqamzq_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "krushenit",
+    "name": "KRUSH",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1836216030311366656/unzqamzq_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0467CB52236315772d0F5D655F65B36462f5be1b",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x3D8250Ac679dcfd1E90c29E7a64AB5013645E579",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_911f925a3db9fab4dd77edc7",
+  "name": "netnose",
+  "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/92dbfd6c-c580-45be-3bee-71f0d7432500/original",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4D1FD46F87449Ffe235e3fce21DF8A9bF8BD9206",
+      "kind": "external"
+    }
+  ]
+}

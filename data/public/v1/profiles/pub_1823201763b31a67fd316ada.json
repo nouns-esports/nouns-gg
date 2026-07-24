@@ -1,0 +1,23 @@
+{
+  "id": "pub_1823201763b31a67fd316ada",
+  "name": "Tú Anh Nguyễn",
+  "image": "https://pbs.twimg.com/profile_images/1882391877745532928/JNiA-uRo_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ngta2511",
+    "name": "Tú Anh Nguyễn",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1882391877745532928/JNiA-uRo_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2144641aFC80F1e5b481613fFb86F0d2bd33c972",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xCAF50d59220286Ed8b1bE65718145F6c16c50E89",
+      "kind": "external"
+    }
+  ]
+}

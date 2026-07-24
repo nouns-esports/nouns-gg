@@ -1,0 +1,18 @@
+{
+  "id": "pub_b7dbc27c1cb57dc1d03b65a8",
+  "name": "Anthony",
+  "image": "https://pbs.twimg.com/profile_images/1694680777479348224/mza4ebJP_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "chuumba",
+    "name": "Anthony",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1694680777479348224/mza4ebJP_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x516FFB1638F5bEa91800364d34378BDc5B2B386d",
+      "kind": "external"
+    }
+  ]
+}

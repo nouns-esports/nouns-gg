@@ -1,0 +1,19 @@
+{
+  "id": "pub_79971f436788d17de3e31666",
+  "name": "TwirlTangerine",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreia3s55sienu7rukoz6dr2fbaboadnsyyb355qceykm2zmwzoltomy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd7a0aE63e15cCb2C873fBA990a11FE498Db252Ea",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x72bF73F8C0340cE4D9828de97EEB6FDd453956dC",
+      "kind": "external"
+    }
+  ]
+}

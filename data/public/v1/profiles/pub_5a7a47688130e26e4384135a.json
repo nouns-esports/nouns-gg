@@ -1,0 +1,14 @@
+{
+  "id": "pub_5a7a47688130e26e4384135a",
+  "name": "domi",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiblrzwccmz32ojbh2oi7hixaawyip526gp7vchzzeruyg4hltl4ui",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2fdAf7fAD2775B8dE0273586111fFC3610F07c47",
+      "kind": "external"
+    }
+  ]
+}

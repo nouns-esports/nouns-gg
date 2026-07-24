@@ -1,0 +1,14 @@
+{
+  "id": "pub_762d65f69924d3d6b3d1ec59",
+  "name": "gem6911",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreie3j4g5a7i4bzfpj5mmuz62kpcyc7w25jdkqxx2i4cq5raeayvqwu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd640FcA2D954E32b473fCB452b244E38aF5dDB81",
+      "kind": "external"
+    }
+  ]
+}

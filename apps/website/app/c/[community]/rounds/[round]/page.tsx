@@ -3,26 +3,23 @@ import { notFound } from "next/navigation";
 import { ArrowLeft } from "phosphor-react-sc";
 import Proposals from "@/components/proposals/Proposals";
 import { twMerge } from "tailwind-merge";
-import { formatUnits, parseAbiItem } from "viem";
+import { formatUnits } from "viem";
 import type { Metadata } from "next";
 import { getRound } from "@/server/queries/rounds";
-import { getPriorVotes } from "@/server/queries/votes";
 import { numberToOrdinal } from "@/utils/numberToOrdinal";
-import { getAuthenticatedUser } from "@/server/queries/users";
-import { env } from "~/env";
+import { siteConfig } from "@/config";
 import RoundTimeline from "@/components/RoundTimeline";
 import Countup from "@/components/Countup";
 import { Gavel, Megaphone, TicketCheck, Users } from "lucide-react";
 import Markdown from "@/components/lexical/Markdown";
 import NavigateBack from "@/components/NavigateBack";
-import { getAction } from "@/server/actions";
-import RoundActionsModal from "@/components/modals/RoundActionsModal";
-import { db } from "~/packages/db";
-import { purchasedVotes, snapshots } from "~/packages/db/schema/public";
-import { and, eq, ilike, inArray, or, sql } from "drizzle-orm";
 import { isUUID } from "@/utils/isUUID";
 import { roundState } from "@/utils/roundState";
-import { viemClient } from "@/server/clients/viem";
+import { roundParams } from "@/server/data/params";
+
+export function generateStaticParams() {
+	return roundParams;
+}
 
 export async function generateMetadata(props: {
 	params: Promise<{ round: string; community: string }>;
@@ -52,7 +49,7 @@ export async function generateMetadata(props: {
 		: undefined;
 
 	const image = searchParams.user
-		? `${env.NEXT_PUBLIC_DOMAIN}/api/images/votes?user=${searchParams.user}&round=${round.handle}`
+		? round.image
 		: proposal?.image
 			? proposal.image
 			: round.image;
@@ -60,7 +57,7 @@ export async function generateMetadata(props: {
 	return {
 		title: proposal?.title ?? round.name,
 		description: null,
-		metadataBase: new URL(env.NEXT_PUBLIC_DOMAIN),
+		metadataBase: new URL(siteConfig.domain),
 		openGraph: {
 			type: "website",
 			images: [image],
@@ -79,7 +76,7 @@ export async function generateMetadata(props: {
 					action: {
 						type: "launch_frame",
 						name: "Nouns GG",
-						url: `${env.NEXT_PUBLIC_DOMAIN}/rounds/${round.handle}`,
+						url: `${siteConfig.domain}/rounds/${round.handle}`,
 						splashImageUrl:
 							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
 						splashBackgroundColor: "#040404",
@@ -143,17 +140,15 @@ export default async function Round(props: {
 	const params = await props.params;
 	const searchParams = await props.searchParams;
 
-	const user = await getAuthenticatedUser();
-
 	let round: Awaited<ReturnType<typeof getRound>> | undefined;
 
 	if (isUUID(params.round)) {
-		round = await getRound({ id: params.round, user: user?.id });
+		round = await getRound({ id: params.round, user: undefined });
 	} else {
 		round = await getRound({
 			handle: params.round,
 			community: params.community,
-			user: user?.id,
+			user: undefined,
 		});
 	}
 
@@ -162,13 +157,6 @@ export default async function Round(props: {
 	}
 
 	const state = roundState(round);
-
-	const priorVotes = user
-		? await getPriorVotes({
-				user: user.id,
-				round: round.id,
-			})
-		: 0;
 
 	const proposalActivity = round.proposals
 		.filter((proposal) => proposal.user)
@@ -203,295 +191,7 @@ export default async function Round(props: {
 			},
 		})) satisfies Activity[];
 
-	const proposingActions = user
-		? await Promise.all(
-				round.actions
-					.filter((action) => action.type === "proposing")
-					.map(async (actionState) => {
-						if (state === "Voting" || state === "Ended") {
-							return {
-								...actionState,
-								completed: false,
-							};
-						}
-
-						const action = getAction({
-							action: actionState.action,
-							plugin: actionState.plugin ?? "dash",
-						});
-
-						if (!action) {
-							throw new Error(`Action ${actionState.action} not found`);
-						}
-
-						return {
-							...actionState,
-							completed: await action.check({
-								user: user.nexus,
-								input: actionState.input,
-								community: round.community,
-							}),
-						};
-					}),
-			)
-		: [];
-
-	let allocatedVotes = 0;
-
-	const votingActions = user
-		? await Promise.all(
-				round.actions
-					.filter((action) => action.type === "voting")
-					.map(async (actionState) => {
-						if (state === "Proposing" || state === "Upcoming") {
-							return {
-								...actionState,
-								completed: false,
-							};
-						}
-
-						const action = getAction({
-							action: actionState.action,
-							plugin: actionState.plugin ?? "dash",
-						});
-
-						if (!action) {
-							throw new Error(`Action ${actionState.action} not found`);
-						}
-
-						const completed = await action.check({
-							user: user.nexus,
-							input: actionState.input,
-							community: round.community,
-						});
-
-						if (completed) {
-							allocatedVotes += actionState.votes;
-						}
-
-						return {
-							...actionState,
-							completed,
-						};
-					}),
-			)
-		: [];
-
-	if (user && state === "Voting") {
-		if (round.votingConfig?.mode === "leaderboard") {
-			const percentile =
-				user.nexus.leaderboards.find(
-					(leaderboard) => leaderboard.community.id === round.community.id,
-				)?.percentile ?? 1;
-
-			if (percentile <= 0.02) allocatedVotes += 10;
-			else if (percentile <= 0.05) allocatedVotes += 5;
-			else if (percentile <= 0.15) allocatedVotes += 3;
-			else allocatedVotes += 1;
-		}
-
-		if (round.votingConfig?.mode === "fixed") {
-			allocatedVotes += round.votingConfig.count;
-		}
-
-		if (round.votingConfig?.mode === "discord-roles") {
-			const account = user.nexus.accounts.find(
-				(account) => account.platform === "discord",
-			);
-
-			if (account) {
-				const serverRoles: Record<string, Record<string, number>> = {};
-
-				for (const role of round.votingConfig.roles) {
-					serverRoles[role.server] = {
-						...(serverRoles[role.server] ?? {}),
-						[role.id]: role.count,
-					};
-				}
-
-				for (const [server, roles] of Object.entries(serverRoles)) {
-					const memberResponse = await fetch(
-						`https://discord.com/api/guilds/${server}/members/${account.identifier}`,
-						{
-							headers: {
-								Authorization: `Bot ${env.DASH_DISCORD_TOKEN}`,
-								"Content-Type": "application/json",
-							},
-						},
-					);
-
-					if (memberResponse.ok) {
-						const data = (await memberResponse.json()) as { roles: string[] };
-
-						for (const role of data.roles) {
-							const requiredRole = roles[role];
-
-							if (requiredRole) {
-								allocatedVotes += requiredRole;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		if (round.votingConfig?.mode === "token-weight") {
-			for (const token of round.votingConfig.tokens) {
-				for (const wallet of user.wallets) {
-					if (token.type === "native") {
-						const client = viemClient(token.chain);
-
-						const balance = await client.getBalance({
-							address: wallet.address as `0x${string}`,
-							blockNumber: token.block ? BigInt(token.block) : undefined,
-						});
-
-						const balanceWithDecimals =
-							Number(balance) / 10 ** client.chain.nativeCurrency.decimals;
-
-						if (balanceWithDecimals < token.minBalance) continue;
-
-						allocatedVotes += Math.floor(
-							balanceWithDecimals / token.conversionRate,
-						);
-					}
-
-					if (token.type === "erc20") {
-						const client = viemClient(token.chain);
-
-						const balance = await client.readContract({
-							address: token.address as `0x${string}`,
-							abi: [
-								parseAbiItem(
-									"function balanceOf(address owner) view returns (uint256)",
-								),
-							],
-							functionName: "balanceOf",
-							blockNumber: token.block ? BigInt(token.block) : undefined,
-							args: [wallet.address as `0x${string}`],
-						});
-
-						const balanceWithDecimals = Number(balance) / 10 ** token.decimals;
-
-						if (balanceWithDecimals < token.minBalance) continue;
-
-						allocatedVotes += Math.floor(
-							balanceWithDecimals / token.conversionRate,
-						);
-					}
-
-					if (token.type === "erc721") {
-						const client = viemClient(token.chain);
-						const balance = await client.readContract({
-							address: token.address as `0x${string}`,
-							abi: [
-								parseAbiItem(
-									"function balanceOf(address owner) view returns (uint256)",
-								),
-							],
-							functionName: "balanceOf",
-							blockNumber: token.block ? BigInt(token.block) : undefined,
-							args: [wallet.address as `0x${string}`],
-						});
-
-						if (Number(balance) < token.minBalance) continue;
-
-						allocatedVotes += Math.floor(
-							Number(balance) / token.conversionRate,
-						);
-					}
-
-					if (token.type === "erc1155") {
-						const client = viemClient(token.chain);
-						const balance = await client.readContract({
-							address: token.address as `0x${string}`,
-							abi: [
-								parseAbiItem(
-									"function balanceOf(address owner, uint256 id) view returns (uint256)",
-								),
-							],
-							functionName: "balanceOf",
-							blockNumber: token.block ? BigInt(token.block) : undefined,
-							args: [wallet.address as `0x${string}`, BigInt(token.tokenId)],
-						});
-
-						if (Number(balance) < token.minBalance) continue;
-
-						allocatedVotes += Math.floor(
-							Number(balance) / token.conversionRate,
-						);
-					}
-
-					if (token.type === "nouns") {
-						const client = viemClient("mainnet");
-
-						const votes = await client.readContract({
-							address: "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03",
-							abi: [
-								parseAbiItem(
-									"function getCurrentVotes(address) view returns (uint96)",
-								),
-							],
-							functionName: "getCurrentVotes",
-							blockNumber: token.block ? BigInt(token.block) : undefined,
-							args: [wallet.address as `0x${string}`],
-						});
-
-						if (Number(votes) < token.minBalance) continue;
-
-						allocatedVotes += Math.floor(Number(votes) / token.conversionRate);
-					}
-
-					if (token.type === "lilnouns") {
-						const client = viemClient("mainnet");
-
-						const votes = await client.readContract({
-							address: "0x4b10701bfd7bfedc47d50562b76b436fbb5bdb3b",
-							abi: [
-								parseAbiItem(
-									"function getCurrentVotes(address) view returns (uint96)",
-								),
-							],
-							functionName: "getCurrentVotes",
-							blockNumber: token.block ? BigInt(token.block) : undefined,
-							args: [wallet.address as `0x${string}`],
-						});
-
-						if (Number(votes) < token.minBalance) continue;
-
-						allocatedVotes += Math.floor(Number(votes) / token.conversionRate);
-					}
-
-					if (token.type === "gnars") {
-						const client = viemClient("base");
-
-						const votes = await client.readContract({
-							address: "0x880Fb3Cf5c6Cc2d7DFC13a993E839a9411200C17",
-							abi: [
-								parseAbiItem(
-									"function getVotes(address) view returns (uint256)",
-								),
-							],
-							functionName: "getVotes",
-							blockNumber: token.block ? BigInt(token.block) : undefined,
-							args: [wallet.address as `0x${string}`],
-						});
-
-						if (Number(votes) < token.minBalance) continue;
-
-						allocatedVotes += Math.floor(Number(votes) / token.conversionRate);
-					}
-				}
-			}
-		}
-	}
-
-	const requiredProposingActions = proposingActions.filter(
-		(action) => action.required,
-	);
-	const requiredVotingActions = votingActions.filter(
-		(action) => action.required,
-	);
+	const allocatedVotes = 0;
 
 	return (
 		<>
@@ -746,24 +446,11 @@ export default async function Round(props: {
 								<RoundTimeline round={round} />
 							</div>
 						</div>
-						<Proposals
-							round={round}
-							user={
-								user
-									? {
-											...user,
-											priorVotes,
-											canPropose: requiredProposingActions.every(
-												(action) => action.completed,
-											),
-											canVote: requiredVotingActions.every(
-												(action) => action.completed,
-											),
-										}
-									: undefined
-							}
-							openProposal={searchParams.p ? searchParams.p : undefined}
-							allocatedVotes={allocatedVotes}
+							<Proposals
+								round={round}
+								user={undefined}
+								openProposal={searchParams.p ? searchParams.p : undefined}
+								allocatedVotes={allocatedVotes}
 							unusedPurchasedVotes={
 								round.purchasedVotes?.reduce(
 									(votes, vote) => votes + vote.count - vote.used,
@@ -774,16 +461,6 @@ export default async function Round(props: {
 					</div>
 				</div>
 			</div>
-			{user ? (
-				<RoundActionsModal
-					type="proposing"
-					user={user}
-					actions={proposingActions}
-				/>
-			) : null}
-			{user ? (
-				<RoundActionsModal type="voting" user={user} actions={votingActions} />
-			) : null}
-		</>
+			</>
 	);
 }

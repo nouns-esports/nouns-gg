@@ -1,0 +1,14 @@
+{
+  "id": "pub_0abd1aaef0b8049abefca7b4",
+  "name": "pinkwyvern",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigwqbenwwtn446qtrz2varbml7c7xogsbnqcxennq3fl3p4hruqoi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8b0198983f187fbC873daB1ad524f2fC8c8722DB",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "product:nouns-gg:polymath-tee-soft-grey",
+  "handle": "polymath-tee-soft-grey",
+  "name": "Polymath T-Shirt - Soft Grey",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": "dopamine",
+  "variants": [
+    {
+      "id": "variant:2296ea75-097c-4556-9e88-3bc00b57b215",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "38.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:9bf6b8a9-8a86-4c81-8a64-c20066fb23a4",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "38.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:5334ebfc-bec3-4d49-836c-1abf0cf1987f",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeicax3cpjlnk7fflop7qgvpayae5euoreji3yqi56c4dzly4mod5um"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "38.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:e776a758-1b2d-40fb-ac61-c96e2b7e712e",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "38.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:7525c8b0-1b50-4055-ada2-d3ae03a18bf7",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "38.00",
+      "inventory": null
+    }
+  ]
+}

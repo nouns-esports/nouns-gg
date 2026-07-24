@@ -1,0 +1,18 @@
+{
+  "id": "pub_5b4dac8312d226c44e9734fe",
+  "name": "DarkOnee.NFT",
+  "image": "https://pbs.twimg.com/profile_images/1832224826804641793/369UsCOG_normal.jpg",
+  "bio": "My Family first OG Gamer from Nintendo all the way to PS5 and PC",
+  "twitter": {
+    "username": "clanfggdark",
+    "name": "DarkOnee.NFT",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1832224826804641793/369UsCOG_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xfb30C98f33427C07854382F5B3F499A3B1e871De",
+      "kind": "external"
+    }
+  ]
+}

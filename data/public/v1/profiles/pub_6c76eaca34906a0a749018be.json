@@ -1,0 +1,14 @@
+{
+  "id": "pub_6c76eaca34906a0a749018be",
+  "name": "FAILOFTEN ",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiffex3ufwg3shj5cdjghr4sxqr7gdt2cjdecminwk7zhcq7ld5sry",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8B40159cD836CC5109DA7745855a5005f19109EB",
+      "kind": "external"
+    }
+  ]
+}

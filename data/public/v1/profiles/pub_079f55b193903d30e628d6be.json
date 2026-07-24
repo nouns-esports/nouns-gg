@@ -1,0 +1,18 @@
+{
+  "id": "pub_079f55b193903d30e628d6be",
+  "name": "start.gg/warehouse",
+  "image": "https://pbs.twimg.com/profile_images/1785404119097757697/oqJiA8Qt_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "coxspelledc_o_x",
+    "name": "start.gg/warehouse",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1785404119097757697/oqJiA8Qt_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x355D47157c1928f7a4212FA8c546B15B4a6603B4",
+      "kind": "external"
+    }
+  ]
+}

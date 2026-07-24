@@ -1,0 +1,18 @@
+{
+  "id": "pub_7aa846dbf2638b2888629715",
+  "name": "다미 ❤️ Memecoin (Ø,G) ꧁IP꧂🖐 ✦ 🇰🇷",
+  "image": "https://pbs.twimg.com/profile_images/1939943323717771264/tekhO2Kx_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "kimdami94",
+    "name": "다미 ❤️ Memecoin (Ø,G) ꧁IP꧂🖐 ✦ 🇰🇷",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1939943323717771264/tekhO2Kx_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x76b04A91e5873D90B12D63cC45f5075DaD1B2CC9",
+      "kind": "external"
+    }
+  ]
+}

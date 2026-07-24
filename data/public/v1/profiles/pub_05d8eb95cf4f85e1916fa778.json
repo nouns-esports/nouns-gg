@@ -1,0 +1,18 @@
+{
+  "id": "pub_05d8eb95cf4f85e1916fa778",
+  "name": "Spark 💢",
+  "image": "https://pbs.twimg.com/profile_images/1950085594970738688/225s_Rbg_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "0xSparkle",
+    "name": "Spark 💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1950085594970738688/225s_Rbg_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0468E21585AccB0C98475b709fEF0610E48d43Ad",
+      "kind": "external"
+    }
+  ]
+}

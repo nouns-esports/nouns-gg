@@ -1,0 +1,19 @@
+{
+  "id": "pub_3b00a788212c6600c0c86364",
+  "name": "Merry",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiadejqmceicejibdlsicvogjx7x5giuobv5knigbzis35qvxpgfgm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2c5F4b82831E3A215D274f0F4bEAB049594003Ed",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x71f7CA5Ec15Ad652E06A6Ff2294f303E0eb8fCF8",
+      "kind": "external"
+    }
+  ]
+}

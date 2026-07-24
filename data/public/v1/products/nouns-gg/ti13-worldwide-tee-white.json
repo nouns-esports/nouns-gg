@@ -1,0 +1,80 @@
+{
+  "id": "product:nouns-gg:ti13-worldwide-tee-white",
+  "handle": "ti13-worldwide-tee-white",
+  "name": "TI13 Worldwide Tee - White",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:f47992a9-d672-46fe-a849-979a67eb4b08",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:703cc532-da0c-488b-a077-de8a399aecb3",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeiggouihln6lext2acft4i3537aadi3n44v4yqabgpmxzjltq6sqx4",
+        "https://ipfs.nouns.gg/ipfs/bafybeih37et5uzdoh6fge6kx4dlxbz5m44fxffz5qr5euwdevkdpys7eyy",
+        "https://ipfs.nouns.gg/ipfs/bafybeigdk7oayb4u7ugr3qe36tijjrhtwkkbdw63srzgzqtq2nnvxynwue"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:8a7daa05-4ac4-4ae9-9fd6-73913547cddd",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:6ac86546-e1c7-44eb-a7f6-07830b4009d4",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:3719a2c4-b267-4183-86ce-79a22f80ce6a",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    }
+  ]
+}

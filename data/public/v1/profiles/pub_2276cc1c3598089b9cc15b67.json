@@ -1,0 +1,14 @@
+{
+  "id": "pub_2276cc1c3598089b9cc15b67",
+  "name": "cmdth2ak",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiazuo5smeuajwlyorks6uuteu2zg5dzgmccymdzuprix3xdou4tsm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x85b59b259232d7E28F1B2b25C2803fa178466168",
+      "kind": "external"
+    }
+  ]
+}

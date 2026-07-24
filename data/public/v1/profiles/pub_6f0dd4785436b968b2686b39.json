@@ -1,0 +1,18 @@
+{
+  "id": "pub_6f0dd4785436b968b2686b39",
+  "name": "Crypto Lady",
+  "image": "https://pbs.twimg.com/profile_images/1947573413616168960/lEPqj0y6_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "CryptoLadyArt",
+    "name": "Crypto Lady",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947573413616168960/lEPqj0y6_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD483e0183B96C3338f6f9DbB110F0f146654a373",
+      "kind": "external"
+    }
+  ]
+}

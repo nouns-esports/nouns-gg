@@ -1,0 +1,14 @@
+{
+  "id": "pub_01796756e425442097f23c04",
+  "name": "cmb6vbus",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihedsku2gt2mjfskca6h3bl3kt3zgpl4sdxplwij6lz4rfi3azh5u",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x560DDBB5cCaf91d27e91f0e7c0fA099e7Ee179E6",
+      "kind": "external"
+    }
+  ]
+}

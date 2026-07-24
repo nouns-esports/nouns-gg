@@ -1,0 +1,1250 @@
+[
+  {
+    "id": "vote:030ccd00-0d8a-47c8-b09e-bd71cff47861",
+    "userId": "pub_6b2eb2235fe798c658492542",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 10,
+    "timestamp": "2024-07-31T12:47:27.859Z"
+  },
+  {
+    "id": "vote:66124832-a538-4ded-84bd-c0505924c3c8",
+    "userId": "pub_35f0b41d5dbd3ea58ec06ee1",
+    "proposalId": "proposal:b43db05c-9e67-48d8-b2ce-8a57438c8d5e",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T13:17:22.007Z"
+  },
+  {
+    "id": "vote:11222029-ea2e-4850-b384-7e1869d68e78",
+    "userId": "pub_05233b37a936f1085d50301f",
+    "proposalId": "proposal:69ce7deb-d14c-4dd3-be62-b7fc75b64f1d",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T13:43:15.724Z"
+  },
+  {
+    "id": "vote:9c602e1c-1f4e-4168-9b9b-41d869c48388",
+    "userId": "pub_93a9a99f10180ed3af26d3b5",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T13:44:25.442Z"
+  },
+  {
+    "id": "vote:f78c2f90-e795-4c33-b92c-5c4ed28b40f4",
+    "userId": "pub_16d82f32bef0714546303442",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T13:45:09.785Z"
+  },
+  {
+    "id": "vote:c22aad11-5297-41c9-ad72-5b729598edf9",
+    "userId": "pub_e7996296a20ba25a057e9cbf",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T13:54:22.453Z"
+  },
+  {
+    "id": "vote:c5fdb6ed-10b1-4eb7-aa88-f5708d0c8cc2",
+    "userId": "pub_8ebb39e2a0a2a1b507ac28ba",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:00:06.890Z"
+  },
+  {
+    "id": "vote:b1ec0ba3-7fc7-4ea9-a4f0-125b1de5c688",
+    "userId": "pub_b784828d04cb6d0b4ade30c5",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:03:37.586Z"
+  },
+  {
+    "id": "vote:9658414e-a4a5-41ad-a61c-1074ac866e57",
+    "userId": "pub_c2e470f92200a7f37f01a4cc",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:08:36.891Z"
+  },
+  {
+    "id": "vote:7a965d5f-0af6-4383-94fa-793613c6c660",
+    "userId": "pub_f9543946cc663489dff6e953",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:08:44.442Z"
+  },
+  {
+    "id": "vote:aa9c2e66-2f93-4a12-8f97-1dbc387e11f8",
+    "userId": "pub_d43ecc49eed0d604756df00e",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:09:34.163Z"
+  },
+  {
+    "id": "vote:d3e470fd-0e6c-4110-a4a0-f29fa6658bb7",
+    "userId": "pub_7fc434191067890eca25ce6e",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:10:13.666Z"
+  },
+  {
+    "id": "vote:ee8d4b9c-9eca-4ea8-a2a8-2d061f9b507a",
+    "userId": "pub_86d53d73c2e1509b64d5c7fb",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:10:23.521Z"
+  },
+  {
+    "id": "vote:79490f65-69c8-4324-b902-cd9eafd31232",
+    "userId": "pub_fac4b7c5caa349fcefdc661a",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:23:15.294Z"
+  },
+  {
+    "id": "vote:c7755257-7021-4702-8aea-f7dc5ced3d97",
+    "userId": "pub_8ec323dbdad96f933da9b36f",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:33:10.971Z"
+  },
+  {
+    "id": "vote:69a38e80-238b-4904-9c72-12ae12f4db19",
+    "userId": "pub_9adbb27f665ae0c18da51fde",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:43:54.528Z"
+  },
+  {
+    "id": "vote:28fd5b70-e85d-48a5-9502-5b5dc43a8aa1",
+    "userId": "pub_8c9274c363aa97cbf27efc3e",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:43:58.996Z"
+  },
+  {
+    "id": "vote:c61dd342-45b9-491c-bcc6-c5b0fa01253a",
+    "userId": "pub_1a88f6bd55252ef42f0399ed",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:50:12.324Z"
+  },
+  {
+    "id": "vote:6dea7f4f-3cb0-4d8f-828b-e90fbaa20dc9",
+    "userId": "pub_dafb7cfccb21f88d1909a68d",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:53:34.486Z"
+  },
+  {
+    "id": "vote:4f9d8495-bc29-4277-acea-4c02ce7c560a",
+    "userId": "pub_01673e7dffa410b50b0e37db",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T14:59:10.799Z"
+  },
+  {
+    "id": "vote:adfd330d-3dd2-4ef9-bd6a-b11d33f7889d",
+    "userId": "pub_330c232a7286f1e2ad526efe",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T15:04:45.967Z"
+  },
+  {
+    "id": "vote:77102535-bd1b-4548-b168-7a1a837b3577",
+    "userId": "pub_2b994befb1db0f390be09036",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T15:07:01.636Z"
+  },
+  {
+    "id": "vote:cd1dfbd6-dae3-4aed-a434-3070a3f9d2ef",
+    "userId": "pub_0fd5fded3daa0fdf9afb5a57",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T15:10:25.015Z"
+  },
+  {
+    "id": "vote:91077227-5816-47f8-9ce0-a8b282793aaa",
+    "userId": "pub_5b85f26b136d00d6dd062115",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T15:14:22.474Z"
+  },
+  {
+    "id": "vote:4475e7f3-1a49-4412-af64-45a029c80d9e",
+    "userId": "pub_fed7b110b0077c948b512f66",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T15:16:18.060Z"
+  },
+  {
+    "id": "vote:abe12dc8-bf9b-4a1a-94b3-a1915b212a2d",
+    "userId": "pub_bff3776d95a51ab38eb9661a",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T15:16:32.336Z"
+  },
+  {
+    "id": "vote:96000ab0-f3f2-4216-90c0-a55f26fb28a5",
+    "userId": "pub_a96e526821eedc40ab909015",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T15:36:12.037Z"
+  },
+  {
+    "id": "vote:5cafddd7-934a-4e6f-ade6-7aec3351d682",
+    "userId": "pub_8e7c4a24bf96c57d6673bb26",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T15:58:15.723Z"
+  },
+  {
+    "id": "vote:aed7a1d9-7acf-45f5-8f04-8838d10d1dbd",
+    "userId": "pub_27adac64ac787d76cb600202",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T15:59:16.937Z"
+  },
+  {
+    "id": "vote:e72153b9-0f43-4608-b6d4-f05e5afd248d",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:e7c5fa36-4ed2-40b1-8c00-c0cf58c15210",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 4,
+    "timestamp": "2024-07-31T16:05:49.154Z"
+  },
+  {
+    "id": "vote:3fcfb839-397b-4921-94e2-8254a529994f",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:b43db05c-9e67-48d8-b2ce-8a57438c8d5e",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:05:49.154Z"
+  },
+  {
+    "id": "vote:ba0cb936-0223-4025-be53-28e8998f6a13",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:a3967a79-0f15-4a5d-84e2-5a6549504c98",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:05:49.154Z"
+  },
+  {
+    "id": "vote:a105e5c8-e862-4607-a17b-dd4ed23a8dfc",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:05:49.154Z"
+  },
+  {
+    "id": "vote:0f3d2817-91f4-4f0f-9fa5-527476428725",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 2,
+    "timestamp": "2024-07-31T16:05:49.154Z"
+  },
+  {
+    "id": "vote:7c1dead9-0186-4ae3-a24e-9d9bde8d9ee8",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:edb3228f-029b-4828-86d9-9daf5cc41494",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:05:49.154Z"
+  },
+  {
+    "id": "vote:084280b8-7af7-4edd-8f44-31650c77b6d5",
+    "userId": "pub_ffba8fbfad1bf9bcdd4b0ba3",
+    "proposalId": "proposal:e7c5fa36-4ed2-40b1-8c00-c0cf58c15210",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:08:01.123Z"
+  },
+  {
+    "id": "vote:1dfbc23e-e332-48a5-ba0f-b66711ab47ba",
+    "userId": "pub_ee9ae63a907e701d3cb4cff8",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:10:47.794Z"
+  },
+  {
+    "id": "vote:511d83fc-2a9b-4666-b73e-3a3973cd7f69",
+    "userId": "pub_fcd1c52ec45d676b8fde4e03",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:15:46.849Z"
+  },
+  {
+    "id": "vote:5f9817b9-7bb8-4e54-8099-2686922da4f8",
+    "userId": "pub_6df17c2f793906a303f7b6db",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:21:49.197Z"
+  },
+  {
+    "id": "vote:27226c0e-b312-4c54-92c4-3fd0e1e05c7f",
+    "userId": "pub_ef48daf42bd8db1b3ab48461",
+    "proposalId": "proposal:e7c5fa36-4ed2-40b1-8c00-c0cf58c15210",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:25:12.222Z"
+  },
+  {
+    "id": "vote:4c4f5323-74d0-4330-bd81-8d4c70ec13bc",
+    "userId": "pub_d4595ce19193cda7bdcec309",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:25:31.158Z"
+  },
+  {
+    "id": "vote:81ab3dd1-a27b-4f81-bed6-7b4642f24a45",
+    "userId": "pub_55ae51c259c81b085c60c3dc",
+    "proposalId": "proposal:e7c5fa36-4ed2-40b1-8c00-c0cf58c15210",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:26:42.913Z"
+  },
+  {
+    "id": "vote:bd67751e-b89e-44e6-8cd4-fb0538f87a17",
+    "userId": "pub_1dc93131a4c4b2b1ad4ed98b",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:30:06.462Z"
+  },
+  {
+    "id": "vote:30cb7a60-4016-4d68-a105-0f126a76d89d",
+    "userId": "pub_37c854b70abb3847e18e1ba7",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:30:36.181Z"
+  },
+  {
+    "id": "vote:3daf4116-ecb7-491a-8360-359939e7b079",
+    "userId": "pub_83c809288808372357bd0faa",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:32:45.894Z"
+  },
+  {
+    "id": "vote:12e44c3c-5167-4620-8e48-7153cd5b8fc9",
+    "userId": "pub_7753f2e376af056d1e91054f",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:36:57.106Z"
+  },
+  {
+    "id": "vote:2825d419-8c04-4226-81db-9f09681c8997",
+    "userId": "pub_9598473bef2941ce4e076378",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:39:03.616Z"
+  },
+  {
+    "id": "vote:af06d69c-e089-4407-9603-0273dfff3b6f",
+    "userId": "pub_b9614a09979e8c2742d43caf",
+    "proposalId": "proposal:e7c5fa36-4ed2-40b1-8c00-c0cf58c15210",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:42:14.650Z"
+  },
+  {
+    "id": "vote:71ff4c45-f65d-43dc-993c-960a1a155032",
+    "userId": "pub_e5be49abd0d80e987a9968d0",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:49:13.006Z"
+  },
+  {
+    "id": "vote:e23e4b80-c519-4c4a-9a01-89e543280a18",
+    "userId": "pub_02f92ce6b1106e1ad5bb5d1b",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T16:53:42.377Z"
+  },
+  {
+    "id": "vote:e586cbd0-fb84-4d28-9ae5-524ee00a93dd",
+    "userId": "pub_d1aeb626ad74507fe35c3bca",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T17:00:09.465Z"
+  },
+  {
+    "id": "vote:52ae7eb2-23fc-444b-83e6-47c4db7c17db",
+    "userId": "pub_44abe716c61ae4098e4b23a6",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T17:13:28.409Z"
+  },
+  {
+    "id": "vote:61534ee4-3ce3-4f52-9323-8841d9e9e0b4",
+    "userId": "pub_6ef0c7666141f4a810708d5f",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T17:27:20.168Z"
+  },
+  {
+    "id": "vote:ec6270a3-0269-441f-818e-c7247d060daa",
+    "userId": "pub_d7bd9f8b2ab361089dfeff63",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T18:09:52.082Z"
+  },
+  {
+    "id": "vote:105e8a5b-aea7-4e49-a3b1-9618056cf1ab",
+    "userId": "pub_e2b14e1fe06d50244a11dd98",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T18:16:19.025Z"
+  },
+  {
+    "id": "vote:c81c41ba-3519-4365-873d-f86174bf8157",
+    "userId": "pub_c0c8dfaa673a219aaafdb9bb",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T18:41:33.860Z"
+  },
+  {
+    "id": "vote:7ee1de83-13f2-43d7-8166-13d02d1b7d14",
+    "userId": "pub_f34ac340cb6c58547b7ad09e",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T18:56:33.916Z"
+  },
+  {
+    "id": "vote:817a3ade-d0e4-482d-9d46-431c0d52bd90",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:e7c5fa36-4ed2-40b1-8c00-c0cf58c15210",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 3,
+    "timestamp": "2024-07-31T19:17:15.175Z"
+  },
+  {
+    "id": "vote:8c579057-a6c5-4d7c-8a9f-7df5e1f5eb6d",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 6,
+    "timestamp": "2024-07-31T19:17:15.175Z"
+  },
+  {
+    "id": "vote:1a709614-2c9a-4024-96ad-ac5b8880bbac",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:edb3228f-029b-4828-86d9-9daf5cc41494",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T19:17:15.175Z"
+  },
+  {
+    "id": "vote:24c5296f-9881-468c-86f7-f8addba0b2a4",
+    "userId": "pub_96f71195251dd3ceca351742",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T19:28:53.632Z"
+  },
+  {
+    "id": "vote:6d885875-6355-433d-89f2-6557bbe9861b",
+    "userId": "pub_d83d1161c421155b922cbe92",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T19:58:58.752Z"
+  },
+  {
+    "id": "vote:37d10b14-1c14-4eef-a1b9-84aef4c8e0fb",
+    "userId": "pub_013a1a03a6da7d524ffe8b9f",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T20:37:11.388Z"
+  },
+  {
+    "id": "vote:3dede192-6844-4af8-ad61-98d30e4f9ecd",
+    "userId": "pub_cf9815b562f9546032c79e1a",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T20:54:12.802Z"
+  },
+  {
+    "id": "vote:7736b2b2-a60f-4054-affc-6fc1e3f80d51",
+    "userId": "pub_6ab03bce3473cbc712040557",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T21:01:17.782Z"
+  },
+  {
+    "id": "vote:17fbc2e6-f89c-473a-ba1f-130b7198bb8a",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:e7c5fa36-4ed2-40b1-8c00-c0cf58c15210",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T21:04:09.464Z"
+  },
+  {
+    "id": "vote:46eea36e-60db-4bbd-acc5-eb98e5b05e67",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 7,
+    "timestamp": "2024-07-31T21:04:09.464Z"
+  },
+  {
+    "id": "vote:7f656d0c-4a47-4e08-a93b-207c3d4f1cba",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:a3967a79-0f15-4a5d-84e2-5a6549504c98",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T21:04:09.464Z"
+  },
+  {
+    "id": "vote:2853f22d-2827-4655-a7f6-52e40871d227",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T21:04:09.464Z"
+  },
+  {
+    "id": "vote:32a1e3a2-0203-4828-95ee-ffde9213f5a5",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:4ee9d632-1f2c-43f0-9903-3f8a9c815167",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T21:13:33.170Z"
+  },
+  {
+    "id": "vote:cefb1ec9-e232-4ce0-8995-07f55491b07f",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:d73e5769-9865-4660-ac8f-746fd79525ae",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T21:13:33.170Z"
+  },
+  {
+    "id": "vote:c06148b2-04b2-4310-a213-ded5ab5c96c3",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:0016f18b-4862-48a6-ab72-3e33215f0137",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T21:13:33.170Z"
+  },
+  {
+    "id": "vote:efe70f62-32dc-41b8-ad2e-a7dc96c70ea8",
+    "userId": "pub_68261f697999d323de6f22b3",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T21:18:38.485Z"
+  },
+  {
+    "id": "vote:0e766d71-f1b8-4dd0-8d13-abad04246fd6",
+    "userId": "pub_763ff05a7f80e5953e5ac841",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-07-31T23:53:59.563Z"
+  },
+  {
+    "id": "vote:7edb2531-cdec-4989-a80e-6f17c3b9175a",
+    "userId": "pub_6129df6fb54b073de10d71ea",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 10,
+    "timestamp": "2024-08-01T00:13:26.451Z"
+  },
+  {
+    "id": "vote:79b455f3-58ab-4664-b9d9-c7f4d52e81c0",
+    "userId": "pub_883200dc8bd1d9772915ea6c",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T00:30:10.725Z"
+  },
+  {
+    "id": "vote:58ba5a93-69c4-4156-96ea-8e490ab6b814",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 3,
+    "timestamp": "2024-08-01T00:54:06.081Z"
+  },
+  {
+    "id": "vote:3bcbc09f-b762-4eac-9ef4-3dc95d6360db",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:e7c5fa36-4ed2-40b1-8c00-c0cf58c15210",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 5,
+    "timestamp": "2024-08-01T00:54:10.842Z"
+  },
+  {
+    "id": "vote:737c2472-1716-4fa9-bf76-c1ce7dd7324a",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:b43db05c-9e67-48d8-b2ce-8a57438c8d5e",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T00:54:15.048Z"
+  },
+  {
+    "id": "vote:90118961-e396-48c6-991c-636d1a9fa005",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:e58644a3-5b2a-475c-b8c3-05e7c9ecc023",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T00:54:28.120Z"
+  },
+  {
+    "id": "vote:d957d073-ae6c-4362-81f3-3242f52c2e2e",
+    "userId": "pub_6b1722e440c08661eb1fe674",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T01:03:12.737Z"
+  },
+  {
+    "id": "vote:2eeebe47-9cd7-4a10-b4f9-6bb44395c5f0",
+    "userId": "pub_b2e620244b0acbde6dd16def",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T01:25:54.500Z"
+  },
+  {
+    "id": "vote:1e672b2a-101e-47d7-ab55-b944042bb035",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:f2001a17-f6af-4df8-bc35-9da6551ccf12",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 4,
+    "timestamp": "2024-08-01T01:54:52.327Z"
+  },
+  {
+    "id": "vote:00e3c7aa-952f-481c-93cd-9cf1f8948018",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T01:54:52.327Z"
+  },
+  {
+    "id": "vote:dde0175c-65f2-4a78-b6da-b7a13e8c4245",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 4,
+    "timestamp": "2024-08-01T01:54:52.327Z"
+  },
+  {
+    "id": "vote:20b2d5cb-d419-4a0e-8c6e-5bc1ef12e9e8",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T01:54:52.327Z"
+  },
+  {
+    "id": "vote:b2178bab-1499-4a64-98a8-ab4700b7b53c",
+    "userId": "pub_c3b2765c5e472ed6fd80b4a6",
+    "proposalId": "proposal:4ee9d632-1f2c-43f0-9903-3f8a9c815167",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T02:37:41.808Z"
+  },
+  {
+    "id": "vote:dcfbac11-eb38-43e0-8965-bc9a3888b7f8",
+    "userId": "pub_3ccb7e07dcae561df92196fe",
+    "proposalId": "proposal:4ee9d632-1f2c-43f0-9903-3f8a9c815167",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T02:40:31.626Z"
+  },
+  {
+    "id": "vote:b54dc63d-3078-4ad2-91d5-66c54bf3095c",
+    "userId": "pub_1eaee9e9fa4e9adcba88652b",
+    "proposalId": "proposal:4ee9d632-1f2c-43f0-9903-3f8a9c815167",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T02:43:50.695Z"
+  },
+  {
+    "id": "vote:783bddbe-b47d-4de1-bfdb-f8b6b3739fae",
+    "userId": "pub_e38b120cf4c5808e62d8b819",
+    "proposalId": "proposal:4ee9d632-1f2c-43f0-9903-3f8a9c815167",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T02:48:17.756Z"
+  },
+  {
+    "id": "vote:fe3b4a58-9220-4bc9-b4a2-ae5f4610ca62",
+    "userId": "pub_f76b233f0df366bf688d4c4a",
+    "proposalId": "proposal:4ee9d632-1f2c-43f0-9903-3f8a9c815167",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T02:51:09.894Z"
+  },
+  {
+    "id": "vote:361c3446-0c25-4be7-a354-047e00f8beb1",
+    "userId": "pub_6ffa6b9ee60a3a365570c51c",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T03:05:38.738Z"
+  },
+  {
+    "id": "vote:c7c723be-dd6a-422d-8b62-4b9179e1a739",
+    "userId": "pub_00ae7ef0d0b5017c5bd83699",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T03:11:44.207Z"
+  },
+  {
+    "id": "vote:a62512f0-7bbd-43cb-acc1-3c8ff4e40677",
+    "userId": "pub_73e776a675abc6ac5efbe5e4",
+    "proposalId": "proposal:e58644a3-5b2a-475c-b8c3-05e7c9ecc023",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T04:47:51.643Z"
+  },
+  {
+    "id": "vote:308d868f-7c71-4699-9933-416adc358fba",
+    "userId": "pub_5a9cf304fd54e1926c327026",
+    "proposalId": "proposal:f2001a17-f6af-4df8-bc35-9da6551ccf12",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T05:08:22.708Z"
+  },
+  {
+    "id": "vote:273161b9-47b3-4e0b-9276-944aafac53c6",
+    "userId": "pub_5a9cf304fd54e1926c327026",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T05:08:22.708Z"
+  },
+  {
+    "id": "vote:e9f76c02-37af-4827-a965-2934dda67e09",
+    "userId": "pub_5a9cf304fd54e1926c327026",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T05:08:22.708Z"
+  },
+  {
+    "id": "vote:066eb5c5-fa4a-4e8d-b07c-ad2252c8d473",
+    "userId": "pub_283d10e84b01fe82fef578c1",
+    "proposalId": "proposal:e58644a3-5b2a-475c-b8c3-05e7c9ecc023",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T05:10:52.246Z"
+  },
+  {
+    "id": "vote:58c19294-a910-47df-ba2b-999ef5c14953",
+    "userId": "pub_3b1f02e12d17196c4e4d4440",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T09:26:20.610Z"
+  },
+  {
+    "id": "vote:10ef6484-49e4-4254-9b48-a10108db4afb",
+    "userId": "pub_6fd842fa9c05c7b32949bb8c",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T13:22:42.272Z"
+  },
+  {
+    "id": "vote:b0653e47-48de-4600-9bec-d7b1013ad02b",
+    "userId": "pub_b016449208c3ef1bb94975a0",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T19:28:19.847Z"
+  },
+  {
+    "id": "vote:836402e6-6ad5-4df3-927e-8bea4a6acf8e",
+    "userId": "pub_559302fec7bc9bb41d0b2850",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T19:31:18.757Z"
+  },
+  {
+    "id": "vote:9a1ae57d-7313-4f24-b923-72d241592e29",
+    "userId": "pub_95a6195fc3fac09c091a189d",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T19:32:13.869Z"
+  },
+  {
+    "id": "vote:2c19b137-83bf-4efb-a019-00244bcbac7b",
+    "userId": "pub_52dc45ddae7985a77ff5445e",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T19:50:32.201Z"
+  },
+  {
+    "id": "vote:520cdf3f-2ab7-4799-9203-c88f392daa00",
+    "userId": "pub_7b9184e616281686c0520010",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T19:51:52.491Z"
+  },
+  {
+    "id": "vote:6190abd7-3922-4579-ae26-0729bf5a60c7",
+    "userId": "pub_6e18243f76b0f00f440f57a4",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T19:52:45.227Z"
+  },
+  {
+    "id": "vote:b0015034-1cd7-48d4-a796-16fdce33207a",
+    "userId": "pub_fbb28dca3f4ac5e309460f64",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T19:53:37.271Z"
+  },
+  {
+    "id": "vote:b9b23931-54fa-4f32-99c9-7818aeb8738d",
+    "userId": "pub_9f315e32110f0ebdbffc31dd",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T19:54:18.264Z"
+  },
+  {
+    "id": "vote:8dcdf58e-0c01-4a8a-a8b2-d7dfcf229301",
+    "userId": "pub_8debe0529af8215d7d990a16",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T19:55:10.187Z"
+  },
+  {
+    "id": "vote:aa1a15b5-cc7d-4207-b175-2bfa39191a63",
+    "userId": "pub_2c7a73f2396718b4b2b336ad",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T19:56:13.930Z"
+  },
+  {
+    "id": "vote:be1f63b2-37e5-458a-a0dc-e30009d3e3b7",
+    "userId": "pub_d991ad4d4ec69eca971bedf7",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T20:00:28.963Z"
+  },
+  {
+    "id": "vote:7dfcbaa5-bed6-44d2-b26f-f7b06d50e44a",
+    "userId": "pub_13eac16dad52501ebb7bbec8",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T20:01:23.737Z"
+  },
+  {
+    "id": "vote:b9fb564d-0d20-4d50-a2a4-c3fc39bbf633",
+    "userId": "pub_ab502ebc04018bb916d29ae9",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T20:07:09.501Z"
+  },
+  {
+    "id": "vote:37437353-8bb2-4aef-b9c4-c6c9681327a6",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 5,
+    "timestamp": "2024-08-01T21:07:16.840Z"
+  },
+  {
+    "id": "vote:7f9e6a66-b1af-4edb-baf0-61f25742126f",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 2,
+    "timestamp": "2024-08-01T21:07:20.601Z"
+  },
+  {
+    "id": "vote:a2c5c3c1-e578-40e4-8d6a-3d6ed005fdb9",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:a3967a79-0f15-4a5d-84e2-5a6549504c98",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T21:07:27.486Z"
+  },
+  {
+    "id": "vote:61a63877-d404-4a5a-b2ba-6ec7d4340fe2",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:4ee9d632-1f2c-43f0-9903-3f8a9c815167",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T21:07:27.486Z"
+  },
+  {
+    "id": "vote:d5dcc2d0-40c3-4ac7-86a3-8db8c78a8825",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T21:07:27.486Z"
+  },
+  {
+    "id": "vote:b5b81b20-d715-4d87-86a6-324895717691",
+    "userId": "pub_34ee9c525c183e7928be2d0e",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-01T21:39:34.756Z"
+  },
+  {
+    "id": "vote:a44b8088-1f36-41b0-a87a-8184d0850dd3",
+    "userId": "pub_504caca554ad08686f27facb",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 3,
+    "timestamp": "2024-08-02T01:09:17.988Z"
+  },
+  {
+    "id": "vote:37101f95-794d-4470-87fe-517f826718de",
+    "userId": "pub_ac177fae45e8fc2ae395e432",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T04:09:59.319Z"
+  },
+  {
+    "id": "vote:d72be261-0f70-4677-bd12-8b4b4e8a80a2",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:e7c5fa36-4ed2-40b1-8c00-c0cf58c15210",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T05:28:31.113Z"
+  },
+  {
+    "id": "vote:4c9f0000-2c93-44ad-ab37-f80288855516",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:f2001a17-f6af-4df8-bc35-9da6551ccf12",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T05:28:31.113Z"
+  },
+  {
+    "id": "vote:a7bb80f5-c8dd-412a-8c33-0bb56a75cf83",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 3,
+    "timestamp": "2024-08-02T05:28:31.113Z"
+  },
+  {
+    "id": "vote:b8374c36-d17b-44b8-ac88-25a9dfcd3fbb",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:4ee9d632-1f2c-43f0-9903-3f8a9c815167",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T05:28:31.113Z"
+  },
+  {
+    "id": "vote:c4f50e3b-ada0-45d1-a0d7-102338b774fb",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 3,
+    "timestamp": "2024-08-02T05:28:31.113Z"
+  },
+  {
+    "id": "vote:f5ecb50b-d18c-4f00-8d0d-4f8a4b622868",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T05:28:31.113Z"
+  },
+  {
+    "id": "vote:111b1f04-ae1b-4e65-b22a-0dd32a463be5",
+    "userId": "pub_85feac350fb2084b4eda7e5c",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T10:25:14.633Z"
+  },
+  {
+    "id": "vote:824816ba-2f0e-48c4-8859-23a340c96eef",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T12:17:00.022Z"
+  },
+  {
+    "id": "vote:5719ca00-f43f-45f7-8932-c9e7ccd6223a",
+    "userId": "pub_84cc64cd1a39801f4ecbfca9",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T13:26:49.188Z"
+  },
+  {
+    "id": "vote:989db792-bf8b-48c4-bebb-a623abf85247",
+    "userId": "pub_17faf988255b014043f240c4",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T17:58:03.291Z"
+  },
+  {
+    "id": "vote:22dccc8b-f489-4912-acde-6c10b2c48d1c",
+    "userId": "pub_99715aa8dd5e9a104511dfdd",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T20:24:55.733Z"
+  },
+  {
+    "id": "vote:ba7a2321-287c-43cf-a13b-216f8d5a5fdb",
+    "userId": "pub_3a2e244dfe7ad5343d3b2a32",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T22:18:02.468Z"
+  },
+  {
+    "id": "vote:e4e24419-bf06-4add-9efd-518e8bdae849",
+    "userId": "pub_7930fdc4519d97e79f9ca44f",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T22:43:20.474Z"
+  },
+  {
+    "id": "vote:c02e01af-9d3c-4b6b-90d5-dc434e958372",
+    "userId": "pub_4eeabf33317c94de19a8b08b",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T23:29:58.227Z"
+  },
+  {
+    "id": "vote:cef947f6-5cdc-417f-9f3a-707d34666fd7",
+    "userId": "pub_a64eefa8ae82004c8b6239eb",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T23:33:10.230Z"
+  },
+  {
+    "id": "vote:d759ce62-9424-4d0e-8397-5fe183dee1ef",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 2,
+    "timestamp": "2024-08-02T23:34:55.038Z"
+  },
+  {
+    "id": "vote:8c0dd7fb-15f2-4360-b027-6f1bb67fec96",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 4,
+    "timestamp": "2024-08-02T23:34:55.038Z"
+  },
+  {
+    "id": "vote:599fa295-067d-4ced-9670-3a00dabcf606",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:ab894896-7adb-489a-9cef-5f9eaa6cc5f4",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 4,
+    "timestamp": "2024-08-02T23:34:55.038Z"
+  },
+  {
+    "id": "vote:43a717fd-08de-4f73-844e-ea8a2771b86d",
+    "userId": "pub_746dd8d1bb9836918b30b604",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-02T23:41:37.763Z"
+  },
+  {
+    "id": "vote:02dbe324-05a0-446b-908e-e1d8c43cd849",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-03T01:04:45.887Z"
+  },
+  {
+    "id": "vote:7a2f2c62-fc0a-49d2-8494-88d2f48b0335",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:e7c5fa36-4ed2-40b1-8c00-c0cf58c15210",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 3,
+    "timestamp": "2024-08-03T01:04:45.887Z"
+  },
+  {
+    "id": "vote:64c455c2-48dc-4ec4-a31f-e4c54d81428e",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 3,
+    "timestamp": "2024-08-03T01:04:45.887Z"
+  },
+  {
+    "id": "vote:33ba2262-97f7-4f25-8eea-ad115abf1916",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:f2001a17-f6af-4df8-bc35-9da6551ccf12",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 3,
+    "timestamp": "2024-08-03T01:04:45.887Z"
+  },
+  {
+    "id": "vote:d4a9974b-c513-45fb-8526-320a038d6f23",
+    "userId": "pub_6653d325724e20673ecc3184",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 3,
+    "timestamp": "2024-08-03T03:27:55.478Z"
+  },
+  {
+    "id": "vote:7b90b0c2-1c28-46e5-a434-dd07b0288c48",
+    "userId": "pub_3d012a4e4ddd39ce48a24f67",
+    "proposalId": "proposal:e58644a3-5b2a-475c-b8c3-05e7c9ecc023",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-03T04:02:24.480Z"
+  },
+  {
+    "id": "vote:6a7c5c5f-2901-44d7-b1b1-6aace2a71343",
+    "userId": "pub_3d012a4e4ddd39ce48a24f67",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-03T04:02:24.480Z"
+  },
+  {
+    "id": "vote:5189e30b-b9e1-4179-bf91-5653fee7ae9e",
+    "userId": "pub_3d012a4e4ddd39ce48a24f67",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-03T04:02:24.480Z"
+  },
+  {
+    "id": "vote:f58985bf-1d12-41e8-99d6-e3034a2f446a",
+    "userId": "pub_d3bb601a43e95186ee5fe333",
+    "proposalId": "proposal:78a5e312-bcf4-4072-aeb0-90594fbc1211",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-03T04:16:24.898Z"
+  },
+  {
+    "id": "vote:87231ea2-fb9c-437a-b147-efdb31ab9d75",
+    "userId": "pub_2171f77f20395eef10d1c347",
+    "proposalId": "proposal:c9c2af5a-e024-4ca9-8403-b11df81f6ec9",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-03T04:38:30.191Z"
+  },
+  {
+    "id": "vote:15a0321d-830c-4593-9d44-6d3105551fc7",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:b43db05c-9e67-48d8-b2ce-8a57438c8d5e",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-03T07:01:25.416Z"
+  },
+  {
+    "id": "vote:02e3515e-23a3-43fd-bb60-90d99bc78487",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:6b7fd2e9-e45e-4a42-8cbf-04c950cb0da5",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 3,
+    "timestamp": "2024-08-03T07:01:25.416Z"
+  },
+  {
+    "id": "vote:28d738f3-81c6-40f3-b8f8-8376e736f175",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:f2001a17-f6af-4df8-bc35-9da6551ccf12",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 3,
+    "timestamp": "2024-08-03T07:01:25.416Z"
+  },
+  {
+    "id": "vote:6d61dc55-5272-4f1e-b397-aa1647d888f6",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:a3967a79-0f15-4a5d-84e2-5a6549504c98",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-03T07:01:25.416Z"
+  },
+  {
+    "id": "vote:83f85e8c-79e5-4302-8ebf-69942d7f1796",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:e58644a3-5b2a-475c-b8c3-05e7c9ecc023",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 2,
+    "timestamp": "2024-08-03T07:01:25.416Z"
+  },
+  {
+    "id": "vote:4302a2eb-ab40-437b-b583-43de0d009371",
+    "userId": "pub_f7c8e992a067c360377c088a",
+    "proposalId": "proposal:4ee9d632-1f2c-43f0-9903-3f8a9c815167",
+    "roundId": "round:nouns-unite:unite-worlds",
+    "count": 1,
+    "timestamp": "2024-08-03T09:49:18.436Z"
+  }
+]

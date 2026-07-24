@@ -1,0 +1,14 @@
+{
+  "id": "pub_b17df5791643c6c198639e8a",
+  "name": "cmdlwoje",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiewmvnszhfrszwb7kkjxjfoin7lxzctfkfjw7jaxuj4y3fg4mwrae",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x28128161adEaF65ea3C8cDb89E78f462B0Db6AD3",
+      "kind": "external"
+    }
+  ]
+}

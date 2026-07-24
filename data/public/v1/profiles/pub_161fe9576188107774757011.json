@@ -1,0 +1,18 @@
+{
+  "id": "pub_161fe9576188107774757011",
+  "name": "Candy Crypto",
+  "image": "https://pbs.twimg.com/profile_images/1948381788838961153/xnr-UzlD_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "CandyCryptoArt",
+    "name": "Candy Crypto",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948381788838961153/xnr-UzlD_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xF1F0251A1117a5Acb42e0a09923D30B7858d619D",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_737e427d3cfc6925e339f8e2",
+  "name": "cmdthhl8",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigveyqifyh7qii37eejxhuqqww46gpzbf2ac3bzjq6fn4vmlmnfiq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9e86E764D4407A396D2424616d30E2F85E410188",
+      "kind": "external"
+    }
+  ]
+}

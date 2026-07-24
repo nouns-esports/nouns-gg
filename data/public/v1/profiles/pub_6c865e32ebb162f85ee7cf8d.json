@@ -1,0 +1,14 @@
+{
+  "id": "pub_6c865e32ebb162f85ee7cf8d",
+  "name": "touringX",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib3zaesw3rnbtewpu5pjargipoguzyqbt7lfvgq3kaldgirkceb4e",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x04f89Cb72BF5585Bf5a9E62f63b459Bf2d15880E",
+      "kind": "external"
+    }
+  ]
+}

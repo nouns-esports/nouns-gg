@@ -1,0 +1,19 @@
+{
+  "id": "pub_d84d9851956011cf30817de8",
+  "name": "Sparrow",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreie3j4g5a7i4bzfpj5mmuz62kpcyc7w25jdkqxx2i4cq5raeayvqwu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8a30fcf5a2BC354151B04bd2b2b233DcA322f8E7",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xD4Cee9e40729CF04c2118392D814069299e1A933",
+      "kind": "external"
+    }
+  ]
+}

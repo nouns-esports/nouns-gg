@@ -1,0 +1,14 @@
+{
+  "id": "pub_8d01f83f3ba131fc50d55959",
+  "name": "cmdger72",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicpwu7ofz4qopeyr5yxhhbydymvm4y53um4eu4vdebydj6qwjt3qu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD8E73157EA5233a2b79b318e0a30FDc20ac6988f",
+      "kind": "external"
+    }
+  ]
+}

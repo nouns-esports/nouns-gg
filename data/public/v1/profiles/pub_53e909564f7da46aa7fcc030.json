@@ -1,0 +1,18 @@
+{
+  "id": "pub_53e909564f7da46aa7fcc030",
+  "name": "McFlynounstv",
+  "image": "https://pbs.twimg.com/profile_images/2003464176363061248/SMP9cJZZ_normal.jpg",
+  "bio": "80’s kid 📼 Crypto enthusiast 🚀On-chain by choice 🧠 @Nounstvcom  ⌐◨-◨  📺 http://nounstv.com\nNoun 1746",
+  "twitter": {
+    "username": "mcflynounstv",
+    "name": "McFlynounstv",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/2003464176363061248/SMP9cJZZ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x010Bb4Fac06A2e61173b8c56AEeF06CdfEeF252A",
+      "kind": "external"
+    }
+  ]
+}

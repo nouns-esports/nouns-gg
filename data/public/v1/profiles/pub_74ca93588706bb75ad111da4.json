@@ -1,0 +1,14 @@
+{
+  "id": "pub_74ca93588706bb75ad111da4",
+  "name": "TYMED",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=yslvis&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4accdfd779E8FA60A3686030A6Eb36D663399E13",
+      "kind": "external"
+    }
+  ]
+}

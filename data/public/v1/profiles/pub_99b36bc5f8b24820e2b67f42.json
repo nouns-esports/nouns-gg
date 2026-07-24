@@ -1,0 +1,14 @@
+{
+  "id": "pub_99b36bc5f8b24820e2b67f42",
+  "name": "cmdted68",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieg65aoqhjvkwgr4f62ckbfvpbwaf24ri3ytwwdpkg4i5wjdfutl4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x53437ea813602862a7be4f2cDBD855DFCC7115A8",
+      "kind": "external"
+    }
+  ]
+}

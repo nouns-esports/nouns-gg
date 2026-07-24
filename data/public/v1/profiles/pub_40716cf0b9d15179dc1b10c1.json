@@ -1,0 +1,14 @@
+{
+  "id": "pub_40716cf0b9d15179dc1b10c1",
+  "name": "cmdtglvf",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidvqlqtglfg6b4hnykzkvmncqb6lioxzrtsf6nisua6uxydpdiogi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc50ef527fA9b440c7916F584CD7d0Fd81820FD90",
+      "kind": "external"
+    }
+  ]
+}

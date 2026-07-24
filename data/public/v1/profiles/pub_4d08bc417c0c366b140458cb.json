@@ -1,0 +1,23 @@
+{
+  "id": "pub_4d08bc417c0c366b140458cb",
+  "name": "Sasquatch ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1751641467099983873/54ZOMH2M_normal.jpg",
+  "bio": "nounin around",
+  "twitter": {
+    "username": "PartSasquatch",
+    "name": "Sasquatch ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1751641467099983873/54ZOMH2M_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE3f27DEFf96fe178e87559F36Cbf868B9E75967D",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x59138b5b8a9250F3dbD84cCcCbECE68142B4b6A9",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_dcf02ff688887da59be576d0",
+  "name": "cmdmyt50",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibao5lakl2d26bhladizp6lfmt6vzmkrsmxi324j3xdy2g7tg4bn4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x73a846ED8090fc0601D0A2241AC71243ec8D8006",
+      "kind": "external"
+    }
+  ]
+}

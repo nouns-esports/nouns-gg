@@ -1,0 +1,23 @@
+{
+  "id": "pub_2beec2c4ca7be0b72f66d75f",
+  "name": "Unity Clash ~ Pokemon UNITE",
+  "image": "https://pbs.twimg.com/profile_images/1796776558268477441/fT15GLW__normal.jpg",
+  "bio": "Tournament Organiser | Nouns Ghatlue's Manager",
+  "twitter": {
+    "username": "UnityClashPU",
+    "name": "Unity Clash ~ Pokemon UNITE",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1796776558268477441/fT15GLW__normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB19b3B7bFBFE91D1257582d656B2ECFdc0a501Ec",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xCdEEb0bd3Dfb79F1B4776A6A72399520fC466393",
+      "kind": "external"
+    }
+  ]
+}

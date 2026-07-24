@@ -1,0 +1,14 @@
+{
+  "id": "pub_69cafe15fcdee8539872edf6",
+  "name": "Chip and Benny",
+  "image": "https://ipfs.nouns.gg/ipfs/QmfDSyJ1muS5rJNbfbEniUbjrKFc2Y7q8hJzniCkJSU5M9",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6Ccb83c907dBf0B4bc28f9BF83173b0ab943350B",
+      "kind": "external"
+    }
+  ]
+}

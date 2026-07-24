@@ -1,0 +1,18 @@
+{
+  "id": "pub_ecc96e9086839419c27368ba",
+  "name": "Katrina",
+  "image": "https://pbs.twimg.com/profile_images/1947589942592319488/ejkbD2rB_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "KatrinaBro37082",
+    "name": "Katrina",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947589942592319488/ejkbD2rB_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5EcD20aAa100dEC6769E22a1059480b473F07e5e",
+      "kind": "external"
+    }
+  ]
+}

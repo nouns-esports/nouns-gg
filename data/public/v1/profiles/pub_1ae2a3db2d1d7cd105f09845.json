@@ -1,0 +1,14 @@
+{
+  "id": "pub_1ae2a3db2d1d7cd105f09845",
+  "name": "trcjr",
+  "image": "https://ipfs.nouns.gg/ipfs/QmcfH1Pnchi21XPe6ksWKkedw1eBGFBghb46ninaTgHXtq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xFE1DD629E51991b9FFCdff848cA09984d85aE7A9",
+      "kind": "external"
+    }
+  ]
+}

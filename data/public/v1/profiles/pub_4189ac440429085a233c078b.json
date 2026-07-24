@@ -1,0 +1,18 @@
+{
+  "id": "pub_4189ac440429085a233c078b",
+  "name": "Zaid",
+  "image": "https://pbs.twimg.com/profile_images/1880363259875979267/NAiOAX5H_normal.jpg",
+  "bio": "Saskatchewan Tournament Organizer ",
+  "twitter": {
+    "username": "ZaidSSK",
+    "name": "Zaid",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1880363259875979267/NAiOAX5H_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x26f2257a523875491D70Bf09dE3E9dc116c2e244",
+      "kind": "external"
+    }
+  ]
+}

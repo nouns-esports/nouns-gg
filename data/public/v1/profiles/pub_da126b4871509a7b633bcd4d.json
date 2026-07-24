@@ -1,0 +1,18 @@
+{
+  "id": "pub_da126b4871509a7b633bcd4d",
+  "name": "shane spangenberg",
+  "image": "https://pbs.twimg.com/profile_images/1219752386786287621/DS89T1cz_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ZimD00D",
+    "name": "shane spangenberg",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1219752386786287621/DS89T1cz_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6978099f422271157578502995d72130468c91b9",
+      "kind": "external"
+    }
+  ]
+}

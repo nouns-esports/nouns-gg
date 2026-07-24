@@ -1,0 +1,14 @@
+{
+  "id": "pub_c88c01a7a80bbd19bfcd103b",
+  "name": "cmdg5vww",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigsdguebjc3he7vvxhbt7qtjomk6w57c24erdjsvj5spstfuhsysu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9904cedDbA825a18bdF7E1984a886D23394CcBCc",
+      "kind": "external"
+    }
+  ]
+}

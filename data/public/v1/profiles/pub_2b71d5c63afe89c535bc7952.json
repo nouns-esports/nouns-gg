@@ -1,0 +1,14 @@
+{
+  "id": "pub_2b71d5c63afe89c535bc7952",
+  "name": "cmdnishw",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihqfqm2mtqetuhpwdwrptduarjzpc5rv4terox47vdre4ffzykdfa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC08857A0D0811Fc5BeDdD42931c3E5e5a6711523",
+      "kind": "external"
+    }
+  ]
+}

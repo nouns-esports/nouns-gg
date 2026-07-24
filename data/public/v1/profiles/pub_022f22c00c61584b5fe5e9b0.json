@@ -1,0 +1,14 @@
+{
+  "id": "pub_022f22c00c61584b5fe5e9b0",
+  "name": "dan_tate",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=4uf0cd&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x46e973fF95beFF50ea920780A8d2DE1ccA380269",
+      "kind": "external"
+    }
+  ]
+}

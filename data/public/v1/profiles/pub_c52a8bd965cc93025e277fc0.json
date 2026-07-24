@@ -1,0 +1,23 @@
+{
+  "id": "pub_c52a8bd965cc93025e277fc0",
+  "name": "Dharma Mattrenggana",
+  "image": "https://pbs.twimg.com/profile_images/1775231737481871360/8ioYDu0H_normal.jpg",
+  "bio": "A leather crafter who interest in crypto world",
+  "twitter": {
+    "username": "mattrenggana",
+    "name": "Dharma Mattrenggana",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1775231737481871360/8ioYDu0H_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x43d9A5Cb3c0299E3De882E10036eE9DE0497f234",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xbB8E573E006b758A09e00FE85B63B0923CfB7632",
+      "kind": "external"
+    }
+  ]
+}

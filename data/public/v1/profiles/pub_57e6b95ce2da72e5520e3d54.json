@@ -1,0 +1,14 @@
+{
+  "id": "pub_57e6b95ce2da72e5520e3d54",
+  "name": "Liquid Jeans",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=fqvv2e&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xcbFEFA5e53f15a9A50a57138e8801C4a034B744e",
+      "kind": "external"
+    }
+  ]
+}

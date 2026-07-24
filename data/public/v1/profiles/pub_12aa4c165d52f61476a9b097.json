@@ -1,0 +1,18 @@
+{
+  "id": "pub_12aa4c165d52f61476a9b097",
+  "name": "adreN ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1747769609380306945/0tzVLEe8_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "adreN_Hoag",
+    "name": "adreN ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1747769609380306945/0tzVLEe8_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x09507d64d2194e88b022b5eBCfa1cEecaeCc6814",
+      "kind": "external"
+    }
+  ]
+}

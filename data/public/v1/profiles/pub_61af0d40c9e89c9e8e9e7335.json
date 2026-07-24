@@ -1,0 +1,14 @@
+{
+  "id": "pub_61af0d40c9e89c9e8e9e7335",
+  "name": "mmjustin",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=t4uufj&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x63729548cc3F51128B4693E8C9dCB1bFe786adF4",
+      "kind": "external"
+    }
+  ]
+}

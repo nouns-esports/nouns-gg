@@ -1,0 +1,14 @@
+{
+  "id": "pub_bb6345db357d2a957799b6f3",
+  "name": "Nounish Art School",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicpwu7ofz4qopeyr5yxhhbydymvm4y53um4eu4vdebydj6qwjt3qu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8Cb1103024226a97D683bA9b25c5a079385ce320",
+      "kind": "external"
+    }
+  ]
+}

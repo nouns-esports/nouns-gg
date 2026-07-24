@@ -1,0 +1,14 @@
+{
+  "id": "pub_b04449115265bfd5ccd7fe18",
+  "name": "cm7atkcj",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreick74v64vfcaiirepsbda7wjnqb3xs75vtux2vcoyrc73hten6qla",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x03a86A39e9C6B9CC75781bD7cBA38B793E31673d",
+      "kind": "external"
+    }
+  ]
+}

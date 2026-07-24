@@ -1,0 +1,14 @@
+{
+  "id": "pub_0e9b52f045f103acca23ede0",
+  "name": "cmdm76x2",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiawjoghgukh5n6ebog5rjlm25vnaw44enh434ud42jniyeomokg3q",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1A2C072E60b3Ab9b0e06c55B20366D94197df539",
+      "kind": "external"
+    }
+  ]
+}

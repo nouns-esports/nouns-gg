@@ -1,0 +1,18 @@
+{
+  "id": "pub_755c75d1eef631ec019a0fc8",
+  "name": "brennen ⌐◨-◨ テ Φ",
+  "image": "https://pbs.twimg.com/profile_images/1800609299988672512/ynBZO57P_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "brennen_eth",
+    "name": "brennen ⌐◨-◨ テ Φ",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1800609299988672512/ynBZO57P_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2666f0C8FB58d182f2Dd79475DCA4A07B3724607",
+      "kind": "external"
+    }
+  ]
+}

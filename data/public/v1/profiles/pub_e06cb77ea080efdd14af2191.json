@@ -1,0 +1,14 @@
+{
+  "id": "pub_e06cb77ea080efdd14af2191",
+  "name": "cmdlj23y",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiczlhvyo5cy5obawxmqqoauv25tib5ajynddnhj63je4juaohbt7u",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa7A1e841262A1882371426008Bb91ed8F16E384C",
+      "kind": "external"
+    }
+  ]
+}

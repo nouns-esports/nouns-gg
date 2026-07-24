@@ -1,0 +1,18 @@
+{
+  "id": "pub_33e9ac9cecbf7e67f233f668",
+  "name": "Bungus",
+  "image": "https://pbs.twimg.com/profile_images/1843660680592752640/pITvldGA_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Bungusdl",
+    "name": "Bungus",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1843660680592752640/pITvldGA_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x91230325c093b16fc59d8270f6BCF423E3b53f15",
+      "kind": "external"
+    }
+  ]
+}

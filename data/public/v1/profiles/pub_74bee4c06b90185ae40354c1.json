@@ -1,0 +1,18 @@
+{
+  "id": "pub_74bee4c06b90185ae40354c1",
+  "name": "volky ⨕",
+  "image": "https://pbs.twimg.com/profile_images/1887218064451624960/-LB4YMFE_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "volkyeth",
+    "name": "volky ⨕",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1887218064451624960/-LB4YMFE_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6a024f521f83906671e1a23a8B6c560be7e980F4",
+      "kind": "external"
+    }
+  ]
+}

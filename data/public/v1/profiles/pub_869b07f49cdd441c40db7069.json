@@ -1,0 +1,18 @@
+{
+  "id": "pub_869b07f49cdd441c40db7069",
+  "name": "SANSA 💢",
+  "image": "https://pbs.twimg.com/profile_images/1895918641738084352/ysKMpVRB_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "0xSansa",
+    "name": "SANSA 💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1895918641738084352/ysKMpVRB_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x77bDd4aA10049b0fDf2fC7B25b6232F77C8c7E10",
+      "kind": "external"
+    }
+  ]
+}

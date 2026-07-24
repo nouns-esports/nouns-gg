@@ -1,0 +1,18 @@
+{
+  "id": "pub_ff367149a38d80ca866c14b4",
+  "name": "Frank",
+  "image": "https://pbs.twimg.com/profile_images/1741551979355344896/VlylQPyE_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "alpine_io",
+    "name": "Frank",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1741551979355344896/VlylQPyE_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEF31c87ca31A5e70a1d0a58c3FA982b103daa495",
+      "kind": "external"
+    }
+  ]
+}

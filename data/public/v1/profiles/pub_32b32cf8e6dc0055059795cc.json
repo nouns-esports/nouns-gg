@@ -1,0 +1,18 @@
+{
+  "id": "pub_32b32cf8e6dc0055059795cc",
+  "name": "SL8",
+  "image": "https://pbs.twimg.com/profile_images/1846274246328131584/envcKW0H_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Slatezera",
+    "name": "SL8",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1846274246328131584/envcKW0H_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x47046c3AAb4B03CF11A060AB63C9E4A55c92C5F0",
+      "kind": "external"
+    }
+  ]
+}

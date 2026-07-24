@@ -1,0 +1,14 @@
+{
+  "id": "pub_e771dad50b98f8d6ddba83b5",
+  "name": "clzvugbv",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifcujgcbnvanuxggqwqtaesl6pd7y2zcucmka7ey6vzwrfrdq63de",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xedcC867bc8B5FEBd0459af17a6f134F41f422f0C",
+      "kind": "external"
+    }
+  ]
+}

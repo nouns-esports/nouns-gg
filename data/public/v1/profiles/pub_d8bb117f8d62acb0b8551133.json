@@ -1,0 +1,14 @@
+{
+  "id": "pub_d8bb117f8d62acb0b8551133",
+  "name": "cmah8uhu",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibfdp6qxe2pzjmtgdjhtzf7hvsueqdfzef3xvom7bm4srwa3ltv54",
+  "bio": "crazy ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xDdB4938755C243a4f60a2f2f8f95dF4F894c58Cc",
+      "kind": "external"
+    }
+  ]
+}

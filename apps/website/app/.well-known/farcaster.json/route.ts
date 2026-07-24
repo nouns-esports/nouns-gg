@@ -1,4 +1,4 @@
-import { env } from "../../../../../env";
+import { siteConfig } from "@/config";
 
 export async function GET() {
 	return Response.json({
@@ -14,7 +14,7 @@ export async function GET() {
 			name: "Nouns GG",
 			iconUrl:
 				"https://ipfs.nouns.gg/ipfs/bafkreihrlnm24yfbi3bqgmwlr2ejcm6qbdm3pj6gvblb2grrlpogsvm6o4",
-			homeUrl: env.NEXT_PUBLIC_DOMAIN,
+			homeUrl: siteConfig.domain,
 			imageUrl:
 				"https://ipfs.nouns.gg/ipfs/bafybeih4hyyo6jakdqvg6xjc26pmh5kg5peqkig2wmjufzjbnum6oyb25y",
 			buttonTitle: "Launch",

@@ -1,0 +1,18 @@
+{
+  "id": "pub_a06b513cd07b1bed4338eae1",
+  "name": "start Ace",
+  "image": "https://pbs.twimg.com/profile_images/1922073832363589636/VRNkcgVU_normal.png",
+  "bio": "My mission in life is not merely to survive, but to thrive",
+  "twitter": {
+    "username": "StartAcee",
+    "name": "start Ace",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922073832363589636/VRNkcgVU_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6AB4449B2362A06D91e30Cd1d2DacDB3579ebcEd",
+      "kind": "external"
+    }
+  ]
+}

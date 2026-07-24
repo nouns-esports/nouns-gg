@@ -1,0 +1,14 @@
+{
+  "id": "pub_7c5b8aa8a205183a9dfa5f9b",
+  "name": "cmdlun6k",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieuq3howpqs7lzgb45yvroryiij57tzt7g5u34sak4peyo7t3wqia",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4dA64dcb5Bf0eD04cb9BC2658750Eab1782883B1",
+      "kind": "external"
+    }
+  ]
+}

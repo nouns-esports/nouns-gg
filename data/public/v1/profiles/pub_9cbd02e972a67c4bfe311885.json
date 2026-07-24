@@ -1,0 +1,14 @@
+{
+  "id": "pub_9cbd02e972a67c4bfe311885",
+  "name": "cmdr248j",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifztusauxuoyjwt27kl66njdvcqp3g5emm3k4piyw2ytrmhrdv3fq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA9005AA78D6d1C839EC51cf1549E17E129BC548b",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_82d063ca4c7b158a8d919740",
+  "name": "Solix_Ntah Apa",
+  "image": "https://pbs.twimg.com/profile_images/1497410352148975619/mLyVb_LH_normal.jpg",
+  "bio": "Airdrop Hunter",
+  "twitter": {
+    "username": "Mohamad39940111",
+    "name": "Solix_Ntah Apa",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1497410352148975619/mLyVb_LH_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa7090A4748c24995304775E9FD83d417E10Ccc99",
+      "kind": "external"
+    }
+  ]
+}

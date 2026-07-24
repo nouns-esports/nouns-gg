@@ -1,0 +1,14 @@
+{
+  "id": "pub_e482ce11bd014edc8c01e96f",
+  "name": "bruno._2",
+  "image": "https://i.imgur.com/zvXsQ1Q.jpg",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdd168aB317C88f20A14a3Cf7c8b6ddC002639643",
+      "kind": "external"
+    }
+  ]
+}

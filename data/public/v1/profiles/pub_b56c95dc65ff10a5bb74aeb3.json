@@ -1,0 +1,14 @@
+{
+  "id": "pub_b56c95dc65ff10a5bb74aeb3",
+  "name": "cmdmde18",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreih5aoeydga56lbzoygxhuv2uq6xwa6qevfzii26uoj7j5htad7m3m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x373d6Cc648eF42e1cAeE17844Fc10526F9F6FaaA",
+      "kind": "external"
+    }
+  ]
+}

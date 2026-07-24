@@ -1,0 +1,14 @@
+{
+  "id": "pub_01410df1b2bd693ff0a4c130",
+  "name": "xszn",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieu275fitpbpjbtjvjk6lxnfarvoqlf2fvsevi72vo2hijsohdvja",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x55243A07e6407bc99dEC968831EB85739270d0cc",
+      "kind": "external"
+    }
+  ]
+}

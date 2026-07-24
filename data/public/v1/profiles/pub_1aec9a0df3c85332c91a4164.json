@@ -1,0 +1,14 @@
+{
+  "id": "pub_1aec9a0df3c85332c91a4164",
+  "name": "cm71rdw3",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreia5mzlz7xaysgmiih7bdxijxrmq33ekhrx6z4k3qskdptcqnvhgjm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xab133Fe82be7Ac96D1dE86eD896F6Ffe2faed1a4",
+      "kind": "external"
+    }
+  ]
+}

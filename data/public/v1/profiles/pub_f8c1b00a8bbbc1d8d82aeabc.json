@@ -1,0 +1,14 @@
+{
+  "id": "pub_f8c1b00a8bbbc1d8d82aeabc",
+  "name": "Bix",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidiht63gse6nns5ti7nnv4ghrtqdnis65hlhh26ym6sqtrmkol3gi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6CF8568007eD13AE79d4CCD138a58F5Fa06F582e",
+      "kind": "external"
+    }
+  ]
+}

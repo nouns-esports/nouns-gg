@@ -1,0 +1,14 @@
+{
+  "id": "pub_dc58d34cbddc78835f9b538b",
+  "name": "sunshinevendetta",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=bnd9c7&background=1",
+  "bio": "dev, music producer, cool hunter",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xAe6b19b637FDCB9c5C05238E5279754C39DE76A9",
+      "kind": "external"
+    }
+  ]
+}

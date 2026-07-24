@@ -1,0 +1,14 @@
+{
+  "id": "pub_7e2f7e359b3ca6fd055e562b",
+  "name": "Leciacker",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=kr24m9&background=1",
+  "bio": "Not",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x19dAf179dCD1320f13B57250Eaca551110Aef38b",
+      "kind": "external"
+    }
+  ]
+}

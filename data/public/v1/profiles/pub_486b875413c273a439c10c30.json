@@ -1,0 +1,23 @@
+{
+  "id": "pub_486b875413c273a439c10c30",
+  "name": "shadowfragz77",
+  "image": "https://pbs.twimg.com/profile_images/1923316598309601280/vMm9f7Sd_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "shadowfragz77",
+    "name": "shadowfragz77",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923316598309601280/vMm9f7Sd_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x730058874F015054fef45255bC768088532cf2b3",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x3E46B1F1109f70957EE5434520786b6695BACaA9",
+      "kind": "external"
+    }
+  ]
+}

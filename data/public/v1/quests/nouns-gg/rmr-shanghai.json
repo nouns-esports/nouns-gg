@@ -1,0 +1,40 @@
+{
+  "id": "quest:nouns-gg:rmr-shanghai",
+  "handle": "rmr-shanghai",
+  "name": "Watch us compete at the RMR live",
+  "description": null,
+  "image": "https://ipfs.nouns.gg/ipfs/QmQrbyAfxVzZo2Vx24C3sqSme1s3cGAa5PeAXHTe1eVJib",
+  "createdAt": "2024-11-11T11:00:00.000Z",
+  "featured": false,
+  "active": false,
+  "start": "2024-11-13T12:00:00.000Z",
+  "end": "2024-11-13T16:00:00.000Z",
+  "xp": 200,
+  "points": "0.000000000000000000",
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "completions": [],
+  "actions": []
+}

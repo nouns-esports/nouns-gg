@@ -1,0 +1,14 @@
+{
+  "id": "pub_e5b08afb2306efbde8f7220c",
+  "name": "cmdpgzl3",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib7jajiey2vmg6g7h532mopodot4ijzuiht3fnawidrwhrsudoedi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB46eBA10ea9b91BF5b5A59b9B45bAB36191B88C6",
+      "kind": "external"
+    }
+  ]
+}

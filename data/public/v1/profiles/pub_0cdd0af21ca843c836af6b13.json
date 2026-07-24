@@ -1,0 +1,18 @@
+{
+  "id": "pub_0cdd0af21ca843c836af6b13",
+  "name": "temitopeohassan.eth | #GraphRising 🌅",
+  "image": "https://pbs.twimg.com/profile_images/1815362558418731009/TyX8cPZ5_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "temitopeohassan",
+    "name": "temitopeohassan.eth | #GraphRising 🌅",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1815362558418731009/TyX8cPZ5_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xaF108Dd1aC530F1c4BdED13f43E336A9cec92B44",
+      "kind": "external"
+    }
+  ]
+}

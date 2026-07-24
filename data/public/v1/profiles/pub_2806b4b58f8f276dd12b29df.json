@@ -1,0 +1,14 @@
+{
+  "id": "pub_2806b4b58f8f276dd12b29df",
+  "name": "luisma",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreic3rdt7apyqlcilggdeq6ggcyltnk26uoiyhp7gbtr4kcc4ahit6e",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x106ABE1230C20e069d934359223F21c20F0d2d8A",
+      "kind": "external"
+    }
+  ]
+}

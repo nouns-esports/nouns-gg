@@ -2,7 +2,6 @@ import type { getPredictions } from "@/server/queries/predictions";
 import { twMerge } from "tailwind-merge";
 import Link from "./Link";
 import { Check, Plus, Sparkles, Vote } from "lucide-react";
-import { LockSimple } from "phosphor-react-sc";
 import { formatGold } from "~/packages/utils/formatGold";
 import { parsePrediction } from "~/packages/utils/parsePrediction";
 
@@ -31,25 +30,9 @@ export default function PredictionCard(props: {
 					</p>
 				</div>
 				<div
-					className={twMerge(
-						"flex items-center gap-1.5 px-3 py-1 h-min text-sm rounded-full bg-red/30 text-red whitespace-nowrap",
-						state === "resolved" && "bg-green/30 text-green",
-						state === "closed" && " bg-blue-500/30 text-blue-500",
-					)}
+					className="flex h-min items-center gap-1.5 whitespace-nowrap rounded-full bg-green/30 px-3 py-1 text-sm text-green"
 				>
-					{state === "open" ? (
-						<div className="w-2 h-2 rounded-full animate-pulse bg-red" />
-					) : null}
-					{state === "closed" ? (
-						<LockSimple className="w-3.5 h-3.5 text-blue-500" weight="fill" />
-					) : null}
-					{
-						{
-							resolved: "Finalized",
-							closed: "Awaiting Results",
-							open: "Live",
-						}[state]
-					}
+					Finalized
 				</div>
 			</div>
 			<div

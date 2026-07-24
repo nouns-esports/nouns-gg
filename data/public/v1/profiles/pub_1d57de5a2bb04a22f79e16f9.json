@@ -1,0 +1,18 @@
+{
+  "id": "pub_1d57de5a2bb04a22f79e16f9",
+  "name": "RobbysCandra 🌶️🖍️🏓",
+  "image": "https://pbs.twimg.com/profile_images/1727065034189352961/1OK902iE_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "robbyscandra",
+    "name": "RobbysCandra 🌶️🖍️🏓",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1727065034189352961/1OK902iE_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD79F6C6d0C0E6bbED76867eE12CFfc2EE6058984",
+      "kind": "external"
+    }
+  ]
+}

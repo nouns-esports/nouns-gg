@@ -1,0 +1,19 @@
+{
+  "id": "community:thegathering",
+  "handle": "thegathering",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihs45zjfkocdt6jfy5efoqbhf4dcq6t7crhp7nmn5kp26aq2k667y",
+  "name": "The Gathering",
+  "levels": null,
+  "points": null,
+  "description": null,
+  "parentUrl": null,
+  "details": null,
+  "featured": false,
+  "createdAt": "2025-07-20T01:50:10.707Z",
+  "hasRounds": false,
+  "hasQuests": false,
+  "hasPredictions": false,
+  "hasEvents": true,
+  "hasLeaderboard": false,
+  "hasShop": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_4e3b488f7c3536f4458f45d2",
+  "name": "theforbiddenone",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidtqjwtjs27v2m4ypkl6khpvt6w3gv3iqe45vz2zls4rgjk5kdm6e",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9dc5028b0105bd061E9bFbd4bfC117e37EFB0e4c",
+      "kind": "external"
+    }
+  ]
+}

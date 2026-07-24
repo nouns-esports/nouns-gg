@@ -1,0 +1,19 @@
+{
+  "id": "pub_fdffc6feef2928f155e28558",
+  "name": "Grid Ghost",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihgcgsn6qqbhvi72eba23rs3ndhmeim6cxbfaen6whdkavhekyt24",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x42e181E7f3F2ab1F6E329f29e5Dc56cc9A2De727",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x3adCeccd52318190C16f87424Dc200C08A5C9CD9",
+      "kind": "external"
+    }
+  ]
+}

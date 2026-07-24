@@ -1,0 +1,18 @@
+{
+  "id": "pub_d2dcfcfd20ce744e13c3adcb",
+  "name": "STON",
+  "image": "https://pbs.twimg.com/profile_images/1948009385239904256/z55yj38S_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "StonTUO",
+    "name": "STON",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948009385239904256/z55yj38S_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEED55DB1100d2b16f518633af501b14Fd1f7b927",
+      "kind": "external"
+    }
+  ]
+}

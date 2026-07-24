@@ -1,0 +1,14 @@
+{
+  "id": "pub_d6c89f8bd8e50a8e901007dd",
+  "name": "Felipe Flip",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreih27y6fsqpw3srvsivedfajmlehve7t24h6ztk4gvagpud3wfsuyu",
+  "bio": "Builder in the Nouns ecosystem through Flows with SensatioNouns, BlackChain, and Roots of Love projects. Co-founder of ICE Institute. Skater, singer, songwriter, rapper with a RapJazz band and Hardcore/Rap band, plus DJ/music selector. Also stream live reactions to skate videos and games. Web3 enthusiast spreading nounish culture worldwide through my random adventures. ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xcc0528aae2F84089F1Ae7d5F1D6EcEf2c39a338a",
+      "kind": "external"
+    }
+  ]
+}

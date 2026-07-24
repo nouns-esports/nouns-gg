@@ -1,0 +1,14 @@
+{
+  "id": "pub_7178038babb6e7af104696b3",
+  "name": "cly6rlgj",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicdbpiruhdbsvmv6ozwd2xgd4fw54vunxwaom4zi6ynbjxwil2jc4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7AB1e448115Ef0991C6FdA4Ea78F1E73693A7fF4",
+      "kind": "external"
+    }
+  ]
+}

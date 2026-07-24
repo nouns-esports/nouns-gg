@@ -1,0 +1,14 @@
+{
+  "id": "pub_8b89d93b19cbd7c9c52c3671",
+  "name": "daryl.eth",
+  "image": "https://ipfs.nouns.gg/ipfs/QmSjJMCj5uQvB4gj4RKbjxckA6p7t6f2xSPF2UHUQ5c4Xp",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb78cC2DaEC7a2466EA2327D6F5E7A81c525081D6",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_d262fbe392c13571383faabe",
+  "name": "RedMunchlax",
+  "image": "https://pbs.twimg.com/profile_images/898496184238690306/YxI8514M_normal.jpg",
+  "bio": "I love munchlax ",
+  "twitter": {
+    "username": "LovelyAtkinson",
+    "name": "RedMunchlax",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/898496184238690306/YxI8514M_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8c3c28128Bca356c1e167e2C8714422d176D623D",
+      "kind": "external"
+    }
+  ]
+}

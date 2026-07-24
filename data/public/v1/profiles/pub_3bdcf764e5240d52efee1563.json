@@ -1,0 +1,23 @@
+{
+  "id": "pub_3bdcf764e5240d52efee1563",
+  "name": "Aklo ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1892094448164560896/htMMB5SL_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "NotAklo",
+    "name": "Aklo ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1892094448164560896/htMMB5SL_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1E3d18Da81a9e61E5AED2deffeEEC2B8F7CAa3D4",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x611f562a0C7f019F7cbCBE54C67bF0fe232EDE11",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_040f4bbed37b998edc023898",
+  "name": "пooп",
+  "image": "https://pbs.twimg.com/profile_images/1874760570995400704/ReSl3kr__normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "noonvania",
+    "name": "пooп",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1874760570995400704/ReSl3kr__normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x651e2daCBF1FF16aC4FaDD67Aa23a2E1612924a1",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_18c7436f56a7006ba413d960",
+  "name": "herb",
+  "image": "https://pbs.twimg.com/profile_images/1813343425317445632/mbcyrJZ3_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "questassbm",
+    "name": "herb",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1813343425317445632/mbcyrJZ3_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdAEF6072DEa9EFE67E717f02BAae2548849A89aA",
+      "kind": "external"
+    }
+  ]
+}

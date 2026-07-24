@@ -1,0 +1,19 @@
+{
+  "id": "pub_926858963bc083c0920155ab",
+  "name": "Cheeky",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicb4xfcgulxn637kyor646xxxmzvjixekxtnzwm4zwjrnzf4usjni",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x82912F16948d9a80e8604d2fe10dA8A141CD8Eb5",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x40e7d8E88756A244B5314D6CF7F5DbF6E9906089",
+      "kind": "external"
+    }
+  ]
+}

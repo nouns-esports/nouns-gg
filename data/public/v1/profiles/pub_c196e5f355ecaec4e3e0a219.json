@@ -1,0 +1,14 @@
+{
+  "id": "pub_c196e5f355ecaec4e3e0a219",
+  "name": "mz",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=wntsjj&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4007c39A8c1E71Ab737BA27707fD7fBc93a64Cb3",
+      "kind": "external"
+    }
+  ]
+}

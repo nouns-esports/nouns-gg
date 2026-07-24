@@ -1,0 +1,14 @@
+{
+  "id": "pub_ae385a6932387a526128efae",
+  "name": "davinoyesigye",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigamqvg4a33v6bcxnhgbby2w7lptviytjbbi6aydn6o4drvruophy",
+  "bio": "Nouns Delegate",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "kind": "external"
+    }
+  ]
+}

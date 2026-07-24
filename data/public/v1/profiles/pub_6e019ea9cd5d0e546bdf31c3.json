@@ -1,0 +1,14 @@
+{
+  "id": "pub_6e019ea9cd5d0e546bdf31c3",
+  "name": "cmdousbx",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreig7zfhhc4q4c3eiiume25n5sy5w36vi7e2ngrr7reu3io2cvxdubq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x04b8765Ae514d6a42361879fD91F4005ae11b41F",
+      "kind": "external"
+    }
+  ]
+}

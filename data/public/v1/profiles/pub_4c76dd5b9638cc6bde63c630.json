@@ -1,0 +1,23 @@
+{
+  "id": "pub_4c76dd5b9638cc6bde63c630",
+  "name": "thepaleotter",
+  "image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+  "bio": "DK main and creator of Project Flippi \nhttps://www.youtube.com/@projectflippi",
+  "twitter": {
+    "username": "OtterFodderWork",
+    "name": "thepaleotter",
+    "profilePictureUrl": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2ece215D730368A3f98B8afaFF7d6734C42B792F",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x67430e19BF688F02E28C857dd8814987dBF79A58",
+      "kind": "external"
+    }
+  ]
+}

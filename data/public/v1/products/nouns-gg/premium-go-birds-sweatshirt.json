@@ -1,0 +1,172 @@
+{
+  "id": "product:nouns-gg:premium-go-birds-sweatshirt",
+  "handle": "premium-go-birds-sweatshirt",
+  "name": "Premium GO BIRDS Sweatshirt",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:nouns-bowl",
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:432df307-0fad-4ac2-837b-07670b95acd4",
+      "images": [],
+      "size": "m",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:9a652ceb-aa0d-4ae8-8522-2e8e97718e2c",
+      "images": [],
+      "size": "xl",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:420acabf-d806-4223-9928-abac27034605",
+      "images": [],
+      "size": "3xl",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:352efea8-cef6-4333-8daf-f9c611e683ee",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreibadxlbo3ckh3ohmgw4wkm67ucheptn4p4svch5etlvslzfzrqczq"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#222734",
+        "name": "Navy Blazer"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:bb247726-b64d-41ec-b945-6d347ac3a037",
+      "images": [],
+      "size": "m",
+      "color": {
+        "hex": "#222734",
+        "name": "Navy Blazer"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:7f664c11-28ec-46fd-9521-b2da01eadd4c",
+      "images": [],
+      "size": "l",
+      "color": {
+        "hex": "#222734",
+        "name": "Navy Blazer"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:f5769924-e5e9-4a69-8f19-a936e4214f31",
+      "images": [],
+      "size": "xl",
+      "color": {
+        "hex": "#222734",
+        "name": "Navy Blazer"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:45319ce9-9644-4622-979d-6538b2dff3e1",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreica6cl5uauhstltxsqesuuzo6yrcj4irvo4dpmrrjinnmkdi7ps5i"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:eafe5648-67e1-4b50-a070-20c468274057",
+      "images": [],
+      "size": "2xl",
+      "color": {
+        "hex": "#222734",
+        "name": "Navy Blazer"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:1a98f975-fb6e-47bf-806c-98edd2a857a5",
+      "images": [],
+      "size": "3xl",
+      "color": {
+        "hex": "#222734",
+        "name": "Navy Blazer"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:ddb42867-224d-441b-b387-146464cb0efc",
+      "images": [],
+      "size": "2xl",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:197834f4-1172-47a7-8a77-cb93ad76e0ef",
+      "images": [],
+      "size": "l",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "35.00",
+      "inventory": null
+    }
+  ]
+}

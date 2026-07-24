@@ -1,0 +1,18 @@
+{
+  "id": "pub_98f41d56d017e8755210e33b",
+  "name": "Jevty",
+  "image": "https://pbs.twimg.com/profile_images/1865406770816204800/ronrLifr_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "JumgMason",
+    "name": "Jevty",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1865406770816204800/ronrLifr_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x809B9D3f303De73Aa4A89e073A43F4de699C496e",
+      "kind": "external"
+    }
+  ]
+}

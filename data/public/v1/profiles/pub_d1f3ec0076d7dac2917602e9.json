@@ -1,0 +1,18 @@
+{
+  "id": "pub_d1f3ec0076d7dac2917602e9",
+  "name": "Floofys🏳️‍🌈",
+  "image": "https://pbs.twimg.com/profile_images/1789429945506160642/P2_q9378_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "FloofysTV",
+    "name": "Floofys🏳️‍🌈",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1789429945506160642/P2_q9378_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x24cFF936a95505b3DF3e8EC16138fD64174E2143",
+      "kind": "external"
+    }
+  ]
+}

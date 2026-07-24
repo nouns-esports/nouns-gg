@@ -1,0 +1,14 @@
+{
+  "id": "pub_23cac7db1c0ff2adea8ab54c",
+  "name": "emerlin🌸",
+  "image": "https://ipfs.nouns.gg/ipfs/QmRQAEW1EyiwFpwTpdtjC6gyHePofR6chW5EWQyHX84yA8",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xECe27c48D0581f7014e72FA80FEA56029cFC8e8a",
+      "kind": "external"
+    }
+  ]
+}

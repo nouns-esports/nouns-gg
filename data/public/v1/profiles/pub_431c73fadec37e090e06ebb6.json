@@ -1,0 +1,14 @@
+{
+  "id": "pub_431c73fadec37e090e06ebb6",
+  "name": "MJ",
+  "image": "https://ipfs.nouns.gg/ipfs/QmNjst7PuZdseACGSt2B32SjCkopn7Hd5cgyosZo36FonP",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD51b56E161D0aF9315384FB0Fd2Bef893B7cD2C4",
+      "kind": "external"
+    }
+  ]
+}

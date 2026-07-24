@@ -1,0 +1,14 @@
+{
+  "id": "pub_8ec29c14442d0b1b38dabd51",
+  "name": "",
+  "image": "/logo/logo-square.png",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3CEb1AE4796f6A9BcD825841a6C86e1cE17B46A4",
+      "kind": "external"
+    }
+  ]
+}

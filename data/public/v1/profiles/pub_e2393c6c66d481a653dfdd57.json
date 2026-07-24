@@ -1,0 +1,18 @@
+{
+  "id": "pub_e2393c6c66d481a653dfdd57",
+  "name": "Seb ⌐◨-◨⚡️",
+  "image": "https://pbs.twimg.com/profile_images/1836191545155891200/MWqBJ6Uk_normal.jpg",
+  "bio": "nounish ⌐◨-◨",
+  "twitter": {
+    "username": "Arcade_Seb",
+    "name": "Seb ⌐◨-◨⚡️",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1836191545155891200/MWqBJ6Uk_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x38FCCc4eD695dab2033F62D3dF1eD315Fe700610",
+      "kind": "external"
+    }
+  ]
+}

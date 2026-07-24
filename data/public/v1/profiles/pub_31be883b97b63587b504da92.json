@@ -1,0 +1,18 @@
+{
+  "id": "pub_31be883b97b63587b504da92",
+  "name": "Mulf",
+  "image": "https://pbs.twimg.com/profile_images/1904656408160739328/nNtew4Ac_normal.jpg",
+  "bio": "https://mulf.wtf",
+  "twitter": {
+    "username": "0xMulf",
+    "name": "Mulf",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1904656408160739328/nNtew4Ac_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x75A6085Bbc25665B6891EA94475E6120897BA90b",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_1b0daa52e6ecaa58eb064067",
+  "name": "cmalsulr",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidikyho62qn5kj64jsy542yb4xjbx5kf6aouhaybo6oi7wogun7m4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x72AB2b2F6C580eaa107Da3806D60B3ebA2c46d94",
+      "kind": "external"
+    }
+  ]
+}

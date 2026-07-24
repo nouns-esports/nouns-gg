@@ -1,0 +1,14 @@
+{
+  "id": "pub_95547d1cc7cf5a3b120f8152",
+  "name": "cmdp8awc",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigzf74frdxx5uk3qmueqbuognbivrdoccb76hfljoavlar34kavdm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x78b3f94Ff9dc111537C1de6b8932eC3B9f315dBA",
+      "kind": "external"
+    }
+  ]
+}

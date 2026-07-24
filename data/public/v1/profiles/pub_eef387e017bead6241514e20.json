@@ -1,0 +1,14 @@
+{
+  "id": "pub_eef387e017bead6241514e20",
+  "name": "cmei7480",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiatqhzzcnj3sqbdgkv4umftof6xytqlwvis4jgsyg2lcigyahgrxa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8d2a253a5885806AA14e583C80c8833A904fb252",
+      "kind": "external"
+    }
+  ]
+}

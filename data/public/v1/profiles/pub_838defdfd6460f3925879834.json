@@ -1,0 +1,19 @@
+{
+  "id": "pub_838defdfd6460f3925879834",
+  "name": "DapperDolphin",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaz4hjxjljbduh22ecsgafr3xmhyg4dobfdaeqvlgbep5zdxcagfy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe973D00c5f192250A8658733B930d6f9a1480b23",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x254a646cae81D2aC5dAF06b10b72B78a39242f87",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_eb2b87e822bd4289b1679133",
+  "name": "tori",
+  "image": "https://pbs.twimg.com/profile_images/1794994645191299072/xUzW12FU_normal.jpg",
+  "bio": "nouns fe player (raynee)",
+  "twitter": {
+    "username": "1Raynee",
+    "name": "tori",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1794994645191299072/xUzW12FU_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE0C39ed318F4b0e3903e2c26FfA921C40CcEa810",
+      "kind": "external"
+    }
+  ]
+}

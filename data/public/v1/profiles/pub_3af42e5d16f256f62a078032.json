@@ -1,0 +1,18 @@
+{
+  "id": "pub_3af42e5d16f256f62a078032",
+  "name": "ins.eth",
+  "image": "https://pbs.twimg.com/profile_images/1908939116194168832/bqQmEUhX_normal.jpg",
+  "bio": "if You can't HOLD You won't be RICH",
+  "twitter": {
+    "username": "NgowahJ",
+    "name": "ins.eth",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1908939116194168832/bqQmEUhX_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x77e3F25C1a0E86E9DeCf93D48c499C33AAb13fB2",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_7bc10cae5ab10ee778edfd5f",
+  "name": "cmancgno",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreia3aeowduu4vxgaiehdajc5z3exgvlqxfbmaubxenakag6ho6qqr4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x23e4b177E59F357F138180dA653031656c939aF1",
+      "kind": "external"
+    }
+  ]
+}

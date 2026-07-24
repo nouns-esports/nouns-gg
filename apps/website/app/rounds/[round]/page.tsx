@@ -1,6 +1,11 @@
 import { getRound } from "@/server/queries/rounds";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
+import { roundParams } from "@/server/data/params";
+
+export function generateStaticParams() {
+	return roundParams.map(({ round }) => ({ round }));
+}
 
 export default async function Round(props: {
 	params: Promise<{ round: string }>;

@@ -1,0 +1,19 @@
+{
+  "id": "pub_91aeacdc296d0eaec2dfa370",
+  "name": "cmakszi6",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifqwq3lttbcfwqmaobo7plsdb42v4plmskonc5dnuv35bsbxv6ssa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb3A5CE3C2Db88e7A8Bfef03483F377214390FA0B",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x870e8E37F4be4171B0800bc235Ef8DdB2Bbb03AB",
+      "kind": "external"
+    }
+  ]
+}

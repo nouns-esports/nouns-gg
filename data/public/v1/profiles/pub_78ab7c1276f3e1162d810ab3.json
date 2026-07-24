@@ -1,0 +1,14 @@
+{
+  "id": "pub_78ab7c1276f3e1162d810ab3",
+  "name": "cmajwyq8",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigfqb7xkvarnrtypdmzc3fazd636bvc7muqj3ewp3qu2rc4p5ygky",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x56A5C185cFebea635f82842C2c6B556ddf355B03",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_bbf6565fdb62149640f88cee",
+  "name": "JoeC",
+  "image": "https://pbs.twimg.com/profile_images/1796534314470977536/NbT2_0T__normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "josecarmagnola",
+    "name": "JoeC",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1796534314470977536/NbT2_0T__normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1F3fa1A72acc23bB2269a89b4A1363EE72a9D4bf",
+      "kind": "external"
+    }
+  ]
+}

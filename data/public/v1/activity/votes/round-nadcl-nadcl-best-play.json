@@ -1,0 +1,178 @@
+[
+  {
+    "id": "vote:9220d9c4-93b7-43b1-8a65-77fc4167949e",
+    "userId": "pub_2beec2c4ca7be0b72f66d75f",
+    "proposalId": "proposal:5e155d98-c21f-41f2-b8e4-7dea05a8f99e",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-04T12:36:21.638Z"
+  },
+  {
+    "id": "vote:2acb06a6-9e2d-4d78-84b8-27ccf519b169",
+    "userId": "pub_2beec2c4ca7be0b72f66d75f",
+    "proposalId": "proposal:9c8edcd9-fbec-4c09-9ec2-c812fccfed91",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-04T12:36:21.638Z"
+  },
+  {
+    "id": "vote:8c0cb61f-af19-4ea1-9319-d1a991b77951",
+    "userId": "pub_d5142697c3557767ecace99d",
+    "proposalId": "proposal:5e155d98-c21f-41f2-b8e4-7dea05a8f99e",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-04T19:14:40.206Z"
+  },
+  {
+    "id": "vote:c25937ba-a17c-4d18-94ef-f665ccbd8452",
+    "userId": "pub_d5142697c3557767ecace99d",
+    "proposalId": "proposal:9c8edcd9-fbec-4c09-9ec2-c812fccfed91",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-04T19:14:48.441Z"
+  },
+  {
+    "id": "vote:4d411e0f-8daa-4c71-91af-da22f92c1738",
+    "userId": "pub_7b09e384896f199eb9279d6f",
+    "proposalId": "proposal:5e155d98-c21f-41f2-b8e4-7dea05a8f99e",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-04T23:37:47.951Z"
+  },
+  {
+    "id": "vote:885fd1a9-4bd8-424c-a6a1-7f11b40d7e0e",
+    "userId": "pub_7b09e384896f199eb9279d6f",
+    "proposalId": "proposal:9c8edcd9-fbec-4c09-9ec2-c812fccfed91",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-04T23:37:47.951Z"
+  },
+  {
+    "id": "vote:e486f2ce-06ed-412a-9359-46fe07b41d5c",
+    "userId": "pub_ba455a86a2bc27c5bc3b20b7",
+    "proposalId": "proposal:9c8edcd9-fbec-4c09-9ec2-c812fccfed91",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-05T01:20:04.095Z"
+  },
+  {
+    "id": "vote:19ce9ead-ce5e-4030-b09c-6fe70f2d8676",
+    "userId": "pub_ba455a86a2bc27c5bc3b20b7",
+    "proposalId": "proposal:5e155d98-c21f-41f2-b8e4-7dea05a8f99e",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-05T01:20:04.095Z"
+  },
+  {
+    "id": "vote:d596d90a-9581-4700-8030-82f9e4a661a8",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:5e155d98-c21f-41f2-b8e4-7dea05a8f99e",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-05T01:30:44.665Z"
+  },
+  {
+    "id": "vote:9fb56eb9-3d08-48c7-8f1d-3bcc6bd9c856",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:9c8edcd9-fbec-4c09-9ec2-c812fccfed91",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-05T01:30:44.665Z"
+  },
+  {
+    "id": "vote:aa32a5d1-ad78-4ea9-acee-ca7c9cfe377e",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:9c8edcd9-fbec-4c09-9ec2-c812fccfed91",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-05T01:38:13.510Z"
+  },
+  {
+    "id": "vote:9a9cea69-9882-4620-baba-23dc506f079a",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:5e155d98-c21f-41f2-b8e4-7dea05a8f99e",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 5,
+    "timestamp": "2025-06-05T01:38:13.510Z"
+  },
+  {
+    "id": "vote:24d8dce5-d79a-48fe-a1ca-c8d4d8bc4649",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:9c8edcd9-fbec-4c09-9ec2-c812fccfed91",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 10,
+    "timestamp": "2025-06-05T02:20:34.565Z"
+  },
+  {
+    "id": "vote:63e4be64-8e65-433f-a06f-5f2563aad314",
+    "userId": "pub_08a7581872b2c3a9df58f4a0",
+    "proposalId": "proposal:5e155d98-c21f-41f2-b8e4-7dea05a8f99e",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 2,
+    "timestamp": "2025-06-05T04:12:22.288Z"
+  },
+  {
+    "id": "vote:4e43c220-a980-4604-ae64-e7a31d691ca2",
+    "userId": "pub_08a7581872b2c3a9df58f4a0",
+    "proposalId": "proposal:9c8edcd9-fbec-4c09-9ec2-c812fccfed91",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 8,
+    "timestamp": "2025-06-05T04:12:22.288Z"
+  },
+  {
+    "id": "vote:8e76af5d-e339-4165-8a13-66730c29fee1",
+    "userId": "pub_2b8b4600a2bd55b6f35b88f1",
+    "proposalId": "proposal:9c8edcd9-fbec-4c09-9ec2-c812fccfed91",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 1,
+    "timestamp": "2025-06-05T04:35:01.275Z"
+  },
+  {
+    "id": "vote:3d8b9e36-5f83-49f8-a7cb-5da1058f7860",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:5e155d98-c21f-41f2-b8e4-7dea05a8f99e",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 1,
+    "timestamp": "2025-06-05T17:27:06.344Z"
+  },
+  {
+    "id": "vote:55a7cf13-5b8f-4ed6-8ade-daa3902f3296",
+    "userId": "pub_f48dcd01529e8cc10dc75037",
+    "proposalId": "proposal:9c8edcd9-fbec-4c09-9ec2-c812fccfed91",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 1,
+    "timestamp": "2025-06-06T06:37:45.904Z"
+  },
+  {
+    "id": "vote:3e0db977-90f3-42f0-9dc6-ccceab53888a",
+    "userId": "pub_98f41d56d017e8755210e33b",
+    "proposalId": "proposal:5e155d98-c21f-41f2-b8e4-7dea05a8f99e",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 1,
+    "timestamp": "2025-06-06T09:16:05.612Z"
+  },
+  {
+    "id": "vote:5f1871ee-987e-419f-a739-f57b4f353434",
+    "userId": "pub_06bb745e0e1c2ed09c5a94b4",
+    "proposalId": "proposal:9c8edcd9-fbec-4c09-9ec2-c812fccfed91",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 2,
+    "timestamp": "2025-06-06T09:38:38.283Z"
+  },
+  {
+    "id": "vote:dfc479c8-a4fe-4358-9754-fbc38436bdef",
+    "userId": "pub_06bb745e0e1c2ed09c5a94b4",
+    "proposalId": "proposal:5e155d98-c21f-41f2-b8e4-7dea05a8f99e",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 1,
+    "timestamp": "2025-06-06T09:38:38.283Z"
+  },
+  {
+    "id": "vote:dbeccd44-9eb6-4f32-809f-0cabcff18912",
+    "userId": "pub_f8c1b00a8bbbc1d8d82aeabc",
+    "proposalId": "proposal:5e155d98-c21f-41f2-b8e4-7dea05a8f99e",
+    "roundId": "round:nadcl:nadcl-best-play",
+    "count": 1,
+    "timestamp": "2025-06-07T09:55:37.578Z"
+  }
+]

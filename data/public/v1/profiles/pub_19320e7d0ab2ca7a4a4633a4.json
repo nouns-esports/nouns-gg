@@ -1,0 +1,14 @@
+{
+  "id": "pub_19320e7d0ab2ca7a4a4633a4",
+  "name": "cmgikoqi",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaybevkvfwq5ajbnrwpqz2bb5osnyhzeliuh6mjnqb4tyn5qlhini",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5fdeea5830114ffa5410dfCa64824E6BcD665dAc",
+      "kind": "external"
+    }
+  ]
+}

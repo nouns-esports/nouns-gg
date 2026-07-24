@@ -1,0 +1,18 @@
+{
+  "id": "pub_91b83a9eb897b350a79981ec",
+  "name": "🜲ROM🜲",
+  "image": "https://pbs.twimg.com/profile_images/1904321203608981504/J31BMGZe_normal.jpg",
+  "bio": "🌑🌒//Oneiric narrative//🌔🌕\n",
+  "twitter": {
+    "username": "romanmedrano_",
+    "name": "🜲ROM🜲",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1904321203608981504/J31BMGZe_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4C70CFb350724b3ce0ff42E67De886F89d3B5A62",
+      "kind": "external"
+    }
+  ]
+}

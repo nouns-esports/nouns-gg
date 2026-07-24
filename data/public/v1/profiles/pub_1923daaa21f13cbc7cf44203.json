@@ -1,0 +1,14 @@
+{
+  "id": "pub_1923daaa21f13cbc7cf44203",
+  "name": "Mimie",
+  "image": "https://ipfs.nouns.gg/ipfs/QmRz1EBmakkLgXq4m5knXv51g32Ht3L358vFvzenqisBLn",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA39f35A843B2060F9364c04Cfce18CDf18a46bC3",
+      "kind": "external"
+    }
+  ]
+}

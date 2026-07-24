@@ -1,0 +1,18 @@
+{
+  "id": "pub_bb5663638563a7fbf897e1fa",
+  "name": "NsongKing 👑",
+  "image": "https://pbs.twimg.com/profile_images/1934602888744988672/rbFSOCy7_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "EkanemNsongurua",
+    "name": "NsongKing 👑",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1934602888744988672/rbFSOCy7_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x73603E35C7Cd0647c1F23807eFe0A0FB2FAd40A5",
+      "kind": "external"
+    }
+  ]
+}

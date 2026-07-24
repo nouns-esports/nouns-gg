@@ -1,0 +1,18 @@
+{
+  "id": "pub_8e73e0c9211d24993227eb68",
+  "name": "GFOX ANIMATIONS",
+  "image": "https://pbs.twimg.com/profile_images/1831487876539789312/6aXk0Ctj_normal.jpg",
+  "bio": "2D, 3D ARTIST",
+  "twitter": {
+    "username": "Gfox_Animations",
+    "name": "GFOX ANIMATIONS",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1831487876539789312/6aXk0Ctj_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd11327c02Ca60219dbb5A95253c1871BB72675ad",
+      "kind": "external"
+    }
+  ]
+}

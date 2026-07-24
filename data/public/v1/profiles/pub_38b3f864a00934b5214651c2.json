@@ -1,0 +1,18 @@
+{
+  "id": "pub_38b3f864a00934b5214651c2",
+  "name": "ShmeepShmopp",
+  "image": "https://pbs.twimg.com/profile_images/1617315359509417984/vHalt6BY_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ShmeepShmopp",
+    "name": "ShmeepShmopp",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1617315359509417984/vHalt6BY_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xeBE96094238123d47530D37abaC058782D446F30",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pub_bc624dfaae3a2c506557fb96",
+  "name": "Babypro007",
+  "image": "https://pbs.twimg.com/profile_images/1923284776389349376/kv9w9Ix7_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "babybro007",
+    "name": "Babypro007",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923284776389349376/kv9w9Ix7_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x582990369D37415c210581f96Ad31F5822df55C3",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xE86bDfC040f869cbF983bD4C83ddd2Bf29138190",
+      "kind": "external"
+    }
+  ]
+}

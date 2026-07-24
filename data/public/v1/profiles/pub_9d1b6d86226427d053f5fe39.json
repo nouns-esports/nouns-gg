@@ -1,0 +1,18 @@
+{
+  "id": "pub_9d1b6d86226427d053f5fe39",
+  "name": "Mila",
+  "image": "https://pbs.twimg.com/profile_images/1709069179624587264/mZEtCvWO_normal.jpg",
+  "bio": "2D artist /\nSpanish/English/ Open commissions ",
+  "twitter": {
+    "username": "MaterialWorld01",
+    "name": "Mila",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1709069179624587264/mZEtCvWO_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3ba02da5b9fe77Aed5592E934f7ec15381b3dDed",
+      "kind": "external"
+    }
+  ]
+}

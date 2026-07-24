@@ -1,0 +1,14 @@
+{
+  "id": "pub_d78815c3041a39ad63b729a2",
+  "name": "cmdnqtdr",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiflyw3hog3uroel3l2bp36ssupy7xri6krs3nhwqpovuu6zyyqvrm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x30DF31859bE342bbe74d107A0d4a754374baC5eC",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_5f8409ffb3f15c70ca462822",
+  "name": "Rahulex",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihqfqm2mtqetuhpwdwrptduarjzpc5rv4terox47vdre4ffzykdfa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x26Cfa8E9EE0326FdF51218034BeE568E4276BBC1",
+      "kind": "external"
+    }
+  ]
+}

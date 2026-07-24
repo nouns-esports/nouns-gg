@@ -1,0 +1,18 @@
+{
+  "id": "pub_00dac6a2ac9715638ea0e99c",
+  "name": "Zoph",
+  "image": "https://pbs.twimg.com/profile_images/1769484875818561536/bZ9kAVe6_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Zophuh",
+    "name": "Zoph",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1769484875818561536/bZ9kAVe6_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1d36674b06cf95783D1fcb68A8038B2E5350D87E",
+      "kind": "external"
+    }
+  ]
+}

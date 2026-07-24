@@ -1,0 +1,23 @@
+{
+  "id": "pub_f46a34456eacc2c976e88393",
+  "name": "TFT | MOF",
+  "image": "https://pbs.twimg.com/profile_images/1873170217569771521/QcxPywMs_normal.jpg",
+  "bio": "#30 Global SSBM player",
+  "twitter": {
+    "username": "Mast3rofFlavor1",
+    "name": "TFT | MOF",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1873170217569771521/QcxPywMs_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x792FF7d210807d005af8b9497aDe1D7342D86375",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xbD177522DE414336B6ef0b7341f677CD0ed4253E",
+      "kind": "external"
+    }
+  ]
+}

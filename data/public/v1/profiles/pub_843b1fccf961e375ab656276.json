@@ -1,0 +1,14 @@
+{
+  "id": "pub_843b1fccf961e375ab656276",
+  "name": "Herimax",
+  "image": "https://ipfs.nouns.gg/ipfs/QmSEaRxq4ADU9SfYpzPpYJ85sM1CydUmyRQWdHHseRcbo6",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2f6B67A9E7Ca9f025b786e455261EFe3C65FF7E8",
+      "kind": "external"
+    }
+  ]
+}

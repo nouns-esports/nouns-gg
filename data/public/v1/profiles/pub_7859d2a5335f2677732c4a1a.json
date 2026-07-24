@@ -1,0 +1,14 @@
+{
+  "id": "pub_7859d2a5335f2677732c4a1a",
+  "name": "cmdksu3c",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiax27czxyaya6eyglorfctjc6qmvk7fx3ziqxsgtwjof7naaj3mvu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xbf8BE55876452e8E375F912f63B151F733B223fa",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "product:nouns-gg:polymath-tee-dodger-blue",
+  "handle": "polymath-tee-dodger-blue",
+  "name": "Polymath T-Shirt - Dodger Blue",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": "dopamine",
+  "variants": [
+    {
+      "id": "variant:948187b1-eb6f-4c4e-978a-0a0a3bb39348",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeieoxjbhs7h4lcclrq2j5am7cyxjdq4xz2vhlwpirrkkmvdnv5kcm4"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "38.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:88df534e-6e64-4645-b605-a8a0c57edeb1",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "38.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:86b55945-b985-484a-9872-c5ae1340dfce",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "38.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:db3dbcb8-c4a2-41c6-a601-aae9d9b3150d",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "38.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:1d1e162b-cfcc-4431-be4f-d912c56175f7",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "38.00",
+      "inventory": null
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "raffle:nadcl:nadcl-snapfire-mug",
+  "handle": "nadcl-snapfire-mug",
+  "name": "Snapfire Mug",
+  "description": {
+    "type": "doc",
+    "content": []
+  },
+  "images": [
+    "https://ipfs.nouns.gg/ipfs/bafkreidmmv2m7gx2rmogi2n4lf5cwu4c5brckngbyhbwhjcqn7nskk4wpy"
+  ],
+  "start": "2025-05-28T22:14:17.907Z",
+  "end": "2025-07-31T10:00:00.000Z",
+  "createdAt": "2025-05-28T22:14:17.907Z",
+  "gold": 100,
+  "xp": {
+    "winning": 0,
+    "entering": 0
+  },
+  "winners": 1,
+  "limit": null,
+  "active": true,
+  "totalEntries": 21,
+  "community": {
+    "id": "community:nadcl",
+    "handle": "nadcl",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+    "name": "NADCL",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nadcl:nadcl-season-9",
+  "entries": []
+}

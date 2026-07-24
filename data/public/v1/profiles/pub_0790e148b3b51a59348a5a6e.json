@@ -1,0 +1,14 @@
+{
+  "id": "pub_0790e148b3b51a59348a5a6e",
+  "name": "lily",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidonwf7s5iqzt22qn2l3rj4qjjrgyw2ov43obu6bzckqepvtf75ey",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2465A49a7b9e5752c79Dc92031EF71bcE89d0711",
+      "kind": "external"
+    }
+  ]
+}

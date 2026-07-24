@@ -1,0 +1,23 @@
+{
+  "id": "pub_95137668057c16f030b726da",
+  "name": "okimasu panzai",
+  "image": "https://pbs.twimg.com/profile_images/1922551175293108224/7Tiz7rRz_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Okimasupanzai",
+    "name": "okimasu panzai",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922551175293108224/7Tiz7rRz_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6E70DEAE3c1a8963a59e7b71BdB490ea55e6c0d4",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x9615f5Ed45DC9Fc449a17a07605F86810162Ed30",
+      "kind": "external"
+    }
+  ]
+}

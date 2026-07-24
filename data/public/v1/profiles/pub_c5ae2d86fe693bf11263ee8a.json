@@ -1,0 +1,14 @@
+{
+  "id": "pub_c5ae2d86fe693bf11263ee8a",
+  "name": "cmancjab",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidfebevngwawb3anwkyeig73jvyizms5z6mmign3opwfbpzobtlie",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3136BeC981fa8369113CE633585D4380dc4108C1",
+      "kind": "external"
+    }
+  ]
+}

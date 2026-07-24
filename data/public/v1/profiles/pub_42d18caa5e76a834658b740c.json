@@ -1,0 +1,14 @@
+{
+  "id": "pub_42d18caa5e76a834658b740c",
+  "name": "cmeus72x",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihjmcokitz472eiydevc46gmp3ba5d43hcyl2aixp5ugkj2rqrk6m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x597960438E28e3b529dcEa95c267dc9cFC458dB0",
+      "kind": "external"
+    }
+  ]
+}

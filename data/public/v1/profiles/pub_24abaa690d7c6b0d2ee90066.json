@@ -1,0 +1,14 @@
+{
+  "id": "pub_24abaa690d7c6b0d2ee90066",
+  "name": "cmb9m7t9",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihvovupf5vkmibfq3swijzkkmd2qqvf7dlcq2hvcbwrx5og74ytqe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9AE2D9A2EA0b248D1376724d7AB96142C0823A1D",
+      "kind": "external"
+    }
+  ]
+}

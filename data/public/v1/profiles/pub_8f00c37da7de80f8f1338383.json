@@ -1,0 +1,14 @@
+{
+  "id": "pub_8f00c37da7de80f8f1338383",
+  "name": "SenSen ",
+  "image": "https://ipfs.nouns.gg/ipfs/Qma6yzwWQUnTwkqPFNuyfoUYXJrYSGjnKvkXJ5fBwMT881",
+  "bio": "I'm Stoned Nouns grower. ⌐◨-◨ \nGrow plant",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x035e49b6dE86Bb75382501f6206f7c90F45E2B08",
+      "kind": "external"
+    }
+  ]
+}

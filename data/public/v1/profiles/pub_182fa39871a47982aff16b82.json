@@ -1,0 +1,14 @@
+{
+  "id": "pub_182fa39871a47982aff16b82",
+  "name": "Greisler",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidsuzy3fqfum7fkoh65fed777bkf5lg2jgid7lcgsjlwct46e7mhe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x94be1ae90071F51ba8B23DdAa3E593d221dAA11E",
+      "kind": "external"
+    }
+  ]
+}

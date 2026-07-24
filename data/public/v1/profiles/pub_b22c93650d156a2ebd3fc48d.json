@@ -1,0 +1,14 @@
+{
+  "id": "pub_b22c93650d156a2ebd3fc48d",
+  "name": "Marsue",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiblrzwccmz32ojbh2oi7hixaawyip526gp7vchzzeruyg4hltl4ui",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4d2EdDeEfda7A62BDDA024bC74a0974ff95756AD",
+      "kind": "external"
+    }
+  ]
+}

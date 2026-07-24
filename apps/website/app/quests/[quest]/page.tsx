@@ -1,6 +1,11 @@
 import { getQuest } from "@/server/queries/quests";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
+import { questParams } from "@/server/data/params";
+
+export function generateStaticParams() {
+	return questParams.map(({ quest }) => ({ quest }));
+}
 
 export default async function Quest(props: {
 	params: Promise<{ quest: string }>;

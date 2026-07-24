@@ -1,0 +1,23 @@
+{
+  "id": "pub_160f03e8b52410a5ed4e977e",
+  "name": "khoailang.sadboi",
+  "image": "https://pbs.twimg.com/profile_images/1923345306512764928/p0U5J8p8_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "khlang_sadboi",
+    "name": "khoailang.sadboi",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923345306512764928/p0U5J8p8_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd9A7b30910aD1caF59558494F493897fDEe78FB7",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x60C3cce6fc6f959292d7d4cC933671f2705c8954",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pub_bb59964ad3eed556af9dd945",
+  "name": "Welitapro",
+  "image": "https://pbs.twimg.com/profile_images/1923023006525423618/7Al6_JSc_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Welitapro",
+    "name": "Welitapro",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923023006525423618/7Al6_JSc_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8e0252FB5762e17fD3D299795B575B506935e92a",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x13c9637550e387D2Ee39D54C0F376c2d9584447e",
+      "kind": "external"
+    }
+  ]
+}

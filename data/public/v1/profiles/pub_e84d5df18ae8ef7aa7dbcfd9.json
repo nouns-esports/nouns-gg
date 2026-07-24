@@ -1,0 +1,14 @@
+{
+  "id": "pub_e84d5df18ae8ef7aa7dbcfd9",
+  "name": "Guilherme ",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=mk4vek&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x40F246B34107D24c4aee32cb0eA81e10B1dA47Fc",
+      "kind": "external"
+    }
+  ]
+}

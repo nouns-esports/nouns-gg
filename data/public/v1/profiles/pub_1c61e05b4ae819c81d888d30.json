@@ -1,0 +1,18 @@
+{
+  "id": "pub_1c61e05b4ae819c81d888d30",
+  "name": "Dom",
+  "image": "https://pbs.twimg.com/profile_images/1569723423433101312/PJIVw-xl_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Domredacted",
+    "name": "Dom",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1569723423433101312/PJIVw-xl_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6903378cBE6901E8b6e9A0cE8a061f7aec14BcE6",
+      "kind": "external"
+    }
+  ]
+}

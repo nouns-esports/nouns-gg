@@ -1,0 +1,18 @@
+{
+  "id": "pub_19e9c919f026a702e29b8e67",
+  "name": "Doritos_Cheese",
+  "image": "https://pbs.twimg.com/profile_images/1943310113168887808/1qTjbecu_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "cheese_doritoss",
+    "name": "Doritos_Cheese",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1943310113168887808/1qTjbecu_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd1022bA73C3532079E4E35d5B3E4b4353a996331",
+      "kind": "external"
+    }
+  ]
+}

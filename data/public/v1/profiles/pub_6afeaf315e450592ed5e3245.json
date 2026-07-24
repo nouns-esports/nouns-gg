@@ -1,0 +1,14 @@
+{
+  "id": "pub_6afeaf315e450592ed5e3245",
+  "name": "sonnisol",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreic6u4rapb3qqvv4dc46yvank464p3fv5fgfrd7zy6lqdyxumhmfoe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6F3989617d2c2445cAcCd2fE4e022B55e970f38B",
+      "kind": "external"
+    }
+  ]
+}

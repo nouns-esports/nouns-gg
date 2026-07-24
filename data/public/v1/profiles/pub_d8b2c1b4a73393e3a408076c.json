@@ -1,0 +1,18 @@
+{
+  "id": "pub_d8b2c1b4a73393e3a408076c",
+  "name": "EL 👁️",
+  "image": "https://pbs.twimg.com/profile_images/1964372682688122882/9QZHZXSX_normal.jpg",
+  "bio": "Moth Cultist",
+  "twitter": {
+    "username": "ElBonuan",
+    "name": "EL 👁️",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1964372682688122882/9QZHZXSX_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf283f4ffF884C70Df8F731321BA76Ec665F22eE7",
+      "kind": "external"
+    }
+  ]
+}

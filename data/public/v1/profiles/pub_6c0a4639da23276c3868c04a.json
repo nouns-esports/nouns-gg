@@ -1,0 +1,18 @@
+{
+  "id": "pub_6c0a4639da23276c3868c04a",
+  "name": "Nouns | Cody Schwab ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1499195152639926276/t4_WbYMx_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "iBDWSSBM",
+    "name": "Nouns | Cody Schwab ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1499195152639926276/t4_WbYMx_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x43cA99E27243d2a3c92C0F335a651df9e0D2e4c8",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_68ecf691f5d695ec6c6f885a",
+  "name": "慢慢💢",
+  "image": "https://pbs.twimg.com/profile_images/1966078967796178944/9_d1TMcl_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "zoe_mystic",
+    "name": "慢慢💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1966078967796178944/9_d1TMcl_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x649620217ad00C60C35910Db6aBf13172b2f2267",
+      "kind": "external"
+    }
+  ]
+}

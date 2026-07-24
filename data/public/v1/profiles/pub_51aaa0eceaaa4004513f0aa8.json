@@ -1,0 +1,18 @@
+{
+  "id": "pub_51aaa0eceaaa4004513f0aa8",
+  "name": "Bassy××",
+  "image": "https://pbs.twimg.com/profile_images/1843518557298012160/l5ysSGkE_normal.jpg",
+  "bio": "🐈",
+  "twitter": {
+    "username": "DawnBassyxx",
+    "name": "Bassy××",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1843518557298012160/l5ysSGkE_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2d8e226b9751ACe802b144A22463B4E9E27837DE",
+      "kind": "external"
+    }
+  ]
+}

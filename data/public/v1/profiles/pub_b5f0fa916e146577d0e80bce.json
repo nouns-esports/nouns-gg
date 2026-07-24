@@ -1,0 +1,14 @@
+{
+  "id": "pub_b5f0fa916e146577d0e80bce",
+  "name": "cmdtgrcl",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib2dcjmf3256fuzv7evy3rg6rla35df2nh3342r47sczyhr7dgdwm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x86C399A11C48B0621c8D983052162687FF447EB4",
+      "kind": "external"
+    }
+  ]
+}

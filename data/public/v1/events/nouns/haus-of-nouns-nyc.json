@@ -1,0 +1,127 @@
+{
+  "id": "event:nouns:haus-of-nouns-nyc",
+  "handle": "haus-of-nouns-nyc",
+  "name": "Haus of Nouns NYC",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidkim7d5bgtpj7wf6sgptp5eib7rhvygfpvzrwcvlqsviz3xb75jm",
+  "description": "Haus of Nouns is an immersive pop-up hub where Nouns fans, artists, and devs co-create CC0 art, hack mini onchain experiments, customize merch, play test games, and enjoy screenings, live music, and interactive art. The gathering wraps with a collaborative public installation, leaving the city brighter and the Nouns ecosystem even more vibrant.",
+  "createdAt": "2025-05-01T19:00:00.000Z",
+  "start": "2025-05-01T19:00:00.000Z",
+  "end": "2025-05-02T08:00:00.000Z",
+  "active": true,
+  "featured": false,
+  "callToAction": {
+    "disabled": false,
+    "label": "Register",
+    "url": "https://lu.ma/usaxgn2p"
+  },
+  "location": {
+    "name": "Williamsburg, Brooklyn",
+    "url": "https://maps.app.goo.gl/3UV1bzEEm1ATktXGA"
+  },
+  "details": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Art Jam Session!",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Join workshops, make art or simply grab a coffee and connect with likeminded creatives.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Artists in residence are Jess Wiseman, Vinnie Hager, Gossamer Rozen, Jack from roughcut and Ben Ross.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Merch station",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "We're bringing a freshly staked toolkit with new graphics for you to make your custom ⌐◨-◨ merch.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Play a Smash Bros Melee Pro",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Aklo from nouns.gg is coming in to play with and against you to win some special prizes!",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Find out more about Haus of Nouns here.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  "attendeeCount": null,
+  "community": {
+    "id": "community:nouns",
+    "handle": "nouns",
+    "image": "https://warpcast.com/~/channel-images/nouns.png",
+    "name": "Nouns",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  }
+}

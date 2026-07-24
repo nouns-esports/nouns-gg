@@ -1,0 +1,43 @@
+{
+  "id": "prediction:oliyoun:oliyoun-2-winning-race-synergy",
+  "handle": "oliyoun-2-winning-race-synergy",
+  "name": "Winning Race Synergy: What race synergy will be present in the final game's winning build?",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeiepiiax75dgezbyfajtgiuhimc5tbnqpmapum7lkqha4csufygqia",
+  "rules": {
+    "type": "doc",
+    "content": []
+  },
+  "xp": {
+    "winning": 200,
+    "predicting": 0
+  },
+  "prizePool": 0,
+  "closed": true,
+  "resolved": true,
+  "featured": false,
+  "createdAt": "2025-04-07T22:17:35.034Z",
+  "start": null,
+  "end": null,
+  "pool": "668.000000000000000000",
+  "totalBets": 19,
+  "community": {
+    "id": "community:oliyoun",
+    "handle": "oliyoun",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+    "name": "Oliyoun",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:oliyoun:oliyoun-autochess-2"
+}

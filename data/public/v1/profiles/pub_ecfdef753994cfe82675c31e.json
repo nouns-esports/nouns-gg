@@ -1,0 +1,14 @@
+{
+  "id": "pub_ecfdef753994cfe82675c31e",
+  "name": "SailorNouns",
+  "image": "https://ipfs.nouns.gg/ipfs/QmZzcSPqKEeseWgkAQ8BVK44A6QbUc1B6fxRNwPh8Dgeeh",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x06eea554Dcd3748F50c7Aad3D148a0931f92f5F7",
+      "kind": "external"
+    }
+  ]
+}

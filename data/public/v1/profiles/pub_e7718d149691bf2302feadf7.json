@@ -1,0 +1,14 @@
+{
+  "id": "pub_e7718d149691bf2302feadf7",
+  "name": "cmd8s5p9",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifn5dwxfp667n4666dhrysfvlb5ruw7tj4auxqctv266rx3wqixpm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3502DC2aCf9Fa85aAEF75926619a9f4b39192Cd5",
+      "kind": "external"
+    }
+  ]
+}

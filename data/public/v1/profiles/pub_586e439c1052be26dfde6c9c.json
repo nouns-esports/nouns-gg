@@ -1,0 +1,14 @@
+{
+  "id": "pub_586e439c1052be26dfde6c9c",
+  "name": "cmdpyh0e",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiasxzqb45oaq5p4674dr6iibggtzy3m6h4xdh6s7bxofloblidfzi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xFffd05AE9Db4d5F4e23e2F37395db2F87359bf5d",
+      "kind": "external"
+    }
+  ]
+}

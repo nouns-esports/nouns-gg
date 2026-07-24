@@ -1,0 +1,14 @@
+{
+  "id": "pub_406769b44f9df23ebd7292c5",
+  "name": "Tinella",
+  "image": "https://ipfs.nouns.gg/ipfs/QmXcUrC6AQg2X3771rcTMMoSZjAVb1wWG8sqCrwwdZq2pD",
+  "bio": "Singer/Songwriter, Music Producer ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x858f454052B2d6B7Fa9d99d574305A4345519C36",
+      "kind": "external"
+    }
+  ]
+}

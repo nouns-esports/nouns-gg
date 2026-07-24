@@ -1,0 +1,19 @@
+{
+  "id": "pub_15d196f0b14fde0501c0b5ac",
+  "name": "Zucchini",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreid6ea7xesh6qbaco53q24erfnp626kdkhleegxs5hp4ndp5i3k5ja",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7788143c0EE5b9B9f98d56c18E584EBC78A2a5Bd",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xe670991f52ee1B15b209494036092c9cAB587904",
+      "kind": "external"
+    }
+  ]
+}

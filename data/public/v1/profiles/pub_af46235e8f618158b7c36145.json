@@ -1,0 +1,18 @@
+{
+  "id": "pub_af46235e8f618158b7c36145",
+  "name": "Faust",
+  "image": "https://pbs.twimg.com/profile_images/1716866633187405825/-eC5uq7T_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "FaustSSBM",
+    "name": "Faust",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1716866633187405825/-eC5uq7T_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x15DFD0c3e1eb41902A494ca909c87e5edF9061dB",
+      "kind": "external"
+    }
+  ]
+}

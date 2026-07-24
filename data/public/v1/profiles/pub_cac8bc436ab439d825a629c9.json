@@ -1,0 +1,14 @@
+{
+  "id": "pub_cac8bc436ab439d825a629c9",
+  "name": "Vasconsa",
+  "image": "https://ipfs.nouns.gg/ipfs/QmZJ8vXJ8kVU5NBeckwzZV3LmvmHuXwDPfDRJubXE6gkkf",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1273261B09DC30d0B6CE460D7cAb5820FA42E38c",
+      "kind": "external"
+    }
+  ]
+}

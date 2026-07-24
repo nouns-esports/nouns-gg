@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "vote:859d2585-3be4-4b84-92b2-e64504f9367b",
+    "userId": "pub_f10b755d1df9833c8ed033aa",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T11:07:31.813Z"
+  },
+  {
+    "id": "vote:f452ee6a-f327-428b-9ac4-7e359a921041",
+    "userId": "pub_f10b755d1df9833c8ed033aa",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-03T11:07:31.813Z"
+  },
+  {
+    "id": "vote:7b636aa5-56a5-4a02-9ea2-de2427866f17",
+    "userId": "pub_f10b755d1df9833c8ed033aa",
+    "proposalId": "proposal:1f576ae9-1828-4e85-a16c-3b6e1853a4ee",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-03T11:07:31.813Z"
+  },
+  {
+    "id": "vote:058577ff-eb37-430a-b797-a8a451b797f5",
+    "userId": "pub_f10b755d1df9833c8ed033aa",
+    "proposalId": "proposal:74cfd273-508d-45c0-bb09-2852c9d78fbc",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T11:07:31.813Z"
+  },
+  {
+    "id": "vote:d3611d7b-35e5-483d-be50-9fbc090a6283",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-03T11:30:53.676Z"
+  },
+  {
+    "id": "vote:b8c71eb2-fbf3-460e-826b-ee02234b8c1d",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T11:30:53.676Z"
+  },
+  {
+    "id": "vote:d23f611e-1422-41d9-8b06-efb563aa2282",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:74cfd273-508d-45c0-bb09-2852c9d78fbc",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T11:30:53.676Z"
+  },
+  {
+    "id": "vote:f3989063-ec20-4413-b557-e010f8e738f2",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T11:30:53.676Z"
+  },
+  {
+    "id": "vote:188fd54e-a872-43c7-b3a6-30f4780e3919",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:04177a6e-2639-4539-b1e7-768799bd402d",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T11:30:53.676Z"
+  },
+  {
+    "id": "vote:16c18ce8-e123-4a45-b223-b0e36db53a97",
+    "userId": "pub_08a7581872b2c3a9df58f4a0",
+    "proposalId": "proposal:23f4ff30-f57d-4100-9d2e-d5384fb877c2",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 10,
+    "timestamp": "2024-11-03T12:22:26.738Z"
+  },
+  {
+    "id": "vote:76127c2d-9df8-45f8-91bd-1e8c8f055867",
+    "userId": "pub_41fe6fabec32fbfcb2fe2cbc",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T12:24:39.112Z"
+  },
+  {
+    "id": "vote:df2a0507-10d8-414f-8b90-e1d7424ec77a",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-03T14:42:12.713Z"
+  },
+  {
+    "id": "vote:5bf28be3-6eff-42a4-ad21-c8b29aea37df",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-03T14:42:27.546Z"
+  },
+  {
+    "id": "vote:5b0af0bc-62a0-46f3-94b7-cd933bdd9dca",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 3,
+    "timestamp": "2024-11-03T17:21:12.892Z"
+  },
+  {
+    "id": "vote:ed824260-26d6-4e49-9ec9-cd301515b63d",
+    "userId": "pub_0b8da1f722787e9463f71710",
+    "proposalId": "proposal:0827b774-7ae4-4aa1-9e4c-29ca21919a7b",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-03T20:13:29.437Z"
+  },
+  {
+    "id": "vote:9de768b8-86fd-433e-8a89-895c663a5d74",
+    "userId": "pub_0b8da1f722787e9463f71710",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-03T20:13:29.437Z"
+  },
+  {
+    "id": "vote:d672c258-8c4a-48fc-b511-924a2426ef09",
+    "userId": "pub_0b8da1f722787e9463f71710",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 3,
+    "timestamp": "2024-11-03T20:13:29.437Z"
+  },
+  {
+    "id": "vote:50ab7d1f-3c24-4ef5-a661-a721c11478ad",
+    "userId": "pub_6a25e6f26d07cf6eb8d34f77",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 4,
+    "timestamp": "2024-11-03T21:05:23.519Z"
+  },
+  {
+    "id": "vote:ffefce20-b0cd-4c72-97a8-1667aeb480d4",
+    "userId": "pub_5c73f567ab626dd4b4e7b7b5",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-03T22:17:22.844Z"
+  },
+  {
+    "id": "vote:05124dd8-4075-40f7-8e32-b66f141d40e3",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-03T22:48:19.207Z"
+  },
+  {
+    "id": "vote:23a8b282-9302-470f-9c9e-903e68ad48ce",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:23f4ff30-f57d-4100-9d2e-d5384fb877c2",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T22:48:19.207Z"
+  },
+  {
+    "id": "vote:ffd91260-2c81-4968-99f8-39e0f7da01f7",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T22:48:19.207Z"
+  },
+  {
+    "id": "vote:2997eea7-2a47-4ed7-8aa4-b672eead2c9f",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:74cfd273-508d-45c0-bb09-2852c9d78fbc",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-03T22:48:19.207Z"
+  },
+  {
+    "id": "vote:3e8abd42-d938-4468-b6b4-c8cffc2c8f76",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:1f576ae9-1828-4e85-a16c-3b6e1853a4ee",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T22:48:19.207Z"
+  },
+  {
+    "id": "vote:1e7b7abe-463b-4a12-ae6a-b44c975463ab",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 3,
+    "timestamp": "2024-11-03T22:48:19.207Z"
+  },
+  {
+    "id": "vote:26cdb498-e8a4-4e8d-84fb-a4a4e3129ceb",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:1f576ae9-1828-4e85-a16c-3b6e1853a4ee",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T22:57:17.717Z"
+  },
+  {
+    "id": "vote:6b6cd2a4-587a-4eb6-b7b9-3824e4ecb5ce",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-03T22:57:17.717Z"
+  },
+  {
+    "id": "vote:ad056101-7b0d-4f42-969a-26b60acc0d3e",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-03T22:57:17.717Z"
+  },
+  {
+    "id": "vote:667b8986-ea38-46e2-bb24-a537d8a0f4b4",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:04177a6e-2639-4539-b1e7-768799bd402d",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T22:57:17.717Z"
+  },
+  {
+    "id": "vote:b9806f92-f67a-41c3-ab48-122cad817032",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T22:57:17.717Z"
+  },
+  {
+    "id": "vote:ac03465b-e0be-484b-a98a-9ed441859edc",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:23f4ff30-f57d-4100-9d2e-d5384fb877c2",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T22:57:17.717Z"
+  },
+  {
+    "id": "vote:3103380f-4f9d-4deb-8d8d-33de8425191d",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:4ada1a8a-9a7d-4480-8d8d-182d149b82a9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T22:57:17.717Z"
+  },
+  {
+    "id": "vote:f27d4bdf-38da-4932-b973-b37144c81fd0",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-03T22:57:17.717Z"
+  },
+  {
+    "id": "vote:d90a44b8-98b3-4d9c-8698-7c8c10edcb78",
+    "userId": "pub_bb330a814201f01b742f5daf",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-04T01:11:34.080Z"
+  },
+  {
+    "id": "vote:ddfe9a62-975a-45a4-9f7b-9a2688b8ffd2",
+    "userId": "pub_bb330a814201f01b742f5daf",
+    "proposalId": "proposal:4ada1a8a-9a7d-4480-8d8d-182d149b82a9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-04T01:11:34.080Z"
+  },
+  {
+    "id": "vote:2d604304-4f62-4a52-a21e-878ac98b5641",
+    "userId": "pub_6de42f6b0d21f3881bb47d1c",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-04T01:33:38.446Z"
+  },
+  {
+    "id": "vote:be88e21f-3f09-471f-b9ec-2af6b428c1f7",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 8,
+    "timestamp": "2024-11-04T09:47:03.592Z"
+  },
+  {
+    "id": "vote:d48bbe62-1e3a-4ec2-833d-a7f88a5e75cd",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-04T09:47:03.592Z"
+  },
+  {
+    "id": "vote:90f295ed-7e1f-4563-af2e-c5a3d669c910",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:e7a02add-d644-42fa-89b8-08e3c6b92920",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-04T09:47:03.592Z"
+  },
+  {
+    "id": "vote:db74e236-01f3-4309-af58-12394ffc0d4a",
+    "userId": "pub_1d9323a9a6c5d50987b0cc67",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-04T10:20:21.265Z"
+  },
+  {
+    "id": "vote:a6e0ae03-5292-4f4a-aca8-c772234ff6bd",
+    "userId": "pub_b3355089a29be448ff3a6c66",
+    "proposalId": "proposal:e7a02add-d644-42fa-89b8-08e3c6b92920",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-04T10:28:25.409Z"
+  },
+  {
+    "id": "vote:8a6b07cc-0ac6-45c7-be0c-8690d79e5020",
+    "userId": "pub_b3355089a29be448ff3a6c66",
+    "proposalId": "proposal:8804e289-73d8-4ba1-b709-9b3cc39f123b",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-04T10:29:35.854Z"
+  },
+  {
+    "id": "vote:6a94cf1a-dc8d-4c48-a12e-1b49fcde6e1e",
+    "userId": "pub_a43d94af18b00a16efc82ab7",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-04T11:18:41.352Z"
+  },
+  {
+    "id": "vote:8a6d67b5-8fb3-4ba4-891d-f7899b0eb1b5",
+    "userId": "pub_3c0c3ddc5d489d8cf59ac355",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-04T12:22:42.797Z"
+  },
+  {
+    "id": "vote:cd19d7b9-022f-4b30-9256-16b64882e20e",
+    "userId": "pub_6db30ca9d2bcb57c01d37bd6",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-04T19:17:21.871Z"
+  },
+  {
+    "id": "vote:73cc97ae-c3da-4aa5-ac3c-09e3978f6406",
+    "userId": "pub_4eeabf33317c94de19a8b08b",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 6,
+    "timestamp": "2024-11-04T20:13:52.644Z"
+  },
+  {
+    "id": "vote:fa754fca-5379-480a-9dbf-891937741fb1",
+    "userId": "pub_6b2eb2235fe798c658492542",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 10,
+    "timestamp": "2024-11-04T22:47:31.624Z"
+  },
+  {
+    "id": "vote:64b5a76f-da2a-4e02-b571-e9c856560a33",
+    "userId": "pub_04f7ff6595630cf5309fb2b3",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 10,
+    "timestamp": "2024-11-04T22:49:56.631Z"
+  },
+  {
+    "id": "vote:81b08047-e851-4bf2-840f-4526d96cb041",
+    "userId": "pub_a6cc2751892c7c11c6da1692",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-04T23:21:31.341Z"
+  },
+  {
+    "id": "vote:a04aaa08-9373-4df1-9ef6-9bb6da786c70",
+    "userId": "pub_39c74f485127d3d21f32d7a0",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 7,
+    "timestamp": "2024-11-04T23:36:27.516Z"
+  },
+  {
+    "id": "vote:16bee29d-54e0-4a66-9b8e-c743dda0dc9f",
+    "userId": "pub_683bfa51f5c48b4b82140335",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-04T23:51:33.185Z"
+  },
+  {
+    "id": "vote:2fea1f41-337a-4c73-843a-57b9c49c0c4d",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-05T00:12:06.425Z"
+  },
+  {
+    "id": "vote:aef220c2-587d-40af-a2d3-7dbc110fa7fd",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-05T00:12:06.425Z"
+  },
+  {
+    "id": "vote:491e4340-0d1d-42ce-82ee-aa34b8f9ea10",
+    "userId": "pub_3bce8c9556d22e3131c35860",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-05T02:24:48.052Z"
+  },
+  {
+    "id": "vote:1527928b-1420-4444-83fb-462ba279ea1a",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:1f576ae9-1828-4e85-a16c-3b6e1853a4ee",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 3,
+    "timestamp": "2024-11-05T03:37:25.415Z"
+  },
+  {
+    "id": "vote:064df49f-8038-4681-8c03-5a3009ce1b5a",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:0827b774-7ae4-4aa1-9e4c-29ca21919a7b",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T03:37:25.415Z"
+  },
+  {
+    "id": "vote:f0fc9cd4-2dfd-4b13-ac2b-27a8d7e2298c",
+    "userId": "pub_4c033ca3df695f0c7a01fe60",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T04:36:53.885Z"
+  },
+  {
+    "id": "vote:9eb7edcb-af91-4ccc-bc99-ed178d1c11ce",
+    "userId": "pub_6653d325724e20673ecc3184",
+    "proposalId": "proposal:23f4ff30-f57d-4100-9d2e-d5384fb877c2",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 10,
+    "timestamp": "2024-11-05T05:39:14.560Z"
+  },
+  {
+    "id": "vote:1caa6b2e-3dd7-4ced-be5d-7e7f0dda867f",
+    "userId": "pub_32b32cf8e6dc0055059795cc",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-05T07:39:41.578Z"
+  },
+  {
+    "id": "vote:88607620-abb7-4d3a-ab07-25e857e2b01f",
+    "userId": "pub_32b32cf8e6dc0055059795cc",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-05T07:39:41.578Z"
+  },
+  {
+    "id": "vote:b9cce479-9721-4ba5-bd81-d3bf0c874c9f",
+    "userId": "pub_dad69a72bd338bb720af22cb",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T10:49:47.813Z"
+  },
+  {
+    "id": "vote:ff9774a0-918d-4817-b3be-932b05f57752",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-05T12:42:27.127Z"
+  },
+  {
+    "id": "vote:8fb9ea0f-a26a-4762-a54e-7761e3c0e891",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:1f576ae9-1828-4e85-a16c-3b6e1853a4ee",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-05T12:42:27.127Z"
+  },
+  {
+    "id": "vote:1df01342-f3cb-4451-8487-792355d79a26",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-05T15:05:42.427Z"
+  },
+  {
+    "id": "vote:952d7e9e-9f0a-450e-b562-08de63e9fd95",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-05T15:05:42.427Z"
+  },
+  {
+    "id": "vote:028effd9-de06-4180-b199-f97ca70b28ef",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:8804e289-73d8-4ba1-b709-9b3cc39f123b",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T15:05:42.427Z"
+  },
+  {
+    "id": "vote:a3e00e36-2c4a-47eb-b48c-4ab137b733af",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T19:39:46.647Z"
+  },
+  {
+    "id": "vote:3cab5a91-09b6-4dfe-9f92-18ecafef925b",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 4,
+    "timestamp": "2024-11-05T19:39:46.647Z"
+  },
+  {
+    "id": "vote:328d53f0-44e0-4b88-8ffb-c6a20547569b",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:23f4ff30-f57d-4100-9d2e-d5384fb877c2",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T19:39:46.647Z"
+  },
+  {
+    "id": "vote:7daa79a0-afbb-4753-a762-55ef8a435446",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T19:39:46.647Z"
+  },
+  {
+    "id": "vote:e62b4c3c-46a4-4b5f-b382-17776f4d7d64",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-05T19:39:46.647Z"
+  },
+  {
+    "id": "vote:4c3723cc-dc36-486c-b577-cb216b5365a8",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:1f576ae9-1828-4e85-a16c-3b6e1853a4ee",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T19:39:46.647Z"
+  },
+  {
+    "id": "vote:a4b469e6-6751-4157-a713-abf75e98abce",
+    "userId": "pub_3d012a4e4ddd39ce48a24f67",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T22:13:49.403Z"
+  },
+  {
+    "id": "vote:26f4ceec-dc2b-4ec6-86d5-90dfb938927d",
+    "userId": "pub_3d012a4e4ddd39ce48a24f67",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-05T22:13:49.403Z"
+  },
+  {
+    "id": "vote:5417fcb4-bda7-4598-8f81-ddeec4b2d13c",
+    "userId": "pub_3d012a4e4ddd39ce48a24f67",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 6,
+    "timestamp": "2024-11-05T22:13:49.403Z"
+  },
+  {
+    "id": "vote:005daf5b-f5a0-40eb-8ad9-30bc93c334b1",
+    "userId": "pub_3d012a4e4ddd39ce48a24f67",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T22:13:49.403Z"
+  },
+  {
+    "id": "vote:eae5018e-e4ab-48c5-85c2-d070a19be530",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:8804e289-73d8-4ba1-b709-9b3cc39f123b",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T23:36:06.629Z"
+  },
+  {
+    "id": "vote:0a25bc72-18a5-4b7d-b4e8-69a93b9f5cf0",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:04177a6e-2639-4539-b1e7-768799bd402d",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T23:36:06.629Z"
+  },
+  {
+    "id": "vote:131d5773-a322-4cdc-84c4-a5441b388cc9",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:1f576ae9-1828-4e85-a16c-3b6e1853a4ee",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T23:36:06.629Z"
+  },
+  {
+    "id": "vote:dba0d031-3853-46f0-a941-a875f7cde1de",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T23:36:06.629Z"
+  },
+  {
+    "id": "vote:45f59b8e-c4ea-4fd6-9dcb-de8ad18cb459",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 3,
+    "timestamp": "2024-11-05T23:36:06.629Z"
+  },
+  {
+    "id": "vote:4c8f0d59-26b3-4722-b7cf-ed30adc862af",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T23:36:06.629Z"
+  },
+  {
+    "id": "vote:9c39dfb6-2377-442f-a30d-ff7dfffa8083",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:4ada1a8a-9a7d-4480-8d8d-182d149b82a9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T23:36:06.629Z"
+  },
+  {
+    "id": "vote:7411f27d-72d5-448e-84a1-3988cc7e285d",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-05T23:36:06.629Z"
+  },
+  {
+    "id": "vote:0bae9219-8daf-4ac6-a6fe-ef4224121978",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:04177a6e-2639-4539-b1e7-768799bd402d",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 10,
+    "timestamp": "2024-11-05T23:57:53.939Z"
+  },
+  {
+    "id": "vote:0a0bdbab-f1be-4285-a3a0-c85b9174a4a1",
+    "userId": "pub_2beec2c4ca7be0b72f66d75f",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 8,
+    "timestamp": "2024-11-06T00:23:35.786Z"
+  },
+  {
+    "id": "vote:9424ee7b-b882-42e2-96f4-23b3a20231a9",
+    "userId": "pub_d95e894e77b14a6f43e18d2c",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 7,
+    "timestamp": "2024-11-06T01:07:38.829Z"
+  },
+  {
+    "id": "vote:3a33fea1-37d9-4b94-aa08-e9371acf827b",
+    "userId": "pub_34ee9c525c183e7928be2d0e",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 7,
+    "timestamp": "2024-11-06T01:10:19.313Z"
+  },
+  {
+    "id": "vote:0b5fc55e-68c8-42f1-899d-0194e9988ca7",
+    "userId": "pub_af44e0ff9357edd4e835d6f1",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-06T05:24:34.058Z"
+  },
+  {
+    "id": "vote:4100bfe7-1ce0-414c-9fdd-4d94b6296e15",
+    "userId": "pub_9dd9bf9d65f2f7fdf613961f",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-06T05:25:07.719Z"
+  },
+  {
+    "id": "vote:c2564d20-ac2a-4e3d-9464-7b7736a3c563",
+    "userId": "pub_69fad8f91492ab482e05f903",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 10,
+    "timestamp": "2024-11-06T11:15:55.338Z"
+  },
+  {
+    "id": "vote:32394741-4cc8-4e84-b746-eee94b18e9ff",
+    "userId": "pub_09101d31b7f119a75ae5e53b",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 8,
+    "timestamp": "2024-11-07T08:19:31.627Z"
+  },
+  {
+    "id": "vote:ff6fa414-c3af-4bb2-b2bf-1774f8753235",
+    "userId": "pub_767023f2f05bd9615ebb3265",
+    "proposalId": "proposal:8804e289-73d8-4ba1-b709-9b3cc39f123b",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 10,
+    "timestamp": "2024-11-08T06:57:43.313Z"
+  },
+  {
+    "id": "vote:4b32fc9f-5cf6-41bd-9bfc-55224d6c49d5",
+    "userId": "pub_32b32cf8e6dc0055059795cc",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-08T10:33:01.717Z"
+  },
+  {
+    "id": "vote:b8ca3f16-d26e-4027-ab1f-77cf9e322f30",
+    "userId": "pub_2d6f6fdee2d6afbbb6eeb5c1",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 6,
+    "timestamp": "2024-11-08T10:39:09.464Z"
+  },
+  {
+    "id": "vote:c3ace30b-72da-45e7-8695-914cff131c91",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 3,
+    "timestamp": "2024-11-08T18:18:14.909Z"
+  },
+  {
+    "id": "vote:7c8d2a0e-9836-4928-9007-e2e035b6f3dc",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-08T18:18:57.296Z"
+  },
+  {
+    "id": "vote:826c68c4-4ed8-4c0e-a723-785c10b02149",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:23f4ff30-f57d-4100-9d2e-d5384fb877c2",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-08T18:18:57.296Z"
+  },
+  {
+    "id": "vote:67664f41-5dcf-49dd-9517-54ed8b81190c",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:04177a6e-2639-4539-b1e7-768799bd402d",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-08T18:18:57.296Z"
+  },
+  {
+    "id": "vote:5ae1a6d0-bc20-41c4-b48b-843c10931a03",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:1f576ae9-1828-4e85-a16c-3b6e1853a4ee",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-08T18:18:57.296Z"
+  },
+  {
+    "id": "vote:8d5a0f34-165d-4b8f-9c92-252981aad054",
+    "userId": "pub_62fe9bbcb83d70b380aa41da",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-08T20:02:06.881Z"
+  },
+  {
+    "id": "vote:92bc47df-f7df-4c21-affd-a55819576535",
+    "userId": "pub_ef48daf42bd8db1b3ab48461",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-08T20:08:12.235Z"
+  },
+  {
+    "id": "vote:9750e080-3a00-4c0b-ab37-c1edf176ab73",
+    "userId": "pub_037caebffc064116acbcf80a",
+    "proposalId": "proposal:04177a6e-2639-4539-b1e7-768799bd402d",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-08T21:06:15.477Z"
+  },
+  {
+    "id": "vote:90bfb2bd-6009-41c0-a32c-90d7ed2622bc",
+    "userId": "pub_037caebffc064116acbcf80a",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-08T21:06:15.477Z"
+  },
+  {
+    "id": "vote:a17ef0d9-09bc-4232-8219-7ddeaf94f316",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 10,
+    "timestamp": "2024-11-09T01:20:18.818Z"
+  },
+  {
+    "id": "vote:e312ca7f-366b-41e7-bf40-432e2301469c",
+    "userId": "pub_a8a25e04ea64ede9bf23d8c9",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 10,
+    "timestamp": "2024-11-09T02:05:06.930Z"
+  },
+  {
+    "id": "vote:e50f2902-1ede-4bb0-a47e-319827dc339c",
+    "userId": "pub_51aaa0eceaaa4004513f0aa8",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-09T02:26:38.855Z"
+  },
+  {
+    "id": "vote:81e28e01-b7b3-4a2d-9191-aab50a16d88a",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 4,
+    "timestamp": "2024-11-09T02:26:44.760Z"
+  },
+  {
+    "id": "vote:7cd04a24-a9c2-4add-9601-787c27c8b77f",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 4,
+    "timestamp": "2024-11-09T02:26:44.760Z"
+  },
+  {
+    "id": "vote:838f6d50-c56f-4594-bbc6-299b0a383e26",
+    "userId": "pub_6d228cf2c85ddedd591ea768",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 8,
+    "timestamp": "2024-11-09T02:30:22.761Z"
+  },
+  {
+    "id": "vote:fdb69e4c-526f-4252-9aeb-984e4d4add40",
+    "userId": "pub_3b470ce455269d14bd1d26fe",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-09T02:31:52.480Z"
+  },
+  {
+    "id": "vote:5244fb4f-e04b-43a9-87e8-8356c3c6fdcd",
+    "userId": "pub_02398bececf2524ea71ec09b",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 8,
+    "timestamp": "2024-11-09T03:03:29.164Z"
+  },
+  {
+    "id": "vote:fc3cda67-c25c-4bea-b8b1-a6558df9c596",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-09T03:13:20.463Z"
+  },
+  {
+    "id": "vote:bbc7f1a4-60ac-4d3e-9c13-6af9b1e7ea40",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:1f576ae9-1828-4e85-a16c-3b6e1853a4ee",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-09T03:13:20.463Z"
+  },
+  {
+    "id": "vote:a7bea69e-aede-48ca-82a1-796da2738995",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:8804e289-73d8-4ba1-b709-9b3cc39f123b",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-09T03:13:20.463Z"
+  },
+  {
+    "id": "vote:765bb169-0db4-4597-8dd5-f0818cb23e86",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-09T03:13:20.463Z"
+  },
+  {
+    "id": "vote:e50927af-b47b-4d79-9741-78929b90157f",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:74cfd273-508d-45c0-bb09-2852c9d78fbc",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-09T03:13:20.463Z"
+  },
+  {
+    "id": "vote:71e5340e-1d0a-4a43-8afd-8e17b0ebe473",
+    "userId": "pub_506ba388a86ea0b738f1806d",
+    "proposalId": "proposal:23f4ff30-f57d-4100-9d2e-d5384fb877c2",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 3,
+    "timestamp": "2024-11-09T03:38:27.358Z"
+  },
+  {
+    "id": "vote:d69fd246-56ac-455b-b636-f1dafca75c78",
+    "userId": "pub_506ba388a86ea0b738f1806d",
+    "proposalId": "proposal:04177a6e-2639-4539-b1e7-768799bd402d",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 4,
+    "timestamp": "2024-11-09T03:38:27.358Z"
+  },
+  {
+    "id": "vote:20df840c-e5eb-43fe-9c36-91239d197963",
+    "userId": "pub_506ba388a86ea0b738f1806d",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-09T03:38:27.358Z"
+  },
+  {
+    "id": "vote:62098fba-9549-4fe8-98bc-6cfd0c3da02d",
+    "userId": "pub_5c73f567ab626dd4b4e7b7b5",
+    "proposalId": "proposal:e7a02add-d644-42fa-89b8-08e3c6b92920",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-09T04:29:18.458Z"
+  },
+  {
+    "id": "vote:1266d0b2-3d63-4ddd-bfaa-1e6034a3305b",
+    "userId": "pub_b6390c257208d6b0386ab26c",
+    "proposalId": "proposal:5adfbc3a-9a6c-4a6c-a830-1ab784f6b146",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 8,
+    "timestamp": "2024-11-09T04:58:39.032Z"
+  },
+  {
+    "id": "vote:79ce42e8-bb7b-4f1e-a29a-090243dbdefd",
+    "userId": "pub_d0034c6882755050e20ec618",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 4,
+    "timestamp": "2024-11-09T05:00:19.537Z"
+  },
+  {
+    "id": "vote:7d4b05a6-6b5e-448d-8f46-e8fb70154a50",
+    "userId": "pub_56019721b2a03049b04221cb",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 6,
+    "timestamp": "2024-11-09T05:20:48.536Z"
+  },
+  {
+    "id": "vote:93cd1fa1-2783-4a69-ac45-9bf77da8eb79",
+    "userId": "pub_b11e66dc6fb9386c9240ac14",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-09T05:24:22.488Z"
+  },
+  {
+    "id": "vote:0beacb39-7bb8-43d3-b6c7-9d29c45c6066",
+    "userId": "pub_88ffdda2ded118ea9a96f9a2",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 2,
+    "timestamp": "2024-11-09T05:56:24.431Z"
+  },
+  {
+    "id": "vote:b19cbea6-177e-473b-bb2d-b6c40152bf22",
+    "userId": "pub_88ffdda2ded118ea9a96f9a2",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 5,
+    "timestamp": "2024-11-09T05:56:24.431Z"
+  },
+  {
+    "id": "vote:940ee97d-07ac-4630-b0d7-4a713c2ebef7",
+    "userId": "pub_0b9c84717bd284a1ae3ca260",
+    "proposalId": "proposal:37dedc00-1eaa-4c77-8b91-95128f5c8900",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 3,
+    "timestamp": "2024-11-09T06:35:41.666Z"
+  },
+  {
+    "id": "vote:98759909-0fcd-4edf-9db8-6d7e18b6f269",
+    "userId": "pub_f5abd20d2af8d93e336bcb7a",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-09T08:09:46.540Z"
+  },
+  {
+    "id": "vote:fc01df4c-18bb-4abe-ad9b-9af08271b306",
+    "userId": "pub_f5abd20d2af8d93e336bcb7a",
+    "proposalId": "proposal:e9911663-c7c8-40b9-817a-f4b4b33bbad9",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 3,
+    "timestamp": "2024-11-09T08:09:46.540Z"
+  },
+  {
+    "id": "vote:e70cde3a-82fb-4af2-be15-441db03819e0",
+    "userId": "pub_f5abd20d2af8d93e336bcb7a",
+    "proposalId": "proposal:23f4ff30-f57d-4100-9d2e-d5384fb877c2",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-09T08:09:46.540Z"
+  },
+  {
+    "id": "vote:ae1414e2-3bb9-4932-aaca-2afbbcca7fd5",
+    "userId": "pub_f5abd20d2af8d93e336bcb7a",
+    "proposalId": "proposal:4e616b65-31ff-490e-9d75-a573213d6702",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 1,
+    "timestamp": "2024-11-09T08:09:46.540Z"
+  },
+  {
+    "id": "vote:334a8cbb-e9c6-437a-a4f8-6de6b28105aa",
+    "userId": "pub_f39498812fa184a0afc8d070",
+    "proposalId": "proposal:3945fbc8-99c0-4f93-9f42-c5f6ed44ec48",
+    "roundId": "round:nouns-gg:pumpkin-carving",
+    "count": 3,
+    "timestamp": "2024-11-09T09:18:07.778Z"
+  }
+]

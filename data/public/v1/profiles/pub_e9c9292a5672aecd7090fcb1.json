@@ -1,0 +1,18 @@
+{
+  "id": "pub_e9c9292a5672aecd7090fcb1",
+  "name": "JMiSSF2",
+  "image": "https://pbs.twimg.com/profile_images/1411659312947249152/YunWzcJ6_normal.jpg",
+  "bio": "SSBM falco player who goes stupid",
+  "twitter": {
+    "username": "jmidoesstuff",
+    "name": "JMiSSF2",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1411659312947249152/YunWzcJ6_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc218Fbb676a396a2F27e92AECB1301dDc40752C2",
+      "kind": "external"
+    }
+  ]
+}

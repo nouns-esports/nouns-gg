@@ -1,0 +1,14 @@
+{
+  "id": "pub_a71c589b133a4d42d48e1df9",
+  "name": "dedvi",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidyzhy27f75y3gbto6cwgo7l6vu24w37zxe46x34iz7jahfoctcoe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf72C14763b47D0a5f4c00d41F06c4eEA07ebd28A",
+      "kind": "external"
+    }
+  ]
+}

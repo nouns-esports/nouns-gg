@@ -1,0 +1,14 @@
+{
+  "id": "pub_caa6adb1f082d75bbb2671e8",
+  "name": "Kimbtc",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicxzh2shdfmevde4qywjpofs4jquhvt6pxjvwv4gfcfjhdpbfjaf4",
+  "bio": "https://x.com/KIMBTC_",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1552C0b8A232Cac1eC68e34A6e80CD940a18D699",
+      "kind": "external"
+    }
+  ]
+}

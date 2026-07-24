@@ -1,0 +1,14 @@
+{
+  "id": "pub_e9911d20369695c7daf96ea0",
+  "name": "0xJack",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreig6hdy6m2sy6qam2ldzyw6fvplyhfccnc5vcgr4rmc45ktoxnxe6e",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x014D4B61080EfbA712a83849FdC535825268a8B4",
+      "kind": "external"
+    }
+  ]
+}

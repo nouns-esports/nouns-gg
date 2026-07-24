@@ -1,0 +1,14 @@
+{
+  "id": "pub_34216cfa918081d4593066e9",
+  "name": "exodus",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=7in4tf&background=1",
+  "bio": "Web3 lower",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5B1899D88b4Ff0Cf5A34651e7CE7164398211C66",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_7c18927bba4b147e944b6d66",
+  "name": "Young Bleak",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib22iwn5fmkmxi4mdm43dioo2scntjmugqewkkmtrwbj2hbirix7i",
+  "bio": "a.k.a. DE4TH TOUCH, Music Artist, Producer, Designer & Developer.",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xcC3836946De6D62E5df307Da381f6EF1E88c15F8",
+      "kind": "external"
+    }
+  ]
+}

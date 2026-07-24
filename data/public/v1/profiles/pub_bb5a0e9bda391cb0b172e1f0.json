@@ -1,0 +1,18 @@
+{
+  "id": "pub_bb5a0e9bda391cb0b172e1f0",
+  "name": "Zek 🐐of web3",
+  "image": "https://pbs.twimg.com/profile_images/1897276852508438528/IAbqHhnt_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "zeksventures",
+    "name": "Zek 🐐of web3",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1897276852508438528/IAbqHhnt_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xBDdfFb843f25cf0DFBc76C1789e3B5DFEDf3f958",
+      "kind": "external"
+    }
+  ]
+}

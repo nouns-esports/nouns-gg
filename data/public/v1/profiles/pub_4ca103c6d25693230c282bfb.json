@@ -1,0 +1,18 @@
+{
+  "id": "pub_4ca103c6d25693230c282bfb",
+  "name": "CG | ShawarMachine",
+  "image": "https://pbs.twimg.com/profile_images/1777233735869464576/ifiHid1S_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "GooseKizzle",
+    "name": "CG | ShawarMachine",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1777233735869464576/ifiHid1S_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0D270dE74849e7481a4631bC9210892159D2F9FD",
+      "kind": "external"
+    }
+  ]
+}

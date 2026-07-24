@@ -1,0 +1,18 @@
+{
+  "id": "pub_3ca81d9901b2ea0b37ab2b75",
+  "name": "Nataliecrue.eth",
+  "image": "https://pbs.twimg.com/profile_images/1800769798693076993/AWTVeu1K_normal.jpg",
+  "bio": "surging the net",
+  "twitter": {
+    "username": "NatalieCrue",
+    "name": "Nataliecrue.eth",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1800769798693076993/AWTVeu1K_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xca85460d23Bfb2e0079bAb5AAC84921D9D0762a4",
+      "kind": "external"
+    }
+  ]
+}

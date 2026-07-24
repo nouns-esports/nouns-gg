@@ -1,0 +1,14 @@
+{
+  "id": "pub_68c8e8de1bf26b0b288a517b",
+  "name": "nounsweek",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=n76ans&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x199bB765bb684d44E2E2bcD877965C565422DED7",
+      "kind": "external"
+    }
+  ]
+}

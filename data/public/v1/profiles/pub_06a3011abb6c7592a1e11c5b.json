@@ -1,0 +1,14 @@
+{
+  "id": "pub_06a3011abb6c7592a1e11c5b",
+  "name": "Haku85.Base.Eth",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicidgtvgcx65xcvjxvqo36hcyw3t6x7kqdk3kzcs7ntk44djczaxy",
+  "bio": "Holla mate 👋",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4E26fc6eb05a1CDbD762609fDE9958e5b8CC754d",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pub_02398bececf2524ea71ec09b",
+  "name": "TemporaryPlan",
+  "image": "https://pbs.twimg.com/profile_images/1717249895655264257/0K18xnxs_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "TemporaryPlan",
+    "name": "TemporaryPlan",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1717249895655264257/0K18xnxs_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x73E5D73C8F3ef0C485b623D02fB820875442C3c9",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xd7F5EF5032E976b5620ece50545677C3D2C4238e",
+      "kind": "external"
+    }
+  ]
+}

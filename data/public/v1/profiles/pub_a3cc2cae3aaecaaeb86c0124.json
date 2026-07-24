@@ -1,0 +1,14 @@
+{
+  "id": "pub_a3cc2cae3aaecaaeb86c0124",
+  "name": "ied",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifrvpjgm2ey6ja2v3zqyv6pf6m4kddpym735z7l47vefwexrcvefu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC0D386f94bCC688b85C4Dd9E1033eBE11898C588",
+      "kind": "external"
+    }
+  ]
+}

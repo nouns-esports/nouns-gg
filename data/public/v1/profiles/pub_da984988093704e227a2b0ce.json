@@ -1,0 +1,14 @@
+{
+  "id": "pub_da984988093704e227a2b0ce",
+  "name": "0xleo",
+  "image": "https://ipfs.nouns.gg/ipfs/QmXkswwXVDkWcMhPBWkTC7WP5YRcdsatMKU97QcvxV5mox",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x66e4476BAc0CB348f893924d457cFA3eE64335eb",
+      "kind": "external"
+    }
+  ]
+}

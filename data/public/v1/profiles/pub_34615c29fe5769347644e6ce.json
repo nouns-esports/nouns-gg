@@ -1,0 +1,14 @@
+{
+  "id": "pub_34615c29fe5769347644e6ce",
+  "name": "cmdna3qo",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicvclimmjuahaslpzn3xtl3hvua7txvmms53v5eekjq3xlggbvi7u",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x65Bf1f2A2aAc15310959a13347E8F20318FaC2E0",
+      "kind": "external"
+    }
+  ]
+}

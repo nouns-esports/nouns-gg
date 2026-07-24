@@ -1,0 +1,78 @@
+{
+  "id": "product:nouns-gg:forever-ls-optic-white",
+  "handle": "forever-ls-optic-white",
+  "name": "Forever LS - Optic White",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": "dopamine",
+  "variants": [
+    {
+      "id": "variant:034056dc-30ef-4764-bc44-634a8a2cd53c",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "45.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:4013c3e2-9885-4c1f-9f75-e4da51c1bde7",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "45.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:e9f0a522-29c2-4efc-8cb2-1565243b9959",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeibok4f572dipbp75pfacx6i4wwjfag4i7pcobrrsrrhiguijd2fyi"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "45.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:8005abc0-ca4a-4ef7-8e17-1b1b3db41bb2",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "45.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:5cb5b1cb-19c4-4689-a7da-ad7deb332b65",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "45.00",
+      "inventory": null
+    }
+  ]
+}

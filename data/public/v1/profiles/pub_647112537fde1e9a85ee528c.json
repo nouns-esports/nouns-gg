@@ -1,0 +1,18 @@
+{
+  "id": "pub_647112537fde1e9a85ee528c",
+  "name": "Sali/Caterpie",
+  "image": "https://pbs.twimg.com/profile_images/1738306112263245825/52tHD9wE_normal.jpg",
+  "bio": "Hey",
+  "twitter": {
+    "username": "Sali_Ctrp",
+    "name": "Sali/Caterpie",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1738306112263245825/52tHD9wE_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x90b2c0FA1b8a454e773611120FA30ec76352fF8b",
+      "kind": "external"
+    }
+  ]
+}

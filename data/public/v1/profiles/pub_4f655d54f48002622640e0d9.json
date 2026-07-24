@@ -1,0 +1,14 @@
+{
+  "id": "pub_4f655d54f48002622640e0d9",
+  "name": "cmdouxf3",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreid45a7viyalhkeu55vqgg3jxfzvjl543uql5resigoykntdqgab3a",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5D1dA35494AeF3Fb405b6dc2332a5cc7ac2372A5",
+      "kind": "external"
+    }
+  ]
+}

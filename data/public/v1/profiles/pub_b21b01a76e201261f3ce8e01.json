@@ -1,0 +1,23 @@
+{
+  "id": "pub_b21b01a76e201261f3ce8e01",
+  "name": "choco kumi",
+  "image": "https://pbs.twimg.com/profile_images/1923340383855296512/gnUbxZ0y_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "choco_kumi77",
+    "name": "choco kumi",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923340383855296512/gnUbxZ0y_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4091CE4ea735dEc3201bc5b2fA70314029e1dcCA",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xD7c45fBC5CA368460042f4aAB397B557F6B5d6E4",
+      "kind": "external"
+    }
+  ]
+}

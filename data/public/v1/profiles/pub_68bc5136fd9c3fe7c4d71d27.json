@@ -1,0 +1,18 @@
+{
+  "id": "pub_68bc5136fd9c3fe7c4d71d27",
+  "name": "Erin Stephens",
+  "image": "https://pbs.twimg.com/profile_images/1939975279805374464/h6YXF1oy_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ErinStephe29833",
+    "name": "Erin Stephens",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1939975279805374464/h6YXF1oy_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5aAF91BdCff6134190975a9ED28a7e44cF8B014e",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pub_84f9b780c82b10251aa1972c",
+  "name": "Zoë Gumby",
+  "image": "https://pbs.twimg.com/profile_images/1795721358686478336/yR7y20qc_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ZoGumby",
+    "name": "Zoë Gumby",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1795721358686478336/yR7y20qc_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3EEEa5CE2082519c63229C733F2a457fF638eff5",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xF77672Ba31Ae11d62cFbD67C2fABed8c0A887447",
+      "kind": "external"
+    }
+  ]
+}

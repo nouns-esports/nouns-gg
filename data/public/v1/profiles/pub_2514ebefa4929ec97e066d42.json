@@ -1,0 +1,18 @@
+{
+  "id": "pub_2514ebefa4929ec97e066d42",
+  "name": "xBlaine ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1587955630077263874/pwGZUTih_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "xBlaineHS",
+    "name": "xBlaine ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1587955630077263874/pwGZUTih_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x17b0F5111cc6D5a3f3f843CafA9C903F5594201d",
+      "kind": "external"
+    }
+  ]
+}

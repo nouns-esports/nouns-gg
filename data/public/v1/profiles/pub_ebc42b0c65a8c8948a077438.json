@@ -1,0 +1,14 @@
+{
+  "id": "pub_ebc42b0c65a8c8948a077438",
+  "name": "cmg32u55",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreih3zk44qcwyrwah4bxrjzqtukjiqgkh5benkzvdunhwk3766elzk4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3d37f07131e1aCBBDE178D23e755c7a6Da591Ed6",
+      "kind": "external"
+    }
+  ]
+}

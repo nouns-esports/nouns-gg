@@ -1,0 +1,19 @@
+{
+  "id": "pub_ac1188f525a9973c85a504d1",
+  "name": "Tasty",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiapxp4hqkh3b2nq2m3rouxv55mykko4ng6josik6pg4ujh2n2vzb4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE55d3bD00F9bf92dc4461BbC285D680052a41431",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xad390181679b69766afCD44f617b87ab1126AdAF",
+      "kind": "external"
+    }
+  ]
+}

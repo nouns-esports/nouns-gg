@@ -1,0 +1,14 @@
+{
+  "id": "pub_72b42da4b718d86b66377f91",
+  "name": "cmlvdewv",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibdhgki266a5w7hj5rqhcniedggupxfgndwo2etkzxmfxfmlnnwnu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0bd49029735D7Ca4a65Dc2F45c73e44F9348Fc66",
+      "kind": "external"
+    }
+  ]
+}

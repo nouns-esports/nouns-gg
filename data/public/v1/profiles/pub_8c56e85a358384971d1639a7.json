@@ -1,0 +1,14 @@
+{
+  "id": "pub_8c56e85a358384971d1639a7",
+  "name": "I'm Happy :)",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigjurhzfk46cd7d36jlxvunvzydp5q6qpnob2yiug6cvhf4mrle6y",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8ac38b5e64AA390Ac5e2bDEaDA28Bf48BDabBA33",
+      "kind": "external"
+    }
+  ]
+}

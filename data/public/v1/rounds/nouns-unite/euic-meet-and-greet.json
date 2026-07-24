@@ -1,0 +1,41 @@
+{
+  "id": "round:nouns-unite:euic-meet-and-greet",
+  "handle": "euic-meet-and-greet",
+  "name": "Meet the Pokémon UNITE Team at EUIC!",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeiejzroqlayz5bmb7is7fc2ywxl4zm62p7cocsrul7tnshyumxcwi4",
+  "active": true,
+  "type": "markdown",
+  "featured": false,
+  "xp": {
+    "winning": 0,
+    "castingVotes": 250,
+    "receivingVotes": 5,
+    "creatingProposal": 500
+  },
+  "content": "{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 16px;\",\"text\":\"Are you planning to attend the 2025 Pokémon Europe International Championships? \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 16px;\",\"text\":\"You are a fan of Pokémon UNITE and especially Nouns? \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"font-size: 16px;\",\"text\":\"Than this is the Round for you! \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":1,\"textStyle\":\"font-size: 16px;\"},{\"children\":[],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":1,\"textStyle\":\"font-size: 16px;\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 16px;\",\"text\":\"In this Round you'll have the chance to win a meet and greet with the Pokémon UNITE Team at EUIC. Meet the team on Thursday the 20th of February in London grab food together and have a nice evening! \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textStyle\":\"font-size: 16px;\",\"textFormat\":0},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 16px;\",\"text\":\"Beside the meet and greet the winners of this round are also getting some pocket money for the trip to spent on the Pokémon Center Pop-Up store or sightseeing! \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textStyle\":\"font-size: 16px;\",\"textFormat\":0},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 16px;\",\"text\":\"To win this round - share with the voters why you are the right person to win this meet and greet - why you are a nouns super fan! \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textStyle\":\"font-size: 16px;\",\"textFormat\":0},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 16px;\",\"text\":\"Before proposing \",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"font-size: 16px;\",\"text\":\"be sure you are actually able to be in London by the time of the meet and greet.\",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 16px;\",\"text\":\" The USDC prize will be sent out at the meet and greet - not showing up would mean the USDC prize will not be claimable. \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textStyle\":\"font-size: 16px;\",\"textFormat\":0},{\"children\":[],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textStyle\":\"font-size: 16px;\",\"textFormat\":0},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 16px;\",\"text\":\"The Pokémon UNITE Team is wishing everyone good luck and hope to see a lot of entries! We can't wait to meet you all at the EUIC in London.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textStyle\":\"font-size: 16px;\",\"textFormat\":0}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1,\"textStyle\":\"font-size: 16px;\"}",
+  "description": null,
+  "createdAt": "2025-01-27T11:00:00.000Z",
+  "start": "2025-01-27T11:00:00.000Z",
+  "votingStart": "2025-02-12T11:00:00.000Z",
+  "end": "2025-02-17T11:00:00.000Z",
+  "community": {
+    "id": "community:nouns-unite",
+    "handle": "nouns-unite",
+    "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/40a9b6c3-2425-4d53-969f-1ac85edcea00/original",
+    "name": "Nouns Unite",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": "https://warpcast.com/~/channel/unite",
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": false,
+    "hasPredictions": false,
+    "hasEvents": false,
+    "hasLeaderboard": false,
+    "hasShop": false
+  },
+  "eventId": null
+}

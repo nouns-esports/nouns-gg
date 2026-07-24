@@ -1,0 +1,14 @@
+{
+  "id": "pub_d2641d9e7bfe398e5053cd03",
+  "name": "AnnaHannka",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeidog5uddpdhil75fhbq4cgcn7frocvrgc75swuluxcr347e6dpt6m",
+  "bio": "Where handmade meets blockchain ❤",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2d5163333C636B9cC5F31d95A00B75f122Af743b",
+      "kind": "external"
+    }
+  ]
+}

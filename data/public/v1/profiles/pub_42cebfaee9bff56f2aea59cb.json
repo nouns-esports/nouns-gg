@@ -1,0 +1,14 @@
+{
+  "id": "pub_42cebfaee9bff56f2aea59cb",
+  "name": "Limpeza de Praias",
+  "image": "https://ipfs.nouns.gg/ipfs/QmWu9R5tc5V6W5xnGHa2feF74Qw5gGWAQTEiihuPjenSxF",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA1fa2ca15CA7a3592F2006E4D3e756d6D0bD6cd0",
+      "kind": "external"
+    }
+  ]
+}

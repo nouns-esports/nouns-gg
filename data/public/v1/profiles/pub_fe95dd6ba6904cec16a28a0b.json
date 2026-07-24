@@ -1,0 +1,23 @@
+{
+  "id": "pub_fe95dd6ba6904cec16a28a0b",
+  "name": "noobasaur ッ",
+  "image": "https://pbs.twimg.com/profile_images/1547341792902782981/1SUSA1pd_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "OhGodANoob",
+    "name": "noobasaur ッ",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1547341792902782981/1SUSA1pd_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8c979C01df30E00812727ECCD18AA249b9553744",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x170e910D9b000BcE0C8607089848B62B10E2F179",
+      "kind": "external"
+    }
+  ]
+}

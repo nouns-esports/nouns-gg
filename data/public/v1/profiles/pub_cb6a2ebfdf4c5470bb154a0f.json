@@ -1,0 +1,14 @@
+{
+  "id": "pub_cb6a2ebfdf4c5470bb154a0f",
+  "name": "Mfer Ones 🎩🔵",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=dr8pf&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2262d4288F35B75831f0B132a7B1fCf719430274",
+      "kind": "external"
+    }
+  ]
+}

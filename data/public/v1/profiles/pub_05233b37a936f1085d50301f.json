@@ -1,0 +1,14 @@
+{
+  "id": "pub_05233b37a936f1085d50301f",
+  "name": "amawaa_",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=87j32n&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7EeF59F2b5A54A1DE255817B2C7a6e0f4D8e1a0E",
+      "kind": "external"
+    }
+  ]
+}

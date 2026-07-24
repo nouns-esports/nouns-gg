@@ -1,0 +1,19 @@
+{
+  "id": "pub_97d0f98b3e2c62d5c33fdfcf",
+  "name": "Swanky",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiainyhiwgdytcq65surogugy7zqp2uxonp32y3sizeo6kakpsevaa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x00395d518B97b4B96b2B6950EDB1F251f5e28d70",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x4b7FE86248345e359A256545ACffDF64D8E792eA",
+      "kind": "external"
+    }
+  ]
+}

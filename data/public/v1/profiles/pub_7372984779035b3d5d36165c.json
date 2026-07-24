@@ -1,0 +1,14 @@
+{
+  "id": "pub_7372984779035b3d5d36165c",
+  "name": "clicheeee",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=3f0r49&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc345EEcA40c7cB872BA658F3389301A67E3b5D12",
+      "kind": "external"
+    }
+  ]
+}

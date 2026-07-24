@@ -1,0 +1,18 @@
+{
+  "id": "pub_bca9d57677c79fc2fd0dc2ab",
+  "name": "girlypOP",
+  "image": "https://pbs.twimg.com/profile_images/1853775993938255872/vo_SaQgI_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "poopdestroyee",
+    "name": "girlypOP",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1853775993938255872/vo_SaQgI_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA5F353B8178118CecD665FBb100AdbB42E906D65",
+      "kind": "external"
+    }
+  ]
+}

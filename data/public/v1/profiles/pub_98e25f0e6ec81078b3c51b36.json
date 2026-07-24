@@ -1,0 +1,14 @@
+{
+  "id": "pub_98e25f0e6ec81078b3c51b36",
+  "name": "cmdndi75",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifd7edxmh335rdwsztjsybhbwbqyp7dgpeufjo5sak6ikqbewgcaq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5555f627A6556687DF00560BbD9BB7d8Fd62ADf4",
+      "kind": "external"
+    }
+  ]
+}

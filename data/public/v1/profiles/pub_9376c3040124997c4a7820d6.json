@@ -1,0 +1,18 @@
+{
+  "id": "pub_9376c3040124997c4a7820d6",
+  "name": "CryptoDooog 瘋狗堯",
+  "image": "https://pbs.twimg.com/profile_images/1943516151394271232/4EI8vEIy_normal.jpg",
+  "bio": "https://x.com/GigQp",
+  "twitter": {
+    "username": "GigQp",
+    "name": "CryptoDooog 瘋狗堯",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1943516151394271232/4EI8vEIy_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6Cd8A57f2Fd57Bbb258819a128544e6e714EBAFe",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_624f6dfab1797002ca1bcef6",
+  "name": "Founx (SAGE)",
+  "image": "https://pbs.twimg.com/profile_images/1901147066472296452/aKB8_LGU_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "founx82",
+    "name": "Founx (SAGE)",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1901147066472296452/aKB8_LGU_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xaBf600aE2C03fa4b1D3C285b727a238168F9aAf7",
+      "kind": "external"
+    }
+  ]
+}

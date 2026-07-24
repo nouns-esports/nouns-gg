@@ -1,0 +1,19 @@
+{
+  "id": "pub_6072c8a00ecd406e1d8b7317",
+  "name": "Skateboard.⌐◨-◨",
+  "image": "https://ipfs.nouns.gg/ipfs/Qmb9iTR5gYNJcfs96j8zNbGfk36nkmZgHbuifkcHas1KW9",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x8Bf5941d27176242745B716251943Ae4892a3C26",
+      "kind": "external"
+    }
+  ]
+}

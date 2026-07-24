@@ -1,0 +1,14 @@
+{
+  "id": "pub_6a86c1c9503a8354a87b6299",
+  "name": "dusk",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicozwdmr44ufnvta25u3oxnpqsmekuapiz7hmu3yxoa5k3rgqrqdm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xF64642b49886Ba8fee006767C3b1303dF25c5211",
+      "kind": "external"
+    }
+  ]
+}

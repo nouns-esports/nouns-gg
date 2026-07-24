@@ -1,0 +1,18 @@
+{
+  "id": "pub_68dfb0cc8170b3455cf54ae6",
+  "name": "听雨 🦅 丨💢",
+  "image": "https://pbs.twimg.com/profile_images/1966079172679446528/5owJG-Jd_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Dominic__Savio6",
+    "name": "听雨 🦅 丨💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1966079172679446528/5owJG-Jd_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEb17A3Fd378e4b1dc2e0D90225774Bd42CfCC767",
+      "kind": "external"
+    }
+  ]
+}

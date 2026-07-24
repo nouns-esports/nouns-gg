@@ -1,0 +1,14 @@
+{
+  "id": "pub_ef1c26b728b73ae922d3583b",
+  "name": "Sandy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib3wc7sinhsxqnbekqimbi3f5roce45robvdvbxnsypudvp3xvh6u",
+  "bio": "BETR BELIEVER",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEE5C737066269FA6ee57CfD60902D066ebAfB705",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_d18295c8039ed4bb07d527d7",
+  "name": "QUBYT !",
+  "image": "https://pbs.twimg.com/profile_images/1617930154725998593/0kF87E-8_normal.jpg",
+  "bio": "Multimedia artist / dork / discord: discord.gg/Xsz9bAfwGa / OBJKT: tinyurl.com/22xw4ee9 lynkfire.com/QUBYT",
+  "twitter": {
+    "username": "qUBYt2",
+    "name": "QUBYT !",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1617930154725998593/0kF87E-8_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7C5AD4BDF3C3Fc735c823492d46228a8C0A0f81f",
+      "kind": "external"
+    }
+  ]
+}

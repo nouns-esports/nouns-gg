@@ -1,0 +1,18 @@
+{
+  "id": "pub_3d65d0b23ac33fb5e7cf7649",
+  "name": "Cennge",
+  "image": "https://pbs.twimg.com/profile_images/1582749147270184961/lQ5gWr7W_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "zxCennge",
+    "name": "Cennge",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1582749147270184961/lQ5gWr7W_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x02950652911a95b38bddc3B3d30f1f0f8154CFEA",
+      "kind": "external"
+    }
+  ]
+}

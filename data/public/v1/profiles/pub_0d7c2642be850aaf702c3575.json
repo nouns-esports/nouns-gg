@@ -1,0 +1,14 @@
+{
+  "id": "pub_0d7c2642be850aaf702c3575",
+  "name": "cmdsioo4",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreic7turphmtbbdijmssfgdgprdzplgnfgzwdskehni234tvd4jnkze",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0Ab817FdeFeDc4234Fea2961ce88D92149d9f594",
+      "kind": "external"
+    }
+  ]
+}

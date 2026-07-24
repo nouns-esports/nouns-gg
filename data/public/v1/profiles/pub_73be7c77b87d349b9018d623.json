@@ -1,0 +1,14 @@
+{
+  "id": "pub_73be7c77b87d349b9018d623",
+  "name": "rp01",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieaiiakkqo7hatk5fpewjtirjtid5bc7zcaisnrksudyjkcsacah4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5048d37A49E563200E90e6571869c9FC48D6a859",
+      "kind": "external"
+    }
+  ]
+}

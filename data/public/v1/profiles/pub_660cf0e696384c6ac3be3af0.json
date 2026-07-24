@@ -1,0 +1,14 @@
+{
+  "id": "pub_660cf0e696384c6ac3be3af0",
+  "name": "cmdm51rb",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreih5fs7luvlx2jlg53ricwhwx6i7m6axr62ejfzqeat7p5vv4tbmii",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x060E1386a974992DFe286dB4AA8BAE2D380B0A3F",
+      "kind": "external"
+    }
+  ]
+}

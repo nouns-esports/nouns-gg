@@ -1,0 +1,18 @@
+{
+  "id": "pub_432e3421a91d3f7d2f505e92",
+  "name": "Alaric💢",
+  "image": "https://pbs.twimg.com/profile_images/1895310191744425985/P3VBDM4U_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "krisc22",
+    "name": "Alaric💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1895310191744425985/P3VBDM4U_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa9a5d1cEa0cc695d50Ea373E05e6232A65F77664",
+      "kind": "external"
+    }
+  ]
+}

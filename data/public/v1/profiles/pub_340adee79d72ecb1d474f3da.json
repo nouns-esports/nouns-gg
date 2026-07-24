@@ -1,0 +1,14 @@
+{
+  "id": "pub_340adee79d72ecb1d474f3da",
+  "name": "brazilian.guest",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifu7l4xqp5sus3wtg2r5xosc45mn32lshhogovmq4dr6ol6itnfo4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xF1Fa27F26Baa40aB2939878b87E6CFB7386D3234",
+      "kind": "external"
+    }
+  ]
+}

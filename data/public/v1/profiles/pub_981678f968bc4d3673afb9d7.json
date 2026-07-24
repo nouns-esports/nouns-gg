@@ -1,0 +1,14 @@
+{
+  "id": "pub_981678f968bc4d3673afb9d7",
+  "name": "ISupportHumanArt",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiejyf3expuqsksnokjyyulv2m4no7uh7xou5uqhe53zr6ryly4n7m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x496a019016EbFe970BCd00dCb583126BF8d254C8",
+      "kind": "external"
+    }
+  ]
+}

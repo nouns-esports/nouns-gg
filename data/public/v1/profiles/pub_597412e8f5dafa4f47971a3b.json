@@ -1,0 +1,14 @@
+{
+  "id": "pub_597412e8f5dafa4f47971a3b",
+  "name": "MartinV",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=vul95&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x753D2C9553A405f3CFfCCD6E3217aac8b83296d5",
+      "kind": "external"
+    }
+  ]
+}

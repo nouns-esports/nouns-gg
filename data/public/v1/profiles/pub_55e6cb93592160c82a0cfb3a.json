@@ -1,0 +1,23 @@
+{
+  "id": "pub_55e6cb93592160c82a0cfb3a",
+  "name": "blck.svn",
+  "image": "https://pbs.twimg.com/profile_images/1922976668366536710/ArBj2Ver_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "blck_svn0",
+    "name": "blck.svn",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922976668366536710/ArBj2Ver_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x13188D7a03eDc8599A920ad3B4F15f62ec8D5dd0",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x5A34607D1820dD66e0F8128261437E2C28A89dE6",
+      "kind": "external"
+    }
+  ]
+}

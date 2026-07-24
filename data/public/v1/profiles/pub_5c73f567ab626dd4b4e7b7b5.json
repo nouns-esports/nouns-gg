@@ -1,0 +1,18 @@
+{
+  "id": "pub_5c73f567ab626dd4b4e7b7b5",
+  "name": "Nicholas \"MonkHB\" Esposito",
+  "image": "https://pbs.twimg.com/profile_images/1509344731666468866/FgO3Lw65_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "HonkeyBananas",
+    "name": "Nicholas \"MonkHB\" Esposito",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1509344731666468866/FgO3Lw65_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8E301c05D94637d450550D4112F4c83673d47680",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "pub_4247d6001636db97c2d96dbc",
+  "name": "smolco lombardi",
+  "image": "https://pbs.twimg.com/profile_images/1537491682194857987/TofRO_MI_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "shinedairz",
+    "name": "smolco lombardi",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1537491682194857987/TofRO_MI_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd02a8B97B479968439A8F0374eA12150A2Bcd9A8",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xe0C064B0D5A113f79f725D49Cd19795853386a19",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x7992d59141914f39968ff5DdAC04A3C872a0A956",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_a8607a4981a07024c60e3065",
+  "name": "Olga",
+  "image": "https://pbs.twimg.com/profile_images/1789647554944069632/Ip_tDv-i_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Olga41835314",
+    "name": "Olga",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1789647554944069632/Ip_tDv-i_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb94b531a4Cc5CddC388Ea1514444d5402264E36F",
+      "kind": "external"
+    }
+  ]
+}

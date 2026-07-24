@@ -1,0 +1,19 @@
+{
+  "id": "pub_32d6af3d2e1e61a8c01d2f0a",
+  "name": "Rune Riptide",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihxjycqjvrt2wqbvm2dxvdm72mjkmpsbpm4eq7e6txkikppggcj4e",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA58B017f84661e92354572880932239108986238",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x1453F625145aBE4Ff1dc99dD7404E68dccC0E904",
+      "kind": "external"
+    }
+  ]
+}

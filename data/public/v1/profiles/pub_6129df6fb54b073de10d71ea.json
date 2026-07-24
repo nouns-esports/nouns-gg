@@ -1,0 +1,18 @@
+{
+  "id": "pub_6129df6fb54b073de10d71ea",
+  "name": "Battlepoops(🌸, 🌿)",
+  "image": "https://pbs.twimg.com/profile_images/1497838427995136001/LXK40TwL_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "Battlepoops",
+    "name": "Battlepoops(🌸, 🌿)",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1497838427995136001/LXK40TwL_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe163fB962c8D908A95f34cb255dA3849990FD389",
+      "kind": "external"
+    }
+  ]
+}

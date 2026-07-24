@@ -1,0 +1,14 @@
+{
+  "id": "pub_60db7a7b8408089aaa668d62",
+  "name": "cmbu2ot2",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihcmtnk7t7j2eq5tl2yqpf4i3xu4anb5scdqlu2tgxcofhjm4qwwi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x66cd193d0C0Fb3B9b44Dd371107617A7e9f38184",
+      "kind": "external"
+    }
+  ]
+}

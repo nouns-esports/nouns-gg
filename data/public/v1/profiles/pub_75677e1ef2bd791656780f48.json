@@ -1,0 +1,18 @@
+{
+  "id": "pub_75677e1ef2bd791656780f48",
+  "name": "pandu",
+  "image": "https://pbs.twimg.com/profile_images/1900179933999017984/A33DjvcA_normal.jpg",
+  "bio": "How did i get here. Kind of love it anyway.",
+  "twitter": {
+    "username": "printilun",
+    "name": "pandu",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1900179933999017984/A33DjvcA_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe592793E51c8F74C821542E84f0dc75FcA6e3179",
+      "kind": "external"
+    }
+  ]
+}

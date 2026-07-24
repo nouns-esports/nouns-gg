@@ -1,0 +1,14 @@
+{
+  "id": "pub_0f2d31a58b808ccf8b373a98",
+  "name": "cmdoc5fy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaasc72e7uwhz3c6qjji6fuifpen7mvqafsezs2a6a4odadf6rh2y",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x592F6d2c9488D810EfF44260839FE57F41425a04",
+      "kind": "external"
+    }
+  ]
+}

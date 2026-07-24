@@ -1,0 +1,18 @@
+{
+  "id": "pub_8d836d95f842d405049f77ff",
+  "name": "Chopper",
+  "image": "https://pbs.twimg.com/profile_images/1946306788929818624/zaSjhNNk_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Chopper_689",
+    "name": "Chopper",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1946306788929818624/zaSjhNNk_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA5B9C88dAcFafe08AD62f528b381a633a9E5F444",
+      "kind": "external"
+    }
+  ]
+}

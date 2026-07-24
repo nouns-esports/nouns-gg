@@ -1,0 +1,14 @@
+{
+  "id": "pub_5861d6749b4b749b509bff27",
+  "name": "辣条味奶糖",
+  "image": "https://ipfs.nouns.gg/ipfs/QmYnWJM3nnFZwVVyQDwTKhdM88GRDuj9ZrUEyMdn3a2FFf",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1D523618970786083e7e618cca7890D385573b6e",
+      "kind": "external"
+    }
+  ]
+}

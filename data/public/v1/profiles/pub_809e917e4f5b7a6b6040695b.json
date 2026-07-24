@@ -1,0 +1,14 @@
+{
+  "id": "pub_809e917e4f5b7a6b6040695b",
+  "name": "cmdnlm52",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib3344zs3sedoek5u5sxygydchvc7gf33gjwcwq5mp5pvrg2pyyae",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7da93c40324089CBF5E41BBD2f89Cfb97641DdaD",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_8b475509f8afa719ce6767a7",
+  "name": "Noodle Nebula",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreic4vybhkcs2zu6sh6ep7dgratahcjggepqsvwiifuf4hnyvrdhqry",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xfF09D13350269504472d8F8b289Fa3b8D50d4D11",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x887eDb953d9d912Aae956aFeb5109C973200565A",
+      "kind": "external"
+    }
+  ]
+}

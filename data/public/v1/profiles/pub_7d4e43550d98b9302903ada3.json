@@ -1,0 +1,14 @@
+{
+  "id": "pub_7d4e43550d98b9302903ada3",
+  "name": "olimpius 🎩",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiegvb4yfg522ktchqqx3oeqvknbd73vghgavembat3elvdjnsfmey",
+  "bio": "investor, crypto enthusiast and analyst; passionate yachtsman and photographer.",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x21BAcBEfaE26ce58118c8a6061adf170c33D5cDA",
+      "kind": "external"
+    }
+  ]
+}

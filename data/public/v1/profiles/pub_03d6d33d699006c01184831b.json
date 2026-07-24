@@ -1,0 +1,19 @@
+{
+  "id": "pub_03d6d33d699006c01184831b",
+  "name": "Cyber Smith",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihepqcuutc5skqtmdcpfqx4q6h5l6xqzrdifef53jprmz6wznbzm4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7E6875E94aAF1DB778Afa84c2A2DDba25395E868",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xbae3e27761441F47Dc9ecFC86F114904fBEb7E16",
+      "kind": "external"
+    }
+  ]
+}

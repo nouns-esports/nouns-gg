@@ -1,0 +1,23 @@
+{
+  "id": "pub_6a1d13089e2a8171a25b8b49",
+  "name": "truthbytez",
+  "image": "https://pbs.twimg.com/profile_images/1923326673132638208/FfQRk4CC_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "truthbytezz",
+    "name": "truthbytez",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923326673132638208/FfQRk4CC_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x81D4524Fca9a79C12cA7EE1eb208688f73720303",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x5f1D93d49901ae11caB6D2508d617f92451D132B",
+      "kind": "external"
+    }
+  ]
+}

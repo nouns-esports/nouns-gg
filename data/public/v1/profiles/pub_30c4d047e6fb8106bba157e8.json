@@ -1,0 +1,19 @@
+{
+  "id": "pub_30c4d047e6fb8106bba157e8",
+  "name": "Lively",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigg6boqxyiubesiebdw5rqcfjdksoe3ma37zo4sve4on24g7w5nze",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x95cb594c8f53f3b2D5bea268cBFBc57F5d7828A0",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x60b3340DFe31A2D67f41a78974425821b5CfA103",
+      "kind": "external"
+    }
+  ]
+}

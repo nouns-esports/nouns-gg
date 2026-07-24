@@ -1,0 +1,18 @@
+{
+  "id": "pub_c2b9ab186af043e89282aeba",
+  "name": "OwO Zeuis",
+  "image": "https://pbs.twimg.com/profile_images/1787081549071908864/F9DiSll1_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ZeuisD",
+    "name": "OwO Zeuis",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1787081549071908864/F9DiSll1_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdFb8A4b17e387EE9774AE2452B05BE9DA994Fbd2",
+      "kind": "external"
+    }
+  ]
+}

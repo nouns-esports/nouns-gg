@@ -1,0 +1,78 @@
+{
+  "id": "product:nouns-gg:foxes-tee",
+  "handle": "foxes-tee",
+  "name": "Foxes T-Shirt",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:137b6ce6-1e64-4a87-8bf5-d34bd0f8fed0",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "26.99",
+      "inventory": null
+    },
+    {
+      "id": "variant:1ff972f7-9da4-4bf5-8170-3a27cf1bb9c8",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeieuafapfyal275cbxwje4pmsyde654567f4xqstnik3yitmg3iz2e"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "26.99",
+      "inventory": null
+    },
+    {
+      "id": "variant:21db78f4-cde4-459e-b214-d678f3367556",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "26.99",
+      "inventory": null
+    },
+    {
+      "id": "variant:0bd57761-20ea-4147-9e06-9434c2e3c8bb",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "26.99",
+      "inventory": null
+    },
+    {
+      "id": "variant:6d8e0b28-b87f-4b3d-8ece-74958a92334e",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "26.99",
+      "inventory": null
+    }
+  ]
+}

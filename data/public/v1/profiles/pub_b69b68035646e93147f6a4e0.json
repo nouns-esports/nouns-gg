@@ -1,0 +1,18 @@
+{
+  "id": "pub_b69b68035646e93147f6a4e0",
+  "name": "Kaseke L",
+  "image": "https://pbs.twimg.com/profile_images/1795578652165365760/Or-2YhsP_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "Fuukafan223",
+    "name": "Kaseke L",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1795578652165365760/Or-2YhsP_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2ee079e4c22281B0b11acA7fE7d320865838a8d3",
+      "kind": "external"
+    }
+  ]
+}

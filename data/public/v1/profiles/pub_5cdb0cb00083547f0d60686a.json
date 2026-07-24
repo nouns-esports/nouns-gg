@@ -1,0 +1,14 @@
+{
+  "id": "pub_5cdb0cb00083547f0d60686a",
+  "name": "cmdonhbj",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifuaqhdt6fuaco7ixwuq2gs3dxmxkavglqwi2tfjsggnb6v5th5jq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6E351B985d9D29868FDc74C3AF8C3Df487fa3eF9",
+      "kind": "external"
+    }
+  ]
+}

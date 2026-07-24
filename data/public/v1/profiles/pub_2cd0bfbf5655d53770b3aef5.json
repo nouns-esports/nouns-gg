@@ -1,0 +1,18 @@
+{
+  "id": "pub_2cd0bfbf5655d53770b3aef5",
+  "name": "PAMILO CEIRONE®",
+  "image": "https://pbs.twimg.com/profile_images/1929367734640386048/xV6zh7SH_normal.jpg",
+  "bio": "PAMILO CEIRONE / Self-taught experimental artist from La Pampa, Argentina.",
+  "twitter": {
+    "username": "nefetesudaca",
+    "name": "PAMILO CEIRONE®",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1929367734640386048/xV6zh7SH_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x81a8Ccb2fA2BD6bDb67F50cCD6Dc860641381C07",
+      "kind": "external"
+    }
+  ]
+}

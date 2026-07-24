@@ -1,0 +1,14 @@
+{
+  "id": "pub_77e960ca40f41b5123e6345b",
+  "name": "beka",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=aabsj&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2042CED592181fE67Dd8ED5AAB4D76F32076629F",
+      "kind": "external"
+    }
+  ]
+}

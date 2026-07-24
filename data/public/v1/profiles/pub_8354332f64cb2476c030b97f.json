@@ -1,0 +1,18 @@
+{
+  "id": "pub_8354332f64cb2476c030b97f",
+  "name": "Laiduk (Ø,G)",
+  "image": "https://pbs.twimg.com/profile_images/1515895007835668481/FOP_Inak_normal.jpg",
+  "bio": "A long-term Bitcoin and altcoin investor!",
+  "twitter": {
+    "username": "batdau12",
+    "name": "Laiduk (Ø,G)",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1515895007835668481/FOP_Inak_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x36fA344732fa820A989ddcB1ae1c57db93Ee2E9B",
+      "kind": "external"
+    }
+  ]
+}

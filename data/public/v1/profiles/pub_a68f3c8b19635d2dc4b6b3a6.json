@@ -1,0 +1,18 @@
+{
+  "id": "pub_a68f3c8b19635d2dc4b6b3a6",
+  "name": "mikegood.eth",
+  "image": "https://pbs.twimg.com/profile_images/1924267396182736896/MyyqKt7F_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "GoodBeats",
+    "name": "mikegood.eth",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1924267396182736896/MyyqKt7F_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xFC538FFD2923ddDaED09c8aD1a51686275C56183",
+      "kind": "external"
+    }
+  ]
+}

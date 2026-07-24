@@ -1,0 +1,18 @@
+{
+  "id": "pub_3d012a4e4ddd39ce48a24f67",
+  "name": "KEG",
+  "image": "https://pbs.twimg.com/profile_images/1796444061710102528/q-3ndlgL_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "kegssbm",
+    "name": "KEG",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1796444061710102528/q-3ndlgL_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2d4f4896e8dEC2cCA62cc718F8EFC73e2C750a76",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,82 +1,51 @@
-"use server";
+import {
+	latestNoun,
+	traits,
+} from "@/server/data/archive";
 
-import { unstable_cache as cache } from "next/cache";
-import { db } from "~/packages/db";
-import { nouns, nounsTraits } from "~/packages/db/schema/indexer";
-import { count, desc, eq, sql } from "drizzle-orm";
+export async function getTrait(input: {
+	type: "accessory" | "body" | "head" | "glasses";
+	index: number;
+}) {
+	return traits.find(
+		(trait) => trait.type === input.type && trait.index === input.index,
+	);
+}
 
-export const getTrait = cache(
-	async (input: {
-		type: "accessory" | "body" | "head" | "glasses";
-		index: number;
-	}) => {
-		return db.pgpool.query.nounsTraits.findFirst({
-			where: (t, { and, eq }) =>
-				and(
-					eq(nounsTraits.type, input.type),
-					eq(nounsTraits.index, input.index),
-				),
-		});
-	},
-	["getTrait"],
-);
+export async function getTraits(input: {
+	accessory: number;
+	body: number;
+	head: number;
+	glasses: number;
+}) {
+	return {
+		accessory: await getTrait({
+			type: "accessory",
+			index: input.accessory,
+		}),
+		body: await getTrait({ type: "body", index: input.body }),
+		head: await getTrait({ type: "head", index: input.head }),
+		glasses: await getTrait({ type: "glasses", index: input.glasses }),
+	};
+}
 
-export const getTraits = cache(
-	async (input: {
-		accessory: number;
-		body: number;
-		head: number;
-		glasses: number;
-	}) => {
-		const traits = await db.pgpool.query.nounsTraits.findMany({
-			where: (t, { or, eq }) =>
-				or(
-					eq(nounsTraits.id, `accessory:${input.accessory}`),
-					eq(nounsTraits.id, `body:${input.body}`),
-					eq(nounsTraits.id, `head:${input.head}`),
-					eq(nounsTraits.id, `glasses:${input.glasses}`),
-				),
-		});
+export async function getTraitCounts() {
+	return {
+		accessory: traits.filter((trait) => trait.type === "accessory").length,
+		body: traits.filter((trait) => trait.type === "body").length,
+		head: traits.filter((trait) => trait.type === "head").length,
+		glasses: traits.filter((trait) => trait.type === "glasses").length,
+	};
+}
 
-		const accessory = traits.find((t) => t.type === "accessory");
-		const body = traits.find((t) => t.type === "body");
-		const head = traits.find((t) => t.type === "head");
-		const glasses = traits.find((t) => t.type === "glasses");
-
-		return { accessory, body, head, glasses };
-	},
-	["getTraits"],
-);
-
-export const getTraitCounts = cache(async () => {
-	const [counts] = await db.pgpool
-		.select({
-			accessory: db.pgpool.$count(
-				nounsTraits,
-				eq(nounsTraits.type, "accessory"),
-			),
-			body: db.pgpool.$count(nounsTraits, eq(nounsTraits.type, "body")),
-			head: db.pgpool.$count(nounsTraits, eq(nounsTraits.type, "head")),
-			glasses: db.pgpool.$count(nounsTraits, eq(nounsTraits.type, "glasses")),
-		})
-		.from(nounsTraits);
-
-	return counts;
-}, ["getTraitCounts"]);
-
-export const getNoun = cache(
-	async (input: {
-		id?: number;
-	}) => {
-		return db.pgpool.query.nouns.findFirst({
-			where: input.id ? eq(nouns.id, BigInt(input.id)) : undefined,
-			orderBy: [desc(nouns.id)],
-			with: {
-				accessory: true,
-				body: true,
-				head: true,
-				glasses: true,
-			},
-		});
-	},
-);
+export async function getNoun(input: { id?: number }): Promise<any> {
+	if (input.id && Number(latestNoun?.id) !== input.id) return undefined;
+	if (!latestNoun) return undefined;
+	const nounTraits = await getTraits({
+		accessory: Number(String(latestNoun.accessory).split(":").at(-1)),
+		body: Number(String(latestNoun.body).split(":").at(-1)),
+		head: Number(String(latestNoun.head).split(":").at(-1)),
+		glasses: Number(String(latestNoun.glasses).split(":").at(-1)),
+	});
+	return { ...latestNoun, ...nounTraits };
+}

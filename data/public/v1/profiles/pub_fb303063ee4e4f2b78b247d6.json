@@ -1,0 +1,14 @@
+{
+  "id": "pub_fb303063ee4e4f2b78b247d6",
+  "name": "kewpie",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=atsl8&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xaD565956Ae5Bd43117F6B0a650Ec18c621Ff8E0d",
+      "kind": "external"
+    }
+  ]
+}

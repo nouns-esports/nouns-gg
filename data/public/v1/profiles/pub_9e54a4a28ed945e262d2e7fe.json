@@ -1,0 +1,14 @@
+{
+  "id": "pub_9e54a4a28ed945e262d2e7fe",
+  "name": "Chrischanjan",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibkvugknzxs443wdc7mk75tuybh2s3bzllktcylv7o6vpdj3t7hta",
+  "bio": "Digital Artist",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4De48fdffb25b76c0347A002103D6EF1FFE75B1D",
+      "kind": "external"
+    }
+  ]
+}

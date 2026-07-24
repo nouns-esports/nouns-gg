@@ -1,0 +1,14 @@
+{
+  "id": "pub_1c4feae4076384e5ba9b64d8",
+  "name": "cmc4rih5",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigjblrqgi6whmhuhf3e4yvzpwpu2kclypgmbbvccrljtslxbxkvci",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x402c9e4e035a05e85f52422B63e2d3DBcDe0c666",
+      "kind": "external"
+    }
+  ]
+}

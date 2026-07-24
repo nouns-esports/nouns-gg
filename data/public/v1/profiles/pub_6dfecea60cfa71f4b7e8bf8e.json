@@ -1,0 +1,14 @@
+{
+  "id": "pub_6dfecea60cfa71f4b7e8bf8e",
+  "name": "cmdo84kr",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreictubzns5r2ucifns4louig5bfe43n2ovja5fngyj4mce444mxr7m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8684263a470a995cD3A0050b4919CaEe15a98761",
+      "kind": "external"
+    }
+  ]
+}

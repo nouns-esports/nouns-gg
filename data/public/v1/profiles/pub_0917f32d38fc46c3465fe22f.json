@@ -1,0 +1,14 @@
+{
+  "id": "pub_0917f32d38fc46c3465fe22f",
+  "name": "clzequy1",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibdhgki266a5w7hj5rqhcniedggupxfgndwo2etkzxmfxfmlnnwnu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE41a11bCD91ED9342a1740b5d79E24f3A7321654",
+      "kind": "external"
+    }
+  ]
+}

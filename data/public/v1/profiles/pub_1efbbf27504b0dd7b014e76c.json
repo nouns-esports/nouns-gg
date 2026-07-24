@@ -1,0 +1,18 @@
+{
+  "id": "pub_1efbbf27504b0dd7b014e76c",
+  "name": "Triumph @ #NXTUp",
+  "image": "https://pbs.twimg.com/profile_images/1592804560174579712/urvvQrFO_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "TriumphReturns",
+    "name": "Triumph @ #NXTUp",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1592804560174579712/urvvQrFO_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7C38f649c56f275dA00d385fa01470b769F24b91",
+      "kind": "external"
+    }
+  ]
+}

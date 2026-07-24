@@ -1,0 +1,14 @@
+{
+  "id": "pub_12beead3d7a3673971e5dada",
+  "name": "ant",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifu7l4xqp5sus3wtg2r5xosc45mn32lshhogovmq4dr6ol6itnfo4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x75373Ad90eD22F6048Cdf76d65FC86946a12B760",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_bb330a814201f01b742f5daf",
+  "name": "DERBY DAYS",
+  "image": "https://pbs.twimg.com/profile_images/1321818673980559360/_jXWu4xh_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "DCFCRAB",
+    "name": "DERBY DAYS",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1321818673980559360/_jXWu4xh_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8a464d161c2146094082fA5908A1a552d6C9557B",
+      "kind": "external"
+    }
+  ]
+}

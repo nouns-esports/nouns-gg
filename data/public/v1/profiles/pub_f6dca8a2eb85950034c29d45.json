@@ -1,0 +1,14 @@
+{
+  "id": "pub_f6dca8a2eb85950034c29d45",
+  "name": "0xmoti.eth",
+  "image": "https://ipfs.nouns.gg/ipfs/QmNgNu3LYLWp7oCCtzvSZKU37zEhkL21B6eUkY8H73cE63",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4781e7E272CF22a674bECB2793092940E839F7B7",
+      "kind": "external"
+    }
+  ]
+}

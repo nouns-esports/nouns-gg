@@ -1,0 +1,14 @@
+{
+  "id": "pub_a937961b7a56ce5bebf0eb8e",
+  "name": "civil ",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicc3yvb2s3kqg3xuo6apfwgeqlpuf6pubumx3x4jlmaccky55m5du",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe5adabBD71225E8074E30ff6cE2a66c9319C071b",
+      "kind": "external"
+    }
+  ]
+}

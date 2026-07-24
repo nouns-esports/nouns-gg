@@ -1,0 +1,290 @@
+[
+  {
+    "id": "vote:fec8eec8-d11a-470e-a441-8983aa2e6247",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:025206a6-f4aa-488f-8a30-51dace0d642c",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-06-30T10:21:12.589Z"
+  },
+  {
+    "id": "vote:82e40236-ca59-45f2-a6f2-308cf242be77",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 3,
+    "timestamp": "2024-06-30T10:21:12.589Z"
+  },
+  {
+    "id": "vote:bf86e1fb-1f10-45f7-a1f0-a80983f57ec1",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:4b444047-5fdd-4a14-99bd-2337ae3fd0b1",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 6,
+    "timestamp": "2024-06-30T10:21:12.589Z"
+  },
+  {
+    "id": "vote:5f30066c-e974-46f1-b1d8-c6d760356031",
+    "userId": "pub_35f0b41d5dbd3ea58ec06ee1",
+    "proposalId": "proposal:6e8c64e5-df4c-4265-87dc-5875c2dacb4d",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-06-30T10:36:03.847Z"
+  },
+  {
+    "id": "vote:9384a690-61e2-410d-9854-e11a576787d0",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:954e211e-a23b-448e-806c-13ddb9451c6d",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-01T00:23:59.735Z"
+  },
+  {
+    "id": "vote:03b6af7c-aa0e-43c1-a820-4962d11d8b8f",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:49104325-b4c6-448d-a563-bad978c7cf48",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 2,
+    "timestamp": "2024-07-01T00:23:59.735Z"
+  },
+  {
+    "id": "vote:e2ad76f1-0ee9-4858-8927-66c5a277228b",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:4b444047-5fdd-4a14-99bd-2337ae3fd0b1",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-01T00:23:59.735Z"
+  },
+  {
+    "id": "vote:d09c757f-709c-440c-afc3-7acd3000c914",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:6e8c64e5-df4c-4265-87dc-5875c2dacb4d",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 2,
+    "timestamp": "2024-07-01T00:23:59.735Z"
+  },
+  {
+    "id": "vote:3fb6cb86-c415-43b2-9a96-a3fb3ec1ffe3",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 4,
+    "timestamp": "2024-07-01T00:23:59.735Z"
+  },
+  {
+    "id": "vote:ed865907-a415-42b6-9e48-7e32ee83e8b7",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:6e8c64e5-df4c-4265-87dc-5875c2dacb4d",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 4,
+    "timestamp": "2024-07-01T02:45:18.691Z"
+  },
+  {
+    "id": "vote:68fa018d-b1f9-4667-b5ad-fda5e17fe29a",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 2,
+    "timestamp": "2024-07-01T02:45:18.691Z"
+  },
+  {
+    "id": "vote:19a2bde6-5c1e-4e0b-9adc-f3a779ebe02d",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:025206a6-f4aa-488f-8a30-51dace0d642c",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 2,
+    "timestamp": "2024-07-01T02:45:18.691Z"
+  },
+  {
+    "id": "vote:1eaf05e6-3868-4f7f-8a58-503de4c73e27",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:49104325-b4c6-448d-a563-bad978c7cf48",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 2,
+    "timestamp": "2024-07-01T02:45:18.691Z"
+  },
+  {
+    "id": "vote:90e7ad3c-4b21-45f1-bd63-dd6c86716614",
+    "userId": "pub_28eeff11063801bdee6bf1d5",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 3,
+    "timestamp": "2024-07-01T08:03:06.234Z"
+  },
+  {
+    "id": "vote:eb7c47bc-a8f7-45e3-8414-1c8cc8949fe4",
+    "userId": "pub_28eeff11063801bdee6bf1d5",
+    "proposalId": "proposal:6e8c64e5-df4c-4265-87dc-5875c2dacb4d",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 7,
+    "timestamp": "2024-07-01T08:03:06.234Z"
+  },
+  {
+    "id": "vote:2cbf776d-5e82-4207-869d-2062936ac162",
+    "userId": "pub_a0a2e41ab911eb17b8db2e64",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-01T08:25:53.199Z"
+  },
+  {
+    "id": "vote:431f1517-a113-4f35-8566-88238546be63",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-01T18:51:43.930Z"
+  },
+  {
+    "id": "vote:7cd0c122-f525-4a48-949c-53f07ae3b7b7",
+    "userId": "pub_f6d30ae65e37a102e75ccc8d",
+    "proposalId": "proposal:6e8c64e5-df4c-4265-87dc-5875c2dacb4d",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-01T18:51:45.179Z"
+  },
+  {
+    "id": "vote:e5cf2257-021c-40d5-8f88-b8a9059aaf68",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:954e211e-a23b-448e-806c-13ddb9451c6d",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-01T18:54:43.171Z"
+  },
+  {
+    "id": "vote:74a2ccd1-5889-43c6-b51c-f8f33ac9ff05",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:4b444047-5fdd-4a14-99bd-2337ae3fd0b1",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 7,
+    "timestamp": "2024-07-01T18:54:43.171Z"
+  },
+  {
+    "id": "vote:c7144170-36de-4bc9-9b97-2455784d8a47",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 2,
+    "timestamp": "2024-07-01T18:54:43.171Z"
+  },
+  {
+    "id": "vote:f72949d6-e9e0-4e32-98c6-01042dd509ba",
+    "userId": "pub_b1ad7c0f3c7c4684ceb91c7a",
+    "proposalId": "proposal:49104325-b4c6-448d-a563-bad978c7cf48",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 3,
+    "timestamp": "2024-07-01T18:54:54.869Z"
+  },
+  {
+    "id": "vote:015dfae4-a9c5-4009-9e7e-2e9c60b0cf0d",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:49104325-b4c6-448d-a563-bad978c7cf48",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 6,
+    "timestamp": "2024-07-01T21:45:03.382Z"
+  },
+  {
+    "id": "vote:d34c4b49-579c-4df5-9dc4-d443bf7097dd",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:025206a6-f4aa-488f-8a30-51dace0d642c",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 2,
+    "timestamp": "2024-07-01T21:45:03.382Z"
+  },
+  {
+    "id": "vote:74a64278-8ca8-444e-993c-0a87d5e63942",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:0e6750eb-6dbc-436c-9847-126a665d15fd",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 2,
+    "timestamp": "2024-07-01T21:45:03.382Z"
+  },
+  {
+    "id": "vote:07827a6f-48a2-4bc7-b53b-e802f64d8751",
+    "userId": "pub_6129df6fb54b073de10d71ea",
+    "proposalId": "proposal:6e8c64e5-df4c-4265-87dc-5875c2dacb4d",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-01T23:47:20.858Z"
+  },
+  {
+    "id": "vote:dc1a5594-b590-422f-8c15-c3cbc70e6d5e",
+    "userId": "pub_037caebffc064116acbcf80a",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-02T01:18:40.762Z"
+  },
+  {
+    "id": "vote:2c44da17-421a-4515-b80d-9c6441126cbb",
+    "userId": "pub_6b2eb2235fe798c658492542",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 10,
+    "timestamp": "2024-07-02T08:47:26.501Z"
+  },
+  {
+    "id": "vote:6484e0a3-14d8-496a-bf2b-a8c79d95fecd",
+    "userId": "pub_02398bececf2524ea71ec09b",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-02T11:54:53.710Z"
+  },
+  {
+    "id": "vote:4752d1ab-c552-47bd-ab38-92346cf92c20",
+    "userId": "pub_3bdcf764e5240d52efee1563",
+    "proposalId": "proposal:49104325-b4c6-448d-a563-bad978c7cf48",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 3,
+    "timestamp": "2024-07-02T21:21:14.570Z"
+  },
+  {
+    "id": "vote:c0f56f69-6847-4601-8c0f-0d7a70bd9d57",
+    "userId": "pub_3bdcf764e5240d52efee1563",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 5,
+    "timestamp": "2024-07-02T21:21:20.185Z"
+  },
+  {
+    "id": "vote:e571e960-f11f-474d-9346-0a83d78d041c",
+    "userId": "pub_3bdcf764e5240d52efee1563",
+    "proposalId": "proposal:6e8c64e5-df4c-4265-87dc-5875c2dacb4d",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-02T21:21:37.686Z"
+  },
+  {
+    "id": "vote:eac0c098-5ffa-4c2b-8a33-f290402ea54b",
+    "userId": "pub_3bdcf764e5240d52efee1563",
+    "proposalId": "proposal:4b444047-5fdd-4a14-99bd-2337ae3fd0b1",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-02T21:21:37.686Z"
+  },
+  {
+    "id": "vote:ee9346b6-248a-44be-bfac-dfadfc16366f",
+    "userId": "pub_3d65d0b23ac33fb5e7cf7649",
+    "proposalId": "proposal:49104325-b4c6-448d-a563-bad978c7cf48",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-02T23:51:23.708Z"
+  },
+  {
+    "id": "vote:bec37c93-bc9b-4529-80c3-aedc2fc61f18",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:0e6750eb-6dbc-436c-9847-126a665d15fd",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 4,
+    "timestamp": "2024-07-03T01:57:54.184Z"
+  },
+  {
+    "id": "vote:51cd0dbf-8f32-483d-879d-de810bd11b9c",
+    "userId": "pub_405e50c43c5fd715750d80b2",
+    "proposalId": "proposal:ed00a8e0-6530-4609-9142-4cbc0d9db212",
+    "roundId": "round:nouns-gg:nexus-art-contest",
+    "count": 1,
+    "timestamp": "2024-07-03T02:46:05.352Z"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "id": "pub_b629a84d9740aeefbdc6514e",
+  "name": "ActualGene",
+  "image": "https://pbs.twimg.com/profile_images/1399385158629818370/FoiyRbNv_normal.jpg",
+  "bio": "Commissions Open!  ฅ^>⩊<^ ฅ",
+  "twitter": {
+    "username": "Actual_Gene",
+    "name": "ActualGene",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1399385158629818370/FoiyRbNv_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xaa056Dc459479bf31E4856aaEC6aCcd2A050bB5a",
+      "kind": "external"
+    }
+  ]
+}

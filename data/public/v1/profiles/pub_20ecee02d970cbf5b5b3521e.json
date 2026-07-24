@@ -1,0 +1,18 @@
+{
+  "id": "pub_20ecee02d970cbf5b5b3521e",
+  "name": "Mahnaz 🏵️",
+  "image": "https://pbs.twimg.com/profile_images/1909493623818723328/9yF6t07u_normal.jpg",
+  "bio": "Painter & Architect | AI Collaborative Artist | NFT since 2021",
+  "twitter": {
+    "username": "0xMahnaz",
+    "name": "Mahnaz 🏵️",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1909493623818723328/9yF6t07u_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0B81BfFce9970aca9868120eEE1bcc8De19119F7",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_695417649436d7806ddbfa1d",
+  "name": "Pamtech",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidhx6d72vdvwdghibhv2r5k5mnesrjygygc65q2byswjtkzrqyjj4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x057CFcd04198E6D17F1Bf502135d9508b6Fa2FDe",
+      "kind": "external"
+    }
+  ]
+}

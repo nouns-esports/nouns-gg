@@ -1,0 +1,18 @@
+{
+  "id": "pub_86ae4b019b7a511af06ca050",
+  "name": "x",
+  "image": "https://pbs.twimg.com/profile_images/1522192075491807232/HrIbz3Mj_normal.jpg",
+  "bio": "ur fav cat",
+  "twitter": {
+    "username": "OppaiCyber",
+    "name": "x",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1522192075491807232/HrIbz3Mj_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE11018C82D4405bDBc7414eC988Fd08351666666",
+      "kind": "external"
+    }
+  ]
+}

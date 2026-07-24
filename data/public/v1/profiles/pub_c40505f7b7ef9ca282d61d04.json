@@ -1,0 +1,18 @@
+{
+  "id": "pub_c40505f7b7ef9ca282d61d04",
+  "name": "人间打工人🧙‍♂️💢",
+  "image": "https://pbs.twimg.com/profile_images/1966982973947043840/z6q9IdYK_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Louis_Chong_",
+    "name": "人间打工人🧙‍♂️💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1966982973947043840/z6q9IdYK_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA821609E1496473c1d59d6d140fE9D02d05A9669",
+      "kind": "external"
+    }
+  ]
+}
