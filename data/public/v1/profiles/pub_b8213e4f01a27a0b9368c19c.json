@@ -1,0 +1,18 @@
+{
+  "id": "pub_b8213e4f01a27a0b9368c19c",
+  "name": "Carson ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1103363162970058752/304lv3U1_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "nosraC_cs",
+    "name": "Carson ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1103363162970058752/304lv3U1_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x55631753827e62d2309d738EB7011f5078c48FCB",
+      "kind": "external"
+    }
+  ]
+}

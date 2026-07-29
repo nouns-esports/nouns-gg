@@ -1,0 +1,14 @@
+{
+  "id": "pub_f6fbfa1301ad3c74e3764314",
+  "name": "rin048157",
+  "image": "https://i.imgur.com/wcoxf0D.jpg",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9558368a3D3a5796A4c1441aC74cFe6E81412d1C",
+      "kind": "external"
+    }
+  ]
+}

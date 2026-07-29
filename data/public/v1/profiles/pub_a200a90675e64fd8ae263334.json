@@ -1,0 +1,18 @@
+{
+  "id": "pub_a200a90675e64fd8ae263334",
+  "name": "Benjamin Latsko ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1519442685098139649/omo9idkz_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "benjaminlatsko",
+    "name": "Benjamin Latsko ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1519442685098139649/omo9idkz_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf84a5Fd946A7714c6d48508FA8292c8c5037b5A8",
+      "kind": "external"
+    }
+  ]
+}

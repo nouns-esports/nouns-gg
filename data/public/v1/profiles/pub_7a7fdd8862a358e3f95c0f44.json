@@ -1,0 +1,14 @@
+{
+  "id": "pub_7a7fdd8862a358e3f95c0f44",
+  "name": "cmena3xe",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreie3iakngik46qaq3me7vwceuq5k7rac62hpoxw6opihnuwyzysm24",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x14c86D9255D5b9768704b670C57F30662AFf41f0",
+      "kind": "external"
+    }
+  ]
+}

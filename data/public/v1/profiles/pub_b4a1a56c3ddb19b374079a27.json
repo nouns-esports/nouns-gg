@@ -1,0 +1,14 @@
+{
+  "id": "pub_b4a1a56c3ddb19b374079a27",
+  "name": "laundrs",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=4wtqra&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4f34EC9c8f9d63080d8Aa9398a1247A01f8426bE",
+      "kind": "external"
+    }
+  ]
+}

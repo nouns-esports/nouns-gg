@@ -1,0 +1,23 @@
+{
+  "id": "pub_3afbea513724f460420d7be5",
+  "name": "wuhw23",
+  "image": "https://pbs.twimg.com/profile_images/1885069932695871488/KcvN33uM_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "wuhw23",
+    "name": "wuhw23",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1885069932695871488/KcvN33uM_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9fbb20D057a2E5d0B27Ed96cf4eb6a75d7FDE7a0",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xF2CB3B2E5755610A2C5b50ef01c1E39d9439C2a9",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_a94913bc3f512b8cd81c3135",
+  "name": "Athena",
+  "image": "https://pbs.twimg.com/profile_images/1798718100214579200/y58eyw7d_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "MarxistxAthena",
+    "name": "Athena",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1798718100214579200/y58eyw7d_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9f06273Ff5Ac3D07D454d96BaECD9dd9e4Ae0a1d",
+      "kind": "external"
+    }
+  ]
+}

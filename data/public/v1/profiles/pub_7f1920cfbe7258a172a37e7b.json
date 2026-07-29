@@ -1,0 +1,14 @@
+{
+  "id": "pub_7f1920cfbe7258a172a37e7b",
+  "name": "ASM",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=48a7zf&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x545a2eD169EaC188638763539D30951488a9c8F7",
+      "kind": "external"
+    }
+  ]
+}

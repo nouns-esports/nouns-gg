@@ -1,0 +1,14 @@
+{
+  "id": "pub_94087f61f09448fb55d61652",
+  "name": "cmb18ti2",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiavihnpip3w63xidnce3e3w5yaocqb7yympfsdso4vyrqlsizlqxy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8D43A3fC2fed663BF6B82Ea4792C0e5239D5eE66",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_5305ba489f1655a77d49f07f",
+  "name": "cmdnmuox",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreih3zk44qcwyrwah4bxrjzqtukjiqgkh5benkzvdunhwk3766elzk4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x86d4B06f4850649Bf662f58abCd303312CC26d91",
+      "kind": "external"
+    }
+  ]
+}

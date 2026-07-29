@@ -17,6 +17,9 @@ coverage
 
 # Build Outputs
 .next/
+.open-next/
+.sites-wrangler/
+.wrangler/
 out/
 build
 dist

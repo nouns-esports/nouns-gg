@@ -1,0 +1,18 @@
+{
+  "id": "pub_1efff959a89b1b71ec4000c6",
+  "name": "Boosh",
+  "image": "https://pbs.twimg.com/profile_images/1843072098245414912/q66u0vBV_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "boosh0x",
+    "name": "Boosh",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1843072098245414912/q66u0vBV_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe1Ef94D55E32400804200e9026110D3a7880226f",
+      "kind": "external"
+    }
+  ]
+}

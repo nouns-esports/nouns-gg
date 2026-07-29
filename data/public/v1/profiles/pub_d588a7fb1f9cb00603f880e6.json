@@ -1,0 +1,14 @@
+{
+  "id": "pub_d588a7fb1f9cb00603f880e6",
+  "name": "cmg24koc",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreig3pq6pb7mcmxx5l427rmmut42rsso3apw3rew3dqosoyd4vs4dsi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdf10D2556905B6ea7e46d3A8Db9561198f6d570e",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_7ea98f6ca67cb56d76b1d51d",
+  "name": "DA🖤art Gallary",
+  "image": "https://pbs.twimg.com/profile_images/1924214068916678657/V4W1BBCX_normal.jpg",
+  "bio": "ART avatar #DA\nhttps://doroshinanton.eth.limo/",
+  "twitter": {
+    "username": "Daart_eth",
+    "name": "DA🖤art Gallary",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1924214068916678657/V4W1BBCX_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe2eedD9aB6522f0FbEF92E3483208708A2E3352F",
+      "kind": "external"
+    }
+  ]
+}

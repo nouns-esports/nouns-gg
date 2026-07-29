@@ -1,0 +1,14 @@
+{
+  "id": "pub_99fb1b8ec0d8ebd2df72a06a",
+  "name": "cmdmw7ed",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicoy3ktu7ljzdhccis53nn2hp3lnpf3y46eplzhzju2o5sv7ildbq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd6cC533B2D9fA98688C5353023fAFd08DAA2767A",
+      "kind": "external"
+    }
+  ]
+}

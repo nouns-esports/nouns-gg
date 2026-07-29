@@ -1,0 +1,14 @@
+{
+  "id": "pub_c80b8686b202b65e00ad8eda",
+  "name": "humbertoperes",
+  "image": "https://ipfs.nouns.gg/ipfs/QmPnQjj6cq61vPjdNmWwSc92ad4DyvnpAV2ymJ1WfKz2sB",
+  "bio": "SKateboarder",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3a7B8D37cb2dA4C3B7c897421D90F42CC015d68d",
+      "kind": "external"
+    }
+  ]
+}

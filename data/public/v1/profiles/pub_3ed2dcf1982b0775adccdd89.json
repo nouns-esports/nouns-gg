@@ -1,0 +1,19 @@
+{
+  "id": "pub_3ed2dcf1982b0775adccdd89",
+  "name": "ic",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicbryrvcuwjcmi2q6nz65dmfapv65rp2dydw7xduui2bupknbciee",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb8a9Ed8D008FA1F161809f15a11F4161FB8b717e",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x10deC36B4AC9d3b60490dFE2799881287d4a74cc",
+      "kind": "external"
+    }
+  ]
+}

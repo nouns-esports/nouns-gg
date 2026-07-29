@@ -1,0 +1,18 @@
+{
+  "id": "pub_809e562813bb06ec3e1ab752",
+  "name": "Joe Hank ⋈",
+  "image": "https://pbs.twimg.com/profile_images/1632257887220162562/q3HxhcTP_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "joehank_",
+    "name": "Joe Hank ⋈",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1632257887220162562/q3HxhcTP_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xCa57D8befdA3A3FE14842581292a57Ffdb87a7bb",
+      "kind": "external"
+    }
+  ]
+}

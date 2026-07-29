@@ -1,0 +1,23 @@
+{
+  "id": "pub_cf0334930340301d24066296",
+  "name": "voidstriker.77",
+  "image": "https://pbs.twimg.com/profile_images/1923228063850168320/BGDqzLBU_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "voidstriker77",
+    "name": "voidstriker.77",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923228063850168320/BGDqzLBU_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x900b4deEF80ee120FaE4B5d109B8f63BB1dd155B",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x9268f31E34e5bE7464548c01Ae85673aa3Ec606B",
+      "kind": "external"
+    }
+  ]
+}

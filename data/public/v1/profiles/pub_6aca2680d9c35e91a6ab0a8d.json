@@ -1,0 +1,14 @@
+{
+  "id": "pub_6aca2680d9c35e91a6ab0a8d",
+  "name": "Heisenberg",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaiey5ea6cjlwj5okmmqr2prbryqzh7ahmofsvyymdohxfwbcmb4e",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x71aC65c68474e0465a757c708B9C8A1AC17B50DD",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_af878b1a26b422bb65a88e0c",
+  "name": "loudman0803",
+  "image": "https://ipfs.nouns.gg/ipfs/QmZDG5THfwJ9jatPL1WgMxNFR8A1YViMT6RTMwF8Lr43RP",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa92317295Bc7cb5eCeba6956d2BaD89A3bC8e1dF",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x766281cc5608Fb89DeaB30e1524B9Ab9ccBa67CE",
+      "kind": "external"
+    }
+  ]
+}

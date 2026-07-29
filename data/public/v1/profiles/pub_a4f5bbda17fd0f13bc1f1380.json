@@ -1,0 +1,14 @@
+{
+  "id": "pub_a4f5bbda17fd0f13bc1f1380",
+  "name": "cmfcrbub",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreif4htpal2hbm5oaqthkzknkyihdx3bp3xjpbatthohngtludeq7iq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8922C8Ac42AE84cED3A4e8D54Ce7FCb3d52EbcB2",
+      "kind": "external"
+    }
+  ]
+}

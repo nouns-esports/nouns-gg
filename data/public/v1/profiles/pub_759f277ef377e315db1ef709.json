@@ -1,0 +1,14 @@
+{
+  "id": "pub_759f277ef377e315db1ef709",
+  "name": "cmdtdoq4",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreic3jsd6vgbcvh3whkwdxazfxvevzpuonyq2e6s6amjzxxivuy5y4a",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x59238349d5a0526BC13439Ba8Bc0FeE7D2421778",
+      "kind": "external"
+    }
+  ]
+}

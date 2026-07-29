@@ -1,0 +1,19 @@
+{
+  "id": "pub_25702e606f3eb1a986df2f0b",
+  "name": "PuffyPylon",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibdhgki266a5w7hj5rqhcniedggupxfgndwo2etkzxmfxfmlnnwnu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEE3585777dDc0C6DCB581b4305DA38c093d8179E",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x12E538cF94A3328f9eEc413B11A4fda5e27659AF",
+      "kind": "external"
+    }
+  ]
+}

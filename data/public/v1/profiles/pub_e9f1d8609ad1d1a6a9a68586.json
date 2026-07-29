@@ -1,0 +1,14 @@
+{
+  "id": "pub_e9f1d8609ad1d1a6a9a68586",
+  "name": "cmdovfyn",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibrltlags7ulscnbusp6lx7q5xgww2hcfkfyotnhzeff7o5v7v4ru",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x19570deAFd7Cbe25B30A5A72c95A8E7658672436",
+      "kind": "external"
+    }
+  ]
+}

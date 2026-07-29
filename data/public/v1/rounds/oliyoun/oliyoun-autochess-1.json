@@ -1,0 +1,41 @@
+{
+  "id": "round:oliyoun:oliyoun-autochess-1",
+  "handle": "oliyoun-autochess-1",
+  "name": "Oliyoun Auto Chess Club Event #1",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeiepiiax75dgezbyfajtgiuhimc5tbnqpmapum7lkqha4csufygqia",
+  "active": true,
+  "type": "markdown",
+  "featured": false,
+  "xp": {
+    "winning": 0,
+    "castingVotes": 250,
+    "receivingVotes": 5,
+    "creatingProposal": 500
+  },
+  "content": "{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Apply to be one of the first 8 competitors in our Auto Chess tournament. Tell us about yourself, your experience with Auto Chess, and share your social media or content channels. We're looking for players who can help build hype and promote the event as it grows!\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}",
+  "description": null,
+  "createdAt": "2025-03-27T05:00:00.000Z",
+  "start": "2025-03-27T05:00:00.000Z",
+  "votingStart": "2025-04-02T05:00:00.000Z",
+  "end": "2025-04-05T05:00:00.000Z",
+  "community": {
+    "id": "community:oliyoun",
+    "handle": "oliyoun",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+    "name": "Oliyoun",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:oliyoun:oliyoun-autochess-1"
+}

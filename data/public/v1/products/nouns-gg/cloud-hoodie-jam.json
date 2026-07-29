@@ -1,0 +1,79 @@
+{
+  "id": "product:nouns-gg:cloud-hoodie-jam",
+  "handle": "cloud-hoodie-jam",
+  "name": "Cloud Hoodie - Jam",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": "dopamine",
+  "variants": [
+    {
+      "id": "variant:6d5e69b3-1a8d-4368-9ffb-0bf3d70acc90",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "75.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:95b583cc-6ff8-4ff5-a480-b8158267cdef",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "75.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:ccc6a831-b5ff-4aed-a1d8-d316e5e27545",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "75.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:723fff28-8663-46e5-8d29-c6fd88e88413",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeibrmuzp6lxwvx6pxsbgftqo3xtcv6abo4cq5t243sjnadppwgep4a",
+        "https://ipfs.nouns.gg/ipfs/bafkreidra4wcuhcjvt2yxzd3mqz3y7ilrnypwam42pstz22vfmclkuzdja"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "75.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:d3c221a2-9f00-41f0-a52f-341b566fae10",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "75.00",
+      "inventory": null
+    }
+  ]
+}

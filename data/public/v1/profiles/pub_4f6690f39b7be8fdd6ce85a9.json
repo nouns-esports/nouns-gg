@@ -1,0 +1,23 @@
+{
+  "id": "pub_4f6690f39b7be8fdd6ce85a9",
+  "name": "whitefly",
+  "image": "https://pbs.twimg.com/profile_images/1922111707192950784/2abHxnSa_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "dhTung0209",
+    "name": "whitefly",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922111707192950784/2abHxnSa_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xeD5BE91deCbA8bEfEF87a634B67cCaFF3d1f0e94",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x91CD15Ce41e9F9B0f6e03C85Bbb6f1Ba457BC9F9",
+      "kind": "external"
+    }
+  ]
+}

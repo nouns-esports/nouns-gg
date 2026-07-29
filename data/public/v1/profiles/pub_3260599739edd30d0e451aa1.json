@@ -1,0 +1,14 @@
+{
+  "id": "pub_3260599739edd30d0e451aa1",
+  "name": "MacaECO",
+  "image": "https://ipfs.nouns.gg/ipfs/QmXbd2spGKSZGbhm15L9YAprHby3KcPtbVhgP32stmifTK",
+  "bio": "O Projeto MacaECO Voluntariado Agroflorestal, esta localizado na fazenda São Luiz Gonzaga, localizada em Macaé, Rio de Janeiro, Brasil. Onde estamos construindo um centro ecológico, enquanto isso, recebemos voluntários de todo o mundo, para nos ajudar com nossas tarefas e principalmente aprenderem a trabalhar com o básico dos manejos agroflorestais e sustentáveis. ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2dD52aE76fAe061d3E89F54683ce62B5dd94299f",
+      "kind": "external"
+    }
+  ]
+}

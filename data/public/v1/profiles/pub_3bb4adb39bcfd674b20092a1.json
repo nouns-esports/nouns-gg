@@ -1,0 +1,14 @@
+{
+  "id": "pub_3bb4adb39bcfd674b20092a1",
+  "name": "PRESIDENT",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiexmiovisvc7cib7537ssjio35gdnje5hedtpcx4ls2kzsn2xrcia",
+  "bio": "Love in crypto mania\n\n#ETH #SOL #BTC",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x27FFc5351E5c8F6ccF2B4992F3181Df482b33c36",
+      "kind": "external"
+    }
+  ]
+}

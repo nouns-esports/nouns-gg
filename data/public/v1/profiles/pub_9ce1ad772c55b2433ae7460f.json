@@ -1,0 +1,14 @@
+{
+  "id": "pub_9ce1ad772c55b2433ae7460f",
+  "name": "cmjkh1zu",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidquskxbh36qwf7j6lordzuhwnbat4nxosq2cphhvppfj6jjgozt4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6DfDCA1107C5aF4B92948625105e1e87bA9b21b4",
+      "kind": "external"
+    }
+  ]
+}

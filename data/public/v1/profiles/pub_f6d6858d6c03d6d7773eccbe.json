@@ -1,0 +1,18 @@
+{
+  "id": "pub_f6d6858d6c03d6d7773eccbe",
+  "name": "Crypto Degen",
+  "image": "https://pbs.twimg.com/profile_images/1947579484858724352/NcdxSOKW_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "CryptoDegenWeb3",
+    "name": "Crypto Degen",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947579484858724352/NcdxSOKW_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x09A7d3964107534dD34c229c2B52cDBF031083C1",
+      "kind": "external"
+    }
+  ]
+}

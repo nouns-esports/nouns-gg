@@ -1,0 +1,18 @@
+{
+  "id": "pub_ac75548ffa8b8305f6ef90c0",
+  "name": "The Yemi Standard",
+  "image": "https://pbs.twimg.com/profile_images/1921377118786592768/mVmW572w_normal.jpg",
+  "bio": "FOUNDER OF PRO DUNK BASKETBALL",
+  "twitter": {
+    "username": "Yemi_Standard",
+    "name": "The Yemi Standard",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1921377118786592768/mVmW572w_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8fcc4a4511dC9f1Aa001b2b61e27B712c2dE9c46",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_0b8da1f722787e9463f71710",
+  "name": "Megan (MoodBoosted)",
+  "image": "https://pbs.twimg.com/profile_images/1755963526743474176/nE0Cn3gS_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "Moodboostedttv",
+    "name": "Megan (MoodBoosted)",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1755963526743474176/nE0Cn3gS_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x42b72c1066Cc2C4a923254Efa5e2a34a42f297e5",
+      "kind": "external"
+    }
+  ]
+}

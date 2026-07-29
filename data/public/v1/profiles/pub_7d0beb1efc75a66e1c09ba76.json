@@ -1,0 +1,18 @@
+{
+  "id": "pub_7d0beb1efc75a66e1c09ba76",
+  "name": "FETA",
+  "image": "https://pbs.twimg.com/profile_images/1836747436565381120/xYkH74TA_normal.jpg",
+  "bio": "Hey bro crypto",
+  "twitter": {
+    "username": "2yilmaz2",
+    "name": "FETA",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1836747436565381120/xYkH74TA_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0293E1729e34502644ba417BeC763cec386a24B1",
+      "kind": "external"
+    }
+  ]
+}

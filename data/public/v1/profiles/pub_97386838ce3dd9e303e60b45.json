@@ -1,0 +1,14 @@
+{
+  "id": "pub_97386838ce3dd9e303e60b45",
+  "name": "siri",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibi6dbhimuyc3kc6xjo6lqdnczxyaagj3wiwwhtsv2o6mdpzt44rm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa58F637E650707BEcF9D35cD352D503905F0526B",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_17fe61c32ca017f57de7d8c4",
+  "name": "cmdmlvmt",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifs74znt7wckjzmtb4lnvh2cy3idasp75yrlbhysc2mw4hk7n6ev4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x838dc871B5CB36a62808513b0aE76E195003283c",
+      "kind": "external"
+    }
+  ]
+}

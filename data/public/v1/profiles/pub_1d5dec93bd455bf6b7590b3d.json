@@ -1,0 +1,18 @@
+{
+  "id": "pub_1d5dec93bd455bf6b7590b3d",
+  "name": "Beast",
+  "image": "https://pbs.twimg.com/profile_images/1892241265141432320/iPJpMDz9_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "GibbySSBM",
+    "name": "Beast",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1892241265141432320/iPJpMDz9_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0989371B4b7b29d176dd31BaDEeFbA2C48c42345",
+      "kind": "external"
+    }
+  ]
+}

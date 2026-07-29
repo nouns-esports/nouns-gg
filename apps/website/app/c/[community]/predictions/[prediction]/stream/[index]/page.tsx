@@ -1,34 +1,13 @@
-import { db } from "~/packages/db";
-import { predictions } from "~/packages/db/schema/public";
-import { eq, sql } from "drizzle-orm";
 import { notFound } from "next/navigation";
-import Refresh from "@/components/Refresh";
 import { parsePrediction } from "~/packages/utils/parsePrediction";
+import { getPrediction } from "@/server/queries/predictions";
 
 export default async function StreamPage(props: {
 	params: Promise<{ prediction: string; index: string }>;
 }) {
 	const params = await props.params;
 
-	const prediction = await db.pgpool.query.predictions.findFirst({
-		where: eq(predictions.handle, params.prediction),
-		with: {
-			outcomes: {
-				extras: {
-					totalBets:
-						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = outcomes.id)`.as(
-							"totalBets",
-						),
-				},
-			},
-		},
-		extras: {
-			totalBets:
-				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)`.as(
-					"totalBets",
-				),
-		},
-	});
+	const prediction = await getPrediction({ handle: params.prediction });
 
 	if (
 		!prediction ||
@@ -44,7 +23,6 @@ export default async function StreamPage(props: {
 
 	return (
 		<>
-			<Refresh />
 			<style
 				// biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
 				dangerouslySetInnerHTML={{

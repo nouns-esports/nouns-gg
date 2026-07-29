@@ -1,0 +1,18 @@
+{
+  "id": "pub_bc179f509c913fd82f51709b",
+  "name": "Travis Sapolin",
+  "image": "https://pbs.twimg.com/profile_images/1555245773788422144/3asFxa9Y_normal.jpg",
+  "bio": "Running the Lil Nouns Instagram\nhttps://www.instagram.com/lilnouners",
+  "twitter": {
+    "username": "travsap",
+    "name": "Travis Sapolin",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1555245773788422144/3asFxa9Y_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8e777369b4Bd6fbbF20270dC8c599Ea11d919505",
+      "kind": "external"
+    }
+  ]
+}

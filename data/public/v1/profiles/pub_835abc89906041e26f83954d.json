@@ -1,0 +1,18 @@
+{
+  "id": "pub_835abc89906041e26f83954d",
+  "name": "Mr.Mortos 💢",
+  "image": "https://pbs.twimg.com/profile_images/1957337781468110848/V25YBSFs_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Alejando2495",
+    "name": "Mr.Mortos 💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1957337781468110848/V25YBSFs_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdaA378EB719372374792a8bEDf3359fA8F688972",
+      "kind": "external"
+    }
+  ]
+}

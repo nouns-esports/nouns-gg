@@ -1,0 +1,14 @@
+{
+  "id": "pub_d3bcf901055a47d876efd511",
+  "name": "cmdtgcow",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiglx7g4vfrzvorldsjaeqjxwgiw6ows4uffjzqtqeq5ofshlmz7cq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1fFDf0D0237A76Ab6C20b3b51f6bcFCa69151716",
+      "kind": "external"
+    }
+  ]
+}

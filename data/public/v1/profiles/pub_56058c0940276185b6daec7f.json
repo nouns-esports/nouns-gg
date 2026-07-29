@@ -1,0 +1,18 @@
+{
+  "id": "pub_56058c0940276185b6daec7f",
+  "name": "LukeGuigs (💜,🏛️) 🍳🧬",
+  "image": "https://pbs.twimg.com/profile_images/1915855086015668225/UjAmiBf__normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "GuigsLuke",
+    "name": "LukeGuigs (💜,🏛️) 🍳🧬",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1915855086015668225/UjAmiBf__normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc526fB73C639aaF21AA9AAFe7aC5249C249E2730",
+      "kind": "external"
+    }
+  ]
+}

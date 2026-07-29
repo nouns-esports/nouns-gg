@@ -1,0 +1,49 @@
+{
+  "id": "raffle:nouns-gg:nouns-bowl-controller",
+  "handle": "nouns-bowl-controller",
+  "name": "Nouns Bowl Controller",
+  "description": {
+    "type": "doc",
+    "content": []
+  },
+  "images": [
+    "https://ipfs.nouns.gg/ipfs/bafybeiaf7sfx4yrgyh3slm2by3a4gd7okktmhdizvmxgiasgrzytnq6bmi"
+  ],
+  "start": "2025-03-25T05:00:00.000Z",
+  "end": "2025-04-28T07:00:00.000Z",
+  "createdAt": "2025-03-25T05:00:00.000Z",
+  "gold": 500,
+  "xp": {
+    "winning": 0,
+    "entering": 0
+  },
+  "winners": 1,
+  "limit": null,
+  "active": true,
+  "totalEntries": 84,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:nouns-bowl",
+  "entries": []
+}

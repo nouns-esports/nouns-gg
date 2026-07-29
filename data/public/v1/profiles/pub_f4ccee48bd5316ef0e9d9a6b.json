@@ -1,0 +1,19 @@
+{
+  "id": "pub_f4ccee48bd5316ef0e9d9a6b",
+  "name": "Smash Spark",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidreujymwkjhayw3vhqmt67qj3psh4ziiw3cdhmyv6unagwh2jpji",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB826E55F213E0c8052757DABf2d984B3701bFa4f",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x67100C5DA53eEB3Ca32465D2259C2F47Ab60440E",
+      "kind": "external"
+    }
+  ]
+}

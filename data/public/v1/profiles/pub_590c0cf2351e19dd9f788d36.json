@@ -1,0 +1,14 @@
+{
+  "id": "pub_590c0cf2351e19dd9f788d36",
+  "name": "cmamq7sa",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiehqre54qikfmoteoeptsebyidyeav5p4shjgchq6lozxpabx7e54",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x541648B79cEFb2912Ec9Cae41BE02193087A9C82",
+      "kind": "external"
+    }
+  ]
+}

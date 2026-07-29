@@ -1,0 +1,18 @@
+{
+  "id": "pub_d0cc1e91cc4c767de3b4fa0e",
+  "name": "Jerami",
+  "image": "https://pbs.twimg.com/profile_images/1499480134469894147/P-aF2ybP_normal.jpg",
+  "bio": "I am a Super Smash Bros Melee Content Creator! \n\nYouTube.com/JeramiJoseph",
+  "twitter": {
+    "username": "JeramiJer",
+    "name": "Jerami",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1499480134469894147/P-aF2ybP_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x96095a55cC9792baE0BCB7Cc82F977324936AB12",
+      "kind": "external"
+    }
+  ]
+}

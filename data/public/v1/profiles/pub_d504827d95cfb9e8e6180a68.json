@@ -1,0 +1,14 @@
+{
+  "id": "pub_d504827d95cfb9e8e6180a68",
+  "name": "cmakl8yv",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicjn7uku2llo7o2vg7vohbfmd2ko25el4he75hdgpk2drt2hrgp7i",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7f5971D611E81A80d552DE7ffFcC85e3d35Cf182",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_ea667ae62d8d09ef49b140f9",
+  "name": "goyabean.base.eth⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1993337131356295168/3Ys0xO9Z_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "goyabean",
+    "name": "goyabean.base.eth⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1993337131356295168/3Ys0xO9Z_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x33a7A26d9C6C799a02E4870137dE647674371FfC",
+      "kind": "external"
+    }
+  ]
+}

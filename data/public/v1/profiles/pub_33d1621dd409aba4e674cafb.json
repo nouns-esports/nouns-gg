@@ -1,0 +1,18 @@
+{
+  "id": "pub_33d1621dd409aba4e674cafb",
+  "name": "D.C.O.T.",
+  "image": "https://pbs.twimg.com/profile_images/1848640830363287552/RdRz4Vsg_normal.jpg",
+  "bio": "https://dcot.space/",
+  "twitter": {
+    "username": "DCOT15",
+    "name": "D.C.O.T.",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1848640830363287552/RdRz4Vsg_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x33bbf6e27ce7b254e537BCB9f3B00cD1451563eA",
+      "kind": "external"
+    }
+  ]
+}

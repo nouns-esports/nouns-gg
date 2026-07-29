@@ -1,0 +1,23 @@
+{
+  "id": "pub_8876d0756379cfabc567b761",
+  "name": "punk candy",
+  "image": "https://pbs.twimg.com/profile_images/1922590841673228288/x7JhqYiz_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "punkcandyyy",
+    "name": "punk candy",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922590841673228288/x7JhqYiz_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB53d2F9d75b4934B60a3D424D34099e18060639D",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xDa6033C2238f22Ac5790134169D16502a391230f",
+      "kind": "external"
+    }
+  ]
+}

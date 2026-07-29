@@ -1,0 +1,23 @@
+{
+  "id": "pub_6a74ecfe63c9d7eb5988df72",
+  "name": "Ovisure",
+  "image": "https://pbs.twimg.com/profile_images/1923019565644251136/9Q32oq_N_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Vovisure",
+    "name": "Ovisure",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923019565644251136/9Q32oq_N_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd218c1CaEbD4f436287bB6F9e2F5748F1C54baA6",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x2955cBe994B2179CF5965F0adf16076A6E7bdAD3",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pub_037caebffc064116acbcf80a",
+  "name": "nouns jesscas ⌐◨-◨✨",
+  "image": "https://pbs.twimg.com/profile_images/1823223535885492224/kwUHc4EQ_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "jesscas_cs",
+    "name": "nouns jesscas ⌐◨-◨✨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1823223535885492224/kwUHc4EQ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x114c5a6D4478a34288004CF3dFc94bbF42E44358",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x9038022B5Bb70706100Da31D8c9E5FBF0e1550f2",
+      "kind": "external"
+    }
+  ]
+}

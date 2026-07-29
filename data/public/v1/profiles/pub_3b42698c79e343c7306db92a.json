@@ -1,0 +1,14 @@
+{
+  "id": "pub_3b42698c79e343c7306db92a",
+  "name": "Dani",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiatxycpmgn6zcrhhn5e5pblnnqp7ihr4vizghnjsig4z62yiump3a",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2fDe7bA80b61B14728b7A87CBAaA7E09c210ce39",
+      "kind": "external"
+    }
+  ]
+}

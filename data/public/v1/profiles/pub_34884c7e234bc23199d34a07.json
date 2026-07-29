@@ -1,0 +1,18 @@
+{
+  "id": "pub_34884c7e234bc23199d34a07",
+  "name": "Steve Cap",
+  "image": "https://pbs.twimg.com/profile_images/1947581973926473728/t0wP9cTg_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "SteveCapEth",
+    "name": "Steve Cap",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947581973926473728/t0wP9cTg_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf96333792b3725DaEa397b9f6AB104E19ED6f5E2",
+      "kind": "external"
+    }
+  ]
+}

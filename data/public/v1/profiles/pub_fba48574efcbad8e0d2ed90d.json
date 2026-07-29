@@ -1,0 +1,14 @@
+{
+  "id": "pub_fba48574efcbad8e0d2ed90d",
+  "name": "diagonally",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiemhh4bj5rtbpup6jookgo3mojpmkplahusnvus3uhs4g4sw3ynzm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xaF44bb094D3CE50C2F14727271B9025E7a724a2a",
+      "kind": "external"
+    }
+  ]
+}

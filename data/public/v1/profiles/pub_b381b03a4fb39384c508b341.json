@@ -1,0 +1,18 @@
+{
+  "id": "pub_b381b03a4fb39384c508b341",
+  "name": "$PARAM 🐉 $MON 💎 $FYN ❤️ Xally Tabi 🟧 NYAN🔫😼",
+  "image": "https://pbs.twimg.com/profile_images/1771363716405018625/U1SywmsW_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "FarrahJumali",
+    "name": "$PARAM 🐉 $MON 💎 $FYN ❤️ Xally Tabi 🟧 NYAN🔫😼",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1771363716405018625/U1SywmsW_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe0Ab69f7fa64e9CF526872963D7f2bD6F91268D4",
+      "kind": "external"
+    }
+  ]
+}

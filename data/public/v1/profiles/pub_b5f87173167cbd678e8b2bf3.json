@@ -1,0 +1,14 @@
+{
+  "id": "pub_b5f87173167cbd678e8b2bf3",
+  "name": "A-K SiN",
+  "image": "https://ipfs.nouns.gg/ipfs/QmfDrqTJtWj3FDj7nDRswy4umNuSrFRbvQYBD29ydeSowS",
+  "bio": "Doubles?",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE38917f7233bb5Df603810Dc791c7fae63Baa294",
+      "kind": "external"
+    }
+  ]
+}

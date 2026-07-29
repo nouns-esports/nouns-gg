@@ -1,0 +1,14 @@
+{
+  "id": "pub_46d74de248019d5bdb8465bc",
+  "name": "cmg19ysk",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigjblrqgi6whmhuhf3e4yvzpwpu2kclypgmbbvccrljtslxbxkvci",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4B569Aa90F2C4717660a431E4fcA8EF770761f95",
+      "kind": "external"
+    }
+  ]
+}

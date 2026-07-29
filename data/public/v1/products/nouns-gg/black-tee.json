@@ -1,0 +1,80 @@
+{
+  "id": "product:nouns-gg:black-tee",
+  "handle": "black-tee",
+  "name": "Black T-Shirt",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:622acf79-58dc-4663-972e-d8a2865e924c",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeid45y6fljlljbiouxympsa4zqdgvqvoung5wam2gvqiwxenltscza",
+        "https://ipfs.nouns.gg/ipfs/bafybeibloeesmuguc3qdhdh45tszmpedm7bjvgst56tefa6eehmalzwybi",
+        "https://ipfs.nouns.gg/ipfs/bafybeia5a2esahbuyryghiduhrdqc4be2rcjcicl4lvm3hy4loyppk6lta"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:cd3d9248-69ce-45c4-96a3-6fa75c67d018",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:5c4855a0-8e67-493d-83e3-af6378cfc46c",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:64f3236a-0bee-45e6-a70b-042c581ea44a",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:da0f54d1-a0c1-4045-bf1e-355498ac96cd",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    }
+  ]
+}

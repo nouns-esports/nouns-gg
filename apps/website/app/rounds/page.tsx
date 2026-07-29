@@ -1,13 +1,8 @@
 import { getRounds } from "@/server/queries/rounds";
 import RoundCard from "@/components/RoundCard";
-import { getAuthenticatedUser } from "@/server/queries/users";
-import Button from "@/components/Button";
 
 export default async function Rounds() {
-	const [rounds, user] = await Promise.all([
-		getRounds(),
-		getAuthenticatedUser(),
-	]);
+	const rounds = await getRounds();
 
 	const now = new Date();
 	const activeRounds = rounds.filter(

@@ -1,0 +1,14 @@
+{
+  "id": "pub_6c33ad8304d2359706349391",
+  "name": "cmdmxrmr",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreid2rtvqkpua272padzvn3gmpn4lex53sgs2ycfz3vy4zhk2gh4usq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB8e1240Ef13B4fa9f7E669EE7cC0b0b1d6684beD",
+      "kind": "external"
+    }
+  ]
+}

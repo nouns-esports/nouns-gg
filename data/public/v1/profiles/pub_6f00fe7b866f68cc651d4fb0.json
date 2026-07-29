@@ -1,0 +1,14 @@
+{
+  "id": "pub_6f00fe7b866f68cc651d4fb0",
+  "name": "cm0gujlp",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifcujgcbnvanuxggqwqtaesl6pd7y2zcucmka7ey6vzwrfrdq63de",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0C6091d1B52EA7C90872a7F6CDa38b8EC04ABe80",
+      "kind": "external"
+    }
+  ]
+}

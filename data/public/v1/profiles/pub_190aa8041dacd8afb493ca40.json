@@ -1,0 +1,14 @@
+{
+  "id": "pub_190aa8041dacd8afb493ca40",
+  "name": "cmmrot7t",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihc5az3ewwnykbkowokblia7ws5rg5ccnsk3k6medgos4jnsahhfa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE617b75bb84E617d02c4C630e6E91FeC7B925Da5",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "id": "round:lilnouns:lilnouns-software",
+  "handle": "lilnouns-software",
+  "name": "Lil Nouns' Software Developer Round",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigpvncsmwcsryg27ix5rlmx3hrixvel2k3xwufrojb2dg7ylzqtoq",
+  "active": true,
+  "type": "markdown",
+  "featured": false,
+  "xp": {
+    "winning": 0,
+    "castingVotes": 250,
+    "receivingVotes": 5,
+    "creatingProposal": 500
+  },
+  "content": "{\"children\":[{\"children\":[{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Lil Nouns' Software Developer Round\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"heading\",\"version\":1,\"tag\":\"h1\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"We believe that great ideas can start small, and we're putting our treasury behind the next generation of software projects that have the potential to enrich the Nouns ecosystem. If you're a developer with a big idea and the skills to bring it to life, this funding round is your launchpad.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"We are seeking \",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Minimum Viable Products (MVPs)\",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\" – the foundational first step of a larger vision. Think of this as your seed funding to prove a concept, build a working prototype, and gather the momentum needed for a full-scale Nouns proposal in the future.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Prizing Distribution:\",\"type\":\"text\",\"version\":1},{\"type\":\"linebreak\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"To foster a collaborative and encouraging environment, we are awarding three top proposals with equal funding:\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"1st Place: 0.33 ETH\",\"type\":\"text\",\"version\":1},{\"type\":\"linebreak\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"2nd Place: 0.33 ETH\",\"type\":\"text\",\"version\":1},{\"type\":\"linebreak\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"3rd Place: 0.33 ETH\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"children\":[],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"link\",\"version\":1,\"rel\":null,\"target\":null,\"title\":\"How-It-Works\",\"url\":\"#How-It-Works\"},{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"How It Works\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"heading\",\"version\":1,\"tag\":\"h2\"},{\"children\":[{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Voting:\",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\" The Lil Nouns community will decide the winners. Voting will be conducted on a token-weighted basis, where one Lil Noun equals one vote. This ensures that those most invested in our ecosystem have a say in its future.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Project Timeline:\",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\" All funded proposals must be completed within 30 days of receiving the award. We encourage agile development and a focus on delivering a functional MVP within this timeframe.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"children\":[],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"link\",\"version\":1,\"rel\":null,\"target\":null,\"title\":\"What-Were-Looking-For\",\"url\":\"#What-Were-Looking-For\"},{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"What We're Looking For:\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"heading\",\"version\":1,\"tag\":\"h2\"},{\"children\":[{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Innovative:\",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\" Does your project introduce a new utility, a novel application, or a creative way to engage with the Nouns ecosystem?\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Feasible:\",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\" Can you realistically deliver an MVP within the 30-day timeframe?\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Nounish:\",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\" Does your project align with the values and aesthetics of the Nouns and Lil Nouns communities?\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":1,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"This is your opportunity to build, to experiment, and to make your mark. Let's build the future of Lil Nouns & Nouns, together.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"proposal period: 6/20-7/4\",\"type\":\"text\",\"version\":1},{\"type\":\"linebreak\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"voting period: 7/4-7/11\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}",
+  "description": null,
+  "createdAt": "2025-06-20T20:24:17.857Z",
+  "start": "2025-06-20T20:24:17.857Z",
+  "votingStart": "2025-07-04T10:00:00.000Z",
+  "end": "2025-07-12T10:00:00.000Z",
+  "community": {
+    "id": "community:lilnouns",
+    "handle": "lilnouns",
+    "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/9460da51-7bb1-445b-c733-e18723c25c00/original",
+    "name": "Lil Nouns",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": "https://warpcast.com/~/channel/lilnouns",
+    "details": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 1
+          },
+          "content": [
+            {
+              "text": "🧠 What is a Lil Noun?",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Launched in May 2022, Lil Nouns is a community-run DAO built on the same principles as Nouns DAO. It introduces a new layer to the ecosystem, designed to welcome more people in with lower-cost, always-available NFTs. By doing so, Lil Nouns helps grow awareness of Nouns while empowering a new generation of collectors and contributors.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Each Lil Noun is a 16×16 pixel art character, randomly generated and minted on the Ethereum blockchain every 15 minutes. With traits like colorful heads, accessories, and backgrounds, no two Lil Nouns are the same. And thanks to their CC0 (Creative Commons Zero) license, anyone can use, remix, or build on them—no restrictions, no permission needed.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Lil Nouns isn't just a collection—it's a gateway into a vibrant, creative, and decentralized community.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "🗳️ How Does the DAO Work?",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Owning a Lil Noun gives you a voice in the Lil Nouns DAO, with each NFT counting as one vote. The DAO manages a shared treasury that's funded by ongoing NFT auctions, and it's up to the community to decide how those funds are used. Anyone can submit a proposal and vote on initiatives they care about. So far, the DAO has backed a wide range of projects like esports sponsorships, creative public goods, and even podcasts like The Lil Nouns Show. It's a flexible system powered by the ideas and votes of the Lil Nouns community.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "🔗 Explore More",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🌐 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Official Website",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://lilnouns.wtf/"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🔨 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Lil Nouns Camp",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://lilnouns.camp/"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "👨‍💻 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "GitHub",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://github.com/lilnouns"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🖥️ ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Discord",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://discord.gg/4avSUMVWyF"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": false,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null
+}

@@ -1,0 +1,19 @@
+{
+  "id": "community:nouns",
+  "handle": "nouns",
+  "image": "https://warpcast.com/~/channel-images/nouns.png",
+  "name": "Nouns",
+  "levels": null,
+  "points": null,
+  "description": null,
+  "parentUrl": null,
+  "details": null,
+  "featured": false,
+  "createdAt": "2025-07-20T01:50:10.707Z",
+  "hasRounds": true,
+  "hasQuests": true,
+  "hasPredictions": false,
+  "hasEvents": true,
+  "hasLeaderboard": true,
+  "hasShop": true
+}

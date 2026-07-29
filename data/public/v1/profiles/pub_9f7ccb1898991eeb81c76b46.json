@@ -1,0 +1,14 @@
+{
+  "id": "pub_9f7ccb1898991eeb81c76b46",
+  "name": "Test",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=djxmec&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa22E30eC47BF0A2005e11E81d9B08427BBCA0b8b",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pub_e0b03723e1f6b184782d01f6",
+  "name": "boom chicken",
+  "image": "https://pbs.twimg.com/profile_images/1922596740542369792/2IKVFQmo_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "kingggchicken",
+    "name": "boom chicken",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922596740542369792/2IKVFQmo_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xfdAD1e690F85bC8d9E4ba4fE964984Ce8c1B031B",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x019ae5bce4B2A7Ca8552F8D48e1008E743fBDaD9",
+      "kind": "external"
+    }
+  ]
+}

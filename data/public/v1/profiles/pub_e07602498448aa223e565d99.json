@@ -1,0 +1,14 @@
+{
+  "id": "pub_e07602498448aa223e565d99",
+  "name": "cmdn67pt",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigdjsswdhmqzcn3hd6dy3ub53azjlbxlhnxt23xxyeyqcf6hxduyq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x29B612755A3617108a060C5B55B3b559C1a2aFD4",
+      "kind": "external"
+    }
+  ]
+}

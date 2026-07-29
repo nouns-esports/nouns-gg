@@ -1,0 +1,14 @@
+{
+  "id": "pub_2379cadbea354bc0b1ffb8b9",
+  "name": "singledigi",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihgzcgjasevta5guz7sktooa4mafy3ctdn4fa4ynclqjj2423icfy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x70A24dc4b4521eD3190fBe464Ad6AD654a393e65",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_ce0952bb9cb9a366b1ba596b",
+  "name": "Noun Nuke",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibhiu4u5uzvggvzl57f2z743rj4uijzsxttd6wwizuvrbxzhicpti",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc618D06F183d4e647a54a4ebB9021D48f3e12dF5",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x3BBBC98E90Eb88f8BD6E31EdDE506b84C17efEF3",
+      "kind": "external"
+    }
+  ]
+}

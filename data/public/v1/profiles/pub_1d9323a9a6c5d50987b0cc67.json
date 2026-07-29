@@ -1,0 +1,28 @@
+{
+  "id": "pub_1d9323a9a6c5d50987b0cc67",
+  "name": "Noan Santana",
+  "image": "https://pbs.twimg.com/profile_images/610630624836194304/LRsNR2bH_normal.jpg",
+  "bio": "Sou um doce de pessoa, mas lembre-se, até um doce é capaz de te fazer mal.",
+  "twitter": {
+    "username": "Noan_Santana",
+    "name": "Noan Santana",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/610630624836194304/LRsNR2bH_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9F81Be73F65B5b06B5119e9940Ee96D46e67b042",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x342a691116ca007e75129b49836AdAfC7d00B836",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x85f95A38638470c64874423791fD416EAa813fCc",
+      "kind": "external"
+    }
+  ]
+}

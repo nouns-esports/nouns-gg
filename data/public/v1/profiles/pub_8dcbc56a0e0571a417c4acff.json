@@ -1,0 +1,18 @@
+{
+  "id": "pub_8dcbc56a0e0571a417c4acff",
+  "name": "Crypto Orb",
+  "image": "https://pbs.twimg.com/profile_images/1948727346422296576/XzTdBpDT_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "CryptoOrbX",
+    "name": "Crypto Orb",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948727346422296576/XzTdBpDT_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x07E2334baD5CB07ee2de0e5125e1aA9Cd4D54035",
+      "kind": "external"
+    }
+  ]
+}

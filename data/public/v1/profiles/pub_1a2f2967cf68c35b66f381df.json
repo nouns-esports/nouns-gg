@@ -1,0 +1,23 @@
+{
+  "id": "pub_1a2f2967cf68c35b66f381df",
+  "name": "jdhcdaboi",
+  "image": "https://pbs.twimg.com/profile_images/1829661667900219393/ggfDnf6O_normal.jpg",
+  "bio": "#1 Melee player in Jamaica.",
+  "twitter": {
+    "username": "jdhcdaboii",
+    "name": "jdhcdaboi",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1829661667900219393/ggfDnf6O_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x33B2968E19dDe1812feCac3fbABb349F9959f611",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xB575D882Be60BCE263D0631c961aC94Ac5A615F1",
+      "kind": "external"
+    }
+  ]
+}

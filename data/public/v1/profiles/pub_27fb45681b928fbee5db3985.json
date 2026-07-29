@@ -1,0 +1,18 @@
+{
+  "id": "pub_27fb45681b928fbee5db3985",
+  "name": "Nouns | Salt ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1785425046359470080/ki5jT0QQ_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "SaltSSB",
+    "name": "Nouns | Salt ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1785425046359470080/ki5jT0QQ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC705519E6Ae96264693844f5B3E58bAbB3E8D9c5",
+      "kind": "external"
+    }
+  ]
+}

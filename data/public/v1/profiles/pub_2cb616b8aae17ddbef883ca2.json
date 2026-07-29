@@ -1,0 +1,14 @@
+{
+  "id": "pub_2cb616b8aae17ddbef883ca2",
+  "name": "cmdvb2pp",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicankjvrncoch2c5cuoihub565pijxbknamjd2u4pdz2snfuupkxq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xDB1CB916373416FC900a8533ce02AFf3faa62cdf",
+      "kind": "external"
+    }
+  ]
+}

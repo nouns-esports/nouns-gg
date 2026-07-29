@@ -1,0 +1,19 @@
+{
+  "id": "pub_ac2c65c75567664e0a041abe",
+  "name": "Yisus",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=avsqud&background=1",
+  "bio": "Hola bro",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA9BFa88F34D7aAFeeaec82595Ff398337B9a7De9",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xD330881D619263782EA3C23370364f3484E3C969",
+      "kind": "external"
+    }
+  ]
+}

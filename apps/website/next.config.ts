@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
-// Checks env during build
-import { env } from "~/env";
 
 export default {
+	outputFileTracingIncludes: {
+		"/*": ["../../data/public/v1/**/*.json"],
+	},
 	experimental: {
 		serverActions: {
 			bodySizeLimit: "10mb",

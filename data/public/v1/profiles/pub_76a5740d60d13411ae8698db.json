@@ -1,0 +1,14 @@
+{
+  "id": "pub_76a5740d60d13411ae8698db",
+  "name": "beechain",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=uau993&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa02b78598Fc5f4530ae7Ad2B1eDC586DdbEa3613",
+      "kind": "external"
+    }
+  ]
+}

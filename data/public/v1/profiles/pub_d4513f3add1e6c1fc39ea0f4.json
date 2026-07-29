@@ -1,0 +1,23 @@
+{
+  "id": "pub_d4513f3add1e6c1fc39ea0f4",
+  "name": "pipe",
+  "image": "https://pbs.twimg.com/profile_images/1804674353692356608/wGm03Ld8_normal.jpg",
+  "bio": "pro gamer",
+  "twitter": {
+    "username": "60r90",
+    "name": "pipe",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1804674353692356608/wGm03Ld8_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xae4705dC0816ee6d8a13F1C72780Ec5021915Fed",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xf07eB5171d773A65F2766530059B1950F667d402",
+      "kind": "external"
+    }
+  ]
+}

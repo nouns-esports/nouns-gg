@@ -1,0 +1,23 @@
+{
+  "id": "pub_51d61b54dd248273e0e6c1e6",
+  "name": "Bagel",
+  "image": "https://pbs.twimg.com/profile_images/1796284125709500416/51JiZK7k_normal.jpg",
+  "bio": "Avid climber. Sometimes I play the dog in that one jank party game",
+  "twitter": {
+    "username": "BagelManDan",
+    "name": "Bagel",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1796284125709500416/51JiZK7k_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB737a8c09C3D4E78BDA3CFf5aC76892b6BBaa6CC",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xdC550a44Fff320f05bd099A66495EA064e6c5c61",
+      "kind": "external"
+    }
+  ]
+}

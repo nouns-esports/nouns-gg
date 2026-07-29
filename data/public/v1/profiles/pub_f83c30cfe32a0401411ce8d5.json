@@ -1,0 +1,14 @@
+{
+  "id": "pub_f83c30cfe32a0401411ce8d5",
+  "name": "cmdpst1e",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicryikq2hicaxvekfu7bctvee6httkytn25qis732xh6glw2p2c3u",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0890826035772A9fCFFaa1d64F9cDdb1C0Ae9Bdc",
+      "kind": "external"
+    }
+  ]
+}

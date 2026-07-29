@@ -1,0 +1,18 @@
+{
+  "id": "pub_bc2686b46fab93b6a5d15905",
+  "name": "jacob",
+  "image": "https://pbs.twimg.com/profile_images/1626647632830468120/r7ZLUPAx_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "goofysillyjacob",
+    "name": "jacob",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1626647632830468120/r7ZLUPAx_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd9FA382Cc1009825696E2107f0f32283d2128096",
+      "kind": "external"
+    }
+  ]
+}

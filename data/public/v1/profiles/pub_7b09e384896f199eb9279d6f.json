@@ -1,0 +1,18 @@
+{
+  "id": "pub_7b09e384896f199eb9279d6f",
+  "name": "FattyButHappy. ⌐🄵₿🄷",
+  "image": "https://pbs.twimg.com/profile_images/1788794438141022210/bAq9VoE9_normal.jpg",
+  "bio": "Professional mistake maker",
+  "twitter": {
+    "username": "Fattybuthappyy",
+    "name": "FattyButHappy. ⌐🄵₿🄷",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1788794438141022210/bAq9VoE9_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "product:nouns-gg:polymath-shorts-vintage-black",
+  "handle": "polymath-shorts-vintage-black",
+  "name": "Polymath Shorts - Vintage Black",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": "dopamine",
+  "variants": [
+    {
+      "id": "variant:b926f007-9946-452b-b3bf-d03966419c2f",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeibgtlilszugut4nk4oycw5qv7ksb5qjw4fmqpbbllqpgofec7wlmy"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:c6c6cccf-330d-4d71-ad02-12a4daa87b1a",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:e984c20d-7010-430f-88d5-bb42e99705c7",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:0d3f0a15-8b27-485d-8afb-15bdc62f637a",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:7ee2cc0e-7545-4ad7-ad3a-aa91ee1da085",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "35.00",
+      "inventory": null
+    }
+  ]
+}

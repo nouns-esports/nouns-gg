@@ -1,0 +1,14 @@
+{
+  "id": "pub_9083f22e60931efe1e8f5762",
+  "name": "cmdr36fy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicziusshihcljvtfazapcyp67zvtgvka5tb5pcy5n73uwry25qa3m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x58fD7FCcB777549291cD647a61DdD87B5C4163f2",
+      "kind": "external"
+    }
+  ]
+}

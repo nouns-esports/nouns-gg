@@ -1,0 +1,19 @@
+{
+  "id": "pub_86bf85379585c9ef4baa6927",
+  "name": "ZestyZeppelin",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigurenzwrn47soymcfteftc3czmzo2dxsic2tcbak26kdskgpmq7q",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1cAf759245FcAFfA6dD9Eb6a8F8c29e160158a12",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x19Ec6032A6ffB728ceCc808Ba7cafd39d1d14bAA",
+      "kind": "external"
+    }
+  ]
+}

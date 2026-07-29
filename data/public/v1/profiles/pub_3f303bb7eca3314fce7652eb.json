@@ -1,0 +1,14 @@
+{
+  "id": "pub_3f303bb7eca3314fce7652eb",
+  "name": "alxetiger",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=7yln0e&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9b993393d472F48D70b5356536c058233A227E48",
+      "kind": "external"
+    }
+  ]
+}

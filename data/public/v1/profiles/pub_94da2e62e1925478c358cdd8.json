@@ -1,0 +1,19 @@
+{
+  "id": "pub_94da2e62e1925478c358cdd8",
+  "name": "Wiggly Wombat",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreielkij65bfmlzoxg5ot3xrhkeuykzrmnfwnn25ne5edmurrz5rpea",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x17C0CD1dEdEb07CC47cA486Cb937565Ba8C40e34",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x03c4E4DCE1f0aE5A4AbBAa72b68a42A714D59199",
+      "kind": "external"
+    }
+  ]
+}

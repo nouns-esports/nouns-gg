@@ -1,0 +1,80 @@
+{
+  "id": "product:nouns-gg:ti13-worldwide-tee-black",
+  "handle": "ti13-worldwide-tee-black",
+  "name": "TI13 Worldwide T-Shirt - Black",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:7d8ce7af-24f5-40dc-8380-598d1784566f",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeibqjoptqk2lgd5vxieaf3bm5ierany3fobkao5hogavu5dwj5j6oy",
+        "https://ipfs.nouns.gg/ipfs/bafybeifyupwdul6azstwp35m7h4d5cz5g2mebfweyfka3fngznhfakzftq",
+        "https://ipfs.nouns.gg/ipfs/bafybeic3qu6gi2ggbs42eet6mlhlux3cifofjuduf5i3476qav52mecihy"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:76e5348c-04cb-4d45-bbcc-aca0e77d0c97",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:445a42d6-6d90-4d74-89ff-c54bf43bef00",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:f53cbb20-e9d8-4842-8efc-d6cad0250378",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:09ef0bec-f3e7-4ead-91cc-daee2754e392",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "30.00",
+      "inventory": null
+    }
+  ]
+}

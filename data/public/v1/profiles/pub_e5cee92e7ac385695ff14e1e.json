@@ -1,0 +1,19 @@
+{
+  "id": "pub_e5cee92e7ac385695ff14e1e",
+  "name": "Whimsical Whale",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicyyugjja42jypezv53g47gvnbquwpeonmtzyf5cdrlq6vuqht7p4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x04fC636b395Df3882D226F5bD90B75B874b942AB",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x545321582E45C24e7F750620F801cFC09B73fB50",
+      "kind": "external"
+    }
+  ]
+}

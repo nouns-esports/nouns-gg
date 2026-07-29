@@ -1,0 +1,19 @@
+{
+  "id": "pub_d8f154611e5d8056c8eaed2d",
+  "name": "Prowl",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihbdee5mgaevshdamcwv2rgdst5cvpdmp3mnc2obvjq2dij7gml3i",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEfBe1d0103bbE2bE04550e310872c4967673D14f",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xB5b0385496C0C114B217e38471D94Fa8e6441983",
+      "kind": "external"
+    }
+  ]
+}

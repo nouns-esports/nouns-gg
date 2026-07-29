@@ -1,8 +1,7 @@
 import { getPrediction } from "@/server/queries/predictions";
 import { ImageResponse } from "next/og";
-import fs from "fs";
-import { join } from "path";
 import { parsePrediction } from "~/packages/utils/parsePrediction";
+import { loadImageFonts } from "../fonts";
 
 export async function GET(request: Request) {
 	const url = new URL(request.url);
@@ -26,6 +25,7 @@ export async function GET(request: Request) {
 	}
 
 	const { outcomes } = parsePrediction(prediction);
+	const fonts = loadImageFonts();
 
 	return new ImageResponse(
 		<div
@@ -88,23 +88,11 @@ export async function GET(request: Request) {
 						fontSize: 36,
 						borderRadius: 9999,
 						flexShrink: 0,
-						backgroundColor: prediction.resolved
-							? "rgba(34, 197, 94, 0.3)"
-							: prediction.closed
-								? "rgba(59, 130, 246, 0.3)"
-								: "rgba(239, 68, 68, 0.3)",
-						color: prediction.resolved
-							? "#22C55E"
-							: prediction.closed
-								? "#3B82F6"
-								: "#EF4444",
+						backgroundColor: "rgba(34, 197, 94, 0.3)",
+						color: "#22C55E",
 					}}
 				>
-					{prediction.resolved
-						? "Finalized"
-						: prediction.closed
-							? "Awaiting Results"
-							: "Live"}
+					Finalized
 				</div>
 			</div>
 			<div
@@ -213,40 +201,7 @@ export async function GET(request: Request) {
 		{
 			width: 1200,
 			height: 800,
-			fonts: [
-				{
-					name: "Cabin",
-					data: fs.readFileSync(
-						join(process.cwd(), "./public/fonts/Cabin-Regular.ttf"),
-					),
-					weight: 400,
-					style: "normal",
-				},
-				{
-					name: "Luckiest Guy",
-					data: fs.readFileSync(
-						join(process.cwd(), "./public/fonts/LuckiestGuy-Regular.ttf"),
-					),
-					weight: 400,
-					style: "normal",
-				},
-				{
-					name: "Bebas Neue",
-					data: fs.readFileSync(
-						join(process.cwd(), "./public/fonts/BebasNeue-Regular.ttf"),
-					),
-					weight: 400,
-					style: "normal",
-				},
-				{
-					name: "Londrina Solid",
-					data: fs.readFileSync(
-						join(process.cwd(), "./public/fonts/LondrinaSolid-Regular.ttf"),
-					),
-					weight: 400,
-					style: "normal",
-				},
-			],
+			fonts,
 		},
 	);
 }

@@ -1,0 +1,14 @@
+{
+  "id": "pub_2e31446854ab1b809c835e0b",
+  "name": "belbo",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=ekvbyg&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5DDd4C4D66137B1e02781c84aF254a4340E9e365",
+      "kind": "external"
+    }
+  ]
+}

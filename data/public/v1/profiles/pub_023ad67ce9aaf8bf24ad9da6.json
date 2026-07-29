@@ -1,0 +1,14 @@
+{
+  "id": "pub_023ad67ce9aaf8bf24ad9da6",
+  "name": "3.8.3",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=gdcdxn&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1126C26Ef9cC7A7EFE80026cec290FE2F7f6b903",
+      "kind": "external"
+    }
+  ]
+}

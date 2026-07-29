@@ -1,0 +1,18 @@
+{
+  "id": "pub_70b6cd22df17276e9f2d3580",
+  "name": "JMR Luna",
+  "image": "https://pbs.twimg.com/profile_images/1462474427782901763/3erHT_DS_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "jmrLuna",
+    "name": "JMR Luna",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1462474427782901763/3erHT_DS_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB94540F9b7F540b7e07D1DCbd856396f1825d98b",
+      "kind": "external"
+    }
+  ]
+}

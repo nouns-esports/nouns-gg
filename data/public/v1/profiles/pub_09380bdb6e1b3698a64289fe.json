@@ -1,0 +1,14 @@
+{
+  "id": "pub_09380bdb6e1b3698a64289fe",
+  "name": "cmdtuti4",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiazuo5smeuajwlyorks6uuteu2zg5dzgmccymdzuprix3xdou4tsm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2feAa3f80832f466be64BfDf8E2545098f4F8c17",
+      "kind": "external"
+    }
+  ]
+}

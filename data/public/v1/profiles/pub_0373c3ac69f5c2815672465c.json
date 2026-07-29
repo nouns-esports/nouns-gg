@@ -1,0 +1,19 @@
+{
+  "id": "pub_0373c3ac69f5c2815672465c",
+  "name": "WhimsyWidget",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaoh2navp2aifjtdbsb43tn47s2jsuunqck6u65kb4u2ehrzajcbq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x09aDCC8065Bf078Abf200d521f31AF8482006871",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xa186422d49bAd3B112ED3D3072EABA6C80Af58e8",
+      "kind": "external"
+    }
+  ]
+}

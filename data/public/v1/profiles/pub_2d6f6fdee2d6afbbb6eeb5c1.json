@@ -1,0 +1,18 @@
+{
+  "id": "pub_2d6f6fdee2d6afbbb6eeb5c1",
+  "name": "DarkGenex",
+  "image": "https://pbs.twimg.com/profile_images/1839508423643471872/ZrrVgaV2_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "DarkGenex",
+    "name": "DarkGenex",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1839508423643471872/ZrrVgaV2_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC334B2249D84dcB8D4525fa1ADe243E88172A0f2",
+      "kind": "external"
+    }
+  ]
+}

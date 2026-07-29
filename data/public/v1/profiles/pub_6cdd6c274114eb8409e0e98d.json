@@ -1,0 +1,14 @@
+{
+  "id": "pub_6cdd6c274114eb8409e0e98d",
+  "name": "Kinako",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib2yffmwwyttg6mci22czeevvafq6oabmaw442vviaum6leody7zm",
+  "bio": "Hello I'm Kinako from Japan. ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x42F6e2c34d1bcE60d0137A9d511541C0659D2a5A",
+      "kind": "external"
+    }
+  ]
+}

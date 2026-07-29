@@ -1,0 +1,14 @@
+{
+  "id": "pub_fbc6cca51c49543f764a3826",
+  "name": "JANE DOE",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigaqg2xbwyy5eowtmr7tvxc4eqogs5tme4j7sewlmrhwujjmnpsou",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3956D7726DE86EFa2A90649d8c4D7FF26F5BC14C",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_9cbf92cf6de46f4b41024829",
+  "name": "ArStar",
+  "image": "https://pbs.twimg.com/profile_images/1544868271077429248/0b_v_Evo_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ArStarSSBM",
+    "name": "ArStar",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1544868271077429248/0b_v_Evo_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x36642c51c6144Ad557c9696F1Fea791E3B76a29D",
+      "kind": "external"
+    }
+  ]
+}

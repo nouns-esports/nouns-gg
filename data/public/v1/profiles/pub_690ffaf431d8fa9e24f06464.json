@@ -1,0 +1,23 @@
+{
+  "id": "pub_690ffaf431d8fa9e24f06464",
+  "name": "Bonamant",
+  "image": "https://pbs.twimg.com/profile_images/1806398236787126272/_u-CYYPb_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "TheBonamant",
+    "name": "Bonamant",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1806398236787126272/_u-CYYPb_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xab903456398a5CE89265AC809cf97B094422EEd8",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x2826fD8dD18ea958D8C94577ea2b98C50046a690",
+      "kind": "external"
+    }
+  ]
+}

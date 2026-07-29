@@ -1,0 +1,14 @@
+{
+  "id": "pub_b8e9464a0a261992d11e115e",
+  "name": "cmdrw1kg",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibfdp6qxe2pzjmtgdjhtzf7hvsueqdfzef3xvom7bm4srwa3ltv54",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD9c2E0A470a45fd6BDF93007E1BF6333f89d5df8",
+      "kind": "external"
+    }
+  ]
+}

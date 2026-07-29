@@ -1,0 +1,18 @@
+{
+  "id": "pub_a05a81d9c6a00eece9b30fa4",
+  "name": "TokenThesis",
+  "image": "https://pbs.twimg.com/profile_images/1948725787043012608/o5-mnn9B_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "TokenThesisArt",
+    "name": "TokenThesis",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948725787043012608/o5-mnn9B_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xBe3Ef85dF405590E25219C8654189eD51f8ad7ed",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_cb735bb6efbe25f894cfe1eb",
+  "name": "Bantiaweb3 🔥",
+  "image": "https://pbs.twimg.com/profile_images/1903990691933356032/6aHnp4Uq_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "BlessingA9813",
+    "name": "Bantiaweb3 🔥",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1903990691933356032/6aHnp4Uq_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x21901Ce20410b3aCBCD6CF37a0EEc1CAB7fF50E6",
+      "kind": "external"
+    }
+  ]
+}

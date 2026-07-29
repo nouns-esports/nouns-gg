@@ -1,0 +1,14 @@
+{
+  "id": "pub_2a1be1e87abdb88cba1b0b0a",
+  "name": "NounX",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreie2kx3c4z62wpemgq6okiwdxav4x4do7ej4kpmqafu3s2mx7h2gaa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x63B6F53a4e8C8D5F474059fa04Ba0951eF28073B",
+      "kind": "external"
+    }
+  ]
+}

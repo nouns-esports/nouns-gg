@@ -1,0 +1,47 @@
+{
+  "id": "product:nouns-gg:nounsvitational-trading-cards-2025",
+  "handle": "nounsvitational-trading-cards-2025",
+  "name": "Nounsvitational Trading Card Set (2025)",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:nounsvitational",
+  "collectionHandle": "nounsvitational",
+  "variants": [
+    {
+      "id": "variant:5df6f260-19a8-43cf-beda-d9e36095aa94",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeidf5mlhtcy4dq6ganliasavzkot2zg5jpjc4bwlcagnzoo3uavpfe",
+        "https://ipfs.nouns.gg/ipfs/bafybeicsxtj76esqkbrrzn76wuemp5qohajv4actxt36hkwsmkaloej3dy"
+      ],
+      "size": null,
+      "color": null,
+      "price": "5.99",
+      "inventory": null
+    }
+  ]
+}

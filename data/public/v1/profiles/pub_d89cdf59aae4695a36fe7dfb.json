@@ -1,0 +1,14 @@
+{
+  "id": "pub_d89cdf59aae4695a36fe7dfb",
+  "name": "strikeone",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=bvr6nb&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x247861Fb7FDCa5EE0b690873728FDfEd7fb11FBb",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_256283944c6e7d80c81b7311",
+  "name": "dawufi",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=rzyxjd&background=1",
+  "bio": "vibe architect",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0964256674E42d61f0fF84097E28F65311786ccb",
+      "kind": "external"
+    }
+  ]
+}

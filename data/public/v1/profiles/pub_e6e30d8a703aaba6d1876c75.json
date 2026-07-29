@@ -1,0 +1,14 @@
+{
+  "id": "pub_e6e30d8a703aaba6d1876c75",
+  "name": "Aisla",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihqfqm2mtqetuhpwdwrptduarjzpc5rv4terox47vdre4ffzykdfa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1CF2405deff0309923d850a382F4910CB8B421C4",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_9fc92a13812d7825dbbcdcfb",
+  "name": "cmdeurz8",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreif66idgdfwesz2qpwtkva2f5be6spmqoqoupmvfsmktfkgltuatea",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3c126f02F16d648475515399a655420216e7ac4E",
+      "kind": "external"
+    }
+  ]
+}

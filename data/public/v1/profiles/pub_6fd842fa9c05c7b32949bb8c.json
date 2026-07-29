@@ -1,0 +1,18 @@
+{
+  "id": "pub_6fd842fa9c05c7b32949bb8c",
+  "name": "creepy",
+  "image": "https://pbs.twimg.com/profile_images/1766963316868464640/5FOm9gOV_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "brubbaspun59849",
+    "name": "creepy",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1766963316868464640/5FOm9gOV_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4b1EAa96225407af8B30139D5495F5195BAcfEc7",
+      "kind": "external"
+    }
+  ]
+}

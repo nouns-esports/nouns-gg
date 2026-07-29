@@ -1,0 +1,14 @@
+{
+  "id": "pub_563fbcc2eb06bfed6232c675",
+  "name": "BarrelOfNouns",
+  "image": "https://ipfs.nouns.gg/ipfs/QmSLKzimbyJSxRefqDnd1FQMwzPwFzcr65tdJrudYXswV8",
+  "bio": "Barrel of Nouns helps Nounish Super Smash Melee organizers by automatically capturing and uploading moments from their events! Play more melee, fill the barrel!",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x21b0eEfB6860d692E3bdf89dED9769dab01e2279",
+      "kind": "external"
+    }
+  ]
+}

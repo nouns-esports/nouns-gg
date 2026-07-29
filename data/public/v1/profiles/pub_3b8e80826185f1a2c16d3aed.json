@@ -1,0 +1,14 @@
+{
+  "id": "pub_3b8e80826185f1a2c16d3aed",
+  "name": "cmhiaqap",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreickqdeehu6oqmw2qbawig27totr5bwgo6jjrbbtil3uhqp4ofn7am",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xDb5Dd352527539b7C3382Bd4B5693E116D09fb9B",
+      "kind": "external"
+    }
+  ]
+}

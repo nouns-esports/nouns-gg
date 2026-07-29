@@ -1,0 +1,14 @@
+{
+  "id": "pub_3674274a54b01afcedf5b842",
+  "name": "dhir",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=m86zsn&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xDE8EEb486e8a30eB93911e6352AB66E353Ee4AA1",
+      "kind": "external"
+    }
+  ]
+}

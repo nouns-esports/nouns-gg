@@ -1,0 +1,19 @@
+{
+  "id": "pub_66fda3514f1e0254860aadc6",
+  "name": "Dota",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreig6cskbsjw6z4vorhpx2vfmupvlsvdw4ct6yimt2n7fhlfbmsk6ai",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x02626D8f994992560fbf3221076a1978FFED448E",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xe3442f309DB3051d8C250d4585B7b37D6335efB3",
+      "kind": "external"
+    }
+  ]
+}

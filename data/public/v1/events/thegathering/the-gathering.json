@@ -1,0 +1,419 @@
+{
+  "id": "event:thegathering:the-gathering",
+  "handle": "the-gathering",
+  "name": "TheGathering.gg First Free Timeless $1K",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreici2ddhwptsqofyvux5lrde6fpcfgrfz3ownmcvjdzfc2xztj5qiu",
+  "description": "TheGathering.gg is back with our first Timeless $1K! That's $1,000 cash in this FREE event! The Format is MTGA Timeless Best of Three. Rounds will be Swiss with a top cut, based on Attendance.",
+  "createdAt": "2025-03-29T19:00:00.000Z",
+  "start": "2025-03-29T19:00:00.000Z",
+  "end": "2025-03-29T23:00:00.000Z",
+  "active": true,
+  "featured": false,
+  "callToAction": {
+    "disabled": false,
+    "label": "Watch",
+    "url": "https://www.twitch.tv/thegatheringmtg"
+  },
+  "location": {
+    "name": "Online",
+    "url": "https://www.twitch.tv/thegatheringmtg"
+  },
+  "details": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Organized, hosted, and sponsored by TheGathering.gg",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "TheGathering.gg is back with our first Timeless $1K! That's $1,000 cash in this FREE event!",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "The Format is MTGA Timeless Best of Three. Rounds will be Swiss with a top cut, based on Attendance.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "We'll be hosting a $1K tournament regularly for at least the next 6 months, with a focus on Timeless and other underserved MTG Formats",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "This funding is provided in partnership with Nouns, a different kind of currency committed to the support of esports, cardgames, artistic endeavors, and other general unsupported spaces for doing cool things. You can check them out at ",
+            "type": "text"
+          },
+          {
+            "text": "https://nouns.world/",
+            "type": "text",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://nouns.world/"
+                }
+              }
+            ]
+          },
+          {
+            "text": ".",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Rules",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Swiss rounds will be based on attendance. If more 16-31 players participate, the final two rounds will be a cut to top 4. If more than 32 players participate, there will be a cut to top 8 instead. The round structure will be locked in based on the attendance at the signup deadline.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "The Format is MTG Arena Timeless, best of 3 matches using the MTG Arena in-game timer.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Players will use the Direct Challenge system of MTGArena to pair with each opponent. To challenge a player using this system:",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Get their MTG Arena Screen name from the MTG Melee round pairings",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Click the crossed swords in the top right corner of the MTG Arena Client",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Use the Arrows to select: (Limited Tournament Match)(Deck Type:60 Card)(Format:Best of Three)(Coin Flip)(Timers On)",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "All players are required to submit a Timeless legal decklist 1 Hour before the event start time. If there is no decklist or communication from a player by the start time, that player will be dropped from the tournament.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Unintentional draws aren't allowed for this event, but intentional draws are possible with the agreement of both players. All normal MTG rules must be followed whenever possible, and there's a 0 tolerance policy for bribes, coercion, and paid agreements.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Decklists will be open, and any player can safely stream their match over discord for a chance to appear on the official broadcasts. We politely request that undefeated to stream in Discord. Do note all Top 8 Matches will be required to be streamed.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "All players must be in The Gathering Discord for communication purposes",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "In the event a player isn't in a match with their opponent within 5 minutes of the start time of each round, a match can't be completed, or a player disconnects, contact a Gathering staff member to assist. In the event of a disconnect mid-match, potential penalties include a game or match loss.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Please contact any of TheGathering.gg staff members over discord with any questions or concerns.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Schedule",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Registration closes 30 minutes before the event",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Each round will begin as soon as possible as each round finishes",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Prizes",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "The organizer has agreed to pay out prizes in 60 days or less.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "1st Place: $300",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "2nd Place: $150",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "3rd-4th: $100",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "5th-8th: $75",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "$50 Held for Door Prizes or 9th place cutoff. Additional Door Prizes to be determined later and added based on attendance.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Contact",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Please contact a team member or TheGathering.gg staff member directly with any questions, comments, or concerns.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Everything is easier on ",
+            "type": "text"
+          },
+          {
+            "text": "Discord",
+            "type": "text",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://discord.com/invite/VtnghCnFWe"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "or you can email us at [redacted email]",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  "attendeeCount": null,
+  "community": {
+    "id": "community:thegathering",
+    "handle": "thegathering",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreihs45zjfkocdt6jfy5efoqbhf4dcq6t7crhp7nmn5kp26aq2k667y",
+    "name": "The Gathering",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": false,
+    "hasQuests": false,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": false,
+    "hasShop": false
+  }
+}

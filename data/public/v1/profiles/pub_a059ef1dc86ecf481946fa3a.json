@@ -1,0 +1,14 @@
+{
+  "id": "pub_a059ef1dc86ecf481946fa3a",
+  "name": "clzivwhb",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidq6dnuvzn6acp6hlvuwfmmzt2j7wq5xvklry3w3ch6sbnwivg7xy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xDF934F0949585548A06B31fE66d2db0f21a8bAe1",
+      "kind": "external"
+    }
+  ]
+}

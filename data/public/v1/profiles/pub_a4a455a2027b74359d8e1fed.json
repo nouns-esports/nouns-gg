@@ -1,0 +1,14 @@
+{
+  "id": "pub_a4a455a2027b74359d8e1fed",
+  "name": "bryan",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib4anp5mzln5k3x5phvrebacqs4jgmnmhh6gd2c2avwxbhudvz53y",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC75208B51A9a3a9e622eEaD9D42616f4606EDc56",
+      "kind": "external"
+    }
+  ]
+}

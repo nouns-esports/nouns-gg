@@ -1,0 +1,14 @@
+{
+  "id": "pub_347519926734676522f46dc6",
+  "name": "sweetmantech",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifqw6ihdht74xq2id4536ozhgokrxu733oa3ytg4bnhupw53cbfxu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x749B7b7A6944d72266Be9500FC8C221B6A7554Ce",
+      "kind": "external"
+    }
+  ]
+}

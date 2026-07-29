@@ -1,0 +1,14 @@
+{
+  "id": "pub_679fe42391bd95792f8c37db",
+  "name": "cmclwkfa",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidaqhyqcj6gd5vb3p7zik7tye3cs3i5srzesxmqfzto6fnznshsdq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEF9B970e094917B94795dE42d2E73197daebA14c",
+      "kind": "external"
+    }
+  ]
+}

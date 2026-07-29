@@ -1,0 +1,18 @@
+{
+  "id": "pub_33718ccbd9067e37f1935fe1",
+  "name": "ADESu ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1602284342298001411/kh69xw15_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ADESuUnite",
+    "name": "ADESu ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1602284342298001411/kh69xw15_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8cD6CaB9a7a8E5a686D1Ee8dEDEaD249418d5a44",
+      "kind": "external"
+    }
+  ]
+}

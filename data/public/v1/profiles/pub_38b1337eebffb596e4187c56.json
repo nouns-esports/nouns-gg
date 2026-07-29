@@ -1,0 +1,19 @@
+{
+  "id": "pub_38b1337eebffb596e4187c56",
+  "name": "Nova",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreif5e3vbcjxxene7udhc7fc5eifiq5tdchowv63rbj2iwees4hojyy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA4D69132565BCe153f78aDF7098dF69E7bAB35fc",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x5E11b4fb453c86d2960520Cd738733A5Bc6460A5",
+      "kind": "external"
+    }
+  ]
+}

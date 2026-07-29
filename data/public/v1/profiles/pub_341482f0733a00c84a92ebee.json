@@ -1,0 +1,18 @@
+{
+  "id": "pub_341482f0733a00c84a92ebee",
+  "name": "Creatress Sarai📍Mexico",
+  "image": "https://pbs.twimg.com/profile_images/1787986228023066624/WQnqzaTt_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "creatressart",
+    "name": "Creatress Sarai📍Mexico",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1787986228023066624/WQnqzaTt_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x52DA39325E7B4e185fA7b041082Ee11B9c823B34",
+      "kind": "external"
+    }
+  ]
+}

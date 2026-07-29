@@ -1,0 +1,18 @@
+{
+  "id": "pub_436ee1f3e68c6f3b25a59fac",
+  "name": "ODSY I Scrubbed Out",
+  "image": "https://pbs.twimg.com/profile_images/1810139840542908416/Tnq3cTOu_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ScrubbedOut",
+    "name": "ODSY I Scrubbed Out",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1810139840542908416/Tnq3cTOu_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC330bef2097dB87aF490972A08e5c9a25Ad64e22",
+      "kind": "external"
+    }
+  ]
+}

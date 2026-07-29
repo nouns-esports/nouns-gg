@@ -1,0 +1,18 @@
+{
+  "id": "pub_91a81712ad12611c72bf7f3f",
+  "name": "crist🧡sign💢",
+  "image": "https://pbs.twimg.com/profile_images/1966982633847746560/AXjt44_p_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "NoWork_JustPlay",
+    "name": "crist🧡sign💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1966982633847746560/AXjt44_p_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8b2F97d8D0a503fC1641614Ebf6d02006b06Ae34",
+      "kind": "external"
+    }
+  ]
+}

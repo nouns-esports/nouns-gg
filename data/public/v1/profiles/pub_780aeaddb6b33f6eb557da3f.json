@@ -1,0 +1,14 @@
+{
+  "id": "pub_780aeaddb6b33f6eb557da3f",
+  "name": "Houseofdrey",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreia6mrr5emjcsfkpbwtvnkf33a3fwtzjrltyco4tlk5dzxp7itrjhe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6E616cC54Bf7f8B57528f78A147D001F87342D47",
+      "kind": "external"
+    }
+  ]
+}

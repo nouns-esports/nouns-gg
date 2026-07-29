@@ -1,0 +1,14 @@
+{
+  "id": "pub_2fc1962a7764ce8e4b085c7e",
+  "name": "Jeffsu",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigqk4w7oeqtqkl2odbv7jzcia4zwm7igprtr7mhb5rj65jgwfl4ai",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xFBB727BaEB53f88EF05cc72F4fA040E390fc9f16",
+      "kind": "external"
+    }
+  ]
+}

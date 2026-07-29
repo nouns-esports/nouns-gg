@@ -1,0 +1,14 @@
+{
+  "id": "pub_2aeb575845d465c862f585c5",
+  "name": "cmdpyqa7",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieuqpdaidmai64o4lrjsf3av2o5r5fhju3vpqiiyf6w4fzjpiip3e",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1A9aB967c5672622c55023eA2fcb892e60DA2E4a",
+      "kind": "external"
+    }
+  ]
+}

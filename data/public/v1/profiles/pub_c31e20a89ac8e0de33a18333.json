@@ -1,0 +1,18 @@
+{
+  "id": "pub_c31e20a89ac8e0de33a18333",
+  "name": "阿布🐜丨💢",
+  "image": "https://pbs.twimg.com/profile_images/1966982318750629888/mRFmfQy__normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "johnnyNobed",
+    "name": "阿布🐜丨💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1966982318750629888/mRFmfQy__normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x98b05E73647357a3732dabeCeF7860dE67738C0C",
+      "kind": "external"
+    }
+  ]
+}

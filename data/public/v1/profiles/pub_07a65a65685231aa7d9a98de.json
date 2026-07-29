@@ -1,0 +1,19 @@
+{
+  "id": "pub_07a65a65685231aa7d9a98de",
+  "name": "cmaq3y51",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicklab763abhjswv22oeu5k4tbsd53lyyqban5bzgdsfov4gpbava",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0f2bA1e0F2888b1d746C13b9897ABC42781a9E5a",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x3c4D8b4DC07714cf67bfcADf8AAA2F131701B6f1",
+      "kind": "external"
+    }
+  ]
+}

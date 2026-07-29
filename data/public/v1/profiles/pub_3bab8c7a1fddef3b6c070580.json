@@ -1,0 +1,14 @@
+{
+  "id": "pub_3bab8c7a1fddef3b6c070580",
+  "name": "secret person",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=mglwvt&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x08b5b25E5d1D09980F20C19Df558534aA522E27f",
+      "kind": "external"
+    }
+  ]
+}

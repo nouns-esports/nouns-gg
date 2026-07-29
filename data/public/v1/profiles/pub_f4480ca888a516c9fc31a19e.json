@@ -1,0 +1,14 @@
+{
+  "id": "pub_f4480ca888a516c9fc31a19e",
+  "name": "cmbp34ql",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiccp76ycrb7k3qd4y67lpdntnvafik2fzbwyzwzblydpt4brzggdq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb70b00cC8D5c1430F6c5123e73c7107f88635aDb",
+      "kind": "external"
+    }
+  ]
+}

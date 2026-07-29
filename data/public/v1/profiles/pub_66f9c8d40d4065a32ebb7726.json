@@ -1,0 +1,14 @@
+{
+  "id": "pub_66f9c8d40d4065a32ebb7726",
+  "name": "cmdmxgu5",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaqqlhl3bi7eaic4qbm4vindxnwnl4kxfbpwmhdzt5xfnzlnf3dwa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1F7fA48Ffb50136193A9Eaa37A320E270313B75A",
+      "kind": "external"
+    }
+  ]
+}

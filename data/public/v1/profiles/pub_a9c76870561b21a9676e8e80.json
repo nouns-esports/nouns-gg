@@ -1,0 +1,18 @@
+{
+  "id": "pub_a9c76870561b21a9676e8e80",
+  "name": "☸️ The Davart",
+  "image": "https://pbs.twimg.com/profile_images/1899038488579698688/BWwf1UTT_normal.jpg",
+  "bio": "99.9% Web3 Users Ape Narratives Faster With My Visuals & Storytelling || Illustrator - Content Writer - AI Video Creator - Graphic Designer @VentureMindAI",
+  "twitter": {
+    "username": "TheDavart_",
+    "name": "☸️ The Davart",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1899038488579698688/BWwf1UTT_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x63c36CE06aad3dEd7217433885539D300D31e29B",
+      "kind": "external"
+    }
+  ]
+}

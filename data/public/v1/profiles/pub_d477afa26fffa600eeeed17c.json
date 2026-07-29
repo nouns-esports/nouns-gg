@@ -1,0 +1,14 @@
+{
+  "id": "pub_d477afa26fffa600eeeed17c",
+  "name": "cm395tbn",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=mpwma&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x38aF54742A45468f4282E37b3a86b2F647789aC9",
+      "kind": "external"
+    }
+  ]
+}

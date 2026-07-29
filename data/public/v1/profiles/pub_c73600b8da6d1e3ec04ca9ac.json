@@ -1,0 +1,14 @@
+{
+  "id": "pub_c73600b8da6d1e3ec04ca9ac",
+  "name": "cmdtcmyg",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreie6lgvyrdrwdkc6bnini7axoxbjpgg2x2lmvvxotenx6g6i5m6nly",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x20B08C05125bF10149715370d76544D877B6Bdd3",
+      "kind": "external"
+    }
+  ]
+}

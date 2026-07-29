@@ -1,0 +1,18 @@
+{
+  "id": "pub_359ce3f2f4a768684b491b5e",
+  "name": "indeus",
+  "image": "https://pbs.twimg.com/profile_images/1869170121303797760/BqEytorV_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "indeus777",
+    "name": "indeus",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1869170121303797760/BqEytorV_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc4851acD8f5162c510737247EcaaeF73e895FD74",
+      "kind": "external"
+    }
+  ]
+}

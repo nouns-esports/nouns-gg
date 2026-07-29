@@ -1,0 +1,14 @@
+{
+  "id": "pub_0dc4288538bc0f8dd45d5b90",
+  "name": "eniozinho",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicnr3lranhf6smqzgulka4v6qjfvopegfeeouerk2aofyb427aopm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEcfaC58FdEc63E0b4c0dE431deA5F56ecB7B1Ba0",
+      "kind": "external"
+    }
+  ]
+}

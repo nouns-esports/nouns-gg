@@ -1,0 +1,18 @@
+{
+  "id": "pub_7174152682e12ca27832391d",
+  "name": "8rr ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1921984484968431619/lP50J2UT_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "8rrx0_",
+    "name": "8rr ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1921984484968431619/lP50J2UT_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x614ab6edb88FEC7E6CD5E9ba83Ffc6d5a88D975F",
+      "kind": "external"
+    }
+  ]
+}

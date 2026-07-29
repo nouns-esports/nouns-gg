@@ -1,0 +1,18 @@
+{
+  "id": "pub_2fbdb3289e48a3ed8f2dce3d",
+  "name": "mindtoasted.eth",
+  "image": "https://pbs.twimg.com/profile_images/1839806943361413120/h0ga4V3D_normal.jpg",
+  "bio": "youtube.com/@mindtoasted",
+  "twitter": {
+    "username": "Mindtoasted0x",
+    "name": "mindtoasted.eth",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1839806943361413120/h0ga4V3D_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xAad01c20Da2d0b331356726A0acb492B30Af5cbb",
+      "kind": "external"
+    }
+  ]
+}

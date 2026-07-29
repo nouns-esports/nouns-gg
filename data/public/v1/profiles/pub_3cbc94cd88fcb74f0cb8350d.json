@@ -1,0 +1,14 @@
+{
+  "id": "pub_3cbc94cd88fcb74f0cb8350d",
+  "name": "Messh",
+  "image": "https://ipfs.nouns.gg/ipfs/QmeWunm7g4L8tRFDoEVPYrLSKEavoo7Ykp3VK9ddynceG4",
+  "bio": "Sup?",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0C66d954d9cb1ebDF4E37a000262323C83655e70",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_b2d6f0ee495c42056311e919",
+  "name": "Jett",
+  "image": "https://ipfs.nouns.gg/ipfs/QmQ1FCFL6USP9DnReDg8Lu3KjDwJLPA4Pbm3PMMRXM2GFR",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8d72000fc3EC340Bc8A158A2E2d7462dF304EA5d",
+      "kind": "external"
+    }
+  ]
+}

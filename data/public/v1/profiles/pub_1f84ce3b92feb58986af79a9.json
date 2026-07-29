@@ -1,0 +1,18 @@
+{
+  "id": "pub_1f84ce3b92feb58986af79a9",
+  "name": "Luis Carranza Perales 🐲",
+  "image": "https://pbs.twimg.com/profile_images/1575624982796836871/sRCg6iyG_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "luisotravez_eth",
+    "name": "Luis Carranza Perales 🐲",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1575624982796836871/sRCg6iyG_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x003276C5C24cDaFf1d804170Ab5cBB914F51f78a",
+      "kind": "external"
+    }
+  ]
+}

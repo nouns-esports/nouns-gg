@@ -1,0 +1,14 @@
+{
+  "id": "pub_b6f1b101099bde260abbf389",
+  "name": "Grace",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaduyae67xcvyouclmhx6l6nbvx75m25u57ywyh7pphdjwi6iqyzy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x67121fa1124D2656D1F6e149492b7A9B5bb46237",
+      "kind": "external"
+    }
+  ]
+}

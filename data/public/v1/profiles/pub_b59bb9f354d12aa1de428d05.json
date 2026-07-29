@@ -1,0 +1,14 @@
+{
+  "id": "pub_b59bb9f354d12aa1de428d05",
+  "name": "jiji",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieooamc5acvyzly6ep2sz2wqzpzisqwebupxnv53afqkwxix5dcbq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb76311C20f0Ee0A83630E6023a484500E7734f8f",
+      "kind": "external"
+    }
+  ]
+}

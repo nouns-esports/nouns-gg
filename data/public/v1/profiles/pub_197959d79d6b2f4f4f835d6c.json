@@ -1,0 +1,19 @@
+{
+  "id": "pub_197959d79d6b2f4f4f835d6c",
+  "name": "FizzleFern",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiexbsgtjbulmlf5zlmqqxcirkrhizbud7tq7gdt7jbdwk246b3i44",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0D9efA29b42d5B27F1401e4D9154f0cAFb43e45a",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x8c45688b1210adee63f32E977aed7B520e8080B7",
+      "kind": "external"
+    }
+  ]
+}

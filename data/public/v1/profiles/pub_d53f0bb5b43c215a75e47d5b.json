@@ -1,0 +1,18 @@
+{
+  "id": "pub_d53f0bb5b43c215a75e47d5b",
+  "name": "yon",
+  "image": "https://pbs.twimg.com/profile_images/1779636754372292608/VP5GPQIP_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "yonirl",
+    "name": "yon",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1779636754372292608/VP5GPQIP_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x25b2d96c97c356649e1ACFCe5927945086f06106",
+      "kind": "external"
+    }
+  ]
+}

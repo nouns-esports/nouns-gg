@@ -1,0 +1,14 @@
+{
+  "id": "pub_4b86d0024ec9a7977607ad93",
+  "name": "abi",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiasxzqb45oaq5p4674dr6iibggtzy3m6h4xdh6s7bxofloblidfzi",
+  "bio": "new media artist, builder",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x05aCb16a4aA65EA299d8b2dAD0a5F37CD4B09a73",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_76bc30b56b53e5a5ab0ced1f",
+  "name": "clawclawclaw",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicvuxf2rqfu6x7jad5eizju7wpcqg7nvsqgy5ndqh3kz5vcadxini",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf3A05790A4BAA0016C69843f98F66A99479C691C",
+      "kind": "external"
+    }
+  ]
+}

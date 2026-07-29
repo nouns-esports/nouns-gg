@@ -1,0 +1,18 @@
+{
+  "id": "pub_3a50bafad75bc2270b5f6d84",
+  "name": "SRM13",
+  "image": "https://pbs.twimg.com/profile_images/1917042814556295168/XoXJjdzX_normal.jpg",
+  "bio": "puff",
+  "twitter": {
+    "username": "SRMSSB",
+    "name": "SRM13",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1917042814556295168/XoXJjdzX_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE41263C70fd462056BCE0016d2d854571d371e9e",
+      "kind": "external"
+    }
+  ]
+}

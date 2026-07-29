@@ -1,0 +1,18 @@
+{
+  "id": "pub_e429c75ca0729ddb53c4543f",
+  "name": "basement5k.base.eth",
+  "image": "https://pbs.twimg.com/profile_images/1861569614057967616/ffGwhFiR_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "basement5k",
+    "name": "basement5k.base.eth",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1861569614057967616/ffGwhFiR_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x496505251A17845A2714A0D89e91475Dc1D79b30",
+      "kind": "external"
+    }
+  ]
+}

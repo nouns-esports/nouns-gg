@@ -1,0 +1,18 @@
+{
+  "id": "pub_9f754c23c4de7df0fe9ce38f",
+  "name": "east",
+  "image": "https://pbs.twimg.com/profile_images/1728216868765495296/_iVHUFo8_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "pandraaaaaaa",
+    "name": "east",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1728216868765495296/_iVHUFo8_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdfc9eB099c53c6a200e48D8b53798488d0A8ede9",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_bf132d82e31e8de6e43d3913",
+  "name": "thebower",
+  "image": "https://i.imgur.com/r8I79jx.png",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8ac3ecf6973E020cC0E6e8989Fb71B4a77D65987",
+      "kind": "external"
+    }
+  ]
+}

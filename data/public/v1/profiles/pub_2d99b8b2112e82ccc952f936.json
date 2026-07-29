@@ -1,0 +1,18 @@
+{
+  "id": "pub_2d99b8b2112e82ccc952f936",
+  "name": "Fyzeera 🏴‍☠️",
+  "image": "https://pbs.twimg.com/profile_images/1842297504198750208/g10-3to1_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Fyzeera",
+    "name": "Fyzeera 🏴‍☠️",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1842297504198750208/g10-3to1_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x41eb1fCC3Deb4B5855Ca7e67Ddf0cC08Df98bfac",
+      "kind": "external"
+    }
+  ]
+}

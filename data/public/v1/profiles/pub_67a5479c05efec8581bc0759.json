@@ -1,0 +1,18 @@
+{
+  "id": "pub_67a5479c05efec8581bc0759",
+  "name": "Chain Savvy",
+  "image": "https://pbs.twimg.com/profile_images/1948718422210023424/7dPNiJW4_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "savvy1_chain",
+    "name": "Chain Savvy",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948718422210023424/7dPNiJW4_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3f11b05A1D8Dfc5AedFd59D68d035523c79f52cD",
+      "kind": "external"
+    }
+  ]
+}

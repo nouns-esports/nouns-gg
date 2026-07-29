@@ -1,0 +1,14 @@
+{
+  "id": "pub_fe71ac90ee4e7e0faba5515d",
+  "name": "cmdsqamc",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigllxogixax6sphi4djycpwg7mbvufcgp3hvtkqoof6azzo5dx4g4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x47CdD3B048C3C754a0DBe9d3f1f4447C4EaFe0A3",
+      "kind": "external"
+    }
+  ]
+}

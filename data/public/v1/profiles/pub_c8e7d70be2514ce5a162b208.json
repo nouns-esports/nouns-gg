@@ -1,0 +1,14 @@
+{
+  "id": "pub_c8e7d70be2514ce5a162b208",
+  "name": "cmdl5mfm",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicgavuxbs5aw2xkzpnkavgzbctmywiynguci6qlezdrx4adf7ayra",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x574Da7bE9B99774528Aa87c54dD753E81FaF371f",
+      "kind": "external"
+    }
+  ]
+}

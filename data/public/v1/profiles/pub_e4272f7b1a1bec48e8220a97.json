@@ -1,0 +1,14 @@
+{
+  "id": "pub_e4272f7b1a1bec48e8220a97",
+  "name": "youngboytroppers",
+  "image": "https://ipfs.nouns.gg/ipfs/QmSQWR9E1aMXGAMRWcHCL3tM2tx4tSNagRAAf8yZEKkiwd",
+  "bio": "Aku suka tobrut",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3B3Fe138729E57f4D8Ae13ce361A644963Cc1BD8",
+      "kind": "external"
+    }
+  ]
+}

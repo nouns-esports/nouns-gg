@@ -1,0 +1,14 @@
+{
+  "id": "pub_b1450ec87622c2c2ddfa1154",
+  "name": "cmdtil2y",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidmwro5l6bpqt33xmdwjdw72wpaxvn74rctj7f7jwevb5g3vhbqme",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x45052B2C15D9BFC3E64ADf9D2F0fc28fD0e6cE71",
+      "kind": "external"
+    }
+  ]
+}

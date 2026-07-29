@@ -1,0 +1,14 @@
+{
+  "id": "pub_05a336544143f1bee289e734",
+  "name": "cmdnyvom",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicsfg3csgbtfsumhtbxxcryvnjxmli5iwv6ffa73wo3je2orfplie",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8E5a8682233cB7289faC2844FFbFb0404016635b",
+      "kind": "external"
+    }
+  ]
+}

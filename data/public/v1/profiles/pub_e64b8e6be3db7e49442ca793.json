@@ -1,0 +1,19 @@
+{
+  "id": "pub_e64b8e6be3db7e49442ca793",
+  "name": "PixelPuddle",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigroj5gwsnytehpecfkesq3v2e33c3niulavp53tomhkenvembxaa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7776fCC8eEDE244E5535C03BAD696E7321c6fAaC",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xc3EB9D2C4A04B63029920e3D4a6C67F96478A414",
+      "kind": "external"
+    }
+  ]
+}

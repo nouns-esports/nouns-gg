@@ -1,0 +1,14 @@
+{
+  "id": "pub_8ff8adbe643861d0c7988092",
+  "name": "The Cookin Channel",
+  "image": "https://ipfs.nouns.gg/ipfs/QmZjoMJa6EzWsnDGyHWVzBStCwW5jnGJZTvjkSbjNTq11T",
+  "bio": "Culinary Artchitect",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb27dF0A99491944D1ba868B725b7BCbE01fb9F76",
+      "kind": "external"
+    }
+  ]
+}

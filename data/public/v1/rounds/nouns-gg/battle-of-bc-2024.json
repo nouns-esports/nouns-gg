@@ -1,0 +1,45 @@
+{
+  "id": "round:nouns-gg:battle-of-bc-2024",
+  "handle": "battle-of-bc-2024",
+  "name": "Join our Smash roster at the Battle of BC",
+  "image": "https://ipfs.nouns.gg/ipfs/QmSPm4oM5jhYKPTvxCpmyy6FM2XXBZHAfCRz83YeBoqHg7",
+  "active": true,
+  "type": "markdown",
+  "featured": false,
+  "xp": {
+    "winning": 0,
+    "castingVotes": 250,
+    "receivingVotes": 5,
+    "creatingProposal": 500
+  },
+  "content": "{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"We're offering you $1,500 to join our Smash roster at the Battle of BC 2024! \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Nouns Esports will provide you with a jersey and a care package of swag to represent Nouns at the event. We expect active participation in sharing our key event posts before, during, and after the event. \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"In order to be eligible submit a proposal explaining why you'd be an excellent representative for Nouns at Battle of BC. Tell us about yourself, your previous results, and why our community should choose you.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}",
+  "description": null,
+  "createdAt": "2024-02-28T04:52:47.000Z",
+  "start": "2024-02-28T04:52:47.000Z",
+  "votingStart": "2024-03-16T03:52:48.000Z",
+  "end": "2024-03-19T03:52:48.000Z",
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_045d586e065a6156e8db83a1",
+  "name": "Plucky",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiav5rk5np6xbu44zh4u6z762ocjk3a66iozzqa5g5yurddzudpj4i",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA8F55E100201661d5aBa880195EaB8dC7761f024",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x3F1300E6509b6DdAdC1B6D15696A3b05F7971E2C",
+      "kind": "external"
+    }
+  ]
+}

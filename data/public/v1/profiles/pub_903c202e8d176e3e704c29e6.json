@@ -1,0 +1,14 @@
+{
+  "id": "pub_903c202e8d176e3e704c29e6",
+  "name": "BirdMan51127",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=1ycl4l&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x438364702e1b41A3B188da25e8a8A18cE9310E8e",
+      "kind": "external"
+    }
+  ]
+}

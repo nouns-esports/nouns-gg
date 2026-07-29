@@ -1,0 +1,19 @@
+{
+  "id": "pub_9ab9a72b60287aaa08aaa89c",
+  "name": "BreezyBiscuit",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreif233tyfog5i7s4raw6pn7ldc43xm6zdyqfma6raxh7dw73mdhr2e",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x074285f0C436ba73C8d4A8Fa4C4C56ffd62D4e07",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x5caA3F86575bBCB3d6554a010Be1fDCa8A55d026",
+      "kind": "external"
+    }
+  ]
+}

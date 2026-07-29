@@ -1,0 +1,14 @@
+{
+  "id": "pub_df1b876d5d82d6490cdba6e0",
+  "name": "babytrading",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=uueqm&background=1",
+  "bio": "I am babytrading from VN",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE3BE4F5390C7760BFC095D6b1F63619B2D09639E",
+      "kind": "external"
+    }
+  ]
+}

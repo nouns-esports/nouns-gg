@@ -1,0 +1,19 @@
+{
+  "id": "pub_92845d9148749ddf0b338fc8",
+  "name": "Giddy Gadget",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreig2plbhi3qgrz54kc3mjuepck2yhjo4k3wb46a4v4i7uxgyehd2q4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x02cd908A22B2BFc757680125e48b15c06eb326FA",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x1ca1FF496Ecf168b1cdECC816f469ad408F9C273",
+      "kind": "external"
+    }
+  ]
+}

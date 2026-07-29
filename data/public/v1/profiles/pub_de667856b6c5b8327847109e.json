@@ -1,0 +1,18 @@
+{
+  "id": "pub_de667856b6c5b8327847109e",
+  "name": "Chuwaca",
+  "image": "https://pbs.twimg.com/profile_images/998751440569909249/c2Njeuib_normal.jpg",
+  "bio": "Dota 2 content creator",
+  "twitter": {
+    "username": "ChuwacaDota2",
+    "name": "Chuwaca",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/998751440569909249/c2Njeuib_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xDd58Ff4f71b385e6be41236fA01C639dE2fFA6Fe",
+      "kind": "external"
+    }
+  ]
+}

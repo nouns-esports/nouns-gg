@@ -1,0 +1,14 @@
+{
+  "id": "pub_1b116cd168544c8d95fce3de",
+  "name": "Rueby",
+  "image": "https://ipfs.nouns.gg/ipfs/QmYQuUf4wVKXptZko7khaadCXocif3qaLVymKmGqBeksRM",
+  "bio": "Self-taught digital artist passionate about exploring emotions, spiritual realms and creativity.",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xbBB48307D11C89e5B1A9a23250D701c4A842cDf1",
+      "kind": "external"
+    }
+  ]
+}

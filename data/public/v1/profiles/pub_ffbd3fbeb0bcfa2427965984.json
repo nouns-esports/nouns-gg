@@ -1,0 +1,18 @@
+{
+  "id": "pub_ffbd3fbeb0bcfa2427965984",
+  "name": "David V. Kimball",
+  "image": "https://pbs.twimg.com/profile_images/1617017596175613952/KSOIgfyj_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "davidvkimball",
+    "name": "David V. Kimball",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1617017596175613952/KSOIgfyj_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2e2A374D9Af3B9F596EB772BC41a2157b3f23B6a",
+      "kind": "external"
+    }
+  ]
+}

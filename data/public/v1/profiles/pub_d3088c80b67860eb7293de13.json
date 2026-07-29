@@ -1,0 +1,18 @@
+{
+  "id": "pub_d3088c80b67860eb7293de13",
+  "name": "Amber Brown",
+  "image": "https://pbs.twimg.com/profile_images/1947601173407502336/1XCC7PWf_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "AmberBrownArt",
+    "name": "Amber Brown",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947601173407502336/1XCC7PWf_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7212D37A62111c488c17C13B0B692ac049ECDD68",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_b39a329b375d3b186336b80e",
+  "name": "cmdte6pd",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreie6fyi7k3cyocacz6accuarcsa4zlryigug4w2auypmf6ws7kaxdq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x497eE416c48A1F79cd54B06C535a6CcD4CF91248",
+      "kind": "external"
+    }
+  ]
+}

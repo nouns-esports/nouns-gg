@@ -1,0 +1,14 @@
+{
+  "id": "pub_8748d91bacc32ecc5ed704bf",
+  "name": "Anis",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreia6bgpyvpbmze2jzwzvm4dyxh2hdzfmu4vf6mvz2zucqmcpjgkm5m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc417f09b0cF30c12E5721C4C98142ba5674F37dE",
+      "kind": "external"
+    }
+  ]
+}

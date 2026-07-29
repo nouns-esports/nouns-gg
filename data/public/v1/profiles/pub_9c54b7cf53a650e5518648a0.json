@@ -1,0 +1,18 @@
+{
+  "id": "pub_9c54b7cf53a650e5518648a0",
+  "name": "🖤𝐏𝐚𝐜𝐢𝐟𝐢𝐜𝐑𝐨𝐬𝐞💮",
+  "image": "https://pbs.twimg.com/profile_images/1777408005903925249/n81l_qvd_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "CarleMontoya",
+    "name": "🖤𝐏𝐚𝐜𝐢𝐟𝐢𝐜𝐑𝐨𝐬𝐞💮",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1777408005903925249/n81l_qvd_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6953F8f4E8A58b41b51589d14FC0F1A2C1a74272",
+      "kind": "external"
+    }
+  ]
+}

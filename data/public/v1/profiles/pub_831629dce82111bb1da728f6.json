@@ -1,0 +1,14 @@
+{
+  "id": "pub_831629dce82111bb1da728f6",
+  "name": "cmd87rhf",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiasl4wcu6hxlxekb2dmmtyob4s6pzqf2qbnbxj77t6tpoewgqubp4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x552b7200c91239D82AA96a762bC196472458f8b7",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "product:odyssey-esports:boost-the-works-prize-pool",
+  "handle": "boost-the-works-prize-pool",
+  "name": "Boost The Works 2025 Prize Pool",
+  "description": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Help build something special at The Works 2025. Every purchase of this digital item adds $10 to the prize pool, directly supporting the players and the competitive scene we all love.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": false,
+  "active": false,
+  "community": {
+    "id": "community:odyssey-esports",
+    "handle": "odyssey-esports",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreigf3pum6hynmtjhouhdn7vc76nk3gkgyqd3prvo4yiihieq4org4m",
+    "name": "Odyssey Esports",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:odyssey-esports:the-works",
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:e1ed67b5-482a-438a-bd81-a3b636bf5ca6",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeibqwz5fd6p2fkeaf6mufjf27u5tu73z7hy4eqfz5zciigzw6xtnsu"
+      ],
+      "size": null,
+      "color": null,
+      "price": "12.00",
+      "inventory": null
+    }
+  ]
+}

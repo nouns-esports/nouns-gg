@@ -1,0 +1,18 @@
+{
+  "id": "pub_34ee9c525c183e7928be2d0e",
+  "name": "⌐◨-◨ Sareyu⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1831685244623192064/KD0KrFGK_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "SareyuSoya",
+    "name": "⌐◨-◨ Sareyu⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1831685244623192064/KD0KrFGK_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x950bB4D7F648a923bcb974534e40b4cE4E3C8aA6",
+      "kind": "external"
+    }
+  ]
+}

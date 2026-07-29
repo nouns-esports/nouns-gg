@@ -1,0 +1,23 @@
+{
+  "id": "pub_80634b7de21798f8d46eeb90",
+  "name": "glitchbyte.ai",
+  "image": "https://pbs.twimg.com/profile_images/1923292422760808448/xQRP8xV0_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "glitchbyte_ai",
+    "name": "glitchbyte.ai",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923292422760808448/xQRP8xV0_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x85f84535930B3dCe62f0Dfad04203718dad9Ce07",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x6dCEd514aaFddef48655264D26E1b124d731cAb5",
+      "kind": "external"
+    }
+  ]
+}

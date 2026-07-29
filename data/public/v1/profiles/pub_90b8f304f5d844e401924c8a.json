@@ -1,0 +1,23 @@
+{
+  "id": "pub_90b8f304f5d844e401924c8a",
+  "name": "wlt.vibe on farcaster 🧩",
+  "image": "https://pbs.twimg.com/profile_images/1886612936182964224/H3eUYi70_normal.jpg",
+  "bio": "Farcade Vibe-Coder 👾 FLAPCASTER 👾 Crypto-parental-unit, hodler of bags",
+  "twitter": {
+    "username": "d_a_n_n_y__w",
+    "name": "wlt.vibe on farcaster 🧩",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1886612936182964224/H3eUYi70_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xce0D1D8A262beB15b1C3C3A6827c191b5ee3F05B",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x8d858e54023691A14cFc182b14e326F65e0505Af",
+      "kind": "external"
+    }
+  ]
+}

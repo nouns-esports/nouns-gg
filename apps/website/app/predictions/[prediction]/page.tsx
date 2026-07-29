@@ -1,6 +1,11 @@
 import { getPrediction } from "@/server/queries/predictions";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
+import { predictionParams } from "@/server/data/params";
+
+export function generateStaticParams() {
+	return predictionParams.map(({ prediction }) => ({ prediction }));
+}
 
 export default async function Prediction(props: {
 	params: Promise<{ prediction: string }>;

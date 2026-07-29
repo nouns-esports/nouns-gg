@@ -1,0 +1,14 @@
+{
+  "id": "pub_f924b4cbc168464dee5829d0",
+  "name": "cmdklel5",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibh4zrqi26wmqt5huxrleoi4xgtqocgapaalccv5l3paqqqyxgtta",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x02bF0E36382f95b921579f816B369C3E87293070",
+      "kind": "external"
+    }
+  ]
+}

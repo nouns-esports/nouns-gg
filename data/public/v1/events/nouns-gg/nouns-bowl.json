@@ -1,0 +1,660 @@
+{
+  "id": "event:nouns-gg:nouns-bowl",
+  "handle": "nouns-bowl",
+  "name": "Nouns Bowl",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+  "description": "The Nouns Bowl is a brand-new Smash Major in the heart of Canton, Ohio! Join us at the Hall of Fame Village Campus, as we celebrate the spirit of Smash and battle for the ultimate prize!",
+  "createdAt": "2025-04-26T10:00:00.000Z",
+  "start": "2025-04-26T10:00:00.000Z",
+  "end": "2025-04-28T10:00:00.000Z",
+  "active": true,
+  "featured": false,
+  "callToAction": {
+    "disabled": false,
+    "label": "Register",
+    "url": "https://www.start.gg/tournament/nouns-bowl-2025/register"
+  },
+  "location": {
+    "name": "Canton, OH",
+    "url": "https://maps.app.goo.gl/aFXgky42XXRiLNFJ6"
+  },
+  "details": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 1
+        },
+        "content": [
+          {
+            "text": "Welcome to The Nouns Bowl ⌐◨-◨",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "The Nouns Bowl is a brand-new Smash Major in the heart of Canton, Ohio! Join us at the Hall of Fame Village Campus, as we celebrate the spirit of Smash and battle for the ultimate prize!",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Event Overview",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Beautiful Venue at Hall of Fame Village",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "https://skywayvr.com/tour/hofvillage/"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Top Level Smash Competition",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Nounsvitational Spots on the line",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Finals on the Jumbotron",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "youtube",
+        "attrs": {
+          "src": "https://www.youtube.com/watch?v=Qn46AUmEk-I"
+        }
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Registration Details",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 3
+        },
+        "content": [
+          {
+            "text": "Venue Fee",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Early Bird Venue Fee",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": $45 (Ends 11:59PM EST 1/31)",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Normal Venue Fee",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": $55 (Ends 11:59PM EST 3/31)",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Late Venue Fee",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": $70 (Ends 11:59PM EST 4/18)",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "I Hate TO's Venue Fee",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": $100 (Ends 11:59PM EST 4/19)",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 3
+        },
+        "content": [
+          {
+            "text": "Entry Fee",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Singles",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": $15",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Doubles",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": $5",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "2 Day Spectator Pass",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ": $35",
+                    "type": "text"
+                  },
+                  {
+                    "text": "Note: Spectator passes are only purchasable as a 2-day pass. We do NOT sell single-day passes",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "attrs": {
+          "alt": "",
+          "src": "https://images.start.gg/images/profileWidgetPageLayout/3411822/image-94d2855e212a7ec5f2a75f5f90e95523.png?ehk=lRQPUm43%2BPPeq3tSd%2BkdPtdr8l6N9cz0V9cbFv1QeQk%3D&ehkOptimized=duHF%2BaNnwtGk%2BFwMUY5E92Jf2ORPOYpejs6fnNAjyAs%3D"
+        },
+        "marks": [
+          {
+            "type": "link",
+            "attrs": {
+              "href": "https://www.choicehotels.com/reservations/groups/GT18E6",
+              "target": "_blank"
+            }
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Event Safety & Refunds",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 3
+        },
+        "content": [
+          {
+            "text": "Refund Policy",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Refunds will be processed up until 11:59PM EST on 3/15",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "If you wish to transfer your registration to someone else, email ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "[redacted email]",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " with the Start.gg discriminator of both the attendee and the competitor receiving your registration.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 3
+        },
+        "content": [
+          {
+            "text": "Prohibited Items for This Event",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Weapons of any kind, including firearms, knives, and other sharp objects",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Explosives, fireworks, and other hazardous materials",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Illegal drugs and alcohol",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Outside food and drinks (empty water bottles are permitted)",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Laser pointers and other similar devices that can cause eye damage or distract players",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Drones and other remote-controlled flying devices",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Any items that could be used to cause harm or disrupt the event, such as air horns, loudspeakers, or noisemakers",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Get Involved",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Media Pass Application",
+            "type": "text",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://docs.google.com/forms/d/e/1FAIpQLScCdQRv4MhPL0-WWKtbPv-FQ-HB5awEuXFqlXuQDfbftsvzZw/viewform"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Commentary Application",
+            "type": "text",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://docs.google.com/forms/d/e/1FAIpQLSdoY0RwghyCf7eL9mUVRcwCVN1Qs-LGDiN-Enuq4gaG2hMAyw/viewform"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Exhibitor Application",
+            "type": "text",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://docs.google.com/forms/d/e/1FAIpQLScpYMKZnH7isAkDDkXdSsbDp5jOiDaeNzb88DJCiuIzrmiLQA/viewform"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "attrs": {
+          "alt": "",
+          "src": "https://images.start.gg/images/profileWidgetPageLayout/3411822/image-b7b091badc67a69939e9ad6a8b02b73b.jpg?ehk=SFzI0zfmkpdEODJUvrU2ejleIGJi6YoN4PTJiJhtXOU%3D&ehkOptimized=RLS5J8f5uBmyiM9m5F2ijtlsrCmuamGRA%2BS9aGoqRCE%3D"
+        }
+      }
+    ]
+  },
+  "attendeeCount": 273,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  }
+}

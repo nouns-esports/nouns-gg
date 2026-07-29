@@ -1,0 +1,14 @@
+{
+  "id": "pub_4f9a8b43d5bc7f317d0566c8",
+  "name": "chainwax",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=vx1rd&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x29e9B2058e9F4AE78040a57f6A1bE0366b969e43",
+      "kind": "external"
+    }
+  ]
+}

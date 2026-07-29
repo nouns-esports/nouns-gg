@@ -1,0 +1,18 @@
+{
+  "id": "pub_23e92898e64442b4a5cacbee",
+  "name": "Cobs",
+  "image": "https://pbs.twimg.com/profile_images/1788320014153478144/s-9wa_Bq_normal.jpg",
+  "bio": "Merci",
+  "twitter": {
+    "username": "Cobsfar",
+    "name": "Cobs",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1788320014153478144/s-9wa_Bq_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7edbd4c8C51b8ebE359F0993Ed4c01d41b24f142",
+      "kind": "external"
+    }
+  ]
+}

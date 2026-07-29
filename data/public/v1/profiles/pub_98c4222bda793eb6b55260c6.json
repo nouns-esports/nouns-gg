@@ -1,0 +1,14 @@
+{
+  "id": "pub_98c4222bda793eb6b55260c6",
+  "name": "Maguette D",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiazi4v2lpztogygf7zfitnzjgobnywqjm62nwkwvbgv24fc4tuily",
+  "bio": "Life enjoyor ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x00dA39020A9433049380FE62b99DeDeD6aa0e633",
+      "kind": "external"
+    }
+  ]
+}

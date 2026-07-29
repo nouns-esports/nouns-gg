@@ -1,0 +1,14 @@
+{
+  "id": "pub_1cf32367e0ddf258bd2f3964",
+  "name": "cmdrsove",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreid7i3acajy72nptv3q4kdcsb5a3rieukm7lltc75kbhjnoorhuei4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x28C0B8c4d06FB87f7360d4269c9825c90008e415",
+      "kind": "external"
+    }
+  ]
+}

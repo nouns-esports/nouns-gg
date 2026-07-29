@@ -1,0 +1,14 @@
+{
+  "id": "pub_9c8fc12ed732e8f80df8f049",
+  "name": "chrislarsc",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=02611n&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6E6996997bA6DA60dD3320b010c122577cD5fe28",
+      "kind": "external"
+    }
+  ]
+}

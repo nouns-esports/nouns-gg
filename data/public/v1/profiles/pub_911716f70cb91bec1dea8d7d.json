@@ -1,0 +1,14 @@
+{
+  "id": "pub_911716f70cb91bec1dea8d7d",
+  "name": "とり い",
+  "image": "https://ipfs.nouns.gg/ipfs/QmQvL5gNV3b6VQWw3CbiU6voiTezL68oWkj5yaRT8S5xZF",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x59196dd04aBdb9Ea6cFc37B83aA00d8Cfd2a29A0",
+      "kind": "external"
+    }
+  ]
+}

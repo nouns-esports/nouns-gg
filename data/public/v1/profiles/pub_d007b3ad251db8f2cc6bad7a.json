@@ -1,0 +1,18 @@
+{
+  "id": "pub_d007b3ad251db8f2cc6bad7a",
+  "name": "muratd.eth 🦍",
+  "image": "https://pbs.twimg.com/profile_images/1878888915815276545/S5zi5TBN_normal.jpg",
+  "bio": "muratd.eth",
+  "twitter": {
+    "username": "muratdeth",
+    "name": "muratd.eth 🦍",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1878888915815276545/S5zi5TBN_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xF871584DEE6eF58Ed46d3CAb4E764212eEA79f74",
+      "kind": "external"
+    }
+  ]
+}

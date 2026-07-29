@@ -3,10 +3,9 @@ import Link from "@/components/Link";
 import QuestCard from "@/components/QuestCard";
 import RoundCard from "@/components/RoundCard";
 import { getEvent } from "@/server/queries/events";
-import { getAuthenticatedUser } from "@/server/queries/users";
 import { CalendarDays, MapPinned } from "lucide-react";
 import type { Metadata } from "next";
-import { env } from "~/env";
+import { siteConfig } from "@/config";
 import { notFound, redirect } from "next/navigation";
 import Button from "@/components/Button";
 import { twMerge } from "tailwind-merge";
@@ -15,7 +14,6 @@ import TipTap from "@/components/TipTap";
 import { ToggleModal } from "@/components/Modal";
 import EventAttendeesModal from "@/components/modals/EventAttendeesModal";
 import RaffleCard from "@/components/RaffleCard";
-import EnterRaffleModal from "@/components/modals/EnterRaffleModal";
 import { getRounds } from "@/server/queries/rounds";
 import { getPredictions } from "@/server/queries/predictions";
 import { getProducts } from "@/server/queries/shop";
@@ -23,6 +21,11 @@ import { getQuests } from "@/server/queries/quests";
 import { getRaffles } from "@/server/queries/raffles";
 import PredictionCard from "@/components/PredictionCard";
 import { isUUID } from "@/utils/isUUID";
+import { eventParams } from "@/server/data/params";
+
+export function generateStaticParams() {
+	return eventParams;
+}
 
 export async function generateMetadata(props: {
 	params: Promise<{ event: string; community: string }>;
@@ -47,7 +50,7 @@ export async function generateMetadata(props: {
 	return {
 		title: event.name,
 		description: null,
-		metadataBase: new URL(env.NEXT_PUBLIC_DOMAIN),
+		metadataBase: new URL(siteConfig.domain),
 		openGraph: {
 			type: "website",
 			images: [event.image],
@@ -66,7 +69,7 @@ export async function generateMetadata(props: {
 					action: {
 						type: "launch_frame",
 						name: "Nouns GG",
-						url: `${env.NEXT_PUBLIC_DOMAIN}/events/${event.handle}`,
+						url: `${siteConfig.domain}/events/${event.handle}`,
 						splashImageUrl:
 							"https://ipfs.nouns.gg/ipfs/bafkreia2vysupa4ctmftg5ro73igggkq4fzgqjfjqdafntylwlnfclziey",
 						splashBackgroundColor: "#040404",
@@ -85,17 +88,14 @@ export default async function EventPage(props: {
 }) {
 	const params = await props.params;
 	const searchParams = await props.searchParams;
-	const user = await getAuthenticatedUser();
-
 	let event: Awaited<ReturnType<typeof getEvent>> | undefined;
 
 	if (isUUID(params.event)) {
-		event = await getEvent({ id: params.event, user: user?.id });
+		event = await getEvent({ id: params.event });
 	} else {
 		event = await getEvent({
 			handle: params.event,
 			community: params.community,
-			user: user?.id,
 		});
 	}
 
@@ -120,17 +120,17 @@ export default async function EventPage(props: {
 	const rounds = tab === "rounds" ? await getRounds({ event: event.id }) : [];
 	const quests =
 		tab === "quests"
-			? await getQuests({ event: event.id, user: user?.id })
+			? await getQuests({ event: event.id })
 			: [];
 	const predictions =
 		tab === "predictions"
-			? await getPredictions({ event: event.id, user: user?.id })
+			? await getPredictions({ event: event.id })
 			: [];
 	const [products, raffles] =
 		tab === "shop"
 			? await Promise.all([
 					getProducts({ event: event.id }),
-					getRaffles({ event: event.id, user: user?.id }),
+					getRaffles({ event: event.id }),
 				])
 			: [[], []];
 
@@ -416,15 +416,6 @@ export default async function EventPage(props: {
 				</div>
 			</div>
 			<EventAttendeesModal attendees={attendees} />
-			{raffles.map((raffle) => {
-				return (
-					<EnterRaffleModal
-						key={raffle.id}
-						availableGold={user?.gold ?? 0}
-						raffle={raffle}
-					/>
-				);
-			})}
 		</>
 	);
 }

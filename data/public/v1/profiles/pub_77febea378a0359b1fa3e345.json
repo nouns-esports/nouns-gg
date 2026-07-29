@@ -1,0 +1,14 @@
+{
+  "id": "pub_77febea378a0359b1fa3e345",
+  "name": "GuacalaStudio",
+  "image": "https://ipfs.nouns.gg/ipfs/QmazvK45MxPH65XVciUPmFG9AjxrgGQjxePDRBAs68Jq7Y",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xaE7eFa45EFde2F91336392c188dD5dB21B02937B",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_853bb814ac1f0d90ff1030a8",
+  "name": "krel",
+  "image": "https://pbs.twimg.com/profile_images/1911512054185213952/1nVO242a_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "krel404",
+    "name": "krel",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1911512054185213952/1nVO242a_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA86882277E69FbF0a51805cdc8b0a3a113079E63",
+      "kind": "external"
+    }
+  ]
+}

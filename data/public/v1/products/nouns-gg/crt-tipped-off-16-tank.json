@@ -1,0 +1,192 @@
+{
+  "id": "product:nouns-gg:crt-tipped-off-16-tank",
+  "handle": "crt-tipped-off-16-tank",
+  "name": "CRT Tipped Off 16 Tank",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:tipped-off-16",
+  "collectionHandle": "tipped-off-16",
+  "variants": [
+    {
+      "id": "variant:cfe3f5f7-362d-43d4-8035-d8438d7a8b8a",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+      ],
+      "size": "xs",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:483ba1bb-e27f-4068-a1e4-724208389155",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#353535",
+        "name": "Charcoal-Black Triblend"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:56f4c571-92cb-4712-8527-5a238f7b3a69",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#353535",
+        "name": "Charcoal-Black Triblend"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:201c900e-a307-4b1d-b0ee-5e5ba388a6ec",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#353535",
+        "name": "Charcoal-Black Triblend"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:b9fb2f33-128c-400c-9063-b686c81f200d",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#353535",
+        "name": "Charcoal-Black Triblend"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:474aa6bc-2b96-4b3f-908e-a6b663cc323e",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#353535",
+        "name": "Charcoal-Black Triblend"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:fb53ebbc-d64b-4d67-981c-4ea328449e49",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+      ],
+      "size": "2xl",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:054498b6-6098-4079-a6e2-a75eeb012e15",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+      ],
+      "size": "xs",
+      "color": {
+        "hex": "#353535",
+        "name": "Charcoal-Black Triblend"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:758a1dc5-6963-465c-9764-f72ebf9df69c",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+      ],
+      "size": "s",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:2928fd3e-03b6-4323-82a3-ced063d0f60c",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+      ],
+      "size": "m",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:a41d8168-debc-48ce-98bb-8efd687781a1",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+      ],
+      "size": "l",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:faaf93c1-e8ec-4cec-8118-b7035ab20edd",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+      ],
+      "size": "xl",
+      "color": {
+        "hex": "#000000",
+        "name": "Black"
+      },
+      "price": "20.00",
+      "inventory": null
+    }
+  ]
+}

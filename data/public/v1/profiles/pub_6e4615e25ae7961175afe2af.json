@@ -1,0 +1,14 @@
+{
+  "id": "pub_6e4615e25ae7961175afe2af",
+  "name": "mikedotexe",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaskrwudq4nazqddoksa6vjj57vn335iilecpgp3x4ulcjej3r6xe",
+  "bio": "hakuna matata",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2941022347348828A24a5ff33c775D67691681e9",
+      "kind": "external"
+    }
+  ]
+}

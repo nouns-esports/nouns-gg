@@ -1,0 +1,14 @@
+{
+  "id": "pub_d75c51fcac4103830adf31ce",
+  "name": "cmok2wi0",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreid7jdyhmjkn5ejzzfnfuj55ct2zbt6mvaqun42nc2v5lpf5qsrb6m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB23Ff23817F7400E12b37EFB7b5d33B7724A4b6a",
+      "kind": "external"
+    }
+  ]
+}

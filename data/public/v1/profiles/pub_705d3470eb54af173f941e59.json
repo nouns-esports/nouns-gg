@@ -1,0 +1,18 @@
+{
+  "id": "pub_705d3470eb54af173f941e59",
+  "name": "Nouns | MinusOnHit || Keolaization @ EVO Japan 24",
+  "image": "https://pbs.twimg.com/profile_images/1775925914871922689/xwTa9Yyz_normal.jpg",
+  "bio": "Fighting game enjoyer and cheesy man",
+  "twitter": {
+    "username": "keolaization",
+    "name": "Nouns | MinusOnHit || Keolaization @ EVO Japan 24",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1775925914871922689/xwTa9Yyz_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa236bbE13517D7FE9d613C3E0E58387a9661b9D3",
+      "kind": "external"
+    }
+  ]
+}

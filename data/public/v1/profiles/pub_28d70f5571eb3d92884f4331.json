@@ -1,0 +1,14 @@
+{
+  "id": "pub_28d70f5571eb3d92884f4331",
+  "name": "cmd7n7s3",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigl72gwsevfxumxkn4wtxco7sylj5ocx53f7awgy7dt3iziv4jsji",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x827605D4BDf392696FF1e6f9Ac1b3c3767e3a414",
+      "kind": "external"
+    }
+  ]
+}

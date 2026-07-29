@@ -1,0 +1,18 @@
+{
+  "id": "pub_9ba6b1b56e0c29277313af86",
+  "name": "satori.base.eth ⌐◨-◨ ❘ ❙ ❚",
+  "image": "https://pbs.twimg.com/profile_images/1782945090740047872/k9Uo6Str_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "0xSatori",
+    "name": "satori.base.eth ⌐◨-◨ ❘ ❙ ❚",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1782945090740047872/k9Uo6Str_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdcf37d8Aa17142f053AAA7dc56025aB00D897a19",
+      "kind": "external"
+    }
+  ]
+}

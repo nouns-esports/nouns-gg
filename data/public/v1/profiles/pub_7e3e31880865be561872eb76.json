@@ -1,0 +1,18 @@
+{
+  "id": "pub_7e3e31880865be561872eb76",
+  "name": "Stray Strongs",
+  "image": "https://pbs.twimg.com/profile_images/1908941438882086912/HEfXzHM0_normal.png",
+  "bio": "FOUNS creator https://www.instagram.com/straystrong.wtf  \nconnecting people through inspiration.\n*1º crosstrasher of web3",
+  "twitter": {
+    "username": "FOUNSSSS",
+    "name": "Stray Strongs",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1908941438882086912/HEfXzHM0_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE126717e61A73Fbb4F96175Bb3FFAfa7Ac01f823",
+      "kind": "external"
+    }
+  ]
+}

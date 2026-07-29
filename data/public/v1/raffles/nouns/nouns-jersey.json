@@ -1,0 +1,45 @@
+{
+  "id": "raffle:nouns:nouns-jersey",
+  "handle": "nouns-jersey",
+  "name": "Nouns GG Jersey",
+  "description": {
+    "type": "doc",
+    "content": []
+  },
+  "images": [
+    "https://ipfs.nouns.gg/ipfs/bafybeid53vf4o6c5hnjknjcrjg5epjb3mpvynhtxwfjoupi33uev6oq4fy"
+  ],
+  "start": "2025-04-30T00:19:18.770Z",
+  "end": "2025-05-05T05:00:00.000Z",
+  "createdAt": "2025-04-30T00:19:18.770Z",
+  "gold": 300,
+  "xp": {
+    "winning": 0,
+    "entering": 0
+  },
+  "winners": 1,
+  "limit": null,
+  "active": true,
+  "totalEntries": 71,
+  "community": {
+    "id": "community:nouns",
+    "handle": "nouns",
+    "image": "https://warpcast.com/~/channel-images/nouns.png",
+    "name": "Nouns",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns:haus-of-nouns-nyc",
+  "entries": []
+}

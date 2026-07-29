@@ -1,0 +1,226 @@
+{
+  "id": "round:lilnouns:lilnouns-japan",
+  "handle": "lilnouns-japan",
+  "name": "Lil Nouns is Sponsoring a Content Creator for the Nounsvitational!",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigpvncsmwcsryg27ix5rlmx3hrixvel2k3xwufrojb2dg7ylzqtoq",
+  "active": true,
+  "type": "markdown",
+  "featured": false,
+  "xp": {
+    "winning": 0,
+    "castingVotes": 250,
+    "receivingVotes": 5,
+    "creatingProposal": 500
+  },
+  "content": "{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Destination: Japan! Lil Nouns is Sponsoring a Content Creator for the Nounsvitational!\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"heading\",\"version\":1,\"tag\":\"h2\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"This is your chance to document one of the most anticipated events in the Smash community! Lil Nouns is searching for one exceptional content creator to be our official correspondent at the Nounsvitational. We want you to capture the hype, the highlights, and the heart of the tournament, sharing it all with the world from a unique Lil Nouns perspective.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"children\":[],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"link\",\"version\":1,\"rel\":null,\"target\":null,\"title\":\"The-Ultimate-Prize-Package\",\"url\":\"#The-Ultimate-Prize-Package\"},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"The Ultimate Prize Package:\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"heading\",\"version\":1,\"tag\":\"h2\"},{\"children\":[{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"The chosen creator will receive an all-access pass to the action, including:\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":1,\"textStyle\":\"\"},{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Round Trip Airfare to Japan\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"listitem\",\"version\":1,\"value\":1},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Hotel Accommodations in the heart of the excitement\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"listitem\",\"version\":1,\"value\":2},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"A VIP Ticket to the full Nounsvitational Experience from December 1st to 8th\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"listitem\",\"version\":1,\"value\":3}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"list\",\"version\":1,\"listType\":\"bullet\",\"start\":1,\"tag\":\"ul\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"(The total value of the flight and hotel is capped at $2,500.)\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"children\":[],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"link\",\"version\":1,\"rel\":null,\"target\":null,\"title\":\"What-We-Expect-From-Our-Champion\",\"url\":\"#What-We-Expect-From-Our-Champion\"},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"What We Expect From Our Champion:\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"heading\",\"version\":1,\"tag\":\"h2\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"As our on-the-ground reporter, you will be expected to:\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Produce and publish compelling content (videos, photo stories, interviews, etc.) live from the event.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"listitem\",\"version\":1,\"value\":1},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Amplify your work across your social media channels, making sure to tag Lil Nouns in every post.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"listitem\",\"version\":1,\"value\":2}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"list\",\"version\":1,\"listType\":\"number\",\"start\":1,\"tag\":\"ol\"},{\"children\":[{\"children\":[],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"link\",\"version\":1,\"rel\":null,\"target\":null,\"title\":\"Ready-for-an-Adventure-Heres-How-to-Apply\",\"url\":\"#Ready-for-an-Adventure-Heres-How-to-Apply\"},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Ready for an Adventure? Here's How to Apply:\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"heading\",\"version\":1,\"tag\":\"h2\"},{\"children\":[{\"detail\":0,\"format\":1,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Your submission must include:\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":1,\"textStyle\":\"\"},{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"A compelling one-minute video: Tell the Lil Nouns community who you are and why you're the ideal candidate to represent us in Japan.1.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"listitem\",\"version\":1,\"value\":1},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"A clear content plan: In your video, outline the kind of stories you'll tell, where you'll post them, and what makes your creative vision a must-see for the Smash community.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"listitem\",\"version\":1,\"value\":2}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"list\",\"version\":1,\"listType\":\"number\",\"start\":1,\"tag\":\"ol\"}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}",
+  "description": null,
+  "createdAt": "2025-07-04T10:00:00.000Z",
+  "start": "2025-07-04T10:00:00.000Z",
+  "votingStart": "2025-07-20T10:00:00.000Z",
+  "end": "2025-07-29T10:00:00.000Z",
+  "community": {
+    "id": "community:lilnouns",
+    "handle": "lilnouns",
+    "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/9460da51-7bb1-445b-c733-e18723c25c00/original",
+    "name": "Lil Nouns",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": "https://warpcast.com/~/channel/lilnouns",
+    "details": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 1
+          },
+          "content": [
+            {
+              "text": "🧠 What is a Lil Noun?",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Launched in May 2022, Lil Nouns is a community-run DAO built on the same principles as Nouns DAO. It introduces a new layer to the ecosystem, designed to welcome more people in with lower-cost, always-available NFTs. By doing so, Lil Nouns helps grow awareness of Nouns while empowering a new generation of collectors and contributors.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Each Lil Noun is a 16×16 pixel art character, randomly generated and minted on the Ethereum blockchain every 15 minutes. With traits like colorful heads, accessories, and backgrounds, no two Lil Nouns are the same. And thanks to their CC0 (Creative Commons Zero) license, anyone can use, remix, or build on them—no restrictions, no permission needed.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Lil Nouns isn't just a collection—it's a gateway into a vibrant, creative, and decentralized community.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "🗳️ How Does the DAO Work?",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Owning a Lil Noun gives you a voice in the Lil Nouns DAO, with each NFT counting as one vote. The DAO manages a shared treasury that's funded by ongoing NFT auctions, and it's up to the community to decide how those funds are used. Anyone can submit a proposal and vote on initiatives they care about. So far, the DAO has backed a wide range of projects like esports sponsorships, creative public goods, and even podcasts like The Lil Nouns Show. It's a flexible system powered by the ideas and votes of the Lil Nouns community.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "🔗 Explore More",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🌐 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Official Website",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://lilnouns.wtf/"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🔨 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Lil Nouns Camp",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://lilnouns.camp/"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "👨‍💻 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "GitHub",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://github.com/lilnouns"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🖥️ ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Discord",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://discord.gg/4avSUMVWyF"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": false,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null
+}

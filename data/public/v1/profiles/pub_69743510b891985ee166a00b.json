@@ -1,0 +1,14 @@
+{
+  "id": "pub_69743510b891985ee166a00b",
+  "name": "cmdklp34",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibr3pqfxql6g53vyf6twckfteeujvahzt2ugw4hwjfhxf2ynn2u7a",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xFEA22f74F929893E1793b30e7c66fDfDfE6fBF2F",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "id": "quest:lilnouns:lilnouner",
+  "handle": "lilnouner",
+  "name": "Become a Lil Nouner",
+  "description": null,
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigpvncsmwcsryg27ix5rlmx3hrixvel2k3xwufrojb2dg7ylzqtoq",
+  "createdAt": "2025-01-15T11:00:00.000Z",
+  "featured": false,
+  "active": true,
+  "start": null,
+  "end": null,
+  "xp": 500,
+  "points": "0.000000000000000000",
+  "community": {
+    "id": "community:lilnouns",
+    "handle": "lilnouns",
+    "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/9460da51-7bb1-445b-c733-e18723c25c00/original",
+    "name": "Lil Nouns",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": "https://warpcast.com/~/channel/lilnouns",
+    "details": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 1
+          },
+          "content": [
+            {
+              "text": "🧠 What is a Lil Noun?",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Launched in May 2022, Lil Nouns is a community-run DAO built on the same principles as Nouns DAO. It introduces a new layer to the ecosystem, designed to welcome more people in with lower-cost, always-available NFTs. By doing so, Lil Nouns helps grow awareness of Nouns while empowering a new generation of collectors and contributors.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Each Lil Noun is a 16×16 pixel art character, randomly generated and minted on the Ethereum blockchain every 15 minutes. With traits like colorful heads, accessories, and backgrounds, no two Lil Nouns are the same. And thanks to their CC0 (Creative Commons Zero) license, anyone can use, remix, or build on them—no restrictions, no permission needed.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Lil Nouns isn't just a collection—it's a gateway into a vibrant, creative, and decentralized community.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "🗳️ How Does the DAO Work?",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Owning a Lil Noun gives you a voice in the Lil Nouns DAO, with each NFT counting as one vote. The DAO manages a shared treasury that's funded by ongoing NFT auctions, and it's up to the community to decide how those funds are used. Anyone can submit a proposal and vote on initiatives they care about. So far, the DAO has backed a wide range of projects like esports sponsorships, creative public goods, and even podcasts like The Lil Nouns Show. It's a flexible system powered by the ideas and votes of the Lil Nouns community.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "text": "🔗 Explore More",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🌐 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Official Website",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://lilnouns.wtf/"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🔨 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Lil Nouns Camp",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://lilnouns.camp/"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "👨‍💻 ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "GitHub",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://github.com/lilnouns"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "🖥️ ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Discord",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "https://discord.gg/4avSUMVWyF"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": false,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "completions": [],
+  "actions": []
+}

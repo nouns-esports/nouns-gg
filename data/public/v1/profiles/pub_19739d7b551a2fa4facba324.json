@@ -1,0 +1,18 @@
+{
+  "id": "pub_19739d7b551a2fa4facba324",
+  "name": "Bobbie Anderson",
+  "image": "https://pbs.twimg.com/profile_images/1947402234418872321/Vyhy71Xu_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "BobbieAnde53742",
+    "name": "Bobbie Anderson",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947402234418872321/Vyhy71Xu_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD46169c3b67a969C0e37CB76aE358b7FFd2E0919",
+      "kind": "external"
+    }
+  ]
+}

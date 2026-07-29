@@ -1,0 +1,14 @@
+{
+  "id": "pub_412cd779f38043db15b70033",
+  "name": "marcdamico95",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreig23nwsbz2celgfrek4hcyfhszvdqgkravk6qmu3f25n43oqoviim",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x655A1792C743159a5c57B6DFAc2D92b48Fcac164",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,5194 @@
+[
+  {
+    "id": "vote:3740fdc7-094f-48c1-804a-2013e8f0edc0",
+    "userId": "pub_4f13230c356e23f47daf4094",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:05:58.788Z"
+  },
+  {
+    "id": "vote:fcf5c585-7b10-4c43-b0bf-285a1a58222e",
+    "userId": "pub_d287a4a0b8834ba1251f1823",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:10:13.085Z"
+  },
+  {
+    "id": "vote:273ec2ac-2eb4-4b4b-a0ba-1f7b91ad4acb",
+    "userId": "pub_96176786d04e289af9ed6878",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:11:22.243Z"
+  },
+  {
+    "id": "vote:53906b32-d422-4964-931c-615cb1f9b662",
+    "userId": "pub_5fb827e0e33e9721f85a265d",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:16:15.608Z"
+  },
+  {
+    "id": "vote:fa6505d6-eda7-41f1-8b3a-81262d118a3b",
+    "userId": "pub_f73a2c7e84930aaaf3a15b84",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:16:19.109Z"
+  },
+  {
+    "id": "vote:c446f946-9536-4168-ab98-59b5751ca0dc",
+    "userId": "pub_b9057be63cb008dc7fbe8e66",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:17:40.301Z"
+  },
+  {
+    "id": "vote:58fdcd5b-b1da-4faf-9063-8d30f11a5294",
+    "userId": "pub_2b478b3e98605c94eadc1596",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:18:37.990Z"
+  },
+  {
+    "id": "vote:54c5da21-45b8-4b6b-b735-24a338d6423c",
+    "userId": "pub_17d062fb02a832ffbfde1044",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:19:00.282Z"
+  },
+  {
+    "id": "vote:f20d17f5-35d0-4b5d-920c-a9a062baf9b1",
+    "userId": "pub_2a3440a72944466ed016505a",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:19:38.997Z"
+  },
+  {
+    "id": "vote:a0338f02-1b1f-42e5-8c13-0b539ab6a519",
+    "userId": "pub_f9da0c0b74fce91be1d37293",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:20:02.099Z"
+  },
+  {
+    "id": "vote:a560d89b-752b-43a3-837e-f31faa5c16f8",
+    "userId": "pub_6fc048b2a28c4bdf781ff276",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:30:31.696Z"
+  },
+  {
+    "id": "vote:c597959f-9bf2-4066-83fa-def5d9c09baf",
+    "userId": "pub_4256999c0a5f53d4067fbf45",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:44:15.925Z"
+  },
+  {
+    "id": "vote:0e39be8d-15d6-41fa-a009-e75399661e3f",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:f5ab7818-da54-40ee-8945-9bf396098dc3",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:46:06.550Z"
+  },
+  {
+    "id": "vote:5b827897-4cde-4d33-8738-f36980eeaa65",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:46:06.550Z"
+  },
+  {
+    "id": "vote:5257bf8a-fe8a-4e39-8851-aef6b6e7dd89",
+    "userId": "pub_d1f3ec0076d7dac2917602e9",
+    "proposalId": "proposal:13106d25-cc1b-45ed-a9f8-c3f91f9a3331",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:46:06.550Z"
+  },
+  {
+    "id": "vote:f71befde-645b-454c-83ce-88964cc3b87a",
+    "userId": "pub_e2b1f88eed720e20e0afd0e8",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T10:55:32.148Z"
+  },
+  {
+    "id": "vote:18edee85-b091-4ae9-9dc0-1f98d7ab6ffd",
+    "userId": "pub_066718b29b4056b00227764d",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T11:08:18.686Z"
+  },
+  {
+    "id": "vote:0a28f51e-c70e-4eec-94b2-1db28b95b511",
+    "userId": "pub_23333b865b425d9b57fdead2",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T11:16:36.119Z"
+  },
+  {
+    "id": "vote:15e27bc5-327b-46f2-ae01-260f715966dd",
+    "userId": "pub_35aa80e079a7fe91795251d9",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T11:23:22.858Z"
+  },
+  {
+    "id": "vote:782837e3-cc89-4e49-ba64-88789a45504f",
+    "userId": "pub_f741a625f34c9b721499aae7",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T12:48:02.108Z"
+  },
+  {
+    "id": "vote:8cb211dc-1939-4d8b-b279-fd0fb7188290",
+    "userId": "pub_1fa1e49870b263622eeefba8",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T14:27:29.743Z"
+  },
+  {
+    "id": "vote:e202fc88-3358-483e-a632-d602a0ec34f3",
+    "userId": "pub_a6cc2751892c7c11c6da1692",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T14:27:55.809Z"
+  },
+  {
+    "id": "vote:6c09cbdd-8a58-4f95-bdc9-727f8620bd7e",
+    "userId": "pub_af24840e77cfc92dc28a1c74",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T14:49:55.863Z"
+  },
+  {
+    "id": "vote:242ed1fe-1e2f-46fb-9c3f-f75e03d3b97e",
+    "userId": "pub_630d16dad7cd25a95893b039",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T17:00:29.516Z"
+  },
+  {
+    "id": "vote:f5317263-4d40-4786-8eaf-36aa79506d22",
+    "userId": "pub_889fe154334ef1b773c8e3d8",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T17:20:50.774Z"
+  },
+  {
+    "id": "vote:d392fefb-295a-4acc-b4fe-6bb0caf4c974",
+    "userId": "pub_9bb5d1714642aa3d030f98a5",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T17:53:13.736Z"
+  },
+  {
+    "id": "vote:0ba89668-fc22-4f59-a80d-7250fc864975",
+    "userId": "pub_c23019daa57db5e41d68224a",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T17:56:09.412Z"
+  },
+  {
+    "id": "vote:e332185f-32f5-4c88-a51b-e4dc16afdc2e",
+    "userId": "pub_39c74f485127d3d21f32d7a0",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T18:16:33.658Z"
+  },
+  {
+    "id": "vote:aed82210-4cab-4a4f-9333-32fb9d0b8e04",
+    "userId": "pub_cc9ebce92d710f37a0271137",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T18:20:20.726Z"
+  },
+  {
+    "id": "vote:97c15fa9-8092-4f19-bff6-92d0c6f58b91",
+    "userId": "pub_3bce8c9556d22e3131c35860",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T18:25:36.148Z"
+  },
+  {
+    "id": "vote:d2a6b904-7afa-45c4-9a77-16587f9f5ac5",
+    "userId": "pub_76dbc46770dd222b82b9ca5e",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T18:31:22.616Z"
+  },
+  {
+    "id": "vote:a8881829-6550-43df-8c4b-5ad5cedb1100",
+    "userId": "pub_f49b8f4388d87e714cb2fd63",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T18:38:05.723Z"
+  },
+  {
+    "id": "vote:0574a0c3-d135-480e-b267-9edce3984d5a",
+    "userId": "pub_2069dd2fad63f20f632cf3f8",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T18:41:12.181Z"
+  },
+  {
+    "id": "vote:05e5f06c-bacb-410c-9799-4b6adaae5588",
+    "userId": "pub_2255ab702021573a4c2ff654",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T19:02:56.377Z"
+  },
+  {
+    "id": "vote:620cda81-9178-4a96-adb9-31f0ef5556d4",
+    "userId": "pub_b60f21aa23ca87cb1f5f6308",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T19:07:02.628Z"
+  },
+  {
+    "id": "vote:9ba497eb-90d8-471b-a575-4337ff4eba04",
+    "userId": "pub_150525715b34852d4931062c",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T19:37:09.191Z"
+  },
+  {
+    "id": "vote:ccca7e0f-ebbf-4063-ae2c-dd445f149e47",
+    "userId": "pub_dd9f6eb801ccc228eab1960b",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T19:43:46.768Z"
+  },
+  {
+    "id": "vote:59780ccf-9a6e-4afc-b6f8-de0d985e4529",
+    "userId": "pub_1b0f7ba67ea912e5141114a9",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T19:46:13.697Z"
+  },
+  {
+    "id": "vote:8f2e691c-9f5c-4d52-913a-590d8529687f",
+    "userId": "pub_7b48fac878332d07dc53a368",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T19:49:50.987Z"
+  },
+  {
+    "id": "vote:c3038936-3f19-4e75-a3cf-df4079dd66be",
+    "userId": "pub_dda148ec5524c1af5ea58f68",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T19:52:50.096Z"
+  },
+  {
+    "id": "vote:1145efab-996f-4d27-ad6b-7dd9c0f90e47",
+    "userId": "pub_82076de838a20f384d06d4e4",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T20:00:09.717Z"
+  },
+  {
+    "id": "vote:16f0f18b-99cf-485f-99aa-2abc963e8410",
+    "userId": "pub_2beec2c4ca7be0b72f66d75f",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-23T20:04:18.693Z"
+  },
+  {
+    "id": "vote:0030a574-7ea1-4b6e-82cb-b3874118978d",
+    "userId": "pub_5c73f567ab626dd4b4e7b7b5",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T20:06:01.896Z"
+  },
+  {
+    "id": "vote:11130692-1d9e-48de-ad89-bdd9ba07b496",
+    "userId": "pub_5c73f567ab626dd4b4e7b7b5",
+    "proposalId": "proposal:f5ab7818-da54-40ee-8945-9bf396098dc3",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-23T20:06:01.896Z"
+  },
+  {
+    "id": "vote:37c54929-8984-4c56-90c3-b5a348377fd1",
+    "userId": "pub_af0b88f34f5246cebdde9da7",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T20:09:27.069Z"
+  },
+  {
+    "id": "vote:3a49cc46-f0b4-4c95-8037-9eccc88b1d80",
+    "userId": "pub_cf3ebfba8adedf43ffcdd988",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T20:09:38.358Z"
+  },
+  {
+    "id": "vote:1c2c2ddf-bf3e-43d1-9c40-72ff76b379aa",
+    "userId": "pub_170139dd6626af1f382441da",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T20:09:40.228Z"
+  },
+  {
+    "id": "vote:307a37fe-6aa0-40fb-90e1-1f3ca847567d",
+    "userId": "pub_61cadb39306fac9286872218",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T20:18:51.154Z"
+  },
+  {
+    "id": "vote:efcf2ad8-14b9-4881-b211-5bc98f7a88bc",
+    "userId": "pub_230408a0d8f45d0958a840e7",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T20:21:27.438Z"
+  },
+  {
+    "id": "vote:dbb8bf5d-41ca-4e11-8f22-b503d3d8c162",
+    "userId": "pub_69fad8f91492ab482e05f903",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T20:23:52.466Z"
+  },
+  {
+    "id": "vote:62a98de0-6576-40a7-9f08-5ae911a44af5",
+    "userId": "pub_3d012a4e4ddd39ce48a24f67",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-23T20:24:32.282Z"
+  },
+  {
+    "id": "vote:a2996fce-14ee-4a75-b4f2-ced30acd3d62",
+    "userId": "pub_daedfac92ddb73161381296c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T20:28:26.948Z"
+  },
+  {
+    "id": "vote:9fa6d52a-15bc-4a6b-99af-a2ec51036c53",
+    "userId": "pub_801ede861a4da327f0b9ab94",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T20:39:48.811Z"
+  },
+  {
+    "id": "vote:55a58bd3-aaa1-461a-b8de-6f1bb5f2a5ba",
+    "userId": "pub_51d61b54dd248273e0e6c1e6",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-23T21:15:29.981Z"
+  },
+  {
+    "id": "vote:30b199ba-bb5c-4cc5-8a2f-c04500743c93",
+    "userId": "pub_e6c7d29bdba09a220011fb8f",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T21:16:42.107Z"
+  },
+  {
+    "id": "vote:80ac1896-7cea-4495-85ea-0019f6ef0088",
+    "userId": "pub_56019721b2a03049b04221cb",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T21:17:33.290Z"
+  },
+  {
+    "id": "vote:bee3f661-c1ea-401c-bea2-a66b5d3ee2e2",
+    "userId": "pub_664038f81939eb6b5fcbff95",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T21:23:05.291Z"
+  },
+  {
+    "id": "vote:b5d97563-596d-4fa2-8310-55bec3cac8bf",
+    "userId": "pub_7372984779035b3d5d36165c",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T21:25:00.441Z"
+  },
+  {
+    "id": "vote:b4b75e55-deaf-4e7e-bb83-f3b64db9f9ab",
+    "userId": "pub_767023f2f05bd9615ebb3265",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 4,
+    "timestamp": "2024-09-23T21:26:44.295Z"
+  },
+  {
+    "id": "vote:9f816a75-3f82-480f-87c0-cf545bca9bef",
+    "userId": "pub_767023f2f05bd9615ebb3265",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 6,
+    "timestamp": "2024-09-23T21:26:44.295Z"
+  },
+  {
+    "id": "vote:7e674a99-1d88-46d7-b5a5-7138d63dbb02",
+    "userId": "pub_af46235e8f618158b7c36145",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T21:30:53.353Z"
+  },
+  {
+    "id": "vote:22d0ceb8-7318-4537-97f7-d82e2f6575c6",
+    "userId": "pub_2d6f6fdee2d6afbbb6eeb5c1",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T21:32:09.996Z"
+  },
+  {
+    "id": "vote:3246b84b-a607-4b27-8c9e-90357ed671c2",
+    "userId": "pub_b6390c257208d6b0386ab26c",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-23T21:33:57.330Z"
+  },
+  {
+    "id": "vote:f98b4e49-17a7-4f7b-b804-84e2582d5ec6",
+    "userId": "pub_bb1b0824325b8a48edfdd41c",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T21:35:34.805Z"
+  },
+  {
+    "id": "vote:a2d555e5-fb98-4c65-be87-33678f2afbb8",
+    "userId": "pub_9fa27997e29a0613136921dc",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T21:37:40.019Z"
+  },
+  {
+    "id": "vote:d1d90af7-fefc-4a7a-ab36-696751d1d048",
+    "userId": "pub_a595326699ca2801238bb9ef",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T21:39:49.349Z"
+  },
+  {
+    "id": "vote:16644f12-360c-4d96-8b6e-f4f849d99cdc",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-23T21:49:17.769Z"
+  },
+  {
+    "id": "vote:08ecc8ce-358f-4b2d-bb51-eb7b3c921301",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T21:49:17.769Z"
+  },
+  {
+    "id": "vote:3c0c7efc-1fbb-460c-a0f3-49a25b14e066",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-23T21:49:17.769Z"
+  },
+  {
+    "id": "vote:7282504b-210d-4798-85cf-001ab6f8341a",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-23T21:49:17.769Z"
+  },
+  {
+    "id": "vote:642f45ea-8f6a-43f5-a04b-dc3dca8f71d3",
+    "userId": "pub_3f801bebaf843e3191216cd8",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T21:49:17.769Z"
+  },
+  {
+    "id": "vote:0cadb04f-6ed2-45e2-b3fd-055f82775a70",
+    "userId": "pub_4ca103c6d25693230c282bfb",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T21:50:47.616Z"
+  },
+  {
+    "id": "vote:f3c13551-4628-44c1-9e46-f8889e1adb4e",
+    "userId": "pub_87b23764d8172586ea7beab5",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T21:55:15.869Z"
+  },
+  {
+    "id": "vote:108c9f3c-037a-4588-90eb-a83486004803",
+    "userId": "pub_d53f0bb5b43c215a75e47d5b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T22:02:11.473Z"
+  },
+  {
+    "id": "vote:9fa5d3b2-2a63-4607-8e71-e7d84ff69562",
+    "userId": "pub_1031a87780be9605954f70b9",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T22:15:18.759Z"
+  },
+  {
+    "id": "vote:dc4a80f7-d191-4c3f-b419-900f552b3458",
+    "userId": "pub_48adae0b98b95a7c35b53e46",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T22:17:18.601Z"
+  },
+  {
+    "id": "vote:b187d294-d7be-4670-8b82-0697c77e5c6c",
+    "userId": "pub_deb847d2c8913e07ce88b39f",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T22:19:45.268Z"
+  },
+  {
+    "id": "vote:d9ad2748-3c07-4b1e-90cf-2ffd617cee98",
+    "userId": "pub_b857ea7113b5330c374b024f",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T22:20:05.155Z"
+  },
+  {
+    "id": "vote:405e8dc7-e0ad-4a65-9b62-483aa6e778a2",
+    "userId": "pub_504caca554ad08686f27facb",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T22:22:49.203Z"
+  },
+  {
+    "id": "vote:c6a05c0a-ec6b-4163-8b6d-a650ad625a7c",
+    "userId": "pub_de5e602582f527ff2fbfe36d",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T22:30:24.592Z"
+  },
+  {
+    "id": "vote:0e5dcd50-b7be-4b4b-abef-05826a0f8d76",
+    "userId": "pub_d91fa37755586a086e5129cd",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T22:31:52.332Z"
+  },
+  {
+    "id": "vote:2ab4b158-dbdc-4ac6-ad13-8fc0b8a7c405",
+    "userId": "pub_06bb745e0e1c2ed09c5a94b4",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T22:34:48.989Z"
+  },
+  {
+    "id": "vote:cb8dabba-97a1-4ad1-a7c3-37a559848a7b",
+    "userId": "pub_79d26627a5f3d7cbe34d8768",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T22:44:27.889Z"
+  },
+  {
+    "id": "vote:25fffb6a-854f-4157-b64d-818d3544c92e",
+    "userId": "pub_02495c333714f6fe380fd86b",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T22:53:20.252Z"
+  },
+  {
+    "id": "vote:0f796f88-6cf6-408d-84e6-2a74b91c71dc",
+    "userId": "pub_4f5a577595aff92f76bc5e8d",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T22:55:46.858Z"
+  },
+  {
+    "id": "vote:d8bf8bda-2ddf-42e7-81e9-e3040c654ad0",
+    "userId": "pub_90248483c36440a7b81a6d24",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T22:55:49.174Z"
+  },
+  {
+    "id": "vote:9eb4e07b-48d1-483e-8f75-114d53706c9b",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T22:56:44.737Z"
+  },
+  {
+    "id": "vote:f45650de-49dd-4fe3-a6b6-f3f731cba34c",
+    "userId": "pub_208383643e44a58f36857830",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:01:51.635Z"
+  },
+  {
+    "id": "vote:0305ab8b-1f12-4995-8a1d-de70561dcaf2",
+    "userId": "pub_1e12a0170f4cb7bff522d2d3",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:10:09.427Z"
+  },
+  {
+    "id": "vote:184a5588-e6a6-4c5c-aa41-2e41b0094eca",
+    "userId": "pub_53165cdb5f6f430c480a349e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:10:59.332Z"
+  },
+  {
+    "id": "vote:64b0c03b-8a69-4417-b25a-2493c46ec827",
+    "userId": "pub_bb330a814201f01b742f5daf",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:13:22.862Z"
+  },
+  {
+    "id": "vote:0f7c3140-6be5-428e-847a-7a5d0c0a2c22",
+    "userId": "pub_bb330a814201f01b742f5daf",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:13:22.862Z"
+  },
+  {
+    "id": "vote:cdfb1838-35a5-4d77-95c3-fda235e12d03",
+    "userId": "pub_bb330a814201f01b742f5daf",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 5,
+    "timestamp": "2024-09-23T23:13:22.862Z"
+  },
+  {
+    "id": "vote:d9169cf2-2ce3-4441-a094-7457229f1b95",
+    "userId": "pub_bb330a814201f01b742f5daf",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-23T23:13:22.862Z"
+  },
+  {
+    "id": "vote:bfe11041-40fb-4849-8b31-7d5e07a0645b",
+    "userId": "pub_d4e4fef06125320e66a981cf",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:14:38.058Z"
+  },
+  {
+    "id": "vote:6e43b233-f050-428d-9a44-25adac284026",
+    "userId": "pub_a5fcc960aabd9a7145ebba7e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:15:05.744Z"
+  },
+  {
+    "id": "vote:ab2d5232-134b-46b9-a391-2ba439576e80",
+    "userId": "pub_cf51502a06cde67904fc7997",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:16:26.638Z"
+  },
+  {
+    "id": "vote:a7f9ca71-181d-4648-9835-32ada91f3b35",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 4,
+    "timestamp": "2024-09-23T23:20:05.876Z"
+  },
+  {
+    "id": "vote:86a17b98-7524-454f-b07f-c4f38d8a3901",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-23T23:20:05.876Z"
+  },
+  {
+    "id": "vote:aaeb93aa-e39c-4f89-892c-827487ca6080",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-23T23:20:05.876Z"
+  },
+  {
+    "id": "vote:1b45be97-4024-472a-909d-f19ca98a627d",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-23T23:20:05.876Z"
+  },
+  {
+    "id": "vote:9c73c049-01bf-46c8-abfa-40680595390f",
+    "userId": "pub_fe370f474f2b99170e5f0a21",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:27:59.398Z"
+  },
+  {
+    "id": "vote:98759fd7-8acf-418b-89ea-31dbbbfee522",
+    "userId": "pub_e2255891c747f2147b8a9e93",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:38:02.995Z"
+  },
+  {
+    "id": "vote:2dad7158-35e2-43f3-a81b-91e6e24988d4",
+    "userId": "pub_81102161985e7df722833f46",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:39:26.404Z"
+  },
+  {
+    "id": "vote:5f98a8bd-2bff-465f-813a-b118f391818a",
+    "userId": "pub_11dbbd7559eb6891a13ca07f",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:41:06.273Z"
+  },
+  {
+    "id": "vote:b0e635d1-0fd7-489a-8627-b0423785b792",
+    "userId": "pub_68fc9288ecdf7757a1883b75",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:43:10.869Z"
+  },
+  {
+    "id": "vote:5d4e9a34-d8b2-4086-bad3-6a1ad407357b",
+    "userId": "pub_dccc5f6c6eded5ca9b257e89",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:51:15.720Z"
+  },
+  {
+    "id": "vote:47e8c186-b95b-4157-b664-8df2773314ed",
+    "userId": "pub_6b2eb2235fe798c658492542",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:51:33.624Z"
+  },
+  {
+    "id": "vote:349a11e0-85d8-48aa-bc0d-662ea1bcd3ad",
+    "userId": "pub_d0034c6882755050e20ec618",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-23T23:56:35.635Z"
+  },
+  {
+    "id": "vote:90e4aa64-154a-4cb6-b1d9-cafbd8cb7694",
+    "userId": "pub_f6827ac33e2a3f4609ea8d6c",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T00:18:31.708Z"
+  },
+  {
+    "id": "vote:60dad4f4-8d4a-45ee-864c-bc01cfd53a60",
+    "userId": "pub_ac59ea900227b741e3ce3b31",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T00:21:24.929Z"
+  },
+  {
+    "id": "vote:60bcd630-9a8a-4eeb-a5f7-e8e83f320baf",
+    "userId": "pub_ed0cf8e8cf2b01e96db30465",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T00:35:12.241Z"
+  },
+  {
+    "id": "vote:7392687a-e03f-4671-98b4-adf4d371b4b4",
+    "userId": "pub_f5abd20d2af8d93e336bcb7a",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T00:41:34.337Z"
+  },
+  {
+    "id": "vote:e65cb210-c155-4bbf-8a52-58c144a35e87",
+    "userId": "pub_f5abd20d2af8d93e336bcb7a",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-24T00:41:34.337Z"
+  },
+  {
+    "id": "vote:5175e06f-9820-4cb2-8419-062cd1d6011d",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 5,
+    "timestamp": "2024-09-24T00:49:03.742Z"
+  },
+  {
+    "id": "vote:0a2daa23-c1bc-46d9-ab53-424495c618a6",
+    "userId": "pub_eb2b87e822bd4289b1679133",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 5,
+    "timestamp": "2024-09-24T00:49:03.742Z"
+  },
+  {
+    "id": "vote:c14e2644-26b7-459f-9ade-529d84ae777d",
+    "userId": "pub_7dd3acc39ff5b316aec999b8",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T00:49:29.954Z"
+  },
+  {
+    "id": "vote:a2b9fc5a-6594-4a93-87c3-9844746c99af",
+    "userId": "pub_e7b0d9c8688c3e49ee5bb182",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T00:50:40.531Z"
+  },
+  {
+    "id": "vote:9bb61fb1-6376-44e3-954e-10cce4db6187",
+    "userId": "pub_24dcbfd6c190b16b94514f9a",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T00:52:07.972Z"
+  },
+  {
+    "id": "vote:56c08afd-b93c-4988-9f59-cf47e6e37ca8",
+    "userId": "pub_93036d3ae71500f2d4b3edf8",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-24T00:53:43.662Z"
+  },
+  {
+    "id": "vote:a6a745dc-85c7-4492-a812-7a5a26cfd856",
+    "userId": "pub_b1ad7c0f3c7c4684ceb91c7a",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-24T00:53:51.370Z"
+  },
+  {
+    "id": "vote:eb5f162b-3077-400f-9657-7d20f48669fc",
+    "userId": "pub_25c0a1f1954a696b53c5ecf8",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T01:15:07.700Z"
+  },
+  {
+    "id": "vote:be4f2417-a027-4c72-b1b5-3d04a3f3a8c1",
+    "userId": "pub_ceb2437b696c67daa51a2341",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T01:26:04.712Z"
+  },
+  {
+    "id": "vote:d7d39aaa-f60b-41db-b931-e172927bb4ed",
+    "userId": "pub_f2ba4bc4f0fbc653792c7eea",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T01:56:29.918Z"
+  },
+  {
+    "id": "vote:281a5515-721c-44c5-91ec-2202a7b769f2",
+    "userId": "pub_7119a9b3d4a6449aba3e95c9",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:02:40.819Z"
+  },
+  {
+    "id": "vote:f67654eb-5637-4ce1-8acd-3d7d8a4f8810",
+    "userId": "pub_ffffbaa49e778d1dab00c6e7",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:08:04.738Z"
+  },
+  {
+    "id": "vote:fdf8f596-f019-423c-85e7-d879c2305ae9",
+    "userId": "pub_65d0fc29f74bcf789f5f3ac1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:10:12.296Z"
+  },
+  {
+    "id": "vote:1e965c11-3a83-4f02-b828-3a7a30a1808d",
+    "userId": "pub_f0d1f5724ba6233cff27997e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:13:56.320Z"
+  },
+  {
+    "id": "vote:87ad18cc-e501-472e-a86d-dbfa9f5dad93",
+    "userId": "pub_39fd46c6b53302c418f298d1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:30:54.225Z"
+  },
+  {
+    "id": "vote:d467c866-c906-4ae1-8a95-dc47a6775a17",
+    "userId": "pub_b7682c68ed717684f20685ef",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:34:25.297Z"
+  },
+  {
+    "id": "vote:34eece7b-729f-4e58-bef5-4932bae3bccb",
+    "userId": "pub_c19c91cbe49b3655950cad7f",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:42:08.959Z"
+  },
+  {
+    "id": "vote:441d05d8-ddf0-4769-a665-cbc1e72c10b8",
+    "userId": "pub_2914655cbfeb1fa7683602de",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:47:33.423Z"
+  },
+  {
+    "id": "vote:36b692e5-f52a-4ccf-b36c-e89615ab7b3c",
+    "userId": "pub_4c559823739afee18a0245c7",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:51:42.844Z"
+  },
+  {
+    "id": "vote:2d46ca31-9335-4396-8d5d-7ac1c1a4e0f1",
+    "userId": "pub_ff7e744325f61b52a4eb0680",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:51:46.645Z"
+  },
+  {
+    "id": "vote:2577c5b5-44d4-4b3d-b26c-9534ad05cf05",
+    "userId": "pub_163f58bc081a9b3892eae4c7",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:51:54.198Z"
+  },
+  {
+    "id": "vote:77587135-1f39-407b-b598-0a54bb05fdc3",
+    "userId": "pub_715284ad145240c2ea6f0694",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T02:56:36.602Z"
+  },
+  {
+    "id": "vote:dc60022e-620c-433e-ad22-d460acbfe678",
+    "userId": "pub_895dc899f3d211d54418aa05",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T03:02:56.903Z"
+  },
+  {
+    "id": "vote:43285037-dc0d-4247-8984-3447a1cd68aa",
+    "userId": "pub_8eed98595264c451b732b870",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T03:05:43.335Z"
+  },
+  {
+    "id": "vote:10a09d39-bd4b-48f7-a8cd-de8d99e41524",
+    "userId": "pub_d35f2a6a6bd4d9231376aa8e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T03:06:26.495Z"
+  },
+  {
+    "id": "vote:0980071d-44c7-4bc5-989a-a9636d94dedc",
+    "userId": "pub_e4448efe4c3179425c2cbd2a",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T03:20:40.859Z"
+  },
+  {
+    "id": "vote:38303601-0fe1-4ffb-927b-ce797128b9e3",
+    "userId": "pub_84fdd1feefcf79f42e37fec1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T03:21:45.967Z"
+  },
+  {
+    "id": "vote:da55704f-f2ee-428b-9892-e58eb33d7080",
+    "userId": "pub_b789b98913860e950f8e6f14",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T03:22:26.192Z"
+  },
+  {
+    "id": "vote:5c81db7a-92b2-4e2a-85b2-af1662cf6608",
+    "userId": "pub_5085a87f994847951fa65093",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T03:24:00.581Z"
+  },
+  {
+    "id": "vote:61add464-6f17-4374-8d4b-95c7d39920fe",
+    "userId": "pub_b3331cb805270ae51f485290",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T03:27:51.914Z"
+  },
+  {
+    "id": "vote:be4b9a6f-426d-4b6b-a992-2ce5d7a8dbf7",
+    "userId": "pub_e847c52f74ae93db96e09e7e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T03:30:16.897Z"
+  },
+  {
+    "id": "vote:4a85a2ba-7284-4a12-977b-7023408be4e4",
+    "userId": "pub_b2dbfc2e208adf40814f8a49",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T03:42:59.590Z"
+  },
+  {
+    "id": "vote:c20cb8b5-672c-4910-94a1-d5b10019207d",
+    "userId": "pub_77ef2a73e8bde50dbe9f2566",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-24T03:43:38.399Z"
+  },
+  {
+    "id": "vote:0c322060-72f2-41cd-9eb4-3b0eccb3120f",
+    "userId": "pub_b5c8d11e55448f062f1f3435",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T03:46:49.531Z"
+  },
+  {
+    "id": "vote:e1ae51cf-6bf9-4c2a-8391-279bf5c3afc5",
+    "userId": "pub_0b8da1f722787e9463f71710",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-24T04:21:23.687Z"
+  },
+  {
+    "id": "vote:f4c6bf90-8da9-45c2-bd63-e68b1c6da177",
+    "userId": "pub_1a710e07dac111fd55e7d1ab",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T04:32:03.088Z"
+  },
+  {
+    "id": "vote:87495b55-531c-4ce7-930a-5181fdcf8034",
+    "userId": "pub_d890be3f4465e251f451c133",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-24T04:39:15.704Z"
+  },
+  {
+    "id": "vote:36546607-edc8-4210-bfdc-92d03685a6de",
+    "userId": "pub_6602429dd87bda6ecaf0f6f3",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T04:42:20.341Z"
+  },
+  {
+    "id": "vote:88e61006-6f2e-41d1-918f-beb611843ec5",
+    "userId": "pub_e8d9dd07cf740ed12a4db7b7",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T04:48:00.580Z"
+  },
+  {
+    "id": "vote:edaeb43a-fad5-4536-a9b5-7a60830b2df4",
+    "userId": "pub_3879cfee77d30b9c8a80cc29",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T04:54:33.234Z"
+  },
+  {
+    "id": "vote:10b1b2fa-2114-405f-961a-31950568dd01",
+    "userId": "pub_c13d23d211e038a28be29d8e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T05:14:09.742Z"
+  },
+  {
+    "id": "vote:41dca57d-b1fd-46e6-9361-6afd800f185e",
+    "userId": "pub_97e120475ababfc1ce237848",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T05:31:03.183Z"
+  },
+  {
+    "id": "vote:6a914b76-77e8-4e6f-9d42-9ba0ff941aa2",
+    "userId": "pub_69db52073d57b65b1f87ac76",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T05:34:42.354Z"
+  },
+  {
+    "id": "vote:45fb1225-d9c8-49a7-bc78-21915a5f6fe8",
+    "userId": "pub_26223a43cd11bcc84ea60874",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T05:41:58.172Z"
+  },
+  {
+    "id": "vote:840b73d8-7838-4b7b-8d12-614e789b141c",
+    "userId": "pub_37a1bfc895114e648f940fe1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T06:12:10.987Z"
+  },
+  {
+    "id": "vote:e3f15a83-09b6-4f08-bcfb-5786afc8cfd4",
+    "userId": "pub_90584f46d528901317a28c2d",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T06:56:59.203Z"
+  },
+  {
+    "id": "vote:fab4c633-7684-4256-93fc-0a716710c855",
+    "userId": "pub_079f55b193903d30e628d6be",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-24T07:01:19.693Z"
+  },
+  {
+    "id": "vote:1ae5de20-88f2-48cd-a076-770fbd06b252",
+    "userId": "pub_bdf11902f3e569fdaaa4da76",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T07:11:08.808Z"
+  },
+  {
+    "id": "vote:09d7ba2c-fd36-4ee2-b646-0c2d961355fd",
+    "userId": "pub_bccdc2764f557a79dbc9ba35",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T07:17:31.365Z"
+  },
+  {
+    "id": "vote:ed99589a-4a15-47e0-903f-802a0a64ffa0",
+    "userId": "pub_691b76988f8fbe47646a5777",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T08:23:04.060Z"
+  },
+  {
+    "id": "vote:ecbf8778-0bb2-4017-95f3-b01e71ba611b",
+    "userId": "pub_691b76988f8fbe47646a5777",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-24T08:23:04.060Z"
+  },
+  {
+    "id": "vote:94a45503-e13c-4415-8f2a-94226556de81",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 5,
+    "timestamp": "2024-09-24T08:23:37.941Z"
+  },
+  {
+    "id": "vote:0528fd82-fe5c-4d99-ab8d-58db6bd207f0",
+    "userId": "pub_e1fcb63fa140c8ffe753eb6d",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 5,
+    "timestamp": "2024-09-24T08:23:37.941Z"
+  },
+  {
+    "id": "vote:5e70cea2-a783-42c6-9568-e98761629fcd",
+    "userId": "pub_807decc7bcc6de8d04bcfbab",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T09:07:47.685Z"
+  },
+  {
+    "id": "vote:bb035a4a-ed7b-4823-aebf-397f38db6c3b",
+    "userId": "pub_f9fc11ad35e477558cb17c68",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-24T09:29:33.217Z"
+  },
+  {
+    "id": "vote:51ac000c-2dcc-4258-88a7-2f3179d0ee09",
+    "userId": "pub_6653d325724e20673ecc3184",
+    "proposalId": "proposal:13c63b3d-87b9-4e97-bc92-8c2355e1f276",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-24T09:34:01.636Z"
+  },
+  {
+    "id": "vote:5dba6cc4-aa43-4f2c-8870-90ddc5ad856f",
+    "userId": "pub_1657c0af31ee4c2da33e55fa",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T09:49:51.862Z"
+  },
+  {
+    "id": "vote:bcb630d5-29e8-4e27-bd44-0305dd8aae3e",
+    "userId": "pub_e2ea2a7eac0addc0583a9e4c",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T09:55:54.802Z"
+  },
+  {
+    "id": "vote:4a99f4bc-843c-4d3b-b5d3-3f8a45dc5c62",
+    "userId": "pub_0c41557a5cb1545145872641",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T10:00:44.826Z"
+  },
+  {
+    "id": "vote:75c3c1dc-ebb7-4024-ab22-440f52bd0a31",
+    "userId": "pub_faa7ddf228d3ef3081d634d1",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T10:07:37.038Z"
+  },
+  {
+    "id": "vote:fa714b83-a343-4400-98d8-01f610991cfa",
+    "userId": "pub_254de37177ebd884388b4187",
+    "proposalId": "proposal:13c63b3d-87b9-4e97-bc92-8c2355e1f276",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T10:52:31.854Z"
+  },
+  {
+    "id": "vote:02932c8a-89f5-49eb-bd53-2431f8320098",
+    "userId": "pub_43b88d5e9e23ad33628e1b3f",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T11:01:37.262Z"
+  },
+  {
+    "id": "vote:307d8d31-6bb1-4764-8c4c-f05cdfe7d98b",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-24T11:25:53.779Z"
+  },
+  {
+    "id": "vote:daef11b9-1963-4fb1-81f3-7fbf86756a18",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-24T11:25:53.779Z"
+  },
+  {
+    "id": "vote:80a8e415-39d5-4ead-b53d-cd9cf2a40087",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T11:25:53.779Z"
+  },
+  {
+    "id": "vote:c8375f24-69bd-49d4-a331-b9e9098c9bb7",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T11:25:53.779Z"
+  },
+  {
+    "id": "vote:709c7ff9-59a3-4546-9451-6eb6e205036a",
+    "userId": "pub_68de1ee88e2bf06284dbac69",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 4,
+    "timestamp": "2024-09-24T11:25:53.779Z"
+  },
+  {
+    "id": "vote:7a8c35cc-184a-45e8-b14a-a46c9669f1c2",
+    "userId": "pub_436ee1f3e68c6f3b25a59fac",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-24T12:46:12.967Z"
+  },
+  {
+    "id": "vote:c584edd4-cac2-4998-8b50-526d0b3d40b4",
+    "userId": "pub_040f4bbed37b998edc023898",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-24T13:13:23.563Z"
+  },
+  {
+    "id": "vote:2869082d-20b6-43e0-9e7f-b41b3ddb0aa3",
+    "userId": "pub_040f4bbed37b998edc023898",
+    "proposalId": "proposal:13c63b3d-87b9-4e97-bc92-8c2355e1f276",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T13:13:23.563Z"
+  },
+  {
+    "id": "vote:58571927-1a8a-4bdd-85c3-bd99de0cab20",
+    "userId": "pub_31fff10d10487b5bab75273e",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T14:32:51.719Z"
+  },
+  {
+    "id": "vote:2c1861ba-26c0-427b-8eb1-eb25e4ac5d18",
+    "userId": "pub_e1111096d6ed1e0f58b2320a",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-24T15:34:07.465Z"
+  },
+  {
+    "id": "vote:7aa758a3-8274-497a-9d09-4650332beae7",
+    "userId": "pub_e1111096d6ed1e0f58b2320a",
+    "proposalId": "proposal:935b014a-257e-4323-bb49-7d477964cd5f",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T15:34:07.465Z"
+  },
+  {
+    "id": "vote:8846253b-9ad4-4a13-ac02-58d959e82a87",
+    "userId": "pub_ab82bcdd4f15c0e0bfb3c6b1",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-24T16:48:47.924Z"
+  },
+  {
+    "id": "vote:bb5100ec-97d7-49dd-8db9-abc09ae259d5",
+    "userId": "pub_41f24e4bc662c33e6b9a286b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T17:12:57.172Z"
+  },
+  {
+    "id": "vote:d97e1b9b-c319-4a03-b269-6b6b172aa765",
+    "userId": "pub_74d4b9b2a45b489fb9b203c5",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T17:58:51.683Z"
+  },
+  {
+    "id": "vote:addb5a77-305b-4fdb-9779-d86558bb9f5b",
+    "userId": "pub_c6171dbf1ddadf229e27247d",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T18:27:43.314Z"
+  },
+  {
+    "id": "vote:3ae531fe-ec50-4d11-8178-40fd8c86be19",
+    "userId": "pub_73482be082e6b6bd6157e6a6",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T18:37:24.958Z"
+  },
+  {
+    "id": "vote:5cfe0204-d074-4d35-bbbc-6d05d88bee09",
+    "userId": "pub_1b35a7250bc4ebde35d6d15e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T18:45:29.556Z"
+  },
+  {
+    "id": "vote:9fa49d3f-e04e-4b1d-9a82-274a545ef045",
+    "userId": "pub_11fea794c78bc004f8b6e391",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T19:04:12.109Z"
+  },
+  {
+    "id": "vote:cc265f97-9c4a-4d00-8675-a06572997723",
+    "userId": "pub_7ab6108c66cccdec692656f7",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T19:07:22.876Z"
+  },
+  {
+    "id": "vote:9911908e-1542-4d1e-b2a9-317d9e7c220b",
+    "userId": "pub_ad7f153f17d3fd6afc38189d",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T19:17:51.587Z"
+  },
+  {
+    "id": "vote:956eb78f-8154-455a-9cf4-81086a2263f8",
+    "userId": "pub_f2f0f997748d658026996c02",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T19:34:00.865Z"
+  },
+  {
+    "id": "vote:91091d34-366d-4b5a-8a77-d21683d88624",
+    "userId": "pub_4065db5d91e7ea8c51ab8cc2",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T19:43:10.364Z"
+  },
+  {
+    "id": "vote:139e0ff4-a8a8-44f0-b258-9408328f21cf",
+    "userId": "pub_1d29dc9ff78633b94f08e5ff",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T19:46:42.177Z"
+  },
+  {
+    "id": "vote:6f75fca7-0322-48ae-a11e-8d6d413b082b",
+    "userId": "pub_835b60d98f47554631212cd9",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T20:19:10.359Z"
+  },
+  {
+    "id": "vote:09d2895e-2429-47e3-a988-ce70ab78c515",
+    "userId": "pub_9da8c6bb5368a98379cf1a70",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T20:19:30.410Z"
+  },
+  {
+    "id": "vote:fff82b53-ab55-4b87-a546-34449901a8dd",
+    "userId": "pub_b515f521df5f37a54fffe657",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T20:37:26.186Z"
+  },
+  {
+    "id": "vote:8d367f7b-2813-4fcf-bf81-f1779866ef61",
+    "userId": "pub_9fe7836eecbf5b320321b0d7",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T20:59:41.446Z"
+  },
+  {
+    "id": "vote:d7f47dee-6b57-4c23-a11d-5579c12d8e28",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-24T21:23:04.021Z"
+  },
+  {
+    "id": "vote:ff313a88-8118-4806-9eea-01035c330477",
+    "userId": "pub_ff4d841398bd2f05a7c4bb91",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T21:29:01.470Z"
+  },
+  {
+    "id": "vote:99e838e9-7d60-4a75-9ec9-a542e7e012d4",
+    "userId": "pub_2da1b415c486bd78325cdd34",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T21:29:15.738Z"
+  },
+  {
+    "id": "vote:46c8adcd-046e-421c-bea4-0d8660ec0134",
+    "userId": "pub_0d5fd3cd14e6174ecf502f82",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T21:37:08.097Z"
+  },
+  {
+    "id": "vote:02ac97c6-f459-4212-adce-44f92f431265",
+    "userId": "pub_c6d5b7309a7d207fdf2d2a76",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T22:32:18.322Z"
+  },
+  {
+    "id": "vote:fc1985e9-064f-4bba-9f13-1eaf3bd2cc2d",
+    "userId": "pub_be13e3f763489c912f132d51",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T22:43:16.278Z"
+  },
+  {
+    "id": "vote:6d577ad0-c95a-492e-89f4-9ddffe34bd8d",
+    "userId": "pub_da28e5bb7e27bafb79b918e4",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T22:55:25.348Z"
+  },
+  {
+    "id": "vote:b553d50b-81bb-4b6e-b1bf-19c0baefefb1",
+    "userId": "pub_0358077a59ea775dabc9bbf0",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T23:00:04.891Z"
+  },
+  {
+    "id": "vote:9d7de3ad-1509-4192-85eb-3ff3e4309157",
+    "userId": "pub_8a553583964905837b352e5a",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T23:01:05.921Z"
+  },
+  {
+    "id": "vote:64e1aacd-4454-4042-852a-ec347d899277",
+    "userId": "pub_801799dfa6fdfe1d8d11435d",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-24T23:08:54.037Z"
+  },
+  {
+    "id": "vote:7e66bb86-03a0-47d1-8608-b9965b2f920d",
+    "userId": "pub_7f664ed695d5f83e2fd98581",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T00:18:17.231Z"
+  },
+  {
+    "id": "vote:97b2caed-ad10-472f-a2bf-f16339a2af46",
+    "userId": "pub_1b2cb7c80c54e208d6b3662e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T00:58:05.593Z"
+  },
+  {
+    "id": "vote:3ef7cc56-70b4-439b-890c-ce289cee36e2",
+    "userId": "pub_1efff959a89b1b71ec4000c6",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T01:11:23.817Z"
+  },
+  {
+    "id": "vote:605d0ff9-cc80-4717-92e3-efcf8e2997f9",
+    "userId": "pub_12aa4c165d52f61476a9b097",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T01:14:40.537Z"
+  },
+  {
+    "id": "vote:a158435a-c79e-4370-9f6f-dd98f1b5b19b",
+    "userId": "pub_691267994255e1df273e0110",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T01:23:28.880Z"
+  },
+  {
+    "id": "vote:ca113620-0079-47df-8868-07a75a229552",
+    "userId": "pub_1d2fc2f8b479096a777699ee",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T01:27:27.400Z"
+  },
+  {
+    "id": "vote:20769ad3-05c6-48fe-bc29-bd926dccb218",
+    "userId": "pub_f43b09bcfc0eaf37817ffa4e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T01:37:00.249Z"
+  },
+  {
+    "id": "vote:69388065-e4ed-43d1-8f5a-fefbdc4bef73",
+    "userId": "pub_755c75d1eef631ec019a0fc8",
+    "proposalId": "proposal:5f8d4f25-b994-491c-b041-1af4630b6a83",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T01:45:11.570Z"
+  },
+  {
+    "id": "vote:fb237348-7a74-4c38-8cfc-93b040663edb",
+    "userId": "pub_3c3ca879af6420380efd6c7e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T01:46:56.425Z"
+  },
+  {
+    "id": "vote:7427fc09-ad61-46a6-b8cf-4308c79533e4",
+    "userId": "pub_8a65dd948fb1dbdced654635",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T01:47:41.973Z"
+  },
+  {
+    "id": "vote:d2edeaab-af8b-4c83-8aba-280f02b3c2a8",
+    "userId": "pub_f3ffa0ee7b178f2dbfa19495",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T02:01:10.244Z"
+  },
+  {
+    "id": "vote:7e1d65f7-dd75-407b-9280-3c1e79cf617f",
+    "userId": "pub_4499fb8d554c7e4db91fbb8d",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T03:06:48.828Z"
+  },
+  {
+    "id": "vote:0f65e852-e390-4168-ba1b-a6c4d1fb9d8b",
+    "userId": "pub_5d25da923c7f640ddb91fad7",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T03:46:36.321Z"
+  },
+  {
+    "id": "vote:45eaaae0-ce9a-43b3-acd0-7e4e1b3b40e9",
+    "userId": "pub_66c6f696a070275fac245879",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T04:17:02.523Z"
+  },
+  {
+    "id": "vote:0652ddb6-6591-4341-a70b-1a3d0047200e",
+    "userId": "pub_0b34324e9aacf58e9c088111",
+    "proposalId": "proposal:5f8d4f25-b994-491c-b041-1af4630b6a83",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T05:10:05.732Z"
+  },
+  {
+    "id": "vote:af62e202-1c1f-4c20-a4bf-55de28ba293d",
+    "userId": "pub_85eb95d68fe1d3597674dfa0",
+    "proposalId": "proposal:5f8d4f25-b994-491c-b041-1af4630b6a83",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T05:15:53.043Z"
+  },
+  {
+    "id": "vote:63709c39-deaf-46cd-a469-21ef41eef09f",
+    "userId": "pub_b8f777a8ad5cd29dc5ba4cda",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T06:16:21.540Z"
+  },
+  {
+    "id": "vote:67d5da2d-4706-47a1-9cc9-b65c8a3f6d77",
+    "userId": "pub_c33c962efda2b101db219763",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T06:31:05.694Z"
+  },
+  {
+    "id": "vote:193627f4-22d5-428f-8273-75d2a0570668",
+    "userId": "pub_ff60439d1668fdf09f744560",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T06:32:30.781Z"
+  },
+  {
+    "id": "vote:46a173de-6045-4631-937d-c06d954ff9de",
+    "userId": "pub_c540f85565466780e8552bcb",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T06:32:40.126Z"
+  },
+  {
+    "id": "vote:514f6ecb-a596-44d3-a905-85967dbc59c9",
+    "userId": "pub_9ab2c4b5ae6835384e6d34f0",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T06:34:44.924Z"
+  },
+  {
+    "id": "vote:c07abd0f-eabe-48b8-ab54-12fd3332a1d2",
+    "userId": "pub_f92cb709bebd3097a4b4c375",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T06:35:14.414Z"
+  },
+  {
+    "id": "vote:d24b5eae-6721-4353-bb50-2c7d069733e1",
+    "userId": "pub_247d04f1053899d2a4d6eea1",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T06:43:20.504Z"
+  },
+  {
+    "id": "vote:33b694c2-ac2c-4299-9f8b-ad4df2914268",
+    "userId": "pub_26dbb21ee740221f4b0637d6",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T06:49:32.889Z"
+  },
+  {
+    "id": "vote:7bc8bcf5-ddbb-474e-a6dc-cd3cfcd724a0",
+    "userId": "pub_9fe97f8d5654b01df6d439d2",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T06:58:20.094Z"
+  },
+  {
+    "id": "vote:3f4d7273-920d-4be5-82e8-6defd01198e2",
+    "userId": "pub_020a2c398c810f552d2716c8",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T06:58:40.955Z"
+  },
+  {
+    "id": "vote:010ebb10-0b2e-4847-8091-2896a5cd6f2d",
+    "userId": "pub_f87a0392eb56701405fea6c3",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T07:09:29.465Z"
+  },
+  {
+    "id": "vote:7001bd28-6240-427c-a581-d70fb812c9cb",
+    "userId": "pub_0583b7c1a7abfe174e6db258",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T07:10:31.882Z"
+  },
+  {
+    "id": "vote:2f2e8e70-bb81-4eda-b30b-76f4eee43a17",
+    "userId": "pub_2026d12e5be743853879badf",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T07:19:03.507Z"
+  },
+  {
+    "id": "vote:e84597ce-8912-4ac3-9fe0-c6aa834beb5f",
+    "userId": "pub_0a06c4d21fb39080e804468e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T07:19:24.487Z"
+  },
+  {
+    "id": "vote:d1b5b118-2970-427e-82c3-3d716d977134",
+    "userId": "pub_9095cd535c90e342cc6666e9",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T07:21:30.705Z"
+  },
+  {
+    "id": "vote:ffd170d7-e2f6-4c7e-84c1-1b97bd712354",
+    "userId": "pub_4bac255c3ff686773497f6b1",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T07:22:43.879Z"
+  },
+  {
+    "id": "vote:6e1dee36-c106-47d5-a9f5-44bc70787be6",
+    "userId": "pub_663b3d9d18cbbd9bdc8f26e8",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T07:56:38.383Z"
+  },
+  {
+    "id": "vote:e198dce4-75c4-4af2-bed6-d390bf83ed6e",
+    "userId": "pub_586b8d5fd9b0631deae66bbf",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T08:22:57.155Z"
+  },
+  {
+    "id": "vote:8f8346fb-478f-4e56-809e-76360dbb86f6",
+    "userId": "pub_c5fba2b19630e1e39b6fe98d",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T08:32:49.519Z"
+  },
+  {
+    "id": "vote:ebd75267-795c-4da9-b950-eba387b70fd8",
+    "userId": "pub_e67c4ddc2a448cabc34d12b6",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T09:52:07.374Z"
+  },
+  {
+    "id": "vote:05c33b01-73af-46dd-80bb-cb6e46496a1d",
+    "userId": "pub_9add1a87f83fb2baab721254",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T12:01:52.431Z"
+  },
+  {
+    "id": "vote:5b6938dd-dd27-4004-9907-cc383c7f0fe9",
+    "userId": "pub_c84184df1e25ae6eb57dd135",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T16:55:28.588Z"
+  },
+  {
+    "id": "vote:2819d335-fc8a-40eb-b018-11d90c055559",
+    "userId": "pub_f233735b602bfe196fb9cd71",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T19:45:57.737Z"
+  },
+  {
+    "id": "vote:3d7127ed-981e-44cf-87f9-0936a90322c0",
+    "userId": "pub_67e8ac761af6c43d6a25cbb1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T19:46:46.626Z"
+  },
+  {
+    "id": "vote:b78b9402-ac31-427f-a543-69e64ade239c",
+    "userId": "pub_a94913bc3f512b8cd81c3135",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-25T21:01:06.077Z"
+  },
+  {
+    "id": "vote:d65b11ef-7fc1-4366-9e8b-527ce0f5df18",
+    "userId": "pub_2396b8d3ba304e51729fb02a",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T21:19:05.941Z"
+  },
+  {
+    "id": "vote:da4a7577-97b5-4191-b9a6-9646f068f20b",
+    "userId": "pub_037caebffc064116acbcf80a",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 9,
+    "timestamp": "2024-09-25T21:39:57.874Z"
+  },
+  {
+    "id": "vote:daed6c65-da0d-41a2-a918-083c935b8b68",
+    "userId": "pub_9a85a1940c29ad7fd851c283",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T22:04:58.408Z"
+  },
+  {
+    "id": "vote:e81286c7-5814-4f5a-9ab9-d31cf7db418c",
+    "userId": "pub_2519e4769567bc17be85026b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T22:20:57.615Z"
+  },
+  {
+    "id": "vote:679e010f-3249-43ea-bc40-654b6fdb24ca",
+    "userId": "pub_9a165d797e71fee8a3fe57c5",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T23:14:19.708Z"
+  },
+  {
+    "id": "vote:8f5518ef-c0c0-4ae3-96e3-937e49c06302",
+    "userId": "pub_389eef89ed69d66de59a0f72",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-25T23:14:25.994Z"
+  },
+  {
+    "id": "vote:6e5ebc70-8983-4785-b879-f40ff14d73fa",
+    "userId": "pub_4c27b1e392ce9b7798061d2d",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T00:00:57.507Z"
+  },
+  {
+    "id": "vote:5fcb9990-5052-4d27-89dd-fa2d09d6d072",
+    "userId": "pub_d334753b12e1d08b93f6f641",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T00:38:38.593Z"
+  },
+  {
+    "id": "vote:c73af57a-2f50-4067-ad92-82509da0955e",
+    "userId": "pub_6b20102493b472fd1bf14ebd",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T00:47:29.252Z"
+  },
+  {
+    "id": "vote:d1f0a8b1-fe38-46b3-b737-b408c1955b1a",
+    "userId": "pub_cfdf1701d282146a1f2dbe18",
+    "proposalId": "proposal:a5cb2270-0b05-416d-b497-0d59b122a85c",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T01:11:57.050Z"
+  },
+  {
+    "id": "vote:dabc63c9-f44a-4a49-aea0-74a67362c385",
+    "userId": "pub_fc0e491f94d90754d03076e7",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T01:28:45.767Z"
+  },
+  {
+    "id": "vote:ab929894-fa81-485e-876a-3fdc5309d992",
+    "userId": "pub_0ed7449f6f76d7bf922701b3",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T01:33:25.550Z"
+  },
+  {
+    "id": "vote:c34e33b0-d242-4f42-b7f0-960db05177de",
+    "userId": "pub_5d9ec973ab5c3dc5be0e1e16",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-26T01:33:55.249Z"
+  },
+  {
+    "id": "vote:7562c476-9f42-472d-9c7f-b6c92c597ebc",
+    "userId": "pub_db11e2dd6128e20d5c1eb330",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-26T01:33:57.892Z"
+  },
+  {
+    "id": "vote:02432ac8-c2fe-4258-b994-96978537fab2",
+    "userId": "pub_aac2ab8bc7646b28edd4e4da",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T01:36:25.702Z"
+  },
+  {
+    "id": "vote:d7f53abb-d3c3-4b35-964c-d7753a61bacd",
+    "userId": "pub_43b7b3ebf12d58a1da059c0a",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T01:50:57.457Z"
+  },
+  {
+    "id": "vote:f6126e02-a79d-4a19-ac29-c56547682bb8",
+    "userId": "pub_56aded88bf69239296345243",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T01:57:15.598Z"
+  },
+  {
+    "id": "vote:491715f6-f34b-4f51-8be5-9499d102f69e",
+    "userId": "pub_1d5ba543b8f6f6fb0bcd6823",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:01:29.968Z"
+  },
+  {
+    "id": "vote:dec21793-0445-4161-ab58-3f57268f3cb9",
+    "userId": "pub_cbdbabb6a5d24a6ff1da3d79",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:04:41.798Z"
+  },
+  {
+    "id": "vote:e09b94dd-acd9-42c7-a1fa-cc21df343115",
+    "userId": "pub_88606f21a1eac7ee75f6a575",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:06:21.467Z"
+  },
+  {
+    "id": "vote:1b6fea70-5c9f-4eb3-b4d7-bcd4f404bc09",
+    "userId": "pub_370412cf7e0ceb34b1b45e94",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:08:10.550Z"
+  },
+  {
+    "id": "vote:db4f0f0e-ec66-4fa8-ac81-463c920ce130",
+    "userId": "pub_0114f9f4bc26aeab8674d5ef",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:10:56.910Z"
+  },
+  {
+    "id": "vote:9bac18bb-26cf-4c82-8616-eb5dfdb6c098",
+    "userId": "pub_38466ccbe489646b03e345e3",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:15:46.601Z"
+  },
+  {
+    "id": "vote:6f26c435-5ad6-431b-a245-9d5bcd0d612c",
+    "userId": "pub_55a61555f2332d16d484261a",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:21:40.492Z"
+  },
+  {
+    "id": "vote:3e07820c-e0ac-40d1-b41a-7d9a9a9f885d",
+    "userId": "pub_c2f6f0697dcf5c3994c405a6",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:24:18.999Z"
+  },
+  {
+    "id": "vote:f42520e0-7ba7-4903-ae64-570df96bc6c4",
+    "userId": "pub_f746947d393a1b5022d1198f",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:33:34.322Z"
+  },
+  {
+    "id": "vote:77a8e364-5267-4cfb-b87b-6badfc9985ae",
+    "userId": "pub_d3416fbc057bb0cc0ab7489c",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:41:52.423Z"
+  },
+  {
+    "id": "vote:712b136e-dbd9-45df-b256-2e7187ea763f",
+    "userId": "pub_8878af7de208e4072188d5ba",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:46:56.415Z"
+  },
+  {
+    "id": "vote:b93230f0-1702-4be0-aa70-bf695e662d0c",
+    "userId": "pub_3e35efe129ea45882b22aaf2",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T02:48:29.696Z"
+  },
+  {
+    "id": "vote:6704ffb5-9bb0-4ffb-b39f-5150f10a98aa",
+    "userId": "pub_e3740df0d8c312067ce5d7e0",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T03:04:52.599Z"
+  },
+  {
+    "id": "vote:03505835-a3f3-4e01-8801-ad7b72bf0ab6",
+    "userId": "pub_1ba9fe75a0f8da1781a0f3f2",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T03:15:27.848Z"
+  },
+  {
+    "id": "vote:ea9cb675-3c20-47fd-83eb-79ba9cd68479",
+    "userId": "pub_7af7c3f69f6966af8194b83e",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T03:19:14.574Z"
+  },
+  {
+    "id": "vote:09fe8489-aadb-4f02-87ad-119f8b0808a5",
+    "userId": "pub_1e7ac37fe19b5ffffd3300fe",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T03:30:11.772Z"
+  },
+  {
+    "id": "vote:8c9642b5-18be-46db-ab10-bc03e9b66c91",
+    "userId": "pub_6e62b536809a8fb7be4f189e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T03:35:12.661Z"
+  },
+  {
+    "id": "vote:645f9773-ca93-497a-b4ff-d2fde70143aa",
+    "userId": "pub_9b61bdb0f5784952431dfc01",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T03:36:11.401Z"
+  },
+  {
+    "id": "vote:e694f7a6-368c-49d6-b19a-9ea703d4490d",
+    "userId": "pub_1fb8229aa9326acb717ab5d5",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T03:39:25.803Z"
+  },
+  {
+    "id": "vote:7328f8d3-7d92-4b5a-a028-a65851abd13e",
+    "userId": "pub_6afdee1cdfc927ebdf7381e8",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T03:44:43.841Z"
+  },
+  {
+    "id": "vote:a6693b43-9bfa-43bc-aead-49b49f9ace8e",
+    "userId": "pub_1d4af047a86538aeffd89d17",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T03:48:05.211Z"
+  },
+  {
+    "id": "vote:fde48755-99b2-4d7d-8bb1-fb3c303667cb",
+    "userId": "pub_02398bececf2524ea71ec09b",
+    "proposalId": "proposal:d73b93ed-f61e-4b3a-8c84-08ce1c4ab0b1",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T03:51:55.956Z"
+  },
+  {
+    "id": "vote:27e0fceb-4e54-4158-8b19-97df62c1ee0e",
+    "userId": "pub_02398bececf2524ea71ec09b",
+    "proposalId": "proposal:57005bbf-c993-4b88-80f1-2dfe5a867c42",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-26T03:51:55.956Z"
+  },
+  {
+    "id": "vote:8e4af83a-122b-4618-8317-ba29d7d5861c",
+    "userId": "pub_c41da6aaaf09555333d06009",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T03:55:29.461Z"
+  },
+  {
+    "id": "vote:c663b0f4-41c7-4002-9359-7e8c68751c6a",
+    "userId": "pub_9fb0ac634f94e08a5437ebd0",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T04:02:48.877Z"
+  },
+  {
+    "id": "vote:fd2a0d7b-5078-4aee-97f9-eb719e1dd685",
+    "userId": "pub_88a811e51fa4e3e239b0f6d5",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T04:05:55.632Z"
+  },
+  {
+    "id": "vote:d4f08654-b7ca-4065-99a4-7c9353d60591",
+    "userId": "pub_f68c463dbe376f6ad05c75c9",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T04:06:59.942Z"
+  },
+  {
+    "id": "vote:05abbb0e-bc42-47b1-a5be-03cab2368950",
+    "userId": "pub_df19243d316841392c28d898",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-26T04:18:50.464Z"
+  },
+  {
+    "id": "vote:6679b4aa-7b85-4da6-aa05-ad93ee260cc9",
+    "userId": "pub_b11e66dc6fb9386c9240ac14",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-26T04:23:19.781Z"
+  },
+  {
+    "id": "vote:02fe80ca-a54a-44f6-b73a-a598be0ef1e5",
+    "userId": "pub_1b826f858bd2a484a6ad5290",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T04:36:33.463Z"
+  },
+  {
+    "id": "vote:8472856c-70e5-46c9-b6e4-44cc1c4ef7e6",
+    "userId": "pub_b53c65730601303cbccc9161",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T04:43:13.577Z"
+  },
+  {
+    "id": "vote:d240225e-8388-4cb2-a2b6-1075012c8dc8",
+    "userId": "pub_f71b4c3d06b0dabae5cee643",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T04:46:46.179Z"
+  },
+  {
+    "id": "vote:4a429c8d-dbf4-454a-9486-7f60f5986f3e",
+    "userId": "pub_f356ee1e331e0289666778a4",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T04:56:17.505Z"
+  },
+  {
+    "id": "vote:9b3b65e4-5632-4bbc-ac45-a1e46d4e56d3",
+    "userId": "pub_58dc5e0b6aabbca490eaf0f7",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T04:57:56.431Z"
+  },
+  {
+    "id": "vote:93e95b32-8bfb-4e8d-9275-d5d6c9cec475",
+    "userId": "pub_506ba388a86ea0b738f1806d",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 5,
+    "timestamp": "2024-09-26T05:30:10.659Z"
+  },
+  {
+    "id": "vote:b37fe002-68a7-441a-8869-5a6973984c5e",
+    "userId": "pub_506ba388a86ea0b738f1806d",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 5,
+    "timestamp": "2024-09-26T05:30:10.659Z"
+  },
+  {
+    "id": "vote:c962facc-bd9d-4ac1-9aba-6c76e2aedd9d",
+    "userId": "pub_58f70b922a509abcde3881f4",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T05:50:16.760Z"
+  },
+  {
+    "id": "vote:72ffb1b4-c582-4123-815a-34e39332f1ee",
+    "userId": "pub_bbc47197f81be1dbae41827f",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T06:06:47.047Z"
+  },
+  {
+    "id": "vote:e735c85a-83ad-4a13-9a25-39293d07bcdd",
+    "userId": "pub_92ac026f25c562997ae0f36c",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T06:21:59.448Z"
+  },
+  {
+    "id": "vote:61cb1d78-ec3a-4579-90a8-dbc1bc3870e2",
+    "userId": "pub_c7016b4212d99c47993a2031",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T06:32:48.154Z"
+  },
+  {
+    "id": "vote:84234180-e979-4abb-9747-eae8e507a1b1",
+    "userId": "pub_fbf68e2ed444dad17ddd3e42",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T06:34:59.782Z"
+  },
+  {
+    "id": "vote:20895a97-2feb-4061-b1ac-00197eb6f80d",
+    "userId": "pub_52b300d9095fee17112e3e6a",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T06:54:01.743Z"
+  },
+  {
+    "id": "vote:458c8d48-c3f3-4bc7-91ed-72d4b047efaa",
+    "userId": "pub_2ca04be10659a3321c335d95",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T06:56:10.898Z"
+  },
+  {
+    "id": "vote:2bb8b631-2fc3-40e2-87e4-bfe0da856478",
+    "userId": "pub_fe24ce596b441cc52f748122",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:15:01.785Z"
+  },
+  {
+    "id": "vote:94959d96-3e9c-4fad-8de6-83fbc8bedc6f",
+    "userId": "pub_c0640a2512667ab7a67adbfb",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:19:43.048Z"
+  },
+  {
+    "id": "vote:2a8cd574-9472-4306-a05d-5f2f4b2e17c4",
+    "userId": "pub_81d920fb475a8b9de55ae8c6",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:21:31.312Z"
+  },
+  {
+    "id": "vote:936c3483-f137-4977-b4be-b5ead82a80dd",
+    "userId": "pub_6226c7e6a5a1fea2dd16aa7d",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:22:49.254Z"
+  },
+  {
+    "id": "vote:80681b5a-6c7e-433e-9254-b4071d717d65",
+    "userId": "pub_e9c9292a5672aecd7090fcb1",
+    "proposalId": "proposal:935b014a-257e-4323-bb49-7d477964cd5f",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:23:20.064Z"
+  },
+  {
+    "id": "vote:95594868-3283-49b8-b0b5-96b7244c1b7b",
+    "userId": "pub_984681e4e2a6fba83e1464dd",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:25:39.608Z"
+  },
+  {
+    "id": "vote:ab2f5d6e-8573-4822-83e6-c104c9dea91f",
+    "userId": "pub_20375b371c907ddfc39eddd8",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:25:47.753Z"
+  },
+  {
+    "id": "vote:07df3558-0b79-48b7-8154-c5a286bd5de6",
+    "userId": "pub_62018a22bab9f3d05446c332",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:25:54.764Z"
+  },
+  {
+    "id": "vote:e482dbd6-3317-4402-a769-0951ec8a1173",
+    "userId": "pub_0cc185cffb46eaaa55b44bba",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:27:05.300Z"
+  },
+  {
+    "id": "vote:5a32a250-ab98-419a-a504-a699aeead1e8",
+    "userId": "pub_fe651991e23460edfeaef15d",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:27:55.100Z"
+  },
+  {
+    "id": "vote:97f021c4-62a6-4073-9316-17b1c60f79a3",
+    "userId": "pub_7282ad16ece34cf46625f48f",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:33:16.173Z"
+  },
+  {
+    "id": "vote:0897db45-a3e5-4a84-9bf9-5504b023b125",
+    "userId": "pub_672cd83892d2f24cc121d76f",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:34:10.240Z"
+  },
+  {
+    "id": "vote:696547bf-a71a-4bc4-905f-a3613650f3e6",
+    "userId": "pub_5fac0683fd53a22516eee1be",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:34:42.853Z"
+  },
+  {
+    "id": "vote:1238ace7-c5f2-45ef-bd94-40bf4c595644",
+    "userId": "pub_d6e017df55ab758808c596bc",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:34:54.058Z"
+  },
+  {
+    "id": "vote:b300e786-4f65-4fda-bab2-783cf83eef1e",
+    "userId": "pub_27fb45681b928fbee5db3985",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-26T07:36:34.853Z"
+  },
+  {
+    "id": "vote:5c356621-b496-4415-9fd1-82c38fc0cd03",
+    "userId": "pub_df543e05efe1c9592c7a8668",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:40:35.559Z"
+  },
+  {
+    "id": "vote:fbb1b49d-5b3c-461b-a532-630f56d939d7",
+    "userId": "pub_dcc2ad0bf6f94a122373c6f5",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T07:58:07.350Z"
+  },
+  {
+    "id": "vote:f1bcde0d-3d63-43c2-a16e-95147132efa1",
+    "userId": "pub_326e6e2a788bf9760f0c2ef6",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T08:06:12.227Z"
+  },
+  {
+    "id": "vote:622f804d-a9f4-4a27-b155-a732832484e5",
+    "userId": "pub_f48dcd01529e8cc10dc75037",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T08:07:56.056Z"
+  },
+  {
+    "id": "vote:11e8bac2-66da-43b5-b8cd-1f467ce50efe",
+    "userId": "pub_1e2b0a9ceb046ae3a1f7aeb0",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T08:20:36.480Z"
+  },
+  {
+    "id": "vote:a73c70f6-1439-449b-b224-89a0736423fb",
+    "userId": "pub_3810f3adf8ac74b7d2179f6b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-26T08:27:26.146Z"
+  },
+  {
+    "id": "vote:54abb71c-0a38-4d9d-99c1-a804765c2f43",
+    "userId": "pub_5efbd07ae1ca049af90fc465",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T08:29:09.938Z"
+  },
+  {
+    "id": "vote:c90c7d49-31e8-4a69-bdb5-38b0d7094046",
+    "userId": "pub_0b86b2c15a3c57bcdf284a70",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-26T08:30:06.529Z"
+  },
+  {
+    "id": "vote:7a73e6fe-9150-4a2f-9e56-b0886f924092",
+    "userId": "pub_7f2314e1ebe7634f336bbe07",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T08:30:14.337Z"
+  },
+  {
+    "id": "vote:bc9fa582-6168-42b7-aa6a-ddd400c5d037",
+    "userId": "pub_ea7ecfa98bc6a9e33cdc7b2b",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T08:44:30.369Z"
+  },
+  {
+    "id": "vote:345cc6b0-8fb9-46f0-9e9f-6fcf56f9b3ad",
+    "userId": "pub_8f467092b426208fadda75c2",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T08:50:12.495Z"
+  },
+  {
+    "id": "vote:d14b49ee-3ebf-499b-8792-dd87b02c55f2",
+    "userId": "pub_ad3783823fc57fb0482aca13",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T09:10:25.291Z"
+  },
+  {
+    "id": "vote:49ecda37-d8b2-43f9-b52e-c6ad73d2586e",
+    "userId": "pub_bbd26d3539340061316c853e",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T09:13:00.039Z"
+  },
+  {
+    "id": "vote:a6364a73-39df-4d8a-bf8c-962aa245616e",
+    "userId": "pub_e7f2119c04ebdb0155579f9a",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T09:17:45.179Z"
+  },
+  {
+    "id": "vote:98bf85fd-4b71-4da5-b8ae-ce8b941cbb15",
+    "userId": "pub_0e341892dfdebf0f17b09041",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T09:39:19.943Z"
+  },
+  {
+    "id": "vote:50fd7bb9-7584-4f76-82f5-353e1cd7754d",
+    "userId": "pub_89dfbd7ed12eec5fed49c3dc",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T10:00:45.906Z"
+  },
+  {
+    "id": "vote:3b405a8b-2df4-4aeb-abb4-f7589ba20bf9",
+    "userId": "pub_d68d1a3111bcaee968092a38",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T10:02:41.560Z"
+  },
+  {
+    "id": "vote:3dc21dbf-4b49-4e42-a798-9e7d06ab1aa2",
+    "userId": "pub_64ef232792860d8e73e7d891",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T11:14:07.814Z"
+  },
+  {
+    "id": "vote:d0104e7e-434a-4295-b298-088da1a58d34",
+    "userId": "pub_47e56f3925c85634973dc03d",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T11:24:16.547Z"
+  },
+  {
+    "id": "vote:423c6d36-f6e7-405c-a65b-655eea5801bb",
+    "userId": "pub_eda863ca9687c0a097bf3abc",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T11:31:16.419Z"
+  },
+  {
+    "id": "vote:c69404d3-bf51-4492-bbc8-0573e226dc67",
+    "userId": "pub_b82378c9c7c2d581437a27da",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T11:48:34.465Z"
+  },
+  {
+    "id": "vote:5921827f-c981-4710-87db-7264d54c625d",
+    "userId": "pub_39c3a3d6b9da5312b33f531e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T12:24:01.414Z"
+  },
+  {
+    "id": "vote:ce4e528f-7751-47b2-a886-87cb11bf5d57",
+    "userId": "pub_df2abd88bf6426aa86a181d5",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-26T12:46:36.108Z"
+  },
+  {
+    "id": "vote:ce2b16f1-abd8-4bac-b28c-9df93b7c3fef",
+    "userId": "pub_b0a39bb7f7e8d8925c16a41c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T13:19:42.755Z"
+  },
+  {
+    "id": "vote:332eec14-5dd7-4dec-8ca9-01464987659d",
+    "userId": "pub_c92998f6e7b200e02675ffa8",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T13:51:13.901Z"
+  },
+  {
+    "id": "vote:77bd5f9a-0ed1-446b-9d4e-c8308bcc6e80",
+    "userId": "pub_4207eeda1f8f21b749933892",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T14:04:32.759Z"
+  },
+  {
+    "id": "vote:403bfe0d-8fca-4535-89d8-b55d0f3e1ac3",
+    "userId": "pub_2d66c10f7779dd55dce8142c",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T18:51:53.286Z"
+  },
+  {
+    "id": "vote:f14b4e10-7973-4b9d-8e60-4023333dd79b",
+    "userId": "pub_1eb9107ead26b46d610d2331",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T19:13:21.393Z"
+  },
+  {
+    "id": "vote:77064893-e20b-4446-8db9-7dceab3eb972",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 5,
+    "timestamp": "2024-09-26T19:18:57.611Z"
+  },
+  {
+    "id": "vote:53684f37-1c05-40ea-b869-dbd9b457d904",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 5,
+    "timestamp": "2024-09-26T19:18:57.611Z"
+  },
+  {
+    "id": "vote:84393c5b-f112-442e-af21-68ec9fab6d1b",
+    "userId": "pub_7443efdccac53e2c8b682f39",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-26T19:29:36.861Z"
+  },
+  {
+    "id": "vote:0bd0864b-4bb3-4427-be00-d51a1e2ea7bf",
+    "userId": "pub_c0123ca1af17281020e7eb2e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T19:30:51.859Z"
+  },
+  {
+    "id": "vote:5f5df45b-5e1c-4fde-a365-dfc2dc7df3e7",
+    "userId": "pub_4b430723f90e98e84e296dc7",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T19:31:16.881Z"
+  },
+  {
+    "id": "vote:e6c7dc60-7cd1-4da0-880b-d7ebbe73126f",
+    "userId": "pub_3dfcd553315370da36c77c27",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T19:46:38.201Z"
+  },
+  {
+    "id": "vote:bc5a81a3-aa4c-41be-9559-4b8571c0a4e0",
+    "userId": "pub_601ae3b7ebdfd7104cbb3bbd",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T19:48:31.853Z"
+  },
+  {
+    "id": "vote:019f1789-f774-4ba4-a2c3-a2f4ed72028e",
+    "userId": "pub_6c0cf0aee140b27512a05568",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T20:06:41.112Z"
+  },
+  {
+    "id": "vote:c1a44bc5-7483-422d-9a54-4c2c1188a054",
+    "userId": "pub_03d9d844188ea39592040252",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T20:07:18.441Z"
+  },
+  {
+    "id": "vote:c3a3799f-9193-4f15-9bb5-9ff2100c4971",
+    "userId": "pub_387002ccd53cb51edcef4f71",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T20:08:49.200Z"
+  },
+  {
+    "id": "vote:ec9a3d93-fe12-4f3c-ab39-7f5703f56606",
+    "userId": "pub_d3ec4d6afbe0e66c82e1479a",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T20:10:42.235Z"
+  },
+  {
+    "id": "vote:aeafd9cb-ad98-4f02-a4a8-7994cfaf0495",
+    "userId": "pub_6aead9c41a02b210a08e5719",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T20:57:30.816Z"
+  },
+  {
+    "id": "vote:fefd52d5-1c8e-43db-ba63-18e7fb8a5272",
+    "userId": "pub_88a84e3b9230dbf692696020",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T21:39:28.391Z"
+  },
+  {
+    "id": "vote:f43d2bf4-0e15-4c71-ac61-9b389d792773",
+    "userId": "pub_acc12f700c5febda259f2ff5",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T21:47:21.827Z"
+  },
+  {
+    "id": "vote:05940de2-b291-44e8-a85a-04a5bb612772",
+    "userId": "pub_756d7f9223170abcd51790d8",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T21:51:58.880Z"
+  },
+  {
+    "id": "vote:26c7710c-e297-472e-8a05-d2a6a2d08c75",
+    "userId": "pub_2b10a9698801bde7510ec426",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T22:02:58.028Z"
+  },
+  {
+    "id": "vote:362c4b66-f963-4da6-ab61-e5510e570e7c",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 6,
+    "timestamp": "2024-09-26T22:03:17.985Z"
+  },
+  {
+    "id": "vote:aec72e0b-608a-46be-867c-fe143b50b2ea",
+    "userId": "pub_705d3470eb54af173f941e59",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 4,
+    "timestamp": "2024-09-26T22:03:17.985Z"
+  },
+  {
+    "id": "vote:75f016ef-eecb-4209-bcdd-264e94e993cb",
+    "userId": "pub_03abfd4fc8cfca4840cf85a9",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T22:26:15.210Z"
+  },
+  {
+    "id": "vote:12e53132-c0c3-4cbf-aad1-b65d75484253",
+    "userId": "pub_20e951e3aa0d35e705ae89b7",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T22:42:15.635Z"
+  },
+  {
+    "id": "vote:f847f56e-18f4-4478-97eb-4a8e47a91faf",
+    "userId": "pub_aacd49f8edc6618d8f3144aa",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T22:54:39.699Z"
+  },
+  {
+    "id": "vote:a41ac4ae-3c0a-4e61-ab7e-fa27122c906f",
+    "userId": "pub_b21d7630dc74a4a56221a98f",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T23:11:04.347Z"
+  },
+  {
+    "id": "vote:d21baab6-c55a-484b-847e-15b0fd7d860f",
+    "userId": "pub_d005ae0ddd7f2cc27659c11b",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T23:17:18.534Z"
+  },
+  {
+    "id": "vote:a8c3d9fe-caf7-44e7-9681-79a32877a87d",
+    "userId": "pub_ae2af5485815010e33f5881c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-26T23:59:10.739Z"
+  },
+  {
+    "id": "vote:570bb98f-364d-4421-8f07-d7a93a829023",
+    "userId": "pub_e7dc6bd2b26d1e60015aa20b",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T00:06:45.698Z"
+  },
+  {
+    "id": "vote:e3049143-76b4-4fb5-bfea-51756537ab2a",
+    "userId": "pub_b1d3eaebb4a6e8bac8e7d1e7",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T00:11:15.061Z"
+  },
+  {
+    "id": "vote:30912f65-4959-45da-a568-d78c92ad7b97",
+    "userId": "pub_adb94483a44e1f8d5bbae6b7",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T00:17:16.027Z"
+  },
+  {
+    "id": "vote:d04e7de0-2024-470d-9e4b-9b6e840dd17e",
+    "userId": "pub_ff692891dc43f864d2ffdac4",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T00:17:50.488Z"
+  },
+  {
+    "id": "vote:2f61cc65-310e-4d81-9202-801b00d08b0a",
+    "userId": "pub_d173d284ac13bbdef0c06bcd",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T00:19:19.628Z"
+  },
+  {
+    "id": "vote:c9965076-1b7e-4af5-b27c-7cb54fd37024",
+    "userId": "pub_4026ccac7feaeaebbc7a36ce",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T00:26:18.341Z"
+  },
+  {
+    "id": "vote:79017311-8252-4f67-a070-37b1da9ae664",
+    "userId": "pub_3fcc3838088918291a788cfe",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T00:31:51.548Z"
+  },
+  {
+    "id": "vote:8e5e83e5-ef4c-4f67-bafa-ebd798396570",
+    "userId": "pub_df509eb5c9184f82324edc56",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T00:35:08.763Z"
+  },
+  {
+    "id": "vote:e0551f45-1625-481b-8680-e1f8547b1993",
+    "userId": "pub_b41e0c7c18d60b5dcb5b013d",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T00:47:44.954Z"
+  },
+  {
+    "id": "vote:0429158c-1364-43b7-aafb-d2d4d53ea5b6",
+    "userId": "pub_db24a3e71cafb4d70061602b",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T00:53:33.130Z"
+  },
+  {
+    "id": "vote:32e7b304-5eee-4f73-80c5-6b9ca6c56510",
+    "userId": "pub_3040c33efe94c20feeb38cb5",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T00:54:31.271Z"
+  },
+  {
+    "id": "vote:217f253a-9b3f-41a3-b632-fe477cf096bc",
+    "userId": "pub_8fbe7ab8daf606ef0e95b92c",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:00:53.084Z"
+  },
+  {
+    "id": "vote:d95856b7-6510-4058-8fe5-aea36c10de19",
+    "userId": "pub_2a6f72354577d74a34c74338",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:05:27.534Z"
+  },
+  {
+    "id": "vote:d6573d8e-f469-45fa-8cbd-d92e5f6af598",
+    "userId": "pub_b3bc1041c1d08b00b7907fd6",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:05:28.778Z"
+  },
+  {
+    "id": "vote:d39f30a3-38bb-4333-b7c8-1a138c4a5bb8",
+    "userId": "pub_0cdd45c9b0945d98890f738e",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:05:53.973Z"
+  },
+  {
+    "id": "vote:cc453f2b-75d7-4ca4-8386-8b58030a5d04",
+    "userId": "pub_28e330feaf572cf76a7cd297",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:20:53.825Z"
+  },
+  {
+    "id": "vote:0ad00259-dd7e-46ac-a81d-cf8cafdcc179",
+    "userId": "pub_680794133f9f951cf730561e",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:23:23.292Z"
+  },
+  {
+    "id": "vote:284d9765-5b96-49e2-b599-e9278fe0bc69",
+    "userId": "pub_4660e757c0efac5be09294d1",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:24:18.200Z"
+  },
+  {
+    "id": "vote:c41059ce-27ec-4526-b2e8-613cd21bd2a2",
+    "userId": "pub_24632170ef93cea51bd4f837",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:27:45.443Z"
+  },
+  {
+    "id": "vote:ab79c33d-eaa6-4aa0-80a3-540781223123",
+    "userId": "pub_d9f43c9087cdca30816ab035",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:32:37.245Z"
+  },
+  {
+    "id": "vote:c0e2497b-1bf8-4c4e-b9ef-601ba69cceca",
+    "userId": "pub_46ecb406abb8c61d8991ed73",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-27T01:35:25.914Z"
+  },
+  {
+    "id": "vote:a7cdc04d-0dc7-4c1f-8ab9-793fef247aa2",
+    "userId": "pub_aa2dbbb946c8b2af648da017",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:42:35.525Z"
+  },
+  {
+    "id": "vote:c45ee678-1ac8-4957-97e4-7661f697b4cb",
+    "userId": "pub_17b681654c09bc96be2a86f0",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:42:50.364Z"
+  },
+  {
+    "id": "vote:d792d6bf-4cb2-4253-bdb9-a6982508ed66",
+    "userId": "pub_5eb4476e23941a274fb1b0fa",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:43:57.974Z"
+  },
+  {
+    "id": "vote:90d56eb1-9158-4079-8be0-3f607675d261",
+    "userId": "pub_fa94ea9d87af37de8d388bad",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:51:23.476Z"
+  },
+  {
+    "id": "vote:df653a99-b46c-4301-b6d1-6f9cdda35cce",
+    "userId": "pub_1872ba53da16f14043a28cab",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T01:52:47.399Z"
+  },
+  {
+    "id": "vote:e8a6bd07-481d-473c-9f57-c334ed365791",
+    "userId": "pub_6ee7c904eddf81c95ac82dd8",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:02:30.068Z"
+  },
+  {
+    "id": "vote:f03c95d3-5bc1-4ace-95b5-da182880f8c7",
+    "userId": "pub_1781364832fcd324c3976f58",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:04:24.765Z"
+  },
+  {
+    "id": "vote:c719736a-f5d9-461d-90ca-51e2ff9fc7dd",
+    "userId": "pub_099f9158537a6084c1800be8",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:05:54.300Z"
+  },
+  {
+    "id": "vote:220303de-b4da-4ea2-ab71-fe05534fcea8",
+    "userId": "pub_eee8f9bf3539c75751baede1",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:13:28.837Z"
+  },
+  {
+    "id": "vote:17f6d2c7-1b53-4e2e-a267-5b660ce28b42",
+    "userId": "pub_fd05b0f0019b42b5dcecaeb1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:25:16.725Z"
+  },
+  {
+    "id": "vote:e344efc1-89d7-4221-b7fb-88af6d83c828",
+    "userId": "pub_51684bcd0a6bddf5d4f58a4c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-27T02:28:24.503Z"
+  },
+  {
+    "id": "vote:12889923-f251-40bb-8c77-fe45e5346fc1",
+    "userId": "pub_a1fa3b1f2a367905e7629cf4",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:30:24.232Z"
+  },
+  {
+    "id": "vote:13874194-099f-4ee0-9322-f4e3f69d98ae",
+    "userId": "pub_08a7581872b2c3a9df58f4a0",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:34:51.429Z"
+  },
+  {
+    "id": "vote:68741690-c134-413c-8eae-2b8b72f6972a",
+    "userId": "pub_dc50a3251e52e70b023898eb",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-27T02:37:50.723Z"
+  },
+  {
+    "id": "vote:13761f82-9abe-41af-a198-82bbd65eecd5",
+    "userId": "pub_a7542042251651243260e4ce",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:40:16.620Z"
+  },
+  {
+    "id": "vote:f53209ac-7cfb-419b-9415-eb0eb10c9594",
+    "userId": "pub_e1df296ab52cbf31c0d10363",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:43:02.615Z"
+  },
+  {
+    "id": "vote:21767a8f-b03c-4171-9324-7a990f6342d6",
+    "userId": "pub_92d2ecab1f8d5d336260d2bd",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 2,
+    "timestamp": "2024-09-27T02:43:19.721Z"
+  },
+  {
+    "id": "vote:ebf160ce-93c2-42cf-a250-af0bf90ab964",
+    "userId": "pub_928e62ff7e1f767f9375b000",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:44:30.350Z"
+  },
+  {
+    "id": "vote:b5b077f9-572d-4328-b13f-9a503b6f83a6",
+    "userId": "pub_70b75ec2523b50cad57e8614",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:44:38.060Z"
+  },
+  {
+    "id": "vote:f499f76e-d672-4974-b6ff-0d6afc77120e",
+    "userId": "pub_9c5e8806a7ee52a840caa228",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:49:49.402Z"
+  },
+  {
+    "id": "vote:83a04afa-3190-4636-a942-83551e03dbe9",
+    "userId": "pub_1cf7bd42e54eec5c96c1a8a3",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:50:56.817Z"
+  },
+  {
+    "id": "vote:e014ce07-e547-4acd-af9f-e9f68d4e4bc9",
+    "userId": "pub_575c26d3225c075b0632a60e",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T02:53:29.190Z"
+  },
+  {
+    "id": "vote:06a4b2db-8994-47ca-a6d5-a96439f30684",
+    "userId": "pub_a68f3c8b19635d2dc4b6b3a6",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:01:10.466Z"
+  },
+  {
+    "id": "vote:2220b569-9d57-4867-8066-0fe34d903484",
+    "userId": "pub_d4513f3add1e6c1fc39ea0f4",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:02:01.079Z"
+  },
+  {
+    "id": "vote:26295906-61d1-46f6-89c9-635149e89ebc",
+    "userId": "pub_40293f893f29d0cdeb3578d1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:02:51.161Z"
+  },
+  {
+    "id": "vote:80fcd3fd-7dc0-4418-81ed-17b56d15a87b",
+    "userId": "pub_2b2077b7d14c76d70a1ecae9",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:05:48.067Z"
+  },
+  {
+    "id": "vote:d873e593-1170-45ed-813a-ccf539dac9a2",
+    "userId": "pub_c4ebf53ab2213cbb58e87ff1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:06:55.861Z"
+  },
+  {
+    "id": "vote:36165990-5011-46c4-a831-5915c457b230",
+    "userId": "pub_364c1092217234f175983667",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:10:54.380Z"
+  },
+  {
+    "id": "vote:badcfd68-921e-47de-88cb-855a02c38b65",
+    "userId": "pub_6b2eb2235fe798c658492542",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 9,
+    "timestamp": "2024-09-27T03:19:54.533Z"
+  },
+  {
+    "id": "vote:4a1c9ee1-dedc-4665-9e26-513e3a9e6fc8",
+    "userId": "pub_12e14b6221e5c77d7d9fb9c7",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:22:32.653Z"
+  },
+  {
+    "id": "vote:300abcc3-2d5c-47ae-98e6-3636e856e1de",
+    "userId": "pub_10c45513d1fdb116888bd5a0",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:24:15.492Z"
+  },
+  {
+    "id": "vote:a03c382c-2ca3-4c88-9e18-6534d1037a48",
+    "userId": "pub_976de2113c022806ecd8d978",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:25:25.292Z"
+  },
+  {
+    "id": "vote:6967f527-53fa-40e5-bdc4-847c0ed77a01",
+    "userId": "pub_859c9f3c0d34fcbe0c308538",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:31:13.572Z"
+  },
+  {
+    "id": "vote:a0b0266b-e2a3-4171-966e-b6ea0f426848",
+    "userId": "pub_0fc7903484a1a9d788c20428",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:33:42.578Z"
+  },
+  {
+    "id": "vote:16010993-d8ed-4743-9155-4dce6ff9c293",
+    "userId": "pub_ced2313389eb24d288b8ea3b",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:33:43.174Z"
+  },
+  {
+    "id": "vote:6246d1c8-17fc-4cfb-b482-ef3dc87db866",
+    "userId": "pub_ae680fa776eceb380fdfa43b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:35:44.855Z"
+  },
+  {
+    "id": "vote:53c63e47-410e-4877-825d-ecea237f1fe6",
+    "userId": "pub_0a4fe4348668c6b8637580df",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:40:19.653Z"
+  },
+  {
+    "id": "vote:4b9627ce-9f4f-4736-bd2d-59c284d32f42",
+    "userId": "pub_0b224755292edfaf0c6e7b7a",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:42:09.456Z"
+  },
+  {
+    "id": "vote:1096f36c-e0ad-47f6-bd6b-9fb88502ab19",
+    "userId": "pub_d0358218d25564d6e91a76cc",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:46:44.924Z"
+  },
+  {
+    "id": "vote:c9b45908-d25b-4620-87e9-6f1e04b89691",
+    "userId": "pub_27e891eba48d61e8e0e73f3c",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:46:47.923Z"
+  },
+  {
+    "id": "vote:26acb51d-ca0f-4d74-8a4d-546c76f6f095",
+    "userId": "pub_80b1b4b92ad2ea7efd097f69",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:48:52.871Z"
+  },
+  {
+    "id": "vote:0c02a73c-a512-49ae-8d3e-7e9a807fbb54",
+    "userId": "pub_40ac1c1dfdba9e0d7d48bca9",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:52:14.807Z"
+  },
+  {
+    "id": "vote:88c19891-eb35-41c6-a974-ed5b7141f26b",
+    "userId": "pub_9aaf6850e9a6b9baf10bdf1c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:52:26.470Z"
+  },
+  {
+    "id": "vote:81b7478d-55e2-4d42-bfe3-393c80d8eb13",
+    "userId": "pub_65322c7d34fe2442bbef3fa0",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-27T03:53:28.249Z"
+  },
+  {
+    "id": "vote:e453c838-a37d-4914-9b87-13e6ad455503",
+    "userId": "pub_72b41cba9fca815cceef130a",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:54:39.805Z"
+  },
+  {
+    "id": "vote:c85be379-f9b7-4c6a-b74e-f6d9eb942db9",
+    "userId": "pub_9572d77ab44c62396bc535b7",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:58:40.560Z"
+  },
+  {
+    "id": "vote:28ae7d83-31dc-46c8-a07b-761e6487899e",
+    "userId": "pub_759cc306d315dbca7d9470a6",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T03:58:56.752Z"
+  },
+  {
+    "id": "vote:6d385b91-0ae7-4b13-bdd7-73093aba1a84",
+    "userId": "pub_f3559e056a723369b3662425",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-27T04:01:23.309Z"
+  },
+  {
+    "id": "vote:316952d1-e548-4d3f-83ce-02cc4695d222",
+    "userId": "pub_7485a76ce54e1c1ed90adb6a",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T04:01:35.494Z"
+  },
+  {
+    "id": "vote:2bcc82e5-145d-4d78-8a90-d4514e307c56",
+    "userId": "pub_55f62bb3eb2e4ffbcb210c91",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T04:15:57.727Z"
+  },
+  {
+    "id": "vote:b6a91f23-ada8-4f6c-bb84-df6076c392b8",
+    "userId": "pub_0a2fc7e49dd86bca53bbeb5e",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T04:27:26.463Z"
+  },
+  {
+    "id": "vote:067d544b-6644-4c88-8db6-6f1bd83326b7",
+    "userId": "pub_226a807d8333e8c6f3a0b6b3",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T04:32:12.124Z"
+  },
+  {
+    "id": "vote:88cefb22-95a2-47c7-a055-e4c66231e03c",
+    "userId": "pub_955f989a1c31332d3c863d4c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T04:41:18.584Z"
+  },
+  {
+    "id": "vote:b48cab66-3842-4142-8a01-aff02e97fa39",
+    "userId": "pub_ae0b7ab2a9dd06ab6e55fe48",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T04:41:52.602Z"
+  },
+  {
+    "id": "vote:5100a703-1e85-4948-bb9c-c0f641caba2d",
+    "userId": "pub_69859e8392806cd8b056e955",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T04:45:00.474Z"
+  },
+  {
+    "id": "vote:28847e50-dab0-4363-be6e-50be22995ce3",
+    "userId": "pub_0b9c84717bd284a1ae3ca260",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T04:52:24.404Z"
+  },
+  {
+    "id": "vote:f9b63dce-2031-4b60-a8ff-804a34a2bd1a",
+    "userId": "pub_692159e87d8d7448ec077b6b",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T05:05:15.018Z"
+  },
+  {
+    "id": "vote:16977c28-1f8b-43e3-bace-d5effb32fb6c",
+    "userId": "pub_eb4b03f71bd60bad311f23f7",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T05:09:38.851Z"
+  },
+  {
+    "id": "vote:134ca0dd-8eb2-4a5e-bcc6-0fd6855547ac",
+    "userId": "pub_0f4b6e744001d481d7482b92",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T05:16:39.212Z"
+  },
+  {
+    "id": "vote:3fb878d7-ef3f-4e36-8f05-3685859ad39b",
+    "userId": "pub_347ec2f6456c605d0a788209",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T05:20:40.502Z"
+  },
+  {
+    "id": "vote:637b4ea7-4be9-4e0c-8e42-281c7d6e199c",
+    "userId": "pub_9bbdcb8ab78f1e5d15ccf962",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T05:37:24.057Z"
+  },
+  {
+    "id": "vote:de43f95a-04b6-48c0-bde9-2e133f9eed3e",
+    "userId": "pub_746e7f600e5d656f320edd7d",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T05:40:57.136Z"
+  },
+  {
+    "id": "vote:354c7598-1057-4b23-84de-fe9bacee1814",
+    "userId": "pub_a1063683ff222cc5eb4449f6",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T05:48:38.069Z"
+  },
+  {
+    "id": "vote:111d3360-6c52-4ddf-a907-dc1c75b99577",
+    "userId": "pub_80a294d6a1624d34c587b0d1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T06:03:07.227Z"
+  },
+  {
+    "id": "vote:df3b9b44-583f-4f53-ba54-8748dd26ac91",
+    "userId": "pub_09ac05a1e08e72d1410d1a7a",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T06:07:28.401Z"
+  },
+  {
+    "id": "vote:dd612a3f-f6a3-470b-8cc5-777689b24061",
+    "userId": "pub_2d14ca059d3d7707467e2e67",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T06:27:00.299Z"
+  },
+  {
+    "id": "vote:8a022bd5-0bd4-4488-b6dd-52fa9d2c693b",
+    "userId": "pub_6f4a78ede32852034125a492",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T06:39:20.553Z"
+  },
+  {
+    "id": "vote:58bf095a-f048-49b7-9c50-459521d28170",
+    "userId": "pub_12a317397143a64946e8c39c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T06:40:49.757Z"
+  },
+  {
+    "id": "vote:4a03f987-5ec8-4916-b1ff-692e4b14c075",
+    "userId": "pub_629a6d3b8f4e455cf453740a",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T06:45:55.247Z"
+  },
+  {
+    "id": "vote:b1967cb5-caa8-468f-a899-8c0d6a212ee0",
+    "userId": "pub_ed59c1a66f0515821571e509",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T06:48:20.864Z"
+  },
+  {
+    "id": "vote:8480c0fd-9d9e-4b1d-bd0e-1469e0b0001e",
+    "userId": "pub_c01cb626cdfa3c9bd5717324",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T06:55:21.574Z"
+  },
+  {
+    "id": "vote:1cf7680f-f6de-4ca7-8599-22d7a083c4e5",
+    "userId": "pub_3122c6f1d3a3ed087a2d8403",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T07:01:25.263Z"
+  },
+  {
+    "id": "vote:89494272-4a0f-4e56-a770-84c5a9ed2b12",
+    "userId": "pub_29761c9b56d10e63c439db58",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T07:18:38.853Z"
+  },
+  {
+    "id": "vote:fa57cfc5-ad1a-4331-ae36-9083e09e437b",
+    "userId": "pub_2632ab24e807599909d62714",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T07:19:37.161Z"
+  },
+  {
+    "id": "vote:39474646-8213-4782-aff2-65d80d2f73eb",
+    "userId": "pub_fc52cebe47f21505768e3a99",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T07:51:53.209Z"
+  },
+  {
+    "id": "vote:87672912-8748-4997-9d2f-179bdf518a3a",
+    "userId": "pub_3413cb0aa969dc234a90418e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T07:53:34.460Z"
+  },
+  {
+    "id": "vote:2d96c827-fceb-4d8c-919e-c31396c2560c",
+    "userId": "pub_cd67b8bd49be84939103d3e9",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T07:59:35.925Z"
+  },
+  {
+    "id": "vote:b6689883-3980-47f8-af17-aa5289bd42b1",
+    "userId": "pub_802c60222b54e7a16187ba94",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T08:03:01.253Z"
+  },
+  {
+    "id": "vote:48a4f888-073c-4358-b331-cf4edc42747b",
+    "userId": "pub_c6588ad5f9f838f4bc45e931",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T08:06:35.444Z"
+  },
+  {
+    "id": "vote:0fcb83ff-6b1a-4d44-90bd-36a02d2cb1af",
+    "userId": "pub_12a26733ed09f85d442997fe",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T08:06:46.189Z"
+  },
+  {
+    "id": "vote:1639c879-c4ab-464c-8d48-f42135f6213b",
+    "userId": "pub_1190eed89489450077e9e71a",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T08:39:11.137Z"
+  },
+  {
+    "id": "vote:651669eb-a6d5-465d-9134-2f1a1ba51852",
+    "userId": "pub_f169ac001b30e8fdaeec835c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T08:44:28.688Z"
+  },
+  {
+    "id": "vote:efd010da-4fca-4188-998b-8b719732684f",
+    "userId": "pub_0b63f33e2fa0ca9270ac378e",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T08:54:40.738Z"
+  },
+  {
+    "id": "vote:5bd7a9f8-a50e-4fc1-b6f7-fbd4e59842e7",
+    "userId": "pub_f0877e3894248e24791e16d8",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T08:55:00.664Z"
+  },
+  {
+    "id": "vote:58a4b646-6dff-42f1-81e7-437d62209419",
+    "userId": "pub_db31f8af3e22b6476e91602e",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T09:05:16.658Z"
+  },
+  {
+    "id": "vote:58e46116-08a2-40d5-8e92-8c6fd8cdf271",
+    "userId": "pub_f5b6daeea9a88d9fe0a67e9b",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T09:08:15.299Z"
+  },
+  {
+    "id": "vote:25e253c4-d350-4c0b-82fe-2c5d7dfa8f76",
+    "userId": "pub_8ca31186957747f6e37b03d1",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T09:09:09.945Z"
+  },
+  {
+    "id": "vote:23fd00d2-4d0e-483a-a537-cb998b46ec9a",
+    "userId": "pub_7f847b14a746db772e9c5cb9",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T09:16:47.898Z"
+  },
+  {
+    "id": "vote:9773cbd5-5efd-46b8-8afb-0c4876c194fd",
+    "userId": "pub_7b104184cedcbf0dbcfc4898",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T09:18:03.200Z"
+  },
+  {
+    "id": "vote:72703603-4d71-4909-8b1b-7012d533a4ed",
+    "userId": "pub_8e277283349a94772eb444e3",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T09:25:59.112Z"
+  },
+  {
+    "id": "vote:1a26350b-2ea8-40ca-9f4d-a7a6f62849f0",
+    "userId": "pub_4f1d41b27f9970646b46b61d",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T09:56:31.655Z"
+  },
+  {
+    "id": "vote:59d27dfb-784a-40e5-8326-9ce30db3ab8f",
+    "userId": "pub_1c4c63a3d90b063891733c2a",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T10:28:55.478Z"
+  },
+  {
+    "id": "vote:c5cac954-b7ce-4451-8eba-12333436482d",
+    "userId": "pub_182e3617f9de31c95f1c9b95",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T10:30:04.170Z"
+  },
+  {
+    "id": "vote:ddff1dcc-f8e7-4246-98f1-b1389badf799",
+    "userId": "pub_5f46eacbe14c29600dc70f3e",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T10:31:50.850Z"
+  },
+  {
+    "id": "vote:b177dd15-daab-45ec-968a-400924493953",
+    "userId": "pub_46f0d5bb5623ddccf3a50062",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T10:51:16.846Z"
+  },
+  {
+    "id": "vote:3109f21b-b3cb-4d6b-9d79-b6ed7fd68ba2",
+    "userId": "pub_4cef58cd04ae4531f4dc7243",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T10:55:01.091Z"
+  },
+  {
+    "id": "vote:1704532d-f199-4692-8533-58c0a73e0eb8",
+    "userId": "pub_ec8802b85368aa39a9d63ba4",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T11:04:18.234Z"
+  },
+  {
+    "id": "vote:5133a892-6bd8-4477-bb52-2d6fda40e04a",
+    "userId": "pub_d58b1d47520c1014b1e62b9f",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T17:10:13.259Z"
+  },
+  {
+    "id": "vote:44b1d11b-a4eb-46c3-a2a9-409b96a8d8fe",
+    "userId": "pub_dfd233324c9479dd9966f6d1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T17:17:53.318Z"
+  },
+  {
+    "id": "vote:b0a7fad1-1539-4023-a27d-3b90b1f4ccbd",
+    "userId": "pub_a1b9ef8e733b7c65b319579d",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T17:39:05.201Z"
+  },
+  {
+    "id": "vote:b9cab1f9-bd88-467c-bd2b-bd8d2611028d",
+    "userId": "pub_e064b22cdd40007563b17e65",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T19:05:24.715Z"
+  },
+  {
+    "id": "vote:a38b908b-35bc-43bc-bfb8-4eeafde923b4",
+    "userId": "pub_1e84312b77897fa545f1f813",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T20:05:59.001Z"
+  },
+  {
+    "id": "vote:2be15665-a43c-4abf-a89e-1a8300c49c11",
+    "userId": "pub_d85610c10dc882d741067c1f",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T20:10:23.267Z"
+  },
+  {
+    "id": "vote:51beb6ee-36a2-4868-bb01-17f774847385",
+    "userId": "pub_d988de167b9264f7a6742cb3",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T20:11:51.822Z"
+  },
+  {
+    "id": "vote:72cb6df4-9698-4550-a2a5-a8b0bf1a9ba4",
+    "userId": "pub_ad54fc7de3b2e9abbd7c7373",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T20:15:13.148Z"
+  },
+  {
+    "id": "vote:cf19d9f2-0e5d-42f4-b18b-23c8dccd5c62",
+    "userId": "pub_5941fed023f318c9ad8f7b36",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T20:48:45.712Z"
+  },
+  {
+    "id": "vote:d604c467-a1d1-45ab-955c-a6fa4b88911b",
+    "userId": "pub_70da9117c993dc3fe67e4eb7",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T20:52:44.105Z"
+  },
+  {
+    "id": "vote:6e6e081b-0496-483f-bd5b-68330d4adc4c",
+    "userId": "pub_338717ab35a8c47c0b247363",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T21:01:06.164Z"
+  },
+  {
+    "id": "vote:7f40698b-d8e6-4947-8471-a9999016e956",
+    "userId": "pub_98c4ec82aba2fb4d12a897d8",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T21:08:19.342Z"
+  },
+  {
+    "id": "vote:0f4e422e-b478-4a2e-9a2a-7cb51f95a919",
+    "userId": "pub_40d1102c0abe6abf77fbae04",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T21:10:00.829Z"
+  },
+  {
+    "id": "vote:47b33111-4c7d-4b60-98e0-b4b3a11f1370",
+    "userId": "pub_bbe09d404c3753c44c072818",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-27T21:57:50.125Z"
+  },
+  {
+    "id": "vote:743f8d27-6d34-4d1a-b505-11af7d75ab49",
+    "userId": "pub_3bdcf764e5240d52efee1563",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 5,
+    "timestamp": "2024-09-27T22:14:43.856Z"
+  },
+  {
+    "id": "vote:c2c850b7-9519-46f4-8587-3a4677112f17",
+    "userId": "pub_3bdcf764e5240d52efee1563",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 5,
+    "timestamp": "2024-09-27T22:14:43.856Z"
+  },
+  {
+    "id": "vote:b6ec69a3-2961-4424-b903-0a1a14a65b39",
+    "userId": "pub_2f3e1793e8f1422f8afa30ef",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T22:17:36.931Z"
+  },
+  {
+    "id": "vote:7cd24d0d-7fe9-4648-9b1a-075f08c037e6",
+    "userId": "pub_db5cc4567e04beae9b3d5d46",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T22:28:32.258Z"
+  },
+  {
+    "id": "vote:b6ec7d3b-4879-4862-9d0d-893c8647f248",
+    "userId": "pub_86a8a06d6ecf54f66a010f98",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T23:13:20.635Z"
+  },
+  {
+    "id": "vote:bf160203-6dfd-476b-ac37-c25ce68dfa96",
+    "userId": "pub_43ae82df30a437dbc02c4d11",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T23:18:41.857Z"
+  },
+  {
+    "id": "vote:f9261b2b-fe25-4f51-aeb4-3058313b94aa",
+    "userId": "pub_62cc8a50500eb483ff103ef2",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T23:21:57.053Z"
+  },
+  {
+    "id": "vote:36f1a394-6e8f-4bd9-a4e6-37ba1d89ac4c",
+    "userId": "pub_aa46a86b4a446fa9c0f1bc27",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T23:23:14.237Z"
+  },
+  {
+    "id": "vote:da99ee06-6997-4f93-b761-66af46fd19de",
+    "userId": "pub_2e075886bed5a335467baf13",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T23:42:22.142Z"
+  },
+  {
+    "id": "vote:631da91f-d008-439c-9ac4-41051f77feb1",
+    "userId": "pub_bd69927e7c9386dd50e7f4db",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T23:52:01.851Z"
+  },
+  {
+    "id": "vote:11b0bac7-40b8-44a1-92ef-e9d17805ff60",
+    "userId": "pub_9eef14f98648f43a607170a2",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T23:59:25.838Z"
+  },
+  {
+    "id": "vote:6ad919e5-6ee5-4624-8001-15546fd35e7d",
+    "userId": "pub_2514ebefa4929ec97e066d42",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-27T23:59:33.371Z"
+  },
+  {
+    "id": "vote:6f350f97-b434-4474-9340-8b7d6a58c76b",
+    "userId": "pub_34ee9c525c183e7928be2d0e",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-27T23:59:55.050Z"
+  },
+  {
+    "id": "vote:222540b4-90c1-43c5-a9ac-914449cf2559",
+    "userId": "pub_5c73f567ab626dd4b4e7b7b5",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T00:00:17.888Z"
+  },
+  {
+    "id": "vote:f65b683c-4794-499a-a403-1e0b91b06103",
+    "userId": "pub_5c73f567ab626dd4b4e7b7b5",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 4,
+    "timestamp": "2024-09-28T00:00:17.888Z"
+  },
+  {
+    "id": "vote:1a558034-560f-4b78-93b6-3f6da362b9b6",
+    "userId": "pub_5b383e00460afef2290a38fb",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T00:01:20.210Z"
+  },
+  {
+    "id": "vote:4668e1cd-777a-4663-aed4-c007611915e0",
+    "userId": "pub_a8a25e04ea64ede9bf23d8c9",
+    "proposalId": "proposal:396bfb65-709e-4457-a26c-ba603b44d020",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-28T00:01:58.976Z"
+  },
+  {
+    "id": "vote:169248ce-db4c-455b-8777-ac9b32482e07",
+    "userId": "pub_7b1f7be957cfae92b94ee36e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T00:02:40.044Z"
+  },
+  {
+    "id": "vote:6431cec4-921d-4445-a8c0-8f1c1aad72df",
+    "userId": "pub_d8244df91dad18e1411a91cb",
+    "proposalId": "proposal:9ad2fe98-e745-4c80-82cf-d6411fea4548",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T00:10:26.349Z"
+  },
+  {
+    "id": "vote:abc0a241-689a-40ba-8809-bb903d518c56",
+    "userId": "pub_b6497a1836b314ea8d7199f1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T00:28:53.223Z"
+  },
+  {
+    "id": "vote:0858d720-423c-48eb-a902-b1847a10ad94",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-28T00:31:07.820Z"
+  },
+  {
+    "id": "vote:a7587c6d-a45b-4d5f-acb6-601df4592f9d",
+    "userId": "pub_27d8485b5dae4fbdb555605a",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T00:39:07.446Z"
+  },
+  {
+    "id": "vote:6db97cab-6022-456f-94f2-9b7ba3ad3b37",
+    "userId": "pub_d076196731e726755e94e3fd",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T01:58:22.881Z"
+  },
+  {
+    "id": "vote:bcddd172-6c1d-4d40-8c54-91bf14d028db",
+    "userId": "pub_03e366040dcbe2a5fda5c277",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T02:04:22.054Z"
+  },
+  {
+    "id": "vote:3e67f5db-3e4f-4729-be8c-c5cc982a097f",
+    "userId": "pub_1562b605d407e57d69a8deae",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T02:16:34.324Z"
+  },
+  {
+    "id": "vote:db30d778-58a6-44be-bb16-af1f8e815d99",
+    "userId": "pub_037caebffc064116acbcf80a",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T02:23:04.418Z"
+  },
+  {
+    "id": "vote:4ab0796f-5831-4c4d-bff5-594caa4818ea",
+    "userId": "pub_a9040cc42e4259d7bb24fc18",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T02:24:12.231Z"
+  },
+  {
+    "id": "vote:b9f18818-9604-4c14-9ed9-ecc9cb8188f4",
+    "userId": "pub_7e7f484404961fef3b73a9a0",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T02:40:58.900Z"
+  },
+  {
+    "id": "vote:059d4f54-2cf8-42b6-a6ba-23d907c86960",
+    "userId": "pub_ae8d4add172c17ce58f53cb0",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T02:57:41.842Z"
+  },
+  {
+    "id": "vote:58ae332e-2447-4f7d-b42e-3453ebe26a08",
+    "userId": "pub_b9ad5c0e7951ee0487a9217e",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T03:15:14.155Z"
+  },
+  {
+    "id": "vote:ced585e1-b461-4034-9710-ac0016d15144",
+    "userId": "pub_de81487077f79c256f25826a",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T03:17:11.836Z"
+  },
+  {
+    "id": "vote:775c4f3b-c4c4-48ce-8ee9-2f089ad738aa",
+    "userId": "pub_69b88ac6f4e291b1665c1921",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T03:19:25.220Z"
+  },
+  {
+    "id": "vote:65278d00-5c05-4a54-9240-56d2f1d0f55d",
+    "userId": "pub_9e3e0534f8958cc9cb94903f",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T03:32:06.503Z"
+  },
+  {
+    "id": "vote:5212146d-f950-4809-b82d-495107267187",
+    "userId": "pub_90ae6751df2a6d4fe94e0fd5",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T03:39:31.352Z"
+  },
+  {
+    "id": "vote:03cdfa30-9730-4958-9f2e-e930ac4e18a3",
+    "userId": "pub_6410fc9fc61c8024e96751b2",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T03:42:52.444Z"
+  },
+  {
+    "id": "vote:10a6cc14-8383-4cb8-8b0f-c3c4ae0ca257",
+    "userId": "pub_85ca62e6906ffa6a4f1d097f",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T03:49:16.195Z"
+  },
+  {
+    "id": "vote:7d24f714-ca54-4944-9a04-6fa7931096a2",
+    "userId": "pub_d0c93b0abc7cd8e8f5c52911",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T03:51:27.518Z"
+  },
+  {
+    "id": "vote:e90c3163-acec-41a1-b1fa-040fcf0b3428",
+    "userId": "pub_b40e56c0d06eef8117cf61d3",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T03:57:19.407Z"
+  },
+  {
+    "id": "vote:deeea92c-3047-4ac9-b9e8-e9af678768bd",
+    "userId": "pub_66e71a836144a133d485bbf1",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T04:06:47.818Z"
+  },
+  {
+    "id": "vote:9364eabb-4eab-4bbd-8311-f4573162dd50",
+    "userId": "pub_2f472b5e1e132aba2ee9908e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T04:15:11.449Z"
+  },
+  {
+    "id": "vote:34067e81-f856-4508-b5b2-1b17e5faf2a3",
+    "userId": "pub_7db70f5bcd6f37d0ccf13b6a",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T04:15:18.826Z"
+  },
+  {
+    "id": "vote:918fa426-1ef5-475f-923f-ed825ebb3297",
+    "userId": "pub_8fbd50c2d660fb63c4a489d2",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T04:16:38.924Z"
+  },
+  {
+    "id": "vote:a54d878f-2e3a-4c66-852b-20da5f9fdafc",
+    "userId": "pub_4e069a019384c5a22e960d63",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T04:25:36.476Z"
+  },
+  {
+    "id": "vote:ce71c39b-6b86-491f-8efa-da253009ee0b",
+    "userId": "pub_d01fc7a569ce88bbeab76c6c",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T04:34:45.626Z"
+  },
+  {
+    "id": "vote:855adc00-2341-42f8-b0be-8b8695012ef2",
+    "userId": "pub_82bbc7fedbc26e035f15cab6",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T04:38:14.954Z"
+  },
+  {
+    "id": "vote:4e6fadbc-d4e5-4e40-b001-7e063e28b0f6",
+    "userId": "pub_c7e5df17536d3d1936b5ad09",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T04:40:55.740Z"
+  },
+  {
+    "id": "vote:053cfc1f-0d0c-41eb-9413-0a778c88ee60",
+    "userId": "pub_33141d1541f8e7e927a1c8ef",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T04:47:30.244Z"
+  },
+  {
+    "id": "vote:2fbf70d9-001a-4d9a-a454-25626de5e93a",
+    "userId": "pub_adfed5697206b6914643418c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T04:55:41.595Z"
+  },
+  {
+    "id": "vote:79734970-9b10-4568-8680-45923fd1cd97",
+    "userId": "pub_fea7c62a4b7503c6a46bcf6f",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-28T04:56:32.570Z"
+  },
+  {
+    "id": "vote:948d8cfc-d0fd-46c8-9567-ed0901e990a1",
+    "userId": "pub_03968ec1bf51ff1397f619eb",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:01:31.807Z"
+  },
+  {
+    "id": "vote:07882103-41b0-4574-a1e5-3f21fd016051",
+    "userId": "pub_8cfa76ecdcc711ae31c9d331",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:09:48.385Z"
+  },
+  {
+    "id": "vote:d504df31-85e9-464b-ac7e-6d4bf6eabb3a",
+    "userId": "pub_333bedecfef794ba10dc6993",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:11:50.427Z"
+  },
+  {
+    "id": "vote:76480ec8-6f67-4ae6-aa83-2225edaa0dda",
+    "userId": "pub_45ae498956deb833814146b5",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:13:15.437Z"
+  },
+  {
+    "id": "vote:444b18c7-8927-4960-9ec5-e335e4ee7e79",
+    "userId": "pub_9925b817132940e971f02bf1",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:20:55.683Z"
+  },
+  {
+    "id": "vote:7f73e7f9-3cc8-43da-8d8a-da1a40ac1f93",
+    "userId": "pub_c3afda64e48a3604412efea6",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:34:11.435Z"
+  },
+  {
+    "id": "vote:73e95288-f408-4b12-9050-d67d70c2cb3f",
+    "userId": "pub_c33d1b639db2a12e96762504",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:35:40.942Z"
+  },
+  {
+    "id": "vote:5402d7ce-0d4d-4b87-88ff-6476d3d3d2a7",
+    "userId": "pub_431a9e4ae6097b5e1031f84b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:35:48.782Z"
+  },
+  {
+    "id": "vote:5881206a-5a46-4c14-b1d7-d9c32e03f92e",
+    "userId": "pub_f767d577ff07ba7a8d6ef11b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:38:35.829Z"
+  },
+  {
+    "id": "vote:537ceb7e-a97a-437b-b5c0-206fc9abfa19",
+    "userId": "pub_a4c4bf5fa4d9ca951ea1f976",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:42:12.916Z"
+  },
+  {
+    "id": "vote:524fa00f-3d00-483b-ba70-abfad0a71c1c",
+    "userId": "pub_e891d58c86065bf4db883f66",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:43:46.475Z"
+  },
+  {
+    "id": "vote:6d8ba7e0-d4b5-44d7-9670-875fbc44e64d",
+    "userId": "pub_ab0a9e6e63e77e373b5433c2",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:55:57.763Z"
+  },
+  {
+    "id": "vote:10b33ec8-f184-4eda-b4d0-3f8def90c7f8",
+    "userId": "pub_89be33028c1e4690f9b4813b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:57:48.064Z"
+  },
+  {
+    "id": "vote:681c66ea-e4a6-48f8-a1af-d17216a6988a",
+    "userId": "pub_6e649c57e21d7d17e5e24c8b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T05:59:12.954Z"
+  },
+  {
+    "id": "vote:3573b51b-b4f2-4e78-af60-d3ba832e2ea9",
+    "userId": "pub_616587f5a1d78f80a23a9a12",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:05:24.112Z"
+  },
+  {
+    "id": "vote:a51d6c7d-0754-432e-83da-234f3fa902e2",
+    "userId": "pub_44cbabd1f96ec0e1527a161c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:14:06.213Z"
+  },
+  {
+    "id": "vote:d32a53e8-76d9-4bdb-b9b2-df057fcf19a7",
+    "userId": "pub_7df9aa8007cade53ad22a2d0",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:15:40.601Z"
+  },
+  {
+    "id": "vote:0f79e57b-a315-47c7-9851-e6f6b640e46b",
+    "userId": "pub_ec859bc2fb329e185a30d090",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:15:45.195Z"
+  },
+  {
+    "id": "vote:97fead6c-0b1b-45c4-b841-5cabab63fd9d",
+    "userId": "pub_e3e8b6cc579a676dbe58d7a1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:17:37.451Z"
+  },
+  {
+    "id": "vote:1dde236b-25f6-4b3b-85fb-7c9436fcad69",
+    "userId": "pub_7217ff2b03c8ccb7f3f76090",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:20:20.526Z"
+  },
+  {
+    "id": "vote:fd72e45b-bce3-448a-b762-801e49ffef4d",
+    "userId": "pub_92b248ab71febe7bc8e75aab",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:23:35.157Z"
+  },
+  {
+    "id": "vote:f8f9e7a2-a152-40d9-a0a6-57584e138594",
+    "userId": "pub_4a753cc545fc3b35fec9a950",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:25:30.810Z"
+  },
+  {
+    "id": "vote:c8d33925-5b6a-4ea2-ad9d-86094f8e8019",
+    "userId": "pub_a81e15fdd91e09e8d0ba5563",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:29:44.144Z"
+  },
+  {
+    "id": "vote:0ee7d563-0532-4e9d-9ea9-1e964e79761d",
+    "userId": "pub_3d79f058d91e73b1db7a3f41",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:32:28.527Z"
+  },
+  {
+    "id": "vote:d6f9167d-b7fd-4db4-9677-56f66b31e914",
+    "userId": "pub_87df4805a076ce8a9429b3b4",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:36:11.689Z"
+  },
+  {
+    "id": "vote:cf78b9fd-873f-42a3-a94f-a3b22003eb68",
+    "userId": "pub_f4c22bbbee0fea68f5548e67",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:37:34.169Z"
+  },
+  {
+    "id": "vote:25932773-e9c9-4a40-80ed-812aa71a1f24",
+    "userId": "pub_8fa2398f7bbd74e883b11408",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T06:43:51.946Z"
+  },
+  {
+    "id": "vote:3d35553e-18d3-490a-8925-04ef63361387",
+    "userId": "pub_2ce16dcfcd38450a44e88c18",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-28T06:49:39.855Z"
+  },
+  {
+    "id": "vote:f089a058-47d8-46cb-b408-8636d6185731",
+    "userId": "pub_647160dc66ddbd281d4e670b",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:07:10.321Z"
+  },
+  {
+    "id": "vote:0747578e-8b25-40a1-b949-94beb6a9448a",
+    "userId": "pub_c7f6af113590e8e031ccbde2",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:07:25.150Z"
+  },
+  {
+    "id": "vote:e2270f29-0323-484a-a357-d8d3a23cbf78",
+    "userId": "pub_444844a7abb14c9d4722a7e7",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:11:06.712Z"
+  },
+  {
+    "id": "vote:3bdf8b89-1f3a-4d5d-96bb-3b8c4e122513",
+    "userId": "pub_b38ff1d436b00c72f7ada134",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:19:26.364Z"
+  },
+  {
+    "id": "vote:3c6a2544-8b1c-41b4-b806-945725c9519b",
+    "userId": "pub_c1d4fedc59ae6821d3ee0e5c",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:34:16.203Z"
+  },
+  {
+    "id": "vote:3d9d4f11-ba93-47bd-87b6-27c74a3156d9",
+    "userId": "pub_e3f94c9913a153717181a57b",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:37:47.494Z"
+  },
+  {
+    "id": "vote:8c700210-4734-4d27-8b21-539dc5e0eb05",
+    "userId": "pub_1c0b1e551ccda841b7c6a7ca",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:44:31.646Z"
+  },
+  {
+    "id": "vote:61ccb90c-3f71-4b20-818e-d7a2ebedf908",
+    "userId": "pub_433ec55a36347f0caad89d8b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:51:03.655Z"
+  },
+  {
+    "id": "vote:f0053bbb-a3d9-40c3-bc0c-ada8b6c94f84",
+    "userId": "pub_6966a938c400dce3ab60ff27",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:52:21.837Z"
+  },
+  {
+    "id": "vote:b117a68a-0516-4cb3-b80b-476714171e77",
+    "userId": "pub_b1161832858a6e10160aeaf2",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:57:03.427Z"
+  },
+  {
+    "id": "vote:cf0d0aa0-b2a5-4627-a164-1a805624c5d5",
+    "userId": "pub_e63d83e84e0fb00ff9dfa616",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:59:21.923Z"
+  },
+  {
+    "id": "vote:23be8ea3-8f39-4f25-819b-488f67f37205",
+    "userId": "pub_c00c96fb74afadca92704007",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T07:59:44.354Z"
+  },
+  {
+    "id": "vote:a282be13-0994-466a-9210-ca9984ed9b56",
+    "userId": "pub_373387f8c1e4c5fe2450d545",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:02:36.896Z"
+  },
+  {
+    "id": "vote:320dbaec-9482-4f8c-86e7-d86b2b60db3b",
+    "userId": "pub_072b0856b698660dfe4c7155",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:03:14.899Z"
+  },
+  {
+    "id": "vote:745fef0a-1975-46b8-91e3-a27292237854",
+    "userId": "pub_f5191b28c43bce61f3e95d83",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:05:50.558Z"
+  },
+  {
+    "id": "vote:05b83db9-400f-4db8-9e60-39dfcfdfb7c5",
+    "userId": "pub_b43e91b4a7ad00b33c25d018",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:08:16.898Z"
+  },
+  {
+    "id": "vote:61a58780-fb39-49ea-8976-0c0fcab37305",
+    "userId": "pub_3ce4609e4300515447a675ee",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:08:38.112Z"
+  },
+  {
+    "id": "vote:1a0723da-7ffa-4b3d-8d27-6ee0efcfe1f2",
+    "userId": "pub_ec95ea7c737193f067dd5ac6",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:08:41.737Z"
+  },
+  {
+    "id": "vote:ffab1eda-d2c5-40a7-94e4-6a5f2069dbcd",
+    "userId": "pub_4597ae9f430164d08dee9ed9",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:08:46.084Z"
+  },
+  {
+    "id": "vote:3fd6d449-0921-43a2-9a1d-7dfc9729acb2",
+    "userId": "pub_23a6c38f14b5dde0154c1d8c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:09:34.294Z"
+  },
+  {
+    "id": "vote:837877cf-3636-45af-9d8a-bf3bb8f52c35",
+    "userId": "pub_a9ce4f1283c6ffc590b1658c",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:13:38.466Z"
+  },
+  {
+    "id": "vote:d8730fd5-be15-4739-ad00-b44681c84bef",
+    "userId": "pub_3a50bafad75bc2270b5f6d84",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:17:07.896Z"
+  },
+  {
+    "id": "vote:bce6eecf-acea-4226-87e3-b068c2ab7f30",
+    "userId": "pub_997e53362bac0402acd07420",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:17:50.228Z"
+  },
+  {
+    "id": "vote:fc5cacf3-5c89-4510-b9dc-4daa6012d078",
+    "userId": "pub_e98bf499efca63b3802c3abe",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:18:38.692Z"
+  },
+  {
+    "id": "vote:b25363c3-a967-47a9-b62a-666206fa3845",
+    "userId": "pub_bf43cf54e07748d2efe96e6b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:19:37.101Z"
+  },
+  {
+    "id": "vote:ec07b595-4802-483e-939f-30ba4d15c047",
+    "userId": "pub_093db47934fb9570e227d90e",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:19:40.372Z"
+  },
+  {
+    "id": "vote:5737cb5f-5ca9-48fa-b033-ae737d527893",
+    "userId": "pub_893e740b85043a401d0dbc37",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:20:03.568Z"
+  },
+  {
+    "id": "vote:0ae40565-2018-4b2d-a1f4-ba01feb6cb19",
+    "userId": "pub_4d991a8e725905b1b8c89253",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:20:32.437Z"
+  },
+  {
+    "id": "vote:69638a3a-a7fd-4ad5-976c-db4873b79722",
+    "userId": "pub_92d2ecab1f8d5d336260d2bd",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:21:24.951Z"
+  },
+  {
+    "id": "vote:9e650d0b-6c31-4afc-ad4d-39e7d2ac7ab7",
+    "userId": "pub_8a528ff9c82e266bcf917af0",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:28:07.519Z"
+  },
+  {
+    "id": "vote:42100bbe-b3ad-41e0-a49c-9e64b65e3650",
+    "userId": "pub_9e6acb1a3d1e00e5434bd5fe",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:29:54.621Z"
+  },
+  {
+    "id": "vote:d6d009a3-f57d-415d-8158-f0f058474127",
+    "userId": "pub_b1273790b3ae16f1748c31f5",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:30:11.566Z"
+  },
+  {
+    "id": "vote:2f8253f7-e0e6-47cf-84e5-b0b938f10cbe",
+    "userId": "pub_e71888c0878048b8b78ec5f9",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:32:49.446Z"
+  },
+  {
+    "id": "vote:838436d6-bd7f-4ceb-a926-c21eb82d13a6",
+    "userId": "pub_903dfb78bd3a670aedc79fde",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:35:04.381Z"
+  },
+  {
+    "id": "vote:6d0cf0d4-a362-4b16-baad-fdf7d27f7519",
+    "userId": "pub_c8ae4dcbdd3c9fc85c9e9575",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-28T08:42:50.641Z"
+  },
+  {
+    "id": "vote:0a8f1095-0e41-43ee-85f0-4864fb8593c8",
+    "userId": "pub_5df2a63a800925a7259e8321",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:43:58.907Z"
+  },
+  {
+    "id": "vote:08b7b3c9-7bff-4b76-bb5d-5c88c91ece11",
+    "userId": "pub_f751555f831d4f2183af244c",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:44:39.772Z"
+  },
+  {
+    "id": "vote:744506d3-041d-4b9c-b3f9-4d1fc91f5611",
+    "userId": "pub_6c06dfd95fcf90e1a77db4f4",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:44:52.437Z"
+  },
+  {
+    "id": "vote:92c519ee-a37f-4b76-b144-58a259c758fb",
+    "userId": "pub_f383b8f3ed38627745bed092",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:46:34.814Z"
+  },
+  {
+    "id": "vote:abab68ab-5ade-4ce1-b798-340453e5da9c",
+    "userId": "pub_2f46e192cd3b1d79a1468bba",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:54:04.305Z"
+  },
+  {
+    "id": "vote:68035f94-2304-461a-beeb-9e3cd53e73b7",
+    "userId": "pub_38d61ec9ddf65a047d45b1d6",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T08:56:00.233Z"
+  },
+  {
+    "id": "vote:e019ce75-c393-431f-a2ed-03cfcc9c5fb4",
+    "userId": "pub_32c04d1aadc0e247b49e43d1",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:00:42.795Z"
+  },
+  {
+    "id": "vote:aa634a4f-3e89-45bb-a0b5-85bd858fdb40",
+    "userId": "pub_080d748c8e2a7ce95af0afd1",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:09:12.733Z"
+  },
+  {
+    "id": "vote:661c3d6e-70c7-4503-bd50-ea57f00a3f8b",
+    "userId": "pub_0da3b27b4ebf44ed9b9f4af6",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:15:29.069Z"
+  },
+  {
+    "id": "vote:e0073178-127a-45ee-9893-45011d9e9323",
+    "userId": "pub_187c0309b3c66736d65a23b5",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:15:52.482Z"
+  },
+  {
+    "id": "vote:8f4179f6-4082-40ab-81d9-03481414a890",
+    "userId": "pub_16051dd1fb82f7b06d0a4604",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:18:03.556Z"
+  },
+  {
+    "id": "vote:697db2aa-0d32-4c85-8d53-d3a8a5a013d3",
+    "userId": "pub_014eeb35443577d4042387d5",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:18:15.522Z"
+  },
+  {
+    "id": "vote:32d319eb-65be-438f-8604-0682d0b21d3e",
+    "userId": "pub_18c57067145392060dbefd28",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:18:44.795Z"
+  },
+  {
+    "id": "vote:78df1c73-9bf9-403e-a56f-94aa13ad1333",
+    "userId": "pub_246a2e769eb790b2a5ff54e3",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:19:47.216Z"
+  },
+  {
+    "id": "vote:2754a0b9-90be-49e0-a045-c6b985e11acd",
+    "userId": "pub_4904823ba920ebeea17f6840",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:20:34.956Z"
+  },
+  {
+    "id": "vote:d80ace9b-cf89-4a66-9beb-2bb8520693cf",
+    "userId": "pub_10cc68139df0ddb2f4d699c8",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:20:44.968Z"
+  },
+  {
+    "id": "vote:3933a967-10d1-463d-a3b7-c567fa430d81",
+    "userId": "pub_31b393da6f5d97c0cd906a96",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:24:59.049Z"
+  },
+  {
+    "id": "vote:3ae4596f-24ad-4336-a911-1725afb819d0",
+    "userId": "pub_6ac1cedd186faff51552d62d",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:26:11.789Z"
+  },
+  {
+    "id": "vote:052cf8fc-2088-4c36-a534-54bb784b7765",
+    "userId": "pub_1802a6756c36724199796c6b",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:27:39.159Z"
+  },
+  {
+    "id": "vote:2b4a1fb7-1715-4917-9929-fef3c7dd117c",
+    "userId": "pub_5525318ca153876fac6969ea",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:28:14.751Z"
+  },
+  {
+    "id": "vote:748e0708-1fbc-4cd1-a948-74a7345a85a0",
+    "userId": "pub_81b034ed875feafa7a1a682c",
+    "proposalId": "proposal:6ac238a4-93f0-4084-92f5-7d6ad72a462e",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:32:52.247Z"
+  },
+  {
+    "id": "vote:c93690df-df5e-40df-ad79-fc478f87549d",
+    "userId": "pub_b9a0fec860ab834f5056a835",
+    "proposalId": "proposal:e5523633-edbc-44b6-8bf5-22de1fb09e08",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 1,
+    "timestamp": "2024-09-28T09:53:33.283Z"
+  },
+  {
+    "id": "vote:65b49afb-2f6a-46a4-bd17-6c9108ec02cb",
+    "userId": "pub_09101d31b7f119a75ae5e53b",
+    "proposalId": "proposal:935b014a-257e-4323-bb49-7d477964cd5f",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 3,
+    "timestamp": "2024-09-28T09:56:52.556Z"
+  },
+  {
+    "id": "vote:155ad7d0-a494-4eba-8258-8075f20460c7",
+    "userId": "pub_04f7ff6595630cf5309fb2b3",
+    "proposalId": "proposal:faf9c542-0a7c-441f-a703-f6410ba21991",
+    "roundId": "round:nouns-gg:lmmm-2024",
+    "count": 10,
+    "timestamp": "2024-09-28T09:57:41.763Z"
+  }
+]

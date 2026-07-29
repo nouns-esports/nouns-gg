@@ -1,0 +1,14 @@
+{
+  "id": "pub_504e1b51b3700fc1077ab528",
+  "name": "tokyo",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiclpcbrxk4gvmgic7apudcbvax2d5rnhkbfc6m6o4sx2av6qzi3pu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0A20e0824AD817060e82F84CE386BF98536B5bD4",
+      "kind": "external"
+    }
+  ]
+}

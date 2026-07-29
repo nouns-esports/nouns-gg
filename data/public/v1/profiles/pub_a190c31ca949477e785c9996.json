@@ -1,0 +1,14 @@
+{
+  "id": "pub_a190c31ca949477e785c9996",
+  "name": "cmdrqazk",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreif2444tsh35c7dj7tjexiklrdlrqn3sivokrpjrsirggvrqmv6hlm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdD5bc32062d5C1F64D84dE483373F51aba488f90",
+      "kind": "external"
+    }
+  ]
+}

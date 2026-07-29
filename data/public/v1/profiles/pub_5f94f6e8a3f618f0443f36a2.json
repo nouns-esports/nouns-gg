@@ -1,0 +1,14 @@
+{
+  "id": "pub_5f94f6e8a3f618f0443f36a2",
+  "name": "SUPERBIO",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib6kfjngd2676oud7l6kb6nne5prymf7wun5hbvzk6kwyz57cu3fi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x791c50feBe573E7BbDC03D0eDf3a3652D6E3339a",
+      "kind": "external"
+    }
+  ]
+}

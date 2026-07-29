@@ -1,0 +1,110 @@
+{
+  "id": "product:nouns-gg:go-birds-t-shirt",
+  "handle": "go-birds-t-shirt",
+  "name": "GO BIRDS t-shirt",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:nouns-bowl",
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:46bc3488-e660-4f34-b6e8-c90a679ac78c",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeif3wbjtx2tdgacknuogbktp3eekidzknxfjp6gywbnqhuq62tvifu"
+      ],
+      "size": "xs",
+      "color": null,
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:04f632fa-048d-4662-bfc4-3c21170fef8f",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:4f784037-c16f-4fdf-aab1-7db404bd05ff",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:df891ca8-87db-43c9-99fb-66c3e63ffa86",
+      "images": [],
+      "size": "4xl",
+      "color": null,
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:748e0394-14cb-4cc0-87bf-27ac6235196a",
+      "images": [],
+      "size": "s",
+      "color": null,
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:54514a9b-0a2a-4204-884c-46f0bb9a3a6a",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:28d0ace3-83df-4187-94c3-1890c789dbfa",
+      "images": [],
+      "size": "3xl",
+      "color": null,
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:9d9022d5-0ac6-4d46-a987-b87acdacc097",
+      "images": [],
+      "size": "5xl",
+      "color": null,
+      "price": "20.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:86ca3211-242d-4967-b53a-4641beba76c5",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "20.00",
+      "inventory": null
+    }
+  ]
+}

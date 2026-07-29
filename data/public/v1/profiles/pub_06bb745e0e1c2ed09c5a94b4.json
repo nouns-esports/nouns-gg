@@ -1,0 +1,18 @@
+{
+  "id": "pub_06bb745e0e1c2ed09c5a94b4",
+  "name": "Leeum",
+  "image": "https://pbs.twimg.com/profile_images/992230090477113345/p6RTBMKm_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "LeeumCC",
+    "name": "Leeum",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/992230090477113345/p6RTBMKm_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4B16a1D917EB241471Dcb1c18f943811A53F714d",
+      "kind": "external"
+    }
+  ]
+}

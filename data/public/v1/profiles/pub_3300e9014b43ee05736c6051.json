@@ -1,0 +1,14 @@
+{
+  "id": "pub_3300e9014b43ee05736c6051",
+  "name": "Cool Fuckin Beans",
+  "image": "https://ipfs.nouns.gg/ipfs/QmfCwmuWBR5G5g3Npjxq2WHTPJQN2RubBY45xignr8rSVG",
+  "bio": "Just a chill dude that low key doesn't give a fuck. ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB875BADbd67c7D5fa2C845ddCE8FE112Fe383309",
+      "kind": "external"
+    }
+  ]
+}

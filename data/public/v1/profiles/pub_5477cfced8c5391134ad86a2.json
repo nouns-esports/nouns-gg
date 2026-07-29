@@ -1,0 +1,18 @@
+{
+  "id": "pub_5477cfced8c5391134ad86a2",
+  "name": "daddyhydro - Subcanis gaming | SCG | KGEN 💚",
+  "image": "https://pbs.twimg.com/profile_images/1902736555795496960/qdaAZix__normal.jpg",
+  "bio": "Building a brand in Web 3 that is gaming and gamefi focused. SubCanis is chain agnostic and all that wish to join are welcome!",
+  "twitter": {
+    "username": "SCG1001",
+    "name": "daddyhydro - Subcanis gaming | SCG | KGEN 💚",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1902736555795496960/qdaAZix__normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x41D9558eff2E605E73691C87819A4947A6A3DaE5",
+      "kind": "external"
+    }
+  ]
+}

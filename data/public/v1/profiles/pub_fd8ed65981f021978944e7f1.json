@@ -1,0 +1,14 @@
+{
+  "id": "pub_fd8ed65981f021978944e7f1",
+  "name": "Rowyhultea",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=po14zo&background=1",
+  "bio": "Content creator- Writer & video editor",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x344E54FD9f9BCb1fC516Bd2fbF386bAfE3ebD746",
+      "kind": "external"
+    }
+  ]
+}

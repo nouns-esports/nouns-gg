@@ -1,0 +1,14 @@
+{
+  "id": "pub_65a2353f0ed3c8e2de53f048",
+  "name": "pabkiik",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreig5glk7kjcz6dzjqgw4ny5bgkps5ineow2yfqa5j4wbme527luh2m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3169f3B0F23C56C3fC6C45A92b3EBab2C98F76e2",
+      "kind": "external"
+    }
+  ]
+}

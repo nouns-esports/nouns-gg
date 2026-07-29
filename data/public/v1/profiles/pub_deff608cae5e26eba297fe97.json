@@ -1,0 +1,18 @@
+{
+  "id": "pub_deff608cae5e26eba297fe97",
+  "name": "DeCrypt",
+  "image": "https://pbs.twimg.com/profile_images/1948321965330104322/QR-XcMjO_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "CryptoScoutEth",
+    "name": "DeCrypt",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948321965330104322/QR-XcMjO_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8b67292cc4402a7F27D929509Ee98192e79F76EF",
+      "kind": "external"
+    }
+  ]
+}

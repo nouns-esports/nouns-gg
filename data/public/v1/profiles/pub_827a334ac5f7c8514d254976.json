@@ -1,0 +1,14 @@
+{
+  "id": "pub_827a334ac5f7c8514d254976",
+  "name": "cman81mg",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihjdvccpmj4mf3nlvfhu2prkg53iqf2ku4526g6cwd47456rd6pu4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x76A53760620Bf1A1644Dc6238a78f9579EE81d7e",
+      "kind": "external"
+    }
+  ]
+}

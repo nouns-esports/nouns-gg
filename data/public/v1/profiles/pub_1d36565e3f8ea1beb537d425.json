@@ -1,0 +1,18 @@
+{
+  "id": "pub_1d36565e3f8ea1beb537d425",
+  "name": "Angel West",
+  "image": "https://pbs.twimg.com/profile_images/1947595337968881666/9vUJ7zGX_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "AngelWestArt",
+    "name": "Angel West",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947595337968881666/9vUJ7zGX_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2e3A3B98a14a11F164e5Ba6AC698ADbF86e61b5a",
+      "kind": "external"
+    }
+  ]
+}

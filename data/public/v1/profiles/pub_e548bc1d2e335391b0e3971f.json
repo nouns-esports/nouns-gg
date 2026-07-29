@@ -1,0 +1,14 @@
+{
+  "id": "pub_e548bc1d2e335391b0e3971f",
+  "name": "cma4fbzr",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreideicu4rjd73kit7d3wljjp5pp4ju7tt4waband5h25sdjluuix2a",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x90759AaeB2833A49635Cb2911D3c7E33dF490964",
+      "kind": "external"
+    }
+  ]
+}

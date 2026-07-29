@@ -1,0 +1,28 @@
+{
+  "id": "pub_83385db4eab248314b4956cf",
+  "name": "Nick DePasquale",
+  "image": "https://pbs.twimg.com/profile_images/1222210522004828167/VH7QEN2A_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Gangly_",
+    "name": "Nick DePasquale",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1222210522004828167/VH7QEN2A_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6abDF8eb24ba4410B3D591D13fa46B4a362b28F3",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x8494E865646Eb5D7BfFf65d4Ab65d1a7400CdADf",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x93c45685b358748e67707e0348a9f456F329Da7E",
+      "kind": "external"
+    }
+  ]
+}

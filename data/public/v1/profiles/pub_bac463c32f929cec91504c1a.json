@@ -1,0 +1,18 @@
+{
+  "id": "pub_bac463c32f929cec91504c1a",
+  "name": "Nura Man",
+  "image": "https://pbs.twimg.com/profile_images/1612787315021160448/gDb834KR_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "nuraman9292",
+    "name": "Nura Man",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1612787315021160448/gDb834KR_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd0262e9346c79212155668e7208abcC95891a495",
+      "kind": "external"
+    }
+  ]
+}

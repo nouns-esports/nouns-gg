@@ -1,0 +1,14 @@
+{
+  "id": "pub_be60c9a8cf56531016d70524",
+  "name": "Lyli",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigk7qbdzypgnfhusiqgai6joun7muy7wfxmssoqktnwqxqcojaqja",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3640cC12EFf3492fA44f6099C228c0c5F93E2C2E",
+      "kind": "external"
+    }
+  ]
+}

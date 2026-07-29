@@ -1,0 +1,18 @@
+{
+  "id": "pub_d890be3f4465e251f451c133",
+  "name": "Nouns | OTTO ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1754024951445938176/6tqnqHuT_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "OTTO_ssbm",
+    "name": "Nouns | OTTO ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1754024951445938176/6tqnqHuT_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6f85cAeB997609e82E305b3dCaa6dac15C2e6406",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_d2d3f0abb1e7ce3c2af78e48",
+  "name": "Squeegee",
+  "image": "https://pbs.twimg.com/profile_images/1698899276439416833/2gOuxp1L_normal.jpg",
+  "bio": "Samus turns into soup when she morph balls",
+  "twitter": {
+    "username": "Squeegee_Smash",
+    "name": "Squeegee",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1698899276439416833/2gOuxp1L_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xcF0B80547CB835457FDBfAbA42A448739dbc4800",
+      "kind": "external"
+    }
+  ]
+}

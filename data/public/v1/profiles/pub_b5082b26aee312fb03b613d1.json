@@ -1,0 +1,18 @@
+{
+  "id": "pub_b5082b26aee312fb03b613d1",
+  "name": "HELLia",
+  "image": "https://pbs.twimg.com/profile_images/1902329766784450560/oUb0RMlQ_normal.jpg",
+  "bio": "Art on The Horizon...  \n/reveal ⬛,\n🟪\n🟨\nhellia.base.eth 🔵,",
+  "twitter": {
+    "username": "hellia_eth",
+    "name": "HELLia",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1902329766784450560/oUb0RMlQ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xBE7bFAD8952Ae92abB8779Aa4D6826839e82Fa3D",
+      "kind": "external"
+    }
+  ]
+}

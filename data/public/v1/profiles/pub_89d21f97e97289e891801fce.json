@@ -1,0 +1,14 @@
+{
+  "id": "pub_89d21f97e97289e891801fce",
+  "name": "tagawamakoto",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibrmpyfny4sbf6vd2imu2yyj725phddzjwo7jhnz6pqmrzjgyo2pq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8F3a83a3356d2666D89d027544BbaFfa12139E3c",
+      "kind": "external"
+    }
+  ]
+}

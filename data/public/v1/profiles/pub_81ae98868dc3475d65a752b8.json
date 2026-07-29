@@ -1,0 +1,18 @@
+{
+  "id": "pub_81ae98868dc3475d65a752b8",
+  "name": "tops87sqweez.base.eth",
+  "image": "https://pbs.twimg.com/profile_images/1947204025356570625/gQeKwTK3_normal.jpg",
+  "bio": "👩‍💻 Thai on‑chain builder  \n🎯 Farcaster / NFT / Community  \n✨ Sharing good vibes & building together",
+  "twitter": {
+    "username": "tops87sqweez",
+    "name": "tops87sqweez.base.eth",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947204025356570625/gQeKwTK3_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3FA68a4952b2439c636B0340a1296A46FA25d99C",
+      "kind": "external"
+    }
+  ]
+}

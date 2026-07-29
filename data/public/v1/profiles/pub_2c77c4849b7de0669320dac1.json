@@ -1,0 +1,14 @@
+{
+  "id": "pub_2c77c4849b7de0669320dac1",
+  "name": "dotxsolo",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=fb6ylf&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE7031C4cc6635c7226a6F5d4ddd4eF7d1Ca5Ff89",
+      "kind": "external"
+    }
+  ]
+}

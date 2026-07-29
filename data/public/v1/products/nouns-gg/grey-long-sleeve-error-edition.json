@@ -1,0 +1,81 @@
+{
+  "id": "product:nouns-gg:grey-long-sleeve-error-edition",
+  "handle": "grey-long-sleeve-error-edition",
+  "name": "Grey Long Sleeve (Error Edition)",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:103452b5-37c7-42c2-91f7-eeedc20631da",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeifekdvoxoqvbihmoiuolq6k7ndmrhxedwxfbli2o7bd3kyglaok7e",
+        "https://ipfs.nouns.gg/ipfs/bafybeiauhm74tnioxkbt77itualghzhksgpfcc53lb7hcelwmhqlva3huu",
+        "https://ipfs.nouns.gg/ipfs/bafybeih2rp34vg3haobmqavjtofwgfxduldi76suai6t66ytveqkmlig5e",
+        "https://ipfs.nouns.gg/ipfs/bafybeigspmcjpzl2wncli6z5kdzcrq6m7i47m45hzh3l53mwdxomqy7yva"
+      ],
+      "size": "s",
+      "color": null,
+      "price": "15.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:ce0fd4fd-9d20-4965-88f6-7ee23a9698f8",
+      "images": [],
+      "size": "m",
+      "color": null,
+      "price": "15.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:cfdb1841-5c47-4d50-a0c6-1602b3e424fe",
+      "images": [],
+      "size": "l",
+      "color": null,
+      "price": "15.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:ab7a32c9-87e2-4ab4-af27-fe0a5508e886",
+      "images": [],
+      "size": "xl",
+      "color": null,
+      "price": "15.00",
+      "inventory": null
+    },
+    {
+      "id": "variant:bcc72705-fa8a-49b0-9e9a-14844491ddb4",
+      "images": [],
+      "size": "2xl",
+      "color": null,
+      "price": "15.00",
+      "inventory": null
+    }
+  ]
+}

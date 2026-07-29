@@ -1,0 +1,14 @@
+{
+  "id": "pub_b086cce78a87d343f6d54cd4",
+  "name": "Pokemon Viet Nam",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibkvugknzxs443wdc7mk75tuybh2s3bzllktcylv7o6vpdj3t7hta",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x94d335c854D69D449F5E515A5Db387C5cff18fe3",
+      "kind": "external"
+    }
+  ]
+}

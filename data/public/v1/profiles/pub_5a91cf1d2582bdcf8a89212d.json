@@ -1,0 +1,14 @@
+{
+  "id": "pub_5a91cf1d2582bdcf8a89212d",
+  "name": "cmdufgoe",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiabi4tc6wz4dm25uxzl7tsboq3j2kpbl5dxqyxnujatogdchqicpe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb89A4604B585a88CBd9A1934D80fFa878D45ae79",
+      "kind": "external"
+    }
+  ]
+}

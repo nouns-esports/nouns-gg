@@ -1,0 +1,43 @@
+{
+  "id": "prediction:chompix:chompix-esl-raleigh-roshan-timing",
+  "handle": "chompix-esl-raleigh-roshan-timing",
+  "name": "Which minute range will the first Roshan kill happen in the last game?",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+  "rules": {
+    "type": "doc",
+    "content": []
+  },
+  "xp": {
+    "winning": 300,
+    "predicting": 0
+  },
+  "prizePool": 0,
+  "closed": true,
+  "resolved": true,
+  "featured": false,
+  "createdAt": "2025-04-08T00:00:16.097Z",
+  "start": null,
+  "end": null,
+  "pool": "226.000000000000000000",
+  "totalBets": 25,
+  "community": {
+    "id": "community:chompix",
+    "handle": "chompix",
+    "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+    "name": "Chompix",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:chompix:chompix-esl-raleigh"
+}

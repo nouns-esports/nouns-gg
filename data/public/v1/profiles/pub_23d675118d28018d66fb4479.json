@@ -1,0 +1,14 @@
+{
+  "id": "pub_23d675118d28018d66fb4479",
+  "name": "cmdtg5bg",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreig5nt3eljdwckdcyxmhunkpgctfi6uedczzqhvg5ti6dqxzq6ir6m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xba7a95c43A12d35e6474f119Ee8E52aB0970E9d0",
+      "kind": "external"
+    }
+  ]
+}

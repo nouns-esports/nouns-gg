@@ -1,0 +1,14 @@
+{
+  "id": "pub_e51bbe6e9d4e97ea58bf81dd",
+  "name": "cmakedxi",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiakglgiod7mtfjqfmxze76kegtonajdip73b7vbdy2nolfoobei5e",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4270d6844bB962C92b8b82FcF89Dd98c534940c7",
+      "kind": "external"
+    }
+  ]
+}

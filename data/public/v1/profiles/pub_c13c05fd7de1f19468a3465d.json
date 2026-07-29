@@ -1,0 +1,14 @@
+{
+  "id": "pub_c13c05fd7de1f19468a3465d",
+  "name": "cmas7yk1",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifn5dwxfp667n4666dhrysfvlb5ruw7tj4auxqctv266rx3wqixpm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD35A430d949054DA22DA425AAF50CEF53B77fE6F",
+      "kind": "external"
+    }
+  ]
+}

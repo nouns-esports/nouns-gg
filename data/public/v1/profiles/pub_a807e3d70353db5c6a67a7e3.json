@@ -1,0 +1,14 @@
+{
+  "id": "pub_a807e3d70353db5c6a67a7e3",
+  "name": "cmdklmpp",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidek43gblgvpxr6mfagf74w5bvd6l2pv7hqqtlm5spfu7n3kzrbhu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd38E37CE2d78c679bE5c463a137333c4f0fa1De6",
+      "kind": "external"
+    }
+  ]
+}

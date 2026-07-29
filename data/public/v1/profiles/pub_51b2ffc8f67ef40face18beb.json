@@ -1,0 +1,14 @@
+{
+  "id": "pub_51b2ffc8f67ef40face18beb",
+  "name": "cmdn23td",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibrltlags7ulscnbusp6lx7q5xgww2hcfkfyotnhzeff7o5v7v4ru",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xeFB2f92C013272549a0c9232A11142996ea7d8c1",
+      "kind": "external"
+    }
+  ]
+}

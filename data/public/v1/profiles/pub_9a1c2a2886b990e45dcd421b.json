@@ -1,0 +1,14 @@
+{
+  "id": "pub_9a1c2a2886b990e45dcd421b",
+  "name": "moseboid",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiabt2k2znk5oqjqpmipgh73twkh53rcpryza4xga222guczpoe4sm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE11e5BFb1ED53Be4a533185BD26Fc57e349b6065",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "event:nouns:nounstown",
+  "handle": "nounstown",
+  "name": "Nouns Town",
+  "image": "https://ipfs.nouns.gg/ipfs/QmbkM2Xf7A2DUXQt8HYRpryjdZDLLs2j3Ktj8aNK7yebJ2",
+  "description": "​Nouns DAO is for everyone - You're invited! ⌐◨-◨  ​The event series \"Nouns Town\" is happening for the first time in Los Angeles, CA from Oct 9-11.  ​It's the first of it's kind and we're all coming together to celebrate the best of the Nouniverse ⌐◨-◨",
+  "createdAt": "2024-10-07T10:00:00.000Z",
+  "start": "2024-10-07T10:00:00.000Z",
+  "end": "2024-10-13T10:00:00.000Z",
+  "active": true,
+  "featured": false,
+  "callToAction": {
+    "disabled": true,
+    "label": "Register",
+    "url": "https://lu.ma/9lb8t14g"
+  },
+  "location": {
+    "name": "Los Angeles, CA",
+    "url": "https://maps.app.goo.gl/J5EmKMRceaEf7YA9A"
+  },
+  "details": null,
+  "attendeeCount": null,
+  "community": {
+    "id": "community:nouns",
+    "handle": "nouns",
+    "image": "https://warpcast.com/~/channel-images/nouns.png",
+    "name": "Nouns",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  }
+}

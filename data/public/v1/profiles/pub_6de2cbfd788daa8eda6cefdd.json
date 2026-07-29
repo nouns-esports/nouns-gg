@@ -1,0 +1,14 @@
+{
+  "id": "pub_6de2cbfd788daa8eda6cefdd",
+  "name": "Wow-Boy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeidnwptnsqh6ypj3rlisavoqhgbxtgxaw3hog6ajdtnv7tvcfyyxty",
+  "bio": "Invest men",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x541422ACF8dcd32dD00d3b3C879C28f942f2E76D",
+      "kind": "external"
+    }
+  ]
+}

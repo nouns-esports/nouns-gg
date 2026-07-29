@@ -1,0 +1,18 @@
+{
+  "id": "pub_cc721062c47a2b52f8d92d72",
+  "name": "Nima",
+  "image": "https://pbs.twimg.com/profile_images/1899979475703545856/K6edxB4u_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "00xn13",
+    "name": "Nima",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1899979475703545856/K6edxB4u_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x47e520FfD0Fb7729527DA3F5f1A8F6b95cAFe25F",
+      "kind": "external"
+    }
+  ]
+}

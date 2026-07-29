@@ -1,0 +1,14 @@
+{
+  "id": "pub_62fe9bbcb83d70b380aa41da",
+  "name": "weeb_neet01",
+  "image": "https://ipfs.nouns.gg/ipfs/QmXo3TNdaPXiMorNPyoiNhTqZyvqyTKFBF5NgfFGbgE2DU",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3C41eDD4C57cBd8C4e81ab60453Ac973B2eBb543",
+      "kind": "external"
+    }
+  ]
+}

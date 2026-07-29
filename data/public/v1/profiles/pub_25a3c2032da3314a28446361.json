@@ -1,0 +1,19 @@
+{
+  "id": "pub_25a3c2032da3314a28446361",
+  "name": "Chain Cobra",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiabvqc3ucnvzysi5kw2farimw34caoeycngpyvkdahil2wssyjfja",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x166085543754dF4c53FCf9437B3910cCcE57cD1a",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x6a90d8A8163d2383720Ac9dCf1276FEBFaEF1Eb0",
+      "kind": "external"
+    }
+  ]
+}

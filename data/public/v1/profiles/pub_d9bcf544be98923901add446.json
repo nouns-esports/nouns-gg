@@ -1,0 +1,14 @@
+{
+  "id": "pub_d9bcf544be98923901add446",
+  "name": "wylin",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=trsjjya&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0E81F10DDA42247Fd025178314790A1C5F2Bf0A2",
+      "kind": "external"
+    }
+  ]
+}

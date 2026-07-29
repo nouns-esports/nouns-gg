@@ -1,0 +1,18 @@
+{
+  "id": "pub_de9dbcf0187e8521ae006435",
+  "name": "syubidab",
+  "image": "https://pbs.twimg.com/profile_images/1829714498430910464/ktpy5EvZ_normal.jpg",
+  "bio": "Hustle , Loyalty, Respect",
+  "twitter": {
+    "username": "DoomiaL57317",
+    "name": "syubidab",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1829714498430910464/ktpy5EvZ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x284C145050c1cE707Ee8d013B1B2e4Afae18713B",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_9577ab15466a2a5b3e6fc04f",
+  "name": "nonomnonom",
+  "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/f37c63d0-b002-45c5-20c3-755980a29f00/rectcrop3",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5e6e3D8Ca04c2117E4700Adc69A4fAd627E8fE7B",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x1491d79dd8840EF3F9D819832ee2c591A278dAaA",
+      "kind": "external"
+    }
+  ]
+}

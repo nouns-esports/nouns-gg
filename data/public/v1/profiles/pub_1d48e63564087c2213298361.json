@@ -1,0 +1,14 @@
+{
+  "id": "pub_1d48e63564087c2213298361",
+  "name": "cmag53h6",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidnazxl5youpvb7erc6agnrtdu4ggh3cscn5gxzxlbeybdwa7b3wa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE0dEB31D294E9Cb5a6Fff05FD0d038Beb8FFdabc",
+      "kind": "external"
+    }
+  ]
+}

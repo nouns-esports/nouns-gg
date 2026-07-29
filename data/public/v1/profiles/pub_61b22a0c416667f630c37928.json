@@ -1,0 +1,14 @@
+{
+  "id": "pub_61b22a0c416667f630c37928",
+  "name": "spiralzero",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiaznmxvgpmkm3nubj45nw7e2fo5zaaiptbrcqo4ljmp6edlnr2rka",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB9D68a025df42566Da0fCa4C11F99806ffD1Fad8",
+      "kind": "external"
+    }
+  ]
+}

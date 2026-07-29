@@ -1,0 +1,18 @@
+{
+  "id": "pub_0efded5ef96792bbb5ade778",
+  "name": "acid 👽🇲🇽",
+  "image": "https://pbs.twimg.com/profile_images/1776104562522296320/c4s56cPB_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "acidlazzer",
+    "name": "acid 👽🇲🇽",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1776104562522296320/c4s56cPB_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8aA27E90E139d5AB5704df69429341cbCb2d2464",
+      "kind": "external"
+    }
+  ]
+}

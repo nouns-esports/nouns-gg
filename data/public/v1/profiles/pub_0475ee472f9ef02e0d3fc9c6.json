@@ -1,0 +1,18 @@
+{
+  "id": "pub_0475ee472f9ef02e0d3fc9c6",
+  "name": "Bonky | VGEN Commissions are OPEN",
+  "image": "https://pbs.twimg.com/profile_images/1652304651658891266/jsAOgekQ_normal.jpg",
+  "bio": "Resident Penguin Artist",
+  "twitter": {
+    "username": "BonkerBonky",
+    "name": "Bonky | VGEN Commissions are OPEN",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1652304651658891266/jsAOgekQ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6dCD04134F7AC91954d42591A64F938F0e0C11ee",
+      "kind": "external"
+    }
+  ]
+}

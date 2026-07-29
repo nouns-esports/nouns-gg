@@ -1,6 +1,11 @@
 import { getArticle } from "@/server/queries/articles";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
+import { articleParams } from "@/server/data/params";
+
+export function generateStaticParams() {
+	return articleParams.map(({ article }) => ({ article }));
+}
 
 export default async function Article(props: {
 	params: Promise<{ article: string }>;

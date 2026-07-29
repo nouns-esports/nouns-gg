@@ -1,0 +1,14 @@
+{
+  "id": "pub_066a50bd603afe874011ce25",
+  "name": "Destroyer",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigtfwojgtgkmrfwctplwzeg3duyqii43utjqcyfsr3lqtqze4xqyi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC1C751fABEED4c30031F026D2152f2d4F7500a22",
+      "kind": "external"
+    }
+  ]
+}

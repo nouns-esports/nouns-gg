@@ -1,0 +1,14 @@
+{
+  "id": "pub_a21ed5a8344a72b5935e9d1f",
+  "name": "Fatty",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=scz26h&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB0a8E26FAB5EBab770D5095063900a515f880538",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_14a07a91f992e7c46e11eba7",
+  "name": "febarce | DeFi 🍳🧬",
+  "image": "https://pbs.twimg.com/profile_images/1912840281235304449/UB_bK_JH_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "primesoft_mkt",
+    "name": "febarce | DeFi 🍳🧬",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1912840281235304449/UB_bK_JH_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x55F45b50EB79C3bB7D7f15f50A9196964641e9D3",
+      "kind": "external"
+    }
+  ]
+}

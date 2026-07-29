@@ -1,0 +1,14 @@
+{
+  "id": "pub_a82ea880c076b70c43f55698",
+  "name": "cmancltt",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigep2qbkee2lo73qm6dn55qymy4y5g4vepjwbwpjfparxuhq5mbr4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xcF5e59f0719308Bc7C6d50F0dba9e57842ca13F2",
+      "kind": "external"
+    }
+  ]
+}

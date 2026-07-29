@@ -37,7 +37,7 @@ export default async function Footer() {
 					<Group title="Explore">
 						<Item href="/rounds">Rounds</Item>
 						<Item href="/quests">Quests</Item>
-						<Item href="/discord">Events</Item>
+						<Item href="/events">Events</Item>
 					</Group>
 					<Group title="Resources">
 						<Item href="/privacy" newTab>

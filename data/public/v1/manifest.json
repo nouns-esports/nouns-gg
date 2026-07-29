@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-24T19:27:18.745Z",
+  "counts": {
+    "communities": 15,
+    "articles": 6,
+    "events": 17,
+    "rounds": 82,
+    "proposals": 1316,
+    "votes": 26226,
+    "awards": 360,
+    "predictions": 104,
+    "outcomes": 345,
+    "quests": 100,
+    "raffles": 17,
+    "products": 59,
+    "collections": 6,
+    "profiles": 21600,
+    "leaderboards": 9481,
+    "traits": 456,
+    "latestNoun": 1
+  }
+}

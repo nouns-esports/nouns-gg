@@ -1,0 +1,18 @@
+{
+  "id": "pub_372f7b26d614077265f56e00",
+  "name": "RobotFishGirl ⚙️🧜🏼‍♀️| Pre-Debut",
+  "image": "https://pbs.twimg.com/profile_images/1750212485724979200/cRigxOU4_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "RobotFishGirl",
+    "name": "RobotFishGirl ⚙️🧜🏼‍♀️| Pre-Debut",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1750212485724979200/cRigxOU4_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xca89E2472fE57bdC74F2361CeEa5962fb205119c",
+      "kind": "external"
+    }
+  ]
+}

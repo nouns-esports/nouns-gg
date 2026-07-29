@@ -1,0 +1,18 @@
+{
+  "id": "pub_f5e26bd97f2d71034dd83543",
+  "name": "rohrakun",
+  "image": "https://pbs.twimg.com/profile_images/1388140071891595266/4DDh6Mlk_normal.jpg",
+  "bio": "Rush of Hunter AirDrop",
+  "twitter": {
+    "username": "RohRakun77",
+    "name": "rohrakun",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1388140071891595266/4DDh6Mlk_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x352bE552405c603D19C808612d26805315345c7F",
+      "kind": "external"
+    }
+  ]
+}

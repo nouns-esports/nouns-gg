@@ -1,0 +1,18 @@
+{
+  "id": "pub_c88391aba5f63542bb2788b2",
+  "name": "Arthur Arwell",
+  "image": "https://pbs.twimg.com/profile_images/1611844848750829568/uWO-KgJH_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ArthurArwell",
+    "name": "Arthur Arwell",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1611844848750829568/uWO-KgJH_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x53C795A29de37D3F4806021b1173B20E0227EF07",
+      "kind": "external"
+    }
+  ]
+}

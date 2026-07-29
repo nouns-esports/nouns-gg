@@ -1,0 +1,23 @@
+{
+  "id": "pub_cd5dc142ced06ee9bb0927fb",
+  "name": "sugar glow",
+  "image": "https://pbs.twimg.com/profile_images/1923352633320128512/oNSTpvVJ_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "sugar_glowww",
+    "name": "sugar glow",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923352633320128512/oNSTpvVJ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xCB02F686aCd18B26D6508ec04A3D522f124487Fd",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xeB0572b2808851E334996Bbe30A9a1755cD0CF70",
+      "kind": "external"
+    }
+  ]
+}

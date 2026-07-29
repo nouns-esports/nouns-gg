@@ -1,0 +1,14 @@
+{
+  "id": "pub_0403b9e88e30aa0784036813",
+  "name": "Zoistie",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=vqsfvh&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6357B6C6E2d79b570a0C5A0b17e20Ab46f72BCf8",
+      "kind": "external"
+    }
+  ]
+}

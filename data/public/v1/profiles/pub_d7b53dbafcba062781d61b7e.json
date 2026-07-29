@@ -1,0 +1,18 @@
+{
+  "id": "pub_d7b53dbafcba062781d61b7e",
+  "name": "fab 🍌",
+  "image": "https://pbs.twimg.com/profile_images/1921995363109535744/0aAeinyd_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "fab_meth",
+    "name": "fab 🍌",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1921995363109535744/0aAeinyd_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xffd22f0e6f67BEaE08Af85efc54b97B13cA210f2",
+      "kind": "external"
+    }
+  ]
+}

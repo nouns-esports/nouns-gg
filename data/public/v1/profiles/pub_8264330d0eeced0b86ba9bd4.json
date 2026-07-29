@@ -1,0 +1,19 @@
+{
+  "id": "pub_8264330d0eeced0b86ba9bd4",
+  "name": "Fizzy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiegrsriprybjuugeh5zurkxgumk3yajqwm3p6fzumpbptkk4wwlju",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd1bCfd1f13656A0459D836A125f20b20eec6e6CB",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x72219f3d56330F45CbC9338ee6fF4690B5293c90",
+      "kind": "external"
+    }
+  ]
+}

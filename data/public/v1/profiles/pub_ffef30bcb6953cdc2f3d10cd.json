@@ -1,0 +1,14 @@
+{
+  "id": "pub_ffef30bcb6953cdc2f3d10cd",
+  "name": "cmi7n72j",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibfdp6qxe2pzjmtgdjhtzf7hvsueqdfzef3xvom7bm4srwa3ltv54",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8aB0c174F40C5E22b00065C4Cc7b561c299Cad1C",
+      "kind": "external"
+    }
+  ]
+}

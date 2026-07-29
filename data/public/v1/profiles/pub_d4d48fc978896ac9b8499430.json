@@ -1,0 +1,14 @@
+{
+  "id": "pub_d4d48fc978896ac9b8499430",
+  "name": "ahmetgumustekin",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihtteustjr4l4wxvzuzoczmy6tp35nsrjpttjw27vsfcgmpqrafwe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf75ECa09e6F9684900c28A6969e85B28234b42aD",
+      "kind": "external"
+    }
+  ]
+}

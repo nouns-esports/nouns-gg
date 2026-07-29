@@ -1,0 +1,14 @@
+{
+  "id": "pub_94ec367365285696e36e31a2",
+  "name": "Irving Frausto",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeicjccglj2rpxe6dusdyeuzcceyykgzjnkaabfbmlqidocpqxwlivq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xFFF37B9427C715fd6c6B319586812D8818eda940",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_58ac77ae037b8deb36334719",
+  "name": "Mycelia",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiant7xxto7gov3uwm7lsztozs56asxua5gofbamhkccc73qt6diyu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3C9b187499573E2Bea179346B9130922fACAbE4e",
+      "kind": "external"
+    }
+  ]
+}

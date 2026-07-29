@@ -1,0 +1,525 @@
+{
+  "id": "event:oliyoun:oliyoun-autochess-1",
+  "handle": "oliyoun-autochess-1",
+  "name": "Oliyoun Auto Chess Club Event #1",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeiepiiax75dgezbyfajtgiuhimc5tbnqpmapum7lkqha4csufygqia",
+  "description": "In partnership with Nouns GG, Oliyoun Auto Chess Club is on a mission to unify and engage the Dota Auto Chess community. Dota Auto Chess is a strategy game mod for Dota 2, developed by Drodo Studio and launched in January 2019. It features automated Dota 2 heroes battling on a chessboard layout. As of May 2019, the mod boasts over eight million players, and its popularity has spearheaded the auto battler genre.",
+  "createdAt": "2025-04-06T10:00:00.000Z",
+  "start": "2025-04-06T10:00:00.000Z",
+  "end": "2025-04-06T10:00:00.000Z",
+  "active": true,
+  "featured": false,
+  "callToAction": {
+    "disabled": false,
+    "label": "View Round",
+    "url": "https://nouns.gg/rounds/oliyoun-autochess-1"
+  },
+  "location": {
+    "name": "Online",
+    "url": "https://www.twitch.tv/oliyoun"
+  },
+  "details": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 1
+        },
+        "content": [
+          {
+            "text": "Oliyoun Auto Chess Club: Season One",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "🎯 Overview",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "The Oliyoun Chess Club is a competitive series featuring top talent from the Auto Chess community, organized in partnership with Nouns GG. This eight-event circuit culminates in a high-stakes Championship where players battle for a $2,000 prize pool, proudly sponsored by Nouns.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "📅 Tournament Schedule",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "All events begin at 4 PM UTC / 12 PM EST / 5 PM CET:",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Event #1",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "text": " – April 6",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Event #2",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "text": " – April 13",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Event #3",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "text": " – April 19",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Event #4",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "text": " – April 27",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Event #5",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "text": " – May 4",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Event #6",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "text": " – May 10",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Event #7",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "text": " – May 18",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Championship – May 24th & 25th",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "🧩 How Players Are Selected",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "For Event #1, players will be selected through a Nouns GG round. Each applicant must submit a brief proposal explaining why they should be invited to participate. Once the submission period ends, Nouns GG community members will vote to determine the first 8 competitors.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "🕹️ Game Format",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Each event will use a points-based format:",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "1st: 8",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "2nd: 6",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "3rd: 5",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "4th: 4",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "5th: 3",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "6th: 2",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "7th: 1",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "8th: 0",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Once a player reaches 14 points, they become eligible to win, but must place 1st in a future game to secure victory.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Each event is capped at 5 hours to maintain a viewer-friendly runtime.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "🏆 Championship & Prize Pool",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "The first 7 event winners will join Oliyoun in the Championship, where 8 total players will compete for a $2,000 USD prize pool.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "💰 All 8 finalists are guaranteed a minimum of $100!",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "🥇 1st: $600",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "🥈 2nd: $400",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "🥉 3rd: $300",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "🔷 4th: $200",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "🔷 5th: $150",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "🔷 6th: $125",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "🔷 7th: $125",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "🔷 8th: $100",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "📺 Broadcast Details",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Live Stream: Catch all the action live on Twitch.tv/oliyoun.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "VODs: Revisit the tournament's highlights on Oliyoun's YouTube Channel.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "🎮 Bonus: In-Game Rewards",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "We are exploring a partnership with Drodo Studios to potentially implement custom in-game badges or couriers for winners.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  "attendeeCount": null,
+  "community": {
+    "id": "community:oliyoun",
+    "handle": "oliyoun",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+    "name": "Oliyoun",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  }
+}

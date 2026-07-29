@@ -1,0 +1,14 @@
+{
+  "id": "pub_d784f02ffab93a76fb1281eb",
+  "name": "asdf",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=kn3lqq&background=1",
+  "bio": "asdf",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x91dCCAA260CC4616E1a6e6b693DB7207C5E42937",
+      "kind": "external"
+    }
+  ]
+}

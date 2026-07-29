@@ -1,0 +1,5343 @@
+[
+  {
+    "id": "product:nouns-gg:fast-falls-venue-fee",
+    "handle": "fast-falls-venue-fee",
+    "name": "Fast Fall$ Venue Fee",
+    "description": null,
+    "createdAt": "2025-07-21T21:13:22.416Z",
+    "requiresShipping": false,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:fast-falls",
+    "collectionHandle": "fast-falls",
+    "variants": [
+      {
+        "id": "variant:9e815b51-c653-4211-a41d-c0807086d2d9",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreid6i7yw424cwzfdajtykvjhsk65zeq46ovkredp4r2iagoeigwqyu"
+        ],
+        "size": null,
+        "color": null,
+        "price": "45.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:fast-falls-spectator-pass",
+    "handle": "fast-falls-spectator-pass",
+    "name": "Fast Fall$ Spectator Pass",
+    "description": null,
+    "createdAt": "2025-07-21T21:13:22.358Z",
+    "requiresShipping": false,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:fast-falls",
+    "collectionHandle": "fast-falls",
+    "variants": [
+      {
+        "id": "variant:924e5f7b-4a6e-4136-8406-d5c16c28a9fb",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreid6i7yw424cwzfdajtykvjhsk65zeq46ovkredp4r2iagoeigwqyu"
+        ],
+        "size": null,
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:nouns-stadium-premium-sweatshirt",
+    "handle": "nouns-stadium-premium-sweatshirt",
+    "name": "Nouns Stadium Premium Sweatshirt",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:033f9bb6-9a8a-44c2-b0ce-f7eadd2c6533",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:6f37eade-d689-45b6-93ef-a61e428074df",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:b6c7b1ca-a308-4817-93da-9d270a453991",
+        "images": [],
+        "size": "3xl",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:1188aed6-8f4c-463d-8387-7dca0a2fbac8",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:fa408572-34ca-4e28-8edb-4f616aaa79b2",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiaz5onwzytsjl4xsschazpdcpd66debsnsqf7biqj4msfncaosvmq"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:6448b144-444e-443e-8e67-fdaf5530e4fe",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:nouns-bowl-t-shirt",
+    "handle": "nouns-bowl-t-shirt",
+    "name": "Nouns Bowl t-shirt",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:1f859089-5d01-4aa5-9130-1323e2dcc2f5",
+        "images": [],
+        "size": "m",
+        "color": {
+          "hex": "#144281",
+          "name": "True Royal"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:a3d1922a-b0e3-4bb3-8dd0-b853f11013a7",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiakl76ypiosqcynvd4zq557ev3kduckp4uhfbuar6qnef7x7moa2a"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#144281",
+          "name": "True Royal"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:1721073c-04b9-482f-a225-03a60730135e",
+        "images": [],
+        "size": "2xl",
+        "color": {
+          "hex": "#144281",
+          "name": "True Royal"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:81ec27f1-7a4a-4cdc-a330-fb17cd2fe73a",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibdwjmyhatkn5id6lx4dejsc2psu32iyzh2xgrhtl5oumlmlhypvq"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#728AD4",
+          "name": "Heather Columbia Blue"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:28ea17ab-5f06-4bdf-b5c5-5a2e051e993d",
+        "images": [],
+        "size": "m",
+        "color": {
+          "hex": "#728AD4",
+          "name": "Heather Columbia Blue"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:f61b6c60-5e0d-4f6f-ab74-87e7de61d372",
+        "images": [],
+        "size": "l",
+        "color": {
+          "hex": "#728AD4",
+          "name": "Heather Columbia Blue"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:a3ff9957-4122-4cc2-83b1-262955acc52c",
+        "images": [],
+        "size": "xl",
+        "color": {
+          "hex": "#728AD4",
+          "name": "Heather Columbia Blue"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:127e141a-307e-49e0-9beb-f3370e5ee148",
+        "images": [],
+        "size": "2xl",
+        "color": {
+          "hex": "#728AD4",
+          "name": "Heather Columbia Blue"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:9eb50efc-228a-4ed2-afcf-773f57b0e318",
+        "images": [],
+        "size": "xl",
+        "color": {
+          "hex": "#144281",
+          "name": "True Royal"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:233311da-216d-4b0c-a8fe-8df113b89575",
+        "images": [],
+        "size": "l",
+        "color": {
+          "hex": "#144281",
+          "name": "True Royal"
+        },
+        "price": "25.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:premium-go-birds-sweatshirt",
+    "handle": "premium-go-birds-sweatshirt",
+    "name": "Premium GO BIRDS Sweatshirt",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:432df307-0fad-4ac2-837b-07670b95acd4",
+        "images": [],
+        "size": "m",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:9a652ceb-aa0d-4ae8-8522-2e8e97718e2c",
+        "images": [],
+        "size": "xl",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:420acabf-d806-4223-9928-abac27034605",
+        "images": [],
+        "size": "3xl",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:352efea8-cef6-4333-8daf-f9c611e683ee",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibadxlbo3ckh3ohmgw4wkm67ucheptn4p4svch5etlvslzfzrqczq"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#222734",
+          "name": "Navy Blazer"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:bb247726-b64d-41ec-b945-6d347ac3a037",
+        "images": [],
+        "size": "m",
+        "color": {
+          "hex": "#222734",
+          "name": "Navy Blazer"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:7f664c11-28ec-46fd-9521-b2da01eadd4c",
+        "images": [],
+        "size": "l",
+        "color": {
+          "hex": "#222734",
+          "name": "Navy Blazer"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:f5769924-e5e9-4a69-8f19-a936e4214f31",
+        "images": [],
+        "size": "xl",
+        "color": {
+          "hex": "#222734",
+          "name": "Navy Blazer"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:45319ce9-9644-4622-979d-6538b2dff3e1",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreica6cl5uauhstltxsqesuuzo6yrcj4irvo4dpmrrjinnmkdi7ps5i"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:eafe5648-67e1-4b50-a070-20c468274057",
+        "images": [],
+        "size": "2xl",
+        "color": {
+          "hex": "#222734",
+          "name": "Navy Blazer"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:1a98f975-fb6e-47bf-806c-98edd2a857a5",
+        "images": [],
+        "size": "3xl",
+        "color": {
+          "hex": "#222734",
+          "name": "Navy Blazer"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:ddb42867-224d-441b-b387-146464cb0efc",
+        "images": [],
+        "size": "2xl",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:197834f4-1172-47a7-8a77-cb93ad76e0ef",
+        "images": [],
+        "size": "l",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "35.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:go-birds-dad-hat",
+    "handle": "go-birds-dad-hat",
+    "name": "GO BIRDS Dad hat",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:411873b9-2075-4636-b14c-18c19e8400a6",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeibfk7njniqpbgma4rjbioqi5hmgmvzaromloprmuvy77cuueovmi4"
+        ],
+        "size": null,
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e962096a-4bd3-4785-9901-3d86d9c7b23e",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeih4enh3way2weoodlpk2gsqhizobkylccq4vvrf5p4ga7k4eaftl4"
+        ],
+        "size": null,
+        "color": {
+          "hex": "#222734",
+          "name": "Navy"
+        },
+        "price": "20.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:go-birds-t-shirt",
+    "handle": "go-birds-t-shirt",
+    "name": "GO BIRDS t-shirt",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:46bc3488-e660-4f34-b6e8-c90a679ac78c",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeif3wbjtx2tdgacknuogbktp3eekidzknxfjp6gywbnqhuq62tvifu"
+        ],
+        "size": "xs",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:04f632fa-048d-4662-bfc4-3c21170fef8f",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:4f784037-c16f-4fdf-aab1-7db404bd05ff",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:df891ca8-87db-43c9-99fb-66c3e63ffa86",
+        "images": [],
+        "size": "4xl",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:748e0394-14cb-4cc0-87bf-27ac6235196a",
+        "images": [],
+        "size": "s",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:54514a9b-0a2a-4204-884c-46f0bb9a3a6a",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:28d0ace3-83df-4187-94c3-1890c789dbfa",
+        "images": [],
+        "size": "3xl",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:9d9022d5-0ac6-4d46-a987-b87acdacc097",
+        "images": [],
+        "size": "5xl",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:86ca3211-242d-4967-b53a-4641beba76c5",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:nouns-bowl-controller-signed",
+    "handle": "nouns-bowl-controller-signed",
+    "name": "Nouns Bowl Controller (Signed by Top 8)",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:b7c982b2-76de-4d03-adfb-d25c329bcfa4",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeiaf7sfx4yrgyh3slm2by3a4gd7okktmhdizvmxgiasgrzytnq6bmi"
+        ],
+        "size": null,
+        "color": null,
+        "price": "400.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:odyssey-esports:boost-the-works-prize-pool",
+    "handle": "boost-the-works-prize-pool",
+    "name": "Boost The Works 2025 Prize Pool",
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Help build something special at The Works 2025. Every purchase of this digital item adds $10 to the prize pool, directly supporting the players and the competitive scene we all love.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": false,
+    "community": {
+      "id": "community:odyssey-esports",
+      "handle": "odyssey-esports",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreigf3pum6hynmtjhouhdn7vc76nk3gkgyqd3prvo4yiihieq4org4m",
+      "name": "Odyssey Esports",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": false,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:odyssey-esports:the-works",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:e1ed67b5-482a-438a-bd81-a3b636bf5ca6",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeibqwz5fd6p2fkeaf6mufjf27u5tu73z7hy4eqfz5zciigzw6xtnsu"
+        ],
+        "size": null,
+        "color": null,
+        "price": "12.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:tipped-off-hat",
+    "handle": "tipped-off-hat",
+    "name": "Tipped Off Hat",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16",
+    "collectionHandle": "tipped-off-16",
+    "variants": [
+      {
+        "id": "variant:d9d8088e-63a2-4d57-b892-92e38ecaad9f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeiajql7wlsv3nh4c6az76igznz7t776di5z74v5vibo67qcvnbkawu"
+        ],
+        "size": null,
+        "color": {
+          "hex": "#222222",
+          "name": "Black"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:7a591cb9-1065-47c6-8f68-83d29694605f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeidyqhpgskfo5wfhzi66gxogaurdbfxsme334bwdwcemv5fhoom3ji"
+        ],
+        "size": null,
+        "color": {
+          "hex": "#597D93",
+          "name": "Blue"
+        },
+        "price": "25.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:chill-croc-dad-hat",
+    "handle": "chill-croc-dad-hat",
+    "name": "Chill Croc Dad Hat",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16",
+    "collectionHandle": "tipped-off-16",
+    "variants": [
+      {
+        "id": "variant:98742058-0ec7-42d3-a453-7ce1d508d7ef",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeifanqhtkbgf2wjczzv4uk5k5qlpuqskizuzivxevwmovyrxo6sxny"
+        ],
+        "size": null,
+        "color": null,
+        "price": "25.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:yoshi-denim-hat",
+    "handle": "yoshi-denim-hat",
+    "name": "Yoshi Denim Hat",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16",
+    "collectionHandle": "tipped-off-16",
+    "variants": [
+      {
+        "id": "variant:811cb410-f437-465e-ad47-702ac67ddd4c",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeic36e2ltvhw37s2qv4emt5bjd5pzf77apmep4cf25fc5ufvyr3cwe"
+        ],
+        "size": null,
+        "color": {
+          "hex": "#1E1E1E",
+          "name": "Black"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:345769cf-43b6-4824-99eb-c8bb6bb7d8ae",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeieudwjzo2nyxdwed42yalt2rxqqbl7u6l6adskwseg4ba4vvex5uy"
+        ],
+        "size": null,
+        "color": {
+          "hex": "#587C92",
+          "name": "Blue"
+        },
+        "price": "25.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:tipped-off-hoodie",
+    "handle": "tipped-off-hoodie",
+    "name": "Tipped Off Hoodie",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16",
+    "collectionHandle": "tipped-off-16",
+    "variants": [
+      {
+        "id": "variant:fda8a6ad-3e46-4146-8edd-a8568220d9ce",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#1A1F28",
+          "name": "Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:8a94bd62-493a-4610-963c-784bdf054846",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#322620",
+          "name": "Dark Chocolate"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:a906f72e-e289-4b85-a832-11514a1caf0a",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#555B68",
+          "name": "Heather Sport Dark Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:05ae32f3-d795-4256-b03e-fd8c476e7d67",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#1A1F28",
+          "name": "Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:228a3db1-1d9b-4229-a533-7c42ee007d9f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#1A1F28",
+          "name": "Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:499229b0-6d3c-48f1-8ec7-c536491aa835",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#555B68",
+          "name": "Heather Sport Dark Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:39f61b70-7df3-46ea-828c-ea327c37583c",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+        ],
+        "size": "3xl",
+        "color": {
+          "hex": "#555B68",
+          "name": "Heather Sport Dark Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:34b49e1c-8c4e-48a5-8bdf-5c37dce5c541",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#1A1F28",
+          "name": "Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e349771a-ed2b-4fb0-8e46-e377e5da216a",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#1A1F28",
+          "name": "Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:8ca059ee-b1bd-4b8d-a253-b111e40761eb",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+        ],
+        "size": "3xl",
+        "color": {
+          "hex": "#1A1F28",
+          "name": "Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e860ac12-1726-4b5b-831d-3eb874e64a8a",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+        ],
+        "size": "4xl",
+        "color": {
+          "hex": "#1A1F28",
+          "name": "Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:af23b5c0-498b-4d91-a1a9-3bedf04258c9",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidjim4dyvhfjdzbdznhvjyb2ghi3ceis4btxbap4b2tu6gvg4ylau"
+        ],
+        "size": "5xl",
+        "color": {
+          "hex": "#1A1F28",
+          "name": "Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e9b74e99-9e43-410d-9755-a9aecc3fa8f9",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#555B68",
+          "name": "Heather Sport Dark Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:a06f1329-1323-4b8f-aa9f-15129594c941",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#555B68",
+          "name": "Heather Sport Dark Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:033288e3-d29e-4232-814c-174f637611d0",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+        ],
+        "size": "3xl",
+        "color": {
+          "hex": "#72765B",
+          "name": "Military Green"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:d2ce95ae-de56-43ba-9a5a-5dd4b60fc64e",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+        ],
+        "size": "5xl",
+        "color": {
+          "hex": "#72765B",
+          "name": "Military Green"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:2512629e-f36e-4401-b096-c8f4cc7ce713",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#72765B",
+          "name": "Military Green"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:58afd4e4-ebd8-480c-a423-7cb10b10eaca",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#72765B",
+          "name": "Military Green"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:5af77825-87b2-40d9-9491-46ac5a0816bd",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#72765B",
+          "name": "Military Green"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:fc56aedb-9285-4b9a-b6ec-5e9862c75cd9",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#72765B",
+          "name": "Military Green"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:60f51b87-7bad-4a5f-8b93-ee2f2c68718d",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#72765B",
+          "name": "Military Green"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:13d8474d-26d4-4b52-ba53-02d10dfb5f1a",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#322620",
+          "name": "Dark Chocolate"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:7e97d918-f66e-4ddb-9267-32defdafe262",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#322620",
+          "name": "Dark Chocolate"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:6c51c4db-0630-48ce-b491-4fb6d54639ee",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#322620",
+          "name": "Dark Chocolate"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:f0f9d3a7-8ee1-489d-8155-f26a5179a19f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#322620",
+          "name": "Dark Chocolate"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:0a362e84-77e7-4a73-a434-cbc53667631b",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreif4gkhry52ytbjsbp4ityxmji7alo3woscts76tj7d6brp2y532w4"
+        ],
+        "size": "3xl",
+        "color": {
+          "hex": "#322620",
+          "name": "Dark Chocolate"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:7736435f-b829-4f27-9ec7-93519f4b32bb",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeia2n27kqhv54ew4it5bpkbdigpj7cfa2dxlob7ebvz2qkjvuc4mia"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#555B68",
+          "name": "Heather Sport Dark Navy"
+        },
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:1353dedc-30ef-4171-827e-fdd7183ab93e",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifbwyenvf5ladicgojq4h7slxkg64nkudrmwh2s32vnlw45cw37ia"
+        ],
+        "size": "4xl",
+        "color": {
+          "hex": "#72765B",
+          "name": "Military Green"
+        },
+        "price": "35.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:tipped-off-yoshi-t-shirt",
+    "handle": "tipped-off-yoshi-t-shirt",
+    "name": "Tipped Off Yoshi T-Shirt",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16",
+    "collectionHandle": "tipped-off-16",
+    "variants": [
+      {
+        "id": "variant:0b7f7642-e33f-4ced-966b-e9f326157044",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeidodupw6puxvfutu46q7sgsgbb7v5atg3574untxudd3iyjgytwve"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#4C5C67",
+          "name": "Heather Slate"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:096218ce-f3e5-4a4c-bbde-5d62f5305de5",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeidodupw6puxvfutu46q7sgsgbb7v5atg3574untxudd3iyjgytwve"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#4C5C67",
+          "name": "Heather Slate"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:beecd1c5-909c-4fa2-82eb-733284991add",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeidodupw6puxvfutu46q7sgsgbb7v5atg3574untxudd3iyjgytwve"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#4C5C67",
+          "name": "Heather Slate"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:50b10788-87d9-407a-b623-548960102c65",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeidodupw6puxvfutu46q7sgsgbb7v5atg3574untxudd3iyjgytwve"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#4C5C67",
+          "name": "Heather Slate"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e39bfed3-97ee-4e55-8666-07ba84d00a5d",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeidodupw6puxvfutu46q7sgsgbb7v5atg3574untxudd3iyjgytwve"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#4C5C67",
+          "name": "Heather Slate"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:49461ee5-ee8b-4c54-a898-eff54c0ecfdd",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibrwp6k7cz22iiqqfspmcgpahg7jshzsmayo4pg75ne3me62e2phe"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#6B5B54",
+          "name": "Pebble"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:0241c852-2442-4255-bdfa-af717a388111",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibrwp6k7cz22iiqqfspmcgpahg7jshzsmayo4pg75ne3me62e2phe"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#6B5B54",
+          "name": "Pebble"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:f9323250-8b18-4a3d-88e1-a64acef945c2",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibrwp6k7cz22iiqqfspmcgpahg7jshzsmayo4pg75ne3me62e2phe"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#6B5B54",
+          "name": "Pebble"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:867fc982-b195-4cc5-b125-5f20fd3eb911",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibrwp6k7cz22iiqqfspmcgpahg7jshzsmayo4pg75ne3me62e2phe"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#6B5B54",
+          "name": "Pebble"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:b336b570-a597-430d-b7a7-4dd220bb7515",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibrwp6k7cz22iiqqfspmcgpahg7jshzsmayo4pg75ne3me62e2phe"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#6B5B54",
+          "name": "Pebble"
+        },
+        "price": "20.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:crt-tipped-off-16-tee",
+    "handle": "crt-tipped-off-16-tee",
+    "name": "CRT Tipped Off 16 Tee",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16",
+    "collectionHandle": "tipped-off-16",
+    "variants": [
+      {
+        "id": "variant:a95eec78-e111-4a62-a18e-b27c1533f5e9",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibn5jzseozfdx2z5bepfm2soz53hqvtul3jvoe3scor34s32wpt4e"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e0d6f75d-40be-4d0e-9439-3ffa357a355d",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibn5jzseozfdx2z5bepfm2soz53hqvtul3jvoe3scor34s32wpt4e"
+        ],
+        "size": "m",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:55a763b5-d110-4825-a5cf-8c02beaf1744",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibn5jzseozfdx2z5bepfm2soz53hqvtul3jvoe3scor34s32wpt4e"
+        ],
+        "size": "l",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:8352a8eb-beac-41bf-a85f-8fdbc2461f6b",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibn5jzseozfdx2z5bepfm2soz53hqvtul3jvoe3scor34s32wpt4e"
+        ],
+        "size": "xl",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:7bdd190b-372e-4a8c-834c-172e6a8b92ec",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibn5jzseozfdx2z5bepfm2soz53hqvtul3jvoe3scor34s32wpt4e"
+        ],
+        "size": "2xl",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:8a3c47e9-1e59-43ea-8a89-5e091b701fcf",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibn5jzseozfdx2z5bepfm2soz53hqvtul3jvoe3scor34s32wpt4e"
+        ],
+        "size": "3xl",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:80a97f6f-fb62-4759-ac7e-d1087d274304",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibn5jzseozfdx2z5bepfm2soz53hqvtul3jvoe3scor34s32wpt4e"
+        ],
+        "size": "4xl",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:dc4576fe-103e-49e7-aaf1-38176427a3c5",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreibn5jzseozfdx2z5bepfm2soz53hqvtul3jvoe3scor34s32wpt4e"
+        ],
+        "size": "xs",
+        "color": null,
+        "price": "20.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:year-of-the-goat-tee",
+    "handle": "year-of-the-goat-tee",
+    "name": "Year of the GOAT Tee",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16",
+    "collectionHandle": "tipped-off-16",
+    "variants": [
+      {
+        "id": "variant:9a046718-23e0-4e1e-8b0e-adf34b68b6a0",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+        ],
+        "size": "3xl",
+        "color": {
+          "hex": "#EEF3DC",
+          "name": "Citron"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:9a1333e2-1bb4-45f7-a96d-6bfa5e9862ca",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+        ],
+        "size": "xs",
+        "color": {
+          "hex": "#E6B9AB",
+          "name": "Heather Prism Peach"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:2f3962c1-0573-43e9-8d85-b7f7f9a51cfa",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#E6B9AB",
+          "name": "Heather Prism Peach"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:1ec41698-9a7a-486c-b114-09a1ac67f350",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#E6B9AB",
+          "name": "Heather Prism Peach"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:f7289ec2-3024-49ed-9877-ed312a972a9f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#E6B9AB",
+          "name": "Heather Prism Peach"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:5cc32ba7-68ff-45ee-a856-8e79d35d5c0c",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+        ],
+        "size": "xs",
+        "color": {
+          "hex": "#DECCB9",
+          "name": "Soft Cream"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e5847dde-d74d-4ddb-9ce7-390b406db0e2",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#DECCB9",
+          "name": "Soft Cream"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:d247e171-7a2f-407f-8dae-22326e29428f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+        ],
+        "size": "3xl",
+        "color": {
+          "hex": "#DECCB9",
+          "name": "Soft Cream"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:37d00f87-c665-4a6b-9948-2005ed535db0",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+        ],
+        "size": "xs",
+        "color": {
+          "hex": "#EEF3DC",
+          "name": "Citron"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:8d1365d0-07f4-4d3f-902a-6e6c6a8b8067",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#E6B9AB",
+          "name": "Heather Prism Peach"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:fed51269-155c-47e3-8d21-0a398f4d4683",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#C5C9D4",
+          "name": "Light Blue"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:55de116a-9ffb-4d61-b3ec-8839bf7e61d7",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#C5C9D4",
+          "name": "Light Blue"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:8532c1a3-57fe-4e03-bf1a-497cbc9fc4fd",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#C5C9D4",
+          "name": "Light Blue"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:4e3cde0e-1eb3-4b1c-b97a-bcb176291939",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#DECCB9",
+          "name": "Soft Cream"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:65344b4b-48e9-4d66-8201-8d90f77811e9",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#DECCB9",
+          "name": "Soft Cream"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:67e60cdf-b2ad-4bcf-b5d3-0bcbfaf001c3",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#DECCB9",
+          "name": "Soft Cream"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:135fdcb5-918d-4c0d-aa4c-2a53dc825ac1",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#EEF3DC",
+          "name": "Citron"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:62713ceb-56b0-4928-ac7d-cb1d85d7fc34",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#DECCB9",
+          "name": "Soft Cream"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:4260dfff-50db-4326-a2d0-4e5684e92795",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifryggvlinrxiokz3mjwjwsycrbvw5i5ba43nfffusbytsvz4rdee"
+        ],
+        "size": "4xl",
+        "color": {
+          "hex": "#DECCB9",
+          "name": "Soft Cream"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:d4fab77a-a216-4063-895d-e8cce04d812b",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#EEF3DC",
+          "name": "Citron"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:4511bb48-6889-4298-a8af-108241c76947",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+        ],
+        "size": "4xl",
+        "color": {
+          "hex": "#EEF3DC",
+          "name": "Citron"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:ff587422-32e3-4819-8c49-86476b80b73f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#EEF3DC",
+          "name": "Citron"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:048a629e-d3f0-4dad-ace2-6ece158eac3c",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#EEF3DC",
+          "name": "Citron"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:9aaf708a-92ca-44d2-bf33-98d3b594db72",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidp6hel47zcyp2ftqt3kg7dqqzerjei7xflr57gx54h7t6f2vyxfi"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#EEF3DC",
+          "name": "Citron"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:086da66b-c463-410d-8ab9-a64b0d1412ae",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#E6B9AB",
+          "name": "Heather Prism Peach"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:be2a1fba-ac25-4160-9db2-66bbf51f6705",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+        ],
+        "size": "3xl",
+        "color": {
+          "hex": "#E6B9AB",
+          "name": "Heather Prism Peach"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:2e8d5334-47f2-42c1-9c62-08138d1442eb",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiafkulaapfv4q2444n4fjac7vxzlfz6nuv5s4g7yvuoesic6htymm"
+        ],
+        "size": "4xl",
+        "color": {
+          "hex": "#E6B9AB",
+          "name": "Heather Prism Peach"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:ad9eed61-64c9-4369-afce-34596cba53c8",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+        ],
+        "size": "xs",
+        "color": {
+          "hex": "#C5C9D4",
+          "name": "Light Blue"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:d02fdd51-4861-4f60-a490-12fd6ebd766e",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#C5C9D4",
+          "name": "Light Blue"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:948b6734-5b36-4a55-a2fc-9eaef31fb92b",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidfc2sjixryzjy2konh4gtdxmdx2rg4zkbyofmx5ldvp7mvwojpvq"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#C5C9D4",
+          "name": "Light Blue"
+        },
+        "price": "20.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:crt-tipped-off-16-tank",
+    "handle": "crt-tipped-off-16-tank",
+    "name": "CRT Tipped Off 16 Tank",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16",
+    "collectionHandle": "tipped-off-16",
+    "variants": [
+      {
+        "id": "variant:cfe3f5f7-362d-43d4-8035-d8438d7a8b8a",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+        ],
+        "size": "xs",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:483ba1bb-e27f-4068-a1e4-724208389155",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#353535",
+          "name": "Charcoal-Black Triblend"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:56f4c571-92cb-4712-8527-5a238f7b3a69",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#353535",
+          "name": "Charcoal-Black Triblend"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:201c900e-a307-4b1d-b0ee-5e5ba388a6ec",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#353535",
+          "name": "Charcoal-Black Triblend"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:b9fb2f33-128c-400c-9063-b686c81f200d",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#353535",
+          "name": "Charcoal-Black Triblend"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:474aa6bc-2b96-4b3f-908e-a6b663cc323e",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#353535",
+          "name": "Charcoal-Black Triblend"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:fb53ebbc-d64b-4d67-981c-4ea328449e49",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+        ],
+        "size": "2xl",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:054498b6-6098-4079-a6e2-a75eeb012e15",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreigygclqaulijjblkouh63hewvx5m5rvuzst6juug5fhnd577fa5o4"
+        ],
+        "size": "xs",
+        "color": {
+          "hex": "#353535",
+          "name": "Charcoal-Black Triblend"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:758a1dc5-6963-465c-9764-f72ebf9df69c",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+        ],
+        "size": "s",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:2928fd3e-03b6-4323-82a3-ced063d0f60c",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+        ],
+        "size": "m",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:a41d8168-debc-48ce-98bb-8efd687781a1",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+        ],
+        "size": "l",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "20.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:faaf93c1-e8ec-4cec-8118-b7035ab20edd",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiboxaay2xzxzbpbpd7lxxnkykn5uh5keco3oc42ijb6yqqlsasqv4"
+        ],
+        "size": "xl",
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "20.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:tipped-off-16-spectator-pass",
+    "handle": "tipped-off-16-spectator-pass",
+    "name": "Tipped Off 16 Spectator Pass",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:29fec4d8-cc48-47da-a8b2-9eb7674bfc61",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeihssuks36y6jotv7upfshni3racsm4fw7l7gkqn3mv3e7sgbht3iq"
+        ],
+        "size": null,
+        "color": null,
+        "price": "55.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:tipped-off-16-venue-fee",
+    "handle": "tipped-off-16-venue-fee",
+    "name": "Tipped Off 16 Venue Fee",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:dfd0d86d-1f21-4b0c-b52f-cb620e6f1d0d",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeihssuks36y6jotv7upfshni3racsm4fw7l7gkqn3mv3e7sgbht3iq"
+        ],
+        "size": null,
+        "color": null,
+        "price": "90.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:boost-tipped-off-prize-pool",
+    "handle": "boost-tipped-off-prize-pool",
+    "name": "Boost Tipped Off 16 Prize Pool",
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Want to support the competitors at Tipped Off 16? Grab this digital item and add $10 directly to the prize pool—help fuel the hype and reward the players putting on a show.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16",
+    "collectionHandle": "tipped-off-16",
+    "variants": [
+      {
+        "id": "variant:ff4d5c9d-1792-4f8b-a158-fa0b19ebe21d",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeihssuks36y6jotv7upfshni3racsm4fw7l7gkqn3mv3e7sgbht3iq"
+        ],
+        "size": null,
+        "color": null,
+        "price": "12.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:nounsvitational-vip-hotel",
+    "handle": "nounsvitational-vip-hotel",
+    "name": "Nounsvitational Tokyo 2025 VIP + Hotel Experience Pass",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational",
+    "collectionHandle": "nounsvitational",
+    "variants": [
+      {
+        "id": "variant:92729c58-072e-4dd4-82b5-7ca0bc5043a5",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiggl5bs6wqs3jhpjduh6l42u2asw524myirmx2ujkx3o3hvitc7ea"
+        ],
+        "size": null,
+        "color": null,
+        "price": "2000.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:nounsvitational-vip",
+    "handle": "nounsvitational-vip",
+    "name": "Nounsvitational Tokyo 2025 VIP Experience Pass",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational",
+    "collectionHandle": "nounsvitational",
+    "variants": [
+      {
+        "id": "variant:5cf7a672-153d-4a39-9a3d-856dc48fd98c",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreifcu4jhl4anvb5lqwlvl2ibazfwfpbdfyqz34eqqypkvj7uwhvwd4"
+        ],
+        "size": null,
+        "color": null,
+        "price": "1000.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:boost-nounsvitational-prize-pool",
+    "handle": "boost-nounsvitational-prize-pool",
+    "name": "Boost Nounsvitational 2025 Prize Pool",
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Support the world’s best as they clash in Tokyo at the Nounsvitational. Grab this digital item to add $10 to the prize pool and help raise the stakes for one of the most elite Smash events of the year.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:131bccde-2dd6-428c-b496-3be6b6f9b720",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreiggl5bs6wqs3jhpjduh6l42u2asw524myirmx2ujkx3o3hvitc7ea"
+        ],
+        "size": null,
+        "color": null,
+        "price": "12.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:nounsvitational-trading-cards-2025",
+    "handle": "nounsvitational-trading-cards-2025",
+    "name": "Nounsvitational Trading Card Set (2025)",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational",
+    "collectionHandle": "nounsvitational",
+    "variants": [
+      {
+        "id": "variant:5df6f260-19a8-43cf-beda-d9e36095aa94",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeidf5mlhtcy4dq6ganliasavzkot2zg5jpjc4bwlcagnzoo3uavpfe",
+          "https://ipfs.nouns.gg/ipfs/bafybeicsxtj76esqkbrrzn76wuemp5qohajv4actxt36hkwsmkaloej3dy"
+        ],
+        "size": null,
+        "color": null,
+        "price": "5.99",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:oliyoun:oliyoun-dad-hat",
+    "handle": "oliyoun-dad-hat",
+    "name": "Oliyoun Dad Hat",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:oliyoun",
+      "handle": "oliyoun",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+      "name": "Oliyoun",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:oliyoun:oliyoun-autochess-2",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:521efe82-b01c-47c8-aeb7-827fdb821934",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeicd2j573bjvf6i5vjrsduiabwpfihxih4hgouuq2xnr64l2nmw7vy"
+        ],
+        "size": null,
+        "color": null,
+        "price": "25.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:aklo-coaching",
+    "handle": "aklo-coaching",
+    "name": "1-Hour Coaching with Aklo",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "coaching-sessions",
+    "variants": [
+      {
+        "id": "variant:1229bc43-7624-4d06-9dfe-1eaecfcc5125",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeiay2p4yrxik4eah73ur7jk2cu2tr2bbqhynaxc55lw6a4bqqvzhsm"
+        ],
+        "size": null,
+        "color": null,
+        "price": "50.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:junebug-coaching",
+    "handle": "junebug-coaching",
+    "name": "1-Hour Coaching with Junebug",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "coaching-sessions",
+    "variants": [
+      {
+        "id": "variant:a0e0a8c7-ffc4-458c-8390-8670458e62a1",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeidds3clxw4wqemzdlehp6vq7tvsti72yvnms5lmjfeumsbpw23a3m"
+        ],
+        "size": null,
+        "color": null,
+        "price": "50.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:nicki-coaching",
+    "handle": "nicki-coaching",
+    "name": "1-Hour Coaching with Nicki",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "coaching-sessions",
+    "variants": [
+      {
+        "id": "variant:3d2040b3-9f9c-44bf-825b-5dcf0c2997b6",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeia43q6wrrsmegwznrfueuuiewx3mw4gqj4v6qzt747rivn7w5zewe"
+        ],
+        "size": null,
+        "color": null,
+        "price": "50.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:every-day-jacket",
+    "handle": "every-day-jacket",
+    "name": "Every Day Jacket",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:b3b8fe71-84a4-41af-ab59-4bbe88613781",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeigwsl6o33kamxq6a2wz6do576gbsvkit7khmwvvfh2li5ffmo7qaa",
+          "https://ipfs.nouns.gg/ipfs/bafkreicumeqotmdm2khfbvaswrkaybeaq3l5iu5o4htabltv3fh3x556ge"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "80.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:f0d7e5e2-7fbf-4882-b3b1-11ec80f87e91",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "80.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:8e8db89c-c35c-4bd1-89b7-6d6a50e51f4f",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "80.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:b76d4461-394c-4e56-b849-112eb5aa5227",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "80.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e1f983a8-a2c9-41bb-b8e2-3f8ac306429b",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "80.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:polymath-shorts-soft-grey",
+    "handle": "polymath-shorts-soft-grey",
+    "name": "Polymath Shorts - Soft Grey",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:1006b587-be04-4763-8819-5f54a71e01b9",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:ea88eab0-075b-499a-8426-23cf86162636",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:aaa9c2b0-8e67-44a8-94f4-daba03a42e6b",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeigkdqkqekyou4xh3mn3ujimrtqgwtrdvbvy3o5gti5tyvgtd7cbcq"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:0b06534d-202b-475b-897c-1f70f021d1fc",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:d9cc2098-a8c5-4cc8-a1e0-2d8e105a445a",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:polymath-shorts-vintage-black",
+    "handle": "polymath-shorts-vintage-black",
+    "name": "Polymath Shorts - Vintage Black",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:b926f007-9946-452b-b3bf-d03966419c2f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeibgtlilszugut4nk4oycw5qv7ksb5qjw4fmqpbbllqpgofec7wlmy"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:c6c6cccf-330d-4d71-ad02-12a4daa87b1a",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e984c20d-7010-430f-88d5-bb42e99705c7",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:0d3f0a15-8b27-485d-8afb-15bdc62f637a",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:7ee2cc0e-7545-4ad7-ad3a-aa91ee1da085",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:polymath-tee-dodger-blue",
+    "handle": "polymath-tee-dodger-blue",
+    "name": "Polymath T-Shirt - Dodger Blue",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:948187b1-eb6f-4c4e-978a-0a0a3bb39348",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeieoxjbhs7h4lcclrq2j5am7cyxjdq4xz2vhlwpirrkkmvdnv5kcm4"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:88df534e-6e64-4645-b605-a8a0c57edeb1",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:86b55945-b985-484a-9872-c5ae1340dfce",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:db3dbcb8-c4a2-41c6-a601-aae9d9b3150d",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:1d1e162b-cfcc-4431-be4f-d912c56175f7",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:polymath-tee-soft-grey",
+    "handle": "polymath-tee-soft-grey",
+    "name": "Polymath T-Shirt - Soft Grey",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:2296ea75-097c-4556-9e88-3bc00b57b215",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:9bf6b8a9-8a86-4c81-8a64-c20066fb23a4",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:5334ebfc-bec3-4d49-836c-1abf0cf1987f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeicax3cpjlnk7fflop7qgvpayae5euoreji3yqi56c4dzly4mod5um"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e776a758-1b2d-40fb-ac61-c96e2b7e712e",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:7525c8b0-1b50-4055-ada2-d3ae03a18bf7",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:polymath-tee-vintage-black",
+    "handle": "polymath-tee-vintage-black",
+    "name": "Polymath T-Shirt - Vintage Black",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:d5c9f376-f630-4462-b712-c5953bfec746",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:b51d77f1-a7df-4d09-a00e-69f1b2cdec29",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:7f564120-4d50-4038-bf03-dcd5f8976787",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeiamengwsq6c5y7fscdhmcvieakttikpw6dielslwsmwxy5vt2l65y"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:01a33d3e-fe0b-407c-92e7-ed0eb273d836",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:51cbcace-2f68-4235-8c86-8e0ddfc9c0fb",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "38.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:cloud-hoodie-parchment",
+    "handle": "cloud-hoodie-parchment",
+    "name": "Cloud Hoodie - Parchment",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:ba3f9d00-3443-4751-a1bd-cebdfe5faaab",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:a9654613-4a12-4114-8e65-d5e16d9784e9",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeido2oj5qp7mgddwb2hs64k75budzb7i4xsjzhcjkw37pw2npvkwym",
+          "https://ipfs.nouns.gg/ipfs/bafkreidye36c6frmr2em2v3ft6cmdlktdxmrrs7tdev2sd6hyqc3hravkm"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:22be3fa7-3c4a-4af2-84e3-7faf4cede5a7",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:9435fe4b-7c09-4a96-bb62-5212be1c603b",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:50ea097e-fbc5-4d0c-87a1-ea3dec0531b1",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:forever-ls-forest",
+    "handle": "forever-ls-forest",
+    "name": "Forever LS - Forest",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:9d0c2462-cfd9-491b-98e7-452574fd2912",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeidean3dyntqrjip3yj2nurg5j5wehlffyijobdm2zpfpukdbgsgbi"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "45.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:b5e9fa9e-49f8-4cb3-8375-ccc121a3d7ed",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "45.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:654edbd5-4c41-492f-9ecc-0f7428bcf97d",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "45.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:d17e714e-8b2c-445a-b1ad-71e17bc2b8bd",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "45.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:ac342b64-4e78-4c5f-8194-f7434debbd0f",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "45.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:polymath-shorts-dodger-blue",
+    "handle": "polymath-shorts-dodger-blue",
+    "name": "Polymath Shorts - Dodger Blue",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:4aaae22a-cf3f-4264-9089-e954b07b0e23",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeifv4xv2orlkjj4w64zybieyq4x34koh2xwcdavejkmb3k2vaqawb4"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:315970ea-9ed2-4ea0-9516-54c20aba030d",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:60034654-d88f-49ba-9494-19209be7bd3d",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e72aa06a-70e8-4114-a0f7-057f695b9bdb",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:577c29db-5943-4af1-be4e-f3de1cb983b6",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:cloud-hoodie-jam",
+    "handle": "cloud-hoodie-jam",
+    "name": "Cloud Hoodie - Jam",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:6d5e69b3-1a8d-4368-9ffb-0bf3d70acc90",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:95b583cc-6ff8-4ff5-a480-b8158267cdef",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:ccc6a831-b5ff-4aed-a1d8-d316e5e27545",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:723fff28-8663-46e5-8d29-c6fd88e88413",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeibrmuzp6lxwvx6pxsbgftqo3xtcv6abo4cq5t243sjnadppwgep4a",
+          "https://ipfs.nouns.gg/ipfs/bafkreidra4wcuhcjvt2yxzd3mqz3y7ilrnypwam42pstz22vfmclkuzdja"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:d3c221a2-9f00-41f0-a52f-341b566fae10",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:cloud-hoodie-vintage-black",
+    "handle": "cloud-hoodie-vintage-black",
+    "name": "Cloud Hoodie - Vintage Black",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:72bbabc1-a338-4ddc-8a0c-a26d0e8b1d66",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:a6a921fb-c8f3-44df-abdf-9c245433e2d2",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:9c82ebc1-014e-4b27-8f53-fb1b73ced94f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeibkgnoq3iymnvjtbjmlwgpmqscyekwmlpbxozvrnfsndzi3wgfdgq",
+          "https://ipfs.nouns.gg/ipfs/bafkreialdgrza5bkasezzy23xfwqew4xxx7a53lxfkczyf62glymam7vju"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:7e7f7afd-29cd-4ee7-962b-4d51cbe784c2",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:ea5d30f7-2370-4742-a8af-20ca00a76c48",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "75.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:forever-ls-optic-white",
+    "handle": "forever-ls-optic-white",
+    "name": "Forever LS - Optic White",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "dopamine",
+    "variants": [
+      {
+        "id": "variant:034056dc-30ef-4764-bc44-634a8a2cd53c",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "45.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:4013c3e2-9885-4c1f-9f75-e4da51c1bde7",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "45.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e9f0a522-29c2-4efc-8cb2-1565243b9959",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeibok4f572dipbp75pfacx6i4wwjfag4i7pcobrrsrrhiguijd2fyi"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "45.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:8005abc0-ca4a-4ef7-8e17-1b1b3db41bb2",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "45.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:5cb5b1cb-19c4-4689-a7da-ad7deb332b65",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "45.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:noggles-red",
+    "handle": "noggles-red",
+    "name": "Noggles - Red",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "noggles",
+    "variants": [
+      {
+        "id": "variant:82f0a905-d083-43a6-ab4d-29477fe1c982",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeihrezgkifx6nxgbxl2qd424mmsrju4hedwip6k3jhzzxpflulp4ki",
+          "https://ipfs.nouns.gg/ipfs/bafybeif4xvvgmsatmi6zrcazt3sdhrdwb3n42ahbxtix56ltcmxrs2bl6m",
+          "https://ipfs.nouns.gg/ipfs/bafybeiaoxdn6b4tlcvxnlri3oq6373w37xqv6ztmxdw6tky3c2t77s7kke"
+        ],
+        "size": null,
+        "color": null,
+        "price": "9.99",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:noggles-green",
+    "handle": "noggles-green",
+    "name": "Noggles - Green",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": "noggles",
+    "variants": [
+      {
+        "id": "variant:1cae59d5-d751-45a0-81ec-1f615902c648",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeig5sjtezdkx5znalmc5cwu2uyddp246a6lvr3da5d4c3eo7kormne",
+          "https://ipfs.nouns.gg/ipfs/bafybeibejdrblktaasgwnzmmip5crqjenleko3lrhibffutvu6tjnpgxta",
+          "https://ipfs.nouns.gg/ipfs/bafybeiaoxdn6b4tlcvxnlri3oq6373w37xqv6ztmxdw6tky3c2t77s7kke"
+        ],
+        "size": null,
+        "color": null,
+        "price": "9.99",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:foxes-tee",
+    "handle": "foxes-tee",
+    "name": "Foxes T-Shirt",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:137b6ce6-1e64-4a87-8bf5-d34bd0f8fed0",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "26.99",
+        "inventory": null
+      },
+      {
+        "id": "variant:1ff972f7-9da4-4bf5-8170-3a27cf1bb9c8",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeieuafapfyal275cbxwje4pmsyde654567f4xqstnik3yitmg3iz2e"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "26.99",
+        "inventory": null
+      },
+      {
+        "id": "variant:21db78f4-cde4-459e-b214-d678f3367556",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "26.99",
+        "inventory": null
+      },
+      {
+        "id": "variant:0bd57761-20ea-4147-9e06-9434c2e3c8bb",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "26.99",
+        "inventory": null
+      },
+      {
+        "id": "variant:6d8e0b28-b87f-4b3d-8ece-74958a92334e",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "26.99",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:ti13-electronic-sports-dept-tee",
+    "handle": "ti13-electronic-sports-dept-tee",
+    "name": "TI13 Electronic Sports Dept T-Shirt",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:ee948238-462d-4318-9ce2-d0bd1cfd765a",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:3fe924f4-1048-40e0-95ac-854912ca33cd",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeidipdpzrkekga3mqtdoifgpzccwgdikrabmkfrwznuy5qmgpoelgy",
+          "https://ipfs.nouns.gg/ipfs/bafybeibbtmge43tpirwkchsjvbhhwws6yhyl53ei2u2rurj2yrl45jepem",
+          "https://ipfs.nouns.gg/ipfs/bafybeiaxc6os22ljnytlornxygzpkrqartm6wefbqz4tgsersilrvomse4"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:97ebfbb3-ec8d-459d-b745-55e79f004056",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:c21906a2-50f7-4369-a9f7-acc1b035f552",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:82eb72a9-4783-452b-9084-ecac7f215958",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:ti13-worldwide-tee-black",
+    "handle": "ti13-worldwide-tee-black",
+    "name": "TI13 Worldwide T-Shirt - Black",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:7d8ce7af-24f5-40dc-8380-598d1784566f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeibqjoptqk2lgd5vxieaf3bm5ierany3fobkao5hogavu5dwj5j6oy",
+          "https://ipfs.nouns.gg/ipfs/bafybeifyupwdul6azstwp35m7h4d5cz5g2mebfweyfka3fngznhfakzftq",
+          "https://ipfs.nouns.gg/ipfs/bafybeic3qu6gi2ggbs42eet6mlhlux3cifofjuduf5i3476qav52mecihy"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:76e5348c-04cb-4d45-bbcc-aca0e77d0c97",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:445a42d6-6d90-4d74-89ff-c54bf43bef00",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:f53cbb20-e9d8-4842-8efc-d6cad0250378",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:09ef0bec-f3e7-4ead-91cc-daee2754e392",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:ti12-worldwide-tote-bag",
+    "handle": "ti12-worldwide-tote-bag",
+    "name": "TI12 Worldwide Tote Bag",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:40bb97ee-1e82-4911-95f7-395bc8840541",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeiguyd2y4r3coxrlzbhhbxd6n4rvzcqerp66axjyxhtekdnfmwg4hm"
+        ],
+        "size": null,
+        "color": null,
+        "price": "18.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:ti12-worldwide-tee-pepper",
+    "handle": "ti12-worldwide-tee-pepper",
+    "name": "TI12 Worldwide T-Shirt - Pepper",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:212f777a-1b65-4e12-9ae0-b4c8d94a9a45",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeih4ixxdaqmcrx32wjvgfjco4ufb5albwusdy2vypelvjdbzmsk3ju",
+          "https://ipfs.nouns.gg/ipfs/bafybeigro6zjx5ucpnmghafftve7mahkwze4kq52yembfnrqzkyvtueqiu",
+          "https://ipfs.nouns.gg/ipfs/bafybeie3epi6adce57qwqbgpqh26lvzubf5xbmbtuh2cwf5g3ha2psjpyu",
+          "https://ipfs.nouns.gg/ipfs/bafybeie6meqvajutesyriuoux27ncdastctu5m5ptkqcduqzrgffqa3wim"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:feda5af6-610b-4eb6-9d37-80b0e3ff0a19",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:e028eaf9-4467-4734-8088-09762f9a110e",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:8a6acbe7-315c-44ae-8576-7da9856ab042",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:67d828cd-2969-4f1d-b41e-6d37aabeba0d",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:ti12-worldwide-tee-ivory",
+    "handle": "ti12-worldwide-tee-ivory",
+    "name": "TI12 Worldwide T-Shirt - Ivory",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:1cc4e61b-4d67-450b-bd50-895d396a8dad",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeidxs3hixenrfxwg622etxqvwbt2iesa2h4jdkezqov7pjyyaa2zdy",
+          "https://ipfs.nouns.gg/ipfs/bafybeibtc72d5zlm6rl43lhuvs4ghutyu2b6vjj6zs5dyzkwfd6a6ps2pi",
+          "https://ipfs.nouns.gg/ipfs/bafybeibtoijgk4modhyyajerhdvlkpsea2efsn3oq2m6fsiwcao55qufei",
+          "https://ipfs.nouns.gg/ipfs/bafybeihgl3hxva5bdvrk7d5bgo4ut45ffnk4aq5gvuhr6o3xbaq5zdosmq"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:213b9068-7eec-47e6-9b06-81c864b1a0b1",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:371915b0-a0b5-4c01-b0b8-a75fe80d62f8",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:794e80dc-2f52-40bd-afc5-00977f456640",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:1a756f99-53af-44f6-8a2b-961af5baa4f7",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:ti13-worldwide-tee-white",
+    "handle": "ti13-worldwide-tee-white",
+    "name": "TI13 Worldwide Tee - White",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:f47992a9-d672-46fe-a849-979a67eb4b08",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:703cc532-da0c-488b-a077-de8a399aecb3",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeiggouihln6lext2acft4i3537aadi3n44v4yqabgpmxzjltq6sqx4",
+          "https://ipfs.nouns.gg/ipfs/bafybeih37et5uzdoh6fge6kx4dlxbz5m44fxffz5qr5euwdevkdpys7eyy",
+          "https://ipfs.nouns.gg/ipfs/bafybeigdk7oayb4u7ugr3qe36tijjrhtwkkbdw63srzgzqtq2nnvxynwue"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:8a7daa05-4ac4-4ae9-9fd6-73913547cddd",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:6ac86546-e1c7-44eb-a7f6-07830b4009d4",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:3719a2c4-b267-4183-86ce-79a22f80ce6a",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:grey-long-sleeve",
+    "handle": "grey-long-sleeve",
+    "name": "Grey Long Sleeve",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:d1b3f8c8-58e6-4c77-b207-39bafd91f3a3",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeig5zruc65p4qwokix6lhodmrsffkovazfr4yifp2axtnfr7j5mnkm",
+          "https://ipfs.nouns.gg/ipfs/bafybeicmlfeeltuvxadao74obuviotkdpjmsgsdxdze2v3pq2mkznhaqxu",
+          "https://ipfs.nouns.gg/ipfs/bafybeidbh7haztvl6btkpbl47ztv52zvr6jg56ytxyztiqwmypczj23c4m",
+          "https://ipfs.nouns.gg/ipfs/bafybeicfdvks2gdqu4j3j2subvd7tc4ltb5qcokgunda7pyesz5chnupau",
+          "https://ipfs.nouns.gg/ipfs/bafybeihuwkwzxk7n3zunyyzmtvzy5lsreygbajdmm5plbeu2lmb4eg5qqi",
+          "https://ipfs.nouns.gg/ipfs/bafybeidn54ez5pi5yh4em24xfzmu5rjidma57gbojlbgjukmzlhg7hbz5y"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "40.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:a721ad10-9651-4e75-8aaa-388ba961745c",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "40.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:f8a3d50b-62ee-466b-be04-ef29f48cc5c3",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "40.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:38793576-6938-44f0-a166-473b6efe7d41",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "40.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:3d293de1-55e5-409c-a5f9-418062b14b3e",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "40.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:baby-blue-tee",
+    "handle": "baby-blue-tee",
+    "name": "Baby Blue T-Shirt",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:7e9a870c-af5a-4b1c-afd5-baaf679a3cb8",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:56bd882a-d916-4eac-88c4-d84b9f67412d",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeibmx4uv6uesniz4hr3xjb2zcpd3gx5y7l3f6q4ifzu2g22gfdochu",
+          "https://ipfs.nouns.gg/ipfs/bafybeiakz227lwncgxqnutf7wjhizpl62tvxls3mvxpnbp3al32z7aagqe",
+          "https://ipfs.nouns.gg/ipfs/bafybeid2ux7p4iysfijbnqvxh5xvovibqbuwmr3ry6762ezmtspm6knsvu"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:6ea5884b-c89f-45ea-97e5-3996d9aeb942",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:a0bd4d74-6920-4517-ad18-7acffd4b012e",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:6a49c52d-a37a-4c96-820f-0868a5f9721b",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:black-tee",
+    "handle": "black-tee",
+    "name": "Black T-Shirt",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:622acf79-58dc-4663-972e-d8a2865e924c",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeid45y6fljlljbiouxympsa4zqdgvqvoung5wam2gvqiwxenltscza",
+          "https://ipfs.nouns.gg/ipfs/bafybeibloeesmuguc3qdhdh45tszmpedm7bjvgst56tefa6eehmalzwybi",
+          "https://ipfs.nouns.gg/ipfs/bafybeia5a2esahbuyryghiduhrdqc4be2rcjcicl4lvm3hy4loyppk6lta"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:cd3d9248-69ce-45c4-96a3-6fa75c67d018",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:5c4855a0-8e67-493d-83e3-af6378cfc46c",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:64f3236a-0bee-45e6-a70b-042c581ea44a",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:da0f54d1-a0c1-4045-bf1e-355498ac96cd",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "30.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:grey-long-sleeve-error-edition",
+    "handle": "grey-long-sleeve-error-edition",
+    "name": "Grey Long Sleeve (Error Edition)",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:103452b5-37c7-42c2-91f7-eeedc20631da",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeifekdvoxoqvbihmoiuolq6k7ndmrhxedwxfbli2o7bd3kyglaok7e",
+          "https://ipfs.nouns.gg/ipfs/bafybeiauhm74tnioxkbt77itualghzhksgpfcc53lb7hcelwmhqlva3huu",
+          "https://ipfs.nouns.gg/ipfs/bafybeih2rp34vg3haobmqavjtofwgfxduldi76suai6t66ytveqkmlig5e",
+          "https://ipfs.nouns.gg/ipfs/bafybeigspmcjpzl2wncli6z5kdzcrq6m7i47m45hzh3l53mwdxomqy7yva"
+        ],
+        "size": "s",
+        "color": null,
+        "price": "15.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:ce0fd4fd-9d20-4965-88f6-7ee23a9698f8",
+        "images": [],
+        "size": "m",
+        "color": null,
+        "price": "15.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:cfdb1841-5c47-4d50-a0c6-1602b3e424fe",
+        "images": [],
+        "size": "l",
+        "color": null,
+        "price": "15.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:ab7a32c9-87e2-4ab4-af27-fe0a5508e886",
+        "images": [],
+        "size": "xl",
+        "color": null,
+        "price": "15.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:bcc72705-fa8a-49b0-9e9a-14844491ddb4",
+        "images": [],
+        "size": "2xl",
+        "color": null,
+        "price": "15.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:lilnouns:denim-lil-nouns-hat-blue",
+    "handle": "denim-lil-nouns-hat-blue",
+    "name": "Denim Lil Nouns Hat (Blue)",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:lilnouns",
+      "handle": "lilnouns",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/9460da51-7bb1-445b-c733-e18723c25c00/original",
+      "name": "Lil Nouns",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": "https://warpcast.com/~/channel/lilnouns",
+      "details": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 1
+            },
+            "content": [
+              {
+                "text": "🧠 What is a Lil Noun?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Launched in May 2022, Lil Nouns is a community-run DAO built on the same principles as Nouns DAO. It introduces a new layer to the ecosystem, designed to welcome more people in with lower-cost, always-available NFTs. By doing so, Lil Nouns helps grow awareness of Nouns while empowering a new generation of collectors and contributors.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Each Lil Noun is a 16×16 pixel art character, randomly generated and minted on the Ethereum blockchain every 15 minutes. With traits like colorful heads, accessories, and backgrounds, no two Lil Nouns are the same. And thanks to their CC0 (Creative Commons Zero) license, anyone can use, remix, or build on them—no restrictions, no permission needed.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lil Nouns isn't just a collection—it's a gateway into a vibrant, creative, and decentralized community.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "text": "🗳️ How Does the DAO Work?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Owning a Lil Noun gives you a voice in the Lil Nouns DAO, with each NFT counting as one vote. The DAO manages a shared treasury that's funded by ongoing NFT auctions, and it's up to the community to decide how those funds are used. Anyone can submit a proposal and vote on initiatives they care about. So far, the DAO has backed a wide range of projects like esports sponsorships, creative public goods, and even podcasts like The Lil Nouns Show. It's a flexible system powered by the ideas and votes of the Lil Nouns community.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "text": "🔗 Explore More",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🌐 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Official Website",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://lilnouns.wtf/"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🔨 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Lil Nouns Camp",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://lilnouns.camp/"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "👨‍💻 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "GitHub",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://github.com/lilnouns"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🖥️ ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Discord",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://discord.gg/4avSUMVWyF"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": false,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:6919d30b-49c0-49c6-acfa-2c9a5f60cd1b",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeihuy5jzet7oyvtpok547zipv3n473dbkwz6s24z73ehm6ygm3jo6u"
+        ],
+        "size": null,
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:3db88704-1c3f-4f42-9b77-fbfc34e07971",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeigomn4vrqzvtpwmo4twxp6rwmezwe6vxgd7lawbuotqsf3dcq4tve"
+        ],
+        "size": null,
+        "color": {
+          "hex": "#A9BBBD",
+          "name": "Light Blue"
+        },
+        "price": "25.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:lilnouns:lil-nouns-hat-pink",
+    "handle": "lil-nouns-hat-pink",
+    "name": "Lil Nouns Hat (Pink)",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": true,
+    "active": true,
+    "community": {
+      "id": "community:lilnouns",
+      "handle": "lilnouns",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/9460da51-7bb1-445b-c733-e18723c25c00/original",
+      "name": "Lil Nouns",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": "https://warpcast.com/~/channel/lilnouns",
+      "details": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 1
+            },
+            "content": [
+              {
+                "text": "🧠 What is a Lil Noun?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Launched in May 2022, Lil Nouns is a community-run DAO built on the same principles as Nouns DAO. It introduces a new layer to the ecosystem, designed to welcome more people in with lower-cost, always-available NFTs. By doing so, Lil Nouns helps grow awareness of Nouns while empowering a new generation of collectors and contributors.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Each Lil Noun is a 16×16 pixel art character, randomly generated and minted on the Ethereum blockchain every 15 minutes. With traits like colorful heads, accessories, and backgrounds, no two Lil Nouns are the same. And thanks to their CC0 (Creative Commons Zero) license, anyone can use, remix, or build on them—no restrictions, no permission needed.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lil Nouns isn't just a collection—it's a gateway into a vibrant, creative, and decentralized community.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "text": "🗳️ How Does the DAO Work?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Owning a Lil Noun gives you a voice in the Lil Nouns DAO, with each NFT counting as one vote. The DAO manages a shared treasury that's funded by ongoing NFT auctions, and it's up to the community to decide how those funds are used. Anyone can submit a proposal and vote on initiatives they care about. So far, the DAO has backed a wide range of projects like esports sponsorships, creative public goods, and even podcasts like The Lil Nouns Show. It's a flexible system powered by the ideas and votes of the Lil Nouns community.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "text": "🔗 Explore More",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🌐 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Official Website",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://lilnouns.wtf/"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🔨 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Lil Nouns Camp",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://lilnouns.camp/"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "👨‍💻 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "GitHub",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://github.com/lilnouns"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🖥️ ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Discord",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://discord.gg/4avSUMVWyF"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": false,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:055c1ae7-f6ac-42e9-94de-762a88285169",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeifbvdgmpjouuct3zcef2wdaq5hzfedj4ugsrxhz4xdcynzfy5wcqa"
+        ],
+        "size": null,
+        "color": {
+          "hex": "#000000",
+          "name": "Black"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:03f4a116-4d8e-4432-8a6d-02581014203d",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeihrkkmy5yntjedijm5fw2vkunxjad32el63iglttpkr2cs3s73s5e"
+        ],
+        "size": null,
+        "color": {
+          "hex": "#A9BBBD",
+          "name": "Light Blue"
+        },
+        "price": "25.00",
+        "inventory": null
+      },
+      {
+        "id": "variant:7ddef0e1-5927-40ff-b9fd-adc84c1edebe",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeic6gxz2zoddcrnbbtx3znfith7wpngkpkqvg5vuzg2a4tloi4ki34"
+        ],
+        "size": null,
+        "color": {
+          "hex": "#779BB1",
+          "name": "Blue"
+        },
+        "price": "25.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:lilnoun-8338",
+    "handle": "lilnoun-8338",
+    "name": "Lil Noun #8338",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:7b248df3-fb9e-454c-80e8-c8e7cd43799e",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreidpakiktmjror5z6zm6cykjlae4pl6qzw4xlsef4tf2qjfnbcnuu4"
+        ],
+        "size": null,
+        "color": null,
+        "price": "100.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:nouns-bowl-spectator-pass",
+    "handle": "nouns-bowl-spectator-pass",
+    "name": "Nouns Bowl Spectator Pass",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:760848a7-ece5-4ca2-b23e-963ea9ecbb2f",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeibsg6lcl37hrh5n5tk2qq52yhqqwz56zrhoem273bqlkq7wzuptxi"
+        ],
+        "size": null,
+        "color": null,
+        "price": "35.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:noun-1088",
+    "handle": "noun-1088",
+    "name": "Noun #1088",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null,
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:3a8cc461-fbfa-4007-bc63-af1700398c9c",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafkreid6lvarw77hlsm6ihniqsy7kt5g6tncqredvyesjisvgq5x2z7nxi"
+        ],
+        "size": null,
+        "color": null,
+        "price": "3000.00",
+        "inventory": null
+      }
+    ]
+  },
+  {
+    "id": "product:nouns-gg:nouns-bowl-venue-fee",
+    "handle": "nouns-bowl-venue-fee",
+    "name": "Nouns Bowl Venue Fee",
+    "description": null,
+    "createdAt": "2025-07-20T01:50:11.340Z",
+    "requiresShipping": false,
+    "active": false,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl",
+    "collectionHandle": null,
+    "variants": [
+      {
+        "id": "variant:b5c6ae9b-4d5e-4f7b-b3a1-f4cc2d3aca4a",
+        "images": [
+          "https://ipfs.nouns.gg/ipfs/bafybeibsg6lcl37hrh5n5tk2qq52yhqqwz56zrhoem273bqlkq7wzuptxi"
+        ],
+        "size": null,
+        "color": null,
+        "price": "70.00",
+        "inventory": null
+      }
+    ]
+  }
+]

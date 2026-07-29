@@ -1,0 +1,14 @@
+{
+  "id": "pub_86932c1e961714fad2dcfb79",
+  "name": "cm9wigim",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidllpaw6a4zs3xsztcy3dwenzsf4ignew6xm2zt7rdc34bzlbswja",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1EadfF6FE8A0E6a4bdb6C4F288d110cbd5Ec6771",
+      "kind": "external"
+    }
+  ]
+}

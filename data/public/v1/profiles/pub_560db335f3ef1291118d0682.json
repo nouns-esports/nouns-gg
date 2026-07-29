@@ -1,0 +1,14 @@
+{
+  "id": "pub_560db335f3ef1291118d0682",
+  "name": "arrow_x31",
+  "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/5045fa92-a2e6-456b-0009-6f1661da2700/rectcrop3",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdAB525604F193026a1773fe29AE891b7676Db64c",
+      "kind": "external"
+    }
+  ]
+}

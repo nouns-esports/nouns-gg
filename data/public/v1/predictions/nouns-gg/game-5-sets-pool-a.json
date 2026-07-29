@@ -1,0 +1,47 @@
+{
+  "id": "prediction:nouns-gg:game-5-sets-pool-a",
+  "handle": "game-5-sets-pool-a",
+  "name": "How many game 5 sets will happen in pool A?",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiceiiwzbthd542o5tpiyjoxlrn6ciul2j7mollssrhaxgz7g4ubmi",
+  "rules": {
+    "type": "doc",
+    "content": []
+  },
+  "xp": {
+    "winning": 300,
+    "predicting": 0
+  },
+  "prizePool": 0,
+  "closed": true,
+  "resolved": true,
+  "featured": false,
+  "createdAt": "2024-12-05T06:47:57.250Z",
+  "start": null,
+  "end": null,
+  "pool": "0.000000000000000000",
+  "totalBets": 53,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:nounsvitational-2024"
+}

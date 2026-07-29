@@ -1,0 +1,14 @@
+{
+  "id": "pub_8f1fbfa7b70002d45302a8d0",
+  "name": "cmdn1xor",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreie4rwfgnpa4qqnenlr3xx4ff24nxkmaerkh6dpgxo4mn3eoie6mkq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb88a91e34Ab91c46749aE48B292F1c6cBd271D0d",
+      "kind": "external"
+    }
+  ]
+}

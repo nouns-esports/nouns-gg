@@ -1,0 +1,14 @@
+{
+  "id": "pub_36926bea07bf96a2f7bbaad8",
+  "name": "Super Tight Woody",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifoi624pm3b7kbkwrnrfhuhhrgy6psxjaf4lpyo5v4g6mrn2dizra",
+  "bio": "!vibe",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0f320368104AdC3cb64b2a7be83bF0a549E12b03",
+      "kind": "external"
+    }
+  ]
+}

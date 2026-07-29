@@ -1,0 +1,18 @@
+{
+  "id": "pub_ef43ef6dd9a145cfbfb5be09",
+  "name": "Marko Twice",
+  "image": "https://pbs.twimg.com/profile_images/1948378791530680320/2fJjOvta_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "MarkoTwice",
+    "name": "Marko Twice",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948378791530680320/2fJjOvta_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x95C3a6f17d5D0d2e606FF9e6c38668B1A05e915b",
+      "kind": "external"
+    }
+  ]
+}

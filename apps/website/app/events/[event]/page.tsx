@@ -1,6 +1,11 @@
 import { getEvent } from "@/server/queries/events";
 import { isUUID } from "@/utils/isUUID";
 import { notFound, redirect } from "next/navigation";
+import { eventParams } from "@/server/data/params";
+
+export function generateStaticParams() {
+	return eventParams.map(({ event }) => ({ event }));
+}
 
 export default async function Event(props: {
 	params: Promise<{ event: string }>;

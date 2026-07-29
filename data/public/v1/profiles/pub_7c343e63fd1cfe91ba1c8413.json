@@ -1,0 +1,18 @@
+{
+  "id": "pub_7c343e63fd1cfe91ba1c8413",
+  "name": "da coolesty",
+  "image": "https://pbs.twimg.com/profile_images/1774469788204417024/JVS0UGDv_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "coolestyfgc",
+    "name": "da coolesty",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1774469788204417024/JVS0UGDv_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9c091A9EeDD62e4E96Bf917d422F2e90284fb627",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_21bc09ec04afc6441acd07b9",
+  "name": "ldld668668",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreie5lmfe4pvkaifxf7iimmgthopqzuvo6tu4r5y35buh2wkfsde2vm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x068CCbbf8d0ED63454db6bb61586Eea917275a59",
+      "kind": "external"
+    }
+  ]
+}

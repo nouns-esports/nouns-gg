@@ -1,0 +1,14 @@
+{
+  "id": "pub_f30d7b2e7d3ca2457448b554",
+  "name": "valentinart24",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreids7lrvckm4awxyir5t2sqn22hofwddk65ng6hyn4tltycvfkpvou",
+  "bio": "Digital Artist 💛",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9ab51fd89F163D07127df192b615356D53B406f6",
+      "kind": "external"
+    }
+  ]
+}

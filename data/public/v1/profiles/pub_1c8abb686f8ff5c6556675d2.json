@@ -1,0 +1,18 @@
+{
+  "id": "pub_1c8abb686f8ff5c6556675d2",
+  "name": "GentleCuttlefish",
+  "image": "https://pbs.twimg.com/profile_images/1320390769337827328/j44If_qk_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "CuttlefishTweet",
+    "name": "GentleCuttlefish",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1320390769337827328/j44If_qk_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x28618d73df05C846c049ae65Fa7EC46172138E7d",
+      "kind": "external"
+    }
+  ]
+}

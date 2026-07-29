@@ -1,0 +1,18 @@
+{
+  "id": "pub_65322c7d34fe2442bbef3fa0",
+  "name": "Sicko",
+  "image": "https://pbs.twimg.com/profile_images/1596247398782627840/J8lx_sFs_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "SahibSicko",
+    "name": "Sicko",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1596247398782627840/J8lx_sFs_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x941075B8D344a1Fb0110f21462eBE01824390433",
+      "kind": "external"
+    }
+  ]
+}

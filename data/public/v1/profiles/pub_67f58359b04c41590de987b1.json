@@ -1,0 +1,14 @@
+{
+  "id": "pub_67f58359b04c41590de987b1",
+  "name": "fabledcat",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidiukuvxq6ferw727tjx5vl222e7k6dwbfllemzhjhzcs7ryp3n7i",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1A5Ddfc7893dc29d3e5268B27Fef2847fd3ACE24",
+      "kind": "external"
+    }
+  ]
+}

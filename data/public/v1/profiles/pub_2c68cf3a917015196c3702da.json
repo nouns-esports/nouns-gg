@@ -1,0 +1,14 @@
+{
+  "id": "pub_2c68cf3a917015196c3702da",
+  "name": "exuvia",
+  "image": "https://ipfs.nouns.gg/ipfs/QmQC9aj8d9XSvQ9UKmgrmfwyFqWT4SsPzr77KZqVxY1X5T",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x13BE6749B96292CdE66481CDD8620738AF18bb09",
+      "kind": "external"
+    }
+  ]
+}

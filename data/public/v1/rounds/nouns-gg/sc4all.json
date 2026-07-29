@@ -1,0 +1,45 @@
+{
+  "id": "round:nouns-gg:sc4all",
+  "handle": "sc4all",
+  "name": "Join our StarCraft roster at SC4ALL!",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeigpu3n5reccsqwcbap5rcbofydpogq6xvlvjewpkk5jwdbb6jo2gu",
+  "active": true,
+  "type": "markdown",
+  "featured": false,
+  "xp": {
+    "winning": 0,
+    "castingVotes": 250,
+    "receivingVotes": 5,
+    "creatingProposal": 500
+  },
+  "content": "{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 11pt;\",\"text\":\"Nouns GG is excited to offer $2000 in travel stipends for passionate gamers who wish to compete in SC4ALL! \",\"type\":\"text\",\"version\":1}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textStyle\":\"font-size: 11pt;\",\"textFormat\":0},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 11pt;\",\"text\":\"Winning players should proudly represent Nouns on social media, as well as at the event. \",\"type\":\"text\",\"version\":1}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textStyle\":\"font-size: 11pt;\",\"textFormat\":0},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"font-size: 11pt;\",\"text\":\"To be eligible, submit a proposal explaining who you are, and why you want to be at SC4ALL.\",\"type\":\"text\",\"version\":1}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textStyle\":\"font-size: 11pt;\",\"textFormat\":0}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1,\"textStyle\":\"font-size: 11pt;\"}",
+  "description": null,
+  "createdAt": "2025-10-02T22:08:01.133Z",
+  "start": "2025-10-02T22:08:01.133Z",
+  "votingStart": "2025-10-08T22:00:00.000Z",
+  "end": "2025-10-13T22:00:00.000Z",
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null
+}

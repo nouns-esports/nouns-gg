@@ -1,0 +1,14 @@
+{
+  "id": "pub_c817223f8591e5df4b06c876",
+  "name": "wylin",
+  "image": "https://ipfs.nouns.gg/ipfs/QmSn6XPDZuTyAkZr96psLryHrUqEtWu8U7D24WyyekcajX",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc6a39E2f9A7626612292AD56e76d738DB43596E4",
+      "kind": "external"
+    }
+  ]
+}

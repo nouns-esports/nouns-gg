@@ -1,0 +1,18 @@
+{
+  "id": "pub_69fad8f91492ab482e05f903",
+  "name": "Mono",
+  "image": "https://pbs.twimg.com/profile_images/1441441565315010566/1u7OS8-v_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "monotheon",
+    "name": "Mono",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1441441565315010566/1u7OS8-v_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD7511C38249BD3700B23Bad748677CCD67b5b652",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_e20f011edd9feee53ac8b4db",
+  "name": "Lacrimosa",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiavm75gavee2e5ajdljtyfivubqmfiwc5rpyb7efy2uq52oofl2ze",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7D37B7d788d43463E255D51458E934E902871150",
+      "kind": "external"
+    }
+  ]
+}

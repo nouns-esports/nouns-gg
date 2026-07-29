@@ -1,13 +1,8 @@
 import QuestCard from "@/components/QuestCard";
-import { getAuthenticatedUser } from "@/server/queries/users";
 import { getQuests } from "@/server/queries/quests";
 
 export default async function Quests() {
-	const user = await getAuthenticatedUser();
-
-	const quests = await getQuests({
-		user: user?.id,
-	});
+	const quests = await getQuests({});
 
 	return (
 		<div className="flex flex-col w-full items-center">

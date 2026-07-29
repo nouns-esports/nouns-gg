@@ -1,0 +1,14 @@
+{
+  "id": "pub_e37a5c1a12580a3cd13690db",
+  "name": "cmdn50ci",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihiwhfin3a5oojqokbrqqg2dyj6teqzjq6gszwwx2q7wpw2ldgt3y",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2e19b317352D936105F55638A9EB6c1cb723ddE7",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_6d7541cf2a59bec3d32e8356",
+  "name": "Web3 Architect ",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreickr5xa7xd2u3jqu7rbzsaarjhca5zx7cmoyrrvi7ryrlzccr32im",
+  "bio": "Passionate about web3 and a content writer and artist a web3 enthusiast ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4DfF653261370fAb2F8FD098b518Faa1eDfcC4D1",
+      "kind": "external"
+    }
+  ]
+}

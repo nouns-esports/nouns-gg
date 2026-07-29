@@ -1,0 +1,19 @@
+{
+  "id": "pub_1941b59c8de025b8699175ff",
+  "name": "SproutSpecter",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiepsopz7d5i2odswzqvz56yxhkkgcbwrdkyxbf3lkgr43ulthmgtq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x529D948C26749E1cA44dE889C1B1e940e8E66F71",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x7cFd781645d4f4A03F9478f7b5ef3e61dB345aBC",
+      "kind": "external"
+    }
+  ]
+}

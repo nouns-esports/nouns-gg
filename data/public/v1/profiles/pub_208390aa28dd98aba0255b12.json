@@ -1,0 +1,14 @@
+{
+  "id": "pub_208390aa28dd98aba0255b12",
+  "name": "cmdmx7wm",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib7kh6wc222mfmk7bvcjpkuyltg3wv524zmzg6muptc5tgcxh2o6m",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd61Cb4E035837B388941c58F83F0FfE0bdC141e8",
+      "kind": "external"
+    }
+  ]
+}

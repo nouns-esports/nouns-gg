@@ -1,0 +1,19 @@
+{
+  "id": "pub_84cbc5207787b68529ea36dc",
+  "name": "Zesty Zither",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiddtwsi22q2t7emhxvxhstb7oijeyesnlbfwh6vkfyo4izpgg6ply",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x786abe132623D559206eDdFE016536E490F4D4C1",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x5A097BDcE4981aD78842f1687e516293680eE4Af",
+      "kind": "external"
+    }
+  ]
+}

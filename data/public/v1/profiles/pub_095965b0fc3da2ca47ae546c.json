@@ -1,0 +1,18 @@
+{
+  "id": "pub_095965b0fc3da2ca47ae546c",
+  "name": "Chan",
+  "image": "https://pbs.twimg.com/profile_images/1394508951551631361/VXE1oLkM_normal.jpg",
+  "bio": "web surfer since 2000￼",
+  "twitter": {
+    "username": "cowellbunga",
+    "name": "Chan",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1394508951551631361/VXE1oLkM_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2ed1E660D9bADA720aF88023Dce14d4360c091b4",
+      "kind": "external"
+    }
+  ]
+}

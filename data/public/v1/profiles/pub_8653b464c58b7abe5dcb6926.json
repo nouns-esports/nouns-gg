@@ -1,0 +1,23 @@
+{
+  "id": "pub_8653b464c58b7abe5dcb6926",
+  "name": "Toppy1399",
+  "image": "https://pbs.twimg.com/profile_images/1822687928583131136/bD0koSxg_normal.jpg",
+  "bio": "Hi ",
+  "twitter": {
+    "username": "Topgun13992",
+    "name": "Toppy1399",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1822687928583131136/bD0koSxg_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1AAf58298D3F555a91911e593bc3F5C7ad533116",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xdDec95170bfC9D78C9c1c91F265ad0522584Cb61",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_66bb05c288e3afb93440b965",
+  "name": "gloom.cloud",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiflyw3hog3uroel3l2bp36ssupy7xri6krs3nhwqpovuu6zyyqvrm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x63820e3e843f73c642B99AAF5AE145ED759DF3E4",
+      "kind": "external"
+    }
+  ]
+}

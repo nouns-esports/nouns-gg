@@ -1,6 +1,4 @@
-import { questCompletions, quests, xp } from "~/packages/db/schema/public";
-import { db } from "~/packages/db";
-import { and, asc, desc, eq, gt, gte, isNull, lt, lte, sql } from "drizzle-orm";
+import { expandedQuest, quests } from "@/server/data/archive";
 
 export async function getQuests(input: {
 	limit?: number;
@@ -8,30 +6,22 @@ export async function getQuests(input: {
 	event?: string;
 	community?: string;
 }) {
-	return db.pgpool.query.quests.findMany({
-		limit: input.limit,
-		where: and(
-			eq(quests.active, true),
-			input.event ? eq(quests.event, input.event) : undefined,
-			input.community ? eq(quests.community, input.community) : undefined,
-			isNull(quests.deletedAt),
-		),
-		orderBy: [desc(quests.featured), desc(quests.createdAt)],
-		with: {
-			community: true,
-			completions: input.user
-				? {
-						where: eq(questCompletions.user, input.user),
-						limit: 1,
-					}
-				: undefined,
-			event: {
-				with: {
-					community: true,
-				},
-			},
-		},
-	});
+	const result = quests
+		.filter(
+			(quest) =>
+				quest.active &&
+				(!input.event || quest.eventId === input.event) &&
+				(!input.community ||
+					quest.community.id === input.community ||
+					quest.community.handle === input.community),
+		)
+		.sort(
+			(a, b) =>
+				Number(b.featured) - Number(a.featured) ||
+				+b.createdAt - +a.createdAt,
+		)
+		.map(expandedQuest);
+	return input.limit ? result.slice(0, input.limit) : result;
 }
 
 export async function getQuest(
@@ -40,38 +30,13 @@ export async function getQuest(
 		| { handle: string; community?: string }
 	),
 ) {
-	return db.pgpool.query.quests.findFirst({
-		where:
-			"id" in input
-				? eq(quests.id, input.id)
-				: and(
-						eq(quests.handle, input.handle),
-						input.community
-							? eq(
-									quests.community,
-									sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
-								)
-							: undefined,
-					),
-		with: {
-			completions: input.user
-				? {
-						where: eq(questCompletions.user, input.user),
-						limit: 1,
-					}
-				: undefined,
-			event: {
-				with: {
-					community: true,
-				},
-			},
-			actions: true,
-			community: {
-				with: {
-					admins: true,
-					plugins: true,
-				},
-			},
-		},
-	});
+	const quest = quests.find((candidate) =>
+		"id" in input
+			? candidate.id === input.id
+			: candidate.handle === input.handle &&
+				(!input.community ||
+					candidate.community.id === input.community ||
+					candidate.community.handle === input.community),
+	);
+	return quest ? expandedQuest(quest) : undefined;
 }

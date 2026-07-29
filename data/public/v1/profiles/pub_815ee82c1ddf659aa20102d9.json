@@ -1,0 +1,18 @@
+{
+  "id": "pub_815ee82c1ddf659aa20102d9",
+  "name": "rei",
+  "image": "https://pbs.twimg.com/profile_images/1942679280653074432/YCRH7j8N_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ihatereisomuch",
+    "name": "rei",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1942679280653074432/YCRH7j8N_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9fe37f881435404B7A34f108376FD708842328B5",
+      "kind": "external"
+    }
+  ]
+}

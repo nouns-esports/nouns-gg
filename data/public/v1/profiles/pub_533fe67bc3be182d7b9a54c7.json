@@ -1,0 +1,14 @@
+{
+  "id": "pub_533fe67bc3be182d7b9a54c7",
+  "name": "cmdn3sgp",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiajqe3ero7ldvadxkak7bau33xctfexyyzwff76dvm5dgp4ksxhim",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x667dfAb405540A3C1C7b0a356881Bf6C793F08D6",
+      "kind": "external"
+    }
+  ]
+}

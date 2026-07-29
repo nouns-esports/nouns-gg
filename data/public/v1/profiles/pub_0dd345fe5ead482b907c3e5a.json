@@ -1,0 +1,14 @@
+{
+  "id": "pub_0dd345fe5ead482b907c3e5a",
+  "name": "cmdepo5t",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihtjlpckrtu3wh7ik6k37smo3tvwr676haswadrkvplipmupfrtjy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x77423e33448C9bBDC5f89d6E3810BD4Ea594fc4e",
+      "kind": "external"
+    }
+  ]
+}

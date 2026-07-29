@@ -1,0 +1,28 @@
+{
+  "id": "pub_329f23dfa1f01b54a3b0b9df",
+  "name": "Crypto Croakz",
+  "image": "https://pbs.twimg.com/profile_images/1594267627194650624/BSHhImEf_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "croakz_crypt",
+    "name": "Crypto Croakz",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1594267627194650624/BSHhImEf_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x72cfF201AE16381beBeeBF11302284fD604B3d5E",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x967D6c2351a0D8bE436bd652F36728F01730338C",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x65b3221C98611fe730697488598a2165E67362A7",
+      "kind": "external"
+    }
+  ]
+}

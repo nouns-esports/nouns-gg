@@ -1,0 +1,14 @@
+{
+  "id": "pub_2e73d855f1aa3da612760b61",
+  "name": "cmdngcr9",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiat3hkrvaon55tk3r4ocdzwt35vbottcr6pbsu35jnuh67nzigbjq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x52AA35355dd472004EB0E4177a8d679cBeE1452D",
+      "kind": "external"
+    }
+  ]
+}

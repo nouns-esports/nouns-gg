@@ -1,0 +1,14 @@
+{
+  "id": "pub_7b707b7ef6f557dfdfd0df1f",
+  "name": "cm8o17rp",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidtrpfhzdo2mck4xq7fflbiat3btow7vhxmxywomona747rvl7a7q",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xAc87543104b8a2fC621C4F7AB699B5C8da1c8D75",
+      "kind": "external"
+    }
+  ]
+}

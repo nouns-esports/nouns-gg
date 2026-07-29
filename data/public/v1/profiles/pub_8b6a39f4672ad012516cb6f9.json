@@ -1,0 +1,14 @@
+{
+  "id": "pub_8b6a39f4672ad012516cb6f9",
+  "name": "Farnoosh Sebt",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidfe73adcgssbw6hfjs225rpctunhqohfbwmvl7yz4mgoe372ke4a",
+  "bio": "Phygital Artist",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1a2448b174904c721b1AE3061A544a5b72352D60",
+      "kind": "external"
+    }
+  ]
+}

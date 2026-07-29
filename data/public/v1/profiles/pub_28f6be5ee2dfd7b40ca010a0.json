@@ -1,0 +1,19 @@
+{
+  "id": "pub_28f6be5ee2dfd7b40ca010a0",
+  "name": "Talon",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiervs7qasobboi6qnwwwi47ka4npsijhf6nrkch4u2fb5in6dptom",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x59aa4c440Fa26a1147b3150818FeEf8E2d643615",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xdebF49Ef9b2C033DDe1f3375632CED03C7970032",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_ef64a465deedd359e162498c",
+  "name": "cmbl24vm",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiffo42ere4ptmyvrrf36i4wnq7yl3f6pm4ikdehkcwib2jq5ocbja",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xbaD8bcc9Eb5749829cF12189fDD5c1230D6C85e8",
+      "kind": "external"
+    }
+  ]
+}

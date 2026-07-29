@@ -1,0 +1,18 @@
+{
+  "id": "pub_273a36f7599dfa9ba9fa7d0f",
+  "name": "ENYEK",
+  "image": "https://pbs.twimg.com/profile_images/1929920899979104256/P8Beg36K_normal.jpg",
+  "bio": "meme everyday",
+  "twitter": {
+    "username": "enyek_7",
+    "name": "ENYEK",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1929920899979104256/P8Beg36K_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7B8d4aE31697877F3F96aBa5d2D61Ec217f2a7D0",
+      "kind": "external"
+    }
+  ]
+}

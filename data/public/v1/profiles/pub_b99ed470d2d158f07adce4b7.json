@@ -1,0 +1,23 @@
+{
+  "id": "pub_b99ed470d2d158f07adce4b7",
+  "name": "404stacey",
+  "image": "https://pbs.twimg.com/profile_images/1922514137575235584/6mxXYluT_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "404stacey",
+    "name": "404stacey",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922514137575235584/6mxXYluT_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa7BfEC28Ae0DF4E5cb6Bc1A0eF18c64CA032FD83",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xAaf6c172E019b81f8A5Cd3a1491622fb2a8712F5",
+      "kind": "external"
+    }
+  ]
+}

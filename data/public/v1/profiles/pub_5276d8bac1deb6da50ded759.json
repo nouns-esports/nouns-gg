@@ -1,0 +1,14 @@
+{
+  "id": "pub_5276d8bac1deb6da50ded759",
+  "name": "thepoutine",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiauu33ca47pcnkcmzoys3kt5zawen42a56xlmdacqo32jg2zujiti",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x828E57D0b4879FbB9b4eF35cd4901BD40c476A10",
+      "kind": "external"
+    }
+  ]
+}

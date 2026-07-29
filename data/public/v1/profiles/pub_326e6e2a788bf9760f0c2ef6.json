@@ -1,0 +1,14 @@
+{
+  "id": "pub_326e6e2a788bf9760f0c2ef6",
+  "name": "moshjarcus",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=pl3x1o&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE7B191F5387b535842D9765dfd053614B8970d69",
+      "kind": "external"
+    }
+  ]
+}

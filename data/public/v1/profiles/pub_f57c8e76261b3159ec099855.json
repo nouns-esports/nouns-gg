@@ -1,0 +1,14 @@
+{
+  "id": "pub_f57c8e76261b3159ec099855",
+  "name": "bonvita",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifol46ogchic66yoq7fpfptlfheqbb3uijqhrxxmjzu5oakof65ie",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x19377Ea02AbF7FE9B09AB3bE5B011DEFC4EE24Fa",
+      "kind": "external"
+    }
+  ]
+}

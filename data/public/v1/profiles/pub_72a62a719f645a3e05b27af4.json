@@ -1,0 +1,14 @@
+{
+  "id": "pub_72a62a719f645a3e05b27af4",
+  "name": "cm8uil8g",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiednlmjfs54pphckjqmgfwjiqqycfxr3kmv6rwqsnccsh5vf57xwi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2567B7C7F66bfbf31E510ea93Ef3D75B26c124E3",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_3188b6ed41e7a38d68322200",
+  "name": "Quirky",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiebip7ifrw7hzbyhlh2vxpquum54bmou6i5lgzfu3zjbpy6vk6zhi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4f0EedD34032e4020948fD5bFc2369862B1615CD",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x7C5178906F29B90e4Ff3aA4529DFb8e00b531095",
+      "kind": "external"
+    }
+  ]
+}

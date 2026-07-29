@@ -1,0 +1,14 @@
+{
+  "id": "pub_b35e5678ff830f7a56cd8dcc",
+  "name": "cmdowpge",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiahuzbnfffsjseqnalicz34p6wlskxditb4un7h6s5sjg64wqbihm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xF3322C299a550F67EAbA67f997Dc00E38bc30b6c",
+      "kind": "external"
+    }
+  ]
+}

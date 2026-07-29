@@ -1,0 +1,24 @@
+{
+  "id": "pub_ba455a86a2bc27c5bc3b20b7",
+  "name": "Sameowtha",
+  "image": "https://ipfs.nouns.gg/ipfs/QmVP1zQMzJtojsTLD8X4rnWyb4ErnumYqV4J2Ke8XTLCk8",
+  "bio": "MEOW Gaming owner :3 join the meoweekly",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x39245bA5a44284c25A36B5227b5384567D887303",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x55E71622fE8274Da79C2ffAc3E6AEf918591fA50",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xeFE27E5DD4939B125461bc1Db09AFB0cD4032226",
+      "kind": "external"
+    }
+  ]
+}

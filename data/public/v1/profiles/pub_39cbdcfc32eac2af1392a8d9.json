@@ -1,0 +1,18 @@
+{
+  "id": "pub_39cbdcfc32eac2af1392a8d9",
+  "name": "maxim",
+  "image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "maxim0736223390",
+    "name": "maxim",
+    "profilePictureUrl": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE20AE9C9042C09c139B01eaB1359b46b47C78477",
+      "kind": "external"
+    }
+  ]
+}

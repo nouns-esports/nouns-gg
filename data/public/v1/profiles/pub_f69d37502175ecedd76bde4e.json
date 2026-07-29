@@ -1,0 +1,18 @@
+{
+  "id": "pub_f69d37502175ecedd76bde4e",
+  "name": "Soho (🍀,❤️)",
+  "image": "https://pbs.twimg.com/profile_images/1890834991619190784/F8z5Nqip_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "sohobiit",
+    "name": "Soho (🍀,❤️)",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1890834991619190784/F8z5Nqip_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x95e3469e6adB95798F294f45896CBcb8C17486dF",
+      "kind": "external"
+    }
+  ]
+}

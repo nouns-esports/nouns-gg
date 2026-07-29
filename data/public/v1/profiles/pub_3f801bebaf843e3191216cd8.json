@@ -1,0 +1,28 @@
+{
+  "id": "pub_3f801bebaf843e3191216cd8",
+  "name": "Bruv ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1546151605652824064/lm9yIdYK_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "BruvHD",
+    "name": "Bruv ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1546151605652824064/lm9yIdYK_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x93aCc2Faab3009901E52c7eCD10a7Fc82f378705",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x60867bC3Dbd9b61DE682fE849b14cF5B95d4E98b",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xB785Df38f28f61acD87762690436e9736C43e200",
+      "kind": "external"
+    }
+  ]
+}

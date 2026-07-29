@@ -1,0 +1,14 @@
+{
+  "id": "pub_0e970a445462ab5a72a3b0d8",
+  "name": "cmdmvu64",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib4twdsigmecnn7hotfxokl4wyidn3sz7wbyzbaffpimkyhqndzim",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x72035beFa7094D5e42E979F674882C2301858dBd",
+      "kind": "external"
+    }
+  ]
+}

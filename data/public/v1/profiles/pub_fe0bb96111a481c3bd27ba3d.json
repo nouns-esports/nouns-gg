@@ -1,0 +1,14 @@
+{
+  "id": "pub_fe0bb96111a481c3bd27ba3d",
+  "name": "Troyse",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifgprhutnenlzz26rz57cry7b4m3qgldxyrqabqyr6lddyjx6wbqq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdD0956101252CbF16Eb9130B76F0cf8207341D2b",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_3e164c666640906e5531f022",
+  "name": "cmdig853",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreickqdeehu6oqmw2qbawig27totr5bwgo6jjrbbtil3uhqp4ofn7am",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc4F98EEDBc23492F30C1F72fB82A3Ee31478dA64",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "product:nouns-gg:chill-croc-dad-hat",
+  "handle": "chill-croc-dad-hat",
+  "name": "Chill Croc Dad Hat",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:tipped-off-16",
+  "collectionHandle": "tipped-off-16",
+  "variants": [
+    {
+      "id": "variant:98742058-0ec7-42d3-a453-7ce1d508d7ef",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeifanqhtkbgf2wjczzv4uk5k5qlpuqskizuzivxevwmovyrxo6sxny"
+      ],
+      "size": null,
+      "color": null,
+      "price": "25.00",
+      "inventory": null
+    }
+  ]
+}

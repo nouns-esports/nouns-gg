@@ -1,0 +1,18 @@
+{
+  "id": "pub_9d2cfa8d12e532b7216e942b",
+  "name": "Elizabeth Carpenter",
+  "image": "https://pbs.twimg.com/profile_images/1947412204619223040/c8tnvnWz_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ElizabethXMeta",
+    "name": "Elizabeth Carpenter",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947412204619223040/c8tnvnWz_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd112040fc9967D62bef589E91F41AB4469c5a06C",
+      "kind": "external"
+    }
+  ]
+}

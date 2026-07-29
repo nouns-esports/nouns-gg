@@ -1,0 +1,14 @@
+{
+  "id": "pub_b0992e1263623a253c88f0f0",
+  "name": "ItsKai",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=l92iz&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1b990dE9299A2f264bDe91EdAa14155EB0491F18",
+      "kind": "external"
+    }
+  ]
+}

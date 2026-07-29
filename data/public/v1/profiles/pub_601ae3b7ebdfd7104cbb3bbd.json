@@ -1,0 +1,18 @@
+{
+  "id": "pub_601ae3b7ebdfd7104cbb3bbd",
+  "name": "skrat - start.gg/KREWE",
+  "image": "https://pbs.twimg.com/profile_images/1881884906738819072/fnhX5_Il_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "skrat___",
+    "name": "skrat - start.gg/KREWE",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1881884906738819072/fnhX5_Il_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0BA13A182213D3d9AA85E0c61f9c5aAC74927183",
+      "kind": "external"
+    }
+  ]
+}

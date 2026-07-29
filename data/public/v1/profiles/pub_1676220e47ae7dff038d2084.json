@@ -1,0 +1,14 @@
+{
+  "id": "pub_1676220e47ae7dff038d2084",
+  "name": "a16p",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigbwpnidcutbairrn5fh7aworzr3ig7dnhdlrs2xn3cl32bnxqnve",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd290e08522429060684A5452eA256AE606E7fDA7",
+      "kind": "external"
+    }
+  ]
+}

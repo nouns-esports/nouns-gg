@@ -1,0 +1,18 @@
+{
+  "id": "pub_fbe6ea03aae3878750476866",
+  "name": "Thin Cat",
+  "image": "https://pbs.twimg.com/profile_images/1431204227699798019/dMPSxPKx_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Vuhoang04455489",
+    "name": "Thin Cat",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1431204227699798019/dMPSxPKx_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8269c3c7ecd56cCca60845CDBfe277C466D18F49",
+      "kind": "external"
+    }
+  ]
+}

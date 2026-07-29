@@ -1,0 +1,14 @@
+{
+  "id": "pub_d7116cdd863b3c7db95f5c44",
+  "name": "YGG | Ella",
+  "image": "https://ipfs.nouns.gg/ipfs/QmUFqW71bDVEfrhJiB2MQMEB6F7VdvYHSubWyEd8R9mZnK",
+  "bio": "Aspiring artist. Helping my friend in nouns. Nice to meet you!!!",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5b0f7636D428E092c5B6Ba5A741873C9B423c632",
+      "kind": "external"
+    }
+  ]
+}

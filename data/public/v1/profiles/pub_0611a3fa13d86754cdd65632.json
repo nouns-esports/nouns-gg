@@ -1,0 +1,14 @@
+{
+  "id": "pub_0611a3fa13d86754cdd65632",
+  "name": "Anesi",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidajgyvt3ea7olbvwc4y66efxxjpptyya3u3dzwlqa6o2chpqxoia",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa4A8E3d3d9907767150Be04C55B5095bF639529D",
+      "kind": "external"
+    }
+  ]
+}

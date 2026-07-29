@@ -1,0 +1,14 @@
+{
+  "id": "pub_5c78e5762fe8e222a804e702",
+  "name": "Brandon Tan",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreih57nrgpgv3tikq7m2wz57safdcjxua2s2zpftj7nvl7a37qkzz5i",
+  "bio": "94/166/51",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa766c933DA3806b4337E63B16AC7F7a4e4e0c1b0",
+      "kind": "external"
+    }
+  ]
+}

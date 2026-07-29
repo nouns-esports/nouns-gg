@@ -1,0 +1,18 @@
+{
+  "id": "pub_904df9ed0c42177e779e274e",
+  "name": "MrGameNLift",
+  "image": "https://pbs.twimg.com/profile_images/1591428207944802306/jBdRNr0X_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "MrGame_N_Lift",
+    "name": "MrGameNLift",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1591428207944802306/jBdRNr0X_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC42173fF1C9cB298a55cB75934ab98CAE0287c15",
+      "kind": "external"
+    }
+  ]
+}

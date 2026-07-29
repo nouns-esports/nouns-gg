@@ -1,0 +1,18 @@
+{
+  "id": "pub_90d8a50c5eb78d8a75aebbde",
+  "name": "Yo' B*tch!",
+  "image": "https://pbs.twimg.com/profile_images/1553049600235388931/8qWS6FaU_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "BtchesKnoWhoIam",
+    "name": "Yo' B*tch!",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1553049600235388931/8qWS6FaU_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1C7F3AF9759735FE638D6203A9f26FcdbA6806F5",
+      "kind": "external"
+    }
+  ]
+}

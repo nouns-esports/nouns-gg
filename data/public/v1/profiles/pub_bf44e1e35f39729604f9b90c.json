@@ -1,0 +1,18 @@
+{
+  "id": "pub_bf44e1e35f39729604f9b90c",
+  "name": "리도스 Lithos",
+  "image": "https://pbs.twimg.com/profile_images/1929670066439966726/cDOAUl6g_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Lithos__x",
+    "name": "리도스 Lithos",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1929670066439966726/cDOAUl6g_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xADCfD54C0D0Fc4400dEC27b1704064974B004cf3",
+      "kind": "external"
+    }
+  ]
+}

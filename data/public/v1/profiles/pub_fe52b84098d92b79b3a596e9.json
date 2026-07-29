@@ -1,0 +1,18 @@
+{
+  "id": "pub_fe52b84098d92b79b3a596e9",
+  "name": "Razzy DM",
+  "image": "https://pbs.twimg.com/profile_images/1837841043380707328/aOrBIOpe_normal.jpg",
+  "bio": "BeHold",
+  "twitter": {
+    "username": "razzydm",
+    "name": "Razzy DM",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1837841043380707328/aOrBIOpe_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x116B52E794e1FC1DbceBBb2bc2C2ACffF6529b99",
+      "kind": "external"
+    }
+  ]
+}

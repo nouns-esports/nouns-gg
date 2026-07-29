@@ -1,0 +1,14 @@
+{
+  "id": "pub_020a2c398c810f552d2716c8",
+  "name": "muduwu",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=2dpj7&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x379F6DE211293506f8FeC56De109B44dDD482FD9",
+      "kind": "external"
+    }
+  ]
+}

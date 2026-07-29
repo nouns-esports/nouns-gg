@@ -1,0 +1,14 @@
+{
+  "id": "pub_31df1f5e68e83a307b047cf3",
+  "name": "issafaudi",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=dpny6c&background=1",
+  "bio": "Pokémon unite player",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9396E09D93E4AF57cf337d0A8cC6021DeD9e2151",
+      "kind": "external"
+    }
+  ]
+}

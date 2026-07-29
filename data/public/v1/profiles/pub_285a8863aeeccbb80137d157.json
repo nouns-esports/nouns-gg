@@ -1,0 +1,23 @@
+{
+  "id": "pub_285a8863aeeccbb80137d157",
+  "name": "Lalamovion",
+  "image": "https://pbs.twimg.com/profile_images/1923290129894150144/QxtbQbOk_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Lalamovion",
+    "name": "Lalamovion",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923290129894150144/QxtbQbOk_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8cA39505528e73DF0EB3d7a094ec51Ce19A46e67",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x0D0109E1c8D8Af3b85c742cfbb38ecc5b7aBA536",
+      "kind": "external"
+    }
+  ]
+}

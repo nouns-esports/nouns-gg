@@ -1,0 +1,1594 @@
+[
+  {
+    "id": "vote:289d098d-8249-4790-b725-fef492d1391a",
+    "userId": "pub_737b52faf29971def6b33c10",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T10:00:07.934Z"
+  },
+  {
+    "id": "vote:ce84507b-2c34-4922-b1d0-d9c196bacb55",
+    "userId": "pub_286ab66d1162f514acead298",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T10:00:42.785Z"
+  },
+  {
+    "id": "vote:bb8d1ee6-d44f-4731-a5ad-6fd166e4ceca",
+    "userId": "pub_42d103c6ae1403f1fdf335c8",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T10:01:06.250Z"
+  },
+  {
+    "id": "vote:faf723e5-282d-47e0-bfcb-63acbd9830ef",
+    "userId": "pub_978feaf97001b06adc4be954",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T10:01:19.673Z"
+  },
+  {
+    "id": "vote:af8b1b3b-d506-4875-896a-bf5015271e13",
+    "userId": "pub_91ba787bd1670c43a4373caf",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T10:11:08.227Z"
+  },
+  {
+    "id": "vote:816ab1a3-90af-45ac-988a-d37ddf7b4bc0",
+    "userId": "pub_1d5dec93bd455bf6b7590b3d",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 4,
+    "timestamp": "2025-05-09T10:18:54.397Z"
+  },
+  {
+    "id": "vote:85498197-5b59-4a08-a5cb-944270bdaa95",
+    "userId": "pub_1d5dec93bd455bf6b7590b3d",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 6,
+    "timestamp": "2025-05-09T10:18:54.397Z"
+  },
+  {
+    "id": "vote:2b38ad3f-96ad-4ba0-8a96-ab9428f4867b",
+    "userId": "pub_ba455a86a2bc27c5bc3b20b7",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T10:19:11.266Z"
+  },
+  {
+    "id": "vote:dafca4d0-498d-4c8e-be3b-fb74a495fb1c",
+    "userId": "pub_46aace824df5c18bac3f0734",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T10:21:16.938Z"
+  },
+  {
+    "id": "vote:9b89a673-38e6-4129-8c74-bc447a6518e6",
+    "userId": "pub_c3c93301d9ffca6e6adb4062",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T10:22:25.671Z"
+  },
+  {
+    "id": "vote:1d34a31f-ff55-4708-abb6-37efafc466ed",
+    "userId": "pub_3def728560253969cabe0fd6",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T10:23:43.043Z"
+  },
+  {
+    "id": "vote:b2aea7d8-f000-44cb-8a24-4881ff1ae0b7",
+    "userId": "pub_f46a34456eacc2c976e88393",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-09T10:36:08.124Z"
+  },
+  {
+    "id": "vote:00de9bc3-806e-4444-ab53-fec8db1fc14f",
+    "userId": "pub_f46a34456eacc2c976e88393",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 4,
+    "timestamp": "2025-05-09T10:36:08.124Z"
+  },
+  {
+    "id": "vote:c97a6f84-16bd-4002-9bad-73eca8b9038d",
+    "userId": "pub_f46a34456eacc2c976e88393",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-09T10:36:08.124Z"
+  },
+  {
+    "id": "vote:f428f6cc-c617-46de-9817-947b1f628d5a",
+    "userId": "pub_09101d31b7f119a75ae5e53b",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T10:40:19.833Z"
+  },
+  {
+    "id": "vote:b48b17a2-aa79-4a0c-8448-4e3564fcd2ab",
+    "userId": "pub_bbe09d404c3753c44c072818",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T10:41:11.350Z"
+  },
+  {
+    "id": "vote:e9d3c675-c327-4311-a6bb-e7aff3fe46d4",
+    "userId": "pub_b6390c257208d6b0386ab26c",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T10:41:47.126Z"
+  },
+  {
+    "id": "vote:ffa6aa7e-b74b-4b8e-b81c-96471d7fd47d",
+    "userId": "pub_6653d325724e20673ecc3184",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 8,
+    "timestamp": "2025-05-09T10:42:48.135Z"
+  },
+  {
+    "id": "vote:3b0307a0-8a24-4051-b8e6-ef4d8bf35c87",
+    "userId": "pub_6653d325724e20673ecc3184",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-09T10:42:48.135Z"
+  },
+  {
+    "id": "vote:0b492bb7-2d86-44b3-8c04-ae2d29d703fc",
+    "userId": "pub_d0034c6882755050e20ec618",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T10:44:59.272Z"
+  },
+  {
+    "id": "vote:66ab21f6-462f-4694-ba24-0ba6744335b6",
+    "userId": "pub_04f7ff6595630cf5309fb2b3",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 6,
+    "timestamp": "2025-05-09T10:45:10.454Z"
+  },
+  {
+    "id": "vote:dcc9afa1-7ef0-40a4-a22f-2fd79c6e179c",
+    "userId": "pub_04f7ff6595630cf5309fb2b3",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-09T10:45:10.454Z"
+  },
+  {
+    "id": "vote:44606a38-1ddb-4066-ab73-f79a5057195b",
+    "userId": "pub_04f7ff6595630cf5309fb2b3",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-09T10:45:10.454Z"
+  },
+  {
+    "id": "vote:5e5fae96-a5d4-4cb6-b582-5efd9e32093b",
+    "userId": "pub_56019721b2a03049b04221cb",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T10:47:02.228Z"
+  },
+  {
+    "id": "vote:905f4d90-e156-44ac-8bcf-10691c6f875b",
+    "userId": "pub_77b4ca67d114dc73b61d83ee",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T10:58:26.125Z"
+  },
+  {
+    "id": "vote:71b45295-0ed9-42f5-b286-6a751a36ccc8",
+    "userId": "pub_798917e0de129116f04e8cdc",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T11:00:39.443Z"
+  },
+  {
+    "id": "vote:eb9b3caa-e60a-480e-8925-081e5333e50e",
+    "userId": "pub_8e084bb88ddbff6dbf5c20ac",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T11:00:42.761Z"
+  },
+  {
+    "id": "vote:328aedff-6d6a-4612-86d4-ead71b8a7461",
+    "userId": "pub_dd84e789d05a7f5fdb77ef42",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T11:02:50.941Z"
+  },
+  {
+    "id": "vote:ad728cc1-b586-485b-8d38-03ac5a4707b9",
+    "userId": "pub_8f13284927dbcf7a6ddab3c5",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T11:21:17.217Z"
+  },
+  {
+    "id": "vote:35d4a86f-a598-45b4-b4cc-f2a784a5e85a",
+    "userId": "pub_290efdc174129728c52fa006",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T11:28:24.161Z"
+  },
+  {
+    "id": "vote:70da96db-1d0f-4c46-8930-14dedbdc70d3",
+    "userId": "pub_e8d43ad087ec94b9ac0f86ef",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T11:31:49.462Z"
+  },
+  {
+    "id": "vote:4f89bf65-d489-4888-a5b3-120115839254",
+    "userId": "pub_e4f84a32ecc3bc940a8098fc",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T11:39:16.245Z"
+  },
+  {
+    "id": "vote:6b5657ab-5775-411f-9804-5444d07255cd",
+    "userId": "pub_0a724226e2c736a569aa5c09",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T11:40:47.811Z"
+  },
+  {
+    "id": "vote:f4d5a5ed-4d0c-4d5b-a973-0aef4c245273",
+    "userId": "pub_c1465d2aab0557e2d2973f9f",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T11:57:04.298Z"
+  },
+  {
+    "id": "vote:3f82451f-a29a-4cc0-880b-fd0e83fd444a",
+    "userId": "pub_720fd276dc488bebe29c4ed2",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T12:19:07.899Z"
+  },
+  {
+    "id": "vote:366b4a95-415b-4e0f-b8e2-dbcf592d058b",
+    "userId": "pub_9cf54c8ed5ad447694bbbe5f",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T12:33:27.919Z"
+  },
+  {
+    "id": "vote:11449643-199d-4e71-adee-e5062bb11171",
+    "userId": "pub_98f41d56d017e8755210e33b",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T12:48:41.124Z"
+  },
+  {
+    "id": "vote:4a040666-a13c-4ac4-b87d-2489aa9e64be",
+    "userId": "pub_c70a5df5a2742bd05e6bb711",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T13:34:19.530Z"
+  },
+  {
+    "id": "vote:3b74ae3c-c5f9-4ff3-bdd3-e797985f4372",
+    "userId": "pub_57ffb1456cf9c075c39bc3b5",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T13:54:33.246Z"
+  },
+  {
+    "id": "vote:1b95cecc-6b58-46ed-bb01-bb4f717c6d14",
+    "userId": "pub_84f9b780c82b10251aa1972c",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T14:08:58.623Z"
+  },
+  {
+    "id": "vote:096f0440-0bec-46b8-8588-f1eb7103af07",
+    "userId": "pub_d3bb601a43e95186ee5fe333",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T14:33:05.836Z"
+  },
+  {
+    "id": "vote:2038dcb4-3402-4594-8178-338e2f12a83d",
+    "userId": "pub_b69b68035646e93147f6a4e0",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T14:45:25.943Z"
+  },
+  {
+    "id": "vote:90e37116-c605-47a6-9fdd-4f38aae0c24a",
+    "userId": "pub_d4e4fef06125320e66a981cf",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T16:02:07.150Z"
+  },
+  {
+    "id": "vote:1afa7a5a-9dd0-4709-935a-df3a68ff44be",
+    "userId": "pub_d4e4fef06125320e66a981cf",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 4,
+    "timestamp": "2025-05-09T16:02:07.150Z"
+  },
+  {
+    "id": "vote:15273281-f831-4e8a-8f7f-e08d0edc6a6c",
+    "userId": "pub_170139dd6626af1f382441da",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T16:08:35.628Z"
+  },
+  {
+    "id": "vote:9ce17c5e-fb88-462e-b7f3-75ae011427ad",
+    "userId": "pub_040f4bbed37b998edc023898",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 4,
+    "timestamp": "2025-05-09T16:17:57.430Z"
+  },
+  {
+    "id": "vote:06a2cf2e-5840-4e43-9363-fe868e36048d",
+    "userId": "pub_040f4bbed37b998edc023898",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 6,
+    "timestamp": "2025-05-09T16:17:57.430Z"
+  },
+  {
+    "id": "vote:ca9f6f36-f3fd-4c7b-971f-3248fc2e2c15",
+    "userId": "pub_3a50bafad75bc2270b5f6d84",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T16:19:07.842Z"
+  },
+  {
+    "id": "vote:61c4f9f0-51d4-4f7c-a63b-4887f0418ec4",
+    "userId": "pub_51aaa0eceaaa4004513f0aa8",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T16:43:17.874Z"
+  },
+  {
+    "id": "vote:df381677-818f-4797-8eee-2517b2146b98",
+    "userId": "pub_2c9d00aeacff97c224b7fdab",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T16:53:59.531Z"
+  },
+  {
+    "id": "vote:c4169630-15a7-4f18-8fa7-f2b69b2d07a4",
+    "userId": "pub_467a00aae9a8128e32b509e1",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T16:56:23.510Z"
+  },
+  {
+    "id": "vote:a53b52e3-cb97-4e73-93d3-78d3692472ec",
+    "userId": "pub_1ab0a4e8f28d99d2195818ef",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T16:57:39.725Z"
+  },
+  {
+    "id": "vote:44b53cda-d2c0-4e37-87c1-f9a4f0bfa344",
+    "userId": "pub_5c73f567ab626dd4b4e7b7b5",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T17:11:38.714Z"
+  },
+  {
+    "id": "vote:f7afce1e-82ba-4b2b-9150-00b8d91c613f",
+    "userId": "pub_165eee273496e2b4c4c085c8",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T17:12:03.015Z"
+  },
+  {
+    "id": "vote:b3351ce4-e979-4cd2-a9f0-a8d6cecc051a",
+    "userId": "pub_4f0cbb900a32bd224ff754af",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T17:13:41.721Z"
+  },
+  {
+    "id": "vote:2b64dc7e-ba21-4a53-ae1a-6ab657886eba",
+    "userId": "pub_22447f888e17e8e049e5e0c6",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 4,
+    "timestamp": "2025-05-09T17:19:24.849Z"
+  },
+  {
+    "id": "vote:b8ff8190-0166-4862-a7e4-d370f2f81a00",
+    "userId": "pub_22447f888e17e8e049e5e0c6",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 6,
+    "timestamp": "2025-05-09T17:19:52.846Z"
+  },
+  {
+    "id": "vote:c2e27923-ee1b-4eff-b650-5d38674f6d40",
+    "userId": "pub_af46235e8f618158b7c36145",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T17:55:14.089Z"
+  },
+  {
+    "id": "vote:0b1dd6ae-bed5-46cf-a7d3-49442125ac60",
+    "userId": "pub_c3323fec54a7b0e8aaa4670e",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-09T17:59:28.676Z"
+  },
+  {
+    "id": "vote:a9d7f3d9-3c64-4c98-9d10-10ac12b91dd8",
+    "userId": "pub_1a59bf49c22d292da9ad153b",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T18:31:15.336Z"
+  },
+  {
+    "id": "vote:c85e0896-51a1-4995-9909-c2063c0dcf01",
+    "userId": "pub_6313214c37b5dabdbb372c90",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T18:32:08.335Z"
+  },
+  {
+    "id": "vote:e341b9cc-f8df-4e17-a1d1-46026c5f1506",
+    "userId": "pub_48da54a74080e000e2ae0275",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T18:37:44.697Z"
+  },
+  {
+    "id": "vote:9cea03a9-ca4b-4f21-af6b-8d257d9784b2",
+    "userId": "pub_d127203e9510cf375e56d85b",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 4,
+    "timestamp": "2025-05-09T18:54:57.513Z"
+  },
+  {
+    "id": "vote:cf30dee5-de06-4d39-a32f-66b326223489",
+    "userId": "pub_d127203e9510cf375e56d85b",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-09T18:55:46.202Z"
+  },
+  {
+    "id": "vote:c153febf-4492-445b-956a-dadf6254cca7",
+    "userId": "pub_d127203e9510cf375e56d85b",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-09T18:55:54.652Z"
+  },
+  {
+    "id": "vote:e38ed7ae-770b-4d4f-b1a3-78c0ef226743",
+    "userId": "pub_fa096cee45f204e3b4a8a953",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T19:01:03.056Z"
+  },
+  {
+    "id": "vote:dd3b0c4f-ac9a-4a44-8cd5-92a4c0b77986",
+    "userId": "pub_028405f171539534a39e9b00",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T19:02:46.098Z"
+  },
+  {
+    "id": "vote:a29bb57a-4a76-427b-b49d-4ffa7f978389",
+    "userId": "pub_a94913bc3f512b8cd81c3135",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T19:06:04.964Z"
+  },
+  {
+    "id": "vote:a397d4b3-f1a4-4b28-aad4-f2d7c1450271",
+    "userId": "pub_f751555f831d4f2183af244c",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T19:08:02.422Z"
+  },
+  {
+    "id": "vote:b11022ef-f0c7-4d4d-8a2a-68131cbd8a3f",
+    "userId": "pub_9741d3f6280743f122906d79",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T19:10:39.522Z"
+  },
+  {
+    "id": "vote:40222ac3-5162-4fc1-8349-55c62cdc141b",
+    "userId": "pub_121d24e58c9ec3036fe27dad",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-09T19:32:26.268Z"
+  },
+  {
+    "id": "vote:1fc5a7e2-b472-4da7-9e2b-5bb58cc5095d",
+    "userId": "pub_121d24e58c9ec3036fe27dad",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-09T19:32:26.268Z"
+  },
+  {
+    "id": "vote:23399572-6d36-4b86-822f-aff0a64054e4",
+    "userId": "pub_942f720a8ebd50c1821d5d96",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-09T19:36:53.106Z"
+  },
+  {
+    "id": "vote:2505cd3f-f929-4e7a-ab2f-c276eaa42654",
+    "userId": "pub_d93e88097bb92b1ae71b5ef9",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-09T19:40:25.508Z"
+  },
+  {
+    "id": "vote:42fa746a-6ec3-44d4-a3c5-f08eedf8cded",
+    "userId": "pub_d93e88097bb92b1ae71b5ef9",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-09T19:40:39.394Z"
+  },
+  {
+    "id": "vote:80aeaf83-7bbf-40c0-aa3d-da6128dcda00",
+    "userId": "pub_1a2f2967cf68c35b66f381df",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-09T20:01:02.630Z"
+  },
+  {
+    "id": "vote:c73453c9-9d88-405a-9c1d-639377892db1",
+    "userId": "pub_1a2f2967cf68c35b66f381df",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T20:01:02.630Z"
+  },
+  {
+    "id": "vote:0a4354be-0fb2-41fa-b153-6fbfed50ae09",
+    "userId": "pub_1a2f2967cf68c35b66f381df",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-09T20:01:02.630Z"
+  },
+  {
+    "id": "vote:87638895-4655-4c38-abcc-273fb5200043",
+    "userId": "pub_601ae3b7ebdfd7104cbb3bbd",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T20:08:12.758Z"
+  },
+  {
+    "id": "vote:9581449e-05e1-4d9c-a696-f95023519cf8",
+    "userId": "pub_bd41ca397cb740fc1b6641a4",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T20:22:09.525Z"
+  },
+  {
+    "id": "vote:ff7c341f-8e54-4b79-bd00-32baf1850ae5",
+    "userId": "pub_b04bc73ca5b4083957a3e40d",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-09T20:26:31.135Z"
+  },
+  {
+    "id": "vote:d96ad660-675b-4374-bf93-f108c863c59f",
+    "userId": "pub_69db52073d57b65b1f87ac76",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-09T20:39:25.830Z"
+  },
+  {
+    "id": "vote:1de7bcb7-5756-4f60-b446-986e7328f30d",
+    "userId": "pub_24781123b9d774c928974478",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T20:43:42.561Z"
+  },
+  {
+    "id": "vote:2c542766-f77b-41e2-9733-bfd69cf587ea",
+    "userId": "pub_e4945a6df59bcffaf2a2223b",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T20:50:51.342Z"
+  },
+  {
+    "id": "vote:cab53e28-adcb-4054-9b9e-e1459642f32e",
+    "userId": "pub_804a958871cb3bee65b4ffce",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T21:00:19.988Z"
+  },
+  {
+    "id": "vote:24bf1c64-f00a-40c7-b12d-7be9e6375e9a",
+    "userId": "pub_722d8310785b40267cd6e5cb",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T21:10:03.636Z"
+  },
+  {
+    "id": "vote:5379d384-55ce-4e49-bbc0-13a6aa8b7798",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 8,
+    "timestamp": "2025-05-09T21:37:10.372Z"
+  },
+  {
+    "id": "vote:0db4113f-ea83-4ba3-ad7d-6ed2072176cc",
+    "userId": "pub_cb100a9f456e652a1ef5a3ed",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-09T21:37:10.372Z"
+  },
+  {
+    "id": "vote:526c556e-2760-43ad-8e4d-2c8f053810e1",
+    "userId": "pub_8ad49b3fb2226f6f19bc0a29",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T21:42:49.678Z"
+  },
+  {
+    "id": "vote:77fb6ef6-dac5-4631-ac83-100781b1f229",
+    "userId": "pub_7554ab6137a048d77168fb46",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T21:52:09.323Z"
+  },
+  {
+    "id": "vote:9621c6d2-aa12-42a7-8002-5fb0f0d6369b",
+    "userId": "pub_c2b6f479b00f7c02133f7522",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 4,
+    "timestamp": "2025-05-09T21:52:31.469Z"
+  },
+  {
+    "id": "vote:24a69a4f-583b-438f-9925-417f82cc6038",
+    "userId": "pub_c2b6f479b00f7c02133f7522",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T21:52:31.469Z"
+  },
+  {
+    "id": "vote:7e9f734c-77c5-485e-a975-f29b6c4e36ec",
+    "userId": "pub_e1111096d6ed1e0f58b2320a",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T21:55:59.918Z"
+  },
+  {
+    "id": "vote:c589f9bf-0f2f-427f-a63b-39f6fd2f8241",
+    "userId": "pub_2396b8d3ba304e51729fb02a",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T21:56:43.653Z"
+  },
+  {
+    "id": "vote:6abbe789-c7f4-4691-9cfc-770d1e063866",
+    "userId": "pub_7cc08c6d4bb6b0eb508e1472",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T22:15:05.044Z"
+  },
+  {
+    "id": "vote:4ade86d6-07ef-4134-9d02-309989795ddc",
+    "userId": "pub_e4efa091dec6535633d9f6e9",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T22:21:56.882Z"
+  },
+  {
+    "id": "vote:8d781a0b-5f44-4f30-b1c4-8db7a62b6bbe",
+    "userId": "pub_9af3e81cebc9360d57f5131f",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T22:22:32.345Z"
+  },
+  {
+    "id": "vote:edcf67d3-4df4-492e-baaa-e87414d0cf41",
+    "userId": "pub_2576170c17a9a7d9f21f002d",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-09T22:26:31.477Z"
+  },
+  {
+    "id": "vote:cbd13dc7-2502-4250-b714-0ff2045635db",
+    "userId": "pub_0f199f9f2cff51063bb1de3b",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 8,
+    "timestamp": "2025-05-09T22:29:11.307Z"
+  },
+  {
+    "id": "vote:ce4af603-93a2-4f90-b442-924de0498d4f",
+    "userId": "pub_65322c7d34fe2442bbef3fa0",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T22:31:00.680Z"
+  },
+  {
+    "id": "vote:ff8d1050-62e7-4ef0-99ec-c783064a70c6",
+    "userId": "pub_9b0a0bc924e742b6fd3336cf",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T22:41:54.603Z"
+  },
+  {
+    "id": "vote:3be690cd-5e4b-46bc-9813-5b8c369950bd",
+    "userId": "pub_d46b29cb2c9bd8d94cc06a0b",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T22:52:44.301Z"
+  },
+  {
+    "id": "vote:95b2b633-f2ca-46d2-aee2-fd9aecae7d8b",
+    "userId": "pub_807decc7bcc6de8d04bcfbab",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-09T23:00:26.603Z"
+  },
+  {
+    "id": "vote:43498208-a181-46cc-b94d-44bd5917ba7a",
+    "userId": "pub_b857ea7113b5330c374b024f",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T23:01:05.611Z"
+  },
+  {
+    "id": "vote:9064100c-22f8-4bdd-996a-82e0518a8fdf",
+    "userId": "pub_97c804efccb7d605c73a08dd",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T23:05:27.153Z"
+  },
+  {
+    "id": "vote:849575e6-af83-46f8-8bf2-ea567783b489",
+    "userId": "pub_a9f27e0769eabc26f08624e9",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T23:08:00.890Z"
+  },
+  {
+    "id": "vote:be8acb1f-24a2-4e77-a63e-81232ef453c3",
+    "userId": "pub_b0b01a4cdb52b7d3a1916ec9",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T23:18:39.855Z"
+  },
+  {
+    "id": "vote:0fd8715c-ff90-4a02-8c0a-ad18466deff2",
+    "userId": "pub_85f0c93cf964e97d7d89cf76",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T23:20:44.558Z"
+  },
+  {
+    "id": "vote:dfb7a5e1-8832-4793-a198-32c79fe73847",
+    "userId": "pub_427a219ee7964abbe371d4fd",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-09T23:21:13.461Z"
+  },
+  {
+    "id": "vote:5a1d6d23-8b4b-48b0-bd5a-ccda30ea798b",
+    "userId": "pub_7f8876413ce14f5668137277",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-09T23:44:58.252Z"
+  },
+  {
+    "id": "vote:95814707-ee32-469c-8d2f-a3117f5cec13",
+    "userId": "pub_6642bb4ce329f799966c1a60",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-10T00:09:54.341Z"
+  },
+  {
+    "id": "vote:e8524152-a6ef-49fd-9007-80eda3b4b02d",
+    "userId": "pub_2aaddd3026ba6b8b82b46455",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-10T00:11:56.290Z"
+  },
+  {
+    "id": "vote:af5e4d9c-df54-4928-af00-a9bf79e62f2a",
+    "userId": "pub_504caca554ad08686f27facb",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-10T00:14:56.075Z"
+  },
+  {
+    "id": "vote:911a60c3-a5df-49d3-b94d-324b226d19de",
+    "userId": "pub_a0de6f232143c4785cedcba7",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-10T00:27:37.737Z"
+  },
+  {
+    "id": "vote:76443883-1267-47f6-948f-4daa63cbf923",
+    "userId": "pub_da3dfdadbabc995902aacab4",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T00:33:38.013Z"
+  },
+  {
+    "id": "vote:a8e83847-63c4-4371-a6f5-a51e8c6520d5",
+    "userId": "pub_8653b464c58b7abe5dcb6926",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-10T00:56:32.309Z"
+  },
+  {
+    "id": "vote:9725ed97-7a04-4688-8137-9d4b2b8ac699",
+    "userId": "pub_41b11ed0b6262b1487cb685d",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T01:01:03.311Z"
+  },
+  {
+    "id": "vote:bdb5e86f-f701-4e6e-84f5-404d02c96a5f",
+    "userId": "pub_97d23d80b1606b9565eb2e2c",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T01:02:08.992Z"
+  },
+  {
+    "id": "vote:b72e538e-3562-484e-a3b9-aba5560a6c1c",
+    "userId": "pub_4fa9a7e649055816a770a3a4",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T01:36:40.239Z"
+  },
+  {
+    "id": "vote:e133b313-a4c0-40a7-a176-d16b720c4b48",
+    "userId": "pub_024b97c98698da125460016b",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-10T01:49:28.501Z"
+  },
+  {
+    "id": "vote:5f5610b0-91b0-4f2e-8efe-e145cb6b75b3",
+    "userId": "pub_683bfa51f5c48b4b82140335",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-10T02:00:10.745Z"
+  },
+  {
+    "id": "vote:ae201669-0918-4506-a7b5-324792349602",
+    "userId": "pub_3cf14d2ca72002a2fac66db5",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T03:20:56.879Z"
+  },
+  {
+    "id": "vote:06e0661c-77b5-4efc-84d7-3871f15158f9",
+    "userId": "pub_2d6f6fdee2d6afbbb6eeb5c1",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-10T03:23:11.000Z"
+  },
+  {
+    "id": "vote:5c23bd52-60a5-4e8d-8280-2cebb974a6dd",
+    "userId": "pub_5208fd47e4589d2f2ccf53b1",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T03:40:54.864Z"
+  },
+  {
+    "id": "vote:2ea306ad-6b03-4a52-ae97-b270d3c00af8",
+    "userId": "pub_87501e086fdcef973f4935a0",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T03:45:42.867Z"
+  },
+  {
+    "id": "vote:9fa11109-b2de-4d28-aaeb-27412b89f60a",
+    "userId": "pub_5c69d83f7872e23d5498f10e",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T03:48:26.399Z"
+  },
+  {
+    "id": "vote:0fa9d0c2-776e-4e36-9948-ec28364970cf",
+    "userId": "pub_42c8347a9bfe3b8581828576",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T04:46:27.038Z"
+  },
+  {
+    "id": "vote:788adf3e-484b-4c91-a10d-7dc6db6fbe96",
+    "userId": "pub_9925b817132940e971f02bf1",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-10T05:19:06.614Z"
+  },
+  {
+    "id": "vote:dea7f69e-c0a8-43ae-b22c-dbdf6826d6f2",
+    "userId": "pub_f56795e3e78eff67d659513d",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T05:27:52.677Z"
+  },
+  {
+    "id": "vote:74159227-68cd-40a4-baf5-2d35d2df7d3f",
+    "userId": "pub_2171f77f20395eef10d1c347",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-10T05:29:06.169Z"
+  },
+  {
+    "id": "vote:552fef87-13ce-4687-9263-b1abb803b735",
+    "userId": "pub_c7f8c5ec7b15832a1f259103",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-10T07:34:38.766Z"
+  },
+  {
+    "id": "vote:83d3ef1a-073b-4a25-ac3d-7946d0331e0f",
+    "userId": "pub_79a9c7acc4a2a2a35acb19df",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-10T08:55:56.216Z"
+  },
+  {
+    "id": "vote:2e0402f7-c3b3-4e26-8fdc-9bc2ecb833a2",
+    "userId": "pub_4e71f944710d7c598951899b",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-10T10:16:53.423Z"
+  },
+  {
+    "id": "vote:5c1b524d-e88b-4104-ae35-328fd1b0ae2b",
+    "userId": "pub_b72e85111a6076ee3f87e1a5",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T17:46:30.288Z"
+  },
+  {
+    "id": "vote:d2355e60-78f2-45a7-b9fa-2650fddaeb1c",
+    "userId": "pub_cf3ebfba8adedf43ffcdd988",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T21:25:16.671Z"
+  },
+  {
+    "id": "vote:2765bfe3-34b6-4868-b44c-d6068b5f2852",
+    "userId": "pub_0f4eafea2b28c431c71de5f7",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-10T21:26:36.451Z"
+  },
+  {
+    "id": "vote:d08c77ac-2d06-4ca0-8ac7-2e5967770fda",
+    "userId": "pub_3bdcf764e5240d52efee1563",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-10T22:37:27.003Z"
+  },
+  {
+    "id": "vote:f71f6d31-34ea-4e82-aa70-f6feebdca03f",
+    "userId": "pub_3810f3adf8ac74b7d2179f6b",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-10T22:43:40.347Z"
+  },
+  {
+    "id": "vote:38f1a477-57f1-4847-963d-a1e0a701a366",
+    "userId": "pub_fa8060b66a2778b0ee9e7d9e",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-10T23:02:41.886Z"
+  },
+  {
+    "id": "vote:bfb0a2af-9eb4-4952-990a-2a87d00beb89",
+    "userId": "pub_fa8060b66a2778b0ee9e7d9e",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-10T23:02:41.886Z"
+  },
+  {
+    "id": "vote:2ac14ab0-540d-44a7-8254-6d20e0cef642",
+    "userId": "pub_fa8060b66a2778b0ee9e7d9e",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-10T23:02:41.886Z"
+  },
+  {
+    "id": "vote:70f84064-7007-41cd-a07d-e1a29dfb115f",
+    "userId": "pub_fa8060b66a2778b0ee9e7d9e",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-10T23:02:41.886Z"
+  },
+  {
+    "id": "vote:dcef1b11-f84a-49c7-be7d-fdc2c7b54cd7",
+    "userId": "pub_c8b051d9ce9aaf4b07686441",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T23:20:02.337Z"
+  },
+  {
+    "id": "vote:86c88bc1-051f-43b5-bc85-dd6cff1f7261",
+    "userId": "pub_d054cb839b810befaae30b73",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-10T23:36:21.895Z"
+  },
+  {
+    "id": "vote:59e70afe-7e2c-4aca-95e3-7479d21c0ff1",
+    "userId": "pub_7a13ec13536feda61cc4366a",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-10T23:50:19.384Z"
+  },
+  {
+    "id": "vote:366a9e19-6a4d-4c7d-814f-0e2875311705",
+    "userId": "pub_969ae6f95f8ea9205821af9e",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-11T00:16:33.656Z"
+  },
+  {
+    "id": "vote:99ce085d-dc77-4a71-bfb0-7b3ccb777b33",
+    "userId": "pub_dcc02905850dc568081a5b2b",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-11T00:47:15.263Z"
+  },
+  {
+    "id": "vote:b8a99fe3-51b5-4cc4-858b-98e6b4a7c140",
+    "userId": "pub_339d82a0f08b04b95524b35a",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-11T06:43:36.659Z"
+  },
+  {
+    "id": "vote:2864c863-6ce5-467b-84f4-7ccd3bec1883",
+    "userId": "pub_635dd26f1431fc7e26880232",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-11T08:05:35.635Z"
+  },
+  {
+    "id": "vote:9213217f-d616-47f0-9a1d-4ca2f6e0e979",
+    "userId": "pub_6313214c37b5dabdbb372c90",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-11T08:22:48.515Z"
+  },
+  {
+    "id": "vote:13f573b2-d9a4-4d6e-9f65-fc695849971f",
+    "userId": "pub_0f199f9f2cff51063bb1de3b",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-11T08:28:44.790Z"
+  },
+  {
+    "id": "vote:11066bd0-d331-4e7e-bfa1-d51989cfc618",
+    "userId": "pub_f54b7511226c596f72a029da",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-11T11:32:54.880Z"
+  },
+  {
+    "id": "vote:2b4b4b86-6dcb-438a-915a-8df8e14cc7b2",
+    "userId": "pub_53ec307d713d965062e53791",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-11T19:39:04.056Z"
+  },
+  {
+    "id": "vote:26ce71d3-8ffb-40b5-a331-76a72cf76063",
+    "userId": "pub_2a2e4cc3b8e44322e49e9b21",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-11T22:18:15.591Z"
+  },
+  {
+    "id": "vote:cf9ca22e-715f-4234-834b-945fc533a4a2",
+    "userId": "pub_09deb4d35513066efab60cc9",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-11T22:30:41.272Z"
+  },
+  {
+    "id": "vote:f6a38863-b8ee-448e-8778-cd5f5d85fc7e",
+    "userId": "pub_685151cafcb916df8505c0f1",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-11T23:04:24.195Z"
+  },
+  {
+    "id": "vote:b0cc6073-50e2-4035-a372-17cf8293860a",
+    "userId": "pub_94b79a0adf7ef140842fc225",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-11T23:12:11.739Z"
+  },
+  {
+    "id": "vote:7cdd20dc-244c-4c83-a7b9-dff99881b44c",
+    "userId": "pub_b7682c68ed717684f20685ef",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-12T01:00:13.817Z"
+  },
+  {
+    "id": "vote:e1fafe30-f520-4eb6-a74f-6f25d4d05b69",
+    "userId": "pub_835b60d98f47554631212cd9",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-12T02:46:59.673Z"
+  },
+  {
+    "id": "vote:8ff7809d-c9aa-47f2-9277-ac80bd4999f3",
+    "userId": "pub_62cc8a50500eb483ff103ef2",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-12T06:16:28.307Z"
+  },
+  {
+    "id": "vote:53c0fb47-4737-41b1-83a8-70eaed19e05e",
+    "userId": "pub_1f179127acb9d797cb42ce6a",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-12T08:32:16.252Z"
+  },
+  {
+    "id": "vote:218d0646-f91f-4bec-a46d-78996accf318",
+    "userId": "pub_0ff05a4c661fc8bfbd7ee839",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-12T08:42:15.363Z"
+  },
+  {
+    "id": "vote:9bd61c02-1c37-400a-a356-e688171a278f",
+    "userId": "pub_0e341892dfdebf0f17b09041",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-12T09:17:53.000Z"
+  },
+  {
+    "id": "vote:3221974e-91a0-4bb9-a82a-0e36efd2a630",
+    "userId": "pub_2beec2c4ca7be0b72f66d75f",
+    "proposalId": "proposal:ea2560a8-3acb-4573-ac79-d7dd995e1423",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-12T20:49:55.953Z"
+  },
+  {
+    "id": "vote:fb13403f-1d43-4832-a4b2-3e62a8cdeb8f",
+    "userId": "pub_2d70b1e4871de5ee9e7c3f23",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-12T21:39:59.591Z"
+  },
+  {
+    "id": "vote:796c3d08-ff78-4e8b-9259-b179c86601e5",
+    "userId": "pub_4d08bc417c0c366b140458cb",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-13T03:50:19.009Z"
+  },
+  {
+    "id": "vote:2e896f91-656d-4ef4-a4ae-c718b0b59006",
+    "userId": "pub_b492ba5dbd3d7f34e1d3ba54",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-13T06:12:09.811Z"
+  },
+  {
+    "id": "vote:370961c2-967a-4b81-a695-d3d4b6f00b5a",
+    "userId": "pub_48adae0b98b95a7c35b53e46",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-13T17:22:50.018Z"
+  },
+  {
+    "id": "vote:ddd513ab-1dc3-4a5a-a1c6-712b085b2dbc",
+    "userId": "pub_e0ab0263d63b18ae83702ad2",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-13T18:16:40.605Z"
+  },
+  {
+    "id": "vote:3fa4d4f8-75bc-4bf6-819d-9fb360bcab32",
+    "userId": "pub_805d75e42b489dc39dacd62e",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-13T18:30:57.949Z"
+  },
+  {
+    "id": "vote:7871a707-4b9e-42dc-8c60-f858f94f65e1",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-14T01:36:02.803Z"
+  },
+  {
+    "id": "vote:7f1dbcb0-f835-4997-b5ef-33e35126fe2b",
+    "userId": "pub_97985a48f66bd82df79a7631",
+    "proposalId": "proposal:8a17775b-dc93-493b-89ad-0386948579b9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-14T01:36:02.803Z"
+  },
+  {
+    "id": "vote:8e705274-561f-4231-9e1d-7515b27f7d2c",
+    "userId": "pub_07b70c7305031188035f6bc0",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-14T03:43:26.039Z"
+  },
+  {
+    "id": "vote:789674f2-050e-44a9-8772-a6e9bd345682",
+    "userId": "pub_3d012a4e4ddd39ce48a24f67",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 10,
+    "timestamp": "2025-05-14T06:47:15.923Z"
+  },
+  {
+    "id": "vote:dc9365e7-2268-4962-9ab5-82b53289b708",
+    "userId": "pub_8fa1f33ca272d656d6b99579",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-14T22:44:39.891Z"
+  },
+  {
+    "id": "vote:d63d9b9a-f6d3-4241-a2b0-f0d30aff2fe3",
+    "userId": "pub_d52ad9101d01e69b961c77dd",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T00:02:20.814Z"
+  },
+  {
+    "id": "vote:e2c20947-0599-4b8d-be78-cffe2ceeb0da",
+    "userId": "pub_73b8470d78b167d465aede8f",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T00:02:24.651Z"
+  },
+  {
+    "id": "vote:38418bc6-23b5-4743-a583-9a72991cbc36",
+    "userId": "pub_bfbfab2e76e4cc0ad243f585",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T00:14:35.845Z"
+  },
+  {
+    "id": "vote:be3985a0-8e07-4e80-b490-59bec56f8645",
+    "userId": "pub_8c1461b1a81bd2e83ab9a86f",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 3,
+    "timestamp": "2025-05-15T08:15:29.784Z"
+  },
+  {
+    "id": "vote:adb2b9cb-81c0-4285-bb79-e4dc7660a844",
+    "userId": "pub_9da3f5f29e751112c98a02a3",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T12:40:02.220Z"
+  },
+  {
+    "id": "vote:5de0087c-267c-4503-8889-b9ab082cd6dd",
+    "userId": "pub_9f0616efda552d501ed1dba1",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T12:55:29.067Z"
+  },
+  {
+    "id": "vote:85ea2fa5-8670-4d7a-aa07-342edc05a714",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-15T14:27:42.931Z"
+  },
+  {
+    "id": "vote:e2e0c3de-73d8-40c0-ad14-05351f52ebaf",
+    "userId": "pub_33718ccbd9067e37f1935fe1",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 5,
+    "timestamp": "2025-05-15T14:27:42.931Z"
+  },
+  {
+    "id": "vote:2d57df02-a3ae-405c-9cf5-399a70dab109",
+    "userId": "pub_fe9af3a0d50b42dc1ce125d4",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T15:31:29.222Z"
+  },
+  {
+    "id": "vote:d25a2b0f-2852-4b85-8442-15a13ccf6319",
+    "userId": "pub_fe9af3a0d50b42dc1ce125d4",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T15:31:29.222Z"
+  },
+  {
+    "id": "vote:1f1d927e-792b-42a6-bdaa-d20e95c27694",
+    "userId": "pub_55e6cb93592160c82a0cfb3a",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-15T16:31:28.329Z"
+  },
+  {
+    "id": "vote:32b4f807-5fa9-4a22-a9d2-3f45d0149433",
+    "userId": "pub_80cd70e08ab49041d9ff8f08",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T18:36:28.187Z"
+  },
+  {
+    "id": "vote:42db6c11-3fc5-4fbc-8818-74da0fbac1f4",
+    "userId": "pub_4d2f0dc424800d73788ab3eb",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T18:47:45.138Z"
+  },
+  {
+    "id": "vote:2272ab84-4612-4617-b9f7-853419f61133",
+    "userId": "pub_a8b1431ad498bd65afa7f748",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 2,
+    "timestamp": "2025-05-15T19:07:16.460Z"
+  },
+  {
+    "id": "vote:2074abb1-07a8-4d34-910a-4788adc98409",
+    "userId": "pub_6a74ecfe63c9d7eb5988df72",
+    "proposalId": "proposal:94dd28fa-00ca-4fc9-9686-0ca70630fbb4",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T19:25:24.577Z"
+  },
+  {
+    "id": "vote:796a69cd-1eb2-4cc6-8e35-71a0f1679ff2",
+    "userId": "pub_bb59964ad3eed556af9dd945",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T19:32:32.349Z"
+  },
+  {
+    "id": "vote:6d462bed-a4b2-4325-a2d5-5bffc9c3945a",
+    "userId": "pub_262c6fc77839f3149e87d7f0",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T23:40:03.205Z"
+  },
+  {
+    "id": "vote:96e9b235-f9a5-4eb0-8a66-24164cdf7c70",
+    "userId": "pub_1e5910f9a9b01ccd20183c36",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T23:51:25.165Z"
+  },
+  {
+    "id": "vote:37827956-33c0-49de-969c-14c38959a741",
+    "userId": "pub_516f90e5fa30b3a37f934d1d",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-15T23:56:02.132Z"
+  },
+  {
+    "id": "vote:b96f29f2-1e6b-40ac-bca5-757f7b66c232",
+    "userId": "pub_09ee09c14949ed001d4377ec",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-16T01:46:48.698Z"
+  },
+  {
+    "id": "vote:e8e3a4d4-82eb-49d3-b50f-a8e5723abeff",
+    "userId": "pub_ce03a0d1ca8649a696ee2689",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-16T04:33:01.827Z"
+  },
+  {
+    "id": "vote:d27677c3-0888-4753-9f8a-21ab0146549c",
+    "userId": "pub_60cb6b30b50207d8b13327c2",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-16T04:44:06.316Z"
+  },
+  {
+    "id": "vote:325ac768-da3c-4cd5-8904-e54b719bbfd0",
+    "userId": "pub_cf0334930340301d24066296",
+    "proposalId": "proposal:f0fcae9a-4e78-4904-a828-dc7bd4186bc9",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-16T09:09:04.515Z"
+  },
+  {
+    "id": "vote:5ef865d7-1c54-4a38-93ee-8c7a23501fad",
+    "userId": "pub_588b5021db084f8e0e76e780",
+    "proposalId": "proposal:bc13c775-3462-4e6d-b991-69a2133ea95f",
+    "roundId": "round:nouns-gg:degen-hotel",
+    "count": 1,
+    "timestamp": "2025-05-16T09:15:39.531Z"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "id": "pub_fcb2be0cc5d80feaaa226202",
+  "name": "swaan🦢",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreif5nxknre35ttxdhgnhcv6seanplvgsfan7fs24lsenybeg3tvcve",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9D471dce4Be4bC57E7c874e2CC0917E473D9a52A",
+      "kind": "external"
+    }
+  ]
+}

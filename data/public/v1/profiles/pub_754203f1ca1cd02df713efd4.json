@@ -1,0 +1,18 @@
+{
+  "id": "pub_754203f1ca1cd02df713efd4",
+  "name": "inder ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1674855529850494976/OyXMbvne_normal.jpg",
+  "bio": "pokemon unite support player for nounsesports",
+  "twitter": {
+    "username": "inderUNITE",
+    "name": "inder ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1674855529850494976/OyXMbvne_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x93C88293cdd5F9Ad68EAE973cFc953B7d0de8364",
+      "kind": "external"
+    }
+  ]
+}

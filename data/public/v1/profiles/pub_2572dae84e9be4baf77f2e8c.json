@@ -1,0 +1,19 @@
+{
+  "id": "pub_2572dae84e9be4baf77f2e8c",
+  "name": "DoodleDagger",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigjeo76xbixyyjbphe46maextfhtxmkim54xcdzj7hdku555wfemy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x93A94947E2A5ACea40b03783726bE5bF0718F825",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x8A6084f16573C14025fF7Af1BDa082389407F652",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_52be699fb17080cab4a29d89",
+  "name": "noir angel ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1880074822597914625/XRp9H5Nm_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "asheszu",
+    "name": "noir angel ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1880074822597914625/XRp9H5Nm_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6c3D0af3125ADEB4a3e56B4071d28DE080c3B1a1",
+      "kind": "external"
+    }
+  ]
+}

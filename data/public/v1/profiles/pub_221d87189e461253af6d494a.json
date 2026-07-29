@@ -1,0 +1,18 @@
+{
+  "id": "pub_221d87189e461253af6d494a",
+  "name": "Pramadan",
+  "image": "https://pbs.twimg.com/profile_images/1780204934648168448/p-OV-pa5_normal.jpg",
+  "bio": "Artist. Digital Illustration. Part of Yellow Collective.",
+  "twitter": {
+    "username": "PanjiRamad35176",
+    "name": "Pramadan",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1780204934648168448/p-OV-pa5_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1bAe19AF613BD5Db94bAf043D5817e16a53A4C33",
+      "kind": "external"
+    }
+  ]
+}

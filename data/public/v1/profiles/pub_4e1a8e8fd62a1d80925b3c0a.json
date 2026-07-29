@@ -1,0 +1,14 @@
+{
+  "id": "pub_4e1a8e8fd62a1d80925b3c0a",
+  "name": "Pineapplejoe",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=sezwfa&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x677b17834605158Ecc3f27CD254d2Ba66504cDBA",
+      "kind": "external"
+    }
+  ]
+}

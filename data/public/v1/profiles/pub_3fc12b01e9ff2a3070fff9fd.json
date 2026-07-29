@@ -1,0 +1,14 @@
+{
+  "id": "pub_3fc12b01e9ff2a3070fff9fd",
+  "name": "nekofar",
+  "image": "https://ipfs.nouns.gg/ipfs/QmXVRQv51raUA5p4pjitS3EyYgTrrx1u3WZ2yKhwr9pynF",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9e0e9D25a5ED9bc773f91691f0b45599255257B1",
+      "kind": "external"
+    }
+  ]
+}

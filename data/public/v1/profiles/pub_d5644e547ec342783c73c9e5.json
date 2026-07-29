@@ -1,0 +1,19 @@
+{
+  "id": "pub_d5644e547ec342783c73c9e5",
+  "name": "Boulder",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreie6dif3jvcbvoecbz4fgh3qshtgpsfl4koa5ocq5sbfla62iw5cna",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x246917578b0D1534f493e0a2B5a929b84beE5781",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x0C17a699EEd276F99335A45a49F4d2489F1475eE",
+      "kind": "external"
+    }
+  ]
+}

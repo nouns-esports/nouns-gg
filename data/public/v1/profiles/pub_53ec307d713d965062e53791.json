@@ -1,0 +1,23 @@
+{
+  "id": "pub_53ec307d713d965062e53791",
+  "name": "Peterpandam ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1779880930498285568/AZ2Y62rn_normal.jpg",
+  "bio": "I put in work, and watch my status escalate",
+  "twitter": {
+    "username": "Peterpandam",
+    "name": "Peterpandam ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1779880930498285568/AZ2Y62rn_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6fB5d14b61e595e6f34BAF952c5d3e60e45883b0",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xC6Ef4b4CbAdBC4e1729E117837845C6AA304aFEE",
+      "kind": "external"
+    }
+  ]
+}

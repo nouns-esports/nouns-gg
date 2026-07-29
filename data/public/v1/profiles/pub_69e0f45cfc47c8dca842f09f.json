@@ -1,0 +1,14 @@
+{
+  "id": "pub_69e0f45cfc47c8dca842f09f",
+  "name": "Creative Alchemy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreids4oyymiy6snj2v5z64mxjvxudpw3htqqonk33ggip7wsduq2puy",
+  "bio": "Community of creatives",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xF35149E83A805402b7d05eAF34a15c8780632F21",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_c210bd3b58a9aacf55cf7ed1",
+  "name": "Swishh",
+  "image": "https://ipfs.nouns.gg/ipfs/QmfWPhiFScEAKx5ubQYhuUydz2MLupsM9PubeoPxxd3nFK",
+  "bio": "generative / aesthetic artist",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x09Ca6926f0A1fa30dDc04710Db2d89ec0d73b608",
+      "kind": "external"
+    }
+  ]
+}

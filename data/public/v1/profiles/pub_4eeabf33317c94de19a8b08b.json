@@ -1,0 +1,18 @@
+{
+  "id": "pub_4eeabf33317c94de19a8b08b",
+  "name": "Malibu",
+  "image": "https://pbs.twimg.com/profile_images/1718796942229315584/Ar7Xo6jm_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "themalibujesus",
+    "name": "Malibu",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1718796942229315584/Ar7Xo6jm_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8e25910A07559F7dB680871EF564c58fDE3EC793",
+      "kind": "external"
+    }
+  ]
+}

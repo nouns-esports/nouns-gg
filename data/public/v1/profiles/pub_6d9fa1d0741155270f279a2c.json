@@ -1,0 +1,18 @@
+{
+  "id": "pub_6d9fa1d0741155270f279a2c",
+  "name": "Sicka Dannewyork",
+  "image": "https://pbs.twimg.com/profile_images/1948849274378186752/vjuITtE2_normal.jpg",
+  "bio": "Multidisciplinary artist ",
+  "twitter": {
+    "username": "s_sicka",
+    "name": "Sicka Dannewyork",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948849274378186752/vjuITtE2_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x960a0c13d7bFAE5860F667D4E081b4CF2096DE9F",
+      "kind": "external"
+    }
+  ]
+}

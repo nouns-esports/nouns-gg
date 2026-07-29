@@ -1,0 +1,23 @@
+{
+  "id": "pub_4d2f0dc424800d73788ab3eb",
+  "name": "ALIKA",
+  "image": "https://pbs.twimg.com/profile_images/1711262721738772480/tEWn5TXe_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "alikaplatinum",
+    "name": "ALIKA",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1711262721738772480/tEWn5TXe_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf3fb9e0ab733BFc0F158EE38732A61686C9E1745",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x34C44392AFc94eB9aeF277577406E2206beb1A05",
+      "kind": "external"
+    }
+  ]
+}

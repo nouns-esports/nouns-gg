@@ -1,0 +1,19 @@
+{
+  "id": "pub_8c479e00768b904c23d3e3a5",
+  "name": "MunchkinMirth",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifn5dwxfp667n4666dhrysfvlb5ruw7tj4auxqctv266rx3wqixpm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1f1c78c52e35A7193e3c86b036a18dFC6F29a546",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xac08534CA163B6f0298571618549D19AeC64c22D",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_f2c21d584dbfcb3c462fc77e",
+  "name": "Ruthie (💜,🏛️)🍳",
+  "image": "https://pbs.twimg.com/profile_images/1931272896694964224/Cj84ZXpn_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Hassanruth14",
+    "name": "Ruthie (💜,🏛️)🍳",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1931272896694964224/Cj84ZXpn_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA2312aafA6C8bc7aFA6721ead2621139B2b8869e",
+      "kind": "external"
+    }
+  ]
+}

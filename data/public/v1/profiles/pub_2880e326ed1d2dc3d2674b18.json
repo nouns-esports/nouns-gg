@@ -1,0 +1,18 @@
+{
+  "id": "pub_2880e326ed1d2dc3d2674b18",
+  "name": "EcoSynthesisX",
+  "image": "https://pbs.twimg.com/profile_images/1844617151757549568/N36ACgGL_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "EcoSynthesisX",
+    "name": "EcoSynthesisX",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1844617151757549568/N36ACgGL_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7D85fCbB505D48E6176483733b62b51704e0bF95",
+      "kind": "external"
+    }
+  ]
+}

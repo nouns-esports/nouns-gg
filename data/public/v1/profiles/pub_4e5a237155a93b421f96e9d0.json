@@ -1,0 +1,14 @@
+{
+  "id": "pub_4e5a237155a93b421f96e9d0",
+  "name": "akira",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreignjxdcmbmkalgon32eag5nr6rlpuorfclcpln3hcjta6cabmystu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x72A754740e5281a2d35b52D4a81d882a60f00Db9",
+      "kind": "external"
+    }
+  ]
+}

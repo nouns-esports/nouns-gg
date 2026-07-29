@@ -1,0 +1,14 @@
+{
+  "id": "pub_271666af6ad65be7e879d6fc",
+  "name": "Toady Hawk",
+  "image": "https://ipfs.nouns.gg/ipfs/QmQRZ1dpEMXxubwDgDqLDr5d4c73yHTe16y2AMUzT55ByW",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5D802e2Fe48392c104Ce0401C7ECa8a4456f1F16",
+      "kind": "external"
+    }
+  ]
+}

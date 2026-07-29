@@ -1,0 +1,14 @@
+{
+  "id": "pub_98956a6ce1c3cddbd0aac303",
+  "name": "STTSM",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreie6m6ciuimv4qn7chzgoe5c674omb7posivhtbino2txsppl7au2i",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6EA4E2D5667e7d8cf5052383bfD09Db548D2ec3E",
+      "kind": "external"
+    }
+  ]
+}

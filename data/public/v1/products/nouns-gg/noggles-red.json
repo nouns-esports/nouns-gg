@@ -1,0 +1,48 @@
+{
+  "id": "product:nouns-gg:noggles-red",
+  "handle": "noggles-red",
+  "name": "Noggles - Red",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null,
+  "collectionHandle": "noggles",
+  "variants": [
+    {
+      "id": "variant:82f0a905-d083-43a6-ab4d-29477fe1c982",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeihrezgkifx6nxgbxl2qd424mmsrju4hedwip6k3jhzzxpflulp4ki",
+        "https://ipfs.nouns.gg/ipfs/bafybeif4xvvgmsatmi6zrcazt3sdhrdwb3n42ahbxtix56ltcmxrs2bl6m",
+        "https://ipfs.nouns.gg/ipfs/bafybeiaoxdn6b4tlcvxnlri3oq6373w37xqv6ztmxdw6tky3c2t77s7kke"
+      ],
+      "size": null,
+      "color": null,
+      "price": "9.99",
+      "inventory": null
+    }
+  ]
+}

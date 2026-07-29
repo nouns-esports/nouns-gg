@@ -1,0 +1,14 @@
+{
+  "id": "pub_9ca6f650ba5c149afb80d339",
+  "name": "cmdruss0",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicklab763abhjswv22oeu5k4tbsd53lyyqban5bzgdsfov4gpbava",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xF35b92f1B97F27B196bDDA91F61fA5895D7bDFde",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "raffle:chompix:snapfire-blue",
+  "handle": "snapfire-blue",
+  "name": "Snapfire Mug (Blue)",
+  "description": {
+    "type": "doc",
+    "content": []
+  },
+  "images": [
+    "https://ipfs.nouns.gg/ipfs/bafkreid6xtor76tcj6v6zep22megzjfvdgkkllwr37dhrda3stcvtt3vv4"
+  ],
+  "start": "2025-04-07T05:00:00.000Z",
+  "end": "2025-04-14T02:00:00.000Z",
+  "createdAt": "2025-04-07T05:00:00.000Z",
+  "gold": 10,
+  "xp": {
+    "winning": 0,
+    "entering": 0
+  },
+  "winners": 1,
+  "limit": 5,
+  "active": true,
+  "totalEntries": 11,
+  "community": {
+    "id": "community:chompix",
+    "handle": "chompix",
+    "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+    "name": "Chompix",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:chompix:chompix-esl-raleigh",
+  "entries": []
+}

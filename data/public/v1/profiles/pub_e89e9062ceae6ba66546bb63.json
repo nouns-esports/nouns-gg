@@ -1,0 +1,18 @@
+{
+  "id": "pub_e89e9062ceae6ba66546bb63",
+  "name": "Alvin Hall",
+  "image": "https://pbs.twimg.com/profile_images/3220446250/a2bbe5782cffc6dacfd416d742e1cc1d_normal.jpeg",
+  "bio": "",
+  "twitter": {
+    "username": "Aj31907",
+    "name": "Alvin Hall",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/3220446250/a2bbe5782cffc6dacfd416d742e1cc1d_normal.jpeg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf7c17A094d3E9da65C5D2D02F85e4480363f1b42",
+      "kind": "external"
+    }
+  ]
+}

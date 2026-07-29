@@ -1,0 +1,18 @@
+{
+  "id": "pub_bc2ebdc4330aae31325ea690",
+  "name": "Elena",
+  "image": "https://pbs.twimg.com/profile_images/1939967369238970368/AuDX9SpN_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Elena2373871766",
+    "name": "Elena",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1939967369238970368/AuDX9SpN_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x957e7BCef575477be8d7C2bF5213b55b6156C0D1",
+      "kind": "external"
+    }
+  ]
+}

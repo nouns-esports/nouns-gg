@@ -1,0 +1,19 @@
+{
+  "id": "pub_57dac6a341599789bd1dadc4",
+  "name": "Glitch Grit",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreid543y7vldf3elvldszwbiebnofpvddpflzni7ptarjhnyyoqrijq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6CEF8419bEFD08b061847DDF96ec43AC92E651ae",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xDbf1C192BDA250036c596dC5b26a030ef9ccAB1A",
+      "kind": "external"
+    }
+  ]
+}

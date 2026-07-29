@@ -1,0 +1,14 @@
+{
+  "id": "pub_61152bc5de42838e7be03099",
+  "name": "Itsai",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihg6tzuhg43ulyfzuiw42b7kumwrcmf5ouq6k4jgx2vl4bzxsybrq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf1f5D35c46Fd62fDD9150C39acc4A1b6A8327Ae4",
+      "kind": "external"
+    }
+  ]
+}

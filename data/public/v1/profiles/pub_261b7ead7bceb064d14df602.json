@@ -1,0 +1,18 @@
+{
+  "id": "pub_261b7ead7bceb064d14df602",
+  "name": "Kellyfish636",
+  "image": "https://pbs.twimg.com/profile_images/1777023519634673665/Jzjq4TdA_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Kellyfish636",
+    "name": "Kellyfish636",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1777023519634673665/Jzjq4TdA_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC456768634Aa4C06F243dB8dE225F607F2366652",
+      "kind": "external"
+    }
+  ]
+}

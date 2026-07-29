@@ -1,0 +1,14 @@
+{
+  "id": "pub_28810b2eaf56c55ff194472e",
+  "name": "cmbjrhl4",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreih3amg7sy5atycb7zqawc57cwnxusydycdpqogdqsigztslgigbbu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x22eC7a4429C381F5c382ac7ea624Cc05D37FfDDe",
+      "kind": "external"
+    }
+  ]
+}

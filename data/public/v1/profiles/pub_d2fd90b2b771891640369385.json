@@ -1,0 +1,18 @@
+{
+  "id": "pub_d2fd90b2b771891640369385",
+  "name": "0$",
+  "image": "https://pbs.twimg.com/profile_images/1926503379066380288/btZx0ILH_normal.jpg",
+  "bio": "Multi-talented artist. Rapper, painter, producer.",
+  "twitter": {
+    "username": "ossoreal100",
+    "name": "0$",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1926503379066380288/btZx0ILH_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEd78B6236C14c4088715cd90513C6C604275Db96",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_f9a8f0e56c58c42cc9c95ea8",
+  "name": "craazy",
+  "image": "https://pbs.twimg.com/profile_images/1859689452475387905/O7dA08sC_normal.jpg",
+  "bio": "The ریل Persian Don Dada.",
+  "twitter": {
+    "username": "ttvcraazy",
+    "name": "craazy",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1859689452475387905/O7dA08sC_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3362B22FaB091774B500f8505Ed2d77360C8200F",
+      "kind": "external"
+    }
+  ]
+}

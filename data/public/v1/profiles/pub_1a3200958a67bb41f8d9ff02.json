@@ -1,0 +1,18 @@
+{
+  "id": "pub_1a3200958a67bb41f8d9ff02",
+  "name": "Nicki",
+  "image": "https://pbs.twimg.com/profile_images/1787890939513454592/a2GSyfL7_normal.jpg",
+  "bio": "Gamer for nouns and upgamer",
+  "twitter": {
+    "username": "upgamer_Nicki",
+    "name": "Nicki",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1787890939513454592/a2GSyfL7_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4a5d7BcF7A82E6C6dC6B3Fda46918c3b58D4ECd4",
+      "kind": "external"
+    }
+  ]
+}

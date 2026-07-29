@@ -1,0 +1,14 @@
+{
+  "id": "pub_3bd2a1624958e81d3b5fd715",
+  "name": "cmdrrevq",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreib3yjap36eom6dz7kbn6i3hflyovctk4flev4i6yzo33ej7qgcp2q",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7EF3A0bC11E39C5be5eb412969e6e9D15D09897e",
+      "kind": "external"
+    }
+  ]
+}

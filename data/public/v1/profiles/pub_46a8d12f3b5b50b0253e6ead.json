@@ -1,0 +1,18 @@
+{
+  "id": "pub_46a8d12f3b5b50b0253e6ead",
+  "name": "yuishi",
+  "image": "https://pbs.twimg.com/profile_images/1926017545519194112/Vi6CZM-r_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ialteredreality",
+    "name": "yuishi",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1926017545519194112/Vi6CZM-r_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x294a9707504F9E53d3A8e3bd4e76F12f72Fa2feF",
+      "kind": "external"
+    }
+  ]
+}

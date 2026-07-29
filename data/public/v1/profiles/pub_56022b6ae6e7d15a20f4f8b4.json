@@ -1,0 +1,19 @@
+{
+  "id": "pub_56022b6ae6e7d15a20f4f8b4",
+  "name": "Gnome",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreif33fhjwbme7p6yxjpb2mx6mzc7g3p3kvsvvuxf4ijrfhrdndr4ru",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x64cB73143BD85fA6b5CB8bD824513431603D3027",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x51736e3895f858f8b9523e2FEAea4B466334d770",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_b1ad7c0f3c7c4684ceb91c7a",
+  "name": "chaler",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=69xriy&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE9b362c5497Ea845a12e0dE59E062B7523106ADb",
+      "kind": "external"
+    }
+  ]
+}

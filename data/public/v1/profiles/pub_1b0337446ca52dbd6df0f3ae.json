@@ -1,0 +1,18 @@
+{
+  "id": "pub_1b0337446ca52dbd6df0f3ae",
+  "name": "SonicSol",
+  "image": "https://pbs.twimg.com/profile_images/1811382559269437440/FxeDgxZd_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "sonic_sol",
+    "name": "SonicSol",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1811382559269437440/FxeDgxZd_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd2e27E55247a02A0c4f54D15DE163C64028b97F7",
+      "kind": "external"
+    }
+  ]
+}

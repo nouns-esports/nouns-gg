@@ -1,0 +1,18 @@
+{
+  "id": "pub_f3559e056a723369b3662425",
+  "name": "paladin",
+  "image": "https://pbs.twimg.com/profile_images/1498135808808734722/6QI8D3yr_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "paladin901",
+    "name": "paladin",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1498135808808734722/6QI8D3yr_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7dec5d7Cd7a0e5c5e69147a945B665A098b8D968",
+      "kind": "external"
+    }
+  ]
+}

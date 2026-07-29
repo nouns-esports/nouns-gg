@@ -1,0 +1,14 @@
+{
+  "id": "pub_e4266ea125c5487eafd64ede",
+  "name": "Anasaki",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreia46buzzjm5nvih4etjuayquga7y4mbbgo2fqk2qlwk7ba46ol5de",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x67ea1bba0169B34e3EfDcC701AFBB74740556563",
+      "kind": "external"
+    }
+  ]
+}

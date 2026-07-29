@@ -1,0 +1,14 @@
+{
+  "id": "pub_d9485b4ab7fe4e21b6b32b21",
+  "name": "chramel",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicttp5afwsaqum5mvc74kfktqqppjiztqk2bw6im6cwd3sjiqugim",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC9A0c4bEEaeb590221Bc91B73756f50CBDbd0a98",
+      "kind": "external"
+    }
+  ]
+}

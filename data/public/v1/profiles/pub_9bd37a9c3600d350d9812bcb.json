@@ -1,0 +1,18 @@
+{
+  "id": "pub_9bd37a9c3600d350d9812bcb",
+  "name": "OthmaneAo",
+  "image": "https://pbs.twimg.com/profile_images/1922315845587320832/WeFvIA9o_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "houta97",
+    "name": "OthmaneAo",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922315845587320832/WeFvIA9o_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC079b900a6ca3cdb5E47002386b09CDd0F94F00b",
+      "kind": "external"
+    }
+  ]
+}

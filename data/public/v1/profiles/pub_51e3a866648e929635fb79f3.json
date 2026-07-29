@@ -1,0 +1,18 @@
+{
+  "id": "pub_51e3a866648e929635fb79f3",
+  "name": "SGS | boko-boko",
+  "image": "https://pbs.twimg.com/profile_images/1835394444478365696/-mmUuwpn_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "ChelseaHerwer",
+    "name": "SGS | boko-boko",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1835394444478365696/-mmUuwpn_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x68Ebd41b2300f3345c542A666409773cc41dB71a",
+      "kind": "external"
+    }
+  ]
+}

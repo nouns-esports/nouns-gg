@@ -1,0 +1,33 @@
+{
+  "id": "pub_97985a48f66bd82df79a7631",
+  "name": "Sam",
+  "image": "https://pbs.twimg.com/profile_images/1882121896885432320/uFxU0Jub_normal.jpg",
+  "bio": "Head Gamemaker nouns.gg",
+  "twitter": {
+    "username": "SamScolari",
+    "name": "Sam",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1882121896885432320/uFxU0Jub_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE3ff24a97BFB65CAdEF30F6Ad19a6EA7E6F6149d",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x6F142bD1206C838045746a5cC2335314bf92ee34",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xc2fda88C8706e5F3eC92Ec2d13889567A7E3d7bb",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x667A4580C276c77c1639d674A1aCe8090afD287A",
+      "kind": "external"
+    }
+  ]
+}

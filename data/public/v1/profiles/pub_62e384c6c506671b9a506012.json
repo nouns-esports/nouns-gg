@@ -1,0 +1,14 @@
+{
+  "id": "pub_62e384c6c506671b9a506012",
+  "name": "kardimom",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreids7lrvckm4awxyir5t2sqn22hofwddk65ng6hyn4tltycvfkpvou",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xfA1405A0528cEA67a1ff7132Bbe60ED8e9Dc20eC",
+      "kind": "external"
+    }
+  ]
+}

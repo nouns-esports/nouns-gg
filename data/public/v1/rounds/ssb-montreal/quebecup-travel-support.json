@@ -1,0 +1,41 @@
+{
+  "id": "round:ssb-montreal:quebecup-travel-support",
+  "handle": "quebecup-travel-support",
+  "name": "Travel support to attend Québecup 2025 in Montréal",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeig72ruk37oa6fnenfuaajh5exbqhjxzmyjpz6ujyqrtzz3v3ewa6m",
+  "active": false,
+  "type": "markdown",
+  "featured": false,
+  "xp": {
+    "winning": 0,
+    "castingVotes": 250,
+    "receivingVotes": 5,
+    "creatingProposal": 500
+  },
+  "content": "{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Montréal is pleased to announce their next big national tournament Québecup 2025! To help out-of-region players attend and bring in more talent to our beautiful city, we want to assist players with their drive here. \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Proposal Guidelines:\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"heading\",\"version\":1,\"tag\":\"h2\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Each proposal must include at least 4 players, a description of them (who they are, who they play, and so on), why do they want to come to Québecup 2025, and how could they benefit Nouns in winning the round. \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Requirements:\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"heading\",\"version\":1,\"tag\":\"h2\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"- Those players must attend Québecup 2025 and be in the same carpool. \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"- They must not be more than 16 hours drive away. \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Prizing: \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"heading\",\"version\":1,\"tag\":\"h2\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"1st place: Free venue fee for all players in carpool and all gas paid for (receipt needed).\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"},{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"2nd - 3rd place: Free venue fee for all players in carpool and 50% of gas paid for (receipt needed). \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0,\"textStyle\":\"\"}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}",
+  "description": null,
+  "createdAt": "2025-07-15T10:00:00.000Z",
+  "start": "2025-07-15T10:00:00.000Z",
+  "votingStart": "2025-07-25T10:00:00.000Z",
+  "end": "2025-08-02T10:00:00.000Z",
+  "community": {
+    "id": "community:ssb-montreal",
+    "handle": "ssb-montreal",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreicbg2sx7xqzdubmvidja2n33twzdtwwhtuksfumyta4d2xxs6xt3a",
+    "name": "SSB Montreal",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": false,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": false
+  },
+  "eventId": "event:ssb-montreal:quebecup-2025"
+}

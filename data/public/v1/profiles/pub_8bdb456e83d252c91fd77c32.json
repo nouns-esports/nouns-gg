@@ -1,0 +1,14 @@
+{
+  "id": "pub_8bdb456e83d252c91fd77c32",
+  "name": "Zyra",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=yhs6gnc&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3352640BE5c1C26d0e0F36e1cC3847ADe4d79806",
+      "kind": "external"
+    }
+  ]
+}

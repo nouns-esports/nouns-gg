@@ -1,0 +1,19 @@
+{
+  "id": "pub_be646541d23469941b200c8c",
+  "name": "Wobbly",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreic65l5wp5ft2vzehzxv2udesenbvjhgqihf5bkloepgzkpp3avwvy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x47dc3A2a307d0214b5e66d26045C785D405B8df4",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x1a87393dC4165AFfBD713BD31b9c849338adC1A6",
+      "kind": "external"
+    }
+  ]
+}

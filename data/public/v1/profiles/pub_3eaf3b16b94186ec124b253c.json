@@ -1,0 +1,23 @@
+{
+  "id": "pub_3eaf3b16b94186ec124b253c",
+  "name": "Lorenzo’s !lasagna",
+  "image": "https://pbs.twimg.com/profile_images/1659138889901309952/utKUmitZ_normal.jpg",
+  "bio": "proliferating a hot fresh !vibe with cryptoadz and lil nouns",
+  "twitter": {
+    "username": "lorenzos_spot",
+    "name": "Lorenzo’s !lasagna",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1659138889901309952/utKUmitZ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7F8Ec393B8f1b7DE8D6E9b089d9819E5217046C3",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xb05070121b0b1b41aFB29Da7d6426a0b6a8e34bB",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_35c75c939f928d98e3171318",
+  "name": "EmiliaHeart",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigvk4jylr25yp2hbsmdshrpluyq5y763627wuqgfquf3b7mfaknoq",
+  "bio": "👽",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc4A14Ec4417C48AF7a2a180931FaDD5d05B36Ccc",
+      "kind": "external"
+    }
+  ]
+}

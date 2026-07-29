@@ -1,0 +1,18 @@
+{
+  "id": "pub_264d9b0e83da059d6c176a50",
+  "name": "Helga17 Reddio",
+  "image": "https://pbs.twimg.com/profile_images/1812105387048357888/sDPm2rlZ_normal.jpg",
+  "bio": "follow beck",
+  "twitter": {
+    "username": "helganaufal96",
+    "name": "Helga17 Reddio",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1812105387048357888/sDPm2rlZ_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x50c5dFE8eCA357599C9E008F638F055aae4C64F1",
+      "kind": "external"
+    }
+  ]
+}

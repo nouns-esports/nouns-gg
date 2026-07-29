@@ -1,0 +1,14 @@
+{
+  "id": "pub_2c1196a96d91dc8e22f71a3f",
+  "name": "sully",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigonlsowcvpkua5zceg4o53lbqx3j3ahm4ltb4svxjnycmbstgry4",
+  "bio": "musician web3",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2e05554F7A5A5A190DA078A901Bfc768e46956E8",
+      "kind": "external"
+    }
+  ]
+}

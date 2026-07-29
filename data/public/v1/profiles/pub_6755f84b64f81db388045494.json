@@ -1,0 +1,18 @@
+{
+  "id": "pub_6755f84b64f81db388045494",
+  "name": "doji.base.eth",
+  "image": "https://pbs.twimg.com/profile_images/1914220885164089344/zgPx_wZ1_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "TheDojiETH",
+    "name": "doji.base.eth",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1914220885164089344/zgPx_wZ1_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4a843aA4d6dc057A5e2C76150c6CBF747Fb13C36",
+      "kind": "external"
+    }
+  ]
+}

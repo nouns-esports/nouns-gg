@@ -1,0 +1,14 @@
+{
+  "id": "pub_2d4444ccdd93ee173f74da13",
+  "name": "Liam",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicnrc3ufijvsttfwhdpxur2gqwpeorfdij6xkchmnun2fgkj6bivq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC6fb526c21eC4a8Dfa38aB795A220D52421a2b26",
+      "kind": "external"
+    }
+  ]
+}

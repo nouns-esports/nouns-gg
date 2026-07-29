@@ -1,0 +1,18 @@
+{
+  "id": "pub_143b8b5fa18e20ac812c2c53",
+  "name": "duckhead ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1538647759502573568/HdOQCKh-_normal.jpg",
+  "bio": "I am an illustrator and figure artist based in Seoul.",
+  "twitter": {
+    "username": "_duckhead",
+    "name": "duckhead ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1538647759502573568/HdOQCKh-_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb9CE0217D18Ffc2E2990D0FdE8353cEE976C3c58",
+      "kind": "external"
+    }
+  ]
+}

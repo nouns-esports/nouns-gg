@@ -1,0 +1,14 @@
+{
+  "id": "pub_78c03f9aab80568d8d076433",
+  "name": "BulgarianReaper",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=t6dgbi&background=1",
+  "bio": "Building bridges at PlayerZero. ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x90f510f19311016A1b2C5786D4682c89Cf0f7F74",
+      "kind": "external"
+    }
+  ]
+}

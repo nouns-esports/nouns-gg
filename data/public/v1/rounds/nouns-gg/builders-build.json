@@ -1,0 +1,45 @@
+{
+  "id": "round:nouns-gg:builders-build",
+  "handle": "builders-build",
+  "name": "Builders Build",
+  "image": "https://ipfs.nouns.gg/ipfs/QmeCRfrMqXm8AVSXbEm6w4d1AFnyq3hvAUaZXi3R4tQbZo",
+  "active": true,
+  "type": "markdown",
+  "featured": false,
+  "xp": {
+    "winning": 0,
+    "castingVotes": 250,
+    "receivingVotes": 5,
+    "creatingProposal": 500
+  },
+  "content": "{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"An open round where artists and builders are encouraged to propose any idea inspired by Nouns Esports. Everyone is welcome to propose. The proposals with the most votes will get awarded Nouns Esports Builders’ pfp. If you have any questions, please reach out to the community.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1,\"textFormat\":0}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}",
+  "description": null,
+  "createdAt": "2023-12-07T02:20:00.000Z",
+  "start": "2023-12-07T02:20:00.000Z",
+  "votingStart": "2023-12-12T02:20:00.000Z",
+  "end": "2023-12-14T02:20:00.000Z",
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": null
+}

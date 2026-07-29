@@ -1,0 +1,14 @@
+{
+  "id": "pub_e77f0b1bfb135be06f2d5689",
+  "name": "Mulstrobel ",
+  "image": "https://ipfs.nouns.gg/ipfs/QmWodbidKYJUfqjqzbbTQi8y5WvgDmxBKgYuPwattZQTsx",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9ceb104A1f7B82E3E7B902B120A0680911603D22",
+      "kind": "external"
+    }
+  ]
+}

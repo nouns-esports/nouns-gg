@@ -1,0 +1,5014 @@
+[
+  {
+    "id": "prediction:nadcl:rampage-in-match",
+    "handle": "rampage-in-match",
+    "name": "Will any match have a Rampage (5 kills by one player)?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 500,
+      "predicting": 0
+    },
+    "prizePool": 5000,
+    "closed": false,
+    "resolved": false,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.380Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 11,
+    "community": {
+      "id": "community:nadcl",
+      "handle": "nadcl",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+      "name": "NADCL",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nadcl:nadcl-season-9"
+  },
+  {
+    "id": "prediction:nadcl:series-length",
+    "handle": "series-length",
+    "name": "How many games will the series last?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 500,
+      "predicting": 0
+    },
+    "prizePool": 5000,
+    "closed": false,
+    "resolved": false,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.380Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 9,
+    "community": {
+      "id": "community:nadcl",
+      "handle": "nadcl",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+      "name": "NADCL",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nadcl:nadcl-season-9"
+  },
+  {
+    "id": "prediction:nadcl:match-over-55-minutes",
+    "handle": "match-over-55-minutes",
+    "name": "Will a match last more than 55 minutes?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 500,
+      "predicting": 0
+    },
+    "prizePool": 5000,
+    "closed": false,
+    "resolved": false,
+    "featured": false,
+    "createdAt": "2025-07-17T05:14:59.648Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 9,
+    "community": {
+      "id": "community:nadcl",
+      "handle": "nadcl",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+      "name": "NADCL",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nadcl:nadcl-season-9"
+  },
+  {
+    "id": "prediction:nadcl:game-under-25-minutes",
+    "handle": "game-under-25-minutes",
+    "name": "Will a game last less than 25 minutes?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 500,
+      "predicting": 0
+    },
+    "prizePool": 5000,
+    "closed": false,
+    "resolved": false,
+    "featured": false,
+    "createdAt": "2025-07-17T02:26:34.535Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 7,
+    "community": {
+      "id": "community:nadcl",
+      "handle": "nadcl",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+      "name": "NADCL",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nadcl:nadcl-season-9"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-spacies-in-top-32",
+    "handle": "tipped-off-16-spacies-in-top-32",
+    "name": "How many spacies will be in the top 32?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:44:58.568Z",
+    "start": null,
+    "end": null,
+    "pool": "2186.000000000000000000",
+    "totalBets": 29,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-unique-characters-top-32",
+    "handle": "tipped-off-16-unique-characters-top-32",
+    "name": "How many unique characters will there be in Melee Top 32?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:44:47.622Z",
+    "start": null,
+    "end": null,
+    "pool": "4195.000000000000000000",
+    "totalBets": 31,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-top16-seeds-miss-top32",
+    "handle": "tipped-off-16-top16-seeds-miss-top32",
+    "name": "How many top 16 seeded players won’t make Top 32?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:44:19.170Z",
+    "start": null,
+    "end": null,
+    "pool": "2227.000000000000000000",
+    "totalBets": 34,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-top16-seeds-drop-set-before-top32",
+    "handle": "tipped-off-16-top16-seeds-drop-set-before-top32",
+    "name": "How many top 16 seeded players will drop a set before Top 32?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:44:02.516Z",
+    "start": null,
+    "end": null,
+    "pool": "2518.000000000000000000",
+    "totalBets": 31,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-melee-grand-finals-games",
+    "handle": "tipped-off-16-melee-grand-finals-games",
+    "name": "How many games will be played in the Melee Grand Finals, including resets?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:43:51.989Z",
+    "start": null,
+    "end": null,
+    "pool": "2627.000000000000000000",
+    "totalBets": 36,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-bracket-reset",
+    "handle": "tipped-off-16-bracket-reset",
+    "name": "Will there be a bracket reset?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:43:24.492Z",
+    "start": null,
+    "end": null,
+    "pool": "3005.000000000000000000",
+    "totalBets": 45,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-lower-bracket-finalist-win",
+    "handle": "tipped-off-16-lower-bracket-finalist-win",
+    "name": "Will the lower bracket finalist win the event?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:43:08.112Z",
+    "start": null,
+    "end": null,
+    "pool": "5394.000000000000000000",
+    "totalBets": 42,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-four-stock-in-top8",
+    "handle": "tipped-off-16-four-stock-in-top8",
+    "name": "Will there be a 4 stock in Melee Top 8?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:42:58.236Z",
+    "start": null,
+    "end": null,
+    "pool": "2698.000000000000000000",
+    "totalBets": 52,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-highest-placing-georgia",
+    "handle": "tipped-off-16-highest-placing-georgia",
+    "name": "Who will be the highest placing player from Georgia?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:42:36.568Z",
+    "start": null,
+    "end": null,
+    "pool": "2527.000000000000000000",
+    "totalBets": 43,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-stadium-transformation-most-top8",
+    "handle": "tipped-off-16-stadium-transformation-most-top8",
+    "name": "Which Stadium transformation will appear the most during top 8?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:42:24.870Z",
+    "start": null,
+    "end": null,
+    "pool": "5142.000000000000000000",
+    "totalBets": 52,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-qualifier-spot-1",
+    "handle": "tipped-off-16-qualifier-spot-1",
+    "name": "Which player will receive one of the two qualifier spots?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:42:13.282Z",
+    "start": null,
+    "end": null,
+    "pool": "16428.000000000000000000",
+    "totalBets": 63,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:tipped-off-16-winner",
+    "handle": "tipped-off-16-winner",
+    "name": "Who Will Win Tipped Off 16?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeibepe3cmgsd6pbo4rpjn5gyu5xegpigd5eokjfxxtogmqvl7n4wae",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:41:43.310Z",
+    "start": null,
+    "end": null,
+    "pool": "23851.000000000000000000",
+    "totalBets": 88,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:tipped-off-16"
+  },
+  {
+    "id": "prediction:nouns-gg:marbles-winner",
+    "handle": "marbles-winner",
+    "name": "Who will win the marbles race to receive SSBM Pro coaching?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeib4lqztysmg5eg65gq3y45cruab6yfvfcc7wq2xlhxpaffgs6ymza",
+    "rules": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Each contender is listed by Name / # of marbles / character of choice.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:31:47.917Z",
+    "start": null,
+    "end": null,
+    "pool": "991.000000000000000000",
+    "totalBets": 12,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null
+  },
+  {
+    "id": "prediction:nouns-gg:marbles-coach-selected",
+    "handle": "marbles-coach-selected",
+    "name": "Which coach will be selected by the winner of the marbles race?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeib4lqztysmg5eg65gq3y45cruab6yfvfcc7wq2xlhxpaffgs6ymza",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-06-01T00:31:20.941Z",
+    "start": null,
+    "end": null,
+    "pool": "1464.000000000000000000",
+    "totalBets": 12,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null
+  },
+  {
+    "id": "prediction:nadcl:nadcl-s8-grand-champions",
+    "handle": "nadcl-s8-grand-champions",
+    "name": "Which team will be the NADCL S8 Grand Champion?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-05-30T20:05:20.777Z",
+    "start": null,
+    "end": null,
+    "pool": "8174.000000000000000000",
+    "totalBets": 14,
+    "community": {
+      "id": "community:nadcl",
+      "handle": "nadcl",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+      "name": "NADCL",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nadcl:nadcl-season-8"
+  },
+  {
+    "id": "prediction:nadcl:nadcl-s8-games-count",
+    "handle": "nadcl-s8-games-count",
+    "name": "How many games will the Grand Final last?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeiheghyjnanqhdqwbn7mau6zwg7ub3up5cljxo5rdlffw6h7m6mwi4",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-05-28T22:29:00.201Z",
+    "start": null,
+    "end": null,
+    "pool": "1633.000000000000000000",
+    "totalBets": 11,
+    "community": {
+      "id": "community:nadcl",
+      "handle": "nadcl",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+      "name": "NADCL",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nadcl:nadcl-season-8"
+  },
+  {
+    "id": "prediction:nadcl:nadcl-s8-under-25-min",
+    "handle": "nadcl-s8-under-25-min",
+    "name": "Will a Grand Final game last less than 25 minutes?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeiheghyjnanqhdqwbn7mau6zwg7ub3up5cljxo5rdlffw6h7m6mwi4",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-05-28T22:28:50.955Z",
+    "start": null,
+    "end": null,
+    "pool": "1359.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:nadcl",
+      "handle": "nadcl",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+      "name": "NADCL",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nadcl:nadcl-season-8"
+  },
+  {
+    "id": "prediction:nadcl:nadcl-s8-over-55-min",
+    "handle": "nadcl-s8-over-55-min",
+    "name": "Will a Grand Final game last more than 55 minutes?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeiheghyjnanqhdqwbn7mau6zwg7ub3up5cljxo5rdlffw6h7m6mwi4",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-05-28T22:28:39.606Z",
+    "start": null,
+    "end": null,
+    "pool": "795.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:nadcl",
+      "handle": "nadcl",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+      "name": "NADCL",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nadcl:nadcl-season-8"
+  },
+  {
+    "id": "prediction:nadcl:nadcl-s8-rampage",
+    "handle": "nadcl-s8-rampage",
+    "name": "Will any Grand Final game have a Rampage (5 kills by one player)?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeiheghyjnanqhdqwbn7mau6zwg7ub3up5cljxo5rdlffw6h7m6mwi4",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-05-28T22:28:28.955Z",
+    "start": null,
+    "end": null,
+    "pool": "1623.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:nadcl",
+      "handle": "nadcl",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+      "name": "NADCL",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nadcl:nadcl-season-8"
+  },
+  {
+    "id": "prediction:lilnouns:prop-794",
+    "handle": "prop-794",
+    "name": "Will proposal #794 pass?",
+    "image": "https://warpcast.com/~/channel-images/nouns.png",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 150,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-05-13T23:50:21.794Z",
+    "start": null,
+    "end": null,
+    "pool": "3952.000000000000000000",
+    "totalBets": 5,
+    "community": {
+      "id": "community:lilnouns",
+      "handle": "lilnouns",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/9460da51-7bb1-445b-c733-e18723c25c00/original",
+      "name": "Lil Nouns",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": "https://warpcast.com/~/channel/lilnouns",
+      "details": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 1
+            },
+            "content": [
+              {
+                "text": "🧠 What is a Lil Noun?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Launched in May 2022, Lil Nouns is a community-run DAO built on the same principles as Nouns DAO. It introduces a new layer to the ecosystem, designed to welcome more people in with lower-cost, always-available NFTs. By doing so, Lil Nouns helps grow awareness of Nouns while empowering a new generation of collectors and contributors.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Each Lil Noun is a 16×16 pixel art character, randomly generated and minted on the Ethereum blockchain every 15 minutes. With traits like colorful heads, accessories, and backgrounds, no two Lil Nouns are the same. And thanks to their CC0 (Creative Commons Zero) license, anyone can use, remix, or build on them—no restrictions, no permission needed.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lil Nouns isn't just a collection—it's a gateway into a vibrant, creative, and decentralized community.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "text": "🗳️ How Does the DAO Work?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Owning a Lil Noun gives you a voice in the Lil Nouns DAO, with each NFT counting as one vote. The DAO manages a shared treasury that's funded by ongoing NFT auctions, and it's up to the community to decide how those funds are used. Anyone can submit a proposal and vote on initiatives they care about. So far, the DAO has backed a wide range of projects like esports sponsorships, creative public goods, and even podcasts like The Lil Nouns Show. It's a flexible system powered by the ideas and votes of the Lil Nouns community.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "text": "🔗 Explore More",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🌐 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Official Website",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://lilnouns.wtf/"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🔨 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Lil Nouns Camp",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://lilnouns.camp/"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "👨‍💻 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "GitHub",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://github.com/lilnouns"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🖥️ ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Discord",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://discord.gg/4avSUMVWyF"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": false,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null
+  },
+  {
+    "id": "prediction:lilnouns:noun-greater-3-eth",
+    "handle": "noun-greater-3-eth",
+    "name": "Will a Noun sell for more than 3 ETH in the month of May?",
+    "image": "https://warpcast.com/~/channel-images/nouns.png",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-05-08T04:59:35.092Z",
+    "start": null,
+    "end": null,
+    "pool": "4624.000000000000000000",
+    "totalBets": 31,
+    "community": {
+      "id": "community:lilnouns",
+      "handle": "lilnouns",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/9460da51-7bb1-445b-c733-e18723c25c00/original",
+      "name": "Lil Nouns",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": "https://warpcast.com/~/channel/lilnouns",
+      "details": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 1
+            },
+            "content": [
+              {
+                "text": "🧠 What is a Lil Noun?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Launched in May 2022, Lil Nouns is a community-run DAO built on the same principles as Nouns DAO. It introduces a new layer to the ecosystem, designed to welcome more people in with lower-cost, always-available NFTs. By doing so, Lil Nouns helps grow awareness of Nouns while empowering a new generation of collectors and contributors.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Each Lil Noun is a 16×16 pixel art character, randomly generated and minted on the Ethereum blockchain every 15 minutes. With traits like colorful heads, accessories, and backgrounds, no two Lil Nouns are the same. And thanks to their CC0 (Creative Commons Zero) license, anyone can use, remix, or build on them—no restrictions, no permission needed.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lil Nouns isn't just a collection—it's a gateway into a vibrant, creative, and decentralized community.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "text": "🗳️ How Does the DAO Work?",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Owning a Lil Noun gives you a voice in the Lil Nouns DAO, with each NFT counting as one vote. The DAO manages a shared treasury that's funded by ongoing NFT auctions, and it's up to the community to decide how those funds are used. Anyone can submit a proposal and vote on initiatives they care about. So far, the DAO has backed a wide range of projects like esports sponsorships, creative public goods, and even podcasts like The Lil Nouns Show. It's a flexible system powered by the ideas and votes of the Lil Nouns community.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "text": "🔗 Explore More",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🌐 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Official Website",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://lilnouns.wtf/"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🔨 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Lil Nouns Camp",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://lilnouns.camp/"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "👨‍💻 ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "GitHub",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://github.com/lilnouns"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "🖥️ ",
+                        "type": "text"
+                      },
+                      {
+                        "text": "Discord",
+                        "type": "text",
+                        "marks": [
+                          {
+                            "type": "link",
+                            "attrs": {
+                              "href": "https://discord.gg/4avSUMVWyF"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": false,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": null
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-spacies-top-32",
+    "handle": "nouns-bowl-spacies-top-32",
+    "name": "How many spacies will be in the top 32?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:09:34.461Z",
+    "start": null,
+    "end": null,
+    "pool": "1580.000000000000000000",
+    "totalBets": 34,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-unique-chars-top-32",
+    "handle": "nouns-bowl-unique-chars-top-32",
+    "name": "How many unique characters will there be in Melee Top 32?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:09:22.086Z",
+    "start": null,
+    "end": null,
+    "pool": "3419.000000000000000000",
+    "totalBets": 34,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-top-16-seeds-out",
+    "handle": "nouns-bowl-top-16-seeds-out",
+    "name": "How many top 16 seeded players won't make Top 32?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:09:07.348Z",
+    "start": null,
+    "end": null,
+    "pool": "1198.000000000000000000",
+    "totalBets": 32,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-top-16-seeds-drop-set",
+    "handle": "nouns-bowl-top-16-seeds-drop-set",
+    "name": "How many top 16 seeded players will drop a set before Top 32?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:08:53.977Z",
+    "start": null,
+    "end": null,
+    "pool": "900.000000000000000000",
+    "totalBets": 29,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-plup-character-count",
+    "handle": "nouns-bowl-plup-character-count",
+    "name": "How many characters will Plup play in the tournament?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:08:37.113Z",
+    "start": null,
+    "end": null,
+    "pool": "1830.000000000000000000",
+    "totalBets": 29,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-aklo-link",
+    "handle": "nouns-bowl-aklo-link",
+    "name": "Will Aklo play Link?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:08:19.475Z",
+    "start": null,
+    "end": null,
+    "pool": "1555.000000000000000000",
+    "totalBets": 26,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-nicki-highest-ics",
+    "handle": "nouns-bowl-nicki-highest-ics",
+    "name": "Will Nicki be the highest placing Ice Climbers?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:08:09.990Z",
+    "start": null,
+    "end": null,
+    "pool": "3601.000000000000000000",
+    "totalBets": 34,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-junebug-highest-dk",
+    "handle": "nouns-bowl-junebug-highest-dk",
+    "name": "Will Junebug be the highest placing Donkey Kong?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:07:56.713Z",
+    "start": null,
+    "end": null,
+    "pool": "7083.000000000000000000",
+    "totalBets": 34,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-grand-finals-games",
+    "handle": "nouns-bowl-grand-finals-games",
+    "name": "How many games will be played in the Melee Grand Finals, including resets?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:07:41.258Z",
+    "start": null,
+    "end": null,
+    "pool": "1614.000000000000000000",
+    "totalBets": 40,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-bracket-reset",
+    "handle": "nouns-bowl-bracket-reset",
+    "name": "Will there be a bracket reset?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:02:59.060Z",
+    "start": null,
+    "end": null,
+    "pool": "1668.000000000000000000",
+    "totalBets": 40,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-losers-wins",
+    "handle": "nouns-bowl-losers-wins",
+    "name": "Will the lower bracket finalist win the event?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:02:45.370Z",
+    "start": null,
+    "end": null,
+    "pool": "2756.000000000000000000",
+    "totalBets": 40,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-four-stock-top-8",
+    "handle": "nouns-bowl-four-stock-top-8",
+    "name": "Will there be a 4 stock in Melee Top 8?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:02:21.426Z",
+    "start": null,
+    "end": null,
+    "pool": "2855.000000000000000000",
+    "totalBets": 42,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-ohio-highest",
+    "handle": "nouns-bowl-ohio-highest",
+    "name": "Who will be the highest placing player from Ohio?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:01:51.114Z",
+    "start": null,
+    "end": null,
+    "pool": "2393.000000000000000000",
+    "totalBets": 35,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-stadium-transformation",
+    "handle": "nouns-bowl-stadium-transformation",
+    "name": "Which Stadium transformation will appear the most during top 8?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:01:36.422Z",
+    "start": null,
+    "end": null,
+    "pool": "1631.000000000000000000",
+    "totalBets": 38,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-aklo-placement",
+    "handle": "nouns-bowl-aklo-placement",
+    "name": "Where will Aklo place at this event?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T21:01:15.588Z",
+    "start": null,
+    "end": null,
+    "pool": "3889.000000000000000000",
+    "totalBets": 44,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:nouns-gg:nouns-bowl-qualifier-spots",
+    "handle": "nouns-bowl-qualifier-spots",
+    "name": "Which two players will receive the qualifier spot?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidzj4ymwgutnhn6o74rzdf5btjka5h4ykpua4s4plx4l4iez6fzaa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-18T20:58:22.986Z",
+    "start": null,
+    "end": null,
+    "pool": "8465.000000000000000000",
+    "totalBets": 48,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nouns-bowl"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-five-games",
+    "handle": "chompix-esl-raleigh-five-games",
+    "name": "Will the series go to 5 games?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:03:20.106Z",
+    "start": null,
+    "end": null,
+    "pool": "543.000000000000000000",
+    "totalBets": 23,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-lower-bracket-winner",
+    "handle": "chompix-esl-raleigh-lower-bracket-winner",
+    "name": "Will the winner come from the Lower Bracket?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:03:12.073Z",
+    "start": null,
+    "end": null,
+    "pool": "657.000000000000000000",
+    "totalBets": 21,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-sub-25-min-game",
+    "handle": "chompix-esl-raleigh-sub-25-min-game",
+    "name": "Will a game last less than 25 minutes?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:03:04.496Z",
+    "start": null,
+    "end": null,
+    "pool": "266.000000000000000000",
+    "totalBets": 24,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-over-55-min-match",
+    "handle": "chompix-esl-raleigh-over-55-min-match",
+    "name": "Will a match last more than 55 minutes?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:02:58.843Z",
+    "start": null,
+    "end": null,
+    "pool": "940.000000000000000000",
+    "totalBets": 23,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-series-length",
+    "handle": "chompix-esl-raleigh-series-length",
+    "name": "How many games will the series last?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:02:31.932Z",
+    "start": null,
+    "end": null,
+    "pool": "791.000000000000000000",
+    "totalBets": 26,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-rampage",
+    "handle": "chompix-esl-raleigh-rampage",
+    "name": "Will any game have a Rampage (5 kills by one player)?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:02:25.586Z",
+    "start": null,
+    "end": null,
+    "pool": "280.000000000000000000",
+    "totalBets": 22,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-total-kills",
+    "handle": "chompix-esl-raleigh-total-kills",
+    "name": "Will the total kills across all games exceed 150?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:02:19.860Z",
+    "start": null,
+    "end": null,
+    "pool": "632.000000000000000000",
+    "totalBets": 23,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-zero-deaths",
+    "handle": "chompix-esl-raleigh-zero-deaths",
+    "name": "Will a winning team have a hero with 0 deaths?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:02:13.319Z",
+    "start": null,
+    "end": null,
+    "pool": "676.000000000000000000",
+    "totalBets": 24,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-divine-rapier",
+    "handle": "chompix-esl-raleigh-divine-rapier",
+    "name": "Will a Divine Rapier be dropped during the Grand Final?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:02:04.766Z",
+    "start": null,
+    "end": null,
+    "pool": "787.000000000000000000",
+    "totalBets": 23,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-techies-pick",
+    "handle": "chompix-esl-raleigh-techies-pick",
+    "name": "Will a team pick Techies during the Grand Final?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:02:00.774Z",
+    "start": null,
+    "end": null,
+    "pool": "975.000000000000000000",
+    "totalBets": 24,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-first-blood-timing",
+    "handle": "chompix-esl-raleigh-first-blood-timing",
+    "name": "Which minute range will the first kill happen in the last game?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:01:16.260Z",
+    "start": null,
+    "end": null,
+    "pool": "404.000000000000000000",
+    "totalBets": 24,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-roshan-timing",
+    "handle": "chompix-esl-raleigh-roshan-timing",
+    "name": "Which minute range will the first Roshan kill happen in the last game?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-08T00:00:16.097Z",
+    "start": null,
+    "end": null,
+    "pool": "226.000000000000000000",
+    "totalBets": 25,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-barracks-timing",
+    "handle": "chompix-esl-raleigh-barracks-timing",
+    "name": "Which minute range will the first barracks fall in the last game?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-07T23:56:09.130Z",
+    "start": null,
+    "end": null,
+    "pool": "307.000000000000000000",
+    "totalBets": 26,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-chompix-appearance",
+    "handle": "chompix-esl-raleigh-chompix-appearance",
+    "name": "Will Chompix appear on the Grand Final broadcast?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-07T23:55:59.203Z",
+    "start": null,
+    "end": null,
+    "pool": "1668.000000000000000000",
+    "totalBets": 26,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-proposal",
+    "handle": "chompix-esl-raleigh-proposal",
+    "name": "Will someone propose during the Grand Final broadcast?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-07T23:55:40.757Z",
+    "start": null,
+    "end": null,
+    "pool": "452.000000000000000000",
+    "totalBets": 28,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:chompix:chompix-esl-raleigh-slacks-windranger",
+    "handle": "chompix-esl-raleigh-slacks-windranger",
+    "name": "Will Slacks voice his dislike for Windranger during the Grand Final broadcast?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeih54dt7jfupgb47cbwhsce67z2dbkwcmcbbtmywxspqpduqvw6upa",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-07T23:55:24.146Z",
+    "start": null,
+    "end": null,
+    "pool": "1399.000000000000000000",
+    "totalBets": 34,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:chompix-esl-raleigh"
+  },
+  {
+    "id": "prediction:oliyoun:oliyoun-2-winning-class-synergy",
+    "handle": "oliyoun-2-winning-class-synergy",
+    "name": "Winning Class Synergy: What class synergy will be present in the final game's winning build?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeiepiiax75dgezbyfajtgiuhimc5tbnqpmapum7lkqha4csufygqia",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-07T22:17:49.337Z",
+    "start": null,
+    "end": null,
+    "pool": "692.000000000000000000",
+    "totalBets": 20,
+    "community": {
+      "id": "community:oliyoun",
+      "handle": "oliyoun",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+      "name": "Oliyoun",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:oliyoun:oliyoun-autochess-2"
+  },
+  {
+    "id": "prediction:oliyoun:oliyoun-2-winning-race-synergy",
+    "handle": "oliyoun-2-winning-race-synergy",
+    "name": "Winning Race Synergy: What race synergy will be present in the final game's winning build?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeiepiiax75dgezbyfajtgiuhimc5tbnqpmapum7lkqha4csufygqia",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-07T22:17:35.034Z",
+    "start": null,
+    "end": null,
+    "pool": "668.000000000000000000",
+    "totalBets": 19,
+    "community": {
+      "id": "community:oliyoun",
+      "handle": "oliyoun",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+      "name": "Oliyoun",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:oliyoun:oliyoun-autochess-2"
+  },
+  {
+    "id": "prediction:oliyoun:oliyoun-2-number-of-games",
+    "handle": "oliyoun-2-number-of-games",
+    "name": "Number of Games: How many matches will it take to crown the champion?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeiepiiax75dgezbyfajtgiuhimc5tbnqpmapum7lkqha4csufygqia",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 200,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-07T22:17:13.586Z",
+    "start": null,
+    "end": null,
+    "pool": "560.000000000000000000",
+    "totalBets": 20,
+    "community": {
+      "id": "community:oliyoun",
+      "handle": "oliyoun",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+      "name": "Oliyoun",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:oliyoun:oliyoun-autochess-2"
+  },
+  {
+    "id": "prediction:oliyoun:oliyoun-number-of-games",
+    "handle": "oliyoun-number-of-games",
+    "name": "How many matches will it take to crown the champion?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeidgtma4lbay5cdjbxghl5m2vr5izbfjxkqdf2u7kszyvj3mfz7ymi",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-04T03:01:14.529Z",
+    "start": null,
+    "end": null,
+    "pool": "1835.000000000000000000",
+    "totalBets": 19,
+    "community": {
+      "id": "community:oliyoun",
+      "handle": "oliyoun",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+      "name": "Oliyoun",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:oliyoun:oliyoun-autochess-1"
+  },
+  {
+    "id": "prediction:oliyoun:oliyoun-winning-class-strategy",
+    "handle": "oliyoun-winning-class-strategy",
+    "name": "What class synergy will be present in the final game's winning build?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigdj6gvzbz22sl7ncy2s4nw7f43b76x2jgbuszlmnqyspw3sem5xu",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-04T03:01:05.404Z",
+    "start": null,
+    "end": null,
+    "pool": "689.000000000000000000",
+    "totalBets": 19,
+    "community": {
+      "id": "community:oliyoun",
+      "handle": "oliyoun",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+      "name": "Oliyoun",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:oliyoun:oliyoun-autochess-1"
+  },
+  {
+    "id": "prediction:oliyoun:oliyoun-winning-race-strategy",
+    "handle": "oliyoun-winning-race-strategy",
+    "name": "What race synergy will be present in the final game’s winning build?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigdj6gvzbz22sl7ncy2s4nw7f43b76x2jgbuszlmnqyspw3sem5xu",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 100,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-04T03:00:57.000Z",
+    "start": null,
+    "end": null,
+    "pool": "1883.000000000000000000",
+    "totalBets": 24,
+    "community": {
+      "id": "community:oliyoun",
+      "handle": "oliyoun",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+      "name": "Oliyoun",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:oliyoun:oliyoun-autochess-1"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-jessiboo-goal",
+    "handle": "pichanga-femenina-jessiboo-goal",
+    "name": "Will Jessiboo Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:28:59.260Z",
+    "start": null,
+    "end": null,
+    "pool": "83.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-clean-sheet-team-a-vs-team-d",
+    "handle": "pichanga-femenina-clean-sheet-team-a-vs-team-d",
+    "name": "Clean Sheet in Team A vs Team D",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 15,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:28:56.322Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 9,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-ratadri-goal",
+    "handle": "pichanga-femenina-ratadri-goal",
+    "name": "Will RatAdri Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:28:50.561Z",
+    "start": null,
+    "end": null,
+    "pool": "10.000000000000000000",
+    "totalBets": 12,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-yasminxiomarap-goal",
+    "handle": "pichanga-femenina-yasminxiomarap-goal",
+    "name": "Will Yasminxiomarap Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:28:47.572Z",
+    "start": null,
+    "end": null,
+    "pool": "8.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-top-scorer-team",
+    "handle": "pichanga-femenina-top-scorer-team",
+    "name": "Top Goal Scorer's Team",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:28:39.581Z",
+    "start": null,
+    "end": null,
+    "pool": "59.000000000000000000",
+    "totalBets": 12,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-prediction-participants",
+    "handle": "pichanga-femenina-prediction-participants",
+    "name": "How Many Users Will Participate in the Predictions?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:28:26.095Z",
+    "start": null,
+    "end": null,
+    "pool": "151.000000000000000000",
+    "totalBets": 9,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-final-penalties",
+    "handle": "pichanga-femenina-final-penalties",
+    "name": "Will the Final Go to Penalties?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:28:15.159Z",
+    "start": null,
+    "end": null,
+    "pool": "59.000000000000000000",
+    "totalBets": 9,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-total-yellow-cards",
+    "handle": "pichanga-femenina-total-yellow-cards",
+    "name": "Will there be over 10 yellow cards in the tournament?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:28:11.315Z",
+    "start": null,
+    "end": null,
+    "pool": "34.000000000000000000",
+    "totalBets": 12,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-red-card-tournament",
+    "handle": "pichanga-femenina-red-card-tournament",
+    "name": "Will There Be a Red Card in the Tournament?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:28:05.723Z",
+    "start": null,
+    "end": null,
+    "pool": "56.000000000000000000",
+    "totalBets": 13,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-first-half-goals-final",
+    "handle": "pichanga-femenina-first-half-goals-final",
+    "name": "Will there be over 1.5 goals scored in the first half of finals?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 15,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:28:02.717Z",
+    "start": null,
+    "end": null,
+    "pool": "8.000000000000000000",
+    "totalBets": 7,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-total-corners-final",
+    "handle": "pichanga-femenina-total-corners-final",
+    "name": "Will there be over 8.5 corners in the final?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:27:47.586Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 6,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-final-match-winner",
+    "handle": "pichanga-femenina-final-match-winner",
+    "name": "Final Match Winner",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:27:41.275Z",
+    "start": null,
+    "end": null,
+    "pool": "129.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-zingaraez-goal",
+    "handle": "pichanga-femenina-zingaraez-goal",
+    "name": "Will Zingaraez Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:27:34.982Z",
+    "start": null,
+    "end": null,
+    "pool": "26.000000000000000000",
+    "totalBets": 11,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-total-goals-final",
+    "handle": "pichanga-femenina-total-goals-final",
+    "name": "Will there be over 3.5 goals scored in the final?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 15,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:27:29.996Z",
+    "start": null,
+    "end": null,
+    "pool": "41.000000000000000000",
+    "totalBets": 7,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-first-scorer-semifinal-2",
+    "handle": "pichanga-femenina-first-scorer-semifinal-2",
+    "name": "Winner of A vs D be the first to score in semifinals (match 2)?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 15,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:27:18.268Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 7,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-first-scorer-semifinal-1",
+    "handle": "pichanga-femenina-first-scorer-semifinal-1",
+    "name": "Winner of A vs D be the first to score in semifinals (match 1)?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 15,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:27:16.535Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 7,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-total-goals-team-a-vs-team-d",
+    "handle": "pichanga-femenina-total-goals-team-a-vs-team-d",
+    "name": "Will there be over 2.5 goals scored in Team A vs Team D?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 15,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:27:13.879Z",
+    "start": null,
+    "end": null,
+    "pool": "15.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-team-b-vs-team-c-winner",
+    "handle": "pichanga-femenina-team-b-vs-team-c-winner",
+    "name": "Team B vs Team C Winner",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 10,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:27:00.923Z",
+    "start": null,
+    "end": null,
+    "pool": "36.000000000000000000",
+    "totalBets": 8,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-clean-sheet-team-b-vs-team-c",
+    "handle": "pichanga-femenina-clean-sheet-team-b-vs-team-c",
+    "name": "Clean Sheet in Team B vs Team C",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 15,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:19:09.041Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 8,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-btts-semifinal-1",
+    "handle": "pichanga-femenina-btts-semifinal-1",
+    "name": "Both Teams to Score in Semifinals (Match 1)",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 15,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:19:02.453Z",
+    "start": null,
+    "end": null,
+    "pool": "108.000000000000000000",
+    "totalBets": 7,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-btts-semifinal-2",
+    "handle": "pichanga-femenina-btts-semifinal-2",
+    "name": "Both Teams to Score in Semifinals (Match 2)",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 15,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:19:00.220Z",
+    "start": null,
+    "end": null,
+    "pool": "140.000000000000000000",
+    "totalBets": 6,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-liagenso-goal",
+    "handle": "pichanga-femenina-liagenso-goal",
+    "name": "Will Liagenso Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:18:55.863Z",
+    "start": null,
+    "end": null,
+    "pool": "10.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-shaari-goal",
+    "handle": "pichanga-femenina-shaari-goal",
+    "name": "Will Shaari Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:18:51.672Z",
+    "start": null,
+    "end": null,
+    "pool": "19.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-jezzone-goal",
+    "handle": "pichanga-femenina-jezzone-goal",
+    "name": "Will Jezzone Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:18:49.064Z",
+    "start": null,
+    "end": null,
+    "pool": "21.000000000000000000",
+    "totalBets": 11,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-kimicat-goal",
+    "handle": "pichanga-femenina-kimicat-goal",
+    "name": "Will Kimicat Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:18:43.854Z",
+    "start": null,
+    "end": null,
+    "pool": "56.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-nicole-berenice-goal",
+    "handle": "pichanga-femenina-nicole-berenice-goal",
+    "name": "Will NicoleBerenice Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:18:33.072Z",
+    "start": null,
+    "end": null,
+    "pool": "19.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-rosseegaming-goal",
+    "handle": "pichanga-femenina-rosseegaming-goal",
+    "name": "Will Rosseegaming Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:18:30.206Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 9,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-alejus-goal",
+    "handle": "pichanga-femenina-alejus-goal",
+    "name": "Will Alejus Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:18:26.002Z",
+    "start": null,
+    "end": null,
+    "pool": "10.000000000000000000",
+    "totalBets": 9,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-april-goal",
+    "handle": "pichanga-femenina-april-goal",
+    "name": "Will April Score a Goal?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 25,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:18:23.833Z",
+    "start": null,
+    "end": null,
+    "pool": "10.000000000000000000",
+    "totalBets": 10,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-total-goals-team-b-vs-team-c",
+    "handle": "pichanga-femenina-total-goals-team-b-vs-team-c",
+    "name": "Will there be over 2.5 goals scored in Team B vs Team C?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 15,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:18:05.681Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 7,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:chompix:pichanga-femenina-team-a-vs-team-d-winner",
+    "handle": "pichanga-femenina-team-a-vs-team-d-winner",
+    "name": "Team A vs Team D Winner",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeigagt5pr5m5cqxdzyt6r6bluvngncfzs2jjixteszcepsy5mshrja",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 10,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2025-04-02T22:05:01.324Z",
+    "start": null,
+    "end": null,
+    "pool": "83.000000000000000000",
+    "totalBets": 9,
+    "community": {
+      "id": "community:chompix",
+      "handle": "chompix",
+      "image": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/7788107b-e0a0-4864-310f-ab9631520800/rectcrop3",
+      "name": "Chompix",
+      "levels": null,
+      "points": null,
+      "description": null,
+      "parentUrl": null,
+      "details": null,
+      "featured": false,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:chompix:pichanga-femenina"
+  },
+  {
+    "id": "prediction:nouns-gg:character-placement-pools",
+    "handle": "character-placement-pools",
+    "name": "Will DK place higher than Ice Climbers in pools?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafybeifjgqgqj23jxkfzmiqpfw6emc5vy6r2rg437d5cb6rycvo2yktbsu",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 250,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2024-12-05T06:48:57.366Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 67,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational-2024"
+  },
+  {
+    "id": "prediction:nouns-gg:zain-vs-jmook",
+    "handle": "zain-vs-jmook",
+    "name": "Will Zain beat Jmook in pools?",
+    "image": "https://ipfs.nouns.gg/ipfs/Qmc2RcPZycNWoTT8p4FPQrjLNGwo7ic22GxxQZbMWAfcNn",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 250,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2024-12-05T06:48:49.121Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 69,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational-2024"
+  },
+  {
+    "id": "prediction:nouns-gg:soonsay-vs-mof",
+    "handle": "soonsay-vs-mof",
+    "name": "Will Soonsay beat MOF in pools?",
+    "image": "https://ipfs.nouns.gg/ipfs/QmPDxrqPQfepbWEBbHgpiLW5eXWbZhnMN7goVECrGrCxyT",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 250,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2024-12-05T06:48:46.097Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 70,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational-2024"
+  },
+  {
+    "id": "prediction:nouns-gg:plup-vs-joshman",
+    "handle": "plup-vs-joshman",
+    "name": "Will Plup beat Joshman in pools?",
+    "image": "https://ipfs.nouns.gg/ipfs/QmSuHgvC1fcJvidYe2pjojRenKP1rivwyZjeg9kV2S8RoV",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 250,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2024-12-05T06:48:42.982Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 61,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational-2024"
+  },
+  {
+    "id": "prediction:nouns-gg:amsa-vs-aklo",
+    "handle": "amsa-vs-aklo",
+    "name": "Will aMSa beat Aklo in pools?",
+    "image": "https://ipfs.nouns.gg/ipfs/QmUs52k1sdB3obDQ2rLJzfRhUmaZsus7AwUjBKVRL7GoMq",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 250,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2024-12-05T06:48:30.909Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 73,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational-2024"
+  },
+  {
+    "id": "prediction:nouns-gg:moky-vs-mang0",
+    "handle": "moky-vs-mang0",
+    "name": "Will Moky beat Mang0 in pools?",
+    "image": "https://ipfs.nouns.gg/ipfs/Qmd6knqoqi2hZF5xxUt13Kxc4p5iWfXvZn9AJ9hfdgSJ55",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 250,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2024-12-05T06:48:13.409Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 68,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational-2024"
+  },
+  {
+    "id": "prediction:nouns-gg:game-5-sets-pool-a",
+    "handle": "game-5-sets-pool-a",
+    "name": "How many game 5 sets will happen in pool A?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreiceiiwzbthd542o5tpiyjoxlrn6ciul2j7mollssrhaxgz7g4ubmi",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2024-12-05T06:47:57.250Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 53,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational-2024"
+  },
+  {
+    "id": "prediction:nouns-gg:game-5-sets-pool-b",
+    "handle": "game-5-sets-pool-b",
+    "name": "How many game 5 sets will happen in pool B?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreifjczwpzv3r722f232f3jzw3p46rifroakfn2nhaj7orfz4zd4tcq",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 300,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2024-12-05T06:47:52.743Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 53,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational-2024"
+  },
+  {
+    "id": "prediction:nouns-gg:1st-pool-a",
+    "handle": "1st-pool-a",
+    "name": "Who will get 1st in Pool A?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreignvrb7skuesq4wxtj2p2ermzfoje6gi66g6yv3nryhcbuyksffhm",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 500,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2024-12-05T06:47:37.409Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 59,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational-2024"
+  },
+  {
+    "id": "prediction:nouns-gg:1st-pool-b",
+    "handle": "1st-pool-b",
+    "name": "Who will get 1st in Pool B?",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreicls5tn3y56nmapfx352fsd3ltzksmbfk2smejj5kf2jrzraahmte",
+    "rules": {
+      "type": "doc",
+      "content": []
+    },
+    "xp": {
+      "winning": 500,
+      "predicting": 0
+    },
+    "prizePool": 0,
+    "closed": true,
+    "resolved": true,
+    "featured": false,
+    "createdAt": "2024-12-05T06:47:12.713Z",
+    "start": null,
+    "end": null,
+    "pool": "0.000000000000000000",
+    "totalBets": 58,
+    "community": {
+      "id": "community:nouns-gg",
+      "handle": "nouns-gg",
+      "image": "https://i.imgur.com/ZeGD2QF.jpg",
+      "name": "Nouns GG",
+      "levels": null,
+      "points": {
+        "name": "Gold",
+        "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+        "marketcap": 0
+      },
+      "description": null,
+      "parentUrl": "https://nouns.gg",
+      "details": null,
+      "featured": true,
+      "createdAt": "2025-07-20T01:50:10.707Z",
+      "hasRounds": true,
+      "hasQuests": true,
+      "hasPredictions": true,
+      "hasEvents": true,
+      "hasLeaderboard": true,
+      "hasShop": true
+    },
+    "eventId": "event:nouns-gg:nounsvitational-2024"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "id": "pub_dbc977f58e7c7593f525c979",
+  "name": "Spike",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihj7tejtdgof52bai23vzio5jbhn6oca73fr5fomsudnrv246i4om",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb494982EE986a051c7Ff829932a23De839d0A6Ac",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_283fa0b61f9841a7d874c7a5",
+  "name": "Viper",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidl5qz7x477rpbg4vetb67ozq4sppwxmsaq57vrx6sqwgerernb24",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe0b661baf03c7F53E3510fCAb244C7CDe1E103C0",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x1d39f4187F8e91FEE3cF582B8091EC34c3fF0bD2",
+      "kind": "external"
+    }
+  ]
+}

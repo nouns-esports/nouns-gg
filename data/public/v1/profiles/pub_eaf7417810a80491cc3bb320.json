@@ -1,0 +1,14 @@
+{
+  "id": "pub_eaf7417810a80491cc3bb320",
+  "name": "Ali",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=kdt9w8&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8D44fC4be303f515e09777f5ab8D55006E0cf875",
+      "kind": "external"
+    }
+  ]
+}

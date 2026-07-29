@@ -1,0 +1,18 @@
+{
+  "id": "pub_b6308afab55e18a69a5ae444",
+  "name": "💢半杯清茶( $M )",
+  "image": "https://pbs.twimg.com/profile_images/1966971173151092736/fbC_s_dc_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "janna_karinen",
+    "name": "💢半杯清茶( $M )",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1966971173151092736/fbC_s_dc_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x92eF80Fb9efa15D4213dEAAa654aF48F89701554",
+      "kind": "external"
+    }
+  ]
+}

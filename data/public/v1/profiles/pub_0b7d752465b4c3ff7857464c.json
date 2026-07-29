@@ -1,0 +1,14 @@
+{
+  "id": "pub_0b7d752465b4c3ff7857464c",
+  "name": "ooyen",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibkebqvmt2e6wknkix7lqntw5da7stla7egumx4j6ustyw7nklj6u",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf6d478d5C298be07e0D06eCF054CA900eee57182",
+      "kind": "external"
+    }
+  ]
+}

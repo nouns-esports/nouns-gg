@@ -1,0 +1,14 @@
+{
+  "id": "pub_c4845d73e88e9eda849e42d4",
+  "name": "matty mo",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigmtbw2g6gk7lt5zka5jmglijewbjamynbtby5rhjysdejdldlmem",
+  "bio": "themostfamousartist.com",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd08866c9153142c90CcD1D3105f751D060f13894",
+      "kind": "external"
+    }
+  ]
+}

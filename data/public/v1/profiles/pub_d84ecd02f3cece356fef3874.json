@@ -1,0 +1,14 @@
+{
+  "id": "pub_d84ecd02f3cece356fef3874",
+  "name": "cm5vkfp9",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=f6pf8&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE1551cD67a2977f292308008C0d78577E55F18b3",
+      "kind": "external"
+    }
+  ]
+}

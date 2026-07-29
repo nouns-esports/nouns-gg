@@ -1,0 +1,18 @@
+{
+  "id": "pub_d95e894e77b14a6f43e18d2c",
+  "name": "Ghatlue ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1782042982062981121/Ty7x2twU_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Ghatlue",
+    "name": "Ghatlue ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1782042982062981121/Ty7x2twU_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xcD28630dd9ca52aFe4aCFF7dF4e7D5d0bca83EbF",
+      "kind": "external"
+    }
+  ]
+}

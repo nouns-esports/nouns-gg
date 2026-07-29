@@ -1,0 +1,18 @@
+{
+  "id": "pub_906bcfa2d6af58e5492366a7",
+  "name": "Jojo | 174cm",
+  "image": "https://pbs.twimg.com/profile_images/1460252858910187523/VbYSHsFD_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "baleghnde",
+    "name": "Jojo | 174cm",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1460252858910187523/VbYSHsFD_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8361861D65B5c2cd17A0Cbe23e35261A7A647931",
+      "kind": "external"
+    }
+  ]
+}

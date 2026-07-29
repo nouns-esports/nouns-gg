@@ -1,0 +1,18 @@
+{
+  "id": "pub_2c0f5d9345529753e10fe9c7",
+  "name": "Pumey",
+  "image": "https://pbs.twimg.com/profile_images/1672093318598266881/JH1ZbbDM_normal.jpg",
+  "bio": "pumey_arts on X.\nillustrator. graphic artist.",
+  "twitter": {
+    "username": "pumey_arts",
+    "name": "Pumey",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1672093318598266881/JH1ZbbDM_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xa87Daa2Bc3bd0eCca4C9111776BAB2c9d44D6c6B",
+      "kind": "external"
+    }
+  ]
+}

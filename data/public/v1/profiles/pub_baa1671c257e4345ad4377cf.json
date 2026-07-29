@@ -1,0 +1,18 @@
+{
+  "id": "pub_baa1671c257e4345ad4377cf",
+  "name": "locotex16",
+  "image": "https://pbs.twimg.com/profile_images/1631412569607946245/lLm4pYkA_normal.jpg",
+  "bio": "gamer dota2 and cs2",
+  "twitter": {
+    "username": "locotex1697",
+    "name": "locotex16",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1631412569607946245/lLm4pYkA_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1E7ADf0DCD805709E1A025Ea701e69f3f14C1c7E",
+      "kind": "external"
+    }
+  ]
+}

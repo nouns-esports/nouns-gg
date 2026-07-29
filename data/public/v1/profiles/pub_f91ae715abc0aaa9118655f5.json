@@ -1,0 +1,19 @@
+{
+  "id": "pub_f91ae715abc0aaa9118655f5",
+  "name": "SizzleSpoon",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihqfqm2mtqetuhpwdwrptduarjzpc5rv4terox47vdre4ffzykdfa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6A3929AA3ba33FFD3aDb8C4434F8F0D361165C00",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x06528DA4964d0794aaEE840e5Ae59471A8b9f5b0",
+      "kind": "external"
+    }
+  ]
+}

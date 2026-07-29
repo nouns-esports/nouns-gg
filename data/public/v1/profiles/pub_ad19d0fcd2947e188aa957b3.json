@@ -1,0 +1,19 @@
+{
+  "id": "pub_ad19d0fcd2947e188aa957b3",
+  "name": "WaffleWarden",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicmkeo2jyjhgg4zoumgseb2a5edmfshb3uhos7btaar4vei63jvci",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc2135697bDeE09B85Cc4d943a5D62156Ed41fb2f",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x680f334Ed65BE35c7a0807A4E48ea1e970D58a74",
+      "kind": "external"
+    }
+  ]
+}

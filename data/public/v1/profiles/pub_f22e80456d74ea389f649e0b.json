@@ -1,0 +1,19 @@
+{
+  "id": "pub_f22e80456d74ea389f649e0b",
+  "name": "Lumpy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieefyet2d7i4srqjhvoud4nddtzum7aafogc6ll6qzivt5pxryu34",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xe1E96c7aD4C74d244cdBc46BD1167f1465a643f5",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x156cebe054Ec54230Aab408D023DDC7f53EcC5c8",
+      "kind": "external"
+    }
+  ]
+}

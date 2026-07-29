@@ -1,0 +1,14 @@
+{
+  "id": "pub_16560940261b7491d108c831",
+  "name": "Miami",
+  "image": "https://ipfs.nouns.gg/ipfs/QmTsTFDHNES5BED47eVxaJT3bcffAdHKYJJq1vgkBrFAAw",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3Ba0655cf0fF7f09Ebd3dD5fAd7b86b369263783",
+      "kind": "external"
+    }
+  ]
+}

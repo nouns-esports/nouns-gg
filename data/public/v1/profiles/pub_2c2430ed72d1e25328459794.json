@@ -1,0 +1,19 @@
+{
+  "id": "pub_2c2430ed72d1e25328459794",
+  "name": "Cranky",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidgjour76aiza5o4o4opxalyikuotjf3cefsqtdi4b6wol3zmuzga",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7107FD68a2df11cbA952D91fD13d8784a47fD4D2",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x2754d30356386e73A09B63Cce899678b6b88E817",
+      "kind": "external"
+    }
+  ]
+}

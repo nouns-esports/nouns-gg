@@ -1,0 +1,14 @@
+{
+  "id": "pub_6d9fd0519127ce4b5bd6bd09",
+  "name": "Blaise",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifolbmv34wgzwvqvobnuqjktgpzil5qeybgjeqdw3malfe42n7qqa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA0F6Ce829aEa4a96DE3EeaA695ad61085dba5c82",
+      "kind": "external"
+    }
+  ]
+}

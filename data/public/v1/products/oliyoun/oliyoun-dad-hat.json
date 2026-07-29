@@ -1,0 +1,42 @@
+{
+  "id": "product:oliyoun:oliyoun-dad-hat",
+  "handle": "oliyoun-dad-hat",
+  "name": "Oliyoun Dad Hat",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": true,
+  "active": true,
+  "community": {
+    "id": "community:oliyoun",
+    "handle": "oliyoun",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreie6ficp6oluyupqlcjxc4cuoklxwgruqudqrncbvxrysnqytsh3nq",
+    "name": "Oliyoun",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": false,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:oliyoun:oliyoun-autochess-2",
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:521efe82-b01c-47c8-aeb7-827fdb821934",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeicd2j573bjvf6i5vjrsduiabwpfihxih4hgouuq2xnr64l2nmw7vy"
+      ],
+      "size": null,
+      "color": null,
+      "price": "25.00",
+      "inventory": null
+    }
+  ]
+}

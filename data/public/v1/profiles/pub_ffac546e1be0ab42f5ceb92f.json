@@ -1,0 +1,14 @@
+{
+  "id": "pub_ffac546e1be0ab42f5ceb92f",
+  "name": "clymtfhd",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieufl5ghg2cizo35r34gyum4scvrcj3xstkrrvrghhvukxz335kg4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x52Ffd21B0503F30E5DDEE8161c594D4cBcfAb974",
+      "kind": "external"
+    }
+  ]
+}

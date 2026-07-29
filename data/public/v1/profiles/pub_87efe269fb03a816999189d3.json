@@ -1,0 +1,14 @@
+{
+  "id": "pub_87efe269fb03a816999189d3",
+  "name": "pip3",
+  "image": "https://ipfs.nouns.gg/ipfs/QmP6mN8SqH2oC9Kqdvdqn7P8kVrTqU2N5LLW5EEpxVK5aM",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2EC9A5E7c113063a4448f188921F3f6630521f4b",
+      "kind": "external"
+    }
+  ]
+}

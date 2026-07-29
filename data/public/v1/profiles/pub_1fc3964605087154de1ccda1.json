@@ -1,0 +1,18 @@
+{
+  "id": "pub_1fc3964605087154de1ccda1",
+  "name": "Jason White",
+  "image": "https://pbs.twimg.com/profile_images/1799882111601549312/K0JnW1rf_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "JWhite11874",
+    "name": "Jason White",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1799882111601549312/K0JnW1rf_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x76756F74c0c2a807e3943c2Bfe0653C653B0f241",
+      "kind": "external"
+    }
+  ]
+}

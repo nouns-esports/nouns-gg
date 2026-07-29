@@ -1,0 +1,19 @@
+{
+  "id": "pub_d68d6f8a590a332ef1f7e71f",
+  "name": "Pixel Punch",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiatxycpmgn6zcrhhn5e5pblnnqp7ihr4vizghnjsig4z62yiump3a",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8730602912925C7A21146A26BBb61f3791c97Cd5",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xEb18cBe6D2A6FaBE40de52Ea53fB1CAe6Bb08Bd4",
+      "kind": "external"
+    }
+  ]
+}

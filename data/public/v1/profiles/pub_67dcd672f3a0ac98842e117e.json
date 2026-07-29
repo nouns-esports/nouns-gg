@@ -1,0 +1,14 @@
+{
+  "id": "pub_67dcd672f3a0ac98842e117e",
+  "name": "lowbrow",
+  "image": "https://ipfs.nouns.gg/ipfs/QmWpyKMpYtXEuoq1sViutXws384ZndQTHw75WR1fx9jCPF",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8854631995B99bbFca16b8eA339538950181132a",
+      "kind": "external"
+    }
+  ]
+}

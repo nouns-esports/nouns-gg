@@ -1,0 +1,18 @@
+{
+  "id": "pub_397cc09cd99573f9963ea768",
+  "name": "Dawutech.eth",
+  "image": "https://pbs.twimg.com/profile_images/1646267757284020232/kRY-fUGo_normal.jpg",
+  "bio": "Chilled out there is no other way.\nhttps://linktr.ee/pnsibanda",
+  "twitter": {
+    "username": "pnsibanda",
+    "name": "Dawutech.eth",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1646267757284020232/kRY-fUGo_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xfEE924792d38A36F9289eAA7eF4107aF244E1d82",
+      "kind": "external"
+    }
+  ]
+}

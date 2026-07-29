@@ -1,0 +1,14 @@
+{
+  "id": "pub_8621f8b961a73a7febc9fb93",
+  "name": "GrafVision",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreih2vrg2izg7w44gzbzrivolsa6n6q4ijzd5d35ttydocal3qmtikm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1a7274A7A677b0a6F2ba2a0B4Fee292C91E6CB68",
+      "kind": "external"
+    }
+  ]
+}

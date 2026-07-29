@@ -1,0 +1,14 @@
+{
+  "id": "pub_cbb3b0b087849fbde77c4d18",
+  "name": "Darafits ",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibgbvr2kfxru22cc6wcm6fqvb5rv65kpydbxw4qgl3eikhn2maanm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1A6bb81561f54c5fFf272648057EFF77F37384c0",
+      "kind": "external"
+    }
+  ]
+}

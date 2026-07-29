@@ -1,0 +1,14 @@
+{
+  "id": "pub_c1668c5cd826d05f4b53f15b",
+  "name": "manopunkttt",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiar43cr66lc23htec55h3oqpox7h2b7m2qzdy7rrgml4zow2nyokq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5e83086D37AaE4cDA461227cc19C10903AdBC2d3",
+      "kind": "external"
+    }
+  ]
+}

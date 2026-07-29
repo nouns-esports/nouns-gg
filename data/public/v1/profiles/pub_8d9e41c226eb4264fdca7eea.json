@@ -1,0 +1,14 @@
+{
+  "id": "pub_8d9e41c226eb4264fdca7eea",
+  "name": "Ile D ",
+  "image": "https://ipfs.nouns.gg/ipfs/QmPjzE1imB3B8Pv4qHCuoaiUC6EUeCMRWWfobXMQzbfJWx",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8FFA534135D748F33B5f8c90Dd74212B8048fC80",
+      "kind": "external"
+    }
+  ]
+}

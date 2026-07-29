@@ -1,0 +1,14 @@
+{
+  "id": "pub_1d4169b6cced4ef476846459",
+  "name": "cmddlv44",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigadip4l3vlmb6g2mnipygbkeu2aj2gzgjmo5akjldlojnsoxsx4e",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x978C593D797A415D874865A45451b76A19980F16",
+      "kind": "external"
+    }
+  ]
+}

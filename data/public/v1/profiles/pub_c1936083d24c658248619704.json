@@ -1,0 +1,14 @@
+{
+  "id": "pub_c1936083d24c658248619704",
+  "name": "cm33avwk",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=u6v12j&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xc753Ab83fDd180f6D2688763d5fcC77C4832F129",
+      "kind": "external"
+    }
+  ]
+}

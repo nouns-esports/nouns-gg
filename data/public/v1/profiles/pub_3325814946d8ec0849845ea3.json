@@ -1,0 +1,23 @@
+{
+  "id": "pub_3325814946d8ec0849845ea3",
+  "name": "Fillze 👁️ base.eth 🍳 .ink 🐝(🦄,🦄) (✸,✸)",
+  "image": "https://pbs.twimg.com/profile_images/1905180563776135168/lMkHgcXm_normal.jpg",
+  "bio": "Personalised gift ",
+  "twitter": {
+    "username": "fillzer96",
+    "name": "Fillze 👁️ base.eth 🍳 .ink 🐝(🦄,🦄) (✸,✸)",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1905180563776135168/lMkHgcXm_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xADD2F9A2c8B74cFB1B8e8fd563531A46B86A8995",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x197E338c88dD78f09E43f82f035Ff48754512850",
+      "kind": "external"
+    }
+  ]
+}

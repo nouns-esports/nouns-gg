@@ -1,0 +1,19 @@
+{
+  "id": "pub_678b5b7dbf1350c2bd480386",
+  "name": "BumbleBean",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiasq75inj6yhj53h4tjyxglf26elpsg36da56t5bf3bdtbtzl6zpq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4D12Fda77E34aC4aB4a73eE232dC6F9Dec24F6C3",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x77c81f47Cf160F5A5417ce6fBC8628B208d76f70",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_de6bfb4aae0d324e2dd563ed",
+  "name": "Gramajo",
+  "image": "https://ipfs.nouns.gg/ipfs/QmNX9pjdLG9Z8BmKLFc2DhxgRER9H3qoQQ2GLjo9RX5NtD",
+  "bio": "Michelada connoisseur. Chief Onchain Officer at /area51 since 2022 AD. Focused on digital art, tech & crypto. gramajo.carrd.co",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2117bf88b4Cb0186eaA87500A045fc998290E42a",
+      "kind": "external"
+    }
+  ]
+}

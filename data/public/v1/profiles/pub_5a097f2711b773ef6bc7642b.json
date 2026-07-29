@@ -1,0 +1,14 @@
+{
+  "id": "pub_5a097f2711b773ef6bc7642b",
+  "name": "Kinwiz",
+  "image": "https://ipfs.nouns.gg/ipfs/QmQ7zThcJz76tLYVP5RFuGSA5FYH93FRZQufvjCXQiArcF",
+  "bio": "Human, being 4 noun. He/him, Brazilian, Artist, Teacher, Founder / creator of Nouns Undercover, father, husband",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xbcd980d37293CBee62Bf5f93a26a0B744C18964D",
+      "kind": "external"
+    }
+  ]
+}

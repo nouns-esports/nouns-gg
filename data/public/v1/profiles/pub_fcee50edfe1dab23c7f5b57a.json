@@ -1,0 +1,14 @@
+{
+  "id": "pub_fcee50edfe1dab23c7f5b57a",
+  "name": "cmdrpz8e",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidiapmwni6izv66dx23fp4bipqth2tam6j2jhhvw2rlvnw67f26mu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC5CE2271D5345A3B7e93C40423de2F6C85715023",
+      "kind": "external"
+    }
+  ]
+}

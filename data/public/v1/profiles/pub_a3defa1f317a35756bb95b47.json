@@ -1,0 +1,29 @@
+{
+  "id": "pub_a3defa1f317a35756bb95b47",
+  "name": "0xyezh.⌐◨-◨",
+  "image": "https://ipfs.nouns.gg/ipfs/QmWp1Y9XxHnQQLoVBpC9Ys1k9WVTbgQiTeuSCkXjuAXc4P",
+  "bio": "In the realm of nouns ⌐◨-◨ vrbs ▀▄▀ crafting pathways to positive impact.⌐🄾Y🅉",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xfDbd96a5A507bcB8D4FECe31BB3a258A0beF89DF",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xdAd67A985cE8Fa4A3eA01fAE4f41B2Cf6241eC1B",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x89590103fB37a05B51427642E10D013a09108543",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x523A7E7c658F9DD9d969Be9239BAa14B9A626731",
+      "kind": "external"
+    }
+  ]
+}

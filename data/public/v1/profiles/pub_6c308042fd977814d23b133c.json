@@ -1,0 +1,18 @@
+{
+  "id": "pub_6c308042fd977814d23b133c",
+  "name": "Sebastien",
+  "image": "https://pbs.twimg.com/profile_images/1950446900148359168/RhXvCM64_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "0x572F00",
+    "name": "Sebastien",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1950446900148359168/RhXvCM64_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x572F00809E18FD240e3d082eeDF76Cdda9fC573C",
+      "kind": "external"
+    }
+  ]
+}

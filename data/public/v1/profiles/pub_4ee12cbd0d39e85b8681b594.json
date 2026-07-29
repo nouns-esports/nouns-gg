@@ -1,0 +1,14 @@
+{
+  "id": "pub_4ee12cbd0d39e85b8681b594",
+  "name": "cmdk27r2",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreic3knrzhx5nndgtexj6rwfwcoeokrfrpwzpy2gygsh3v5gip5ijkm",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3c89A3B780d0FE343763b06410a49b52b6ce9600",
+      "kind": "external"
+    }
+  ]
+}

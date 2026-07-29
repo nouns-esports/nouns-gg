@@ -1,0 +1,18 @@
+{
+  "id": "pub_7393d6132a4078cf5979fe8a",
+  "name": "Nadie 🐺⌐◨-◨ PWRFL",
+  "image": "https://pbs.twimg.com/profile_images/1927023563057270786/RpSN6fOY_normal.jpg",
+  "bio": "Illustrator - 2D generalist\n\nOpen for commissions\nhttps://linktr.ee/Nadiecito",
+  "twitter": {
+    "username": "Ningunartista",
+    "name": "Nadie 🐺⌐◨-◨ PWRFL",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1927023563057270786/RpSN6fOY_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x215DB99298af65306A4c60BD3b7612D5F60b03D7",
+      "kind": "external"
+    }
+  ]
+}

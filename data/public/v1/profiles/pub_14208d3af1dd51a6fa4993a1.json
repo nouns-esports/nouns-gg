@@ -1,0 +1,14 @@
+{
+  "id": "pub_14208d3af1dd51a6fa4993a1",
+  "name": "cmdgcgnb",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiccg6oyslwkbj366pdhp7e25z7x2rsc5bptlcx2me4n3j5fuzkjvu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2dd8a9a8a32111f6b61Ad62e8433Bd68F45d8408",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pub_a504bda873c14e74120cd380",
+  "name": "Manuel Merchan Campoverde (✸,✸)",
+  "image": "https://pbs.twimg.com/profile_images/1248391197980102656/T73Qyhrl_normal.jpg",
+  "bio": "Ing. en computación e Informática",
+  "twitter": {
+    "username": "ManuelMerchanC",
+    "name": "Manuel Merchan Campoverde (✸,✸)",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1248391197980102656/T73Qyhrl_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x978C3EA3F0Ca718aa71B76c0dC94b9EFF45FE93D",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x3Ff6274e661f77AF54D923d162f1b3bB19252e7a",
+      "kind": "external"
+    }
+  ]
+}

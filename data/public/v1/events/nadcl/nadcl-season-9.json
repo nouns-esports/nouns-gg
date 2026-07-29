@@ -1,0 +1,343 @@
+{
+  "id": "event:nadcl:nadcl-season-9",
+  "handle": "nadcl-season-9",
+  "name": "NADCL Season 9",
+  "image": "https://ipfs.nouns.gg/ipfs/bafybeiheghyjnanqhdqwbn7mau6zwg7ub3up5cljxo5rdlffw6h7m6mwi4",
+  "description": "Get ready for North American Dota Challengers League (NADCL) Season 9, the premier NA Dota 2 league for rising talent, running from July 15 to July 30, 2025! Hosted online, this season features the Players Combine (July 7-9), Player Draft Auction (July 11), and Main Event (July 15-30), with a prize pool of up to $2,400 USD. Founded by PPD, NADCL offers aspiring pros a platform to shine, with team owners pre-selecting players. Join the community on Discord for a new IHL play submission round, raffles, giveaways, and more. Details below!",
+  "createdAt": "2025-07-15T10:00:00.000Z",
+  "start": "2025-07-15T10:00:00.000Z",
+  "end": "2025-07-30T10:00:00.000Z",
+  "active": true,
+  "featured": true,
+  "callToAction": {
+    "disabled": false,
+    "label": "Discord",
+    "url": "https://discord.com/invite/ZFJSngw6ZC"
+  },
+  "location": {
+    "name": "Online",
+    "url": "https://www.twitch.tv/chompixgaming"
+  },
+  "details": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 1
+        },
+        "content": [
+          {
+            "text": "Overview: NADCL Season 9",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Dates: July 15 to July 30, 2025",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Players Combine: July 7-9, 2025 (High MMR matches, open to all)",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Player Draft Auction: July 11, 2025 (Team owners draft players)",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Main Event: July 15-30, 2025 (Single Round-Robin Bo2, Playoffs Bo3, Grand Final Bo5)",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Format: Online, North America, single division",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Teams: Up to 6 teams",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Prize Pool: Up to $1,800 USD",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Here’s the official announcement from NADCL:",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "https://x.com/ChompixGaming/status/1938775573632811053",
+            "type": "text",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://x.com/ChompixGaming/status/1938775573632811053",
+                  "target": "_blank"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "NADCL Season 8 Community Engagement",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "When: July 15 to July 30, 2025",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "What:",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Youtube Reel Submissions",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Supporter Activities",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Community quests to engage with NADCL",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Raffles and giveaways with Dota 2 prizes",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Key Deadlines:",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Rounds Submissions: May vary.",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Raffle Entries: July 30th, 2025, 11:59 PM ET",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Prizes: Dota 2 Battle Pass Level 100, Gold, Benjies, and more",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "How to Join: Open to everyone and exclusive activities for ",
+            "type": "text"
+          },
+          {
+            "text": "S9 Supporters",
+            "type": "text",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://chompix.gg/products/nadcl-s9-supporter",
+                  "target": "_blank"
+                }
+              }
+            ]
+          },
+          {
+            "text": " and ",
+            "type": "text"
+          },
+          {
+            "text": "NADCL Discord",
+            "type": "text",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://discord.gg/ZFJSngw6ZC",
+                  "target": "_blank"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Rules: See tabs below for details",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  "attendeeCount": null,
+  "community": {
+    "id": "community:nadcl",
+    "handle": "nadcl",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+    "name": "NADCL",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  }
+}

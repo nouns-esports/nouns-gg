@@ -1,0 +1,18 @@
+{
+  "id": "pub_be71d70672140ff1e51e8f00",
+  "name": "ekhos",
+  "image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "ekhos644443",
+    "name": "ekhos",
+    "profilePictureUrl": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4E4978E662a5fc68cB31F3A59Da4761910Fa9c71",
+      "kind": "external"
+    }
+  ]
+}

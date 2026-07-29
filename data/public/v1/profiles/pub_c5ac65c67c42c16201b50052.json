@@ -1,0 +1,14 @@
+{
+  "id": "pub_c5ac65c67c42c16201b50052",
+  "name": "l1am44",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=y1uyob&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x15A37c86c1104fE1f1C9a49B6a2c519d12320bcb",
+      "kind": "external"
+    }
+  ]
+}

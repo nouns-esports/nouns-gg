@@ -1,0 +1,14 @@
+{
+  "id": "pub_ad16dd25dc6febc693d7379b",
+  "name": "SQX",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigkwkx3vhuaieaiwgms2pbdxc6o7yiujyxpnlpkowbscgv7jfx4zu",
+  "bio": "Lil curious about blockchain",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2eE0485f71764bcD2062A84d9455688c581B90f8",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_13350edcfc360aff10f5af6a",
+  "name": "Atlas",
+  "image": "https://pbs.twimg.com/profile_images/1601759919572930560/Pr74OTGq_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "Atlas_1001",
+    "name": "Atlas",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1601759919572930560/Pr74OTGq_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5694F439e7F608d123f5A760162196c78133D2d4",
+      "kind": "external"
+    }
+  ]
+}

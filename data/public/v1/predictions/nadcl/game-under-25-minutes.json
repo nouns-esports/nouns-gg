@@ -1,0 +1,43 @@
+{
+  "id": "prediction:nadcl:game-under-25-minutes",
+  "handle": "game-under-25-minutes",
+  "name": "Will a game last less than 25 minutes?",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+  "rules": {
+    "type": "doc",
+    "content": []
+  },
+  "xp": {
+    "winning": 500,
+    "predicting": 0
+  },
+  "prizePool": 5000,
+  "closed": false,
+  "resolved": false,
+  "featured": false,
+  "createdAt": "2025-07-17T02:26:34.535Z",
+  "start": null,
+  "end": null,
+  "pool": "0.000000000000000000",
+  "totalBets": 7,
+  "community": {
+    "id": "community:nadcl",
+    "handle": "nadcl",
+    "image": "https://ipfs.nouns.gg/ipfs/bafkreiadlbtcrhrr5bgnao7tgmms55kqj5o2ygiqvonr7ah2n4zmohm4re",
+    "name": "NADCL",
+    "levels": null,
+    "points": null,
+    "description": null,
+    "parentUrl": null,
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nadcl:nadcl-season-9"
+}

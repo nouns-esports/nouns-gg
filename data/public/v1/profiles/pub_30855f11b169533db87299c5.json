@@ -1,0 +1,14 @@
+{
+  "id": "pub_30855f11b169533db87299c5",
+  "name": "keyboarder",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicfbs5ywajcw3mxvjwvvrkliqmt4mqfzk67r3dyibon33q2gv2bwq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x02A4D5c9052c35f6217E4c5887CB84A729Be72Cd",
+      "kind": "external"
+    }
+  ]
+}

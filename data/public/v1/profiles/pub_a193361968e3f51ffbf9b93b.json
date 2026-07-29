@@ -1,0 +1,14 @@
+{
+  "id": "pub_a193361968e3f51ffbf9b93b",
+  "name": "Tempe Techie",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreif4u3ez4nxa5qkaf3x63f4auxw7tfbure4rkn7zzx34fgk655txwq",
+  "bio": "Arbitrum delegate / Nouns #1676 & #1719 / Full-stack web3 developer, learn more about my projects here: https://github.com/tempe-techie",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb29050965A5AC70ab487aa47546cdCBc97dAE45D",
+      "kind": "external"
+    }
+  ]
+}

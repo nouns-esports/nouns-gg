@@ -1,0 +1,14 @@
+{
+  "id": "pub_1e072f453c7ec9bcbca292e4",
+  "name": "cdjhm04",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiectvorswnzxjwcssln74oxfw2ymqifmypkueshz2ey7fhmyt5poe",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x6BAc3102d8eA5a59f0ba7ab67F7aAFA6CCEEc5b3",
+      "kind": "external"
+    }
+  ]
+}

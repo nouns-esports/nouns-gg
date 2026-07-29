@@ -1,8 +1,7 @@
-"use server";
-
-import { bets, predictions, outcomes, gold } from "~/packages/db/schema/public";
-import { db } from "~/packages/db";
-import { and, desc, eq, isNull, sql } from "drizzle-orm";
+import {
+	expandedPrediction,
+	predictions,
+} from "@/server/data/archive";
 
 export async function getPrediction(
 	input: { user?: string } & (
@@ -10,49 +9,15 @@ export async function getPrediction(
 		| { id: string }
 	),
 ) {
-	return db.pgpool.query.predictions.findFirst({
-		where:
-			"id" in input
-				? eq(predictions.id, input.id)
-				: and(
-						eq(predictions.handle, input.handle),
-						input.community
-							? eq(
-									predictions.community,
-									sql`(SELECT id FROM communities WHERE communities.handle = ${input.community})`,
-								)
-							: undefined,
-					),
-		with: {
-			outcomes: {
-				extras: {
-					totalBets:
-						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = predictions_outcomes.id)::integer`.as(
-							"totalBets",
-						),
-				},
-			},
-			bets: {
-				where: input.user ? eq(bets.user, input.user) : undefined,
-				limit: input.user ? 1 : 0,
-				with: {
-					outcome: true,
-				},
-			},
-			event: true,
-			gold: {
-				where: input.user ? eq(gold.to, input.user) : undefined,
-				limit: input.user ? 1 : 0,
-			},
-			community: true,
-		},
-		extras: {
-			totalBets:
-				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)::integer`.as(
-					"totalBets",
-				),
-		},
-	});
+	const prediction = predictions.find((candidate) =>
+		"id" in input
+			? candidate.id === input.id
+			: candidate.handle === input.handle &&
+				(!input.community ||
+					candidate.community.id === input.community ||
+					candidate.community.handle === input.community),
+	);
+	return prediction ? expandedPrediction(prediction) : undefined;
 }
 
 export async function getPredictions(input: {
@@ -61,42 +26,15 @@ export async function getPredictions(input: {
 	community?: string;
 	limit?: number;
 }) {
-	return db.pgpool.query.predictions.findMany({
-		where: and(
-			input.event ? eq(predictions.event, input.event) : undefined,
-			input.community ? eq(predictions.community, input.community) : undefined,
-			eq(predictions.active, true),
-			isNull(predictions.deletedAt),
-		),
-		orderBy: [desc(predictions.id)],
-		limit: input.limit,
-		with: {
-			community: true,
-			outcomes: {
-				extras: {
-					totalBets:
-						sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.outcome = predictions_outcomes.id)::integer`.as(
-							"totalBets",
-						),
-				},
-			},
-			bets: {
-				where: input.user ? eq(bets.user, input.user) : undefined,
-				limit: input.user ? 1 : 0,
-				with: {
-					outcome: true,
-				},
-			},
-			gold: {
-				where: input.user ? eq(gold.to, input.user) : undefined,
-				limit: input.user ? 1 : 0,
-			},
-		},
-		extras: {
-			totalBets:
-				sql<number>`(SELECT COUNT(*) FROM bets WHERE bets.prediction = predictions.id)::integer`.as(
-					"totalBets",
-				),
-		},
-	});
+	const result = predictions
+		.filter(
+			(prediction) =>
+				!prediction.deletedAt &&
+				(!input.event || prediction.eventId === input.event) &&
+				(!input.community ||
+					prediction.community.id === input.community ||
+					prediction.community.handle === input.community),
+		)
+		.map(expandedPrediction);
+	return input.limit ? result.slice(0, input.limit) : result;
 }

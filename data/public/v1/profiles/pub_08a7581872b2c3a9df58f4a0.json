@@ -1,0 +1,28 @@
+{
+  "id": "pub_08a7581872b2c3a9df58f4a0",
+  "name": "Chompix ⌐◨-◨",
+  "image": "https://pbs.twimg.com/profile_images/1623563856063635457/Q2Q6KAwu_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "ChompixGaming",
+    "name": "Chompix ⌐◨-◨",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1623563856063635457/Q2Q6KAwu_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1d2F6943059A42Da929d6a8057d1e010095CD801",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x24F434a7C8CD7CFa9D7940AA13A993de698C1453",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x6DA6aA216bA84317154E32B4413874E88E8e7fFD",
+      "kind": "external"
+    }
+  ]
+}

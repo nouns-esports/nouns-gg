@@ -1,0 +1,14 @@
+{
+  "id": "pub_7d1c9f8d6908e9fee598f4af",
+  "name": "Alexdam base.eth",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreif4b2l4sbwsmrldcb3e2ovsg6zxacayxk3p6lnate5fujelppjale",
+  "bio": "Im a freelancer & checker\nbase.eth",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEc17C978DB241d0ec93987C94D62DDea74F7F82d",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_ded0aa41464d0f3c4221840a",
+  "name": "Priscilla Emmanuel",
+  "image": "https://pbs.twimg.com/profile_images/2007063363340091393/Jx_Kkkjh_normal.jpg",
+  "bio": "blockchain developer",
+  "twitter": {
+    "username": "Priscilla_nuel",
+    "name": "Priscilla Emmanuel",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/2007063363340091393/Jx_Kkkjh_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xf9Cb726F88f3b60690c9d24478c4305054Ac7cBF",
+      "kind": "external"
+    }
+  ]
+}

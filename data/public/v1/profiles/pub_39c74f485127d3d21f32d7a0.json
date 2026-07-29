@@ -1,0 +1,18 @@
+{
+  "id": "pub_39c74f485127d3d21f32d7a0",
+  "name": "Secrets",
+  "image": "https://pbs.twimg.com/profile_images/1559332153963552769/gBlrToSS_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "MeilleurDrew",
+    "name": "Secrets",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1559332153963552769/gBlrToSS_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9Ebc9B3388066Fc1709b1fCD91414db6b2E1dECd",
+      "kind": "external"
+    }
+  ]
+}

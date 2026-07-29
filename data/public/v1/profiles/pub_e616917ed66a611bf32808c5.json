@@ -1,0 +1,18 @@
+{
+  "id": "pub_e616917ed66a611bf32808c5",
+  "name": "Cerulean",
+  "image": "https://pbs.twimg.com/profile_images/1932645457785970688/gQmGLU8h_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "0xCerulean_",
+    "name": "Cerulean",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1932645457785970688/gQmGLU8h_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA3112a0dbeaE34d0b4Df14c23ffA4BC9dea79333",
+      "kind": "external"
+    }
+  ]
+}

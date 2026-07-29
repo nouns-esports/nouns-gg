@@ -1,0 +1,14 @@
+{
+  "id": "pub_d04f9564b1ad47081f142210",
+  "name": "clz2298f",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidmhgikiwyoiayctxpsynvilk4m3d6qnznmywhytfzrmyof5dmgeu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xFd545C98e524b6A702C0378DBB35C6EcCE06c216",
+      "kind": "external"
+    }
+  ]
+}

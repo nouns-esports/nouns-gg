@@ -1,0 +1,14 @@
+{
+  "id": "pub_0d3e26c56871e4c11ad627fe",
+  "name": "nocguild.eth",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiho7a3vx4g2fy3c2sgjq4zj4xnijokapwpzpbls6zewjcandskul4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xADa31Add8450CA0422983B9a3103633b78938617",
+      "kind": "external"
+    }
+  ]
+}

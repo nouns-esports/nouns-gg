@@ -1,0 +1,18 @@
+{
+  "id": "pub_71643aeddd9a7bd00b33fcad",
+  "name": "punkrock77.eth🛡️🟧(✸,✸)",
+  "image": "https://pbs.twimg.com/profile_images/1909677983713173504/CHECFR1w_normal.jpg",
+  "bio": "BASE and Superchain 🔴 - OG Base from 2023 (testnet)👌.",
+  "twitter": {
+    "username": "callme_punkrock",
+    "name": "punkrock77.eth🛡️🟧(✸,✸)",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1909677983713173504/CHECFR1w_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x29744bD7B37bDe14F74d281D3BAdBE68b299Be5f",
+      "kind": "external"
+    }
+  ]
+}

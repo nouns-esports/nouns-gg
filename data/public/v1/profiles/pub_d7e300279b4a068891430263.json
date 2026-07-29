@@ -1,0 +1,14 @@
+{
+  "id": "pub_d7e300279b4a068891430263",
+  "name": "seasoning",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihflwplczhzmdyccigz4vpcqtqjgny55lzyah2ysashki7tzhx37y",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4c920e66892c957E80211C5b8BA6748dF289cB6b",
+      "kind": "external"
+    }
+  ]
+}

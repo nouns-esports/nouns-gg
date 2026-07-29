@@ -1,0 +1,18 @@
+{
+  "id": "pub_31d7a7fd6a29c78dcd7d2eab",
+  "name": "rizkybegitu",
+  "image": "https://pbs.twimg.com/profile_images/1893371673317122049/fXz7jGWF_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Rizkybegitu",
+    "name": "rizkybegitu",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1893371673317122049/fXz7jGWF_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2a8b33003DA55CfC6b25028c7E47aD3F02ebe5d3",
+      "kind": "external"
+    }
+  ]
+}

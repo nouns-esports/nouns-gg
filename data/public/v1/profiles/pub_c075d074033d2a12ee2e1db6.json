@@ -1,0 +1,14 @@
+{
+  "id": "pub_c075d074033d2a12ee2e1db6",
+  "name": "cmbl31bk",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihd7fidott2gnbjk2cg2ahvkmdyujggbfwclmyfztu3qfwtwl2nqu",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xd4C8c8778214E27065ee4ECfa9834BD533430cB3",
+      "kind": "external"
+    }
+  ]
+}

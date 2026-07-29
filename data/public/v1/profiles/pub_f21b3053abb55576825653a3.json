@@ -1,0 +1,14 @@
+{
+  "id": "pub_f21b3053abb55576825653a3",
+  "name": "mwlifetime1",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreideww63kzwn3rp6iitxkjqfgl2p6uanx4mks2d64ubg764r2fcsxu",
+  "bio": "I'm nouns",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7E703797302b99890a42a651e4abf54b319B2D26",
+      "kind": "external"
+    }
+  ]
+}

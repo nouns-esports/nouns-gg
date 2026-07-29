@@ -1,0 +1,14 @@
+{
+  "id": "pub_ebe290aaadff44a66f9c107a",
+  "name": "DeathCat",
+  "image": "https://ipfs.nouns.gg/ipfs/QmQP2a52yC5fJBaohjdYUk5AW94SWPHKwaeJHpHN4kV16Z",
+  "bio": "Wild Animal",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x0DF34E36ef3a793871442EB5a08b08adB74E7006",
+      "kind": "external"
+    }
+  ]
+}

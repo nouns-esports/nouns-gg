@@ -1,0 +1,14 @@
+{
+  "id": "pub_c190f15c2d12d69b195fedc8",
+  "name": "cmdsrfug",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiedeoi3kistn5eloi7qef2kxtw5vgqncchdofvuipzj4i67ngfjsa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5f8Cd24B4d2299fF590be9d07C9fc5dC46DC0E95",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_139eed5b29f912367cc9438a",
+  "name": "cly19kbu",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreick74v64vfcaiirepsbda7wjnqb3xs75vtux2vcoyrc73hten6qla",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xfD4DC199a8969288328Cdf061428ff6c609C3768",
+      "kind": "external"
+    }
+  ]
+}

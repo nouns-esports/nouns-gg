@@ -1,0 +1,46 @@
+{
+  "id": "product:nouns-gg:tipped-off-16-venue-fee",
+  "handle": "tipped-off-16-venue-fee",
+  "name": "Tipped Off 16 Venue Fee",
+  "description": null,
+  "createdAt": "2025-07-20T01:50:11.340Z",
+  "requiresShipping": false,
+  "active": false,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  },
+  "eventId": "event:nouns-gg:tipped-off-16",
+  "collectionHandle": null,
+  "variants": [
+    {
+      "id": "variant:dfd0d86d-1f21-4b0c-b52f-cb620e6f1d0d",
+      "images": [
+        "https://ipfs.nouns.gg/ipfs/bafybeihssuks36y6jotv7upfshni3racsm4fw7l7gkqn3mv3e7sgbht3iq"
+      ],
+      "size": null,
+      "color": null,
+      "price": "90.00",
+      "inventory": null
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pub_623b7d1248bd2afeaad82ea9",
+  "name": "Glitzy",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiers4fwo3f7f47ahtdqdfiylzlxmnfqtbdaotnxqbbi2qop6sljma",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xEb2Ce17F37d1775B834d2356dACd82dA59Af6b2A",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x014808D43Ea488908643d4f52CEFd15d9e3F55c3",
+      "kind": "external"
+    }
+  ]
+}

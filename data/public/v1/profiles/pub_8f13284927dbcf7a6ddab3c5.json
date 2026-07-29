@@ -1,0 +1,18 @@
+{
+  "id": "pub_8f13284927dbcf7a6ddab3c5",
+  "name": "TXH | Amy ❤️",
+  "image": "https://pbs.twimg.com/profile_images/1780373193267527682/MXHzaomX_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Amy_Rose333",
+    "name": "TXH | Amy ❤️",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1780373193267527682/MXHzaomX_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xE10AE3bc0b5e8D9f787625FA033d9D5f1Ea14c8E",
+      "kind": "external"
+    }
+  ]
+}

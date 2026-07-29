@@ -1,0 +1,18 @@
+{
+  "id": "pub_36a333d1209650e4a0903908",
+  "name": "Chelsea",
+  "image": "https://pbs.twimg.com/profile_images/1938209000782217216/ekv7jThI_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "YoImChelseaa",
+    "name": "Chelsea",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1938209000782217216/ekv7jThI_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xBA2503CFeb29d9239Da78B6Af12A449E62b5f24b",
+      "kind": "external"
+    }
+  ]
+}

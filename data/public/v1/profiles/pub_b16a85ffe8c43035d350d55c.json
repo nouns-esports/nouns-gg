@@ -1,0 +1,18 @@
+{
+  "id": "pub_b16a85ffe8c43035d350d55c",
+  "name": "spidy 🍳",
+  "image": "https://pbs.twimg.com/profile_images/1905676841274474496/LzZvygso_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "shaquibhussainn",
+    "name": "spidy 🍳",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1905676841274474496/LzZvygso_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC268D46d3eDAf6aFAB4d45a7b46A85deF6618305",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_68a00208622685de8b731c0f",
+  "name": "Arifuddin",
+  "image": "https://pbs.twimg.com/profile_images/1888489142407106560/TckYHrLo_normal.jpg",
+  "bio": "Artist",
+  "twitter": {
+    "username": "Arifuddin_CC",
+    "name": "Arifuddin",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1888489142407106560/TckYHrLo_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xFb436a32614b8B9186f268508e27600E895F8054",
+      "kind": "external"
+    }
+  ]
+}

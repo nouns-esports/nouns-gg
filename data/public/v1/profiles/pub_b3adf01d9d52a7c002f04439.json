@@ -1,0 +1,18 @@
+{
+  "id": "pub_b3adf01d9d52a7c002f04439",
+  "name": "Muhammad Arifin12 🍸 ⌘",
+  "image": "https://pbs.twimg.com/profile_images/1647507670386241540/BdxyaMF1_normal.jpg",
+  "bio": "Hey you",
+  "twitter": {
+    "username": "ipingntng12",
+    "name": "Muhammad Arifin12 🍸 ⌘",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1647507670386241540/BdxyaMF1_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5f2DAC67046b398789229ea1819f02c9F487CCe3",
+      "kind": "external"
+    }
+  ]
+}

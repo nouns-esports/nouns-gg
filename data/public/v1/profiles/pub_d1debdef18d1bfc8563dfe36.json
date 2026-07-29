@@ -1,0 +1,18 @@
+{
+  "id": "pub_d1debdef18d1bfc8563dfe36",
+  "name": "mrbriandesign",
+  "image": "https://pbs.twimg.com/profile_images/1916807519122620416/mk3vOoS-_normal.jpg",
+  "bio": "Mr. Brian Design mixed media / 3D/ AR \n",
+  "twitter": {
+    "username": "mrbriandesign",
+    "name": "mrbriandesign",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1916807519122620416/mk3vOoS-_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xdC3529AE55D013eCb89D1A17b03A0949348FfbCE",
+      "kind": "external"
+    }
+  ]
+}

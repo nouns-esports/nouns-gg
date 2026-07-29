@@ -1,0 +1,14 @@
+{
+  "id": "pub_b3040cf8b5423852373b3c7d",
+  "name": "cinder",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiem5vhkgfvzsncje2ygnwyw3swcoztizvbroeaztqg7w2aivewwou",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x54D6CC2CD123792164F5aE39c83227497468d8d7",
+      "kind": "external"
+    }
+  ]
+}

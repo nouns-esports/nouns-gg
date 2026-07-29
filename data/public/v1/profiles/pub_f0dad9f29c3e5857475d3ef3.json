@@ -1,0 +1,23 @@
+{
+  "id": "pub_f0dad9f29c3e5857475d3ef3",
+  "name": "bitwarlock99",
+  "image": "https://pbs.twimg.com/profile_images/1923320563310940160/iaHgjRQv_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "bitwarlock99",
+    "name": "bitwarlock99",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1923320563310940160/iaHgjRQv_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2a3E59109a9503fb89304024a91fc00652FF123e",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xcdD8c1d7fc9C118e071bDF899Ffd41DA3dBaed9E",
+      "kind": "external"
+    }
+  ]
+}

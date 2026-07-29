@@ -1,0 +1,23 @@
+{
+  "id": "pub_9da3f5f29e751112c98a02a3",
+  "name": "burningpixelz",
+  "image": "https://pbs.twimg.com/profile_images/1922919426938331136/Px5x8s18_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "burningpixelz",
+    "name": "burningpixelz",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922919426938331136/Px5x8s18_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x9dA5B85E383AB9d7d81Ef81BDEd0164d1fD66219",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xB5B3149FF7256907c02B19D6c6942C2332D54458",
+      "kind": "external"
+    }
+  ]
+}

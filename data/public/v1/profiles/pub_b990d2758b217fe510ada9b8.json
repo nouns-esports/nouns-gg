@@ -1,0 +1,14 @@
+{
+  "id": "pub_b990d2758b217fe510ada9b8",
+  "name": "mr-zorogun",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=eoa7f&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x49F24ac0851E2d67c6da3b13e691f059C91e966f",
+      "kind": "external"
+    }
+  ]
+}

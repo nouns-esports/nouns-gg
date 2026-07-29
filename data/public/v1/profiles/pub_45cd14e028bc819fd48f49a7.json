@@ -1,0 +1,14 @@
+{
+  "id": "pub_45cd14e028bc819fd48f49a7",
+  "name": "Keanucheese",
+  "image": "https://ipfs.nouns.gg/ipfs/QmPkG74D8kv9sF6kzcmB7vDES53yPGt8J3LsRWKNTKrWsw",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x56B972E6235CD0c368fC6f45339691F49D24bEBf",
+      "kind": "external"
+    }
+  ]
+}

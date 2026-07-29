@@ -1,0 +1,18 @@
+{
+  "id": "pub_a5b483b89cd39d43665e6e98",
+  "name": "KIYOMI.ink | 💢 | ⌘🛠️",
+  "image": "https://pbs.twimg.com/profile_images/1968381537633615872/MnSNWCn3_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "hey_Kiyomi",
+    "name": "KIYOMI.ink | 💢 | ⌘🛠️",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1968381537633615872/MnSNWCn3_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4f2Ef93c8ca51d66951918D4904f20E5539c2932",
+      "kind": "external"
+    }
+  ]
+}

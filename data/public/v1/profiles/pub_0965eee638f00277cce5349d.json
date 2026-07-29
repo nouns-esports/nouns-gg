@@ -1,0 +1,18 @@
+{
+  "id": "pub_0965eee638f00277cce5349d",
+  "name": "Mart. ◨-◨¬ 🇬🇹",
+  "image": "https://pbs.twimg.com/profile_images/1820540756794195968/wiRHi3K9_normal.jpg",
+  "bio": "Guatemalteco amante de la tecnología y blockchain ",
+  "twitter": {
+    "username": "Mart__Eth",
+    "name": "Mart. ◨-◨¬ 🇬🇹",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1820540756794195968/wiRHi3K9_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xAca2F322d69E07993E073C8730180FB139cA4446",
+      "kind": "external"
+    }
+  ]
+}

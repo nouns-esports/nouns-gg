@@ -1,0 +1,18 @@
+{
+  "id": "pub_6db30ca9d2bcb57c01d37bd6",
+  "name": "Shykon",
+  "image": "https://pbs.twimg.com/profile_images/1847749338253893632/4AX4KsXV_normal.jpg",
+  "bio": "pleb",
+  "twitter": {
+    "username": "shykondota",
+    "name": "Shykon",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1847749338253893632/4AX4KsXV_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x344C0f110244930918F5e1920AEb725cEec2a940",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_2a41ad705d0873cf6c6f9aaf",
+  "name": "cmdklpjc",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiervs7qasobboi6qnwwwi47ka4npsijhf6nrkch4u2fb5in6dptom",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7fbcdBf1ad365b7aD5c31Fb8FeD6E8d5b6792082",
+      "kind": "external"
+    }
+  ]
+}

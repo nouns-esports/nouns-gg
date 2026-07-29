@@ -1,0 +1,19 @@
+{
+  "id": "pub_033fa633704809eee763c4b9",
+  "name": "Byte",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreianvgq6yn4fz4w7ovf4q4akzsdakanqare6io73fbr2unqbxgkmka",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4080bE2b8C518Ff67268cfD9B3CC1ECbF15f9E61",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xe41e2CC3782140c1aDcE382e3147F151a453ff84",
+      "kind": "external"
+    }
+  ]
+}

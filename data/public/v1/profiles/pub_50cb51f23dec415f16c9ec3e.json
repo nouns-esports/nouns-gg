@@ -1,0 +1,14 @@
+{
+  "id": "pub_50cb51f23dec415f16c9ec3e",
+  "name": "滝川さん",
+  "image": "https://ipfs.nouns.gg/ipfs/QmVpH1NrZC47MpfEw3Gz6FWfMrR3wPZMBEak8bW2zpQTKf",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xea5c9A571B2771e90Ce47a0614cdaa44d5fd915a",
+      "kind": "external"
+    }
+  ]
+}

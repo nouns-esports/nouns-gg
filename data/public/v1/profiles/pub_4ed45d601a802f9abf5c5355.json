@@ -1,0 +1,14 @@
+{
+  "id": "pub_4ed45d601a802f9abf5c5355",
+  "name": "N0name",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=uwibkb&background=1",
+  "bio": "Create NFT",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3eA0C588Eb5d204DDBeB3E59fdaec17490Acc5E7",
+      "kind": "external"
+    }
+  ]
+}

@@ -4,12 +4,23 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Button from "./Button";
 import { twMerge } from "tailwind-merge";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import type { rounds, events } from "~/packages/db/schema/public";
 import { roundState } from "@/utils/roundState";
 
 export default function Gallery(props: {
-	highlightedRound?: typeof rounds.$inferSelect;
-	highlightedEvent?: typeof events.$inferSelect;
+	highlightedRound?: {
+		handle: string;
+		name: string;
+		image: string;
+		start: Date;
+		votingStart: Date;
+		end: Date;
+	};
+	highlightedEvent?: {
+		handle: string;
+		name: string;
+		image: string;
+		start: Date;
+	};
 }) {
 	const [index, setIndex] = useState(0);
 	const [backwards, setBackwards] = useState(false);
@@ -27,9 +38,9 @@ export default function Gallery(props: {
 		() => [
 			{
 				title: "Introducing Nounsvitational Tokyo 2025",
-				sub: "Coming in December",
-				href: "/events/nounsvitational?tab=shop",
-				button: "Get VIP Pass",
+				sub: "Tokyo 2025",
+				href: "/events/nounsvitational",
+				button: "View event",
 				type: "video",
 				url: "https://ipfs.nouns.gg/ipfs/bafybeihciy2yrpxczsitnl2732j5sfccx7bqw6swon6ae7tolaaa3mk7jy",
 			},
@@ -54,7 +65,7 @@ export default function Gallery(props: {
 				? ([
 						{
 							title: props.highlightedEvent.name,
-							sub: `Coming in ${new Date(props.highlightedEvent.start).toLocaleString("default", { month: "long" })}`,
+							sub: "Event",
 							href: `/events/${props.highlightedEvent.handle}`,
 							button: "View Event",
 							type: "image",

@@ -1,0 +1,18 @@
+{
+  "id": "pub_a71dab081d61d520336d3133",
+  "name": "Gnericvibes",
+  "image": "https://pbs.twimg.com/profile_images/1903584010594394112/s2eLw5Uo_normal.jpg",
+  "bio": "Music x Fashion  #Viber",
+  "twitter": {
+    "username": "GnericGladhizA",
+    "name": "Gnericvibes",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1903584010594394112/s2eLw5Uo_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x744CDf12D5D289db118Ed9293c10cfa952169071",
+      "kind": "external"
+    }
+  ]
+}

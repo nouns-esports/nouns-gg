@@ -1,0 +1,14 @@
+{
+  "id": "pub_d8beca8064a406d4820a3d12",
+  "name": "cmdlubpp",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigjblrqgi6whmhuhf3e4yvzpwpu2kclypgmbbvccrljtslxbxkvci",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x401309397BccE2A63F98053bF5282DdD2FFD9fFb",
+      "kind": "external"
+    }
+  ]
+}

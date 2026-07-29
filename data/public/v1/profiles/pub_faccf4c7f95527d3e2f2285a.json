@@ -1,0 +1,18 @@
+{
+  "id": "pub_faccf4c7f95527d3e2f2285a",
+  "name": "Block 🐐",
+  "image": "https://pbs.twimg.com/profile_images/1766118319650680832/EMCrjfTW_normal.jpg",
+  "bio": "im airdrop worker",
+  "twitter": {
+    "username": "Mohassin05",
+    "name": "Block 🐐",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1766118319650680832/EMCrjfTW_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2DCd33b7d504FbC81BF99BF3629D7fA62706a13D",
+      "kind": "external"
+    }
+  ]
+}

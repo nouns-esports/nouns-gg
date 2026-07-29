@@ -1,0 +1,19 @@
+{
+  "id": "pub_c6b6ea0fa2feccad64c6bd76",
+  "name": "SnappySaddle",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieiceiaqjudjxzvfyony33fibadapcadffmwy5ifwdxigsfm6rvdy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB12cf840B3c9424EDfc5f8B15c9927AAAAE9dd47",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xf6a1460Bced5f171bc15a9ac49bbF61dA0Ba407e",
+      "kind": "external"
+    }
+  ]
+}

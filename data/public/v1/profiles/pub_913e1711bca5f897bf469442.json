@@ -1,0 +1,23 @@
+{
+  "id": "pub_913e1711bca5f897bf469442",
+  "name": "cat moster",
+  "image": "https://pbs.twimg.com/profile_images/1922536312554520576/qTOwjL7k_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "cat_moster4",
+    "name": "cat moster",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1922536312554520576/qTOwjL7k_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3D76138e85bCF1d941706022Ed5A3bBdf6E3d039",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x8B6e07D979BD249A3944E8e6073FEAFF58F331fd",
+      "kind": "external"
+    }
+  ]
+}

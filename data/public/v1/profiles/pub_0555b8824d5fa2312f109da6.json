@@ -1,0 +1,18 @@
+{
+  "id": "pub_0555b8824d5fa2312f109da6",
+  "name": "Jennifer Gabriela",
+  "image": "https://pbs.twimg.com/profile_images/1691341708791828480/Z3f2yCYP_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "gabrululu",
+    "name": "Jennifer Gabriela",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1691341708791828480/Z3f2yCYP_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xB6E9874752Ad5370B42aA4be6593a1c86D15A82e",
+      "kind": "external"
+    }
+  ]
+}

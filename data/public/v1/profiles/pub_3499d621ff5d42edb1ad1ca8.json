@@ -1,0 +1,14 @@
+{
+  "id": "pub_3499d621ff5d42edb1ad1ca8",
+  "name": "Nøx",
+  "image": "https://ipfs.nouns.gg/ipfs/QmSSEFbWNhBZWa3JzAicnDxLTVeyR6zU79oJ6MJZqJxUdJ",
+  "bio": "Owner of 01010010 01010101 01010011 01001000 ®  ",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD78210A7dA75b1638679c750B4123395F0E46543",
+      "kind": "external"
+    }
+  ]
+}

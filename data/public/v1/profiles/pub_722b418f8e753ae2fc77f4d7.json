@@ -1,0 +1,19 @@
+{
+  "id": "pub_722b418f8e753ae2fc77f4d7",
+  "name": "Plump",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreihkstpms5wh2t4yzxkl64xbxcma7czm67fvpbbovjwmi23hrropby",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2F5acd2F34d3876daDD9B4217742bC76C4093aEb",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x9911Da6E47cFAc211f6C305AaFCD81Ad8019D493",
+      "kind": "external"
+    }
+  ]
+}

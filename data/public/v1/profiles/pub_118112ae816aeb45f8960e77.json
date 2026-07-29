@@ -1,0 +1,23 @@
+{
+  "id": "pub_118112ae816aeb45f8960e77",
+  "name": "David 👁️ base.eth 🍳 .ink 🐝(🦄,🦄) (✸,✸)",
+  "image": "https://pbs.twimg.com/profile_images/1893696575437983744/v7AvBEpl_normal.jpg",
+  "bio": "CoolingDarkness",
+  "twitter": {
+    "username": "yodelay97",
+    "name": "David 👁️ base.eth 🍳 .ink 🐝(🦄,🦄) (✸,✸)",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1893696575437983744/v7AvBEpl_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xC85032a2e77bE215A095Fc8b77C0E3e16Bb69BF9",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xB671ECB535241Ac609F3FA4231814d0783F441bd",
+      "kind": "external"
+    }
+  ]
+}

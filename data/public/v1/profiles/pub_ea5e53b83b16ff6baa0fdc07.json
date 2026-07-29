@@ -1,0 +1,14 @@
+{
+  "id": "pub_ea5e53b83b16ff6baa0fdc07",
+  "name": "cmdnec81",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibbtlez3pyalq6ocsj64uaub4cc52vfudx4gep6p3c6larcfyntku",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3ad89F34A7e507098e7c14eCD7766117ceAF2A95",
+      "kind": "external"
+    }
+  ]
+}

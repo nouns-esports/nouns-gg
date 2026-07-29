@@ -1,0 +1,14 @@
+{
+  "id": "pub_ca238fb6f51754e637dd6de5",
+  "name": "SpruceTura ",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreibx2wsamqlwir5wxukclgq4jfjyvmavzutceq2rae7pioo3yihpda",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2F3ec5918960e9B60546A655f3940174838267F8",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "pub_e361f203f2f0bab31c181c7f",
+  "name": "BuezTheBoyWonder👽",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreifb7rbnfpv36nns7kb3ojnsohac6wag7zmb4g47j6yp3a5obhpaae",
+  "bio": "Music",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3444DBD8923B85176669aed25F8ff3B7aF774E31",
+      "kind": "external"
+    }
+  ]
+}

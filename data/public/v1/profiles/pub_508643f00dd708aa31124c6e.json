@@ -1,0 +1,19 @@
+{
+  "id": "pub_508643f00dd708aa31124c6e",
+  "name": "QuirkyQuail",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiainyhiwgdytcq65surogugy7zqp2uxonp32y3sizeo6kakpsevaa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x67dC4b00a4Cccb8fB647d4195f46a0a92CdC4dbC",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x9fA210A5619816820bBfcaD3E9ec920a32894CF0",
+      "kind": "external"
+    }
+  ]
+}

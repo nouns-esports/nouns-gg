@@ -1,0 +1,14 @@
+{
+  "id": "pub_33c340dc4932918962c2a1d7",
+  "name": "bluemoon",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreieklkjfrdhsjpdpbvlo44jfosbfg4ztaddokcb5zzebbfjaqgrag4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7486c959c63458ECf58C247609C91cDC93D4bE5b",
+      "kind": "external"
+    }
+  ]
+}

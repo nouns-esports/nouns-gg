@@ -1,0 +1,18 @@
+{
+  "id": "pub_adcc2979f3909fdd762c7e0b",
+  "name": "datadanne.eth",
+  "image": "https://pbs.twimg.com/profile_images/1758038111613784064/02eeKQQW_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "datadanne_eth",
+    "name": "datadanne.eth",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1758038111613784064/02eeKQQW_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xBDfeB5439f5daecb78A17Ff846645A8bDBbF5725",
+      "kind": "external"
+    }
+  ]
+}

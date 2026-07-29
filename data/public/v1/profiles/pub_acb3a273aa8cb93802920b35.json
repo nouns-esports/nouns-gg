@@ -1,0 +1,18 @@
+{
+  "id": "pub_acb3a273aa8cb93802920b35",
+  "name": "Proof Hunter",
+  "image": "https://pbs.twimg.com/profile_images/1948801988205907968/BPP5fwLV_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "marie_laur27659",
+    "name": "Proof Hunter",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948801988205907968/BPP5fwLV_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3e5Caf260C1CCe638d05097b4A72ec055382C051",
+      "kind": "external"
+    }
+  ]
+}

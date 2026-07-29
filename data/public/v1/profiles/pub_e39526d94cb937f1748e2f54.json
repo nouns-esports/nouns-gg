@@ -1,0 +1,18 @@
+{
+  "id": "pub_e39526d94cb937f1748e2f54",
+  "name": "Jose Suyco",
+  "image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+  "bio": "",
+  "twitter": {
+    "username": "JoseSuyco",
+    "name": "Jose Suyco",
+    "profilePictureUrl": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x5C73C63bc236CFBF5870AC873ef362c004ED7c7D",
+      "kind": "external"
+    }
+  ]
+}

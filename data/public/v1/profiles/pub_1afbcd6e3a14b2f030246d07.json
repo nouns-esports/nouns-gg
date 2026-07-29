@@ -1,0 +1,14 @@
+{
+  "id": "pub_1afbcd6e3a14b2f030246d07",
+  "name": "gondy.eth",
+  "image": "https://ipfs.nouns.gg/ipfs/QmTt4bagBnQi3UKMsruC3MszM97v8ZSHrLi2HaX9iCqUG1",
+  "bio": "Benbodhi’s Ride",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "kind": "external"
+    }
+  ]
+}

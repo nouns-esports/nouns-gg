@@ -1,0 +1,18 @@
+{
+  "id": "pub_fc6563d5db8e9650868ac2f6",
+  "name": "12th | LS | Gohao",
+  "image": "https://pbs.twimg.com/profile_images/1768025558238330880/II6H99Cm_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Gohao4",
+    "name": "12th | LS | Gohao",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1768025558238330880/II6H99Cm_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x3b05122d46D3cf19d9A53fAA624Aa363fc536511",
+      "kind": "external"
+    }
+  ]
+}

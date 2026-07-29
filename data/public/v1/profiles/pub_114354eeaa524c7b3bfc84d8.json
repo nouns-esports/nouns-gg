@@ -1,0 +1,18 @@
+{
+  "id": "pub_114354eeaa524c7b3bfc84d8",
+  "name": "Keith ‘Bobakanoosh’ Lynd",
+  "image": "https://pbs.twimg.com/profile_images/1891968680205901824/TcCZpB8P_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "BobakanooshG",
+    "name": "Keith ‘Bobakanoosh’ Lynd",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1891968680205901824/TcCZpB8P_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xF71d51bcd1A4a3c3D8966c38c93192DC81Be98b9",
+      "kind": "external"
+    }
+  ]
+}

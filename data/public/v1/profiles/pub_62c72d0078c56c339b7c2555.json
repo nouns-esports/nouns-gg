@@ -1,0 +1,14 @@
+{
+  "id": "pub_62c72d0078c56c339b7c2555",
+  "name": "ecstasea",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiggchywsc3wlctiqbffpjszvxwrbultng3iv5tzas2ke5kb7bf4mq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x085D6177e0Fd83dcB6eBF89836dD9AdF7867a29f",
+      "kind": "external"
+    }
+  ]
+}

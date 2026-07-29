@@ -1,0 +1,14 @@
+{
+  "id": "pub_2a7450952be071822ee3ee47",
+  "name": "0xbrrrrr",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicgehu7y33nlqk5oz6yw7umdgcmbj56tj7nmiilxdivwew6jfcmi4",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xAA3735e04e528F0A5C00fE9D30Ac309CAE321354",
+      "kind": "external"
+    }
+  ]
+}

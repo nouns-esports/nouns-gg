@@ -1,0 +1,18 @@
+{
+  "id": "pub_6b2eb2235fe798c658492542",
+  "name": "Chandler Browning",
+  "image": "https://pbs.twimg.com/profile_images/1714192775019663360/qFxpEYRb_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "Ohantheman",
+    "name": "Chandler Browning",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1714192775019663360/qFxpEYRb_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x57e5DE62d343be113F192553832941874F0d0C5D",
+      "kind": "external"
+    }
+  ]
+}

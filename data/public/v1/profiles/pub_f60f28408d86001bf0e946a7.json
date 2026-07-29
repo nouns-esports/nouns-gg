@@ -1,0 +1,14 @@
+{
+  "id": "pub_f60f28408d86001bf0e946a7",
+  "name": "cmdn8zl2",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreigyesu7ld374seaqkgetlaln3yyve3fqc4gp4cdyzyu47c253q3au",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2655E0373d05b092F5e90AbC20e6785BCEfA1caa",
+      "kind": "external"
+    }
+  ]
+}

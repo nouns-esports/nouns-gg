@@ -1,0 +1,19 @@
+{
+  "id": "pub_c60b5a0a1b31a8afd906c568",
+  "name": "Snap Sorcerer",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreiduuxt5xouac4yu6rgpf4ekeu2ssyotkgeoux7fm2uxjgfx3ugooq",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xFc211a2C9A701fe9e46804f4c96339e79Da32fCF",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x55B7E021Fa1e64C54b279da345292Ca9aeAa1aE3",
+      "kind": "external"
+    }
+  ]
+}

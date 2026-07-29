@@ -1,0 +1,18 @@
+{
+  "id": "pub_71ed5321508a1e175d4022cb",
+  "name": "Future Crypt",
+  "image": "https://pbs.twimg.com/profile_images/1948393293517131776/l95fPi03_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "0xFutureCrypt",
+    "name": "Future Crypt",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1948393293517131776/l95fPi03_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x4d665933d80D7FA8829b32B1344dEf96076fc9AA",
+      "kind": "external"
+    }
+  ]
+}

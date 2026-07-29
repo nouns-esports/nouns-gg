@@ -1,0 +1,14 @@
+{
+  "id": "pub_700dfbd5df2f09789fc8a577",
+  "name": "haruto kakizawa",
+  "image": "https://api.cloudnouns.com/v1/pfp?text=kzxvbq&background=1",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xcA9F47dB632ea071C42757ec29c6c1A91c41bAc4",
+      "kind": "external"
+    }
+  ]
+}

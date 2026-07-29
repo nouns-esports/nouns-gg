@@ -1,0 +1,14 @@
+{
+  "id": "pub_a2d4909b4d9a418b60fb8722",
+  "name": "binarydrool ",
+  "image": "https://ipfs.nouns.gg/ipfs/QmT8J1grsVDL19mATXnn4Fmc8taqSdkSG73bwDD99oM7rA",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8aB97fE0C2899D13E11C094660b472ED61C6f6e6",
+      "kind": "external"
+    }
+  ]
+}

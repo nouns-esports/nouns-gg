@@ -1,0 +1,46 @@
+{
+  "id": "event:nouns-gg:fast-falls",
+  "handle": "fast-falls",
+  "name": "Fast Fall$",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidnpdnki2bugodpfnz23vwnlpj2anl6mhc42xlfeovklqyo7jtbpu",
+  "description": "FAST FALL$ is a brand-new Smash Major located in the heart of Niagara Falls, New York! Join us at The Seneca Niagara Resort & Casino for this top tier competition as well as the majestic environment.",
+  "createdAt": "2025-07-21T20:52:45.634Z",
+  "start": "2025-11-08T21:00:00.000Z",
+  "end": "2025-11-09T21:00:00.000Z",
+  "active": true,
+  "featured": true,
+  "callToAction": {
+    "disabled": false,
+    "label": "Register",
+    "url": "https://www.start.gg/tournament/fast-fall-2025/register"
+  },
+  "location": {
+    "name": "Niagra Falls, NY",
+    "url": "https://maps.app.goo.gl/PDAzjdN3SF1htedy5"
+  },
+  "details": null,
+  "attendeeCount": 102,
+  "community": {
+    "id": "community:nouns-gg",
+    "handle": "nouns-gg",
+    "image": "https://i.imgur.com/ZeGD2QF.jpg",
+    "name": "Nouns GG",
+    "levels": null,
+    "points": {
+      "name": "Gold",
+      "image": "https://ipfs.nouns.gg/ipfs/bafkreiccw4et522umioskkazcvbdxg2xjjlatkxd4samkjspoosg2wldbu",
+      "marketcap": 0
+    },
+    "description": null,
+    "parentUrl": "https://nouns.gg",
+    "details": null,
+    "featured": true,
+    "createdAt": "2025-07-20T01:50:10.707Z",
+    "hasRounds": true,
+    "hasQuests": true,
+    "hasPredictions": true,
+    "hasEvents": true,
+    "hasLeaderboard": true,
+    "hasShop": true
+  }
+}

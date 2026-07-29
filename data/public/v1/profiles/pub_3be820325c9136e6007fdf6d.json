@@ -1,0 +1,19 @@
+{
+  "id": "pub_3be820325c9136e6007fdf6d",
+  "name": "NounNoodle",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidc764npgimyznn2mxih7pdizaouazc5otwirjvjusnrc42wzcbvi",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb58DbB916ea451A0314DafFC9fD6cc475aa3a684",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xB8C1DD6755F361Ce9FeB90d1f7C82BD3c5099aC2",
+      "kind": "external"
+    }
+  ]
+}

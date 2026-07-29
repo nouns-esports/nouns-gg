@@ -1,0 +1,18 @@
+{
+  "id": "pub_b6390c257208d6b0386ab26c",
+  "name": "salam",
+  "image": "https://pbs.twimg.com/profile_images/1809240329964621824/w1aDk95__normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "salamithegreat",
+    "name": "salam",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1809240329964621824/w1aDk95__normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xD0212a720B1a7ACFE2b38A239272B7F63672Ac75",
+      "kind": "external"
+    }
+  ]
+}

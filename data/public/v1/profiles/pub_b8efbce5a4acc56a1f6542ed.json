@@ -1,0 +1,18 @@
+{
+  "id": "pub_b8efbce5a4acc56a1f6542ed",
+  "name": "Usama Rabi",
+  "image": "https://pbs.twimg.com/profile_images/1940017448775753728/QHYoL0Rs_normal.jpg",
+  "bio": "Building, creating & contributing to open data innovation with AthenaX x Nouns 🌍🔥",
+  "twitter": {
+    "username": "Usama70962Rabi",
+    "name": "Usama Rabi",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1940017448775753728/QHYoL0Rs_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x8769bCB1A03a9787C56A48F03AEA6a686C1CFC05",
+      "kind": "external"
+    }
+  ]
+}

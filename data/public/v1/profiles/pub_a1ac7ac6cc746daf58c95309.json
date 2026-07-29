@@ -1,0 +1,19 @@
+{
+  "id": "pub_a1ac7ac6cc746daf58c95309",
+  "name": "Crisp",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreids7lrvckm4awxyir5t2sqn22hofwddk65ng6hyn4tltycvfkpvou",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xA775aE04c61d098B1B252c02423b5408D393aA38",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0xcc11f1118fF553F2827e81201F378b47bf967967",
+      "kind": "external"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pub_c098cf36318a600b070e8230",
+  "name": "naoh",
+  "image": "https://pbs.twimg.com/profile_images/1789830799388479488/wC-Knb6V_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "velnaoh",
+    "name": "naoh",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1789830799388479488/wC-Knb6V_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xfC2f2B2bccD95AA317B365F92f3315B8556E8B47",
+      "kind": "external"
+    }
+  ]
+}

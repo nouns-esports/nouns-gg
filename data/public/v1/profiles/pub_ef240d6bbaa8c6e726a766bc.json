@@ -1,0 +1,18 @@
+{
+  "id": "pub_ef240d6bbaa8c6e726a766bc",
+  "name": "PIXAHEAD ▀▄▀",
+  "image": "https://pbs.twimg.com/profile_images/1846975643063619584/QIiGgEwb_normal.jpg",
+  "bio": "Pixel Artist",
+  "twitter": {
+    "username": "pixahead",
+    "name": "PIXAHEAD ▀▄▀",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1846975643063619584/QIiGgEwb_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x2747D3239265e8f4A6a954d5d736121A92E401C4",
+      "kind": "external"
+    }
+  ]
+}

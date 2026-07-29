@@ -1,0 +1,18 @@
+{
+  "id": "pub_fb77de7ddcfac1dc9d9fdc8c",
+  "name": "Max Defi",
+  "image": "https://pbs.twimg.com/profile_images/1947427530346053632/_bL8wr8J_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "MaxDefi5",
+    "name": "Max Defi",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1947427530346053632/_bL8wr8J_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x47DB69fdb07C2189E78E053F83bc1893e899012a",
+      "kind": "external"
+    }
+  ]
+}

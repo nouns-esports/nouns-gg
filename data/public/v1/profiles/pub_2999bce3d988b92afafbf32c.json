@@ -1,0 +1,19 @@
+{
+  "id": "pub_2999bce3d988b92afafbf32c",
+  "name": "SnazzySnout",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreidvlyzanol6r4cmpywwosnnjjf2kiy63puk3qcfhzmgz4wueyrroa",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x7A27eAB6B176497b055f140557E7B58c9AE10605",
+      "kind": "external"
+    },
+    {
+      "chain": "ethereum",
+      "address": "0x4a5dE44F47B233dC00102c619bA5e197a75De511",
+      "kind": "external"
+    }
+  ]
+}

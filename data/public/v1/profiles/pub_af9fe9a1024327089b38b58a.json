@@ -1,0 +1,14 @@
+{
+  "id": "pub_af9fe9a1024327089b38b58a",
+  "name": "isaachuston",
+  "image": "https://ipfs.nouns.gg/ipfs/bafkreicio2c5i4ryl3hdgqwwvr67z45gyeik6hs7lcg6cqulrhn2e6t72m",
+  "bio": "Am a skateboarder from Kampala, Uganda 🇺🇬. and a co-founder of a skate organization called Kampala Skateboard Initiative.",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xDdd7c01cEcDbd0AC633ef7405A60165f731e645f",
+      "kind": "external"
+    }
+  ]
+}

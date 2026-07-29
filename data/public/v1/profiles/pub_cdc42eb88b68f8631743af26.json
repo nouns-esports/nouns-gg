@@ -1,0 +1,14 @@
+{
+  "id": "pub_cdc42eb88b68f8631743af26",
+  "name": "Okinami",
+  "image": "https://ipfs.nouns.gg/ipfs/QmVwgwr9RJQu1UnwW7heUj2CpgDYxRsKhbKN5DRRL1Lvqy",
+  "bio": "",
+  "twitter": null,
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0x1f6523E81e4e706f0dBc8630b392d71A7299cfb4",
+      "kind": "external"
+    }
+  ]
+}

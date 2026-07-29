@@ -1,0 +1,18 @@
+{
+  "id": "pub_ecddb853f9e1f953f3d0f0b4",
+  "name": "LossBrook💢",
+  "image": "https://pbs.twimg.com/profile_images/1957974573380493312/sGkJD-w2_normal.jpg",
+  "bio": "",
+  "twitter": {
+    "username": "BrookLoss36259",
+    "name": "LossBrook💢",
+    "profilePictureUrl": "https://pbs.twimg.com/profile_images/1957974573380493312/sGkJD-w2_normal.jpg"
+  },
+  "wallets": [
+    {
+      "chain": "ethereum",
+      "address": "0xb9E6bD108618C51d7E5E59673E5704D9259E3Cb4",
+      "kind": "external"
+    }
+  ]
+}
